@@ -20,10 +20,6 @@ RedirectPermanent /News/status.html             http://www.winehq.org/?page=stat
 RedirectPermanent /faq/                         http://www.winehq.org/?page=faq
 RedirectPermanent /faq                          http://www.winehq.org/?page=faq
 
-# fix old news links
-RedirectMatch ^/news/(\?)view=(.*)$             http://www.winehq.org/$1issue=$2
-RedirectMatch ^/news/index\.php(\?)view=(.*)$   http://www.winehq.org/$1issue=$2
-
 # redirect winehq services to appropriate web sites
 RedirectMatch ^/(APPS|Apps|apps)/$              http://appdb.winehq.org/
 RedirectMatch ^/(APPS|Apps|apps)$               http://appdb.winehq.org/
