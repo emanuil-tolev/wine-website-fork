@@ -118,7 +118,7 @@ leaves me with just option 2.
 When I try to run it like that (<tt>winedbg --gdb --no-start</tt>), winedbg 
 starts ok. When I hook ddd to it, however, winedbg complains about a 
 missing source file (one that is not in the Windows source, btw). In the 
-mean while, ddd claims to time out on the connection, and closes down.
+meanwhile, ddd claims to time out on the connection, and closes down.
 </p></quote>
 
 <p>Eric Pouech asked Shachar to try running just winedbg and not
@@ -147,7 +147,7 @@ This is the full patch (quite big), that's why it's been gzip:ed.
 Among the biggest changes:
 <ul>
 <li> all symbol information storage is now module relative, so we can 
-unload a module (and it's debugging information), and a process without pain</li>
+unload a module (and its debugging information), and a process without pain</li>
 <li> portabiblity to another CPU should be easier now (CPU dependent backend)</li>
 <li> speed up memory allocation</li>
 <li> stabs related fixes:
@@ -201,7 +201,7 @@ for Shachar's work:</p>
  debug symbols for the PE part are not shown. I get all the symbols for 
  the ELF dlls (wine's DLLs), but not for the PE program.
 </p><p>
- Is this a solveable problem? The program is using PDBs for debug 
+ Is this a solvable problem? The program is using PDBs for debug 
  symbols, they are not compiled into the PEs. I can change that, I guess, 
  but I would really rather not. Will changing that solve anything?
 </p></quote>
@@ -246,7 +246,7 @@ was already there:</p>
 I never tested that. As far as I can tell, both ddd and kdbg are using the regular gdb 
 command line (not the MI* extensions from gdb). While rewriting winedbg 
 I tried to make the commands as close as possible (from a syntax point 
-of view) from the gdb one's. However, I didn't check yet format of 
+of view) to the gdb ones. However, I didn't check yet format of 
 answers and output. The idea anyway was to make winedbg look (command 
 input, but we could do output too) as close as possible to gdb to ease 
 up the migration of users from gdb to winedbg).
@@ -326,7 +326,7 @@ another method of using one header to redefine parts of another:</p>
  external dlls. And you have another set of headers for msvcrt 
  compilation. In The second set:<ul>
  <li> each header does some magic like #define stat_t MSVCRT_stat_t</li>
- <li> than #include &lt;original/header.h&gt;</li></ul>
+ <li> then #include &lt;original/header.h&gt;</li></ul>
 </p><p>
 Now compilation units that need the MSVCRT_xxx use an extra <tt>-I 
 "$wine_include/internal_msvcrt"</tt> switch in the make files.
@@ -335,7 +335,7 @@ should I random pick an header and demonstrate the Technique?
 </p><p>
  From what I understand, the need for these differences are so the 
 msvcrt.dll.so could define it's own set of functions and in place use 
-gcc-glibc for implementation. This way stirring a way from both 
+gcc-glibc for implementation. This way steering away from both 
 duplicates in Linking and conflicts with gcc-glibc headers.
 [Q] Why don't we avoid glibc all together. Take what ever code we are 
 missing  and have a complete self contained implementation?
@@ -407,7 +407,7 @@ one of the last lines is (i have 512Mb of ram)
 old_mmap(NULL, 482376, PROT_READ|PROT_EXEC, MAP_PRIVATE, 3, 0) = -1 ENOMEM                 
                                                  (Cannot allocate memory)
 </code></ul></p><p>
-It looks like my kernel absolutly wants to allocate memory &gt; 0xc0000000 :-)
+It looks like my kernel absolutely wants to allocate memory &gt; 0xc0000000 :-)
 Any idea?</p></quote>
 
 <p>Alexandre didn't have an immediate solution, but asked for

@@ -142,7 +142,7 @@ accessed via
 <a href="http://test.winehq.org/data/">http://test.winehq.org/data/</a>  
 Pretty formatting of the results is coming soon ;-)
 </p><p>
-We need volunteers that are willing to particpate in the winetesting process 
+We need volunteers that are willing to participate in the winetesting process 
 by running the winrash service on their computers. The winrash installer can 
 be downloaded from:
  <ul><a href="http://prdownloads.sourceforge.net/winrash/winrash-0007-chris-msvc.exe?download">
@@ -191,10 +191,10 @@ it's fixed.  </p>
 <topic>Fixes</topic>
 <p>Christian Costa reported a fairly serious problem,
 <quote who="Christian Costa">
-This is the second time I had to reboot when by box is stuck while 
-running a windows apps.  In both case the registry had been corrupted. 
+This is the second time I had to reboot when my box is stuck while 
+running a windows apps.  In both cases the registry had been corrupted. 
 This is very annoying.  Could we have the wineserver do a backup of 
-registry files at startup so we can retreive the previous version if a 
+registry files at startup so we can retrieve the previous version if a 
 corruption occurs?  That would be very useful.</quote></p>
 
 <p>Alexandre wanted more info about the crash since it shouldn't be
@@ -213,7 +213,7 @@ That led Steven Edwards to mention some integration issues with Mandrake
 <quote who="Steven Edwards">
  Do you have the LSB package installed in your Mandrake? There are two
  bugs in Mandrake 10 that some of our users have spotted in CrossOver. I
- dont know all of the details but there seems to be a issue with the 2.4
+ don't know all of the details but there seems to be an issue with the 2.4
  Mandrake kernel and the LSB package. Once the users have removed the
  LSB package things seem to clear up.
 </quote></p>
@@ -246,9 +246,9 @@ regarding calendars,
 <p>Shachar Shemesh had some pointers for the Middle East region:</p> 
 <quote who="Shachar Shemesh"><p>
 I'm not familiar with the Windows API in that respect, but I can tell 
-you that both Jews and Muslims have their own calenders (as well as 
+you that both Jews and Muslims have their own calendars (as well as 
 Chinese, Hindus etc, IIRC). At least in Israel, the gregorian is the 
-main calender, but having the ability to view Jewish dates would be nice.
+main calendar, but having the ability to view Jewish dates would be nice.
 
 <ul><a href="http://libhdate.sourceforge.net/">
 http://libhdate.sourceforge.net/</a> (Hebrew dates)</ul>
@@ -265,12 +265,12 @@ it was still interesting:</p>
 Japanese also use a different system to indicate the
 year. They use the year of the emperor. For example
 today's year is 14 Heisei (The current emperor has
-been in power scense 1990.)  When Emperor Hirohito
+been in power since 1990.)  When Emperor Hirohito
 died in 1989, Japanese programmers had to reprogram
-thier computers to deal with the new "year" as many
+their computers to deal with the new "year" as many
 were hard-coded for the old emperor. Y2K wasn't much
-of a problem because the Japanese had updated thier
-computers ten years pervious.
+of a problem because the Japanese had updated their
+computers ten years before.
 </p><p>
 Nowadays on computers, they simply list the julian
 year, then month, then day, and then the character of
@@ -298,8 +298,8 @@ Here's what cal gives me...
 23 24 25 26 27 28 29<br />
 30 31</tt></ul></p>
 <p>
-Just remeber, year comes first and  the date is
-seperated by periods if you want to drop the
+Just remember, year comes first and  the date is
+separated by periods if you want to drop the
 characters.</p></quote>
 
 <p>That led Shachar to go into more detail:</p>
@@ -307,14 +307,14 @@ characters.</p></quote>
 Don't get me started about representation.
 </p><p>
 First - the dates. Arabic dates are a bit simpler - it's a lunar 
-calender (from moon birth until moon birth), which means that the months 
+calendar (from moon birth until moon birth), which means that the months 
 jump around the year. So, for example, Ramadan, the fasting month, can 
 happen during winter or summer.
 </p><p>
-As for the Hebrew calender....
-It's a lunar calender, with a leap MONTH added once every three to four 
+As for the Hebrew calendar....
+It's a lunar calendar, with a leap MONTH added once every three to four 
 years, to make sure it doesn't drift too far away from the seasons. So 
-my birthday, which according to the Hebrew calender happens on the 21st 
+my birthday, which according to the Hebrew calendar happens on the 21st 
 of the SECOND Adar........
 </p><p>
 Then there is representation. Numerological letters are used. aleph 
@@ -324,7 +324,7 @@ on until 90, and then Kof means 100, and Taf (the last letter) means 400
  [<i>ed. note: 4 Hebrew characters</i>] 
 (Taf - 400 Shin- 300 Samech - 60 Daled -4, 764 altogether).
 </p><p>
-Of course, this is omiting the thousands. The real year is [<i>ed. note: more Hebrew characters</i>], or 
+Of course, this is omitting the thousands. The real year is [<i>ed. note: more Hebrew characters</i>], or 
 5764. I was never sure what it's counting from. Naturally, the months 
 are also displayed like that.
 </p><p>

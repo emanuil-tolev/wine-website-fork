@@ -793,7 +793,7 @@ has been done before with the ddraw code plus the enhancement I did.
           VTABLE_IDirect3D3 = {......,XCAST()IDirect3D_AddRef,....);<br />
           VTABLE_IDirect3D7 = {......,XCAST()IDirect3D_AddRef,....);
 	</code></ul></p><p>
-      Note that this is possible because the ICOM_OBJECT can retreive the object's pointer without
+      Note that this is possible because the ICOM_OBJECT can retrieve the object's pointer without
       knowing the interface involved.
 	</p>
 	</li>
@@ -851,7 +851,7 @@ has been done before with the ddraw code plus the enhancement I did.
 	</li>
   <li>Getting an specific interface of an object
 	<p>
-      With the <tt>ICOM_INTERFACE(implobj, ifacename)</tt> macro, any interfaces can be retreive from
+      With the <tt>ICOM_INTERFACE(implobj, ifacename)</tt> macro, any interfaces can be retrieved from
       an object.
 	<ul>
       <li>implobj   = pointer to the object</li>

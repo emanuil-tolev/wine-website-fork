@@ -13,7 +13,7 @@
   it's time to dig into more of his work and find out about
   Wine's DirectX support.  Lionel lives in Toulouse, France
   and works as a software engineer.  You can often find him on
-  irc helping people with various problems.  Yet, some how he 
+  irc helping people with various problems.  Yet, somehow he 
   still manages to climb, hike, snowboard, or virtually anything
   else that involves the outdoors.</p>
  </intro>
@@ -129,8 +129,8 @@ between interpreted and compiled languages.
  How do you go about developing this stuff?
 </p></question>
 <answer><p><i>Lionel:</i>
- The methods depend of the developer. In my case, I started first with some 
- demos from Microsoft's DirectX SDK's. When I implemented some very tricky 
+ The methods depend on the developer. In my case, I started first with some 
+ demos from Microsoft's DirectX SDK. When I implemented some very tricky 
  cases, like those in the Twist.exe demo, I found out that nobody ever used 
  them in any game. So I switched track and my current way of is to take an 
  application and fix all the bugs I find up until the time I am either 
@@ -170,13 +170,13 @@ ones I must have finished must be <i>Grim Fandango</i> and <i>Tomb Raider 2</i>.
 As for my favourite game, I think my fondest gaming memories are on
 adventure games like the <i>Monkey Island</i> series, <i>Day of the 
 Tentacle</i> or <i>Grim Fandango</i> I also have fond memories of <i>Tomb 
-Raider</i> (on my brand new top-of-line 3DFx card).
+Raider</i> (on my brand new top-of-the-line 3DFx card).
 </p><p>
 Currently I am sometimes playing with <i>GeneRally</i> (under Wine of course.) 
 It's a nice free racing car game, like <i>SkidMarks</i> for those who remember 
 it. It's exactly the kind of game that I can still play: you start it up and 
 can just play it for 5 minutes. You do not have all the investment that you 
-need to put in other kind of games just to progress. I once loved roleplaying 
+need to put in other kinds of games just to progress. I once loved roleplaying 
 games like <i>Eye of the Beholder</i> and <i>Dungeon Master</i> but I just do 
 not have the time anymore to play them.
 </p></answer>
@@ -237,7 +237,7 @@ DirectX APIs is that you only need a very limited knowledge of Win32.
 <answer><p><i>Lionel:</i>
 Well, the problem with OpenGL headers is that there are too many sources for
 them. Basically, NVIDIA ships one set of headers with their drivers, then
-you have the XFree headers, the Mesa headers, the one you can download on
+you have the XFree headers, the Mesa headers, the ones you can download on
 SGI's OpenGL site, etc.
 </p><p>
 After that, the problem we face is that we do not want to check at 'configure'
@@ -433,7 +433,7 @@ phase of stuff.
  This can incur significant overhead, especially because applications are
  not written with Wine's limitations in mind.
 </p><p>
- A part from that, in my opinion, as the granularity of the API is getting
+ Apart from that, in my opinion, as the granularity of the API is getting
  more and more coarse, the overhead is starting to get smaller. What I
  mean by that is, before one API call would be done pretty fast by the
  driver (basically, just draw one triangle). Now, with shaders, vertex
