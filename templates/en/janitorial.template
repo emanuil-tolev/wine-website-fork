@@ -306,18 +306,18 @@
   </ul>
 
   <h3>Remove non-standard directories</h3>
-  There are 15 directories that do not fit into the current organization. 
+  There are only 2 directories left that do not fit into the current organization.
   They are historical remnants of a troubled past, they need to go. 
   This is tightly linked to the <b>DLL Separation</b> task, listed above.
   <ul>
-    <li> controls
+    <li class=committed> controls
     <li> misc
     <li> windows
   </ul>
   <ul>
     <li>workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>.
     <li>status: <span class=inprogress>first patches committed.</span>
-    <li>updated: Mar 10, 2004
+    <li>updated: Sep 7, 2004
   </ul>
 
   <h3>Compile Wine with other headers</h3>
