@@ -130,7 +130,7 @@ function view_screenshots ($x)
 	$shots = get_files($file_root."/images/shots","png");
 
 	// setup vars
-	$total = count($shots);
+	$total = count($shots) + 1;
 	$num = 0;
 	$where = 0;
     $vars = array();
@@ -147,15 +147,15 @@ function view_screenshots ($x)
 		// display image
 		$vars['im_'.$num] = $html->ahref($html->img($file_root.'/images/shots/wine_'.$c.'.png'), $file_root.'/images/shots/full/wine_'.$c.'.png');
         
-		// count number of images displayed.
-		$num++;
-
 		// end at 9
 		if ($num == 9 or $num == $total)
 		{
 			$where = $c;
 			break;
 		}
+        
+        // count number of images displayed.
+		$num++;
 	}
     
 	// display prev link
