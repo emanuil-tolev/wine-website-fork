@@ -39,11 +39,14 @@ switch (true)
 }
 
 // display the page
+$page_title = $config->site_name;
+if ($html->template_title)
+    $page_title = $page_title." - ".$html->template_title;
 $html->page = $html->frame_table(
                                  $html->frame_tr($html->frame_td($text)),
                                  "99%", 0, ""
                                 );
-$html->showpage($config->theme, $config->site_name);
+$html->showpage($config->theme, $page_title);
 
 //done
 exit();
@@ -100,6 +103,7 @@ function view_announce ($announce)
     if ($announce = @join("",file($announce)))
     {
         // display page
+        $html->template_title = 'Announce';
         return $html->theme_box($config->theme, "box_title", 'Announce', "100%", $html->format_msg($announce), '10', 'white', 'topMenu');
     }
     $html->redirect($file_root);

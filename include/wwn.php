@@ -183,6 +183,7 @@ function wwn_view_issue($view)
     // view back issues
     if ($view == 'back')
     {
+        $html->template_title = 'WWN Back Issues';
         return $html->theme_box($config->theme, "box_title", 'WWN Back Issues', "100%", wwn_issues_list($wwn, $cur, 0, $pos), '10', 'white', 'topMenu');
     }
     
@@ -193,6 +194,9 @@ function wwn_view_issue($view)
 	// get issue
 	list($wwn_html, $summary, $issue) = wwn_xml_parse($config->wwn_xml_path."/".$wwn{$cur});
 	
+    // title
+    $html->template_title = 'WWN Issue #'.$cur;
+    
 	// get summary
 	$summary_box = wwn_format_summary($summary, $cur);
 	
