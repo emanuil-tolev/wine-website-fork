@@ -34,6 +34,10 @@ RedirectPermanent /howto/                       http://www.winehq.org/?page=howt
 RedirectPermanent /howto                        http://www.winehq.org/?page=howto
 RedirectPermanent /todo/                        http://www.winehq.org/?page=todo
 RedirectPermanent /todo                         http://www.winehq.org/?page=todo
+RedirectPermanent /cvs/                         http://www.winehq.org/?page=cvs
+RedirectPermanent /cvs                          http://www.winehq.org/?page=cvs
+RedirectPermanent /forums/                      http://www.winehq.org/?page=forums
+RedirectPermanent /forums                       http://www.winehq.org/?page=forums
 
 # redirect winehq services to appropriate web sites
 RedirectMatch ^/(APPS|Apps|apps)/$              http://appdb.winehq.org/
