@@ -121,24 +121,6 @@ FreeBSD
 
 <!-- Row 4 -->
 <tr>
-<td align=center rowspan="1" bgcolor="#e0e0e0">
-  Linux (glibc-2.2)
-</td>
-
-<td align=center bgcolor="#ffffff">
-  <b><a href="ftp://ftp.suse.com/pub/people/meissner/wine">SuSE / Marcus
-  Meissner</a></b>
-</td>
-<td bgcolor="#ffffff">
-  Regular Wine builds for SuSE 7.1 to 8.2. Maintained by Marcus
-  Mei&szlig;ner
-</td>
-<td align=center bgcolor="#ffffff"> .rpm </td>
-</tr>
-
-
-<!-- Row 5 -->
-<tr>
 <td align=center rowspan=3 bgcolor="#e0e0e0">
   Linux (glibc-2.1)
 </td>
@@ -155,6 +137,7 @@ FreeBSD
 <td align=center bgcolor="#ffffff"> .rpm </td>
 </tr>
 
+<!-- Row 5 -->
 <tr>
 <td align=center bgcolor="#ffffff">
   <b><a href="http://www.debian.org/Packages/unstable/otherosfs/wine.html">Debian</a></b>
