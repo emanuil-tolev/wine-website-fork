@@ -94,7 +94,10 @@ function home_page ()
 	
     // get regular news
     $news_box = $html->theme_box($config->theme, "box_title", "Latest News", "99%",  view_news('home'), '10', 'white', 'topMenu');
-    
+
+    // get random quote
+    $quote_box = $html->theme_box($config->theme, "box_title", "Quote", "99%",  view_quote(), '10', 'white', 'topMenu');
+
 	// get wwn news
     $wwn = new wwn();
 	$issues = $wwn->get_list($config->wwn_xml_path);
@@ -108,6 +111,7 @@ function home_page ()
 	              'about_box'   => $about_box,
                   'news_box'    => $news_box,
 			      'latest_box'  => $latest_box,
+                  'quote_box'   => $quote_box,
 			      'wwn_box'     => $wwn_box,
                   'sponsor_box' => $sponsor_box
 			     );
@@ -268,6 +272,13 @@ function view_screenshots ($x)
     
     // return the text
     return $html->theme_box($config->theme, "box_title", 'Screen Shots', "100%", $template, '10', 'white', 'topMenu');
+}
+
+// random quote
+function view_quote ()
+{
+    $quotes = split("\n",$GLOBALS[html]->template('base','quotes'));
+    return $quotes[rand(0,(count($quotes)-2))]; 
 }
 
 // end of file
