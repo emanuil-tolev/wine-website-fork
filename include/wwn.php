@@ -392,7 +392,8 @@ class wwn
               $this->body .= "<p><b>";
               break;
             case "ANSWER":
-              $this->body .= '<p class="indent"><span class="wwnQuote">';
+              $this->body .= '<span class="wwnQuote">';
+              $this->inquote = 1;
               break;
             case "TOPIC":
               $this->body .= "<b>";
@@ -458,6 +459,7 @@ class wwn
               break;
             case "ANSWER":
               $this->body .= "</span></p>";
+               $this->inquote = 0;
               break;
             case "TOPIC":
               $this->body .= "</b>";
