@@ -125,7 +125,7 @@ It shouldn't be too hard to fix, but I haven't had time yet. Volunteers are
 welcome...</quote>.  </p>
 
 <p>Ladislav dug a little deeper and discovered that the unknown driver 
-error has actually always been occuring, but the message only recently
+error has actually always been occurring, but the message only recently
 appeared because Alexandre had it printed out.  However, he found,
 <quote who="Ladislav Sladecek">
 The real reason for the crash is that the application calls Escape16 with
@@ -553,7 +553,7 @@ diff -u -r1.59 dib.c <br />
 </quote></p>
 
 <p>Uwe reported success.  And as a side note, that entire exchange of email
-from bug report to patch occured over the span of about 1.5 hours on Thursday.</p>
+from bug report to patch occurred over the span of about 1.5 hours on Thursday.</p>
 
 </section>
 

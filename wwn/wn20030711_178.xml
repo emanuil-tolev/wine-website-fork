@@ -114,13 +114,13 @@ I've been looking at the various efforts over the years to speed up wineserver
 or eliminate it altogether (by substituting a kernel service). Certainly the 
 current degree of reliance on a separate process that is scheduled according 
 to the operating system's own priorities creates significant speed problems. 
-Some of this migh be alleviated by boosting the priority of the wineserver 
+Some of this might be alleviated by boosting the priority of the wineserver 
 process or by making it a real time task, but there are still some operations 
 it appears to be performing some operations that result in a yield and hence 
 subject it to another wait in the queue for at least one time slice.
 </p><p>
 Even if the wineserver itself could be sped up in this way, individual 
-processes would stull be subjected to time waiting in the queue after they 
+processes would still be subjected to time waiting in the queue after they 
 make a request of wineserver. The problem becomes more severe on a heavily 
 loaded system.
 </p><p>
@@ -140,7 +140,7 @@ The approaches suggested so far:
 Other possible approaches that I haven't seen directly discussed on the 
 wine-devel list:
 <dl>
-	<dt>An exokernel using the x86 multiring capability</dt>
+	<dt>An exokernel using the x86 multi-ring capability</dt>
 
 		<dd>Not portable to non-x86 architectures.</dd>
 
@@ -279,7 +279,7 @@ concern. And it wouldn't be trying to do too much.
 <topic>RPC / COM / OLE</topic>
 <p>Mike Hearn had some <s>rants</s> ..er.. questions about OLE:</p>
 <quote who="Mike Hearn"><p>
-I was wondering whether anybody with experience working with microsofts
+I was wondering whether anybody with experience working with microsoft's
 ole implementation (win98 version) could answer these questions:
 </p><p>
 Firstly, does anybody know what it does during thread detach? Its
@@ -289,7 +289,7 @@ seems to use for IPC, and terminates cleanly. With my IE-in-java app, it
 goes into a message loop, processes some messages then blocks waiting.
 It never drops out of the message loop.
 </p><p>
-Secondly, does anybody know what is missing from Wines built in OLE
+Secondly, does anybody know what is missing from Wine's built in OLE
 implementation for it to be used for IE embedded? I've tried using it,
 and other than a couple of bugs in the GIT (which I will try and send a
 patch for soon), it seems to get stuck in ITypeInfo::Dispatch() and ends
@@ -302,7 +302,7 @@ they don't service the message queue in threads that use OLE. Windows
 has had other forms of IPC for years, I can't see the logic behind using
 the limited and broken message passing scheme for it.
 </p><p>
-Wierdly enough, wines built in OLE seems to work OK for iexplore.exe
+Weirdly enough, wine's built in OLE seems to work OK for iexplore.exe
 itself, which iirc simply embeds the ActiveX control like any other
 program. So, maybe it's just a strange little bug that is stopping it
 from working.
@@ -393,7 +393,7 @@ support has been released. It can be downloaded from:
 <p>Steven asked,
 <quote who="Steven Edwards">
  Is there anyway this could be of use to WINEgcc? I figure not but I wanted to ask as it might not
- ever get merged in to GCC-HEAD. I dont think so but if anyone is still interested in SEH for WINE
+ ever get merged in to GCC-HEAD. I don't think so but if anyone is still interested in SEH for WINE
  and Winelib its worth a look at least.</quote></p>
 
 

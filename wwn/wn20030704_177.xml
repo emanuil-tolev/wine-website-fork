@@ -165,7 +165,7 @@ uses a set of filters that perform specific tasks such as opening and
 closing a file, decompressing a stream, etc.  These filters are strung
 together forming a <i>filter graph</i>.  Part of the DirectX API specifies
 making calls into an interface that manages the filter graph (not surprisingly
-this is refered to as the Filter Graph Manager.)  </p>
+this is referred to as the Filter Graph Manager.)  </p>
 
 <p>So how does an application actually play a file?  First, an instance
 of the Filter Graph Manager is created.  The Filter Graph Manager then
@@ -277,7 +277,7 @@ This is the commit:
  	the selection</li>
  	<li> add 1 second *minimum* time lapse between XSelectionOwner calls</li>
  	<li> sync clipboard ownership between different wine processes</li>
- 	<li> prevents apps from getting into wierd state where they thought they
+ 	<li> prevents apps from getting into weird state where they thought they
  	didn't own the selection but they did and as a result queried
  	themselves for available selection data</li></ul></code></ul></p><p>
  
