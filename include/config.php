@@ -53,6 +53,8 @@ class config
                                             'Sending Patches' => $this->_file_root.'?page=sending_patches',
                                             'To Do Lists' => $this->_file_root.'?page=todo_lists',
                                             'Fun Projects' => $this->_file_root.'?page=fun_projects',
+                                            'Janitorial' => $this->_file_root.'?page=janitorial',
+                                            'Winelib' => $this->_file_root.'?page=winelib',
                                             'Status' => $this->_file_root.'?page=status',
                                             'Resources' => $this->_file_root.'?page=resources'
 										   ),

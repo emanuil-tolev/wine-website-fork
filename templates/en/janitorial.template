@@ -1,0 +1,613 @@
+<!--TITLE:[Janitorial Projects]-->
+
+<style type="text/css">
+    <!--
+    .todo {background-color: red}
+    .inprogress {background-color: yellow}
+    .done {background-color: limegreen}
+    .modified {font-weight: bold}
+    .submitted {font-style: italic}
+    .committed {font-style: italic; color: gray}
+    .invalid {color: gray; text-decoration: line-through}
+    -->
+</style>
+
+
+<h1>Janitorial Projects</h1>
+
+  Any self respecting project has a Janitorial project 
+  (e.g. <a href="http://www.sourceforge.net/projects/kernel-janitor">Kernel Janitor's List</a>),
+  and it's high time that we've got one too.
+  What is there to clean up? Well, lot's of things! :)
+
+  <h2>Tools</h2>
+
+  <h3>Smatch</h3>
+  From <a href="mailto:mstefani@redhat.com">Michael Stefaniuc</a>: <br>
+  Smatch (<a href="http://smatch.sourceforge.net/">smatch.sourceforge.net</a>)
+  is basicaly a patch to gcc-3.1.1 that makes the gcc dump out it's
+  internal represantation of the code and a set of perl modules/scripts to
+  ease the parsing of the dumped code. Most of the perl scripts are for
+  the Linux Kernel but writing new scripts seems to be easy. I wrote
+  (well, mostly adapted an existing script for the kernel) 
+  <a href="http://people.redhat.com/mstefani/wine/smatch/enter_leave.pl">one script</a>
+
+  (if we decide to adopt smatch it should probably go to <tt>$wine/tools/smatch/</tt>)
+  to find code paths with missing <tt>LeaveCriticalSection</tt>'s. Scripts to find
+  some other useful things like fd, DC, GDI obejects leaks should be easy to write.
+  <p><strong>Update</strong>:<br>
+  There's a new <a href="http://people.redhat.com/mstefani/wine/smatch/">web page</a> 
+  about Wine and Smatch. It includes also a table with the bugs found by the smatch 
+  scripts. I could need a hand with the bugs (status BUG, UKNOWN) cause I don't know
+  how to fix them correctly (and for some locking BUG's i am not sure that they are 
+  real bugs).
+
+  <h2>Cross-calls that are Just Wrong (TM)</h2>
+  The inspiration for the next two projects comes from our
+  Perl hacker extraordinaire, <a href="mailto:ps@leissner.se">Patrik Stridvall</a>.
+  More to the point, a few days back I've asked him:
+  <br><i>...what would it take to add checks for calls to 16bit funcs from 32bit funcs,
+     and from Unicode funcs to ANSI funcs?</i>
+
+  <br>He promptly replied:
+  <br><i>It is already done. Years ago. :-)</i>
+
+  <h3>Get rid of 32->16 calls</h3>
+  We should not call 16 bit from 32 bit code. With the ongoing 16-bit
+  separation, this is even more so important.  Here's the result of 
+  <tt>tools/winapi_check/winapi_check --none --progress --cross-call-win32-win16</tt>
+  (as of Nov 29, 2002):
+  <ul>
+    <li class=committed>dlls/wineps/driver.c: wineps: PSDRV_DeviceCapabilities: illegal call to PSDRV_DeviceCapabilities16
+    <li class=committed>dlls/wineps/driver.c: wineps: PSDRV_ExtDeviceMode: illegal call to PSDRV_ExtDeviceMode16
+    <li class=invalid>loader/ne/resource.c: krnl386.exe &amp; kernel32: NE_DefResourceHandler: illegal call to AllocResource16
+    <li class=invalid>loader/module.c: kernel32: WIN32_GetProcAddress16: illegal call to GetProcAddress16
+    <li class=invalid>loader/ne/module.c: krnl386.exe &amp; kernel32: FreeLibrary16: illegal call to FreeModule16
+    <li class=invalid>loader/task.c: krnl386.exe &amp; kernel32: SetThreadQueue16: illegal call to SetTaskQueue16
+    <li class=invalid>memory/global.c: krnl386.exe &amp; kernel32: GlobalFix16: illegal call to GlobalHandleToSel16
+    <li class=invalid>memory/global.c: krnl386.exe &amp; kernel32: GlobalReAlloc16: illegal call to GlobalHandleToSel16
+    <li class=invalid>memory/global.c: krnl386.exe &amp; kernel32: GlobalWire16: illegal call to WIN16_GlobalLock16
+    <li class=invalid>memory/global.c: kernel32: K32WOWGlobalLock16: illegal call to WIN16_GlobalLock16
+    <li class=invalid>memory/selector.c: krnl386.exe &amp; kernel32: IsBadReadPtr16: illegal call to IsBadHugeReadPtr16
+    <li class=invalid>windows/winproc.c: user.exe &amp; user32: CallWindowProc16: illegal call to __wine_call_wndproc_32A
+    <li class=invalid>windows/winproc.c: user.exe &amp; user32: CallWindowProc16: illegal call to __wine_call_wndproc_32W
+  </ul>
+
+  <ul>
+    <li>workers: <a href="mailto:hughes2002@btinternet.com">Andrew John Hughes</a>
+    <li>status: <span class=done>First patch committed.</span>
+    <li>updated: Jan 31, 2003
+  </ul>
+
+  <h3>Get rid of W->A calls</h3>
+
+  We should not call ASCII functions from Unicode functions. 
+  The ASCII to Unicode conversion is lossy; moreover, with the
+  shift to Unicode, it's actually slower to deal in ASCII than
+  in Unicode, because of the additional conversions required.
+  There are 142 cross calls from Unicode to ANSI as reported by
+  <tt>tools/winapi_check/winapi_check --none --progress --cross-call-unicode-ascii</tt>
+  (as of Nov 29, 2002):
+  <ul>
+    <li class=committed>controls/menu.c: user32: LoadMenuIndirectW: illegal call to LoadMenuIndirectA
+    <li>dlls/advapi32/crypt.c: advapi32: CryptAcquireContextW: illegal call to CryptAcquireContextA
+    <li>dlls/advapi32/crypt.c: advapi32: CryptEnumProviderTypesW: illegal call to CryptEnumProviderTypesA
+    <li>dlls/advapi32/crypt.c: advapi32: CryptEnumProvidersW: illegal call to CryptEnumProvidersA
+    <li>dlls/advapi32/crypt.c: advapi32: CryptGetDefaultProviderW: illegal call to CryptGetDefaultProviderA
+    <li>dlls/advapi32/crypt.c: advapi32: CryptSetProviderExW: illegal call to CryptSetProviderExA
+    <li class=committed>dlls/advapi32/registry.c: advapi32: RegConnectRegistryW: illegal call to RegOpenKeyA
+    <li class=committed>dlls/advapi32/registry.c: advapi32: RegSaveKeyW: illegal call to HEAP_strdupWtoA
+    <li class=committed>dlls/advapi32/registry.c: advapi32: RegSaveKeyW: illegal call to RegSaveKeyA
+    <li class=committed>dlls/advapi32/service.c: advapi32: StartServiceCtrlDispatcherW: illegal call to OpenSemaphoreA
+    <li class=committed>dlls/advapi32/service.c: advapi32: StartServiceW: illegal call to CreateProcessA
+    <li class=committed>dlls/advapi32/service.c: advapi32: StartServiceW: illegal call to CreateSemaphoreA
+    <li class=committed>dlls/advapi32/service.c: advapi32: StartServiceW: illegal call to ExpandEnvironmentStringsA
+    <li class=committed>dlls/advapi32/service.c: advapi32: StartServiceW: illegal call to OpenSemaphoreA
+    <li class=committed>dlls/advapi32/service.c: advapi32: StartServiceW: illegal call to RegQueryValueExA
+    <li class=committed>dlls/comctl32/imagelist.c: comctl32: ImageList_LoadImageW: illegal call to GetObjectA
+    <li class=committed>dlls/commdlg/filetitle.c: comdlg32: GetFileTitleW: illegal call to GetFileTitleA
+    <li class=committed>dlls/commdlg/filetitle.c: comdlg32: GetFileTitleW: illegal call to HEAP_strdupWtoA
+    <li class=invalid>dlls/commdlg/fontdlg.c: comdlg32: ChooseFontW: illegal call to HEAP_strdupWtoA
+    <li class=committed>dlls/commdlg/printdlg.c: comdlg32: PrintDlgW: illegal call to GetWindowLongA
+    <li>dlls/ddraw/main.c: ddraw: DirectDrawEnumerateExW: illegal call to DirectDrawEnumerateExA
+    <li class=committed>dlls/gdi/enhmfdrv/init.c: gdi32: CreateEnhMetaFileW: illegal call to CreateDCA
+    <li class=submitted>dlls/gdi/mfdrv/init.c: gdi32: CreateMetaFileW: illegal call to CreateMetaFileA
+    <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to HEAP_strdupWtoA
+    <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to StartDocA
+    <li class=committed>dlls/imm32/imm.c: imm32: ImmGetCompositionStringW: illegal call to GetVersionExA
+    <li>dlls/kernel/comm.c: kernel32: BuildCommDCBAndTimeoutsW: illegal call to BuildCommDCBAndTimeoutsA
+    <li>dlls/kernel/comm.c: kernel32: BuildCommDCBAndTimeoutsW: illegal call to HEAP_strdupWtoA
+    <li>dlls/kernel/comm.c: kernel32: CommConfigDialogW: illegal call to CommConfigDialogA
+    <li>dlls/kernel/comm.c: kernel32: CommConfigDialogW: illegal call to HEAP_strdupWtoA
+    <li>dlls/kernel/comm.c: kernel32: GetDefaultCommConfigW: illegal call to GetDefaultCommConfigA
+    <li>dlls/kernel/comm.c: kernel32: GetDefaultCommConfigW: illegal call to HEAP_strdupWtoA
+    <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to HEAP_strdupWtoA
+    <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to SetDefaultCommConfigA
+    <li>dlls/kernel/format_msg.c: kernel32: FormatMessageW: illegal call to GetModuleHandleA
+    <li>dlls/kernel/format_msg.c: kernel32: FormatMessageW: illegal call to HEAP_strdupWtoA
+    <li>dlls/kernel/format_msg.c: kernel32: FormatMessageW: illegal call to load_messageA
+    <li>dlls/kernel/locale.c: kernel32: GetLocaleInfoW: illegal call to GetModuleHandleA
+    <li>dlls/kernel/sync.c: kernel32: WaitNamedPipeW: illegal call to CreateEventA
+    <li>dlls/lzexpand/lzexpand_main.c: lz32: LZOpenFileW: illegal call to LZOpenFileA
+    <li>dlls/mpr/wnet.c: mpr: WNetGetConnectionW: illegal call to WNetGetConnectionA
+    <li>dlls/rpcrt4/rpc_binding.c: rpcrt4: RpcBindingToStringBindingW: illegal call to RpcBindingToStringBindingA
+    <li>dlls/rpcrt4/rpc_binding.c: rpcrt4: RpcBindingToStringBindingW: illegal call to RpcStringFreeA
+    <li>dlls/rpcrt4/rpc_server.c: rpcrt4: RpcServerUseProtseqEpExW: illegal call to RPCRT4_strdupWtoA
+    <li class=committed>dlls/shell32/brsfolder.c: shell32: SHBrowseForFolderW: illegal call to DialogBoxParamA
+    <li class=committed>dlls/shell32/iconcache.c: shell32: ExtractIconExW: illegal call to ExtractIconExA
+    <li class=committed>dlls/shell32/iconcache.c: shell32: ExtractIconExW: illegal call to HEAP_strdupWtoA
+    <li class=committed>dlls/shell32/pidl.c: shell32: SHGetPathFromIDListW: illegal call to SHGetPathFromIDListA
+    <li class=committed>dlls/shell32/shell32_main.c: shell32: ExtractIconW: illegal call to ExtractIconA
+    <li class=committed>dlls/shell32/shell32_main.c: shell32: ExtractIconW: illegal call to HEAP_strdupWtoA
+    <li class=committed>dlls/shell32/shell32_main.c: shell32: SHGetFileInfoW: illegal call to SHGetFileInfoA
+    <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to DialogBoxIndirectParamA
+    <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to HEAP_strdupWtoA
+    <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to LoadIconA
+    <li>dlls/shell32/shellole.c: shell32: DragQueryFileW: illegal call to DragQueryFileA
+    <li>dlls/shell32/shlexec.c: shell32: ShellExecuteExW: illegal call to HEAP_strdupWtoA
+    <li>dlls/shell32/shlexec.c: shell32: ShellExecuteExW: illegal call to ShellExecuteExA
+    <li>dlls/shell32/systray.c: shell32: Shell_NotifyIconW: illegal call to Shell_NotifyIconA
+    <li>dlls/shlwapi/string.c: shlwapi: StrCmpLogicalW: illegal call to SHLWAPI_ChrCmpHelperA
+    <li>dlls/shlwapi/string.c: shlwapi: StrFormatByteSizeW: illegal call to StrFormatByteSize64A
+    <li>dlls/shlwapi/string.c: shlwapi: StrRetToStrW: illegal call to SHStrDupA
+    <li>dlls/version/info.c: version: GetFileVersionInfoSizeW: illegal call to GetFileVersionInfoSizeA
+    <li>dlls/version/install.c: version: VerInstallFileW: illegal call to VerInstallFileA
+    <li>dlls/wininet/ftp.c: wininet: FtpCreateDirectoryW: illegal call to FtpCreateDirectoryA
+    <li>dlls/wininet/ftp.c: wininet: FtpSetCurrentDirectoryW: illegal call to FtpSetCurrentDirectoryA
+    <li>dlls/wininet/http.c: wininet: HttpOpenRequestW: illegal call to HttpOpenRequestA
+    <li>dlls/wininet/http.c: wininet: HttpQueryInfoW: illegal call to HttpQueryInfoA
+    <li>dlls/wininet/http.c: wininet: HttpSendRequestW: illegal call to HttpSendRequestA
+    <li>dlls/wininet/internet.c: wininet: InternetCheckConnectionW: illegal call to InternetCheckConnectionA
+    <li>dlls/wininet/internet.c: wininet: InternetConnectW: illegal call to InternetConnectA
+    <li>dlls/wininet/internet.c: wininet: InternetOpenUrlW: illegal call to InternetOpenUrlA
+    <li>dlls/wininet/internet.c: wininet: InternetOpenW: illegal call to InternetOpenA
+    <li>dlls/winmm/driver.c: winmm: OpenDriverW: illegal call to HEAP_strdupWtoA
+    <li>dlls/winmm/driver.c: winmm: OpenDriverW: illegal call to OpenDriverA
+    <li>dlls/winmm/joystick.c: winmm: joyGetDevCapsW: illegal call to joyGetDevCapsA
+    <li>dlls/winmm/mci.c: winmm: mciSendStringW: illegal call to mciSendStringA
+    <li>dlls/winmm/mmio.c: winmm: mmioOpenW: illegal call to HEAP_strdupWtoA
+    <li>dlls/winmm/mmio.c: winmm: mmioRenameW: illegal call to HEAP_strdupWtoA
+    <li>dlls/winmm/mmio.c: winmm: mmioRenameW: illegal call to mmioRenameA
+    <li>dlls/winmm/mmio.c: winmm: mmioStringToFOURCCW: illegal call to HEAP_strdupWtoA
+    <li>dlls/winmm/mmio.c: winmm: mmioStringToFOURCCW: illegal call to mmioStringToFOURCCA
+    <li>dlls/winmm/winmm.c: winmm: auxGetDevCapsW: illegal call to auxGetDevCapsA
+    <li>dlls/winmm/winmm.c: winmm: mciGetDeviceIDW: illegal call to HEAP_strdupWtoA
+    <li>dlls/winmm/winmm.c: winmm: mciGetErrorStringW: illegal call to mciGetErrorStringA
+    <li>dlls/winmm/winmm.c: winmm: midiInGetDevCapsW: illegal call to midiInGetDevCapsA
+    <li>dlls/winmm/winmm.c: winmm: midiOutGetDevCapsW: illegal call to midiOutGetDevCapsA
+    <li>dlls/winmm/winmm.c: winmm: mixerGetControlDetailsW: illegal call to mixerGetControlDetailsA
+    <li>dlls/winmm/winmm.c: winmm: mixerGetDevCapsW: illegal call to mixerGetDevCapsA
+    <li>dlls/winmm/winmm.c: winmm: mixerGetLineControlsW: illegal call to mixerGetLineControlsA
+    <li>dlls/winmm/winmm.c: winmm: mixerGetLineInfoW: illegal call to mixerGetLineInfoA
+    <li>dlls/winmm/winmm.c: winmm: waveInGetDevCapsW: illegal call to waveInGetDevCapsA
+    <li>dlls/winmm/winmm.c: winmm: waveOutGetDevCapsW: illegal call to waveOutGetDevCapsA
+    <li>dlls/winspool/info.c: winspool.drv: AddPrinterW: illegal call to DEVMODEdupWtoA
+    <li>dlls/winspool/info.c: winspool.drv: AddPrinterW: illegal call to RegSetValueExA
+    <li>dlls/winspool/info.c: winspool.drv: DeviceCapabilitiesW: illegal call to DEVMODEdupWtoA
+    <li>dlls/winspool/info.c: winspool.drv: DeviceCapabilitiesW: illegal call to DeviceCapabilitiesA
+    <li>dlls/winspool/info.c: winspool.drv: DeviceCapabilitiesW: illegal call to HEAP_strdupWtoA
+    <li>dlls/winspool/info.c: winspool.drv: DocumentPropertiesW: illegal call to DEVMODEdupWtoA
+    <li>dlls/winspool/info.c: winspool.drv: DocumentPropertiesW: illegal call to DocumentPropertiesA
+    <li>dlls/winspool/info.c: winspool.drv: DocumentPropertiesW: illegal call to HEAP_strdupWtoA
+    <li>dlls/winspool/info.c: winspool.drv: GetDefaultPrinterW: illegal call to GetDefaultPrinterA
+    <li class=submitted>dlls/winspool/info.c: winspool.drv: GetPrinterDriverDirectoryW: illegal call to GetPrinterDriverDirectoryA
+    <li class=submitted>dlls/winspool/info.c: winspool.drv: GetPrinterDriverDirectoryW: illegal call to HEAP_strdupWtoA
+    <li>files/dos_fs.c: kernel32: QueryDosDeviceW: illegal call to HEAP_strdupWtoA
+    <li>files/dos_fs.c: kernel32: QueryDosDeviceW: illegal call to QueryDosDeviceA
+    <li class=committed>files/drive.c: kernel32: GetDiskFreeSpaceExW: illegal call to GetDiskFreeSpaceExA
+    <li class=committed>files/drive.c: kernel32: GetDiskFreeSpaceExW: illegal call to HEAP_strdupWtoA
+    <li class=committed>files/profile.c: kernel32: GetPrivateProfileIntW: illegal call to GetPrivateProfileIntA
+    <li class=committed>files/profile.c: kernel32: GetPrivateProfileIntW: illegal call to HEAP_strdupWtoA
+    <li>loader/module.c: kernel32: GetBinaryTypeW: illegal call to GetBinaryTypeA
+    <li>loader/module.c: kernel32: GetBinaryTypeW: illegal call to HEAP_strdupWtoA
+    <li class=committed>loader/module.c: kernel32: GetModuleFileNameW: illegal call to GetModuleFileNameA
+    <li>loader/module.c: kernel32: GetModuleHandleW: illegal call to GetModuleHandleA
+    <li>loader/module.c: kernel32: GetModuleHandleW: illegal call to HEAP_strdupWtoA
+    <li>loader/module.c: kernel32: LoadLibraryExW: illegal call to HEAP_strdupWtoA
+    <li>loader/module.c: kernel32: LoadLibraryExW: illegal call to LoadLibraryExA
+    <li>memory/environ.c: kernel32: ExpandEnvironmentStringsW: illegal call to ExpandEnvironmentStringsA
+    <li>memory/environ.c: kernel32: ExpandEnvironmentStringsW: illegal call to HEAP_strdupWtoA
+    <li>memory/environ.c: kernel32: GetEnvironmentVariableW: illegal call to GetEnvironmentVariableA
+    <li>memory/environ.c: kernel32: GetEnvironmentVariableW: illegal call to HEAP_strdupWtoA
+    <li>memory/environ.c: kernel32: SetEnvironmentVariableW: illegal call to HEAP_strdupWtoA
+    <li>memory/environ.c: kernel32: SetEnvironmentVariableW: illegal call to SetEnvironmentVariableA
+    <li>objects/dc.c: gdi32: CreateDCW: illegal call to CreateDCA
+    <li>objects/dc.c: gdi32: CreateDCW: illegal call to HEAP_strdupWtoA
+    <li>objects/dc.c: gdi32: ResetDCW: illegal call to ResetDCA
+    <li>objects/font.c: gdi32: GetKerningPairsW: illegal call to GetKerningPairsA
+    <li class=submitted>objects/metafile.c: gdi32: CopyMetaFileW: illegal call to CopyMetaFileA
+    <li>scheduler/process.c: kernel32: CreateProcessW: illegal call to CreateProcessA
+    <li>scheduler/process.c: kernel32: CreateProcessW: illegal call to HEAP_strdupWtoA
+    <li>win32/except.c: kernel32: FatalAppExitW: illegal call to GetModuleHandleA
+    <li>windows/clipboard.c: user32: GetClipboardFormatNameW: illegal call to GetClipboardFormatNameA
+    <li>windows/clipboard.c: user32: RegisterClipboardFormatW: illegal call to HEAP_strdupWtoA
+    <li>windows/clipboard.c: user32: RegisterClipboardFormatW: illegal call to RegisterClipboardFormatA
+    <li>windows/input.c: user32: GetKeyNameTextW: illegal call to GetKeyNameTextA
+    <li>windows/input.c: user32: GetKeyboardLayoutNameW: illegal call to GetKeyboardLayoutNameA
+    <li>windows/input.c: user32: MapVirtualKeyExW: illegal call to MapVirtualKeyA
+    <li>windows/input.c: user32: MapVirtualKeyW: illegal call to MapVirtualKeyA
+    <li>windows/input.c: user32: VkKeyScanExW: illegal call to VkKeyScanA
+    <li>windows/input.c: user32: VkKeyScanW: illegal call to VkKeyScanA
+    <li>windows/sysparams.c: user32: SystemParametersInfoW: illegal call to SystemParametersInfoA
+    <li>windows/winhelp.c: user32: WinHelpW: illegal call to WinHelpA
+    <li>windows/winproc.c: user32: CallWindowProcW: illegal call to WINPROC_CallProc32WTo32A
+  </ul>
+
+  <p>Please note that patches have been submitted for the <span class=submitted>italic</span> entries;
+     the <span class=committed>grayed out</span> entries have already been fixed. 
+  <ul>
+    <li>workers: <a href="mailto:rolf.kalbermatter@citeng.com">Rolf Kalbermatter</a>,
+		 <a href="nailto:Stefan.Leichter@camLine.com">Stefan Leichter</a>,
+		 <a href="mailto:m.davison@virgin.net">Matthew Davison</a>,
+		 <a href="mailto:tony_lambregts@telusplanet.net">Tony Lambregts</a>.
+    <li>status: <span class=inprogress>first patches submitted</span>
+
+    <li>updated: Dec 2, 2002
+  </ul>
+
+  <h2>DLL separation</h2>
+  This one is broken down into two phases:
+  <dl>
+    <dt>Phase 1</dt>
+    <dd>DLLs make use of only the functions exported through the <tt>.spec</tt> files</dd>
+
+    <dt>Phase 2</dt>
+    <dd>Temporary hacks are eliminated out of the <tt>.spec</tt> files</dd>
+  </dl>
+
+  <h3>Phase 1</h3>
+  Please refer to the 
+  <a href="http://www.dssd.ca/wine/Wine-0.9-TODO.html">0.9 TODO</a>
+
+  for the status of this project.
+
+  <h3>Phase 2</h3>
+  A list of the functions that need attention can be found linked to
+  <a href="http://bugs.winehq.com/show_bug.cgi?id=96">Bug #96</a>,
+  or at the end of the <tt>.spec</tt> files.
+
+  <a name="winedos"></a><h3>WineDOS</h3>
+  Separate MSDOS support from kernel/ntdll into winedos. This task is
+  tracked by <a href="http://bugs.winehq.com/show_bug.cgi?id=546">Bug #546</a>.
+  <ul>
+
+    <li>worker: <a href="mailto:jhei@iki.fi">Jukka Heinonen</a>,
+    <li>status: <span class=inprogress>lots of patches submitted</span>
+    <li>updated: Jan 29, 2003
+  </ul>
+
+  <h2>Stick to the Win32 API</h2>
+  There are <em>many</em> reasons why we should use the Win32 API as much
+  as possible inside Wine, rather than our own, ad-hoc API. Here are a few:
+  <ul>
+
+    <li>The Win32 API is documented, and understood by many people
+    <li>It is <em>always</em> available, so introducing additional APIs only increases confusion
+    <li>The Win32 API get a lot more testing, as it is now used a lot more
+  </ul>
+  This can go on, and on, but I think the point is clear. The following tasks
+  fall into this category.
+
+  <h3>Getting rid of the global HEAP_strdup{AtoW,WtoA} functions</h3>
+  As of Dec 4, 2002, there are 98 occurences of <tt>HEAP_strdupWtoA</tt>,
+  and 54 occurences of <tt>HEAP_strdupAtoW</tt>.
+  
+  <h4><tt>HEAP_strdupWtoA</tt></h4>
+
+  These functions invocations should go away during the W -&gt; A cross-call
+  cleanup. It is better to directly fix that sort of cross call, rather than
+  replace this function by other alternatives. The few of them that can not
+  be eliminated this way, should be replaced by calls to <tt>WideCharToMultiByte</tt>.
+
+  <h4><tt>HEAP_strdupAtoW</tt></h4>
+  These should be changed to <tt>MultiByteToWideChar</tt>,
+  or even better <tt>RtlCreateUnicodeStringFromAsciiz</tt>:
+  <ul>
+    <li class=committed> dlls/advapi32/eventlog.c:    LPWSTR lpUNCServerNameW = HEAP_strdupAtoW(GetProcessHeap(),0,lpUNCServerName);
+    <li class=committed> dlls/advapi32/eventlog.c:    LPWSTR lpSourceNameW = HEAP_strdupAtoW(GetProcessHeap(),0,lpSourceName);
+    <li class=committed> dlls/advapi32/registry.c:    LPWSTR lpFileW = HEAP_strdupAtoW( GetProcessHeap(), 0, lpFile );
+    <li class=committed> dlls/advapi32/registry.c:    LPWSTR lpSubKeyW = HEAP_strdupAtoW( GetProcessHeap(), 0, lpSubKey );
+    <li class=committed> dlls/advapi32/registry.c:    LPWSTR lpSubKeyW = HEAP_strdupAtoW( GetProcessHeap(), 0, lpSubKey );
+    <li class=committed> dlls/advapi32/registry.c:    LPWSTR lpNewFileW = HEAP_strdupAtoW( GetProcessHeap(), 0, lpNewFile );
+    <li class=committed> dlls/advapi32/registry.c:    LPWSTR lpOldFileW = HEAP_strdupAtoW( GetProcessHeap(), 0, lpOldFile );
+    <li class=committed> dlls/advapi32/registry.c:    LPWSTR machineW = HEAP_strdupAtoW( GetProcessHeap(), 0, machine );
+    <li class=committed> dlls/advapi32/security.c:    LPWSTR lpSystemNameW = HEAP_strdupAtoW(GetProcessHeap(), 0, lpSystemName);
+    <li class=committed> dlls/advapi32/security.c:    LPWSTR lpNameW = HEAP_strdupAtoW(GetProcessHeap(), 0, lpName);
+    <li class=committed> dlls/advapi32/security.c:           RtlInitUnicodeString(&amp;(xdi-&gt;ppdi.Name), HEAP_strdupAtoW(GetProcessHeap(),0,"DOMAIN"));
+    <li class=committed> dlls/advapi32/service.c:    LPWSTR lpMachineNameW = HEAP_strdupAtoW(GetProcessHeap(),0,lpMachineName);
+    <li class=committed> dlls/advapi32/service.c:    LPWSTR lpDatabaseNameW = HEAP_strdupAtoW(GetProcessHeap(),0,lpDatabaseName);
+    <li class=committed> dlls/advapi32/service.c:    LPWSTR lpServiceNameW = HEAP_strdupAtoW(GetProcessHeap(),0,lpServiceName);
+    <li class=committed> dlls/advapi32/service.c:        lpwstr[i]=HEAP_strdupAtoW(GetProcessHeap(), 0, lpServiceArgVectors[i]);
+    <li class=committed> dlls/commdlg/filedlg.c:        ofnW-&gt;lpstrInitialDir = HEAP_strdupAtoW(GetProcessHeap(),0,ofnA-&gt;lpstrInitialDir);
+    <li class=committed> dlls/commdlg/filedlg.c:    ofnW-&gt;lpstrTitle = HEAP_strdupAtoW(GetProcessHeap(),0, str);
+    <li class=committed> dlls/commdlg/filedlg.c:            ofnW-&gt;lpTemplateName = HEAP_strdupAtoW(GetProcessHeap(), 0, ofnA-&gt;lpTemplateName);
+    <li class=committed> dlls/oleaut32/variant.c:      pNewString = HEAP_strdupAtoW( GetProcessHeap(), 0, strIn );
+    <li class=committed> dlls/user/hook.c:            csW.lpszName = HEAP_strdupAtoW( GetProcessHeap(), 0, cbtcwA-&gt;lpcs-&gt;lpszName );
+    <li class=committed> dlls/user/hook.c:            csW.lpszClass = HEAP_strdupAtoW( GetProcessHeap(), 0, cbtcwA-&gt;lpcs-&gt;lpszClass );
+    <li class=committed> dlls/winmm/mmsystem.c:    LPCWSTR     ptr = HEAP_strdupAtoW(GetProcessHeap(), 0, resname);
+    <li class=committed> dlls/winmm/playsound.c:            wps-&gt;pszSound = HEAP_strdupAtoW(GetProcessHeap(), 0, pszSound);
+    <li class=committed> dlls/winspool/info.c:    piW-&gt;pServerName = HEAP_strdupAtoW(heap, 0, piA-&gt;pServerName);
+    <li class=committed> dlls/winspool/info.c:    piW-&gt;pPrinterName = HEAP_strdupAtoW(heap, 0, piA-&gt;pPrinterName);
+    <li class=committed> dlls/winspool/info.c:    piW-&gt;pShareName = HEAP_strdupAtoW(heap, 0, piA-&gt;pShareName);
+    <li class=committed> dlls/winspool/info.c:    piW-&gt;pPortName = HEAP_strdupAtoW(heap, 0, piA-&gt;pPortName);
+    <li class=committed> dlls/winspool/info.c:    piW-&gt;pDriverName = HEAP_strdupAtoW(heap, 0, piA-&gt;pDriverName);
+    <li class=committed> dlls/winspool/info.c:    piW-&gt;pComment = HEAP_strdupAtoW(heap, 0, piA-&gt;pComment);
+    <li class=committed> dlls/winspool/info.c:    piW-&gt;pLocation = HEAP_strdupAtoW(heap, 0, piA-&gt;pLocation);
+    <li class=committed> dlls/winspool/info.c:    piW-&gt;pSepFile = HEAP_strdupAtoW(heap, 0, piA-&gt;pSepFile);
+    <li class=committed> dlls/winspool/info.c:    piW-&gt;pPrintProcessor = HEAP_strdupAtoW(heap, 0, piA-&gt;pPrintProcessor);
+    <li class=committed> dlls/winspool/info.c:    piW-&gt;pDatatype = HEAP_strdupAtoW(heap, 0, piA-&gt;pDatatype);
+    <li class=committed> dlls/winspool/info.c:    piW-&gt;pParameters = HEAP_strdupAtoW(heap, 0, piA-&gt;pParameters);
+    <li class=committed> dlls/winspool/info.c:    LPWSTR lpPrinterNameW = HEAP_strdupAtoW(GetProcessHeap(),0,lpPrinterName);
+    <li class=committed> dlls/winspool/info.c:        DefaultW.pDatatype = HEAP_strdupAtoW(GetProcessHeap(), 0,
+    <li class=committed> dlls/winspool/info.c:    pNameW = HEAP_strdupAtoW(GetProcessHeap(), 0, pName);
+    <li class=committed> dlls/winspool/info.c:    LPWSTR lpszNameW = HEAP_strdupAtoW(GetProcessHeap(),0,lpszName);
+    <li class=committed> dlls/winspool/info.c:    LPWSTR pEnvW = HEAP_strdupAtoW(GetProcessHeap(),0,pEnvironment);
+    <li class=committed> dlls/winspool/info.c:        pNameW = HEAP_strdupAtoW(GetProcessHeap(), 0, pName);
+    <li class=committed> dlls/winspool/info.c:        pEnvironmentW = HEAP_strdupAtoW(GetProcessHeap(), 0, pEnvironment);
+    <li class=committed> include/heap.h:inline static LPWSTR HEAP_strdupAtoW( HANDLE heap, DWORD flags, LPCSTR str )
+    <li class=committed> loader/resource.c:            typeStr = HEAP_strdupAtoW( GetProcessHeap(), 0, type );
+    <li class=committed> loader/resource.c:            nameStr = HEAP_strdupAtoW( GetProcessHeap(), 0, name );
+    <li class=committed> memory/environ.c:    info-&gt;lpReserved = HEAP_strdupAtoW (GetProcessHeap(), 0, current_startupinfo.lpReserved );
+    <li class=committed> memory/environ.c:    info-&gt;lpDesktop  = HEAP_strdupAtoW (GetProcessHeap(), 0, current_startupinfo.lpDesktop );
+    <li class=committed> memory/environ.c:    info-&gt;lpTitle    = HEAP_strdupAtoW (GetProcessHeap(), 0, current_startupinfo.lpTitle );
+    <li class=committed> windows/winproc.c:        *plparam = (LPARAM)HEAP_strdupAtoW( GetProcessHeap(), 0, (LPCSTR)*plparam );
+    <li class=committed> windows/winproc.c:                xs-&gt;lpszName = xs-&gt;cs.lpszName = HEAP_strdupAtoW( GetProcessHeap(), 0,
+    <li class=committed> windows/winproc.c:                xs-&gt;lpszClass = xs-&gt;cs.lpszClass = HEAP_strdupAtoW( GetProcessHeap(), 0,
+    <li class=committed> windows/winproc.c:                cs-&gt;szClass = HEAP_strdupAtoW( GetProcessHeap(), 0,
+    <li class=committed> windows/winproc.c:                cs-&gt;szTitle = HEAP_strdupAtoW( GetProcessHeap(), 0,
+    <li class=committed> windows/winproc.c:          *plparam = (LPARAM)HEAP_strdupAtoW( GetProcessHeap(), 0, (LPCSTR)*plparam );
+    <li class=committed> windows/winproc.c:          *plparam = (LPARAM)HEAP_strdupAtoW( GetProcessHeap(), 0, (LPCSTR)*plparam );
+  </ul>
+
+  <ul>
+    <li>workers: <a href="mailto:m.davison@virgin.net">Matthew Davison</a>
+    <li>status: <span class=done>Completed.</span>
+    <li>updated: Jan 27, 2003
+  </ul>
+
+  <h3>Include file cleanup</h3>
+
+  That is, no more Wine-specific headers in <tt>include/</tt>. This is tightly
+  related to the <b>DLL Separation</b> task, listed above. There are 50 Wine-only
+  headers that need to be moved, as of Dec 3, 2002:
+  <ul>
+    <li> async.h
+    <li> bitmap.h
+    <li> builtin16.h
+    <li> callback.h
+    <li> clipboard.h
+    <li> cursoricon.h
+    <li class=committed> d3dhal.h
+    <li> dce.h
+    <li> dciddi.h
+    <li class=committed> ddrawi.h
+    <li> drive.h
+    <li class=committed> dsdriver.h
+    <li> file.h
+    <li class=committed> font.h
+    <li> gdi.h
+    <li> global.h
+    <li> heap.h
+    <li class=committed> input.h
+    <li> local.h
+    <li class=committed> message.h
+    <li> miscemu.h
+    <li class=committed> mmddk.h
+    <li> module.h
+    <li> msdos.h
+    <li class=committed> netspi.h
+    <li> nonclient.h
+    <li class=committed> ntddcdrm.h
+    <li class=committed> ntddscsi.h
+    <li class=committed> ntddstor.h
+    <li class=committed> ole.h
+    <li> options.h
+    <li> palette.h
+    <li class=committed> path.h
+    <li class=committed> queue.h
+    <li> selectors.h
+    <li> snoop.h
+    <li class=committed> spy.h
+    <li> stackframe.h
+    <li> syslevel.h
+    <li class=committed> sysmetrics.h
+    <li> task.h
+    <li> thread.h
+    <li> toolhelp.h
+    <li> user.h
+    <li> win.h
+    <li> winpos.h
+    <li class=committed> winproc.h
+    <li> wrc_rsc.h
+    <li> x11drv.h
+    <li class=committed> x11font.h
+  </ul>
+
+  <p>Please note that patches have been submitted for the <span class=submitted>italic</span> entries;
+     the <span class=committed>grayed out</span> entries have already been fixed. 
+  <ul>
+    <li>workers: <a href="mailto:julliard@winehq.com">Alexandre Julliard</a>,
+		 <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>.
+    <li>status: <span class=inprogress>first patches committed.</span>
+
+    <li>updated: Dec 6, 2002
+  </ul>
+
+  <h3>Header dependencies cleanup</h3>
+  From Alexandre: <i>...most of our headers are including way
+  too much stuff compared to what Windows does. It should be possible to
+  generate a dependency tree of our headers with makedep and compare
+  that with one done with the Windows headers; the goal is to make them
+  identical.</i>
+
+  <h3>Compile Wine with other headers</h3>
+  We have at least two other Win32 headers available: MSVC, and MinGW (w32api).
+  In a perfect world, we should be able to build Wine using either of them.
+  This will be a <i>very</i> effective way of discovering problems in our own
+  headers, as the compiler will signal mismatches is function signatures, etc.
+
+  <h2>Miscellaneous</h2>
+
+  <h3><a name="dprintf"></a>Replace DPRINTFs with TRACEs where possible</h3>
+  Currently, the debug layer is smart enough to concatenate consecutive
+  <tt>TRACE</tt> statements if they don't end with a new line. As such,
+  we can replace most <tt>DPRINTF</tt> statements with <tt>TRACE</tt>s.
+  The conversion is mostly mechanical, but must be checked manually
+  to watch for potential simplifications that may be possible with the
+  new scheme.
+  <ul class=modified>
+    <li>workers: <a href="mailto:tony_lambregts@telusplanet.net">Tony Lambregts</a>
+
+    <li>status: <span class=inprogress>First patches already submitted</span>
+    <li>updated: Mar 14, 2003
+  </ul>
+
+
+  <h3><a name="include-quotes"></a>Include statements should use &lt;&gt; instead of ""</h3>
+  Wine uses "" in most of it <tt>#include</tt> statements for historical
+  reasons that are no longer an issue. It needs to be changed to use
+  &lt;&gt; instead. Of course, there are a few cases where "" should still
+  be used. The algorithm for doing this change should be: if the included
+  file is not present in the same directory as the .c-file, change the
+  include to use &lt;&gt;.
+  <ul class=modified>
+
+    <li>workers: <a href="mailto:ps@leissner.se">Patrik Stridvall</a>
+    <li>status: <span class=inprogress>
+                First patch <a href="http://www.winehq.com/hypermail/wine-patches/2002/12/0434.html">submitted</a></span>
+    <li>updated: Dec 31, 2002
+  </ul>
+
+  <h3><a name=tests></a>Fix the conformance tests so that they pass on Windows</h3>
+
+  Entry submitted by <a href="mailto:fgouget@free.fr">Francois Gouget</a>.
+
+  <p>14 tests out of 42 have failures on one or more Windows platforms (last 
+  time I counted). That's 33% of incorrect tests! Making progress. It is 
+  much better than the initial 75% of 2002/12/03 :-)
+ 
+  <p>Current status for the tests is tracked by Francois on this page:
+     <a href="http://fgouget.free.fr/wine/tests-en.shtml">http://fgouget.free.fr/wine/tests-en.shtml</a>,
+     or by the <a href="http://www.astro.gla.ac.uk/users/paulm/WRT/wrt.php">WINE Regression Testing</a> project.
+
+  <p>Needless to say, this is very bad. Windows is our reference platform,
+  and a test that fails in Windows, and succeeds in Wine may very well be
+  hinding a bug. We need to fix them.
+
+  <p>We have a way to pretty easily compile test on Windows. Here's the procedure:
+  <ul>
+    <li> Get the Wine source
+    <li> Run <tt>./tools/winapi/msvcmaker --no-wine</tt>
+
+    (it's a perl script so you might even be able to do it on Windows)
+    <li> Make those source accessible by a Windows machine (e.g. export them via Samba)
+    <li> Load <tt>winetest.dsw</tt> in Visual C++
+    <li> Hit that build button
+  </ul>
+  Alternatively, you can simply download the precompiled tests from
+  <a href="http://fgouget.free.fr/wine/winetests.zip">http://fgouget.free.fr/wine/winetests.zip</a>.
+
+  <p>The tests output all the results to stderr. To redirect
+  all info into a file when starting the batch file use:
+  <pre>
+
+	runtests.bat&gt;&gt;result.txt 2&gt;&amp;1
+  </pre>
+  This will not work on Win9x, but it does on Win2K and WinXP.
+
+  <p>What we need next:
+  <ol>
+   <li> A way to run all tests. A batch file would do the job nicely.
+     <ul>
+	<li>worker: <a href="mailto:ps@leissner.se">Patrik Stridvall</a>
+
+	<li>status: <span class=done><a href="http://cvs.winehq.com/patch.py?id=6450">patch</a> committed.</span>
+	<li>updated: Dec 1, 2002
+     </ul>
+   <li> People to fix the tests so that they actually pass on *all* Windows platforms
+     <ul class=modified>
+	<li>workers: <a href="mailto:fgouget@free.fr">Francois Gouget</a>,
+		     <a href="mailto:Martin.Wilck@Fujitsu-Siemens.com">Martin Wilck</a>
+
+	<li>status: <span class=inprogress>more patches</span>
+		    <a href="http://www.winehq.com/hypermail/wine-devel/2003/01/0210.html">committed</a>.
+	<li>updated: Jan 6, 2003
+     </ul>
+   <li> Volunteers who will run the tests their Windows platform of choice on a 
+        regular basis so that we quickly fix incorrect tests
+     <ul>
+	<li> Win95: <a href="mailto:mstefani@redhat.de">Michael Stefaniuc</a>,
+		    <a href="mailto:Cenedese@indel.ch">Fabian Cenedese</a>
+
+	<li> Win98: <a href="mailto:tony_lambregts@telusplanet.net">Tony Lambregts</a>,
+		    <a href="mailto:whydoubt@hotmail.com">Jeff Smith</a> (SE)
+	<li> WinNT: <a href="mailto:stras@ecf.toronto.edu">Luke Stras</a>
+	<li> WinME: <a href="mailto:whiting@MIT.EDU">James K Whiting</a>
+
+	<li> Win2k: <a href="mailto:twickline2@triad.rr.com">Thomas Wickline</a>,
+		    <a href="mailto:kyethespy@liquid2k.com">Kye Lewis</a>
+	<li> WinXP: <a href="mailto:compsol@ptd.net">David Miller</a>, 
+		    <a href="mailto:kyethespy@liquid2k.com">Kye Lewis</a>
+     </ul>
+  </ol>
+
+  <p>The people doing 2 could definitely use the help of a couple of people
+  doing 3 since they will probably not have access to all Windows
+  platforms.
+
+  <p>Once the initial fixing is done we will really need people doing 3 to
+  prevent bad tests from comming back.
+
+  <h3>Compilation with -DSTRICT</h3>
+  Please refer to <a href="http://bugs.winehq.com/show_bug.cgi?id=90">Bug #90</a>
+  for more information on this project. The following DLLs need work to be
+  compiled with <tt>-DSTRICT</tt>:
+  <ul>
+    <li> <a href="http://bugs.winehq.com/show_bug.cgi?id=1145"><tt>ntdll</tt></a>: 
+	fixed by <a href="hughes2002@btinternet.com">Andrew John Hughes </a>
+
+	in this <a href="http://cvs.winehq.com/patch.py?id=6347">patch</a>.
+    <li> <a href="http://bugs.winehq.com/show_bug.cgi?id=1150"><tt>commdlg</tt></a>:
+	fixed by <a href="hughes2002@btinternet.com">Andrew John Hughes </a>
+	in this <a href="http://cvs.winehq.com/patch.py?id=6363">patch</a>.
+    <li> <a href="http://bugs.winehq.com/show_bug.cgi?id=1147"><tt>shell32</tt></a>:
+	fixed by <a href="jdahlin@async.com.br">Johan Dahlin</a>
+
+	in this <a href="http://cvs.winehq.com/patch.py?id=6364">patch</a>.
+    <li> <a href="http://bugs.winehq.com/show_bug.cgi?id=1146"><tt>ole32</tt></a>:
+	fixed by <a href="julliard@wine.codeweavers.com">Alexandre Julliard</a>
+	in this <a href="http://cvs.winehq.com/patch.py?id=6365">patch</a>.
+    <li> <a href="http://bugs.winehq.com/show_bug.cgi?id=1149"><tt>user</tt></a>:
+	fixed by <a href="julliard@wine.codeweavers.com">Alexandre Julliard</a>
+
+	in this <a href="http://cvs.winehq.com/patch.py?id=6371">patch</a>.
+    <li> <a href="http://bugs.winehq.com/show_bug.cgi?id=1148"><tt>gdi</tt></a>:
+	fixed by <a href="julliard@wine.codeweavers.com">Alexandre Julliard</a>
+	in this <a href="http://cvs.winehq.com/patch.py?id=6373">patch</a>.
+  </ul>
+  <ul>
+    <li>workers: <a href="mailto:mstefani@redhat.de">Michael Stefaniuc</a>,
+		 <a href="mailto:hughes2002@btinternet.com">Andrew John Hughes </a>,
+		 <a href="mailto:jdahlin@async.com.br">Johan Dahlin</a>,
+		 <a href="mailto:julliard@wine.codeweavers.com">Alexandre Julliard</a>
+
+    <li>status: <span class=done>100% done</span>
+    <li>updated: Nov 22, 2002
+  </ul>
+
+  <h2>ChangeLog</h2>
+  <p>Entries modified from last release are displayed in <b>bold</b>.
+  <p>The work-in-progress version of the list is always available <a href="http://www.dssd.ca/wine/Wine-Janitorial.html">here</a>.
+     Please note that this version is constantly changing; it is relative to the last released version.
+     This is important to keep in mind when looking at the <b>bold</b> items. For example, if you look
+     at this version right after a new version is released, nothing is going to be <b>bold</b>, as nothing
+     has changed from the released version.
+
+  <ul>
+
+    <li> 0.2 (Dec  4, 2002): in progress
+    <li> 0.1 (Dec  4, 2002): first release, split off of <a href="http://www.dssd.ca/wine/Wine-Fun.html">Wine Fun Projects</a>;
+			     available <a href="http://www.dssd.ca/wine/Wine-Janitorial-0.1.html">here</a>.
+  </ul>
+
+<p>&nbsp;</p>
