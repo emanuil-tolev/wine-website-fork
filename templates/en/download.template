@@ -44,7 +44,8 @@
 <!-- Row 1 -->
 <tr>
 <td align=center rowspan="1" bgcolor="#e0e0e0">
-Linux (glibc-2.2, [glibc-2.3 coming soon]), FreeBSD
+Linux (glibc-2.2),<br>
+FreeBSD
 </td>
 
 <td align=center bgcolor="#ffffff">
@@ -96,17 +97,17 @@ Linux (glibc-2.2, [glibc-2.3 coming soon]), FreeBSD
 <td align=center bgcolor="#ffffff"> .rpm, .deb, source </td>
 </tr>
 
-<!-- Contributed Wine Versions -->
+<!-- Daily CVS Builds -->
 <tr>
 <td colspan=4 align=center bgcolor="#777777">
-  <b><font color=white class=small>Contributed Wine Versions</font></b>
+  <b><font color=white class=small>Daily CVS Builds (unstable)</font></b>
 </td>
 </tr>
 
 <!-- Row 3 -->
 <tr>
-<td align=center rowspan="4" bgcolor="#e0e0e0">
-  Linux glibc-2.2 Systems (e.g. Debian 3.0, Red Hat 7.0 - 8.0, Slackware 8.1, Mandrake)
+<td align=center rowspan="2" bgcolor="#e0e0e0">
+  Linux (glibc-2.2)
 </td>
 
 <td align=center bgcolor="#ffffff">
@@ -121,20 +122,7 @@ Linux (glibc-2.2, [glibc-2.3 coming soon]), FreeBSD
 
 <tr>
 <td align=center bgcolor="#ffffff">
-  <b><a href="http://mecano.gme.usherb.ca/~vberon/wine">Mecano</a></b>
-</td>
-<td bgcolor="#ffffff">
-  Packages for RedHat 8.0. Based on the configuration options used in
-  the official RedHat package for RedHat 8.0 (wine-20020605-1.i386.rpm).
-  Maintained by <a href="mailto:vberon@nospamplease.mecano.gme.usherb.ca">Vincent B&eacute;ron</a>.
-</td>
-<td align=center bgcolor="#ffffff"> .rpm </td>
-</tr>
-
-<tr>
-<td align=center bgcolor="#ffffff">
-  <b><a href="http://people.debian.org/~andreas/">Daily Debian Wine</a></b>,<br>
-  used to be the 'Drunkard' builds.
+  <b><a href="http://people.debian.org/~andreas/">Daily Debian Wine</a></b>
 </td>
 <td bgcolor="#ffffff">
   Built daily from CVS tree. Maintained by 
@@ -146,7 +134,19 @@ Linux (glibc-2.2, [glibc-2.3 coming soon]), FreeBSD
 <td align=center bgcolor="#ffffff"> .deb, Debian auto upgrade </td>
 </tr>
 
+<!-- Contributed Wine Versions -->
 <tr>
+<td colspan=4 align=center bgcolor="#777777">
+  <b><font color=white class=small>Contributed Wine Versions</font></b>
+</td>
+</tr>
+
+<!-- Row 4 -->
+<tr>
+<td align=center rowspan="1" bgcolor="#e0e0e0">
+  Linux (glibc-2.2)
+</td>
+
 <td align=center bgcolor="#ffffff">
   <b><a href="ftp://ftp.suse.com/pub/people/meissner/wine">SuSE / Marcus
   Meissner</a></b>
@@ -159,10 +159,10 @@ Linux (glibc-2.2, [glibc-2.3 coming soon]), FreeBSD
 </tr>
 
 
-<!-- Row 4 -->
+<!-- Row 5 -->
 <tr>
 <td align=center rowspan=3 bgcolor="#e0e0e0">
-  Linux glibc-2.1 Systems (e.g. RedHat 6.x, Debian 2.2)
+  Linux (glibc-2.1)
 </td>
 
 <tr>
@@ -188,7 +188,7 @@ Linux (glibc-2.2, [glibc-2.3 coming soon]), FreeBSD
 <td align=center bgcolor="#ffffff"> .deb </td>
 </tr>
 
-<!-- Row 5 -->
+<!-- Row 6 -->
 <tr>
 <td align=center rowspan=1 bgcolor="#e0e0e0">
   FreeBSD
@@ -209,6 +209,21 @@ Linux (glibc-2.2, [glibc-2.3 coming soon]), FreeBSD
 </div>
 
 <!-- END OF DOWNLOAD TABLE -->
+
+<h1>Know Your glibc</h1>
+
+<p>
+ Wine like all Linux software uses a library called glibc. Different versions of Linux distros
+ ship versions of glibc. Make sure the Wine build you are downloading is built for your version
+ of glibc.
+</p>
+
+<ul>
+    <li><b>glibc 2.3</b> - Red Hat 8.1, Mandrake 9.1</li>
+    <li><b>glibc 2.2</b> - Red Hat 7.0 through 8.0, Mandrake 8.0 through 9.0, SuSE 8.x, Debian 3.0</li>
+    <li><b>glibc 2.1</b> - Red Hat 6.x, Mandrake 7.x, SuSE 7.x, Debian 2.x</li>
+</ul>
+
 
 <h1>How to Install Binary Packages</h1>
 
