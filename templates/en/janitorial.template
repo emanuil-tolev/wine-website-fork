@@ -17,7 +17,7 @@
 
   Any self respecting project has a Janitorial project 
   (e.g. <a href="http://www.sourceforge.net/projects/kernel-janitor">Kernel Janitor's List</a>),
-  and it's high time that we've got one too.
+  and it's high time that we have one too.
   What is there to clean up? Well, lots of things! :)
 
   <h2>Tools</h2>
@@ -31,7 +31,6 @@
   the Linux Kernel but writing new scripts seems to be easy. I wrote
   (well, mostly adapted an existing script for the kernel) 
   <a href="http://people.redhat.com/mstefani/wine/smatch/">one script</a>
-
   (if we decide to adopt smatch it should probably go to <tt>$wine/tools/smatch/</tt>)
   to find code paths with missing <tt>LeaveCriticalSection</tt>'s. Scripts to find
   some other useful things like fd, DC, GDI obejects leaks should be easy to write.
@@ -48,7 +47,6 @@
   More to the point, a few days back I've asked him:
   <br><i>...what would it take to add checks for calls to 16bit funcs from 32bit funcs,
      and from Unicode funcs to ANSI funcs?</i>
-
   <br>He promptly replied:
   <br><i>It is already done. Years ago. :-)</i>
 
@@ -72,7 +70,6 @@
     <li class=invalid>windows/winproc.c: user.exe &amp; user32: CallWindowProc16: illegal call to __wine_call_wndproc_32A
     <li class=invalid>windows/winproc.c: user.exe &amp; user32: CallWindowProc16: illegal call to __wine_call_wndproc_32W
   </ul>
-
   <ul>
     <li>workers: <a href="mailto:hughes2002@btinternet.com">Andrew John Hughes</a>
     <li>status: <span class=done>First patch committed.</span>
@@ -80,7 +77,6 @@
   </ul>
 
   <h3>Get rid of W->A calls</h3>
-
   We should not call ASCII functions from Unicode functions. 
   The ASCII to Unicode conversion is lossy; moreover, with the
   shift to Unicode, it's actually slower to deal in ASCII than
@@ -111,7 +107,7 @@
     <li class=committed>dlls/commdlg/printdlg.c: comdlg32: PrintDlgW: illegal call to GetWindowLongA
     <li>dlls/ddraw/main.c: ddraw: DirectDrawEnumerateExW: illegal call to DirectDrawEnumerateExA
     <li class=committed>dlls/gdi/enhmfdrv/init.c: gdi32: CreateEnhMetaFileW: illegal call to CreateDCA
-    <li class=submitted>dlls/gdi/mfdrv/init.c: gdi32: CreateMetaFileW: illegal call to CreateMetaFileA
+    <li>dlls/gdi/mfdrv/init.c: gdi32: CreateMetaFileW: illegal call to CreateMetaFileA
     <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to HEAP_strdupWtoA
     <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to StartDocA
     <li class=committed>dlls/imm32/imm.c: imm32: ImmGetCompositionStringW: illegal call to GetVersionExA
@@ -190,8 +186,8 @@
     <li>dlls/winspool/info.c: winspool.drv: DocumentPropertiesW: illegal call to DocumentPropertiesA
     <li>dlls/winspool/info.c: winspool.drv: DocumentPropertiesW: illegal call to HEAP_strdupWtoA
     <li>dlls/winspool/info.c: winspool.drv: GetDefaultPrinterW: illegal call to GetDefaultPrinterA
-    <li class=submitted>dlls/winspool/info.c: winspool.drv: GetPrinterDriverDirectoryW: illegal call to GetPrinterDriverDirectoryA
-    <li class=submitted>dlls/winspool/info.c: winspool.drv: GetPrinterDriverDirectoryW: illegal call to HEAP_strdupWtoA
+    <li class=committed>dlls/winspool/info.c: winspool.drv: GetPrinterDriverDirectoryW: illegal call to GetPrinterDriverDirectoryA
+    <li class=committed>dlls/winspool/info.c: winspool.drv: GetPrinterDriverDirectoryW: illegal call to HEAP_strdupWtoA
     <li>files/dos_fs.c: kernel32: QueryDosDeviceW: illegal call to HEAP_strdupWtoA
     <li>files/dos_fs.c: kernel32: QueryDosDeviceW: illegal call to QueryDosDeviceA
     <li class=committed>files/drive.c: kernel32: GetDiskFreeSpaceExW: illegal call to GetDiskFreeSpaceExA
@@ -214,11 +210,11 @@
     <li>objects/dc.c: gdi32: CreateDCW: illegal call to CreateDCA
     <li>objects/dc.c: gdi32: CreateDCW: illegal call to HEAP_strdupWtoA
     <li>objects/dc.c: gdi32: ResetDCW: illegal call to ResetDCA
-    <li>objects/font.c: gdi32: GetKerningPairsW: illegal call to GetKerningPairsA
-    <li class=submitted>objects/metafile.c: gdi32: CopyMetaFileW: illegal call to CopyMetaFileA
+    <li class=committed>objects/font.c: gdi32: GetKerningPairsW: illegal call to GetKerningPairsA
+    <li>objects/metafile.c: gdi32: CopyMetaFileW: illegal call to CopyMetaFileA
     <li>scheduler/process.c: kernel32: CreateProcessW: illegal call to CreateProcessA
     <li>scheduler/process.c: kernel32: CreateProcessW: illegal call to HEAP_strdupWtoA
-    <li>win32/except.c: kernel32: FatalAppExitW: illegal call to GetModuleHandleA
+    <li class=committed>win32/except.c: kernel32: FatalAppExitW: illegal call to GetModuleHandleA
     <li>windows/clipboard.c: user32: GetClipboardFormatNameW: illegal call to GetClipboardFormatNameA
     <li>windows/clipboard.c: user32: RegisterClipboardFormatW: illegal call to HEAP_strdupWtoA
     <li>windows/clipboard.c: user32: RegisterClipboardFormatW: illegal call to RegisterClipboardFormatA
@@ -241,7 +237,6 @@
 		 <a href="mailto:m.davison@virgin.net">Matthew Davison</a>,
 		 <a href="mailto:tony_lambregts@telusplanet.net">Tony Lambregts</a>.
     <li>status: <span class=inprogress>first patches submitted</span>
-
     <li>updated: Dec 2, 2002
   </ul>
 
@@ -250,15 +245,13 @@
   <dl>
     <dt>Phase 1</dt>
     <dd>DLLs make use of only the functions exported through the <tt>.spec</tt> files</dd>
-
     <dt>Phase 2</dt>
     <dd>Temporary hacks are eliminated out of the <tt>.spec</tt> files</dd>
   </dl>
 
   <h3>Phase 1</h3>
   Please refer to the 
-  <a href="http://63.138.153.104/wine/Wine-0.9-TODO-0.9.html">0.9 TODO</a>
-
+  <a href="http://www.winehq.org/site/todo_lists">0.9 TODO</a>
   for the status of this project.
 
   <h3>Phase 2</h3>
@@ -270,7 +263,6 @@
   Separate MSDOS support from kernel/ntdll into winedos. This task is
   tracked by <a href="http://bugs.winehq.com/show_bug.cgi?id=546">Bug #546</a>.
   <ul>
-
     <li>worker: <a href="mailto:jhei@iki.fi">Jukka Heinonen</a>,
     <li>status: <span class=inprogress>lots of patches submitted</span>
     <li>updated: Jan 29, 2003
@@ -280,7 +272,6 @@
   There are <em>many</em> reasons why we should use the Win32 API as much
   as possible inside Wine, rather than our own, ad-hoc API. Here are a few:
   <ul>
-
     <li>The Win32 API is documented, and understood by many people
     <li>It is <em>always</em> available, so introducing additional APIs only increases confusion
     <li>The Win32 API get a lot more testing, as it is now used a lot more
@@ -293,7 +284,6 @@
   and 54 occurrences of <tt>HEAP_strdupAtoW</tt>.
   
   <h4><tt>HEAP_strdupWtoA</tt></h4>
-
   These functions invocations should go away during the W -&gt; A cross-call
   cleanup. It is better to directly fix that sort of cross call, rather than
   replace this function by other alternatives. The few of them that can not
@@ -358,7 +348,6 @@
     <li class=committed> windows/winproc.c:          *plparam = (LPARAM)HEAP_strdupAtoW( GetProcessHeap(), 0, (LPCSTR)*plparam );
     <li class=committed> windows/winproc.c:          *plparam = (LPARAM)HEAP_strdupAtoW( GetProcessHeap(), 0, (LPCSTR)*plparam );
   </ul>
-
   <ul>
     <li>workers: <a href="mailto:m.davison@virgin.net">Matthew Davison</a>
     <li>status: <span class=done>Completed.</span>
@@ -366,7 +355,6 @@
   </ul>
 
   <h3>Include file cleanup</h3>
-
   That is, no more Wine-specific headers in <tt>include/</tt>. This is tightly
   related to the <b>DLL Separation</b> task, listed above. There are 50 Wine-only
   headers that need to be moved, as of Dec 3, 2002:
@@ -418,18 +406,16 @@
     <li> win.h
     <li> winpos.h
     <li class=committed> winproc.h
-    <li> wrc_rsc.h
-    <li> x11drv.h
+    <li class=committed> wrc_rsc.h
+    <li class=committed> x11drv.h
     <li class=committed> x11font.h
   </ul>
 
   <p>Please note that patches have been submitted for the <span class=submitted>italic</span> entries;
      the <span class=committed>grayed out</span> entries have already been fixed. 
   <ul>
-    <li>workers: <a href="mailto:julliard@winehq.com">Alexandre Julliard</a>,
-		 <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>.
+    <li>workers: <a href="mailto:julliard@winehq.com">Alexandre Julliard</a>.
     <li>status: <span class=inprogress>first patches committed.</span>
-
     <li>updated: Dec 6, 2002
   </ul>
 
@@ -444,7 +430,12 @@
   We have at least two other Win32 headers available: MSVC, and MinGW (w32api).
   In a perfect world, we should be able to build Wine using either of them.
   This will be a <i>very</i> effective way of discovering problems in our own
-  headers, as the compiler will signal mismatches is function signatures, etc.
+  headers, as the compiler will signal mismatches in function signatures, etc.
+  <ul>
+    <li>workers: <a href="mailto:steven_ed4153@yahoo.com">Steven Edwards</a>.
+    <li>status: <span class=inprogress>first patches committed.</span>
+    <li>updated: Aug 30, 2003
+  </ul>
 
   <h2>Miscellaneous</h2>
 
@@ -455,10 +446,9 @@
   The conversion is mostly mechanical, but must be checked manually
   to watch for potential simplifications that may be possible with the
   new scheme.
-  <ul>
+  <ul class=modified>
     <li>workers: <a href="mailto:tony_lambregts@telusplanet.net">Tony Lambregts</a>
-
-    <li>status: <span class=inprogress>First patches already submitted</span>
+    <li>status: <span class=inprogress>first patches already submitted</span>
     <li>updated: Mar 14, 2003
   </ul>
 
@@ -466,20 +456,16 @@
   <h3><a name="include-quotes"></a>Include statements should use &lt;&gt; instead of ""</h3>
   Wine uses "" in most of it <tt>#include</tt> statements for historical
   reasons that are no longer an issue. It needs to be changed to use
-  &lt;&gt; instead. Of course, there are a few cases where "" should still
-  be used. The algorithm for doing this change should be: if the included
-  file is not present in the same directory as the .c-file, change the
-  include to use &lt;&gt;.
-  <ul>
-
-    <li>workers: <a href="mailto:ps@leissner.se">Patrik Stridvall</a>
-    <li>status: <span class=inprogress>
-                First patch <a href="http://www.winehq.com/hypermail/wine-patches/2002/12/0434.html">submitted</a></span>
-    <li>updated: Dec 31, 2002
+  &lt;&gt; instead. We will keep the quotes in the .c-files, as an indication
+  that the header is a Wine header, rather than a system header. For header
+  files we don't have this luxury as they can cause problems for Winelib developpers.
+  <ul class=modified>
+    <li>workers:  <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
+    <li>status: <span class=done><a href="http://www.winehq.org/hypermail/wine-cvs/2003/08/0238.html">patch</a> committed</span>.
+    <li>updated: Aug 30, 2003
   </ul>
 
   <h3><a name=tests></a>Fix the conformance tests so that they pass on Windows</h3>
-
   Entry submitted by <a href="mailto:fgouget@free.fr">Francois Gouget</a>.
 
   <p>14 tests out of 42 have failures on one or more Windows platforms (last 
@@ -498,7 +484,6 @@
   <ul>
     <li> Get the Wine source
     <li> Run <tt>./tools/winapi/msvcmaker --no-wine</tt>
-
     (it's a perl script so you might even be able to do it on Windows)
     <li> Make those source accessible by a Windows machine (e.g. export them via Samba)
     <li> Load <tt>winetest.dsw</tt> in Visual C++
@@ -510,7 +495,6 @@
   <p>The tests output all the results to stderr. To redirect
   all info into a file when starting the batch file use:
   <pre>
-
 	runtests.bat&gt;&gt;result.txt 2&gt;&amp;1
   </pre>
   This will not work on Win9x, but it does on Win2K and WinXP.
@@ -520,15 +504,13 @@
    <li> A way to run all tests. A batch file would do the job nicely.
      <ul>
 	<li>worker: <a href="mailto:ps@leissner.se">Patrik Stridvall</a>
-
 	<li>status: <span class=done><a href="http://cvs.winehq.com/patch.py?id=6450">patch</a> committed.</span>
 	<li>updated: Dec 1, 2002
      </ul>
    <li> People to fix the tests so that they actually pass on *all* Windows platforms
-     <ul>
+     <ul class=modified>
 	<li>workers: <a href="mailto:fgouget@free.fr">Francois Gouget</a>,
 		     <a href="mailto:Martin.Wilck@Fujitsu-Siemens.com">Martin Wilck</a>
-
 	<li>status: <span class=inprogress>more patches</span>
 		    <a href="http://www.winehq.com/hypermail/wine-devel/2003/01/0210.html">committed</a>.
 	<li>updated: Jan 6, 2003
@@ -538,12 +520,10 @@
      <ul>
 	<li> Win95: <a href="mailto:mstefani@redhat.de">Michael Stefaniuc</a>,
 		    <a href="mailto:Cenedese@indel.ch">Fabian Cenedese</a>
-
 	<li> Win98: <a href="mailto:tony_lambregts@telusplanet.net">Tony Lambregts</a>,
 		    <a href="mailto:whydoubt@hotmail.com">Jeff Smith</a> (SE)
 	<li> WinNT: <a href="mailto:stras@ecf.toronto.edu">Luke Stras</a>
 	<li> WinME: <a href="mailto:whiting@MIT.EDU">James K Whiting</a>
-
 	<li> Win2k: <a href="mailto:twickline2@skybest.com">Tom Wickline</a>,
 		    <a href="mailto:kyethespy@liquid2k.com">Kye Lewis</a>
 	<li> WinXP: <a href="mailto:compsol@ptd.net">David Miller</a>, 
@@ -565,21 +545,18 @@
   <ul>
     <li> <a href="http://bugs.winehq.com/show_bug.cgi?id=1145"><tt>ntdll</tt></a>: 
 	fixed by <a href="hughes2002@btinternet.com">Andrew John Hughes </a>
-
 	in this <a href="http://cvs.winehq.com/patch.py?id=6347">patch</a>.
     <li> <a href="http://bugs.winehq.com/show_bug.cgi?id=1150"><tt>commdlg</tt></a>:
 	fixed by <a href="hughes2002@btinternet.com">Andrew John Hughes </a>
 	in this <a href="http://cvs.winehq.com/patch.py?id=6363">patch</a>.
     <li> <a href="http://bugs.winehq.com/show_bug.cgi?id=1147"><tt>shell32</tt></a>:
 	fixed by <a href="jdahlin@async.com.br">Johan Dahlin</a>
-
 	in this <a href="http://cvs.winehq.com/patch.py?id=6364">patch</a>.
     <li> <a href="http://bugs.winehq.com/show_bug.cgi?id=1146"><tt>ole32</tt></a>:
 	fixed by <a href="julliard@wine.codeweavers.com">Alexandre Julliard</a>
 	in this <a href="http://cvs.winehq.com/patch.py?id=6365">patch</a>.
     <li> <a href="http://bugs.winehq.com/show_bug.cgi?id=1149"><tt>user</tt></a>:
 	fixed by <a href="julliard@wine.codeweavers.com">Alexandre Julliard</a>
-
 	in this <a href="http://cvs.winehq.com/patch.py?id=6371">patch</a>.
     <li> <a href="http://bugs.winehq.com/show_bug.cgi?id=1148"><tt>gdi</tt></a>:
 	fixed by <a href="julliard@wine.codeweavers.com">Alexandre Julliard</a>
@@ -590,7 +567,6 @@
 		 <a href="mailto:hughes2002@btinternet.com">Andrew John Hughes </a>,
 		 <a href="mailto:jdahlin@async.com.br">Johan Dahlin</a>,
 		 <a href="mailto:julliard@wine.codeweavers.com">Alexandre Julliard</a>
-
     <li>status: <span class=done>100% done</span>
     <li>updated: Nov 22, 2002
   </ul>
