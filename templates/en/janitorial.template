@@ -137,10 +137,10 @@
     <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to FindResourceA
     <li>dlls/shell32/shellole.c: shell32: DragQueryFileW: illegal call to DragQueryFileA
     <li>dlls/shell32/systray.c: shell32: Shell_NotifyIconW: illegal call to Shell_NotifyIconA
-    <li>dlls/shlwapi/ordinal.c: shlwapi: SHStringFromGUIDW: illegal call to SHStringFromGUIDA
+    <li class=committed>dlls/shlwapi/ordinal.c: shlwapi: SHStringFromGUIDW: illegal call to SHStringFromGUIDA
     <li>dlls/shlwapi/ordinal.c: shlwapi: SHCreateWorkerWindowW: illegal call to SHCreateWorkerWindowA
-    <li>dlls/shlwapi/ordinal.c: shlwapi: SHCreateWorkerWindowW: illegal call to LoadCursorA
-    <li>dlls/shlwapi/ordinal.c: shlwapi: SHCreateWorkerWindowW: illegal call to SetWindowLongA
+    <li class=committed>dlls/shlwapi/ordinal.c: shlwapi: SHCreateWorkerWindowW: illegal call to LoadCursorA
+    <li class=committed>dlls/shlwapi/ordinal.c: shlwapi: SHCreateWorkerWindowW: illegal call to SetWindowLongA
     <li>dlls/shlwapi/string.c: shlwapi: StrCmpLogicalW: illegal call to SHLWAPI_ChrCmpHelperA
     <li>dlls/shlwapi/string.c: shlwapi: StrFormatByteSizeW: illegal call to StrFormatByteSize64A
     <li>dlls/shlwapi/string.c: shlwapi: StrRetToStrW: illegal call to SHStrDupA
@@ -383,9 +383,10 @@
   to watch for potential simplifications that may be possible with the
   new scheme.
   <ul class=modified>
-    <li>workers: <a href="mailto:tony_lambregts@telusplanet.net">Tony Lambregts</a>
+    <li>workers: <a href="mailto:tony_lambregts@telusplanet.net">Tony Lambregts</a>,
+                 <a href="mailto:flameeyes@users.berlios.de">Diego Pettenò</a>.
     <li>status: <span class=inprogress>first patches already submitted</span>
-    <li>updated: Mar 14, 2003
+    <li>updated: Jan 3, 2005
   </ul>
 
 
