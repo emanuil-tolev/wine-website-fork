@@ -208,7 +208,7 @@ class wwn
     // display a single wwn issue
     function view_issue ($view = "latest")
     {
-        global $config, $html, $cur, $pos;
+        global $config, $html, $cur;
     
         // read dir and get issues
         list($wwn, $cur) = $this->get_list($config->wwn_xml_path);
@@ -217,7 +217,7 @@ class wwn
         if ($view == 'back')
         {
             $html->template_title = 'WWN Back Issues';
-            return $html->theme_box($config->theme, "box_title", 'WWN Back Issues', "100%", $this->issues_list($wwn, $cur, 0, $pos), '10', 'white', 'topMenu');
+            return $html->theme_box($config->theme, "box_title", 'WWN Back Issues', "100%", $this->issues_list($wwn, $cur, 0, $_REQUEST['pos']), '10', 'white', 'topMenu');
         }
         
         // show selected issue, or current
