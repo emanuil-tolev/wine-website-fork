@@ -129,14 +129,14 @@ Its main goal is to think fondly of Montana. It also serves to inform you of wha
 	enddate="03/18/2005"
 >
 <topic>News</topic>
-<p>Tom Wickline gave a pointer to Unified Modeling Language tool
+<p>Tom Wickline gave a pointer to a Unified Modeling Language tool
 called <i>Enterprise Architect</i>.  The makers of EA, Sparx Systems,
 <a href="http://www.sparxsystems.com.au/EAOnLinux.htm">suggest</a>
 running it on Linux using CrossOver Office.  It happens to fall into
 the unsupported category of software that works with CrossOver Office,
 but apparently the makers of the software don't feel that's a
 deterrent.  This is interesting news because it's the first time
-I've seen an ISV recommend using Wine (or in this case, a derivitive) 
+I've seen an ISV recommend using Wine (or in this case, a derivative) 
 to get their app to work on Linux.</p>
 
 <p>Oliver Stieber updated his 
@@ -308,7 +308,7 @@ Hearn cited Wine's configuration as an example,
    We have no config file, yet this has apparently not accelerated the pace
    of winecfg development, we just have more confused users</quote></p>
 
-<p>Alexandre diasagreed and mentioned that changing the registry loading code
+<p>Alexandre disagreed and mentioned that changing the registry loading code
 was directly tied to Wine's configuration,
 <quote who="Alexandre Julliard">
   Actually there has been quite a bit of work done on winecfg. To get
@@ -450,7 +450,7 @@ implementation:</p>
 <quote who="Mike McCormack"><p>
 Here's the mailslot implementatation that I wrote a while back.  I've 
 updated it to compile on the current CVS tip, but it's totally 
-untested... I will try to test it, fix it and submit it, but incase I 
+untested... I will try to test it, fix it and submit it, but in case I 
 don't get round to doing that, here's a starting point for somebody.
 </p><p>
 Note that this patch does not allow mailslots to work over the network, 
@@ -543,7 +543,7 @@ Version affected : Wine 20050211 and previous releases
 </p><p>
  regxxxxyyyy.tmp is created with 0644 ( -rw-r--r-- )permissions.
  This could represent a security problem in a multi-user environment.
- Indeed, any local user could access to windows regstry's dump and get 
+ Indeed, any local user could access the windows registry's dump and get 
  sensitive information, like passwords and other private data.
 </p><p>
 <u>Details</u></p><p>
@@ -556,7 +556,7 @@ $winerelease/server/registry.c
 
 <p>Alexandre pointed out that only one of those two functions actually
 were affected.  One of the functions dealt with the Wine registry in
-the user's home directory, not /tmp.  Peter Bortas though that might
+the user's home directory, not /tmp.  Peter Bortas thought that might
 still be an issue,
 <quote who="Peter Bortas">
  Home directories are group readable on many sites, so to prevent
@@ -597,7 +597,7 @@ I'd like to suggest to add the following janitorial projects for Wine:
 <li> Fix wrong assumptions in Wine about endianess.
   <ul>
     <li> inspect all Wine code and public headers to eliminate endianess dependent
-       constructs (low/high parts of a field, bit fileds), add WORDS_BIGENDIAN
+       constructs (low/high parts of a field, bit fields), add WORDS_BIGENDIAN
        when appropriate.</li>
     <li> make sure that Wine code handles data in an endianess independent way.</li>
   </ul>
