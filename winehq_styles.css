@@ -9,11 +9,18 @@ A:hover		{ color: #FF6666; text-decoration: underline; }
 A:active	{ color: #FF0000; }
 A.hidden	{ text-decoration: none; color: #000000; }
 
-/* feneral fonts and sizes */
+/* General fonts and sizes */
 OL,UL,P		{ font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt; }
 TD,TR,TH	{ font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt; }
 INPUT		{ font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt; }
 PRE         { font-family: Fixed; font-size: 10pt; }
+
+/* Hn Sizes */
+H1          { font-size: 180%; }
+H2          { font-size: 150%; }
+H3          { font-size: 130%; }
+H4          { font-size: 120%; }
+H5          { font-size: 110%; }
 
 /* WWN Colors */
 .wwnQuote	{ color: #A8003C; }
@@ -72,4 +79,3 @@ PRE         { font-family: Fixed; font-size: 10pt; }
 
 /* Footer */
 .footer		{ font-size: 8pt; color: #777777; }
-
