@@ -143,7 +143,7 @@ come out discussing a
 Win4Lin installation</a>:</p>
 
 <quote who="spidertools.com"><p>
-The goal of the project was to create an fully functional lab for about $200 a 
+The goal of the project was to create a fully functional lab for about $200 a 
 computer which had to factor in the cost of a server, software and a GB 
 switch. A Windows based lab with XP was priced at $1748.30 per computer 
 (includes server, software and switch) while the actual Linux solution cost 
@@ -186,14 +186,14 @@ Wine developers convince me to release it now. Or weeks ago.
 The test app uses the Mike McCormack's test snippet to fill the control 
 with some fancy formatted text.
 </p><p>
-Hope the patch is OK. Adding new DLL's and EXE's isn't an easy process.
+Hope the patch is OK. Adding new DLLs and EXEs isn't an easy process.
 </p></quote>
 
 <p>Wordpad on Windows is a wrapper around the RichEdit control, so
 it's logical Wine's app is named similarly.  Mike McCormack looked
 over the patch and had some comments:</p>
 <quote who="Mike McCormack"><p>
-Cool.  Looks like you've done alot of good work.
+Cool.  Looks like you've done a lot of good work.
 
 </p><p>
 I like that you've used lots of small functions, rather than 
@@ -263,7 +263,7 @@ http://www.winehq.org/hypermail/wine-devel/2004/01/0220.html</a>
 <dd>Eric and AJ keep chugging along at this..</dd>
 <br />&#160;
 <dt>Unicode support</dt>
-<dd>There has been hundereds of patches to convert to unicode support.</dd>
+<dd>There has been hundreds of patches to convert to unicode support.</dd>
 <br />&#160;
 <dt>Wine Conformance Test Suite</dt>
 <dd>Francois tells me the infrastructure for the conformance tests is now 
@@ -289,7 +289,7 @@ http://www.winehq.org/hypermail/wine-patches/2005/02/0496.html</a></dd>
 http://www.winehq.org/hypermail/wine-devel/2005/02/0552.html</a></dd>
 <br />&#160;
 <dt>dbghelp.dll</dt>
-<dd>Eric has sent alot of dbghelp fixes</dd>
+<dd>Eric has sent a lot of dbghelp fixes</dd>
 <br />&#160;
 <dt>itss.dll</dt>
 <dd>This little dll goes a long way toward getting html help working in apps.<br />
@@ -302,14 +302,14 @@ status needs to be updated. <br />
 <a href="http://www.winehq.org/site/fun_projects">http://www.winehq.org/site/fun_projects</a></dd>
 <br />&#160;
 <dt>msi.dll</dt>
-<dd>Mike and Aric has done alot of work here...</dd>
+<dd>Mike and Aric have done a lot of work here...</dd>
 <br />&#160;
 <dt>oleaut32.dll</dt>
 <dt>ole32.dll</dt>
 <dt>rpcrt4.dll</dt>
 <dd>As of today Robert &amp; Mike are on patch #76 of ole work. In the end this
 will help installshield work better and get us away from the MS 
-dcom9x.exe dependancy.</dd>
+dcom9x.exe dependency.</dd>
 <br />&#160;
 <dt>stdole32.tlb</dt>
 <dd>Huw implemented stdole32.tlb :-) one <i>huge</i> step toward not needing any 
@@ -318,20 +318,20 @@ part of dcom9x.exe....</dd></dl></p>
 <p><u>DirectX Status</u></p><p>
 <dl>
 <dt>d3d9.dll</dt>
-<dd>Here is Jasons last d3d9 patch, #22, he is waiting on Oliver to sync
+<dd>Here is Jason's last d3d9 patch, #22, he is waiting on Oliver to sync
 his changes and then he can move forward.<br />
 <a href="http://www.winehq.org/hypermail/wine-patches/2005/01/0484.html">
 http://www.winehq.org/hypermail/wine-patches/2005/01/0484.html</a></dd>
 <br />&#160;
 <dt>wined3d.dll</dt>
 <dd>Was part of the d3d9 work from Jason.
-Raphael has done alot of work here as well:<br />
+Raphael has done a lot of work here as well:<br />
 <a href="http://www.winehq.org/hypermail/wine-patches/2005/01/0508.html">
 http://www.winehq.org/hypermail/wine-patches/2005/01/0508.html</a></dd>
 <br />&#160;
 <dt>DirectMusic  (as a group)</dt>
 <dd>Raphael &amp; Christian have sent a couple nice patches in the 
-last couple months to bump the status on a couple of DirectMusic dll's</dd>
+last couple of months to bump the status on a couple of DirectMusic dll's</dd>
 <br />&#160;
 <dt>dsound.dll</dt>
 <dd>What can I say; Robert Reif has sent hundreds of DirectSound patches alone!
@@ -343,7 +343,7 @@ patches as well.</dd>
 </dl></p>
 <p><u>Multimedia Status</u></p><p>
 <dl>
-<dt>Eric has done alot of unicode work on the multimedia codecs</dt>
+<dt>Eric has done a lot of unicode work on the multimedia codecs</dt>
 <dd><a href="http://www.winehq.org/hypermail/wine-patches/2005/02/0092.html">
 http://www.winehq.org/hypermail/wine-patches/2005/02/0092.html</a></dd>
 
@@ -356,7 +356,7 @@ http://www.winehq.org/hypermail/wine-patches/2004/12/0052.html</a></dd>
 <a href="http://www.winehq.org/hypermail/wine-patches/2005/02/0214.html">
 http://www.winehq.org/hypermail/wine-patches/2005/02/0214.html</a></dd>
 <br />&#160;
-<dd>Raphael,sent his patch to implement partial PBuffer support for wgl
+<dd>Raphael, sent his patch to implement partial PBuffer support for wgl
 and minimal pixel format support for wgl<br />
 <a href="http://www.winehq.org/hypermail/wine-patches/2005/02/0535.html">
 http://www.winehq.org/hypermail/wine-patches/2005/02/0535.html</a></dd>
@@ -381,7 +381,7 @@ each month.
 CrossOver Office:</p>
 <quote who="Ira Krakow"><p>
 
-I have Visual C++ 6.0 running under Crossover Office
+I have Visual C++ 6.0 running under CrossOver Office
 4.1, which of course means it's running under Wine. 
 For one of the examples in the Wine/Winelib book, I
 decided to take the code produced by the VC++ Win32
@@ -403,7 +403,7 @@ the .so file.  Wine runs it flawlessly.
 </p><p>
 I got to thinking - can I convert the code from the
 MFC application as easily?  Seems like it's doable,
-because the generated code runs in VC++/Crossover
+because the generated code runs in VC++/CrossOver
 Office 4.1.  I tried the same steps as before, with
 Winemaker, but I couldn't figure out what Makefile
 modifications were needed.
@@ -589,7 +589,7 @@ Dragon Naturally Speaking 4 working under Wine.
 exits cleanly.</li>
 
 <li><code>#wine gentrain.exe</code> picks up user name, dictated training text.
-It saves the vocab/voix profiles the drops out with 3 repeat errors but  
+It saves the vocab/voix profiles then drops out with 3 repeat errors but  
 the profile is safe</li>
 
 <li><code>#wine natspeak.exe</code></li></ol></p><p>
@@ -639,7 +639,7 @@ CS =0023      DS =002B      ES =002B      SS =002B      FS =005B      GS=0063
 </code></ul></p>
 </quote>
 
-<p>A few few days later, Alex stumbled on what seemed to be the
+<p>A few days later, Alex stumbled on what seemed to be the
 source of the problem:</p>
 <quote who="Alex Woods"><p>
  Whilst playing around trying to get some kind of lead, the sound cut out
@@ -661,7 +661,7 @@ and how to go about troubleshooting issues:</p>
 <quote who="Francois Gouget"><p>
 
 Sound depends a lot on the sound card. Some sound cards support only
-specific sampling rates while others are more accomodating. And that's
+specific sampling rates while others are more accommodating. And that's
 just one issue, at least on the wineoss side there are a lot of other
 issues such as mmap support, full duplex support and DSP_GETOSPACE
 support that vary from one sound card to the next (and to some extent
