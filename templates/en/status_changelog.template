@@ -2,6 +2,28 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since January 20, 2005:</p>
+
+ <ul>
+ <li>ADD - advpack.dll</li>
+ <li>ADD - cards.dll</li>
+ <li>ADD - dciman32.dll</li>
+ <li>ADD - hhctrl.ocx</li>
+ <li>ADD - itss.dll</li>
+ <li>ADD - mscms.dll</li>
+ <li>ADD - rsaenh.dll</li>
+ <li>ADD - secur32.dll</li>
+ <li>ADD - vdmdbg.dll</li>
+ <li>ADD - wow32.dll</li>
+ <li>ADD - Desktop Integration section</li>
+ <li>ADD - WWN links to Core Status and DLLs Status page's</li>
+ <li>ADD - Alexandre Julliard as worker to Window management</li>
+ <li>ADD - Huw D M Davies as worker to Wine IDL compiler (widl)</li>
+ <li>Remove - Ove Kåven, Alexandre Julliard as workers on (widl)</li> 
+ <li>Remove - Links to Known ToDo's page.</li>
+ </ul>
+ <br>
+
 <p>Changes since January 19, 2005:</p>
 
  <ul>
@@ -22,6 +44,8 @@
  <li>wined3d.dll 5% -&gt; 50%</li>
  <li>d3d9.dll 20% -&gt; 50%</li>
  <li>d3d8.dll 80% -&gt; 85%</li>
+ </ul>
+ <br>
 
 <p>Changes since August 19, 2004:</p>
 

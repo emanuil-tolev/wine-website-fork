@@ -24,6 +24,13 @@
       <td>CodeWeavers</td>
     </tr>
     <tr>
+      <td>advpack.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/workshop/delivery/download/overview/launchinfsectionex.asp">LaunchINFSectionEx Function </a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Huw D M Davies</td>
+    </tr>
+    <tr>
       <td>atl.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/comsrv2k/htm/cs_pp_buildingpipecomps_zved.asp">MSDN: ATL API overview</a></td>
       <td>None</td>
@@ -46,6 +53,13 @@
       <td>Marcus Meissner</td>
     </tr>
     <tr>
+      <td>cards.dll</td>
+      <td class="adequate"><a href="http://www.developer.com/net/vb/article.php/3303671">Cards Introduction</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Sami Nopanen</td>
+    </tr>
+    <tr>
       <td>cfgmgr32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/install/hh/install/cfgmgrfn_0zua.asp">MSDN: Configuration Manager Functions</a></td>
       <td>None</td>
@@ -64,7 +78,10 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/CommCtls/Common/Common.asp">MSDN: Common Controls</a></td>
       <td><a href="{$root}/site/?issue=46#Address%20space%20separation">#116</a>,
           <a href="{$root}/site/?issue=138#Listview%20Changes">#118</a>,
-          <a href="{$root}/site/?issue=163#Error%20Requiring%2032/16%20Bit%20DLL%20Combinations">#163</a></td>
+          <a href="{$root}/site/?issue=163#Error%20Requiring%2032/16%20Bit%20DLL%20Combinations">#163</a>,
+          <a href="{$root}/site/?issue=241#UpdateWindow%20vs.%20WM_PAINT">#241</a>,
+          <a href="{$root}/site/?issue=242#Progress%20Bar%20Changes">#242</a>,
+          <a href="{$root}/site/?issue=245#Start%20Menu%20Brokenness">#245</a></td>
       <td class="pct95">95% complete</td>
       <td>Filip Navara,<br>Thomas Weidenmüller,<br>Maxime Bellengé</td>
     </tr>
@@ -85,7 +102,9 @@
     <tr>
       <td>crypt32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnw98bk/html/thecryptoapifunctions.asp">MSDN: Crypto API Functions</a></td>
-      <td>None</td>
+      <td><a href="{$root}/site/?issue=220#Windows%20Local%20Security%20Authority">#220</a>,
+          <a href="{$root}/site/?issue=230#OpenSSL%20vs.%20NSS">#230</a>,
+          <a href="{$root}/site/?issue=239#Transport%20Layer%20Security:%20SSL%20vs.%20GnuTLS">#239</a></td>
       <td class="pct5">5% complete</td>
       <td>Mike McCormack</td>
     </tr>
@@ -104,12 +123,26 @@
       <td>Eric Pouech</td>
     </tr>
     <tr>
+      <td>dciman32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/lowlevelclientsupport/dxlowlevelclientsupport.asp">MSDN: Graphics Low Level</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td></td>
+    </tr>
+    <tr>
       <td>gdi32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/wingdistart_9ezp.asp">MSDN: Windows GDI</a></td>
-      <td><a href="{$root}/site/?issue=156#GDI%20Performance">#156</a></td>
+      <td><a href="{$root}/site/?issue=156#GDI%20Performance">#156</a>,
+          <a href="{$root}/site/?issue=246#Gradient%20Fills">#246</a</td>
       <td class="pct60">60% complete</td>
       <td>Alexandre Julliard,<br>Huw D M Davies</td>
     </tr>
+    <tr>
+      <td>hhctrl.ocx</td>
+      <td class="adequate"><a href="http://www.helpware.net/htmlhelp/hh_info.htm">HTML Help overview</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Mike McCormack</td>
     <tr>
       <td>icmp.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/iphlp/iphlp/retrieving_information_on_the_internet_protocol_and_the_internet_control_message_protocol.asp">MSDN: ICMP Functions</a></td>
@@ -137,6 +170,13 @@
       <td>None</td>
       <td class="pct55">55% complete</td>
       <td>Juan Lang</td>
+    </tr>
+    <tr>
+      <td>itss.dll</td>
+      <td class="adequate"><a href="http://www.speakeasy.org/~russotto/chm/itolitlsformat.html">Microsoft's ITOL/ITLS format</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Mike McCormack</td>
     </tr>
     <tr>
       <td>kernel32.dll</td>
@@ -174,6 +214,13 @@
       <td></td>
     </tr>
     <tr>
+      <td>mscms.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cmsccapi/PublishingAPI.asp">MSDN: MSCMS Publishing API</a></td>
+      <td>None</td>
+      <td class="pct20">20% complete</td>
+      <td>Hans Leidekker</td>
+    </tr>
+    <tr>
       <td>mshtml.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnmshtml/html/mshtmleditplatf.asp">MSDN: MSHTML Editing Platform</a></td>
       <td><a href="{$root}/site/?issue=206#MSHTML%20Changes">#206</a></td>
@@ -183,7 +230,11 @@
     <tr>
       <td>msi.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/msi/setup/installer_function_reference.asp">MSDN: Installer Function Reference</a></td>
-      <td><a href="{$root}/site/?issue=182#Beginnings%20of%20Microsoft%20Installer%20Support">#182</a></td>
+      <td><a href="{$root}/site/?issue=182#Beginnings%20of%20Microsoft%20Installer%20Support">#182</a>,
+          <a href="{$root}/site/?issue=230#Microsoft%20Installer%20Work">#230</a>,
+          <a href="{$root}/site/?issue=231#Status%20of%20MSI">#231</a>,
+          <a href="{$root}/site/?issue=232#MSIExec.exe%20Replacement">#232</a>,
+          <a href="{$root}/site/?issue=253#MSI%20Status%20Update">#253</a></td>
       <td class="pct40">40% complete</td>
       <td>Mike McCormack,<br>Aric Stewart</td>
     </tr>
@@ -211,7 +262,9 @@
     <tr>
       <td>msvcrt.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_c_run.2d.time_libraries.asp">MSDN: C Run-Time Libraries</a></td>
-      <td><a href="{$root}/site/?issue=197#Using%20Wine's%20Builtin%20C%20Runtime">#197</a></td>
+      <td><a href="{$root}/site/?issue=197#Using%20Wine's%20Builtin%20C%20Runtime">#197</a>,
+          <a href="{$root}/site/?issue=225#MSVCRT%20Headers">#225</a>,
+          <a href="{$root}/site/?issue=228#Remove%20the%20MSVCRT()%20Macro">#228</a></td>
       <td class="pct60">60% complete</td>
       <td>Jon Griffiths</td>
     </tr>
@@ -274,7 +327,14 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/com/htm/comportal_3qn9.asp">MSDN: COM</a><br>
       <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olpraboutthismanual.asp">MSDN: OLE Reference</a></td>
       <td><a href="{$root}/site/?issue=109#MIDL%20and%20COM">#109</a>,
-          <a href="{$root}/site/?issue=117#More%20COM%20Work">#117</a></td>
+          <a href="{$root}/site/?issue=117#More%20COM%20Work">#117</a>,
+          <a href="{$root}/site/?issue=231#COM%20and%20OLE%20Marshalling%20Tutorial">#231</a>,
+          <a href="{$root}/site/?issue=238#Creating%20Type%20Libraries">#238 (1)</a>,
+          <a href="{$root}/site/?issue=238#OLE%20For%20Process%20Control?">#238 (2)</a>,
+          <a href="{$root}/site/?issue=240#Spying%20on%20COM">#240</a>,
+          <a href="{$root}/site/?issue=244#COM%20Inheritance">#244</a>,
+          <a href="{$root}/site/?issue=253#Apartment%20Breakage">#253</a>,
+          <a href="{$root}/site/?issue=256#DCOM%20Status%20Update%20and%20Roadmap">#256</a></td>
       <td class="pct60">60% complete</td>
       <td>CodeWeavers,<br>Marcus Meissner</td>
     </tr>
@@ -341,7 +401,10 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/indivcontrol.asp">MSDN: Rich Edit Controls</a></td>
       <td><a href="{$root}/site/?issue=127#MS%20Write%20Support">#127</a>,
           <a href="{$root}/site/?issue=137#MS%20Write%20Support%20(con't)">#137</a>,
-          <a href="{$root}/site/?issue=202#Wine's%20RichEdit%20Control%20Sucks">#202</a></td>
+          <a href="{$root}/site/?issue=202#Wine's%20RichEdit%20Control%20Sucks">#202</a>,
+          <a href="{$root}/site/?issue=238#Richedit%20Control">#238</a>,
+          <a href="{$root}/site/?issue=250#No%20RichEdit20A%20Window%20Class">#250</a>,
+          <a href="{$root}/site/?issue=251#RichEdit%20(con't)">#251</a></td>
       <td class="pct20">20% complete</td>
       <td></td>
     </tr>
@@ -353,17 +416,35 @@
           <a href="{$root}/site/?issue=156#RPC%20Data%20Marshalling%20(cont'd)">#156</a>,
           <a href="{$root}/site/?issue=170#RPC%20Documentation%20Update">#170</a>,
           <a href="{$root}/site/?issue=178#RPC%20Via%20Windows%20Messages%20and%20Other%20OLE%20Fun">#178</a>,
-          <a href="{$root}/site/?issue=194#Stubless%20Proxies">#194</a>
-          <a href="{$root}/site/?issue=200#RPC%20Info">#200</a></td>
+          <a href="{$root}/site/?issue=194#Stubless%20Proxies">#194</a>,
+          <a href="{$root}/site/?issue=200#RPC%20Info">#200</a>,
+          <a href="{$root}/site/?issue=212#Implementing%20NdrClientCall/NdrClientCall2">#200</a></td>
       <td class="pct30">30% complete</td>
       <td>Mike Hearn,<br>Robert Shearman,<br>Filip Navara</td>
     </tr>
     <tr>
       <td>rsabase.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/security/security/microsoft_base_cryptographic_provider.asp">MSDN: Base Cryptographic Provider</a></td>
-      <td><a href="{$root}/site/?issue=210#Crypto%20and%20RSABASE.DLL">#210</a></td>
+      <td><a href="{$root}/site/?issue=233#rsabase.dll%20Work">#233</a>,
+          <a href="{$root}/site/?issue=210#Crypto%20and%20RSABASE.DLL">#210</a></td>
       <td class="pct5">5% complete<br>
       <td>Mike McCormack</td>
+    </tr>
+    <tr>
+      <td>rsaenh.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcesecurity5/html/wce50concryptographyregistrysettings.asp">MSDN: Cryptography Registry Settings</a></td>
+      <td><a href="{$root}/site/?issue=210#Crypto%20and%20RSABASE.DLL">#210</a>,
+          <a href="{$root}/site/?issue=218#CryptoAPI%20Needs%20Help">#218</a>,
+          <a href="{$root}/site/?issue=246#MS%20Enhanced%20Provider%20Library">#246</a>,
+          <a href="{$root}/site/?issue=255#Software%20to%20Test%20Crypto%20API">#255</a></td>
+      <td class="pct5">5% complete</td>
+      <td>Michael Jung</td>
+    </tr>
+      <td>secur32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/secauthn/security/authentication_functions.asp">MSDN: Authentication Functions</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Michael Jung</td>
     </tr>
     <tr>
       <td>serialui.dll</td>
@@ -382,7 +463,7 @@
     <tr>
       <td>shdocvw.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/htmlhelp/html/vsconovhtmlhelpapioverview.asp">MSDN: HTML Help API</a></td>
-      <td>None</td>
+      <td><a href="{$root}/site/?issue=211#Embedding%20Mozilla's%20ActiveX%20Control">#211</a></td>
       <td class="pct25">25% complete</td>
       <td>Mike McCormack</td>
     </tr>
@@ -432,14 +513,14 @@
     <tr>
       <td>ttydrv</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/graphics/hh/graphics/prnspool_7ig7.asp">MSDN: Printer Drivers and Spooler Components</a></td>
-      <td>None</td>
+      <td><a href="{$root}/site/?issue=231#Using%20Multiple%20Graphics%20Drivers">#231</a></td>
       <td class="pct80">80% complete</td>
       <td>Dmitry Timoshkov</td>
     </tr>
     <tr>
       <td>twain32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/still/hh/still/wia_drv_scan_7h2h.asp">MSDN: TWAIN-Compatible Applications</a></td>
-      <td>None</td>
+      <td><a href="{$root}/site/?issue=257#Setting%20Up%20a%20Scanner">#257</a></td>
       <td class="pct25">25% complete</td>
       <td></td>
     </tr>
@@ -467,16 +548,26 @@
     <tr>
       <td>user32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/windowing/windows/windowreference/windowfunctions/adjustwindowrect.asp">MSDN: Window Functions</a></td>
-      <td>None</td>
+      <td><a href="{$root}/site/?issue=243#Button%20Code%20Audit">#243</a></td>
       <td class="pct95">95% complete</td>
       <td>Alexandre Julliard</td>
     </tr>
     <tr>
       <td>uxtheme.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnwxp/html/xptheming.asp">MSDN: Windows XP Visual Styles</a></td>
-      <td><a href="{$root}/site/?issue=191#Theming%20&%20UXTheme.DLL">#191</a></td>
+      <td><a href="{$root}/site/?issue=191#Theming%20&%20UXTheme.DLL">#191</a>,
+          <a href="{$root}/site/?issue=211#Theming%20Update">#211</a>,
+          <a href="{$root}/site/?issue=212#Theming%20Widgets">#212</a>,
+          <a href="{$root}/site/?issue=249#Changing%20Wine's%20Look%20and%20Feel">#249</a</td>
       <td class="pct60">60% complete</td>
       <td>Kevin Koltzau</td>
+    </tr>
+    <tr>
+      <td>vdmdbg.dll</td>
+      <td class="adequate"><a href="http://www.cs.uofs.edu/~beidler/Ada/win32/win32-vdmdbg.html">vdmdbg Documentation</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Sami Aario</td>
     </tr>
     <tr>
       <td>version.dll</td>
@@ -497,21 +588,21 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/win9x/msdos_6rdx.asp">MSDN: DOS Extensions Reference</a></td>
       <td><a href="{$root}/site/?issue=123#SoundBlaster%20Emulation">#123</a>,
           <a href="{$root}/site/?issue=154#Executing%20Batch%20Files">#154</a></td>
-      <td class="pct60"><a href="{$root}/site/status_todo#DOS">60% complete</a></td>
+      <td class="pct60">60% complete</a></td>
       <td>Jukka Heinonen</td>
     </tr>
     <tr>
       <td>wineps.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/prntspol_95id.asp">MSDN: Printing and Print Spooler Reference</a></td>
       <td><a href="{$root}/site/?issue=82#PS%20printer%20driver%20and%20fonts">#82</a></td>
-      <td class="pct90"><a href="{$root}/site/status_todo#Printers_">90% complete</a></td>
+      <td class="pct90">90% complete</a></td>
       <td>Huw D M Davies</td>
     </tr>
     <tr>
       <td>wininet.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wininet/wininet/wininet_functions.asp">MSDN: Wininet Functions</a></td>
       <td><a href="{$root}/site/?issue=173#WinINet%20Work">#173</a></td>
-      <td class="pct60"><a href="{$root}/site/status_todo#Native_Programs">60% complete</a></td>
+      <td class="pct60">60% complete</a></td>
       <td>Mike McCormack</td>
     </tr>
     <tr>
@@ -523,12 +614,13 @@
     </tr>
     <tr>
       <td>winsock.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcesdkr/html/wcesdkrwinsock_module.asp">MSDN: Winsock Functions</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winsock/winsock/winsock_functions.asp">MSDN: Winsock Functions</a></td>
       <td><a href="{$root}/site/?issue=8#Winsock%20&%2032%20bit">#8</a>,
           <a href="{$root}/site/?issue=9#Winsock%20(cont'd)">#9</a>,
           <a href="{$root}/site/?issue=53#Winsock%20status">#53</a>,
-          <a href="{$root}/site/?issue=195#IPX%20Improvements">#195</a></td>
-      <td class="pct95"><a href="{$root}/site/status_todo#Winsock">95% complete</a><br>
+          <a href="{$root}/site/?issue=195#IPX%20Improvements">#195</a>,
+          <a href="{$root}/site/?issue=219#Converting%20Wininet%20to%20Windows%20Sockets">#219</a></td>
+      <td class="pct95">95% complete</a><br>
       </td>
       <td>Martin Wilck,<br>Juan Lang</td>
     </tr>
@@ -556,6 +648,13 @@
       <td></td>
     </tr>
     <tr>
+      <td>wow32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winprog/winprog/generic_thunks_reference.asp">MSDN: Generic Thunks Reference</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td></td>
+    </tr>
+    <tr>
       <td>wsock32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcemain4/html/_wcesdk_winsock_module.asp">MSDN: Winsock 2 Functions</a></td>
       <td><a href="{$root}/site/?issue=108#Winsock2">#108 (1)</a>,
@@ -574,8 +673,10 @@
           <a href="{$root}/site/?issue=183#Configuring%20Keyboard%20Layouts">#183</a>,
           <a href="{$root}/site/?issue=187#Input%20Events%20and%20DGA%20Problems">#187</a>,
           <a href="{$root}/site/?issue=192#Support%20For%20XRandR">#192</a>,
-          <a href="{$root}/site/?issue=194#Keyboard%20Detection">#194</a></td>
-      <td class="pct80"><a href="{$root}/site/status_todo#GDI">80% complete</a></td>
+          <a href="{$root}/site/?issue=194#Keyboard%20Detection">#194</a>,
+          <a href="{$root}/site/?issue=215#Creating%20the%20Registry%20Without%20x11drv">#215</a>,
+          <a href="{$root}/site/?issue=227#Mouse%20Handling">#227</a></td>
+      <td class="pct80">80% complete</a></td>
       <td>Dmitry Timoshkov</td>
     </tr>
   </table>
