@@ -65,11 +65,15 @@ function home_page ()
 	$wwn = wwn_get_list($config->wwn_xml_path);
 	$wwn_box = $html->theme_box($config->theme, "box_title", "Wine Weekly News", "97%", wwn_issues_list($wwn[0], $wwn[1], 3), '10', 'white', 'topMenu');
 	
+    // sponsor box
+    $sponsor_box = $html->theme_box($config->theme, "box", "", "97%", $html->template("base", 'sponsor'), '10', 'white', 'topMenu');
+    
 	// load the template for home page and fill in
 	$vars = array(
 	              'about_box'  => $about_box,
 			      'latest_box' => $latest_box,
-			      'wwn_box' => $wwn_box
+			      'wwn_box' => $wwn_box,
+                  'sponsor_box' => $sponsor_box
 			     );
 	$text = $html->template($config->theme, 'home_page', $vars);	 
 	
