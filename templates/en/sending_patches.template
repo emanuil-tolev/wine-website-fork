@@ -57,7 +57,7 @@ file.  Then, use</p>
 
  <table width="300" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
-  cvs diff -u &gt; patch.diff
+  cvs diff -u -p &gt; patch.diff
  </span>
  </td></tr>
  </table>
