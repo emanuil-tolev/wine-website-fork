@@ -2,6 +2,47 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+ <p>Changes since July 17 2003:</p>
+ 
+ <ul>
+ <li>All changes were made to Wine Status Core page</li>
+ <li>ADD - WWN link's (Thanks to Brian)</li>
+ <li>ADD - Regedit to tool's section</li>
+ <li>ADD - Winehelp to tool's section</li>
+ <li>ADD - Wine configuration tool (winecfg)to tool's section</li>
+ <li>ADD - Links to some Documentation section's</li>
+ <li>ADD - Jukka Heinonen as worker to DOS application support</li>
+ <li>ADD - Dimitrie O. Paun as worker to Wine Resource Compiler</li>
+ <li>ADD - Eric Pouech as worker to Dll separation</li>
+ <li>Remove - Native Windows printer drivers</li>
+ <li>Remove - DLL placeholder file</li>
+ <li>Remove - CPU emulation</li>
+ <li>Remove - WineHQ and Corel relationship</li>
+ <li>Remove - Bertho Stultiens as worker for Wine Resource Compiler</li>
+ <li>Remove - Bertho Stultiens as worker for Wine Message Compiler</li>
+ <li>Remove - Ove Kåven,Alexandre Julliard as workers for DOS</li>
+ <li>remove - broken links</li>
+ <li>Change - The Wine release plan from 1.0 to 0.9 and add link to todo's on the front page.</li>
+ <li>Fix bullet Links</li>
+ <li>Bootup/autostart management (wineboot): 30% -&gt; 70%</li>
+ <li>DLL separation: 85% -&gt; 80%</li>
+ <li>Window management: 95% -&gt; 85%</li>
+ <li>General printer setup: 70% -&gt; 80%</li>
+ <li>Internal PostScript printer driver: 60% -&gt; 90%</li>
+ <li>Unicode support: 80% -&gt; 85%</li> 
+ <li>BiDi: 5% -&gt; 20%</li>
+ <li>Dynamic Data Exchange (DDE): 80% -&gt; 85%</li>
+ <li>I/O port access: 100% -&gt; 90%</li>
+ <li>Multi-user support: 20% -&gt; 10%</li> 
+ <li>Wine Resource Compiler: 95% -&gt; 100%</li>
+ <li>Wine Porting Tool (winemaker): 75% -&gt; 60%</li>
+ <li>How to use Winelib: 90% -&gt; 60%</li>
+ <li>How to compile MFC with Winelib: 80% -&gt; 60%</li>
+ <li>The History of the Wine Project: from Poor to Adequate</li>
+ </ul>
+ <br>
+
+
  <p>Changes since July 8 2003:</p>
 
  <ul> 
@@ -139,7 +180,7 @@
  <li>New - Links to tasklet &amp; tasklist</li>
  <li>Removed - Unicode support section</li>
  <li>Removed - Multimedia wave audio section</li>
- <li>Fix Bullet links <br></li>
+ <li>Fix Bullet links</li>
  </ul>
  <br>
 
