@@ -1,14 +1,5 @@
 <!--TITLE:[Wine Options Status]-->
 
-<style type="text/css">
-  <!--
-    .todo {background-color: red}
-    .inprogress {background-color: yellow}
-    .done {background-color: limegreen}
-  -->
-</style>
-
-
 <table>
 <caption>Settings changeable through WineCfg</caption>
 <tr>		<th>Name</th>				<th>Dynamic</th><th>PerApp</th>	<th>Default value</th></tr>

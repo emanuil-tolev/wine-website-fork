@@ -1,87 +1,136 @@
 /* Body Document Defaults */
-BODY 		{ background-color: #E2E2E2;
-              color: #000000; margin: 0; }
+BODY               { background-color: #E2E2E2; color: #000000; margin: 0; }
 
 /* Link Colors */
-A		    { color: #A50D0D; }
-A:visited	{ color: #FF0000; }
-A:hover		{ color: #FF6666; text-decoration: underline; }
-A:active	{ color: #FF0000; }
-A.hidden	{ text-decoration: none; color: #000000; }
+A	           { color: #A50D0D; }
+A:visited          { color: #FF0000; }
+A:hover            { color: #FF6666; text-decoration: underline; }
+A:active           { color: #FF0000; }
+A.hidden           { text-decoration: none; color: #000000; }
 
 /* General fonts and sizes */
-OL,UL,P		{ font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt; }
-TD,TR,TH	{ font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt; }
-INPUT		{ font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt; }
-PRE         { font-family: Fixed; font-size: 10pt; }
+OL,UL,P            { font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt; }
+TD,TR,TH           { font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt; }
+INPUT              { font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt; }
+PRE                { font-family: Fixed; font-size: 10pt; }
 
 /* Hn Sizes */
-H1          { font-size: 180%; }
-H2          { font-size: 150%; }
-H3          { font-size: 130%; }
-H4          { font-size: 120%; }
-H5          { font-size: 110%; }
+H1                 { font-size: 180%; }
+H2                 { font-size: 150%; }
+H3                 { font-size: 130%; }
+H4                 { font-size: 120%; }
+H5                 { font-size: 110%; }
 
 /* WWN Colors */
-.wwnQuote   { color: #A8003C; }
-
-p.indent
-{
-  padding-left: 1em;
-  padding-right: 1em;
-}
+.wwnQuote          { color: #A8003C; }
+p.indent           { padding-left: 1em; padding-right: 1em;}
 
 /* background colors */
-.vltgrey	{ background-color: #f9f9f9; }
-.ltgrey		{ background-color: #EFEFEF; }
-.grey		{ background-color: #C0C0C0; }
-.white		{ background-color: #FFFFFF; }
-.dkgrey		{ background-color: #888888; }
-.ltblack	{ background-color: #999999; }
-.black		{ background-color: #000000; }
-.blueish    { background-color: #bed5f7; }
+.vltgrey           { background-color: #f9f9f9; }
+.ltgrey            { background-color: #EFEFEF; }
+.grey              { background-color: #C0C0C0; }
+.white             { background-color: #FFFFFF; }
+.dkgrey            { background-color: #888888; }
+.ltblack           { background-color: #999999; }
+.black             { background-color: #000000; }
+.blueish           { background-color: #bed5f7; }
 
 /* text colors */
-.inverse    { color: #FFFFFF; }
-.disabled	{ color: #999999; }
-.normal		{ color: #000000; }
-.error		{ color: #ff0000; }
-.water		{ color: #6060ff; }
-.good		{ color: #60ff60; }
-.warning	{ color: #fffa00; }
-.blueman    { color: #335184; }
+.inverse           { color: #FFFFFF; }
+.disabled          { color: #999999; }
+.normal            { color: #000000; }
+.error             { color: #ff0000; }
+.water             { color: #6060ff; }
+.good              { color: #60ff60; }
+.warning           { color: #fffa00; }
+.blueman           { color: #335184; }
 
 /* text styles */
-.strike 	{ text-decoration: line-through; }
-.bold       { font-weight: bold; }
-.newstitle  { font-size: 14px; font-weight: bold; color: #000000; }
+.strike            { text-decoration: line-through; }
+.bold              { font-weight: bold; }
+.newstitle         { font-size: 14px; font-weight: bold; color: #000000; }
 
 /* Menu Config */
-.menuTitle	       { font-size: 12px; color: #ffffff; font-weight: bold; text-decoration: none; }
+.menuTitle	   { font-size: 12px; color: #ffffff; font-weight: bold; text-decoration: none; }
 .menuTitle:visited { font-size: 12px; color: #ffffff; font-weight: bold; text-decoration: none; }
 .menuTitle:hover   { font-size: 12px; color: #ffffff; font-weight: bold; text-decoration: none; }
-.menuLink	       { font-size: 10px; color: #ffffff; font-weight: bold; }
-.menuItem	       { font-size: 10px; color: #000000; }
+.menuLink          { font-size: 10px; color: #ffffff; font-weight: bold; }
+.menuItem          { font-size: 10px; color: #000000; }
 .menuItem:visited  { font-size: 10px; color: #000000; }
 .menuItem:hover    { font-size: 10px; color: #A50D0D; }
 
-.topMenu	{ background-color: #601919; }
-.sideMenu	{ background-color: #FFFFFF; }
-.border	    { background-color: #601919; }
+.topMenu           { background-color: #601919; }
+.sideMenu          { background-color: #FFFFFF; }
+.border            { background-color: #601919; }
 
 /* Misc */
-.tiny		{ font-size: 6pt; }
-.small		{ font-size: 8pt; }
-.big		{ font-size: 14pt; }
+.tiny              { font-size: 6pt; }
+.small             { font-size: 8pt; }
+.big               { font-size: 14pt; }
+.rowtitle          { background-color: black; color: white; font-weight: bold; }
 
 /* Generic Buttons */
-.button		 { background-color: #6b86bb; color: #ffffff; font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt;
-               padding: 0; }
-.searchInput { background-color: #FFFFFF; color: #000000; font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt;
-               padding: 0; }
-				  
+.button            { background-color: #6b86bb; color: #ffffff; font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt; padding: 0; }
+.searchInput       { background-color: #FFFFFF; color: #000000; font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt; padding: 0; }
+
 /* Note Blip */
-.blip		{ color: #ff0000; font-size: 8pt; }				   
+.blip              { color: #ff0000; font-size: 8pt; }				   
 
 /* Footer */
-.footer		{ font-size: 8pt; color: #777777; }
+.footer            { font-size: 8pt; color: #777777; }
+
+/* Status colors */
+.hdr    { background-color: #000000; color: #ffffff; }
+.pct0   { background-color: #ff5050; }
+.pct5   { background-color: #ff5d4f; }
+.pct10  { background-color: #ff694e; }
+.pct15  { background-color: #ff764d; }
+.pct20  { background-color: #ff824b; }
+.pct25  { background-color: #ff8f4a; }
+.pct30  { background-color: #ff9b49; }
+.pct35  { background-color: #ffa848; }
+.pct40  { background-color: #ffb447; }
+.pct45  { background-color: #ffc146; }
+.pct50  { background-color: #ffcd45; }
+.pct55  { background-color: #ffda43; }
+.pct60  { background-color: #ffe642; }
+.pct65  { background-color: #fff341; }
+.pct70  { background-color: #ffff40; }
+.pct75  { background-color: #dcff48; }
+.pct80  { background-color: #c8ff50; }
+.pct85  { background-color: #b4ff58; }
+.pct90  { background-color: #a0ff60; }
+.pct95  { background-color: #8cff60; }
+.pct100 { background-color: #60ff60; }
+.nonexistent    { background-color: #ff5050; }
+.poor           { background-color: #ff8f4a; }
+.outdated       { background-color: #ffcd45; }
+.outdadeq       { background-color: #ffff40; }
+.adequate       { background-color: #dcff48; }
+.adeqgood       { background-color: #c0ff54; }
+.good           { background-color: #60ff60; }
+
+/* ToDo colors */
+.todo       {background-color: red}
+.inprogress {background-color: yellow}
+.done       {background-color: limegreen}
+.invalid {color: gray; text-decoration: line-through}
+
+/* Fun Projects */
+.works          { background-color: lightblue; }
+.abandoned      { background-color: gray; }
+.modified       { font-weight: bold; }
+.submitted      { font-style: italic; }
+.committed      { font-style: italic; color: gray; }
+
+/* App Support status */
+.gold           { background-color: wheat; }
+.silver         { background-color: silver; }
+
+/* dead
+.abandoned a    { color: black; }
+.works a        { color: black; }
+.todo a         { color: black; }
+.inprogress a   { color: black; }
+.done a         { color: black; }
+*/

@@ -1,17 +1,5 @@
 <!--TITLE:[Applications]-->
 
-<style type="text/css">
-<!--
-span.todo       { color: red; }
-span.inprogress { color: yellow; }
-span.done       { color: limegreen; }
-li.modified     { font-weight: bold; }
-table.gold      { background-color: wheat; }
-dl.silver       { background-color: silver; }
-tr.rowtitle     { background-color: black; color: white; font-weight: bold; }
--->
-</style>
-
 <h1>Wine Application Database</h1>
 
 <p>
@@ -49,7 +37,7 @@ direct formatting related flames to <a href="mailto:dpaun@rogers.com">Dimitrie O
     <td>This is the solution to your PDF troubles.</td>
     <td>6</td>
     <td>Dlls installed by the program: advpack.dll, msvcrt.dll, shfolder.dll, w95inf32.dll, msvcp60.dll, oleaut32.dll, w95inf16.dll</td>
-    <td><span class=todo>TODO</span></td>
+    <td><span class=todo>[TODO]</span></td>
   </tr>
 
   <tr class=white>
@@ -58,7 +46,7 @@ direct formatting related flames to <a href="mailto:dpaun@rogers.com">Dimitrie O
     <td>A great application that allows remote file edits, chmods on UNIX boxes and file moves.</td>
     <td>9</td>
     <td>No dlls installed.</td>
-    <td><span class=todo>TODO</span></td>
+    <td><span class=todo>[TODO]</span></td>
   </tr>
 
   <tr class=white>
@@ -67,7 +55,7 @@ direct formatting related flames to <a href="mailto:dpaun@rogers.com">Dimitrie O
     <td>This is a popular IRC client.</td>
     <td>25</td>
     <td>No dlls installed.</td>
-    <td><span class=todo>TODO</span></td>
+    <td><span class=todo>[TODO]</span></td>
   </tr>
 
   <tr class=white>
@@ -76,7 +64,7 @@ direct formatting related flames to <a href="mailto:dpaun@rogers.com">Dimitrie O
     <td>Simple Telnet/SSH client & console.</td>
     <td>29</td>
     <td>No install needed.</td>
-    <td><span class=todo>TODO</span></td>
+    <td><span class=todo>[TODO]</span></td>
   </tr>
 
   <tr class=white>
@@ -85,7 +73,7 @@ direct formatting related flames to <a href="mailto:dpaun@rogers.com">Dimitrie O
     <td>A remote file management and command-line FTP client.</td>
     <td>83</td>
     <td>No dlls installed.</td>
-    <td><span class=todo>TODO</span></td>
+    <td><span class=todo>[TODO]</span></td>
   </tr>
 
   <tr class=white>
@@ -94,7 +82,7 @@ direct formatting related flames to <a href="mailto:dpaun@rogers.com">Dimitrie O
     <td>E-mail client of choice for many beginner and advanced users.</td>
     <td>96</td>
     <td>You may need to mark WINSOCK.DLL as "On demand only" in Tools-&gt;Options-&gt;Advanced</td>
-    <td><span class=todo>TODO</span></td>
+    <td><span class=todo>[TODO]</span></td>
   </tr>
 
   <tr class=white>
@@ -103,7 +91,7 @@ direct formatting related flames to <a href="mailto:dpaun@rogers.com">Dimitrie O
     <td>This is a fast compression utility.</td>
     <td>N/A</td>
     <td>No dlls installed.</td>
-    <td><span class=todo>TODO</span></td>
+    <td><span class=todo>[TODO]</span></td>
   </tr>
 
   <tr class=white>
@@ -112,7 +100,7 @@ direct formatting related flames to <a href="mailto:dpaun@rogers.com">Dimitrie O
     <td>A visual text file differencing and merging tool for Win32 platforms.</td>
     <td>10@SF</td>
     <td>No dlls installed.</td>
-    <td><span class=todo>TODO</span></td>
+    <td><span class=todo>[TODO]</span></td>
   </tr>
 
   <tr class=white>
@@ -121,7 +109,7 @@ direct formatting related flames to <a href="mailto:dpaun@rogers.com">Dimitrie O
     <td>FileZilla is a fast FTP client for Windows with a lot of features.</td>
     <td>11@SF</td>
     <td>No dlls installed.</td>
-    <td><span class=todo>TODO</span></td>
+    <td><span class=todo>[TODO]</span></td>
   </tr>
 </table>
 
