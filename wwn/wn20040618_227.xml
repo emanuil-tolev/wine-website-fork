@@ -178,12 +178,12 @@ explanation to help understand better:</p>
 <p>Lionel described how the mouse handling functioned:</p>
 <quote who="Lionel Ulmer"><p>
 Well this is related to the way DInput works: you have two ways to get
-informations from your devices, either you get an immediate picture of the
+information from your devices, either you get an immediate picture of the
 device state at a given time (GetDeviceState) or you can get all the
-individual timestamped events that occured since last time you queried the
+individual timestamped events that occurred since last time you queried the
 device (GetDeviceData).
 </p><p>
-So GEN_EVENT simply queues a hardwware event into the queue that can be
+So GEN_EVENT simply queues a hardware event into the queue that can be
 queried via 'GetDeviceData'.
 </p><p>
 The critical sections are here because you can have one thread queuing
@@ -214,7 +214,7 @@ games).
 </p><p>
 Note also that it would be much nicer to do a 'rectangle' warp instead of a
 'point' wrap: do not wrap on each mouse event, but only when the mouse goes
-out of a centered rectangle which would be about half the size of the
+out of a centred rectangle which would be about half the size of the
 screen. This would have the advantage of smoother mouse movements as it
 would minimize a lot the number of warps.
 </p><p>
@@ -289,7 +289,7 @@ various misc bugs related to that as I go - I'm sure there are some more
 in there, but as the config file is destined for eventual doom anyway I am
 wondering if we still need wineinstall at all?
 </p><p>
-Currently, it's possible to use Wine quite succesfully just by doing a
+Currently, it's possible to use Wine quite successfully just by doing a
 standard <tt>./configure</tt>, <tt>make</tt>, <tt>make install</tt>. 
 When you run wine for the first
 time wineprefixcreate will be used to setup ~/.wine, merge the
@@ -399,7 +399,7 @@ http://www.tashcorp.net/Wine/Austerlitz/austerlitz-20040505.html</a></ul>
 
 <u>Dominions II</u>
 </p><p>
-No noticable change. Dominions II still has screen redraw errors and mouse 
+No noticeable change. Dominions II still has screen redraw errors and mouse 
 errors.
 </p><p>
 Full report:
