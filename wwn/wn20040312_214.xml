@@ -182,40 +182,42 @@ to avoid conflicting or something like that.
 
 <p>About two hours later Alexandre showed them how to do it:</p>
 <quote who="Alexandre Julliard"><p>
-Something along these lines should do the trick:</p><p>
-<code>
-#include &lt;wine/library.h&gt;<br />
-#include &lt;stdio.h&gt;<br />
-#include &lt;windows.h&gt;<br />
-#include &lt;winternl.h&gt;<br />
-#include &lt;setjmp.h&gt;<br />
+Something along these lines should do the trick:</p>
+<pre width="72">
+#include &lt;wine/library.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;windows.h&gt;
+#include &lt;winternl.h&gt;
+#include &lt;setjmp.h&gt;
 
-static jmp_buf jmpbuf;<br />
+static jmp_buf jmpbuf;
 
 int WINAPI
-WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLine, int nCmdShow)<br />
-{<br />
-    <ul>longjmp( jmpbuf, 1 );</ul><br />
-}<br />
+WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLine, int nCmdShow)
+{
+    longjmp( jmpbuf, 1 );
+}
 
 int
-SharedWineInit(void)<br />
-{<ul>
-    unsigned char Error[1024]="";<br />
-    char *WineArguments[] = {"sharedapp", LIBPATH "/wine-sharedlib.exe.so", NULL};<br />
+SharedWineInit(void)
+{
+    unsigned char Error[1024]="";
+    char *WineArguments[] = {"sharedapp", LIBPATH "/wine-sharedlib.exe.so", NULL};
 
-    if (!setjmp( jmpbuf ))<br />
-    {<ul>
-        wine_init(2, WineArguments, Error, sizeof(Error));<br />
-        printf( "should not get here\n" );</ul>
-    }<br />
-    NtCurrentTeb()-&gt;Tib.ExceptionList = (void *)~0UL;<br />
-    VirtualFree( NtCurrentTeb()-&gt;DeallocationStack, 0, MEM_RELEASE );<br />
-    NtCurrentTeb()-&gt;DeallocationStack = NULL;<br />
-    NtCurrentTeb()-&gt;Tib.StackBase = (void*)~0UL;  /* FIXME: should find actual limits here */<br />
-    NtCurrentTeb()-&gt;Tib.StackLimit = 0;<br />
+    if (!setjmp( jmpbuf ))
+    {
+        wine_init(2, WineArguments, Error, sizeof(Error));
+        printf( "should not get here\n" );
+    }
+    NtCurrentTeb()-&gt;Tib.ExceptionList = (void *)~0UL;
+    VirtualFree( NtCurrentTeb()-&gt;DeallocationStack, 0, MEM_RELEASE );
+    NtCurrentTeb()-&gt;DeallocationStack = NULL;
+    NtCurrentTeb()-&gt;Tib.StackBase = (void*)~0UL;  /* FIXME: should find actual limits here */
+    NtCurrentTeb()-&gt;Tib.StackLimit = 0;
     return(0);
-</ul>}</code></p></quote>
+}
+</pre>
+</quote>
 
 <p>So, with all of this being self contained, it's not
 necessary for Wine to do incorporate anything.  Boaz
@@ -412,46 +414,43 @@ Mike Hearn posted a small script to allow changing the options on the
 commandline more easily.  If you call the script "vino" as Mike suggested,
 you can invoke it with "vino +relay ole32=n [program.exe]" for example.
 The script:</p>
-<quote who="Mike Hearn"><p>
-<code>
-#!/bin/bash<br />
-# A wine wrapper script. In Vino Veritas!<br />
-# v1.0 (C) Mike Hearn<br />
+<quote who="Mike Hearn">
+<pre width="72">
+#!/bin/bash
+# A wine wrapper script. In Vino Veritas!
+# v1.0 (C) Mike Hearn
 
-# Licensed under the GPL<br />
+# Licensed under the GPL
 
 for a in $@; do
-<ul>
+
     if [[ "${a:0:1}" == "+" ]] || [[ "${a:0:1}" == "-" ]]; then
-    <ul>	
+    	
 	if [[ "$WINEDEBUG" != "" ]]; then
-	<ul>    
-	    WINEDEBUG="$WINEDEBUG,$a" <br />
+	    WINEDEBUG="$WINEDEBUG,$a"
 	    shift
-	</ul>
 	else
-	<ul>
-	    WINEDEBUG="$a"<br />
+	    WINEDEBUG="$a"
 	    shift
-	</ul>
 	fi
-    </ul>
     elif [[ "${a%=n}" != "$a" ]] || [[ "${a%=b}" != "$a" ]]; then
-	<ul>
-	WINEDLLOVERRIDES="$a $WINEDLLOVERRIDES"<br />
-	shift
-        </ul>
-    fi</ul>
-done<br /><br />
+	    WINEDLLOVERRIDES="$a $WINEDLLOVERRIDES"
+	    shift
+    fi
+    
+done
 
-red="\033[1;31m"<br />
-normal="\033[0m"<br /><br />
+red="\033[1;31m"
+normal="\033[0m"
 
-export WINEDEBUG WINEDLLOVERRIDES<br />
-if [[ "$WINEDEBUG" != "" ]]; then echo -e "${red}debug channels:${normal} $WINEDEBUG"; fi<br />
-if [[ "$WINEDLLOVERRIDES" != "" ]]; then echo -e "${red}dll overrides:${normal} $WINEDLLOVERRIDES"; fi<br />
+export WINEDEBUG WINEDLLOVERRIDES
+if [[ "$WINEDEBUG" != "" ]]; then
+    echo -e "${red}debug channels:${normal} $WINEDEBUG"; fi
+if [[ "$WINEDLLOVERRIDES" != "" ]]; then
+    echo -e "${red}dll overrides:${normal} $WINEDLLOVERRIDES"; fi
 wine $@
-</code></p></quote>
+</pre>
+</quote>
 
 </section>
 
