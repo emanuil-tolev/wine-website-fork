@@ -2,17 +2,29 @@
 
 <h1>Forums</h1>
 
-<p>WineHQ hosts several mailing lists for submitting patches, tracking CVS
-commits, and discussing Wine. They are now handled by Mailman, feature a
-very customizable user subscription config (digests, no mail, ...), and can
-be subscribed to <a href="/mailman/listinfo">via WWW</a>
+<p>WineHQ offers several methods of communicating with other Wine users, and the Wine
+development team itself.</p>
+
+<ul>
+    <li><a href="#ml">Mailing Lists</a></li>
+    <li><a href="#ng">USENET Newsgroup</a></li>
+    <li><a href="#irc">IRC Channel</a></li>
+</ul>
+
+
+<a name="ml"></a>
+<h2>Mailing Lists</h2>
+
+<p>WineHQ has mailing lists for submitting patches, tracking CVS
+commits, and discussing Wine. They feature a very customizable user
+subscription config, and can be subscribed to <a href="/mailman/listinfo">via WWW</a>
 or by sending mail to <i>listname</i>-request@winehq.com with a subject line of
 "subscribe". To unsubscribe, use a subject line of "unsubscribe
 <i>password</i>" using the password you got when you subscribed,
-or just use <a href="/mailman/listinfo">the Mailman web interface</a>.
-You should be subscribed to the lists before you post to them, otherwise
-your posting will be treated as possible spam by the mailing list software.
-</p>
+or just use <a href="/mailman/listinfo">the Mailman web interface</a>.</p>
+
+<p><b>Note:</b> You should be subscribed to the lists before you post to them, otherwise
+your posting will be treated as possible spam by the mailing list software.</p>
 
 <ul>
 	<li> [<a href="http://www.winehq.com/mailman/listinfo/wine-announce">(Un-)Subscribe</a>] 
@@ -57,55 +69,34 @@ your posting will be treated as possible spam by the mailing list software.
 	<li> [<a href="http://www.winehq.com/mailman/listinfo/wine-users">(Un-)Subscribe</a>]
 	     [<a href="http://www.winehq.com/hypermail/wine-users/">Archive</a>]
 	  <a href="mailto:wine-users@winehq.com">wine-users@winehq.com</a> <br>
-	  A medium traffic (10/day) open list for end-user discussions.<br>
-	  This is meant as a gateway to <a href="news:comp.emulators.ms-windows.wine">comp.emulators.ms-windows.wine</a>
-          and it may be the case again one day. However, at this time this
-          mailing list is not related to the newsgroup.<br><br>
+	  A medium traffic (10/day) open list for end-user discussions.
 </ul>
 
-<p align=center><img src="../images/grey_pixel.gif" width="95%" height=1 border=0 alt="-" ></p>
 
-<h2> Using procmail to filter mailing lists </h2>
 
-Many people who subscribe to high traffic lists prefer to have their software
-prefilter list traffic into mailboxes. Here's an example of how to do
-this with <a href="http://www.iki.fi/~era/procmail/">Procmail</a>.
-First, install procmail. Second, put the following line in your
-<code>.forward</code> file:
+<a name="ng"></a>
+<h2>Usenet Newsgoup</h2>
 
-<blockquote>
- <table width="300" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>
- |/usr/bin/procmail
- </span>
- </td></tr>
- </table>
-</blockquote>
+<p>WineHQ has a newsgroup hosted by Usenet. You can read and post using a newsgroup reader such as
+<a href="http://www.mozilla.org/">Mozilla</a> or <a href="http://pan.rebelbase.com/">Pan</a>.</p>
 
-Finally, construct a <code>.procmailrc</code> file which suits your needs. 
-Here is one which just sorts Wine mailing list mail into folders in the
-<code>~/mail</code> directory:
+<p><a href="news:comp.emulators.ms-windows.wine">comp.emulators.ms-windows.wine</a> or via the web at
+<a href="http://groups.google.com/groups?group=comp.emulators.ms-windows.wine">Google</a></p>
+
+
+
+<a name="irc"></a>
+<h2>IRC Channel</h2>
+
+<p><a href="http://www.freenode.net">Freenode.net</a> hosts a chat room for Wine. You can access the
+chat room using an IRC program such as <a href="http://www.xchat.org/">X-Chat</a>. Use the settings
+listed below.</p>
 
 <blockquote>
- <table width="500" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>
-    PATH=/bin:/usr/bin:/usr/bin<br>
-    MAILDIR=$HOME/mail      #you'd better make sure it exists<br><br>
-    
-    :0:<br>
-    * ^TOwine-devel<br>
-    wine-devel<br><br>
-    
-    :0:<br>
-    * ^TOwine-cvs<br>
-    wine-cvs<br><br>
-    
-    :0:<br>
-    * ^TOwine-patches<br>
-    wine-patches
- </span>
- </td></tr>
- </table>
+    <b>Server:</b> irc.freenode.net<br>
+    <b>Port:</b> 6667<br>
+    <b>Channel:</b> #wine<br>
 </blockquote>
+
 
 <p>&nbsp;</p>
