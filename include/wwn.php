@@ -61,7 +61,26 @@ class wwn
         closedir($dir);
         return array($wwn, $cur);
     }
-    
+
+    // read dir and get interviews
+    function get_interviews ($path)
+    {
+        $wwn = array();
+        $dir = opendir($path);
+        while($file = readdir($dir))
+        {
+            if ($file == "." or $file == ".." or $file == "CVS")
+              continue;
+            $issue = ereg_replace("interview_([0-9]+)\.xml", "\\1", $file);
+            if ($issue > $old)
+                $cur = $issue;
+            $old = $issue;
+            $wwn[$issue] = $file;
+        }
+        closedir($dir);
+        return array($wwn, $cur);
+    }
+
     // show back issues
     function issues_list ($issues, $cur, $limit = 0, $pos = 0)
     {
@@ -233,13 +252,17 @@ class wwn
     // display a single wwn issue
     function view_interview($interview)
     {
-        global $config, $html, $cur, $pos;
+        global $config, $html;
     
         // read dir and get issues
-        list($wwn, $cur) = $this->get_list($config->wwn_xml_path."/interviews/");
-            
+        list($wwn, $cur) = $this->get_interviews($config->wwn_xml_path."/interviews/");
+
+        // no interview found, show a 404
+        if (!$interview or !$wwn[$interview])
+            return $html->theme_box($config->theme, "box_title", "404 Not Found", "100%", $html->template("base", "404"), '10', 'white', 'topMenu');
+        
         // get issue
-        $this->wwn_xml_parse($config->wwn_xml_path."/interviews/".$wwn{$cur});
+        $this->wwn_xml_parse($config->wwn_xml_path."/interviews/".$wwn[$interview]);
         
         // title for page
         $html->template_title = $this->who.' Interview';
