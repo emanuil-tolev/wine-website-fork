@@ -19,6 +19,7 @@ $config = new config($file_root."/include/"."winehq.conf");
 // load global libs
 require($file_root."/include/"."html.php");
 require($file_root."/include/"."sidebar.php");
+require($file_root."/include/"."plugin.php");
 require($file_root."/include/"."wwn.php");
 require($file_root."/include/"."utils.php");
 

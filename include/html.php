@@ -14,6 +14,7 @@ class html
     var $_trcolor;
     var $_file_root;
     var $page;
+    var $template_title;
 
     // HTML init object
     function html ($root)
@@ -713,59 +714,132 @@ class html
     }
 
     // TEMPLATE (read a template file and fill in the variables)
-    function template ($theme, $template, $vars = null)
+    function template ($theme, $template, $vars = null, $noremovetags = 0, $cache = 0)
     {
-		global $config;
-	    if ($theme == "base")
-		{
-            // load base template
-			if (file_exists($this->_file_root."/templates/".$config->lang."/".$template.".template"))
-			{
-            	$in = join("",file($this->_file_root."/templates/".$config->lang."/".$template.".template"));
-			}
-		}
-		else if ($theme == "local")
-		{
-            // load base template
-			if (file_exists($template.".template"))
-			{
-            	$in = join("",file($template.".template"));
-			}
-		}
-		else
-		{
-            // load template from theme
-			if (file_exists($this->_file_root."/include/themes/".$theme."/".$template.".template"))
-			{
-		    	$in = join("",file($this->_file_root."/include/themes/".$theme."/".$template.".template"));
-			}
-		}
-		if (!$in)
-		{
-            // oops not found, load 404 template
-			$in = join("",file($this->_file_root."/templates/404.template"));
-		}
-        // get page name from template
-        if (preg_match('/<!--TITLE:\[([\w\s]+)\]-->/', $in, $arr))
+        global $config;
+        
+        // load from cache if we have already loaded before
+        if ($cache and isset($this->template_cache[$template]))
         {
-            $this->template_title = $arr[1];
+            $in = $this->template_cache[$template];
         }
-        // default path var
-		$vars['root'] = $this->find_root();
-        // snapshot date var
-        $vars['snapshot_date'] = $config->snapshot_date;
-        // RH packages snapshot date var
-        $vars['snapshot_date_rh'] = $config->snapshot_date_rh;
-        // replace vars in template
-	    while (list($key,$val) = each($vars))
-	    {
-		    $in = str_replace('{$'.$key.'}', $val, $in);
-	    }
-        // remove all the unset vars
-        $in = preg_replace('/\{\$[a-z0-9_]+\}/', $val, $in);
-		return $in;
+        else
+        {
+            switch ($theme)
+            {    
+                // load from local template repository
+                case "local":          
+        			if (file_exists($template.".template"))
+                    	$in = join("",file($template.".template"));
+                    break;
+    
+                // load base template
+                case "base":
+        			if (file_exists($this->_file_root."/templates/".$config->lang."/".$template.".template"))
+                    	$in = join("",file($this->_file_root."/templates/".$config->lang."/".$template.".template"));
+                    break;
+     
+                // load template from theme
+                default:
+                    if (file_exists($this->_file_root."/include/themes/".$theme."/".$template.".template"))
+                        $in = join("",file($this->_file_root."/include/themes/".$theme."/".$template.".template"));                
+            }
+        }
+
+        // oops not found, load 404 template
+		if (!$in)
+        {
+            $in = '';
+            if ($config->web_debug)
+                $in = $this->p($theme."|".$template);
+			$in .= join("",file($this->_file_root."/templates/404.template"));
+        }
+
+        // cache this template to save on i/o
+        if ($cache)
+        {
+            $this->template_cache[$template] = $in;
+        }
+
+        // return the text with the vars replaced
+		return $this->template_replace($in, $vars, $noremovetags);
     }
     
+    // TEMPLATE_REPLACE (does the substitution for TEMPLATE)
+    function template_replace ($in = "", $vars = array(), $noremovetags = 0)
+    {
+        global $config;
+           
+        // orginal in (avoid duplicate replacements)
+        $orig = $in;
+                
+        // default vars
+		$vars['root'] =& $this->find_root();
+        $vars['self'] =& $_SERVER['PHP_SELF'];
+        $vars['request_uri'] =& $_SERVER['REQUEST_URI'];
+        $vars['base_url'] =& $GLOBALS['config']->base_url;
+        $vars['snapshot_date'] = $config->snapshot_date;
+        $vars['snapshot_date_rh'] = $config->snapshot_date_rh;
+
+        // replace vars in template
+        // NOTE: using preg_replace() breaks as it wants to interpret '$1' in $val
+	    while (list($key,$val) = each($vars))
+	    {
+            if (preg_match('/\{\$'.$key.'\}/', $orig))
+            {
+                $in = str_replace('{$'.$key.'}', $val, $in);
+            }
+            if (preg_match('/\{lc\(\$'.$key.'\\)}/', $orig))
+            {
+                $in = str_replace('{lc($'.$key.')}', ereg_replace(' ','_',strtolower($val)), $in);
+            }
+	    }
+        unset($key, $val);
+        
+        // remove all the unset vars
+        if ($noremovetags == 0)
+            $in = preg_replace('/\{\$[a-z_]+\}/', '', $in);        
+        
+        // get page name from template
+        if (preg_match('/<!--TITLE:\[([\w\s\-\&\'\;]+)\]-->/', $orig, $arr))
+        {
+            $in = preg_replace('/<!--TITLE:\[([\w\s\-\&\'\;]+)\]-->/', '', $in);
+            $this->template_title = $arr[1];
+            unset($arr);
+        }
+        
+        // load nested templates the template
+        if (preg_match('/<!--INCLUDE:\[[a-z_\/]+\]-->/', $orig))
+        {
+            preg_match_all('/<!--INCLUDE:\[([a-z_\/]+)\]-->/', $orig, $match);
+            for ($i = 0; $i < count($match[0]); $i++)
+            {
+                $tmpl = $this->template("local", $match[1][$i]);
+                $match[1][$i] = preg_replace('/\//', '\\/', $match[1][$i]);
+                $in = str_replace('<!--INCLUDE:['.$match[1][$i].']-->', "$tmpl", $in);
+                unset($tmpl);
+            }
+            unset($match, $i);
+        }
+        
+        // load and exec plugins in the template
+        if (preg_match('/<!--EXEC:\[[0-9a-z\._=;@\-\?\/\|]+\]-->/', $orig))
+        {
+            preg_match_all('/<!--EXEC:\[([0-9a-z\._=;@\-\?\/\|]+)\]-->/', $orig, $match);
+            for ($i = 0; $i < count($match[0]); $i++)
+            {
+                $plugin = new plugin($match[1][$i], $this->_file_root);
+                $in = str_replace('<!--EXEC:['.$match[1][$i].']-->', $plugin->get(), $in);
+                unset($plugin);
+            }
+            unset($match, $i);
+        }
+        
+        // return finished page
+        unset($orig);
+        return $in;
+    }
+
     // HTTP HEADER (better header)
     function http_header ($title = "")
     {
