@@ -122,15 +122,15 @@ that could really help users:</p>
 I'm sitting waiting for a couple of compiles to finish, so I thought I'd
 put together a list of fun/interesting tasks people might like to have a
 go at related to better integrating Wine with the native desktop.
-
+</p><p>
 None of these should be especially hard, and so would provide a good intro
 to Wine development for anybody who has been lurking on the sidelines and
 wants to get involved.
-
+</p><p>
 As usual no guarantees these patches would be accepted, that's Alexandres
 call. But they probably would be, and you'll learn something while doing
 them! :)
-
+</p><p>
 
 Task 1:<ul>
 Map CSIDL_PERSONAL (My Documents) to the $HOME directory if mapped. See
@@ -352,7 +352,7 @@ of discussion, James confirmed that #winehackers on IRC would be used
 to get everyone together (see WineHQ for details on 
 <a href="http://www.winehq.org/site/forums#irc">Wine's IRC channels</a>.)
 Finally, after more discussion, it was decided that the first Bug
-Buster session would be held on Sunday, Dec 1st, at 7pm GMT (2pm EST).  
+Buster session would be held on Sunday, Dec 5th, at 7pm GMT (2pm EST).  
 </p>
 </section>
 <section 
