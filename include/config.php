@@ -42,7 +42,7 @@ class config
                 'FAQ'             => '{$root}/site/docs/wine-faq/index',
                 'HowTo'           => '{$root}/site/howto',
                 'Bug Tracking'    => 'http://bugs.winehq.org/',
-                'Applications'    => 'http://appdb.winehq.org',
+                'Applications Database'    => 'http://appdb.winehq.org',
                 'Mailing Lists'   => '{$root}/site/forums'
            ),
            'Development' => array(
