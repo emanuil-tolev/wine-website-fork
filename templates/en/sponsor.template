@@ -11,7 +11,7 @@
     <td>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 	  <input type="hidden" name="cmd" value="_xclick">
-	  <input type="hidden" name="business" value="donate@winehq.com">
+	  <input type="hidden" name="business" value="donate@winehq.org">
 	  <input type="hidden" name="item_name" value="Wine donation">
 	  <input type="image" src="images/ppdonate.gif" name="submit"
       alt="Donate to Wine with PayPal!">

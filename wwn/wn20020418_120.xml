@@ -11,7 +11,7 @@
 <stats posts="418" size="2660" contrib="98" multiples="51" lastweek="26">
 
 <person posts="37" size="248" who="Martin Wilck &lt;Martin.Wilck@fujitsu-siemens.com&gt;" />
-<person posts="21" size="49" who="Alexandre Julliard &lt;julliard@winehq.com&gt;" />
+<person posts="21" size="49" who="Alexandre Julliard &lt;julliard@winehq.org&gt;" />
 <person posts="19" size="71" who="Tony Lambregts &lt;tony_lambregts@telusplanet.net&gt;" />
 <person posts="19" size="50" who="Laurent Pinchart &lt;laurent.pinchart@skynet.be&gt;" />
 <person posts="20" size="46" who="Dimitrie O. Paun &lt;dpaun@rogers.com&gt;" />
@@ -108,7 +108,7 @@
   <section title="News: wine-20020411, WineHQ Update" 
   		subject="News" 
   		topic1="News" 
-  		archive="http://cvs.winehq.com/cvsweb/wine/ANNOUNCE?rev=1.60&amp;content-type=text/x-cvsweb-markup" 
+  		archive="http://cvs.winehq.org/cvsweb/wine/ANNOUNCE?rev=1.60&amp;content-type=text/x-cvsweb-markup" 
   		posts="2" 
   		startdate="03/31/2002" 
   		enddate="04/18/2002">
@@ -134,7 +134,7 @@
 	generated enough news this week to warrant it.  In the future you'll find news
 	confined to the first topic.
 	
-    <p />Also worth noting is Jeremy Newman's work over at <a href="http://www.winehq.com">WineHQ</a>. 
+    <p />Also worth noting is Jeremy Newman's work over at <a href="http://www.winehq.org">WineHQ</a>. 
     Among other things, Jeremy added an XML parser to the site and given it a facelift.  
     As far as Wine Weekly News goes, issue #118 was the first to have the same XML
     appear on both KC Wine and the Wine Weekly News.  I'm in the process of doing a
@@ -149,7 +149,7 @@
   <section title="ReWind: The X11 Tree" 
   		subject="X11 fork available" 
   		topic1="X11 Tree" 
-  		archive="http://www.winehq.com/hypermail/wine-devel/2002/04/0247.html" 
+  		archive="http://www.winehq.org/hypermail/wine-devel/2002/04/0247.html" 
   		posts="1" 
   		startdate="04/13/2002" 
   >
@@ -193,7 +193,7 @@
 	Your help to achieve this is welcome.
 	<p />
 	Followups to this post should preferably go to 
-	<a href="http://www.winehq.com/hypermail/wine-license/">
+	<a href="http://www.winehq.org/hypermail/wine-license/">
 	wine-license.</a>
 	<p />
 	Thanks for your attention.
@@ -205,7 +205,7 @@
 	Quite a few developers have expressly consented to having their patches included
 	in the X11 tree.  There's also a huge list of people who fall into the "unknown"
 	category - if you're submitting patches to 
-	<a href="http://www.winehq.com/hypermail/wine-patches/">wine-patches</a> you
+	<a href="http://www.winehq.org/hypermail/wine-patches/">wine-patches</a> you
 	may want to let Ove or Eric know if it's okay to also add your patch to ReWind.
 	
 	</section>
@@ -322,7 +322,7 @@
     <section title="CreateProcess Test" 
   		subject="create process test (for review)" 
   		topic1="Testing" 
-  		archive="http://www.winehq.com/hypermail/wine-devel/2002/04/0012.html" 
+  		archive="http://www.winehq.org/hypermail/wine-devel/2002/04/0012.html" 
   		posts="5" 
   		startdate="04/01/2002" 
   		enddate="04/02/2002">
@@ -361,7 +361,7 @@
     	title="C Profiler" 
   		subject="Where is &#34;cprof&#34;" 
   		topic1="Debugging" 
-  		archive="http://www.winehq.com/hypermail/wine-devel/2002/04/0027.html" 
+  		archive="http://www.winehq.org/hypermail/wine-devel/2002/04/0027.html" 
   		posts="2" 
   		startdate="04/02/2002" 
   		enddate="04/02/2002">
@@ -394,7 +394,7 @@
     <section title="Reorganizing CVS" 
   		subject="Directory reorganization" 
   		topic1="Project Management" 
-  		archive="http://www.winehq.com/hypermail/wine-devel/2002/04/0248.html" 
+  		archive="http://www.winehq.org/hypermail/wine-devel/2002/04/0248.html" 
   		posts="2" 
   		startdate="04/13/2002" 
   		enddate="04/14/2002">
@@ -428,7 +428,7 @@
     	title="Testing Unicode Functions Too" 
   		subject="Regression tests, UNICODE vs ASCII" 
   		topic1="Testing" 
-  		archive="http://www.winehq.com/hypermail/wine-devel/2002/04/0160.html" 
+  		archive="http://www.winehq.org/hypermail/wine-devel/2002/04/0160.html" 
   		posts="8" 
   		startdate="04/06/2002" 
   		enddate="04/15/2002">
@@ -476,7 +476,7 @@
     	title="Header Files and Testing" 
   		subject="Running tests on windows" 
   		topic1="Testing" 
-  		archive="http://www.winehq.com/hypermail/wine-devel/2002/04/0174.html" 
+  		archive="http://www.winehq.org/hypermail/wine-devel/2002/04/0174.html" 
   		posts="7" 
   		startdate="04/07/2002" 
   		enddate="04/08/2002">
@@ -528,7 +528,7 @@
     	title="Implementing PeekNamedPipe" 
   		subject="fixme:win32:PeekNamedPipe" 
   		topic1="IO" 
-  		archive="http://www.winehq.com/hypermail/wine-devel/2002/04/0275.html" 
+  		archive="http://www.winehq.org/hypermail/wine-devel/2002/04/0275.html" 
   		posts="6" 
   		startdate="04/16/2002" 
   		enddate="04/17/2002">
@@ -575,7 +575,7 @@
     	title="More Async IO Fixes" 
   		subject="[PATCH] async IO API, reworked" 
   		topic1="IO" 
-  		archive="http://www.winehq.com/hypermail/wine-devel/2002/04/0137.html" 
+  		archive="http://www.winehq.org/hypermail/wine-devel/2002/04/0137.html" 
   		posts="5" 
   		startdate="04/05/2002" 
   		enddate="04/08/2002">

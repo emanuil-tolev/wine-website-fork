@@ -85,7 +85,7 @@
 <section 
 	title="News: Wine-20030618, TransGaming Update, WineHQ Interview" 
 	subject="News"
-	archive="http://cvs.winehq.com/cvsweb/wine/ANNOUNCE?rev=1.76&amp;content-type=text/x-cvsweb-markup" 
+	archive="http://cvs.winehq.org/cvsweb/wine/ANNOUNCE?rev=1.76&amp;content-type=text/x-cvsweb-markup" 
 	posts="3"
 	startdate="06/14/2003"
 	enddate="06/20/2003"
@@ -97,7 +97,7 @@ to the Changelog.  This one resulted in 2102 new lines.  Alexandre
 noted the following changes:</p>
 <quote who="Alexandre Julliard"><p>
 WHAT'S NEW with Wine-20030618: (see 
-  <a href="http://cvs.winehq.com/cvsweb/wine/ChangeLog?rev=1.72&amp;content-type=text/x-cvsweb-markup">ChangeLog</a>
+  <a href="http://cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.72&amp;content-type=text/x-cvsweb-markup">ChangeLog</a>
   for details)
 <ul>
         <li> Still more Direct3D and DirectSound improvements.</li>
@@ -123,13 +123,13 @@ and voting report</a>.  Morrowind has been voted one of the top games
 subscribers want, so it's really nice to see that supported. </p>
 
 <p>Last week I forgot to mention the interview on WineHQ 
-<a href="http://www.winehq.com/?interview=7">with Mike McCormack</a>.
+<a href="http://www.winehq.org/?interview=7">with Mike McCormack</a>.
 Look for another one this Tuesday.  </p>
 
 </section><section 
 	title="DMusic Interfaces" 
 	subject="Dmusic interfaces"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/06/0432.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/06/0432.html" 
 	posts="3"
 	startdate="06/16/2003"
 	enddate="06/17/2003"
@@ -171,13 +171,13 @@ objects are stored in files)?
 <p>Rapha&#235;l Junqueira wrote in to mention him and Christan Costa
 were working on getting some games running and expected support to improve.
 He also gave a pointer to 
-<a href="http://www.winehq.com/hypermail/wine-patches/2003/06/0162.html">a
+<a href="http://www.winehq.org/hypermail/wine-patches/2003/06/0162.html">a
 DMusic patch</a> that might help Sylvain out.</p>
 
 </section><section 
 	title="Displaying Icons for Executables" 
 	subject="Executables icons"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/06/0396.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/06/0396.html" 
 	posts="5"
 	startdate="06/15/2003"
 >
@@ -232,7 +232,7 @@ submitted it to wine-patches.  Alexandre committed it shortly after.</p>
 </section><section 
 	title="Wintab Status" 
 	subject="Wintab: beginning to investigate Aric's patch from April."
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/05/00.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/05/00.html" 
 	posts="5"
 	startdate="06/17/2003"
 	enddate="06/19/2003"
@@ -240,7 +240,7 @@ submitted it to wine-patches.  Alexandre committed it shortly after.</p>
 <topic>Status Updates</topic>
 <p>Rob North decided to revisit support for tablets.  We
 last covered this topic back in 
-<a href="http://www.winehq.com/index.php?issue=167#Wintab%20Status%20and%20Development">issue
+<a href="http://www.winehq.org/index.php?issue=167#Wintab%20Status%20and%20Development">issue
 #167</a>.  
 Rob wanted to know if anyone else had worked on it recently:</p>
 <quote who="Rob North"><p>
@@ -364,7 +364,7 @@ you can download xinput from
 </section><section 
 	title="Workaround for Xvidmode Graphic Corruption" 
 	subject="[D3D] Xvidmode and surface locking"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/06/0477.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/06/0477.html" 
 	posts="3"
 	startdate="06/18/2003"
 	enddate="06/19/2003"
@@ -419,15 +419,15 @@ like that ?
 </section><section 
 	title="Missing Bugzilla Descriptions" 
 	subject="Missing Bugzilla Descriptions"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/06/0451.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/06/0451.html" 
 	posts="6"
 	startdate="06/16/2003"
 	enddate="06/18/2003"
 >
 <topic>Project Management</topic>
-<p>Did you have a bug in the <a href="http://bugs.winehq.com">Bugzilla</a>
+<p>Did you have a bug in the <a href="http://bugs.winehq.org">Bugzilla</a>
 database?  Well it seems we've lost a lot of it
-(see <a href="http://www.winehq.com/index.php?issue=171#Bugzilla%20Upgraded">issue #171</a>
+(see <a href="http://www.winehq.org/index.php?issue=171#Bugzilla%20Upgraded">issue #171</a>
 for more details.)  Dustin Navea described the issues he was running into and asked if
 a solution was on the horizon,
 <quote who="Dustin Navea">

@@ -19,7 +19,7 @@ emulator). </p>
 
 <stats posts="274" size="951" contrib="68" multiples="42" lastweek="47">
 
-<person posts="22" size="61" who="Alexandre Julliard &lt;julliard@winehq.com&gt;" />
+<person posts="22" size="61" who="Alexandre Julliard &lt;julliard@winehq.org&gt;" />
 <person posts="18" size="49" who="Eric Pouech &lt;eric.pouech@wanadoo.fr&gt;" />
 <person posts="16" size="33" who="Dustin Navea &lt;speeddymon@yahoo.com&gt;" />
 <person posts="12" size="31" who="Andriy Palamarchuk &lt;apa3a@yahoo.com&gt;" />
@@ -91,7 +91,7 @@ emulator). </p>
 <section
   title="News: Win4Lin Review, TransGaming News"
   subject="News"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/05/00.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/05/00.html"
   posts="4"
   startdate="05/22/2002"
   enddate="05/30/2002"
@@ -143,7 +143,7 @@ I'm not sure if the Civ fixes made it in.</p>
 <section
   title="How *You* Can Help Wine"
   subject="Want to help Wine project?"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/05/00.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/05/00.html"
   posts="1"
   startdate="05/22/2002"
 >
@@ -177,21 +177,21 @@ owner is a person who often uses some application and
 will help to make it work perfectly under Wine.</li>
 Does anybody use Lotus Notes regulary under Wine?
 <li> confirm and research bugs in Wine Bugzilla
-  <a href="http://bugs.winehq.com/">http://bugs.winehq.com/
+  <a href="http://bugs.winehq.org/">http://bugs.winehq.org/
   </a></li>
 <li> Add a 'Debunking Wine Myths' web page [
-  <a href="http://bugs.winehq.com/show_bug.cgi?id=606"> #606 </a>
+  <a href="http://bugs.winehq.org/show_bug.cgi?id=606"> #606 </a>
   ]</li>
 </ul>
 </p><p>
  Examples of the easiest programming tasks available:
 <ul>
  <li> Help Wine hackers - document Wine debugging channels [
-  <a href="http://bugs.winehq.com/show_bug.cgi?id=638"> #638
+  <a href="http://bugs.winehq.org/show_bug.cgi?id=638"> #638
   </a> ]
    </li>
  <li> Improve RichEdit headers [
-  <a href="http://bugs.winehq.com/show_bug.cgi?id=330"> #330 </a>
+  <a href="http://bugs.winehq.org/show_bug.cgi?id=330"> #330 </a>
   ]</li>
 </ul>
 </p><p>
@@ -205,8 +205,8 @@ Do you need more choice?
  fix.
  Don't be afraid to fix all the easy issues, so nothing
  will be left to others. We'll gladly add more! :-)
-  <a href="http://bugs.winehq.com/showdependencytree.cgi?id=406">
-  http://bugs.winehq.com/showdependencytree.cgi?id=406</a>
+  <a href="http://bugs.winehq.org/showdependencytree.cgi?id=406">
+  http://bugs.winehq.org/showdependencytree.cgi?id=406</a>
   </li>
  <li> suggest your help on wine-devel mailing list. Don't
  forget to mention your skills, experience and what you
@@ -222,8 +222,8 @@ Have fun!
 <p><i>Note: some URL's converted to hyperlinks above</i></p>
 
 <p>Andreas Mohr added a page discussing Wine myths at:
- <a href="http://www.winehq.com/about/index.php?myths">
- http://www.winehq.com/about/index.php?myths</a>.  He
+ <a href="http://www.winehq.org/about/index.php?myths">
+ http://www.winehq.org/about/index.php?myths</a>.  He
 reclassified bug 606 as <i>Resolved</i>.</p>
 
 </section>
@@ -239,7 +239,7 @@ reclassified bug 606 as <i>Resolved</i>.</p>
 <section
   title="Code Practices"
   subject="RE: Stripping of whitespaces at the end of lines"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/05/0759.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/05/0759.html"
   posts="25"
   startdate="05/29/2002"
   enddate="05/30/2002"
@@ -316,7 +316,7 @@ removed.</p>
 <section
   title="Printing Multi-byte Characters"
   subject="Asian characters printing - not supported"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/05/0608.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/05/0608.html"
   posts="7"
   startdate="05/21/2002"
   enddate="05/27/2002"
@@ -387,7 +387,7 @@ were embedded and not the whole font file.</p>
 <section
   title="Compiling Wine with Mingw"
   subject="V0.1 WINE Mingw and ReactOS porting and status guide."
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/05/0707.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/05/0707.html"
   posts="1"
   startdate="05/26/2002"
 >
@@ -396,7 +396,7 @@ were embedded and not the whole font file.</p>
  Wine for ReactOS.  However, it's generic enough that most
  of it applies to anyone interested in using the Mingw
  compiler.  Parts of the following have been summarized,
- please refer to his <a href="http://www.winehq.com/hypermail/wine-devel/2002/05/att-0707/01-Mingw_and_ReactOS_wine_porting_and_status_guide_v0.1.txt">Mingw_and_ReactOS_wine_porting_and_status_guide_v0.1.txt">
+ please refer to his <a href="http://www.winehq.org/hypermail/wine-devel/2002/05/att-0707/01-Mingw_and_ReactOS_wine_porting_and_status_guide_v0.1.txt">Mingw_and_ReactOS_wine_porting_and_status_guide_v0.1.txt">
  full document</a> for all the details:</p>
 <quote who="Steven Edwards">
 
@@ -418,7 +418,7 @@ system and and any other configurations are not supported by the WINE project.
 
 <p>
 <u>DIRECTIONS:</u><br />
-To start hacking on Wine for Mingw, follow the directions at www.winehq.com
+To start hacking on Wine for Mingw, follow the directions at www.winehq.org
 to download the most current WINE sources. 
 <ol>
  <li><code>./configure --host=mingw32 --target=mingw32 --build=mingw32 CFLAGS="-D__MINGW__ -D_WINDOWS -DWINE_NOWINSOCK" CC="gcc -mno-cygwin -fnative-struct" CXX="gcc -mno-cygwin -fnative-struct"</code></li>

@@ -23,7 +23,7 @@ emulator). </p>
 <person posts="21" size="48" who="Max &lt;max@veneto.com&gt;" />
 <person posts="13" size="25" who="Steven Edwards &lt;steven_ed4153@yahoo.com&gt;" />
 <person posts="10" size="115" who="Ian D. Stewart &lt;idstewart@compuvative.com&gt;" />
-<person posts="10" size="22" who="Alexandre Julliard &lt;julliard@winehq.com&gt;" />
+<person posts="10" size="22" who="Alexandre Julliard &lt;julliard@winehq.org&gt;" />
 <person posts="12" size="26" who="Joshua Thielen &lt;thielen@netprince.net&gt;" />
 <person posts="9" size="26" who="Uwe Bonnes &lt;bon@elektron.ikp.physik.tu-darmstadt.de&gt;" />
 <person posts="9" size="18" who="Andriy Palamarchuk &lt;apa3a@yahoo.com&gt;" />
@@ -118,7 +118,7 @@ been tested with WINE 20020509.  Some of the plugins tested include G-Force 2, G
 <section 
 	title="Wine DGA Input" 
 	subject="What needs to be done to fix Wine DGA Input." 
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/06/0396.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/06/0396.html" 
 	posts="7" 
 	startdate="06/24/2002" 
 	enddate="06/27/2002"
@@ -163,7 +163,7 @@ cursor position.
 <section
   title="Running Warcraft 3"
   subject="warcraft 3"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/07/0057.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/07/0057.html"
   posts="16"
   startdate="07/04/2002"
   enddate="07/09/2002"
@@ -250,7 +250,7 @@ so there's likely some other tweaks that need to be made.</p>
 <section
   title="Wine20020605 and FreeBSD"
   subject="Re: heads up: wine 20020605 broken on FreeBSD, workaround included"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/07/0006.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/07/0006.html"
   posts="5"
   startdate="07/01/2002"
   enddate="07/02/2002"
@@ -279,7 +279,7 @@ tarball should be escaping from CVS any day now.</p>
 <section
   title="Running AutoCAD R14"
   subject="Re: dlls/advapi32/registry.c patch for RegEnumValuesA"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/07/0059.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/07/0059.html"
   posts="3"
   startdate="07/04/2002"
   enddate="07/05/2002"
@@ -304,8 +304,8 @@ a native windows installed !
 Get latest wine from CVS (or wait for next release !)
 </li><li>If registry patch isn't already there, get it here :
 
-<a href="http://www.winehq.com/hypermail/wine-patches/2002/07/att-0034/01-registry.patch.dif">
-www.winehq.com/hypermail/wine-patches/2002/07/att-0034/01-registry.patch.dif</a>
+<a href="http://www.winehq.org/hypermail/wine-patches/2002/07/att-0034/01-registry.patch.dif">
+www.winehq.org/hypermail/wine-patches/2002/07/att-0034/01-registry.patch.dif</a>
 
 and apply it to source code. If don't know how, mail me :)
 </li><li> Just setup autocad and run it, all things I've tested
@@ -324,7 +324,7 @@ update winhelp in wine.
 <section
   title="Graphical Configuration Tool"
   subject="Graphical Configuration-Tool for wine.conf"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/07/0084.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/07/0084.html"
   posts="2"
   startdate="07/06/2002"
 >
@@ -350,7 +350,7 @@ Is such a tool already avaible, or an existing codebase?
 Please note that Jine (Jawy after the rewrite) isn't ready for use. O.K
 it does work, but the code is awful and I'm currently working on a rewrite.
 </p></quote>
-<p><a href="http://www.winehq.com/hypermail/wine-devel/2002/07/att-0084/01-jine-screenshot.png">
+<p><a href="http://www.winehq.org/hypermail/wine-devel/2002/07/att-0084/01-jine-screenshot.png">
 A screenshot</a> was also attached to the email.</p>
 
 <p>Andreas Mohr wondered why he bothered since the Tk-based Winesetup
@@ -368,7 +368,7 @@ But a second program for this kind of task is always a good idea anyway.
 <section
   title="Windows Programming References"
   subject="about programming books"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/07/0109.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/07/0109.html"
   posts="1"
   startdate="07/08/2002"
 >

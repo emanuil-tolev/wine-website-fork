@@ -24,7 +24,7 @@ emulator). </p>
 <person posts="36" size="95" who="Brett Glass &lt;brett@lariat.org&gt;" />
 <person posts="29" size="78" who="Andriy Palamarchuk &lt;apa3a@yahoo.com&gt;" />
 <person posts="14" size="57" who="Sean C. Farley &lt;scf@farley.org&gt;" />
-<person posts="13" size="32" who="Alexandre Julliard &lt;julliard@winehq.com&gt;" />
+<person posts="13" size="32" who="Alexandre Julliard &lt;julliard@winehq.org&gt;" />
 <person posts="10" size="43" who="Roger Fujii &lt;rmf@lookhere.com&gt;" />
 <person posts="10" size="26" who="lawson_whitney@juno.com" />
 <person posts="10" size="25" who="Andreas Mohr &lt;andi@rhlx01.fht-esslingen.de&gt;" />
@@ -108,7 +108,7 @@ emulator). </p>
   title="CrossOver 1.1.0"
   subject="News"
   topic1="News"
-  archive="http://www.winehq.com/hypermail/wine-cvs/2002/02/0147.html"
+  archive="http://www.winehq.org/hypermail/wine-cvs/2002/02/0147.html"
   posts="2"
   startdate="02/25/2002"
   enddate="03/08/2002"
@@ -148,7 +148,7 @@ The changes include:
   title="Wine Licensing (con't)"
   subject="Conclusions"
   topic1="Licensing"
-  archive="http://www.winehq.com/hypermail/wine-license/2002/03/0029.html"
+  archive="http://www.winehq.org/hypermail/wine-license/2002/03/0029.html"
   posts="37"
   startdate="03/04/2002"
   enddate="03/05/2002"
@@ -240,7 +240,7 @@ Wine conference next week,
 the license change.  But the decision seems to have been made.  A lot 
 of specific problems will be worked
 out over time.  The 
-<a href="http://www.winehq.com/hypermail/wine-cvs/2002/03/0000.html">first CVS commit</a>
+<a href="http://www.winehq.org/hypermail/wine-cvs/2002/03/0000.html">first CVS commit</a>
 for March contained the change. In response, Gavriel State from TransGaming voiced 
 his concerns:</p>
 
@@ -389,7 +389,7 @@ have been brought up that it would probably be worth discussing with him.
   subject="The X11 Fork"
   topic1="Project Management"
   topic2="Licensing"
-  archive="http://www.winehq.com/hypermail/wine-license/2002/03/0093.html"
+  archive="http://www.winehq.org/hypermail/wine-license/2002/03/0093.html"
   posts="4"
   startdate="03/10/2002"
   enddate="03/10/2002"
@@ -433,7 +433,7 @@ first decide on a few things.
 Anything else?
 </p></quote>
 
-<p>Joerg Mayer suggested hosting it at winehq.com, 
+<p>Joerg Mayer suggested hosting it at winehq.org, 
  <quote who="Joerg Mayer">
  I don't think there will be too many hard feelings
  in the lgpl-wine team (at least I hope so) and it looks like there will
@@ -465,7 +465,7 @@ thread to continue.</p>
   title="WineHQ Moved"
   subject="WineHQ.com Move Complete"
   topic1="Project Management"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/03/0048.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/03/0048.html"
   posts="4"
   startdate="02/28/2002"
   enddate="03/05/2002"
@@ -475,7 +475,7 @@ announced:</p>
 <quote who="Jeremy Newman"><p>
  NOTICE!! NOTICE!! NOTICE!!</p>
 
- <p><a href="http://www.winehq.com">www.winehq.com</a>
+ <p><a href="http://www.winehq.org">www.winehq.org</a>
  will be moving to a new home in Minnesota. We are trying
  to make this move as seamless as possible, but we can't guarantee that
  there will not be any downtime. I will post another message to the
@@ -486,10 +486,10 @@ announced:</p>
  WILL be on-line for Web, FTP and CVS access. The area
  that could have the longest downtime is the mailing lists. </p>
 
- <p>Once the transfer is complete, winehq.com, winehq.org, and
+ <p>Once the transfer is complete, winehq.org, winehq.org, and
  wineproject.org will be one and the same site.</p> 
 
- <p>If you run a mirror of winehq.com please contact me to make arrangements
+ <p>If you run a mirror of winehq.org please contact me to make arrangements
  for access.</p>
 
  <p>Further questions can be directed my was as well.</p></quote>
@@ -504,7 +504,7 @@ announced:</p>
  out to the users whose email inboxes we filled up.
 </p><p>
  So in the meantime, the newsgroup gateway, and the NNTP server on
- winehq.com are offline until further notice.
+ winehq.org are offline until further notice.
 </p><p>
  If you notice any other issues that I am not aware of, please let me
  know. There is a lot of things to a site that has been running as long
@@ -526,7 +526,7 @@ announced:</p>
   title="Tasklists in Bug Tracking System"
   subject="update on bug #11 and #435, newbie questions"
   topic1="Project Management"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/03/0017.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/03/0017.html"
   posts="2"
   startdate="03/01/2002"
   enddate="03/01/2002"
@@ -545,14 +545,14 @@ intermediate list for fully diagnosed bugs. That's the third list but
 don't worry, I intend to stop there.
 <ul>
    <li> Tasklets
-     <a href="http://bugs.winehq.com/show_bug.cgi?id=406">
-     http://bugs.winehq.com/show_bug.cgi?id=406</a></li>
+     <a href="http://bugs.winehq.org/show_bug.cgi?id=406">
+     http://bugs.winehq.org/show_bug.cgi?id=406</a></li>
    <li> FIXMEs
-     <a href="http://bugs.winehq.com/show_bug.cgi?id=455">
-     http://bugs.winehq.com/show_bug.cgi?id=455</a></li>
+     <a href="http://bugs.winehq.org/show_bug.cgi?id=455">
+     http://bugs.winehq.org/show_bug.cgi?id=455</a></li>
    <li> Tasklist
-     <a href="http://bugs.winehq.com/show_bug.cgi?id=395">
-     http://bugs.winehq.com/show_bug.cgi?id=395</a></li>
+     <a href="http://bugs.winehq.org/show_bug.cgi?id=395">
+     http://bugs.winehq.org/show_bug.cgi?id=395</a></li>
 </ul></p><p>
 
    Now, I really must get going on that contrib page.</p>
@@ -572,7 +572,7 @@ ones.</p>
   title="Wineconf Agenda"
   subject="Update: Agenda for wineconf 2002"
   topic1="Commercial Development"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/03/0016.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/03/0016.html"
   posts="2"
   startdate="03/01/2002"
   enddate="03/01/2002"
@@ -640,7 +640,7 @@ Lindows.com And WINE [Robertson]
   title="Quicken and TurboTax"
   subject="Thanks -- well done"
   topic1="Fixes"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/03/0040.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/03/0040.html"
   posts="1"
   startdate="03/05/2002"
   enddate="03/05/2002"
@@ -682,7 +682,7 @@ Jeff Law wrote:</p>
   title="Bug in OLE"
   subject="new Bug in OLE"
   topic1="Patches"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/02/0871.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/02/0871.html"
   posts="3"
   startdate="02/27/2002"
   enddate="02/28/2002"
@@ -727,7 +727,7 @@ I hope this will help finding a fix.
  patch. (the Fad structure is not initiaized)
 </p><p> 
  Could you try 
-  <a href="http://www.winehq.com/hypermail/wine-devel/2002/02/att-0885/01-storage.diff">
+  <a href="http://www.winehq.org/hypermail/wine-devel/2002/02/att-0885/01-storage.diff">
   this patch</a> instead please?
 </p></quote>
 
@@ -741,7 +741,7 @@ I hope this will help finding a fix.
   title="More COM Work"
   subject="Out of process COM objects &amp; InstallShield v6"
   topic1="Fixes"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/02/0800.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/02/0800.html"
   posts="3"
   startdate="02/24/2002"
   enddate="02/26/2002"

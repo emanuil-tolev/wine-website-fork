@@ -36,7 +36,7 @@ emulator). </p>
 <person posts="4" size="17" who="Patrik Stridvall &lt;ps@leissner.se&gt;" />
 <person posts="7" size="20" who="Shachar Shemesh &lt;wine-devel@sun.consumer.org.il&gt;" />
 <person posts="4" size="7" who="Sylvain Petreolle &lt;spetreolle@yahoo.fr&gt;" />
-<person posts="3" size="7" who="Alexandre Julliard &lt;julliard@winehq.com&gt;" />
+<person posts="3" size="7" who="Alexandre Julliard &lt;julliard@winehq.org&gt;" />
 <person posts="3" size="7" who="Lionel Ulmer &lt;lionel.ulmer@free.fr&gt;" />
 <person posts="3" size="6" who="Anthony Taylor &lt;tony@paperdove.org&gt;" />
 <person posts="2" size="7" who="David.Goodenough@DGA.co.uk" />
@@ -143,7 +143,7 @@ a reference</a> to Wine:</p>
 <section
 	title="Documentation Links"
 	subject="Documentation"
-	archive="http://www.winehq.com/support/"
+	archive="http://www.winehq.org/support/"
 	posts="1"
 
 >
@@ -160,13 +160,13 @@ Wine and haven't seen the various guides you may find these
 useful.  Even better, if
 you think you can contribute feel free to fill-in the
 noticably missing pieces:
-<ul>	<li><a href="http://www.winehq.com/Docs/wine-user/">
+<ul>	<li><a href="http://www.winehq.org/Docs/wine-user/">
 	Wine User's Guide</a></li>
-	<li><a href="http://www.winehq.com/Docs/wine-devel/">
+	<li><a href="http://www.winehq.org/Docs/wine-devel/">
 	Wine Developer's Guide</a></li>
-	<li><a href="http://www.winehq.com/Docs/winelib-user/">
+	<li><a href="http://www.winehq.org/Docs/winelib-user/">
 	Winelib User Guide</a></li>
-	<li><a href="http://www.winehq.com/Docs/wine-pkg/">
+	<li><a href="http://www.winehq.org/Docs/wine-pkg/">
 	Wine Packagers Guide</a></li>
 </ul></p>
 </section>
@@ -176,7 +176,7 @@ noticably missing pieces:
 <section
 	title="Creating Stubs"
 	subject="How to make a stub dll ?"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/06/0301.html"
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/06/0301.html"
 	posts="12"
 	startdate="06/18/2002"
 	enddate="02/20/2002"
@@ -211,7 +211,7 @@ for DirectX 8.0.  Lionel Ulmer commented,
  I did some initial work implementing a stup ctl3d.dll (which I intend
  to get back to, honest!).  I found the 'IMPLEMENTING A NEW DLL' section
  of
- <a href="http://cvs.winehq.com/cvsweb/wine/DEVELOPERS-HINTS?rev=1.12&amp;content-type=text/x-cvsweb-markup">
+ <a href="http://cvs.winehq.org/cvsweb/wine/DEVELOPERS-HINTS?rev=1.12&amp;content-type=text/x-cvsweb-markup">
  DEVELEPORS-HINTS</a> to be a good starting point.  According to
  Alexandre, this file is grossly outdated and 'real' documentation will
  be written eventually.  Until then, I reckon DEVELOPERS-HINTS is better
@@ -264,7 +264,7 @@ And that should be all :-)</p></quote>
 <section
   title="MS Write Support"
   subject="notepad vs write"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/06/0283.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/06/0283.html"
   posts="3"
   startdate="06/16/2002"
 >
@@ -292,7 +292,7 @@ them to a richedit control). Regarding Word 5.x format here is a snipped
 from my very old DOS code which handled those files (*.doc,*.wri) well
 (it completely ignores formatting though):
 
-<ul><i>[ <a href="http://www.winehq.com/hypermail/wine-devel/2002/06/0287.html">
+<ul><i>[ <a href="http://www.winehq.org/hypermail/wine-devel/2002/06/0287.html">
   link </a> ]</i></ul></p>
 <p>
 I.e. there is a 128 bytes header with signature and text length in it.
@@ -316,7 +316,7 @@ Write could be just a symlink to notepad.
 <section
 	title="Adding FriBiDi Support"
 	subject="Dynamically linking with a Unix library - or not"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/06/0304.html"
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/06/0304.html"
 	posts="11"
 	startdate="06/18/2002"
 	enddate="06/19/2002"
@@ -375,7 +375,7 @@ needed.</p>
 <section
 	title="Multiple Wine Configurations"
 	subject="Notes R4 redraw problem"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/06/0328.html"
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/06/0328.html"
 	posts="10"
 	startdate="06/19/2002"
 	enddate="06/20/2002"
@@ -400,7 +400,7 @@ sets up the environment variables needed for it to work (PATH,
 LD_LIBRARY_PATH, etc.).
 </p><p>
 In fact, I
-<a href="http://www.winehq.com/hypermail/wine-devel/2002/06/att-0342/01-wine-wrap-vb.sh__charset_ISO-8859-15">
+<a href="http://www.winehq.org/hypermail/wine-devel/2002/06/att-0342/01-wine-wrap-vb.sh__charset_ISO-8859-15">
 attach it</a> here if you'd need it (or if somebody else needs
 it). Of course, you also need to tell <code>./configure
 --prefix=/where/you/want/it</code>, then it's a normal make depend, make, make

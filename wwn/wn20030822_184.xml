@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="184" date="08/22/2003" />
 <intro> <p>This is the 184th release of the weekly Wine Weekly News publication.
-Its main goal is to  be amazed at the sheer number of virus emails received this week. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.com">www.winehq.com</a></p> </intro>
+Its main goal is to  be amazed at the sheer number of virus emails received this week. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="186" size="662" contrib="58" multiples="33" lastweek="24">
 
 <person posts="16" size="44" who="Eric Pouech" />
@@ -69,7 +69,7 @@ Its main goal is to  be amazed at the sheer number of virus emails received this
 <section 
 	title="News: Interview with Jeremy White, Frontier &amp; Wine" 
 	subject="News"
-	archive="http://www.winehq.com"
+	archive="http://www.winehq.org"
 	posts="2"
 	startdate="08/16/2003"
 	enddate="08/22/2003"
@@ -106,7 +106,7 @@ people are trying out all sorts of CAD programs under Wine.
 <section 
 	title="Evolution of Wine's File Management" 
 	subject="RFC: evolution of file management"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/08/0358.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/08/0358.html" 
 	posts="9"
 	startdate="08/19/2003"
 	enddate="08/21/2003"
@@ -355,13 +355,13 @@ implementation in the near future.</p>
 <section 
 	title="Update On Last Weeks' Feature" 
 	subject="Update On Last Weeks' Feature"
-	archive="http://www.winehq.com/" 
+	archive="http://www.winehq.org/" 
 	posts="1"
 	startdate="08/20/2003"
 >
 <topic>Licensing</topic>
 <p>Gerald Pfeifer pointed out that last week's feature article
-on <a href="http://www.winehq.com/site?issue=183#Feature:%20Wine%20History">Wine's
+on <a href="http://www.winehq.org/site?issue=183#Feature:%20Wine%20History">Wine's
 history</a> had some mistakes concerning specifics of LGPL provisions.
 Specifically, I wrote the following:</p>
 <quote who="Brian Vincent">
@@ -392,7 +392,7 @@ Foundation's website</a> for specifics of their licenses.</p>
 <section 
 	title="Environment Variable Handling in Wine's Config" 
 	subject="REGRESSION: environment variables no longer possible"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/08/0342.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/08/0342.html" 
 	posts="7"
 	startdate="08/19/2003"
 >
@@ -425,7 +425,7 @@ drives part of the config behave like all the other entries.</quote></p>
 <section 
 	title="FreeBSD, OpenGL, and Pthreads" 
 	subject="Build broken due to -lpthread"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/08/0401.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/08/0401.html" 
 	posts="4"
 	startdate="08/20/2003"
 	enddate="08/21/2003"
@@ -474,7 +474,7 @@ Wine, builds without problems.
 <section 
 	title="Top 10 Reasons For Using Fox Under Wine" 
 	subject="Re: [Foxgui-users]Re: Wine fixes (1)"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/08/0377.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/08/0377.html" 
 	posts="1"
 	startdate="08/20/2003"
 >

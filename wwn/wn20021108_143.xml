@@ -112,7 +112,7 @@ Windows emulator).</p>
 <section 
 	title="News: Wine-20021031 and Commercial Devel"
 	subject="News"
-	archive="http://cvs.winehq.com/cvsweb/wine/ANNOUNCE?rev=1.68&amp;content-type=text/x-cvsweb-markup" 
+	archive="http://cvs.winehq.org/cvsweb/wine/ANNOUNCE?rev=1.68&amp;content-type=text/x-cvsweb-markup" 
 	posts="4" 
 	startdate="11/02/2002"
 	enddate="11/08/2002"
@@ -126,7 +126,7 @@ recent flurry of activity.  From the
 announcement:</p>
 <quote who="Alexandre Julliard"><p>
 WHAT'S NEW with Wine-20021031: (see 
-<a href="http://cvs.winehq.com/cvsweb/wine/ChangeLog?rev=1.64&amp;content-type=text/x-cvsweb-markup">ChangeLog</a> 
+<a href="http://cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.64&amp;content-type=text/x-cvsweb-markup">ChangeLog</a> 
 for details)
 <ul>
         <li> Complete listview overhaul.</li>
@@ -168,15 +168,15 @@ you order now you get free fedex shipping.</p>
 <section 
 	title="Wine 0.9 To Do" 
 	subject="Wine 0.9 TODO v0.2"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/11/0469.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/0469.html" 
 	posts="19" 
 	startdate="11/07/2002"
 	enddate="11/08/2002"
 >
 <topic>Project Management</topic>
 <p>Dimi Paun posted a link to the (official?) Wine 0.9 To Do
-list: <a href="http://www.winehq.com/index.php?page=todo_lists">
-http://www.winehq.com/index.php?page=todo_lists</a>.  Most likely you'll 
+list: <a href="http://www.winehq.org/index.php?page=todo_lists">
+http://www.winehq.org/index.php?page=todo_lists</a>.  Most likely you'll 
 find that page the most up to date,
 however I'll reproduce some of it below for reference.  Dimi
 seems to be adding/updating/changing things on a daily basis
@@ -229,7 +229,7 @@ feet wet with minimal knowledge of Wine or C needed. </p>
 </p><p>
   <u>Resources</u>
   <ul>
-    <li><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;target_milestone=0.9.0&amp;order=bugs.bug_severity">0.9 tasks</a></li>
+    <li><a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;target_milestone=0.9.0&amp;order=bugs.bug_severity">0.9 tasks</a></li>
     <li><a href="http://www.winehq.org/about/index.php?contrib#devel">other tasks</a></li>
   </ul>
 </p><p>
@@ -332,7 +332,7 @@ Wine configuration
 	<li> Get rid of the init directive from .spec files [DONE]</li>
 	  <ul>
 	    <li> worker: Alexandre Julliard</li>
-	    <li> status: implemented by <a href="http://cvs.winehq.com/patch.py?id=6180">this</a></li>
+	    <li> status: implemented by <a href="http://cvs.winehq.org/patch.py?id=6180">this</a></li>
 	    <li> updated: Nov 7, 2002</li>
 	  </ul>
 	<li> Make sure the .spec file format is fairly stable [IN PROGRESS]</li>
@@ -394,7 +394,7 @@ Wine configuration
 <section 
 	title="Testing Apps: Tucows' Top 20 Apps" 
 	subject="Today wine's compatibility with 20 popular apps from tucows"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/11/0138.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/0138.html" 
 	posts="14" 
 	startdate="11/02/2002"
 	enddate="11/03/2002"
@@ -620,7 +620,7 @@ since there were clear Linux alternatives.  Carl replied,
 <section 
 	title="Testing Apps: Mozilla and Multimedia Players" 
 	subject="Mozilla 1.0.1 Win32 works almost flawlessly"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/11/0329.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/0329.html" 
 	posts="6" 
 	startdate="11/03/2002"
 	enddate="11/05/2002"
@@ -691,7 +691,7 @@ comes loaded with the Windows9x/Me/NT/2000 Operating System."<br />
 <section 
 	title="RPCSS.exe Replacement" 
 	subject="RFC: rpcss skeleton prototype #2"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/11/0267.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/0267.html" 
 	posts="14" 
 	startdate="11/04/2002"
 	enddate="11/05/2002"
@@ -808,7 +808,7 @@ about later.</p>
 <section 
 	title="Avoiding ASCII/Unicode Function Duplication" 
 	subject="Avoiding FunctionA/W Duplication"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/11/0351.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/0351.html" 
 	posts="8" 
 	startdate="11/05/2002"	
 >
@@ -873,7 +873,7 @@ required and the compiler not being able to do type checking.</p>
 <section 
 	title="Thanks from Bob" 
 	subject="Forgive the intrusion"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/11/0412.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/0412.html" 
 	posts="6" 
 	startdate="11/06/2002"
 >
@@ -941,7 +941,7 @@ Bob explained, <quote who="Bob Amstadt">
 <section 
 	title="Author Needed for Winelib Article" 
 	subject="C/C++ Users Journal is looking for a WINE author"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/11/0336.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/0336.html" 
 	posts="1" 
 	startdate="11/01/2002"
 >

@@ -139,7 +139,7 @@ in there.</p>
 <section
         title="Threading Work"
         subject="POSIX / pthreads / wineserver - can I help?"
-        archive="http://www.winehq.com/hypermail/wine-patches/2003/02/0.html"
+        archive="http://www.winehq.org/hypermail/wine-patches/2003/02/0.html"
         posts="10"
         startdate="02/27/2003"
 >
@@ -180,7 +180,7 @@ Everything else will stay the same - standard old pthreads haven't
 and won't work for Wine.  Along the same lines, someone asked about
 the shared memory wineserver.  TransGaming developed a test
 implementation that showed dramatic speedups.  It was last discussed
-back in <a href="http://www.winehq.com/news/?view=154#Kernel%20Module%20/%20Shared%20Memory%20Revisited">issue #154</a> and at the time its main deficiency
+back in <a href="http://www.winehq.org/news/?view=154#Kernel%20Module%20/%20Shared%20Memory%20Revisited">issue #154</a> and at the time its main deficiency
 was pointed out - the ability for a badly behaving application to
 crash Wine.  Alexandre explained why he didn't like it:</p>
 <quote who="Alexandre Julliard"><p>
@@ -196,7 +196,7 @@ think that this is where we want to go.</p></quote>
 <section 
 	title="Commandline MSVC" 
 	subject="Fix to allow running msvc from commandline in linux"
-	archive="http://www.winehq.com/hypermail/wine-patches/2003/02/0181.html" 
+	archive="http://www.winehq.org/hypermail/wine-patches/2003/02/0181.html" 
 	posts="1"
 	startdate="02/22/2003"
 >
@@ -254,7 +254,7 @@ than that guy, since I don't have to use that awful, horrible wcmd window.
 <section 
 	title="X11Drv / NTDll Separation " 
 	subject="x11drv, ntdll separation"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/02/0691.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/02/0691.html" 
 	posts="12"
 	startdate="02/22/2003"
 	enddate="02/24/2003"
@@ -308,8 +308,8 @@ I wrote some documentation a while back on this when we (TransGaming)
 submitted our dibengine to rewind/winehq.
 </p><p>
 You can read the docu at:
-<ul><a href="http://www.winehq.com/hypermail/wine-devel/2002/09/0680.html">
-  http://www.winehq.com/hypermail/wine-devel/2002/09/0680.html</a></ul></p><p>
+<ul><a href="http://www.winehq.org/hypermail/wine-devel/2002/09/0680.html">
+  http://www.winehq.org/hypermail/wine-devel/2002/09/0680.html</a></ul></p><p>
 
 Basically its beacuse a DIBSection is like a mixture of a DIB and a HBITMAP, 
 in that it has properties of both: The app can write directly to the pixel 
@@ -367,24 +367,24 @@ you're interested see
 which is a currently quite dormant project to try do this. The relevant bugs for 
 dll separation are:
 <dl>
-<dt><a href="http://bugs.winehq.com/show_bug.cgi?id=538">
-http://bugs.winehq.com/show_bug.cgi?id=538</a></dt><dd>
+<dt><a href="http://bugs.winehq.org/show_bug.cgi?id=538">
+http://bugs.winehq.org/show_bug.cgi?id=538</a></dt><dd>
   DLL Separation: x11drv from gdi32</dd>
 
-<dt><a href="http://bugs.winehq.com/show_bug.cgi?id=540">
-http://bugs.winehq.com/show_bug.cgi?id=540</a></dt><dd>
+<dt><a href="http://bugs.winehq.org/show_bug.cgi?id=540">
+http://bugs.winehq.org/show_bug.cgi?id=540</a></dt><dd>
   DLL Separation: x11drv from user32 (clipboard)</dd>
 
-<dt><a href="http://bugs.winehq.com/show_bug.cgi?id=542">
-http://bugs.winehq.com/show_bug.cgi?id=542</a></dt><dd>
+<dt><a href="http://bugs.winehq.org/show_bug.cgi?id=542">
+http://bugs.winehq.org/show_bug.cgi?id=542</a></dt><dd>
   DLL Separation: x11drv from user32 (misc)</dd>
 
-<dt><a href="http://bugs.winehq.com/show_bug.cgi?id=543">
-http://bugs.winehq.com/show_bug.cgi?id=543</a></dt><dd>
+<dt><a href="http://bugs.winehq.org/show_bug.cgi?id=543">
+http://bugs.winehq.org/show_bug.cgi?id=543</a></dt><dd>
   DLL Separation: x11drv from ntdll (FILE_DupUnixHandle)</dd>
 
-<dt><a href="http://bugs.winehq.com/show_bug.cgi?id=545">
-http://bugs.winehq.com/show_bug.cgi?id=545</a></dt><dd>  
+<dt><a href="http://bugs.winehq.org/show_bug.cgi?id=545">
+http://bugs.winehq.org/show_bug.cgi?id=545</a></dt><dd>  
  DLL Separation: x11drv from ntdll (VIRTUAL_SetFaultHandler)</dd>
 </dl></p></quote>
 
@@ -402,7 +402,7 @@ http://bugs.winehq.com/show_bug.cgi?id=545</a></dt><dd>
 <section 
 	title="Libwine Portability" 
 	subject="Re: wrc: change -J to -I-"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/02/0860.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/02/0860.html" 
 	posts="11"
 	startdate="02/26/2003"
 >
@@ -464,7 +464,7 @@ if configure didn't find getopt_long().</quote></p>
 <section 
 	title="Using Clientside Fonts" 
 	subject="building font metrics and Java"
-	archive="http://www.winehq.com/hypermail/wine-users/2003/02/0073.html" 
+	archive="http://www.winehq.org/hypermail/wine-users/2003/02/0073.html" 
 	posts="5"
 	startdate="02/15/2003"
 >
@@ -531,7 +531,7 @@ the font paths are set in the file /etc/X11/fs/config.
 <section 
 	title="Finding Missing Locks with Smatch" 
 	subject="Re: SMATCH: missing LeaveCriticalSection in error path"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/02/0733.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/02/0733.html" 
 	posts="3"
 	startdate="02/22/2003"
 	enddate="02/23/2003"
@@ -589,7 +589,7 @@ I'm not sure if it's a bug or not.
 <section 
 	title="Making Config Tools" 
 	subject="Wine 0.9 config applets?"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/02/0664.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/02/0664.html" 
 	posts="17"
 	startdate="02/21/2003"
 	enddate="02/25/2003"
@@ -611,7 +611,7 @@ see them other than executing the cpl files manually.
 
 <p>A few months ago Jaco Greeff had mentioned he was working on it,
 we covered that back in 
-<a href="http://www.winehq.com/news/?view=148#Registry%20Editors%20/%20Configuration%20Programs">issue #148</a>.
+<a href="http://www.winehq.org/news/?view=148#Registry%20Editors%20/%20Configuration%20Programs">issue #148</a>.
 The tool was advanced enough for Jaco to show off a screenshot.
 Dimi replied to Mike:</p>
 <quote who="Dimitrie Paun"><p>

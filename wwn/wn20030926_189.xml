@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="189" date="09/26/2003" />
 <intro> <p>This is the 189th issue of the Wine Weekly News publication.
-Its main goal is to walk carefully on thin ledges. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.com">www.winehq.com</a></p> </intro>
+Its main goal is to walk carefully on thin ledges. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="261" size="964" contrib="61" multiples="35" lastweek="32">
 
 <person posts="46" size="222" who="Dimitrie O. Paun" />
@@ -74,7 +74,7 @@ Its main goal is to walk carefully on thin ledges. It also serves to inform you 
 <section 
 	title="Filesystem Roadmap" 
 	subject="update on ntdll/kernel32 separation"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/09/0686.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/09/0686.html" 
 	posts="1"
 	startdate="09/18/2003"
 >
@@ -146,7 +146,7 @@ committed the patch.</p>
 <section 
 	title="The --dll Option Goes Away" 
 	subject="RE: wine/ tools/runtest misc/options.c include/mod ..."
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/09/0933.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/09/0933.html" 
 	posts="3"
 	startdate="09/25/2003"
 >
@@ -200,7 +200,7 @@ handy for testing things out.
 <section 
 	title="Wine Developer's Guide Update" 
 	subject="docs: wine-devel [0/16]"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/09/0288.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/09/0288.html" 
 	posts="1"
 	startdate="09/21/2003"
 >
@@ -249,7 +249,7 @@ TODOs/FIXMEs/etc.
 </section><section 
 	title="Winelib: Advantages and Disadvantages"
 	subject="How to run program without wine ?"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/09/0899.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/09/0899.html" 
 	posts="8"
 	startdate="09/25/2003"
 >
@@ -344,7 +344,7 @@ advantages but it's probably not for the reasons you think.
 <section 
 	title="Script to Help Translators" 
 	subject="tools/translations_status"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/09/0712.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/09/0712.html" 
 	posts="10"
 	startdate="09/20/2003"
 	enddate="09/22/2003"
@@ -358,17 +358,17 @@ helped get the French translation updated :)))
 
 </quote></p><p>
 You can 
-<a href="http://www.winehq.com/hypermail/wine-devel/2003/09/0712.html">find 
+<a href="http://www.winehq.org/hypermail/wine-devel/2003/09/0712.html">find 
 it attached</a> to his original email in the archives.  Vincent B&#233;ron
 then took a stab at creating a 
-<a href="http://www.winehq.com/hypermail/wine-devel/2003/09/0765.html">similar
+<a href="http://www.winehq.org/hypermail/wine-devel/2003/09/0765.html">similar
 program</a>.</p>
 
 </section>
 <section 
 	title="Don't Translate Winecfg.. Yet" 
 	subject="winecfg translations"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/09/0688.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/09/0688.html" 
 	posts="1"
 	startdate="09/19/2003"
 >
@@ -394,7 +394,7 @@ windowing system for non-sucky i18n.
 <section 
 	title="New Tests For Windows" 
 	subject="New winetests.exe"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/09/0845.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/09/0845.html" 
 	posts="1"
 	startdate="09/23/2003"
 >
@@ -421,7 +421,7 @@ sure he had the latest ones.  </p>
 <section 
 	title="Lecture Slides Available" 
 	subject="Wine lecture slides"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/09/0718.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/09/0718.html" 
 	posts="16"
 	startdate="09/20/2003"
 	enddate="09/23/2003"

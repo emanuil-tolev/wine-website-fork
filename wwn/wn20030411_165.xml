@@ -91,7 +91,7 @@
 <section 
 	title="News: Wine-20030408, Distro Reviews" 
 	subject="News"
-	archive="http://cvs.winehq.com/cvsweb/wine/ANNOUNCE?rev=1.74&amp;content-type=text/x-cvsweb-markup" 
+	archive="http://cvs.winehq.org/cvsweb/wine/ANNOUNCE?rev=1.74&amp;content-type=text/x-cvsweb-markup" 
 	posts="4"
 	startdate="04/05/2003"
 	enddate="04/11/2003"
@@ -100,15 +100,15 @@
 
 <p>Look mommy, we got 
 <a href="http://developers.slashdot.org/developers/03/04/08/2125228.shtml?tid=125">Slashdotted</a>.
-This week <a href="http://www.winehq.com/?interview=2">Dimi Paun</a>
+This week <a href="http://www.winehq.org/?interview=2">Dimi Paun</a>
 got grilled about his work with Wine.  Head over to WineHQ to check
 out the interview.</p>
 
-<p><a href="http://cvs.winehq.com/cvsweb/wine/ANNOUNCE?rev=1.74&amp;content-type=text/x-cvsweb-markup">Wine-20030408</a>
+<p><a href="http://cvs.winehq.org/cvsweb/wine/ANNOUNCE?rev=1.74&amp;content-type=text/x-cvsweb-markup">Wine-20030408</a>
 fell out of the tree:
 <quote who="Alexandre Julliard"><ul>
 WHAT'S NEW with Wine-20030408: (see 
-	<a href="http://cvs.winehq.com/cvsweb/wine/ChangeLog?rev=1.70&amp;content-type=text/x-cvsweb-markup">ChangeLog</a>
+	<a href="http://cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.70&amp;content-type=text/x-cvsweb-markup">ChangeLog</a>
 	for details)
         <li> Some reorganizations of the source tree.</li>
         <li> File change notifications.</li>
@@ -151,7 +151,7 @@ from CD.  Last week version 3.0 came out; Wine is included with it.</p>
 <section 
 	title="Debugging Threads" 
 	subject="Stuck on threading"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/04/0216.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/04/0216.html" 
 	posts="8"
 	startdate="04/08/2003"
 	enddate="04/09/2003"
@@ -219,7 +219,7 @@ Has anybody got any tips on how to debug this sort of thing?
 <section 
 	title="Change in nm Symbol Output" 
 	subject="winebuild incompatibility with binutils-2.13.90.0.20"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/04/0300.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/04/0300.html" 
 	posts="6"
 	startdate="04/09/2003"
 	enddate="04/11/2003"
@@ -285,7 +285,7 @@ done, <quote who="Dmitry Timoshkov">
 <section 
 	title="XFree86 Keyboard Mapping Issues" 
 	subject="keyboard mapping with XFree86 4.3.0"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/04/0195.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/04/0195.html" 
 	posts="10"
 	startdate="04/07/2003"
 	enddate="04/10/2003"

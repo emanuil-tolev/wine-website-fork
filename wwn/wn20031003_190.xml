@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="190" date="10/03/2003" />
 <intro> <p>This is the 190th issue of the Wine Weekly News publication.
-Its main goal is to recover from last night's bachelor party. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.com">www.winehq.com</a></p> </intro>
+Its main goal is to recover from last night's bachelor party. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="301" size="908" contrib="66" multiples="41" lastweek="33">
 
 <person posts="30" size="79" who="Alexandre Julliard" />
@@ -96,7 +96,7 @@ on vacation.  I'll go back and pick up some of the threads next week.</p>
 <section 
 	title="Wineconf 2004?" 
 	subject="Wineconf 2004, otherwise known as..."
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/09/0958.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/09/0958.html" 
 	posts="1"
 	startdate="09/26/2003"
 	enddate="09/  /2003"
@@ -104,7 +104,7 @@ on vacation.  I'll go back and pick up some of the threads next week.</p>
 <topic>Project Management</topic>
 <p>Earlier this year some threads appeared on wine-devel about holding
 a conference to gather Wine developers (see 
-<a href="http://www.winehq.com/?issue=156#Wineconf%202003?">issue #156</a>
+<a href="http://www.winehq.org/?issue=156#Wineconf%202003?">issue #156</a>
 for details.)  Jeremy White of CodeWeavers brought it up again this week
 in an email with the subject "Wineconf 2004, otherwise known as...":</p>
 <quote who="Jeremy White"><p>
@@ -168,7 +168,7 @@ by a more serious offer of Sorrento, Italy.  </p>
 <section 
 	title="Winetests Compiled with MSVC" 
 	subject="Updated winetests.exe"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/09/0960.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/09/0960.html" 
 	posts="3"
 	startdate="09/26/2003"
 	enddate="09/27/2003"
@@ -176,7 +176,7 @@ by a more serious offer of Sorrento, Italy.  </p>
 <topic>Testing</topic>
 <p>Jakob Eriksson succeeded in compiling Wine's test programs and his
 testing framework with Visual C++ (covered in part 
-<a href="http://www.winehq.com/?issue=189#New%20Tests%20For%20Windows">in
+<a href="http://www.winehq.org/?issue=189#New%20Tests%20For%20Windows">in
 issue #189</a>): </p><quote who="Jakob Eriksson"><p>
 winetests.exe with tests from CVS 2003-09-26 can be found here:
 <ul>
@@ -194,7 +194,7 @@ had some suggestion for changing the output. </p>
 <section 
 	title="Wine Programs for Windows" 
 	subject="Wine programs for windows released on sourceforge"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/09/0974.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/09/0974.html" 
 	posts="5"
 	startdate="09/27/2003"
 	enddate="09/28/2003"
@@ -206,7 +206,7 @@ dropped a note discussing some work he'd done:</p>
 <quote who="Ivan Leo Murray-Smith"><p>
 Hello!
 </p><p>
-<a href="http://www.winehq.com/hypermail/wine-devel/2003/09/att-0847/01-mkwine">The attached script</a> makes it possible to compile many programs from Wine
+<a href="http://www.winehq.org/hypermail/wine-devel/2003/09/att-0847/01-mkwine">The attached script</a> makes it possible to compile many programs from Wine
 under Windows.  The only software needed on Windows is Cygwin with MinGW
 libraries and some other utilities (flex, bison).  Simply run setup.exe
 from www.cygwin.com and make sure to select MinGW development tools.

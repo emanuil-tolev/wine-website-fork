@@ -60,7 +60,7 @@
   This provides an a good test case for Wine. It is tough, but we do have
   the Cygwin source code, and we have a good chance to understand why it
   does not work. 
-  This task is tracked as <a href="http://bugs.winehq.com/show_bug.cgi?id=443">Bug #443</a>
+  This task is tracked as <a href="http://bugs.winehq.org/show_bug.cgi?id=443">Bug #443</a>
   <ul>
     <li>workers: <a href="mailto:spetreolle@yahoo.fr">Sylvain Petreolle</a>
     <li>status: it seems that all internal commands work
@@ -71,7 +71,7 @@
   This will provide a good test case for Cygwin, but will help Wine's 
   portability. Moreover, the ability to run Wine code under Windows
   without a reboot, can help with testing sometimes.
-  This task is tracked as <a href="http://bugs.winehq.com/show_bug.cgi?id=273">Bug #273</a>
+  This task is tracked as <a href="http://bugs.winehq.org/show_bug.cgi?id=273">Bug #273</a>
   <ul>
     <li>workers: <a href="mailto:davidf@sjsoft.com">David Fraser</a>
     <li>status: almost compiles
@@ -168,7 +168,7 @@
   <ul>
     <li>worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
     <li>status: compiles, links, and runs!
-                The <a href="http://www.winehq.com/hypermail/wine-devel/2003/01/0153.html">patch</a>
+                The <a href="http://www.winehq.org/hypermail/wine-devel/2003/01/0153.html">patch</a>
 		has been accepted in the official wxWindows tree!
     <li>updated: Jan 7, 2003
     <li>homepage: <a href="http://www.wxwindows.org">www.wxwindows.org</a>
@@ -290,7 +290,7 @@
   Still this may provide a better approximation of the completeness of Wine than just treating all APIs as equivalent.
   <ul>
     <li>worker: <a href="mailto:compsol@ptd.net">Dave Miller</a>
-    <li>status: Starting work <a href="http://www.winehq.com/hypermail/wine-devel/2003/04/0324.html">soon</a>.
+    <li>status: Starting work <a href="http://www.winehq.org/hypermail/wine-devel/2003/04/0324.html">soon</a>.
     <li>updated: Apr 11, 2003
   </ul>
 
@@ -308,7 +308,7 @@
   Adding them to <tt>wineconsole</tt> would be a very nice project for 
   someone who knows a bit about windows programming. This task is
   tracked also in Bugzilla, as 
-  <a href="http://bugs.winehq.com/show_bug.cgi?id=1304">Bug #1304</a>.
+  <a href="http://bugs.winehq.org/show_bug.cgi?id=1304">Bug #1304</a>.
 
   <h3 class=inprogress>Wine Explorer</h3>
   <p>A Windows Explorer replacement. People migrating from Windows would love it,
@@ -321,15 +321,15 @@
   </ul>
   
 
-  <h3 class=inprogress>Winetest Shell</h3>
+  <h3 class=done>Winetest Shell</h3>
   <p>Would be nice to have a shell exe (sort of like the one provided by JUnit), 
   that contains the little exes, extracts them in a temp dir one by one, 
   runs them, and displays a nice progress bar, together with a list with messages. 
   <ul>
     <li>worker: <a href="mailto:jakob@vmlinux.org">Jakob Eriksson</a>,
 		<a href="mailto:wferi@afavant.elte.hu">Ferenc Wagner</a>.
-    <li>status: we have a beginning of a shell, and some processing scripts.
-    <li>updated: Sep 1, 2003
+    <li>status: <a href="http://www.winehq.org/hypermail/wine-cvs/2003/12/0051.html">committed</a> to the tree.
+    <li>updated: Dec 5, 2003
   </ul>
 
   <h3 class=todo>Compressed or Modified Executables</h3>

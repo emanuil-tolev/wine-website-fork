@@ -100,7 +100,7 @@ Windows emulator).</p>
 <p>Dimitrie Paun's web site got 
 <a href="http://developers.slashdot.org/article.pl?sid=02/11/17/1648220&amp;mode=thread&amp;tid=125">Slashdotted</a> 
 on Sunday after someone pointed out he had a list of
-<a href="http://www.winehq.com/?page=fun_projects">Fun Wine Projects</a>. 
+<a href="http://www.winehq.org/?page=fun_projects">Fun Wine Projects</a>. 
 Specifically they mentioned the virtualization projects.  A lot of the
 <a href="http://developers.slashdot.org/comments.pl?sid=45298&amp;cid=0&amp;pid=0&amp;startat=&amp;threshold=2&amp;mode=thread&amp;commentsort=0&amp;op=Change">discussion</a>
 (mod level 2) on Slashdot was actually geared more toward using Wine than
@@ -141,7 +141,7 @@ the following:
 <section 
 	title="Porting PuTTY With Winelib" 
 	subject="PuTTY update"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/11/1214.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/1214.html" 
 	posts="4" 
 	startdate="11/21/2002"
 >
@@ -155,7 +155,7 @@ source</a> is available under a BSD-like license.  Dimi
 wrote to the developers:</p>
 <quote who="Dimitrie Paun"><p>
 I'm one of the 
-<a href="http://www.winehq.com">Wine</a> developers,
+<a href="http://www.winehq.org">Wine</a> developers,
 and I just managed to build Putty under Winelib. That
 is, Putty now runs as a native Linux application.
 </p><p>
@@ -199,7 +199,7 @@ covered next.  The second problem concerned some linking semantics.
 <section 
 	title="Building Apps With Different Wine Source/Build Trees" 
 	subject="winewrapper"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/11/1212.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/1212.html" 
 	posts="11" 
 	startdate="11/21/2002"
 >
@@ -311,7 +311,7 @@ it was not the proper way for this to work.</p>
 <section 
 	title="Implementing Import Libraries" 
 	subject="winspool.drv again"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/11/1241.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/1241.html" 
 	posts="2" 
 	startdate="11/21/2002"
 	
@@ -347,7 +347,7 @@ already on my TODO list, I'll bump the priority a bit...
 <section 
 	title="wintab.dll: Better Tablet Support" 
 	subject="Imporving support for graphics tablets in wine (wintab.dll)"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/11/1037.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/1037.html" 
 	posts="3" 
 	startdate="11/18/2002"
 	enddate="11/20/2002"
@@ -373,7 +373,7 @@ Assuming nobody has done this what's the first step?
 </p></quote>
 <p>Tony Lambregts told him to go ahead and work on it since
 no one else appeared to be doing so.  Rob agreed and opened
-<a href="http://bugs.winehq.com/show_bug.cgi?id=1160">bug #1160</a>.</p>
+<a href="http://bugs.winehq.org/show_bug.cgi?id=1160">bug #1160</a>.</p>
 
 
 </section>
@@ -390,7 +390,7 @@ no one else appeared to be doing so.  Rob agreed and opened
 <section 
 	title="Wineconsole Changes" 
 	subject="RFC: console &amp; curses"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/11/1082.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/1082.html" 
 	posts="19" 
 	startdate="11/19/2002"
 	enddate="11/21/2002"
@@ -471,7 +471,7 @@ having X running.  </p>
 <section 
 	title="Passing Commandline Arguments" 
 	subject="wine commandline options"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/11/1014.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/1014.html" 
 	posts="7" 
 	startdate="11/18/2002"
 >
@@ -519,7 +519,7 @@ to never load it.
 <section 
 	title="Terminal Based Apps" 
 	subject="Wine without any X11 environment"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/11/0924.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/0924.html" 
 	posts="5" 
 	startdate="11/15/2002"
 >
@@ -569,7 +569,7 @@ driver but ran into some problems with it bombing out.</p>
 <section 
 	title="Assumptions with autoconf" 
 	subject="Configure question"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/11/1046.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/1046.html" 
 	posts="10" 
 	startdate="11/19/2002"
 >
@@ -631,7 +631,7 @@ sure any called function was there,
 <section 
 	title="COM Objects Doc" 
 	subject="COM Enhancement patch"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/11/0865.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/0865.html" 
 	posts="10" 
 	startdate="11/13/2002"
 	enddate="11/21/2002"
@@ -901,7 +901,7 @@ has been done before with the ddraw code plus the enhancement I did.
 <section 
 	title="Threads and CoInitialize" 
 	subject="CoInitialize"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/11/0866.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/0866.html" 
 	posts="5" 
 	startdate="11/13/2002"
 	enddate="11/19/2002"

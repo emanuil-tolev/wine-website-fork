@@ -108,7 +108,7 @@
 <topic>News</topic>
 <p>I'm on vacation this week, so my apologies if I've missed any
 interesting threads.  As always, check out the 
-<a href="http://www.winehq.com/hypermail/wine-devel">wine-devel</a>
+<a href="http://www.winehq.org/hypermail/wine-devel">wine-devel</a>
 mailing list to find out what's really going on.</p>
 
 <p>TransGaming released "The Sims - unplugged on Linux" in their
@@ -169,7 +169,7 @@ about licensing.</p>
 <section 
 	title="Shared Memory Wineserver" 
 	subject="Prototype implementation of a shared memory winserver"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/12/0550.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/12/0550.html" 
 	posts="1" 
 	startdate="12/12/2002"
 >
@@ -238,7 +238,7 @@ that are set for everyone - BSD style mmap on the other hand can).
 <section 
 	title="Special (Accented) Characters / Dead Keys" 
 	subject="Turkish keyboard Support"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/12/0332.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/12/0332.html" 
 	posts="5" 
 	startdate="12/09/2002"
 	enddate="12/10/2002"
@@ -266,7 +266,7 @@ BTW what's the state of that merge?
 <p>The next day Richard Allen reported problems working with an
 Icelandic keyboard.  Zsolt replied again and referenced the earlier
 thread, but this time included 
-<a href="http://www.winehq.com/hypermail/wine-devel/2002/12/att-0404/01-keysym.patch">
+<a href="http://www.winehq.org/hypermail/wine-devel/2002/12/att-0404/01-keysym.patch">
 a patch</a> for keyboard.c.</p>
 
 
@@ -281,7 +281,7 @@ a patch</a> for keyboard.c.</p>
 <section 
 	title="Why Have a wpp?" 
 	subject="wpp"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/12/0282.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/12/0282.html" 
 	posts="20" 
 	startdate="12/08/2002"
 	enddate="12/09/2002"
@@ -344,8 +344,8 @@ were some special needs that had to be addressed,
 the preprocessor and gave a link to WWN #36 that described exactly 
 why it was done:</p>
 <quote who="Ove Kaaven"><p>
-<a href="http://www.winehq.com/news/?view=36#Wine's%20resource%20compiler">
-http://www.winehq.com/news/?view=36#Wine's%20resource%20compiler</a>
+<a href="http://www.winehq.org/news/?view=36#Wine's%20resource%20compiler">
+http://www.winehq.org/news/?view=36#Wine's%20resource%20compiler</a>
 </p><p>
 Seems you argued against wrc having its own cpp implementation already
 back then. So the real reason why we now have wpp is probably because it
@@ -365,7 +365,7 @@ use Bertho's preprocessor for widl too.
 <section 
 	title="Garbage Collection With Wine" 
 	subject="Wine, Windows.Forms on Linux, GC and segfaults."
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/12/0436.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/12/0436.html" 
 	posts="6" 
 	startdate="12/10/2002"
 	enddate="12/11/2002"
@@ -427,7 +427,7 @@ of rolling its own?
 <section 
 	title="Registry Editors / Configuration Programs" 
 	subject="Registering DLL's"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/12/0150.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/12/0150.html" 
 	posts="13" 
 	startdate="12/04/2002"
 	enddate="12/07/2002"
@@ -498,7 +498,7 @@ constructed, as in command-line, or a .reg file of commands, etc.
 <section 
 	title="MS Installer or Lack Thereof" 
 	subject="MSI (MS Installer)"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/12/0320.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/12/0320.html" 
 	posts="13" 
 	startdate="12/09/2002"
 	enddate="12/10/2002"

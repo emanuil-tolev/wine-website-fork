@@ -29,7 +29,7 @@ does anyone have any suggestions as to what to see or do at Lake Powell, UT?</p>
 <section
   title="Headlines"
   subject="A new vintage and some interesting press"
-  archive="http://www.winehq.com/hypermail/wine-cvs/2001/05/0068.html"
+  archive="http://www.winehq.org/hypermail/wine-cvs/2001/05/0068.html"
   posts="1"                                                 
   startdate="10 May 2001 00:00:00 -0800"
   enddate="10 May 2001 00:00:00 -0800"
@@ -130,7 +130,7 @@ Windows-compatible Linux-based server. </quote></p>
 <section
   title="doors IPC"
   subject="doors IPC"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/05/0054.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/05/0054.html"
   posts="3"
   startdate="08 May 2001 00:00:00 -0800"
   enddate="09 May 2001 00:00:00 -0800">
@@ -211,7 +211,7 @@ consider this a real problem at this time.</p>
 <section
   title="Helping with Wine"
   subject="Re: where do I go to find out who needs help"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/05/0068.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/05/0068.html"
   posts="2"
   startdate="09 May 2001 00:00:00 -0800"
   enddate="09 May 2001 00:00:00 -0800">
@@ -237,7 +237,7 @@ of items:</p>
 
 <li>
    Builtin msvcrt mishandles the cmdline to argv conversion #234: <a
-   href="http://bugs.winehq.com/show_bug.cgi?id=234">http://bugs.winehq.com/show_bug.cgi?id=234</a>
+   href="http://bugs.winehq.org/show_bug.cgi?id=234">http://bugs.winehq.org/show_bug.cgi?id=234</a>
    This prevents 'wine /mnt/win/Program\ Files\whatever\foo.exe' from working
    if you're using the builtin msvcrt!</li>
 
@@ -246,7 +246,7 @@ of items:</p>
 
  <li> PrgWin95/98: System metrics differ from the Win9x values
    #48: <a
-   href="http://bugs.winehq.com/show_bug.cgi?id=48">http://bugs.winehq.com/show_bug.cgi?id=48</a>
+   href="http://bugs.winehq.org/show_bug.cgi?id=48">http://bugs.winehq.org/show_bug.cgi?id=48</a>
    One day I'll fix this one... I swear. Unless you want to work on it
    first. In that case I'll provide you with my test application and dumps
    of the metrics for Win95, Win98, NT4, ...</li>
@@ -260,8 +260,8 @@ of items:</p>
    yourself) can start fixing these bugs in a distributed fashion.</li>
 
  <li> PrgWin95: Listbox getting a recessed border instead of a flat one
-   #56: <a href="http://bugs.winehq.com/show_bug.cgi?id=56">
-	http://bugs.winehq.com/show_bug.cgi?id=56</a>
+   #56: <a href="http://bugs.winehq.org/show_bug.cgi?id=56">
+	http://bugs.winehq.org/show_bug.cgi?id=56</a>
    (I can provide you with the sample application)</li>
 
  <li> I think it would be nice to add a tool that displays the dlls version
@@ -283,39 +283,39 @@ of items:</p>
 <ul>
 
  <li> Provide a pedump utility
-   #91: <a href="http://bugs.winehq.com/show_bug.cgi?id=91">
-	http://bugs.winehq.com/show_bug.cgi?id=91</a>
+   #91: <a href="http://bugs.winehq.org/show_bug.cgi?id=91">
+	http://bugs.winehq.org/show_bug.cgi?id=91</a>
    I know there's sample code that does that already floating around so
    it should be relatively simple.</li>
 
  <li> wrc fails on preprocessed files
-   #115: <a href="http://bugs.winehq.com/show_bug.cgi?id=115">
-	http://bugs.winehq.com/show_bug.cgi?id=115</a>
+   #115: <a href="http://bugs.winehq.org/show_bug.cgi?id=115">
+	http://bugs.winehq.org/show_bug.cgi?id=115</a>
    I believe it's just a grammar problem. You'll need to know
    (or to get cozy with) lex/yacc...</li>
 
  <li> CreateIcon does not resize bitmaps
-   #175: <a href="http://bugs.winehq.com/show_bug.cgi?id=175">
-	http://bugs.winehq.com/show_bug.cgi?id=175</a>
+   #175: <a href="http://bugs.winehq.org/show_bug.cgi?id=175">
+	http://bugs.winehq.org/show_bug.cgi?id=175</a>
    I did a similar fix somewhere some time ago. I can provide a
    sample application and I might be able to point you in the right 
    direction.</li>
 
  <li> winemaker: 'winemaker --nomfc' does not have the intended effect
-   #227: <a href="http://bugs.winehq.com/show_bug.cgi?id=227">
-	http://bugs.winehq.com/show_bug.cgi?id=227</a>
+   #227: <a href="http://bugs.winehq.org/show_bug.cgi?id=227">
+	http://bugs.winehq.org/show_bug.cgi?id=227</a>
     </li>
 
  <li> winemaker: Ignores the '--with-{mfc,wine}' options once they are
    cached
-   #225: <a href="http://bugs.winehq.com/show_bug.cgi?id=225">
-	http://bugs.winehq.com/show_bug.cgi?id=225</a>
+   #225: <a href="http://bugs.winehq.org/show_bug.cgi?id=225">
+	http://bugs.winehq.org/show_bug.cgi?id=225</a>
    If you're familiar with autoconf and know how configure scripts
    should behave...</li>
 
  <li> StrokePath ignores PS_JOIN_xxx
-   #11: <a href="http://bugs.winehq.com/show_bug.cgi?id=11">
-	http://bugs.winehq.com/show_bug.cgi?id=11</a>
+   #11: <a href="http://bugs.winehq.org/show_bug.cgi?id=11">
+	http://bugs.winehq.org/show_bug.cgi?id=11</a>
    This should not be too difficult to fix but it would certainly help
    if you are familiar with GDI.</li>
 
@@ -357,24 +357,24 @@ see if you like it.</p>
 once something has been fixed.  Francois also replied to that with:</p>
 
 <quote who="Francois Gouget"><p>
-		&gt; Have a look at http://www.winehq.com</p>
+		&gt; Have a look at http://www.winehq.org</p>
 
 <p>   More precisely:</p>
 <p><ul>
 
 <li>CVS 
-   <a href="http://www.winehq.com/?page=cvs">http://www.winehq.com/?page=cvs</a>
+   <a href="http://www.winehq.org/?page=cvs">http://www.winehq.org/?page=cvs</a>
    The best way to stay up to date.</li>
 
  <li> wine-patches
-   <a href="http://www.winehq.com/mailman/listinfo/wine-patches">
-	http://www.winehq.com/mailman/listinfo/wine-patches</a>
+   <a href="http://www.winehq.org/mailman/listinfo/wine-patches">
+	http://www.winehq.org/mailman/listinfo/wine-patches</a>
    It's best if you subscribe to wine-patches
    (otherwise each of your emails will go through the moderator)</li>
 
  <li> Wine Developer's Guide: Chapter 4. Submitting Patches
-   <a href="http://www.winehq.com/docs/wine-devel/patches">
-	http://www.winehq.com/docs/wine-devel/patches</a>
+   <a href="http://www.winehq.org/docs/wine-devel/patches">
+	http://www.winehq.org/docs/wine-devel/patches</a>
    All you need to know about submitting patches (I hope)</li>
 </ul></p>
 
@@ -390,7 +390,7 @@ things to hack on this list.
 <section
   title="GDB Remote Debugging"
   subject="GDB remote debugging"
-  archive="http://www.winehq.com/hypermail/wine-patches/2001/05/0049.html"
+  archive="http://www.winehq.org/hypermail/wine-patches/2001/05/0049.html"
   posts="4"
   startdate="09 May 2001 00:00:00 -0800"
   enddate="09 May 2001 00:00:00 -0800">

@@ -54,7 +54,7 @@ I'm not fluent in Polish that probably doesn't mean much.
 
 <stats posts="428" size="1345" contrib="86" multiples="51" lastweek="49">
 
-<person posts="35" size="86" who="Alexandre Julliard &lt;julliard@winehq.com&gt;" />
+<person posts="35" size="86" who="Alexandre Julliard &lt;julliard@winehq.org&gt;" />
 <person posts="32" size="72" who="Andriy Palamarchuk &lt;apa3a@yahoo.com&gt;" />
 <person posts="30" size="94" who="Francois Gouget &lt;fgouget@free.fr&gt;" />
 <person posts="29" size="111" who="Steven Edwards &lt;Steven_Ed4153@yahoo.com&gt;" />
@@ -100,7 +100,7 @@ I'm not fluent in Polish that probably doesn't mean much.
 <person posts="2" size="7" who="Jukka Heinonen &lt;jhei@iki.fi&gt;" />
 <person posts="2" size="7" who="Roger Fujii &lt;rmf@lookhere.com&gt;" />
 <person posts="2" size="5" who="Huw D M Davies &lt;h.davies1@physics.ox.ac.uk&gt;" />
-<person posts="2" size="5" who="Ryan C. Stallings &lt;winehq.com@beergeek.net&gt;" />
+<person posts="2" size="5" who="Ryan C. Stallings &lt;winehq.org@beergeek.net&gt;" />
 <person posts="2" size="4" who="Rizsanyi Zsolt &lt;rizsanyi@myrealbox.com&gt;" />
 <person posts="2" size="4" who="perlman@warpcore.org" />
 <person posts="2" size="4" who="ccrayne@crayne.org" />
@@ -147,14 +147,14 @@ I'm not fluent in Polish that probably doesn't mean much.
 <section
   title="News: wine-20020509, Wine Press"
   subject="News"
-  archive="http://www.winehq.com/news/announce.php?rel=1.62"
+  archive="http://www.winehq.org/news/announce.php?rel=1.62"
   posts="6"
   startdate="05/10/2002"
   enddate="05/22/2002"
 >
 <topic>News</topic>
 <p>Head on over and grab the monthly wine CVS snapshot: 
-<a href="http://cvs.winehq.com/cvsweb/wine/ANNOUNCE?rev=1.62&amp;content-type=text/x-cvsweb-markup">wine-20020509.</a>
+<a href="http://cvs.winehq.org/cvsweb/wine/ANNOUNCE?rev=1.62&amp;content-type=text/x-cvsweb-markup">wine-20020509.</a>
 Alexandre noted the following changes:
 <ul> More dll separation work. 
    	<li />Many async I/O improvements. 
@@ -166,7 +166,7 @@ Alexandre noted the following changes:
 
 </p><p>Francois Gouget posted some links to recent Wine articles
 in the press.  In addition, he updated the 
-   <a href="http://www.winehq.com/about/index.php?press">press section
+   <a href="http://www.winehq.org/about/index.php?press">press section
    </a>
 on WineHQ with some older articles.  The 
    <a href="http://www.linuxplanet.com/linuxplanet/interviews/4202/1/">
@@ -208,7 +208,7 @@ website.  </p>
 <section
   title="Component Owners"
   subject="Component owners 2"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/05/0384.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/05/0384.html"
   posts="9"
   startdate="05/13/2002"
   enddate="05/14/2002"
@@ -216,14 +216,14 @@ website.  </p>
 <topic>Project Management</topic>
 <p>Andriy Palamarchuk has been spearheading an effort to
 get developers and users to use Wine's 
-<a href="http://bugs.winehq.com">Bugzilla</a>.  Part of 
+<a href="http://bugs.winehq.org">Bugzilla</a>.  Part of 
 this involves assigning owners to the various parts of 
 Wine and informing those owners when bugs are entered for
 their subsystem.  Andriy submitted a list of possible
 component owners which generated a fair amount of feedback
 from people claiming or not claiming responsibility for 
 various areas.  Francois Gouget suggested looked at the
-<a href="http://www.winehq.com/about/index.php?who">list
+<a href="http://www.winehq.org/about/index.php?who">list
 of developers</a> on WineHQ, but pointed out the list was
 horribly out of date.  Andriy revised his list and 
 resubmitted it:</p>
@@ -285,7 +285,7 @@ Other comments are welcome too.
 </quote>
 
 <p>Andriy also worked on 
-<a href="http://bugs.winehq.com/show_bug.cgi?id=95">
+<a href="http://bugs.winehq.org/show_bug.cgi?id=95">
 a form</a> to make bug submission easier and more accurate.</p>
 
 </section>
@@ -302,7 +302,7 @@ a form</a> to make bug submission easier and more accurate.</p>
 <section
   title="Patch Trading"
   subject="Proposal for Trade: COM/DCOM for DLL Separation"
-  archive="http://www.winehq.com/hypermail/wine-license/2002/05/0044.html"
+  archive="http://www.winehq.org/hypermail/wine-license/2002/05/0044.html"
   posts="5"
   startdate="05/10/2002"
   enddate="05/14/2002"
@@ -421,7 +421,7 @@ We look forward to your feedback.
 <section
   title="Global Wine Configuration?"
   subject="Global Wine configuration file not consulted?"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/05/0404.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/05/0404.html"
   posts="3"
   startdate="05/14/2002"
   enddate="05/14/2002"
@@ -457,7 +457,7 @@ global wine configuration file,
 <section
   title="What is WineLib?"
   subject="talk-through dll"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/05/0415.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/05/0415.html"
   posts="6"
   startdate="05/14/2002"
   enddate="05/15/2002"
@@ -515,7 +515,7 @@ it's already been done,
 <section
   title="Cross-compiling Wine"
   subject="Breakthrough! Can now crosscompile unit tests!"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/05/0279.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/05/0279.html"
   posts="20"
   startdate="05/09/2002"
   enddate="05/12/2002"
@@ -593,8 +593,8 @@ exercise for the reader...
 
 <section
   title="WineHQ: .org or .com?"
-  subject="winehq.com or winehq.org?"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/05/0426.html"
+  subject="winehq.org or winehq.org?"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/05/0426.html"
   posts="9"
   startdate="05/15/2002"
   enddate="05/20/2002"
@@ -634,7 +634,7 @@ many public replies.)
 <section
   title="SoundBlaster Emulation"
   subject="Re: PATCH: Preliminary DMA and SOUNDBLASTER emulation"
-  archive="http://www.winehq.com/hypermail/wine-devel/2002/05/0325.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2002/05/0325.html"
   posts="4"
   startdate="05/15/2002"
   enddate="05/20/2002"

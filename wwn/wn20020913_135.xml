@@ -16,7 +16,7 @@ what's going on around Wine (the Un*x Windows emulator).
 <stats posts="229" size="730" contrib="41" multiples="28" lastweek="21">
 
 <person posts="41" size="117" who="Patrik Stridvall &lt;ps@leissner.se&gt;" />
-<person posts="35" size="88" who="Alexandre Julliard &lt;julliard@winehq.com&gt;" />
+<person posts="35" size="88" who="Alexandre Julliard &lt;julliard@winehq.org&gt;" />
 <person posts="29" size="76" who="Dimitrie O. Paun &lt;dpaun@rogers.com&gt;" />
 <person posts="12" size="30" who="Francois Gouget &lt;fgouget@free.fr&gt;" />
 <person posts="10" size="22" who="Andriy Palamarchuk &lt;apa3a@yahoo.com&gt;" />
@@ -60,7 +60,7 @@ what's going on around Wine (the Un*x Windows emulator).
 <section 
 	title="Patch Submission Tips" 
 	subject="patches policy"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/09/0127.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/09/0127.html" 
 	posts="18" 
 	startdate="09/09/2002"
 	enddate="09/10/2002" 
@@ -150,7 +150,7 @@ a wrapper to <code>cvs diff</code> to automate some of the process,
  I did add a few more options... if someone's interested in them, let me
  know</quote></p>
 
-<p>WineHQ's <a href="http://www.winehq.com/index.php?page=sending_patches">development
+<p>WineHQ's <a href="http://www.winehq.org/index.php?page=sending_patches">development
 page</a> outlines most of these procedures.</p>
 
 </section>
@@ -164,7 +164,7 @@ page</a> outlines most of these procedures.</p>
 <section 
 	title="Direct3D 8 Support" 
 	subject="Direct3D v8"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/09/0158.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/09/0158.html" 
 	posts="12" 
 	startdate="09/10/2002"
 	enddate="09/11/2002"
@@ -219,7 +219,7 @@ Anyway, thoughts please?
  for others.</quote></p>
 
 <p>Jason wrote back with a 
-<a href="http://www.winehq.com/hypermail/wine-devel/2002/09/0176.html">couple 
+<a href="http://www.winehq.org/hypermail/wine-devel/2002/09/0176.html">couple 
 questions</a> and ended with:</p>
 <quote who="Jason Edmeades"><p>
  Finally Can anyone point me at VERY basic, free programs which use directx
@@ -238,7 +238,7 @@ questions</a> and ended with:</p>
  Please do this via private email, so as not to clutter the wine-devel forum.</li>
 </ul></p></quote>
 
-<p>Jason submitted <a href="http://www.winehq.com/hypermail/wine-patches/2002/09/0097.html">
+<p>Jason submitted <a href="http://www.winehq.org/hypermail/wine-patches/2002/09/0097.html">
 a patch</a> the next day.</p>
 </section>
 
@@ -255,7 +255,7 @@ a patch</a> the next day.</p>
 <section 
 	title="Wine DLLs under Visual C" 
 	subject="Wine DLLs compiled under Visual C"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/09/0117.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/09/0117.html" 
 	posts="4" 
 	startdate="09/09/2002"
 >
@@ -316,7 +316,7 @@ and exactly what would currently build.  Patrik replied,
 <section 
 	title="Menu Handling Problems" 
 	subject="Recent change causes bad QuickBooks behaviour(?)"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/09/0084.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/09/0084.html" 
 	posts="7" 
 	startdate="09/06/2002"
 	enddate="09/09/2002" 
@@ -379,7 +379,7 @@ in the changes Andi mentioned he found a solution:</p>
 <section 
 	title="New Header: winternl.h" 
 	subject="New header winternl.h"
-	archive="http://www.winehq.com/hypermail/wine-patches/2002/09/0046.html" 
+	archive="http://www.winehq.org/hypermail/wine-patches/2002/09/0046.html" 
 	posts="8" 
 	startdate="09/07/2002"
 	enddate="09/08/2002" 

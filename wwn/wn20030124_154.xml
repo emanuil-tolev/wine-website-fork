@@ -109,7 +109,7 @@ update your links.</p>
 Maybe I should take this
 opportunity to explain a little about differences 
 between the 
-<a href="http://www.winehq.com/news/?view=back">Wine Weekly News</a> and
+<a href="http://www.winehq.org/news/?view=back">Wine Weekly News</a> and
 <a href="http://www.kerneltraffic.org/wine/latest.html">
 Kernel Cousin Wine</a>.  For the most part, the content is
 the exact same.  It's all XML based, but each uses a
@@ -164,7 +164,7 @@ Con:
 <section 
 	title="Kernel Module / Shared Memory Revisited" 
 	subject="Wine kernel acceleration module?"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/01/0737.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/01/0737.html" 
 	posts="17"
 	startdate="01/18/2003"
 	enddate="01/23/2003"
@@ -186,8 +186,8 @@ dig in the WWN archives you'll find mentions of it
 going back a few years.  Much more interesting was
 this post:
 <ul>
-<a href="http://www.winehq.com/hypermail/wine-devel/2002/12/0550.html">
-http://www.winehq.com/hypermail/wine-devel/2002/12/0550.html</a>
+<a href="http://www.winehq.org/hypermail/wine-devel/2002/12/0550.html">
+http://www.winehq.org/hypermail/wine-devel/2002/12/0550.html</a>
 </ul></p><p>
 The approach is a shared memory wineserver.
 </p></quote>
@@ -313,7 +313,7 @@ apps. 8-)
 <section 
 	title="InstallShield 6 Insight" 
 	subject="InstallShield 6 crash: ole trouble"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/01/0824.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/01/0824.html" 
 	posts="20"
 	startdate="01/20/2003"
 	enddate="01/23/2003"
@@ -406,7 +406,7 @@ those Wine guys", but that probably wouldn't be their primary concern...
 <section 
 	title="Where is fnt2bdf?" 
 	subject="Whither fnt2bdf?"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/01/0916.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/01/0916.html" 
 	posts="7"
 	startdate="01/23/2003"
 >
@@ -485,7 +485,7 @@ and possibly vice-versa (!).</quote></p>
 <section 
 	title="MSVC 4 &amp; Explorer.exe Implementation" 
 	subject="placeholder implementation of explorer.exe"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/01/0754.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/01/0754.html" 
 	posts="4"
 	startdate="01/19/2003"
 >
@@ -518,7 +518,7 @@ Anyone think that'd be a bad thing to put into the Wine tree?
 <p>Juergen Schmied replied:</p>
 <quote who="Juergen Schmied"><p>
 I attached a small explorer like programm onto
-<a href="http://bugs.winehq.com/show_bug.cgi?id=1227">
+<a href="http://bugs.winehq.org/show_bug.cgi?id=1227">
 [ Bug #1227 ] </a>
 maybe we could port it into c code and include it into wine.
 It might be a good starting point to start a full featured explorer like
@@ -536,7 +536,7 @@ coding a new program.</quote></p>
 <p>Dan hacked up an example of his idea:</p>
 <quote who="Dan Kegel"><p>
 OK, then.  
-<a href="http://www.winehq.com/hypermail/wine-devel/2003/01/0768.html">
+<a href="http://www.winehq.org/hypermail/wine-devel/2003/01/0768.html">
 Here's a patch</a> that makes 'start explorer.exe d:\' work
 (needed by msvc4.0's setup program).
 </p><p>
@@ -556,7 +556,7 @@ works before posting it to wine-patches...
 <section 
 	title="Executing Batch Files" 
 	subject="Launch a unix process from wcmd?"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/01/0734.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/01/0734.html" 
 	posts="6"
 	startdate="01/18/2003"
 >
@@ -641,7 +641,7 @@ Windows program Irfanview can extract icons. It works with wine and is free.</qu
 <section 
 	title="Installing IE5.5" 
 	subject="Installing IE5.5"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/01/0692.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/01/0692.html" 
 	posts="1"
 	startdate="01/17/2003"
 >
@@ -673,7 +673,7 @@ I'm hoping this proves useful to everyone.
 
 <p>This came on the heels of a few other recent IE posts.  A few
 weeks ago someone posted about 
-<a href="http://www.winehq.com/hypermail/wine-devel/2003/01/0624.html">
+<a href="http://www.winehq.org/hypermail/wine-devel/2003/01/0624.html">
 installation problems</a>.  About the same time Frank's Corner
 published a short guide to 
 <a href="http://www.frankscorner.org/explorer_5_5.html">installing IE</a> 
@@ -685,7 +685,7 @@ using a cab extraction program.</p>
 <section 
 	title="Wine Robustness?" 
 	subject="wine robustness?"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/01/0706.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/01/0706.html" 
 	posts="2"
 	startdate="01/17/2003"
 >
@@ -724,7 +724,7 @@ does.
 <section 
 	title="CVS Vulnerability?" 
 	subject="Fwd: [MPlayer-dev-eng] cvs remote vulnerability"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/01/0850.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/01/0850.html" 
 	posts="2"
 	startdate="01/21/2003"
 >
@@ -744,7 +744,7 @@ Thanks! The version of cvs on WineHQ.com is patched for this issue.</quote>
 <section 
 	title="Whither wine-releases ?" 
 	subject="wine-releases has gone?"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/01/0702.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/01/0702.html" 
 	posts="3"
 	startdate="01/17/2003"
 >
@@ -773,8 +773,8 @@ though. I'll dig through the hypermail docs some more to see if there is
 anything else I need to do.</quote></p>
 
 <p>For those interested, you can find the archives at: 
-<a href="http://www.winehq.com/hypermail/wine-releases/">
-http://www.winehq.com/hypermail/wine-releases/</a>.</p>
+<a href="http://www.winehq.org/hypermail/wine-releases/">
+http://www.winehq.org/hypermail/wine-releases/</a>.</p>
 
 
 </section>

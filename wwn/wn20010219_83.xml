@@ -19,7 +19,7 @@ going on around Wine (the Un*x Windows emulator).
 </intro>
 
 <stats posts="116" size="453" contrib="41" multiples="22" lastweek="24">
-<person posts="16" size="54" who="Alexandre Julliard &lt;julliard@winehq.com&gt;" />
+<person posts="16" size="54" who="Alexandre Julliard &lt;julliard@winehq.org&gt;" />
 <person posts="11" size="36" who="Jon Griffiths &lt;tntjpgriff@tsnxt.co.uk&gt;" />
 <person posts="9" size="34" who="Patrik Stridvall &lt;ps@leissner.se&gt;" />
 <person posts="6" size="36" who="David Elliott &lt;dfe@infinite-internet.net&gt;" />
@@ -64,7 +64,7 @@ mailing-lists.
 <section 
   title="Novell and Wine"
   subject="Novell filesystem support"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/02/0121.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/02/0121.html"
   posts="7"
   startdate="12 Feb 2001 00:00:00 -0800"
   enddate="12 Feb 2001 00:00:00 -0800"
@@ -132,7 +132,7 @@ large project.</section>
 <section 
   title="Various Configurations for various applications "
   subject="various config files for various applications"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/02/0119.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/02/0119.html"
   posts="4"
   startdate="11 Feb 2001 00:00:00 -0800"
   enddate="18 Feb 2001 00:00:00 -0800"
@@ -265,7 +265,7 @@ breath for this feature...</section>
 <section 
   title="alloca() or not"
   subject="Eyes requested"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/02/0134.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/02/0134.html"
   posts="2"
   startdate="11 Feb 2001 00:00:00 -0800"
   enddate="12 Feb 2001 00:00:00 -0800"
@@ -285,7 +285,7 @@ because it messes with the stack, and is machine dependent. Maybe
 
 <p />
 
-Patrik Stridval (in <a href="http://www.winehq.com/hypermail/wine-devel/2001/02/0146.html">this
+Patrik Stridval (in <a href="http://www.winehq.org/hypermail/wine-devel/2001/02/0146.html">this
 mail</a>) made the discussion a bit deeper:<quote who="Patrik Stridvall">
 The general problem with using <code>alloca</code> is that not all
 platforms supports <code>alloca</code>, however I think all reasonable
@@ -344,7 +344,7 @@ So, the final words are: thou shalt not use <code>alloca()</code>.
 <section 
   title="Headers' copyright"
   subject="process.h patch"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/02/0153.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/02/0153.html"
   posts="10"
   startdate="12 Feb 2001 00:00:00 -0800"
   enddate="15 Feb 2001 00:00:00 -0800"
@@ -523,7 +523,7 @@ interface point of view, hence removing all the attached comments.</section>
 <section 
   title="Wine speedup"
   subject="Speeding up wineserver synchronization objects with shared memory"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/02/0211.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/02/0211.html"
   posts="5"
   startdate="15 Feb 2001 00:00:00 -0800"
   enddate="18 Feb 2001 00:00:00 -0800"

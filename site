@@ -121,7 +121,7 @@ function view_announce ($announce)
 {
     global $file_root, $config, $html;
     
-    $announce = "http://cvs.winehq.com/cvsweb/~checkout~/wine/ANNOUNCE?rev=".$announce;
+    $announce = "http://cvs.winehq.org/cvsweb/~checkout~/wine/ANNOUNCE?rev=".$announce;
     if ($announce = @join("",file($announce)))
     {
         // display page

@@ -128,7 +128,7 @@ Sadly, the author doesn't mention Wine at all.</p>
 <section 
 	title="Direct 3D Status" 
 	subject=""
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/01/0.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/01/0.html" 
 	posts=""
 	startdate="03 Jan 2003 00:00:00 -0800"
 >
@@ -199,7 +199,7 @@ their favourite game.
 <section 
 	title="Conformance Testing" 
 	subject="Conformance Testing"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/12/0958.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/12/0958.html" 
 	posts="20"
 	startdate="29 Dec 2002 00:00:00 -0800"
 	enddate="05 Jan 2003 00:00:00 -0800"
@@ -248,7 +248,7 @@ more platforms would mostly confirm already known bugs. If you fix a test
 let me know and I will update this page accordingly.<br />
 See the following URL for instructions on how to compile (and debug) the
 tests on Windows using Visual C++:
-<a href="http://www.winehq.com/docs/wine-devel/testing-windows.html">http://www.winehq.com/docs/wine-devel/testing-windows</a>
+<a href="http://www.winehq.org/docs/wine-devel/testing-windows.html">http://www.winehq.org/docs/wine-devel/testing-windows</a>
 </p>
 <p><a name="incorrect">Note</a>: These tests are conformance tests which means
 their main function is to describe the behavior of Windows APIs, and then to
@@ -284,10 +284,10 @@ Otherwise I will have a crack at them and see what I can do.
 <p>If you're interested to see how people are reporting problems, here's some
 links to threads about testing:
 <ul>
-<li><a href="http://www.winehq.com/hypermail/wine-devel/2002/12/0994.html">Windows 2000 Pro conformance test update</a></li>
-<li><a href="http://www.winehq.com/hypermail/wine-devel/2003/01/0007.html">Win2000 Conformance R3:</a></li>
-<li><a href="http://www.winehq.com/hypermail/wine-devel/2003/01/0167.html">Windows XP conformance test update 1/5</a></li>
-<li><a href="http://www.winehq.com/hypermail/wine-devel/2002/12/0958.html">Win98 Compliance Status</a></li>
+<li><a href="http://www.winehq.org/hypermail/wine-devel/2002/12/0994.html">Windows 2000 Pro conformance test update</a></li>
+<li><a href="http://www.winehq.org/hypermail/wine-devel/2003/01/0007.html">Win2000 Conformance R3:</a></li>
+<li><a href="http://www.winehq.org/hypermail/wine-devel/2003/01/0167.html">Windows XP conformance test update 1/5</a></li>
+<li><a href="http://www.winehq.org/hypermail/wine-devel/2002/12/0958.html">Win98 Compliance Status</a></li>
 </ul></p>
 
 </section>
@@ -299,7 +299,7 @@ links to threads about testing:
 <section 
 	title="wxWindows Port Completed" 
 	subject="wxWindows: it's now official (almost)"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/01/0153.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/01/0153.html" 
 	posts="1"
 	startdate="04 Jan 2003 00:00:00 -0800"
 >
@@ -372,7 +372,7 @@ diffstat wine.diff<ul>
 <section 
 	title="Fun Projects Update" 
 	subject="Wine Fun v0.3"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/01/0262.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/01/0262.html" 
 	posts="6"
 	startdate="06 Jan 2003 00:00:00 -0800"
 	enddate="07 Jan 2003 00:00:00 -0800"
@@ -395,7 +395,7 @@ Check it out, maybe you'll find something that tickles your fancy! ;)
 <section 
 	title="Compiling With distcc" 
 	subject="distcc and wine"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/01/0361.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/01/0361.html" 
 	posts=""
 	startdate="08 Jan 2003 00:00:00 -0800"
 	enddate="10 Jan 2003 00:00:00 -0800"
@@ -437,7 +437,7 @@ take a look at trying to improve it.</p>
 <section 
 	title="MacOS X + Bochs + Wine = Wish List" 
 	subject="Mac OS X/Darwin port of Wine"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/01/0131.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/01/0131.html" 
 	posts="5"
 	startdate="04 Jan 2003 00:00:00 -0800"
 >
@@ -472,14 +472,14 @@ somewhere?)  Anyway, take a look at these threads:
 <a href="http://kt.zork.net/wine/wn20020830_133.html#3">
 http://kt.zork.net/wine/wn20020830_133.html#3</a><br />
 
-<a href="http://bugs.winehq.com/show_bug.cgi?id=44">
-http://bugs.winehq.com/show_bug.cgi?id=44</a><br />
+<a href="http://bugs.winehq.org/show_bug.cgi?id=44">
+http://bugs.winehq.org/show_bug.cgi?id=44</a><br />
 
-<a href="http://www.winehq.com/hypermail/wine-devel/2000/11/0004.html">
-http://www.winehq.com/hypermail/wine-devel/2000/11/0004.html</a><br />
+<a href="http://www.winehq.org/hypermail/wine-devel/2000/11/0004.html">
+http://www.winehq.org/hypermail/wine-devel/2000/11/0004.html</a><br />
 
-<a href="http://www.winehq.com/hypermail/wine-devel/2000/11/0077.html">
-http://www.winehq.com/hypermail/wine-devel/2000/11/0077.html</a><br />
+<a href="http://www.winehq.org/hypermail/wine-devel/2000/11/0077.html">
+http://www.winehq.org/hypermail/wine-devel/2000/11/0077.html</a><br />
 </ul></p><p>
 The fact that you're using Bochs does make it unique, but you
 may still glean some useful info from those links.

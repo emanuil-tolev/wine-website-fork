@@ -48,7 +48,7 @@ To login to the CVS tree, do
 
  <table width="500" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
- export CVSROOT=:pserver:cvs@cvs.winehq.com:/home/wine<br>
+ export CVSROOT=:pserver:cvs@cvs.winehq.org:/home/wine<br>
  cvs login
  </span>
  </td></tr>
@@ -110,7 +110,7 @@ closest to you.
 		<td><b><font color=white class=small>c2man</font></b></td>
 	</tr>
 	<tr bgcolor="#ffffff">
-		<td align="left">cvs.winehq.com<br><br>Minnesota, USA (<a href="http://www.codeweavers.com/">CodeWeavers</a>)</td>
+		<td align="left">cvs.winehq.org<br><br>Minnesota, USA (<a href="http://www.codeweavers.com/">CodeWeavers</a>)</td>
 		<td align="center">cvs</td>
 		<td align="center">cvs</td>
 		<td align="center">Yes</td>
@@ -183,7 +183,7 @@ via CVS. Here's how to do it:
 <ul>
   <li>Get the latest Wine snapshot: Wine-<i>YYMMDD</i>.tar.gz
   <li>Get wine-cvsdirs-<i>YYMMDD</i>.tar.gz from
-  <a href="ftp://ftp.winehq.com/pub/wine/">ftp://ftp.winehq.com/pub/wine</a>
+  <a href="ftp://ftp.winehq.org/pub/wine/">ftp://ftp.winehq.org/pub/wine</a>
   <li>Untar them on top of each other:
 
  <table width="300" border=0 cellpadding=10><tr><td class=black>
@@ -307,14 +307,14 @@ The source code of the entire Wine tree is (<a href="http://lxr.linux.no/">LXR</
 cross-referenced and available for browsing, including a search engine.
 This cross-references source is based on the snapshot-releases and is made available at:
 <ul>
-  <li><a href="http://source.winehq.com/">source.winehq.com</a>
+  <li><a href="http://source.winehq.org/">source.winehq.org</a>
 </ul>
 
 <p>
 Direct access to the complete CVS tree is also possible, using Bill Fenner's
 <a href="http://www.freebsd.org/~fenner/cvsweb/">cvsweb</a> package:
 <ul>
-  <li><a href="http://cvs.winehq.com/cvsweb">cvs.winehq.com/cvsweb</a>, on the primary CVS repository
+  <li><a href="http://cvs.winehq.org/cvsweb">cvs.winehq.org/cvsweb</a>, on the primary CVS repository
 </ul>
 
 <p>&nbsp;</p>

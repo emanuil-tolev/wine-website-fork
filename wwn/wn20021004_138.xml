@@ -20,7 +20,7 @@ Windows emulator).</p>
 
 <stats posts="172" size="538" contrib="49" multiples="24" lastweek="26">
 
-<person posts="30" size="75" who="Alexandre Julliard &lt;julliard@winehq.com&gt;" />
+<person posts="30" size="75" who="Alexandre Julliard &lt;julliard@winehq.org&gt;" />
 <person posts="20" size="71" who="Dimitrie O. Paun &lt;dpaun@rogers.com&gt;" />
 <person posts="16" size="35" who="Sylvain Petreolle &lt;spetreolle@yahoo.fr&gt;" />
 <person posts="11" size="65" who="Greg Turner &lt;gmturner007@ameritech.net&gt;" />
@@ -126,7 +126,7 @@ Preview 7</a> a couple of weeks ago.  </p>
 <section 
 	title="DIB Engine (cont'd)" 
 	subject="Re: DIB engine"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/09/0680.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/09/0680.html" 
 	posts="3" 
 	startdate="09/27/2002"
 	enddate="09/27/2002" 
@@ -142,7 +142,7 @@ Preview 7</a> a couple of weeks ago.  </p>
  <kcref subject="DIB engine" startdate="30 Mar 2002 00:00:00 -0700" />.
  While not really necessary for Wine to hit 1.0, a lot of people would
  love to see this added.  Last Friday Ove K@#229;ven submitted 
-<a href="http://www.winehq.com/hypermail/wine-patches/2002/09/att-0250/01-dib-engine.diff">a patch</a>
+<a href="http://www.winehq.org/hypermail/wine-patches/2002/09/att-0250/01-dib-engine.diff">a patch</a>
 to wine-patches and announced:</p>
 <quote who="Ove Kaaven"><p>
  Well, here is the DIB engine that a couple of people at TransGaming
@@ -169,7 +169,7 @@ I all assisted with it to one degree or another.
 </p></quote>
 
 <p>Gav's email contains 
-<a href="http://www.winehq.com/hypermail/wine-patches/2002/09/0251.html">a full
+<a href="http://www.winehq.org/hypermail/wine-patches/2002/09/0251.html">a full
 description</a> of the DIB engine, how it hooks into Wine, and exactly
 what it can and can't do.  A list of features include:</p>
 <quote who="Gavriel State"><p>
@@ -198,7 +198,7 @@ what it can and can't do.  A list of features include:</p>
 <section 
 	title="That Darn $!$!" 
 	subject="Re: Fix to protect users from selves."
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/09/0704.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/09/0704.html" 
 	posts="5" 
 	startdate="09/29/2002"
 	enddate="09/29/2002" 
@@ -206,7 +206,7 @@ what it can and can't do.  A list of features include:</p>
 <topic>Fixes</topic>
 <p>
 Guy Albertelli submitted 
-<a href="http://www.winehq.com/hypermail/wine-patches/2002/09/0263.html">a patch</a> 
+<a href="http://www.winehq.org/hypermail/wine-patches/2002/09/0263.html">a patch</a> 
 to
 <quote who="Guy Albertelli">
  Prevent Explorer.exe from renaming directories to !$!$...
@@ -254,7 +254,7 @@ avoid it:</p>
 <section 
 	title="Anti-alias For Smaller Fonts" 
 	subject="Fix: Anti-aliasing for font sizes &gt;8"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/09/0712.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/09/0712.html" 
 	posts="2" 
 	startdate="09/30/2002"
 >
@@ -313,7 +313,7 @@ decision. You can look for yourself on these 2 screenshots:
 <section 
 	title="Remote Procedure Call Patch" 
 	subject="Re: some rpcrt4 stuff"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/10/0010.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/10/0010.html" 
 	posts="8" 
 	startdate="10/01/2002"
 	enddate="10/03/2002" 
@@ -326,8 +326,8 @@ same work and much more:
 <quote who="Ove Kaaven"><p>
 Implementations of these and much more can be found in this patch
 submission, which was apparently never applied:
-<a href="http://www.winehq.com/hypermail/wine-patches/2002/06/0103.html">
- http://www.winehq.com/hypermail/wine-patches/2002/06/0103.html</a>
+<a href="http://www.winehq.org/hypermail/wine-patches/2002/06/0103.html">
+ http://www.winehq.org/hypermail/wine-patches/2002/06/0103.html</a>
 </p><p>
 You can probably try to extract what you need from that patch if you want
 more rpcrt4 stuff.
@@ -368,7 +368,7 @@ Alexandre clarified his position, <quote who="Alexandre Julliard">
 <section 
 	title="Listview Changes" 
 	subject="Listview"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/10/0029.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/10/0029.html" 
 	posts="1" 
 	startdate="10/03/2002"
 >

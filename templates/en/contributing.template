@@ -59,7 +59,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
      <p>WineHQ has been redesigned recently. But there is still work to do.
        So if you feel like writing about Wine or coding in PHP your
        contribution will be appreciated. You can find the current task list
-       in <a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=WineHQ.com&component=misc-web">Bugzilla</a>,
+       in <a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=WineHQ.com&component=misc-web">Bugzilla</a>,
        but see also this <a href="{$root}/hypermail/wine-devel/2003/09/0780.html">email</a>
        for a great TODO list.
        Getting started is easy. Just get the WineHQ sources by following the
@@ -180,7 +180,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     <p>See the following task lists to find a development task:
     </p>
     <ul>
-      <li><a name="tasklets"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;keywords=tasklet&amp;keywords_type=anywords">Tasklets</a><br>
+      <li><a name="tasklets"></a><a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;keywords=tasklet&amp;keywords_type=anywords">Tasklets</a><br>
          This list regroups tasks that have a well-defined and limited
          scope. If you are new to Wine or only have a limited amount of time, 
          this list is meant for you. Tasks on this list typically 
@@ -193,7 +193,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
          a task may require being knowledgeable in Lex/Yacc so if you have
          an expertise in a given domain you may want to scan it.
 
-      </li><li><a name="FIXMEs"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;keywords=FIXME&amp;keywords_type=anywords">FIXMEs</a><br>
+      </li><li><a name="FIXMEs"></a><a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;keywords=FIXME&amp;keywords_type=anywords">FIXMEs</a><br>
         This list contains tasks that are intermediate between those found
         in the Task list and the Task lets. Issues found in this list are
         well diagnosed, that is, we know which function or functionality is
@@ -202,7 +202,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
         knowledge of multiple areas of Wine, or extensive reorganization 
         of the Wine code.
 
-      </li><li><a name="tasklist"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;keywords=tasklist&amp;keywords_type=anywords">Tasklist</a><br>
+      </li><li><a name="tasklist"></a><a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;keywords=tasklist&amp;keywords_type=anywords">Tasklist</a><br>
 
         The major development tasks are listed there. This is the place to
         check out if you want to get involved in one of the larger / 
@@ -220,8 +220,8 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
             desirable
         </li></ul>
 
-      </li><li><a name="wine_0_9_0"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;target_milestone=0.9.0&amp;order=bugs.bug_severity">Wine 0.9.0</a>
-        and <a name="wine_1_x"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;target_milestone=1.0.0&amp;order=bugs.bug_severity">Wine 1.x</a> task overviews<br>
+      </li><li><a name="wine_0_9_0"></a><a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;target_milestone=0.9.0&amp;order=bugs.bug_severity">Wine 0.9.0</a>
+        and <a name="wine_1_x"></a><a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;target_milestone=1.0.0&amp;order=bugs.bug_severity">Wine 1.x</a> task overviews<br>
 
         Regroups the issues that need to be resolved before Wine 0.9.0 can
         be released. One word about Wine 0.9.0 and Wine 1.0: Wine 1.0 
@@ -482,7 +482,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
            these specific links only, so that the Wine Party Fund gets the credit.)</li>
     </ul>
     <input type="hidden" name="cmd" value="_xclick">
-    <input type="hidden" name="business" value="donate@winehq.com">
+    <input type="hidden" name="business" value="donate@winehq.org">
     <input type="hidden" name="item_name" value="Wine donation">
     </form>  
     </p>

@@ -75,7 +75,7 @@ functions.</p>
 
 <stats posts="92" size="291" contrib="33" multiples="17" lastweek="16">
 
-<person posts="10" size="23" who="Alexandre Julliard &lt;julliard@winehq.com&gt;" />
+<person posts="10" size="23" who="Alexandre Julliard &lt;julliard@winehq.org&gt;" />
 <person posts="9" size="29" who="Eric Pouech &lt;eric.pouech@wanadoo.fr&gt;" />
 <person posts="2" size="27" who="Francois Gouget &lt;fgouget@free.fr&gt;" />
 <person posts="6" size="36" who="Martin Wilck &lt;Martin.Wilck@fujitsu-siemens.com&gt;" />
@@ -116,7 +116,7 @@ functions.</p>
 <section
   title="Winsock2"
   subject="[EXPERIMENTAL PATCH]: Winsock2"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/11/0044.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/11/0044.html"
   posts="4"
   startdate="11/07/2001"
   enddate="11/07/2001"
@@ -219,7 +219,7 @@ subdirectories.</quote></p>
 <section
   title="Overlapped I/O"
   subject="Winsock2 & overlapped IO"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/11/0020.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/11/0020.html"
   posts="10"
   startdate="11/05/2001"
   enddate="11/09/2001"
@@ -359,8 +359,8 @@ solution:</p>
 	 Have a look at rev 1.7 of server/async.c to see how this worked.
 	</p>
 	<p>
-	 <a href="http://cvs.winehq.com/cvsweb/wine/server/async.c?rev=1.7">
-	 http://cvs.winehq.com/cvsweb/wine/server/async.c?rev=1.7</a>
+	 <a href="http://cvs.winehq.org/cvsweb/wine/server/async.c?rev=1.7">
+	 http://cvs.winehq.org/cvsweb/wine/server/async.c?rev=1.7</a>
 	</p>
 	<p>
 	 The current overlapped code (with the above exception) is similar to
@@ -394,7 +394,7 @@ happening. </p>
 <section
   title="Linking in .lib Files"
   subject="linking in .lib files"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/11/0056.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/11/0056.html"
   posts="5"
   startdate="11/07/2001"
   enddate="11/07/2001"
@@ -484,7 +484,7 @@ Case 2:<br /><ul>
 <section
   title="Problem With VirtualDub (con't)"
   subject="queries on internals..."
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/11/0031.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/11/0031.html"
   posts="10"
   startdate="11/06/2001"
   enddate="11/09/2001"

@@ -84,6 +84,7 @@
   If you know of applications that should be listed here, please send your suggestions
   to <a href="mailto:dpaun@rogers.com">Dimi</a>. Currently, we have:
   <ul>
+    <li><a href="#openoffice">OpenOffice</a>
     <li><a href="#texniccenter">TeXnicCenter</a>
     <li><a href="#cdex">CDex</a>
     <li><a href="#xtractor">CD-DA X-Tractor</a>
@@ -109,6 +110,20 @@
     <li> <span class=abandoned>ABANDONED</span>: the application has been deem unsuitable for porting using Winelib
   </ul>
   
+  <a name="openoffice"></a><h3 class=todo>OpenOffice</h3>
+  <p>Suggested by <a href="mailto:steven_ed4153@yahoo.com">Steven Edwards</a>: 
+  <i>I have just compleated a full install of OO 1.1 under WINE. No outsite
+     packages are required to install and configure OpenOffice for Win32
+     under Wine. There are a few minor bugs with some of the strings in
+     menus but I would rate it at 99%. If anyone is interested in a good
+     hobby project a Winelib port of this would be nice to see.</i>
+  <ul>
+    <li>worker: none
+    <li>status: needs love
+    <li>updated: Nov 30, 2003
+    <li>homepage: <a href="http://www.openoffice.org/">www.openoffice.org</a>
+  </ul>
+
   <a name="texniccenter"></a><h3 class=inprogress>TeXnicCenter</h3>
   <p>Suggested by <a href="mailto:jahn.matthias@freenet.de">Matthias Jahn</a>: 
   <i>It is a tex-shell like kde's "kile".</i>
@@ -225,7 +240,7 @@ make<br>
   <p>Suggested by <a href="mailto:henrik.uggla@hem.utfors.se">Henrik Uggla</a>.
   <ul>
     <li>worker: <a href="mailto:vberon@mecano.gme.usherb.ca">Vincent B&eacute;ron</a>.
-    <li>status: Trying to submit the <a href="http://www.winehq.com/hypermail/wine-patches/2003/04/0237.html">changes</a> to the official CVS
+    <li>status: Trying to submit the <a href="http://www.winehq.org/hypermail/wine-patches/2003/04/0237.html">changes</a> to the official CVS
     <li>updated: Apr 22, 2003
     <li>homepage: <a href="http://coolplayer.sourceforge.net/">coolplayer.sourceforge.net</a>
   </ul>
@@ -269,7 +284,7 @@ make<br>
   <ul>
     <li>worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
     <li>status: compiles, links, and runs!
-		The <a href="http://www.winehq.com/hypermail/wine-devel/2002/12/1002.html">patch</a>
+		The <a href="http://www.winehq.org/hypermail/wine-devel/2002/12/1002.html">patch</a>
 		sent to the maintainer was accepted into the tree.
     <li>updated: Dec 31, 2002
     <li>homepage: <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">www.chiark.greenend.org.uk/~sgtatham/putty</a>
@@ -338,7 +353,7 @@ make<br>
   <h2>Winelib Fixes</h2>
   As explained in the introduction, the primary motivation for this effort is to discover,
   and fix Winelib shortcomings. These are the fixes that have been 
-  <a href="http://www.winehq.com/hypermail/wine-devel/2002/11/1518.html">suggested and discussed</a>
+  <a href="http://www.winehq.org/hypermail/wine-devel/2002/11/1518.html">suggested and discussed</a>
   thus far:
   <dl>
     <dt>Configuration</dt>
@@ -353,8 +368,8 @@ make<br>
     <dd>Write a small wrapper that makes gcc on Linux behave like mingw. <span class=done>[DONE]</span>
         <ul>
 	  <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	  <li> status: patch <a href="http://www.winehq.com/hypermail/wine-patches/2002/12/0041.html">submitted</a>,
-				      and <a href="http://cvs.winehq.com/patch.py?id=6503">committed</a>.
+	  <li> status: patch <a href="http://www.winehq.org/hypermail/wine-patches/2002/12/0041.html">submitted</a>,
+				      and <a href="http://cvs.winehq.org/patch.py?id=6503">committed</a>.
 	  <li> updated: Dec 5, 2002
 	</ul>
     </dd>
@@ -362,9 +377,9 @@ make<br>
     <dd>Make <tt>wrc</tt> compatible with <tt>windres</tt> at command line level. <span class=done>[DONE]</span>
         <ul>
 	  <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	  <li> status: working on <a href="http://www.winehq.com/hypermail/wine-devel/2002/12/0185.html">this</a> solution,
-		       patch <a href="http://www.winehq.com/hypermail/wine-patches/2002/12/0048.html">submitted</a>,
-		       and <a href="http://cvs.winehq.com/patch.py?id=6519">committed</a>.
+	  <li> status: working on <a href="http://www.winehq.org/hypermail/wine-devel/2002/12/0185.html">this</a> solution,
+		       patch <a href="http://www.winehq.org/hypermail/wine-patches/2002/12/0048.html">submitted</a>,
+		       and <a href="http://cvs.winehq.org/patch.py?id=6519">committed</a>.
 	  <li> updated: Dec 6, 2002
 	</ul>
     </dd>
@@ -384,8 +399,8 @@ make<br>
 	about it. You simply run "foo" and everything works.</i>
         <ul>
 	  <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	  <li> status: first cut <a href="http://www.winehq.com/hypermail/wine-devel/2002/12/0194.html">submitted</a> for review,
-		       patch <a href="http://cvs.winehq.com/patch.py?id=6616">committed</a>.
+	  <li> status: first cut <a href="http://www.winehq.org/hypermail/wine-devel/2002/12/0194.html">submitted</a> for review,
+		       patch <a href="http://cvs.winehq.org/patch.py?id=6616">committed</a>.
 	  <li> updated: Dec 16, 2002
 	</ul>
     </dd>
@@ -394,7 +409,7 @@ make<br>
 	<p>Improve the <tt>wineapploader</tt> so it can be used directly by the step above.
         <ul>
 	  <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	  <li> status: patch <a href="http://cvs.winehq.com/patch.py?id=6616">committed</a>.
+	  <li> status: patch <a href="http://cvs.winehq.org/patch.py?id=6616">committed</a>.
 	  <li> updated: Dec 16, 2002
 	</ul>
     </dd>

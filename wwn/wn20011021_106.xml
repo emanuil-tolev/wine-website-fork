@@ -24,7 +24,7 @@ LINK</a></p>
 
 <stats posts="162" size="595" contrib="51" multiples="30" lastweek="15">
 
-<person posts="27" size="73" who="Alexandre Julliard &lt;julliard@winehq.com&gt;" />
+<person posts="27" size="73" who="Alexandre Julliard &lt;julliard@winehq.org&gt;" />
 <person posts="11" size="29" who="Uwe Bonnes &lt;bon@elektron.ikp.physik.tu-darmstadt.de&gt;" />
 <person posts="9" size="30" who="lawson_whitney@juno.com" />
 <person posts="9" size="24" who="Ove Kaaven &lt;ovehk@ping.uio.no&gt;" />
@@ -82,7 +82,7 @@ LINK</a></p>
 <section
   title="Memory Fragmentation"
   subject="Nasty Evil Memory Fragmentation fix"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/10/0066.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/10/0066.html"
   posts="9"
   startdate="10/10/2001"
   enddate="10/11/2001"
@@ -148,7 +148,7 @@ public domain.<a href="http://g.oswego.edu/dl/html/malloc.html">
 <section
   title="Solaris x86 Port"
   subject="Re: wine/port.h #include fixes"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/10/0114.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/10/0114.html"
   posts="15"
   startdate="10/15/2001"
   enddate="10/18/2001"
@@ -216,7 +216,7 @@ do ya need out of Windows system?</p>
 <section
   title="InstallShield 6 Success"
   subject="InstallShield 6 - success"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/10/0111.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/10/0111.html"
   posts="3"
   startdate="10/13/2001"
   enddate="10/16/2001"
@@ -228,7 +228,7 @@ patches into CVS lately.  On Saturday he announced:</p>
  Apart from the two patches I just submitted to wine-patches, a
  stdole32.tlb from real Windows, and the registry entries in
  winedefault.reg, you need my interprocess com hacks, which I've now put on
- WineHQ: http://www.winehq.com/~ovek/install.diff
+ WineHQ: http://www.winehq.org/~ovek/install.diff
  </p><p>
 The installation progress bar doesn't seem to display for some reason
 (might be a repaint issue or something else related to Alexandre's latest
@@ -267,7 +267,7 @@ pizza and beer.  Gavriel replied:</p>
 <section
   title="Implementing netapi32.dll"
   subject="Q: Unimplemented control 256 for VxD device VNETBIOS"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/10/0138.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/10/0138.html"
   posts="15"
   startdate="10/18/2001"
   enddate="10/18/2001"
@@ -360,7 +360,7 @@ an ioctl() on /proc/net entries.  </p>
 <section
   title="Figuring Out Media Types"
   subject="File media type"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/10/0167.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/10/0167.html"
   posts="5"
   startdate="10/18/2001"
   enddate="10/19/2001"
@@ -406,7 +406,7 @@ replied, <quote who="Alexandre Julliard">
 <section
   title="Remote Win32 API"
   subject="Remote Windows Registry API and other Win32 APIs now available"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/10/0181.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/10/0181.html"
   posts="1"
   startdate="10/19/2001"
   enddate="10/19/2001"

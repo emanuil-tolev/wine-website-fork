@@ -40,7 +40,7 @@ http://linuxtoday.com/news_story.php3?ltsn=2001-07-10-003-20-PR-KE-MS</a>.
 
 
 <stats posts="119" size="363" contrib="39" multiples="22" lastweek="13">
-<person posts="25" size="58" who="Alexandre Julliard &lt;julliard@winehq.com&gt;" />
+<person posts="25" size="58" who="Alexandre Julliard &lt;julliard@winehq.org&gt;" />
 <person posts="2" size="11" who="Ian Pilcher &lt;ian.pilcher@home.com&gt;" />
 <person posts="6" size="15" who="gerard patel &lt;gerard.patel@asi.fr&gt;" />
 <person posts="4" size="10" who="Marcus Meissner &lt;marcus@jet.franken.de&gt;" />
@@ -60,7 +60,7 @@ http://linuxtoday.com/news_story.php3?ltsn=2001-07-10-003-20-PR-KE-MS</a>.
 <section
   title="The [Windows] Section"
   subject="The [Windows] section"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/07/.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/07/.html"
   posts="3"
   startdate="07/03/2001"
   enddate="07/12/2001"
@@ -95,7 +95,7 @@ if it was still supposed to be found in the [Windows] section of the
 <section
     title="Automagically Generating Spec Files"
     subject="Documentation fixes"
-    archive="http://www.winehq.com/hypermail/wine-devel/2001/07/.html"
+    archive="http://www.winehq.org/hypermail/wine-devel/2001/07/.html"
     posts="18"
     startdate="07/12/2001"
     enddate="07/15/2001"
@@ -181,7 +181,7 @@ After exchanging some mail, Patrik asked,
 <section   
 	title="Handling X Errors Using Exception Handlers"   
 	subject="Handling X errors using exception handlers"   
-	archive="http://www.winehq.com/hypermail/wine-devel/2001/07/.html"   
+	archive="http://www.winehq.org/hypermail/wine-devel/2001/07/.html"   
 	posts="4"   
 	startdate="07/14/2001"   
 	enddate="07/15/2001" 
@@ -240,7 +240,7 @@ After exchanging some mail, Patrik asked,
 <section   
 	title="Small OpenGL Fix"   
 	subject="Small OpenGL Fix"   
-	archive="http://www.winehq.com/hypermail/wine-devel/2001/07/.html"   
+	archive="http://www.winehq.org/hypermail/wine-devel/2001/07/.html"   
 	posts="4"   
 	startdate="07/16/2001"   
 	enddate="07/17/2001" 
@@ -318,7 +318,7 @@ After exchanging some mail, Patrik asked,
 <section   
 	title="Implementing ChangeDisplay Settings"   
 	subject="ChangeDisplay Settings"   
-	archive="http://www.winehq.com/hypermail/wine-devel/2001/07/.html"   
+	archive="http://www.winehq.org/hypermail/wine-devel/2001/07/.html"   
 	posts="2"   
 	startdate="07/17/2001"   
 	enddate="07/17/2001" >
@@ -353,7 +353,7 @@ After exchanging some mail, Patrik asked,
 <p>Lionel Ulmer replied:</p>
 <quote who="Lionel Ulmer"><p>
 
-My first question was : why implement it ? I would personnaly find VERY
+My first question was : why implement it ? I would personally find VERY
 annoying to have any Windows app. change the size of my desktop window when
 I prefer running my applications 'windowed'.</p>
 
@@ -385,7 +385,7 @@ any code on ChangeDisplaySettings... And please consider having it optional
 <section   
 	title="Using CVS Diff"   
 	subject="using cvs diff"   
-	archive="http://www.winehq.com/hypermail/wine-devel/2001/07/.html"   
+	archive="http://www.winehq.org/hypermail/wine-devel/2001/07/.html"   
 	posts="3"   
 	startdate="07/17/2001"   
 	enddate="07/17/2001" 

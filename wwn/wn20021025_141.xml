@@ -200,7 +200,7 @@ anything else is left as an exercise for the reader.</p>
 <section 
 	title="RPC Update" 
 	subject="An RPC progress report"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/10/0583.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/10/0583.html" 
 	posts="4" 
 	startdate="10/22/2002"
 >
@@ -287,7 +287,7 @@ more credit than me for any success I may achieve in the near future).
 
 <p>Greg made available some of his work that hadn't been split up
 yet and announced a large 
-<a href="http://www.winehq.com/hypermail/wine-devel/2002/10/0577.html">patch</a>:</p>
+<a href="http://www.winehq.org/hypermail/wine-devel/2002/10/0577.html">patch</a>:</p>
 
 <quote who="Greg Turner"><p>
 I'm holding back on submitting an "official" patch to give Alexandre
@@ -332,7 +332,7 @@ dlls/rpcrt4: ndr_marshall.c, ndr_midl.c, ndr_misc.h;
 <section 
 	title="Listview Update (con't)" 
 	subject="Third listview status update"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/10/0564.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/10/0564.html" 
 	posts="51" 
 	startdate="10/22/2002"
 	enddate="10/24/2002"
@@ -401,7 +401,7 @@ most huggable piece of code out there &lt;g&gt;.</p></quote>
 <section 
 	title="Commctrl Update" 
 	subject="updated dlls/comctl32/commctrl.c comments"
-	archive="http://www.winehq.com/hypermail/wine-patches/2002/10/0350.html" 
+	archive="http://www.winehq.org/hypermail/wine-patches/2002/10/0350.html" 
 	posts="2" 
 	startdate="10/22/2002"
 >
@@ -460,7 +460,7 @@ If you discover missing features, or bugs, please note them below.
 <section 
 	title="Wanted: AppDB Maintainer" 
 	subject="WANTED (dead or alive): additional AppDB maintainer"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/10/0479.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/10/0479.html" 
 	posts="3" 
 	startdate="10/19/2002"
 >
@@ -494,7 +494,7 @@ If you discover missing features, or bugs, please note them below.
 <section 
 	title="Wine PR Manager Needed" 
 	subject="Getting actively involved in the Wine project"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/10/0482.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/10/0482.html" 
 	posts="1" 
 	startdate="10/19/2002"
 >
@@ -538,7 +538,7 @@ email to <i>vinn</i> -at- <i>theshell.com</i>.</p>
 <section 
 	title="Web Browser Integration Needed" 
 	subject="Re: WebBrowser"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/10/0487.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/10/0487.html" 
 	posts="6" 
 	startdate="10/19/2002"
 	enddate="10/20/2002"
@@ -586,7 +586,7 @@ the needed functionality,
 <section 
 	title="Running Australia's eTax" 
 	subject="eTax status report"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/10/0600.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/10/0600.html" 
 	posts="1" 
 	startdate="10/22/2002"
 >
@@ -669,7 +669,7 @@ thing.
 <section 
 	title="Running Native Windows Utilities" 
 	subject="using native regedit"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/10/0581.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/10/0581.html" 
 	posts="4" 
 	startdate="10/22/2002"
 >
@@ -708,7 +708,7 @@ reasoning, <quote who="Alexandre Julliard">
  full path, or use a wildcard entry like "*regedit.exe".</quote></p>
 
 <p>Sylvain Petreolle changed the sample 
-<a href="http://cvs.winehq.com/cvsweb/wine/documentation/samples/config">config</a>
+<a href="http://cvs.winehq.org/cvsweb/wine/documentation/samples/config">config</a>
 to explain this:</p>
 <quote who="Sylvain Petreolle"><p><code>
  ; you can specify applications too<br />
@@ -729,7 +729,7 @@ to explain this:</p>
 <section 
 	title="Compiling Wine With glibc 2.3" 
 	subject="Re: glibc 2.3 pthread patch"
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/10/0535.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/10/0535.html" 
 	posts="4" 
 	startdate="10/20/2002"
 >

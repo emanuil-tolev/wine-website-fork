@@ -239,12 +239,12 @@
 
   <h3>Phase 2</h3>
   A list of the functions that need attention can be found linked to
-  <a href="http://bugs.winehq.com/show_bug.cgi?id=96">Bug #96</a>,
+  <a href="http://bugs.winehq.org/show_bug.cgi?id=96">Bug #96</a>,
   or at the end of the <tt>.spec</tt> files.
 
   <a name="winedos"></a><h3>WineDOS</h3>
   Separate MSDOS support from kernel/ntdll into winedos. This task is
-  tracked by <a href="http://bugs.winehq.com/show_bug.cgi?id=546">Bug #546</a>.
+  tracked by <a href="http://bugs.winehq.org/show_bug.cgi?id=546">Bug #546</a>.
   <ul>
     <li>worker: <a href="mailto:jhei@iki.fi">Jukka Heinonen</a>,
     <li>status: <span class=inprogress>lots of patches submitted</span>
@@ -353,7 +353,7 @@
   <p>Please note that patches have been submitted for the <span class=submitted>italic</span> entries;
      the <span class=committed>grayed out</span> entries have already been fixed. 
   <ul>
-    <li>workers: <a href="mailto:julliard@winehq.com">Alexandre Julliard</a>.
+    <li>workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>.
     <li>status: <span class=inprogress>first patches committed.</span>
     <li>updated: Dec 6, 2002
   </ul>
@@ -382,7 +382,7 @@
   <p>Please note that patches have been submitted for the <span class=submitted>italic</span> entries;
      the <span class=committed>grayed out</span> entries have already been fixed. 
   <ul>
-    <li>workers: <a href="mailto:julliard@winehq.com">Alexandre Julliard</a>.
+    <li>workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>.
     <li>status: <span class=inprogress>first patches committed.</span>
     <li>updated: Sep 19, 2003
   </ul>
@@ -394,7 +394,7 @@
   that with one done with the Windows headers; the goal is to make them
   identical.</i>
   <ul>
-    <li>workers: <a href="mailto:julliard@winehq.com">Alexandre Julliard</a>.
+    <li>workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>.
     <li>status: <span class=done>patches committed.</span>
     <li>updated: Sep 9, 2003
   </ul>
@@ -477,7 +477,7 @@
    <li> A way to run all tests. A batch file would do the job nicely.
      <ul>
 	<li>worker: <a href="mailto:ps@leissner.se">Patrik Stridvall</a>
-	<li>status: <span class=done><a href="http://cvs.winehq.com/patch.py?id=6450">patch</a> committed.</span>
+	<li>status: <span class=done><a href="http://cvs.winehq.org/patch.py?id=6450">patch</a> committed.</span>
 	<li>updated: Dec 1, 2002
      </ul>
    <li> People to fix the tests so that they actually pass on *all* Windows platforms
@@ -485,7 +485,7 @@
 	<li>workers: <a href="mailto:fgouget@free.fr">Francois Gouget</a>,
 		     <a href="mailto:Martin.Wilck@Fujitsu-Siemens.com">Martin Wilck</a>
 	<li>status: <span class=inprogress>more patches</span>
-		    <a href="http://www.winehq.com/hypermail/wine-devel/2003/01/0210.html">committed</a>.
+		    <a href="http://www.winehq.org/hypermail/wine-devel/2003/01/0210.html">committed</a>.
 	<li>updated: Jan 6, 2003
      </ul>
    <li> Volunteers who will run the tests their Windows platform of choice on a 

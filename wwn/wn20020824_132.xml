@@ -24,7 +24,7 @@ emulator). </p>
 <person posts="17" size="57" who="Bill Medland &lt;Bill.Medland@accpac.com&gt;" />
 <person posts="13" size="37" who="Dmitry Timoshkov &lt;dmitry@baikal.ru&gt;" />
 <person posts="12" size="58" who="Shachar Shemesh &lt;wine-devel@sun.consumer.org.il&gt;" />
-<person posts="11" size="30" who="Alexandre Julliard &lt;julliard@winehq.com&gt;" />
+<person posts="11" size="30" who="Alexandre Julliard &lt;julliard@winehq.org&gt;" />
 <person posts="10" size="34" who="Raul Dias &lt;chaos@swi.com.br&gt;" />
 <person posts="9" size="29" who="Fabian Cenedese &lt;Cenedese@indel.ch&gt;" />
 <person posts="8" size="28" who="Bill Medland &lt;billmedland@look.ca&gt;" />
@@ -156,7 +156,7 @@ and <a href="http://appdb.codeweavers.com/appview.php?appId=17&amp;versionId=88"
 <section 
 	title="Converting SGML Wine Docs" 
 	subject="sgml" 
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/08/0150.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/08/0150.html" 
 	posts="5" 
 	startdate="08/14/2002" 
 	enddate="08/14/2002"
@@ -195,8 +195,8 @@ sed -e 's/&lt;[^&lt;&gt;]*&gt;//g' -e 's/&amp;lt;/&lt;/g' -e 's/&amp;gt;/&gt;/g'
 <p>Jeremy Newman suggested a different, low-tech, approach and the rationale for it:</p>
 <quote who="Jeremy Newman"><p>
 The EASIEST would be to download the PDF versions at:
-<a href="http://www.winehq.com/Docs/">
- http://www.winehq.com/Docs/</a>
+<a href="http://www.winehq.org/Docs/">
+ http://www.winehq.org/Docs/</a>
 </p><p>
 This would give you the best output. Printing the HTML would not look
 nearly as nice.
@@ -226,7 +226,7 @@ of the documentation.
 <section 
 	title="BiDi Support" 
 	subject="Re: Add BiDi infrastructure" 
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/08/0201.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/08/0201.html" 
 	posts="12" 
 	startdate="08/16/2002" 
 	enddate="08/20/2002"
@@ -287,7 +287,7 @@ say which is the right way is to get something working.
  deal with that later on.
 </p></quote>
 
-<p>Shachar <a href="http://www.winehq.com/hypermail/wine-devel/2002/08/0228.html">posted</a>
+<p>Shachar <a href="http://www.winehq.org/hypermail/wine-devel/2002/08/0228.html">posted</a>
 a preliminary patch and noted:
 </p><quote who="Shachar Shemesh"><p>
 No actual patch, yet, as I still have a few heap corruptions in certain 
@@ -341,7 +341,7 @@ though,
 <section 
 	title="Separating 16-bit Functions" 
 	subject="Re: wine/ dlls/gdi/Makefile.in dlls/gdi/bidi16.c d ..." 
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/08/0190.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/08/0190.html" 
 	posts="2" 
 	startdate="08/15/2002" 
 	enddate="08/16/2002"
@@ -394,7 +394,7 @@ but I'll not pursue this point for now ;).
 <section 
 	title="Quartz.DLL Replacement" 
 	subject="new quartz dll ??" 
-	archive="http://www.winehq.com/hypermail/wine-users/2002/08/0044.html" 
+	archive="http://www.winehq.org/hypermail/wine-users/2002/08/0044.html" 
 	posts="13" 
 	startdate="08/09/2002" 
 	enddate="08/17/2002"
@@ -434,7 +434,7 @@ but I'll not pursue this point for now ;).
 <section 
 	title="Wine and GnuPOC" 
 	subject="is this known to you (wine gurus) ?" 
-	archive="http://www.winehq.com/hypermail/wine-devel/2002/08/0287.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2002/08/0287.html" 
 	posts="1" 
 	startdate="08/22/2002" 
 >
