@@ -51,7 +51,8 @@ function banner_ad ()
 	closedir($d);
 	
 	// randomly select a banner and display it
-	$img = $ads[(rand(1,count($ads))-1)];
+	//$img = $ads[(rand(1,count($ads))-1)];
+    $img = $ads[3];
 	list($url, $alt) = get_xml_tags($bannerads_path.$img.'.xml', array('url', 'alt'));
 
 	// da banner
