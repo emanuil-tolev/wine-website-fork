@@ -78,7 +78,7 @@ started with Wine development guide</a> if you're interested.</p>
 <p>Sometimes, applications run under Wine but don't function quite as
 smoothly as they do in windows.  They may have display errors, a feature
 may be broken, or they may run unusually slow.  These applications should
-receive a lower rating from their maintainers of between 2 and 4 stars in
+receive a lower rating from their maintainers ("bronze" or "garbage") in
 the Application's Database, depending on the degree of difficulty
 encountered.</p> <!-- See ratings guide link here -->
 
@@ -86,7 +86,7 @@ encountered.</p> <!-- See ratings guide link here -->
 complicated than simply installing it, please share that information by
 posting on the application's page in the database.  If you are the
 maintainer for the application, please post the instructions in a
-"howto," which will appear inside green bars at the top of the
+"howto" which will appear inside green bars at the top of the
 application's page.</p>
 
 
@@ -112,7 +112,7 @@ code and provide a fix.  Please provide as much as you know about which
 version of Wine worked, and which version didn't, including the version
 number and how you installed it (from source, binary packages, etc.)
 Finally, please post these things in the Application Database page for the
-app.</p>  
+application.</p>  
 
 <p>If you wish to be extremely helpful, you can try to isolate the exact
 patch which broke your application.  This takes quite a bit of time and
