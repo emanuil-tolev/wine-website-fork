@@ -727,7 +727,7 @@ class html
 			$in = join("",file($this->_file_root."/templates/404.template"));
 		}
         // get page name from template
-        if (eregi("<!--TITLE:\[(.+)\]-->", $in, $arr))
+        if (preg_match('/<!--TITLE:\[([\w\s]+)\]-->/', $in, $arr))
         {
             $this->template_title = $arr[1];
         }
