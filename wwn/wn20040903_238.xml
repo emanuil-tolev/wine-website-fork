@@ -82,7 +82,7 @@ are one such problematic area. Steven Edwards asked this week,
 Once again cross-posting because I would like to see if this is
 something we can work together on. What is left to do for us to be able
  to build and have a working implementation of stdole.tlb or any other
-type libs? I ask because it seems Wines DCOM implementaton is almost
+type libs? I ask because it seems Wine's DCOM implementaton is almost
 good enough for most apps except for this file and ReactOS is quickly
 getting to the point that it can run most of the same stuff Wine can
 without DCOM9x installed.</quote></p>
@@ -94,7 +94,7 @@ OLE dlls. Nyef did some great work on this but for stdole32.tlb we need
 the other version, I think.
 </p><p>
 Once this is done maybe we can pull the stdole32.tlb generation program
-used in Crossover upstream. Right now it's pretty useless for Wine as it
+used in CrossOver upstream. Right now it's pretty useless for Wine as it
 has to be run on Windows to work.
 </p></quote>
 
@@ -146,7 +146,7 @@ out the actual differences other way?</quote></p>
 <p>Steven Edwards found something that might help figure out what was
 generated:</p>
 <quote who="Steven Edwards"><p>
-After a quick google search. I dont know if this will give you all the
+After a quick google search. I don't know if this will give you all the
 information you need but it does have a sample program that can do
 simple dumping of typelibs.
 <ul> <a href="http://www.microsoft.com/msj/0399/comtype/comtype.aspx">
@@ -173,7 +173,7 @@ was intended without interfering with other ones.  A few weeks
 ago (WWN <a href="http://www.winehq.com/?issue=236#Threading%20Issues?">issue #236</a>)
 Andi Mohr forwarded a message from a kernel development list
 that described a problem with Wine's interaction with the Linux
-scheduler.  More discussion occured this week after Mike Hearn
+scheduler.  More discussion occurred this week after Mike Hearn
 asked,
 <quote who="Mike Hearn">
 One thought that occurred to me, and this is just a random theory, is 
@@ -259,7 +259,7 @@ non-root process can only reduce, not elevate, its own priority.
 For what it's worth, at TransGaming we know for a fact that some games
 (maybe it was Battlefield 1942) does; they elevate the priority of one
 of their most critical threads, and seem to use interesting mechanisms
-to regulate how much time this high-priority thread use relative to the
+to regulate how much time this high-priority thread uses relative to the
 other threads. In any case it does help the game's smoothness to
 experimentally elevate this thread's priority under Linux, but this is
 not really a solution because of permissions.</p></quote>
@@ -509,7 +509,7 @@ COM-based interfaces:</p>
 
 <quote who="Rickard Svensson"><p>
 I have some questions about Wine and how/if it can be used with industrial 
-communication like OPC (MicroSoft Com/DCom objects, DDE and more)
+communication like OPC (Microsoft Com/DCom objects, DDE and more)
 </p><p>
 My short question is:
 Can I use Wine to make OPC communication work on a Linux system?
@@ -522,8 +522,8 @@ On <a href="http://www.opcfoundation.org">www.opcfoundation.org</a> there are
 some companies who have made Unix OPC clients, but the license costs are high.
 There is also OPC true XML that is now a real product, that looks promising.
 </p><p>
-I'm in need to make/use some kind of OPC api (Wine DCom) for Linux, a api like 
-that would make many companys in the industrial computer interested.
+I'm in need to make/use some kind of OPC api (Wine DCom) for Linux, an api like 
+that would make many company's in the industrial computer interested.
 Or as a backup I could have a Win program running in Wine on the Linux machine 
 talking with the main app on the same computer and talking OPC to other 
 machines that need that.</p><p>
@@ -535,7 +535,7 @@ had to switch operating system just because of this.</p></quote>
 <quote who="Mike Hearn"><p>
 Answer: almost certainly yes, with a catch:
 <ol>
-<li> Wines current builtin DCOM is not up to scratch for what you want, 
+<li> Wine's current builtin DCOM is not up to scratch for what you want, 
 and it will take a long time to get there. Really, given how 
 unglamourous network DCOM hacking is and how few people have worked on 
 it, it's unlikely to happen until funding is available.</li>
