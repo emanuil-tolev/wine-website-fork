@@ -42,10 +42,27 @@ if (isset($_GET['theme']) and in_array($_GET['theme'], $config->themes))
 // load a banner ad
 $html->banner_ad = banner_ad();
 
+// load the path for the page
 if ($_SERVER['PATH_INFO'])
 {
     $dirs = split('/',$_SERVER['PATH_INFO']);
-    $page = $dirs[1];
+    $ignore = array_shift($dirs);
+    if (count($dirs > 1))
+    {
+        $good_dirs = array();
+        foreach ($dirs as $dir)
+        {
+            if (preg_match('/^\./', $dir))
+                continue;
+            array_push($good_dirs, $dir); 
+        }
+        $page = join('/',$good_dirs);
+    }
+    else
+    {
+        $page = $dirs[0];
+    }
+    unset($dirs, $good_dirs);
 }
 
 ?>

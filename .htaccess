@@ -38,8 +38,8 @@ RedirectPermanent /support.shtml                http://www.winehq.org/site/docum
 RedirectPermanent /News/status.html             http://www.winehq.org/site/status
 RedirectPermanent /status                       http://www.winehq.org/site/status
 RedirectPermanent /status/                      http://www.winehq.org/site/status
-RedirectPermanent /faq/                         http://www.winehq.org/site/faq
-RedirectPermanent /faq                          http://www.winehq.org/site/faq
+RedirectPermanent /faq/                         http://www.winehq.org/site/docs/wine-faq/index
+RedirectPermanent /faq                          http://www.winehq.org/site/docs/wine-faq/index
 RedirectPermanent /screenshots/                 http://www.winehq.org/site/screenshots
 RedirectPermanent /screenshots                  http://www.winehq.org/site/screenshots
 RedirectPermanent /news/                        http://www.winehq.org/site?news=archive
@@ -53,19 +53,21 @@ RedirectPermanent /cvs                          http://www.winehq.org/site/cvs
 RedirectPermanent /forums/                      http://www.winehq.org/site/forums
 RedirectPermanent /forums                       http://www.winehq.org/site/forums
 
-
+# fix old style documentation links
+RedirectMatch ^/Docs/(\w+-\w+)/$		http://www.winehq.org/site/docs/$1/index
+RedirectMatch ^/Docs/(\w+-\w+)/(.*)\.shtml$     http://www.winehq.org/site/docs/$1/$2 
 
 # redirect winehq services to appropriate web sites
 RedirectMatch ^/(APPS|Apps|apps)/$              http://appdb.winehq.org/
 RedirectMatch ^/(APPS|Apps|apps)$               http://appdb.winehq.org/
 RedirectMatch ^/(APPS|Apps|apps)/query\.cgi$    http://appdb.winehq.org/
 RedirectMatch ^/apps\.cgi$                      http://appdb.winehq.org/
-RedirectMatch ^/(FAQ|Faq)/$                     http://www.winehq.org/faq
-RedirectMatch ^/(FAQ|Faq)$                      http://www.winehq.org/faq
+RedirectMatch ^/(FAQ|Faq)/$                     http://www.winehq.org/site/docs/wine-faq/index
+RedirectMatch ^/(FAQ|Faq)$                      http://www.winehq.org/site/docs/wine-faq/index
 RedirectMatch ^/(BUGS|Bugs|bugs)/$              http://bugs.winehq.org/
 RedirectMatch ^/(BUGS|Bugs|bugs)$               http://bugs.winehq.org/
-RedirectMatch ^/(TROUBLE|Trouble|trouble)/$     http://www.winehq.org/faq
-RedirectMatch ^/(TROUBLE|Trouble|trouble)$      http://www.winehq.org/faq
+RedirectMatch ^/(TROUBLE|Trouble|trouble)/$     http://www.winehq.org/site/docs/wine-faq/index
+RedirectMatch ^/(TROUBLE|Trouble|trouble)$      http://www.winehq.org/site/docs/wine-faq/index
 
 # redirect soure website
 RedirectMatch /WineAPI(.*)$                     http://source.winehq.org/WineAPI$1
@@ -78,3 +80,4 @@ RedirectPermanent /ident                        http://source.winehq.org/ident
 RedirectPermanent /find                         http://source.winehq.org/find
 RedirectPermanent /search                       http://source.winehq.org/search
 RedirectPermanent /diff                         http://source.winehq.org/search
+

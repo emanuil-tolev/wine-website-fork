@@ -39,7 +39,7 @@ class config
 					 'Support' => array(
                                         'Support'       => '{$root}/site/support',
                                         'Documentation' => '{$root}/site/documentation',
-                                        'FAQ'           => '{$root}/site/faq',
+                                        'FAQ'           => '{$root}/site/docs/wine-faq/index',
 										'HowTo'         => '{$root}/site/howto',
 										'Bug Tracking'  => 'http://bugs.winehq.org/',
                                         'Applications'  => '{$root}/site/supported_applications',

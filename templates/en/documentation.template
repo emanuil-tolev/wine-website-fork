@@ -4,30 +4,33 @@
 
  <p><b>Table of Contents</b></p>
  <ol>
-     <li><a href="/Docs/wine-user/">Wine User Guide</a><br>
-     How to use and configure Wine for running Windows applications.</li><p>
+     <li><a href="{$root}/site/docs/wine-user/index">Wine User Guide</a><br>
+     How to use and configure Wine for running Windows applications.</li><p />
 
-     <li><a href="/Docs/winelib-user/">Winelib User Guide</a><br>
-     How to use Wine to port Windows applications to Linux.</li><p>
+     <li><a href="{$root}/site/docs/wine-faq/index">Wine FAQ</a><br>
+     Wine Frequently Asked Questions.</li><p />
+
+     <li><a href="{$root}/site/docs/winelib-user/index">Winelib User Guide</a><br>
+     How to use Wine to port Windows applications to Linux.</li><p />
      
-     <li><a href="/Docs/wine-devel/">Wine Developers Guide</a><br>
-     How to hack on Wine.</li><p>
+     <li><a href="{$root}/site/docs/wine-devel/index">Wine Developers Guide</a><br>
+     How to hack on Wine.</li><p />
  </ol>
  
  <p><b>Documentation Downloads</b></p>
  <ul>
      <li><a href="/Docs/winedoc-html.tgz">[HTML]</a><br>
-     An archive of HTML files for all the guides.</li><p>
+     An archive of HTML files for all the guides.</li><p />
      
      <li><a href="/Docs/winedoc-pdf.tgz">[PDF]</a><br>
-     An archive of PDF files for all the guides.</li><p>
+     An archive of PDF files for all the guides.</li><p />
      
      <li><a href="/Docs/winedoc-ps.tgz">[PostScript]</a><br>
-     An archive of PostScript files for all the guides.</li><p>
+     An archive of PostScript files for all the guides.</li><p />
      
      <li><a href="/Docs/winedoc-sgml.tgz">[DocBook SGML]</a><br>
      An archive of the original DocBook SGML files for all the guides,
-     used to generate the other formats.</li><p>      
+     used to generate the other formats.</li><p />      
  </ul>
 
 <p>&nbsp;</p>
