@@ -115,8 +115,8 @@
     <li>dlls/commdlg/filedlg.c: colordlg: GetFileDialog95W: illegal call to SetCurrentDirectoryA
     <li>dlls/commdlg/filedlg.c: colordlg: GetFileName31W: illegal call to GetWindowLongA
     <li>dlls/ddraw/main.c: ddraw: DirectDrawEnumerateExW: illegal call to DirectDrawEnumerateExA
-    <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to HEAP_strdupWtoA
-    <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to StartDocA
+    <li class=committed>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to HEAP_strdupWtoA
+    <li class=committed>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to StartDocA
     <li>dlls/hhctrl.ocx/hhctrl.c: hhctrl.ocx: HtmlHelpW: illegal call to MessageBoxA
     <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to HEAP_strdupWtoA
     <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to SetDefaultCommConfigA
@@ -134,7 +134,7 @@
     <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to DialogBoxIndirectParamA
     <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to HEAP_strdupWtoA
     <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to LoadIconA
-    <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to FindResourceA
+    <li class=committed>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to FindResourceA
     <li>dlls/shell32/shellole.c: shell32: DragQueryFileW: illegal call to DragQueryFileA
     <li>dlls/shell32/systray.c: shell32: Shell_NotifyIconW: illegal call to Shell_NotifyIconA
     <li class=committed>dlls/shlwapi/ordinal.c: shlwapi: SHStringFromGUIDW: illegal call to SHStringFromGUIDA
@@ -245,7 +245,6 @@
   <ul>
     <li>dlls/advapi32/service.c
     <li>dlls/gdi/printdrv.c
-    <li>dlls/user/hook.c
     <li>dlls/wineps/init.c
     <li>dlls/winspool/info.c
   </ul>
