@@ -90,16 +90,16 @@
     <li class=committed>dlls/commdlg/printdlg.c: comdlg32: PrintDlgW: illegal call to GetWindowLongA
     <li>dlls/ddraw/main.c: ddraw: DirectDrawEnumerateExW: illegal call to DirectDrawEnumerateExA
     <li class=committed>dlls/gdi/enhmfdrv/init.c: gdi32: CreateEnhMetaFileW: illegal call to CreateDCA
-    <li class=submitted>dlls/gdi/mfdrv/init.c: gdi32: CreateMetaFileW: illegal call to CreateMetaFileA
+    <li>dlls/gdi/mfdrv/init.c: gdi32: CreateMetaFileW: illegal call to CreateMetaFileA
     <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to HEAP_strdupWtoA
     <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to StartDocA
     <li class=committed>dlls/imm32/imm.c: imm32: ImmGetCompositionStringW: illegal call to GetVersionExA
-    <li class=submitted>dlls/kernel/comm.c: kernel32: BuildCommDCBAndTimeoutsW: illegal call to BuildCommDCBAndTimeoutsA
-    <li class=submitted>dlls/kernel/comm.c: kernel32: BuildCommDCBAndTimeoutsW: illegal call to HEAP_strdupWtoA
+    <li class=committed>dlls/kernel/comm.c: kernel32: BuildCommDCBAndTimeoutsW: illegal call to BuildCommDCBAndTimeoutsA
+    <li class=committed>dlls/kernel/comm.c: kernel32: BuildCommDCBAndTimeoutsW: illegal call to HEAP_strdupWtoA
     <li>dlls/kernel/comm.c: kernel32: CommConfigDialogW: illegal call to CommConfigDialogA
     <li>dlls/kernel/comm.c: kernel32: CommConfigDialogW: illegal call to HEAP_strdupWtoA
-    <li class=submitted>dlls/kernel/comm.c: kernel32: GetDefaultCommConfigW: illegal call to GetDefaultCommConfigA
-    <li class=submitted>dlls/kernel/comm.c: kernel32: GetDefaultCommConfigW: illegal call to HEAP_strdupWtoA
+    <li class=committed>dlls/kernel/comm.c: kernel32: GetDefaultCommConfigW: illegal call to GetDefaultCommConfigA
+    <li class=committed>dlls/kernel/comm.c: kernel32: GetDefaultCommConfigW: illegal call to HEAP_strdupWtoA
     <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to HEAP_strdupWtoA
     <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to SetDefaultCommConfigA
     <li>dlls/kernel/format_msg.c: kernel32: FormatMessageW: illegal call to GetModuleHandleA
@@ -168,7 +168,7 @@
     <li>dlls/winspool/info.c: winspool.drv: DocumentPropertiesW: illegal call to DEVMODEdupWtoA
     <li>dlls/winspool/info.c: winspool.drv: DocumentPropertiesW: illegal call to DocumentPropertiesA
     <li>dlls/winspool/info.c: winspool.drv: DocumentPropertiesW: illegal call to HEAP_strdupWtoA
-    <li>dlls/winspool/info.c: winspool.drv: GetDefaultPrinterW: illegal call to GetDefaultPrinterA
+    <li class=submitted>dlls/winspool/info.c: winspool.drv: GetDefaultPrinterW: illegal call to GetDefaultPrinterA
     <li class=committed>dlls/winspool/info.c: winspool.drv: GetPrinterDriverDirectoryW: illegal call to GetPrinterDriverDirectoryA
     <li class=committed>dlls/winspool/info.c: winspool.drv: GetPrinterDriverDirectoryW: illegal call to HEAP_strdupWtoA
     <li class=committed>files/dos_fs.c: kernel32: QueryDosDeviceW: illegal call to HEAP_strdupWtoA
@@ -177,8 +177,8 @@
     <li class=committed>files/drive.c: kernel32: GetDiskFreeSpaceExW: illegal call to HEAP_strdupWtoA
     <li class=committed>files/profile.c: kernel32: GetPrivateProfileIntW: illegal call to GetPrivateProfileIntA
     <li class=committed>files/profile.c: kernel32: GetPrivateProfileIntW: illegal call to HEAP_strdupWtoA
-    <li class=submitted>loader/module.c: kernel32: GetBinaryTypeW: illegal call to GetBinaryTypeA
-    <li class=submitted>loader/module.c: kernel32: GetBinaryTypeW: illegal call to HEAP_strdupWtoA
+    <li class=committed>loader/module.c: kernel32: GetBinaryTypeW: illegal call to GetBinaryTypeA
+    <li class=committed>loader/module.c: kernel32: GetBinaryTypeW: illegal call to HEAP_strdupWtoA
     <li class=committed>loader/module.c: kernel32: GetModuleFileNameW: illegal call to GetModuleFileNameA
     <li>loader/module.c: kernel32: GetModuleHandleW: illegal call to GetModuleHandleA
     <li>loader/module.c: kernel32: GetModuleHandleW: illegal call to HEAP_strdupWtoA
