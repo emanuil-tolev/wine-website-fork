@@ -115,7 +115,7 @@ going on and where we're headed going into 2005:</p>
 Happy new year everybody!
 </p><p>
 Being the patch fetishist that I am, I couldn't help noticing that in
-December 2004 we cleared 8mb of patches: that's by far the largest since
+December 2004 we cleared 8MB of patches: that's by far the largest since
 the current archives began in October 2000.
 </p><p>
 The extra traffic came from a lot of places:
@@ -135,7 +135,7 @@ we might be seeing in 2005:
 <li><p>  Completion of the WM rewrite work. Alexandre seems to be making great
    progress on this, which will let us fix many of the odd visual
    corruption problems we've been plagued with for so long. It'll also 
-   let us remerge Alexs winedesktop patch, giving us a real desktop window
+   let us remerge Alex's winedesktop patch, giving us a real desktop window
    that is used for all apps, at last. 
    </p><p>
    It should have many other benefits too: fixing the flickering in 
@@ -209,7 +209,7 @@ We're currently reworking, extending and in some cases rewriting the
 code Marcus wrote originally to work more like native DCOM does. This
 means that new features and major improvements are *not* going to happen
 for a while, because before we can extend our support for DCOM we have
-to migrate to the same architecture that Microsoft use internally. This
+to migrate to the same architecture that Microsoft uses internally. This
 has several benefits:
 <ol>
  <li> It saves us design work, because MS already did it</li>
@@ -280,12 +280,12 @@ change direction at any point to make stuff we want internally work
 an interesting patch:</p> 
 <quote who="Huw Davies"><p>
 
-This adds preliminarily support for typelib generation to widl.  It's
+This adds preliminary support for typelib generation to widl.  It's
 not enough to generate stdole32.tlb mainly because it doesn't cope
 with some of the builtin types, like VARIANT, properly yet.  However
 it should be possible to generate simple typelibs (for testing the
 typelib marshaller for instance).  I'm going to continue to work on
-this so let me know if you're interesting in helping out.</p></quote>
+this so let me know if you're interested in helping out.</p></quote>
 
 </section>
 
@@ -345,7 +345,7 @@ I am *not* the sort of person that would take decisions like that one without di
 but as nobody answered I thought nobody cared, it is not my intent to interfere with anything.
 I just don't think it's nice to violate the sf.net rules, and I believe it's disrespectful to other 
 projects. Closed source files can be useful to linux users, but this is no excuse.
-If the wine community thinks this the sf TOS isn't important, fine, but I disassociate myself from 
+If the wine community thinks the sf TOS isn't important, fine, but I disassociate myself from 
 such a decision.
 </quote></p>
 

@@ -38,7 +38,7 @@ switch (true)
     $text .= $wwn->view_interview($_REQUEST['interview']);
     break;
   
-  // view latest annouce
+  // view latest announce
   case ($_REQUEST['announce']):
     $text .= view_announce($_REQUEST['announce']);
     break;
