@@ -7,12 +7,14 @@ ErrorDocument 404 http://www.winehq.org/?page=404
 # redirect old winehq pages to new locations
 RedirectPermanent /about.shtml                  http://www.winehq.org/?page=about
 RedirectPermanent /about/                       http://www.winehq.org/?page=about
+RedirectPermanent /about                        http://www.winehq.org/?page=about
 RedirectPermanent /about/index.php              http://www.winehq.org/?page=about
 RedirectPermanent /community.shtml              http://www.winehq.org/?page=contributions
 RedirectPermanent /dev.shtml                    http://www.winehq.org/?page=cvs
 RedirectPermanent /dev.html                     http://www.winehq.org/?page=cvs
 RedirectPermanent /devstart.shtml               http://www.winehq.org/?page=cvs
 RedirectPermanent /download/                    http://www.winehq.org/?page=download
+RedirectPermanent /download                     http://www.winehq.org/?page=download
 RedirectPermanent /download/index.php           http://www.winehq.org/?page=download
 RedirectPermanent /download.shtml               http://www.winehq.org/?page=download
 RedirectPermanent /download.html                http://www.winehq.org/?page=download
