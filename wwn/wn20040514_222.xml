@@ -139,7 +139,7 @@ supported, there are reports that Microsoft Money and Framemaker have also
 seen dramatic improvements.  </p><p>
 Besides new applications,
 CodeWeaver's has dramatically changed the product by combining all of
-the CrossOver Plugin functionality into the CrossOver Office.  In fact,
+the CrossOver Plugin functionality into CrossOver Office.  In fact,
 CrossOver Plugin is now a product that will not be released separately.
 To accompany these changes a new licensing mechanism was introduced.  
 Jeremy White explained the reasoning behind it in an email to the
@@ -160,7 +160,7 @@ we have taken the following steps:
        is entitled to a free upgraded to 3.0.</li>
 
    <li>  We have upgraded everyones account status as follows:
-   <ul>
+   <ul><br />
        A.  All Plugin and single user Office customers have
            access to CrossOver Office Standard<br /><br />
 
@@ -187,7 +187,7 @@ Mike Hearn</a>?</p>
 A short article on eWeek appeared about running
 Windows apps on Linux.  CrossOver Office 
 <a href="http://www.eweek.com/article2/0,,1586641,00.asp">made
-the list</a>.</p>  Slashdot referenced Wine twice with regards
+the list</a>. Slashdot referenced Wine twice with regards
 to the <a href="http://apache.slashdot.org/article.pl?sid=04/05/11/1645245&amp;mode=thread">CrossOver 3.0 release</a>
 and <a href="http://interviews.slashdot.org/article.pl?sid=04/05/10/1252243&amp;mode=thread">solicting questions </a>
 for CodeWeavers' Jeremy White.</p>
@@ -262,7 +262,7 @@ tries to retrieve this data.
 It works in windows but doesnt seem to do so in WINE.
 </quote></p>
 
-<p>Jerry Haltom explained it was a deficiency in X:</p>
+<p>Jerry Haltom explained it was a problem in X:</p>
 <quote who="Jerry Haltom"><p>
 This would be a deficiency (or so some say) of the X clipboard design.
 There is no "storage buffer" for clipboard data.
@@ -325,7 +325,7 @@ After compiling he ran <tt>strip</tt> against it after which
 <tt>nm -D</tt> still showed all the symbols.  Dan only wanted
 the ones needed for dynamic linking to be there.  Dmitry 
 Timoshkov understood the problem, but since it's not a problem
-with Wine per se there he referred Dan elsewhere,
+with Wine per se he referred Dan elsewhere,
 <quote who="Dmitry Timoshkov">
 Actually that's a question for binutils mailing list. I was researching
 that problem some time ago and found that dynamic linker has a switch
@@ -338,7 +338,7 @@ of ELF format, which has no a concept of exported symbols.
 <p>Mike Hearn agreed that the binutils authors were the ones to
 contact.  The ELF format doesn't really provide a mechanism for
 this, however Mike thought that Nvidia has a method that uses the
-preprocessor to mangle symbols.  Dan described a such a method
+preprocessor to mangle symbols.  Dan described such a method
 that he might implement:</p>
 <quote who="Dan Timis"><p>
 I might do code obfuscation.  But, it may be safer for me to do 
@@ -591,7 +591,7 @@ preloader, it can be done in the normal init code.</quote></p>
 <section 
 	title="Marlett Font Replacement" 
 	subject="Marlett Replacement Useful for Wine?"
-	archive="http://www.winehq.com/hypermail/wine-devel/2004/04/0833.html">
+	archive="http://www.winehq.com/hypermail/wine-devel/2004/04/0833.html"
 	posts="5"
 	startdate="04/30/2004"
 	enddate="05/01/2004"
