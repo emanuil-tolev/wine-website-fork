@@ -203,9 +203,14 @@
   We should be able to compile Wine with various C compilers.
 
   <h3 class=inprogress>Microsoft's Visual C</h3>
-  The most popular compiler in the Windows Universe. Unfortunately, there is no
-  free version available, but apparently you can buy one for around $100US.
-  <ul>
+  The most popular compiler in the Windows Universe. Also known as Visual C++,
+  Visual Studio, or MSVC. You can download a free version of the command line
+  compilers from <a href="http://msdn.microsoft.com/visualc/vctoolkit2003/">msdn.microsoft.com/visualc/vctoolkit2003</a>.
+  The Wine test programs do seem to build with Visual C (see posts by
+  <a href="http://www.kerneltraffic.org/wine/wn20031003_190.html#3">Jakob
+  Eriksson</a> and <a href="http://kt.earth.li/wine/wn20030228_159.html#3">Dan
+  Kegel</a>). Wine itself, does not build under MSVC currently.
+    <ul>
     <li>worker: <a href="mailto:ps@leissner.se">Patrik Stridvall</a>
     <li>status: most tests work, DLLs are pretty bad though
     <li>updated: Nov 29, 2002
