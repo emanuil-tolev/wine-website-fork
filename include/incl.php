@@ -27,7 +27,10 @@ require($file_root."/include/"."utils.php");
 $html = new html($file_root);
 
 // load the theme from the session
-if (isset($_COOKIE['winehq'])) $config->theme = $_COOKIE['winehq'];
+if (isset($_COOKIE['winehq']) and in_array($_COOKIE['winehq'], $config->themes))
+{
+    $config->theme = $_COOKIE['winehq'];
+}
 
 // set the theme from get url
 if (isset($_GET['theme']) and in_array($_GET['theme'], $config->themes))
