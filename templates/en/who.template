@@ -2,7 +2,7 @@
 
 <h1>Wine Who's Who</h1>
 
-<p>Last update: September 27, 2002<br>
+<p>Last update: November 23, 2003<br>
 <small>(That doesn't mean the list is up to date by any means.)<br>
 Please email additions, corrections, and flames to
 <a href="mailto:web-admin@winehq.com" class="small">WineHQ Web Admin</a>.
@@ -30,17 +30,6 @@ Please email additions, corrections, and flames to
 	'disadvantageous' patches have been avoided by his strict quality control.
 	</blockquote>
 
-	<H3 style="color: red">Douglas Ridgway</H3>
-	<blockquote>
-	<b>Location:</b> Canada<BR>
-	<b>Email:</b> ridgway@winehq.com<BR>
-	<b>Role:</b> WineHQ Master Site Maintainer, American Wine Party Fund Maintainer<BR>
-	<P>
-	The WineHQ site was created in 1997 by Douglas Ridgway, and has now become the official Wine
-	home site. Douglas has done a fine job of maintaining the site these years, and is doing a
-	good job of making the Wine project and its goals visible to the general public. Our own
-	PR man.
-	</blockquote>
 
 	<A HREF="http://www.lst.de/~mm/"><H3 style="color: red">Marcus Meissner</H3></A>
 	<blockquote>
@@ -49,32 +38,39 @@ Please email additions, corrections, and flames to
 	<b>Role:</b> European Wine Party Fund Maintainer, High-Profile Developer<BR>
 	<P>
 	Marcus 'BugNix' Meissner has been working on WINE since 1995 and contributed a lot of
-    patches and bugfixes.<br><br>
-    He is personally to blame for the first revisions of reading and saving
-    the Registry, starting the DirectX implementation, doing the second OLE
-    out of process COM support implementation, and more.<br><br>
-    Marcus is part time WINE evangelist, is holding WINE talks in Germany
-    and can occasionally be found manning WINE demo points on Open Source fairs.<br><br>
+        patches and bugfixes.<br><br>
+        He is personally to blame for the first revisions of reading and saving
+        the Registry, starting the DirectX implementation, doing the second OLE
+        out of process COM support implementation, and more.<br><br>
+        Marcus is part time WINE evangelist, is holding WINE talks in Germany
+        and can occasionally be found manning WINE demo points on Open Source fairs.<br><br>
 	Marcus studied computer science at the university of Erlangen and
-    finished with diploma in 1997. After doing civil duty in he started working
+        finished with diploma in 1997. After doing civil duty in he started working
 	as Senior Developer for Caldera Systems in 1999, working on distribution development.
-    After Caldera closed its development office in 2002 he started and is now working for
+        After Caldera closed its development office in 2002 he started and is now working for
 	the SuSE Linux AG as a Developer in the PowerPC group
 	</blockquote>
 
-	<A HREF="http://www.akhphd.au.dk/~bertho/"><H3 style="color: red">Bertho Stultiens</H3></A>
+        <A HREF="http://perso.wanadoo.fr/eric.pouech/"><H3 style="color: red">Eric Pouech</H3></A>
 	<blockquote>
-	<b>Location:</b> Denmark<BR>
-	<b>Email:</b> bertho@panter.soci.aau.dk<BR>
-	<b>Role:</b> WineHQ European Site Maintainer, Active Developer<BR>
+	<b>Location:</b> France<BR>
+	<b>Email:</b> Eric.Pouech@wanadoo.fr<BR>
+	<b>Role:</b> Active Developer<BR>
 	<P>
-	Having the bandwidth to spare, Bertho runs WineHQ's European master site, which is a
-	mirror of the master WineHQ site, but all DNS records point here, both because most
-	developers are in Europe, and to offload the master site. As a developer, Bertho is
-	specializing in Wine DLL loader issues, having written Wine's current resource compiler,
-	and currently developing the so-called 'elf-dlls' that will modularize the currently
-	quite monolithic Wine.
+	Specializes on multimedia, which touches many core things, but he has
+	also submitted improvements to window handling and the Wine debugger.
 	</blockquote>
+        
+        <a href="http://63.138.153.104/wine/"><H3 style="color: red">Dimitrie O. Paun</H3></a>
+	<blockquote>
+	<b>Location:</b> Toronto, Canada<BR>
+	<b>Email:</b> dpaun@rogers.com<BR>
+	<b>Role:</b> Improving the Common Controls, misc. fixes, and cleanups.
+	<p>
+	Introduced the debug channels way back in '97, 
+	many cleanups, a lot of work in the common controls area.
+	</blockquote>
+	
 
     <!-- ----------------------------------------------------------------------------------------------------- -->
 
@@ -138,15 +134,6 @@ Please email additions, corrections, and flames to
 	</blockquote>
 	
 
-	<A HREF="http://perso.wanadoo.fr/eric.pouech/"><H3 style="color: red">Eric Pouech</H3></A>
-	<blockquote>
-	<b>Location:</b> France<BR>
-	<b>Email:</b> Eric.Pouech@wanadoo.fr<BR>
-	<b>Role:</b> Active Developer<BR>
-	<P>
-	Specializes on multimedia, which touches many core things, but he has
-	also submitted improvements to window handling and the Wine debugger.
-	</blockquote>
 
 
     <!-- ----------------------------------------------------------------------------------------------------- -->
@@ -182,31 +169,7 @@ Please email additions, corrections, and flames to
 	acceptable pace (and even small but critical bugs can be quite some beasts to
 	track down in a project of this magnitude).
 
-
-
-	<A HREF="http://fgouget.free.fr/wine/"><H3 style="color: red">François Gouget</H3></A>
-	<blockquote>
-	<b>Location:</b> France<BR>
-	<b>Email:</b> fgouget@free.fr<BR>
-	<b>Role:</b> Active Developer<BR>
-	<P>
-	Specializes on COM, and wrote the bilingual (both C and C++) ICOM macros.
-	Also worked on the Winsock ICMP stuff.
-	</blockquote>
-
-
-	<H3 style="color: red">Huw D M Davies</H3>
-	<blockquote>
-	<b>Location:</b> United Kingdom<BR>
-	<b>Email:</b> h.davies1@physics.ox.ac.uk<BR>
-	<b>Role:</b> Active Developer<BR>
-	<P>
-	Specializes on printing and Wine's internal PostScript driver,
-	and does some work on metafiles.
-	</blockquote>
-
-
-	<H3 style="color: red">Eric Kohl</H3>
+        <H3 style="color: red">Eric Kohl</H3>
 	<blockquote>
 	<b>Location:</b> Germany<BR>
 	<b>Email:</b> ekohl@abo.rhein-zeitung.de<BR>
@@ -215,18 +178,6 @@ Please email additions, corrections, and flames to
 	Specializes on common controls, and wrote most of the framework for comctl32,
 	as well as implementing several of the controls.
 	</blockquote>
-
-
-	<a href="http://63.138.153.104/wine/"><H3 style="color: red">Dimitrie O. Paun</H3></a>
-	<blockquote>
-	<b>Location:</b> Toronto, Canada<BR>
-	<b>Email:</b> dpaun@rogers.com<BR>
-	<b>Role:</b> Improving the Common Controls, misc. fixes, and cleanups.
-	<p>
-	Introduced the debug channels way back in '97, 
-	many cleanups, a lot of work in the common controls area.
-	</blockquote>
-
 
 	<H3 style="color: red">Patrik Stridvall</H3>
 	<blockquote>
@@ -472,7 +423,6 @@ Please email additions, corrections, and flames to
 	<b>Role:</b> Casual Contributor<BR>
 	<P>
 	Work on Keeping the Wine Status page up to date.
-	Wine Advocate, Advocacy
 	</blockquote>
 
 
@@ -573,6 +523,28 @@ Please email additions, corrections, and flames to
 	Contributes fixes for application support.
 	</blockquote>
 
+        <A HREF="http://fgouget.free.fr/wine/"><H3 style="color: red">François Gouget</H3></A>
+	<blockquote>
+	<b>Location:</b> France<BR>
+	<b>Email:</b> fgouget@free.fr<BR>
+	<b>Role:</b> Active Developer<BR>
+	<P>
+	Specializes on COM, and wrote the bilingual (both C and C++) ICOM macros.
+	Also worked on the Winsock ICMP stuff.
+	</blockquote>
+
+
+	<H3 style="color: red">Huw D M Davies</H3>
+	<blockquote>
+	<b>Location:</b> United Kingdom<BR>
+	<b>Email:</b> huw@codeweavers.com<BR>
+	<b>Role:</b> Active Developer<BR>
+	<P>
+	Specializes on printing and Wine's internal PostScript driver,
+	and does some work on metafiles.
+	</blockquote>
+
+
 
 	<H3 style="color: red">Martin Pilka</H3>
 	<blockquote>
@@ -580,7 +552,7 @@ Please email additions, corrections, and flames to
 	<b>Email:</b> martin@codeweavers.com<BR>
 	<b>Role:</b> Active Developer<BR>
 	<P>
-    Maintains winesetuptk, and bug fixes.
+        Contributes bug fixes.
 	</blockquote>
 
 
