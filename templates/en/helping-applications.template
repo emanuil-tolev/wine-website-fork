@@ -33,11 +33,11 @@ option, perhaps more effective and expensive, is to pay Wine developers
 for their work on your application, either directly through a negotiated
 contract or indirectly by posting a bounty. CodeWeavers, a major Wine
 developer, offers a special section for pledges at
-<a href="http://www.codeweavers.com/site/compatibility/">their compatibility
+<a href="http://www.codeweavers.com/compatibility/">their compatibility
 center</a> website. The most direct method, however, is to help develop
 Wine itself and contribute code directly, which is exactly what Corel did
 for WordPerfect several years ago.  In any case, making a post on the
-Wine developers <a href="http://www.winehq.org/site/forums">email
+Wine developers <a href="{$root}/site/forums">email
 list</a> can go a long way.</p>
 
 <h2>If your application doesn't work:</h2>
@@ -60,7 +60,7 @@ Check the application database page for the program. There may be
 special configuration options or instructions for installing native DLL
 files there that you can try to get the application working. For
 further configuration help, please see the
-<a href="http://www.winehq.org/site/docs/wine-user/running">Running
+<a href="{$root}/site/docs/wine-user/running">Running
 Wine</a> section of the User Guide.</p>
 
 <p>If the application still doesn't work, it's probably due to a bug or
@@ -69,7 +69,7 @@ href="http://bugs.winehq.org/">reporting bugs</a> page for instructions
 on how to best report bugs with applications. Alternatively, if you're
 a programmer, we'd really like it if you tried to help us directly;
 please read the
-<a href="http://www.winehq.org/site/developer-cheatsheet">getting
+<a href="{$root}/site/developer-cheatsheet">getting
 started with Wine development guide</a> if you're interested.</p>
 
 
@@ -121,5 +121,5 @@ working again.  When it comes to fixing regressions, the only thing more
 helpful to the Wine developers than knowing exactly which patch caused a
 regression is receiving a fix for the patch itself.  For help with
 isolating problem patches, please see the documentation on
-<a href="http://www.winehq.org/site/docs/wine-devel/x1375">regression
+<a href="{$root}/site/docs/wine-devel/x1375">regression
 testing</a>.</p>
