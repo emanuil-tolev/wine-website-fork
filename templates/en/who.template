@@ -6,7 +6,7 @@ hr {height: 1px; border: 1}
 
 <h1>Wine Who's Who</h1>
 
-<p>Last update: February 18, 2004 <br />
+<p>Last update: February 29, 2004 <br />
 <small>(That doesn't mean the list is up to date by any means.)<br />
 Please email additions, corrections, and flames to
 <a href="mailto:wine-devel@winehq.org" class="small">wine-devel</a>.
@@ -14,250 +14,13 @@ Please email additions, corrections, and flames to
 
 <hr>
 
-<h3>Alexandre Julliard</h3><blockquote>
-    <table border="0"><tr>
-    <td width="330"><b>Location:</b> Santa Rosa, California<br /></td>
-	<td><b>IRC Nick:</b> julliard</td></tr>
-    <tr><td><b>Email:</b> julliard -at- winehq dot org</td>
-    <td></td></tr></table>
-    
-    <p>
-    The enigmatic Alexandre Julliard, who has been in the project 
-    since its beginning in early 1993, has worked on and maintained 
-    the official Wine source ever since Bob Amstadt turned the helm 
-    over to him quite early. Although he enforces strict control over 
-    the official source tree (thus ensuring that every change must 
-    pass his scrutiny), nobody questions his abilities as the project 
-    leader, his commitment to quality, and his dedication to the Wine 
-    project; many 'disadvantageous' patches have been avoided by his 
-    strict quality control. 
-    </p></blockquote>
-
-<hr>
-
-<p>The following developers are the rare bunch - the ones who
-get paid to hack on Wine.  These hired guns and have made
-invaluable contributions to Wine.  </p><p>
-
-CodeWeavers, based in St. Paul, Minnesota, consists of a core 
-group of developers from around the world:</p>
-
-<h3>Ulrich Czekalla</h3><blockquote>
-    <table border="0"><tr>
-    <td width="330"><b>Location:</b> Toronto, Canada<br /></td>
-	<td><b>IRC Nick:</b> ulrich</td></tr>
-    <tr><td>
-     <b>Email:</b> ulrich -at- codeweavers dot com</td>
-    <td></td></tr></table>
-    <p>
-     Ulrich has been a paid developer on Wine for many years.  He
-     began working for CodeWeavers in 2000 but previous to that had
-     experience working for Corel.  While there, he ported
-     the WordPerfect Office Suite and Corel Draw to Linux.  He's worked
-     on numerous areas of Wine including the loader, the resource 
-     compiler, common controls, clipping issues, the security API,
-     and a rewrite of the clipboard just to name a few.  When Ulrich
-     isn't working on Wine he enjoys taking courses at the University
-     of Toronto and relaxing with his wife.
-    </p></blockquote>
-
-<h3>Huw Davies</h3><blockquote>
-    <table border="0"><tr>
-    <td width="330"><b>Location:</b> Oxford, England<br /></td>
-	<td><b>IRC Nick:</b> huw</td></tr>
-    <tr><td>
-    <b>Email:</b> h.davies1 -at- physics dot ox dot ac dot uk</td>
-    <td></td></tr></table>
-    <p>
-    	Huw is the resident font guru.  In the past he's also done
-	extensive work on Wine's Postscript driver and printing.
-    </p></blockquote>
-        
-<h3>Francois Gouget</h3><blockquote>
-    <table border="0"><tr>
-    <td width="330"><b>Location:</b> France<br /></td>
-	<td><b>IRC Nick:</b> fgouget</td></tr>
-    <tr><td>
-    <b>Email:</b> fgouget -at- free dot fr </td>
-    <td><b>Interview:</b> <a href="http://www.winehq.org/?interview=11">#11</a></td></tr></table>
- 
-    <p>    
-    Francois recently moved back to France after spending five
-    years in California.  He attended college at Ecole Centrale
-    de Lyon studying engineering sciences.  He's been involved
-    with Wine since 1998 and responsible for making Winelib
-    more usable.  Part of that means developing the winemaker
-    tool.       
-    </p></blockquote>
-     
-<h3>Mike McCormack</h3><blockquote>
-    <table border="0"><tr>
-    <td width="330"><b>Location:</b> Seoul, South Korea<br /></td>
-	<td><b>IRC Nick:</b> mike_m</td></tr>
-    <tr><td>
-    <b>Email:</b> mike -at- codeweavers dot com</td>
-    <td><b>Interview:</b> <a href="http://www.winehq.org/?interview=7">#7</a></td></tr></table>
-    
-    <p>
-    How many Australian Wine developers live in South Korea and work 
-    for an American company? If you said just Mike McCormack then you'd 
-    be correct. Mike studied Electrical Engineering and Computer Science
-    at the University of Sydney but now splits his time betwee Seoul and
-    Minneapolis. Full time he's a Wine developer working for CodeWeavers. 
-    The arrangement works well for him - he gets to see his girlfriend 
-    regularly and has time to concentrate on work too. 
-    </p><p>
-    Mike has worked on many different areas of Wine including adding
-    support for named pipes.
-    </p></blockquote>
-
-<h3>Jeremy Newman</h3><blockquote>
-    <table border="0"><tr>
-    <td width="330"><b>Location:</b> Minneapolis, Minnesota<br /></td>
-	<td><b>IRC Nick:</b> laxdragon</td></tr>
-    <tr><td>
-    <b>Email:</b> jnewman -at- codeweavers dot com</td>
-    <td></td></tr></table>
-    
-    <p>
-    A geek who specializes in PHP and Perl web based development, Jeremy
-    co-wrote and designed the Wine Application database, redesigned the
-    WineHQ website, and wrote the XML parser for Wine Weekly News.  Jeremy
-    has a knack for transforming a vague idea on a wishlist into reality.
-    </p></blockquote>
-
-<h3>Aric Stewart</h3><blockquote>
-    <table border="0"><tr>
-    <td width="330"><b>Location:</b> Minneapolis, Minnesota<br /></td>
-	<td><b>IRC Nick:</b> aricstewart</td></tr>
-    <tr><td>
-    <b>Email:</b> aric -at- codeweavers dot com</td>
-    <td></td></tr></table>
-    
-    <p>
-    Aric Stewart lives in a small, very yellow 1 1/2 story house in snowy
-    Minneapolis, Minnesota. Jeremy White likes to parade him around as the
-    only Wine hacker that CodeWeavers has been able to grow from scratch,
-    which is true. Working for CodeWeavers since his graduation from college
-    he started working on Wine because of his employment at CodeWeavers. He
-    has done alot of random bug fixes and work on windows tablets for
-    CodeWeavers, but really found his own area when he tried to use some of
-    his Japanese programs on Wine and worked hard to get XIM and IMM32 to
-    play nice together. When he is not hacking on Wine or answering customer
-    support tickets, Aric studies martial arts, tries to keep his Japanese
-    language skills from fading, watches Japanese animation, runs role
-    playing games and LARPs, makes jewelry, hangs with friends or is out
-    wandering around one of the lakes in town.
-    </p></blockquote>  
-
-<h3>Dmitry Timoshkov</h3><blockquote><!-- TODO -->
-    <table border="0"><tr>
-    <td width="330"><b>Location:</b> Irkutsk, Russia<br /></td>
-	<td> </td></tr>
-    <tr><td>
-    <b>Email:</b> dmitry -at- baikal dot ru</td>
-    <td></td></tr></table>
-    <p>
-	Dmitry first got involved with Wine in 1999 when he
-	tried to get PageMaker 6.5 running.  Nowadays,
-	he specializes in internationalization.
-	Dmitry helped introduce unicode support in Wine
-	and converted all the USER controls to unicode.  He
-	also rewrote all the file API's to use unicode internally.
-	Dmitry did a lot of work on the X11 driver so it could
-	support keyboard input from various locales as well as
-	making dead keys work.  
-    </p></blockquote>
-    
-<h3>Jeremy White</h3><blockquote>
-    <table border="0"><tr>
-    <td width="330"><b>Location:</b> Minneapolis, Minnesota<br /></td>
-	<td><b>IRC Nick:</b> jwhite</td></tr>
-    <tr><td>
-    <b>Email:</b> jwhite -at- codeweavers dot com</td>
-    <td><b>Interview:</b> <a href="http://www.winehq.org/?interview=4">#4</a></td></tr></table>
-    
-    <p>
-    In 1996 Jeremy founded CodeWeavers , the creators of the popular 
-    CrossOver Office and CrossOver Plugin products. He lives in St. 
-    Paul, Minnesota with his wife and two children. Before starting 
-    CodeWeavers, Jeremy founded Holten, White and Associates, a 
-    computer consulting firm.  He's the first to point out that
-    Alexandre won't accept any of his patches.  Jeremy has been
-    a driving force behind developing and promoting Wine.
-    </p></blockquote>
-
-<hr>
-
-<p>TransGaming, with offices in both Toronto and Ottawa, also has paid
-developers who have contributed to Wine:</p>
-
-<h3>David Hammerton</h3><blockquote><!-- TODO -->
-    <table border="0"><tr>
-    <td width="330"><b>Location:</b> Melbourne, Australia<br /></td>
-	<td><b>IRC Nick:</b> crazney</td></tr>
-    <tr><td>
-    <b>Email:</b> david -at- transgaming dot com</td>
-    <td></td></tr></table>
-
-    <p>
-    Besides working for TransGaming, David is studying at the University of
-    Melbourne and will finish with majors History, Math, and Computer
-    Science.  As a result, he splits his time between Melbourne and Canada.
-    David first got involved with wine by writing a HOWTO.  Later he
-    put together a <a href="http://lhl.linuxgames.com">Half-Life on
-    Wine</a> community site.  His area of expertise lies in 2D graphics,
-    fonts, GDI, and general work on getting games to work.  Hobbies 
-    include bike riding, hiking, traveling, and of course, playing video
-    games.
-    </p></blockquote>
-
-<h3>Peter Hunnisett</h3><blockquote> 
-    <table border="0"><tr>
-    <td width="330"><b>Location:</b> Toronto, Canada<br /></td>
-	<td> </td></tr>
-    <tr><td><b>Email:</b> peter -at- transgaming dot com</td>
-    <td><b>Interview:</b> <a href="http://www.winehq.org/?interview=12">#12</a></td></tr></table>
-
-    <p>    
-    After stints in Ottawa and Harlow, England, Peter ended up in
-    Toronto working for TransGaming.  He attended the University
-    of Toronto and had his first exposure to Wine in 1996.  A few
-    years later he began working on getting some games working.
-    That work focused on Winelib and DirectPlay support.
-    He began working for TransGaming in 2001 when the company first
-    formed.  As a full-time developer he's been responsible for
-    the three Kohan titles ported by TransGaming.
-    </p></blockquote>
-    
-<h3>Ove K&#229;ven</h3><blockquote>
-    <table border="0"><tr>
-    <td width="330"><b>Location:</b> Oslo, Norway<br /></td>
-	<td><b>IRC Nick:</b> villager</td></tr>
-    <tr><td>
-    <b>Email:</b> ovek -at- arcticnet dot no</td>
-    <td><b>Interview:</b> <a href="http://www.winehq.org/?interview=1">#1</a></td></tr></table>
-    <p>    
-    Ove's been involved with Wine since 1997.  Lately much of his
-    work has been COM related, but in the past Ove has worked on DOS
-    support and graphics. And if you've been reading WWN for a while
-    you might remember there used to be a CVS summary section - Ove
-    wrote all those. Nowadays he works for TransGaming while continuing
-    to reside in Norway. 
-    </p></blockquote>
-
-<hr>
-
-<p>Everyone else is the greatest resource of all - the unpaid 
-developers doing it simply because they want to:</p>
-
 <h3>Vincent B&#233;ron</h3><blockquote>
     <table border="0"><tr>
     <td width="330"><b>Location:</b> St. Laurent, Canada<br /></td>
-	<td> </td></tr>
+	<td><b>IRC Nick:</b> papineau</td></tr>
     <tr><td>
     <b>Email:</b> vberon -at- mecano dot gme dot usherb dot ca</td>
-    <td><b>IRC Nick:</b></td> papineau</tr></table>
+    <td></td></tr></table>
     
     <p>
     Vincent pays the bills as a mechanical engineer.  With regard
@@ -284,10 +47,10 @@ developers doing it simply because they want to:</p>
 <h3>Christian Costa</h3><blockquote>
     <table border="0"><tr>
     <td width="330"><b>Location:</b> Grenoble, France<br /></td>
-	<td></td></tr>
+	<td><b>IRC Nick:</b> bad2073</td></tr>
     <tr><td>
     <b>Email:</b> titan.costa -at- wanadoo dot fr</td>
-    <td><b>IRC Nick:</b> bad2073</td></tr></table>
+    <td></td></tr></table>
 
     <p>
     Christian is an engineer who works on audio validation and emulation
@@ -297,6 +60,39 @@ developers doing it simply because they want to:</p>
     and worked on the revival of that code.  Christian also added 
     Midi and WaveIn support to the winealsa sound driver.  Outside of 
     Wine, Christian enjoys playing guitar, snowboarding, and games.
+    </p></blockquote>
+
+<h3>Ulrich Czekalla</h3><blockquote>
+    <table border="0"><tr>
+    <td width="330"><b>Location:</b> Toronto, Canada<br /></td>
+	<td><b>IRC Nick:</b> ulrich</td></tr>
+    <tr><td>
+     <b>Email:</b> ulrich -at- codeweavers dot com</td>
+    <td></td></tr></table>
+
+    <p>
+     Ulrich has been a paid developer on Wine for many years.  He
+     began working for CodeWeavers in 2000 but previous to that had
+     experience working for Corel.  While there, he ported
+     the WordPerfect Office Suite and Corel Draw to Linux.  He's worked
+     on numerous areas of Wine including the loader, the resource 
+     compiler, common controls, clipping issues, the security API,
+     and a rewrite of the clipboard just to name a few.  When Ulrich
+     isn't working on Wine he enjoys taking courses at the University
+     of Toronto and relaxing with his wife.
+    </p></blockquote>
+
+<h3>Huw Davies</h3><blockquote>
+    <table border="0"><tr>
+    <td width="330"><b>Location:</b> Oxford, England<br /></td>
+	<td><b>IRC Nick:</b> huw</td></tr>
+    <tr><td>
+    <b>Email:</b> h.davies1 -at- physics dot ox dot ac dot uk</td>
+    <td></td></tr></table>
+
+    <p>
+    Huw is the resident font guru.  In the past he's also done
+    extensive work on Wine's Postscript driver and printing.
     </p></blockquote>
 
 <h3>Jason Edmeades</h3><blockquote>
@@ -351,6 +147,23 @@ developers doing it simply because they want to:</p>
     additions to Wine's shell32 DLL.  In the past he's also
     contributed to Wine's Winefile application and various user interface
     things such as common controls.
+    </p></blockquote>
+
+<h3>Francois Gouget</h3><blockquote>
+    <table border="0"><tr>
+    <td width="330"><b>Location:</b> France<br /></td>
+	<td><b>IRC Nick:</b> fgouget</td></tr>
+    <tr><td>
+    <b>Email:</b> fgouget -at- free dot fr </td>
+    <td><b>Interview:</b> <a href="http://www.winehq.org/?interview=11">#11</a></td></tr></table>
+ 
+    <p>    
+    Francois recently moved back to France after spending five
+    years in California.  He attended college at Ecole Centrale
+    de Lyon studying engineering sciences.  He's been involved
+    with Wine since 1998 and responsible for making Winelib
+    more usable.  Part of that means developing the winemaker
+    tool.       
     </p></blockquote>
 
 <h3>Jon Griffiths</h3><blockquote>
@@ -414,6 +227,42 @@ developers doing it simply because they want to:</p>
     Wine architecture by separating DOS support from the Win32 API.
     </p></blockquote>
     
+<h3>Alexandre Julliard</h3><blockquote>
+    <table border="0"><tr>
+    <td width="330"><b>Location:</b> Santa Rosa, California<br /></td>
+	<td><b>IRC Nick:</b> julliard</td></tr>
+    <tr><td><b>Email:</b> julliard -at- winehq dot org</td>
+    <td></td></tr></table>
+    
+    <p>
+    The enigmatic Alexandre Julliard, who has been in the project 
+    since its beginning in early 1993, has worked on and maintained 
+    the official Wine source ever since Bob Amstadt turned the helm 
+    over to him quite early. Although he enforces strict control over 
+    the official source tree (thus ensuring that every change must 
+    pass his scrutiny), nobody questions his abilities as the project 
+    leader, his commitment to quality, and his dedication to the Wine 
+    project; many 'disadvantageous' patches have been avoided by his 
+    strict quality control. 
+    </p></blockquote>
+
+<h3>Ove K&#229;ven</h3><blockquote>
+    <table border="0"><tr>
+    <td width="330"><b>Location:</b> Oslo, Norway<br /></td>
+	<td><b>IRC Nick:</b> villager</td></tr>
+    <tr><td>
+    <b>Email:</b> ovek -at- arcticnet dot no</td>
+    <td><b>Interview:</b> <a href="http://www.winehq.org/?interview=1">#1</a></td></tr></table>
+    <p>    
+    Ove's been involved with Wine since 1997.  Lately much of his
+    work has been COM related, but in the past Ove has worked on DOS
+    support and graphics. And if you've been reading WWN for a while
+    you might remember there used to be a CVS summary section - Ove
+    wrote all those. Nowadays he works for TransGaming while continuing
+    to reside in Norway. 
+    </p></blockquote>
+
+
 <h3>Kevin Koltzau</h3><blockquote>
     <table border="0"><tr>
     <td width="330"><b>Location:</b> New York City, New York<br /></td>
@@ -446,6 +295,28 @@ developers doing it simply because they want to:</p>
     improve the networking support in Wine, and wondering
     why he can't get a date.
     </p></blockquote>
+
+<h3>Mike McCormack</h3><blockquote>
+    <table border="0"><tr>
+    <td width="330"><b>Location:</b> Seoul, South Korea<br /></td>
+	<td><b>IRC Nick:</b> mike_m</td></tr>
+    <tr><td>
+    <b>Email:</b> mike -at- codeweavers dot com</td>
+    <td><b>Interview:</b> <a href="http://www.winehq.org/?interview=7">#7</a></td></tr></table>
+    
+    <p>
+    How many Australian Wine developers live in South Korea and work 
+    for an American company? If you said just Mike McCormack then you'd 
+    be correct. Mike studied Electrical Engineering and Computer Science
+    at the University of Sydney but now splits his time betwee Seoul and
+    Minneapolis. Full time he's a Wine developer working for CodeWeavers. 
+    The arrangement works well for him - he gets to see his girlfriend 
+    regularly and has time to concentrate on work too. 
+    </p><p>
+    Mike has worked on many different areas of Wine including adding
+    support for named pipes.
+    </p></blockquote>
+
 
 
 <h3>Bill Medland</h3><blockquote>
@@ -526,6 +397,21 @@ developers doing it simply because they want to:</p>
     some configuration issues by improving winecfg and wineinstall.
     When he's not performing tech support on #winehq, Chris enjoys 
     motorcycling and weightlifting. 
+    </p></blockquote>
+
+<h3>Jeremy Newman</h3><blockquote>
+    <table border="0"><tr>
+    <td width="330"><b>Location:</b> Minneapolis, Minnesota<br /></td>
+	<td><b>IRC Nick:</b> laxdragon</td></tr>
+    <tr><td>
+    <b>Email:</b> jnewman -at- codeweavers dot com</td>
+    <td></td></tr></table>
+    
+    <p>
+    A geek who specializes in PHP and Perl web based development, Jeremy
+    co-wrote and designed the Wine Application database, redesigned the
+    WineHQ website, and wrote the XML parser for Wine Weekly News.  Jeremy
+    has a knack for transforming a vague idea on a wishlist into reality.
     </p></blockquote>
 
 <h3>Alex Pasadyn</h3><blockquote>
@@ -616,6 +502,49 @@ developers doing it simply because they want to:</p>
     climbing.
     </p></blockquote>
 
+<h3>Aric Stewart</h3><blockquote>
+    <table border="0"><tr>
+    <td width="330"><b>Location:</b> Minneapolis, Minnesota<br /></td>
+	<td><b>IRC Nick:</b> aricstewart</td></tr>
+    <tr><td>
+    <b>Email:</b> aric -at- codeweavers dot com</td>
+    <td></td></tr></table>
+    
+    <p>
+    Aric Stewart lives in a small, very yellow 1 1/2 story house in snowy
+    Minneapolis, Minnesota. Jeremy White likes to parade him around as the
+    only Wine hacker that CodeWeavers has been able to grow from scratch,
+    which is true. Working for CodeWeavers since his graduation from college
+    he started working on Wine because of his employment at CodeWeavers. He
+    has done alot of random bug fixes and work on windows tablets for
+    CodeWeavers, but really found his own area when he tried to use some of
+    his Japanese programs on Wine and worked hard to get XIM and IMM32 to
+    play nice together. When he is not hacking on Wine or answering customer
+    support tickets, Aric studies martial arts, tries to keep his Japanese
+    language skills from fading, watches Japanese animation, runs role
+    playing games and LARPs, makes jewelry, hangs with friends or is out
+    wandering around one of the lakes in town.
+    </p></blockquote>  
+
+<h3>Dmitry Timoshkov</h3><blockquote><!-- TODO -->
+    <table border="0"><tr>
+    <td width="330"><b>Location:</b> Irkutsk, Russia<br /></td>
+	<td> </td></tr>
+    <tr><td>
+    <b>Email:</b> dmitry -at- baikal dot ru</td>
+    <td></td></tr></table>
+    <p>
+	Dmitry first got involved with Wine in 1999 when he
+	tried to get PageMaker 6.5 running.  Nowadays,
+	he specializes in internationalization.
+	Dmitry helped introduce unicode support in Wine
+	and converted all the USER controls to unicode.  He
+	also rewrote all the file API's to use unicode internally.
+	Dmitry did a lot of work on the X11 driver so it could
+	support keyboard input from various locales as well as
+	making dead keys work.  
+    </p></blockquote>
+
 <h3>Greg Turner</h3><blockquote>
     <table border="0"><tr>
     <td width="330"><b>Location:</b> Chicago, Illinois<br /></td>
@@ -670,11 +599,30 @@ developers doing it simply because they want to:</p>
     repeatedly he has no talent for writing code he's decided it's
     best to stick with documentation.
     </p></blockquote>
+
+<h3>Jeremy White</h3><blockquote>
+    <table border="0"><tr>
+    <td width="330"><b>Location:</b> Minneapolis, Minnesota<br /></td>
+	<td><b>IRC Nick:</b> jwhite</td></tr>
+    <tr><td>
+    <b>Email:</b> jwhite -at- codeweavers dot com</td>
+    <td><b>Interview:</b> <a href="http://www.winehq.org/?interview=4">#4</a></td></tr></table>
     
-<h3>Tom Wickline</h3><blockquote><!-- TODO -->
+    <p>
+    In 1996 Jeremy founded CodeWeavers , the creators of the popular 
+    CrossOver Office and CrossOver Plugin products. He lives in St. 
+    Paul, Minnesota with his wife and two children. Before starting 
+    CodeWeavers, Jeremy founded Holten, White and Associates, a 
+    computer consulting firm.  He's the first to point out that
+    Alexandre won't accept any of his patches.  Jeremy has been
+    a driving force behind developing and promoting Wine.
+    </p></blockquote>
+
+    
+<h3>Tom Wickline</h3><blockquote>
     <table border="0"><tr>
     <td width="330"><b>Location:</b> North Carolina<br /></td>
-	<td> </td></tr>
+	<td><b>IRC Nick:</b> Tom_W</td></tr>
     <tr><td>
     <b>Email:</b> twickline -at- skybest dot com</td>
     <td></td></tr></table>
@@ -690,4 +638,3 @@ developers doing it simply because they want to:</p>
 <p>[ <a href="javascript:history.back();">Back</a> ]</p>
 
 <p>&nbsp;</p>
-
