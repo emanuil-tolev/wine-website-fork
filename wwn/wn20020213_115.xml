@@ -122,10 +122,10 @@ emulator). </p>
 week of intense debate over licensing.  Alexandre continues to integrate patches
 sifted from the large CodeWeavers patch Jeremy White posted a few weeks ago.  
 There were a ton of changes made to the Listview code that were done over a
-series of 4 commits.  Marcus Meissner, in a quest to get DreamWeaver 4 to install, 
+series of 4 commits.  Marcus Meissner, in a quest to get Dreamweaver 4 to install, 
 submitted a huge patch to implement local server COM and a typelib based marshaller.  
-This is a duplicate of a lot of work done by Transgaming, but that code is never
-made it into the Wine CVS (in part because it's in Transgaming's AFPL'ed WineX
+This is a duplicate of a lot of work done by TransGaming, but that code is never
+made it into the Wine CVS (in part because it's in TransGaming's AFPL'ed WineX
 tree and partly because Ove K&aring;ven thought it was rather ugly.)</p>
 
 <p>Seen at the bottom of Daniel Schwarz's signature was a reference to a Wine
@@ -311,7 +311,7 @@ CodeWeavers, so a lot of code would ultimately make it into the "xGPL"
 tree. One can only
 imagine what "recent events" prompted this from Jeremy.  As James
 Juran mentioned, <quote who="James Juran">
- I think Codeweavers' actions over the past two years or so more than
+ I think CodeWeavers' actions over the past two years or so more than
  sufficiently establishes the fact that they deserve to be given the
  benefit of the doubt in regards to statements like these.</quote></p>
 
@@ -339,11 +339,11 @@ framework should not be under the X11 license.</p>
 <p>And in regards to forking the code, Steve Langasek felt, 
 <quote who="Steve Langasek">
 	One thing to bear in mind is that others already ARE forking the Wine 
-	code.  Given the nature of their work, Codeweavers must maintain a 
+	code.  Given the nature of their work, CodeWeavers must maintain a 
 	separate CVS tree locally; although we're fortunate in that their fork is 
 	open to backporting to the official tree.  Other companies are forking 
 	with no intention to contribute back (see Lindows.com); still others 
-	(Transgaming) have made reintegration of their work contingent on turning 
+	(TransGaming) have made reintegration of their work contingent on turning 
 	an profit.[1]  Jeremy is at least being courteous enough to let us know 
 	where /his/ company is going with the Wine code, and is inviting the rest 
 	of the Wine community to come along with him.
@@ -850,10 +850,10 @@ put it, <quote who="Alexandre Julliard">
 
 <u>Company Presentations</u><br />
 <ul>
- Transgaming, Success To Date [Transgaming/State]<br />
+ TransGaming, Success To Date [TransGaming/State]<br />
  ReactOS - Where it's at, where it's going [ReactOS/Filby]<br />
  Corel, A Look Back [Xandros/Tranter]<br />
- Crossover Strategy [Codeweavers/JW]<br />
+ CrossOver Strategy [CodeWeavers/JW]<br />
  Macadamian - Making It As A Software House [Macadamian/???]
 </ul></p><p>
 
@@ -867,7 +867,7 @@ put it, <quote who="Alexandre Julliard">
 <u>Technical</u><br />
 <ul>
  Development Model [CW/AJ]<br />
- NORM - The secret weapon [Codeweavers/???]<br />
+ NORM - The secret weapon [CodeWeavers/???]<br />
  Making Fonts Not Look Like Crap [CW/Timoshkov/Davies]<br />
  Multimedia And WINE [eric.pouech@wanadoo.fr]<br />
  Regression Testing [???]<br />
@@ -875,14 +875,14 @@ put it, <quote who="Alexandre Julliard">
  Maximizing performance of WINE [???]<br />
  Package streamlining of WINE [???]<br />
  WinNT APIs (Odin, ReactOS, winNT wine, WINE) [???]<br />
- DirectX [Transgaming/Kaaven]<br />
+ DirectX [TransGaming/Kaaven]<br />
  WINE as a porting tool [Macadamian/Jacques]<br />
  Native user.dll [Dr. Ulrich Weigand]<br />
  API Standardization [???]
 </ul>
 </p></quote>
 <p>Jeremy White pointed out that he hadn't agreed to any of the
-topics with his name or Codeweavers.</p>
+topics with his name or CodeWeavers.</p>
 
 </section>
 

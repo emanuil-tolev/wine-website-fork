@@ -60,7 +60,7 @@ and type 'wine foo.exe' and it just works.
  version always be better? </p></question>
 
 <answer><p><i>Marcus:</i> 
-Well, a lot of work Codeweavers does for the emulator itself is happening
+Well, a lot of work CodeWeavers does for the emulator itself is happening
 in the free WINE tree or getting merged back to it sooner or later.
 </p><p>
 As for installation and integration, they will stay better, since this
@@ -206,7 +206,7 @@ The status of the implementation in WINE:
 
 <li> DCOM. We currently support the marshalling based on OLE automation data,
   but no the custom generated. There is work done by Greg Turner and 
-  Transgaming currently.</li></ul>
+  TransGaming currently.</li></ul>
 </p><p>
 As for implementing and problems with it, it is a rather large piece
 of Windows, which is, well, not really documented and rather complicated.</p></answer>
@@ -231,7 +231,7 @@ or two hints when I did arrive at problems.
 I did enhance the typelib based marhsaller over the time to support more
 visual basic programs coming my way.
 </p><p>
-Ove of Transgaming did start the development of the generic RPC framework,
+Ove of TransGaming did start the development of the generic RPC framework,
 and contributed this to Rewind and to WINE.
 </p><p>
 So ours is a bit better currently, but the enhanced framework will make

@@ -176,12 +176,12 @@ Direct3D support has been done by TransGaming and is available
 in their AFPL-licensed tree.  Jason wrote:</p>
 <quote who="Jason Edmeades"><p>
 What is the current state of affairs regarding DirectX (8) support in wine.
-With Transgaming producing a version which appears to work well from what I
+With TransGaming producing a version which appears to work well from what I
 read on the Internet, what is happening about getting support for it in the
-wine tree - Is the intention to wait and see what Transgaming do?
+wine tree - Is the intention to wait and see what TransGaming do?
 </p><p>
 The reason I ask - Not to start a political debate with pros and cons of
-Transgaming, but more because as a learning exercise with regard to 3d
+TransGaming, but more because as a learning exercise with regard to 3d
 graphics, I started fiddling with Direct X 8 support and have some sample
 code which runs some simple Direct3D samples and most of a sequence of
 tutorials. (9 out of 11 work reasonably well).
@@ -189,7 +189,7 @@ tutorials. (9 out of 11 work reasonably well).
 I dont have a problem with the code remaining personal to me and probably
 archived, as I have learnt a lot by doing it (which was my original aim),
 but if it is agreed that adding directx 8 support completely different to
-the Transgaming code is ok, then I may try to submit some patches.
+the TransGaming code is ok, then I may try to submit some patches.
 </p><p>
 Note the current code is nowhere near ideal, so dont get your hopes up.
 Specifically, it exports X11DRV_get_client_window from X11DRV as a means of
@@ -213,7 +213,7 @@ Anyway, thoughts please?
 
 <p>Alexandre was all for it, 
 <quote who="Alexandre Julliard">
- We are not waiting for Transgaming code, we need to develop our own,
+ We are not waiting for TransGaming code, we need to develop our own,
  so by all means submit anything you like. Even if it's to hackish to
  be included in the tree right now, it can serve as a starting point
  for others.</quote></p>
@@ -323,7 +323,7 @@ and exactly what would currently build.  Patrik replied,
 >
 <topic>Fixes</topic>
 
-<p>Carl Sopchak reported a problem with Quickbooks:</p>
+<p>Carl Sopchak reported a problem with QuickBooks:</p>
 <quote who="Carl Sopchak"><p>
 
  It's been a few weeks since I've run QuickBooks (8/19 was my last transaction 

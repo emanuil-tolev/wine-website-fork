@@ -119,7 +119,7 @@ emulator). </p>
 
 
 <section
-  title="News: Crossover Review, Lindows.com Ruling"
+  title="News: CrossOver Review, Lindows.com Ruling"
   subject="News"
   topic1="News"
   archive="http://www.mozillanews.org/index.php3?article=f9ff6612267ed09a46649ba2df4d673f"
@@ -129,7 +129,7 @@ emulator). </p>
 >
 
 <p />There's a <a href="http://www.mozillanews.org/index.php3?article=f9ff6612267ed09a46649ba2df4d673f">
-great review</a> of CodeWeavers' Crossover Plugin over at MozillaNews.org.
+great review</a> of CodeWeavers' CrossOver Plugin over at MozillaNews.org.
 There's a bunch of nice screenshots.
 
 
@@ -398,16 +398,16 @@ chosen to develop a native client of groove's software. Macadamian worked on
 Corel WordPerfect and Draw for Linux. They also developed Corel Draw
 Essentials, the first Windows XP application. 
 <p />
-The next presentation was Gavriel State of Transgaming's presentation on
+The next presentation was Gavriel State of TransGaming's presentation on
 licensing. He began with a little background on who he is. Gavriel worked at
 Corel and ported Corel Draw to the Mac using a portability layer like wine,
 for the Mac. Corel then decided to move to linux, and called on his team and
 their porting experience. Working with Macadamian and CodeWeavers, Corel was
 able to port their entire office suite to linux in 18 months. In mid 2000,
-Gavriel left Corel to start Transgaming. He decided that the best way to get
+Gavriel left Corel to start TransGaming. He decided that the best way to get
 linux onto the desktop was to support games on linux. He was involved in
 starting Xandros, the Corel Linux spin off, but when it was complete he
-focused again on Transgaming. 
+focused again on TransGaming. 
 <p />
 To begin the licensing discussion, Gavriel asked the questions "why do
 people work on wine? why does transgaming work on wine?". Basically
@@ -421,25 +421,25 @@ applications. Also, he asked everyone to raise their hands if they make
 money off of wine and only about half of the attendees raised their hands.
 He said that the best way to improve wine would be if everyone could afford
 to spend as much time on it as possible. Gavriel went on to say that
-Transgaming cannot legally release the code that they've written do properly
+TransGaming cannot legally release the code that they've written do properly
 support copy protection in games due to the DMCA. 
 <p />
-As this point, Gavriel announced that Transgaming would maintain an X11
-branch of wine. Transgaming will continue to contribute their non strategic
+As this point, Gavriel announced that TransGaming would maintain an X11
+branch of wine. TransGaming will continue to contribute their non strategic
 code under the X11 license. He said that he hopes that many developers will
 submit their patches under dual licenses. He asked that winehq continue to
 be the repository for the X11 cvs tree. 
 <p />
 He went on to discuss the value of a patch. He said that the LGPL license
 assumes that all patches are created equal, and that he did not necessarily
-believe that this was true. Going on, he said that Transgaming would be
+believe that this was true. Going on, he said that TransGaming would be
 willing to trade some of the code that they've written, and release it under
 the X11 license in exchange for code that they need written, such as a DIB
 engine. He even offered a cash prize, of $2000 USD for a wineserver kernel
 module. There was some discussion about the points he had made, but no
 resolutions. 
 <p />
-Jeremy White was the next speaker, and he told the story of Codeweavers. He
+Jeremy White was the next speaker, and he told the story of CodeWeavers. He
 said that one day while debating the greatest video game ever, he started
 looking for an Atari 2600 emulator to show Combat to some other developers.
 In doing so, he came across wine, and immediately was fascinated. Later, he
@@ -448,8 +448,8 @@ love, and decided to start a company to work on wine. The goal of
 CodeWeavers is to remove the barrier to allow people to leverage wine. He
 feels that Microsoft has created a great barrier for anyone trying to leave
 the path they have set forth. CodeWeavers has worked on a number of
-consulting projects and is now selling a product successfully, Crossover for
-linux. He said that his ideal goal would be for someone to be able to go to
+consulting projects and is now selling a product successfully, CrossOver for
+Linux. He said that his ideal goal would be for someone to be able to go to
 a store, buy a piece of windows software, and know that they could be
 confident that it will run in linux. 
 <p />
@@ -678,7 +678,7 @@ file would create the danger of having broken packages floating around. Dan
 Kegel asked about an rpm for console mode only wine and Marcus said this
 would not be difficult to make. Gavriel asked about what the FSB says about
 third party wine installations, to which Marcus said that third party
-software such as Transgaming's must go in /opt. 
+software such as TransGaming's must go in /opt. 
 <p />
 Wine/Windows bootup handling and documentation was the next presentation,
 given by Andreas Mohr. Andreas began by thanking Lindows.com for the
@@ -858,7 +858,7 @@ developers.
 <p />
 One final thought. I think the only tenable way to implement a Top 10 type 
 approach is to get widespread support. Lindows.com alone is too small to do 
-this in a timely fashion. So is Codeweavers, transgaming, etc. The only 
+this in a timely fashion. So is CodeWeavers, TransGaming, etc. The only 
 approach with any chance of success is one which leverages the entire 
 community. 
 <p />

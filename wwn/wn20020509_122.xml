@@ -108,7 +108,7 @@ emulator).
 
 
 <section
-  title="News: Xandros Beta, Codeweavers Wine Preview 6"
+  title="News: Xandros Beta, CodeWeavers Wine Preview 6"
   subject="News"
   archive="http://www.linuxlookup.com/html/reviews/software/transgamingwinex.html"
   posts="3"
@@ -146,10 +146,10 @@ describe what they're working on:
 <p />Xandros plans on releasing their software within the coming months, so
 stay tuned.
 
-<p />One thing I definitely missed last month was Codeweavers 
+<p />One thing I definitely missed last month was CodeWeavers 
 <a href="http://www.codeweavers.com/technology/wine/download.php">Wine Preview
 6</a>.  Dated from April 11th, it came out shortly after the announcement of
-Codeweavers Office.  Codeweavers wine is known for it's ease of installation,
+CodeWeavers Office.  CodeWeavers wine is known for it's ease of installation,
 integration with Gnome and KDE, and having some of the fixes (or, sometimes,
 ugly hacks that work) that haven't made it into the official Wine CVS.  Their
 releases are somewhat infrequent with the last being five months ago.  However,
@@ -162,7 +162,7 @@ getting one of the
 you might want to try out their RPM.  It's free, so if you break it you can 
 keep all the pieces.  
 
-<p />Interesting trivia #1 - Codeweavers Wine is the most downloaded piece of
+<p />Interesting trivia #1 - CodeWeavers Wine is the most downloaded piece of
 software by members of Mandrakesoft's Mandrake Club.  
 
 <p />
@@ -238,7 +238,7 @@ So, finally, I decided to solicite Alexandre...
  (I'm just assuming there are still some left ;-)
 </quote>
 
-<p />Interesting trivia #2 - Hidenori is the first non-Codeweavers 
+<p />Interesting trivia #2 - Hidenori is the first non-CodeWeavers 
 person to expressly 
 <a href="http://www.ping.uio.no/~ovehk/rewind/contrib-list.cgi">not allow</a> 
 his code into the X11 tree.
@@ -620,7 +620,7 @@ concerning InstallShield v6 support.  Ove K&#229;ven replied:
  Wine tree without, say, half a man-year of work. There's an ugly hack (an
  one-liner) to make it work (in conjunction with a stdole32.tlb file from
  real Windows), but since Alexandre never yet applied this hack to the
- official Wine (though it might be in CodeWeavers Crossover), I presume he
+ official Wine (though it might be in CodeWeavers CrossOver), I presume he
  never will before there's a "real" solution (which will take man-months of
  work, and writing an IDL compiler to let us generate our own .tlb file
  instead of using the native one, maybe another month or two).
@@ -752,16 +752,16 @@ have a detailed proposal for the Wine LGPL-only contributors shortly.
 
 
 <section
-  title="Crossover Office under FreeBSD"
+  title="CrossOver Office under FreeBSD"
   subject="CrossOver Office on FreeBSD"
   archive="http://crossover.codeweavers.com/pipermail/office-support/2002-May/002743.html"
   posts="2"
   startdate="05/01/2002"
   enddate="05/08/2002"
 >
-<topic>Codeweavers</topic>
+<topic>CodeWeavers</topic>
 <p />
-Karel Bosschaart mentioned that he got Crossover Office to work
+Karel Bosschaart mentioned that he got CrossOver Office to work
 with FreeBSD:
 <quote who="Karel Bosschaart"><p />
 FWIW, I installed the linux version under emulation in FreeBSD and made

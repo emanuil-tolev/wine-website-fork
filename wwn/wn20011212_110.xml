@@ -98,7 +98,7 @@ He posted the following message to wine-devel:</p>
   Comments welcome.
  </p><p>
  I have a few questions for Wine developers, especially
- the good folks at Codeweavers and Transgaming:
+ the good folks at CodeWeavers and TransGaming:
  </p><p><ol>
  <li> How much would it cost to achieve full support for
  Office 2000 in Wine?</li>
@@ -248,7 +248,7 @@ submitted a new patch to audio.c and asked,
    sound, though part of that might be cheap sound hardware (onboard VIA 
    82C686A - which never gives particularly good sound).</quote>  Michael
  Stefaniuc mentioned, <quote who="Michael Stefaniuc">
-   Tested it with Quicktime and sound works now flawlessly. Good work.</quote>
+   Tested it with QuickTime and sound works now flawlessly. Good work.</quote>
  And Gerard Patel's test suite seemed happy too, <quote who="Gerard Patel">
    I have only one serious issue, and it's fixed by your patch.</quote>
 </p>
@@ -377,7 +377,7 @@ functions, Guy's take on it was, <quote who="Guy Albertelli">
   startdate="12/09/2001"
   enddate="12/10/2001"
 >
-<p>Transgaming has done a lot of work on getting InstallShield 6
+<p>TransGaming has done a lot of work on getting InstallShield 6
 installers to work under Wine and  Ove K&aring;ven's work can be
 found in the WineX code on SourceForge.  So James Brown was 
 wondering, 
@@ -391,9 +391,9 @@ Alexandre responded, <quote who="Alexandre Julliard">
  always be better than not supporting InstallShield at all, as long as
  it doesn't break other things. However I cannot apply anything that
  hasn't been submitted to me under the Wine license, so for more
- information you'll have to ask Transgaming.</quote></p>  
+ information you'll have to ask TransGaming.</quote></p>  
 <p> 
-Gavriel State from Transgaming also replied to James to say,
+Gavriel State from TransGaming also replied to James to say,
  <quote who="Gavriel State">
  There are several factors to that equation, and I'm afraid we don't have
  a firm ETA yet.</quote>  Which prompted Alexandre to write:</p>

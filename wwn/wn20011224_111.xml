@@ -92,7 +92,7 @@ Lindows</a> than just hype?  They've updated their website, though it still lack
 urge you to read on.  This won't be too painful.  I promise.</p>
 
 <p>Last week's episode left off with Gerard Patel mentioning that he
-didn't have an ETA for when some Transgaming patches might filter into
+didn't have an ETA for when some TransGaming patches might filter into
 the main Wine CVS.  Alexandre responded with, 
  <quote who="Alexandre Julliard">
  Well, this worries me. It sounds like you are planning to do the same thing 
@@ -148,16 +148,16 @@ Back then the concensus was to use an existing license "written by lawyers inste
  co-opt the work of the Wine authors and create a proprietary product that gives
  nothing back to the community.  Thus far, all companies that have worked with
  Wine have been very benevolent and contributed immensely to the project.  Corel,
- Codeweavers, and Transgaming must all be congratulated for the contributions
+ CodeWeavers, and TransGaming must all be congratulated for the contributions
  they have made.  The LGPL license would ensure that continues, however there
  are concerns it is a deterrent to companies thinking of jumping into developing
  with Wine.  As Patrik Stridvall put it, <quote who="Patrik Stridvall">
  The current license is something that is easy to understand and
- are unlikely to scare companies like Transgaming away, but can
+ are unlikely to scare companies like TransGaming away, but can
  you really say the say same about LGPL?</quote></p>
 
 <p>So let's dig a little deeper into what's going on and the various concerns
-people have.  Transgaming's use of the AFPL license prompted the discussion at
+people have.  TransGaming's use of the AFPL license prompted the discussion at
 hand.  The AFPL allows you to view the source code however it cannot be merged
 back into the Wine CVS tree.  The next post after Alexandre's was from from 
 Gavriel State.
@@ -217,7 +217,7 @@ Gav wrote:</p>
  </p></quote>
  <p>
 The discussion is very far ranging, but while we're on the topic of
-Transgaming's position it is probably helpful to include a later message
+TransGaming's position it is probably helpful to include a later message
 by Gavriel:</p>
 <quote who="Gavriel State"><p>
 
@@ -383,7 +383,7 @@ be a *good* thing for the project, not a bad thing.
 <p>Well, unfortunately it's not quite as simple.  As Alexandre explains it,
 <quote who="Alexandre Julliard">
  But the thing
- that the Transgaming stuff should make us realize is that if that work
+ that the TransGaming stuff should make us realize is that if that work
  is released under a free but non open-source license, it competes with
  Wine for user and developer mind share, and it hurts Wine no matter
  how much we try to ignore it. That is a new situation that I believe

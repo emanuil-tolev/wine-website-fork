@@ -22,12 +22,12 @@ parts of Manhattan that day.  My heart goes out to anyone affected
 by this disaster.</p>
 
 <p>Anyway... there's been some interesting Wine press.  First off, we have
-Codeweavers announcing their CrossOver Plugin.  This is a Linux
+CodeWeavers announcing their CrossOver Plugin.  This is a Linux
 Netscape browser plugin that allows you to run plugins meant
 for Windows.  For example, you can install Microsoft's Word
 Viewer program to read those pesky office files.  Likewise for
-Excel.  This also mean Quicktime and Shockwave files can be viewed out of the
-browser.  This is excellent work and the Codeweavers team should
+Excel.  This also mean QuickTime and Shockwave files can be viewed out of the
+browser.  This is excellent work and the CodeWeavers team should
 be commended for the code that has been contributed back into
 Wine.  Check out the press release here:<br /><a 
 href="http://www.codeweavers.com/about/press_releases/?id=20010827.xml">
@@ -313,7 +313,7 @@ potential Wine developpers that just are not motivated by the standard
 <p>Medium (I expect these would take longer or be a bit harder)</p>
 
 <ul>
- <li> Quickbooks Pro Timer does not accept date (GetCalendarInfoA error)<br />
+ <li> QuickBooks Pro Timer does not accept date (GetCalendarInfoA error)<br />
    #276: <a href="http://bugs.winehq.com/show_bug.cgi??id=276">
    http://bugs.winehq.com/show_bug.cgi?id=276</a><br />
    GetCalendarInfoA/W are not implemented yet. They involve

@@ -208,27 +208,27 @@ can't change a 5000 desktop setup overnight without a lot of risk.</p>
 	license from X11 to the more restrictive LGPL, in order to let
  	people continue to maintain an X11 licensed Wine version. Its license 
 	is X11, it can be downloaded for free.</dd>
-  <dt>  <a href="http://www.transgaming.com">Transgaming's WineX</a> </dt>
+  <dt>  <a href="http://www.transgaming.com">TransGaming's WineX</a> </dt>
 	<dd>This is TransGaming's Wine version specially suited for games. 
 	It includes Direct3D support (thus its DirectX support is much more
  	complete than Wine's) and copyprotection support. Its license is AFPL, 
 	the source distribution can be downloaded for free, but the binary pack
 	ages that include copy  protection support and good support are only for 
 	subscribed customers ($5/month).</dd>
-  <dt>  <a href="http://wine.codeweavers.com">Codeweavers' Wine preview</a> </dt>
+  <dt>  <a href="http://wine.codeweavers.com">CodeWeavers' Wine preview</a> </dt>
 	<dd>This is a specially packaged and more stable/older version of Wine which 
 	has a nice setup for easy installation. License X11, free download.</dd>
-  <dt>  <a href="http://www.codeweavers.com/products/crossover/">Codeweavers' CrossOver Plugin</a> </dt>
+  <dt>  <a href="http://www.codeweavers.com/products/crossover/">CodeWeavers' CrossOver Plugin</a> </dt>
 	<dd>Special Wine installation to be used for running win32 browser 
-	plugins such as e.g. Quicktime in Linux browsers. Costs $24.95. 
+	plugins such as e.g. QuickTime in Linux browsers. Costs $24.95. 
 	Well worth it (very stable and useful packaging).</dd>
-  <dt>  <a href="http://www.codeweavers.com/products/office/">Codeweavers' CrossOver Office</a> </dt>
+  <dt>  <a href="http://www.codeweavers.com/products/office/">CodeWeavers' CrossOver Office</a> </dt>
 	<dd>Wine version with special packaging to make sure almost all 
 	important Office type programs work pretty well. Costs $54.95. 
 	Seems to be well worth it so far according to some comments. 
 	(note: you're supporting a company actively contributing to wine 
 	if you decide to buy either Plugin or Office.</dd>
-  <dt>  <a href="http://www.codeweavers.com/products/cxofficeserver/">Codeweavers' CrossOver Office Server Edition</a> </dt>
+  <dt>  <a href="http://www.codeweavers.com/products/cxofficeserver/">CodeWeavers' CrossOver Office Server Edition</a> </dt>
 	<dd>Allows you to run your favorite Windows productivity applications in 
         a distributed thin-client environment under Linux. Server Edition is 
         also a great addition to Solaris environments, since there built-in 
@@ -286,7 +286,7 @@ Right now we are working on releasing Wine 0.9 during 2003 </p>
 <p>Wine is available thanks to the work of many people. 
 Please see the <a href="http://source.winehq.org/source/AUTHORS">AUTHORS</a> file
 in the distribution for the complete list. Some companies that are or have been 
-involved with Wine development are Codeweavers, TransGaming, Corel, and Macadamian.</p>  
+involved with Wine development are CodeWeavers, TransGaming, Corel, and Macadamian.</p>  
 
 <h3><a name="Who_are_the_folks_and_organizations_who"></a> Who are the folks and organizations who have contributed money or equipment to the Wine project?</h3>
 
@@ -334,7 +334,7 @@ they will <b>not</b> submit their OpenGL wrapper based Direct3D support. </p>
 <h3><a name="Under_what_hardware_platforms_and_Wine"></a>Under what hardware platform(s) and operating system(s) will Wine(Lib) run?  </h3>
 <p>Wine is being developed specifically to run on the Intel x86 class
 of CPUs under certain UNIXes that run on the x86 platform. </p>
-<p>NetBSD, OpenBSD, Unixware, and SCO OpenServer 5 worked at one time, but
+<p>NetBSD, OpenBSD, UnixWare, and SCO OpenServer 5 worked at one time, but
 Wine now requires kernel-level threads  
 which are not currently available (or understood by the Wine team) in
 those platforms.</p>
