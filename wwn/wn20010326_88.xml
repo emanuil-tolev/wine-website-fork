@@ -65,7 +65,7 @@ to *Linux* on S/390 should really be possible, and some time ago I
 already did a proof-of-concept implementation.
 </p><p>
 Of course, a port of Wine to any non-Intel hardware means just a port
-of the Wine *library* at the moment, as Wine does not contain a Intel
+of the Wine *library* at the moment, as Wine does not contain an Intel
 processor emulator and cannot run Windows/Intel binaries on non-Intel
 hardware.</p>
 </quote><p>
@@ -160,7 +160,7 @@ accordingly.
 	posts="1"
 	startdate="03/26/2001"
 >
-<topic>Transgaming</topic>
+<topic>TransGaming</topic>
 <quote who="Gavriel State"><p>
 Just wanted to let everyone know that the TransGaming DirectX development is now
 being hosted at SourceForge.  You can get updates from our live CVS tree, discuss
@@ -178,7 +178,7 @@ up to date.
 </p><p>
 Currently, we're undertaking a rearchitecture of the Direct3D work, along the
 lines of the DDraw HAL work we've been contributing to the WineHQ tree.  Basically,
-we're seperating the glX code into the x11drv for device independance.  We're also
+we're separating the glX code into the x11drv for device independance.  We're also
 redoing the front end interfaces to start supporting D3D APIs both older and newer
 than D3D 7.  
 </p><p>

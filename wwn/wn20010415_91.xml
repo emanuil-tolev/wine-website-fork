@@ -154,7 +154,7 @@ directly with a normal function call.</quote>
 <p>Eric Pouech discovered some problems launching the debugger from a shell 
   script. Namely, 
   <quote who="Eric Pouech">someone (IIRC Gerard) had issues when starting the 
-  debugger when an exception occured. the setup was that the AeDebug registry 
+  debugger when an exception occurred. The setup was that the AeDebug registry 
   key pointed to a shell script, which in turn, launched the real debugger 
   (used to set up different context options, and such)</quote>. 
 </p>

@@ -137,7 +137,7 @@ fly. Just left click on any running program (not application) and in the
 context popup menu, choose the debug channel edition line.
 This will require you to have a running dbghelp DLL, which I might 
 provide RSN. In other words, this patch alone won't allow channel 
-manipilation, this patch and the yet to come dbghelp DLL will do.
+manipulation, this patch and the yet to come dbghelp DLL will do.
 </p><p>
 There's still lot of possible improvement on the UI part for the debug 
 channel editing, so if someone has better ideas for implementing it, 
@@ -175,8 +175,8 @@ that involved using MySQL for part of the logic.  Dimi was
 definitely against using a database, but hatky explained:
 </p><quote who="Ofir Petruska"><p>
 It uses DB only for creating the file as a parser
-becouse it's 3 lines of code 
-instade of 30 line parsing and very very flexable, I
+because it's 3 lines of code 
+instead of 30 line parsing and very very flexible, I
 talked to laxdragon, he 
 has not problem with it, he is still reviewing it...
 </p></quote>
@@ -248,7 +248,7 @@ winetest.rc file.  If the variable WINE_BUILD is set, it is used as the
 first element of the string-table, otherwise an auto-generated string is
 used, for example "20040322.1508-auto".
 </p><p>
-This makes winetest.exe build-time-dependant, so screws up the 
+This makes winetest.exe build-time-dependent, so screws up the 
 check to see if anything's actually changed.
 </p><p>
 Can I set WINE_BUILD to some fixed value?  If so, what's a good one to 
@@ -302,7 +302,7 @@ There's actually a peak of commits at 4am.
 This is of course all UK local time.  Do you mean 4am in one of the
 US-time-zones? (=&gt; ~ 9am-11am or so?).
 </p><p>
-Hmmm, in the past year there've been patches a 7am, 8am, 11am and 13am.  
+Hmmm, in the past year there've been patches at 7am, 8am, 11am and 13am.  
 There haven't been any 9am and 10am, but looking at the data it wouldn't
 be impossible for Alexandre to commit at usual hours of the day or night
 :)
