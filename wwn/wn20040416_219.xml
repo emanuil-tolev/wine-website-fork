@@ -103,7 +103,7 @@ into thinking they are running inside of Windows and not Linux. </quote></p>
 
 </section>
 <section 
-	title="Execshield (con't) (still sucks)" 
+	title="Execshield (con't)" 
 	subject="exec-shield workaround take 2"
 	archive="http://www.winehq.org/hypermail/wine-devel/2004/04/0193.html" 
 	posts="18"
@@ -240,6 +240,7 @@ Changes in version 3:<ul>
 <li> pass the reserved area to wine, so wine knows about it</li>
 <li> unmap the preloader after it is no longer used</li></ul></p>
 </quote>
+<p>So far Alexandre hasn't committed the patch.</p>
 </section>
 <section 
 	title="AbiWord Ported to Winelib" 
