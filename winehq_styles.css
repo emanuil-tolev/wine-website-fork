@@ -7,6 +7,8 @@ BODY                {
                      font-size: 12px;
                     }
 
+img                 { border: 0; }
+
 /* Link Colors */
 A                   { color: #A50D0D; }
 A:visited           { color: #FF0000; }
