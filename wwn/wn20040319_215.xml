@@ -477,7 +477,7 @@ creation:</p>
  Is there a reason rundll32 needs user32 and cannot delayimport it?
 </p></quote>
 
-<p>Ove &#229;ven had a workaround for using the console driver, ttydrv,
+<p>Ove K&#229;ven had a workaround for using the console driver, ttydrv,
 instead of X:</p> 
 <quote who="Ove Kaaven"><p>
 You're not going to gain anything by letting rundll32 not import user32,
