@@ -1,7 +1,5 @@
-<b><a href="?announce=1.94">Wine 20041201</a></b>
+<b><a href="?announce=1">Wine {$snapshot_date}</a></b>
 
 <span class="small">
-  (<a href="http://source.winehq.org/ds20041201.txt">diff:s</a>)  
+  (<a href="http://source.winehq.org/ds{$snapshot_date}.txt">diff:s</a>)  
 </span>
-<br />released: 2004/12/01
-

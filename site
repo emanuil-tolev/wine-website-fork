@@ -40,7 +40,7 @@ switch (true)
   
   // view latest annouce
   case ($_REQUEST['announce']):
-    $text .= view_announce($_REQUEST['announce']);
+    $text .= view_announce();
     break;
 
   // display screen shots
@@ -117,11 +117,11 @@ function home_page ()
 }
 
 // load the annouce file for latest version of wine
-function view_announce ($announce)
+function view_announce ()
 {
     global $file_root, $config, $html;
     
-    $announce = "http://cvs.winehq.org/cvsweb/~checkout~/wine/ANNOUNCE?rev=".$announce;
+    $announce = "http://cvs.winehq.org/cvsweb/~checkout~/wine/ANNOUNCE";
     if ($announce = @join("",file($announce)))
     {
         // display page
