@@ -8,7 +8,7 @@ on what should be done, and contribute patches. You will need to know
 C and/or perl, and something about <a href="{$root}/site/resources">Unix and Windows</a>.</p>
 
 <p><a href="http://www.cvshome.org/" target="_blank">CVS</a> is the leading source code
-control system in the freeware community. CVS features flexible
+control system in the open source community. CVS features flexible
 branching, intelligent merging, high quality <a
 href="http://www.loria.fr/~molli/cvs/doc/cvs_toc.html" target="_blank">documentation</a>
 and client/server access with a wide choice of <a
@@ -20,9 +20,9 @@ need a hole in
 the firewall for the CVS port (2401) or use <a href="http://www.cyclic.com/cvs/dev-net.html">SOCKS</a>.
 </p>
 
-<p>Wine's CVS tree is mirrored at several places around the world to make
-sure that the source is easily accessible. Note that not all servers have all
-repositories available, but all have at least the Wine source.</p>
+<p>Wine's CVS tree is avalible on 2 servers, one in the United States, and one
+in the European Union, the US server hosts all available repositories, while the
+EU server only hosts the Wine source code.</p>
 
 <p>Read the sections below on how to use our CVS.</p>
 
@@ -44,7 +44,7 @@ repositories available, but all have at least the Wine source.</p>
 <h1>Getting a local copy of Wine</h1>
 
 <p>
-To login to the CVS tree, do 
+To connect to the US server, run
 
  <table width="500" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
@@ -53,7 +53,17 @@ To login to the CVS tree, do
  </span>
  </td></tr>
  </table>
- 
+
+To connect to the EU server, run
+
+ <table width="500" border=0 cellpadding=10><tr><td class=black>
+ <span class=inverse>
+ export CVSROOT=:pserver:cvs@rhlx01.fht-esslingen.de:/home/wine<br>
+ cvs login
+ </span>
+ </td></tr>
+ </table>
+
 Use ``cvs'' as the password (without the quotes). Note that
 <code>/home/wine</code> is a path on the <b>server</b>, not on your machine.
 
@@ -68,9 +78,10 @@ To check out the entire Wine source tree
  </td></tr>
  </table>
 
-If you work over a slow link, you may want to compress the traffic
-with -z3. However, there are known bugs in CVS with this compressed
-communication mode, make sure you use cvs version 1.11.5 or later.
+If you're using a slow internet connection, like a 56k modem,
+you may want to compress the traffic with -z3. However, there
+are known bugs in CVS with this compressed communication mode,
+make sure you use cvs version 1.11.5 or later.
 
 <p>
 Or if you just want a subtree, or individual file, you can do that too:
