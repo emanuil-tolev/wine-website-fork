@@ -33,9 +33,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
    <ol>
     <li><a href="#devel_task">Some development task</a>
     </li><li><a href="#conf_tests">Conformance tests</a>
-    </li><li><a href="#cross">Cross referencing the windows executables and libraries</a>
     </li><li><a href="#doc_win_api">Documentation of the windows API functions</a>
-    </li><li><a href="#check_which">Check which APIs are missing for a given program</a>
 
     </li><li><a href="#port_app">Port your windows application to wine</a>
     </li><li><a href="#code_review">Perform a focused code review</a>
@@ -284,24 +282,6 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
 
     </li></ul>
 
-    <a name="cross"></a>
-    <h3>Cross referencing the Windows executables and libraries</h3>
-
-    <p>The idea is to write a Perl script that analyzes the Windows dlls and executables of a 
-    regular Windows installation and cross references them. This would generate Web pages 
-    telling you which API is used by which program/library and reciprocally.
-    Analyzing the import/export section of PE executables is quite simple: it's just a matter 
-    of running dumpbin (part of Visual C++) or pedump (open source) on them and then parsing 
-    the resulting text file. This already being done with the wpbtk toolkit.
-    To view winapi_check output see <a href="http://fgouget.free.fr/wine/winapi_stats-en.shtml">Quick API statistics</a>.
-    To help with this please contact <a href="mailto:fgouget@free.fr">Francois Gouget</a>
-    </p>
-    Required skills:
-    <ul>
-    <li>Perl
-    </li><li>General HTML
-    </li></ul>
-
     <a name="doc_win_api"></a>
     <h3>Documentation of the Windows API functions</h3>
 
@@ -320,28 +300,6 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     <ul>
     <li>Knowledge of some documentation generation system for the person trying to enhance the documentation generation.
     </li><li>A bit of C to document the APIs themselves.
-    </li></ul>
-
-    <a name="check_which"></a>
-    <h3>Check which APIs are missing for a given program</h3>
-
-    <p>The scripts that scan a Windows environment could be modified to restrict the scan to the dependencies 
-    of a given executable/set of executables. Then these results can be cross-referenced with the results 
-    of the above script to tell you which APIs this program is missing, what percentage they represent, etc. 
-    Reciprocally one can weight each API according to how often they are referenced in a given environment to 
-    produce an approximation of the likely hood that such an API will actually be called. Note that this would 
-    just be an approximation because we would miss all the dynamically loaded APIs and libraries 
-    (since we only scan the statically linked dynamic libraries). This would be an even more approximate 
-    measure of the likely hood that the program will work: even though a program references an API it may never call it, 
-    work even though this API does not work, or really depend on this API or even some undocumented aspect of this API. 
-    Still this may provide a better approximation of the completeness of Wine than just treating all APIs as equivalent.
-    </p>
-    Required skills:
-    <ul>
-    <li>Perl
-
-    </li><li>General HTML to present the results
-    </li><li>Maybe querying a database will be necessary too
     </li></ul>
 
     <a name="port_app"></a>

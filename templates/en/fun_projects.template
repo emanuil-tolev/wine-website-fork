@@ -57,7 +57,6 @@
 	 which would be <em>uber</em>cool.
 
   <h4 class=inprogress>Cygwin under Wine in Linux</h4>
-
   This provides an a good test case for Wine. It is tough, but we do have
   the Cygwin source code, and we have a good chance to understand why it
   does not work. 
@@ -67,7 +66,6 @@
     <li>status: runs <tt>bash -l -i</tt> and logs out
     <li>updated: Dec 4, 2002
   </ul>
-
  
   <h4 class=inprogress>Wine under Cygwin in Windows</h4>
   This will provide a good test case for Cygwin, but will help Wine's 
@@ -88,20 +86,18 @@
   need to have a MinGW port on Windows (that is, they need to support 
   building under MinGW).
 
-  <h4 class=todo><a name="jvm" href="http://java.sun.com">Java Virtual Machine</a></h4>
+  <a name="jvm"></a><h4 class=todo>Java Virtual Machine</h4>
   There are three noteworthy Java implementations:
   <dl>
     <dt><a href="http://java.sun.com/j2se/">Sun's JVM</a></dt>
     <dd>Unfortunately, the Windows port requires MSVC to build. How ironic.</dd>
-
     <dt><a href="http://www.ibm.com/developerworks/java">IBM's JVM</a></dt>
     <dd>I can't seem to be able to find the sources for this one. Help!</dd>
     <dt><a href="http://www.kaffe.org">Kaffe</a></dt>
     <dd>This one seems to have ports to Cygwin and MinGW. Good candidate for a port.</dd>
   </dl>
 
-  <h4 class=todo><a name="perl" href="http://www.perl.com">Perl</a></h4>
-
+  <a name="perl"></a><h4 class=todo>Perl</h4>
   Any Perl monger up for this?
   <ul>
     <li>worker: wanted
@@ -112,10 +108,9 @@
   <strong>Update:</strong> The ActivePerl branch support building under both Cygwin and MinGW.
   This is a very good test for <tt>winegcc</tt>. Unfortunately, the MinGW makefile uses
   backslashes as fileseparator, so it will take a bit of work to get working under Linux.
-  Why do people use backslash, when the forward slash works on both Windows and Linux? Eh...
+  Why do people use backslash, when the forward slash works on both Windows and Linux?
 
-  <h4 class=todo><a name="python" href="http://www.python.org">Python</a></h4>
-
+  <a name="python"></a><h4 class=todo>Python</h4>
   Not very exciting, but still interesting port. It's a good test for the
   non graphic APIs, such as threading, files, etc.
   <ul>
@@ -126,7 +121,6 @@
   </ul>
   <strong>Update:</strong> Configure the packages like so:
   <pre>
-
   CC=winegcc CXX=wineg++ configure --with-suffix --without-threads
   </pre>
   Unfortunately, configure gets confused about the executable extension,
@@ -141,8 +135,7 @@
   to create portable UI toolkits. Due to the large UI component of the
   Win32 API, these are a perfect test for Wine.
 
-  <h4 class=todo><a name="qt" href="http://www.trolltech.com/products/qt/windows.html">QT</a></h4>
-
+  <a name="qt"></a><h4 class=todo>QT</h4>
   Imagine we compile QT under Wine, and then we get the entire <a href="http://www.kde.org">KDE</a>
   compiled and running under Wine! How cool would that be?
   <ul>
@@ -150,7 +143,6 @@
     <li>status: initial investigation
     <li>updated: Jan 6, 2003
     <li>homepage: <a href="http://www.trolltech.com/products/qt/windows.html">www.trolltech.com/products/qt/windows.html</a>
-
   </ul>
   <strong>Update:</strong> Unfortunately, QT/Windows is not free software. Moreover, it
   requires MSVC or the Borland toolchain to build. Before we can start thinking about
@@ -159,7 +151,7 @@
   <a href="http://www.troll.no">Troll's</a> part to support such an effort. 
   If you think you can make a case for it, please let us now.
 
-  <h4 class=todo><a name="gtk" href="http://www.gtk.org">Gtk+</a></h4>
+  <a name="gtk"></a><h4 class=todo>Gtk+</h4>
   This is maybe a little less interesting than the others, as Gtk+ does not use
   the native widgets when ported to Windows. Instead, it uses it's very thin
   abstraction layer (gdk) to do the drawing, all else is build 'in house'.
@@ -171,12 +163,12 @@
 
   </ul>
 
-  <h4 class=done><a name="wxwindows" href="http://www.wxwindows.org">wxWindows</a></h4>
+  <a name="wxwindows"></a><h4 class=done>wxWindows</h4>
   A perfect test case for Wine's headers, and MinGW emulation! Wouldn't it be cool to have
   the Windows controls available on Linux too? &lt;duck/&gt; :-)
   <ul>
     <li>worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-    <li>status: compiles, links, and runs!
+    <li class=modified>status: compiles, links, and runs!
                 The <a href="http://www.winehq.com/hypermail/wine-devel/2003/01/0153.html">patch</a>
 
 		has been accepted in the official wxWindows tree!
@@ -215,7 +207,6 @@
   free version available, but apparently you can buy one for around $100US.
   <ul>
     <li>worker: <a href="mailto:ps@leissner.se">Patrik Stridvall</a>
-
     <li>status: most tests work, DLLs are pretty bad though
     <li>updated: Nov 29, 2002
   </ul>
@@ -228,7 +219,6 @@
     <li>status: todo
     <li>updated: Jan 6, 2003
     <li>homepage: <a href="http://www.borland.com/bcppbuilder/freecompiler/">www.borland.com/bcppbuilder/freecompiler</a>
-
   </ul>
 
   <h3 class=todo>Watcom's cc</h3>
@@ -252,12 +242,49 @@
   <h2>Miscellaneous Projects</h2>
   This is a catch-all category for all sort of strange (and sometimes cute) ideas.
 
+  <a name="cross"></a><h3 class=inprogress>Cross referencing the Windows executables and libraries</h3>
+  <p>The idea is to write a Perl script that analyzes the Windows dlls and executables of a 
+  regular Windows installation and cross references them. This would generate Web pages 
+  telling you which API is used by which program/library and reciprocally.
+  Analyzing the import/export section of PE executables is quite simple: it's just a matter 
+  of running dumpbin (part of Visual C++) or pedump (open source) on them and then parsing 
+  the resulting text file. This already being done with the wpbtk toolkit.
+  <ul>
+    <li>worker: <a href="mailto:compsol@ptd.net">Dave Miller</a>
+    <li>status: Prototype ready
+    <li>updated: Apr 11, 2003
+  </ul>
+  <strong>Update:</strong>
+  Currently the script can make HTML maps of the dll imports.  I've been too
+  lazy to integrate the program that processed that into a table so
+  far.  :)  Right now it requires dumpbin (Visual C++)  I plan to add pedump
+  or winedump support so more people are able to use it.  It is also
+  analyzing the wine .spec files to determine if each API has an entry and
+  reports whether it's a stub, unimplemented (not in spec files), etc.
+
+
+  <a name="check_which"></a><h3 class=inprogress>Check which APIs are missing for a given program</h3>
+  <p>The scripts that scan a Windows environment could be modified to restrict the scan to the dependencies 
+  of a given executable/set of executables. Then these results can be cross-referenced with the results 
+  of the above script to tell you which APIs this program is missing, what percentage they represent, etc. 
+  Reciprocally one can weight each API according to how often they are referenced in a given environment to 
+  produce an approximation of the likely hood that such an API will actually be called. Note that this would 
+  just be an approximation because we would miss all the dynamically loaded APIs and libraries 
+  (since we only scan the statically linked dynamic libraries). This would be an even more approximate 
+  measure of the likely hood that the program will work: even though a program references an API it may never call it, 
+  work even though this API does not work, or really depend on this API or even some undocumented aspect of this API. 
+  Still this may provide a better approximation of the completeness of Wine than just treating all APIs as equivalent.
+  <ul>
+    <li>worker: <a href="mailto:compsol@ptd.net">Dave Miller</a>
+    <li>status: Starting work <a href="http://www.winehq.com/hypermail/wine-devel/2003/04/0324.html">soon</a>.
+    <li>updated: Apr 11, 2003
+  </ul>
+
   <h3 class=inprogress>GDI Engine</h3>
   Integrate the GDI engine contributed by the 
   <a href="http://www.transgaming.com">Transgaming</a> folks.
   <ul>
     <li>worker: <a href="mailto:johane@lysator.liu.se">Johan Gill</a>
-
     <li>status: <i>It should be ready for submission in a few months from now.</i>
     <li>updated: Feb 22, 2003
   </ul>
@@ -270,7 +297,6 @@
   <a href="http://bugs.winehq.com/show_bug.cgi?id=1304">Bug #1304</a>.
 
   <h3 class=todo>Wine Explorer</h3>
-
   <p>A Windows Explorer replacement. People migrating from Windows would love it,
   and it would provide a great testbed for our <tt>shell32</tt> DLL, as well as
   some key controls such as the List-View Common Control.
@@ -287,7 +313,6 @@
     <li> A "Cancel" button (that changes to "Close" when tests are done)
     <li> A "Report..." button that brings up a "Save As..." dialog
   </ul>
-
   Not hard to write, and quite cool to play with. Anyone familiar with the
   Win32 API can do it.
 
