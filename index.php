@@ -160,8 +160,8 @@ function view_news ($where)
         // add to news body
         $news_body .= $html->template('base', 'news_row', $vars);
         
-        // only show 5 records on home page
-        if ($where == 'home' and $c == 4)
+        // only show 8 records on home page
+        if ($where == 'home' and $c == 8)
         {
             $news_body .= $html->p($html->ahref('More News', '?news=archive'));
             break;
