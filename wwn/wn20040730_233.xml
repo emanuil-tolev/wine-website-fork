@@ -214,7 +214,7 @@ you plan to submit your patch? I would like to see if at least some of my
 code can be incorporated, or if the work was in vain.</quote></p>
 
 <p>Rob must have sent him the patch and fortunately it appears there 
-was a duplication of work:</p>
+was no duplication of work:</p>
 <quote who="Michael Jung">
 <p>
 as far as I can tell from looking at your patch, our work is pretty much non 
@@ -331,7 +331,7 @@ while user default locale simply puts the overrides to
 the registry for numbers, currency, date/time.
 </p><p>
 I still want your patch to be removed until you at least
-write test cases showing what exactly APIs are affected
+write test cases showing exactly what APIs are affected
 by system/user locale. Using LC_CTYPE for the system
 default locale (current ANSI code page) is very dubious
 choice as well. The whole purpose and the patch itself
@@ -403,7 +403,7 @@ the situation.
 be needed:</p>
 <quote who="Dmitry Timoshkov"><p>
 The real question is whether setup with different system and user locale
-is really used under Windows, and if yes, what exactly purpose is pursued?
+is really used under Windows, and if yes, exactly what purpose is pursued?
 </p><p>
 In the initial patch Shachar wanted to have English user interface while
 being able to not break current ANSI codepage support. Instead of implementing
@@ -462,7 +462,7 @@ the extra steps of actually installing the library, all others will either
 have hardware support or have it installed via the DRI package.
 </p></quote>
 
-<p>The patch still hasnt been applied, but then again 
+<p>The patch still hasn't been applied, but then again 
 Alexandre has been working remotely all week and there's a 
 good chance he just hasn't caught up.  </p>
 
@@ -540,7 +540,7 @@ Someone who could write test apps could also greatly help out by identifying
 the source of a problem (even if they can't fix it.)  Mike concluded 
 it indeed was worth keeping, 
 <quote who="Mike Hearn"> 
-I don't have any strong opinion on the matter, I was just playing devils
+I don't have any strong opinion on the matter, I was just playing devil's
 advocate :) Always useful to re-examine how we're helping or hindering
 users, even if the eventual conclusion is that we're doing OK.</quote>
 </p>

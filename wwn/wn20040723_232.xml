@@ -96,7 +96,7 @@ Its main goal is to assemble desks. It also serves to inform you of what's going
 <p>
 There's a review of ELX BizDesk 4.0 on DesktopOS.com.  If you 
 <a href="http://www.desktopos.com/sections.php?op=viewarticle&amp;artid=29">skip
-to page 3</a> you'll find short mention of 
+to page 3</a> you'll find a short mention of 
 <a href="http://www.frankscorner.org/winetools/">WineTools</a>
 being packaged with it.  That's the first time I've
 heard of it being shipped with a distro.</p>
@@ -226,7 +226,7 @@ point,
 <quote who="Mike McCormack">right... though you should only need to add
 an implementation of URLMON_DllRegisterServerEx to make that work, 
 assuming that wine.inf already tries to register urlmon.dll</quote>
-Mike offered a tip too,
+Mike Hearn offered a tip too,
 <quote who="Mike McCormack">
 It's nice to have a test program (usually built on a windows machine) to 
 test your new interface.  Make sure you get the right number of methods 
@@ -284,7 +284,7 @@ If a C source file or a header file exists in the build tree it is used
 instead of the file in the source tree. Spec files in the build tree are 
 ignored. They are always used from the source tree. Therefore I have to 
 edit the Makefile in the build tree to use the modified spec file, or 
-like the dll.so file by hand.
+link the dll.so file by hand.
 </p><p>
 Hope my problem is explained clearer now. Do I use an undocumented feature?
 </p></quote>
@@ -294,7 +294,7 @@ Hope my problem is explained clearer now. Do I use an undocumented feature?
 that's not how you are supposed to use build trees. The build
 tree should contain only generated files, all the sources should be in
 the source tree. It won't work right to have sources in both places,
-not only because of the spec files, dependencies also won't be correct
+not only because of the spec files, dependencies also won't be correct,
 include files may not always be included from where you expect, etc.
 </quote></p> 
 

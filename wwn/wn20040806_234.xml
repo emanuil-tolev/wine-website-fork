@@ -78,7 +78,7 @@ a pre-beta version of CrossOver Office 3.1.  The big announcement here can be
 summed up pretty succinctly - iTunes support.  CNet also has 
 <a href="http://news.com.com/Start-up+to+make+iTunes+sing+on+Linux/2100-1041_3-5293915.html">an article</a>
 that closely mirrors the press release.  It appears only some aspects of
-iTunes is working, but more support is on the way:</p>
+iTunes are working, but more support is on the way:</p>
 <quote who="Codeweavers"><p>
 With iTunes support, CrossOver Office users will be able to download and 
 organize songs from the iTunes Music Store. Soon they will also be able to 
@@ -215,7 +215,7 @@ see with a clean .wine
 </p><p>
 If anybody has any ideas I'd love to track this one down. I am wondering
 if it's to do with packaging, I have never been able to reproduce this
-with Wine CVS builds (ie from source) but I know some packagers are still
+with Wine CVS builds (i.e. from source) but I know some packagers are still
 shipping custom ~/.wine building scripts.
 </p></quote>
 
@@ -288,10 +288,10 @@ is up with that?</li>
 DLL override, and when you add one the tree does not expand so to actually
 *set* it you have to expand the tree then select the new override.</li>
 
-<li> We have way too many (eg, more than zero) tree controls in this app.</li>
+<li> We have way too many (e.g., more than zero) tree controls in this app.</li>
 
 <li> Drive mappings list is really unclear, there's no separation between the
-"Drive X:" label and the unix path its mapped to.</li></ul></p><p>
+"Drive X:" label and the unix path it's mapped to.</li></ul></p><p>
 
 Basically I'd recommend reading the GNOME HIG:
 <a href="http://developer.gnome.org/projects/gup/hig/">
