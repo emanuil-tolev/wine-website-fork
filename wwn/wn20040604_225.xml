@@ -168,7 +168,7 @@ unload a module (and its debugging information), and a process without pain</li>
 </p><p>
 The biggest changes since from the end user point of view:
 <ul>
-<li> the $regs variable has disapeared</li>
+<li> the $regs variable has disappeared</li>
 <li> all the 'walk' commands have now been merged into the 'info' ones. 
 'walk' is no longer a valid command</li>
 <li> module identification in symbol name now has the form of 

@@ -97,8 +97,8 @@ portability to new operating systems, and should help on the debugging
 side of things, and should help with the large set of Wine/GDI+
 interactions that we have.  
 </p><p>
-    To support WndProc, this new version uses the most commony used
-WndProc events internally so applications that depend on this works,
+    To support WndProc, this new version uses the most commonly used
+WndProc events internally so applications that depend on this work,
 and we will have an optional plugin that would use WineLib to host
 advanced functionality. 
 </p><p>
@@ -116,9 +116,9 @@ developers will join this effort.
 just happened to notice.  He wrote back and cc:'ed wine-devel wondering
 if there was something that could just be fixed with Wine,
 <quote who="Steven Edwards">
- Rather than spending a whole lot of time rewritting things wouldnt it
+ Rather than spending a whole lot of time rewritting things wouldn't it
  be better to help the Wine project get stable and move to the 1.0 goal?
- There is a roadmap and TODO on Winehq of things that are needed for
+ There is a roadmap and TODO on WineHQ of things that are needed for
  1.0. </quote></p>
 
 <p>More reasons were listed about problems Wine caused.  Most developers
@@ -174,7 +174,7 @@ Now, I think some of Peters arguments are valid and some aren't. Let's
 take a look at them:
 </p><p>
 <i> Wine is too hard to use as a library. It does complicated things with
-registers and threads, and requires wierd bootstrap code.</i>
+registers and threads, and requires weird bootstrap code.</i>
 <ul><p>
 I'm not sure what to make of this one. The low level code isn't optional,
 it's required in order to provide the environment Win32 code requires.
@@ -196,7 +196,7 @@ archs and operating systems. It's probably runs on only slightly fewer
 platforms than Mono itself.</ul></p><p>
 
 
-<i> Wines APIs are unstable.</i>
+<i> Wine's APIs are unstable.</i>
 <ul>
 See above. I think Peter is right, our exported APIs are not that large,
 and making them stable is not that hard either. They don't even have to be
@@ -233,7 +233,7 @@ GDI+ in .NET and then make Wine use it, which is a suboptimal solution.
 </p><p>
 I think if you had done it the way Microsoft did by writing a GDI+ DLL for
 Wine and then mapped that to System.Drawing, there would not need to be
-this constant mapping into System.Drawing contexs and things would go a
+this constant mapping into System.Drawing contexts and things would go a
 lot faster. Yes, that means implementing GDI+ in Win32/C, not much fun I
 know, but it's the way Microsoft did it and therefore if we want
 compatibility the way we must do it too (Wine will have to implement GDI+
@@ -304,7 +304,7 @@ been a workaround and Gearoid Donnellan discovered it on his
 own,
 <quote who="Gearoid Donnellan">
 I am very shocked that this actually works and you probably know
-already but If you down load and extract the Windows Installer
+already but If you download and extract the Windows Installer
 redistributable in the wine directory you can then install MSI's using
 "<tt>wine msiexec /i &lt;msiname&gt;</tt>".
 Tried it with winzip.msi and it worked perfectly. 
@@ -328,7 +328,7 @@ weeks ago.  Mike outlined some of the work:</p>
  We are still missing an implementation of msiexec, but it is a fairly 
  trivial wrapper around msi.dll, so should not be too hard to implement.
 </p><p>
- The native msi dlls (ie. the MS redistributables) have worked in Wine 
+ The native msi dlls (i.e. the MS redistributables) have worked in Wine 
  for more than two years :)   They contain a few annoying bugs which are 
  hard to workaround...
 </p></quote>
@@ -372,7 +372,7 @@ Right now, Wine doesn't work at all on FreeBSD -STABLE:
 and before that I used to see deadlocks upon startup of non-trivial
 applications (such as Forte Agent, both 16bit and 32bit flavors).
 </p><p>
-I believe there are also signficant threadings issues on -CURRENT, so
+I believe there are also significant threading issues on -CURRENT, so
 overall Wine is hardly, if at all, usable on any version of FreeBSD I
 have access to, even though I'm still working to keep it at least
 compilable on FreeBSD 4.9 and 5.2/5.3.
@@ -446,10 +446,10 @@ Windows apps require it; so unless you find some other way to ensure
 that FreeBSD never allocates anything above 0x80000000, the
 reservation code can't really be made optional.</quote></p>
 
-<p>So.. that was the status last month and no one has mailed the
-list to report any updates since then.  If you're on FreeBSD 4.9
+<p>So... that was the status last month and no one has mailed the
+list to report any updates since then.  If you're on FreeBSD 4.9,
 things will break if you upgrade to 4.10.  If you're on 5.2 things
-are broke.</p>
+are broken.</p>
 
 </section>
 <section 
@@ -479,9 +479,9 @@ Clause 3 of OpenSSL license:
      for use in the OpenSSL Toolkit. 
      (<a href="http://www.openssl.org/">http://www.openssl.org/</a>)"
 </i></ul></p><p>
-This stipulation seems to introduce a incompatibility with the GPL. For
+This stipulation seems to introduce an incompatibility with the GPL. For
 normal Wine this is not a big deal but if someone wants to make a
-Winelib application that is GPL or if I want to take Wines Wininet and
+Winelib application that is GPL or if I want to take Wine's Wininet and
 Adavapi32 code in to ReactOS this presents a problem. Am I correct in
 reading it this way?
 </p><p>
@@ -491,15 +491,15 @@ NSS from Mozilla? I have spoken with the developers of Network Security
 Services for Mozilla and it has recently been tri-licensed MPL/LGPL/GPL
 on CVS tip. http://www.mozilla.org/projects/security/pki/nss/
 </p><p>
-From the what I understand this lib provides everything we need so all
-it really means is that our soft dependency on OpenSSL in now a soft
+From what I understand this lib provides everything we need so all
+it really means is that our soft dependency on OpenSSL is now a soft
 dependency on Mozilla. If we want to use the webbrowser module in Wine
 then a Mozilla dependency will be there already so we might as well use
 the security implementation while we are at it.
 
 </p></quote>
 <p>
-The discussion hadn't even realyl got started by the time this week's
+The discussion hadn't even really got started by the time this week's
 issue was published, but Mike Hearn did mention another alternative, 
 <quote who="Mike Hearn">
 
@@ -549,7 +549,7 @@ proper directory and running the build script. If there is no half-way
 modern ICU version in Debian, Ove can't really build wine with BiDi. 
 Maybe we can get our supplied packages to be BiDi enabled, but so long 
 as we use ICU, and ICU has this horrible linking policy, we can't really 
-get it wide-spread. Since I want it widespread, fribidi is where I'm headed.
+get it widespread. Since I want it widespread, fribidi is where I'm headed.
 </quote></p>
 
 <p>The conversation then continued on IRC, and Shachar summarized that
