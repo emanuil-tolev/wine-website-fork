@@ -117,7 +117,7 @@ behavior (easier said than done).</p><p>
 
 any comment welcomed!!
 </p><p>
-(thanks to Dimi for his quick fixies on the listview control BTW)
+(thanks to Dimi for his quick fixes on the listview control BTW)
 
 </p></quote>
 <p>Cool stuff!  It will be interesting to see how this progresses.</p> 
@@ -240,12 +240,12 @@ having to restart your Wine session.
 <p>Dimi described a process to facilitate this that could be done
 in parallel with other work:</p>
 <quote who="Dimitrie Paun"><p>
-All of which are good things to do, but I'm afraid we're bundeling
+All of which are good things to do, but I'm afraid we're bundling
 things together unnecessarily. And this is no good -- we already
 have velocity problems :)
 </p><p>
 Removing obsolete parameters is helpful with winecfg, because
-it can save a lot of work in building the GUI. But to separete the
+it can save a lot of work in building the GUI. But to separate the
 tasks a bit more, I'd say we need a list of the parameters that
 we want to be able to control through winecfg. The rest will
 become part of a janitorial cleanup task.
@@ -257,8 +257,8 @@ dynamic. I can keep this as a separate janitorial task -- I
 can maintain a list of options with their current status, and
 whether or not we need to change it from static -> dynamic, etc.
 </p><p>
-Keeping these 3 task separate does not mean they will be lost
-and forgoten -- I volunteer to keep track of them independently.
+Keeping these 3 tasks separate does not mean they will be lost
+and forgotten -- I volunteer to keep track of them independently.
 In fact, we'll get more work done this way, because different
 people enjoy working on different bits. Defining exactly what
 we want winecfg to do will help Mike get the job done faster.
@@ -340,7 +340,7 @@ Bueller? Bueller?)  </p>
 <a href="http://vmlinux.org/jakov/Wine/regrtest.exe">package
 of tests</a>.  In addition to running the tests it packages up
 the results to mail back to WineHQ.  The two efforts are very
-complimentary but overlap slightly on the reporting format.  Ferenc
+complementary but overlap slightly on the reporting format.  Ferenc
 preferred his format simply because he already had a parser to
 examine the results.  Jakob then asked,
 <quote who="Jakob Eriksson">
@@ -373,7 +373,7 @@ I have to do my "paid" work first. ;)
 <topic>Ports</topic>
 <topic>Memory Management</topic>
 <p>Todd Vierling submitted a patch for improving mmap behavior 
-NetBSD:</p>
+on NetBSD:</p>
 <quote who="Todd Vierling"><p>
 On NetBSD (upcoming 1.6.2, and 1.7/2.0-current), there is a new extension
 flag MAP_TRYFIXED that essentially simulates current Linux mmap behavior:
@@ -437,7 +437,7 @@ features; still I think the concept applies for all platforms.
 
 <p>Everyone seemed to agree that for this specific instance, both
 because the platform was NetBSD and that creating a run-time check
-would be difficult, not to having a run-time check would be acceptable.
+would be difficult, not having a run-time check would be acceptable.
 Todd didn't feel it would be very limiting,
 <quote who="Todd Vierling">
  This is not a problem, as 99% of Wine users on NetBSD
