@@ -88,7 +88,7 @@ Merry Christmas!</p>
 
 <section 
 	title="Setting Up MinGW Cross-Compiling Environment" 
-	subject="MinGW cross compilation enviroment setup"
+	subject="MinGW cross compilation environment setup"
 	archive="http://www.winehq.com/hypermail/wine-devel/2003/12/0547.html" 
 	posts="3"
 	startdate="12/22/2003"
@@ -171,7 +171,7 @@ an app deadlocks on shutdown on the loader lock - could this be the
 cause?</li>
 
 <li> The loader lock is stored at offset 0xA0 in the PEB. I doubt this is
-important, but now the info is published murphies law says one day an
+important, but now the info is published murphy's law says one day an
 app will try and get to it directly.</li></ul></p></quote>
 
 
@@ -202,7 +202,7 @@ freeware tools - this guy writes in pure ASM. and thus we can be sure that his c
 will be the least messy (lesser MS stuff..)
 </p><p>
 However, if you try his 'Wizmo' or 'DCOMObulator', you will see that the 
-RichEdit textareas as blank !
+RichEdit textareas are blank !
 </p></quote>
 
 <p>Joshua Walker wrote back with a pointer to a possible resource:</p>
@@ -210,17 +210,17 @@ RichEdit textareas as blank !
 If you need the source of a program that can uses RTF
 as it's native format, can spit out
 microsoft-compatible RTF files, has all the tools for
-editing Rick Text, and the source is aviliable in C...
+editing Rick Text, and the source is available in C...
 then use the Source for "Ted"
 <ul>
 <a href="http://www.nllgg.nl/Ted/">http://www.nllgg.nl/Ted/</a></ul></p><p>
 
-I would toss it in myself, but I suck a coding. I
+I would toss it in myself, but I suck at coding. I
 wouldn't even know where to begin.
 </p></quote>
 
 <p>Good ol' ted.  A long, long time ago it was my favorite editor
-(for a month.)  Still, the properties of ted would might be a good
+(for a month.)  Still, the properties of ted might be a good
 starting point for working on this control.  Any volunteers?</p>
 </section>
 

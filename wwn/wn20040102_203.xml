@@ -181,7 +181,7 @@ By far the biggest problem was  the msvcrt vs STL. and other native C++.
 This caused a big Linking problem where STL would bypass msvcrt but 
 other application code would not. This proved to be fatal. From circular 
 linking to allocators not matching to Libraries not able to load. Since 
-MFC and ATL would not even think to compile with out msvcrt Headers and 
+MFC and ATL would not even think to compile without msvcrt Headers and 
 lib the issue had to be resolved. The only way I managed to solve it all 
 is by directly linking msvcrt GCC style into STLPort and into every 
 module there of. Now that would make some conflicts with OCX's like IE6 
@@ -355,7 +355,7 @@ patch</a>:</p>
  Chris Morgan <br />
  Add  <tt>HKEY_LOCAL_MACHINE\software\classes\http\shell\open\command</tt> key and 
  value.  Winebrowser script.  Makefile changes to install/remove script.  
- Wineinstall should create a simlink from windows/winebrowser.exe to the 
+ Wineinstall should create a symlink from windows/winebrowser.exe to the 
  location of winebrowser on the machine.</ul></p></quote>
 
 

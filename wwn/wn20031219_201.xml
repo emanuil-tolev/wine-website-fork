@@ -95,7 +95,7 @@ release notes</a> for more detail.  </p>
 Development and Voting Report</a>.  They describe some of their work
 on pixel and vertex shaders.  An investigation into ALSA turned up
 interesting results:</p>
-<quote who="Transgaming"><p>
+<quote who="TransGaming"><p>
 ALSA, of particular interest to TransGaming's Linux audience, does not provide 
 much of an added benefit over OSS. The primary speed advantage, hardware 
 mixing, a slower kludgy implementation use due to the fact that looping sound 
@@ -240,7 +240,7 @@ years ago, which was not committed for obvious reasons.
 </p><p>
 My way to create a small log goes like this. Start wine like this:
 <ul><code>
-(wine &lt;arguments&gt; &amp; read ans; echo '===') 2&gt;amp;1 |
+(wine &lt;arguments&gt; &amp; read ans; echo '===') 2&gt;&amp;1 |
 awk '{if( $1 == "===") flag=1-flag; if(flag) print}' &gt;wine.log
 </code></ul></p><p>
 filling the log will only begin after pressing the enter key. Add a
@@ -269,7 +269,7 @@ patch to delay debug tracing</a> that was faster than sending it through
 a script,
 <quote who="Mike Hearn">
 The tradeoff that my patch
-makes is flexibility for performance - if you are redirecting wines
+makes is flexibility for performance - if you are redirecting wine's
 output through wrapper programs and scripts then you have the overhead
 at least of the IPC, and maybe also text parsing. Simply enabling relay
 gives a huge speed hit even when not logging things, the last thing
@@ -349,13 +349,13 @@ He asked everyone to please review it and proofread it:
 </p><quote who="Tom Wickline"><p>
 
 Here is the current DLL's Status Page.
-Ive made a number of changes since I last sent
+I've made a number of changes since I last sent
 these partial pages to the dev-list.
-Here is a list of things I still need todo for completeness.
+Here is a list of things I still need to do for completeness.
 <ol>
 <li> Proof Read! (against all my notes)</li>
 <li> Doc links, (Thursday night Friday AM)</li>
-<li> Send to Brian V for WWN coverage :)  (Brian if you want you can get a 
+<li> Send to Brian V for WWN coverage :)  (Brian if you want you can get an 
 early start)</li>
 <li> Add/Remove todo's</li>
 <li> changelog update</li>
