@@ -56,13 +56,10 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
 
     <a name="web"></a>
     <h3>Web site maintenance</h3>
-     <p>WineHQ has been redesigned recently. But there is still work to do.
-       So if you feel like writing about Wine or coding in PHP your
-       contribution will be appreciated. You can find the current task list
-       in <a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=WineHQ.com&component=misc-web">Bugzilla</a>,
-       but see also this <a href="{$root}/hypermail/wine-devel/2003/09/0780.html">email</a>
-       for a great TODO list.
-       Getting started is easy. Just get the WineHQ sources by following the
+     <p>If you feel like writing about Wine or coding in PHP your
+       contribution will be greatly appreciated. You can find current task that need work
+       in our <a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=WineHQ.com&component=misc-web">Bugzilla</a>.
+       Getting started is really easy, just get the WineHQ sources by following the
        instructions in our <a href="{$root}/site/cvs">CVS</a>
        section and look at the files in templates/en. And to submit patches,
        simply follow the instructions on our
