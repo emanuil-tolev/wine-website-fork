@@ -262,8 +262,8 @@ potential Wine developpers that just are not motivated by the standard
 
 <ul>
  <li> PrgWin95/98: System metrics differ from the Win9x values<br />
-   #48: <a href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=48">
-   http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=48</a><br />
+   #48: <a href="http://bugs.winehq.com/show_bug.cgi?id=48">
+   http://bugs.winehq.com/show_bug.cgi?id=48</a><br />
    One day I'll fix this one... I swear. Unless you want to work on
    it first. In that case I'll provide you with my test application and
    dumps of the metrics for Win95, Win98, NT4, 2000, ...</li>
@@ -273,8 +273,8 @@ potential Wine developpers that just are not motivated by the standard
    sure there are plenty of other things that are out of date.</li>
 
  <li> Metabug: Test Wine with the VXCL samples<br />
-   #242: <a href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=242">
-   http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=242</a><br />
+   #242: <a href="http://bugs.winehq.com/show_bug.cgi?id=242">
+   http://bugs.winehq.com/show_bug.cgi?id=242</a><br />
    Get the VXCL samples, test them with Wine and report the bugs in the
    bugzilla database. I know there's lots of them. Then people (or
    yourself) can start fixing these bugs in a distributed fashion.
@@ -284,15 +284,15 @@ potential Wine developpers that just are not motivated by the standard
    Windows and in Wine.</li>
 
  <li> Metabug: Test Wine with the Common Control Spy Samples<br />
-   #239: <a href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=239">
-   http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=239</a><br />
+   #239: <a href="http://bugs.winehq.com/show_bug.cgi?id=239">
+   http://bugs.winehq.com/show_bug.cgi??id=239</a><br />
    Get the Common Control Spy samples and test Wine with them. You
    will need the native comctl32 dll but you can do the tests
    without rebooting between each test or using two computers.</li>
 
  <li> PrgWin95: Listbox getting a recessed border instead of a flat one<br />
-   #56: <a href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=56">
-   http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=243</a><br />
+   #56: <a href="http://bugs.winehq.com/show_bug.cgi??id=56">
+   http://bugs.winehq.com/show_bug.cgi?id=243</a><br />
    (I can provide you with the sample application)
    This one my be fixed, to check...</li>
 
@@ -303,8 +303,8 @@ potential Wine developpers that just are not motivated by the standard
    programming.</li>
 
  <li> Tabs are missing their inner border<br />
-   #243: <a href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=243">
-   http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=243</a><br />
+   #243: <a href="http://bugs.winehq.com/show_bug.cgi?id=243">
+   http://bugs.winehq.com/show_bug.cgi??id=243</a><br />
    There's a bug in the drawing of the border of the common control
    tabs. Fixing each of the four instances of the code is easy. It would
    be interesting to find a way to factorize some of this code.</li>
@@ -314,42 +314,42 @@ potential Wine developpers that just are not motivated by the standard
 
 <ul>
  <li> Quickbooks Pro Timer does not accept date (GetCalendarInfoA error)<br />
-   #276: <a href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=276">
-   http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=276</a><br />
+   #276: <a href="http://bugs.winehq.com/show_bug.cgi??id=276">
+   http://bugs.winehq.com/show_bug.cgi?id=276</a><br />
    GetCalendarInfoA/W are not implemented yet. They involve
    quite a lot of internationalisation aspects, but providing a
    first implementation that at least handles the common cases
    should be feasible.</li>
 
  <li> Provide a pedump utility
-   #91: <a href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=91"><br />
-   http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=91</a><br />
+   #91: <a href="http://bugs.winehq.com/show_bug.cgi?id=91"><br />
+   http://bugs.winehq.com/show_bug.cgi?id=91</a><br />
    I know there's sample code that does that already floating around so
    it should be relatively simple.
    Eric Pouech seems to be working on this. I did not check if his
    pedump dump the imports/exports but it probably does.</li>
 
  <li> CreateIcon does not resize bitmaps<br />
-   #175: <a href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=175">
-   http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=175</a><br />
+   #175: <a href="http://bugs.winehq.com/show_bug.cgi?id=175">
+   http://bugs.winehq.com/show_bug.cgi?id=175</a><br />
    I did a similar fix somewhere some time ago. I can provide a
    sample application and I might be able to point you in the right
    direction.</li>
 
  <li> winemaker: 'winemaker --nomfc' does not have the intended effect<br />
-   #227: <a href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=227">
-   http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=227</a></li>
+   #227: <a href="http://bugs.winehq.com/show_bug.cgi?id=227">
+   http://bugs.winehq.com/show_bug.cgi?id=227</a></li>
 
  <li> winemaker: Ignores the '--with-{mfc,wine}' options once they are
    cached<br />
-   #225: <a href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=225">
-   http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=225</a><br />
+   #225: <a href="http://bugs.winehq.com/show_bug.cgi?id=225">
+   http://bugs.winehq.com/show_bug.cgi?id=225</a><br />
    If you're familiar with autoconf and know how configure scripts
    should behave...</li>
 
  <li> StrokePath ignores PS_JOIN_xxx<br />
-   #11: <a href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=11">
-   http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=11</a><br />
+   #11: <a href="http://bugs.winehq.com/show_bug.cgi?id=11">
+   http://bugs.winehq.com/show_bug.cgi?id=11</a><br />
    This should not be too difficult to fix but it would certainly help
    if you are familiar with GDI.</li>
 

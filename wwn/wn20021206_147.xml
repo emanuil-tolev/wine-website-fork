@@ -195,12 +195,12 @@ with you. So I think that we should:
 <p>Dimi Paun updated the to do list and announced:</p>
 <quote who="Dimitrie Paun"><p>
  Version 0.6 of the TODO for Wine 0.9 is available at:
-<ul><a href="http://www.dssd.ca/wine/Wine-0.9-TODO-0.6.html">
-  http://www.dssd.ca/wine/Wine-0.9-TODO-0.6.html</a></ul></p>
+<ul><a href="http://63.138.153.104/wine/Wine-0.9-TODO-0.6.html">
+  http://63.138.153.104/wine/Wine-0.9-TODO-0.6.html</a></ul></p>
 <p>
  As always, you can find the work-in-progress one here:
-<ul><a href="http://www.dssd.ca/wine/Wine-0.9-TODO.html">
-  http://www.dssd.ca/wine/Wine-0.9-TODO.html</a></ul></p>
+<ul><a href="http://www.winehq.com/?page=todo_lists">
+  http://www.winehq.com/?page=todo_lists</a></ul></p>
 <p>
 As a departure from previous release, this time I'm only going
 to include a small summary of changes since the last release:
@@ -227,8 +227,8 @@ to include a small summary of changes since the last release:
 could be done:</p>
 <quote who="Dimitrie Paun"><p>
 I have updated the Janitorial section:
-<ul><a href="http://www.dssd.ca/wine/Wine-Janitorial.html">
-  http://www.dssd.ca/wine/Wine-Janitorial.html</a></ul>
+<ul><a href="http://www.winehq.com/?page=janitorial">
+  http://www.winehq.com/?page=janitorial</a></ul>
 </p><p>
 with the list of cross calls from 32->16, and W->A.
 </p><p>
@@ -520,7 +520,7 @@ with that...
 Sylvain Petreolle emailed wine-devel with a status
 update on running cygwin under Wine.  For more info
 on exactly what that means, check out Dimi's 
-<a href="http://www.dssd.ca/wine/Wine-Fun.html">Fun Projects</a> page.</p>
+<a href="http://www.winehq.com/?page=fun_projects">Fun Projects</a> page.</p>
 <quote who="Sylvain Petreolle"><p>
  Making only one tweak to <tt>/etc/profile</tt>,
  cygwin manages to launch partially.

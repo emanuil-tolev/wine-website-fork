@@ -157,8 +157,8 @@ As promised, the new Wine FAQ (in beautiful color, and an amazing bouquet),
 is ready for public review before the end of the week. So there. :)
 At the moment, it is available for your viewing pleasure here:
 <ul>
-	<a href="http://www.dssd.ca/wine/Wine-FAQ.html">
-        http://www.dssd.ca/wine/Wine-FAQ.html</a></ul></p>
+	<a href="http://www.winehq.com/?page=faq">
+         http://www.winehq.com/?page=faq</a></ul></p>
 </quote><p><i>Editor's note: the URL was changed later in the week,
 	the URL above reflects the new location.</i>
 </p>
@@ -200,10 +200,10 @@ the work on the new Wine FAQ:</p>
 <quote who="Dimitrie Paun"><p>
 Please note that the FAQ, and the TODO got moved to a
 new location:
-<ul><li><a href="http://www.dssd.ca/wine/Wine-0.9-TODO.html">
-	http://www.dssd.ca/wine/Wine-0.9-TODO.html</a></li>
-    <li><a href="http://www.dssd.ca/wine/Wine-FAQ.html">
-	http://www.dssd.ca/wine/Wine-FAQ.html</a></li></ul>
+<ul><li><a href="http://www.winehq.com/?page=todo_lists">
+	http://www.winehq.com/?page=todo_lists</a></li>
+    <li><a href="http://www.winehq.com/?page=faq">
+	http://www.winehq.com/?page=faq</a></li></ul>
 </p></quote>
 
 
@@ -227,7 +227,7 @@ new location:
 <p>Dimi also put together a list of "fun" projects.  They
 range from quite useful to just plain weird.  You can find his
 complete list at:
-<a href="http://www.dssd.ca/wine/Wine-Fun.html">http://www.dssd.ca/wine/Wine-Fun.html</a>.
+<a href="http://www.winehq.com/?page=fun_projects">http://www.winehq.com/?page=fun_projects</a>.
 A short summary goes like this:
 <dl><dt>Virtualization Projects</dt>
 	<dd>
@@ -303,7 +303,7 @@ applications from
 <a href="http://www.tucows.com/toppicks.html">Tucows' Top 100</a>
 list and their compatibility with Wine.  Dimi Paun reformatted
 the lists and created a mock-up
-<a href="http://www.dssd.ca/wine/Wine-SAL.html">Supported
+<a href="http://www.winehq.com/?page=supported_applications">Supported
 Applications List</a>.  The programs making the "Gold
 List" (i.e. programs that install and run on an out-of-the-box
 Wine setup) were:
@@ -375,7 +375,7 @@ scope of a variable, so.... :)
 <p>This is somewhat Wine related.. I didn't dig into the
 gory details or even try it, but it seems everyone's favorite
 movie player,
-<a href="http://www.mplayerhq.hu/homepage/">mplayer</a>, now supports
+<a href="http://www.mplayerhq.hu/homepage/design6/news.html">mplayer</a>, now supports
 a QuickTime format using Wine.  This post appeared on the
 <a href="http://mplayerhq.hu/pipermail/mplayer-dev-eng/">Mplayer-dev-eng</a>
 mailing list:
@@ -670,13 +670,13 @@ screenshot (which saves me from typing the same thing):</p>
     <dt><strong>Do not complicate the screen with other apps.</strong></dt> 
 	<dd>We try to show Wine, not that you have a complicated desktop.
 	    For example, what am I showing 
-	<a href="http://www.dssd.ca/wine/wine-ss-what.png">here</a>?</dd>
+	<a href="http://63.138.153.104/wine/wine-ss-what.png">here</a>?</dd>
     <dt><strong>Include the desktop in the shot.</strong></dt>
 	<dd>This should make it clear that the app is running
         under Linux, and that it integrates nicely with the 
         desktop of your choice.
 	Is 
-	<a href="http://www.dssd.ca/wine/wine-ss-where.png">this</a> 
+	<a href="http://63.138.153.104/wine/wine-ss-where.png">this</a> 
 	running under Wine?</dd>
     <dt><strong>Show a complex scenario for the app.</strong></dt>
 	<dd>This will show that Wine is capable of running complex setups,
@@ -684,16 +684,16 @@ screenshot (which saves me from typing the same thing):</p>
 	an empty Word window is very borring, and unimpressive: "Wow,
 	Wine can draw a large white background...".
 	Take a look at 
-	<a href="http://www.dssd.ca/wine/wine-ss-boring.png">this</a>.</dd>
+	<a href="http://63.138.153.104/wine/wine-ss-boring.png">this</a>.</dd>
     <dt><strong>Do not make the screenshot too large.</strong></dt>
 	<dd>The images should be 800x600; many people don't have very large
 	resolutions, and it is very annoying to have to scroll to view the
 	image. 
-	<a href="http://www.dssd.ca/wine/wine-ss-ok-large.png">See</a>?</dd>
+	<a href="http://63.138.153.104/wine/wine-ss-ok-large.png">See</a>?</dd>
   </dl>
 </p><p>
   A more decent try is 
-  <a href="http://www.dssd.ca/wine/wine-ss-ok-small.png">this</a>. It shows Word, nicely
+  <a href="http://63.138.153.104/wine/wine-ss-ok-large.png">this</a>. It shows Word, nicely
   integrated in the KDE desktop (notice how it is listed in the task bar like
   all the other apps), displaying a reasonable document with tables. It can be 
   improved a bit if the document would show some embedded pictures, a bunch of 
@@ -712,7 +712,7 @@ standard size were to be decided upon I would rather vote for 1024x768
 than for 800x600. However that's not my point here. My point is that one
 should not take a screenshot of 1600x1200 and scale it to 800x600. This
 makes the fonts unreadable as is shown by your last screenshot
-(http://www.dssd.ca/wine/wine-ss-ok-small.png). Instead I would
+(http://63.138.153.104/wine/wine-ss-ok.png). Instead I would
 recommend to start a VNC server or a second X session with the right
 resolution and take a screenshot of that.
 </li><li>

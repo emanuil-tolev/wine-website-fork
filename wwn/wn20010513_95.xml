@@ -239,7 +239,7 @@ of items:</p>
 
 <li>
    Builtin msvcrt mishandles the cmdline to argv conversion #234: <a
-   href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=234">http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=234</a>
+   href="http://bugs.winehq.com/show_bug.cgi?id=234">http://bugs.winehq.com/show_bug.cgi?id=234</a>
    This prevents 'wine /mnt/win/Program\ Files\whatever\foo.exe' from working
    if you're using the builtin msvcrt!</li>
 
@@ -248,7 +248,7 @@ of items:</p>
 
  <li> PrgWin95/98: System metrics differ from the Win9x values
    #48: <a
-   href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=48">http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=48</a>
+   href="http://bugs.winehq.com/show_bug.cgi?id=48">http://bugs.winehq.com/show_bug.cgi?id=48</a>
    One day I'll fix this one... I swear. Unless you want to work on it
    first. In that case I'll provide you with my test application and dumps
    of the metrics for Win95, Win98, NT4, ...</li>
@@ -262,8 +262,8 @@ of items:</p>
    yourself) can start fixing these bugs in a distributed fashion.</li>
 
  <li> PrgWin95: Listbox getting a recessed border instead of a flat one
-   #56: <a href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=56">
-	http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=56</a>
+   #56: <a href="http://bugs.winehq.com/show_bug.cgi?id=56">
+	http://bugs.winehq.com/show_bug.cgi?id=56</a>
    (I can provide you with the sample application)</li>
 
  <li> I think it would be nice to add a tool that displays the dlls version
@@ -285,39 +285,39 @@ of items:</p>
 <ul>
 
  <li> Provide a pedump utility
-   #91: <a href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=91">
-	http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=91</a>
+   #91: <a href="http://bugs.winehq.com/show_bug.cgi?id=91">
+	http://bugs.winehq.com/show_bug.cgi?id=91</a>
    I know there's sample code that does that already floating around so
    it should be relatively simple.</li>
 
  <li> wrc fails on preprocessed files
-   #115: <a href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=115">
-	http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=115</a>
+   #115: <a href="http://bugs.winehq.com/show_bug.cgi?id=115">
+	http://bugs.winehq.com/show_bug.cgi?id=115</a>
    I believe it's just a grammar problem. You'll need to know
    (or to get cozy with) lex/yacc...</li>
 
  <li> CreateIcon does not resize bitmaps
-   #175: <a href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=175">
-	http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=175</a>
+   #175: <a href="http://bugs.winehq.com/show_bug.cgi?id=175">
+	http://bugs.winehq.com/show_bug.cgi?id=175</a>
    I did a similar fix somewhere some time ago. I can provide a
    sample application and I might be able to point you in the right 
    direction.</li>
 
  <li> winemaker: 'winemaker --nomfc' does not have the intended effect
-   #227: <a href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=227">
-	http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=227</a>
+   #227: <a href="http://bugs.winehq.com/show_bug.cgi?id=227">
+	http://bugs.winehq.com/show_bug.cgi?id=227</a>
     </li>
 
  <li> winemaker: Ignores the '--with-{mfc,wine}' options once they are
    cached
-   #225: <a href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=225">
-	http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=225</a>
+   #225: <a href="http://bugs.winehq.com/show_bug.cgi?id=225">
+	http://bugs.winehq.com/show_bug.cgi?id=225</a>
    If you're familiar with autoconf and know how configure scripts
    should behave...</li>
 
  <li> StrokePath ignores PS_JOIN_xxx
-   #11: <a href="http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=11">
-	http://wine.codeweavers.com/bugzilla/show_bug.cgi?id=11</a>
+   #11: <a href="http://bugs.winehq.com/show_bug.cgi?id=11">
+	http://bugs.winehq.com/show_bug.cgi?id=11</a>
    This should not be too difficult to fix but it would certainly help
    if you are familiar with GDI.</li>
 
@@ -365,7 +365,7 @@ once something has been fixed.  Francois also replied to that with:</p>
 <p><ul>
 
 <li>CVS 
-   <a href="http://www.winehq.com/index.php?page=cvs">http://www.winehq.com/index.php?page=cvs</a>
+   <a href="http://www.winehq.com/?page=cvs">http://www.winehq.com/?page=cvs</a>
    The best way to stay up to date.</li>
 
  <li> wine-patches
