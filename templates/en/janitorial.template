@@ -120,8 +120,8 @@
     <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to HEAP_strdupWtoA
     <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to StartDocA
     <li>dlls/hhctrl.ocx/hhctrl.c: hhctrl.ocx: HtmlHelpW: illegal call to MessageBoxA
-    <li>dlls/kernel/comm.c: kernel32: CommConfigDialogW: illegal call to CommConfigDialogA
-    <li>dlls/kernel/comm.c: kernel32: CommConfigDialogW: illegal call to HEAP_strdupWtoA
+    <li class=committed>dlls/kernel/comm.c: kernel32: CommConfigDialogW: illegal call to CommConfigDialogA
+    <li class=committed>dlls/kernel/comm.c: kernel32: CommConfigDialogW: illegal call to HEAP_strdupWtoA
     <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to HEAP_strdupWtoA
     <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to SetDefaultCommConfigA
     <li>dlls/kernel/locale.c: kernel32: GetLocaleInfoW: illegal call to GetModuleHandleA
@@ -466,8 +466,7 @@
   Please refer to <a href="http://bugs.winehq.org/show_bug.cgi?id=90">Bug 
   #90</a> for more information on this project. 
   <ul>
-    <li>workers: Michael Stefaniuc, Andrew John Hughes, Johan Dahlin,
-		 Alexandre Julliard
+    <li>workers: Michael Stefaniuc, Andrew John Hughes, Johan Dahlin, Alexandre Julliard
     <li>completed: <span class="done">Nov 22, 2002</span>
   </ul>
 
@@ -485,7 +484,7 @@
   &lt;&gt; instead. We will keep the quotes in the .c-files, as an indication
   that the header is a Wine header, rather than a system header. For header
   files we don't have this luxury as they can cause problems for Winelib developpers.
-  <ul class=modified>
+  <ul>
     <li>workers:  Dimitrie O. Paun
     <li>completed: <span class="done">Aug 30, 2003</span>
   </ul>
@@ -515,8 +514,7 @@
   this is not the case in windows, and we should fix it (and first, fix 
   all the wine code relying on this)</i>
   <ul>
-    <li>workers: Oleg Prokhorov
-		 Dimitrie O. Paun
+    <li>workers: Oleg Prokhorov, Dimitrie O. Paun
     <li>completed: <span class="done">Mar 10, 2004</span>
   </ul>
 
