@@ -11,10 +11,10 @@
     <li> <a href="#conf">Configuration</a>   <span class="todo">[BLOCKER]</span>
     <li> <a href="#ui">User Interface</a>    <span class="inprogress">[ALMOST]</span>
     <li> <a href="#formats">File Formats</a> <span class="done">[READY]</span>
-    <li> <a href="#api">Exported API</a>     <span class="inprogress">[ALMOST]</span>
+    <li> <a href="#api">Exported API</a>     <span class="done">[READY]</span>
     <li> <a href="#tools">Tools</a>          <span class="done">[READY]</span>
     <li> <a href="#misc">Miscellaneous</a>   <span class="done">[READY]</span>
-    <li> <a href="#code">Source Code</a>     <span class="todo">[BLOCKER]</span>
+    <li> <a href="#code">Source Code</a>     <span class="inprogress">[ALMOST]</span>
   </ol>
   </p>
 
@@ -198,11 +198,11 @@
      </ol>
    <h4> Others </h4>
      <ol>
-	<li> Create a man page for winedbg <span class="inprogress">[IN PROGRESS]</span>
+	<li> Create a man page for winedbg <span class="done">[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:pouech-eric@wanadoo.fr">Eric Pouech</a>
-	    <li> status: <a href="http://www.winehq.org/hypermail/wine-patches/2004/05/0324.html">patch</a> submitted.
-	    <li> updated: May 30, 2004
+	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2004/06/0051.html">patch</a> committed.
+	    <li> updated: Sep 24, 2004
           </ul>
 	<li> Create a man page for winegcc <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
@@ -279,12 +279,6 @@
 	    <li> status: wishlist
 	    <li> updated: Feb 29, 2004
           </ul>
-	<li> Remove wineinstall <span class="todo">[TODO]</span>
-	  <ul>
-	    <li> worker: ?
-	    <li> status: we shouldn't need this one we handle initial install & upgrades
-	    <li> updated: Feb 29, 2004
-          </ul>
      </ol>
 
 
@@ -351,7 +345,7 @@
 	    <li> status: ?
 	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Implement dbghelp and rewrite winedbg to use it<span class="inprogress">[IN PROGRESS]</span>
+	<li> Implement dbghelp and rewrite winedbg to use it <span class="done">[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:pouech-eric@wanadoo.fr">Eric Pouech</a>
 	    <li> status: <a href="http://www.winehq.org/hypermail/wine-patches/2004/05/0324.html">patch</a> submitted.
