@@ -71,7 +71,6 @@ emulator). </p>
 <person posts="1" size="1" who="Andriy Palamarchuk &lt;apa3a@yahoo.com&gt;" />
 </stats>
 
-<!-- ################################################################ -- />
 
 
 
@@ -209,7 +208,6 @@ Mohr suggested:</p>
 
 
 
-<!-- ################################################################ -- />
 
 
 
@@ -258,7 +256,6 @@ submitted a new patch to audio.c and asked,
 
 
 
-<!-- ################################################################ -- />
 
 
 
@@ -278,7 +275,7 @@ all kinds of tasks such as finding paths and </p>
  holidaying around Thailand, using a beaten up laptop. Since I just
  obtained free use of a real machine with a good net connection, I
  want to start submitting my work but I thought I'd clear up a few
- style issues beforehand:
+ style issues beforehand:</p>
 <p><ol>
 <li>Is it OK to give meaningful names to undocumented functions?
      <br />e.g. SHLWAPI_1/2 => UrlGetInfoA/W
@@ -301,11 +298,11 @@ all kinds of tasks such as finding paths and </p>
  shlwapi.h. 
  <br /><br />
  Here there are 4 Choices:<ol>
- <li> Define twice (Ugly)
+ <li> Define twice (Ugly)</li>
  <li> Put into a new wine/undocshlwapi.h (Seems that these are
- depreciated?)
+ depreciated?)</li>
  <li> Define anyway  (Im not a fan of having undoc functions in public
- headers)
+ headers)</li>
  <li> Have shell32 functions #include "../shlwapi/internal.h" (A little
  unclean)</li></ol><br /><br />
 
@@ -351,7 +348,7 @@ functions, Guy's take on it was, <quote who="Guy Albertelli">
    wait).</li>
    <li>All ordinal functions get defined in shlwapi/ordinal.h</li>
    <li>Internal functions go into shlwapi/ordinal.h too.</li></ul></li>
-</ol><p>
+</ol></p><p>
  There shouldn't be any conflicts with Guys work: my tree is so out of
  date I have to adapt everything anyway, so I'll make the changes as
  non-gratuitous as possible. The first patch only might be a little
@@ -365,7 +362,6 @@ functions, Guy's take on it was, <quote who="Guy Albertelli">
 
 
 
-<!-- ################################################################ -- />
 
 
 
@@ -378,7 +374,7 @@ functions, Guy's take on it was, <quote who="Guy Albertelli">
   enddate="12/10/2001"
 >
 <p>TransGaming has done a lot of work on getting InstallShield 6
-installers to work under Wine and  Ove K&aring;ven's work can be
+installers to work under Wine and  Ove K&#229;ven's work can be
 found in the WineX code on SourceForge.  So James Brown was 
 wondering, 
  <quote who="James Brown">
@@ -420,7 +416,6 @@ Gavriel State from TransGaming also replied to James to say,
 
 
 
-<!-- ################################################################ -- />
 
 
 
@@ -516,7 +511,6 @@ the patch so linux-centric, <quote who="Robert Lunnon">
 
 
 
-<!-- ################################################################ -- />
 
 
 
@@ -541,7 +535,7 @@ changing the filesystem type from "auto" to "vfat".  Hetz
 replied that he had already done that.  Gerard Patel submitted
 a tiny patch to wineconf and wondered if it fixed the problem.
 Hetz announced, <quote who="Hetz Ben-Hamo">
- Yes, that helps, could you commit it to the CVS please?</quote>
+ Yes, that helps, could you commit it to the CVS please?</quote></p>
 
  
 
@@ -551,7 +545,6 @@ Hetz announced, <quote who="Hetz Ben-Hamo">
 
 
 
-<!-- ################################################################ -- />
 
 
 
@@ -602,7 +595,6 @@ Mike McCormack replied:</p>
 
 
 
-<!-- ################################################################ -- />
 
 
 
@@ -614,7 +606,7 @@ Mike McCormack replied:</p>
   startdate="11/29/2001"
   enddate="11/29/2001"
 >
-<p>Rick Romero reported:
+<p>Rick Romero reported:</p>
 <quote who="Rick Romero"><p>
 I've been attempting to get Foxpro 5 applications running for a while
 now.  Actually, I just download from cvs randomly, and see what happens.
@@ -661,7 +653,6 @@ programming standards..), can someone point me in the right direction?
 
 
 
-<!-- ################################################################ -- />
 
 
 
