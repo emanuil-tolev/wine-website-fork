@@ -7,16 +7,6 @@
   Janitor's List</a>), and it's high time that we have one too.
   What is there to clean up? Well, lots of things! :)
 
-  <h2>Remove HeapAlloc casts</h2>
-
-  Casting the return value of HeapAlloc and HeapReAlloc is unnecessary,
-  and should be avoided.  All existing casts can be removed.  You can
-  find them using:<p>
-
-  <tt>find . -name "*.[ch]" | xargs egrep "\) *Heap(Re)?Alloc"</tt>
-
-  As of the 23rd March 2005, there's 262 of these to be removed.
-
   <h2>Check the usage of strncpy/strncpyW</h2>
 
   <i>strncpy(dst,src,n)</i> has two subtle
@@ -343,6 +333,18 @@
 
  <h2>Miscellaneous</h2>
 
+  <h2>Check www.winehq.org against the W3 HTML validator</h2>
+
+  It's good practice to keep our website W3 compliant.  The
+  <a href="http://validator.w3.org/">W3 HTML validator</a> can
+  check a site's HTML for conformance to the W3C recommendations.<p>
+
+  If you find errors on the website, you can 
+  <a href="http://www.winehq.org/site/sending_patches">submit patches</a>
+  against the <a href="http://cvs.winehq.org/cvsweb/lostwages/">lostwages</a>
+  module in the Wine CVS to wine-patches with the subject
+  starting with "LOSTWAGES:".<p>
+
   <h3>Use Compiler Warnings to Fix Errors</h3>
   Having gcc print out some warnings could isolate some problems.  There are 
   at least three different ones that we should investigate:
@@ -540,6 +542,21 @@
   <ul>
     <li>workers: James Hawkins, Joris Huizer, Paul Vriens
     <li>completed: <span class="done">Jan 25, 2005</span>
+  </ul>
+
+  <h2>Remove HeapAlloc casts</h2>
+
+  Casting the return value of HeapAlloc and HeapReAlloc is unnecessary,
+  and should be avoided.  All existing casts can be removed.  You can
+  find them using:<p>
+
+  <tt>find . -name "*.[ch]" | xargs egrep "\) *Heap(Re)?Alloc"</tt><p>
+
+  As of the 23rd March 2005, there's 262 of these to be removed.
+
+  <ul>
+    <li>workers: Jacob Ericson (completed in one day!)
+    <li>completed: <span class="done">Mar 25, 2005</span>
   </ul>
 
 <p>&nbsp;</p>
