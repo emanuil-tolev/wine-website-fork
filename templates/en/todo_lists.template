@@ -107,7 +107,7 @@
 	<li> <a href="http://www.winehq.org/site/status_options">Options status</a> update <span class="todo">[TODO]</span>
 	  <ul>
 	    <li> worker: ?
-	    <li> status: Status must be checked a gainst the code to make sure it implements documented behaviour
+	    <li> status: Status must be checked against the code to make sure it implements documented behaviour
 	    <li> updated: Feb 20, 2004
 	  </ul>
      </ol>
@@ -210,11 +210,11 @@
 	    <li> status: need to document differences from MinGW gcc
 	    <li> updated: Feb 14, 2004
           </ul>
-	<li> Create a man page for widl <span class=todo>[TODO]</span>
+	<li> Create a man page for widl <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: ?
-	    <li> status: ?
-	    <li> updated: Feb 14, 2004
+	    <li> worker: <a href="mailto:Hannu.Valtonen@hut.fi">Hannu Valtonen</a>
+	    <li> status: <a href="http://www.winehq.com/hypermail/wine-patches/2004/03/0051.html">patch</a> submitted
+	    <li> updated: Mar 07, 2004
           </ul>
 	<li> Create a man page for winedump <span class="done">[DONE]</span>
 	  <ul>
