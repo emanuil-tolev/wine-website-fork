@@ -178,10 +178,10 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/hotkey/reflist.asp"><strong>Hot Key</strong></a></td>
-	<td class="needed"></td>
-	<td class="needed"></td>
-	<td class="pct95">95%: Determine how to handle WM_CHAR</td>
-	<td><a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a></td>
+	<td>Sep 21, 2004</td>
+	<td>Comctl32.dll 6.0</td>
+	<td class="pct90">90%: WM_CHAR, WM_SYSCHAR, WS_DISABLED, EN_CHANGED</td>
+	<td><a href="mailto:rob@codeweavers.com">Robert Shearman</a></td>
     </tr>
 
     <tr>
@@ -227,10 +227,10 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/pager/reflist.asp"><strong>Pager</strong></a></td>
-	<td class="needed"></td>
-	<td class="needed"></td>
+	<td>Sep 18, 2004</td>
+	<td>Comctl32.dll 6.0</td>
 	<td class="pct90">90%: better keyboard handling, size changes, drag &amp; drop</td>
-	<td><a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a></td>
+	<td><a href="mailto:rob@codeweavers.com">Robert Shearman</a></td>
     </tr>
 
     <tr>
@@ -244,8 +244,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/propsheet/reflist.asp"><strong>Property Sheet</strong></a></td>
-	<td class="needed"></td>
-	<td class="needed"></td>
+	<td>Sep 12, 2004</td>
+	<td>Comctl32.dll 6.0</td>
 	<td class="pct80">80%: tab order, Unicode property sheets, wizard 97 handling</td>
 	<td><a href="mailto:xnavara@volny.cz">Filip Navara</a></td>
     </tr>
@@ -301,10 +301,10 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/tooltip/reflist.asp"><strong>ToolTip</strong></a></td>
-	<td class="needed"></td>
-	<td class="needed"></td>
+	<td>Sep. 08, 2004</td>
+	<td>Comctl32.dll 6.0</td>
 	<td class="pct80">80%: custom draw support</td>
-	<td><a href="mailto:w3seek@reactos.com">Thomas Weidenmuller</a></td>
+	<td><a href="mailto:rob@codeweavers.com">Robert Shearman</a></td>
     </tr>
 
     <tr>
