@@ -25,8 +25,7 @@ class config
 					                  'About' => $this->_file_root.'?page=about',
                                       'Introduction' => $this->_file_root.'?page=about',
 									  'Screenshots' => $this->_file_root.'?page=screenshots',
-									  'Applications' => $this->_file_root.'?page=supported_applications',
-									  'Help Wanted' => $this->_file_root.'?page=help_wanted',
+									  'Contributing' => $this->_file_root.'?page=contrib',
 									  'News' => $this->_file_root.'?wwn=latest',
                                       'Press' => $this->_file_root.'?page=press',
                                       'License' => $this->_file_root.'?page=license'
@@ -37,21 +36,15 @@ class config
 										 'Source' => $this->_file_root.'?page=download_source'
 										),
 					 'Support' => array(
-					                    'Support' => $this->_file_root.'?page=support',
+                                        'Support' => $this->_file_root.'?page=support',
+                                        'Documentation' => 'http://www.winehq.com/Docs/',
                                         'FAQ' => $this->_file_root.'?page=faq',
 										'HowTo' => $this->_file_root.'?page=howto',
 										'Bug Tracking' => 'http://bugs.winehq.org/',
+                                        'Applications' => $this->_file_root.'?page=supported_applications',
 										'Troubleshooting' => $this->_file_root.'?page=troubleshooting',
 										'Forums' => $this->_file_root.'?page=forums'
 									   ),
-		             'Documentation' => array(
-					                          'Documentation' => 'http://www.winehq.com/Docs/',
-                                              'User Guide' => 'http://www.winehq.com/Docs/',
-                                              'Winelib Guide' => 'http://www.winehq.com/Docs/',
-											  'Developer Guide' => 'http://www.winehq.com/Docs/',
-											  'Packager Guide' => 'http://www.winehq.com/Docs/',
-											  'API Doc' => 'http://www.winehq.com/Docs/'
-											 ),
 					 'Development' => array(
 					                        'Development' => $this->_file_root.'?page=development',
                                             'CVS' => $this->_file_root.'?page=cvs',

@@ -2,24 +2,25 @@
 
 <!-- Please remember to close your <td> and <tr> tags -->
 
-<style>
+  <style>
+
 <!--
 	.hdr	{ background-color: #64a4ff; }
-    .pct0   { background-color: #ff5050; }
-    .pct5   { background-color: #ff5d4f; }
-    .pct10  { background-color: #ff694e; }
-    .pct15  { background-color: #ff764d; }
-    .pct20  { background-color: #ff824b; }
-    .pct25  { background-color: #ff8f4a; }
-    .pct30  { background-color: #ff9b49; }
-    .pct35  { background-color: #ffa848; }
-    .pct40  { background-color: #ffb447; }
-    .pct45  { background-color: #ffc146; }
-    .pct50  { background-color: #ffcd45; }
-    .pct55  { background-color: #ffda43; }
-    .pct60  { background-color: #ffe642; }
-    .pct65  { background-color: #fff341; }
-    .pct70  { background-color: #ffff40; }
+        .pct0   { background-color: #ff5050; }
+        .pct5   { background-color: #ff5d4f; }
+        .pct10  { background-color: #ff694e; }
+        .pct15  { background-color: #ff764d; }
+        .pct20  { background-color: #ff824b; }
+        .pct25  { background-color: #ff8f4a; }
+        .pct30  { background-color: #ff9b49; }
+        .pct35  { background-color: #ffa848; }
+        .pct40  { background-color: #ffb447; }
+        .pct45  { background-color: #ffc146; }
+        .pct50  { background-color: #ffcd45; }
+        .pct55  { background-color: #ffda43; }
+        .pct60  { background-color: #ffe642; }
+        .pct65  { background-color: #fff341; }
+        .pct70  { background-color: #ffff40; }
 	.pct75	{ background-color: #dcff48; }
 	.pct80	{ background-color: #c8ff50; }
 	.pct85	{ background-color: #b4ff58; }
@@ -34,16 +35,15 @@
 	.adeqgood	{ background-color: #c0ff54; }
 	.good		{ background-color: #60ff60; }
 -->
-</style>
+  </style>
+  <p><big>Wine Status</big></p>
 
-<h1>Wine Status</h1>
-                                                                        
- 
-  <p>Last update: Oct 08, 2002.<br>
+
+  <p>Last update: Jan 27, 2003.<br>
       If you would like the WWN to write a feature about some particular things in this table, just <a href="mailto:wwn@winehq.com">mail us</a>.
   </p>
-                                                                        
- 
+
+
   <table width="100%" border="0" cellspacing="0" cellpadding="2">
     <tr>
       <td bgcolor="#c0c0ff"><strong>Disclaimer</strong>
@@ -56,10 +56,10 @@
       </td>
     </tr>
   </table>
-  
+
   <p>To get a feeling about development progress, please
     have a look at this page's <a href="#changelog">ChangeLog</a>. </p>
-  
+
   <p><!--
     These are the new colors.
     Uncomment the table to see a complete overview.
@@ -67,8 +67,8 @@
     In-betweens are of course allowed if you need it. Make a new style entry and
     put a copy in the table.
     -->
-    
-    
+
+
     <table border="0" width="95%" cellpadding="5" cellspacing="0">
       <tr class="hdr">
 	<th colspan="21">Implementation status</th>
@@ -107,13 +107,13 @@
 	<td class="good" colspan="3">Good</td>
       </tr>
     </table>
-                                                                     
+
   <hr size="2" noshade="noshade">&nbsp;
-                                                
-    <table bgcolor="#6d6d6d"> 
+
+    <table bgcolor="#6d6d6d">
       <tr>
-	<td>                                       
-	  
+	<td>
+
 	  <table width="100%" border="0" bgcolor="#ffffff" cellspacing="1" cellpadding="3">
 	    <tr class="hdr">
 	      <th>Aspect or Component</th>
@@ -131,7 +131,7 @@
 	    </tr>
 	    <tr>
 	      <td>Process/Address Space model</td>
-	      <td class="poor">Poor</td> 
+	      <td class="poor">Poor</td>
               <td><a href="http://www.winehq.org/news/?view=4#Address Space Separation / Stability vs Correctness">#4</a>,
 		  <a href="http://www.winehq.com/news/?view=39#Some more bits on address space separation">#39</a>,
 		  <a href="http://www.winehq.org/news/?view=46#Address space separation">#46</a></td>
@@ -172,6 +172,15 @@
 	      <td>Alexandre Julliard</td>
 	    </tr>
 	    <tr>
+	      <td>Bootup/autostart management (wineboot)</td>
+              <td class="nonexistent">Nonexistent</td>
+	      <td><a
+	      href="http://www.winehq.com/news/?view=149#Implementation of wineboot">#149</a>, <a
+	      href="http://www.winehq.com/news/?view=153#Wineboot Progress">#153</a></td>
+	      <td class="pct30">30% complete</td>
+	      <td>Shachar Shemesh,<br>Andreas Mohr</td>
+	    </tr>
+	    <tr>
 	      <td>Memory management</td>
               <td class="nonexistent">Nonexistent</td>
 	      <td><a href="http://www.winehq.org/news/?view=4#CRTDLL implementation">#4</a>,
@@ -185,7 +194,7 @@
 	      <td>Wine DLL infrastructure</td>
 	      <td class="outdated">Outdated</td>
 	      <td><a href="http://www.winehq.com/news/?view=74#Feature: Of Dynamic loading in Wine by Eric Pouech">#74</a></td>
-	      <td class="pct95">95% completes</td>
+	      <td class="pct95">95% complete</td>
 	      <td>Alexandre Julliard</td>
            </tr>
 	    <tr>
@@ -193,8 +202,16 @@
 	      <td class="nonexistent">Nonexistent</td>
 	      <td><a href="http://www.winehq.com/news/?view=69#DLLs get separated">#69</a>,
 		  <a href="http://www.winehq.com/news/?view=74#Feature: Of Dynamic loading in Wine by Eric Pouech">#74</a></td>
-              <td class="pct75"><a href="#Aspect_or_Component_">75% complete</a></td>
-              <td>Alexandre Julliard,<br>AJ</td>
+              <td class="pct85"><a href="#Aspect_or_Component_">85% complete</a></td>
+              <td>Alexandre Julliard</td>
+	    </tr>
+	    <tr>
+	      <td>Native DLL overrides</td>
+	      <td class="good"><a href="http://www.winehq.org/docs/wine-user/dll-config.shtml">Good</a></td>
+	      <td><a href="http://www.winehq.com/news/?view=46#Feature: DLL overrides by Ove Kåven">#46</a>,
+		  <a href="http://www.winehq.com/news/?view=134#Native vs.Builtin DLL's">#134</a></td>
+              <td class="pct95">95% complete</td>
+	      <td>&nbsp;</td>
 	    </tr>
 	    <tr>
 	      <td>Message passing/queues</td>
@@ -208,14 +225,22 @@
 	    <tr>
 	      <td>Window management</td>
 	      <td class="outdated">Outdated</td>
-	      <td><a href="http://www.winehq.com/news/?view=29#Managed mode metrics">#29</a>,
-		  <a href="http://www.winehq.com/news/?view=103#More Window Handling Additions">#29</a></td>
+	      <td><a href="http://www.winehq.com/news/?view=29#Managed mode metrics">#29 (1)</a>,
+		  <a href="http://www.winehq.com/news/?view=103#More Window Handling Additions">#29 (2)</a></td>
 	      <td class="pct95"><a href="#Window_management">95% complete</a></td>
+	    </tr>
+	    <tr>
+	      <td>File I/O</td>
+              <td class="nonexistent">Nonexistent</td>
+	      <td><a href="http://kt.zork.net/wine/wn20011212_110.html#5">#110</a>,
+		  <a href="http://www.winehq.com/news/?view=129#Using NT Pathnames">#129</a></td>
+	      <td class="pct100">100% complete</td>
+	      <td>Mike McCormack</td>
 	    </tr>
 	    <tr>
 	      <td>Disk drive emulation</td>
 	      <td class="adequate">Adequate</td>
-	       <td><a href="http://www.winehq.com/news/?view=71#Direct drive access">#71</a></td> 
+	       <td><a href="http://www.winehq.com/news/?view=71#Direct drive access">#71</a></td>
               <td class="pct100">100% complete</td>
 	      <td>&nbsp;</td>
 	    </tr>
@@ -229,11 +254,11 @@
 	      <td>Eric Pouech&nbsp;</td>
 	    </tr>
 	    <tr>
-	      <td>Native DLL overrides</td>
-	      <td class="good"><a href="http://www.winehq.org/docs/wine-user/dll-config.shtml">Good</a></td>
-	      <td><a href="http://www.winehq.com/news/?view=46#Feature: DLL overrides by Ove Kåven">#46</a>,
-		  <a href="http://www.winehq.com/news/?view=134#Native vs.Builtin DLL's">#134</a></td>
-              <td class="pct95">95% complete</td>
+	      <td>Registry handling</td>
+              <td class="good">Good</td>
+	      <td><a href="http://www.winehq.com/news/?view=5#Registry rewrite">#5</a>,
+		  <a href="http://www.winehq.com/news/?view=48#MZ (aka DOS) executable support">#48</a></td>
+	      <td class="pct90">90% complete</td>
 	      <td>&nbsp;</td>
 	    </tr>
 	    <tr>
@@ -247,34 +272,9 @@
 	      <td>X11 font mapper</td>
 	      <td class="poor">Poor</td>
               <td><a href="http://www.winehq.com/news/?view=75#Wine and fonts">#75</a></td>
-	      <td class="pct80"><a href="#Fonts">80% complete</a></td>
+	      <td class="pct90"><a href="#Fonts">90% complete</a></td>
               </td>
 	      <td>Huw D M Davies</td>
-	    </tr>
-	    <tr>
-	      <td>Registry handling</td>
-              <td class="good">Good</td>
-	      <td><a href="http://www.winehq.com/news/?view=5#Registry rewrite">#5</a>,
-		  <a href="http://www.winehq.com/news/?view=48#MZ (aka DOS) executable support">#48</a></td>
-	      <td class="pct90">90% complete</td>
-	      <td>&nbsp;</td>
-	    </tr>
-	    <tr>
-	      <td>Clipboard handling</td>
-              <td class="nonexistent">Nonexistent</td>
-	      <td><a href="http://www.winehq.org/news/?view=4#Wine clipboard enhancement plan">#4</a>,
-		  <a href="http://www.winehq.com/news/?view=9#Clipboard (cont'd)">#9</a>,
-		  <a href="http://www.winehq.com/news/?view=10#Clipboard behavior">#10</a></td>
-	      <td class="pct90">90% complete</td>
-	      <td>&nbsp;</td>
-	    </tr>
-	    <tr>
-	      <td>File I/O</td>
-              <td class="nonexistent">Nonexistent</td>
-	      <td><a href="http://kt.zork.net/wine/wn20011212_110.html#5">#110</a>,
-		  <a href="http://www.winehq.com/news/?view=129#Using NT Pathnames">#129</a></td>
-	      <td class="pct100">100% complete</td>
-	      <td>Mike McCormack</td>
 	    </tr>
 	    <tr>
 	      <td>TrueType support</td>
@@ -284,6 +284,39 @@
 	      <td class="pct80"><a href="#Fonts">80% complete</a></td>
 	      <td>Huw D M Davies</td>
 	    </tr>
+	    <tr>
+	      <td>General printer setup</td>
+	      <td class="poor">Poor</td>
+	      <td><a href="http://www.winehq.com/news/?view=11#PrintDlg errors">#11</a>,
+		  <a href="http://www.winehq.org/news/?view=12#Wine and printers">#12</a></td>
+	      <td class="pct70"><a href="#Printers_">70% complete</a></td>
+              <td>Huw D M Davies</td>
+	    </tr>
+	    <tr>
+	      <td>Internal PostScript printer driver</td>
+	      <td class="adequate">Adequate</td>
+	      <td><a href="http://www.winehq.com/news/?view=82#PS printer driver and fonts">#82</a></td>
+	      <td class="pct60"><a href="#Printers_">60% complete</a></td>
+	      <td>Huw D M Davies,<br>Ian Pilcher</td>
+	    </tr>
+	    <tr>
+	      <td>Native Windows printer drivers</td>
+	      <td class="adequate">Adequate</td>
+	      <td><a href="http://www.winehq.org/news/?view=74#GDI lock and 16 bit printer drivers">#74</a>,
+		  <a href="http://www.winehq.org/news/?view=102#16-bit Printer Drivers">#102</a>,
+		  <a href="http://www.winehq.org/news/?view=134#Windows Printer Drivers">#134</a></td>
+              <td class="pct65">16-bit (3.x/95): <a href="#Printers_">65% complete</a><br>
+		  32-bit (NT):&nbsp;<a href="#Printers_">65% complete</a></td>
+	      <td>Huw D M Davies</td>
+	    </tr>
+	    <tr>
+	      <td>Unicode support</td>
+	      <td class="nonexistent">Nonexistent</td>
+	      <td><a href="http://www.winehq.com/news/?view=41#Ansi and Unicode">#41</a>,
+		  <a href="http://www.winehq.com/news/?view=119#Unicode and I18N Support">#119</a></td>
+	      <td class="pct80">80% complete</td>
+	      <td>Dmitry Timoshkov,<br>Alexandre Julliard,<br>CodeWeavers</td>
+           </tr>
 	    <tr>
               <td>National Language Support (NLS)</td>
 	      <td class="outdated">Outdated</td>
@@ -295,13 +328,24 @@
 	      <td>Dmitry Timoshkov,<br>Alexandre Julliard</td>
             </tr>
 	    <tr>
-	      <td>Unicode support</td>
+              <td>BiDi</td>
 	      <td class="nonexistent">Nonexistent</td>
-	      <td><a href="http://www.winehq.com/news/?view=41#Ansi and Unicode">#41</a>,
-		  <a href="http://www.winehq.com/news/?view=119#Unicode and I18N Support">#119</a></td>
-	      <td class="pct80">80% complete</td>
-	      <td>Dmitry Timoshkov,<br>Alexandre Julliard,<br>CodeWeavers</td>
-           </tr>
+	      <td><a href="http://www.winehq.com/news/?view=119#Implementing BiDi Fonts">#119</a>,
+		  <a href="http://www.winehq.com/news/?view=126#Preliminary BiDi Patch">#126</a>,
+		  <a href="http://www.winehq.com/news/?view=127#Adding FriBiDi Support">#127</a>,
+		  <a href="http://www.winehq.com/news/?view=132#BiDi Support">#132</a></td>
+	      <td class="pct5"><a href="#National_Language_Support">5% complete</a></td>
+	      <td>Shachar Shemesh</td>
+            </tr>
+	    <tr>
+	      <td>Clipboard handling</td>
+              <td class="nonexistent">Nonexistent</td>
+	      <td><a href="http://www.winehq.org/news/?view=4#Wine clipboard enhancement plan">#4</a>,
+		  <a href="http://www.winehq.com/news/?view=9#Clipboard (cont'd)">#9</a>,
+		  <a href="http://www.winehq.com/news/?view=10#Clipboard behavior">#10</a></td>
+	      <td class="pct90">90% complete</td>
+	      <td>&nbsp;</td>
+	    </tr>
 	    <tr>
 	      <td>Dynamic Data Exchange (DDE)</td>
 	      <td class="nonexistent">Nonexistent</td>
@@ -345,46 +389,11 @@
               <td>&nbsp;</td>
 	    </tr>
 	    <tr>
-              <td>BiDi</td>
-	      <td class="nonexistent">Nonexistent</td>
-	      <td><a href="http://www.winehq.com/news/?view=119#Implementing BiDi Fonts">#119</a>,
-		  <a href="http://www.winehq.com/news/?view=126#Preliminary BiDi Patch">#126</a>,
-		  <a href="http://www.winehq.com/news/?view=127#Adding FriBiDi Support">#127</a>,
-		  <a href="http://www.winehq.com/news/?view=132#BiDi Support">#132</a></td>
-	      <td class="pct5"><a href="#National_Language_Support">5% complete</a></td>
-	      <td>Shachar Shemesh</td>
-            </tr>
-	    <tr>
-	      <td>General printer setup</td>
-	      <td class="poor">Poor</td>
-	      <td><a href="http://www.winehq.com/news/?view=11#PrintDlg errors">#11</a>,
-		  <a href="http://www.winehq.org/news/?view=12#Wine and printers">#12</a></td>
-	      <td class="pct70"><a href="#Printers_">70% complete</a></td>
-              <td>Huw D M Davies</td>
-	    </tr>
-	    <tr>
-	      <td>Internal PostScript printer driver</td>
-	      <td class="adequate">Adequate</td>
-	      <td><a href="http://www.winehq.com/news/?view=82#PS printer driver and fonts">#82</a></td>
-	      <td class="pct60"><a href="#Printers_">60% complete</a></td>
-	      <td>Huw D M Davies,<br>Ian Pilcher</td>
-	    </tr>
-	    <tr>
-	      <td>Native Windows printer drivers</td>
-	      <td class="adequate">Adequate</td>
-	      <td><a href="http://www.winehq.org/news/?view=74#GDI lock and 16 bit printer drivers">#74</a>,
-		  <a href="http://www.winehq.org/news/?view=102#16-bit Printer Drivers">#102</a>,
-		  <a href="http://www.winehq.org/news/?view=134#Windows Printer Drivers">#134</a></td>
-              <td class="pct65">16-bit (3.x/95): <a href="#Printers_">65% complete</a><br>
-		  32-bit (NT):&nbsp;<a href="#Printers_">65% complete</a></td>
-	      <td>Huw D M Davies</td>
-	    </tr>
-	    <tr>
 	      <td>Win32 Console</td>
               <td class="adeqgood">Good but somewhat outdated</td>
 	      <td><a href="http://www.winehq.com/news/?view=137#CreateProcessA() and Environment Settings">#137</a></td>
-	      <td class="pct75"><a href="#WineConsole_">75% complete</a></td>
-	      <td>Eric Pouech &nbsp;</td>
+	      <td class="pct85">85% complete</td>
+	      <td>Eric Pouech</td>
 	    </tr>
 	    <tr>
               <td>DOS application support</td>
@@ -502,18 +511,27 @@
 	      <td>OSS (Open Sound System) multimedia driver</td>
 	      <td class="adequate">Adequate</td>
 	      <td><a href="http://kt.zork.net/wine/wn20011212_110.html#2">#110</a></td>
-	      <td class="pct100">100% complete</td>
+	      <td class="pct95">95% complete<br>(MIDI IN support)</td>
 	      <td>Eric Pouech</td>
             </tr>
 	    <tr>
-	      <td>Alsa multimedia driver</td>
+	      <td>ALSA multimedia driver</td>
 	      <td class="adequate">Adequate</td>
 	      <td><a href="http://www.winehq.com/news/?view=121#ALSA Driver">#121</a></td>
 	      <td class="pct20">20% complete<br>
-		  Preliminary Audio support for Alsa 0.5 and final interfaces.<br>
-                  No implementation for midi/mixer...</td>
+		  Preliminary Audio support for ALSA 0.5 and final interfaces.<br>
+                  No implementation for MIDI/mixer...</td>
 	      <td>Marco Pietrobono,<br>Eric Pouech</td>
 	    </tr>
+            <tr>
+	      <td>JACK (JACK Audio Connection Kit) multimedia driver</td>
+	      <td class="nonexistent">Nonexistent</td>
+	      <td>None</td>
+              <td class="pct20"><a href="#Sound_Drivers">20% complete</a><br>
+		  Preliminary Audio support<br>
+		  No implementation for midi/mixer...</td>
+	      <td>Chris Morgan</td>
+            </tr>
 	    <tr>
 	      <td>aRtS multimedia driver</td>
 	      <td class="adequate">Adequate</td>
@@ -589,12 +607,14 @@
               <td><a href="http://www.transgaming.com/">TransGaming</a></td>
 	    </tr>
 	    <tr>
-	      <td>Direct3D</td>
+	      <td><a href="http://www.bbrox.org/d3d_status.html">Direct3D</a></td>
 	      <td class="poor">Poor</td>
 	      <td><a href="http://www.winehq.com/news/?view=76#TransGaming">#76</a>,
-		  <a href="http://www.winehq.com/news/?view=135#Direct3D 8 Support">#138</a></td>
-              <td class="pct30">30% complete</td>
-              <td>Jason Edmeades</td>
+		  <a href="http://www.winehq.com/news/?view=135#Direct3D 8 Support">#138</a>,
+		  <a href="http://www.winehq.com/news/?view=150#Direct3D Update">#150</a>,
+		  <a href="http://www.winehq.com/news/?view=153#D3D Status Page">#153</a></td>
+              <td class="pct50">50% complete</td>
+              <td>Lionel Ulmer,<br>Rapha&euml;l Junqueira,<br>Christian Costa,<br>Jason Edmeades</td>
 	    </tr>
 	    <tr>
 	      <td>dinput: DirectInput</td>
@@ -616,7 +636,7 @@
 	      <td class="poor">Poor</td>
 	      <td><a href="http://www.winehq.com/news/?view=48#Merging DSound and WinMM drivers">#48</a></td>
               <td class="pct80"><a href="#DirectSound">80% complete</a></td>
-	      <td>TransGaming</td>
+	      <td>TransGaming,<br>Fran&ccedil;ois Gouget,<br>Rok Mandeljc</td>
 	    </tr>
 	    <tr>
 	      <td>quartz: DirectShow core</td>
@@ -688,10 +708,11 @@
 	    </tr>
 	    <tr>
 	      <td>odbc32: ODBC Database Manager</td>
-              <td class="nonexistent">Nonexistent</td>
+	      <td class="adequate"><a
+	      href="http://www.winehq.org/Docs/wine-user/odbc.shtml">Adequate</a></td>
 	      <td><a href="http://www.winehq.com/news/?view=115#ODBC and Wine">#115</a></td>
-	      <td class="pct100">100% complete</td>
-	      <td>Corel</td>
+	      <td class="pct70">70% complete<br>(no Windows ODBC driver support, only UNIX)</td>
+	      <td></td>
 	    </tr>
 	    <tr>
 	      <td>wnaspi32: Advanced SCSI Peripheral Interface</td>
@@ -732,7 +753,7 @@
 	      <td class="adequate">Adequate</td>
 	      <td><a href="http://www.winehq.com/news/?view=66#A tool to help Wine making">#66</a>,
 		  <a href="http://www.winehq.com/news/?view=101#Using Native DLL's">#101</a></td>
-	      <td class="pct70"><a href="#Tools_">70% complete</td>
+	      <td class="pct75"><a href="#Tools_">75% complete</td>
 	      <td>CodeWeavers,<br>Fran&ccedil;ois Gouget</td>
 	    </tr>
 	    <tr>
@@ -775,7 +796,7 @@
 	      <td class="nonexistent">Nonexistent</td>
               <td><a href="http://www.winehq.com/news/?view=68#Wine bottling">#68</a></td>
 	      <td class="pct60">60% complete</td>
-	      <td>Ove K&aring;ven,<br>Eric Pouech,<br>Andreas Mohr</td> 
+	      <td>Ove K&aring;ven,<br>Eric Pouech,<br>Andreas Mohr</td>
             </tr>
             <tr>
 	      <td>Wine Regression Test Suite</td>
@@ -785,7 +806,7 @@
 		  <a href="http://www.winehq.com/news/?view=121#More Tests">#121</a>,
 		  <a href="http://www.winehq.com/news/?view=136#No More Perl Regression Tests">#136</a></td>
 	      <td class="pct70">70% complete</td>
-	      <td>Andriy Palamarchuk, Francois Gouget</td>
+	      <td>Andriy Palamarchuk, Fran&ccedil;ois Gouget</td>
 	    </tr>
 	    <tr class="hdr">
 	      <td colspan="5"><strong>No-Windows installation issues</strong></td>
@@ -904,7 +925,7 @@
 	      <td>WineHQ and Corel relationship</td>
 	      <td class="poor">Poor</td>
 	      <td><a href="http://www.winehq.com/about/2000/23/announcement.txt">Announcement</a></td>
-	      <td class="pct100">Corel is no longer active in Wine development,and their Linux team has changed a bit.</td>
+	      <td class="pct100">Although Corel has been a really great help, it is no longer active in Wine development, and their Linux team has changed a bit.</td>
 	      <td>&nbsp;</td>
 	    </tr>
 	  </table>
@@ -912,145 +933,138 @@
       </tr>
     </table>
 
-                        <hr size="2" noshade="noshade">&nbsp;            
-                                              
+                        <hr size="2" noshade="noshade">&nbsp;
+
                         <h2>Known TODOs</h2>
-                                                          
-                        <hr size="1" noshade="noshade">&nbsp;            
-                                           
+
+                        <hr size="1" noshade="noshade">&nbsp;
+
                         <h3><a name="Window_management"></a>Window management<br></h3>
-                                                          
+
                         <ul>
-                        <li>Window management needs proper inter-process handling of activation, focus, repaint.</li>
+                        <li>Window management needs proper inter-process handling of activation, focus, repaint</li>
                         </ul>
-                                                          
+
                         <h3><a name="National_Language_Support"></a>National Language Support<br></h3>
-                                                       
+
                         <ul>
-                        <li>Make sure ASCII functions call the Unicode one and not the other way around.</li>
+                        <li>Make sure ASCII functions call the Unicode one and not the other way around</li>
                         <li>BiDi support</li>
                         <li>Add support for Hebrew and Arabic</li>
                         <li>Add support for more keyboard layouts to x11drv</li>
                         <li>Figure out what should be done for better support of Chinese, Korean, Japanese...</li>
                         </ul>
-                                                            
+
                         <h3><a name="Winsock"></a>Winsock<br></h3>
-                                                       
+
                         <ul>
                         <li>Winsock1 calls,in particular select(),use direct system calls instead of using related wine APIs</li>
                         <li>More unit tests need to be written</li>
-                        <li>Make sure OOB data is handled properly. Check client-size blocking.</li>
-                        <li>WS2: Support other kind of services, like IrDA.</li>
-                        <li>Fix stubs left in ws2_32.spec.</li>
+                        <li>Make sure OOB data is handled properly. Check client-size blocking</li>
+                        <li>WS2: Support other kind of services, like IrDA</li>
+                        <li>Fix stubs left in ws2_32.spec</li>
                         </ul>
-                                                            
+
                         <h3><a name="DirectSound"></a>DirectSound<br></h3>
-                                                       
+
                         <ul>
-                        <li>Make the latency configurable (tunable).</li>
-                        <li>More intelligent prebuffering.</li>
-                        <li>Complete support for hardware secondary buffers through the HAL (for a future ALSA multimedia wave audio driver).</li>
-                        <li>3D sound buffers.</li>
-                        <li>Sound capture (recording).</li>
+                        <li>Make the latency configurable (tunable)</li>
+                        <li>More intelligent prebuffering</li>
+                        <li>Complete support for hardware secondary buffers through the HAL (for a future ALSA multimedia wave audio driver)</li>
+                        <li>3D sound buffers</li>
+                        <li>Sound capture (recording)</li>
                         </ul>
 
                         <h3><a name="Sound_Drivers"></a>Sound Drivers<br></h3>
-                                                 
+
                         <ul>
-                        <li>Alsa driver (on final 0.9 interface)</li>
+                        <li>ALSA driver (on final 0.9 interface)</li>
+                        <li>Improve driver for THE one true audio server: JACK !</li>
                         </ul>
-                                                 
+
                         <h3><a name="Video"></a>Video<br></h3>
-                                                 
+
                         <ul>
                         <li>Implement native codecs (RLE...)</li>
                         </ul>
-                                                 
+
                         <h3><a name="GDI"></a>GDI<br></h3>
-                                                 
+
                         <ul>
                         <li>Write a DIB engine</li>
                         <li>DIB engine to do 32-bit graphics manipulation&nbsp;</li>
                         </ul>
 
                         <h3><a name="GDB"></a>GDB<br></h3>
-                                                 
+
                         <ul>
                         <li>Add the MSC/PDB info support to gdb</li>
                         </ul>
-                        
+
                         <h3>Winedbg<br></h3>
-                                                 
+
                         <ul>
                         <li>Make winedbg use dbghelp DLL</li>
                         <li>Speed up PDB support&nbsp;</li>
                         </ul>
-                                                 
+
                         <h3><a name="DDE"></a>DDE<br></h3>
-                                                 
+
                         <ul>
                         <li>Enhance memory management issues (interprocess sending)</li>
                         </ul>
-                                                 
-                        <h3><a name="WineConsole_"></a>WineConsole<br></h3>
-                                                 
-                        <ul>
-                        <li>Add a (n)curse backend so that we can run CUI programs without using USER32 (and X11 behind)</li>
-                        </ul>
-                                                 
+
                         <h3><a name="Native_Programs"></a>Native Programs<br></h3>
 
                         <ul>
                         <li>Winhelp: fix invocation thru WinHelp</li>
                         </ul>
-                                                 
-                        <h3>File Managment<br></h3>
-                                                 
+
+                        <h3>File Management<br></h3>
+
                         <ul>
                         <li>Implement NT file namespace</li>
                         <li>UNC support</li>
-                        <li>Allow flexibility in FS "mounting" (for example, SMB shares)<br></li>
+                        <li>Allow flexibility in FS &quot;mounting&quot; (for example, SMB shares)<br></li>
                         </ul>
-                                                 
+
                         <h3><a name="Fonts"></a>Fonts<br></h3>
-                                                 
+
                         <ul>
                         <li>Support for non-TT fonts (eg Type1, bitmap,....)</li>
-                        <li>Support for client side rendering on non-RENDER enabled XServers</li>
-                        <li>Subpixel rendering - a.k.a. ClearType.</li>
+                        <li>Subpixel rendering - a.k.a. ClearType</li>
                         <li>Integration with libfontconfig</li>
-                        <li>Reduce per font startup time.</li>
-                        <li>Libfontconfig support <br></li>
+                        <li>Reduce per font startup time</li>
+                        <li>libfontconfig support</li>
                         </ul>
-                                                 
+
                         <h3><a name="Printers_"></a>Printers<br></h3>
-                                                 
+
                         <ul>
-                        <li>Write a printer configuation applet</li>
+                        <li>Write a printer configuration applet</li>
                         <li>Fix the Type1 font downloader for HP4000 printers<br></li>
                         </ul>
-                                                 
+
                         <h3><a name="Tools_"></a>Tools<br></h3>
-                                                 
+
                         <ul>
                         <li>Wine installation process should install and configure wine</li>
                         <li>Winemaker fixes</li>
                         <li>Run C regression tests on Windows with MSVC</li>
-                        <li>Compile Wine with -DSTRICT&nbsp;</li>
-                        <li>Work on WRC as it does not find system headers<br></li>
+                        <li>Work on WRC as it does not find system headers</li>
                         </ul>
-                                                 
+
                         <h3><a name="Instructions_"></a>Instructions<br></h3>
 
                         <ul>
-                        <li> Write a proper Users Guide Introduction</li>
+                        <li>Write a proper Users Guide Introduction</li>
                         <li>Documentation updates<br></li>
                         </ul>
-                                                 
+
                         <h3><a name="Aspect_or_Component_"></a>Aspect or Component<br></h3>
 
                         <ul>
-                        <li> More DLL Separation</li>
+                        <li>More DLL Separation</li>
                         <li>Review of Wine Server Protocol</li>
                         <li>Finalize Server Protocol</li>
                         <li>PAM (Pluggable Authentication Modules)&nbsp;</li>
@@ -1059,37 +1073,54 @@
                         </ul>
 
                         <h3>Porting issues for Mingw/Cygwin/MS_VC<br></h3>
-                         
+
                         <ul>
-                        <li> Better seperation of win16/32 code.</li>
-                        <li>Remove/rewite win16/9x api dependancy on newer code</li>
+                        <li>Better separation of win16/32 code</li>
+                        <li>Remove/rewrite win16/9x API dependancy on newer code</li>
                         <li>Remove/rewrite wineisms from code</li>
                         <li>Rewrite/fix unixisms in most WINE dlls&nbsp;</li>
-                        <li>Documentation fixes <br></li>                         
+                        <li>Documentation fixes</li>
                         </ul>
 
                         <h3><a name="Low_priority_items_"></a>Low priority items<br></h3>
-                         
+
                         <ul>
-                        <li> VxD support with dynamic loading</li>
+                        <li>VxD support with dynamic loading</li>
                         <li>Multi-user support</li>
                         </ul>
                         <br>
 
-                         For the full&nbsp; 0.9 Bug List please see &nbsp;<span class="menuTitle"></span><a
+                         For the full 0.9 Bug List, please see <span class="menuTitle"></span><a
                          href="http://bugs.winehq.com/buglist.cgi?keywords=tasklet">Tasklets<br>
                          <span style="color: rgb(0, 0, 0);"></span></a>For
-                         the full&nbsp; 1.0 Bug List please see &nbsp;<a
+                         the full 1.0 Bug List, please see <a
                          href="http://bugs.winehq.com/buglist.cgi?keywords=tasklist">Tasklist</a>
-                                                       
-                        <hr size="2" noshade="noshade">&nbsp;            
-                                           
+
+                        <hr size="2" noshade="noshade">&nbsp;
+
                         <p><a name="changelog"></a></p>
                         <h2>ChangeLog</h2>
                         <hr size="1" noshade="noshade">&nbsp;&nbsp;&nbsp;
 
+                         <p>Changes since October 08 2002:</p>
+
+                         <ul>
+                         <li>Better grouping of entries</li>
+                         <li>New - wineboot</li>
+                         <li>New - JACK driver</li>
+                         <li>Font support: 80% -&gt; 90% (support w/o RENDER)</li>
+                         <li>wineconsole: 75% -&gt; 85% (ncurses)</li>
+                         <li>OSS driver: 100% -&gt; 95% (MIDI IN missing)</li>
+                         <li>Direct3D: 30% -&gt; 50%</li>
+                         <li>ODBC: 100% -&gt; 70%</li>
+                         <li>DLL separation: 75% -&gt; 85%</li>
+                         <li>winemaker: 70% -&gt; 75% (STRICT)</li>
+                         </ul>
+                       <br>
+
+
                          <p>Changes since October 05 2002:</p>
-                        
+
                          <ul>
                          <li>Fixed the link to DLL overrides</li>
                          <li>ADD - Links to WWN article coverage... Thanks to ( Brian Vincent )</li>
@@ -1100,7 +1131,7 @@
 
 
                          <p>Changes since September 12 2002:</p>
-                        
+
                          <ul>
                          <li>All changes where made to the ToDo Section</li>
                          <li>New - Sound drivers section</li>
@@ -1122,8 +1153,8 @@
                          <li>Fix Bullet links <br></li>
                         </ul>
                        <br>
-                     
-                                                       
+
+
                          <p>Changes since September 29 2001:</p>
 
                          <ul>
@@ -1156,14 +1187,14 @@
                          <li>Multimedia wave audio: removed Macadamian as worker</li>
                          <li>Multimedia MIDI audio: 70% -&gt; 100% add note Preliminary ALSA support 10%</li>
                          <li>Multimedia CD audio: 80% -&gt; 100%</li>
-                         <li>msacm32: Audio Compression Manager (ACM): 30% -&gt; 60%</li> 
+                         <li>msacm32: Audio Compression Manager (ACM): 30% -&gt; 60%</li>
                          <li>msvfw32: Video for Windows (VFW): add Eric Pouech as new workers </li>
                          <li>Direct3D: removed TransGaming as worker</li>
                          <li>dinput: DirectInput: 40% -&gt; 70%</li>
                          <li>quartz: DirectShow core: 20% -&gt; 0% removed Hidenori Takeshima as worker</li>
                          <li>Wine Setup Tool (winesetuptk): 50% -&gt; 100% removed CodeWeavers as worker add Martin Pilka as new worker</li>
                          <li>Wine Launcher: removed CodeWeavers as worker, New workers =&nbsp; Ove K&aring;ven, Eric Pouech, Andreas Mohr</li>
-                         <li>Wine Regression Test Suite: 10% -&gt; 70% removed CodeWeavers as worker. new workers = Andriy Palamarchuk, Francois Gouget</li>
+                         <li>Wine Regression Test Suite: 10% -&gt; 70% removed CodeWeavers as worker. new workers = Andriy Palamarchuk, Fran&ccedil;ois Gouget</li>
                          <li>DLL placeholder files: 80% -&gt; 100%</li>
                          <li>How to install Wine: add Andreas Mohr as worker</li>
                          <li>How to create a useful bug report: 70% -&gt; 80% add Andreas Mohr as worker</li>

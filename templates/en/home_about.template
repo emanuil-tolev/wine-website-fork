@@ -1,11 +1,10 @@
-
-<p><a href="images/shots/wine_screenshot.png"><img src="images/shots/wine_screenshot_thumb.png" border="0" width="300"
+<a href="images/shots/wine_screenshot.png"><img src="images/shots/wine_screenshot_thumb.png" border="0" width="300"
 height="245" align=right alt="Wine"></a>
 
-Wine is an implementation of the Windows Win32 and Win16 APIs on top of X and Unix. Think of Wine as a
-<p>Wine is an implementation of the Windows Win32 and Win16 APIs
-on top of X and Unix.
-Think of Wine as a Windows compatibility layer.  Wine
+<p>Wine is a free open implementation of the Windows Win32 and Win16 APIs
+on top of X and Unix.</p>
+
+<p>Think of Wine as a Windows compatibility layer.  Wine
 provides both a development toolkit (Winelib) for porting
 Windows sources to Unix and a program loader, allowing many unmodified
 Windows 3.x/95/98/ME/NT/W2K/XP binaries to run under Intel Unixes.
@@ -59,11 +58,9 @@ New snapshot releases appear approximately every month.</p>
 	</li>    
 </ul>
 
-<!--
 <p class="small" align="right">
     <b>Switch Theme:</b>
     [<a href="?theme=winehq">Default Theme</a>] |
     [<a href="?theme=red">Red Wine Theme</a>] |
     [<a href="?theme=classic">Classic Theme</a>]
 </p>
--->

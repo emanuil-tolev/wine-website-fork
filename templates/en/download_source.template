@@ -3,14 +3,21 @@
 <h1>Wine Source Downloads from Tarball</h1>
 
 <p>
-    You can get Wine source via<br>
-    <a href="/source/ANNOUNCE">FTP</a> or
-	<a href="http://metalab.unc.edu/pub/Linux/ALPHA/wine/development/" target="_blank">HTTP</a>. 
+    You can get Wine Source tree, diffs, and docs from each release. Hosted by 
+    <a href="http://www.ibiblio.org">Ibiblio.org</a><br>
+    via
+    <a href="ftp://ftp.ibiblio.org/pub/Linux/ALPHA/wine/development/" target="_blank">[<b>FTP</b>]</a> or
+	<a href="http://www.ibiblio.org/pub/Linux/ALPHA/wine/development/" target="_blank">[<b>HTTP</b>]</a>. 
     <br><br>
     
     To extract the file use:<br>
-	tar -xzvf Wine-YYYYMMDD.tar.gz<br>
-	<span class=small>YYYYMMDD is the version of wine in Year Month Day format.</span>
+    
+    <table width="300" border=0 cellpadding=10><tr><td class=black>
+	<span class=inverse>tar -xzvf Wine-YYYYMMDD.tar.gz</span>
+    </td></tr>
+    </table>
+	
+    <span class=small>(YYYYMMDD is the version of wine in Year Month Day format.)</span>
 	<br><br>
 	
     After you have extracted Wine read the
@@ -19,3 +26,5 @@
 </p>
 
 <p>&nbsp;</p>
+
+

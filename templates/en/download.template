@@ -13,142 +13,135 @@ outlined (thus gaining pretty good compatibility), then use the Wine source and 
 </p>
 
 <p align=center>
-<font color="red" class=small>Please notify web-admin in case of incorrect info !!</font>
+<font color="red" class=small>Please notify <a href="mailto:web-admin@winehq.com" class=small>web-admin</a> in case of incorrect info !!</font>
 </p>
 
 
 <!-- START OF DOWNLOAD TABLE -->
 
 <div align=center>
-<table width="95%" border=0 cellpadding=0 cellspacing=0 bgcolor="#C0C0C0"><tr><td>
-<table width="100%" border=1 cellpadding=5 cellspacing=0 bgcolor="#FFFFFF">
+<table width="95%" border=0 cellpadding=0 cellspacing=0><tr><td bgcolor="#EFEFEF">
+<table width="100%" border=0 cellpadding=5 cellspacing=1>
 
 <tr>
-<th align=center bgcolor=black><b><font color=white>System</font></b></th>
-<th align=center bgcolor=black><b><font color=white>Download From</font></b></th>
-<th align=center bgcolor=black><b><font color=white>Notes</font></b></th>
-<th align=center bgcolor=black><b><font color=white>Formats Available</font></b></th>
+<td align=center bgcolor=black><b><font color=white class=small>System</font></b></td>
+<td align=center bgcolor=black><b><font color=white class=small>From</font></b></td>
+<td align=center bgcolor=black><b><font color=white class=small>Notes</font></b></td>
+<td align=center bgcolor=black><b><font color=white class=small>Formats</font></b></td>
 </tr>
 
 <tr>
 <td align=center rowspan="4" bgcolor="#e0e0e0">
-  Linux glibc-2.2 Systems (e.g. Debian 3.0, updated RH7, Slackware 8.1, MDK8, FIXME: others?)
+  Linux glibc-2.2 Systems (e.g. Debian 3.0, Red Hat 7.0 - 8.0, Slackware 8.1, Mandrake)
 </td>
 
-<td align=center>
+<td align=center bgcolor="#ffffff">
   <b><a href="http://wine.dataparty.no">Dataparty</a></b>
 </td>
-<td>
+<td bgcolor="#ffffff">
   Built daily from CVS tree. Currently glibc-2.2.2. Maintained by
   <a href="mailto:kreide@online.no">Kristian Eide</a>
 </td>
-<td align=center> .rpm </td>
+<td align=center bgcolor="#ffffff"> .rpm </td>
 </tr>
 
 <tr>
-<td align=center>
+<td align=center bgcolor="#ffffff">
   <b><a href="http://mecano.gme.usherb.ca/~vberon/wine">Mecano</a></b>
 </td>
-<td>
+<td bgcolor="#ffffff">
   Packages for RedHat 8.0. Based on the configuration options used in
   the official RedHat package for RedHat 8.0 (wine-20020605-1.i386.rpm).
   Maintained by <a href="mailto:vberon@nospamplease.mecano.gme.usherb.ca">Vincent B&eacute;ron</a>.
 </td>
-<td align=center> .rpm </td>
+<td align=center bgcolor="#ffffff"> .rpm </td>
 </tr>
 
 <tr>
-<td align=center>
+<td align=center bgcolor="#ffffff">
   <b><a href="http://people.debian.org/~andreas/">Daily Debian Wine</a></b>,<br>
   used to be the 'Drunkard' builds.
 </td>
-<td>
+<td bgcolor="#ffffff">
   Built daily from CVS tree. Maintained by 
   <a href="mailto:andreas@schuldei.org">Andreas Schuldei</a>.<br>
   Put these lines into /etc/apt/sources.list, fetch via apt-get:<br>
   deb http://people.debian.org/~andreas/debian wine main<br>
   deb-src http://people.debian.org/~andreas/debian wine main
 </td>
-<td align=center> .deb, Debian auto upgrade </td>
+<td align=center bgcolor="#ffffff"> .deb, Debian auto upgrade </td>
 </tr>
 
 <tr>
-<td align=center>
+<td align=center bgcolor="#ffffff">
   <b><a href="ftp://ftp.suse.com/pub/people/meissner/wine">SuSE / Marcus
   Meissner</a></b>
 </td>
-<td>
+<td bgcolor="#ffffff">
   Regular Wine builds for SuSE 7.3 to 8.1. Maintained by Marcus
   Mei&szlig;ner
 </td>
-<td align=center> .rpm </td>
+<td align=center bgcolor="#ffffff"> .rpm </td>
 </tr>
 
 <tr>
 <td align=center rowspan=3 bgcolor="#e0e0e0">
   Linux glibc-2.1 Systems (e.g. RedHat 6.x, Debian 2.2)
 </td>
-<td align=center>
-  <b><a href="http://www.codeweavers.com/technology/wine/download.php">CodeWeavers</a></b>
-</td>
-<td>
-  Wine Preview. Tons more information and a visual tour available at the website.
-  <a href="http://www.codeweavers.com">CodeWeavers</a>
-</td>
-<td align=center> .rpm </td>
-</tr>
 
 <tr>
-<td align=center>
+<td align=center bgcolor="#ffffff">
   <b><a href="http://rpmfind.net/linux/rpm2html/search.php?query=Wine&submit=Search+..."
   >RpmFind</a></b>
 </td>
-<td>
+<td bgcolor="#ffffff">
   Various versions of Wine for many RPM based distributions. Maintained by
   <a href="http://www.rpmfind.net">RpmFind.net</a>
 </td>
-<td align=center> .rpm </td>
+<td align=center bgcolor="#ffffff"> .rpm </td>
 </tr>
 
 <tr>
-<td align=center>
+<td align=center bgcolor="#ffffff">
   <b><a href="http://www.debian.org/Packages/unstable/otherosfs/wine.html">Debian</a></b>
 </td>
-<td>
+<td bgcolor="#ffffff">
   The official Debian Wine package. Contact 
   <a href="mailto:andrewl@debian.org">Andrew D. Lenharth</a>
 </td>
-<td align=center> .deb </td>
+<td align=center bgcolor="#ffffff"> .deb </td>
 </tr>
 
 <tr>
 <td align=center rowspan=1 bgcolor="#e0e0e0">
   FreeBSD
 </td>
-<td align=center>
+<td align=center bgcolor="#ffffff">
   <b><a href="ftp://ftp.freebsd.org/pub/FreeBSD/branches/-current/ports/emulators/wine.tar"
   >FreeBSD Emulator Ports</a></b>
 </td> 
-<td>
+<td bgcolor="#ffffff">
   Also see <a href="http://www.freebsd.org/ports/emulators.html#wine-2000.10.26">emulator
   port information</a> at FreeBSD.
 </td>
-<td align=center>.tgz </td>
+<td align=center bgcolor="#ffffff">.tgz </td>
 </tr>
 
 <tr>
 <td align=center bgcolor="#e0e0e0">
-  Source
+  Commercial Linux Versions
 </td>
-<td align=center>
-  <b><a href="http://www.ibiblio.org/pub/Linux/ALPHA/wine/development/">[HTTP]</a>
-  <a href="ftp://ftp.ibiblio.org/pub/Linux/ALPHA/wine/development/">[FTP]</a></b>
+
+<td align=center bgcolor="#ffffff">
+  <a href="http://www.codeweavers.com/products/crossover/">CrossOver Office</a>
 </td>
-<td>
-  Source tree, diffs, and docs from each release. Hosted by 
-  <a href="http://www.ibiblio.org">Ibiblio.org</a>
+<td bgcolor="#ffffff">
+  Award winning highly customimzed version with installer. Easy to use GUI tools to configure to work with
+  supported applications such as Microsoft Office. Email support available after purchase.
+  Multi-user server version also available. Evaluation versions available by request.
+  By <a href="http://www.codeweavers.com">CodeWeavers</a>.
 </td>
-<td align=center> .tgz </td>
+<td align=center bgcolor="#ffffff"> Loki Installer </td>
 </tr>
 
 </table>
@@ -157,22 +150,25 @@ outlined (thus gaining pretty good compatibility), then use the Wine source and 
 
 <!-- END OF DOWNLOAD TABLE -->
 
-
-<img src="../images/grey_pixel.gif" width="95%" height=1 border=0 alt="-"><br>
-
 <h1>How to Install Binary Packages</h1>
 
 <p><a href="http://www.rpm.org">RPM</a> and <a href="http://www.debian.org">DEB</a>
 are the most common formats (just see above).
 </p>
     
-<p>To install via RPM (Red Hat, Mandrake and others)</p>
+<p>&middot; To install via RPM (Red Hat, Mandrake and others)
+ <table width="300" border=0 cellpadding=10><tr><td class=black>
+ <span class=inverse>rpm -i wine-YYYYMMDD-i386.rpm</span>
+ </td></tr>
+ </table>
+<span class=small>(make sure you remove any conflicting previously installed Wine packages before doing so !)</span>
+</p>
 
-<pre>rpm -i wine-YYYYMMDD-i386.rpm</pre>
-
-<p>(make sure you remove any conflicting previously installed Wine packages before doing so !)</p>
-
-<p>To install via DEB (Debian-based distributions)</p>
-<pre>apt-get install wine</pre>
+<p>&middot; To install via DEB (Debian-based distributions)
+ <table width="300" border=0 cellpadding=10><tr><td class=black>
+ <span class=inverse>apt-get install wine</span>
+ </td></tr>
+ </table>
+</p>
 
 <p>&nbsp;</p>
