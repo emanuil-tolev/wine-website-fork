@@ -355,7 +355,7 @@ libcrypto.so</p>.
 <topic>Architecture</topic>
 <p>Peter Riocreux brought up execshield/prelinking again this
 week (see <a href="http://www.winehq.org/?issue=217">last week's</a>
-issue for more about that.)   This time it involve Fedora Core 1:
+issue for more about that.)   This time it involved Fedora Core 1:
 </p><quote who="Peter Riocreux"><p>
 I am intermittently trying to get Wine to play nicely with a big EDA
 tool, and it is doing not too badly today with the 20040309 snapshot
@@ -371,7 +371,7 @@ Is there anything, short of turning off exec-shield entirely, that can
 be done about this?
 </p></quote>
 
-<p>Mike Hearn suggested turning of prelinking too.  Then Mike
+<p>Mike Hearn suggested turning off prelinking too.  Then Mike
 McCormack jumped in and mentioned he had been working on things
 a bit:</p>
 <quote who="Mike McCormack"><p>
@@ -479,18 +479,28 @@ The website stats are interesting too:
 </p><p><table>
 <tr><td colspan="5">Daily Avg</td><td colspan="6">Monthly Totals</td></tr>
 <tr><td> </td><td> </td><td>Hits</td><td>   Pages</td><td> Visits</td><td>Sites</td><td>KBytes</td><td>Visits</td><td>Pages</td><td>Files</td><td>Hits</td></tr> 
-<tr><td>Mar 2004 267733  75495 16582</td><td>268931 157346721 514060 2340347 7064537 8299737</td></tr>
-<tr><td>Feb 2004 278180  79217 17199</td><td>279399 203400907 498774 2297305 6994822 8067232</td></tr>
+<tr><td>Mar</td><td>2004</td><td>267733</td><td> 75495</td><td>16582&#160;&#160;</td><td>268931</td><td>157346721</td><td>514060</td><td>2340347</td><td>7064537</td><td>8299737</td></tr>
+<tr><td>Feb</td><td>2004</td><td>278180</td><td> 79217</td><td>17199&#160;&#160;
+</td><td>279399</td><td>203400907</td><td>498774</td><td>2297305</td><td>6994822</td><td>8067232</td></tr>
 
-<tr><td>Jan</td><td>2004</td><td>135477</td><td>44930</td><td>8341</td><td>154109</td><td>90054340</td><td>258586</td><td>1392848</td><td>3591136</td><td>4199791</td></tr>
-<tr><td>Dec</td><td>2003</td><td>213993</td><td>71246</td><td>14408</td><td>243882</td><td> 138401056</td><td>446653</td><td>2208643</td><td>5725553</td><td> 6633804</td></tr>
-<tr><td>Nov</td><td>2003</td><td>244427</td><td>85277</td><td>15766</td><td>254363</td><td> 153748583</td><td>472983</td><td>2558310</td><td>6268477</td><td> 7332826</td></tr>
-<tr><td>Oct</td><td>2003</td><td>275663</td><td>111913</td><td>17352</td><td>260400</td><td> 161803798</td><td>537913</td><td>3469326</td><td>7430846</td><td> 8545582</td></tr>
-<tr><td>Sep</td><td>2003</td><td>156860</td><td>50508</td><td>10393</td><td>173365</td><td>  93441224</td><td>311790</td><td>1515269</td><td>4048260</td><td> 4705814</td></tr>
-<tr><td>Aug</td><td>2003</td><td>209530</td><td>69084</td><td>12812</td><td>218040</td><td> 124270932</td><td>397177</td><td>2141613</td><td>5612004</td><td> 6495449</td></tr> 
-<tr><td>Jul</td><td>2003</td><td>243646</td><td>105136</td><td>12253</td><td>197296</td><td> 123038700</td><td>379853</td><td>3259216</td><td>6704428</td><td> 7553047</td></tr>
-<tr><td>Jun</td><td>2003</td><td>253998</td><td>109167</td><td>12250</td><td>160468</td><td>  91985851</td><td>306270</td><td>2729185</td><td>5642823</td><td> 6349961</td></tr> 
-<tr><td>May</td><td>2003</td><td>262218</td><td>111683</td><td>13764</td><td>207954</td><td> 105320483</td><td>399181</td><td>3238809</td><td>6336486</td><td> 7604349</td></tr>
+<tr><td>Jan</td><td>2004</td><td>135477</td><td>44930</td><td>8341&#160;&#160;
+</td><td>154109</td><td>90054340</td><td>258586</td><td>1392848</td><td>3591136</td><td>4199791</td></tr>
+<tr><td>Dec</td><td>2003</td><td>213993</td><td>71246</td><td>14408&#160;&#160;
+</td><td>243882</td><td> 138401056</td><td>446653</td><td>2208643</td><td>5725553</td><td> 6633804</td></tr>
+<tr><td>Nov</td><td>2003</td><td>244427</td><td>85277</td><td>15766&#160;&#160;
+</td><td>254363</td><td> 153748583</td><td>472983</td><td>2558310</td><td>6268477</td><td> 7332826</td></tr>
+<tr><td>Oct</td><td>2003</td><td>275663</td><td>111913</td><td>17352&#160;&#160;
+</td><td>260400</td><td> 161803798</td><td>537913</td><td>3469326</td><td>7430846</td><td> 8545582</td></tr>
+<tr><td>Sep</td><td>2003</td><td>156860</td><td>50508</td><td>10393&#160;&#160;
+</td><td>173365</td><td>  93441224</td><td>311790</td><td>1515269</td><td>4048260</td><td> 4705814</td></tr>
+<tr><td>Aug</td><td>2003</td><td>209530</td><td>69084</td><td>12812&#160;&#160;
+</td><td>218040</td><td> 124270932</td><td>397177</td><td>2141613</td><td>5612004</td><td> 6495449</td></tr> 
+<tr><td>Jul</td><td>2003</td><td>243646</td><td>105136</td><td>12253&#160;&#160;
+</td><td>197296</td><td> 123038700</td><td>379853</td><td>3259216</td><td>6704428</td><td> 7553047</td></tr>
+<tr><td>Jun</td><td>2003</td><td>253998</td><td>109167</td><td>12250&#160;&#160;
+</td><td>160468</td><td>  91985851</td><td>306270</td><td>2729185</td><td>5642823</td><td> 6349961</td></tr> 
+<tr><td>May</td><td>2003</td><td>262218</td><td>111683</td><td>13764&#160;&#160;
+</td><td>207954</td><td> 105320483</td><td>399181</td><td>3238809</td><td>6336486</td><td> 7604349</td></tr>
 </table></p><p>
 Skipping to the KBytes and Hits columns, things are up.  Even more
 interesting is in Feburary we got Slashdotted and in March we didn't.
@@ -514,7 +524,7 @@ it to wine-devel rather than just throwing it away:</p>
 <quote who="Mike McCormack"><p>
  In the process of understanding another bug, I did a little work to 
  implement w95inf32, which appears to be a small IE/win9x only DLL and 
- which is probably of not much use to Wine. It appears to be a think 
+ which is probably of not much use to Wine. It appears to be a thin
  wrapper 32bit around 4 functions in SETUPX.
 </p><p>
  So this is just for documentation purposes, and in case anybody is 
