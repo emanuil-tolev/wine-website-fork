@@ -25,7 +25,6 @@ class wwn
         $this->map_array = array(
                                  "a"	        => "a",
                                  "b"	        => "b",
-                                 "br"	        => "br",
                                  "i"	        => "i",
                                  "u"	        => "u",
                                  "ul"	        => "ul",
