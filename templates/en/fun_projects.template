@@ -452,7 +452,7 @@
   lazy to integrate the program that processed that into a table so
   far.  :)  Right now it requires dumpbin (Visual C++)  I plan to add pedump
   or winedump support so more people are able to use it.  It is also
-  analyzing the wine .spec files to determine if each API has an entry and
+  analyzing the Wine .spec files to determine if each API has an entry and
   reports whether it's a stub, unimplemented (not in spec files), etc.
 
 

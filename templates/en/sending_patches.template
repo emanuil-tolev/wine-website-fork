@@ -62,7 +62,7 @@ file.  Then, use</p>
  </td></tr>
  </table>
  
-<p>to generate the patch from the top wine directory and save the output to a file.
+<p>to generate the patch from the top source directory and save the output to a file.
 <code>cvs diff</code> will always ignore newly added files, so you'll
 need to do something like:</p>
 

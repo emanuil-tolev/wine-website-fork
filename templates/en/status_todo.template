@@ -6,7 +6,7 @@
 
 <ul>
 <li>Rewrite Wine's window management code to be able to change the visual of an X window once the window has been created.</li>
-<li>In Desktop Mode all processes started from one wine invocation should be confined to one desktop window.</li>
+<li>In Desktop mode all processes started from one Wine invocation should be confined to one desktop window.</li>
 <li>Window management needs proper inter-process handling of activation, focus, repaint.</li>
 <li>Workaround for the "no keyboard without Desktop mode" problem.</li>
 
@@ -36,7 +36,8 @@
 <h3><a name="Registry"></a>Registry contents<br></h3>
 
 <ul>
-<li>Implement DllRegisterServer for all COM components so that they can register the appropriate keys in the registry when wine is installed</li>
+<li>Implement DllRegisterServer for all COM components so that they can
+  register the appropriate keys in the registry when Wine is installed</li>
 <li>we also need to link that functionality into the wine install script</li>
 </ul>
 
@@ -99,7 +100,7 @@
 <h3><a name="Tools_"></a>Tools<br></h3>
 
 <ul>
-<li>Wine installation process should install and configure wine</li>
+<li>Wine installation process should install and configure Wine</li>
 <li>Perform Windows' reboot operations automatically when required</li>
 <li>Winemaker fixes</li>
 <li>Run C regression tests on Windows with MSVC</li>
@@ -199,7 +200,7 @@
     * Some real RPC tests,although there are some tests of some peripheral rpcrt4 API's -- no actual RPC's are tested.
     * Implement /Oicf "stubless" marshalling
     * Implement full stub/proxy support for widl
-    * Get Wine's DCOM to use wine's RPC as appropriate.
+    * Get Wine's DCOM to use Wine's RPC as appropriate.
     * Fix the wire protocol
      - Implement the OXID resolver and other ORPC peccadilloes
 </pre>
@@ -299,7 +300,7 @@
 
 [Dmscript]
     * VB script execution support (actually only source is loaded). Maybe using a 
-      generic wine VB script kernel (as the vbscript.dll seems to provide on 
+      generic Wine VB script kernel (as the vbscript.dll seems to provide on 
       windows) using ole32/com (most of the needs are already here)
 
 [DirectInput] 

@@ -116,7 +116,7 @@ function home_page ()
 	return $text;
 }
 
-// load the annouce file for latest version of wine
+// load the announce file for latest version of Wine
 function view_announce ($ver)
 {
     global $file_root, $config, $html;
@@ -209,7 +209,7 @@ function view_news ($where)
     return $news_body;
 }
 
-// load the annouce file for latest version of wine
+// load the announce file for latest version of Wine
 function view_screenshots ($x)
 {
     global $file_root, $config, $html;

@@ -24,7 +24,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
 
    <ol>
     <li><a href="#web">Web site maintenance</a>
-    </li><li><a href="#draw">Draw icons for wine</a>
+    </li><li><a href="#draw">Draw icons for Wine</a>
     </li><li><a href="#app_owners">Application owners</a>
     </li><li><a href="#support">Bug hunting and support</a>
    </li></ol>
@@ -35,7 +35,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     </li><li><a href="#conf_tests">Conformance tests</a>
     </li><li><a href="#doc_win_api">Documentation of the windows API functions</a>
 
-    </li><li><a href="#port_app">Port your windows application to wine</a>
+    </li><li><a href="#port_app">Port your Windows application to Wine</a>
     </li><li><a href="#code_review">Perform a focused code review</a>
    </li></ol>
   </li><li><a href="#docu">Miscellaneous</a>
@@ -373,7 +373,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     and also the man pages and other files in the documentation/ directory.
     </p>
     <p>Your job would be to make sure that every patch a developer submits
-    that changes wine configuration behaviour in any way
+    that changes the Wine configuration behaviour in any way
     gets documented properly as soon as possible.
     This would be done through testing new functionality and optionally
     asking developers about what their patch truly does.

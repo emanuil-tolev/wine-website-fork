@@ -511,7 +511,7 @@
   From Eric: <i>there's lot of code which relies on HeapReAlloc would allocate 
   a block if the block to reallocate is NULL (as realloc does in stdlib);
   this is not the case in windows, and we should fix it (and first, fix 
-  all the wine code relying on this)</i>
+  all the Wine code relying on this)</i>
   <ul>
     <li>workers: Oleg Prokhorov, Dimitrie O. Paun
     <li>completed: <span class="done">Mar 10, 2004</span>

@@ -4,7 +4,7 @@
 you should do is register yourself in the
 <a href="http://appdb.winehq.org/">applications database</a> and use one
 of your votes to indicate that you'd like more effort to be spent on
-the application.  Every once in a while, a wine developer will finish a
+the application.  Every once in a while, a Wine developer will finish a
 project and look for something to do - combing through the higher voted
 apps to find one that people need work on is a great way to spend one's
 time and fill up a todo list.</p>
@@ -13,7 +13,7 @@ time and fill up a todo list.</p>
 applications database, there is an easy to use form available for you to
 add it. <!-- link to form -->  If the application is in the database, but
 lacks a maintainer, you should consider becoming one.  If you are
-familiar with wine and have a desire to test the application and help get
+familiar with Wine and have a desire to test the application and help get
 or keep it working, please apply by clicking the link in the application's
 page.  Each application should have a supermaintainer, and, if different
 versions of the application are substantially different (such as in
@@ -24,21 +24,21 @@ virtually guarantee your acceptance.</p>
 
 <p>If you are the developer or publisher of the application, you
 obviously have a very big incentive to help get your application working
-under wine.  Fortunately, there are many options available to you other
+under Wine.  Fortunately, there are many options available to you other
 than reporting bugs and hoping someone will fix them. By far the easiest
-way is to simply send free copies of your software to wine developers and
+way is to simply send free copies of your software to Wine developers and
 hope they'll take an interest in getting it working.  You'd be amazed how
 effective this approach can be, particularly for games. An alternative
-option, perhaps more effective and expensive, is to pay wine developers
+option, perhaps more effective and expensive, is to pay Wine developers
 for their work on your application, either directly through a negotiated
-contract or indirectly by posting a bounty. Codeweavers, a major wine
+contract or indirectly by posting a bounty. CodeWeavers, a major Wine
 developer, offers a special section for pledges at
 <a href="http://www.codeweavers.com/site/compatibility/">their compatibility
 center</a> website. The most direct method, however, is to help develop
-wine itself and contribute code directly, which is exactly what Corel did
+Wine itself and contribute code directly, which is exactly what Corel did
 for WordPerfect several years ago.  In any case, making a post on the
-wine developers <a href="http://www.winehq.org/site/forums">email
-list</a> can go a long way.
+Wine developers <a href="http://www.winehq.org/site/forums">email
+list</a> can go a long way.</p>
 
 <h2>If your application doesn't work:</h2>
 
@@ -46,16 +46,16 @@ list</a> can go a long way.
 to even run at all, there are a number of steps you can take to help us.
 The most important thing is to find out where exactly the application is
 failing. To diagnose application problems, the first step is to run the
-program from the console using wine, rather than from a gui shortcut.
-This will allow wine to output error messages to the console, the
+program from the console using Wine, rather than from a gui shortcut.
+This will allow Wine to output error messages to the console, the
 understanding of which are key to solving the problem and getting the
 application to work.</p>
 
 <p>An application may not work because Wine doesn't yet fully implement
 one of the DLL files the application is trying to use.  If you encounter
 a DLL not found error, or see a lot of "FixMe:" messages while running the
-application in wine, this is likely the case. When this occurs, you can
-try using native (non-wine) DLL files in place of Wine's builtin ones.
+application in Wine, this is likely the case. When this occurs, you can
+try using native (non-Wine) DLL files in place of Wine's builtin ones.
 Check the application database page for the program. There may be
 special configuration options or instructions for installing native DLL
 files there that you can try to get the application working. For
@@ -70,12 +70,12 @@ on how to best report bugs with applications. Alternatively, if you're
 a programmer, we'd really like it if you tried to help us directly;
 please read the
 <a href="http://www.winehq.org/site/developer-cheatsheet">getting
-started with wine development guide</a> if you're interested.</p>
+started with Wine development guide</a> if you're interested.</p>
 
 
 <h2>If your application does work, but with some difficulty:</h2>
 
-<p>Sometimes, applications run under wine but don't function quite as
+<p>Sometimes, applications run under Wine but don't function quite as
 smoothly as they do in windows.  They may have display errors, a feature
 may be broken, or they may run unusually slow.  These applications should
 receive a lower rating from their maintainers of between 2 and 4 stars in
@@ -91,15 +91,15 @@ application's page.</p>
 
 
 <h2>If your application used to work, but has since broken in a new
-version of wine:</h2>
+version of Wine:</h2>
 
 <p>Wine is a large and complex project, composed of many files written
 by different authors.  Sometimes, an attempt to change a file and expand
 support for one application will unexpectedly cause another application
 to stop functioning.  These changes are known as "regressions", and they
-are unfortunately sometimes found in the wine source code because the
+are unfortunately sometimes found in the Wine source code because the
 author of a patch that causes a regression is quite simply unaware of it.
-Since the wine developers can't possibly test every application with every
+Since the Wine developers can't possibly test every application with every
 patch, we have to rely on the community to inform us of when regressions
 occur so that the problem can be easily identified and ultimately fixed.
 Without community involvement, regressions can go unfixed for potentially
@@ -109,7 +109,7 @@ very long periods of time.</p>
 provide us with as much information as you can about when and how it
 broke.  This allows us to isolate the exact thing we screwed up in the
 code and provide a fix.  Please provide as much as you know about which
-version of wine worked, and which version didn't, including the version
+version of Wine worked, and which version didn't, including the version
 number and how you installed it (from source, binary packages, etc.)
 Finally, please post these things in the Application Database page for the
 app.</p>  
@@ -118,7 +118,7 @@ app.</p>
 patch which broke your application.  This takes quite a bit of time and
 effort, but it is quite simply the best way to get your application
 working again.  When it comes to fixing regressions, the only thing more
-helpful to the wine developers than knowing exactly which patch caused a
+helpful to the Wine developers than knowing exactly which patch caused a
 regression is receiving a fix for the patch itself.  For help with
 isolating problem patches, please see the documentation on
 <a href="http://www.winehq.org/site/docs/wine-devel/x1375">regression
