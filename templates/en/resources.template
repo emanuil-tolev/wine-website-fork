@@ -6,19 +6,18 @@
        <big> Wine </big>
        <ul>
          <li><a href="http://source.winehq.com/">source.winehq.com</a> Cross-referenced marked up source
-         <li><a href="http://cvs.winehq.com/">cvs.winehq.com</a> CVS web interface to the Wine source
+         <li><a href="http://cvs.winehq.com/cvsweb/">cvs.winehq.com</a> CVS web interface to the Wine source
          <li><a href="http://source.winehq.org/WineAPI/">Wine API</a> Automatically generated Wine API documentation
        </ul>
 
        <a name="win32" class="hidden"><big>Win32</big></a> 
        <ul>
-         <li><a href="http://msdn.microsoft.com/library/en-us/win32/win32start_1xyd.asp">Win32 API Intro</a> If you know nothing about Windows, you could do worse than
+         <li><a href="http://www.winprog.org/tutorial/">Win32 API Tutorial</a> If you know nothing about Windows, you can't do worse than
           start here.
          <li><a href="ftp://ftp.borland.com/pub/delphi/techpubs/delphi2/win32.zip">Win32 API</a> Help File format, courtesy of Borland.
-         <li><a href="http://wine.codeweavers.com/fom-meta/cache/831.html">Programming books</a> owned by various Wine developers. Invaluable resource in case you're looking for some info that can't be found on the net any more.
          <li><a href="http://leb.net/wine/WinDoc/">WinDoc</a> Mirror of Microsoft's old site, with indexes.
-         <li><a href="http://msdn.microsoft.com/developer/">MSDN Online</a> Microsoft's new site.
-         <li><a href="http://www.microsoft.com/directx/default.asp">DirectX</a> Multimedia API for games, etc.
+         <li><a href="http://msdn.microsoft.com/developercenters/">MSDN Online</a> Microsoft's new site.
+         <li><a href="http://www.microsoft.com/windows/directx/default.aspx">DirectX</a> Multimedia API for games, etc.
          <li>The Open32 API is the subset of Win32 implemented by IBM's OS/2 Merlin. Open32 provides source code
          compatibility, which the <a href="http://odin.netlabs.org">Odin</a> project (formerly Win32-OS/2)
          plans on extending to full binary compatibility.
@@ -30,9 +29,8 @@
 
        <big> Windows 3.x </big>
        <ul>
-         <li><a href="http://wine.codeweavers.com/fom-meta/cache/831.html">Programming books</a> owned by various Wine developers. Invaluable resource in case you're looking for some info that can't be found on the net any more.
-         <li><a href="http://www.ecma.ch/ecma1/stand/ecma-234.htm">ECMA-234</a>
-         The official <a href="http://www.ecma.ch/">European Computer Manufacturer's Association</a> specification of the Windows API. Known as APIW while it was in
+         <li><a href="http://www.ecma-international.org/publications/standards/ECMA-234.HTM">ECMA-234</a>
+         The official <a href="http://www.ecma-international.org/">European Computer Manufacturer's Association</a> specification of the Windows API. Known as APIW while it was in
          draft.
          <li><a href="ftp://ftp.cs.cmu.edu/afs/cs.cmu.edu/user/ralf/pub/WWW/files.html">DOS Interrupts</a> Ralf Brown's exhaustive and famous Interrupt List 
          <li><a href="ftp://x2ftp.oulu.fi/pub/msdos/programming/specs/00index.html">X2</a> DOS programming specifications
@@ -41,9 +39,8 @@
 
        <big> Unix </big>
        <ul>
-         <li><a href="http://www.rdg.opengroup.org/unix/online.html">Unix98</a> Online
-         version of single Unix spec, courtesy of X/Open
-         <li><a href="http://www.linuxdoc.org">LDP</a> Linux documentation project. Vast resource.
+         <li>Version <a href="http://www.unix-systems.org/version3/">3</a> of the single Unix Specification.
+         <li><a href="http://en.tldp.org/">LDP</a> Linux documentation project. Vast resource.
          <li><a href="http://www.freebsd.org/cgi/man.cgi">FreeBSD man pages</a> 
          <li><a href="http://pauillac.inria.fr/~xleroy/linuxthreads/">LinuxThreads</a>
          <li><a href="http://linas.org/linux/threads-faq.html">Linux Threads FAQ</a>
@@ -62,17 +59,17 @@
 
        <a name="fonts" class="hidden"><big> Fonts </big></a>
        <ul>
-         <li><a href="http://www.sfu.ca/~yzhang/linux">TTF on Linux HOWTO</a>
+         <li><a href="http://www.tldp.org/HOWTO/Font-HOWTO/">TTF on Linux HOWTO</a>
          <li><a href="http://www.microsoft.com/typography/unicode/cs.htm">Charset info</a> From Microsoft.
-         <li><a href="http://nwalsh.com/comp.fonts/">comp.fonts</a> The home page is gone, but the <a href="http://nwalsh.com/comp.fonts/FAQ/index.html">FAQ</a>
-         is still available, as is the <a href="http://www.nwalsh.com/comp.fonts/">Internet Font Archive</a>.
+         <li><a href="http://rcum.uni-mb.si/local/fontfaq/cf_1.htm">comp.fonts</a> The home page is gone, but the <a href="http://nwalsh.com/comp.fonts/FAQ/index.html">FAQ</a>
+         is still available, as is the <a href="http://rcum.uni-mb.si/local/fontfaq/cf_18.htm#GLOSS6">Internet Font Archive</a>.
          <li><a href="http://www.w3.org/Fonts/Panose/pan2.html">Panose 2.0</a> Font spec
-         <li><a href="http://www.teleport.com/~nmeyers/x11r6_fonts/x11r6_fonts_94_paper.pdf">X11R6 Fonts</a> X is more typographically capable than it appears, as is made clear in this paper by Nathan Meyers.
+         <li><a href="http://ftp.xfree86.org/pub/X.Org/R5contrib/hp_xlfd_enhancements/hp_xlfd_enhancements">X11R6 Fonts</a> X is more typographically capable than it appears, as is made clear in this paper by Nathan Meyers.
          <li><a href="http://www.freetype.org/">FreeType</a> Free TrueType font engine
-	     <li><a href="http://www.neuroinformatik.ruhr-uni-bochum.de/ini/PEOPLE/rmz/t1lib/t1lib.html">t1lib</a> PostScript T1 font engine, extracted and improved
+	     <li><a href="http://www.linuxberg.com/preview/9995.html">t1lib</a> PostScript T1 font engine, extracted and improved
 	          from X11 sources.
          <li><a href="http://ftp.giga.or.at/pub/nih/ttftot42">TTFtoT42</a> Use TTF with Postscript rasterizers
-         <li><a href="http://www.curvesoft.com/">Curvesoft</a> Commercial type 1 rasterizer, includes FreeType based TTF rasterizer
+         <li><a href="http://www.curvesoft.com/tools.html">Curvesoft</a> Commercial type 1 rasterizer, includes FreeType based TTF rasterizer
          <li><a href="http://www.bitstream.com/categories/developer/fonttastic/f_tastic_sdk.html">Fontastic SDK</a> Used to be from <a href="http://www.gallium.com/">Gallium</a>, now from Bitstream
     	 <li><a href="http://www.truedoc.com/webpages/samples/samples_l4.html">TrueDoc sample</a> Antialiasing and subpixel positioning sales pitch
          <li><a href="http://crl.nmsu.edu/">CLR</a> Center for Linguistics Research
@@ -93,7 +90,10 @@
        <ul>
          <li><a href="http://www.sandpile.org/">Sandpile.org</a> Another one.
          <li><a href="http://www.x86.org/">Intel Secrets</a> What Intel doesn't want you to know
-         <li><a href="http://developer.intel.com/vtune/cbts/cbts.htm">Intel Documentation</a> What Intel does want you to know -- how to write code for their chips. 
+         <li><a href="http://www.intel.com/technology/itj/Q21999/ARTICLES/art_6.htm">Intel Documentation</a> What Intel does want you to know -- how to write code for their chips.
+         <li>Intel Chips with<a href="http://cedar.intel.com/cgi-bin/ids.dll/topic.jsp?catCode=DEC">SSE</a>
+         <li>Intel Chips with<a href="http://cedar.intel.com/cgi-bin/ids.dll/topic.jsp?catCode=DED">SSE2</a>
+         <li>A link to the <a href="http://developer.intel.com/software/products/perflib/index.htm">Intel performance libraries</a>
        </ul>
 
        <big> Books </big>
