@@ -81,7 +81,7 @@ Lindows</a> than just hype?  They've updated their website, though it still lack
 
 <section
   title="Wine License Change?"
-  subject="RE: Installshield 6 (inter-proc) patches"
+  subject="RE: InstallShield 6 (inter-proc) patches"
   archive="http://www.winehq.com/hypermail/wine-devel/2001/12/0079.html"
   posts="175"
   startdate="12/07/2001"
@@ -808,7 +808,7 @@ problem with modal message boxes.
 </p><p>
 The installer displays at some point a task modal message box, but for some 
 reason the box disapears almost instantly, and I'm stuck with a focused 
-installshield screen on which I can't do anything as the task modal msgbox is 
+InstallShield screen on which I can't do anything as the task modal msgbox is 
 invisible and unfocused.
 </p><p>
 I'd like to implement the modal message boxes to fix my problem, but I don't 
@@ -922,7 +922,7 @@ corresponding bugzilla report if there is one.
 
 
  <p><b> Out of proc COM</b><ul>
-   <li> Needed for Installshield 6</li>
+   <li> Needed for InstallShield 6</li>
    <li> Would probably help with at least some functionality of a host of
      other applications
 </li></ul></p>

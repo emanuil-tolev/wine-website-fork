@@ -143,7 +143,7 @@ recommendation</a> was for people "who only use Microsoft Word
 and Excel" which I found rather strange.  Their conclusion:</p>
 <quote who="IT Week"><p>
 <u>Verdict</u></p><p>
-Suse's Linux Office Desktop makes migration to Linux easier, but inexperienced 
+SuSE's Linux Office Desktop makes migration to Linux easier, but inexperienced 
 users may still need more support than is necessary for Windows. We found no 
 major problems with hardware support, but users with unusual configurations 
 may have configuration difficulties.
@@ -312,7 +312,7 @@ apps. 8-)
 
 <section 
 	title="InstallShield 6 Insight" 
-	subject="Installshield 6 crash: ole trouble"
+	subject="InstallShield 6 crash: ole trouble"
 	archive="http://www.winehq.com/hypermail/wine-devel/2003/01/0824.html" 
 	posts="20"
 	startdate="01/20/2003"
@@ -322,9 +322,9 @@ apps. 8-)
 <p>InstallShield 6, while better, continues to plaque Wine.  
 This week Dan Kegel asked for some help:</p>
 <quote who="Dan Kegel"><p>
-So, how's that Installshield 6 support coming along? :-)
+So, how's that InstallShield 6 support coming along? :-)
 </p><p>
-The company I work for uses Installshield to package up
+The company I work for uses InstallShield to package up
 its windows stuff.  Today I tried running its installer
 under cvs Wine, and shortly after it started running IKernel.exe,
 it dropped me into the wine debugger.

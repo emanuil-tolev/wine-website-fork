@@ -237,7 +237,7 @@ submitted a new patch to audio.c and asked,
   no sound at all. Without the patch, the sound in Myst works pretty good 
   (occasional brief dropouts). In Riven without the patch, only the 
   opening sequence has sound, and that has many large dropouts. I'm using 
-  ALSA drivers in Redhat.</quote>  Eric asked for a debugging trace which
+  ALSA drivers in RedHat.</quote>  Eric asked for a debugging trace which
   Duane provided.  </p>
 <p>
   The next day Eric submitted another version of the 
@@ -371,7 +371,7 @@ functions, Guy's take on it was, <quote who="Guy Albertelli">
 
 <section
   title="InstallShield 6 Patches"
-  subject="Installshield 6 (inter-proc) patches"
+  subject="InstallShield 6 (inter-proc) patches"
   archive="http://www.winehq.com/hypermail/wine-devel/2001/12/0079.html"
   posts="4"
   startdate="12/09/2001"

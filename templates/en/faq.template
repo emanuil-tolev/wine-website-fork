@@ -68,7 +68,7 @@
       <li><a href="#I_have_installed_and_configured_Wine_on">I have installed and configured Wine, but Wine cannot find MS Windows on my drive. Where did I go wrong?</a> 
       <li><a href="#I_was_able_to_get_various_MS_Windows">I was able to get various MS Windows programs to run, but parts of them do not work. What is wrong?</a> 
       <li><a href="#I_have_run_various_MS_Windows_programs">I have run various MS Windows programs, but since the program menus do not work, how can I exit these programs?</a> 
-      <li><a href="#Can_I_use_Wine_with_SusePeanut_or_other"> Can I use Wine with SuSe, Peanut or other Linux Distro's?</a> 
+      <li><a href="#Can_I_use_Wine_with_SusePeanut_or_other"> Can I use Wine with SuSE, Peanut or other Linux Distro's?</a> 
       <li><a href="#Does_Wine_work_with_AMD_Processors">Does Wine work with AMD Processors?</a> 
       <li><a href="#Can_I_launch_a_Unix_program_from_a">Can I launch a Unix program from a Windows program? </a>
     </ol>
@@ -715,7 +715,7 @@ the wine.conf file. No capital letters may be used in paths, as they are automat
 
 <p>Kill the xterm shell window that you called up to run your MS Windows program, and the X window that appeared with the program will be killed too.</p>
 
-<h3><a name="Can_I_use_Wine_with_SusePeanut_or_other"></a>Can I use Wine with SuSe, Peanut or other Linux Distro's?</h3>
+<h3><a name="Can_I_use_Wine_with_SusePeanut_or_other"></a>Can I use Wine with SuSE, Peanut or other Linux Distro's?</h3>
  
 <p>You can use Wine on <em>any</em> sufficiently recent Linux installation. The amount of work getting Wine up and running depends  
 on whether there are proper packages available or a source compile has to be done. <p>

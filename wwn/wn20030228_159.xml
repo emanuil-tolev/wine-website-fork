@@ -499,7 +499,7 @@ When you run Java, it registers some additional private fonts with xfs.
 Now when you run Wine, it sees that the list of fonts has changed and 
 reruns the caching.
 </p><p>
-You have a couple of alternatives. With that version of Redhat, you 
+You have a couple of alternatives. With that version of RedHat, you 
 really don't need to have Wine use the xfs font server ("server side" 
 font rendering). If you install a collection of TrueType fonts into your 
 windows/Fonts directory, wherever you have your fake C: drive installed, 
