@@ -184,12 +184,12 @@
     <li>loader/module.c: kernel32: GetModuleHandleW: illegal call to HEAP_strdupWtoA
     <li>loader/module.c: kernel32: LoadLibraryExW: illegal call to HEAP_strdupWtoA
     <li>loader/module.c: kernel32: LoadLibraryExW: illegal call to LoadLibraryExA
-    <li>memory/environ.c: kernel32: ExpandEnvironmentStringsW: illegal call to ExpandEnvironmentStringsA
-    <li>memory/environ.c: kernel32: ExpandEnvironmentStringsW: illegal call to HEAP_strdupWtoA
-    <li>memory/environ.c: kernel32: GetEnvironmentVariableW: illegal call to GetEnvironmentVariableA
-    <li>memory/environ.c: kernel32: GetEnvironmentVariableW: illegal call to HEAP_strdupWtoA
-    <li>memory/environ.c: kernel32: SetEnvironmentVariableW: illegal call to HEAP_strdupWtoA
-    <li>memory/environ.c: kernel32: SetEnvironmentVariableW: illegal call to SetEnvironmentVariableA
+    <li class=committed>memory/environ.c: kernel32: ExpandEnvironmentStringsW: illegal call to ExpandEnvironmentStringsA
+    <li class=committed>memory/environ.c: kernel32: ExpandEnvironmentStringsW: illegal call to HEAP_strdupWtoA
+    <li class=committed>memory/environ.c: kernel32: GetEnvironmentVariableW: illegal call to GetEnvironmentVariableA
+    <li class=committed>memory/environ.c: kernel32: GetEnvironmentVariableW: illegal call to HEAP_strdupWtoA
+    <li class=committed>memory/environ.c: kernel32: SetEnvironmentVariableW: illegal call to HEAP_strdupWtoA
+    <li class=committed>memory/environ.c: kernel32: SetEnvironmentVariableW: illegal call to SetEnvironmentVariableA
     <li class=committed>objects/dc.c: gdi32: CreateDCW: illegal call to CreateDCA
     <li class=committed>objects/dc.c: gdi32: CreateDCW: illegal call to HEAP_strdupWtoA
     <li class=committed>objects/dc.c: gdi32: ResetDCW: illegal call to ResetDCA
@@ -219,9 +219,11 @@
 		 <a href="nailto:Stefan.Leichter@camLine.com">Stefan Leichter</a>,
 		 <a href="mailto:m.davison@virgin.net">Matthew Davison</a>,
 		 <a href="mailto:tony_lambregts@telusplanet.net">Tony Lambregts</a>,
-		 <a href="mailto:dmitry@codeweavers.com">Dmitry Timoshkov</a>.
+		 <a href="mailto:dmitry@codeweavers.com">Dmitry Timoshkov</a>,
+		 <a href="mailto:pouech-eric@wanadoo.fr">Eric Pouech</a>.
+
     <li>status: <span class=inprogress>first patches submitted</span>
-    <li>updated: Feb 22, 2004
+    <li>updated: Feb 29, 2004
   </ul>
 
   <h2>DLL separation</h2>
