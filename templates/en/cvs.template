@@ -226,6 +226,23 @@ The <code>-A</code> is required to get the latest version in the tree.
 
 <a name="uptodate" class="hidden"></a>
 
+<h1>Cleaning up your existing tree</h1>
+
+A quick way to clean up your tree after you've been modifying it
+ and want a clean copy of Wine again is this:
+ <table width="300" border=0 cellpadding=10><tr><td class=black>
+ <span class=inverse>
+  cd wine<br>
+  cvs update -PAd<br>
+  cvs diff &gt; total-<i>YYMMDD</i>.diff<br>
+  patch -p0 -R &lt; total-<i>YYMMDD</i>.diff
+ </span>
+ </td></tr>
+ </table>
+By using the current date in <i>YYMMDD</i>, you can keep a history
+ of changes that were in your Wine tree.
+<p>
+
 <h1>Staying Up-To-Date</h1>
 
 <p>
