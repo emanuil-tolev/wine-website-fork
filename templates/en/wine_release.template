@@ -1,4 +1,4 @@
-<b><a href="?announce=1">Wine {$snapshot_date}</a></b>
+<b><a href="?announce=latest">Wine {$snapshot_date}</a></b>
 
 <span class="small">
   (<a href="http://source.winehq.org/ds{$snapshot_date}.txt">diff:s</a>)  

@@ -40,7 +40,7 @@ switch (true)
   
   // view latest annouce
   case ($_REQUEST['announce']):
-    $text .= view_announce();
+    $text .= view_announce($_REQUEST['announce']);
     break;
 
   // display screen shots
@@ -117,17 +117,22 @@ function home_page ()
 }
 
 // load the annouce file for latest version of wine
-function view_announce ()
+function view_announce ($ver)
 {
     global $file_root, $config, $html;
     
-    $announce = "http://cvs.winehq.org/cvsweb/~checkout~/wine/ANNOUNCE";
+    if ($ver == "latest")
+        $announce = "http://cvs.winehq.org/cvsweb/~checkout~/wine/ANNOUNCE";
+    else
+        $announce = "http://cvs.winehq.org/cvsweb/~checkout~/wine/ANNOUNCE?rev=".$ver;
+        
     if ($announce = @join("",file($announce)))
     {
         // display page
         $html->template_title = 'Announce';
         return $html->theme_box($config->theme, "box_title", 'Announce', "100%", $html->format_msg($announce), '10', 'white', 'topMenu');
     }
+    
     $html->redirect($file_root);
 }
 
