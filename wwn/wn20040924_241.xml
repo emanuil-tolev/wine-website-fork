@@ -142,7 +142,7 @@ bitmap fonts are used based on the current locale.
 Mike Hearn to ask about TrueType fonts,
 <quote who="Mike Hearn">
 Are these the ones where they need to be correctly hinted which costs 
-bazillions of dollars? Or, is it actually feasable to do them just with 
+bazillions of dollars? Or, is it actually feasible to do them just with 
 volunteer effort?
 </quote></p>
 
@@ -152,7 +152,7 @@ ReactOS project is working on this as well,
 <quote who="Steven Edwards">
 We have a Tahoma replacement (Greenville) coming from ReactOS which is
 almost done the only problem is the developer is not using fontforge to
-create it. I dont remeber the name of the tool but it is a very
+create it. I don't remember the name of the tool but it is a very
 expensive font creation program.
 </quote></p>
 
@@ -256,7 +256,7 @@ you how the patches can be improved.  Open source means everybody gets
 to see the code, and Wine is an LGPL project.  We welcome new contributors!
 </p><p>
 If you're looking for cooperation on a product, you'll better contact
-Jeremy White of Codeweavers.
+Jeremy White of CodeWeavers.
 </p></quote>
 
 <p>Taking a look at the 
@@ -289,7 +289,7 @@ why we bother and put together an interesting test:</p>
 <quote who="Rein Klazes"><p>
 
 Just did not feel like chasing bugs the other day. I decided to have
-some fun with something that I wondering for a long time: the usefulness
+some fun with something that I was wondering about for a long time: the usefulness
 of inline i86 assembly in string functions.
 </p><p>
 <a href="http://www.winehq.com/hypermail/wine-devel/2004/09/0594.html">This</a>
@@ -377,16 +377,16 @@ to finish it:</p>
 
 I'm afraid I won't be a lot of help right now, but I might be able to offer
 some moral support.  I've spent several weeks last year trying to get
-winelib working on HPUX, but I don't really have anything to show for it.
-Before I could get anything working, I had to abandon HPUX and work on
+winelib working on HP-UX, but I don't really have anything to show for it.
+Before I could get anything working, I had to abandon HP-UX and work on
 fixing up Linux and Solaris stuff because it was in higher demand.  I'll
-eventually need to get HPUX working also, but I won't be able to devote too
+eventually need to get HP-UX working also, but I won't be able to devote too
 much time to it for at least a month.
 </p><p>
 I was in the same situation as you are... very rusty at x86 assembly, able
 to comprehend a little sparc assembly, but I didn't know a thing about
 pa-risc.  I was simply typing make, letting it run until it had some error
-because HPUX wasn't supported, coming up with some fix for it, and
+because HP-UX wasn't supported, coming up with some fix for it, and
 repeating.  Some days I felt like I almost grasped what was going on and how
 to fix it, and some days it felt like it was miles away.  I never got all of
 wine compiling, so I have no idea if any of the fixes I made were correct or

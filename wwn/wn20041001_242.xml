@@ -63,7 +63,7 @@ Its main goal is to to go shopping. It also serves to inform you of what's going
 <topic>News</topic>
 <p>Sort of a slow news week, so we'll scrape the bottom of the
 news bin for something vaguely related to Wine.  Over at PC
-Advisor you ca find an article about 
+Advisor you can find an article about 
 <a href="http://www.pcadvisor.co.uk/index.cfm?go=news.view&amp;news=4151">desktop
 Linux migration</a> and the catch-22 posed by not having native applications.
 Namely, how can you get new users to use Linux without having a lot of 
@@ -194,7 +194,7 @@ use some of the most common entries to give people a hint.</ul></p><p>
 
 Fixed. This simplifies the code enormously. I don't think there's really 
 any problem with selecting the app you want to edit on the first tab and 
-it means there aren't any wierd states anymore where you can have a 
+it means there aren't any weird states anymore where you can have a 
 selection in the treeview that doesn't actually mean anything. The 
 titlebar now reflects the app you're editing.</ul></p><p>
 
@@ -286,7 +286,7 @@ duplicated in some form or another on the web site.  I'd like to see as
 much stuff like that removed from the User Guide as possible, we can
 simply refer people to WineHQ for more info.  (I think the reason for the
 duplication is that the website docs simply didn't exist when the User 
-Guide was written, now the website has superceded the User Guide.)
+Guide was written, now the website has superseded the User Guide.)
 When it's all said and done we should be left with the following sections:
 <ul> 
  <li> Introduction</li>
@@ -327,13 +327,13 @@ now works.  Either way, you'll probably eventually try to get
 a new version of Wine and figure out that something doesn't work the
 way it used to.  (Of course, most of
 you reading this probably fall into the masochist category who actually
-enjoy deleting their entire configuration and recompiling from scatch.)
+enjoy deleting their entire configuration and recompiling from scratch.)
 Being able to install a new version and have things automagically work
 is important to many people.  Mike Hearn brought this topic up and I
 have a hunch it's not the last time we'll hear about it:</p>
 
 <quote who="Mike Hearn"><p>
-There are a bunch of different ways we may want to upgrade the users
+There are a bunch of different ways we may want to upgrade the user's
 configuration:
 <ul>
 <li> Changes to $WINEPREFIX (~/.wine), for example:
@@ -363,14 +363,14 @@ configuration:
 </ul></p><p>
 This leads to the following questions:
 <ul>
-<li> How do we know when to upgrade the users wineprefix?</li>
-<li> How do we avoid disturbing the users configuration?</li>
+<li> How do we know when to upgrade the user's wineprefix?</li>
+<li> How do we avoid disturbing the user's configuration?</li>
 <li> What implementation do we use to upgrade it?</li></ul>
 </p><p>
 One potential implementation for knowing when to upgrade the wineprefix
 is to version it in a similar manner to how we version the wineserver
 protocol: with a simple incrementing integer. This could be stored in
-the registry, and Wines initialization sequence changed to be:
+the registry, and Wine's initialization sequence changed to be:
 <ul>
     <li> Does $WINEPREFIX exist?
     <ul><li>  No, call wineprefixcreate. Continue with startup</li>
@@ -384,10 +384,10 @@ the registry, and Wines initialization sequence changed to be:
 If registry access is too difficult here, a simpler implementation could
 be used: just store the number in a .version file.
 </p><p>
-How do we avoid disturbing the users configuration? Alexandre already
+How do we avoid disturbing the user's configuration? Alexandre already
 laid out the plan for this, which is to have HKLM (HKEY_LOCAL_MACHINE)
 devoted to the defaults we cunningly choose for maximum kewlness, and
-HKCU (HKEY_CURRENT_USER) is where the users settings are stored. These
+HKCU (HKEY_CURRENT_USER) is where the user's settings are stored. These
 override the defaults, meaning we can change the default settings by
 altering wine.inf, then bumping the wineprefix version so triggering a
 remerge of the default registry contents.
@@ -479,7 +479,7 @@ for us developers:
    set up the wine config upstream! We want Wine to have a good
    reputation for reliability, but currently it doesn't - people run
    random Foo app, it crashes and burns maybe due to incorrect
-   configuration and lk away saying "Oh well, Wine is crap,
+   configuration and walk away saying "Oh well, Wine is crap,
    what did I expect?". This happens quite a bit. Ensuring the user
    is cleanly and transparently upgraded makes things Just Work to
    a greater extent, which is good for everybody.</li>
@@ -704,7 +704,7 @@ Here's an idea. Hack the <tt>Sleep()</tt> call like this:
 <ul><code>
 if (delay == 64) delay = 3000;</code></ul></p><p>
 
-Ie, rule out the possibility that the delay between resume and suspend 
+I.e., rule out the possibility that the delay between resume and suspend 
 is so short Wine can't react in time. Then continue your investigation 
 from there.
 </p><p>
@@ -750,7 +750,7 @@ Isn't that going to cause a lot of flicker?  This was the reason for
 the existing code, because otherwise it looks really bad with apps
 that update the progress bar a lot.</quote></p>
 
-<p>Dimi Paunagreed:</p>
+<p>Dimi Paun agreed:</p>
 <quote who="Dimitrie Paun"><p>
 Indeed, IIRC I've tried to have as optimum background drawing code
 as possible (in terms of overwriting areas, etc), as flicker in the
@@ -765,7 +765,7 @@ a good looking control is important IMO.
 
 <p>Dmitry Timoshkov was more specific,
 <quote who="Dmitry Timoshkov">
-The problem with Rob's patch is that it causes entire background of
+The problem with Rob's patch is that it causes the entire background of
 the progress bar to be repainted. Some time ago (3 years or like that)
 I wrote tests for progress bar and found that it invalidates background
 only when (oldPos &lt; newPos) and it really has a separate WM_ERASEBKGND

@@ -216,11 +216,11 @@ options, and am after some advice....
 <li> (My preference) d3d8 and d3d9 are very similar in lots of respects. I
 would like to move all the GL code into the wined3d library, effectively
 factorizing d3d8 and d3d9. However, this would mean extra function call
-overhead for dx8 and I really dont know how common they will be. Obviously
+overhead for dx8 and I really don't know how common they will be. Obviously
 d3d8 will change during such a transition</li>
 
 <li> I could implement d3d9 from scratch. This would have the advantage of
-being a standalone library and wont affect d3d8, but a disadvantage of
+being a standalone library and won't affect d3d8, but a disadvantage of
 having to fix anything twice, and probably they will get out of sync really
 quickly. Also, d3d8 still has parts missing, and I'd prefer a single
 implementation if possible. If we did this, wined3d could be deleted and a
@@ -240,7 +240,7 @@ either.
 My other concern is if I start doing it and have to give up due to work or
 other pressures, I could leave a half migrated setup. I assume its
 relavitevly easy with cvs to back out changes if this occurs, and I hope it
-wont, but it is a concern.
+won't, but it is a concern.
 </p><p>
 I'd appreciate thoughts before I start (especially Lionels, AJ's etc) - I'm
 only just getting back into wine programming again hence my interest.

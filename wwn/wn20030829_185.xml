@@ -422,7 +422,7 @@ last time I looked)...
 </p><p>
 But it's as we feared : they explicitely tells us that this interface may
 change on each DirectX revision (which is normal as the driver interface
-need to change to accomodate more advanced graphic options). So we may have
+need to change to accommodate more advanced graphic options). So we may have
 to rewrite 'old' DirectX code each time a new revision of the DDK comes out.
 </p><p>
 Anyway, the current code is current not written at all with a DLL / Driver

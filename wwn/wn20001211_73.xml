@@ -322,7 +322,7 @@ shouldn't be an issue for PPC (at least at first glance).
 
 <p />
 
-Alexandre Julliard agreed on the feasability, but proposed another way
+Alexandre Julliard agreed on the feasibility, but proposed another way
 for the Linux PPC port: <quote who="Alexandre Julliard">since we already support
 clone() on i386, using clone() on linuxppc may be easier to do, at
 least for the first version.</quote></section>
