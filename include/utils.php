@@ -33,42 +33,6 @@ function get_files ($dir, $filter = null)
     return $files;
 }
 
-// get front page news listing
-function get_news ()
-{
-    global $config, $html;
-      
-    // get list of news items
-    $n = array();
-    $news = get_files($config->news_xml_path, "xml");
-    $news = array_reverse ($news);
-    
-    // loop and display news
-    $c = 0;
-    foreach ($news as $key => $item)
-    {
-        // counter
-        $c++;
-        
-        // get data from XML file
-        $vars = array();
-        list($vars['date'], $vars['title'], $vars['body']) = get_xml_tags($config->news_xml_path.'/'.$item, array('date', 'title', 'body'));
-
-        // add to news body
-        $news_body .= $html->template('base', 'news_row', $vars);
-        
-        // only show 5 records
-        if ($c == 4 && !$_GET['shownews'])
-        {
-            $news_body .= $html->p($html->ahref('More News', '?news=archive'));
-            break;
-        }
-    } // end of news loop
-    
-    // return the finished body
-    return $news_body;
-}
-
 // load and display banner ads
 function banner_ad ()
 {

@@ -18,7 +18,7 @@ switch (true)
   
   // view news archvie
   case ($news):
-    $text .= $html->theme_box($config->theme, "box_title", 'News Archives', "100%", get_news($news), '10', 'white', 'topMenu');
+    $text .= $html->theme_box($config->theme, "box_title", 'News Archives', "100%", view_news($news), '10', 'white', 'topMenu');
     break;
   
   // view wwn issue
@@ -88,7 +88,7 @@ function home_page ()
 	$latest_box = $html->theme_box($config->theme, "box_title", "Latest Release", "97%", $html->template("base", 'wine_release'), '10', 'white', 'topMenu');
 	
     // get regular news
-    $news_box = $html->theme_box($config->theme, "box_title", "Latest News", "99%",  get_news(), '10', 'white', 'topMenu');
+    $news_box = $html->theme_box($config->theme, "box_title", "Latest News", "99%",  view_news('home'), '10', 'white', 'topMenu');
     
 	// get wwn news
     $wwn = new wwn();
@@ -124,6 +124,76 @@ function view_announce ($announce)
         return $html->theme_box($config->theme, "box_title", 'Announce', "100%", $html->format_msg($announce), '10', 'white', 'topMenu');
     }
     $html->redirect($file_root);
+}
+
+// get front page news listing
+function view_news ($where)
+{
+    global $config, $html;
+    
+    // max count
+    $max = 10;
+    
+    // where are we in news list
+    $x = $_GET['x'];
+    
+    // get list of news items
+    $news = get_files($config->news_xml_path, "xml");
+    $news = array_reverse ($news);
+    $total = count($news);
+    
+    // loop and display news
+    $c = 0;
+    foreach ($news as $key => $item)
+    {
+        // counter
+        $c++;
+
+		// do not show images less than current pos
+		if ($x != 1 and $x >= $c)
+		  continue;
+
+        // get data from XML file
+        $vars = array();
+        list($vars['date'], $vars['title'], $vars['body']) = get_xml_tags($config->news_xml_path.'/'.$item, array('date', 'title', 'body'));
+
+        // add to news body
+        $news_body .= $html->template('base', 'news_row', $vars);
+        
+        // only show 5 records on home page
+        if ($where == 'home' and $c == 4)
+        {
+            $news_body .= $html->p($html->ahref('More News', '?news=archive'));
+            break;
+        }
+        // show only 25 records on any other page
+        else if ($c == $max)
+        {
+            break;
+        }
+    } // end of news loop
+    
+    // prev/next links
+    if ($where == 'archive')
+    {
+        // display prev link
+        if ($x > 0)
+        {
+            $prev = ($total) - $c;
+            $prev_link = $html->ahref("&lt;&lt; Previous News","?news=archive;x=".$prev,"class=menuItem");
+        }
+        // display next link
+        if (($x + $max) < $total)
+        {
+            $next = $x + $max;
+            $next_link .= $html->ahref("More News &gt;&gt;","?news=archive;x=".$next,"class=menuItem");
+        }    
+        // add prev/next links
+        $news_body .= $html->p($html->div($prev_link.' &nbsp; '.$next_link, 'align=center'));
+    }
+    
+    // return the finished body
+    return $news_body;
 }
 
 // load the annouce file for latest version of wine
