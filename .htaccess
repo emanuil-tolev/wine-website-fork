@@ -90,3 +90,7 @@ RedirectPermanent /find                         http://source.winehq.org/find
 RedirectPermanent /search                       http://source.winehq.org/search
 RedirectPermanent /diff                         http://source.winehq.org/search
 
+# redirect old wineconf pages
+RedirectMatch ^/wineconf$                       http://www.winehq.org/site/wineconf
+RedirectMatch ^/wineconf/$                      http://www.winehq.org/site/wineconf
+
