@@ -22,8 +22,18 @@ RedirectPermanent /download-mirrors.html        http://www.winehq.org/?page=down
 RedirectPermanent /download-mirrors.shtml       http://www.winehq.org/?page=download
 RedirectPermanent /support.shtml                http://www.winehq.org/?page=documentation
 RedirectPermanent /News/status.html             http://www.winehq.org/?page=status
+RedirectPermanent /status                       http://www.winehq.org/?page=status
+RedirectPermanent /status/                      http://www.winehq.org/?page=status
 RedirectPermanent /faq/                         http://www.winehq.org/?page=faq
 RedirectPermanent /faq                          http://www.winehq.org/?page=faq
+RedirectPermanent /screenshots/                 http://www.winehq.org/?page=screenshots
+RedirectPermanent /screenshots                  http://www.winehq.org/?page=screenshots
+RedirectPermanent /news/                        http://www.winehq.org/?news=archive
+RedirectPermanent /news                         http://www.winehq.org/?news=archive
+RedirectPermanent /howto/                       http://www.winehq.org/?page=howto
+RedirectPermanent /howto                        http://www.winehq.org/?page=howto
+RedirectPermanent /todo/                        http://www.winehq.org/?page=todo
+RedirectPermanent /todo                         http://www.winehq.org/?page=todo
 
 # redirect winehq services to appropriate web sites
 RedirectMatch ^/(APPS|Apps|apps)/$              http://appdb.winehq.org/
