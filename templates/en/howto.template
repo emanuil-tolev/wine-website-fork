@@ -6,12 +6,17 @@
 <p>Before you install Wine make sure there is no previous Wine installation
 on your system.</p>
 
-<p>Many Linux distributions come with a Wine package, but this is usually a
-very old and sometimes broken version, so it is better to uninstall the old
+<p>Many Linux distributions come with a Wine package, but this is usually an
+old and sometimes broken version, so it is better to uninstall the old
 version and install a newer one. Refer to your distributions documentation
 on how to remove packages.</p>
 
-<p>YYYYMMDD is the version of wine in Year Month Day format.</p>
+<p>YYYYMMDD is the version of wine in Year Month Day format. Wine
+releases are generally not subject to QA, older releases are not
+really any more stable so you should always install the very latest
+one. When upgrades come out, try them, normally they will be fine but
+occasionally an update may break your application. If that happens,
+just downgrade again. </p>
 
 <ol>
     <li><p><b>Download:</b></p>
@@ -34,6 +39,12 @@ on how to remove packages.</p>
          <span class=inverse>./tools/wineinstall</span>
          </td></tr>
          </table>
+	When it asks, create a "no-windows" install. Although the
+	idea of reusing an existing Windows installation from another
+	drive may sound tempting, in general there is too much
+	garbage on these setups and they can destabilize Wine. It's
+	better to create a fake windows drive then install your
+	applications into it.
         </li>
         
         <li><p><b>From Binary</b></p>
@@ -41,7 +52,7 @@ on how to remove packages.</p>
         <ul>
             <li><p>RPM based</p>
              <table width="300" border=0 cellpadding=10><tr><td class=black>
-             <span class=inverse>rpm -i wine-YYYYMMDD-i386.rpm</span>
+             <span class=inverse>rpm -iv wine-YYYYMMDD-i386.rpm    (as root)</span>
              </td></tr>
              </table>
             </li>
@@ -58,9 +69,23 @@ on how to remove packages.</p>
 
     <li><p><b>Configuration</b></p>
     
-    <p>In order to run Wine needs some files and directories.<br>
-    First you must create a virtual ('fake') windows drive<br>
-    The following directories must exist in your $HOME directory:</p>
+    <p>In order to run Wine needs some files and directories.<br>  You
+    need at least a fake windows drive and config file, however the
+    source code wineinstall program, as well as most binary packages,
+    will have already done this for you.  To check, try running
+    the <b>notepad</b> program. Some programs are built into wine,
+    examples are "notepad", "control", "wcmd", "winemine" and so
+    on. You can normally run these just by typing in their names from
+    the command line. For other programs, you need to type "wine programname.exe".</p>
+
+    <p>In particular, the source .tar.gz file, and the Red Hat RPMs will set it all up for you.
+      After installing, just start notepad and play with it. In particular, check the File | Open
+      dialog box, to make sure you can access your favourite drives. This should work fine, but if not
+      try altering the drive mappings in the config file.</p>
+    
+    <p>If notepad doesn't work for you, you may need
+    to create these directories yourself. To do that, create the
+    following directories in your home directory:</p>
     
     <p>.wine/
     <blockquote>
