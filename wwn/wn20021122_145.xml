@@ -673,7 +673,7 @@ has been done before with the ddraw code plus the enhancement I did.
 
 	<li>Objects
 	<p>
-      An object is a instance of an object class.
+      An object is an instance of an object class.
 	</p><p>
       Example :
 	<ul>
@@ -733,7 +733,7 @@ has been done before with the ddraw code plus the enhancement I did.
 	</code></ul></p>
 	</li>
   <li>Creating an object	<p>
-      Just declare an pointer to an object and allocate the memory for it.
+      Just declare a pointer to an object and allocate the memory for it.
 	Example:
 	<ul><code>
 
@@ -762,7 +762,7 @@ has been done before with the ddraw code plus the enhancement I did.
 	</p><p>	
       1) <tt>ICOM_OBJECT(object_class,iface)</tt>
 	</p><p>  
-         This macro return an pointer to the object, the value is of object_class* type 
+         This macro returns a pointer to the object, the value is of object_class* type 
 	</p><p>
          Example:
 	<ul><code>

@@ -167,7 +167,7 @@ with the message on which I can click to view the respective diff.
 Now, wanted this feature so badly that I actually went ahead and
 implemented it! :))) Here is the idea: 
 <ul>
-	<li>generate a ID for each message sent out</li>
+	<li>generate an ID for each message sent out</li>
 	<li>include it in the message along with a summary of
 changes</li>
 	<li>include a link in the message that passes to a CGI program

@@ -383,7 +383,7 @@ class html
 	    return $str;
     }
 
-    // FORM INPUT TIMESTAMP (make a input field for timestamp)
+    // FORM INPUT TIMESTAMP (make an input field for timestamp)
     function form_input_timestamp ($fn, $timestamp)
     {
         $months = array(1 => 'January', 'February', 'March', 'April', 'May',

@@ -275,7 +275,7 @@ I have also only called the new code from d3d9 for now as it's a complete
 skeleton to be built on.
 </p><p>
 Changelog
-<ul>Add a IWineD3DDevice object type (empty for now), and create one when an
+<ul>Add an IWineD3DDevice object type (empty for now), and create one when an
 IDirect3DDevice object is created.</ul>
 </p></quote>
 

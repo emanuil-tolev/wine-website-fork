@@ -604,7 +604,7 @@ that uses MFC. The missfunction are senseless top/left/width/height
 values to CreateWindowExA and that CreateWindowExA is called from the 
 MFC library. As VC++ comes with PDB files and source for the MFC
 library, I thought that windebg should read that pdb files and then
-would give me a sensible stack backtrace at that invokation of
+would give me a sensible stack backtrace at that invocation of
 CreateWindowExA.
 
 <p />

@@ -102,7 +102,7 @@ As a matter of process, Ulrich didn't like
 least partially) the same task, both active in the source tree. This means I
 don't think it is a good idea to have <b>both</b> the 'build' and the
 'dllglue' tool parse .spec files, and neither is it a good idea to have
-<b>both</b> an built-in DLL and an elfdll loader. The disadvantages of this
+<b>both</b> a built-in DLL and an elfdll loader. The disadvantages of this
 approach should be rather obvious: not only do you have to keep the two
 solutions in sync with every modification, but this also means that we
 cannot take full advantage of the new features. E.g. one of the main reasons

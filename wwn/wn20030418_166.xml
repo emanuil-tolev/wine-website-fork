@@ -274,7 +274,7 @@ patch</a> can be found in John's email.</p>
  all that often in practice. Second, the nature of the option allows
  for a simple scheme. That is, with -I now used for include directories,
  we can try to match the 3 possible old values (res, rc, coff).
- If they match, we consider it a input format specifier, issue a
+ If they match, we consider it an input format specifier, issue a
  deprecation warning, and behave in the old fashion. Otherwise, 
  consider the input an include directory. But what if one want to
  specify 'res' or 'coff' as an include dir? Well, apart from the
@@ -471,7 +471,7 @@ for some folks to figure out and they expect to just link against Winelib and ha
 it work.  Somehow all the features of a Windows PE-style shared library have to
 be made available to be linked against.  Alexandre mentioned that the
 cleanest solution might be to do it at the linker/ld.so layer.  Dimi thought
-another way to do it would be to just export stuff into a ELF .so library.  But
+another way to do it would be to just export stuff into an ELF .so library.  But
 Alexandre pointed out some problems with that:</p>
 <quote who="Alexandre Julliard"><p>
  you'll need to redo the resource 

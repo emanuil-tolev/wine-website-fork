@@ -679,7 +679,7 @@ as the XClipboard clipboard viewer. (XA_CLIPBOARD is defined in an X utility
 header in X11/include/X11/Xmu/Atoms.h) If you select something in a terminal
 window the content won't show up in XClipboard. However if you copy
 something using Edit|Copy in Netscape you will see it in XClipboard (via the
-CLIPBOARD atom) as well as you can paste it to an terminal (via the or
+CLIPBOARD atom) as well as you can paste it to a terminal (via the
 XA_PRIMARY atom).
 </ol>
 

@@ -166,7 +166,7 @@ we parse the config file we don't have a lot information about the
 application we're going to run - in fact the file name only. Anyway
 that's probably enough. So maybe we could add the new optional sections
 like <code>[x11drv-homesite*.exe]</code>. The string after "-" sign
-could be an case insensitive regular expression. When some of this
+could be a case insensitive regular expression. When some of this
 x11drv optional sections match the condition about its filename, it's
 taken and no more x11drv sections are considered. If not, the default
 non-optional x11drv section is taken.

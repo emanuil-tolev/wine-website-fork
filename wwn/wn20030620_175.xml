@@ -139,7 +139,7 @@ Look for another one this Tuesday.  </p>
 <quote who="Sylvain Petreolle"><p>
 Is anyone of you working on Dmusic interfaces ?
 Now doing test with Dxdiag doesn't work,
-it says "No such interface" when trying to create a IDirectPerformance
+it says "No such interface" when trying to create an IDirectPerformance
 object.
 </p><p>
 I did a look through the source and noticed that Dll(Un)RegisterServer

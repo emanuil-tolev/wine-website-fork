@@ -431,7 +431,7 @@ Ulrich Weigand shed some light on Windows behavior on the topic of
 mapping instead of loading process image:
 
 <quote who="Ulrich Weigand">If we do indeed have to apply relocation, because the intended virtual
-base address is not available, we an completely forget about mmap()
+base address is not available, and completely forget about mmap()
 anyway, as applying the relocation offsets would dirty (nearly) each
 page immediately. We could then just as well read the file as we do
 now :-/
@@ -447,7 +447,7 @@ again, and the relocs are applied <b>again</b> ...)
 
 <p />
 
-One option would be to at least delaying reading a executable page
+One option would be to at least delay reading an executable page
 (and applying the appropriate relocs) until the page is first
 accessed. This should be relatively simple to do in Wine; we'd just
 need to mark the range no-access initially and install a page fault

@@ -262,7 +262,7 @@ So, what we need is:
 <ul>
     <li> recognize the -shared flag in winegcc, and forward to 
        winewrap (easy)</li>
-    <li> instrument winewrap to do the winebuild invokation
+    <li> instrument winewrap to do the winebuild invocation
        and all the other crap that is done in the Makefiles
        (not hard, we just need to study the Makefiles for the
         proper way to build a DLL in Wine).</li>
