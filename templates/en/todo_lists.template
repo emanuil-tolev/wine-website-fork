@@ -38,7 +38,7 @@
 	    <li> status: some working code <a href="http://www.winehq.org/hypermail/wine-patches/2004/01/0244.html">available</a>
 	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Porting status <span class="inprogress">[IN PROGRESS]</span>
+	<li> <a href="http://winehq.org/site/status_porting">Porting status</a> <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
 	    <li> workers: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>, 
 			  <a href="mailto:steven_ed4153@yahoo.com">Steven Edwards</a>
@@ -68,9 +68,9 @@
 	  </ul>
          <li> Acknowledgment page <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:twickline@skybest.com">Tom Wickline</a>
-	    <li> status: Pre-alpha prototype ready
-	    <li> updated: Mar 12, 2004
+	    <li> worker: <a href="mailto:VincentB@coppercolorado.com">Brian Vincent</a>
+	    <li> status: Prototype <a href="http://www.winehq.org/hypermail/wine-devel/2004/09/0116.html">ready</a>.
+	    <li> updated: Oct 10, 2004
 	  </ul>
          <li> Update Introduction page <span class="done">[DONE]</span>
 	  <ul>
@@ -78,11 +78,12 @@
 	    <li> status: ToC <a href="http://www.winehq.org/hypermail/wine-cvs/2004/02/0229.html">added</a>
 	    <li> updated: Feb 18, 2004
 	  </ul>
-	<li> <a href="http://www.winehq.org/site/status_ui">UI status</a> update <span class="todo">[TODO]</span>
+	<li> <a href="http://www.winehq.org/site/status_ui">UI status</a> update <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:R.J.Shearman@warwick.ac.uk">Robert Shearman</a>
-	    <li> status: review of the comctl32 source needed
-	    <li> updated: Mar 15, 2004
+	    <li> workers: <a href="mailto:R.J.Shearman@warwick.ac.uk">Robert Shearman</a>,
+			  <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
+	    <li> status: needs audit of the Animation, Flat Scroll Bar, Header, Month Calendar, Native Font, Rebar, Tab, Tree-View controls.
+	    <li> updated: Oct 10, 2004
 	  </ul>
 	<li> Integrate API status into WineHQ <span class="done">[DONE]</span>
 	  <ul>
@@ -116,11 +117,17 @@
   <a name="doc"></a><h3> B. Documentation </h3>
   </a><h4> User Guide </h4>
     <ol>
+	<li> Revise the introduction <span class="inprogress">[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:scott@open-vote.org>Scott Ritchie</a>
+	    <li> status: update <a href="http://www.winehq.org/hypermail/wine-patches/2004/10/0141.html">submitted</a>.
+	    <li> updated: Oct 10, 2004
+	  </ul>
 	<li> Update configuration instructions based winecfg & regedit <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:VincentB@coppercolorado.com">Brian Vincent</a>
-	    <li> status: looking into it
-	    <li> updated: Feb 27, 2004
+	    <li> status: first iteration <a href="http://www.winehq.org/hypermail/wine-devel/2004/09/0716.html">ready</a>.
+	    <li> updated: Oct 10, 2004
 	  </ul>
 	<li> Suggest winefile instead of Calmira <span class="done">[DONE]</span>
 	  <ul>
@@ -143,11 +150,11 @@
 	    <li> status: ?
 	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Redo Multimedia section <span class="todo">[TODO]</span>
+	<li> Redo Multimedia section <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:pouech-eric@wanadoo.fr">Eric Pouech</a>
-	    <li> status: planned
-	    <li> updated: Feb 5, 2004
+	    <li> status: changes <a href="http://www.winehq.org/hypermail/wine-patches/2004/10/0144.html">submitted</a>
+	    <li> updated: Oct 10, 2004
           </ul>
 	<li> Add i18n section <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
@@ -251,8 +258,8 @@
 	  <ul>
 	    <li> workers: <a href="mailto:cmorgan@alum.wpi.edu">Chris Morgan</a>,
                           <a href="mailto:mike@theoretic.com">Mike Hearn</a>.
-	    <li> status: patch committed
-	    <li> updated: Feb 7, 2004
+	    <li> status: getting closer to being ready
+	    <li> updated: Oct 10, 2004
           </ul> 
         <li> Setup API .inf scripts <span class="done">[DONE]</span>
 	  <ul>
