@@ -248,7 +248,7 @@
 
   <h3>Getting rid of the global 
       <font size="-1"><tt>HEAP_strdupWtoA</tt></font> function</h3>
-  As of <strike>Dec 4, 2002</strike> Sep 30, 2004, there were <strike>98</strike> 21 occurrences of <tt>HEAP_strdupWtoA</tt>.
+  As of Nov 30, 2004, there were 13 occurrences of <tt>HEAP_strdupWtoA</tt>.
   These functions invocations should go away during the W -&gt; A cross-call
   cleanup. It is better to directly fix that sort of cross call, rather than
   replace this function by other alternatives. The few of them that can not
@@ -257,9 +257,6 @@
   <ul>
     <li>dlls/advapi32/service.c
     <li>dlls/gdi/printdrv.c
-    <li>dlls/kernel/comm.c
-    <li>dlls/oleaut32/typelib.c
-    <li>dlls/shell32/shlmenu.c
     <li>dlls/user/hook.c
     <li>dlls/wineps/init.c
     <li>dlls/winspool/info.c
