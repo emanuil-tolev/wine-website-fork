@@ -184,7 +184,7 @@ be a different story though...
 access some unimplemented functions, <quote who="Peter Lord">
 the stumbling block is when the application starts to use network 
 operations, specifically WPUCompleteOverlappedRequest and 
-WSAAddressToStringA.  Right now, these are unimplimented and the java 
+WSAAddressToStringA.  Right now, these are unimplemented and the java 
 app crashes when trying to call them.</quote>  He wondered
 if there were any plans to add those two Wine.</p>
 

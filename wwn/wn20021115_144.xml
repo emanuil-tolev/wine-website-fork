@@ -416,7 +416,7 @@ screenshot</a>.</p>
 the 3D code from the X11 driver:</p>
 <quote who="Lionel Ulmer"><p>
 The current OpenGL code (well, to be more precise, the current WGL code) is
-really X11 dependant and is only separated through hacks via ExtEscape
+really X11 dependent and is only separated through hacks via ExtEscape
 mechanisms to get X11 specific variables.
 </p><p>
 As I never was able to find documentation about the OpenGL ICD mechanism (ie

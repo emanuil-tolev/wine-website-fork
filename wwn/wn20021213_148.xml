@@ -598,7 +598,7 @@ installations are produced using InstallShield and Wise, not by MS).
 Also, MSI installed apps have a special kind of shortcut that tracks 
 uses and allows for delayed installations (i.e. - install just the icon 
 now, we'll install the actual file when needed). I'm pretty sure there 
-is a heavy dependancy of MSI on file and directory tracking (it's 
+is a heavy dependency of MSI on file and directory tracking (it's 
 ability to recover slightly missing installs).
 </p><p>
 So, it's not going to be easy, and there is a lot of infrastructure 

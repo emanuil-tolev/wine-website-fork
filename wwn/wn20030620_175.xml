@@ -197,7 +197,7 @@ Someone uncovered a cosmetic problem was fixed with a simple patch:</p>
    By manually adding this entry in system.reg, it is still not possible to get the executables 
  icons :-\ I also saw that
  [Software\\Classes\\.exe\\DefaultIcon] is also queried. Even if i manually add this entry again, 
- it's not successfull. I think i've
+ it's not successful. I think i've
  missed something in these entries definition but i don't know what. Anyway, by forcing the code 
  to look inside executable for icons,
  they finally appear :)

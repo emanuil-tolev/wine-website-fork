@@ -173,7 +173,7 @@ WINE_MODREF makes heavy use of it, even if all of it isn't done
 </ul>
 </p><p>
 however, it doesn't move the code to kernel32 (there are still quite a 
-few pending dependancies)
+few pending dependencies)
 </p><p>
 since I'm not sure Alexandre will apply it right away (it seems his 
 mailbox is ready to explode ;-)), please give it a try (I've been using 

@@ -110,7 +110,7 @@ following dilemna:</p>
    present in the TrueType font files, so the driver might as well use it.</p>
 <p>
    The driver could read this information directly from the font files, but
-   this would make Wine dependant on the FreeType libraries, and that
+   this would make Wine dependent on the FreeType libraries, and that
    doesn't strike me as a wonderful idea.  Instead, I have cobbled together
    a small program which reads a TrueType font file and creates a "TrueType
    Font Metrics" file, which is very similar to an AFM file.  (This program
@@ -149,7 +149,7 @@ following dilemna:</p>
  <li> Implement a FreeType font driver that links to Freetype and uses
    the FreeType APIs for all font metrics data as well as rasterization.</li>
 
- <li> Implement an X11-dependant font driver in the Font Engine to rely
+ <li> Implement an X11-dependent font driver in the Font Engine to rely
    on as a backup if FreeType isn't available.</li></ul></p>
 <p>
    Using FreeType more directly would also allow Wine to do serious

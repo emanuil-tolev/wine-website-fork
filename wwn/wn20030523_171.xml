@@ -389,7 +389,7 @@ library sounds pretty broken, I'm not sure you want to use that.
 <quote who="Shachar Shemesh"><p>
 The static link question seems simple enough. I know that Mozilla uses 
 ICU, and I think OpenOffice does too. Both of them don't have a runtime 
-dependancy on it (or else it would be available for redhat, right?). 
+dependency on it (or else it would be available for redhat, right?). 
 This means they either static link it or imported the sources into their 
 app.
 </p><p>
@@ -404,7 +404,7 @@ not implement mirroring, nor does it implement Arabic Shaping (weird,
 considering that the maintainer is from Iran). It only supports UCS-4.
 </p><p>
 Also - like I told Mike H on IRC, static linking ICU will mean that we 
-don't have to remove a dependancy from the Wine binary if FriBiDi ever 
+don't have to remove a dependency from the Wine binary if FriBiDi ever 
 catches up.
 </p><p>
 ICU implements both mirroring and shaping. It supports UTF-16, including 
@@ -413,10 +413,10 @@ already been updated for Unicode 4.0 (not the Debian version, of course,
 but the version you downloaded is). This is meaningless for BiDi (there 
 was no change), but does indicate that the library is alive.
 </p><p>
-The compile time dependancy is nothing new. It will be there whether I 
+The compile time dependency is nothing new. It will be there whether I 
 static link or dynamic, and for whichever library I use. The fact that 
 this is an uncommon library, coupled with the fact that I'm going to 
-make it an optional compile time dependancy, means that there is a high 
+make it an optional compile time dependency, means that there is a high 
 chance that the Wine packagers will neglect to download it before 
 building Wine packages. This is a bummer, as the resulting Wine will not 
 support BiDi, but should have no other side effect.

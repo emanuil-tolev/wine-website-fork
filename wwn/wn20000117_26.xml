@@ -142,7 +142,7 @@ constructions
    <li />it's simple (mostly removes code ;-)
 </ul></quote>
 
-The only known drawback is a dependancy on a gcc feature, (the
+The only known drawback is a dependency on a gcc feature, (the
 __attribute__((constructor)) telling that a function has to be called
 before main() is entered; this is used in this case to register the
 module). 

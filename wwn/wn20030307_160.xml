@@ -287,7 +287,7 @@ of porting a game using Winelib.</p>
 
 <section 
 	title="Wine's Library Dependencies" 
-	subject="Wine dependancies"
+	subject="Wine dependencies"
 	archive="http://www.winehq.com/hypermail/wine-devel/2003/03/0075.html" 
 	posts="4"
 	startdate="03/03/2003"
@@ -332,7 +332,7 @@ Otherwise, it's a remarkably short list. I think maybe quite a few of
 the libs are detected at runtime, I know there was a patch to make
 OpenGL code detected like this (as opposed to enabled at compile time) -
 despite having a driver for the Jack sound server in this directory for
-instance, there is no dependancy on libjack. The other libs are fairly
+instance, there is no dependency on libjack. The other libs are fairly
 standard and would be present on almost all installations. A few, like
 the C++ libs and ncurses aren't a part of the LSB and at present would
 need to be statically linked.
