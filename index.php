@@ -17,10 +17,17 @@ switch (true)
     break;
   
   // view wwn issue
-  case ($wwn):
-    $text .= wwn_view_issue($wwn);
+  case ($issue):
+    $wwn = new wwn();
+    $text .= $wwn->view_issue($issue);
     break;
 
+  // view interviews
+  case ($interview):
+    $wwn = new wwn();
+    $text .= $wwn->view_interview($interview);
+    break;
+  
   // view latest annouce
   case ($announce):
     $text .= view_announce($announce);
@@ -79,8 +86,9 @@ function home_page ()
 	$latest_box = $html->theme_box($config->theme, "box_title", "Latest Release", "97%", $html->template("base", 'wine_release'), '10', 'white', 'topMenu');
 	
 	// get wwn news
-	$wwn = wwn_get_list($config->wwn_xml_path);
-	$wwn_box = $html->theme_box($config->theme, "box_title", "Wine Weekly News", "97%", wwn_issues_list($wwn[0], $wwn[1], 3), '10', 'white', 'topMenu');
+    $wwn = new wwn();
+	$issues = $wwn->get_list($config->wwn_xml_path);
+	$wwn_box = $html->theme_box($config->theme, "box_title", "Wine Weekly News", "97%", $wwn->issues_list($issues[0], $issues[1], 3), '10', 'white', 'topMenu');
 	
     // sponsor box
     $sponsor_box = $html->template("base", 'sponsor');
