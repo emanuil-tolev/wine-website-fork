@@ -66,6 +66,7 @@
   If you know of applications that should be listed here, please send your suggestions
   to <a href="mailto:dpaun@rogers.com">Dimi</a>. Currently, we have:
   <ul>
+    <li><a href="#abiword">Abi Word</a>
     <li><a href="#winamp">WinAMP</a>
     <li><a href="#openoffice">OpenOffice</a>
     <li><a href="#texniccenter">TeXnicCenter</a>
@@ -93,6 +94,15 @@
     <li> <span class=abandoned>ABANDONED</span>: the application has been deem unsuitable for porting using Winelib
   </ul>
   
+  <a name="abiword""></a><h3 class=inprogress>Abi Word</h3>
+  <ul>
+    <li>worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
+    <li>status: most compiles cleanly
+    <li>updated: Apr 8, 2004
+    <li>homepage: <a href="http://www.abiword.org/">www.abiword.org</a>
+  </ul>
+
+
   <a name="winamp"></a><h3 class=inprogress>WinAMP</h3>
   <p>Suggested by <a href="mailto:vinn@theshell.com">Brian Vincent</a>: 
   <i>Looks like Nullsoft has released the Winamp 3 code as open source.</i>
