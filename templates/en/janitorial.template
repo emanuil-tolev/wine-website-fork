@@ -180,9 +180,6 @@
     <li>dlls/advapi32/crypt.c: advapi32: CryptSetProviderExW: illegal call to CryptSetProviderExA
     <li>dlls/ddraw/main.c: ddraw: DirectDrawEnumerateExW: illegal call to DirectDrawEnumerateExA
     <li>dlls/hhctrl.ocx/hhctrl.c: hhctrl.ocx: HtmlHelpW: illegal call to MessageBoxA
-    <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to HEAP_strdupWtoA
-    <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to SetDefaultCommConfigA
-    <li>dlls/kernel/locale.c: kernel32: GetLocaleInfoW: illegal call to GetModuleHandleA
     <li>dlls/kernel/resource.c: kernel32: FindResourceExW: illegal call to get_res_name_type_WtoA
     <li>dlls/lzexpand/lzexpand_main.c: lz32: GetExpandedNameW: illegal call to GetExpandedNameA
     <li>dlls/lzexpand/lzexpand_main.c: lz32: LZOpenFileW: illegal call to LZOpenFileA
