@@ -112,14 +112,14 @@ supported on their sound card. </p></quote>
 </section>
 
 <section 
-	title="" 
-	subject=""
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/12/0.html" 
-	posts=""
-	startdate="12/  /2003"
-	enddate="12/  /2003"
+	title="Exec Shield Problems" 
+	subject="Allocating too much memory for prelink workaround"
+	archive="http://www.winehq.com/hypermail/wine-devel/2003/12/0367.html" 
+	posts="7"
+	startdate="12/13/2003"
+	enddate="12/14/2003"
 >
-<topic></topic>
+<topic>Integration</topic>
 <p>
 Last month I covered a problem with exec shield's interactions with
 Wine (see 
@@ -152,7 +152,7 @@ So ld.so really wants to get 20xMB memory but fails.
 
 <p>Alexandre thought that the memory should just be overcommitted, and
 since it's not really used it wouldn't cause an issue.  Apparently SuSE
-protects against that though and Marcus explained how to get around it:</p>
+protects against that though.  Marcus explained how to get around it:</p>
 <quote who="Marcus Meissner"><p>
 SuSE 8.2 has a "overcommit" sysctl, which is default off.
 In this case at least the SuSE kernel uses a heuristic on left over
@@ -209,16 +209,15 @@ breakages. I was kind of hoping someone else would pick that fight, so
 I could go back to writing some real Wine code for a change...
 </p></quote>
 
-<p>Anyone listening?</p>
+<p>Any kernel/distro people listening?</p>
 
 </section>
 <section 
 	title="Delayed Debug Tracing" 
 	subject="Delayed debug tracing"
 	archive="http://www.winehq.com/hypermail/wine-devel/2D03/12/0363.html" 
-	posts="7"
+	posts="9"
 	startdate="12/13/2003"
-	enddate="12/  /2003"
 >
 <topic>Debugging</topic>
 <p>I think someone asked this last year, but there was no good answer
@@ -324,7 +323,7 @@ add to .wine/config:
 	startdate="12/15/2003"
 >
 <topic>Project Management</topic>
-<p>Just a heads up - there won't be any CVS commits for a while and 
+<p>Just a heads up - 
 news will probably slow to a trickle.  Alexandre is going on vacation:</p>
 <quote who="Alexandre Julliard"><p>
 There won't be any commits for a while, since I'm leaving now for a
