@@ -129,7 +129,7 @@ patch to change the reference in the source files:</p>
  .com suffix raises all sorts of nasty questions that are
  better avoided.
 </p><p>
- We wouldn't be the first project to have to related names 
+ We wouldn't be the first project to have two related names 
  for their site, and I see no potential danger in making 
  the change, just an upside. Please consider it.
 </p><p>
@@ -171,10 +171,10 @@ slides available:</p>
 This time, I actually installed a spell checker. Believe it or not.
 <a href="http://www.shemesh.biz/wine">http://www.shemesh.biz/wine</a>
 holds the PDF and the openoffice of the slides. I'm hoping this is the 
-last draft. You know youv'e stayed up for too long when you start 
+last draft. You know you've stayed up for too long when you start 
 putting stuff into  your sig.
 </p><p>
-A huge thanks for everyone for their input.
+A huge thanks to everyone for their input.
 </p></quote>
 
 <p>Shachar noted that the presentation is meant to be accompanied
@@ -183,7 +183,7 @@ by a demonstration of real programs running under Wine.  </p>
 </section>
 
 <section 
-	title="Running PhotoShop Plugins in the GIMP With Wine" 
+	title="Running Photoshop Plugins in the GIMP With Wine" 
 	subject="Fun projects?"
 	archive="http://www.winehq.com/hypermail/wine-devel/2003/11/0611.html" 
 	posts="12"
@@ -204,10 +204,10 @@ for enhancement.
 </p>
 
 <p>On the <a href="http://www.winehq.com/site/fun_projects">Fun
-Projects></a> page is an idea suggested by Marcus Meissner to investigate
-using native PhotoShop plugins with the <a href="http://www.gimp.org">GIMP</a>.  
-This week Rob Collins provided some details on interfacing with PhotoShop 
-plugins:></p>
+Projects</a> page is an idea suggested by Marcus Meissner to investigate
+using native Photoshop plugins with the <a href="http://www.gimp.org">GIMP</a>.  
+This week Rob Collins provided some details on interfacing with Photoshop 
+plugins:</p>
 <quote who="Rob Collins"><p>
 
 	Photoshop plugins are DLLs, with all calls from the host using 1 entry point 
@@ -273,7 +273,7 @@ can call them. This is non-trivial, so the first question is:
 <quote who="Rob Collins"><p>
 	Well!  It would do this project no good if I were to break the agreement I 
 made with Adobe in regards these SDKs (I have the AE and Premiere ones too).  
-So, until I get a responce from Adobe or their maillist (I lost that 
+So, until I get a response from Adobe or their maillist (I lost that 
 agreement), I won't directly provide any details from the SDK itself.  
 There's still plenty of information available online, though.
 </p><p>	
@@ -294,7 +294,7 @@ read.
 Cinepaint's sourceforge downloads page, among other sites.  The 
 /pspi-source-root/src/pspi.c has the struct for the entry point.
 </p><p>	
- 	We certainly won't get 100% compatability: some/maybe many P$ filters call 
+ 	We certainly won't get 100% compatibility: some/maybe many P$ filters call 
 other DLLs ... not just windows DLLs but their own ; possibly to extend their 
 functionality, but likely as a part of copy protection.
 </p><p>
@@ -339,7 +339,7 @@ projects.  Xine uses their win32 stuff, so I'll start looking there.  In the
 meantime, any other projects you can think of that do this sort of thing?  
 (ndiswrapper is a kernel module).
 </p><p>
-	Just for some basic info ... MPlayer fakes responces to system API on a 
+	Just for some basic info ... MPlayer fakes responses to system API on a 
 per-codec-DLL basis, which means, for each new DLL, they add the necessary 
 callbacks.  I think this could eventually wind them into trouble if the dlls 
 they want to use grew in the wrong way.  But, the advantage, they don't have 
@@ -348,7 +348,7 @@ to make the DLLs useful.
 </p><p>	
 	I don't know if speed will be such an issue for my purposes; I'm not 
 outputting unencoded video ... hopefully this flexability (a full wine) lends  
-enough compatability that I only need .specs for supporting DLLs for the 
+enough compatibility that I only need .specs for supporting DLLs for the 
 plugins.  Since their port includes the interface to the DLLs, it's still 
 another resource to look at.
 </p><p>
