@@ -135,7 +135,7 @@ Lotus Notes 5.0 and 6.5.1, Microsoft Project, and Outlook XP.
 Lotus Notes has long been on the wish list and happens to have the 
 <a href="http://www.codeweavers.com/site/compatibility/browse/name?app_id=158">highest 
 bounty</a> in CodeWeaver's Compatibility Center.  While not officially
-supported, there are reports that Microsoft Money and Framemaker have also
+supported, there are reports that Microsoft Money and FrameMaker have also
 seen dramatic improvements.  </p><p>
 Besides new applications,
 CodeWeavers has dramatically changed the product by combining all of
@@ -269,7 +269,7 @@ There is no "storage buffer" for clipboard data.
 </p><p>
 A process, when it hits Copy (SetClipboardData) registers that it owns
 the clipboard. When another program hits paste, only then is the data
-transfered between the processes. It is this way to support content
+transferred between the processes. It is this way to support content
 negotiation... where the data that gets copied or pasted might be a
 different format depending on where you paste it. Plain text, HTML, RTF,
 etc.

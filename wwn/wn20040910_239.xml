@@ -113,7 +113,7 @@ the website</p></quote>
 <quote who="Mike Hearn">
 
 
-    <h2> 5 minute intro to Wine development </h2>
+    <h2> 5 minutes intro to Wine development </h2>
     
     <p>
       This is a quick collection of tips and tricks that may be useful
@@ -128,7 +128,7 @@ the website</p></quote>
       A great reference is the Wine Developer Guide, which goes into
       far more depth than this document will, especially about the
       architecture of Wine and information on the individual
-      components. However, if you want a 5 minute getting started
+      components. However, if you want a 5 minutes getting started
       guide, this is it.
     </p>
 
@@ -157,7 +157,7 @@ the website</p></quote>
         signals are converted into SEH exceptions by Wine and you can
         watch their propogation using this channel. It's handy because
         often applications will trap their own crash to, for instance,
-        peform an emergency save. The most common exception to watch
+        perform an emergency save. The most common exception to watch
         for is STATUS_ACCESS_VIOLATION or 0xC0000005 which is the closest
         equivalent in Win32 to a segfault. You may also see codes
         which don't appear in the headers, these are typically
@@ -190,7 +190,7 @@ the website</p></quote>
         +snoop : This does the same thing as relay but works between
         two native DLLs. The information produced by this channel is
         not as good as relay data, as there is no information on the
-        parameters used. Snoop inspects the stack and disassemblies
+        parameters used. Snoop inspects the stack and disassembles
         function prologues to try and guess what the parameters are,
         and so may destabilise the application. 
       </li>
@@ -205,7 +205,7 @@ the website</p></quote>
         trashing can be caused by a number of things, the most common
         is Wine overrunning an internal buffer. Most new Wine code
         uses the HeapAlloc/HeapFree APIs internally, and one of the reasons
-        is that Wines built inheap debugging is so useful. 
+        is that Wine's builtin heap debugging is so useful. 
       </li>
 
       <li>
@@ -301,7 +301,7 @@ the website</p></quote>
       </li>
 
       <li>
-        If you have a Windows license (ie, if you ever bought a
+        If you have a Windows license (i.e., if you ever bought a
         PC from a high street store) you can go grab native DLLs from
         <a href="http://www.dll-files.com/">dll-files.com</a>. This
         can also be handy if you're missing various runtime DLLs
@@ -331,7 +331,7 @@ the website</p></quote>
           map between them. Because Windows uses UCS-2 (16 bits per
           character) for its Unicode strings, the functions which accept
           unicode end with a W (for wide) and the ones that take
-          non-unicode (ie strings encoded in whatever the current
+          non-unicode (i.e. strings encoded in whatever the current
           codepage is) end in A for ANSI. In Windows the compiler can
           produce unicode constant strings but unfortunately on Linux we
           can't rely on gccs equivalent support, as it doesn't produce
@@ -366,7 +366,7 @@ the website</p></quote>
         <p>
           Because each character now takes 2 bytes instead of 1, you
           also have to use the wide equivalents of every string
-          function, eg strlenW rather than strlen. Any function which
+          function, e.g. strlenW rather than strlen. Any function which
           expects a null terminated string requires a wide
           equivalent, as it's legal for wide strings to have null
           bytes in them.
@@ -522,7 +522,7 @@ the website</p></quote>
     <h3> Common problems </h3>
 
     <p> Some bugs are easier to fix than others. Here is a quick list
-      of the more persistant ones so you know what you're getting into: 
+      of the more persistent ones so you know what you're getting into: 
     
     <ul>
       <li>
@@ -852,13 +852,13 @@ especially when a proper way to fix the problem is known.
  don't modify DestroyMenu NOW, there's also a good chance that this bug
  will never be fixed. Remember, a lot of Delphi applications don't work
  because of this bug which is simple to fix and breaks only one single
- testcase. Is is really more important that WINE passes this test but
+ testcase. Is it really more important that WINE passes this test but
  fails on Delphi apps again and again? What will the users of WINE think?
 </p><p>
  To fix it properly, we have to move the menu code to WineServer. When
  will this happen? In a year? In two years? Never? Until then, many
  Delphi apps won't work. For me, this is not acceptable.
-</p>></quote>
+</p></quote>
 
 <p>Uwe Bonnes suggested adding another test for the behavior Michael
 was fixing:</p>
@@ -896,7 +896,7 @@ In this case, he has to decide:
 
 This is all part of figuring out the cost and the benefit. In this case,
 I have no idea what he will think. Alexandre does tend to be
-conservative - ie dropping patches he isn't sure about rather than
+conservative - i.e. dropping patches he isn't sure about rather than
 accept them and hoping for the best.
 </p><p>
 Wine has been around for a very long time, and correctness is very
@@ -913,7 +913,7 @@ Now, I don't know anything about the menu code, so I'm not going to
 comment on whether the patch should go in or not. I think given how
 popular Delphi is for writing apps the cost of not including it is quite
 high but if the fix is clearly going to cause problems then we have no
-choice but to wait for Ulrichs menu->wineserver patch.
+choice but to wait for Ulrich's menu->wineserver patch.
 </p><p>
 So hopefully you understand better the factors that go into these
 decisions. I know what you must be thinking, I've been there before with
@@ -924,7 +924,7 @@ realise that in the long term it's for the best.
 
 <p>Mike alluded to some work that Ulrich Czekalla has done that
 changes how menus are handled.  Alexandre felt that work was the
-proper direction and it was the only way to handle the sitation,
+proper direction and it was the only way to handle the situation,
 <quote who="Alexandre Julliard">
  There have been a number of similar hacks done in
 the menu code already, but they all had to be removed because they
