@@ -91,11 +91,12 @@
 	    <li> status: <a href="http://cvs.winehq.org/patch.py?id=11665">patch</a> committed.
 	    <li> updated: Mar 24, 2004
 	  </ul>
-	<li> Server-side support for winrash <span class=inprogress>[IN PROGRESS]</span>
+	<li> Server-side support for winrash <span class="done">[DONE]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:VincentB@coppercolorado.com">Brian Vincent</a>
-	    <li> status: working code available
-	    <li> updated: Feb 26, 2004
+	    <li> workers: <a href="mailto:VincentB@coppercolorado.com">Brian Vincent</a>,
+			  <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
+	    <li> status: fully working code integrated into the site.
+	    <li> updated: May 20, 2004
 	  </ul>
 	<li> <a href="http://www.winehq.org/site/status_options">Options status</a> update <span class="todo">[TODO]</span>
 	  <ul>
@@ -240,7 +241,8 @@
      <ol>
 	<li> Complete regedit <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
-	    <li> workers: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>,
+	    <li> workers: <a href="mailto:kfoltman@portal.onet.pl">Krzysztof Foltman</a>,
+			  <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>,
 			  <a href="mailto:hijaszu@hlfslinux.hu">Zimler Attila</a>.
 	    <li> status: new/delete/rename key done, more refinement needed
 	    <li> updated: Mar 15, 2004
@@ -255,15 +257,15 @@
         <li> Setup API .inf scripts <span class=done>[DONE]</span>
 	  <ul>
 	    <li> workers: <a href="mailto:cmorgan@alum.wpi.edu">Chris Morgan</a>,
-			  <a href="mailto:julliard@winehq.org">Alexandre Julliard </a>.
+			  <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>.
 	    <li> status: patch merged into the tree
 	    <li> updated: Feb 29, 2004
           </ul>
-	<li> Handling initial install & upgrades <span class=todo>[TODO]</span>
+	<li> Handling initial install & upgrades <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: ?
-	    <li> status: tools needed, decide on overall interface
-	    <li> updated: Feb 29, 2004
+	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
+	    <li> status: first <a href="http://www.winehq.org/hypermail/wine-cvs/2004/05/0112.html">patch</a> committed.
+	    <li> updated: May 20, 2004
           </ul>
 	<li> Merge winecheck into winecfg <span class=done>[DONE]</span>
 	  <ul>
@@ -470,8 +472,8 @@
 	<li> Move files/*, misc/* -> dlls/kernel/ dlls/user/ <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
-	    <li> status: ?
-	    <li> updated: Feb 7, 2004
+	    <li> status: files/* are <a href="http://www.winehq.org/hypermail/wine-cvs/2004/05/0165.html">done</a>.
+	    <li> updated: May 20, 2004
 	  </ul>
 	<li> Flatten dlls/: msacm/*, msvideo/msrle32, winmm/* <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
@@ -491,11 +493,11 @@
 	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2004/02/0362.html">moved</a>
 	    <li> updated: Feb 27, 2004
 	  </ul>
-	<li> Remove documentation/samples/config <span class=todo>[TODO]</span>
+	<li> Remove documentation/samples/config <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: ?
-	    <li> status: waiting for the kernel/ntdll split
-	    <li> updated: Mar 15, 2004
+	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
+	    <li> status: options are gradually moved into the registry
+	    <li> updated: May 20, 2004
 	  </ul>
 	<li> Move documentation/samples/system.ini -> winedefault.reg <span class=done>[DONE]</span>
 	  <ul>
