@@ -68,22 +68,20 @@ Its main goal is to read Dilbert. It also serves to inform you of what's going o
 <section 
 	title="News: iTunes Screenshot" 
 	subject="News"
-	archive=""
+	archive="http://www.codeweavers.com/images/appdb_shots/itunes_20040803.png"
 	posts="1"
 	startdate="08/07/2004"
 	enddate="08/13/2004"
 >
 <topic></topic>
 <p>Last week CodeWeavers announced they had parts of iTunes working
-with CrossOver Office.  Screenshots were somewhat lacking, the 
+with CrossOver Office but the screenshots were somewhat lacking. The 
 <a href="http://www.codeweavers.com/images/appdb_shots/iTunes_2004020601_shot.jpg">initial iTunes screenshot</a> didn't really show off a Linux desktop.  This
 week Jeremy Newman posted
 <a href="http://www.codeweavers.com/images/appdb_shots/itunes_20040803.png">
-another screenshot</a> that's much prettier.  The big push with iTunes now
-seems to be getting USB support added to Wine.  Needless to say, this would
-be a very nice addition.  CodeWeavers' Aric Stewart began submitting patches
-this week working towards that.
-
+another screenshot</a> that's much prettier.  Keep on reading below for
+some news on work Aric Stewart is doing to get USB devices working to enable
+full iTunes support.
 </p>
 </section>
 <section 
@@ -104,7 +102,7 @@ in the workplace.  (Or, as I used to like to tell my boss, it was
 responsible for keeping me at my desk after hours.)  They also happen
 to be ardent supporters of open source software;  many of their games
 have been 
-<a href="http://www.idsoftware.com/business/technology/techlicense.php">\
+<a href="http://www.idsoftware.com/business/technology/techlicense.php">
 released</a> under GPL licensing.  They also support open interfaces,
 such as GL rendering rather than DirectX and as such have been able to
 release Linux versions of their games for years.   Last week
@@ -122,7 +120,7 @@ Translated into English:
 War games: Yes, it's true, Wine can run the new DOOM3
 </p><p>
 Several days ago I installed Mandrake 9.2 and was very impressed with 
-Wine. This little program really does wonders. So i said to myself "it 
+Wine. This little program really does wonders. So I said to myself "it 
 can run small Windows apps, but there is no way it can run Doom 3".
 </p><p>
 I did this:
@@ -220,7 +218,7 @@ Uwe described are an integral part of the game.
 <p>To followup on the USB support mentioned above
 (and discussed last week in 
 <a href="http://www.winehq.com/?issue=234#USB%20Support..%20or%20Lack%20Thereof">WWN 
-#234</a>, Aric Stewart came
+#234</a>), Aric Stewart came
 back this week with a description of the work he's doing:</p>
 <quote who="Aric Stewart"><p>
 
@@ -418,6 +416,8 @@ I'm trying to connect and run a remote X session from 2 different
 machines and I fail to run Wine applications.
 <ul>
 <li> I connect from Machine M1 using ssh -X (or -Y) run a wine app all is
+very well.</li>
+<li> I connect from another Machine M2 using ssh -X using the same user.  
 The second instance fails with:
 <ul><code>
 X Error of failed request:  BadWindow (invalid Window parameter)<br />
