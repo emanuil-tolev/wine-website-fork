@@ -232,7 +232,7 @@
   does not work. 
   This task is tracked as <a href="http://bugs.winehq.org/show_bug.cgi?id=443">Bug #443</a>
   <ul>
-    <li>workers: <a href="mailto:spetreolle@yahoo.fr">Sylvain Petreolle</a>
+    <li>worker: <a href="mailto:spetreolle@yahoo.fr">Sylvain Petreolle</a>
     <li>status: it seems that all internal commands work
     <li>updated: Oct 5, 2003
   </ul>
@@ -243,7 +243,7 @@
   without a reboot, can help with testing sometimes.
   This task is tracked as <a href="http://bugs.winehq.org/show_bug.cgi?id=273">Bug #273</a>
   <ul>
-    <li>workers: <a href="mailto:davidf@sjsoft.com">David Fraser</a>
+    <li>worker: <a href="mailto:davidf@sjsoft.com">David Fraser</a>
     <li>status: almost compiles
     <li>updated: Nov 18, 2002
   </ul>
@@ -330,8 +330,8 @@
   the native widgets when ported to Windows. Instead, it uses it's very thin
   abstraction layer (gdk) to do the drawing, all else is build 'in house'.
   <ul>
-    <li>worker: wanted
-    <li>status: todo
+    <li>workers: <i>wanted</i>
+    <li>status: <i>to do</i>
     <li>updated: Jan 6, 2003
     <li>homepage: <a href="http://wingtk.sourceforge.net/">wingtk.sourceforge.net</a>
   </ul>
@@ -408,8 +408,8 @@
   Borland has released it's C++ Compiler 5.5 as freeware. The compiler is the core of 
   C++Builder, and is capable of creating fully functional C++ applications from the command line.
   <ul>
-    <li>worker: wanted
-    <li>status: todo
+    <li>workers: <i>wanted</i>
+    <li>status: <i>to do</i>
     <li>updated: May 26, 2003
     <li>homepage: <a href="http://www.borland.com/bcppbuilder/freecompiler/">www.borland.com/bcppbuilder/freecompiler</a>
   </ul>
@@ -419,8 +419,8 @@
   Currently it is being ported to FreeBSD and Linux, and a Windows version is readily
   available.
   <ul>
-    <li>worker: wanted
-    <li>status: todo
+    <li>workers: <i>wanted</i>
+    <li>status: <i>to do</i>
     <li>updated: Jan 6, 2003
     <li>homepage: <a href="http://www.openwatcom.org">www.openwatcom.org</a>
   </ul>
@@ -477,9 +477,9 @@
   Integrate the GDI engine contributed by the 
   <a href="http://www.transgaming.com">TransGaming</a> folks.
   <ul>
-    <li>worker: <a href="mailto:johane@lysator.liu.se">Johan Gill</a>
-    <li>status: <i>It should be ready for submission in a few months from now.</i>
-    <li>updated: Feb 22, 2003
+    <li>workers: <i>wanted</i>
+    <li>status: <i>to do</i>
+    <li>updated: Mar 15, 2005
   </ul>
 
   <a name="wineconsole"></a><h3 class=todo>Wineconsole Copy &amp; Paste toolbar support</h3>
@@ -505,8 +505,8 @@
   that contains the little exes, extracts them in a temp dir one by one, 
   runs them, and displays a nice progress bar, together with a list with messages. 
   <ul>
-    <li>worker: <a href="mailto:jakob@vmlinux.org">Jakob Eriksson</a>,
-		<a href="mailto:wferi@afavant.elte.hu">Ferenc Wagner</a>.
+    <li>workers: <a href="mailto:jakob@vmlinux.org">Jakob Eriksson</a>,
+		 <a href="mailto:wferi@afavant.elte.hu">Ferenc Wagner</a>.
     <li>status: <a href="http://www.winehq.org/hypermail/wine-cvs/2003/12/0051.html">committed</a> to the tree.
     <li>updated: Dec 5, 2003
   </ul>
@@ -524,8 +524,8 @@
   Getting this kind of code to run and give the correct results could help with 
   other stubborn applications that depend on the same feaures.  
   <ul>
-    <li>worker: wanted
-    <li>status: todo
+    <li>workers: <i>wanted</i>
+    <li>status: <i>to do</i>
     <li>updated: Oct 22, 2003
   </ul>
 
@@ -538,8 +538,8 @@
    <a href="http://msdn.microsoft.com/library/en-us/script56/html/js56jsoriJScript.asp">jscript.dll</a>. 
    Figure out a way to deal with the differences between JScript and JavaScript.
   <ul>
-    <li>worker: wanted
-    <li>status: todo
+    <li>workers: <i>wanted<i>
+    <li>status: <i>to do</i>
     <li>updated: Mar 15, 2004
   </ul>
 
@@ -553,8 +553,8 @@
   <a href="http://www.color.org">International Color consortium</a>.
   <ul>
     <li>worker: <a href="mailto:hans@it.vu.nl">Hans Leidekker</a>
-    <li>status: about 5% complete
-    <li>updated: Oct 11, 2004
+    <li>status: about 25% complete
+    <li>updated: Mar 15, 2005
   </ul>
 
   <h3 class=todo>RSA Crypto API</h3>
@@ -562,8 +562,8 @@
   provided by rsabase.dll using 
   <a href="http://www.openssl.org">openssl</a>'s libcrypto.so.
   <ul>
-    <li>worker: wanted
-    <li>status: todo
+    <li>workers: <i>wanted</i>
+    <li>status: <i>to do</i>
     <li>updated: Mar 16, 2004
   </ul>
 
