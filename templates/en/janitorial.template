@@ -7,6 +7,16 @@
   Janitor's List</a>), and it's high time that we have one too.
   What is there to clean up? Well, lots of things! :)
 
+  <h2>Regedit fixes</h2>
+
+  Regedit lacks a few features.  We need to improve regedit to:
+  <ul>
+    <li>Allow display and editting of binary (REG_BINARY) values.
+    <li>Allow display and editting of multi-string (REG_SZ_MULTI) values.
+    <li>Import registry files regerated by Windows 2000 regedit
+  </ul>
+  <p>
+
   <h2>Code cleanup</h2>
 
   Some parts of Wine have become too big and complex to debug, and should
