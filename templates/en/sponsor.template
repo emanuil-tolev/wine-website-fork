@@ -1,8 +1,7 @@
   <!-- host by CodeWeavers Box start -->
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-  <table cellpadding=0 cellspacing=0 border=0>
+  <table border=0 cellpadding=0 cellspacing=0>
   <tr valign=middle>
-    <td align=right>	
+    <td align=right width="100%">	
     	<small>Hosted by</small>
     </td>  
     <td align=left>
@@ -10,13 +9,14 @@
 	    border="0" width="88" height="31" alt="CodeWeavers"></a>
     </td>
     <td>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 	  <input type="hidden" name="cmd" value="_xclick">
 	  <input type="hidden" name="business" value="donate@winehq.com">
 	  <input type="hidden" name="item_name" value="Wine donation">
 	  <input type="image" src="images/ppdonate.gif" name="submit"
       alt="Donate to Wine with PayPal!">
+      </form>
     </td>
   </tr>
   </table>
-  </form>
   <!-- host by CodeWeavers Box end --> 
