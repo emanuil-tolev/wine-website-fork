@@ -752,6 +752,8 @@ class html
         }
         // default path var
 		$vars['root'] = $this->find_root();
+        // snapshot date var
+        $vars['snapshot_date'] = $config->snapshot_date;
         // replace vars in template
 	    while (list($key,$val) = each($vars))
 	    {
