@@ -129,6 +129,10 @@
   in the resulting Makefile must be manually adjusted. Things compile
   fine, but linking unfortunately fails. <tt>winegcc</tt> needs more work
   to support the <tt>-Xlinker</tt>, and <tt>-shared</tt> options.
+  <br>
+  <strong>Update:</strong> Here is an
+  <a href="http://uucode.com/texts/python-mingw/python-mingw.html">article</a>
+  containing a log of succesfull compilation of Python 2.2 using MinGW.
 
   <h3>Toolkits</h3>
   While some have focused on portable runtimes (see above), others tried
