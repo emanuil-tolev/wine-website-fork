@@ -97,7 +97,7 @@ We had 29 developers from 8 different countries in attendance
 	
 <tr>	<td>Alexandre Julliard</td>
 	<td>CodeWeavers</td>
-	<td>San Diego, California</td>
+	<td>San Francisco, California</td>
 </tr>
 	
 <tr>	<td>Jeremy White</td>
@@ -112,7 +112,7 @@ We had 29 developers from 8 different countries in attendance
 	
 <tr>	<td>Francois Gouget</td>
 	<td>CodeWeavers</td>
-	<td>France</td>
+	<td>Paris, France</td>
 </tr>
 
 <tr>	<td>Mandi Gagne</td>
@@ -137,7 +137,7 @@ We had 29 developers from 8 different countries in attendance
 	
 <tr>	<td>Huw Davies</td>
 	<td>CodeWeavers</td>
-	<td>UK</td>
+	<td>Oxford, UK</td>
 </tr>
 	
 <tr>	<td>Gavriel State</td>
@@ -197,7 +197,7 @@ We had 29 developers from 8 different countries in attendance
 	
 <tr>	<td>Lionel Ulmer</td>
 	<td></td>
-	<td>France</td>
+	<td>Toulouse, France</td>
 </tr>
 	
 <tr>	<td>Dimi Paun</td>
@@ -295,7 +295,7 @@ directory before we can go any further (otherwise, wine will give you
 some nice warning messages, and breakages could appear)
 <tt>winefs --config--assign</tt>
 </p><p>
-see the previous winedevel post for some more details.
+see the previous wine-devel post for some more details.
 </p><p>
 ChangeLog:
 <ul>
@@ -624,7 +624,7 @@ In no particular order, here are a number of thoughts:
 
      <li>  Breaks	<br />
          The only times that I was sure that productive
-         conversations were occuring was during the breaks.
+         conversations were occurring was during the breaks.
          Provide lots of 'em.  Go very light on
          scheduled topics.</li>
 
