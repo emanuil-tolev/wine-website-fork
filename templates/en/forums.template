@@ -13,11 +13,6 @@ or just use <a href="/mailman/listinfo">the Mailman web interface</a>.
 You should be subscribed to the lists before you post to them, otherwise
 your posting will be treated as possible spam by the mailing list software.
 </p>
-<p>
-There are now two web archives. <a href="mailto:jfreed@johnfreed.com">John Freed</a>
-runs the old one, going back to 1998, and the new hypermail
-archives stores everything after October 2000.
-</p>
 
 <ul>
 	<li> [<a href="http://www.winehq.com/mailman/listinfo/wine-announce">(Un-)Subscribe</a>] 
@@ -70,45 +65,47 @@ archives stores everything after October 2000.
 
 <p align=center><img src="../images/grey_pixel.gif" width="95%" height=1 border=0 alt="-" ></p>
 
-<h4> Other Mailing Lists </h4>
-Wine-related mailing lists not hosted by WineHQ.
-<ul>
-  <li> <a href="mailto:wine-howto@muenster.westfalen.de">wine-howto@muenster.westfalen.de</a> 
-     For discussing a Wine HOWTO. Subscribe by sending a message with body ``subscribe wine-howto'' to <a href="mailto:wine-howto-request@muenster.westfalen.de">wine-howto-request@muenster.westfalen.de</a>.
+<h2> Using procmail to filter mailing lists </h2>
 
-  <li> <a>wine-patches@tiger.informatik.hu-berlin.de</a> This list has
-  been replaced by the <a href="#ml">wine-releases</a> mailing list.
-
-</ul>
-
-<p align=center><img src="../images/grey_pixel.gif" width="95%" height=1 border=0 alt="-" ></p>
-
-  <h4> Using procmail to filter mailing lists </h4>
-Many people who
-subscribe to high traffic lists prefer to have their software
+Many people who subscribe to high traffic lists prefer to have their software
 prefilter list traffic into mailboxes. Here's an example of how to do
 this with <a href="http://www.iki.fi/~era/procmail/">Procmail</a>.
 First, install procmail. Second, put the following line in your
 <code>.forward</code> file:
-<pre>
-"|/usr/bin/procmail"
-</pre>
+
+<blockquote>
+ <table width="300" border=0 cellpadding=10><tr><td class=black>
+ <span class=inverse>
+ |/usr/bin/procmail
+ </span>
+ </td></tr>
+ </table>
+</blockquote>
+
 Finally, construct a <code>.procmailrc</code> file which suits your needs. 
 Here is one which just sorts Wine mailing list mail into folders in the
 <code>~/mail</code> directory:
-<pre>
-PATH=/bin:/usr/bin:/usr/bin
-MAILDIR=$HOME/mail      #you'd better make sure it exists
 
-:0:
-* ^TOwine-devel
-wine-devel
+<blockquote>
+ <table width="500" border=0 cellpadding=10><tr><td class=black>
+ <span class=inverse>
+    PATH=/bin:/usr/bin:/usr/bin<br>
+    MAILDIR=$HOME/mail      #you'd better make sure it exists<br><br>
+    
+    :0:<br>
+    * ^TOwine-devel<br>
+    wine-devel<br><br>
+    
+    :0:<br>
+    * ^TOwine-cvs<br>
+    wine-cvs<br><br>
+    
+    :0:<br>
+    * ^TOwine-patches<br>
+    wine-patches
+ </span>
+ </td></tr>
+ </table>
+</blockquote>
 
-:0:
-* ^TOwine-cvs
-wine-cvs
-
-:0:
-* ^TOwine-patches
-wine-patches
-</pre>
+<p>&nbsp;</p>
