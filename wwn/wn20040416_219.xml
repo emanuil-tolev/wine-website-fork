@@ -80,7 +80,7 @@ Its main goal is to get lots of nasty vaccinations. It also serves to inform you
 released WineX 3.3.1</a> this week.  The 
 <a href="http://downloads.transgaming.com/files/winex-3.3.1_releasenotes.txt">
 release notes</a> discuss new additions:</p>
-<quote who="Transgaming"><p>
+<quote who="TransGaming"><p>
 WineX 3.3.1 is primarily a bug fix release. However, it also includes
 a number of DirectX 9 related changes to make the present patch level of 
 EverQuest work, and a major reduction in sound latency.</p>
@@ -152,14 +152,14 @@ whole scheme:</p>
   loader (ELF interpreter), usually ld-linux.so.2
 </p><p>
  As Wine is i386 specific, we are not too worried about portability issues,
- but will do our best to keep the system dependencies (syscalls) seperate to 
- the rest (ELF loader and printf) part of the program.
+ but will do our best to keep the system dependencies (syscalls) separate from
+ the rest (ELF loader and printf part) of the program.
 </p><p>
  This program will be invoked as follows:
  <ul><code>
  wld &lt;full path to ELF executable to be loaded&gt; &lt;args...&gt;
  </code></ul></p><p>
- We will try to set up the stack an memory area so that the program that
+ We will try to set up the stack and memory area so that the program that
  loads after us (eg. the wine binary) never knows we were here, except that
  areas of memory it needs are already magically reserved.
 </p><p>
@@ -199,7 +199,7 @@ whole scheme:</p>
 
 <p>Mike Hearn commented on the approach,
 <quote who="Mike Hearn">
-It seems it's turned from being an normal (albiet static) app which
+It seems it's turned from being a normal (albeit static) app which
 reserves the areas needed then boots wine, into a reimplementation of
 ld-linux.so? I'm not sure it's a good plan to alter the .interp field -
 that has to be absolute and this technique would break binary
@@ -275,7 +275,7 @@ used it to generate a Winelib app:</p>
 </ul></p><p>
  Notice how little we had to fix! To encourage others to port
  stuff to Winelib, I'll inline the hacks I did to port AbiWord.
- These we'll need to be cleaned up for integration into the
+ These will need to be cleaned up for integration into the
  AbiWord tree, but again, please note how little we had to change.
  (I've also attached a screenshot of the resulting Abi Word in action).
 </p></quote>
@@ -353,7 +353,7 @@ questioned whether that was the right solution,
 <quote who="Steven Edwards">
  I asked Alexandre about a patch to move Wininet to Winsock and he said
  it took to much of a performance hit to merge. Is there a way we can
- bench mark it to show how much of a hit Winsock vs Unix sockets is
+ benchmark it to show how much of a hit Winsock vs Unix sockets is
  going to give us? He suggested that we find a way to make Wininet use
  Unix sockets on Unix and Winsock on Windows.
 </quote></p>
