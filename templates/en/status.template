@@ -101,6 +101,11 @@
                Status of user interface elements.
             </dd>
 
+            <dt><a href="{$root}/site/status_options"><b>Options Status</b></a></dt>
+            <dd>
+               Status of the various Wine options.
+            </dd>
+
             <dt><a href="{$root}/site/status_todo"><b>Known To Do's</b></a></dt>
             <dd>
                To Do list of known issues.
