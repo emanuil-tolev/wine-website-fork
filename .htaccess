@@ -1,2 +1,46 @@
+# default permissions
 allow from all
 
+# redirect old winehq pages to new locations
+RedirectPermanent /about.shtml                  http://www.winehq.org/?page=about
+RedirectPermanent /about/                       http://www.winehq.org/?page=about
+RedirectPermanent /about/index.php              http://www.winehq.org/?page=about
+RedirectPermanent /community.shtml              http://www.winehq.org/?page=contributions
+RedirectPermanent /dev.shtml                    http://www.winehq.org/?page=cvs
+RedirectPermanent /dev.html                     http://www.winehq.org/?page=cvs
+RedirectPermanent /devstart.shtml               http://www.winehq.org/?page=cvs
+RedirectPermanent /download/                    http://www.winehq.org/?page=download
+RedirectPermanent /download/index.php           http://www.winehq.org/?page=download
+RedirectPermanent /download.shtml               http://www.winehq.org/?page=download
+RedirectPermanent /download.html                http://www.winehq.org/?page=download
+RedirectPermanent /download-mirrors.html        http://www.winehq.org/?page=download
+RedirectPermanent /download-mirrors.shtml       http://www.winehq.org/?page=download
+RedirectPermanent /support.shtml                http://www.winehq.org/?page=documentation
+RedirectPermanent /News/status.html             http://www.winehq.org/?page=status
+
+# fix old news links
+RedirectMatch /news/(index.php\?|\?)view=(.*)$  http://www.winehq.org/?issue=$1
+
+# redirect winehq services to appropriate web sites
+RedirectMatch /(APPS|Apps|apps)/$               http://appdb.winehq.org/
+RedirectMatch /(APPS|Apps|apps)$                http://appdb.winehq.org/
+RedirectMatch /(APPS|Apps|apps)/query.cgi$      http://appdb.winehq.org/
+RedirectMatch /apps.cgi$                        http://appdb.winehq.org/
+RedirectMatch /(FAQ|Faq|faq)/$                  http://www.winehq.org/?page=faq
+RedirectMatch /(FAQ|Faq|faq)$                   http://www.winehq.org/?page=faq
+RedirectMatch /(BUGS|Bugs|bugs)/$               http://www.winehq.org/?page=bug_tracking
+RedirectMatch /(BUGS|Bugs|bugs)$                http://www.winehq.org/?page=bug_tracking
+RedirectMatch /(TROUBLE|Trouble|trouble)/$      http://www.winehq.org/?page=faq
+RedirectMatch /(TROUBLE|Trouble|trouble)$       http://www.winehq.org/?page=faq
+
+# redirect soure website
+RedirectMatch /WineAPI(.*)$                     http://source.winehq.org/WineAPI$1
+RedirectMatch /source(.*)$                      http://source.winehq.org/source$1
+RedirectMatch /cvsweb(.*)$                      http://cvs.winehq.org/cvsweb$1
+RedirectMatch /patch.py(.*)$                    http://cvs.winehq.org/patch.py$1
+
+# redirect source website utils
+RedirectPermanent /ident                        http://source.winehq.org/ident
+RedirectPermanent /find                         http://source.winehq.org/find
+RedirectPermanent /search                       http://source.winehq.org/search
+RedirectPermanent /diff                         http://source.winehq.org/search
