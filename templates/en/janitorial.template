@@ -41,93 +41,43 @@
   The ASCII to Unicode conversion is lossy; moreover, with the
   shift to Unicode, it's actually slower to deal in ASCII than
   in Unicode, because of the additional conversions required.
-  There are 142 cross calls from Unicode to ANSI as reported by
+  There are 54 cross calls from Unicode to ANSI as reported by
   <tt>tools/winapi_check/winapi_check --none --progress --cross-call-unicode-ascii</tt>
-  (as of Nov 29, 2002):
+  (as of Aug 12, 2004):
   <ul>
-    <li class=committed>controls/menu.c: user32: LoadMenuIndirectW: illegal call to LoadMenuIndirectA
     <li class=submitted>dlls/advapi32/crypt.c: advapi32: CryptAcquireContextW: illegal call to CryptAcquireContextA
     <li class=submitted>dlls/advapi32/crypt.c: advapi32: CryptEnumProviderTypesW: illegal call to CryptEnumProviderTypesA
-    <li class=submitted>dlls/advapi32/crypt.c: advapi32: CryptEnumProvidersW: illegal call to CryptEnumProvidersA
+    <li class=committed>dlls/advapi32/crypt.c: advapi32: CryptEnumProvidersW: illegal call to CryptEnumProvidersA
     <li class=submitted>dlls/advapi32/crypt.c: advapi32: CryptGetDefaultProviderW: illegal call to CryptGetDefaultProviderA
     <li class=submitted>dlls/advapi32/crypt.c: advapi32: CryptSetProviderExW: illegal call to CryptSetProviderExA
-    <li class=committed>dlls/advapi32/registry.c: advapi32: RegConnectRegistryW: illegal call to RegOpenKeyA
-    <li class=committed>dlls/advapi32/registry.c: advapi32: RegSaveKeyW: illegal call to HEAP_strdupWtoA
-    <li class=committed>dlls/advapi32/registry.c: advapi32: RegSaveKeyW: illegal call to RegSaveKeyA
-    <li class=committed>dlls/advapi32/service.c: advapi32: StartServiceCtrlDispatcherW: illegal call to OpenSemaphoreA
-    <li class=committed>dlls/advapi32/service.c: advapi32: StartServiceW: illegal call to CreateProcessA
-    <li class=committed>dlls/advapi32/service.c: advapi32: StartServiceW: illegal call to CreateSemaphoreA
-    <li class=committed>dlls/advapi32/service.c: advapi32: StartServiceW: illegal call to ExpandEnvironmentStringsA
-    <li class=committed>dlls/advapi32/service.c: advapi32: StartServiceW: illegal call to OpenSemaphoreA
-    <li class=committed>dlls/advapi32/service.c: advapi32: StartServiceW: illegal call to RegQueryValueExA
-    <li class=committed>dlls/comctl32/imagelist.c: comctl32: ImageList_LoadImageW: illegal call to GetObjectA
-    <li class=committed>dlls/commdlg/filetitle.c: comdlg32: GetFileTitleW: illegal call to GetFileTitleA
-    <li class=committed>dlls/commdlg/filetitle.c: comdlg32: GetFileTitleW: illegal call to HEAP_strdupWtoA
-    <li class=committed>dlls/commdlg/fontdlg.c: comdlg32: ChooseFontW: illegal call to HEAP_strdupWtoA
-    <li class=committed>dlls/commdlg/printdlg.c: comdlg32: PrintDlgW: illegal call to GetWindowLongA
     <li>dlls/ddraw/main.c: ddraw: DirectDrawEnumerateExW: illegal call to DirectDrawEnumerateExA
-    <li class=committed>dlls/gdi/enhmfdrv/init.c: gdi32: CreateEnhMetaFileW: illegal call to CreateDCA
-    <li class=committed>dlls/gdi/mfdrv/init.c: gdi32: CreateMetaFileW: illegal call to CreateMetaFileA
     <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to HEAP_strdupWtoA
     <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to StartDocA
-    <li class=committed>dlls/imm32/imm.c: imm32: ImmGetCompositionStringW: illegal call to GetVersionExA
-    <li class=committed>dlls/kernel/comm.c: kernel32: BuildCommDCBAndTimeoutsW: illegal call to BuildCommDCBAndTimeoutsA
-    <li class=committed>dlls/kernel/comm.c: kernel32: BuildCommDCBAndTimeoutsW: illegal call to HEAP_strdupWtoA
     <li>dlls/kernel/comm.c: kernel32: CommConfigDialogW: illegal call to CommConfigDialogA
     <li>dlls/kernel/comm.c: kernel32: CommConfigDialogW: illegal call to HEAP_strdupWtoA
-    <li class=committed>dlls/kernel/comm.c: kernel32: GetDefaultCommConfigW: illegal call to GetDefaultCommConfigA
-    <li class=committed>dlls/kernel/comm.c: kernel32: GetDefaultCommConfigW: illegal call to HEAP_strdupWtoA
     <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to HEAP_strdupWtoA
     <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to SetDefaultCommConfigA
-    <li class=committed>dlls/kernel/format_msg.c: kernel32: FormatMessageW: illegal call to GetModuleHandleA
-    <li class=committed>dlls/kernel/format_msg.c: kernel32: FormatMessageW: illegal call to HEAP_strdupWtoA
-    <li class=committed>dlls/kernel/format_msg.c: kernel32: FormatMessageW: illegal call to load_messageA
     <li>dlls/kernel/locale.c: kernel32: GetLocaleInfoW: illegal call to GetModuleHandleA
     <li>dlls/kernel/sync.c: kernel32: WaitNamedPipeW: illegal call to CreateEventA
     <li>dlls/lzexpand/lzexpand_main.c: lz32: LZOpenFileW: illegal call to LZOpenFileA
-    <li class=committed>dlls/mpr/wnet.c: mpr: WNetGetConnectionW: illegal call to WNetGetConnectionA
     <li>dlls/rpcrt4/rpc_binding.c: rpcrt4: RpcBindingToStringBindingW: illegal call to RpcBindingToStringBindingA
     <li>dlls/rpcrt4/rpc_binding.c: rpcrt4: RpcBindingToStringBindingW: illegal call to RpcStringFreeA
     <li>dlls/rpcrt4/rpc_server.c: rpcrt4: RpcServerUseProtseqEpExW: illegal call to RPCRT4_strdupWtoA
-    <li class=committed>dlls/shell32/brsfolder.c: shell32: SHBrowseForFolderW: illegal call to DialogBoxParamA
-    <li class=committed>dlls/shell32/iconcache.c: shell32: ExtractIconExW: illegal call to ExtractIconExA
-    <li class=committed>dlls/shell32/iconcache.c: shell32: ExtractIconExW: illegal call to HEAP_strdupWtoA
-    <li class=committed>dlls/shell32/pidl.c: shell32: SHGetPathFromIDListW: illegal call to SHGetPathFromIDListA
-    <li class=committed>dlls/shell32/shell32_main.c: shell32: ExtractIconW: illegal call to ExtractIconA
-    <li class=committed>dlls/shell32/shell32_main.c: shell32: ExtractIconW: illegal call to HEAP_strdupWtoA
-    <li class=committed>dlls/shell32/shell32_main.c: shell32: SHGetFileInfoW: illegal call to SHGetFileInfoA
     <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to DialogBoxIndirectParamA
     <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to HEAP_strdupWtoA
     <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to LoadIconA
     <li>dlls/shell32/shellole.c: shell32: DragQueryFileW: illegal call to DragQueryFileA
-    <li class=committed>dlls/shell32/shlexec.c: shell32: ShellExecuteExW: illegal call to HEAP_strdupWtoA
-    <li class=committed>dlls/shell32/shlexec.c: shell32: ShellExecuteExW: illegal call to ShellExecuteExA
     <li>dlls/shell32/systray.c: shell32: Shell_NotifyIconW: illegal call to Shell_NotifyIconA
     <li>dlls/shlwapi/string.c: shlwapi: StrCmpLogicalW: illegal call to SHLWAPI_ChrCmpHelperA
     <li>dlls/shlwapi/string.c: shlwapi: StrFormatByteSizeW: illegal call to StrFormatByteSize64A
     <li>dlls/shlwapi/string.c: shlwapi: StrRetToStrW: illegal call to SHStrDupA
-    <li class=committed>dlls/version/info.c: version: GetFileVersionInfoSizeW: illegal call to GetFileVersionInfoSizeA
     <li>dlls/version/install.c: version: VerInstallFileW: illegal call to VerInstallFileA
-    <li class=committed>dlls/wininet/ftp.c: wininet: FtpCreateDirectoryW: illegal call to FtpCreateDirectoryA
-    <li class=committed>dlls/wininet/ftp.c: wininet: FtpSetCurrentDirectoryW: illegal call to FtpSetCurrentDirectoryA
-    <li class=committed>dlls/wininet/http.c: wininet: HttpOpenRequestW: illegal call to HttpOpenRequestA
-    <li class=committed>dlls/wininet/http.c: wininet: HttpQueryInfoW: illegal call to HttpQueryInfoA
-    <li class=committed>dlls/wininet/http.c: wininet: HttpSendRequestW: illegal call to HttpSendRequestA
-    <li class=committed>dlls/wininet/internet.c: wininet: InternetCheckConnectionW: illegal call to InternetCheckConnectionA
-    <li class=committed>dlls/wininet/internet.c: wininet: InternetConnectW: illegal call to InternetConnectA
-    <li class=committed>dlls/wininet/internet.c: wininet: InternetOpenUrlW: illegal call to InternetOpenUrlA
-    <li class=committed>dlls/wininet/internet.c: wininet: InternetOpenW: illegal call to InternetOpenA
-    <li class=committed>dlls/winmm/driver.c: winmm: OpenDriverW: illegal call to HEAP_strdupWtoA
     <li>dlls/winmm/driver.c: winmm: OpenDriverW: illegal call to OpenDriverA
     <li>dlls/winmm/joystick.c: winmm: joyGetDevCapsW: illegal call to joyGetDevCapsA
     <li>dlls/winmm/mci.c: winmm: mciSendStringW: illegal call to mciSendStringA
-    <li class=committed>dlls/winmm/mmio.c: winmm: mmioOpenW: illegal call to HEAP_strdupWtoA
-    <li class=committed>dlls/winmm/mmio.c: winmm: mmioRenameW: illegal call to HEAP_strdupWtoA
     <li>dlls/winmm/mmio.c: winmm: mmioRenameW: illegal call to mmioRenameA
-    <li class=committed>dlls/winmm/mmio.c: winmm: mmioStringToFOURCCW: illegal call to HEAP_strdupWtoA
     <li>dlls/winmm/mmio.c: winmm: mmioStringToFOURCCW: illegal call to mmioStringToFOURCCA
     <li>dlls/winmm/winmm.c: winmm: auxGetDevCapsW: illegal call to auxGetDevCapsA
-    <li class=committed>dlls/winmm/winmm.c: winmm: mciGetDeviceIDW: illegal call to HEAP_strdupWtoA
     <li>dlls/winmm/winmm.c: winmm: mciGetErrorStringW: illegal call to mciGetErrorStringA
     <li>dlls/winmm/winmm.c: winmm: midiInGetDevCapsW: illegal call to midiInGetDevCapsA
     <li>dlls/winmm/winmm.c: winmm: midiOutGetDevCapsW: illegal call to midiOutGetDevCapsA
@@ -145,46 +95,9 @@
     <li>dlls/winspool/info.c: winspool.drv: DocumentPropertiesW: illegal call to DEVMODEdupWtoA
     <li>dlls/winspool/info.c: winspool.drv: DocumentPropertiesW: illegal call to DocumentPropertiesA
     <li>dlls/winspool/info.c: winspool.drv: DocumentPropertiesW: illegal call to HEAP_strdupWtoA
-    <li class=committed>dlls/winspool/info.c: winspool.drv: GetDefaultPrinterW: illegal call to GetDefaultPrinterA
-    <li class=committed>dlls/winspool/info.c: winspool.drv: GetPrinterDriverDirectoryW: illegal call to GetPrinterDriverDirectoryA
-    <li class=committed>dlls/winspool/info.c: winspool.drv: GetPrinterDriverDirectoryW: illegal call to HEAP_strdupWtoA
-    <li class=committed>files/dos_fs.c: kernel32: QueryDosDeviceW: illegal call to HEAP_strdupWtoA
-    <li class=committed>files/dos_fs.c: kernel32: QueryDosDeviceW: illegal call to QueryDosDeviceA
-    <li class=committed>files/drive.c: kernel32: GetDiskFreeSpaceExW: illegal call to GetDiskFreeSpaceExA
-    <li class=committed>files/drive.c: kernel32: GetDiskFreeSpaceExW: illegal call to HEAP_strdupWtoA
-    <li class=committed>files/profile.c: kernel32: GetPrivateProfileIntW: illegal call to GetPrivateProfileIntA
-    <li class=committed>files/profile.c: kernel32: GetPrivateProfileIntW: illegal call to HEAP_strdupWtoA
-    <li class=committed>loader/module.c: kernel32: GetBinaryTypeW: illegal call to GetBinaryTypeA
-    <li class=committed>loader/module.c: kernel32: GetBinaryTypeW: illegal call to HEAP_strdupWtoA
-    <li class=committed>loader/module.c: kernel32: GetModuleFileNameW: illegal call to GetModuleFileNameA
-    <li class=committed>loader/module.c: kernel32: GetModuleHandleW: illegal call to GetModuleHandleA
-    <li class=committed>loader/module.c: kernel32: GetModuleHandleW: illegal call to HEAP_strdupWtoA
-    <li class=committed>loader/module.c: kernel32: LoadLibraryExW: illegal call to HEAP_strdupWtoA
-    <li class=committed>loader/module.c: kernel32: LoadLibraryExW: illegal call to LoadLibraryExA
-    <li class=committed>memory/environ.c: kernel32: ExpandEnvironmentStringsW: illegal call to ExpandEnvironmentStringsA
-    <li class=committed>memory/environ.c: kernel32: ExpandEnvironmentStringsW: illegal call to HEAP_strdupWtoA
-    <li class=committed>memory/environ.c: kernel32: GetEnvironmentVariableW: illegal call to GetEnvironmentVariableA
-    <li class=committed>memory/environ.c: kernel32: GetEnvironmentVariableW: illegal call to HEAP_strdupWtoA
-    <li class=committed>memory/environ.c: kernel32: SetEnvironmentVariableW: illegal call to HEAP_strdupWtoA
-    <li class=committed>memory/environ.c: kernel32: SetEnvironmentVariableW: illegal call to SetEnvironmentVariableA
-    <li class=committed>objects/dc.c: gdi32: CreateDCW: illegal call to CreateDCA
-    <li class=committed>objects/dc.c: gdi32: CreateDCW: illegal call to HEAP_strdupWtoA
-    <li class=committed>objects/dc.c: gdi32: ResetDCW: illegal call to ResetDCA
-    <li class=committed>objects/font.c: gdi32: GetKerningPairsW: illegal call to GetKerningPairsA
-    <li class=committed>objects/metafile.c: gdi32: CopyMetaFileW: illegal call to CopyMetaFileA
-    <li class=committed>scheduler/process.c: kernel32: CreateProcessW: illegal call to CreateProcessA
-    <li class=committed>scheduler/process.c: kernel32: CreateProcessW: illegal call to HEAP_strdupWtoA
-    <li class=committed>win32/except.c: kernel32: FatalAppExitW: illegal call to GetModuleHandleA
     <li>windows/clipboard.c: user32: GetClipboardFormatNameW: illegal call to GetClipboardFormatNameA
     <li>windows/clipboard.c: user32: RegisterClipboardFormatW: illegal call to HEAP_strdupWtoA
     <li>windows/clipboard.c: user32: RegisterClipboardFormatW: illegal call to RegisterClipboardFormatA
-    <li class=committed>windows/input.c: user32: GetKeyNameTextW: illegal call to GetKeyNameTextA
-    <li class=committed>windows/input.c: user32: GetKeyboardLayoutNameW: illegal call to GetKeyboardLayoutNameA
-    <li class=committed>windows/input.c: user32: MapVirtualKeyExW: illegal call to MapVirtualKeyA
-    <li class=committed>windows/input.c: user32: MapVirtualKeyW: illegal call to MapVirtualKeyA
-    <li class=committed>windows/input.c: user32: VkKeyScanExW: illegal call to VkKeyScanA
-    <li class=committed>windows/input.c: user32: VkKeyScanW: illegal call to VkKeyScanA
-    <li class=committed>windows/sysparams.c: user32: SystemParametersInfoW: illegal call to SystemParametersInfoA
     <li>windows/winhelp.c: user32: WinHelpW: illegal call to WinHelpA
     <li>windows/winproc.c: user32: CallWindowProcW: illegal call to WINPROC_CallProc32WTo32A
   </ul>
@@ -206,7 +119,7 @@
 		 <a href="mailto:kevin@plop.org">Kevin Koltzau</a>,
 		 <a href="mailto:truiken@gmail.com">James Hawkins</a>.
     <li>status: <span class=inprogress>Over half done.</span>
-    <li>updated: Apr 9, 2004
+    <li>updated: Aug 12, 2004
   </ul>
 
   <h2>DLL separation</h2>
@@ -258,64 +171,26 @@
 
   <h3>Include file cleanup</h3>
   That is, no more Wine-specific headers in <tt>include/</tt>. This is tightly
-  related to the <b>DLL Separation</b> task, listed above. There are 50 Wine-only
-  headers that need to be moved, as of Dec 3, 2002:
+  related to the <b>DLL Separation</b> task, listed above. There are 16 Wine-only
+  headers that need to be moved, as of Aug 12, 2004:
   <ul>
     <li> async.h
-    <li class=committed> bitmap.h
     <li> builtin16.h
-    <li class=committed> callback.h
-    <li class=committed> clipboard.h
     <li> cursoricon.h
-    <li class=committed> d3dhal.h
     <li> dce.h
     <li> dciddi.h
-    <li class=committed> ddrawi.h
-    <li class=committed> drive.h
-    <li class=committed> dsdriver.h
-    <li class=committed> file.h
-    <li class=committed> font.h
     <li> gdi.h
-    <li class=committed> global.h
     <li> heap.h
-    <li class=committed> input.h
-    <li class=committed> instance.h
     <li> local.h
-    <li class=committed> message.h
     <li> miscemu.h
-    <li class=committed> mmddk.h
     <li> module.h
-    <li class=committed> msdos.h
-    <li class=committed> netspi.h
     <li> nonclient.h
-    <li class=committed> ntddcdrm.h
-    <li class=committed> ntddscsi.h
-    <li class=committed> ntddstor.h
-    <li class=committed> ole.h
-    <li class=committed> options.h
-    <li class=committed> palette.h
-    <li class=committed> path.h
-    <li class=committed> queue.h
-    <li class=committed> selectors.h
-    <li class=committed> snoop.h
-    <li class=committed> spy.h
     <li> stackframe.h
-    <li class=committed> syslevel.h
-    <li class=committed> sysmetrics.h
-    <li class=committed> task.h
     <li> thread.h
-    <li class=committed> toolhelp.h
     <li> user.h
     <li> win.h
     <li> winpos.h
-    <li class=committed> winproc.h
-    <li class=committed> wrc_rsc.h
-    <li class=committed> x11drv.h
-    <li class=committed> x11font.h
   </ul>
-
-  <p>Please note that patches have been submitted for the <span class=submitted>italic</span> entries;
-    the <span class=committed>grayed out</span> entries have already been fixed.
   <ul>
     <li>workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>.
     <li>status: <span class=inprogress>first patches committed.</span>
@@ -328,23 +203,9 @@
   This is tightly linked to the <b>DLL Separation</b> task, listed above.
   <ul>
     <li> controls
-    <li class=committed> files
-    <li class=committed> graphics
-    <li class=committed> graphics/x11drv
-    <li class=committed> loader/ne
-    <li class=committed> memory
     <li> misc
-    <li class=committed> miscemu
-    <li class=committed> msdos
-    <li class=committed> objects
-    <li class=committed> relay32
-    <li class=committed> scheduler
-    <li class=committed> win32
     <li> windows
   </ul>
-
-  <p>Please note that patches have been submitted for the <span class=submitted>     italic</span> entries; the <span class=committed>grayed out</span> entries 
-     have already been fixed. 
   <ul>
     <li>workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>.
     <li>status: <span class=inprogress>first patches committed.</span>
@@ -414,7 +275,7 @@
      For more information <a href="/site/who">contact</a> them directly or 
      the wine-devel <a href="/site/forums">mailing list</a>.
   <ul>
-  <li> workers: wanted
+  <li> workers: <a href="mailto:hans@it.vu.nl">Hans Leidekker</a> (on -Wsign-compare)
   <li> status: <span class=todo>TODO</span>
   <li> updated: May 21, 2004</ul>
 
