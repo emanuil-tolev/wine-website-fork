@@ -36,7 +36,7 @@
           <a href="{$root}/site/?issue=253#Direct3D%209">#253</a>,
           <a href="{$root}/site/?issue=257#Direct3D%20Update%20and%20Roadmap">#257</a></td>
       <td class="pct50">50% complete</td>
-      <td>Jason Edmeades</td>
+      <td>Jason Edmeades,<br>Oliver Stieber,<br>Rapha&euml;l Junqueira</td>
     </tr>
     <tr>
       <td>d3dx8.dll</td>
@@ -50,7 +50,7 @@
       <td class="adequate"></td>
       <td>None</td>
       <td class="pct50">50% complete</td>
-      <td>Jason Edmeades</td>
+      <td>Jason Edmeades,<br>Oliver Stieber,<br>Rapha&euml;l Junqueira</td>
     </tr>
     <td colspan="5"><strong>D3Dim</strong></td>
     <tr>
@@ -68,46 +68,18 @@
           <a href="{$root}/site/?issue=79#DirectDraw%20reorganization%20(cont'd)">#79</a>,
           <a href="{$root}/site/?issue=185#Why%20Native%20DirectX%20Doesn't%20Work">#185</a>,
           <a href="{$root}/site/?issue=233#S3%20Texture%20Compression">#233</a></td>
-      <td class="pct85">85% complete</a></td>
+      <td class="pct90">90% complete</a></td>
       <td>Christian Costa,<br>Lionel Ulmer</td>
     </tr>
     <tr>
-      <td>d3ddevice</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_m/directx/ref/ns/microsoft.directx.direct3d/c/device/device.asp">MSDN: Device Class</a></td>
-      <td>None</td>
-      <td class="pct25">25% complete</td>
-      <td>Lionel Ulmer,<br>Christian Costa</td> 
-    </tr> 
-    <tr>
-      <td>dclipper</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_m/directx/ref/ns/microsoft.directx.directdraw/c/clipper/clipper.asp">MSDN: Clipper Class</a></td>
-      <td>None</td>
-      <td class="pct25">25% complete</td>
-      <td></td> 
-    </tr>
-    <tr>
-      <td>direct3d</td>
+      <td>ddraw.dll (direct3d)</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_m/directx/ref/ns/microsoft.directx.direct3d.asp">MSDN: DirectX Direct3D</a></td>
       <td><a href="{$root}/site/?issue=76#TransGaming">#76</a>,
           <a href="{$root}/site/?issue=135#Direct3D%208%20Support">#135</a>,
           <a href="{$root}/site/?issue=150#Direct3D%20Update">#150</a>,
           <a href="{$root}/site/?issue=153#D3D%20Status%20Page">#153</a></td>
-      <td class="pct50">50% complete</td>
+      <td class="pct85">85% complete</td>
       <td>Christian Costa</td> 
-    </tr> 
-    <tr>
-      <td>dpalette</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_m/directx/ref/ns/microsoft.directx.directdraw/c/surface/p/palette.asp">MSDN: Palette Property</a></td>
-      <td>None</td>
-      <td class="pct25">25% complete</td>
-      <td></td> 
-    </tr> 
-    <tr>
-      <td>dsurface</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_m/directx/ref/ns/microsoft.directx.directdraw/c/surface/surface.asp">MSDN: Surface Class</a></td>
-      <td>None</td>
-      <td class="pct25">25% complete</td>
-      <td>Christian Costa,<br>Lionel Ulmer</td> 
     </tr>
     <td colspan="5"><strong>DirectInput</strong></td>
     <tr>

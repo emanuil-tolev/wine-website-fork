@@ -2,6 +2,26 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since January 29, 2005:</p>
+
+ <ul>
+ <li>ADD - sensapi.dll</li>
+ <li>ADD - cryptdll.dll</li>
+ <li>ADD - wtsapi32.dll</li>
+ <li>ADD - stdole32.tlb</li>
+ <li>ADD - Oliver Stieber as worker to d3d9.dll</li>
+ <li>ADD - Oliver Stieber as worker to wined39.dll</li>
+ <li>ADD - Rapha&euml;l Junqueira as worker to d3d9.dll</li>
+ <li>ADD - Rapha&euml;l Junqueira as worker to wined39.dll</li>
+ <li>Remove - d3ddevice from ddraw.dll section</li>
+ <li>Remove - dclipper from ddraw.dll section</li>
+ <li>Remove - dpalette from ddraw.dll section</li>
+ <li>Remove - dsurface from ddraw.dll section</li>
+ <li>ddraw.dll 85% -&gt; 90%</li>
+ <li>ddraw.dll (direct3d)  50% -&gt; 85%</li>
+ </ul>
+ <br>
+
 <p>Changes since January 21, 2005:</p>
 
  <ul>
@@ -147,53 +167,6 @@
  <li>Initial registry contents 25% -&gt; 80%</li>
  <li>Initial INI files 40% -&gt; 80%</li>
  <li>uxtheme.dll 20% -&gt; 60%</li>
- </ul>
- <br>
-
-<p>Changes since January 28, 2004:</p>
-
- <ul>
- <li>Remove - * Synchronization / Multimedia: mciavi ToDo</li>
- <li>Remove - * Replace AVI file parser by using API from avifil32 / Multimedia:mciavi ToDo</li>
- </ul>
- <br>
-
-<p>Changes since January 24, 2004:</p>
-
- <ul>
- <li>ADD - dswave.dll</li>
- <li>ADD - msvidc32 under msvideo/msvfw32 Video codecs</li>
- <li>ADD - Links to the ReactOS homepage</li>
- <li>ADD - ReactOS as worker on shell32.dll</li>
- <li>dmloader.dll 50% -&gt; 80%</li>
- </ul>
- <br>
-
-<p>Changes since January 14, 2004:</p>
-
- <ul>
- <li>ADD - msvcrt40.dll</li>
- <li>ADD - ICCVID codec special thanks to <b>Dr. Tim Ferguson</b></li>
- <li>ADD - WWN links to DirectX and Multimedia page's</li>
- <li>ADD - Dimitrie O. Paun as worker to regedit</li>
- <li>ADD - Robert Lunnon as worker on audioio</li>
- <li>ADD - Marcus Meissner as worker to Wine Launcher</li>
- <li>ADD - Wine gcc wrapper(winegcc)
- <li>ADD - Wine IDL compiler (widl)</li>
- <li>ADD - Wine DLL dump utility (winedump)</li>
- <li>ADD - Wine API checker (winapi_check)</li>
- <li>ADD - Wine menu builder (winemenubuilder)</li>
- <li>Remove - Individual control status</li>
- <li>Remove - Rolling cvs testing</li>
- <li>Remove - MiDi inn Support from ALSA ToDo</li>
- <li>Remove - Mike McCormack as worker on I/O port access</li>
- <li>Remove - Eric Pouech,Andreas Mohr,Ove K&aring;ven as workers on Wine Launcher</li>
- <li>fix bullets on Multimedia page</li>
- <li>fix WWN article links</li>
- <li>wintab32.dll 25% -&gt; 80%</li>
- <li>BiDi 20% -&gt; 50%</li>
- <li>aRtS 25% -&gt; 60%</li>
- <li>JACK 25% -&gt; 60%</li>
  </ul>
  <br>
 

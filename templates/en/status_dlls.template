@@ -109,6 +109,13 @@
       <td>Mike McCormack</td>
     </tr>
     <tr>
+      <td>cryptdll.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcesecurity5/html/wce50consecuritysupportproviderinterface.asp">MSDN: SSPI Architecture</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Ulrich Czekalla</td>
+    </tr>
+    <tr>
       <td>ctl3d.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vcmfc98/html/_mfcnotes_tn051.asp">MSDN: Using CTL3D</a></td>
       <td>None</td>
@@ -446,6 +453,12 @@
       <td class="pct5">5% complete</td>
       <td>Michael Jung</td>
     </tr>
+      <td>sensapi.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/syncmgr/syncmgr/sens_object.asp">MSDN: SENS Reference</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Steven Edwards</td>
+    </tr>
     <tr>
       <td>serialui.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wmisdk/wmi/win32_serialport.asp">MSDN: Win32 SerialPort</a></td>
@@ -495,6 +508,13 @@
       <td>None</td>
       <td class="pct5">5% complete</td>
       <td></td>
+    </tr>
+    <tr>
+      <td>stdole32.tlb</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/automat/htm/chap10_725v.asp">MSDN: Type Building Interfaces</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Huw D M Davies</td>
     </tr>
     <tr>
       <td>sti.dll</td>
@@ -664,6 +684,13 @@
           <a href="{$root}/site/?issue=203#Bein'%20A%20Playa%20In%20Da%20Hood">#203</a></td>
       <td class="pct80">80% complete</td>
       <td>Juan Lang</td>
+    </tr>
+    <tr>
+      <td>wtsapi32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/termserv/termserv/terminal_services_api.asp">MSDN: Terminal Services API</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Ulrich Czekalla</td>
     </tr>
     <tr>
       <td>x11drv</td>
