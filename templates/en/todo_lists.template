@@ -108,11 +108,10 @@
 	  system.reg manually.</i>
 	<a name="winecfg"></a><li> Write control panel applets for editing it <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:griffinp@MIT.EDU">Patrick Griffin</a>,
-			 <a href="mailto:mark@houseoffish.org">Mark Westcott</a>.
+	    <li> worker: <a href="mailto:mike@theoretic.com">Mike Hearn</a>
 	    <li> status: 20% (screenshots <a href="winecfg1.png">here</a>, and <a href="winecfg2.png">here</a>);
 			 Work is in progress.
-	    <li> updated: May 26, 2003
+	    <li> updated: Sep 5, 2003
 	  </ul>
 	<li> Have decent defaults so we can start control panel without prior configuration <span class=todo>[TODO]</span>
 	<li> Have wizard like app to autoconfigure wine <span class=todo>[TODO]</span>
@@ -143,6 +142,7 @@
 	    <li> status: working version integrated in the official tree.
 	    <li> updated: May 26, 2003
 	  </ul>
+	<li> Implement write support for regedit <span class=todo>[TODO]</span>
      </ol>
   <h3> D. Stabilize utilities </h3>
      <ol>
