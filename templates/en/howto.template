@@ -3,99 +3,54 @@
 <h1>Wine HowTo</h1>
 
 
-<p>Before you install Wine make sure there is no previous Wine installation
-on your system.</p>
+<p>Before you install Wine, first make sure that there is no previous Wine 
+installation on your system, either from a package or from source. If you 
+haven't yet installed Wine, you should be fine. See the 
+<a href="{$root}/site/docs/wine-user/index">Removing old Wine versions</a> 
+chapter in the User Guide for details.</p>
+<!--update this link after fixing User Guide-->
 
-<p>Many Linux distributions come with a Wine package, but this is usually an
-old and sometimes broken version, so it is better to uninstall the old
-version and install a newer one. Refer to your distributions documentation
-on how to remove packages.</p>
+<p>Many Linux distributions come with an included Wine package, but due to 
+Wine's rapid development rate these are usually old and sometimes broken 
+versions. It is best to uninstall included package versions and update to the 
+latest Wine version available here.</p>
 
-<p>YYYYMMDD is the version of Wine in Year Month Day format. Wine
-releases are generally not subject to QA, older releases are not
-really any more stable so you should always install the very latest
-one. When upgrades come out, try them, normally they will be fine but
-occasionally an update may break your application. If that happens,
-just downgrade again. </p>
+<p>Since Wine has not yet met its goals for a stable 0.9 release, current 
+version numbers are instead given by date in the format Year/Month/Day. As Wine 
+is still very much in beta, current Wine releases are generally not subject to 
+much quality assurance in favor of more development work. This means that newer 
+Wine versions might be a bit buggy, but it also means that there is no 
+particular reason to try running an old version, as they are generally no more 
+stable than the latest. If a recent Wine upgrade has caused a formerly funtional
+ application to stop working, please help us and see the section on fixing 
+regressions in the <a href="{$root}/site/helping-applications">helping 
+applications work</a> guide.</p>
 
-<ol>
-    <li><p><b>Download:</b></p>
-        
-        <p>You can download the latest Wine version,
-	in either source or binary form, 
-        <a href="{$root}/site/download">here</a>.
-    </li>
-    
-    <li><p><b>Installation</b></p>
-    <ul>
-        <li><p><b>From Source</b></p>
-        
-        <p>Extract the downloaded file:
-         <table width="300" border=0 cellpadding=10><tr><td class=black>
-         <span class=inverse>tar zxvf Wine-YYYYMMDD.tar.gz</span>
-         </td></tr>
-         </table>        
-        This will create a new directory, enter this directory, then type:
-         <table width="300" border=0 cellpadding=10><tr><td class=black>
-         <span class=inverse>./configure && make depend && make && su -c "make install"</span>
-         </td></tr>
-         </table>
-        </li>
-        
-        <li><p><b>From Binary</b></p>
-        
-        <ul>
-            <li><p>RPM based</p>
-             <table width="300" border=0 cellpadding=10><tr><td class=black>
-             <span class=inverse>rpm -iv wine-YYYYMMDD-i386.rpm    (as root)</span>
-             </td></tr>
-             </table>
-            </li>
-            
-            <li><p>Debian</p>
-             <table width="300" border=0 cellpadding=10><tr><td class=black>
-             <span class=inverse>apt-get install wine</span>
-             </td></tr>
-             </table>
-            </li>
-        </ul>
-    </ul>
-    </li>
+<p>Ready-made, updated binary packages for Wine can be found at the Winehq 
+downloads page <a href="{$root}/site/download">here</a>. In addition, full 
+source code is available for both the current Wine development tree and every 
+Wine release <a href="{$root}/site/download#source">here</a>. For help with 
+installing from a package or from source, please consult the Getting Wine 
+chapter of the User guide <a href="{$root}/site/docs/wine-user/getting-wine">
+here</a>.</p>
 
-    <li><p><b>Configuration</b></p>
-    
-    <p>Since around May 2004, Wine will automatically generate a ~/.wine directory as needed,
-    including all the previous tasks that had to be done manually like merging the default registry,
-    creating a fake windows drive, setting up drive mappings and so on. Therefore Wine is now mostly
-    self configuring. If you wish to manually create your ~/.wine directory for whatever reason you
-    can use the "wineprefixcreate" tool to do so. </p>
-    
-    </li>
+<p>Wine is currently in a transitionary phase. We are working on replacing the 
+cryptic configuration file with an easy to use graphical utility called winecfg.
+In the meantime, however, we recommend that you use a handy program called 
+<a href="{$root}/site/download#third-party">Winetools</a> to setup Wine for you.
+Winetools will painlessly configure Wine with some excellent defaults, and 
+also provides some easy to use tools to install Internet Explorer and DCOM, 
+which provide native DLL files useful for running applications that Wine doesn't
+fully support yet.</p>
 
-    <li><p><b>The Wine configuration file</b>
+<p><b><i>Note to Debian users:</i></b> The packages included in the main 
+distribution are currently very out of date.  We're working on having the 
+latest packages available officially from Debian's servers, but until then we 
+suggest you install the latest Wine by using our apt repository <a 
+href="{$root}/site/download-deb">here</a>. Ubuntu users can install the latest 
+Wine packages by using one of the repositories from the <a 
+href="http://ubuntuforums.org/forumdisplay.php?f=47">Ubuntu backports project
+</a>.</p>
 
-    <p>The config file is pretty self explanatory, just take a look at it.
-    Since around mid 2004 the drive mappings are configured by using symlinks in the
-    ~/.wine/dosdevices directory. To add a new drive use something like the following command:</p>
-    
-    <table width="300" border=0 cellpadding=10>
-      <tr><td class=black>
-        <span class=inverse>ln -s /mnt/mydrive ~/.wine/dosdevices/e:</span>
-      </td></tr>
-    </table>
-
-    <p>... which will map whatever is mounted at /mnt/mydrive to the virtual Windows drive letter E. </p>
-
-    <p>You can get more information by typing: </p>
-
-    <table width="300" border=0 cellpadding=10>
-      <tr><td class=black>
-        <span class=inverse>man wine.conf</span>
-      </td></tr>
-    </table>    
-     
-    </li>
-
-<ol>
 
 <p>&nbsp;</p>

@@ -4,9 +4,11 @@
 
 <p>Official WineHQ builds for Linux Red Hat, Mandrake, SuSE, Slackware and FreeBSD,
 hosted by <a href="http://sourceforge.net/project/showfiles.php?group_id=6241">SourceForge.net</a>.
-Updated with each release. See the 
+Updated with each release.</p>
+
+<p><b>See the 
 <a href="{$root}/site/howto">installation and configuration how-to</a> 
-for post-installation instructions.</p>
+for post-installation instructions.</b></p>
 
 <p>Snapshot Date: {$snapshot_date}</p>
 
@@ -89,6 +91,37 @@ for post-installation instructions.</p>
   
 </table>
 
+
+<h1><a name="binary"></a>3rd Party Tools</h1>
+
+<table width="95%" border=0 cellpadding=5 cellspacing=1 bgcolor="#EFEFEF">
+
+  <tr>
+    <td align=center bgcolor=black><b><font color=white class=small>Product</font></b></td>
+    <td align=center bgcolor=black><b><font color=white class=small>Description</font></b></td>
+
+  </tr>
+
+  <tr>
+    <td align=center bgcolor="#ffffff">
+      <a href="http://www.von-thadden.de/Joachim/WineTools/">
+        <img src="../images/distro/winetools.png" 
+         width="50" height="50" alt="Wine Tools" border="0">
+      </a>
+    </td>
+    <td align=left bgcolor="#ffffff">
+
+      <b><a href="http://www.von-thadden.de/Joachim/WineTools/">Wine Tools</a></b> - 
+      WineTools  is a menu driven installer for installing Windows programs.
+      This software lets you install the following Windows software: DCOM98, 
+      IE6, Windows Core Fonts, Windows System Software, Office & Office Viewer, 
+      Adobe Photoshop 7, Illustrator 9 and many other programs. 
+      By <a href="http://www.von-thadden.de/Joachim/WineTools/">Joachim von Thadden</a>.
+    </td>
+  </tr>
+</table>
+
+
 <h1><a name="commercial"></a>Commercial Wine Versions</h1>
 
 <table width="95%" border=0 cellpadding=5 cellspacing=1 bgcolor="#EFEFEF">
@@ -121,7 +154,7 @@ for post-installation instructions.</p>
     </td>
     <td align=left bgcolor="#ffffff">
       <b><a href="http://www.transgaming.com/">Cedega</a></b> - 
-      Custom version of Wine designed to work with DirectX<sup>&reg;</sup> based games.
+      Customized fork of an old version of Wine designed to work with certain games.
       Maintained by <a href="http://www.transgaming.com/">TransGaming</a>.
     </td>
   </tr>
@@ -155,33 +188,6 @@ for post-installation instructions.</p>
   
 </table>
 
-
-<h1><a name="binary"></a>3rd Party Tools</h1>
-
-<table width="95%" border=0 cellpadding=5 cellspacing=1 bgcolor="#EFEFEF">
-
-  <tr>
-    <td align=center bgcolor=black><b><font color=white class=small>Product</font></b></td>
-    <td align=center bgcolor=black><b><font color=white class=small>Description</font></b></td>
-  </tr>
-
-  <tr>
-    <td align=center bgcolor="#ffffff">
-      <a href="http://www.von-thadden.de/Joachim/WineTools/">
-        <img src="{$root}/images/distro/winetools.png" 
-         width="50" height="50" alt="Wine Tools" border="0">
-      </a>
-    </td>
-    <td align=left bgcolor="#ffffff">
-      <b><a href="http://www.von-thadden.de/Joachim/WineTools/">Wine Tools</a></b> - 
-      WineTools  is a menu driven installer for installing Windows programs.
-      This software lets you install the following Windows software: DCOM98, 
-      IE6, Windows Core Fonts, Windows System Software, Office & Office Viewer, 
-      Adobe Photoshop 7, Illustrator 9 and many other programs. 
-      By <a href="http://www.von-thadden.de/Joachim/WineTools/">Joachim von Thadden</a>.
-    </td>
-  </tr>
-</table>
 
 <h1><a name="link2us"></a>Link to Us</h1>
 
