@@ -395,8 +395,8 @@
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/mciwnd_5uer.asp"><strong>MCIWnd</strong></a></td>
 	<td></td>
 	<td></td>
-	<td class="pct25">25%: very limitted, missing extended styles, notification, MCIWNDM_*</td>
-	<td><a href="mailto:eric.pouech@wanadoo.fr">Eric Pouech</a></td>
+	<td class="pct75">75%: missing extended styles, notification, some MCI_* and MCIWNDM_* messages</td>
+	<td><a href="mailto:dmitry@codeweavers.com">Dmitry Timoshkov</a></td>
 
     </tr>
 
