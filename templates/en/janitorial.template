@@ -123,8 +123,8 @@
     <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to HEAP_strdupWtoA
     <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to LoadIconA
     <li>dlls/shell32/shellole.c: shell32: DragQueryFileW: illegal call to DragQueryFileA
-    <li>dlls/shell32/shlexec.c: shell32: ShellExecuteExW: illegal call to HEAP_strdupWtoA
-    <li>dlls/shell32/shlexec.c: shell32: ShellExecuteExW: illegal call to ShellExecuteExA
+    <li class=submitted>dlls/shell32/shlexec.c: shell32: ShellExecuteExW: illegal call to HEAP_strdupWtoA
+    <li class=submitted>dlls/shell32/shlexec.c: shell32: ShellExecuteExW: illegal call to ShellExecuteExA
     <li>dlls/shell32/systray.c: shell32: Shell_NotifyIconW: illegal call to Shell_NotifyIconA
     <li>dlls/shlwapi/string.c: shlwapi: StrCmpLogicalW: illegal call to SHLWAPI_ChrCmpHelperA
     <li>dlls/shlwapi/string.c: shlwapi: StrFormatByteSizeW: illegal call to StrFormatByteSize64A
@@ -301,7 +301,7 @@
     <li> bitmap.h
     <li> builtin16.h
     <li class=committed> callback.h
-    <li> clipboard.h
+    <li class=committed> clipboard.h
     <li> cursoricon.h
     <li class=committed> d3dhal.h
     <li> dce.h
@@ -312,7 +312,7 @@
     <li> file.h
     <li class=committed> font.h
     <li> gdi.h
-    <li> global.h
+    <li class=committed> global.h
     <li> heap.h
     <li class=committed> input.h
     <li class=committed> instance.h
@@ -366,7 +366,7 @@
     <li> controls
     <li> files
     <li> graphics
-    <li> graphics/x11drv
+    <li class=committed> graphics/x11drv
     <li class=committed> loader/ne
     <li class=committed> memory
     <li> misc
@@ -512,29 +512,8 @@
   prevent bad tests from coming back.
 
   <h3>Compilation with -DSTRICT</h3>
-  Please refer to <a href="http://bugs.winehq.com/show_bug.cgi?id=90">Bug #90</a>
-  for more information on this project. The following DLLs need work to be
-  compiled with <tt>-DSTRICT</tt>:
-  <ul>
-    <li> <a href="http://bugs.winehq.com/show_bug.cgi?id=1145"><tt>ntdll</tt></a>: 
-	fixed by <a href="hughes2002@btinternet.com">Andrew John Hughes </a>
-	in this <a href="http://cvs.winehq.com/patch.py?id=6347">patch</a>.
-    <li> <a href="http://bugs.winehq.com/show_bug.cgi?id=1150"><tt>commdlg</tt></a>:
-	fixed by <a href="hughes2002@btinternet.com">Andrew John Hughes </a>
-	in this <a href="http://cvs.winehq.com/patch.py?id=6363">patch</a>.
-    <li> <a href="http://bugs.winehq.com/show_bug.cgi?id=1147"><tt>shell32</tt></a>:
-	fixed by <a href="jdahlin@async.com.br">Johan Dahlin</a>
-	in this <a href="http://cvs.winehq.com/patch.py?id=6364">patch</a>.
-    <li> <a href="http://bugs.winehq.com/show_bug.cgi?id=1146"><tt>ole32</tt></a>:
-	fixed by <a href="julliard@wine.codeweavers.com">Alexandre Julliard</a>
-	in this <a href="http://cvs.winehq.com/patch.py?id=6365">patch</a>.
-    <li> <a href="http://bugs.winehq.com/show_bug.cgi?id=1149"><tt>user</tt></a>:
-	fixed by <a href="julliard@wine.codeweavers.com">Alexandre Julliard</a>
-	in this <a href="http://cvs.winehq.com/patch.py?id=6371">patch</a>.
-    <li> <a href="http://bugs.winehq.com/show_bug.cgi?id=1148"><tt>gdi</tt></a>:
-	fixed by <a href="julliard@wine.codeweavers.com">Alexandre Julliard</a>
-	in this <a href="http://cvs.winehq.com/patch.py?id=6373">patch</a>.
-  </ul>
+  Please refer to <a href="http://bugs.winehq.org/show_bug.cgi?id=90">Bug #90</a>
+  for more information on this project. 
   <ul>
     <li>workers: <a href="mailto:mstefani@redhat.de">Michael Stefaniuc</a>,
 		 <a href="mailto:hughes2002@btinternet.com">Andrew John Hughes </a>,
