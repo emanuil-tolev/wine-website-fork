@@ -38,7 +38,7 @@ class config
 										),
 					 'Support' => array(
                                         'Support' => $this->_file_root.'?page=support',
-                                        'Documentation' => 'http://www.winehq.com/Docs/',
+                                        'Documentation' => $this->_file_root.'?page=documentation',
                                         'FAQ' => $this->_file_root.'?page=faq',
 										'HowTo' => $this->_file_root.'?page=howto',
 										'Bug Tracking' => 'http://bugs.winehq.org/',
