@@ -368,4 +368,19 @@
     <li>updated: Mar 15, 2004
   </ul>
 
+  <h3 class=todo>Colour Management </h3>
+  <p>Implement mscms.dll, for 
+  <a href="http://msdn.microsoft.com/library/en-us/icm/icmstart_5i91.asp">Image Colour Management</a>,
+  using <a href="http://www.littlecms.com">Little CMS</a>.
+  mscms.dll is necessary to run some photography and desktop publishing software, such as 
+  <a href="http://www.phaseone.com">Phase One's Capture One</a>.
+  The functionality of mscms.dll seems to be defined by the 
+  <a href="http://www.color.org">International Color consortium</a>.
+
+  <ul>
+    <li>worker: wanted
+    <li>status: todo
+    <li>updated: Mar 15, 2004
+  </ul>
+
 <p>&nbsp;</p>
