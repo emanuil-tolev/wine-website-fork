@@ -8,15 +8,11 @@ for managing packages known as APT.  APT is able to automagically install all of
 the needed dependencies for a software package, as well as keep the package 
 up to date, by scanning what are known as APT repositories.  Debian based 
 distributions have their own repositories of software, many of which include
-Wine, however we keep the latest available packages here for download.
-</p>
+Wine, however we keep the latest available packages here for download.</p>
 
 <p>Packages here are designed to function on Debian unstable, and are meant to 
 replace the older Debian-provided ones.  Like most packages for Debian unstable, 
-these packages also work in Ubuntu Linux, where they are tested regularly. 
-There is no need to worry about which architecture version of a package to 
-download, as APT will automatically get the one most suitable for your system if
-it is available.</p>
+these packages also work in Ubuntu Linux, where they are tested regularly. </p>
 
 <h2>Installing from the WineHQ APT Repository with Synaptic:</h2>
 
@@ -26,24 +22,36 @@ using the Synaptic Package Manager, this can be done easily by opening up
 Synaptic and selecting Settings->Repositories.  Then click add and enter the 
 following information:</p>
 
-<img src="{$root}/images/distro/synaptic-repository-deb.png" alt="Synaptic Package Repository Screenshot" border="0">
+<img src="{$root}/images/distro/synaptic-repository-binary.png" alt="Synaptic Package Repository Screenshot" border="0">
 
 <p>Then, simply click reload and search for the package 'wine' for installation. 
 If you already have a 'wine' package installed, selecting mark all upgrades and
 opting for the "smart upgrade" option should update Wine to the newest version.
 </p>
 
+<p>Currently, we only have i386 binary packages available. If you do not use an 
+i386 architecture, or wish to compile the package in an optimized way, you can 
+build the wine package using the source repository instead. To do this, add a 
+source repository with the same URI, but using the distribution source/ instead.
+Then, see the instructions below for building the package in the console.</p>
+
+<img src="{$root}/images/distro/synaptic-repository-source.png" alt="Synaptic Package Repository Screenshot" border="0">
+
 <h2>Installing from the WineHQ APT Repository with the console:</h2>
 
-<p>If your system doesn't use Synaptic, you will need to edit APT's 
-configuration file by hand.  To do this, open up a console, su to root, and add 
-the following to the file /etc/apt/sources.list:</p>
+<p>If your system doesn't use a graphical package manager like Synaptic, you 
+will need to edit APT's configuration file by hand. You will need root access to
+do this and run the commands below. Switch to root by typing '<b>su</b>'. If you 
+are an Ubuntu user, you can instead preceed each command with '<b>sudo</b>'. Now, 
+use your favorite text editor to open the file /etc/apt/sources.list or use the 
+console editor by typing '<b>nano /etc/apt/sources.list</b>' and then add the 
+following lines to the end:</p>
 
-<p>deb http://wine.sourceforge.net/Ubuntu/apt/ binary/<br>
-deb-src http://wine.sourceforge.net/Ubuntu/apt/ source/</p>
+<i><p>deb http://wine.sourceforge.net/apt/ binary/<br>
+deb-src http://wine.sourceforge.net/apt/ source/</p></i>
 
-<p>Then, you can run apt-get update to update APT's package information. 
-Finally, to install Wine, do 'apt-get install wine'.</p>
+<p>Then, you can run '<b>apt-get update</b>' to update APT's package information. 
+Finally, to install Wine, do '<b>apt-get install wine</b>'.</p>
 
 <h2>Building the Wine Package from Source using APT:</h2>
 
@@ -51,11 +59,11 @@ Finally, to install Wine, do 'apt-get install wine'.</p>
 there is no binary package available for your architecture, or if you wish to 
 create a fresh .deb file from scratch.  To do this, first follow the 
 instructions for installing from the console above, except instead of running
-'apt-get install wine' run 'apt-get build-dep wine'.  This will download the needed
-development packages for your system to make the wine package.  Then, run 
-'apt-get --build source wine', have a snack, and wait for the compiling to finish.
-</p>
+apt-get install wine run '<b>apt-get build-dep wine</b>'.  This will download the 
+needed development packages for your system to make the wine package.  Then, 
+run '<b>apt-get --build source wine</b>', have a snack, and wait for the 
+compiling to finish.</p>
 
 <p>To install your newly created package (which should be in whatever directory
-you were in when you ran apt-get --build source), run 'dpkg -i wine*.deb' as root.
-</p>
+you were in when you ran apt-get --build source), run '<b>dpkg -i wine*.deb</b>' 
+as root.</p>
