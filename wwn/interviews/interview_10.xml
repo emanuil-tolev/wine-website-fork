@@ -84,7 +84,7 @@ get fixed.
 </p><p>
 Every application developed with MS tools uses this dll (unless they
 take special care not to, for some reason). This includes all the MFC
-apps in existence, so I'd say its pretty important for Wine to
+apps in existence, so I'd say it's pretty important for Wine to
 provide a reasonably up to date implementation of it. Although the
 native dll can be redistributed, the native version may not always
 work better than our version, depending on what calls it makes to
@@ -106,7 +106,7 @@ What areas of Wine do you like to work on?
 <answer><p><i>Jon:</i>
 My current preference is anything undocumented. I like discovering
 how a piece of code works, then finding out how best to replicate its
-functionality. I also like to work around the same areas since its
+functionality. I also like to work around the same areas since it's
 satisfying to watch something move towards completion. But
 occasionally I randomly pick something for a change and work on that
 for a while. Just recently I started some OLE work which snowballed
@@ -135,7 +135,7 @@ lurkers out there, start sending your patches now!.
 
 <answer><p><i>Jon:</i>
  No, I just looked around and saw that considering how old the basic
- OLE framework is, Wine's implementation looked way too imcomplete.
+ OLE framework is, Wine's implementation looked way too incomplete.
 </p></answer>
 
 <question><p><i>BV:</i>
@@ -145,7 +145,7 @@ What kind of development environment do you use?
 <answer><p><i>Jon:</i>
 For Wine hacking I'm basically a command line guy, using vim or kate
 as my editor. I do 99% of my work under Linux. When I'm hacking on
-private projects I usually use KDevelop, its a great integrated
+private projects I usually use KDevelop, it's a great integrated
 environment, and I'd love to see it have more customization for
 Winelib development so it could function as a Visual Studio
 replacement.
@@ -192,7 +192,7 @@ line tools actually run under Wine quite well.
 
 <answer><p><i>Jon:</i>
 I've been travelling in SE Asia (on holiday) for the last 3 years,
-and so its hard for me to sync up. Often when I come to send my
+and so it's hard for me to sync up. Often when I come to send my
 patches someone has modified the same files as I did, so I have to
 merge our work together and re-test before I can send. I usually
 manage to get synced every few months (my last set of patches was in
@@ -219,11 +219,11 @@ regularly.
 </p></question>
 
 <answer><p><i>Jon:</i>
-You're right, its fairly gratuitous! I figured most people do their
+You're right, it's fairly gratuitous! I figured most people do their
 travelling later in life, and thought I should travel while still
 young(ish).
 </p><p>
-Since I stopped work I travelled the UK, went to Ireland, Holland,
+Since I stopped work I traveled the UK, went to Ireland, Holland,
 Germany, the Czeck Republic, back home to New Zealand, Laos, Cambodia
 and Thailand. Previously I have been through Europe and Africa.
 </p><p>
@@ -240,7 +240,7 @@ I'll have to resist.
 </p></question>
 
 <answer><p><i>Jon:</i>
- Yes, I am, preferably in the financial sector, since thats my
+ Yes, I am, preferably in the financial sector, since that's my
 previous experience. The industry here is huge, but the incomes are
 not very high. Luckily, It is cheap to live here (you can rent a
 small apartment for around US$150 a month, for example).
@@ -254,13 +254,13 @@ small apartment for around US$150 a month, for example).
 <answer><p><i>Jon:</i>
  Thailand as a whole is a great place, with wonderful people and a
 fascinating (although tongue twisting) language. Thats why I'd like
-to stay here a bit longer. I also really liked Prague, because its
+to stay here a bit longer. I also really liked Prague, because it's
 charming and very lively. But given the weather here, Thailand is the
 clear winner!
 </p><p>
 One of the nice things about travelling is the variety of experiences
 and people you get to meet. But there isn't enough time here to
-relate all of that. Its something thats best experienced oneself, I
+relate all of that. It's something that's best experienced oneself, I
 think.
 </p></answer>
 
@@ -310,7 +310,7 @@ think.
 </p></question>
 
 <answer><p><i>Jon:</i>
-Basically its a utility dll. A whole bunch of little functions were
+Basically it's a utility dll. A whole bunch of little functions were
 written to smooth over the differences between the various flavours
 of Windows that Internet Explorer ran on back when it was a standalone 
 application. That way the developers of the application can
@@ -318,7 +318,7 @@ prevent their code getting bogged down with lots of special cases
 every time they make Windows API calls.
 </p><p>
 Of the functions in this category, most relate to providing unicode
-functionality. Very little of the code is Explorer specific, its just
+functionality. Very little of the code is Explorer specific, it's just
 that Explorer makes heavy use of it because originally it was part of
 the Explorer application.
 </p></answer>
@@ -345,12 +345,12 @@ complete. However the last 20% always requires 80% of the effort :-)
 </p></question>
 
 <answer><p><i>Jon:</i>
-Implementing IQueryAssociations is one that stands out, as its
+Implementing IQueryAssociations is one that stands out, as it's
 semi-documented, the framework is in place, but there's no code at
 all. However, the whole dll has to be done eventually, and until you
-investigate what some of these calls do its hard to know if they are
-related to anything else at all. So its just chipping through the
-stub functions ar present.
+investigate what some of these calls do it's hard to know if they are
+related to anything else at all. So it's just chipping through the
+stub functions at present.
 </p></answer>
 
 
@@ -364,7 +364,7 @@ stub functions ar present.
 The idea of building native versions of Wine's dlls is appealing
 because it allows you to look 'under the hood' of what a dll is
 doing. You could print out all of the arguments to a function, in
-much more detail than something like todays relay/snoop tracing can.
+much more detail than something like today's relay/snoop tracing can.
 This can help understand what's happening in a live Windows system. Also
 it means we can create redistributable versions of native dlls,
 potentially usable by (for example) ReactOS or similar projects.
@@ -384,12 +384,12 @@ platforms.
 </p><p>
 The changes required to the build tools will require a few iterations
 of arguing^H^H^H^H^H^H discussion before we have something that works
-seemlessly. Some of this is just a matter of clarifying how it should
+seamlessly. Some of this is just a matter of clarifying how it should
 be done, then there's the mechanics of making it work in a style that
 Alexandre will accept.
 </p><p>
 In theory, many of Wine's dlls should at least partially work under
-Windows. setupx comes to mind as its a dll I've wanted to hack on for
+Windows. setupx comes to mind as it's a dll I've wanted to hack on for
 a while now.
 </p></answer>
 
@@ -403,7 +403,7 @@ a while now.
 
 <answer><p><i>Jon:</i>
  I followed the discussion, and I think it will need to be done,
- eventually. Its a question of how best to take advantage of all the
+ eventually. It's a question of how best to take advantage of all the
  work that other free projects have been doing in this area, and to
  integrate it into Wine. But I don't intend to be involved in that!
 </p></answer>
@@ -416,7 +416,7 @@ What would you like to see Wine do that it can't right now?
 
 <answer><p><i>Jon:</i>
 I'd like to see it integrate into the user's environment seamlessly,
-to be transparent. I think thats the only way people will ever
+to be transparent. I think that's the only way people will ever
 migrate from Windows, essentially when they don't really see the
 difference, and everything 'just works'. When I finally get my tree
 synced up I may try to do some work in this area.
@@ -437,10 +437,10 @@ stability were the main reasons for me to abandon Windows).
 </p></question>
 
 <answer><p><i>Jon:</i>
- Its clear (and very beneficial for Wine) that CodeWeavers considers
+ It's clear (and very beneficial for Wine) that CodeWeavers considers
 this important. 
 </p><p>
-I think its Wine's job, rather than the distributors. Obviously we
+I think it's Wine's job, rather than the distributors. Obviously we
 can't follow all the desktops, but integration with KDE and Gnome
 should be a goal for the project.</p></answer>
 
