@@ -332,4 +332,22 @@
     <li>updated: Sep 1, 2003
   </ul>
 
+  <h3 class=todo>Compressed or Modified Executables</h3>
+  <p>Many applications are compressed with EXE packers or use other tricks to 
+  thwart those who would try to look inside them.  These applications typically 
+  crash or refuse to run if they think a debugger is being used.  The tests 
+  used generally involve taking advantage of some undocumented quirks in the API.  
+  It turns out that many of these tests fail with Wine.  This is often because 
+  Wine does not implement a feature the exact way the application expects.  There 
+  is some sample code available 
+  <a href="http://www.woodmann.com/crackz/Tutorials/Protect.htm">here</a> and 
+  additional information <a href="http://protools.anticrack.de/">here</a>.  
+  Getting this kind of code to run and give the correct results could help with 
+  other stubborn applications that depend on the same feaures.  
+  <ul>
+    <li>worker: wanted
+    <li>status: todo
+    <li>updated: Oct 22, 2003
+  </ul>
+
 <p>&nbsp;</p>
