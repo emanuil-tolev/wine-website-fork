@@ -56,6 +56,12 @@
 	    <li> status: completed
 	    <li> updated: Apr 11, 2003
 	  </ul>
+	<li class=modifed> Remove the doc scripts out of <tt>documentation</tt> <span class=done>[DONE]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
+	    <li> status: Patches committed.
+	    <li> updated: Sep 25, 2003
+	  </ul>
      </ol>
   <a name="doc"></a><h3> B. Documentation work </h3>
      <ol>
@@ -97,6 +103,18 @@
 	    <li> status: patch <a href="http://cvs.winehq.com/patch.py?id=6695">committed</a>.
 	    <li> updated: Dec 17, 2002
 	  </ul>
+	<li> Merge <tt>documentation/wine.texinfo</tt> into the Development Guide <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
+	    <li> status: Review complete, patch in the works
+	    <li> updated: Sep 25, 2003
+          </ul>
+	<li> Merge <tt>documentation/HOWTO-winelib</tt> into the Development Guide <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
+	    <li> status: Review almost complete
+	    <li> updated: Sep 25, 2003
+          </ul>
      </ol>
   <a name="conf"></a><h3> C. Wine configuration </h3>
      <ol>
@@ -244,6 +262,12 @@
 	    <li> status: patch <a href="http://www.winehq.com/hypermail/wine-patches/2002/12/0013.html">submitted</a>, and
 			 <a href="http://cvs.winehq.com/patch.py?id=6482">committed</a>.
 	    <li> updated: Dec 3, 2002
+	  </ul>
+	<li> Cleanup the directory structure <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:julliard@winehq.com">Alexandre Julliard</a>
+	    <li> status: tracked on <a href="http://www.winehq.org/site/janitorial">Janitorial</a> list
+	    <li> updated: Sep 25, 2003
 	  </ul>
      </ol>
 
