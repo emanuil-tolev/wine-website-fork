@@ -131,8 +131,11 @@ function view_news ($where)
 {
     global $config, $html;
     
-    // max count
-    $max = 10;
+    // max count for home page
+    $hmax = 10;
+    
+    // max count for archive
+    $amax = 25;
     
     // where are we in news list
     $x = $_GET['x'];
@@ -160,14 +163,14 @@ function view_news ($where)
         // add to news body
         $news_body .= $html->template('base', 'news_row', $vars);
         
-        // only show 8 records on home page
-        if ($where == 'home' and $c == 8)
+        // only show $max records on home page
+        if ($where == 'home' and $c == $hmax)
         {
-            $news_body .= $html->p($html->ahref('More News', '?news=archive'));
+            $news_body .= $html->p($html->ahref('More News...', '?news=archive'));
             break;
         }
-        // show only 25 records on any other page
-        else if ($c == $max)
+        // show only $max records on any other page
+        else if ($c == $amax)
         {
             break;
         }
@@ -183,9 +186,9 @@ function view_news ($where)
             $prev_link = $html->ahref("&lt;&lt; Previous News","?news=archive;x=".$prev,"class=menuItem");
         }
         // display next link
-        if (($x + $max) < $total)
+        if (($x + $amax) < $total)
         {
-            $next = $x + $max;
+            $next = $x + $amax;
             $next_link .= $html->ahref("More News &gt;&gt;","?news=archive;x=".$next,"class=menuItem");
         }    
         // add prev/next links
