@@ -354,4 +354,18 @@
     <li>updated: Oct 22, 2003
   </ul>
 
+  <h3 class=todo>JScript engine</h3>
+  <p>Implement jscript.dll.  Use Mozilla's 
+  <a href="http://www.mozilla.org/js/spidermonkey">SpiderMonkey</a>
+  to implement the 
+  <a href="http://msdn.microsoft.com/library/en-us/script56/html/scripting.asp">Windows scripting interfaces</a>
+   for the JScript COM object in 
+   <a href="http://msdn.microsoft.com/library/en-us/script56/html/js56jsoriJScript.asp">jscript.dll</a>. 
+   Figure out a way to deal with the differences between JScript and JavaScript.
+  <ul>
+    <li>worker: wanted
+    <li>status: todo
+    <li>updated: Mar 15, 2004
+  </ul>
+
 <p>&nbsp;</p>
