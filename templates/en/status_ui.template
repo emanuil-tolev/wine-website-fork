@@ -155,7 +155,7 @@
 	<td>Mar 10, 2004</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct100">100%: Complete</td>
-	<td><a href="mailto:R.J.Shearman@warwick.ac.uk">Robert Shearman</a></td>
+	<td><a href="mailto:rob@codeweavers.com">Robert Shearman</a></td>
     </tr>
 
     <tr>
@@ -205,7 +205,7 @@
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/listview/reflist.asp"><strong>List-View</strong></a></td>
 	<td>Oct 21, 2002</td>
 	<td>Comctl32.dll 6.0</td>
-	<td class="pct70">70%: Missing hotitem, mouse hovering, workareas, tiles, groups</td>
+	<td class="pct70">70%: Missing hotitem, mouse hovering, workareas, tiles, groups, unicode notifications</td>
 	<td><a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a></td>
     </tr>
 
@@ -218,10 +218,10 @@
     </tr>
 
     <tr>
-      <td><strong>Native Font</strong></td>
-	<td>N/A</td>
-	<td>N/A</td>
-	<td class="pct10">10%: empty stub, this control is not documented by MS</td>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/faq/localization.asp"<strong>Native Font</strong></td>
+	<td></td>
+	<td></td>
+	<td class="pct10">10%: empty stub</td>
 	<td><a href="mailto:">?</a></td>
     </tr>
 
@@ -236,18 +236,18 @@
     <tr>
 
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/progbar/reflist.asp"><strong>Progress Bar</strong></a></td>
-	<td>Sep 9, 2002</td>
+	<td>Aug 6, 2004</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct100">100%: Complete</td>
-	<td><a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a></td>
+	<td><a href="mailto:w3seek@reactos.com">Thomas Weidenmuller</a></td>
     </tr>
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/propsheet/reflist.asp"><strong>Property Sheet</strong></a></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
-	<td class="pct80">80%: tab order, Unicode property sheets</td>
-	<td><a href="mailto:juan_lang@yahoo.com">Juan Lang</a></td>
+	<td class="pct80">80%: tab order, Unicode property sheets, wizard 97 handling</td>
+	<td><a href="mailto:xnavara@volny.cz">Filip Navara</a></td>
     </tr>
 
     <tr>
@@ -255,14 +255,14 @@
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct70">70%: vertical placement, layout code, some messages, notifications</td>
-	<td><a href="mailto:mike@codeweavers.com">Mike McCormack</a></td>
+	<td><a href="mailto:xnavara@volny.cz">Filip Navara</a></td>
     </tr>
 
     <tr>
       <td><strong>Smooth Scroll</strong></td>
 	<td>N/A</td>
 	<td>N/A</td>
-	<td class="pct10">10%: empty stub that does regular scrolling only, undocumented by MS</td>
+	<td class="pct10">10%: empty stub that does regular scrolling only,<a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/scrollbars/scrollbarreference/scrollbarfunctions/scrollwindowex.asp"><strong>undocumented</strong></a> by MS</td>
 	<td><a href="mailto:">?</a></td>
 
     </tr>
@@ -277,10 +277,10 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/syslink/syslink.asp"><strong>SysLink</strong></a></td>
-	<td></td>
-	<td></td>
-	<td class="pct0">0%: nothing done</td>
-	<td><a href="mailto:">?</a></td>
+	<td>Aug 6, 2004</td>
+	<td>Comctl32.dll 6.0</td>
+	<td class="pct80">80%: problems with focus handling and dumb string parsing </td>
+	<td><a href="mailto:w3seek@reactos.com">Thomas Weidenmuller</a></td>
     </tr>
 
     <tr>
@@ -288,7 +288,7 @@
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct80">80%: image list support, Unicode support</td>
-	<td><a href="mailto:wine-patch@kievinfo.com">Vitaliy Margolen</a></td>
+	<td><a href="mailto:jon_p_griffiths@yahoo.com">Jon Griffiths</a></td>
     </tr>
 
     <tr>
@@ -296,15 +296,15 @@
 	<td>Mar 14, 2004</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct90">90%: some messages, some notifications</td>
-	<td><a href="mailto:R.J.Shearman@warwick.ac.uk">Robert Shearman</a></td>
+	<td><a href="mailto:rob@codeweavers.com">Robert Shearman</a></td>
     </tr>
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/tooltip/reflist.asp"><strong>ToolTip</strong></a></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
-	<td class="pct80">80%: custom draw support, balloon tips</td>
-	<td><a href="mailto:h.davies@codeweavers.com">Huw D M Davies</a></td>
+	<td class="pct80">80%: custom draw support</td>
+	<td><a href="mailto:w3seek@reactos.com">Thomas Weidenmuller</a></td>
     </tr>
 
     <tr>
@@ -357,8 +357,8 @@
       <td><a href="http://msdn.microsoft.com/workshop/browser/webbrowser/reference/IFaces/IWebBrowser2/IWebBrowser2.asp"><strong>Web Browser</strong></a></td>
 	<td></td>
 	<td></td>
-	<td class="pct0">0%: nothing done</td>
-	<td><a href="mailto:">?</a></td>
+	<td class="pct25">25%: implement shdocvw.dll</td>
+	<td><a href="mailto:mike@codeweavers.com">Mike McCormack</a></td>
 
     </tr>
 
@@ -369,61 +369,54 @@
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/userinput/commondialogboxlibrary/colordialogbox.asp"><strong>Color</strong></a></td>
 	<td class="needed"></td>
-
 	<td class="needed"></td>
-	<td class="">?</td>
-	<td><a href="mailto:"></a></td>
+	<td class="pct95">95%: Refresh bugs</td>
+	<td><a href="mailto:">?</a></td>
     </tr>
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/FindandReplaceDialogBoxes.asp"><strong>Find/Replace</strong></a></td>
 	<td class="needed"></td>
-
 	<td class="needed"></td>
-	<td class="">?</td>
-	<td><a href="mailto:"></a></td>
+	<td class="pct90">90%: missing help and context menu handling</td>
+	<td><a href="mailto:">?</a></td>
     </tr>
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/FontDialogBox.asp"><strong>Font</strong></a></td>
 	<td class="needed"></td>
-
 	<td class="needed"></td>
-	<td class="">?</td>
-	<td><a href="mailto:"></a></td>
+	<td class="pct90">90%:  missing script selection</td>
+	<td><a href="mailto:truiken@gmail.com">James Hawkins</a></td>
     </tr>
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/OpenandSaveAsDialogBoxes.asp"><strong>Open/Save As</strong></a></td>
 	<td class="needed"></td>
-
 	<td class="needed"></td>
-	<td class="">?</td>
-	<td><a href="mailto:"></a></td>
+	<td class="pct60">60%:  Unicode handling, hook messages, various styles not implemented</td>
+	<td><a href="mailto:">?</a></td>
     </tr>
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/PageSetupDialogBox.asp"><strong>Page Setup</strong></a></td>
 	<td class="needed"></td>
-
 	<td class="needed"></td>
-	<td class="">?</td>
-	<td><a href="mailto:"></a></td>
+	<td class="pct0">0%: nothing done</td>
+	<td><a href="mailto:">?</a></td>
     </tr>
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/PrintDialogBox.asp"><strong>Print</strong></a></td>
 	<td class="needed"></td>
-
 	<td class="needed"></td>
-	<td class="">?</td>
-	<td><a href="mailto:"></a></td>
+	<td class="pct60">60%: verify how windows handles printer stats, implement printer help</td>
+	<td><a href="mailto:truiken@gmail.com">James Hawkins</a></td>
     </tr>
 
     <tr>
       <td><strong>Print Setup</strong></td>
 	<td class="needed"></td>
-
 	<td class="needed"></td>
 	<td class="">Deprecated by MS, use <b>Page Setup</b> instead</td>
 	<td><a href="mailto:"></a></td>
@@ -434,8 +427,8 @@
 
 	<td class="needed"></td>
 	<td class="needed"></td>
-	<td class="">?</td>
-	<td><a href="mailto:"></a></td>
+	<td class="pct0">0%: nothing done</td>
+	<td><a href="mailto:">?</a></td>
     </tr>
 
     <tr class="hdr">
@@ -444,32 +437,29 @@
     </tr>
 
     <tr>
-      <td><strong>x11drv</strong></td>
-	<td>N/A</td>
-	<td>N/A</td>
-	<td class="">?</td>
-
-	<td><a href="mailto:"></a></td>
+      <td><a href="http://cvs.winehq.org/cvsweb/wine/dlls/x11drv/"><strong>x11drv</strong></td>
+	<td></td>
+	<td></td>
+	<td class="pct80">80%: keyboard input problems, integration with window managers</td>
+	<td><a href="mailto:wine-devel@winehq.org">CodeWeavers</a></td>
     </tr>
 
     <tr>
-      <td><strong>ttydrv</strong></td>
-	<td>N/A</td>
-	<td>N/A</td>
-	<td class="">?</td>
-
-	<td><a href="mailto:"></a></td>
+      <td><a href="http://cvs.winehq.org/cvsweb/wine/dlls/ttydrv/"><strong>ttydrv</strong></td>
+	<td></td>
+	<td></td>
+	<td class="pct50">50%: we could possiably use an internal framebuffer and aalib</td>
+	<td><a href="mailto:julliard@winehq.org">Alexandre Julliard</a></td>
     </tr>
 
     <tr>
       <td><strong>SDL</strong></td>
-	<td>N/A</td>
-	<td>N/A</td>
-	<td class="">?</td>
-
-	<td><a href="mailto:"></a></td>
+	<td></td>
+	<td></td>
+	<td class="pct0">0%: nothing done</td>
+	<td><a href="mailto:">?</a></td>
     </tr>
-  
+ 
   
   </table>
 </td>
