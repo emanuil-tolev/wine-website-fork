@@ -186,7 +186,7 @@ gave him a pointer to some D3D 7 GL code that could be adapted.</p>
 concerning Max Payne, 
  <quote who="Jason Edmeades"> 
  With this fix MayPayne is starting to be playable. Looks fine as
- long as you dont change weapon (Fancy doing it all with the pistol?).
+ long as you don't change weapon (Fancy doing it all with the pistol?).
  You have to wait with a black screen during some of the movie sections
  though.  </quote>  A few hours later he had more problems fixed,
  including being able to change weapons, and announced,
@@ -194,7 +194,7 @@ concerning Max Payne,
  Aside from no movies and no sound May Payne looks quite good. I also
  checked my changes didnt break warcraft3 either, so we now at least have
  2 games which are playable.
- PS Dont expect much more from me for a while now - Busy playing games...
+ PS: Don't expect much more from me for a while now - Busy playing games...
  </quote>
 </p>
 
@@ -417,8 +417,8 @@ the issues involved:</p>
  I am doing some work trying to separate Ole* and Ole32 for use in 
  ReactOS. Before we can make use of most of the WINE code all of the 
  Non-Win32api imported functions are going to need to be compiled out or 
- rewitten. I dont need someone to do this for me but I am going to need a 
- little hand-holding as I dont want to waste my or anyone elses time.
+ rewitten. I don't need someone to do this for me but I am going to need a 
+ little hand-holding as I don't want to waste my or anyone else's time.
 </p><p>
 Currentlly Ole32 Imports these non-Win32api functions:
 <ul>

@@ -153,7 +153,7 @@ make it MT safe. This would mean a large part of the code could be
 shared with msvcrt.dll (way in the future).</li>
 	<li><b>#includes</b>: Wine's "process.h" will conflict with the
 crt "process.h". Is it desirable to have crt headers in the wine
-include dir, or should they be in include/crt? (note I wont be writing
+include dir, or should they be in include/crt? (note I won't be writing
 headers for some time).</li>
 </ul>
 </quote>

@@ -327,17 +327,17 @@ services, but this looks doable.
 <p>Steven Edwards thought it would be possible,
 <quote who="Steven Edwards">
 You might want to make a wrapper application like wine/programs/services. This program could then
-be started by wineserver and a config option if you want to try and run a NT service. I dont
+be started by wineserver and a config option if you want to try and run a NT service. I don't
 really see the point on running services under WINE unless you want to try and install AV software
 that loads as a service =)</quote></p>
 
 <p>Sylvain Petreolle didn't like the idea at all,
 <quote who="Sylvain Petreolle">
-dooooont do it ! even wineboot isnt started by the server !</quote></p>
+dooooont do it ! even wineboot isn't started by the server !</quote></p>
 
 <p>Steven thought about it and remarked,
 <quote who="Steven Edwards">
-I havent been following how wineboot operates as I dont have a need for it under Mingw or Cygwin
+I havent been following how wineboot operates as I don't have a need for it under Mingw or Cygwin
 ATM. Sylvain is right you should look at the way wineboot and rpcss work under WINE and then
 implement services as such. It would be nice if you add a net command to wcmd so we can net stop
 service-name

@@ -254,7 +254,7 @@ before the letter to be accented.  Jeff Smith had the same problem
 with the Spanish keyboard.  At this point Zsolt Rizsanyi mentioned 
 he had a workaround but it wasn't the proper fix:</p>
 <quote who="Zsolt Rizsanyi"><p>
-I dont think that the problem is with the keyboard layout. I had poblems 
+I don't think that the problem is with the keyboard layout. I had poblems 
 entering hungarian keys odoubleacute and udoubleacute.  I fixed that 
 problem with a hack to convert non Latin-1 keysyms to Unicode. I have sent 
 that patch for inclusion, but I was said that there is a more correct patch 

@@ -358,7 +358,7 @@ native DirectX DLL's and was surprised by what he found:</p>
  After investigating the DirectX NT dlls as part of an investigation to see 
  if they would work on ReactOS, I discovered something.
 </p><p>
-The core DX dlls (like ddraw.dll, dsound.dll, dinput.dll and others) dont 
+The core DX dlls (like ddraw.dll, dsound.dll, dinput.dll and others) don't 
 seem to make kernel-mode or driver/hardware calls directly.
 Most of it appears to be done via other places (such as winmm.dll, some 
 special thunks in gdl32.dll and others)

@@ -135,7 +135,7 @@ in those areas were soon in limbo.
 But that could be solved using yet another language called C++ - 
 if only Santa would let it be.
 </p><p>
-Oh please Santa ! Let us adultrate WINE with C++, please.
+Oh please Santa ! Let us adulterate WINE with C++, please.
 </p><p>
 It's not that we will rewrite everything in C++ once we get the 
 green signal - things like the loader, scheduler, and most of 
@@ -150,7 +150,7 @@ as does OLE, COM and already our implementations have structure
 object pointers running wild, whereas encapsulation would have 
 done away with it !
 </p><p>
-As a simple explanation, we might take our 'This' hack wheras C++ 
+As a simple explanation, we might take our 'This' hack whereas C++ 
 would let have us use it as 'this' without even us worrying about 
 it!  Also, there are many places in shell32, ole and shwlapi 
 (I cannot comment on DirectX source as I do not have a graphics 
@@ -177,16 +177,16 @@ We have code like that all over the place whenever COM etc
 comes into play and "That's Not A Good Thing(TM)" !
 </p><p>
 Please give us the green card - alternately, a new test branch 
-may also be created just to see if C++ would work.All C++ based 
-modfications would goto that tree.  If that test branch works 
-and delivers, it maybe merged into the main WINE tree, otherwise 
+may also be created just to see if C++ would work. All C++ based 
+modfications would go to that tree.  If that test branch works 
+and delivers, it may be merged into the main WINE tree, otherwise 
 if it fails to deliver just remove it after a stipulated period !
 </p><p>
 If WINE stuck to C only because some platforms do not support 
 C++, then will Win32 apps run on such OS at all ? Things like 
 SPARC do not need MS Apps at all (though SPARC has C++..)
 </p><p>
-For a expert discussion on C++ please see 
+For an expert discussion on C++ please see 
 <a href="http://www.research.att.com/~bs/blast.html">http://www.research.att.com/~bs/blast.html</a>
 Microsoft themselves use C++ :
 <ul>
@@ -223,7 +223,7 @@ changed as evidenced by his reply:</p>
  should be part of Wine, it's not a core Windows component. There's
  nothing wrong with having a separate FreeMFC project outside Wine using
  C++ (and compiling their FreeMFC libs with MSVC++ for the benefit of
- Wine users)
+ Wine users).
 </p><p>
  As for COM/DCOM, having implemented big parts of it myself, I'm not so
  sure C++ would have helped a whole lot in any case. It's a mess and the
@@ -366,15 +366,15 @@ the dlls list)</li>
 following thread:</p>
 <quote who="Steven Edwards"><p>
 Ok I know this going to start YALD (Yet Another Long Discussion) that
-wont go anywhere right away but......
+won't go anywhere right away but......
 </p><p>
 ReactOS is getting ready to do a major import of the WINE dlls as you
 guys know due to my repeated cross-postings to Wine-devel and
 ros-kernel. When we compile rpcrt and ole32 from WINE with some hacks
-we can make it work under ReactOS but I would like to develop a
-implementation that works properly without dirty hacking. I dont know
+we can make it work under ReactOS but I would like to develop an
+implementation that works properly without dirty hacking. I don't know
 much about WINEs rpcss other than whats in the comments of the code and
-for that matter I dont know much about Windows rpcss. Can we share
+for that matter I don't know much about Windows rpcss. Can we share
 these components? How are we going to break compatibility by doing this?
 </p></quote>
 
@@ -428,7 +428,7 @@ some of the mechanisms:</p>
  rpcss, and it rarely runs.
 </p><p>
  Sorry to fulfill the prophecy about "YALD (Yet Another Long
- Discussion) that wont go anywhere right away but......",
+ Discussion) that won't go anywhere right away but......",
 </p></quote>
 
 <p>Steven then gave a pointer to ReactOS' LPC:
@@ -452,8 +452,8 @@ http://cvs.reactos.com/cvsweb.cgi/reactos/ntoskrnl/lpc/</a>
  Petreolle decided to submit a patch to update Wine's ALSA interface but
  wondered why it wasn't applied:</p>
 <quote who="Sylvain Petreolle"><p>
-My winalsa patch for alsa 1.0 support wasnt commited and there
-wasnt any feedback fo it. Another winealsa patch was commited after
+My winalsa patch for alsa 1.0 support wasn't commited and there
+wasn't any feedback fo it. Another winealsa patch was commited after
 that, should I resubmit mine ?
 </p><p>
 References:
@@ -502,7 +502,7 @@ based on it right now.</p>
 <p>Mostly unrelated to this, Christian Costa submitted a patch
 adding WaveIn support to the ALSA driver and noted,
 <quote who="Christian Costa">
- I've succesfully done record and playback at the same time.
+ I've successfully done record and playback at the same time.
 </quote></p>
 
 </section>

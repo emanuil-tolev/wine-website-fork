@@ -700,7 +700,7 @@ GetClipboardData in HeapValidateHeap - block xxx is not inside heap)
 The converse works partially. You can select something in an X terminal and
 paste it into Wine using XA_PRIMARY. However if you copy something into the
 clipboard using the CLIPBOARD atom from a clipboard aware app like Netscape,
-Wine won't know about this selection since it doesnt yet know about this
+Wine won't know about this selection since it doesn't yet know about this
 atom.
 
 <p />

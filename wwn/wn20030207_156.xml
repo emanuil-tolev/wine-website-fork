@@ -463,7 +463,7 @@ isn't really enough time before then to prepare.
 know ReactOS had its first release.  ReactOS is intended to function
 as a drop in replacement for those operating systems from Redmond.</p>
 <quote who="Steven Edwards"><p>
-Just wanted to let everyone know that we've hit our first major milestone with ReactOS. I dont
+Just wanted to let everyone know that we've hit our first major milestone with ReactOS. I don't
 have the changelog in front of me but to some it up here it the list that I know off the top of my
 head.
 <ul>
@@ -476,7 +476,7 @@ head.
 </ul></p><p>
 
 Once WINE hits 1.x we will again take a snapshot of your tree so we have standard debugging
-interfaces. Right now in or tree we dont use libwine but have our own dll that implements the
+interfaces. Right now in or tree we don't use libwine but have our own dll that implements the
 debug channels. We also still need to adapt alot of the controls from WINE for our user32.
 </p><p>
 Thanks for all the help

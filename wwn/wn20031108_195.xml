@@ -339,7 +339,7 @@ In the ensuing discussion about gaming this week, Jason Edmeades
 made this remark:</p>
 <quote who="Jason Edmeades"><p>
  One other thought. At some point in time we will have to address copy
- protection. I dont want to get into legal discussions and I dont intend
+ protection. I don't want to get into legal discussions and I don't intend
  looking into it (yet), BUT would I be correct in saying that if someone
  worked out the first point at which copy protection fails, and codes a
  basic application which emulates this behaviour. Since this simple app
@@ -378,7 +378,7 @@ The current status is (AFAIK):
 <li>2 was committed to wine CVS.</li>
 <li>The problems behind 1 and 3 were fixed in the meantime.</li>
 <li>I have read a discussion about 4 on wine-devel. If I remember correctly it was 
-agreed that it should be added to wine sooner or later. But I dont see it 
+agreed that it should be added to wine sooner or later. But I don't see it 
 yet in the CVS.</li>
 <li>5 is the only part which is related to safedisc. The SECDRV device handler is 
 implemented in the secdrv.sys file which comes with the copy protected CD. 
@@ -411,7 +411,7 @@ kernel) or perhaps using an emulator like qemu.
 Yes it should be possibe to adapt the work of Jan Kratochvil's Captive
 NTFS project to let you load the safedisk driver under Linux rather
 than the Windows NTFS driver. I have not tested loading the safedisk
-driver under ReactOS but I dont see why it wouldn't work.
+driver under ReactOS but I don't see why it wouldn't work.
 <ul><a href="http://www.jankratochvil.net/project/captive/">
 http://www.jankratochvil.net/project/captive/</a></ul></p></quote>
 

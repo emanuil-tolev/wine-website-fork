@@ -378,7 +378,7 @@ for doing this, but wasn't sure.
  can do whatever it wants to (render to it or whatever) and it then gets
  copied back when needed, same method..
 <p />
- One of the big savers here is that the ShmPixmap means we dont have to
+ One of the big savers here is that the ShmPixmap means we don't have to
  be sending stuff between X server/client, saves alot of time..
 <p />
  As for X supporting multiple depths - I investigated this and talked to

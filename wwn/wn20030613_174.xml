@@ -458,7 +458,7 @@ Fifa 2002.
       cg mem)</li></ul></li>
 <li> CopyRect:
  <ul>
- <li> dont lock/Unlock when not really needed</li>
+ <li> don't lock/Unlock when not really needed</li>
  <li> use glTexSubImage2d for optimisation when possible</li></ul></li>
 <li> Lock/Unlock:
  <ul>

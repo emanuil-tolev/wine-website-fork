@@ -334,7 +334,7 @@ information is per texture unit and hence not affected when a different
 texture object is bound. This patch on my machine changes the displayed
 fps by the Billboard sample from 30.6 to about 42.6. [Actually it was
 43.0
-with patch b, but I dont see why!]
+with patch b, but I don't see why!]
 </p><p>
 There is still more optimization which can be done here, but this is a
 start.

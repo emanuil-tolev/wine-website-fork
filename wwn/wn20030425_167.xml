@@ -531,7 +531,7 @@ helpful:</p>
     is sources except in help text ...)</li>
 <li> save/restore breakpoints/displays/defined symbols</li>
 <li> reverse backtrace list (so current frame is at the bottom and you
-    dont have to scroll all the way up)</li>
+    don't have to scroll all the way up)</li>
 <li> remove limit of 10 entries in DEBUG_GetSymbolValue [done]</li>
 <li> remove duplicated code in DEBUG_FindNearestSymbol/DEBUG_CheckLinenoStatus</li>
 </ul></p><p>

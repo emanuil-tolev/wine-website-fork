@@ -627,7 +627,7 @@ working under Wine and fixed all the oleaut32 Var* routines it used. However
 if you look at that dll, there are still a huge number of stubs.
 Additionally the date/time handling is (was, anyway) pretty useless. I would
 strongly recommend if anyone starts writing VB testcases they try and
-exercise the Variant cases as well as the standard types (...and no, I dont
+exercise the Variant cases as well as the standard types (...and no, I don't
 have time!)</quote></p>
 <p>Marcus Meissner pointed out another potential problem,
 <quote who="Marcus Meissner">
