@@ -1,11 +1,6 @@
 /* Body Document Defaults */
-BODY 		{ background-color: #E0E0E0; background-image: url("./images/winehq_bg.gif");
-              background-repeat: no-repeat;
+BODY 		{ background-color: #E2E2E2;
               color: #000000; margin: 0; }
-
-/* Top Background Span */
-td.topbk    { background-image: url("./images/winehq_top_bar.png");
-              background-repeat: repeat-x; background-position: top; }
 
 /* Link Colors */
 A		    { color: #A50D0D; }

@@ -1,0 +1,21 @@
+<!--TITLE:[Wine Source Downloads]-->
+
+<h1>Wine Source Downloads from Tarball</h1>
+
+<p>
+    You can get Wine source via<br>
+    <a href="/source/ANNOUNCE">FTP</a> or
+	<a href="http://metalab.unc.edu/pub/Linux/ALPHA/wine/development/" target="_blank">HTTP</a>. 
+    <br><br>
+    
+    To extract the file use:<br>
+	tar -xzvf Wine-YYYYMMDD.tar.gz<br>
+	<span class=small>YYYYMMDD is the version of wine in Year Month Day format.</span>
+	<br><br>
+	
+    After you have extracted Wine read the
+    <a href="http://source.winehq.org/source/README">README</a>
+    file included for further installation instructions.
+</p>
+
+<p>&nbsp;</p>

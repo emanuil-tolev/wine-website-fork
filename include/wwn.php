@@ -358,6 +358,7 @@ function wwn_endElement ($parser, $name)
 		case "STATS":
 		  $body .= "<ol>\n";
 		  $c = 0;
+          // FIXME :: NEED TO SORT THIS BY POSTS
 		  while(list($id,$array) = each($person))
 		  {
 		  	if ($c == 5)

@@ -33,8 +33,8 @@ class config
 									  ),
 					 'Download' => array(
 					                     'Download' => $this->_file_root.'?page=download',
-                                         'Binaries' => $this->_file_root.'?page=download#binaries',
-										 'Source' => $this->_file_root.'?page=download#source'
+                                         'Binaries' => $this->_file_root.'?page=download',
+										 'Source' => $this->_file_root.'?page=download_source'
 										),
 					 'Support' => array(
 					                    'Support' => $this->_file_root.'?page=support',

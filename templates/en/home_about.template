@@ -3,42 +3,67 @@
 height="245" align=right alt="Wine"></a>
 
 Wine is an implementation of the Windows Win32 and Win16 APIs on top of X and Unix. Think of Wine as a
-Windows compatibility layer. Wine provides both a development toolkit (Winelib) for porting Windows
-sources to Unix and a program loader, allowing many unmodified Windows 3.x/95/98/ME/NT/W2K/XP binaries
-to run underIntel Unixes. Wine works on most popular Intel Unixes, including Linux, FreeBSD, and Solaris.</p>
+<p>Wine is an implementation of the Windows Win32 and Win16 APIs
+on top of X and Unix.
+Think of Wine as a Windows compatibility layer.  Wine
+provides both a development toolkit (Winelib) for porting
+Windows sources to Unix and a program loader, allowing many unmodified
+Windows 3.x/95/98/ME/NT/W2K/XP binaries to run under Intel Unixes.
+Wine works on most popular Intel Unixes, including <a
+href="http://www.linux.org/">Linux</a>, <a
+href="http://www.freebsd.org/">FreeBSD</a>, and <a
+href="http://www.sun.com/solaris/">Solaris</a>.</p>
 
-<p>Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of
-100% Microsoft-free code, but it can optionally use native system DLLs if they are available. Wine comes
-with complete sources, documentation and examples and is freely redistributable. (The licensing terms
-are the <a href="?page=license">GNU Lesser General Public License</a>.)</p>
+<p>Wine does not require Microsoft Windows, as it is a completely
+alternative implementation consisting of 100% Microsoft-free code,
+but it can optionally use native system DLLs if they are available.
+Wine comes with complete sources, documentation and examples and is
+freely redistributable.
+(The <a href="http://source.winehq.com/source/LICENSE">licensing terms</a>
+are the GNU Lesser General Public License.)</p>
 
-<p>
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-More about wine text here. More about wine text here.
-</p>
+<p>As of mid 2002, Wine consists of over 1 million lines of C code, written by
+more than 300 developers from dozens of countries around the world.
+Wine is in active use by an estimated 90K people.
+Wine implements more than 90% of the calls in popular Windows specifications
+such as ECMA-234 and Open32.
+New snapshot releases appear approximately every month.</p>
 
+<ul type=circle>
+	<li>
+	  <a href="?page=about">About</a> &middot; More details about Wine.
+	</li>
+	<li>
+	  <a href="?page=download">Download</a> &middot; Get the latest version of Wine.
+	</li>    
+	<li>
+	  <a href="?wwn=latest">News</a> &middot; Latest News on the development
+	  of Wine.
+	</li>    
+	<li>
+	  <a href="?page=faq">FAQ</a> &middot; What people want to know about Wine.
+	</li>
+	<li>
+	  <a href="?page=why">Why ?</a> &middot; Why Wine is so important.</a>
+	</li>
+	<li>
+	  <a href="?page=status">Status</a> &middot; Status Page on the development
+	  of Wine
+	</li>
+	<li>
+	  <a href="?page=myths">Myths</a> &middot; Debunking Wine Myths
+    </li>
+	<li>
+	  <a href="?page=contrib">Contributing</a> &middot; Information on ways to
+	  contribute to the project.
+	</li>    
+</ul>
+
+<!--
 <p class="small" align="right">
     <b>Switch Theme:</b>
     [<a href="?theme=winehq">Default Theme</a>] |
     [<a href="?theme=red">Red Wine Theme</a>] |
     [<a href="?theme=classic">Classic Theme</a>]
 </p>
+-->

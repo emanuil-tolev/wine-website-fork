@@ -1,6 +1,6 @@
-<!--TITLE:[Wine Downloads]-->
+<!--TITLE:[Wine Binary Downloads]-->
 
-<h1>Wine Downloads</h1>
+<h1>Wine Binary Downloads</h1>
 
 <p>
 By downloading one of the binary packages given below, you acknowledge that
@@ -11,9 +11,12 @@ instructions, resulting in highly reduced functionality.
 In short: if you want to make sure that your Wine config is done as
 outlined (thus gaining pretty good compatibility), then use the Wine source and read the documentation very carefully.
 </p>
+
 <p align=center>
 <font color="red" class=small>Please notify web-admin in case of incorrect info !!</font>
 </p>
+
+
 <!-- START OF DOWNLOAD TABLE -->
 
 <div align=center>
@@ -154,45 +157,22 @@ outlined (thus gaining pretty good compatibility), then use the Wine source and 
 
 <!-- END OF DOWNLOAD TABLE -->
 
-<p>&nbsp;</p>
-<img src="../images/grey_pixel.gif" width="95%" height=1 border=0 alt="-"><br>
-
-<a name="TAR" class=hidden><big>Wine Source from Tarball</big></a>
-<p>
-<blockquote>
-         You can get Wine source via <a href="/source/ANNOUNCE">FTP</a> or
-	 <a href="http://metalab.unc.edu/pub/Linux/ALPHA/wine/development/" target="_blank">HTTP</a>. 
-         If you wish to FTP via email, look into
-	 <a href="http://www.altavista.digital.com/cgi-bin/query?pg=q&kl=XX&q=ftpmail" target="_blank">ftpmail</a>
-	 gateways. You can also access the
-	 <a href="http://www.cis.ohio-state.edu/hypertext/faq/usenet/internet-services/access-via-email/faq.html"
-	 target="_blank">web via email</a>.
-	 <br><br>
-	 To extract the file use:<br>
-	 <pre>tar -xzvf Wine-YYYYMMDD.tar.gz</pre>
-	 YYYYMMDD is the version of wine in Year Month Day format.
-	 <br><br>
-	 After you have extracted Wine read the README file included for further installation
-	 instructions.
-</blockquote>
-
-<p>&nbsp;</p>
 
 <img src="../images/grey_pixel.gif" width="95%" height=1 border=0 alt="-"><br>
 
-<a name="RPM" class=hidden><big>Binary Packages</big></a>
-<p>
-<blockquote>
-	<br><a href="http://www.rpm.org">RPM</a> and <a href="http://www.debian.org">DEB</a>
-	are the most common formats (just see above).
-	<p>
-	To install via RPM (Red Hat, Mandrake and others)
-	<pre>rpm -i wine-YYYYMMDD-i386.rpm</pre>
-	(make sure you remove any conflicting previously installed Wine
-	packages before doing so !)
-	To install via DEB (Debian-based distributions)
-	<pre>apt-get install wine</pre>
-</blockquote>
+<h1>How to Install Binary Packages</h1>
+
+<p><a href="http://www.rpm.org">RPM</a> and <a href="http://www.debian.org">DEB</a>
+are the most common formats (just see above).
+</p>
+    
+<p>To install via RPM (Red Hat, Mandrake and others)</p>
+
+<pre>rpm -i wine-YYYYMMDD-i386.rpm</pre>
+
+<p>(make sure you remove any conflicting previously installed Wine packages before doing so !)</p>
+
+<p>To install via DEB (Debian-based distributions)</p>
+<pre>apt-get install wine</pre>
 
 <p>&nbsp;</p>
-
