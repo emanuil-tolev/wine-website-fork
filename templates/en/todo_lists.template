@@ -60,11 +60,12 @@
 	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2004/02/0228.html">patch</a> committed
 	    <li> updated: Feb 18, 2004
 	  </ul>
-	<li> Documentation page update <span class="todo">[TODO]</span>
+	<li> Documentation page update <span class="done">[DONE]</span>
 	  <ul>
-	    <li> worker: ?
-	    <li> status: ?
-	    <li> updated: Feb 5, 2004
+	    <li> worker: <a href="mailto:jnewman@codeweavers.com">Jeremy Newman</a>,
+			 <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>.
+	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2004/03/0193.html">patch</a> committed.
+	    <li> updated: Mar 15, 2004
 	  </ul>
         <li> Download page (esp. source) needs work <span class="done">[DONE]</span>
 	  <ul>
@@ -77,8 +78,8 @@
          <li> Acknowledgment page <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:twickline@skybest.com">Tom Wickline</a>
-	    <li> status: In the works
-	    <li> updated: Feb 16, 2004
+	    <li> status: Pre-alpha prototype ready
+	    <li> updated: Mar 12, 2004
 	  </ul>
          <li> Update Introduction page <span class="done">[DONE]</span>
 	  <ul>
@@ -88,9 +89,9 @@
 	  </ul>
 	<li> <a href="http://www.winehq.org/site/status_ui">UI status</a> update <span class="todo">[TODO]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
+	    <li> worker: <a href="mailto:R.J.Shearman@warwick.ac.uk">Robert Shearman</a>
 	    <li> status: review of the comctl32 source needed
-	    <li> updated: Feb 16, 2004
+	    <li> updated: Mar 15, 2004
 	  </ul>
 	<li> Integrate API status into WineHQ <span class="todo">[TODO]</span>
 	  <ul>
@@ -98,7 +99,7 @@
 	    <li> status: code exists <a href="http://fgouget.free.fr/wine/winapi_stats-en.shtml">here</a>
 	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Server-side support for WineHQ <span class=inprogress>[IN PROGRESS]</span>
+	<li> Server-side support for winrash <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:VincentB@coppercolorado.com">Brian Vincent</a>
 	    <li> status: working code available
@@ -137,7 +138,7 @@
      </ol>
   <h4> Devel Guide </h4>
     <ol> 
-	<li> Update COM section/wid <span class="todo">[TODO]</span>
+	<li> Update COM section/widl <span class="todo">[TODO]</span>
 	  <ul>
 	    <li> worker: ?
 	    <li> status: ?
@@ -241,10 +242,10 @@
      <ol>
 	<li> Complete regedit <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
-	    <li> workers: <a href="mailto:hijaszu@hlfslinux.hu">Zimler Attila</a>,
-                          <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>.
-	    <li> status: new/delete/rename key needed
-	    <li> updated: Feb 7, 2004
+	    <li> workers: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>,
+			  <a href="mailto:hijaszu@hlfslinux.hu">Zimler Attila</a>.
+	    <li> status: new/delete/rename key done, more refinement needed
+	    <li> updated: Mar 15, 2004
           </ul> 
         <li> Complete winecfg <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
@@ -269,8 +270,8 @@
 	<li> Merge winecheck into winecfg <span class=todo>[TODO]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:cmorgan@alum.wpi.edu">Chris Morgan</a>
-	    <li> status: planned
-	    <li> updated: Feb 29, 2004
+	    <li> status: almost done, fs checks need to be redone in winecfg after kernel/ntdll split
+	    <li> updated: Mar 15, 2004
           </ul>
 	<li> Remove wineconf <span class=todo>[TODO]</span>
 	  <ul>
@@ -417,7 +418,7 @@
 	<li> Testing daemon to run as a Windows service <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:cmorgan@alum.wpi.edu">Chris Morgan</a>
-	    <li> status: will be hosted at SourceFource as <a href="http://sourceforge.net/projects/winrash">winrash</a>
+	    <li> status: will be hosted at SourceFource as <a href="http://winrash.sourceforge.net/">winrash</a>
 	    <li> updated: Feb 26, 2004
 	  </ul>
 	<li> Exec-shield support <span class=inprogress>[IN PROGRESS]</span>
@@ -480,11 +481,11 @@
 	    <li> status: msvideo/msrle32 got <a href="http://www.winehq.org/hypermail/wine-cvs/2004/02/0357.html">moved</a>
 	    <li> updated: Feb 27, 2004
 	  </ul>
-	<li> Move documentation/ddraw.txt somewhere <span class=todo>[TODO]</span>
+	<li> Move documentation/ddraw.txt somewhere <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: ?
+	    <li> worker: <a href="mailto:cmorgan@alum.wpi.edu">Chris Morgan</a>
 	    <li> status: ?
-	    <li> updated: Feb 5, 2004
+	    <li> updated: Mar 15, 2004
 	  </ul>
 	<li>  Move documentation/samples/generic.ppd -> dlls/wineps <span class=done>[DONE]</span>
 	  <ul>
@@ -492,11 +493,11 @@
 	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2004/02/0362.html">moved</a>
 	    <li> updated: Feb 27, 2004
 	  </ul>
-	<li> Remove documentation/samples/config <span class=inprogress>[IN PROGRESS]</span>
+	<li> Remove documentation/samples/config <span class=todo>[TODO]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:cmorgan@alum.wpi.edu">Chris Morgan</a>
-	    <li> status: will not be required anymore
-	    <li> updated: Feb 19, 2004
+	    <li> worker: ?
+	    <li> status: waiting for the kernel/ntdll split
+	    <li> updated: Mar 15, 2004
 	  </ul>
 	<li> Move documentation/samples/system.ini -> winedefault.reg <span class=done>[DONE]</span>
 	  <ul>
