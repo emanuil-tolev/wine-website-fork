@@ -47,16 +47,30 @@
 <li>Fix stubs left in ws2_32.spec</li>
 </ul>
 
+
+<h3><a name="rpcrt4"></a>RPCRT4<br></h3>
+
+<ul>
+<li>Implment the undocumented "NT Ports" API (aka "LPC") used by native NT</li>
+<li>Fill out the matrix of per-type /Oi marshalling API's.</li>
+<li>Some real RPC tests,although there are some tests of some peripheral rpcrt4 API's -- no actual RPC's are tested.</li>
+<li>Implement /Oicf "stubless" marshalling</li>
+<li>Implement full stub/proxy support for widl</li>
+<li>Invent, propose, and evangelize some solution to the Samba-vs-wine TCP/IP RPC port-grabbing problem.</li>
+<li>Get Wine's DCOM to use wine's RPC as appropriate.</li>
+</ul>
+
+
 <h3><a name="DirectX"></a>DirectX<br></h3>
 
 <pre>
 [DirectShow]
 
     - Filter manager (IGraphBuilder)
-    - File source filter
     - Video renderer
     - Audio renderer
     - AVI splitter
+    - Registry entries
 
 [DirectDraw]
 
