@@ -40,19 +40,20 @@ PRE         { font-family: Fixed; font-size: 10pt; }
 
 /* text styles */
 .strike 	{ text-decoration: line-through; }
+.bold       { font-weight: bold; }
 
 /* Menu Config */
-.menuTitle	{ font-size: 12px; color: #ffffff; font-weight: bold; }
-.menuTitle:visited { font-size: 12px; color: #ffffff; font-weight: bold; }
-.menuTitle:hover { font-size: 12px; color: #C0C0C0; font-weight: bold; }
-.menuLink	{ font-size: 10px; color: #ffffff; font-weight: bold; }
-.menuItem	{ font-size: 10px; color: #000000; }
-.menuItem:visited { font-size: 10px; color: #000000; }
-.menuItem:hover { font-size: 10px; color: #A50D0D; font-weight: bold; }
+.menuTitle	       { font-size: 12px; color: #ffffff; font-weight: bold; text-decoration: none; }
+.menuTitle:visited { font-size: 12px; color: #ffffff; font-weight: bold; text-decoration: none; }
+.menuTitle:hover   { font-size: 12px; color: #ffffff; font-weight: bold; text-decoration: none; }
+.menuLink	       { font-size: 10px; color: #ffffff; font-weight: bold; }
+.menuItem	       { font-size: 10px; color: #000000; }
+.menuItem:visited  { font-size: 10px; color: #000000; }
+.menuItem:hover    { font-size: 10px; color: #A50D0D; font-weight: bold; }
 
 .topMenu	{ background-color: #601919; }
 .sideMenu	{ background-color: #FFFFFF; }
-.border	    { background-color: #000000; }
+.border	    { background-color: #601919; }
 
 /* Misc */
 .tiny		{ font-size: 6pt; }
