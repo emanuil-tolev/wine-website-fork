@@ -754,13 +754,13 @@ class html
                 $in = $this->p($theme."|".$template);
 			$in .= join("",file($this->_file_root."/templates/404.template"));
         }
-
+        
         // cache this template to save on i/o
         if ($cache)
         {
             $this->template_cache[$template] = $in;
         }
-
+        
         // return the text with the vars replaced
 		return $this->template_replace($in, $vars, $noremovetags);
     }
@@ -798,7 +798,7 @@ class html
         
         // remove all the unset vars
         if ($noremovetags == 0)
-            $in = preg_replace('/\{\$[a-z_]+\}/', '', $in);        
+            $in = preg_replace('/\{\$[a-z0-9_]+\}/', '', $in);        
         
         // get page name from template
         if (preg_match('/<!--TITLE:\[([\w\s\-\&\'\;]+)\]-->/', $orig, $arr))
