@@ -138,7 +138,7 @@ bounty</a> in CodeWeaver's Compatibility Center.  While not officially
 supported, there are reports that Microsoft Money and Framemaker have also
 seen dramatic improvements.  </p><p>
 Besides new applications,
-CodeWeaver's has dramatically changed the product by combining all of
+CodeWeavers has dramatically changed the product by combining all of
 the CrossOver Plugin functionality into CrossOver Office.  In fact,
 CrossOver Plugin is now a product that will not be released separately.
 To accompany these changes a new licensing mechanism was introduced.  
@@ -159,7 +159,7 @@ we have taken the following steps:
        This should ensure that anyone that bought CrossOver 2.1
        is entitled to a free upgraded to 3.0.</li>
 
-   <li>  We have upgraded everyones account status as follows:
+   <li>  We have upgraded everyone's account status as follows:
    <ul><br />
        A.  All Plugin and single user Office customers have
            access to CrossOver Office Standard<br /><br />
@@ -221,17 +221,17 @@ project David is just a (possibly repackaged) Wine.
 <p>Mike McCormack then looked a little closer and discovered it wasn't
 just regular Wine from WineHQ:</p>
 <quote who="Mike McCormack"><p>
-Actually, it's just Crossover Office's Wine repackaged.  Check out this 
+Actually, it's just CrossOver Office's Wine repackaged.  Check out this 
 screenshot:
 <ul>
 <a href="http://www.flexbeta.net/images/david/word2.gif">
 http://www.flexbeta.net/images/david/word2.gif</a>
 </ul></p><p>
 Look closely at right and bottom side of the window.  The scrollbar and 
-status bar are clipped.  That's a Crossover Office only bug, which 
+status bar are clipped.  That's a CrossOver Office only bug, which 
 doesn't appear in WineHQ!
 </p><p>
-So they're at least ripped off some (likely all) of the Crossover Office 
+So they've at least ripped off some (likely all) of the CrossOver Office 
 Wine package, and hyped it as their own.
 </p></quote>
 
@@ -259,7 +259,7 @@ discovered something that might go against expected behavior,
 one app opens the clipboard and sets
 data into it using SetClipboardData, closes it and then exits. The other app
 tries to retrieve this data.
-It works in windows but doesnt seem to do so in WINE.
+It works in windows but doesn't seem to do so in WINE.
 </quote></p>
 
 <p>Jerry Haltom explained it was a problem in X:</p>
@@ -443,7 +443,7 @@ seemingly had so many deficiencies,
 Can you list at least some things you think are bad in PE in comparison
 with ELF? Another downside in ELF in addition to mentioned already is
 missing a resource section, which makes our life implementing Wine much
-harder and forces all application developers invent their own formats
+harder and forces all application developers to invent their own formats
 to store icon/bitmap/dialog info/strings/etc. information.</quote></p>
 
 <p>So Mike thought of some of the things he liked:</p>
@@ -506,7 +506,7 @@ than GCC:</p>
 I was able to build WINE with the Intel Compiler for Linux. Intel
 allows free usage for non-comercial works so I figured I would check
 and see if changing compilers would yield better performance. According
-to Intels site it is supposed to give a 15 to 30% speed boost in
+to Intel's site it is supposed to give a 15 to 30% speed boost in
 applications. I was able to compile WINE with only about a 10 line
 patch. Somehow some of of the inline asm is already getting defined by
 icc. I am having some problems running graphical applications and maybe
@@ -515,12 +515,12 @@ test I figure this might be a good tool to have if you are porting a
 Winelib application and want a large performance speed up.
 </p><p>
 I was able to get all of WINE to build but was not able to run any
-graphical applications due to the crash show in the attached crash.log 
+graphical applications due to the crash shown in the attached crash.log. 
 I was however able to run quite a few console applications including
 regresion tests which showed failures quite a few failures.
 </p><p>
 If anyone is interested in building WINE with the Intel Compiler I will
-be happy to test a bit but I dont have a lot of time to put in to it.
+be happy to test a bit but I don't have a lot of time to put into it.
 Attached is my hack.diff and the log from trying to run regedit.
 <ol>
 <li> Download ICC and run icsvar.sh</li>
@@ -573,14 +573,14 @@ When it is working it is using memory down at 0x40000000
 
 <p>Alexandre sent a short response that identified it as a known problem,
 <quote who="Alexandre Julliard">
-There's a hack in Crossover to work around that problem, but it's not
+There's a hack in CrossOver to work around that problem, but it's not
 a proper fix. The right way is to reserve the high memory area so that
 things don't get mapped there.</quote></p>
 
 <p>Mike Hearn wondered if that affected some other work that's 
 been going on,
 <quote who="Mike Hearn">
-What address range is that? At the moment I think Mikes preloader patch
+What address range is that? At the moment I think Mike's preloader patch
 only reserves the PE load area, DOS area and shared heap area. Is there
 another we need?</quote>  Alexandre replied with where the problem was,
 <quote who="Alexandre Julliard">
@@ -618,7 +618,7 @@ There already is one.</p><p>
 
 We (TransGaming) created one called TGMarlett which we released under a 
 BSD license. It should be floating around somewhere, and at least Huw 
-(from Codeweavers) has it.
+(from CodeWeavers) has it.
 </p><p>
 Perhaps I should send our version in for inclusion in winehq CVS?
 </p><p>
