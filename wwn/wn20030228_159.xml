@@ -1,5 +1,4 @@
-<?xml version="1.0" ?>
-<kc>
+<kc version="0.1.0">
 
 <title>Wine Traffic</title>
 
@@ -79,7 +78,7 @@ windows emulator).</p>
 </stats>
 
 <section 
-	title="News: Compiling with MS VC++, CodeWeavers &amp; Tarantella, MS Paint" 
+	title="News: Compiling with MS VC++, CodeWeavers &amp; Taratella, MS Paint" 
 	subject="News"
 	archive="http://codingstyle.com/articles/using-ms-vcpp-with-gnu-wine.html" 
 	posts="3"
@@ -90,11 +89,11 @@ windows emulator).</p>
 <p>File this one under the "As Seen on Slashdot" category.  
 Combine this with the instructions below from Dan Kegel and
 you'll have some good tips for using MS VC++ tools.
-Jonathon Grant wrote an article for Codingstyle.com about 
+Jonathan Grant wrote an article for Codingstyle.com about 
 <a href="http://codingstyle.com/articles/using-ms-vcpp-with-gnu-wine.html">MS VC++  
 </a> tools under
 Linux.  The commandline executables are run under Wine.  The advantage:</p>
-<quote who="Jonathon Grant"><p>
+<quote who="Jonathan Grant"><p>
  Using Visual C++ on GNU/Wine gives me all the benefits of being 
  able to develop a 100% compatible MS-Windows version of the game, 
  while saving me the time of maintaining another Win2k machine 
@@ -114,7 +113,7 @@ the cost savings:</p>
 <quote who="CodeWeavers"><p>
  With CrossOver Office Server Edition, those cost savings can be 
  furthered by allowing Windows applications to be run on Tarantella 
- via Server Edition, rather than MS Terminal Server. Server Edition 
+ ia Server Edition, rather than MS Terminal Server. Server Edition 
  delivers the same core Windows productivity applications that users 
  need, but at a fraction of the cost of MS solutions. In addition, 
  users free themselves from the need for MS Windows OS licenses, 
