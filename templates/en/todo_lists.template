@@ -110,8 +110,8 @@ committed</a>.
 	<li> Testing status page <span class="todo">[TODO]</span>
 	  <ul>
 	    <li> worker: ?
-	    <li> status: we need to organize the links to the testing report pages
-	    <li> updated: Apr 7, 2004
+	    <li> status: we have a <a href="http://www.winehq.org/hypermail/wine-devel/2005/01/0349.html">todo</a>.
+	    <li> updated: Jan 28, 2005
 	  </ul>
      </ol>
 
@@ -170,11 +170,11 @@ committed</a>.
 	    <li> status: ?
 	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Suggest adding tests w/ patches <span class="inprogress">[IN PROGRESS]</span>
+	<li> Suggest adding tests w/ patches <span class="done">[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: ?
-	    <li> updated: Feb 5, 2004
+	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2005/01/0348.html">patch</a> committed.
+	    <li> updated: Jan 27, 2005
           </ul>
 	<li> Cross compilation on RHL <span class="done">[DONE]</span>
 	  <ul>
@@ -219,11 +219,11 @@ committed</a>.
 	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2004/06/0051.html">patch</a> committed.
 	    <li> updated: Sep 24, 2004
           </ul>
-	<li> Create a man page for winegcc <span class="inprogress">[IN PROGRESS]</span>
+	<li> Create a man page for winegcc <span class="done">[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: need to document differences from MinGW gcc
-	    <li> updated: May 30, 2004
+	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2005/01/0654.html">patch</a> committed
+	    <li> updated: Jan 27, 2005
           </ul>
 	<li> Create a man page for widl <span class="done">[DONE]</span>
 	  <ul>
