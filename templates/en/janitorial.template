@@ -116,14 +116,14 @@
     <li>dlls/shlwapi/string.c: shlwapi: StrCmpLogicalW: illegal call to SHLWAPI_ChrCmpHelperA
     <li>dlls/shlwapi/string.c: shlwapi: StrFormatByteSizeW: illegal call to StrFormatByteSize64A
     <li>dlls/shlwapi/string.c: shlwapi: StrRetToStrW: illegal call to SHStrDupA
-    <li>dlls/version/info.c: version: GetFileVersionInfoSizeW: illegal call to GetFileVersionInfoSizeA
+    <li class=committed>dlls/version/info.c: version: GetFileVersionInfoSizeW: illegal call to GetFileVersionInfoSizeA
     <li>dlls/version/install.c: version: VerInstallFileW: illegal call to VerInstallFileA
-    <li class=committed>dlls/wininet/ftp.c: wininet: FtpCreateDirectoryW: illegal call to FtpCreateDirectoryA
-    <li class=committed>dlls/wininet/ftp.c: wininet: FtpSetCurrentDirectoryW: illegal call to FtpSetCurrentDirectoryA
+    <li>dlls/wininet/ftp.c: wininet: FtpCreateDirectoryW: illegal call to FtpCreateDirectoryA
+    <li>dlls/wininet/ftp.c: wininet: FtpSetCurrentDirectoryW: illegal call to FtpSetCurrentDirectoryA
     <li class=committed>dlls/wininet/http.c: wininet: HttpOpenRequestW: illegal call to HttpOpenRequestA
     <li class=committed>dlls/wininet/http.c: wininet: HttpQueryInfoW: illegal call to HttpQueryInfoA
     <li class=committed>dlls/wininet/http.c: wininet: HttpSendRequestW: illegal call to HttpSendRequestA
-    <li class=committed>dlls/wininet/internet.c: wininet: InternetCheckConnectionW: illegal call to InternetCheckConnectionA
+    <li>dlls/wininet/internet.c: wininet: InternetCheckConnectionW: illegal call to InternetCheckConnectionA
     <li class=committed>dlls/wininet/internet.c: wininet: InternetConnectW: illegal call to InternetConnectA
     <li class=committed>dlls/wininet/internet.c: wininet: InternetOpenUrlW: illegal call to InternetOpenUrlA
     <li class=committed>dlls/wininet/internet.c: wininet: InternetOpenW: illegal call to InternetOpenA
