@@ -125,7 +125,7 @@ class wwn
         
         if ($limit != 0)
         {
-            $back .= "<p><a href=\"".$PHP_SELF."?issue=back"."\" class=small>More News...</a></p>";
+            $back .= "<p><a href=\"".$PHP_SELF."?issue=back"."\" class=small>More Issues...</a></p>";
         }
         else if ($total > $perpage)
         {

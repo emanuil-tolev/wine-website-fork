@@ -88,7 +88,7 @@ function home_page ()
 	// get wwn news
     $wwn = new wwn();
 	$issues = $wwn->get_list($config->wwn_xml_path);
-	$wwn_box = $html->theme_box($config->theme, "box_title", "Wine Weekly News", "97%", $wwn->issues_list($issues[0], $issues[1], 3), '10', 'white', 'topMenu');
+	$wwn_box = $html->theme_box($config->theme, "box_title", "Weekly Newsletters", "97%", $wwn->issues_list($issues[0], $issues[1], 3), '10', 'white', 'topMenu');
 	
     // sponsor box
     $sponsor_box = $html->template("base", 'sponsor');
