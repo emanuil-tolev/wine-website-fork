@@ -224,9 +224,9 @@ directories here, but there's lots of work to be done.  The big problem
 (for me at least) is to figure out how to do the changes incrementally. 
 Eric seems to be doing a pretty good job!
 </p><p>
-I think ntdll/kernel seperation might allow us to share more code with 
+I think ntdll/kernel separation might allow us to share more code with 
 Reactos, and get some NT specific debugging tools to work, but it is 
-more important for dll seperation than anything else.
+more important for dll separation than anything else.
 </p></answer>
 
 

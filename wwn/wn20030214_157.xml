@@ -270,7 +270,7 @@ page.
 </p><p>
 A short description:
 <ul>
-Smatch is basicaly a patch to gcc-3.1.1 that makes the gcc dump out it's
+Smatch is basically a patch to gcc-3.1.1 that makes the gcc dump out it's
 internal represantation of the code and a set of perl modules/scripts to
 ease the parsing of the dumped code. Most of the perl scripts are for
 the Linux Kernel but writing new scripts seems to be easy. I wrote

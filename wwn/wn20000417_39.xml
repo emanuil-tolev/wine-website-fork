@@ -209,7 +209,7 @@ extended to call Unix API:s as well.
 <li />The application can, like Wine itself, call both Windows and Unix
 API:s. (requires GNU C extension #include_next)
 <li />The application can, like Wine itself, call both Windows and Unix
-API:s, but can only with some change call special Windows extentions
+API:s, but can only with some change call special Windows extensions
 like _fullpath. 
 </ol>
 

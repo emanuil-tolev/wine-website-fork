@@ -65,7 +65,7 @@ changes:</p>
         Hi there, I'm working in a telerobotics project and I need to link a
 	windows dll in order to use a Cybernet Joystick.
         First I tried to use the winAPI functions LoadLibrary,FreeLibrary and
-	GetProccessAddress as I were working on Windows, and I recompiled my program
+	GetProcAddress as I was working on Windows, and I recompiled my program
 	with winelib:</p>
 	<p><ul>
 			<li> winemaker /my_path/</li>

@@ -304,7 +304,7 @@ a form</a> to make bug submission easier and more accurate.</p>
 
 <section
   title="Patch Trading"
-  subject="Proposal for Trade: COM/DCOM for DLL Seperation"
+  subject="Proposal for Trade: COM/DCOM for DLL Separation"
   archive="http://www.winehq.com/hypermail/wine-license/2002/05/0044.html"
   posts="5"
   startdate="05/10/2002"
@@ -328,11 +328,11 @@ we would still like to make use of some individual LGPLed DLLs, and we will be v
 happy to make any changes we make to those DLLs available under the LGPL as well.
 </p><p>
 Currently however, we cannot easily take an LGPLed DLL and ship it with WineX due to
-changes that have happened in the Wine tree for DLL seperation.  In order for us to
-do this, the DLL seperation work that has gone on in the Wine tree would also have to
+changes that have happened in the Wine tree for DLL separation.  In order for us to
+do this, the DLL separation work that has gone on in the Wine tree would also have to
 be made available in the ReWind tree, under the X11 license.
 </p><p>
-We would like to see the following dll-seperation related patches made
+We would like to see the following dll-separation related patches made
 available to ReWind:
 <ul><i>links deleted, see Archive Link above for complete list</i></ul>
 </p><p>
@@ -376,7 +376,7 @@ SourceForge.  Other parts (ie: the DIB Engine, etc) will be made available for
 viewing shortly.
 </p><p>
 In addition, we'll also be willing to redirect some of our engineering time to
-completing any remaining DLL seperation tasks in Wine.  Also, the work we intent to sponsor
+completing any remaining DLL separation tasks in Wine.  Also, the work we intent to sponsor
 to speedup the WineServer will be made available under licenses compatible with both ReWind
 and Wine.
 </p><p>

@@ -288,9 +288,9 @@ feature for some of its API structures.
 
 <p />
 
-This new feature will ease porting huge program written with windows
+This new feature will ease porting huge programs written with windows
 compiler (providing this feature) without having to change throughout the
-code the access to the anonymous unions (Wine systematicaly
+code the access to the anonymous unions (Wine systematically
 <strong>names</strong> <code>u</code> the anonymous unions).
 
 <p />

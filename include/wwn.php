@@ -326,7 +326,7 @@ class wwn
         xml_parser_free($xml_parser);
     }
     
-    // proccess elements in xml
+    // process elements in xml
     function startElement ($parser, $name, $attrs)
     {
         global $html;
