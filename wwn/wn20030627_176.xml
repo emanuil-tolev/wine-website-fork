@@ -291,11 +291,11 @@ includes that looked like this:</p>
 <quote who="Shachar Shemesh"><p>
 <ul><code>
  -#include "winnls.h" <br />
- +#include &lt;winnls.h&gt; </code></ul></p></quote>
+ +#include &#139;winnls.h&#155; </code></ul></p></quote>
 
 <p>Alexandre didn't like that, 
 <quote who="Alexandre Julliard">
-Local includes can be included with &lt;&gt; too, there's no reason to make
+Local includes can be included with &#139;&#155; too, there's no reason to make
 a distinction. And some of the headers in include/ are actually
 internal, like gdi.h (actually I would argue that bidi definitions
 should go there). The fact is that all our source files use "" for
@@ -307,12 +307,12 @@ confusion than it solves.
 <p>Shachar felt the distinction could be useful,
 <quote who="Shachar Shemesh">
 Alexandre, I only partially agree. I think the current situation, where 
-"" and &lt;&gt; behave the same, is an undesireable one. We want to be able to 
+"" and &#139;&#155; behave the same, is an undesireable one. We want to be able to 
 tell packagers to grab the entire /include directory with no fear 
 (libwine-devel.rpm anyone?). We don't want it to hold directories not 
 available for the standard windows. In order to enforce this 
 distinction, we need to remove the "-I." from the compilation options. 
-The last stage, of changing "" to &lt;&gt; can then happen slowly.
+The last stage, of changing "" to &#139;&#155; can then happen slowly.
 </quote></p>
 
 <p>Alexandre didn't buy that argument:</p>
@@ -320,14 +320,14 @@ The last stage, of changing "" to &lt;&gt; can then happen slowly.
 I don't think it's a useful distinction to make in the source; IMO the
 current situation is just as useful, since it lets you distinguish
 between system headers and Wine headers. In a Winelib app, it makes
-sense to use &lt;&gt;, since a #include &lt;winbase.h&gt; and a 
-#include &lt;stdio.h&gt;
+sense to use &#139;&#155;, since a #include &#139;winbase.h&#155; and a 
+#include &#139;stdio.h&#155;
 mean the same thing, they both include system headers from
 /usr/include. In the Wine source it's very different, a #include
-&lt;winbase.h&gt; will *not* include the system header from /usr/include, it
+&#139;winbase.h&#155; will *not* include the system header from /usr/include, it
 will include the local header from the current source tree. That's an
 important distinction too, and one that we would lose by changing all
-includes to &lt;&gt;.
+includes to &#139;&#155;.
 </p><p>
 Both options make sense, and they both convey (different) useful
 information, so you can't say one is better than the other. And it
@@ -336,7 +336,7 @@ not a clear improvement, which it isn't in that case.
 </p></quote>
 
 <p>A couple people pointed out that the Wine janitorial page had
-an item on it to change includes to use the &lt;&gt; method.  The
+an item on it to change includes to use the &#139;&#155; method.  The
 thread died without a clear answer on that.</p>
 </section>
 
