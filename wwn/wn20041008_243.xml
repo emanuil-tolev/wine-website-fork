@@ -78,7 +78,7 @@ I want to make sure I'm getting the right idea.  So I would implement
 a new audio driver like winealsa, wineoss etc but named something like
 wineautodetect.  This driver is actually a proxy that checks each of
 the available drivers to see if they are available, and if so,
-initialize that driver and send all audio messages to the it.  Would
+initialize that driver and send all audio messages to it.  Would
 the registry value for audio driver be wineautodetect instead of
 winealsa, wineoss etc?  If this is how it is to be implemented,
 nothing in winmm would have to be changed would it?  That's what I'm
@@ -100,7 +100,7 @@ go about it:</p>
  
 <p>Eric Pouech pointed out,
 <quote who="Eric Pouech">
-you must then ensure that the list of drivers from the registry fits you 
+you must then ensure that the list of drivers from the registry fits your 
 desired order (e.g. Alsa before OSS, or ESD...).</quote></p>
 
 </section>
@@ -172,7 +172,7 @@ provided you with the relevant URLs. Here is the situation:
      Applications can ask for the one in comctl32 by specifying so
      in their manifest file. This is done so that applications continue
      to run on older versions of Windows.</li>
-  <li> since we don't have the same constrains as MS, and since we can't
+  <li> since we don't have the same constraints as MS, and since we can't
      afford to maintain two versions of the standard controls, we are
      just going to extend the ones from user32 to the full capability
      of the ones in comctl32 ver. 6. As such, it make sense to audit them
@@ -193,7 +193,7 @@ ourselves into a bigger mess by not having two separate implementations?
 <quote who="Dimitrie Paun">
 I don't dispute that our current approach is not perfect. You are right,
 there may be some problems with it, and in the long term, we may have to
-duplicate them. However, doing so mow would imply a lot of work, and as you
+duplicate them. However, doing so now would imply a lot of work, and as you
 can see, we're way short of manpower. From what I've seen, we can safely
 implement most of the XP functionality into the user32 without risking of
 breaking stuff. That is to say, I don't see right now a big need to dupicate
@@ -315,7 +315,7 @@ sometimes confuse me.  This one falls mostly in the
 latter - I don't totally understand the issue involved
 here.  Microsoft has a way of writing programs that
 can become Unicode-aware in some locales and ANSI-only
-in others by using a special definitions included in
+in others by using special definitions included in
 <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vccore/html/_core_Generic.2d.Text_Mappings_in_TCHAR..H.asp">TCHAR.H</a>.  Microsoft describes the process
 like this:</p>
 <quote who="Microsoft"><p>
@@ -368,7 +368,7 @@ converted to the (IMHO) ugly "WCHAR str = {...}" constants.</li>
 Is there a UNICODE version of this function, or would you have to
 use some UTF-8 conversion?</li></ul></p><p>
 
-OK, this little problems can all be solved, if you want to switch to a
+OK, these little problems can all be solved, if you want to switch to a
 UNICODE winefile.</p></quote>
 
 <p>Francois explained some of this:</p>
@@ -401,7 +401,7 @@ For example:
 Or just use C++ instead of C, then you can hide the internals
 more easily in a String class.
 </p><p>
-Using this simple rules you get a program you can use in
+Using these simple rules you get a program you can use in
 both versions. Of course if you know you will only use your
 program in the UNICODE version, this doesn't make sense.
 In this case just program it using WCHAR strings.
