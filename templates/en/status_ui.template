@@ -88,25 +88,25 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/editcontrols/editcontrols.asp"><strong>Edit</strong></a></td>
-	<td class="needed"></td>
-	<td class="needed"></td>
-	<td class="pct80">80%: ES_{CENTER,RIGHT,NUMBER,OEMCONVERT}, !ES_AUTO[HV]SCROLL</td>
+	<td>Oct 8, 2004</td>
+	<td>Comctl32.dll 6.0</td>
+	<td class="pct80">80%: ES_{CENTER,RIGHT,NUMBER,OEMCONVERT}, !ES_AUTO[HV]SCROLL, EN_ALIGN_{LTR,RTL}_EC, EM_[GS]ETIMESTATUS, EM_[GS]ETCUEBANNER, EM_{SHOW,HIDE}BALLOONTIP</td>
 	<td><a href="mailto:dtimoshkov@codeweavers.com">Dmitry Timoshkov</a></td>
     </tr>
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/listboxes/listboxes.asp"><strong>List Box</strong></a></td>
-	<td class="needed"></td>
-	<td class="needed"></td>
-	<td class="pct95">95%: Complete</td>
+	<td>Oct 9, 2004</td>
+	<td>Comctl32.dll 6.0</td>
+	<td class="pct90">90%: LB_GETLISTBOXINFO, LBS_{COMBOBOX,NODATA,STANDARD}, locate and tab stops fixes</td>
 	<td><a href="mailto:julliard@winehq.org">Alexandre Julliard</a></td>
     </tr>
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/scrollbars/scrollbars.asp"><strong>Scroll Bar</strong></a></td>
-	<td class="needed"></td>
-	<td class="needed"></td>
-	<td class="pct95">95%: Complete</td>
+	<td>Oct 8, 2004</td>
+	<td>Comctl32.dll 6.0</td>
+	<td class="pct95">95%: Missing SCROLLBARINFO, SBM_GETSCROLLBARINFO, GetScrollBarInfo</td>
 	<td><a href="mailto:julliard@winehq.org">Alexandre Julliard</a></td>
     </tr>
 
