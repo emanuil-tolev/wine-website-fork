@@ -85,7 +85,7 @@ Its main goal is to take apart electronic things not meant to be taken apart. It
 
 <p>Earlier this week we posted a news item about 
 <a href="http://www.onebase-linux.org">Onebase Linux</a> and
-it's new support for Wine.  Onebase is a new community-driven
+its new support for Wine.  Onebase is a new community-driven
 distribution.  It features an entirely new package management
 system, part of which includes the ability to interact with 
 Wine and Win32 programs.  They've put together 
@@ -172,7 +172,7 @@ For those who already know arch, here are the details:
 archive coordinates:
 <ul>
 <a href="http://navi.cx/~mike/wine/archive">http://navi.cx/~mike/wine/archive</a><br />
-	mike_at_winehq.org--wine/wine--mainline--0.9</ul>
+	mike@winehq.org--wine/wine--mainline--0.9</ul>
 </p><p>
 It is synchronised with CVS on the hour, every hour and a cacherev is
 generated once a week. There are a couple of useful scripts in the root
@@ -180,8 +180,8 @@ directory, branch and merge which are described in the README.ARCH file.
 </p><p>
 It is mirrored here:
  <ul>
- <a href="http://mirrors.sourcecontrol.net/mike_at_winehq.org--wine/">
- http://mirrors.sourcecontrol.net/mike_at_winehq.org--wine/</a></ul>
+ <a href="http://mirrors.sourcecontrol.net/mike@winehq.org--wine/">
+ http://mirrors.sourcecontrol.net/mike@winehq.org--wine/</a></ul>
 </p><p>
 For your convenience, and for people who have never used arch before,
 here is an adapted form of the README file. It's available in pseudo-HTML
@@ -234,7 +234,7 @@ Now it's installed, run the following command:
 Once it's registered succesfully (you get a message when that
 happens), you can run the following command to check out the tree:
      <ul><code>
-     tla get mike_at_winehq.org--wine/wine--mainline--0.9 winehq
+     tla get mike@winehq.org--wine/wine--mainline--0.9 winehq
      </code></ul></p><p>
 
 This will place a copy of the gateway tree into the winehq/
@@ -243,7 +243,7 @@ to download other branches or even make your own, but there will only
 ever be one WineHQ tree - the one controlled by Alexandre Julliard.
 </p><p>
 
-Yes, I know mike_at_winehq.org isn't a valid email address, it doesn't
+Yes, I know mike@winehq.org isn't a valid email address, it doesn't
 matter, the email is only for namespacing and identification reasons :)
 </p><p>
 
@@ -364,8 +364,8 @@ other words, only you have write access to your own archive.
 
 So, you need to create a directory to hold your archive, like this:
      <ul><code>
-    tla make-archive mike_at_navi.cx--2004 ~/Code/Arch/2004<br />
-    tla my-default-archive mike_at_navi.cx--2004</code></ul></p><p>
+    tla make-archive mike@navi.cx--2004 ~/Code/Arch/2004<br />
+    tla my-default-archive mike@navi.cx--2004</code></ul></p><p>
 
 The named directory should not exist, but its parents should. An
 archive name must have the form of an email address followed by two
@@ -398,7 +398,7 @@ winecfg program. The simplest way to do this is to create a directory
 somewhere that you will keep all your wine trees in. I use
 /source/wine/arch. Then do this:
      <ul><code>
-    tla get mike_at_winehq.org--wine/wine--mainline--0.9 winehq<br />
+    tla get mike@winehq.org--wine/wine--mainline--0.9 winehq<br />
     cd winehq<br />
     ./branch winecfg</code></ul></p><p>
 
@@ -437,13 +437,13 @@ but don't use it as an excuse to not get patches upstreamed!
 
 The new branch is put in the default archive and the name is derived
 from the current, for instance running branch in
-mike_at_winehq.org--wine/wine--mainline--0.9 with the parameter "winecfg"
-produces a branch with the name mike_at_navi.cx--2004/wine--winecfg--0.9
+mike@winehq.org--wine/wine--mainline--0.9 with the parameter "winecfg"
+produces a branch with the name mike@navi.cx--2004/wine--winecfg--0.9
 </p><p>
 
 Now you need to publish a mirror:
      <ul><code>
-    tla make-archive --mirror mike_at_navi.cx--2004 sftp://navi.cx/home/mike/public_html/archive</code></ul></p><p>
+    tla make-archive --mirror mike@navi.cx--2004 sftp://navi.cx/home/mike/public_html/archive</code></ul></p><p>
 
 and update it when you have done some commits
      <ul><code>
@@ -581,8 +581,8 @@ Is there such a thing as a source code visualization tool that makes a
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;    |<br />
 &#160;&#160;&#160;&#160;                   function1()<br />
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;    /\<br />
-&#160;&#160;&#160;&#160;&#160;&#160;         /  \<br />
-                                       func2()   func3()<br />
+&#160;&#160;&#160;&#160;&#160;&#160;         /&#160;&#160;\<br />
+                                       func2()&#160;&#160;&#160;func3()<br />
 &#160;&#160;&#160;            |<br />
 &#160;&#160;&#160;            |<br />
 &#160;          func4()</tt></ul></p><p>
