@@ -73,7 +73,7 @@ WHAT'S NEW with Wine-20031118: (see
 <ul>
         <li> Many printing improvements.</li>
         <li> Run-time detection of NPTL threading.</li>
-        <li> Lots of code merges from Crossover Office 2.1.</li>
+        <li> Lots of code merges from CrossOver Office 2.1.</li>
         <li> Some reorganization of the source tree.</li>
          <li> Lots of bug fixes.</li></ul></p></quote>
 
@@ -85,7 +85,7 @@ submitted to wine-patches first.  Enough rambling..
 <a href="http://sourceforge.net/project/showfiles.php?group_id=6241">go 
 download.</a>
 <p>TransGaming unleashed WineX 3.2 this week.  From the press release:</p>
-<quote who="Transgaming"><p>
+<quote who="TransGaming"><p>
 TransGaming Technologies. release of its flagship Linux technology, WineX 3.2, 
 brings the hottest Windows titles to devoted Linux gamers and includes 
 support for blockbuster hits like Max Payne [R] 2: The Fall of Max Payne, 
@@ -117,14 +117,14 @@ currently leading the pack with WineX and CrossOver Office in the running.</p>
 	startdate="11/19/2003"
 	enddate="11/20/2003"
 >
-<topic>Transgaming</topic>
+<topic>TransGaming</topic>
 <topic>Licensing</topic>
 <p>For those of you new to this little soap opera we call Wine, Gerhard
 Gruber asked some questions you may have wondered:</p>
 <quote who="Gerhard Gruber"><p>
 I was wondering what is the relation of Wine to WineX? There is a CVS access
 to WineX, at least part of it, which is covered under the GPL. What I was
-wondering about is, wether this code is the same as wine or is it more
+wondering about is, wether this code is the same as Wine or is it more
 advanced? Or is this code only the sutff which is also contained in Wine and
 all the other stuff is (more or less) closed, so that you can not use it for
 Wine.</p>
@@ -133,7 +133,7 @@ Wine.</p>
 
 <p>Lionel Ulmer replied first:</p>
 <quote who="Lionel Ulmer"><p>
->From what I know, on some 'non-core business' DLLs, TransGaming took the
+From what I know, on some 'non-core business' DLLs, TransGaming took the
 WineHQ tree after the license change and imported them into their own tree.
 So these DLLs (and only those) are covered under the LGPL. 
 </p><p>
@@ -150,7 +150,7 @@ tree:
 </p><p>
 "Source code and other software components explicitly identified as 
 Copyright TransGaming Technologies Inc. is covered by the Aladdin 
-Free Public Licese, (AFPL) the terms of which are listed below.  In
+Free Public License, (AFPL) the terms of which are listed below.  In
 particular, redistribution of the following components in source or
 object code form is allowed only under the terms specified by the AFPL:
 <ul>
@@ -251,7 +251,7 @@ sounds like it should do what you require :-)
 	archive="http://www.winehq.com/hypermail/wine-devel/2003/11/0349.html" 
 	posts="3"
 	startdate="11/17/2003"
-><p>David Martinez Prado wanted know if Microsoft NetMeeting worked
+><p>David Martinez Prado wanted to know if Microsoft NetMeeting worked
 with Wine.  Apparently he couldn't even get it to install.  No one
 else appeared to know about it either.  Jerome Bouat gave a pointer
 to another application,
@@ -265,7 +265,7 @@ to another application,
 <p>At that point Tom Wickline decided to stir things up and flamed
 Jerome for not promoting a Wine solution.  Other pointed out that
 NetMeeting doesn't currently work with Wine and it will be quite a
-challenge to fix it.  Most Wine developers seem to always aupport
+challenge to fix it.  Most Wine developers seem to always support
 native programs first, but the trade-off may be a learning curve or
 lost $$$ when switching to a new app.  Shachar Shemesh explained his
 position,
@@ -294,7 +294,7 @@ it's not my itch any more.</quote></p>
 <p>Ralf Juengling had a question about using some of Wine's builtin
 functions for compilation:</p>
 <quote who="Ralf Juengling"><p>
-A Makefile created by winemake &amp; configure adds <tt>
+A Makefile created by winemaker &amp; configure adds <tt>
 /whereever/include/wine/windows</tt> to the include paths.
 </p><p>
 Why doesn't it also add
