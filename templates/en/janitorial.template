@@ -123,8 +123,8 @@
     <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to HEAP_strdupWtoA
     <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to LoadIconA
     <li>dlls/shell32/shellole.c: shell32: DragQueryFileW: illegal call to DragQueryFileA
-    <li class=submitted>dlls/shell32/shlexec.c: shell32: ShellExecuteExW: illegal call to HEAP_strdupWtoA
-    <li class=submitted>dlls/shell32/shlexec.c: shell32: ShellExecuteExW: illegal call to ShellExecuteExA
+    <li class=committed>dlls/shell32/shlexec.c: shell32: ShellExecuteExW: illegal call to HEAP_strdupWtoA
+    <li class=committed>dlls/shell32/shlexec.c: shell32: ShellExecuteExW: illegal call to ShellExecuteExA
     <li>dlls/shell32/systray.c: shell32: Shell_NotifyIconW: illegal call to Shell_NotifyIconA
     <li>dlls/shlwapi/string.c: shlwapi: StrCmpLogicalW: illegal call to SHLWAPI_ChrCmpHelperA
     <li>dlls/shlwapi/string.c: shlwapi: StrFormatByteSizeW: illegal call to StrFormatByteSize64A
