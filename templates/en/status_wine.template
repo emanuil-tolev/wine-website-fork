@@ -98,7 +98,7 @@
       <td class="nonexistent">Nonexistent</td>
       <td><a href="?issue=50#Feature: Wine Architecture by Ove Kåven">#50</a>,
       <a href="?issue=102#Navigating Through Wine">#102</a></td>
-      <td class="pct90"><a href="#Aspect_or_Component_">90% complete</a></td>
+      <td class="pct90"><a href="?page=status_todo#Aspect_or_Component_">90% complete</a></td>
       <td>Alexandre Julliard</td>
     </tr>
     <tr>
@@ -141,7 +141,7 @@
       <td><a href="?issue=69#DLLs get separated">#69</a>,
       <a href="?issue=74#Feature: Of Dynamic loading in Wine by Eric Pouech">#74</a>,
       <a href="?issue=159#X11Drv%20/%20NTDll%20Separation">#159</a></td>
-      <td class="pct80"><a href="#Aspect_or_Component_">80% complete</a></td>
+      <td class="pct80"><a href="?page=status_todo#Aspect_or_Component_">80% complete</a></td>
       <td>Alexandre Julliard,<br>Eric Pouech</td>
     </tr>
     <tr>
@@ -169,7 +169,7 @@
       <td class="outdated">Outdated</td>
       <td><a href="?issue=29#Managed mode metrics">#29 (1)</a>,
       <a href="?issue=103#More Window Handling Additions">#29 (2)</a></td>
-      <td class="pct85"><a href="#Window_management">85% complete</a></td>
+      <td class="pct85"><a href="?page=status_todo#Window_management">85% complete</a></td>
     </tr>
     <tr>
       <td>File I/O</td>
@@ -209,14 +209,14 @@
       <td class="good">Good</td>
       <td><a href="?issue=47#Feature: The X11 driver by Ove Kåven">#47</a>,
       <a href="?issue=175#Workaround%20for%20Xvidmode%20Graphic%20Corruption">#175</a></td>
-      <td class="pct90"><a href="#GDI">90% complete</a></td>
+      <td class="pct90"><a href="?page=status_todo#GDI">90% complete</a></td>
       <td>&nbsp;</td>
     </tr>
     <tr>
       <td>X11 font mapper</td>
       <td class="poor">Poor</td>
       <td><a href="?issue=75#Wine and fonts">#75</a></td>
-      <td class="pct90"><a href="#Fonts">90% complete</a></td>
+      <td class="pct90"><a href="?page=status_todo#Fonts">90% complete</a></td>
       <td>Huw D M Davies</td>
     </tr>
     <tr>
@@ -225,7 +225,7 @@
       <td><a href="?issue=119#Making Fonts Suck Less">#119</a>,
       <a href="?issue=122#Use Xrender From XFree86 4.2.0+">#122</a>,
       <a href="?issue=159#Using%20Clientside%20Fonts">#159</a></td>
-      <td class="pct80"><a href="#Fonts">80% complete</a></td>
+      <td class="pct80"><a href="?page=status_todo#Fonts">80% complete</a></td>
       <td>Huw D M Davies</td>
     </tr>
     <tr>
@@ -233,14 +233,14 @@
       <td class="poor">Poor</td>
       <td><a href="?issue=11#PrintDlg errors">#11</a>,
       <a href="http://www.winehq.org/news/?view=12#Wine and printers">#12</a></td>
-      <td class="pct80"><a href="#Printers_">80% complete</a></td>
+      <td class="pct80"><a href="?page=status_todo#Printers_">80% complete</a></td>
       <td>Huw D M Davies</td>
     </tr>
     <tr>
       <td>Internal PostScript printer driver</td>
       <td class="adequate">Adequate</td>
       <td><a href="?issue=82#PS printer driver and fonts">#82</a></td>
-      <td class="pct90"><a href="#Printers_">90% complete</a></td>
+      <td class="pct90"><a href="?page=status_todo#Printers_">90% complete</a></td>
       <td>Huw D M Davies,<br>Ian Pilcher</td>
     </tr>
     <tr>
@@ -259,7 +259,7 @@
       <a href="?issue=121#Euro Support">#121 (1)</a>
       <a href="?issue=121#XIM Internationlization Patch">#121 (2)</a>,
       <a href="?issue=176#Brazilian%20Portuguese%20Localization">#176</a></td>
-      <td class="pct90"><a href="#National_Language_Support">90% complete</a></td>
+      <td class="pct90"><a href="?page=status_todo#National_Language_Support">90% complete</a></td>
       <td>Dmitry Timoshkov,<br>Alexandre Julliard</td>
     </tr>
     <tr>
@@ -270,7 +270,7 @@
       <a href="?issue=127#Adding FriBiDi Support">#127</a>,
       <a href="?issue=132#BiDi Support">#132</a>,
       <a href="?issue=171#More%20BiDi%20Work?">#171</a></td>
-      <td class="pct20"><a href="#National_Language_Support">20% complete</a></td>
+      <td class="pct20"><a href="?page=status_todo#National_Language_Support">20% complete</a></td>
       <td>Shachar Shemesh</td>
     </tr>
     <tr>
@@ -288,7 +288,7 @@
       <td>Dynamic Data Exchange (DDE)</td>
       <td class="nonexistent">Nonexistent</td>
       <td><a href="?issue=105#DDEConnect Errors">#105</a></td>
-      <td class="pct85"><a href="#DDE">85% complete</a><br></td>
+      <td class="pct85"><a href="?page=status_todo#DDE">85% complete</a><br></td>
       <td>Eric Pouech</td>
     </tr>
     <tr>
@@ -322,7 +322,7 @@
       <td class="nonexistent">Nonexistent</td>
       <td><a href="?issue=15#VxD:s, Wine and FreeMWare">#15</a>,
       <a href="http://kt.zork.net/wine/wn20010415_91.html#2">#91</a></td>
-      <td class="pct5"><a href="#Low_priority_items_">5% complete</a><br>
+      <td class="pct5"><a href="?page=status_todo#Low_priority_items_">5% complete</a><br>
       Almost impossible to implement properly. (Even with CPU emulation it'd take quite a bit of work.)</td>
       <td>&nbsp;</td>
     </tr>
@@ -338,14 +338,14 @@
       <td class="nonexistent">Nonexistent</td>
       <td> <a href="?issue=123#SoundBlaster Emulation">#123</a>,
       <a href="?issue=154#Executing%20Batch%20Files">#154</a></td>
-      <td class="pct60">60% complete</td>
+      <td class="pct60"><a href="?page=status_todo#DOS">60% complete</td>
       <td>Jukka Heinonen</td>
     </tr>
     <tr>
       <td>Multi-user support</td>
       <td class="nonexistent">Nonexistent</td>
       <td><a href="http://www.winehq.org/news/old/2000-25.html">old #25</a></td>
-      <td class="pct10"><a href="#Low_priority_items_">10% complete</a><br>
+      <td class="pct10"><a href="?page=status_todo#Low_priority_items_">10% complete</a><br>
       Currently not a priority.</td>
       <td>&nbsp;</td>
     </tr>
@@ -376,7 +376,7 @@
       <td><a href="?issue=20#Wine's debugger evolution">#20</a>,
       <a href="?issue=170#Valgrinding%20Wine">#170</a>,
       <a href="?issue=167#Improving%20Wine's%20Debugger">#167</a></td>
-      <td class="pct85"><a href="#GDB">85% complete</a></td>
+      <td class="pct85"><a href="?page=status_todo#GDB">85% complete</a></td>
       <td>Eric Pouech</td>
     </tr>
     <tr>
@@ -384,14 +384,14 @@
       <td class="outdated">Outdated</td>
       <td><a href="?issue=66#A tool to help Wine making">#66</a>,
       <a href="?issue=101#Using Native DLL's">#101</a></td>
-      <td class="pct60"><a href="#Tools_">60% complete</td>
+      <td class="pct60"><a href="?page=status_todo#Tools_">60% complete</td>
       <td>CodeWeavers,<br>Fran&ccedil;ois Gouget</td>
     </tr>
     <tr>
       <td>Wine Installer (wineinstall)</td>
       <td class="poor">Poor</td>
       <td><a href="?issue=121#Bumps in Wineinstall">#121</a></td>
-      <td class="pct90"><a href="#Tools_">90% complete</a></td>
+      <td class="pct90"><a href="?page=status_todo#Tools_">90% complete</a></td>
       <td>Andreas Mohr</td>
     </tr>
     <tr>
@@ -496,7 +496,7 @@
       <td>How to install Wine</td>
       <td class="good"><a href="http://www.winehq.com/Docs/wine-user/">Good</td>
       <td>None</td>
-      <td class="pct90"><a href="#Instructions_">90% possible</a><br>
+      <td class="pct90"><a href="?page=status_todo#Instructions_">90% possible</a><br>
       (on x86s running Linux, FreeBSD, or Solaris)</td>
       <td>Andreas Mohr</td>
     </tr>
@@ -564,7 +564,7 @@
     </tr>
     <tr>
       <td>The History of the Wine Project</td>
-      <td class="poor">Poor</td>
+      <td class="adequate">Adequate</td>
       <td>None</td>
       <td class="pct90">MS is definitely getting nervous</td>
       <td>&nbsp;</td>
