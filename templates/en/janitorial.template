@@ -9,53 +9,6 @@
 
   <h2>COM objects</h2>
 
-  <h3>Use Interlocked functions in AddRef and Release methods</h3>
-
-  Most OLE objects should be threadsafe, which requires use of the thread-safe
-  increment and decrement functions <tt>InterlockedIncrement(&This->ref)</tt>
-  and <tt>InterlockedDecrement(&This->ref)</tt> instead of <tt>This->ref++</tt>
-  or <tt>This->ref--</tt>.  See an example
-  <a href="http://cvs.winehq.org/patch.py?id=13781">patch</a>
-  of how to fix this problem.<p>
-
-  As of Sept 14, 2004), there are at least 32 files that appear to use thread
-   unsafe operations:<br>
-  <tt>find . -name \*.c -exec grep ef-- {} \; -ls</tt>
-  <ul>
-    <li>dlls/avifil32/avifile.c
-    <li>dlls/oleaut32/tests/vartype.c
-    <li>dlls/oleaut32/olefont.c
-    <li>dlls/oleaut32/olepicture.c
-    <li>dlls/oleaut32/dispatch.c
-    <li>dlls/oleaut32/connpt.c
-    <li>dlls/dsound/buffer.c
-    <li>dlls/ole32/datacache.c
-    <li>dlls/ole32/oleobj.c
-    <li>dlls/ole32/stg_stream.c
-    <li>dlls/ole32/defaulthandler.c
-    <li>dlls/ole32/storage.c
-    <li>dlls/ole32/storage32.c
-    <li>dlls/ole32/hglobalstream.c
-    <li>dlls/ole32/antimoniker.c
-    <li>dlls/ole32/filemoniker.c
-    <li>dlls/ole32/bindctx.c
-    <li>dlls/ole32/oleproxy.c
-    <li>dlls/ole32/clipboard.c
-    <li>dlls/ole32/memlockbytes.c
-    <li>dlls/ole32/memlockbytes16.c
-    <li>dlls/ole32/itemmoniker.c
-    <li>dlls/ole32/moniker.c
-    <li>dlls/ole32/compositemoniker.c
-    <li>dlls/ole32/marshal.c
-    <li>dlls/ole32/rpc.c
-    <li>dlls/dinput/mouse.c
-    <li>dlls/dinput/joystick_linux.c
-    <li>dlls/dinput/device.c
-    <li>dlls/dinput/joystick_linuxinput.c
-    <li>dlls/dinput/keyboard.c
-    <li>dlls/urlmon/umon.c
-  </ul>
-
   <h3>IClassFactory->CreateInstance aggregation check</h3>
 
   The CreateInstance method of IClassFactory takes pUnkOuter as the second
@@ -264,18 +217,31 @@
   <ul>
     <li>The Win32 API is documented, and understood by many people
     <li>It is <em>always</em> available, so introducing additional APIs only increases confusion
-    <li>The Win32 API get a lot more testing, as it is now used a lot more
+    <li>The Win32 API gets alot more testing as it is used more.
   </ul>
   This can go on, and on, but I think the point is clear. The following tasks
   fall into this category.
 
   <h3>Getting rid of the global 
       <font size="-1"><tt>HEAP_strdupWtoA</tt></font> function</h3>
-  As of Dec 4, 2002, there were 98 occurrences of <tt>HEAP_strdupWtoA</tt>.
+  As of <strike>Dec 4, 2002</strike> Sep 30, 2004, there were <strike>98</strike> 21 occurrences of <tt>HEAP_strdupWtoA</tt>.
   These functions invocations should go away during the W -&gt; A cross-call
   cleanup. It is better to directly fix that sort of cross call, rather than
   replace this function by other alternatives. The few of them that can not
-  be eliminated this way, should be replaced by calls to <tt>WideCharToMultiByte</tt>.
+  be eliminated this way, should be replaced by calls to <tt>WideCharToMultiByte</tt>.<p>
+  <tt>find dlls -name \*.c -exec grep -q HEAP_strdupWtoA {} \; -ls</tt>
+  <ul>
+    <li>dlls/advapi32/service.c
+    <li>dlls/gdi/printdrv.c
+    <li>dlls/kernel/comm.c
+    <li>dlls/oleaut32/typelib.c
+    <li>dlls/shell32/shlmenu.c
+    <li>dlls/user/hook.c
+    <li>dlls/wineps/init.c
+    <li>dlls/winspool/info.c
+  </ul>
+  When these are finally removed, we can get rid of the non-standard include
+  file <tt>heap.h</tt>.<p>
 
   <h3>Include file cleanup</h3>
   That is, no more Wine-specific headers in <tt>include/</tt>. This is tightly
@@ -458,6 +424,19 @@
   <p>Several janitorial projects have been completed in the past and we'd
   like to thank everyone who pitched in.  Just in case you're wondering
   what we've done, the list is preserved below:
+
+  <h3>Use Interlocked functions in AddRef and Release methods</h3>
+
+  Most OLE objects should be threadsafe, which requires use of the thread-safe
+  increment and decrement functions <tt>InterlockedIncrement(&This->ref)</tt>
+  and <tt>InterlockedDecrement(&This->ref)</tt> instead of <tt>This->ref++</tt>
+  or <tt>This->ref--</tt>.  See an example
+  <a href="http://cvs.winehq.org/patch.py?id=13781">patch</a>
+  of how to fix this problem.<p>
+  <ul>
+    <li>workers: James Hawkins, Joris Huizer
+    <li>completed: <span class="done">Sep 30, 2004</span>
+  </ul>
 
   <h3>Compilation with -DSTRICT</h3>
   Please refer to <a href="http://bugs.winehq.org/show_bug.cgi?id=90">Bug 
