@@ -84,6 +84,7 @@
   If you know of applications that should be listed here, please send your suggestions
   to <a href="mailto:dpaun@rogers.com">Dimi</a>. Currently, we have:
   <ul>
+    <li><a href="#winamp">Winamp</a>
     <li><a href="#openoffice">OpenOffice</a>
     <li><a href="#texniccenter">TeXnicCenter</a>
     <li><a href="#cdex">CDex</a>
@@ -110,6 +111,16 @@
     <li> <span class=abandoned>ABANDONED</span>: the application has been deem unsuitable for porting using Winelib
   </ul>
   
+  <a name="winamp"></a><h3 class=inprogress>Winamp</h3>
+  <p>Suggested by <a href="mailto:vinn@theshell.com">Brian Vincent</a>: 
+  <i>Looks like Nullsoft has released the Winamp 3 code as open source.</i>
+  <ul>
+    <li>worker: <a href="mailto:vinn@theshell.com">Brian Vincent</a>
+    <li>status: volunteers needed
+    <li>updated: Dec 20, 2003
+    <li>homepage: <a href="http://www.wasabidev.org/">www.wasabidev.org</a>
+  </ul>
+
   <a name="openoffice"></a><h3 class=todo>OpenOffice</h3>
   <p>Suggested by <a href="mailto:steven_ed4153@yahoo.com">Steven Edwards</a>: 
   <i>I have just compleated a full install of OO 1.1 under WINE. No outsite
