@@ -115,7 +115,7 @@ CrossOver Office.  This includes a long awaited update to our server
 product, CrossOver Office Server Edition.
 </p><p>
 This release includes support for Quicken 2005, as well as new support
-for Quickbooks, versions 2001-2004 (note that Quickbooks 2005 is not yet
+for QuickBooks, versions 2001-2004 (note that QuickBooks 2005 is not yet
 supported).  This release now supports the latest version of iTunes,
 and the iPod support code has been tuned to work with that version.
 We've also started an effort to properly support EndNote.
@@ -151,12 +151,12 @@ So don't expect any CVS updates. </p>
 <a href="http://www.desktoplinux.com/articles/AT2779208064.html">
 <i>The role 
 of WINE in Linux desktop enterprise migration strategies</i> </a>
-appeared on DesktopLinux.com.  It's lays out a solid for what
+appeared on DesktopLinux.com.  It lays out a solid analysis for what
 role Wine can play in that while admitting it's not a silver 
-bullet.  From the foreward:</p>
+bullet.  From the foreword:</p>
 <quote who="DesktopLinux.com">
 <p>
-This whitepaper by Codeweavers COO Jon Parshall and CEO Jeremy White takes a 
+This whitepaper by CodeWeavers COO Jon Parshall and CEO Jeremy White takes a 
 detailed look at the potential value of WINE ("Wine Is Not an Emulator") as 
 an ingredient in a strategy for enterprise migration from Windows to Linux 
 desktops. The paper itemizes the requirements for enterprise desktop 
@@ -207,14 +207,14 @@ acceptable way for Wine. If there is, please let me know.
 </p><p>
 Gecko API is based on XPCOM that is quite similar to MSCOM. We cannot use
 Gecko's headers as they are designed for C++, but I wrote idl files that can
-be used by widl to generate binary-compatibile headers. Fortunetly,
+be used by widl to generate binary-compatibile headers. Fortunately,
 excluding
 interfaces, we can do everything using only C functions. Currently Wine's
-implementayion uses Mozilla ActiveX Comtrol. It's enough for some
+implementation uses Mozilla ActiveX Control. It's enough for some
 applications
-using it as replacement of WebBrowser Control, yet I don't know anyone using
-it as replacement of HTMLDocument (and it won't work as this is control, not
-document).
+using it as a replacement for WebBrowser Control, yet I don't know anyone using
+it as a replacement for HTMLDocument (and it won't work as this is a control, not
+a document).
 </p><p>
 This code needs a lot of cleanup and I need to remove temporary hacks,
 but I think it's time to start sending patches. Unfortunately I'll 
@@ -322,7 +322,7 @@ and MSRPC interfaces.
 <p>Dimi Paun followed up with,
 <quote who="Dimitrie Paun">
 Speaking of which, both Samba and Wine suffer from the lack of support
-of cases-insensitivness in the kernel. Now, I'm not suggesting that
+of case-insensitiveness in the kernel. Now, I'm not suggesting that
 we should push for that (I'm aware of the past discussions on LKML, and
 I must agree with Linus), but we should push for *something* that's
 acceptable and helps us solve the negative lookups a bit faster than a
@@ -337,7 +337,7 @@ an IDA Pro introduction</quote></p>
 <p>Jakob Eriksson expanded on the testing topic:</p>
 <quote who="Jakob Eriksson"><p>
 I don't know if I can find the time to prepare a proper
-presentation, but if I do, I'd like talk about and get some
+presentation, but if I do, I'd like to talk about and get some
 input from you on the subject of testing.
 <ol>
  <li> I want the conformance tests done faster. (I have a clear idea how.)
@@ -449,14 +449,14 @@ somewhere.
 
 <section 
 	title="InstallShield Breakage" 
-	subject="Nearly all Installshield installers fail"
+	subject="Nearly all InstallShield installers fail"
 	archive="http://www.winehq.org/hypermail/wine-devel/2005/04/0000.html" 
 	posts="9"
 	startdate="04/01/2005"
 >
 <topic>RPC / COM / OLE</topic>
 <p>In the beginning, InstallShield didn't work.  Then we
-got it to work.  Then they it broke.  Then we got it to work.
+got it to work.  Then they broke it.  Then we got it to work.
 Then we broke it.  That's the short version of the story.
 
 Uwe Bonnes ran into an issue this week with one such 
