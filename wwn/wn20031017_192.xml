@@ -240,7 +240,7 @@ the start menu.
 </p><p>
 Some told me that it would be better to make a Windows (wine) client 
 that reads the actual start menu by querying a Wine dll, while others 
-told me that this is not neccesairy as all the links are contained in 
+told me that this is not necessary as all the links are contained in 
 the Start Menu directory.
 </p><p>
  From looking at my Windows installation, I must agree that it seems 
@@ -274,7 +274,7 @@ this code going into wine or into kde/gnome, or remaining as a separate
 thing?  What relationship would you like between your code and wine's 
 "explorer.exe," once it has one?
 </p><p>
-Codeweavers has done a lot of work with shortcuts &amp; menuitems, to make them 
+CodeWeavers has done a lot of work with shortcuts &amp; menuitems, to make them 
 work with different distros... so they might know what some of the 
 nitty-gritty details are (Unfortunately, I do not).  You may also want to 
 look at LiteStep, ReactOS's explorer, and other windows shell-replacement 
@@ -287,7 +287,7 @@ Since I want the menu to really integrate into your Linux environment,
 this would be a Linux executable. I guess than that if I'd want to query 
 Wine for the needed links, that would have to be in a Wine executable. 
 The problem is that this seems a bit of an overkill:
-<ul><li>I'd have to write a communcation protocoll between the Wine app and 
+<ul><li>I'd have to write a communication protocol between the Wine app and 
 Linux app</li>
 <li> A wine process would always be running, just for serving the menu. 
 Killing your wineserver (what I personally like to do often :-)) would 
@@ -312,7 +312,7 @@ Mike McCormack mentioned some things worth looking into:</p>
 It's probably easier to just go with the link file reader first, but it 
 will have some limitations:
 <ol>
-<li> you won't be able to get stuff in the shell namespace (eg. desktop 
+<li> you won't be able to get stuff in the shell namespace (e.g. desktop 
 icons, Control panel stuff)</li>
 
 <li> you'll have to hardcode the location of the start menu (you can 
@@ -329,7 +329,7 @@ pull the right icon from an exe.</li></ol></p><p>
 I guess that's not too much of a problem, and it's probably not worth 
 the effort to make it perfect.
 </p><p>
-The code that wine Crossover uses to generate KDE/Gnome menus is already 
+The code that wine CrossOver uses to generate KDE/Gnome menus is already 
 merged into Wine.  We just have a more extensive wineshelllink script 
 that deals with more corner cases.
 </p></quote>
@@ -432,7 +432,7 @@ suggested,
  gdb or winedbg and do a backtrace.
 </quote></p>
 
-<p>Mike Hearn the detailed what that process would consist of:</p>
+<p>Mike Hearn then detailed what that process would consist of:</p>
 <quote who="Mike Hearn"><p>
 
 I might as well point out (as I didn't find this intuitive when I was
@@ -459,7 +459,7 @@ Then you can see what path the code took before it hit the locks.
 	startdate="10/15/2003"
 >
 <topic>Integration</topic>
-<p>A few weeks ago I reported that OpenSSL was beginnig to be
+<p>A few weeks ago I reported that OpenSSL was beginning to be
 supported.  This week Geoff Thorpe provided an update:</p>
 <quote who="Geoff Thorpe"><p>
 I have just sent a post to the openssl list trying to solicit any 
