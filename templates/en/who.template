@@ -152,13 +152,21 @@ group of developers from around the world:</p>
 
 <h3>Dmitry Timoshkov</h3><blockquote><!-- TODO -->
     <table border="0"><tr>
-    <td width="330"><b>Location:</b> Irkutsk, Siberia<br /></td>
+    <td width="330"><b>Location:</b> Irkutsk, Russia<br /></td>
 	<td> </td></tr>
     <tr><td>
     <b>Email:</b> dmitry -at- baikal dot ru</td>
     <td></td></tr></table>
     <p>
-
+	Dmitry first got involved with Wine in 1999 when he
+	tried to get PageMaker 6.5 running.  Nowadays,
+	he specializes in internationalization.
+	Dmitry helped introduce unicode support in Wine
+	and converted all the USER controls to unicode.  He
+	also rewrote all the file API's to use unicode internally.
+	Dmitry did a lot of work on the X11 driver so it could
+	support keyboard input from various locales as well as
+	making dead keys work.  
     </p></blockquote>
     
 <h3>Jeremy White</h3><blockquote>
