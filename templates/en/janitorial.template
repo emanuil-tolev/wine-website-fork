@@ -16,6 +16,27 @@
 
   <h2>COM objects</h2>
 
+  <h3>Use Interlocked functions in AddRef and Release methods</h3>
+
+  Most OLE objects should be threadsafe, which requires use of the thread-safe
+  increment and decrement functions <tt>InterlockedIncrement(&This->ref)</tt>
+  and <tt>InterlockedDecrement(&This->ref)</tt> instead of <tt>This->ref++</tt>
+  or <tt>This->ref--</tt>.  See an example
+  <a href="http://cvs.winehq.org/patch.py?id=15239">patch</a>
+  of how to fix this problem.<p>
+
+  To be consistent, references to <tt>This->ref</tt> in TRACE's should be
+  avoided as well.<p>
+
+  As of Jan 8, 2005, there are at least 135 files that appear to use thread
+  unsafe operations and 137 files that use TRACE's containing <tt>This->ref</tt>.<p>
+
+  <ul>
+    <li>workers: James Hawkins, Joris Huizer, Paul Vriens
+    <li>status: <span class=inprogress>First patch submitted and committed</span>
+    <li>updated: Jan 8, 2005
+  </ul>
+
   <h3>IClassFactory->CreateInstance aggregation check</h3>
 
   The CreateInstance method of IClassFactory takes pUnkOuter as the second
@@ -438,19 +459,6 @@
   <p>Several janitorial projects have been completed in the past and we'd
   like to thank everyone who pitched in.  Just in case you're wondering
   what we've done, the list is preserved below:
-
-  <h3>Use Interlocked functions in AddRef and Release methods</h3>
-
-  Most OLE objects should be threadsafe, which requires use of the thread-safe
-  increment and decrement functions <tt>InterlockedIncrement(&This->ref)</tt>
-  and <tt>InterlockedDecrement(&This->ref)</tt> instead of <tt>This->ref++</tt>
-  or <tt>This->ref--</tt>.  See an example
-  <a href="http://cvs.winehq.org/patch.py?id=13781">patch</a>
-  of how to fix this problem.<p>
-  <ul>
-    <li>workers: James Hawkins, Joris Huizer
-    <li>completed: <span class="done">Sep 30, 2004</span>
-  </ul>
 
   <h3>Compilation with -DSTRICT</h3>
   Please refer to <a href="http://bugs.winehq.org/show_bug.cgi?id=90">Bug 
