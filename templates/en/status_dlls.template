@@ -20,22 +20,22 @@
       <td>advapi32.dll</td>
       <td class="adequate"><a href="http://www.andreavb.com/API_ADVAPI32.html">advapi32 API calls</a></td>
       <td>None</td>
-      <td class="pct60">60% complete</td>
-      <td>CodeWeavers</td>
+      <td class="pct75">75% complete</td>
+      <td>CodeWeavers,<br>James Hawkins</td>
     </tr>
     <tr>
       <td>advpack.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/workshop/delivery/download/overview/launchinfsectionex.asp">LaunchINFSectionEx Function </a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
-      <td>Huw D M Davies</td>
+      <td>CodeWeavers</td>
     </tr>
     <tr>
       <td>atl.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/comsrv2k/htm/cs_pp_buildingpipecomps_zved.asp">MSDN: ATL API overview</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
-      <td>Aric Stewart</td>
+      <td>Mike McCormack</td>
     </tr>
     <tr>
       <td>cabinet.dll</td>
@@ -43,7 +43,7 @@
       <td><a href="{$root}/site/?issue=179#CAB%20Update">#179</a>,
           <a href="{$root}/site/?issue=181#Library%20of%20Microsoft%20Compression%20Formats">#181</a></td>
       <td class="pct80">80% complete</td>
-      <td>Greg Turner</td>
+      <td></td>
     </tr>
     <tr>
       <td>capi2032.dll</td>
@@ -56,7 +56,7 @@
       <td>cards.dll</td>
       <td class="adequate"><a href="http://www.developer.com/net/vb/article.php/3303671">Cards Introduction</a></td>
       <td>None</td>
-      <td class="pct5">5% complete</td>
+      <td class="pct85">85% complete</td>
       <td>Sami Nopanen</td>
     </tr>
     <tr>
@@ -204,7 +204,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/mapi/html/_mapi1book_about_the_mapi_architecture.asp">MSDN: MAPI Architecture</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
-      <td></td>
+      <td>Jon Griffiths</td>
     </tr>
     <tr>
       <td>mlang.dll</td>
@@ -224,7 +224,7 @@
       <td>mscms.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cmsccapi/PublishingAPI.asp">MSDN: MSCMS Publishing API</a></td>
       <td>None</td>
-      <td class="pct20">20% complete</td>
+      <td class="pct25">25% complete</td>
       <td>Hans Leidekker</td>
     </tr>
     <tr>
@@ -242,7 +242,7 @@
           <a href="{$root}/site/?issue=231#Status%20of%20MSI">#231</a>,
           <a href="{$root}/site/?issue=232#MSIExec.exe%20Replacement">#232</a>,
           <a href="{$root}/site/?issue=253#MSI%20Status%20Update">#253</a></td>
-      <td class="pct45">45% complete</td>
+      <td class="pct50">50% complete</td>
       <td>Mike McCormack,<br>Aric Stewart</td>
     </tr>
     <tr>
@@ -327,7 +327,7 @@
           <a href="{$root}/site/?issue=167#Accessing%20ODBC%20Databases">#167</a>,
           <a href="{$root}/site/?issue=205#ODBC%20Fun%20-%20Tips%20and%20Tricks">#205</a></td>
       <td class="pct60">60% complete<br>(no Windows ODBC driver support, only UNIX)</td>
-      <td></td>
+      <td>Alex Villacís Lasso</td>
     </tr>
     <tr>
       <td>ole32.dll</td>
@@ -343,7 +343,7 @@
           <a href="{$root}/site/?issue=253#Apartment%20Breakage">#253</a>,
           <a href="{$root}/site/?issue=256#DCOM%20Status%20Update%20and%20Roadmap">#256</a></td>
       <td class="pct60">60% complete</td>
-      <td>CodeWeavers</td>
+      <td>Robert Shearman,<br>CodeWeavers</td>
     </tr>
     <tr>
       <td>oleacc.dll</td>
@@ -444,14 +444,14 @@
           <a href="{$root}/site/?issue=218#CryptoAPI%20Needs%20Help">#218</a>,
           <a href="{$root}/site/?issue=246#MS%20Enhanced%20Provider%20Library">#246</a>,
           <a href="{$root}/site/?issue=255#Software%20to%20Test%20Crypto%20API">#255</a></td>
-      <td class="pct5">5% complete</td>
+      <td class="pct70">70% complete</td>
       <td>Michael Jung</td>
     </tr>
       <td>secur32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/secauthn/security/authentication_functions.asp">MSDN: Authentication Functions</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
-      <td>Michael Jung</td>
+      <td></td>
     </tr>
       <td>sensapi.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/syncmgr/syncmgr/sens_object.asp">MSDN: SENS Reference</a></td>
@@ -471,7 +471,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/install/hh/install/setupapi_844n.asp">MSDN: Device Installation Functions</a></td>
       <td>None</td>
       <td class="pct60">60% complete</td>
-      <td></td>
+      <td>Eric Kohl</td>
     </tr>
     <tr>
       <td>shdocvw.dll</td>
@@ -535,7 +535,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/graphics/hh/graphics/prnspool_7ig7.asp">MSDN: Printer Drivers and Spooler Components</a></td>
       <td><a href="{$root}/site/?issue=231#Using%20Multiple%20Graphics%20Drivers">#231</a></td>
       <td class="pct80">80% complete</td>
-      <td>Dmitry Timoshkov</td>
+      <td></td>
     </tr>
     <tr>
       <td>twain32.dll</td>
@@ -549,7 +549,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/mslu/winprog/using_the_microsoft_layer_for_unicode.asp">MSDN: Microsoft Layer for Unicode</a></td>
       <td>None</td>
       <td class="pct95">95% complete<br>needs manual override</td>
-      <td>Shachar Shemesh</td>
+      <td>Hans Leidekker</td>
     </tr>
     <tr>
       <td>url.dll</td>
@@ -570,7 +570,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/windowing/windows/windowreference/windowfunctions/adjustwindowrect.asp">MSDN: Window Functions</a></td>
       <td><a href="{$root}/site/?issue=243#Button%20Code%20Audit">#243</a></td>
       <td class="pct95">95% complete</td>
-      <td>Alexandre Julliard</td>
+      <td>Alexandre Julliard,<br>Dmitry Timoshkov</td>
     </tr>
     <tr>
       <td>uxtheme.dll</td>
@@ -642,7 +642,7 @@
           <a href="{$root}/site/?issue=219#Converting%20Wininet%20to%20Windows%20Sockets">#219</a></td>
       <td class="pct95">95% complete</a><br>
       </td>
-      <td>Martin Wilck,<br>Juan Lang</td>
+      <td>Hans Leidekker</td>
     </tr>
     <tr>
       <td>winspooldrv</td>
@@ -657,8 +657,8 @@
       <td><a href="{$root}/site/?issue=167#Wintab%20Status%20and%20Development">#167</a>,
           <a href="{$root}/site/?issue=175#Wintab%20Status">#175</a>,
           <a href="{$root}/site/?issue=204#Updated%20Tablet%20Support">#204</a></td>
-      <td class="pct80">80% complete</td>
-      <td>Aric Stewart</td>
+      <td class="pct60">60% complete</td>
+      <td>Aric Stewart,<br>Robert North</td>
     </tr>
     <tr>
       <td>wintrust.dll</td>
@@ -683,7 +683,7 @@
           <a href="{$root}/site/?issue=161#Need%20New%20Winsock%20Maintainer">#161</a>,
           <a href="{$root}/site/?issue=203#Bein'%20A%20Playa%20In%20Da%20Hood">#203</a></td>
       <td class="pct80">80% complete</td>
-      <td>Juan Lang</td>
+      <td>Hans Leidekker</td>
     </tr>
     <tr>
       <td>wtsapi32.dll</td>
@@ -703,7 +703,7 @@
           <a href="{$root}/site/?issue=194#Keyboard%20Detection">#194</a>,
           <a href="{$root}/site/?issue=215#Creating%20the%20Registry%20Without%20x11drv">#215</a>,
           <a href="{$root}/site/?issue=227#Mouse%20Handling">#227</a></td>
-      <td class="pct80">80% complete</a></td>
+      <td class="pct90">90% complete</a></td>
       <td>Dmitry Timoshkov</td>
     </tr>
   </table>

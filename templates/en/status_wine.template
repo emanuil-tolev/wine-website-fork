@@ -31,7 +31,7 @@
     </tr>
     <tr>
       <td>Process/Address Space model</td>
-      <td class="poor">Poor</td>
+      <td class="good"><a href="http://winehq.org/site/docs/wine-devel/x2493#ARCH-MEM">Good</td>
       <td><a href="{$root}/site/?issue=4#Address%20Space%20Separation%20/%20Stability%20vs%20Correctness">#4</a>,
           <a href="{$root}/site/?issue=39#Some%20more%20bits%20on%20address%20space%20separation">#39</a>,
           <a href="{$root}/site/?issue=46#Address%20space%20separation">#46</a></td>
@@ -512,7 +512,7 @@
       <td><a href="{$root}/site/?issue=191#The%20Start%20Menu">#191</a>,
           <a href="{$root}/site/?issue=192#Integrating%20Start%20Menu%20Shortcuts">#192</a></td>
       <td class="pct90">90% complete</td>
-      <td>Fran&ccedil;ois Gouget</td>
+      <td>CodeWeavers</td>
     </tr>
     <tr>
       <td>wineshelllink</td>
