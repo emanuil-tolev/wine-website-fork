@@ -7,6 +7,13 @@
   Janitor's List</a>), and it's high time that we have one too.
   What is there to clean up? Well, lots of things! :)
 
+  <h2>Code cleanup</h2>
+
+  Some parts of Wine have become too big and complex to debug, and should
+  be reworked into cleaner more readable code.
+  One example is <tt>SHFileOperationW</tt> in <tt>dlls/shell32/shlfileop.c</tt>.
+  This needs to be split into a number of smaller functions.<p>
+
   <h2>COM objects</h2>
 
   <h3>IClassFactory->CreateInstance aggregation check</h3>
@@ -236,14 +243,13 @@
 
   <h3>Getting rid of the global 
       <font size="-1"><tt>HEAP_strdupWtoA</tt></font> function</h3>
-  As of Nov 30, 2004, there were 13 occurrences of <tt>HEAP_strdupWtoA</tt>.
+  As of Jan 4, 2005, there were 10 occurrences of <tt>HEAP_strdupWtoA</tt>.
   These functions invocations should go away during the W -&gt; A cross-call
   cleanup. It is better to directly fix that sort of cross call, rather than
   replace this function by other alternatives. The few of them that can not
   be eliminated this way, should be replaced by calls to <tt>WideCharToMultiByte</tt>.<p>
   <tt>find dlls -name \*.c -exec grep -q HEAP_strdupWtoA {} \; -ls</tt>
   <ul>
-    <li>dlls/advapi32/service.c
     <li>dlls/gdi/printdrv.c
     <li>dlls/wineps/init.c
     <li>dlls/winspool/info.c
