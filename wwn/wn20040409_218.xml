@@ -77,7 +77,7 @@ WHAT'S NEW with Wine-20040408: (see
          <li> Lots of bug fixes.</li>
 </ul></p></quote>
 
-<p>The first of those, configuring drives and ports with serial links,
+<p>The first of those, configuring drives and ports with symbolic links,
 are the results of the new filesystem changes.  There's definitely
 some interesting stuff in there.  It might take a few
 days for all the builds to be available, but you can grab them from
@@ -340,7 +340,7 @@ from the get-go.</quote></p>
 Projects</a> page a few weeks ago and thought 
 it could be implementing using
 <a href="http://www.openssl.org">OpenSSL's</a>
-libcrypto.so</p>.
+libcrypto.so.</p>
 
 </section>
 
