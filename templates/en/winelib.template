@@ -66,7 +66,7 @@
   If you know of applications that should be listed here, please send your suggestions
   to <a href="mailto:dpaun@rogers.com">Dimi</a>. Currently, we have:
   <ul>
-    <li><a href="#abiword">Abi Word</a>
+    <li><a href="#abiword">AbiWord</a>
     <li><a href="#winamp">WinAMP</a>
     <li><a href="#openoffice">OpenOffice</a>
     <li><a href="#texniccenter">TeXnicCenter</a>
@@ -94,12 +94,13 @@
     <li> <span class=abandoned>ABANDONED</span>: the application has been deem unsuitable for porting using Winelib
   </ul>
   
-  <a name="abiword""></a><h3 class=inprogress>Abi Word</h3>
+  <a name="abiword""></a><h3 class=done>AbiWord</h3>
   <ul>
     <li>worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-    <li>status: most compiles cleanly
-    <li>updated: Apr 8, 2004
-    <li>homepage: <a href="http://www.abiword.org/">www.abiword.org</a>
+    <li>status: builds &amp; runs cleanly, 
+	        <a href="http://www.winehq.org/hypermail/wine-devel/2004/04/0192.html">patches</a> integrated into their tree.
+    <li>updated: Apr 16, 2004
+    <li>homepage: <a href="http://www.abisource.com/">abisource.com</a>
   </ul>
 
 
