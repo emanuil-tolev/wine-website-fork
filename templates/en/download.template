@@ -60,7 +60,7 @@ FreeBSD
 </td>
 <td bgcolor="#ffffff">
   Award winning highly customized version with installer. Easy to use GUI tools to configure to work with
-  supported applications such as Microsoft(R) Office. Email support available after purchase.
+  supported applications such as Microsoft<sup>&reg;</sup> Office. Email support available after purchase.
   Multi-user server version also available. Evaluation versions available by request.
   By <a href="http://www.codeweavers.com">CodeWeavers</a>.
 </td>
@@ -188,8 +188,14 @@ class=small>web-admin</a> in case of incorrect info !!</font></p>
 <p><a href="http://www.rpm.org">RPM</a> and <a href="http://www.debian.org">DEB</a>
 are the most common formats (just see above).
 </p>
-    
-<p>&middot; To install via RPM (Red Hat, Mandrake and others)
+
+<p>&middot; Most distributions provide a graphical tool for installing
+	  RPM packages, you can use it by simply clicking (Or double clicking,
+	  depending on your system settings) on the RPM. If you don't have a
+	  graphical RPM manager installed, using a shell, switch to the
+	  directory where you downloaded the RPM package file to.
+	  Once there, type this one command as root, adapting the
+	  package file name as required:
  <table width="300" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>rpm -i wine-YYYYMMDD-i386.rpm</span>
  </td></tr>
