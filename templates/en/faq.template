@@ -315,7 +315,7 @@ involved with Wine development are Codeweavers, TransGaming, Corel, and Macadami
  
 <p>No, it's not.</p> 
  
-<p>TransGaming make money via a subscription service. 
+<p>TransGaming make's money via a subscription service. 
 Thus they submitted their DirectDraw and some DirectSound work, but
 they will <b>not</b> submit their OpenGL wrapper based Direct3D support. </p>
 
@@ -736,7 +736,7 @@ a program has something that it's supposed to execute,and then it should just wo
 
 <h3><a name="Is_there_any_documentation_for_Wine"></a>Is there any documentation for Wine?  </h3>
 
-<p>Yes, see <a href="http://www.winehq.org/?page=documentation">http://www.winehq.org/?page=documentation</a>.</p>
+<p>Yes, see <a href="http://www.winehq.org/?page=documentation">Wine Documentation</a>.</p>
 
 <h3><a name="I_couldnt_find_the_answer_to_my"></a>I couldn't find the answer to my question in the documentation, 
 but I've written a document explaining how to solve it. What should I do?</h3>
@@ -833,9 +833,8 @@ for how to do this.</p>
 <h3><a name="Are_there_any_commercial_applications"></a>Are there any commercial applications which have been ported using Wine?</h3>
 
 <p>A few examples of applications using Winelib:
-<ul>
- <li> Corel's WordPerfect Office Suite (<a href="http://linux.corel.com/products/wpo2000_linux/index.htm"> http://linux.corel.com/products/wpo2000_linux/index.htm</a>) 
- <li> Deneba's Canvas 7 (<a href="http://www.deneba.com/dazroot/softlibs/cv7_linux/default.html">http://www.deneba.com/dazroot/softlibs/cv7_linux/default.html</a>)
+<ul> 
+ <li> Ability Office (<a href="http://www.ability.com/linux/abilitylinux.php?ln=en">http://www.ability.com/linux/abilitylinux.php?ln=en</a>)
  <li> IBM's Websphere (<a href="http://www7b.boulder.ibm.com/dl/swws/swwsgddb-p">http://www7b.boulder.ibm.com/dl/swws/swwsgddb-p</a>)
 </ul>
 Many other important applications have already been ported. (we are speaking of several top 500 applications here)</p>
@@ -843,7 +842,7 @@ Many other important applications have already been ported. (we are speaking of 
 <h3><a name="How_can_I_detect_Wine"></a>How can I detect Wine?</h3>
 
 <p> You really shouldn't want to do this. If there's a quirk in Wine you need to work around, it's <em>much</em> better to fix it in 
-Wine (after all you're a developer, so you should be able to gather enough help and knowledge to fix it for real).</p>
+Wine.</p>
 
 <a href="#TOP">Back to top</a>
 
