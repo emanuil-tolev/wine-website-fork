@@ -88,8 +88,8 @@
 	<li> Server-side support for WineHQ <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:VincentB@coppercolorado.com">Brian Vincent</a>
-	    <li> status: work has started, initial design ready
-	    <li> updated: Feb 20, 2004
+	    <li> status: working code available
+	    <li> updated: Feb 26, 2004
 	  </ul>
 	<li> <a href="http://www.winehq.org/site/status_options">Options status</a> update <span class="todo">[TODO]</span>
 	  <ul>
@@ -318,17 +318,17 @@
 	    <li> status: ?
 	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Winegcc: merge winewrap into winegcc <span class="inprogress">[IN PROGRESS]</span>
+	<li> Winegcc: merge winewrap into winegcc <span class="done">[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: work started
-	    <li> updated: Feb 19, 2004
+	    <li> status: patches committed
+	    <li> updated: Feb 26, 2004
 	  </ul>
-	<li> Winemaker: generate MinGW compatible makefiles <span class=todo>[TODO]</span>
+	<li> Winemaker: generate MinGW compatible makefiles <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: ?
-	    <li> status: ?
-	    <li> updated: Feb 5, 2004
+	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
+	    <li> status: work has started
+	    <li> updated: Feb 26, 2004
 	  </ul>
 	<li> Winemaker: use dsw2make from MinGW <span class=todo>[TODO]</span>
 	  <ul>
@@ -336,11 +336,11 @@
 	    <li> status: ?
 	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Winemaker: no configure script <span class=todo>[TODO]</span>
+	<li> Winemaker: no configure script <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: ?
-	    <li> status: ?
-	    <li> updated: Feb 5, 2004
+	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
+	    <li> status: work has started
+	    <li> updated: Feb 26, 2004
 	  </ul>
 	<li> Autoconf: add all Wine-specific macros to the aclocal <span class=todo>[TODO]</span>
 	  <ul>
@@ -360,8 +360,8 @@
 	<li> Testing daemon to run as a Windows service <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:cmorgan@alum.wpi.edu">Chris Morgan</a>
-	    <li> status: Work has started, initial design ready
-	    <li> updated: Feb 18, 2004
+	    <li> status: Almost complete, initial release expected within days.
+	    <li> updated: Feb 26, 2004
 	  </ul>
 	<li> Exec-shield support <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
