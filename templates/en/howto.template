@@ -37,15 +37,9 @@ just downgrade again. </p>
          </table>        
         This will create a new directory, enter this directory, then type:
          <table width="300" border=0 cellpadding=10><tr><td class=black>
-         <span class=inverse>./tools/wineinstall</span>
+         <span class=inverse>./configure && make depend && make && su -c "make install"</span>
          </td></tr>
          </table>
-	If it asks, create a "no-windows" install. Although the
-	idea of reusing an existing Windows installation from another
-	drive may sound tempting, in general there is too much
-	garbage on these setups and they can destabilize Wine. It's
-	better to create a fake windows drive then install your
-	applications into it.
         </li>
         
         <li><p><b>From Binary</b></p>
