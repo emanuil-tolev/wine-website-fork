@@ -1,7 +1,86 @@
 <!--TITLE:[Sending Patches]-->
 
-<h1>Sending Patches</h1>
+<h1>Generating and Submitting Patches</h1>
 
-<p>
-Blah...
-</p>
+<p>Please submit patches to the Wine patches mailing list,
+<a href="mailto:wine-patches@winehq.com">wine-patches@winehq.com</a>.
+(Note that if you're not <a href="?page=forums">subscribed</a> to the mailing
+list, the mailing list administrators must first check your submission
+to make sure it's not spam before they can let it through.)</p>
+
+<p>It's best to send small patches against the current tree.
+The best way do to this is with CVS. First, you'll need to make sure your tree is up to date.
+To do this, just run</p>
+
+ <table width="300" border=0 cellpadding=10><tr><td class=black>
+ <span class=inverse>
+  cvs update
+ </span>
+ </td></tr>
+ </table>
+ 
+<p>in the top-level Wine directory. Make sure that you've set up the proper options in your
+<code><a href="http://www.cvshome.org/">.cvsrc</a></code> file.  Then, use</p>
+
+ <table width="300" border=0 cellpadding=10><tr><td class=black>
+ <span class=inverse>
+  cvs diff &gt; patch.diff
+ </span>
+ </td></tr>
+ </table>
+ 
+<p>to generate the patch from the top wine directory and save the output to a file.
+<code>cvs diff</code> will always ignore newly added files, so you'll
+need to do something like:</p>
+
+ <table width="300" border=0 cellpadding=10><tr><td class=black>
+ <span class=inverse>
+  diff -u /dev/null newfile.c &gt;&gt; patch.diff
+ </span>
+ </td></tr>
+ </table>
+
+
+<p>to make a patch for newly added files. 
+Use <code>diff -Nu olddir/ newdir/</code> in case of multiple files to add.</p>
+
+<p>If you can't use <code>cvs diff</code> for some reason (computer not connected to the net,
+modified a Wine snapshot release rather than CVS, etc.), or just prefer not to use it, you can also use the
+<code>diff</code> program as the output of both programs is compatible. You will need
+a copy of the original tree you used, excluding any modification you did (let's label it
+<code>oldwinedir/</code>), and a copy of your modified tree without all the build files
+(<code>*.o</code>, <code>*.so</code>, etc.): let's label it <code>newwinedir/</code>. You can obtain such a tree
+by copying the one you use for development to a new directory and issuing a <code>make distclean</code> in it.
+Then, using the following command-line:</p>
+
+ <table width="300" border=0 cellpadding=10><tr><td class=black>
+ <span class=inverse>
+  diff -urN oldwinedir/ newwinedir/ &gt; patch.diff
+ </span>
+ </td></tr>
+ </table>
+
+<p>will get you a patch almost ready to be sent to <a href="?page=forums">wine-patches</a>.</p>
+
+<p>Include a comment for the changelog that gives your name and email address (if desired),
+along with a description of what your patch does. For examples of the formatting of
+patch submissions and changelog entries, read a few messages in the <a href="?page=forums">wine-patches</a>
+mailing list archive.  Please give your message a descriptive subject line.</p>
+
+<p>Be careful to not corrupt the patch through line-wrapping. If you are sending the patch
+in the body of the message, make sure that line-wrapping is turned off.  If you are using a GUI
+mail program like Outlook or Evolution, you may need to attach the patch file instead of simply
+inserting it in your message to avoid corruption.  If you send the patch as an attachment, please try
+to send the attachment using the text/plain MIME type.  This makes it much easier for readers of the email
+to look at your patch.</p>
+
+<p>Accepted patches will appear in the <a href="?page=forums">wine-cvs</a> mailing list. 
+Rejected patches might receive a note in the <a href="?page=forums">wine-devel</a> mailing list, 
+and accidentally ignored patches will disappear into
+a silent, featureless void. Please resubmit if this happens to your patch.</p>
+
+<p>There is no attempt to apply patches that appears in the newsgroup
+to the CVS tree. Please send patches to 
+<a href="mailto:wine-patches@winehq.com">wine-patches@winehq.com</a>.</p>
+
+<p>&nbsp;</p>
