@@ -2,6 +2,28 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since January 21, 2005:</p>
+
+ <ul>
+ <li>updates to the known todo's page</li>
+ <li>Put winecfg in Native Programs</li>
+ <li>Window management needs proper inter-process handling of activation, focus, repaint. has been completed</li>
+ <li>Workaround for the "no keyboard without Desktop mode" problem. has been fixed</li>
+ <li>Make sure ASCII functions call the Unicode one and not the other way around (alot of work has been done on this)</li>
+ <li>"Registry contents" is done as there is now a wine.inf script.</li>
+ <li>Eric has been hard at work implementing two winedbg todos.</li>
+ <li>We have now moved the file code into NTDLL and limited UNC support is available through manual mounting.</li>
+ <li>Huw has implemented bitmap fonts.</li>
+ <li>We have wineprefixcreate to automatically configure Wine.</li>
+ <li>We have largely separated 16-bit and Win9x only code and Unixisms from anything that can be shared.</li>
+ <li>Documentation fixes is too generic.</li>
+ <li>Network neighbourhood doesn't belong in comdlg32.</li>
+ <li>Audio and video renderers have been implemented by Christian.</li>
+ <li>New - [D3D](ddraw) section</li>
+ <li>Updated DirectX & Multimedia sections</li>
+ </ul>
+ <br>
+
 <p>Changes since January 20, 2005:</p>
 
  <ul>

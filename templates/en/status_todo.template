@@ -7,8 +7,8 @@
 <ul>
 <li>Rewrite Wine's window management code to be able to change the visual of an X window once the window has been created.</li>
 <li>In Desktop mode all processes started from one Wine invocation should be confined to one desktop window.</li>
-<li>Window management needs proper inter-process handling of activation, focus, repaint.</li>
-<li>Workaround for the "no keyboard without Desktop mode" problem.</li>
+<li>Get rid of x windows for child windows.</li>
+<li>Proper support for freedesktop.org standards.</li>
 
 </ul>
 
@@ -17,29 +17,12 @@
 <ul>
 <li>We currently lack a way to model hierarchical resources like those required by calendar information (each locale has a variable
     number of calendars, with different attributes). This is a show stopper for completing the NLS Api (Get/EnumCalendarInfo etc).</li>
-<li>Make sure ASCII functions call the Unicode one and not the other way around.(probably will stay forever.)</li>
+<li>Make sure ASCII functions call the Unicode one and not the other way around.</li>
 <li>Add localization to more languages.(probably will stay forever.)</li>
 <li>Add localization to more parts of Wine.(probably will stay forever.)</li>
 <li>Better support of Chinese, Korean, Japanese...(currently in works)</li>
 <li>Better support of BiDi - Arabic, Hebrew...</li>
-</ul>
-
-<h3><a name="Winecfg"></a>Wine configuration tool (winecfg)<br></h3>
-
-<pre>
-     If you are interested in working on the Wine configuration tool you will
-     want to read these two post on wine-devel.
-     <a href="http://www.winehq.org/hypermail/wine-devel/2004/07/0427.html">ToDo #1</a>     
-     <a href="http://www.winehq.org/hypermail/wine-devel/2004/08/0007.html">ToDo #2</a>
-</pre>     
-
-<h3><a name="Registry"></a>Registry contents<br></h3>
-
-<ul>
-<li>Implement DllRegisterServer for all COM components so that they can
-  register the appropriate keys in the registry when Wine is installed</li>
-<li>we also need to link that functionality into the wine install script</li>
-</ul>
+</ul>  
 
 <h3><a name="FreeBSD"></a>FreeBSD<br></h3>
 
@@ -49,18 +32,15 @@
 
 <h3><a name="WINEDBG"></a>Winedbg<br></h3>
 
-<pre>
-    * Make winedbg use dbghelp DLL
-    * Speed up PDB support
-     - Implement support for latest MSC formats 
-</pre>
+<ul>
+<li>Speed up PDB support</li>
+</ul>
 
 <h3><a name="GDB"></a>GDB<br></h3>
 
 <ul>
 <li>Add the MSC/PDB info support to gdb</li>
 </ul>
-
 
 <h3><a name="DDE"></a>DDE<br></h3>
 
@@ -71,22 +51,32 @@
 <h3><a name="Native_Programs"></a>Native Programs<br></h3>
 
 <pre>
-    * Winhelp: fix invocation thru WinHelp
+Regedit]
+
+    * Allow display and editting of binary (REG_BINARY) values.
+    * Allow display and editting of multi-string (REG_SZ_MULTI) values.
+    * Import registry files regerated by Windows 2000 regedit.
+
+[winecfg]
+
+    * Move all remaining config file entries into the registry
+    * Alot of testing still needs to be done
+
+[Winhelp]
+
+    * Fix invocation thru WinHelp
      - lots of macros are still missing
 </pre>
 
 <h3><a name="File_Management"></a>File Management<br></h3>
 
 <ul>
-<li>Implement NT file namespace</li>
-<li>UNC support</li>
-<li>Allow flexibility in FS &quot;mounting&quot; (for example, SMB shares)<br></li>
+<li>Allow flexibility in FS &quot;mounting&quot; (for example, SMB shares)</li>
 </ul>
 
 <h3><a name="FONTS"></a>Fonts<br></h3>
 
 <ul>
-<li>Support for non-TT fonts (eg Type1, bitmap,....)</li>
 <li>Subpixel rendering - a.k.a. ClearType</li>
 <li>Reduce per font startup time</li>
 </ul>
@@ -100,7 +90,6 @@
 <h3><a name="Tools_"></a>Tools<br></h3>
 
 <ul>
-<li>Wine installation process should install and configure Wine</li>
 <li>Perform Windows' reboot operations automatically when required</li>
 <li>Winemaker fixes</li>
 <li>Run C regression tests on Windows with MSVC</li>
@@ -126,11 +115,7 @@
 <h3><a name="PORTING"></a>Porting issues for Mingw/Cygwin/MS_VC<br></h3>
 
 <ul>
-<li>Better separation of win16/32 code</li>
-<li>Remove/rewrite win16/9x API dependency on newer code</li>
 <li>Remove/rewrite wineisms from code</li>
-<li>Rewrite/fix unixisms in most WINE dlls</li>
-<li>Documentation fixes</li>
 </ul>
 
 <h3><a name="x11drv"></a>X11drv<br></h3>
@@ -154,24 +139,12 @@
 <li>Implement SMB over Netbios</li>
 </ul>
 
-<h3><a name="COMDLG32"></a>Comdlg32<br></h3>
-
-<ul>
-<li>Add a Network Neighborhood-style browser to the file dialog</li>
-</ul>
-
 <h3><a name="NETAPI32"></a>Netapi32<br></h3>
 
 <ul>
 <li>Implement the Net* functions using rpcrt4</li>
 <li>Implement NetServerEnum and NetShareEnum using SMB</li>
 <li>Netbios support for IPX</li>
-</ul>
-
-<h3><a name="WININET"></a>Wininet</a><br></h3>
-
-<ul>
-<li>Needs thread safety and unicodization</li>
 </ul>
 
 <h3><a name="Winsock"></a>Winsock<br></h3>
@@ -226,7 +199,7 @@
 <h3><a name="GDI"></a>GDI<br></h3>
 
 <ul>
-<li>DIB engine</li>
+<li>Implement a DIB engine</li>
 </ul>
 
 <h3><a name="OLE"></a>OLE<br></h3>
@@ -246,70 +219,85 @@
 <pre>
 [DirectShow]
 
-    * Filter manager (IGraphBuilder)
-     - splitters
-     - transform filters
-    * Video renderer
-    * Audio renderer
-    * Registry entries
-
+    * finish graph control implementation (Run/Pause/Stop)
+    * extend graph building process by taken into account filters added manually to the filtergraph
+    * implement IReferenceClock in DSound renderer
+    * windowed mode support in video renderer
+    * generic splitter using libavformat (ffmpeg)
+    * generic audio & video decoders using libavcodec (ffmpeg)
+    * understand how plugin distributors work
+    * play by mixing builtin & native components
+    * capture stuff (CaptureGraphBuilder)
+    
 [DirectDraw]
 
     * YUV overlays
     * Support for FOURCC surface
 
-[D3D]
+[D3D](ddraw)
 
-    * Begin to share most of the openGL code between d3d8 and d3d9, begining with shaders, textures and state blocks
-    * Abstract APIs to be usable by ddraw
-    * Implement a better drawing pipeline thinking about hardware and software shaders
-    * Compressed texture support
-    * Improve Z Buffer support 
-    * Multi texturing (and more generally, OpenGL extension handling)
+    * Migration of D3D1-7 (ddraw) code to use wined3d (d3d7)?
+
+[D3D](d3d8, d3dx8, d3d9, wined3d)
+
+    * Finish wined3d migration: sharing code between d3d8 and d3d9 (shaders and state blocks)
+    * Add support for new d3d9 functionality
+    * Review the code adding in FIXMEs for unsupported new values or parameters provided in d3d9 or not handled by the code yet.
+    * Add testcases!
+    * More Compressed texture support (more exotic formats)
+    * Improve Z Buffer support (mainly for ATI cards)
     * Off screen rendering
     * Proper color keying
-    * Finish migration of D3D1-7 code to use d3dcore 
-    * Add hardware vertex shader and pixel shader support
     * LOD support
     * Multisampling (antialising) support
     * Palette texturing fixes (not really tested)
-    * Swapchain support
     * Better device management (mainly caps)
-    * index/vertex buffer hardware support
-    * Surface->DC handling
+    * Index/vertex buffer hardware support
+    * Surface->DC handling on wined3d (d3d9 needs)
     * Real Preloading support (using a memory manager)
     * UpdateTexture/UpdateSurface
     * various optimisations
+    * Swapchain support
+    * Implentation of dxdiagn (need for d3d9 this is the new way to check direct3d/directx version)
+    * Profile the code and identify hotspots for optimization
+    * Get the 3dmark software to the point of producing valuable output
 
 [DirectSound]
 
-    * Hardware accelerated direct sound capture driver support using the Windows CE2 HAL API
+    * Hardware accelerated direct sound capture driver support using the Windows CE3 HAL API
     * 3D buffer support in software is present but incomplete.
     * 3D buffer hardware support
     * Sound effects on buffers
     * Capture effects
     * Full duplex support is stubbed out but not functional.
+    * Fix stutter problems in 'Emulation' mode.
+    * Improve support for driver/soundcards that will only let us mmap the card's buffer at a fixed frequency.
+    * Automatically switch to 'Emulation' mode if the driver/soundcard does not support mmap-ing the card's buffer.
     * DX9 support for new PCM formats (24/32 bit and float samples) and for more than 2 channels is not present.
 
-[DirectMusic]
+[DirectMusic] (dmime, dmband, dmsynth, dmloader, dmcompos, dmstyle)
 
-    * DMusicPerformance scanning of files
+    * cleanup ParseDescriptor/Loading to have share code 
+    * use loaded datas (implementing Getters APIs and begin to play some sounds)
+    * load wave tracks (dswave)
+    * More tracks loading
+    * use play APIs in RT play thead (ProcessMsgThread in dmime/performance)
+    * implement dmusic32 APIs
 
-[Dmime]
-    * Segment tracks loading (all type of tracks needs to be implemented)
+[DMScript]
 
-[Dmscript]
-    * VB script execution support (actually only source is loaded). Maybe using a 
-      generic Wine VB script kernel (as the vbscript.dll seems to provide on 
-      windows) using ole32/com (most of the needs are already here)
+    * VB script execution support (actually only source is loaded). Maybe
+      using a generic Wine VB script kernel (as the vbscript.dll seems to
+      provide on windows) using ole32/com (most of the needs are already here)
 
 [DirectInput] 
 
     * Improve DX8 support (especially joystick)
 
-[DirectPlay] 
-
-    * Add support for DX8 
+[DirectPlay]
+ 
+    * Real support for dx8 (for now dpnet APIs are mainly stubs)
+    * d3d9 support
 
 [MSDMO]
 
@@ -335,6 +323,7 @@ all audio architecture:
      (impacts dsound.dll and winmm + all low level audio drivers)(will likely require a real installation scheme for MM drivers)
 
 ALSA multimedia driver:
+    * DirectSound capture
     * Mixer Support 
     * Check for 1.0 correctness
 
