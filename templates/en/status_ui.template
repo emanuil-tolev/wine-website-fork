@@ -26,9 +26,9 @@
 
       <td><strong>Visible Region</strong></td>
 	<td></td>
-	<td class="needed"></td>
-	<td class="needed"></td>
-	<td class="pct70">70%: Needs to handled through the server, fix scrolling bugs</td>
+	<td></td>
+	<td></td>
+	<td class="pcti90">90%: Is handled through the server now, some scrolling bugs remain</td>
 	<td><a href="mailto:julliard@winehq.org">Alexandre Julliard</a></td>
     </tr>
 
@@ -36,9 +36,9 @@
 
       <td><strong>Window Management</strong></td>
 	<td></td>
-	<td class="needed"></td>
-	<td class="needed"></td>
-	<td class="pct60">60%: Needs to be rewritten</td>
+	<td></td>
+	<td></td>
+	<td class="pct90">90%: Optimization of repainting on window moves, port some hacks from Crossover tree</td>
 	<td><a href="mailto:julliard@winehq.org">Alexandre Julliard</a></td>
     </tr>
 
@@ -105,7 +105,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/user/edit.c">LXR</a></td>
 	<td>Oct 8, 2004</td>
 	<td>Comctl32.dll 6.0</td>
-	<td class="pct80">80%: ES_{CENTER,RIGHT,NUMBER,OEMCONVERT}, !ES_AUTO[HV]SCROLL, EN_ALIGN_{LTR,RTL}_EC, EM_[GS]ETIMESTATUS, EM_[GS]ETCUEBANNER, EM_{SHOW,HIDE}BALLOONTIP</td>
+	<td class="pct80">80%: ES_{NUMBER,OEMCONVERT}, !ES_AUTO[HV]SCROLL, EN_ALIGN_{LTR,RTL}_EC, EM_[GS]ETIMESTATUS, EM_[GS]ETCUEBANNER, EM_{SHOW,HIDE}BALLOONTIP</td>
 	<td><a href="mailto:dtimoshkov@codeweavers.com">Dmitry Timoshkov</a></td>
     </tr>
 
@@ -528,7 +528,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/x11drv/">LXR</a></td>
 	<td></td>
 	<td></td>
-	<td class="pct80">80%: keyboard input problems, integration with window managers</td>
+	<td class="pct90">90%: some keyboard input problems, integration with window managers</td>
 	<td><a href="mailto:wine-devel@winehq.org">CodeWeavers</a></td>
     </tr>
 
@@ -538,7 +538,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/ttydrv/">LXR</a></td>
 	<td></td>
 	<td></td>
-	<td class="pct50">50%: we could possiably use an internal framebuffer and aalib</td>
+	<td class="pct90">90%: Mostly done.</td>
 	<td><a href="mailto:julliard@winehq.org">Alexandre Julliard</a></td>
     </tr>
 
