@@ -57,7 +57,9 @@
       <td>Wine's fundamental architecture</td>
       <td class="outdadeq"><a href="http://www.winehq.org/site/docs/wine-devel/architecture">Getting outdated</a></td>
       <td><a href="{$root}/site/?issue=50#Feature:%20Wine%20Architecture%20by%20Ove%20K%E5ven">#50</a>,
-          <a href="{$root}/site/?issue=154#Kernel%20Module%20/%20Shared%20Memory%20Revisited">#154</a></td>
+          <a href="{$root}/site/?issue=154#Kernel%20Module%20/%20Shared%20Memory%20Revisited">#154</a>,
+          <a href="{$root}/site/?issue=178#Viva%20la%20Kernel%20Module%20Idea">#178</a>,
+          <a href="{$root}/site/?issue=184#Environment%20Variable%20Handling%20in%20Wine's%20Config">#184</a></td>
       <td class="pct85">85% complete</td>
       <td>Alexandre Julliard</td>
     </tr>
@@ -81,7 +83,11 @@
           <a href="{$root}/site/?issue=159#Threading%20Work">#159</a>,
           <a href="{$root}/site/?issue=163#Making%20Wine%20Run%20With%20glibc%202.3">#163</a>,
           <a href="{$root}/site/?issue=165#Debugging%20Threads">#165</a>,
-          <a href="{$root}/site/?issue=170#NPTL%20Auto%20Detection%20&%20RH9%20Packages">#170</a></td>
+          <a href="{$root}/site/?issue=170#NPTL%20Auto%20Detection%20&%20RH9%20Packages">#170</a>,
+          <a href="{$root}/site/?issue=178#Structured%20Exception%20Handling%20Support%20for%20GCC">#178</a>,
+          <a href="{$root}/site/?issue=184#FreeBSD,%20OpenGL,%20and%20Pthreads">#184</a>,
+          <a href="{$root}/site/?issue=187#Glibc%20Breakage">#187</a>,
+          <a href="{$root}/site/?issue=192#Detecting%20NPTL%20At%20Runtime">#192</a></td>
       <td class="pct100">100% complete</td>
       <td>Alexandre Julliard</td>
     </tr>
@@ -123,7 +129,8 @@
       <td class="nonexistent">Nonexistent</td>
       <td><a href="{$root}/site/?issue=4#CRTDLL%20implementation">#4</a>,
           <a href="{$root}/site/?issue=55#Shared%20heaps">#55</a>,
-          <a href="{$root}/site/?issue=98#Virtual%20Memory%20Problems">#98</a></td>
+          <a href="{$root}/site/?issue=98#Virtual%20Memory%20Problems">#98</a>,
+          <a href="{$root}/site/?issue=188#Finding%20Memory%20Management%20Problems">#188</a></td>
       <td class="pct90">90% complete<br>
       Wine's memory manager is known to be slow.</td>
       <td>Alexandre Julliard</td>
@@ -131,7 +138,8 @@
     <tr>
       <td>Wine DLL infrastructure</td>
       <td class="outdated">Outdated</td>
-      <td><a href="{$root}/site/?issue=74#Feature:%20Of%20Dynamic%20loading%20in%20Wine%20by%20Eric%20Pouech">#74</a></td>
+      <td><a href="{$root}/site/?issue=74#Feature:%20Of%20Dynamic%20loading%20in%20Wine%20by%20Eric%20Pouech">#74</a>,
+          <a href="{$root}/site/?issue=188#Library%20Loading%20Problem">#188</a></td>
       <td class="pct95">95% complete</td>
       <td>Alexandre Julliard</td>
     </tr>
@@ -140,7 +148,8 @@
       <td class="nonexistent">Nonexistent</td>
       <td><a href="{$root}/site/?issue=69#DLLs%20get%20separated">#69</a>,
           <a href="{$root}/site/?issue=74#Feature:%20Of%20Dynamic%20loading%20in%20Wine%20by%20Eric%20Pouech">#74</a>,
-          <a href="{$root}/site/?issue=159#X11Drv%20/%20NTDll%20Separation">#159</a></td>
+          <a href="{$root}/site/?issue=159#X11Drv%20/%20NTDll%20Separation">#159</a>,
+          <a href="{$root}/site/?issue=189#Filesystem%20Roadmap">#189</a></td>
       <td class="pct80"><a href="{$root}/site/status_todo#Aspect_or_Component_">80% complete</a></td>
       <td>Alexandre Julliard,<br>Eric Pouech</td>
     </tr>
@@ -148,7 +157,9 @@
       <td>Native DLL overrides</td>
       <td class="good"><a href="http://www.winehq.org/site/docs/wine-user/dll-config">Good</a></td>
       <td><a href="{$root}/site/?issue=46#Feature:%20DLL%20overrides%20by%20Ove%20K%E5ven">#46</a>,
-          <a href="{$root}/site/?issue=134#Native%20vs.%20Builtin%20DLL's">#134</a></td>
+          <a href="{$root}/site/?issue=134#Native%20vs.%20Builtin%20DLL's">#134</a>,
+          <a href="{$root}/site/?issue=180#Configuring%20Native%20OLE%20DLL's">#180</a>,
+          <a href="{$root}/site/?issue=200#Using%20Native%20DLL's%20in%20a%20Winelib%20App">#200</a></td>
       <td class="pct95">95% complete</td>
       <td></td>
     </tr>
@@ -168,7 +179,8 @@
       <td>Window management</td>
       <td class="outdated">Outdated</td>
       <td><a href="{$root}/site/?issue=29#Managed%20mode%20metrics">#29,</a>,
-          <a href="{$root}/site/?issue=103#More%20Window%20Handling%20Additions">#103 </a></td>
+          <a href="{$root}/site/?issue=103#More%20Window%20Handling%20Additions">#103</a>,
+          <a href="{$root}/site/?issue=207#Some%20Patches%20That%20Appeared%20This%20Week">#207</a></td>
       <td class="pct85"><a href="{$root}/site/status_todo#Window_management">85% complete</a></td>
     </tr>
     <tr>
@@ -176,7 +188,11 @@
       <td class="nonexistent">Nonexistent</td>
       <td><a href="http://kt.zork.net/wine/wn20011212_110.html#5">#110</a>,
           <a href="{$root}/site/?issue=129#Using%20NT%20Pathnames">#129</a>,
-          <a href="{$root}/site/?issue=162#File%20Locking">#162</a></td>
+          <a href="{$root}/site/?issue=162#File%20Locking">#162</a>,
+          <a href="{$root}/site/?issue=184#Evolution%20of%20Wine's%20File%20Management">#184</a>,
+          <a href="{$root}/site/?issue=204#File%20Handling">#204 (1)</a>,
+          <a href="{$root}/site/?issue=204#Debating%20Kernel%20Support%20For%20I/O">#204 (2)</a>,
+          <a href="{$root}/site/?issue=209#New%20Filesystem%20Code%20Merge%20Commencing">#209</a></td>
       <td class="pct100">100% complete</td>
       <td>Mike McCormack</td>
     </tr>
@@ -207,7 +223,8 @@
     <tr>
       <td>X11 font mapper</td>
       <td class="poor">Poor</td>
-      <td><a href="{$root}/site/?issue=75#Wine%20and%20fonts">#75</a></td>
+      <td><a href="{$root}/site/?issue=75#Wine%20and%20fonts">#75</a>,
+          <a href="{$root}/site/?issue=187#Locating%20Font%20Paths">#187</a></td>
       <td class="pct90"><a href="{$root}/site/status_todo#Fonts">90% complete</a></td>
       <td>Huw D M Davies</td>
     </tr>
@@ -216,7 +233,8 @@
       <td class="poor">Poor</td>
       <td><a href="{$root}/site/?issue=119#Making%20Fonts%20Suck%20Less">#119</a>,
           <a href="{$root}/site/?issue=122#Use%20Xrender%20From%20XFree86%204.2.0+">#122</a>,
-          <a href="{$root}/site/?issue=159#Using%20Clientside%20Fonts">#159</a></td>
+          <a href="{$root}/site/?issue=159#Using%20Clientside%20Fonts">#159</a>,
+          <a href="{$root}/site/?issue=197#Using%20Standard%20Fonts">#197</a></td>
       <td class="pct80"><a href="{$root}/site/status_todo#Fonts">80% complete</a></td>
       <td>Huw D M Davies</td>
     </tr>
@@ -224,7 +242,9 @@
       <td>General printer setup</td>
       <td class="poor">Poor</td>
       <td><a href="{$root}/site/?issue=11#PrintDlg%20errors">#11</a>,
-          <a href="{$root}/site/?issue=12#Wine%20and%20printers">#12</a></td>
+          <a href="{$root}/site/?issue=12#Wine%20and%20printers">#12</a>,
+          <a href="{$root}/site/?issue=198#Default%20Printer%20Question">#198</a>,
+          <a href="{$root}/site/?issue=201#Printing%20With%20No%20Printer">#201</a></td>
       <td class="pct80"><a href="{$root}/site/status_todo#Printers_">80% complete</a></td>
       <td>Huw D M Davies</td>
     </tr>
@@ -240,10 +260,11 @@
       <td>National Language Support (NLS)</td>
       <td class="outdated">Outdated</td>
       <td><a href="{$root}/site/?issue=25#Better%20support%20for%20Cyrillic%20fonts">#25</a>,
-      <a href="{$root}/site/?issue=80#Chinese%20Wine">#80</a>,
-      <a href="{$root}/site/?issue=121#Euro%20Support">#121 (1)</a>,
-      <a href="{$root}/site/?issue=121#XIM%20Internationlization%20Patch">#121 (2)</a>,
-      <a href="{$root}/site/?issue=176#Brazilian%20Portuguese%20Localization">#176</a></td>
+          <a href="{$root}/site/?issue=80#Chinese%20Wine">#80</a>,
+          <a href="{$root}/site/?issue=121#Euro%20Support">#121 (1)</a>,
+          <a href="{$root}/site/?issue=121#XIM%20Internationlization%20Patch">#121 (2)</a>,
+          <a href="{$root}/site/?issue=176#Brazilian%20Portuguese%20Localization">#176</a>,
+          <a href="{$root}/site/?issue=189#Script%20to%20Help%20Translators">#189</a></td>
       <td class="pct90"><a href="{$root}/site/status_todo#National_Language_Support">90% complete</a></td>
       <td>Dmitry Timoshkov,<br>Alexandre Julliard,<br>Shachar Shemesh</td>
     </tr>
@@ -251,10 +272,11 @@
       <td>BiDi</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/msi/setup/bidi_control_attribute.asp">MSDN: BiDi Control</a></td>
       <td><a href="{$root}/site/?issue=119#Implementing%20BiDi%20Fonts">#119</a>,
-      <a href="{$root}/site/?issue=126#Preliminary%20BiDi%20Patch">#126</a>,
-      <a href="{$root}/site/?issue=127#Adding%20FriBiDi%20Support">#127</a>,
-      <a href="{$root}/site/?issue=132#BiDi%20Support">#132</a>,
-      <a href="{$root}/site/?issue=171#More%20BiDi%20Work?">#171</a></td>
+          <a href="{$root}/site/?issue=126#Preliminary%20BiDi%20Patch">#126</a>,
+          <a href="{$root}/site/?issue=127#Adding%20FriBiDi%20Support">#127</a>,
+          <a href="{$root}/site/?issue=132#BiDi%20Support">#132</a>,
+          <a href="{$root}/site/?issue=171#More%20BiDi%20Work?">#171</a>,
+          <a href="{$root}/site/?issue=183#BiDi%20Test%20Program">#183</a></td>
       <td class="pct50"><a href="{$root}/site/status_todo#National_Language_Support">50% complete</a></td>
       <td>Shachar Shemesh</td>
     </tr>
@@ -262,17 +284,18 @@
       <td>Clipboard handling</td>
       <td class="nonexistent">Nonexistent</td>
       <td><a href="{$root}/site/?issue=4#Wine%20clipboard%20enhancement%20plan">#4</a>,
-      <a href="{$root}/site/?issue=9#Clipboard%20(cont'd)">#9</a>,
-      <a href="{$root}/site/?issue=10#Clipboard%20behavior">#10</a>,
-      <a href="{$root}/site/?issue=157#Clipboard%20Implementation">#157</a>,
-      <a href="{$root}/site/?issue=177#Clipboard%20Problems">#177</a></td>
+          <a href="{$root}/site/?issue=9#Clipboard%20(cont'd)">#9</a>,
+          <a href="{$root}/site/?issue=10#Clipboard%20behavior">#10</a>,
+          <a href="{$root}/site/?issue=157#Clipboard%20Implementation">#157</a>,
+          <a href="{$root}/site/?issue=177#Clipboard%20Problems">#177</a></td>
       <td class="pct90">90% complete</td>
       <td></td>
     </tr>
     <tr>
       <td>Dynamic Data Exchange (DDE)</td>
       <td class="nonexistent">Nonexistent</td>
-      <td><a href="{$root}/site/?issue=105#DDEConnect%20Errors">#105</a></td>
+      <td><a href="{$root}/site/?issue=105#DDEConnect%20Errors">#105</a>,
+          <a href="{$root}/site/?issue=188#System%20Tray%20Support">#188</a></td>
       <td class="pct85"><a href="{$root}/site/status_todo#DDE">85% complete</a><br></td>
       <td>Eric Pouech</td>
     </tr>
@@ -315,7 +338,8 @@
     <tr>
       <td>Win32 Console</td>
       <td class="adeqgood">Good but somewhat outdated</td>
-      <td><a href="{$root}/site/?issue=137#CreateProcessA()%20and%20Environment%20Settings">#137</a></td>
+      <td><a href="{$root}/site/?issue=137#CreateProcessA()%20and%20Environment%20Settings">#137</a>,
+          <a href="{$root}/site/?issue=179#Running%20Commandline%20Apps">#179</a></td>
       <td class="pct85">85% complete</td>
       <td>Eric Pouech</td>
     </tr>
@@ -353,7 +377,11 @@
       <td class="adequate">Adequate</td>
       <td><a href="{$root}/site/?issue=20#Wine's%20debugger%20evolution">#20</a>,
           <a href="{$root}/site/?issue=170#Valgrinding%20Wine">#170</a>,
-          <a href="{$root}/site/?issue=167#Improving%20Wine's%20Debugger">#167</a></td>
+          <a href="{$root}/site/?issue=167#Improving%20Wine's%20Debugger">#167</a>,
+          <a href="{$root}/site/?issue=181#Debug%20Problem%20With%20Win98%20Version">#181</a>,
+          <a href="{$root}/site/?issue=192#Setting%20Up%20A%20Backtrace">#192</a>,
+          <a href="{$root}/site/?issue=199#List%20of%20Debug%20Channels">#199</a>,
+          <a href="{$root}/site/?issue=201#Delayed%20Debug%20Tracing">#201</a></td>
       <td class="pct85"><a href="{$root}/site/status_todo#GDB">85% complete</a></td>
       <td>Eric Pouech</td>
     </tr>
@@ -361,7 +389,9 @@
       <td>Wine Porting Tool (winemaker)</td>
       <td class="outdated">Outdated</td>
       <td><a href="{$root}/site/?issue=66#A%20tool%20to%20help%20Wine%20making">#66</a>,
-          <a href="{$root}/site/?issue=101#Using%20Native%20DLL's">#101</a></td>
+          <a href="{$root}/site/?issue=101#Using%20Native%20DLL's">#101</a>,
+          <a href="{$root}/site/?issue=189#Winelib:%20Advantages%20and%20Disadvantages">#189</a>,
+          <a href="{$root}/site/?issue=203#Winelib%20Porting%20Report">#203</a>,</td>
       <td class="pct60"><a href="{$root}/site/status_todo#Tools_">60% complete</td>
       <td>CodeWeavers,<br>Fran&ccedil;ois Gouget</td>
     </tr>
@@ -396,14 +426,16 @@
     <tr>
       <td>Wine Setup Tool (winesetuptk)</td>
       <td class="poor">Poor</td>
-      <td><a href="{$root}/site/?issue=128#Graphical%20Configuration%20Tool">#128</a></td>
+      <td><a href="{$root}/site/?issue=128#Graphical%20Configuration%20Tool">#128</a>,
+          <a href="{$root}/site/?issue=193#WineSetupTk%20Resurrected">#193</a>,
+          <a href="{$root}/site/?issue=194#Winesetuptk%200.7%20Released">#194</a></td>
       <td class="pct100">100% complete</td>
       <td>Ivan Leo Murray-Smith,<br>Vincent Béron,<br>Alex Pasadyn</td>
     </tr>
     <tr>
       <td>Wine gcc wrapper(winegcc)</td>
       <td class="nonexistent">Nonexistent</td>
-      <td>None</td>
+      <td><a href="{$root}/site/?issue=179#Winegcc%20and%20Shared%20Libraries">#179</a></td>
       <td class="pct70">70% complete</td>
       <td>Dimitrie O. Paun</td>
     </tr>
@@ -421,14 +453,21 @@
           <a href="{$root}/site/?issue=120#CreateProcess%20Test">#120</a>,
           <a href="{$root}/site/?issue=121#More%20Tests">#121</a>,
           <a href="{$root}/site/?issue=136#No%20More%20Perl%20Regression%20Tests">#136</a>,
-          <a href="{$root}/site/?issue=157#Testing%20for%20Unimplemented%20Functionality">#157</a></td>
+          <a href="{$root}/site/?issue=157#Testing%20for%20Unimplemented%20Functionality">#157</a>,
+          <a href="{$root}/site/?issue=190#Winetests%20Compiled%20with%20MSVC">#190</a>,
+          <a href="{$root}/site/?issue=199#Winetest%20Integrated%20&%20Future%20Steps">#199</a>,
+          <a href="{$root}/site/?issue=205#Regression%20Testing%20Revisited">#205</a></td>
       <td class="pct70">70% complete</td>
-      <td>Andriy Palamarchuk,<br>Fran&ccedil;ois Gouget</td>
+      <td>Andriy Palamarchuk,<br>Fran&ccedil;ois Gouget,<br>Paul Millar,<br>Jakob Eriksson</td>
     </tr>
     <tr>
       <td>Wine configuration tool (winecfg)</td>
       <td class="nonexistent">Nonexistent</td>
-      <td><a href="{$root}/site/?issue=159#Making%20Config%20Tools">#159</a></td>
+      <td><a href="{$root}/site/?issue=159#Making%20Config%20Tools">#159</a>,
+          <a href="{$root}/site/?issue=186#Winecfg%20Revisited">#186</a>,
+          <a href="{$root}/site/?issue=188#Winecfg%20Status%20&%20Preferences">#188</a>
+          <a href="{$root}/site/?issue=189#Don't%20Translate%20Winecfg..%20Yet">#189</a>,
+          <a href="{$root}/site/?issue=206#Winecfg%20Additions">#206</a></td>
       <td class="pct50">50% complete</td>
       <td>Dimitrie O.Paun,<br>Mike Hearn,<br>Chris Morgan</td>
     </tr>
@@ -456,7 +495,8 @@
     <tr>
       <td>Wine menu builder (winemenubuilder)</td>
       <td class="nonexistent">Nonexistent</td>
-      <td>None</td>
+      <td><a href="{$root}/site/?issue=191#The%20Start%20Menu">#191</a>,
+          <a href="{$root}/site/?issue=192#Integrating%20Start%20Menu%20Shortcuts">#192</a></td>
       <td class="pct90">90% complete</td>
       <td>Mike McCormack</td>
     </tr>
@@ -468,8 +508,8 @@
       <td class="poor">Poor</td>
       <td><a href="{$root}/site/?issue=48#MZ%20(aka%20DOS)%20executable%20support">#48</a>,
           <a href="{$root}/site/?issue=52#Feature:%20Replacing%20Windows%20by%20Ove%20K%E5ven">#52</a></td>
-      <td class="pct25"><a href="{$root}/site/status_todo#Registry">25% complete</a></td>
-      <td></td>
+      <td class="pct80"><a href="{$root}/site/status_todo#Registry">80% complete</a></td>
+      <td>Chris Morgan</td>
     </tr>
     <tr>
       <td>Initial directory structure</td>
@@ -477,15 +517,14 @@
       <td><a href="{$root}/site/?issue=52#Feature:%20Replacing%20Windows%20by%20Ove%20K%E5ven">#52</a>,
           <a href="{$root}/site/?issue=173#Adding%20a%20Root%20Drive%20Mapping">#173</a></td>
       <td class="pct90">90% complete</td>
-      <td></td>
+      <td>Chris Morgan</td>
     </tr>
     <tr>
       <td>Initial INI files</td>
       <td class="poor">Poor</td>
       <td>None</td>
-      <td class="pct40">40% complete<br>
-      Multimedia is preconfigured, but not printing.</td>
-      <td></td>
+      <td class="pct80">80% complete<br>
+      <td>Chris Morgan</td>
     </tr>
   </table>
 </td>

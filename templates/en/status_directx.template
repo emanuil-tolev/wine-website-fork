@@ -58,7 +58,8 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx8_c/directx_cpp/graphics_iface_3ayb.asp">MSDN: Direct3D 8.0 Reference</a></td>
       <td><a href="{$root}/site/?issue=152#Direct%203D%20Status">#152</a>, 
           <a href="{$root}/site/?issue=170#Direct3D%20Status">#170</a>, 
-          <a href="{$root}/site/?issue=174#Direct3D%20To%20Do%20List">#174</a></td>
+          <a href="{$root}/site/?issue=174#Direct3D%20To%20Do%20List">#174</a>,
+          <a href="{$root}/site/?issue=182#DirectX%20/%20Operation%20Flashpoint">#182</a></td>
       <td class="pct80">80% complete</a></td>
       <td>Rapha&euml;l Junqueira,<br><a href="http://www.badcomp.co.uk/">Jason Edmeades</a>,<br>Christian Costa</td>
     </tr>
@@ -163,27 +164,6 @@
       <td class="pct70">70% complete</a></td>
       <td>Lionel Ulmer,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
     </tr>
-    <tr>
-    <td>joystick</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directx/input/using/devicedata/joystickdata.asp">MSDN: Joystick Data </a></td>
-      <td>None</td>
-      <td class="pct50">50% complete</td>
-      <td>Lionel Ulmer,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
-    </tr>
-    <tr>
-    <td>keyboard</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directx/input/using/devicedata/keyboarddata.asp">MSDN: Keyboard Data</a></td>
-      <td>None</td>
-      <td class="pct50">50% complete</td>
-      <td>Lionel Ulmer,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
-   </tr>
-    <tr>
-    <td>mouse</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directx/input/using/devicedata/mousedata.asp">MSDN: Mouse Data</a></td>
-      <td>None</td>
-      <td class="pct50">50% complete</td>
-      <td>Lionel Ulmer,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
-    </tr>
     <td colspan="5"><strong>DirectMusic</strong></td>
     <tr>
     <td>dmband.dll</td>
@@ -237,7 +217,8 @@
     <tr>
     <td>dmusic.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directX/htm/directmusic.asp">MSDN: DMusic</a></td>
-      <td><a href="{$root}/site/?issue=175#DMusic%20Interfaces">#175</a></td>
+      <td><a href="{$root}/site/?issue=175#DMusic%20Interfaces">#175</a>,
+          <a href="{$root}/site/?issue=203#DirectMusic%20Update">#203</a></td>
       <td class="pct5">5% complete</td>
       <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
     </tr>

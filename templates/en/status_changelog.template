@@ -2,6 +2,22 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since February 17, 2004:</p>
+ 
+ <ul>
+ <li>ADD - rsabase.dll</li>
+ <li>ADD - Chris Morgan as worker to Initial registry contents</li>
+ <li>ADD - Chris Morgan as worker to Initial directory structure</li>
+ <li>ADD - Chris Morgan as worker to Initial INI files</li>
+ <li>ADD - Paul Millar and Jakob Eriksson as workers to Wine Conformance Test Suite</li>
+ <li>ADD - WWN Article links</li>
+ <li>Remove - joystick,keyboard,mouse sections under dinput subdirectories have been removed.</li>
+ <li>Initial registry contents 25% -&gt; 80%</li>
+ <li>Initial INI files 40% -&gt; 80%</li>
+ <li>uxtheme.dll 20% -&gt; 60%</li>
+ </ul>
+ <br>
+
 <p>Changes since January 28, 2004:</p>
 
  <ul>
