@@ -94,12 +94,12 @@
     <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to HEAP_strdupWtoA
     <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to StartDocA
     <li class=committed>dlls/imm32/imm.c: imm32: ImmGetCompositionStringW: illegal call to GetVersionExA
-    <li>dlls/kernel/comm.c: kernel32: BuildCommDCBAndTimeoutsW: illegal call to BuildCommDCBAndTimeoutsA
-    <li>dlls/kernel/comm.c: kernel32: BuildCommDCBAndTimeoutsW: illegal call to HEAP_strdupWtoA
+    <li class=submitted>dlls/kernel/comm.c: kernel32: BuildCommDCBAndTimeoutsW: illegal call to BuildCommDCBAndTimeoutsA
+    <li class=submitted>dlls/kernel/comm.c: kernel32: BuildCommDCBAndTimeoutsW: illegal call to HEAP_strdupWtoA
     <li>dlls/kernel/comm.c: kernel32: CommConfigDialogW: illegal call to CommConfigDialogA
     <li>dlls/kernel/comm.c: kernel32: CommConfigDialogW: illegal call to HEAP_strdupWtoA
-    <li>dlls/kernel/comm.c: kernel32: GetDefaultCommConfigW: illegal call to GetDefaultCommConfigA
-    <li>dlls/kernel/comm.c: kernel32: GetDefaultCommConfigW: illegal call to HEAP_strdupWtoA
+    <li class=submitted>dlls/kernel/comm.c: kernel32: GetDefaultCommConfigW: illegal call to GetDefaultCommConfigA
+    <li class=submitted>dlls/kernel/comm.c: kernel32: GetDefaultCommConfigW: illegal call to HEAP_strdupWtoA
     <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to HEAP_strdupWtoA
     <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to SetDefaultCommConfigA
     <li>dlls/kernel/format_msg.c: kernel32: FormatMessageW: illegal call to GetModuleHandleA
