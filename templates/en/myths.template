@@ -167,7 +167,7 @@ But these days are long gone. The Windows 3.1 support may still be more
 complete than that of the Win32 API but most of the development nowadays
 happens for the Win32 API. Furthermore I should point out two more
 things. First, it seems people complaining about Wine supporting only
-Windows 3.1 usually do not realise that Wine also includes some support
+Windows 3.1 usually do not realize that Wine also includes some support
 for the DOS API. That's because a non negligible percentage of Windows
 3.1 and even Windows 9x applications still make calls to the DOS
 interrupts! Second, Winelib only supports the Win32 API. The Win16 header
