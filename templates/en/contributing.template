@@ -2,62 +2,110 @@
 
 <h1>Contributing to Wine</h1>
 
-<p>We are glad that you are showing interest in contributing to Wine !<br>
-<br>
-There are 4 ways to support Wine:
-<ul>
-  <li><a href="#active">Getting actively involved in the Wine project</a>
-  <li><a href="#project">Project based funding</a>
-  <li><a href="#donate">Monetary or equipment donations</a>
-  <li><a href="#other">Donations to other related organizations</a>
-</ul>
+<p>We are glad that you are showing interest in contributing to Wine !
+</p>
+<p>Here are 15 of many ways to support Wine:
+</p>
+
+ <ol type="A">
+  <li><a href="#web_site">General maintenance</a>
+
+   <ol>
+    <li><a href="#web">Web site maintenance</a>
+    </li><li><a href="#draw">Draw icons for wine</a>
+    </li><li><a href="#app_owners">Application owners</a>
+    </li><li><a href="#support">Bug hunting and support</a>
+   </li></ol>
+  </li><li><a href="#devel">Development</a>
+
+   <ol>
+    <li><a href="#devel_task">Some development task</a>
+    </li><li><a href="#conf_tests">Conformance tests</a>
+    </li><li><a href="#cross">Cross referencing the windows executables and libraries</a>
+    </li><li><a href="#doc_win_api">Documentation of the windows API functions</a>
+    </li><li><a href="#check_which">Check which APIs are missing for a given program</a>
+
+    </li><li><a href="#port_app">Port your windows application to wine</a>
+    </li><li><a href="#code_review">Perform a focused code review</a>
+   </li></ol>
+  </li><li><a href="#docu">Documentation</a>
+   <ol>
+    <li><a href="#doc">Documentation writing</a>
+    </li><li><a href="#localized">Localization work</a>
+
+   </li></ol>
+  </li><li><a href="#pr">Public relations</a>
+   <ol>
+    <li><a href="#pr_manager">PR manager</a>
+  </li></ol>
+ </li>
+ <li><a href="#donations">Donations</a>
+    <ol><li><a href="#wpf">Wine Party Fund</a></li></ol>
+ </li>
+
+</ol>
 
 <p>Have a look at our <a href="#ack">acknowledgements</a> for entities who
 already contributed in one way or another.
 
-<p><hr size=2 noshade>
-<p>
+</p>
 
-<a name="active"><h2>Getting actively involved in the Wine project</h2></a>
+<hr size="2" noshade="noshade">
 
-<p>Wine is a large project which touches many different areas, from
-web maintenance, to documentation, to testing, to bug triaging and
-coding. The amount of work in each of these areas is huge and we could
-accommodate several times as many contributors as we currently have.
-So whatever your skills, we are sure that you can find a way to
-contribute in a very meaningful way.
+<h2><a name="active">How can I contribute to Wine?</a></h2>
+<p>It's easy to be a bit overwhelmed when you're new to Wine. Yes there may be a lot of things to 
+do but where should you start? Is there anything simple that can get you started? Is there 
+anything you can do that does not require an intimate knowledge of the Windows API and of 
+Wine's internals? What if you don't know C? Or if you're not a programmer in the first place?
+</p>
+<p>So here are a few projects that might provide you with a starting point. Note that this list 
+is not an official statement of what should be done on Wine or anything. It's just a list of 
+things that are important and useful. In any case we welcome your feedback. Similarly, if you 
+can think of projects to add to the list let us know too.
+</p>
+<p>Many projects can be performed even if you are not a C programmer or if you don't have an intricate 
+knowledge of the Windows internals. Let us know if you are interested in tackling a given project.
+</p>
+<p>Here is a few items to help you get started:
+</p>
 
-<p>Here are a few items to help you get started:<BR>
+<a href="#TOP">Back to top</a>
 
+<hr size="2" noshade="noshade">
+<h2><a name="web_site">General maintenance</a></h2>
+<hr size="2" noshade="noshade">
 
-<h3><a name="conf_tests">Writing conformance tests</a></h3>
-<p>The goal of Wine's conformance testing is to make sure that the behavior 
-of Wine's APIs conforms to that of the corresponding Windows API. The test
-suite is far from complete but every little bit helps:
+<h3><a name="web">Web site maintenance</a></h3>
+<p>We are in the process of redoing the web site and we really could use some help.
+The current beta is located at <a href="http://lostwages.winehq.org">http://lostwages.winehq.org</a>
+Here is the current list of bugs that needs attention: 597, 598, 600, 601, 605, 607, 608.If you would
+like to offer assistance with web maintenace feel free to contact <a href="mailto:wine-devel@winehq.com">
+Wine-Develipmont</a>.
+</p>
+<p>You may also want to look at the discussion that 
+took place on <a href="http://www.winehq.com/hypermail/wine-devel/2002/11/0358.html">Wine-Devel</a>
+
+mailing list.
+</p>
+Required skills:
 <ul>
-  <li>because they can be run in an automated way, and on a regular basis, 
-    the tests help detect regressions in Wine
-  <li>the tests can be written in advance of the implementation of Wine
-    features and then help the Wine implementer make sure his implementation
-    is correct
-  <li>tests can even be written on Windows by non Wine developers
-</ul>
-<!-- FIXME:
-Also point to the wine-devel documentation... as soon as it is written
--->
+<li>General Web design 
+</li></ul>
 
-<p>Requirements:
+<h3><a name="draw">Draw icons for Wine</a></h3>
+<p>Wine cannot reuse the Windows icons verbatim because of copyright issues. So we have to redraw 
+them, keeping a similar design so that users are not completely lost, all while making them 
+different enough (and possibly nicer). You'll see this if you open a file selection dialog 
+(but should the folder icons really be grey???).
+</p>
+Required skills:
 <ul>
-  <li>either C or perl skills
-  <li>knowledge of the APIs being tested
-  <li>using Linux/Unix is <b>not necessary</b>, conformance tests can be
-    written on Windows
-</ul>
+<li>Drawing skills 
+</li></ul>
 
 <h3><a name="app_owners">Application database: application owners</a></h3>
 
-<p>As mentioned above, the conformance testing suite is incomplete. So
-another very important aspect of Wine testing is to use or test real
+<p>Another very important aspect of Wine testing is to use or test real
 applications regularly and report regressions as soon as possible to the Wine 
 developers. This way regressions are caught early, while the set of changes
 to search through is still small and the Wine developer who made the change
@@ -65,126 +113,91 @@ still around. Another reason why <b>your</b> contribution is especially
 valuable is that Wine developers probably do not have access to the
 application (they cannot buy all the applications out there) or do not know
 it well enough to test it properly.
-
+</p>
 <p>You can help even further by becoming an 'application owner', that is by 
-maintaining that application's entry in the <a
-href="http://appdb.winehq.org">Application Database</a>. Many 
+maintaining that application's entry in the <a href="http://appdb.winehq.org/">Application Database</a>. Many 
 applications can be made to run (or run better) by using just the right mix
-of native (Windows) and builtin (Wine) libraries. By testing the application 
+of native (Windows) and built-in (Wine) libraries. By testing the application 
 with various library mix and then documenting your results in the
 corresponding Application Database entry, you will help other Wine users be
 productive with that application, thus making Wine useful to a greater number
 of people.
-
-<p>Requirements:
+</p>
+Required skills:
 <ul>
-  <li>good knowledge of a particular application
-  <li>being dedicated to using / testing this application with each new Wine
+  <li>Good knowledge of a particular application
+  </li><li>Being dedicated to using / testing this application with each new Wine
     release or more often. It is more important to test one application
     regularly than ten applications once a year.
-  <li>report all regressions to wine-devel, and cooperate with the developers 
+  </li><li>Report all regressions to wine-devel, and cooperate with the developers 
     to diagnose the issue.
-  <li>create and maintain an HOWTO Note on the application page summarizing 
+  </li><li>Create and maintain an HOWTO Note on the application page summarizing 
     all actions required to get the application to run properly, e.g. 
     collected from the comments of visitors on the application/versions pages
-  <li>coding skills <b>not necessary</b>
-</ul>
+  </li><li>Coding skills <b>not necessary</b>
 
-<h3><a name="appdb_admin">Application database: maintainer</a></h3>
-
-<font color="red">Currently sufficient number of maintainers available.</font>
-
-<p>The <a href="http://appdb.codeweavers.com">Wine application database</a>
-needs maintenance.
-Currently a Wine developer is periodically checking
-for new application submissions and committing them when available.
-Needless to say, a Wine developer could make better use of his time than
-maintaining the AppDB.
-If you want to maintain the AppDB, then send mail to <a
-href="mailto:appdb@codeweavers.com">appdb@codeweavers.com</a>.
-
-<p>Requirements:
-<ul>
-  <li>enough time to check AppDB periodically at least once a week on average
-  <li>preferrably good knowledge of Windows applications (games seem to be the
-  most important part of the AppDB, by the way)
-</ul>
-
-<p>How to do it:
-<ul>
-  <li>check for app in queue
-  <li>check whether same app already registered
-  <dir>
-  - reject if already there, or alternatively add new description text to
-    existing app<br>
-  - add to existing app if it's a new version (listbox -&gt; "Version", choose parent app)<br>
-  </dir>
-  <li>check company name
-  <dir>
-  - check whether existing in listbox<br>
-  if not existing:<br>
-  - check out company homepage if given<br>
-  - correct company name to show full, "official" name<br>
-  </dir>
-  <li>URL:
-  <dir>
-  - add http:// prefix if not given
-  - add URL if not given but available on the net
-  </DIR>
-</ul>
-
+</li></ul>
 
 <h3><a name="support">Bug hunting and support</a></h3>
 <p>Because there are so many Windows applications out there, and because 
 very few of them work perfectly, we get a lot of questions from users, 
 many bug reports that need to be diagnosed and then many bugs to fix.
-
+</p>
 <p>Thus bug diagnosis and support are two closely related activities that are 
 very important to Wine. So we need people willing to answer the questions 
 and issues that pop up on the newsgroup, wine-users and Bugzilla; and then 
 to triage them:
+</p>
 <ul>
-  <li>general Wine issues can usually be answered directly
-  <li>for application-specific issues one may want to check with the
+  <li>General Wine issues can usually be answered directly
+  </li><li>For application-specific issues one may want to check with the
     application owner (if any) to see if this is a known issue (ideally such
     issues should be listed in that application's entry)
-  <li>other issues require more work to determine whether the problem is
+  </li><li>Other issues require more work to determine whether the problem is
     reproducible, specific to some environments, and to obtain logs that Wine
     developers can use to determine where the problem comes from
     (requires getting enough of an idea of where the problem comes from to 
     determine which debug options to use). Once this is done, it will be
     much easier for Wine developers to find the exact source of the bug and
-    to come up for a fix. A <a href="http://bugs.winehq.com">Bugzilla</a>
-    report can also be created which will retain its usefulness much longer
-    than if it just contained a vague description of the symptoms.
-</ul>
+    to come up with a fix.If the problem is not quickly resolved on the newsgroup
+    or wine-users then starting a bug report in bugzilla. Search through the 
+    unconfirmed and new bug reports and get them in proper shape for developers. 
+    Subscribe to to wine bugs (<a href="mailto:wine-bugs@winehq.org">wine-bugs@winehq.org</a>) 
+    This read-only list has all entries for unassigned bugs sent to it.Confirmiming unconfirmed bugs and 
+    suggesting debug channels to try are just some of the tasks that need to be done
+</li></ul>
+Required skills:
 
-<p>Requirements:
 <ul>
-  <li>general knowledge of the Wine configuration to be able to tell 
+  <li>General knowledge of the Wine configuration to be able to tell 
      users how to switch from managed to unmanaged window management, how to 
      disable FreeType support, etc.
-  <li>general knowledge of the Wine issues, mostly gleaned by following the 
+  </li><li>General knowledge of Wine issues, mostly gleaned by following the 
      mailing lists and newsgroup.
-  <li>knowing how to switch from native to builtin libraries and vice-versa.
-  <li>being able to analyze a log to determine which libraries to switch
-    from builtin to native and vice-versa would be a plus.
-</ul>
+  </li><li>Knowing how to switch from native to built-in libraries and vice-versa.
+  </li><li>Being able to analyze a log to determine which libraries to switch
+    from built-in to native and vice-versa would be a plus.
+</li></ul>
 
+<a href="#TOP">Back to top</a>
 
+<hr size="2" noshade="noshade">
 <h3><a name="devel">Development</a></h3>
-<p>
-The overall implementation status of Wine can be checked on the <a
-href="/about/index.php?status">Wine Status
-page</a>.<br>
-See the following tasklists to find a development task:
+<hr size="2" noshade="noshade">
+
+<h3><a name="devel_task">Some Development Task</a></h3>
+
+<p>The overall implementation status of Wine can be checked on the <a href="http://www.dssd.ca/about/index.php?status">Wine Status
+page</a>.</p>
+<p>See the following task lists to find a development task:
+</p>
 <ul>
-  <li><a name="tasklets"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=Wine&keywords=tasklet&keywords_type=anywords">Tasklets</a><br>
+  <li><a name="tasklets"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;keywords=tasklet&amp;keywords_type=anywords">Tasklets</a><br>
      This list regroups tasks that have a well-defined and limited
      scope. If you are new to Wine or only have a limited amount of time, 
      this list is meant for you. Tasks on this list typically 
      involve fixing bugs that only touch on a couple of functions,
-     implementing a couple new reasonaly simple APIs or simple
+     implementing a couple new reasonably simple APIs or simple
      extensions to an existing API. Some may have a wider scope but
      would then be composed of smaller chunks so that you can tackle
      only one chunk and still have something that can be submitted. 
@@ -192,17 +205,17 @@ See the following tasklists to find a development task:
      a task may require being knowledgeable in Lex/Yacc so if you have
      an expertise in a given domain you may want to scan it.
 
-
-  <li><a name="FIXMEs"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=Wine&keywords=FIXME&keywords_type=anywords">FIXMEs</a><br>
+  </li><li><a name="FIXMEs"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;keywords=FIXME&amp;keywords_type=anywords">FIXMEs</a><br>
     This list contains tasks that are intermediate between those found
-    in the Tasklist and the Tasklets. Issues found in this list are
+    in the Task list and the Task lets. Issues found in this list are
     well diagnosed, that is, we know which function or functionality is
     missing / buggy. And while the fix may not be very easy to 
     implement, it normally is not thought to require extensive 
     knowledge of multiple areas of Wine, or extensive reorganization 
     of the Wine code.
 
-  <li><a name="tasklist"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=Wine&keywords=tasklist&keywords_type=anywords">Tasklist</a><br>
+  </li><li><a name="tasklist"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;keywords=tasklist&amp;keywords_type=anywords">Tasklist</a><br>
+
     The major development tasks are listed there. This is the place to
     check out if you want to get involved in one of the larger / 
     longer-term projects. Bugs placed in this list have the following
@@ -212,15 +225,16 @@ See the following tasklists to find a development task:
         restructuring of existing functionality or new drivers for 
         sound/video/etc.) rather than simply bug fixes of the types
         found in the previous lists
-      <li>they are reasonably well-defined, at least in the
+      </li><li>they are reasonably well-defined, at least in the
         functionality to be provided if not in the implementation 
         details
-      <li>normally include a rational for why such development is
+      </li><li>normally include a rational for why such development is
         desirable
-    </ul>
+    </li></ul>
 
-  <li><a name="wine_0_9_0"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=Wine&target_milestone=0.9.0&order=bugs.bug_severity">Wine 0.9.0</a>
-    and <a name="wine_1_x"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=Wine&target_milestone=1.0.0&order=bugs.bug_severity">Wine 1.x</a> task overviews<br>
+  </li><li><a name="wine_0_9_0"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;target_milestone=0.9.0&amp;order=bugs.bug_severity">Wine 0.9.0</a>
+    and <a name="wine_1_x"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;target_milestone=1.0.0&amp;order=bugs.bug_severity">Wine 1.x</a> task overviews<br>
+
     Regroups the issues that need to be resolved before Wine 0.9.0 can
     be released. One word about Wine 0.9.0 and Wine 1.0: Wine 1.0 
     does not mean that Wine will run all Windows applications. It
@@ -229,176 +243,299 @@ See the following tasklists to find a development task:
       <li>Wine is ready for use by the general public for selected
         applications (that set will be determined by what Wine supports,
         not the other way around)
-      <li>applications based on an old version of Wine/Winelib will
+      </li><li>Applications based on an old version of Wine/Wine lib will
         work with a new version of the Wine server
-      <li>the stable branches of Wine should not suffer major
+      </li><li>The stable branches of Wine should not suffer major
         regressions. An application that works in 1.0.x should work in
-        1.0.y if y>x.
-    </ul>
+        1.0.y if y&gt;x.
+    </li></ul>
     Wine 0.9.0 is the first step towards these goals:
     <ul>
-      <li>when the items in this list have been completed, we release
+      <li>When the items in this list have been completed, we release
         0.9.0
-      <li>at this point we should be ready to have increased user
+      </li><li>at this point we should be ready to have increased user
         participation for using, testing and documenting Wine
-      <li>during 0.9.1, 0.9.2, etc. we do a progressive code freeze
-      <li>then when everything is frozen we release 1.0
-      <li>after 1.0.0 we will have stable and unstable branches
-    </ul>
-</ul>
+      </li><li>During 0.9.1, 0.9.2, etc. we do a progressive code freeze
+      </li><li>Then when everything is frozen we release 1.0
+      </li><li>After 1.0.0 we will have stable and unstable branches
+    </li></ul>
+
+    </li></ul>
+
+<h3><a name="conf_tests">Conformance tests</a></h3>
+<p>The goal of Wine's conformance testing is to make sure that the behavior 
+of Wine's APIs conforms to that of the corresponding Windows API. As there are many versions
+Window's from 95 to XP we need people to write the test as well as volunteers to run
+the test on Windows. The test suite is far from complete but every little bit helps. 
+</p>
+<ul>
+  <li>Because they can be run in an automated way, and on a regular basis, 
+    the tests help detect regressions in Wine
+  </li><li>The tests can be written in advance of the implementation of Wine
+    features and then help the Wine implementer make sure his implementation
+    is correct
+  </li><li>Tests can even be written on Windows by non Wine developers
+  </li><li>Test can be performed by none programer's
+</li></ul>
+Required skills:
+<ul>
+  <li>Either C or perl skills
+  </li><li>Knowledge of the APIs being tested
+  </li><li>Using Linux/Unix is <b>not necessary</b>, conformance tests can be
+    written on Windows
+  </li><li>A Windows install for testing...95, 98, 98SE, ME, XP, NT, 2000
+  </li><li>Coding skills <b>not necessary</b> for running the test
+
+</li></ul>
+
+<h3><a name="cross">Cross referencing the Windows executables and libraries</a></h3>
+<p>The idea is to write a Perl script that analyzes the Windows dlls and executables of a 
+regular Windows installation and cross references them. This would generate Web pages 
+telling you which API is used by which program/library and reciprocally.
+Analyzing the import/export section of PE executables is quite simple: it's just a matter 
+of running dumpbin (part of Visual C++) or pedump (open source) on them and then parsing 
+the resulting text file. This already being done with the wpbtk toolkit.
+To view winapi_check output see <a href="http://fgouget.free.fr/wine/winapi_stats-en.shtml">Quick API statistics</a>.
+To help with this please contact <a href="mailto:fgouget@free.fr">Francois Gouget</a>
+</p>
+Required skills:
+<ul>
+<li>Perl
+</li><li>General HTML
+</li></ul>
+
+<h3><a name="doc_win_api">Documentation of the Windows API functions</a></h3>
+
+<p><h5>The main reason is that as MS moves to new APIs it tends to remove all documentation of the old ones (e.g. Win
+3.1).</h5></p>
+<p>The goal is to write an independent documentation of the Windows API. Since we are re implementing all 
+this API it would be a good coding practice to also document what we implement. We should in particular 
+concentrate on aspects that are not very well covered in the 'official' documentation like discrepancies 
+with the official documentation, bugs, platform specific aspects, and all these things that are typically 
+not very well covered like what happens if you pass a NULL pointer, if the buffer is too small, ...
+Without such a documentation new developers have no way of telling whether some strange quirk in 
+the implementation is insignificant or is actually a (mis)feature that some programs rely on. As Wine 
+matures such problems will become more and more important.
+</p>
+Required skills:
+<ul>
+<li>Knowledge of some documentation generation system for the person trying to enhance the documentation generation.
+</li><li>A bit of C to document the APIs themselves.
+</li></ul>
+
+<h3><a name="check_which">Check which APIs are missing for a given program</a></h3>
+<p>The scripts that scan a Windows environment could be modified to restrict the scan to the dependencies 
+of a given executable/set of executables. Then these results can be cross-referenced with the results 
+of the above script to tell you which APIs this program is missing, what percentage they represent, etc. 
+Reciprocally one can weight each API according to how often they are referenced in a given environment to 
+produce an approximation of the likely hood that such an API will actually be called. Note that this would 
+just be an approximation because we would miss all the dynamically loaded APIs and libraries 
+(since we only scan the statically linked dynamic libraries). This would be an even more approximate 
+measure of the likely hood that the program will work: even though a program references an API it may never call it, 
+work even though this API does not work, or really depend on this API or even some undocumented aspect of this API. 
+Still this may provide a better approximation of the completeness of Wine than just treating all APIs as equivalent.
+</p>
+Required skills:
+<ul>
+<li>Perl
+
+</li><li>General HTML to present the results
+</li><li>Maybe querying a database will be necessary too
+</li></ul>
+
+<h3><a name="port_app">Port your Windows application to Wine</a></h3>
+<p>If you are working on a Windows application, porting it to Wine may be the best way to get started 
+for contributing code to Wine. You can start by trying to run it in Wine and then try to compile it with Wine.
+The reason I suggest to start with an application you normally work on, is that first you obviously 
+have access to the source code and second, since you programmed it, you know how it works. Furthermore 
+you can attack the problem from both sides: put traces in your application and in Wine. All this combined 
+together and makes it much easier to detect where Wine is doing something wrong, what and why. 
+Then, since you already know what Wine is supposed to do, you're also in a better position to provide a fix.
+You can also test a programming book's examples in Wine. A kit to get started and create Web pages showing the 
+results is available <a href="http://fgouget.free.fr/wine/booktesting-en.shtml">here</a>.
+</p>
+Required skills:
+<ul>
+<li>Testing
+</li><li>Writing bug reports
+</li><li>Debugging to fix them if possible
+</li><li>Programming in C/C++ if you want to try compiling the programs with Wine lib
+</li></ul>
 
 
+<h3><a name="code_review">Perform a focused code review</a></h3>
+<p>A regular 'random' code review can be pretty boring and inefficient. But I think that if you are looking 
+for something specific it can be a productive way of finding and fixing bugs.
+Typically you would start by picking a subject. For instance I once found code that was using strncpy 
+without making sure the resulting string would be '\0' terminated. One would normally fix this specific 
+piece of code and move on. But how many similar hard to find bugs would this leave elsewhere? So I decided 
+to check all instances of strncpy. This can take some time so one cannot always do it (drop me a line if 
+you think of some specific bug to look for but you don't have time). But it's a nice way to get acquainted 
+with the code and you can actually find bugs without needing months of experience on Wine's code.
+</p>
+<p>But be warned though that since your changes will be scattered throughout Wine they will be scrutinized by 
+many developers. Furthermore since your changes probably will not be direct obvious bug fixes, there may be 
+(founded) resistance. Make sure your changes are indeed a fix, not something that will just hide the problem 
+under the carpet (especially with compilation warnings). Also cosmetic fixes, unnecessary changes are 
+generally not welcome (but I admit it's sometimes hard to resist).
+</p>
+<h5>Here are a few starting points:</h5>
+<ul>
+<li>Arrays of fixed sized like 'foo[100]'. 100, where does that come from?
+</li><li>Arrays of size 255, 256, 512, 1024. These are most likely variables destined to contain a path. 
+But then they should be using one of the standard macros like MAX_PATH, MAX_PATHNAME_LEN or some such. Which one?
+</li><li>Calls to sprintf with an incorrect buffer size
+</li><li>Inefficient uses of strcat (not really a bug and not really vital) 
+</li></ul>
+Required skills:
 
-<h3><a name="web">Website maintenance</a></h3>
-<p>If you're good at Web stuff and have some great ideas to help our team,
-then send a mail to <a href="mailto:web-admin@winehq.com">web-admin@winehq.com</a>.
-See also &quot;Documentation writing&quot;, below.
+<ul>
+<li>C programming
+</li></ul>
 
-<h3><a name="FAQ">FAQ-O-Matic (FAQ, Troubleshooting, ...) maintainer</a></h3>
-<p>The content of <a href="http://www.winehq.com/FAQ/">this database</a> is
-not highly current and needs constant maintenance, so if you want to help,
-then just register and add or rearrange content as you feel fit.
+<a href="#TOP">Back to top</a>
+
+<hr size="2" noshade="noshade">
+<h2><a name="docu">Documentation</a></h2>
+<hr size="2" noshade="noshade">
 
 <h3><a name="doc">Documentation writing</a></h3>
 <p>Wine is in constant need of documentation updates.
-Wine has its "<a href="/Docs/">Guides</a>", like the Wine User Guide etc.
+Wine has its "<a href="http://www.dssd.ca/Docs/">Guides</a>", like the Wine User Guide etc.
 The SGML source of the Guides can be found in the Wine CVS tree.
 
+</p>
 <p>Other important documentation items are the README file
-and also the man pages and other files in the documentation/ directory.<br>
-<br>
-Your job would be to make sure that every patch a developer submits
+and also the man pages and other files in the documentation/ directory.
+</p>
+<p>Your job would be to make sure that every patch a developer submits
 that changes wine configuration behaviour in any way
 gets documented properly as soon as possible.
 This would be done through testing new functionality and optionally
 asking developers about what their patch truly does.
 (and of course don't forget to beat up developers that don't document
-the workings of their patch at all !)<br>
-<br>
+the workings of their patch at all !)
+</p>
+<p>If you spend a lot of time monitoring either the newsgroup or wine-users 
+you are a good candidate for suggesting updates to the <a href="http://www.winehq.org/docs/wine-faq/t1.shtml">wine FAQ.</a>
+</p>
+<p>
 The documentation updates would be done by sending "cvs diff"s of the
-relevant files to wine-patches.<br>
-<br>
+relevant files to wine-patches.
+</p>
 Requirements:
 <ul>
-  <li>relatively good understanding of programming and Wine preferred
-  <li>preferrably proficient with SGML/DocBook and its tools
-  <li>persistent (constant feature changes !)
-</ul>
+  <li>Relatively good understanding of programming and Wine preferred
+  </li><li>Preferably proficient with SGML/DocBook and its tools
+  </li><li>Persistent (constant feature changes !)
 
-<p>
-Also, we will need to have localized versions of the Wine Guides and man
+</li></ul>
+
+<h3><a name="localized">Localization work</a></h3>
+<p>Also, we need to have localized versions of the Wine Guides and man
 pages. For this to work, we'll need many people willing to translate
 changes to the main English docu into foreign languages. If you're
 willing to register for work on a certain language, then please sign up
 with us !
 </p>
-<p>
-Note that for this localization work to be useful, we'll need an
-automated infrastructure that for every single patch done for the main
-English docu automatically adds a ToDo item to the various web pages listing
-the ToDo items for various foreign languages. As soon as someone submits
-a patch about the work of a certain ToDo item, the ToDo item on that
-particular foreign language page would be closed. That way we'd make sure
-that not a single change in English docu will get lost in foreign docu.
-This will require a database-driven web page architecture, of course
-(and registering new localisation ToDo items would have to be done
-simply by CC'ing a CVS commit mail to the mail address used
-for registering new ToDo items on the localisation web pages),
-so we'd need someone to implement this for us.
+<p>At this time we are looking for people who can translate.
 </p>
-<p>
-The non-English documentation would then reside in a <b>separate</b> &quot;localiation&quot; CVS repository.
+<ul>
+  <li>The README and maintain the translation.
+  </li><li>the Wine resources and messages it issues (but not the debug message of course)
+</li></ul>
+<p>We also need a 'QuickStart/Howto' document
+that would describe the basic instructions for installing and
+configuring Wine in a bit more details than the README while being much
+smaller than the Wine User Guide (it could actually be a chapter of that
+guide). Then that document could be translated in multiple languages
+which would at least make it easier for non-english speaking people to
+set up and install Wine.
 </p>
+Requirements:
+<ul>
+
+<li>Relatively good understanding of programming and Wine preferred
+</li><li>Preferably proficient with SGML/DocBook and its tools
+</li><li>Persistent (constant feature changes !)
+</li><li>Linguistics
+</li></ul>
+
+<a href="#TOP">Back to top</a>
+
+<hr size="2" noshade="noshade">
+<h2><a name="pr">Public Relations</a></h2>
+<hr size="2" noshade="noshade">
 
 <h3><a name="pr_manager">PR manager</a></h3>
 <p>Currently we almost have no Public Relationship management at all.
-This should change for the better.<br>
-<br>
-Currently almost the only form of PR is &quot;preaching to the
-choir&quot;,
+This should change for the better.
+
+</p>
+<p>Currently almost the only form of PR is "preaching to the choir",
 since we're having articles on online IT sites (by far most are Linux only !).
-We should have much more coverage on traditional Windowsish sites and,
+We should have much more coverage on traditional Window'ish sites and,
 most importantly, in dead-tree newspapers, to enlighten the general public
-also known as The Great Unwashed Masses !<br>
-<br>
-Thus such a job would involve writing articles to be presented in
-both large and local newspapers and also online publications.<br>
-<br>
+also known as The Great Unwashed Masses!
+</p>
+<p>Thus such a job would involve writing articles to be presented in
+both large and local newspapers and also online publications.
+</p>
 Requirements:
 <ul>
-  <li>moderately experienced Wine user
-  <li>contacts to the press preferred, but by no means required
-</ul>
+<li>Moderately experienced Wine user
+</li><li>Someone willing to demo Wine at LUG meetings, Computer shows, Linux Install-fest
+</li><li>Contacts to the press preferred, but by no means required
+</li></ul>
 
-<p><hr size=2 noshade>
-<p>
+<a href="#TOP">Back to top</a>
 
-<a name="donate"><h2>Monetary or equipment donations</h2></a>
+<hr size="2" noshade="noshade">
 
-<p>Wine has no formal organization (yet ?), so it's not possible to directly
-donate money to a Wine development organization.
-However, some means for donating do exist...
+<h2><a name="donations">Donations</a></h3>
 
-<h3>Donations of hardware / software / documentation</h3>
-<p>If you want to give something to a Wine developer, or you are a Wine
-developer who needs something, you can post to <a
-href="news:comp.emulators.ms-windows.wine">comp.emulators.ms-windows.wine</a>
-or <a href="mailto:ridgway@winehq.com">email me</a> and get it listed here.
-<h4>Offered</h4>
-<ul>
-  <li>Complete Windows 3.1 SDK -- books and software.
-</ul>
+<hr size="2" noshade="noshade">
 
-<h3>Wine Party Fund</h3>
+<h3><a name="wpf">Wine Party Fund</a></h3>
+
 <p>The purpose of the Wine Party Fund is to show appreciation to Wine
-developers by collecting funds for small parties, dinners,
-virtual beers, etc.
-Ways to contribute:
+developers by collecting funds for small parties, dinners, virtual beers, etc.</p>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+<p>Ways to contribute:
 <ul>
-  <li>Europe -- send contributions to<br>
-     <a href="mailto:marcus@jet.franken.de">Marcus Meissner</a><br>
-  <li>North America -- send contributions to<br> 
-     <a href="mailto:ridgway@winehq.com">Douglas Ridgway</a><br>
-	6624 124 St.<br>
-	Edmonton, Alberta<br>
-	T6H 3V3<br>
-        CANADA<br><br>
+  <li><input type="image" src="images/ppdonate.gif" name="submit"
+      alt="Donate to Wine with PayPal!"><br>
+      <span class="small">Our PayPal Account</span>
+  </li><br>
+        
   <li>Purchase books or music from <a href="http://www.amazon.com/exec/obidos/redirect-home/winehq">Amazon.com</a>
        or <a href="http://www.cdnow.com/from=sr-1093221">CDnow</a> (Use
-       these specific links only, so that the Wine Party Fund gets the credit.)
+       these specific links only, so that the Wine Party Fund gets the credit.)</li>
 </ul>
-A page for party reports is planned.
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="donate@winehq.com">
+<input type="hidden" name="item_name" value="Wine donation">
+</form>  
+</p>
 
-<h3>Post a bounty at the <a href="http://visar.csustan.edu/bazaar/">Free Software Bazaar</a></h3>
-<p>Also post to the newsgroup, so that people know the offer exists.
-If enough people started using this, it could become a viable
-mechanism for funding free software development. Run by Axel Boldt.
+<a href="#TOP">Back to top</a>
 
-<p><hr size=2 noshade>
-<p>
+<hr size="2" noshade="noshade">
 
-<a name="other"><h2>Donations to other related organizations</h2></a>
+<h2><a name="ack">Acknowledgements</a></h2>
 
-<h3>Donate to the <a href="http://www.gnu.org/">FSF</a></h3>
-<p>The <a href="http://www.gnu.org/">FSF</a> is
-underfunded and underappreciated. They accept
-<a href="http://www.gnu.org/help/donate.html">donations</a> (501(c) tax-deductible, <a href="http://www.unitedway.org/">United Way</a> compatible for
-those with corporate matching programs).
+<hr size="2" noshade="noshade">
 
-<h3>Become a member of the <a href="http://www.eff.org/">EFF</A></h3>
-<p>As corporations become more and more globally oriented,
-their power might have negative effects on legislation in certain areas.
-The EFF (Electronic Frontier Foundation) is an important counterpart to this trend by working to protect our fundamental rights regardless of technology.
 
-<p><hr size=2 noshade>
-<p>
-
-<a name="ack"><h2>Acknowledgements</h2></a>
 <ul>
   <li><a href="http://www.codeweavers.com/">CodeWeavers</a> for hosting WineHQ
-  <li><a href="http://www.corel.com/">Corel</a> for having hosted
+  </li><li><a href="http://www.corel.com/">Corel</a> for having hosted
   WineHQ for 4 great years and having been a huge help to Wine
   development in general
-</ul>
+</li></ul>
 
 <p>&nbsp;</p>
+
+<a href="#TOP">Back to top</a>

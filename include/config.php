@@ -26,7 +26,7 @@ class config
                                       'Introduction' => $this->_file_root.'?page=about',
                                       'Featrues' => $this->_file_root.'?page=wine_features',
 									  'Screenshots' => $this->_file_root.'?ss=1',
-									  'Contributing' => $this->_file_root.'?page=contrib',
+									  'Contributing' => $this->_file_root.'?page=contributing',
 									  'News' => $this->_file_root.'?issue=latest',
                                       'Press' => $this->_file_root.'?page=press',
                                       'License' => $this->_file_root.'?page=license'
