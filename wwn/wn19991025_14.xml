@@ -51,12 +51,10 @@ unions/structs for some time.
   archive="http://www.integrita.com/cgi-local/lwgate.pl/WINE-DEVEL/archives/1999-10/Subject/article-121.html"
 >
 <p />
-Uwe Bonnes reported failure while running a program (<a
-href="http://mmadb.no/hwplus/DeCSS.zip"><quote who="Uwe Bonnes">an obfuscated
-binary to rip CSS coded DVD Movie files to disk</quote></a>). Uwe felt that
-the PESHiELD protection could be the cause of it. Ulrich Weigand took a look
-at it, and gave extented details on how it worked, and what should be done
-to make it work under Wine:
+Uwe Bonnes reported failure while running a program (<a href="http://home.worldonline.dk/andersa/download/DeCSS.zip">
+<quote who="Uwe Bonnes">an obfuscated binary to rip CSS coded DVD Movie files to disk</quote></a>). Uwe felt that 
+the PESHiELD protection could be the cause of it. Ulrich Weigand took a look at it, and gave extented details on how  
+it worked, and what should be done to make it work under Wine:
 
 <quote who="Ulrich Weigand">
 <p />

@@ -411,8 +411,8 @@ system and and any other configurations are not supported by the WINE project.
 <ol>
  <li> Make sure you have the latest cygwin with win32api package.</li>
  <li> Be sure you are using mingw-extra-2.95.3.tar.gz with cygwin. (Fix for some libiberty.a issues) 
-	Read <a href="http://www.colomsat.net.co/freehost/ngiraldo/cppcygwin.html">
-	http://www.colomsat.net.co/freehost/ngiraldo/cppcygwin.html</a> for the 
+	Read <a href="http://groups.yahoo.com/group/ace-users/message/32730">
+	http://groups.yahoo.com/group/ace-users/message/32730</a> for the 
 	directions on building mingw C++ applications on cygwin.</li>
 </ol></p>
 

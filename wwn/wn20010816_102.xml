@@ -359,8 +359,8 @@ then ioctl() I would think that several applications would be effected..
 
 <p>Ove K&aring;ven didn't understand what the problem was since a patch had
 been submitted a year and half ago fixing the problem.  He gave a link to it
-at:<a href="http://www.winehq.com/cvsweb/wine/server/sock.c.diff?r1=1.11&r2=1.12">
-http://www.winehq.com/cvsweb/wine/server/sock.c.diff?r1=1.11&r2=1.12</a>.
+at:<a href="http://cvs.winehq.org/cvsweb/wine/server/sock.c">
+http://cvs.winehq.org/cvsweb/wine/server/sock.c</a>.
 Daniel's problem seemed to be with running Bearshare and he submitted a one-liner
 commenting out the sock_reselect() so that the poll() doesn't happen.</p>
 

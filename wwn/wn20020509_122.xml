@@ -124,11 +124,10 @@ You can still find an ISO image of the
 <a href="http://www.xandros.com/downloads.html">Corel distribution</a> on
 their website but  
 Xandros is in the process of creating their own product offerings now. They
-had <a href="http://www.xandros.com/betatesting.html">a call</a> for 
-beta testers a while ago that I totally overlooked.  You probably wouldn't
+had a call for beta testers a while ago that I totally overlooked.  You probably wouldn't
 have gotten in if you wanted to - 2,000 people applied and 150 were selected.
 
-<p />On their <a href="http://www.xandros.com/about.html">about</a> page they
+<p />On their <a href="http://www.xandros.com/company.html">about</a> page they
 describe what they're working on:
 <quote who="Xandros">
    Xandros is developing a customized Debian-based Linux distribution 
@@ -393,7 +392,7 @@ replied, <quote who="Alexandre Julliard">
 <p />Steven replied:
 <quote who="Steven Edwards">
 Ok. I got that from
-<a href="http://developer.gnome.org/doc/API/glib/glib-windows-compatability-funct">
+<a href="http://developer.gnome.org/doc/API/glib/glib-windows-compatability-functions.html">
 http://developer.gnome.org/doc/API/glib/glib-windows-compatability-functions.html</a>
 and it works under mingw but I will try to find a better way of doing it
 or just fix makedep.

@@ -273,8 +273,8 @@ The workaround is to give the command
    export LD_ASSUME_KERNEL=2.2.5</code></ul></p><p>
 before running Wine (and probably before running configure, too).
 (This is documented in each distro's beta release notes, e.g.
-<a href="http://distro.ibiblio.org/pub/Linux/distributions/redhat/beta/phoebe/en/os/i386/RELEASE-NOTES.html">
-http://distro.ibiblio.org/pub/Linux/distributions/redhat/beta/phoebe/en/os/i386/RELEASE-NOTES.html</a>)
+<a href="http://tux.cprm.net/pub/ftp.redhat.com/beta/phoebe/en/os/i386/">
+http://tux.cprm.net/pub/ftp.redhat.com/beta/phoebe/en/os/i386/</a>)
 Have you tried this yet?
 </p><p>
 The changes needed are deep.  Alexandre has started on them, but
@@ -284,7 +284,7 @@ See also
 <ul>
 <li><a href="http://www.winehq.com/hypermail/wine-devel/2003/02/0252.html">http://www.winehq.com/hypermail/wine-devel/2003/02/0252.html</a></li>
 <li><a href="http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=83254">http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=83254</a></li>
-<li><a href="http://redhat.ifsic.univ-rennes1.fr/_rawhide/glibc-devel-2.3.1-51.i386.html">http://redhat.ifsic.univ-rennes1.fr/_rawhide/glibc-devel-2.3.1-51.i386.html</a></li>
+<li><a href="http://ftp.yars.free.net/pub/software/unix/platforms/linux/dist/redhat/updates/rawhide/?C=S&O=A">http://ftp.yars.free.net/pub/software/unix/platforms/linux/dist/redhat/updates/rawhide/?C=S&O=A</a></li>
 </ul></p></quote>
 
 <p>Sylvain Petreolle tested it and verified it worked.  Kevin DeKorte had some
