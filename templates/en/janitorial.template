@@ -18,15 +18,15 @@
   Any self respecting project has a Janitorial project 
   (e.g. <a href="http://www.sourceforge.net/projects/kernel-janitor">Kernel Janitor's List</a>),
   and it's high time that we've got one too.
-  What is there to clean up? Well, lot's of things! :)
+  What is there to clean up? Well, lots of things! :)
 
   <h2>Tools</h2>
 
   <h3>Smatch</h3>
   From <a href="mailto:mstefani@redhat.com">Michael Stefaniuc</a>: <br>
   Smatch (<a href="http://smatch.sourceforge.net/">smatch.sourceforge.net</a>)
-  is basicaly a patch to gcc-3.1.1 that makes the gcc dump out it's
-  internal represantation of the code and a set of perl modules/scripts to
+  is basically a patch to gcc-3.1.1 that makes gcc dump out its
+  internal representation of the code and a set of perl modules/scripts to
   ease the parsing of the dumped code. Most of the perl scripts are for
   the Linux Kernel but writing new scripts seems to be easy. I wrote
   (well, mostly adapted an existing script for the kernel) 
@@ -38,8 +38,8 @@
   <p><strong>Update</strong>:<br>
   There's a new <a href="http://people.redhat.com/mstefani/wine/smatch/">web page</a> 
   about Wine and Smatch. It includes also a table with the bugs found by the smatch 
-  scripts. I could need a hand with the bugs (status BUG, UKNOWN) cause I don't know
-  how to fix them correctly (and for some locking BUG's i am not sure that they are 
+  scripts. I could need a hand with the bugs (status BUG, UNKNOWN) cause I don't know
+  how to fix them correctly (and for some locking BUG's I am not sure that they are 
   real bugs).
 
   <h2>Cross-calls that are Just Wrong (TM)</h2>
@@ -492,9 +492,9 @@
 
   <p>Needless to say, this is very bad. Windows is our reference platform,
   and a test that fails in Windows, and succeeds in Wine may very well be
-  hinding a bug. We need to fix them.
+  hiding a bug. We need to fix them.
 
-  <p>We have a way to pretty easily compile test on Windows. Here's the procedure:
+  <p>We have a way to pretty easily compile tests on Windows. Here's the procedure:
   <ul>
     <li> Get the Wine source
     <li> Run <tt>./tools/winapi/msvcmaker --no-wine</tt>
