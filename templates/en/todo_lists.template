@@ -73,7 +73,7 @@
 	    <li> status: ToC <a href="http://www.winehq.org/hypermail/wine-cvs/2004/02/0229.html">added</a>
 	    <li> updated: Feb 18, 2004
 	  </ul>
-	<li> UI status update <span class="todo">[TODO]</span>
+	<li> <a href="http://www.winehq.org/site/status_ui">UI status</a> update <span class="todo">[TODO]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
 	    <li> status: review of the comctl32 source needed
@@ -82,8 +82,20 @@
 	<li> Integrate API status into WineHQ <span class="todo">[TODO]</span>
 	  <ul>
 	    <li> worker: ?
-	    <li> status: ?
+	    <li> status: code exists <a href="http://fgouget.free.fr/wine/winapi_stats-en.shtml">here</a>
 	    <li> updated: Feb 5, 2004
+	  </ul>
+	<li> Server-side support for WineHQ <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:VincentB@coppercolorado.com">Brian Vincent</a>
+	    <li> status: work has started, initial design ready
+	    <li> updated: Feb 20, 2004
+	  </ul>
+	<li> <a href="http://www.winehq.org/site/status_options">Options status</a> update <span class="todo">[TODO]</span>
+	  <ul>
+	    <li> worker: ?
+	    <li> status: Status must be checked a gainst the code to make sure it implements documented behaviour
+	    <li> updated: Feb 20, 2004
 	  </ul>
      </ol>
   <a name="doc"></a><h3> B. Documentation work </h3>
@@ -96,13 +108,13 @@
 	    <li> status: ? 
 	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Suggest winefile instead of Calmira  <span class=todo>[TODO]</span>
+	<li> Suggest winefile instead of Calmira <span class="done">[DONE]</span>
 	  <ul>
-	    <li> worker: ?
-	    <li> status: ?
-	    <li> updated: Feb 5, 2004
+	    <li> worker: <a href="mailto:VincentB@coppercolorado.com">Brian Vincent</a>
+	    <li> status: patch sent
+	    <li> updated: Feb 19, 2004
 	  </ul>
-	<li> Misc cleanups  <span class=inprogress>[IN PROGRESS]</span>
+	<li> Misc cleanups <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
 	    <li> status: ?
@@ -300,17 +312,17 @@
 	    <li> status: ?
 	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Winegcc: generate DLLs/-shared <span class=inprogress>[IN PROGRESS]</span>
+	<li> Winegcc: generate DLLs/-shared <span class=todo>[TODO]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
 	    <li> status: ?
 	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Winegcc: merge winewrap into winegcc <span class=todo>[TODO]</span>
+	<li> Winegcc: merge winewrap into winegcc <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: ?
-	    <li> updated: Feb 10, 2004
+	    <li> status: work started
+	    <li> updated: Feb 19, 2004
 	  </ul>
 	<li> Winemaker: generate MinGW compatible makefiles <span class=todo>[TODO]</span>
 	  <ul>
@@ -380,7 +392,7 @@
 	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
 	    <li> status: initial thoughts
 	    <li> updated: Feb 5, 2004
-	  </ul>	
+	  </ul>
      </ol>
   <h3> I. Source Code </h3>
      <ol>
@@ -420,17 +432,17 @@
 	    <li> status: ?
 	    <li> updated: Feb 7, 2004
 	  </ul>
-	<li> Move documentation/samples/config -> winedefault.reg <span class=todo>[TODO]</span>
+	<li> Remove documentation/samples/config <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: ?
-	    <li> status: ?
-	    <li> updated: Feb 5, 2004
+	    <li> worker: <a href="mailto:cmorgan@alum.wpi.edu">Chris Morgan</a>
+	    <li> status: will not be required anymore
+	    <li> updated: Feb 19, 2004
 	  </ul>
-	<li> Move documentation/samples/system.ini -> winedefault.reg <span class=todo>[TODO]</span>
+	<li> Move documentation/samples/system.ini -> winedefault.reg <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: ?
-	    <li> status: ?
-	    <li> updated: Feb 5, 2004
+	    <li> worker: <a href="mailto:cmorgan@alum.wpi.edu">Chris Morgan</a>
+	    <li> status: will get moved into the .inf file
+	    <li> updated: Feb 19, 2004
 	  </ul>
      </ol>
 
