@@ -500,8 +500,9 @@ function _translateLiteral2NumericEntities ($xmlSource, $reverse = FALSE)
 // fix other issues in wwn xml
 function _translateWWN2valid ($xmlSource)
 {
-    $xmlSource = eregi_replace(" & ", " &#038; ", $xmlSource);
-    $xmlSource = preg_replace("/=((\w|\.)+)&(\w|\.)+/", "\\1&#038;\\2=\\3", $xmlSource);
+    // replace all '&' to fix the xml parser from changing entities in the text
+    $xmlSource = eregi_replace("&", "&#038;", $xmlSource);
+    // strip out comments
     $xmlSource = eregi_replace("<!-- .* -- />", "", $xmlSource);	
     return $xmlSource;
 }
