@@ -13,13 +13,40 @@ chapter in our online documentation.</p>
 list, the mailing list administrators must first check your submission
 to make sure it's not spam before they can let it through.)</p>
 
+When submitting patches, please:<p>
+<li>Include a comment for the changelog that gives your name and email address (if desired),
+along with a description of what your patch does.<br>
+
+<li>Try to keep the patch small and the point of the change clear.
+
+<li>Submit one fix or group of related changes per patch.<br>
+
+<li>Generate your patch against the latest version of Wine from the WineHQ CVS (see below).<br>
+
+<li>Test your patch, and if possible write a test case demonstrating it is correct.<br>
+
+<li>Be careful to not corrupt the patch through line-wrapping.<br>
+
+<li>Try to avoid unnecessarily changing the formatting of the code.<br>
+
+<li>Use standard C, avoid C++ comments and inline variable declarations.<br>
+
+<p>Accepted patches will appear in the <a href="{$root}/site/forums">wine-cvs</a> mailing list. 
+If your patch is not applied, review it carefully and check it against the above points.</p>
+Rejected patches might receive a note in the <a href="{$root}/site/forums">wine-devel</a>
+mailing list, however they also may be silently ignored.  If you receive no response to your patch
+try checking it against the above points, and resubmitting it.
+
+<hr>
+
+<h2>Generating a patch against the WineHQ CVS</h2>
 <p>It's best to send small patches against the current tree.
 The best way do to this is with CVS. First, you'll need to make sure your tree is up to date.
 To do this, just run</p>
 
  <table width="300" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
-  cvs update
+  cvs update -PAd
  </span>
  </td></tr>
  </table>
@@ -67,23 +94,6 @@ Then, using the following command-line:</p>
  </table>
 
 <p>will get you a patch almost ready to be sent to <a href="{$root}/site/forums">wine-patches</a>.</p>
-
-<p>Include a comment for the changelog that gives your name and email address (if desired),
-along with a description of what your patch does. For examples of the formatting of
-patch submissions and changelog entries, read a few messages in the <a href="{$root}/site/forums">wine-patches</a>
-mailing list archive.  Please give your message a descriptive subject line.</p>
-
-<p>Be careful to not corrupt the patch through line-wrapping. If you are sending the patch
-in the body of the message, make sure that line-wrapping is turned off.  If you are using a GUI
-mail program like Outlook or Evolution, you may need to attach the patch file instead of simply
-inserting it in your message to avoid corruption.  If you send the patch as an attachment, please try
-to send the attachment using the text/plain MIME type.  This makes it much easier for readers of the email
-to look at your patch.</p>
-
-<p>Accepted patches will appear in the <a href="{$root}/site/forums">wine-cvs</a> mailing list. 
-Rejected patches might receive a note in the <a href="{$root}/site/forums">wine-devel</a> mailing list, 
-and accidentally ignored patches will disappear into
-a silent, featureless void. Please resubmit if this happens to your patch.</p>
 
 <p>There is no attempt to apply patches that appears in the newsgroup
 to the CVS tree. Please send patches to 
