@@ -334,9 +334,9 @@
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/syslink/syslink.asp"><strong>SysLink</strong></a></td>
 	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/syslink.c">CVS</a>
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/syslink.c">LXR</a></td>
-	<td>Aug 6, 2004</td>
+	<td>Apr 4, 2005</td>
 	<td>Comctl32.dll 6.0</td>
-	<td class="pct80">80%: problems with focus handling and dumb string parsing </td>
+	<td class="pct90">90%: problems with focus handling and dumb string parsing </td>
 	<td><a href="mailto:w3seek@reactos.com">Thomas Weidenmuller</a></td>
     </tr>
 
@@ -412,7 +412,6 @@
 	<td></td>
 	<td class="pct75">75%: missing extended styles, notification, some MCI_* and MCIWNDM_* messages</td>
 	<td><a href="mailto:dmitry@codeweavers.com">Dmitry Timoshkov</a></td>
-
     </tr>
 
     <tr>
@@ -421,11 +420,11 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/richedit/">LXR</a></td>
 	<td></td>
 	<td></td>
-	<td class="pct15">15%: mainly a wrapper around a regular edit box</td>
-	<td><a href="mailto:kfoltman@portal.onet.pl">Krzysztof Foltman</a>,
+	<td class="pct25">25%: most used functionality implemented, but there are plenty of 
+                               messages, notifications and styles that need work.</td>
+	<td><a href="mailto:wdev@foltman.com">Krzysztof Foltman</a>,
             <a href="mailto:phil@newstar.rinet.ru">Phil Krylov</a>.
         </td>
-
     </tr>
 
     <tr>
@@ -434,9 +433,8 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/shdocvw/">LXR</a></td>
 	<td></td>
 	<td></td>
-	<td class="pct25">25%: implement shdocvw.dll</td>
+	<td class="pct100">100%: We forward to Mozilla, but more work is needed on Mozilla for compatibility.</td>
 	<td><a href="mailto:mike@codeweavers.com">Mike McCormack</a></td>
-
     </tr>
 
     <tr class="hdr">
