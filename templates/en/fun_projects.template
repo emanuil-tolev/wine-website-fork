@@ -376,11 +376,20 @@
   <a href="http://www.phaseone.com">Phase One's Capture One</a>.
   The functionality of mscms.dll seems to be defined by the 
   <a href="http://www.color.org">International Color consortium</a>.
-
   <ul>
     <li>worker: wanted
     <li>status: todo
     <li>updated: Mar 15, 2004
+  </ul>
+
+  <h3 class=todo>RSA Crypto API</h3>
+  <p>Implement the <a href="http://msdn.microsoft.com/library/en-us/security/security/cryptography_functions.asp">Crypto API</a>
+  provided by rsabase.dll using 
+  <a href="http://www.openssl.org">openssl</a>'s libcrypto.so.
+  <ul>
+    <li>worker: wanted
+    <li>status: todo
+    <li>updated: Mar 16, 2004
   </ul>
 
 <p>&nbsp;</p>
