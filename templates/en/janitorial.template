@@ -138,13 +138,13 @@
     <li>dlls/shell32/shellole.c: shell32: DragQueryFileW: illegal call to DragQueryFileA
     <li>dlls/shell32/systray.c: shell32: Shell_NotifyIconW: illegal call to Shell_NotifyIconA
     <li class=committed>dlls/shlwapi/ordinal.c: shlwapi: SHStringFromGUIDW: illegal call to SHStringFromGUIDA
-    <li>dlls/shlwapi/ordinal.c: shlwapi: SHCreateWorkerWindowW: illegal call to SHCreateWorkerWindowA
+    <li class=invalid>dlls/shlwapi/ordinal.c: shlwapi: SHCreateWorkerWindowW: illegal call to SHCreateWorkerWindowA
     <li class=committed>dlls/shlwapi/ordinal.c: shlwapi: SHCreateWorkerWindowW: illegal call to LoadCursorA
     <li class=committed>dlls/shlwapi/ordinal.c: shlwapi: SHCreateWorkerWindowW: illegal call to SetWindowLongA
-    <li>dlls/shlwapi/string.c: shlwapi: StrCmpLogicalW: illegal call to SHLWAPI_ChrCmpHelperA
-    <li>dlls/shlwapi/string.c: shlwapi: StrFormatByteSizeW: illegal call to StrFormatByteSize64A
-    <li>dlls/shlwapi/string.c: shlwapi: StrRetToStrW: illegal call to SHStrDupA
-    <li>dlls/shlwapi/string.c: shlwapi: StrRStrIW: illegal call to ChrCmpIA
+    <li class=committed>dlls/shlwapi/string.c: shlwapi: StrCmpLogicalW: illegal call to SHLWAPI_ChrCmpHelperA
+    <li class=committed>dlls/shlwapi/string.c: shlwapi: StrFormatByteSizeW: illegal call to StrFormatByteSize64A
+    <li class=invalid>dlls/shlwapi/string.c: shlwapi: StrRetToStrW: illegal call to SHStrDupA
+    <li class=committed>dlls/shlwapi/string.c: shlwapi: StrRStrIW: illegal call to ChrCmpIA
     <li>dlls/version/install.c: version: VerInstallFileW: illegal call to VerInstallFileA
     <li>dlls/wininet/internet.c: wininet: InternetCheckConnectionW: illegal call to InternetCheckConnectionA
     <li>dlls/winmm/driver.c: winmm: OpenDriverW: illegal call to OpenDriverA
