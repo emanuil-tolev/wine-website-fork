@@ -267,13 +267,14 @@ by real functions.</quote></p>
 </section>
 
 <section
-        title=""
+        title="Apartment Breakage"
         subject="out-of-process COM design"
         archive="http://www.winehq.org/hypermail/wine-devel/2004/12/0486.html"
         posts="16"
         startdate="12/17/2004"
 	enddate="12/18/2004"
 >
+
 <topic>RPC / COM / OLE</topic>
 
 <p>It appears the dust in the air from the recent 
@@ -290,7 +291,7 @@ The actual stack dump is that:
 <ul>
 _LocalServerThread (compobj.c)
   <ul>    calls  StdMarshalImpl_MarshalInterface (...)
-      <ul>    which has mid.oxid = COM_CurrentApt()->oxid;</ul></ul></ul></p><p>
+      <ul>    which has mid.oxid = COM_CurrentApt()-&gt;oxid;</ul></ul></ul></p><p>
 
 which throws a memory error because COM_CurrentApt is null
 because, presumably the thread hasn't yet initialised an apartment.
