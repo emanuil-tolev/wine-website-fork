@@ -25,6 +25,13 @@
   the <i>dst</i> buffer, and always nul terminate the buffer when we
   intended to.<p>
 
+  Julliard 
+  <a href="http://www.winehq.org/hypermail/wine-devel/2005/01/0390.html">says</a>:
+  "A careful review of the code to ensure that lstrcpyn semantics are really what
+  we want. In several cases we know that we are copying less than the full string,
+  and in that case we have to use memcpy instead, lstrcpyn won't do the right
+  thing."<p>
+
   <h2>Regedit fixes</h2>
 
   Regedit lacks a few features.  We need to improve regedit to:
