@@ -754,6 +754,8 @@ class html
 		$vars['root'] = $this->find_root();
         // snapshot date var
         $vars['snapshot_date'] = $config->snapshot_date;
+        // RH packages snapshot date var
+        $vars['snapshot_date_rh'] = $config->snapshot_date_rh;
         // replace vars in template
 	    while (list($key,$val) = each($vars))
 	    {
