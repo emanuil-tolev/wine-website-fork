@@ -95,7 +95,7 @@
     <li>dlls/kernel/locale.c: kernel32: GetLocaleInfoW: illegal call to GetModuleHandleA
     <li>dlls/kernel/sync.c: kernel32: WaitNamedPipeW: illegal call to CreateEventA
     <li>dlls/lzexpand/lzexpand_main.c: lz32: LZOpenFileW: illegal call to LZOpenFileA
-    <li>dlls/mpr/wnet.c: mpr: WNetGetConnectionW: illegal call to WNetGetConnectionA
+    <li class=committed>dlls/mpr/wnet.c: mpr: WNetGetConnectionW: illegal call to WNetGetConnectionA
     <li>dlls/rpcrt4/rpc_binding.c: rpcrt4: RpcBindingToStringBindingW: illegal call to RpcBindingToStringBindingA
     <li>dlls/rpcrt4/rpc_binding.c: rpcrt4: RpcBindingToStringBindingW: illegal call to RpcStringFreeA
     <li>dlls/rpcrt4/rpc_server.c: rpcrt4: RpcServerUseProtseqEpExW: illegal call to RPCRT4_strdupWtoA
@@ -211,10 +211,11 @@
 		 <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>,
 		 <a href="mailto:burner1@hotmail.com">Justin Chevrier</a>,
 		 <a href="mailto:ulrich@codeweavers.com">Ulrich Czekalla</a>,
-		 <a href="mailto:mike@codeweavers.com">Mike McCormack</a>.
+		 <a href="mailto:mike@codeweavers.com">Mike McCormack</a>,
+		 <a href="mailto:juan_lang@yahoo.com">Juan Lang</a>.
 
     <li>status: <span class=inprogress>Over half done.</span>
-    <li>updated: Mar 30, 2004
+    <li>updated: Apr 9, 2004
   </ul>
 
   <h2>DLL separation</h2>
