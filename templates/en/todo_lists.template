@@ -4,7 +4,7 @@
 
   <p>The following To Do lists is what the Wine development team needs to accomplish for
   a Wine version 0.9 release. For this release, we are trying to cleanup the project's
-  interfaces with the outside world:
+  interfaces with the outside world:</p>
   <ol type="A">
     <li> <a href="#winehq">WineHQ</a>        <span class="done">[READY]</span>
     <li> <a href="#doc">Documentation</a>    <span class="inprogress">[ALMOST]</span>
@@ -16,7 +16,6 @@
     <li> <a href="#misc">Miscellaneous</a>   <span class="done">[READY]</span>
     <li> <a href="#code">Source Code</a>     <span class="inprogress">[ALMOST]</span>
   </ol>
-  </p>
 
   <a name="winehq"></a><h3> A. WineHQ </h3>
     <ol>
@@ -69,9 +68,7 @@
          <li> Acknowledgment page <span class="done">[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:VincentB@coppercolorado.com">Brian Vincent</a>
-	    <li> status: <a
-href="http://www.winehq.com/hypermail/wine-cvs/2004/11/0110.html">patch</a>
-committed</a>.
+	    <li> status: <a href="http://www.winehq.com/hypermail/wine-cvs/2004/11/0110.html">patch</a> committed.
 	    <li> updated: Nov 17, 2004
 	  </ul>
          <li> Update Introduction page <span class="done">[DONE]</span>
@@ -117,7 +114,7 @@ committed</a>.
 
 
   <a name="doc"></a><h3> B. Documentation </h3>
-  </a><h4> User Guide </h4>
+  <h4> User Guide </h4>
     <ol>
 	<li> Revise the introduction <span class="done">[DONE]</span>
 	  <ul>
@@ -460,7 +457,7 @@ committed</a>.
 	  <ul>
 	    <li> workers: <a href="mailto:puoti@inwind.it">Ivan Leo Puoti</a>,
 			 <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>.
-	    <li> status: first <a href="http://sourceforge.net/project/showfiles.php?group_id=6241&package_id=112520">packages</a> released
+	    <li> status: first <a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=112520">packages</a> released
 	    <li> updated: Mar 17, 2004
 	  </ul>
 	<li> Standardize Wine handling in autoconf <span class="inprogress">[IN PROGRESS]</span>
