@@ -3,48 +3,62 @@
 <h1>Wine Source Downloads from Tarball</h1>
 
 <p>
-    You can get Wine Source tree and docs from each release.
-    <br>Hosted by <a href="http://www.sourceforge.net">Sourceforge.net</a><br>
+    <ul>
+      <p>You can get Wine Source tree and docs from each release.</p>
+      
+      <a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=77449" target="_blank"><img
+      src="{$root}/images/download_wine.gif" border=1 width=88 height=31
+      alt="Download Wine"><br><span
+      class="small">Download Wine's Source</span></a>
+    </ul>
 </p>
 
-<blockquote>
-  <a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=77449" target="_blank"><img
-  src="{$root}/images/download_wine.gif" border=1 width=88 height=31
-  alt="Download Wine"><br><span
-  class="small">Download Source</span></a>
-</blockquote>
+
+<h1>Mirrors</h1>
+<p>
+    <ul>
+      <li><a href="ftp://ftp.infomagic.com/pub/mirrors/linux/sunsite/ALPHA/wine/development/">ftp.infomagic.com</a></li>
+      <li><a href="ftp://ftp.fu-berlin.de/unix/linux/mirrors/sunsite.unc.edu/ALPHA/wine/development/">ftp.fu-berlin.de</a></li>
+      <li><a href="ftp://orcus.progsoc.uts.edu.au/pub/Wine/development/">orcus.progsoc.uts.edu.au</a></li>
+    </ul>
+</p>
 
 
-<p>    
-    To extract the file use:<br>
-    
+<h1>To extract the file use:</h1>
+<p>        
+    <ul>
     <table width="300" border=0 cellpadding=10><tr><td class=black>
 	<span class=inverse>tar -xzvf Wine-YYYYMMDD.tar.gz</span>
     </td></tr>
     </table>
-	
     <span class=small>(YYYYMMDD is the version of wine in Year Month Day format.)</span>
-	<br><br>
-	
-    After you have extracted Wine read the
-    <a href="http://source.winehq.org/source/README">README</a>
-    file included for further installation instructions.
+	</ul>
 </p>
 
+
+<h1>After you have extracted Wine</h1>
 <p>
-  <b>Note: </b> You can also download the Wine Source tree, diffs, and docs via
-  <a href="ftp://ftp.ibiblio.org/pub/Linux/ALPHA/wine/development/" target="_blank">FTP,</a>
-  or you can get the current source code using <a href="{$root}/site/cvs">CVS</a>.
+    <ul>
+      <li>
+        Read the <a href="http://source.winehq.org/source/README">README</a>
+        file included for further installation instructions.
+      </li>
+    </ul>
 </p>
 
-<p>The following mirrors are also available:
-<blockquote>
-  <a href="ftp://ftp.infomagic.com/pub/mirrors/linux/sunsite/ALPHA/wine/development/">ftp.infomagic.com</a><br>
-  <a href="ftp://ftp.fu-berlin.de/unix/linux/mirrors/sunsite.unc.edu/ALPHA/wine/development/">ftp.fu-berlin.de</a><br>
-  <a href="ftp://orcus.progsoc.uts.edu.au/pub/Wine/development/">orcus.progsoc.uts.edu.au</a><br>
-</blockquote>
+
+<h1> Notes </h1>
+<p>
+    <ul>
+      <li>
+        You can also download the Wine Source tree, diffs, and docs via
+        <a href="ftp://ftp.ibiblio.org/pub/Linux/ALPHA/wine/development/" target="_blank">FTP,</a>
+        or you can get the current source code using <a href="{$root}/site/cvs">CVS</a>.
+      </li>
+      <li>See the <a href="{$root}/site/howto">HowTo</a> for more installation and configuration help.</p>
+      </li>
+    </ul>
 </p>
 
-<p>See the <a href="{$root}/site/howto">HowTo</a> for more installation and configuration help.</p>
 
 <p>&nbsp;</p>
