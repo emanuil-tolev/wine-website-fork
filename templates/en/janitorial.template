@@ -52,27 +52,10 @@
 
   <h3>Get rid of 32->16 calls</h3>
   We should not call 16 bit from 32 bit code. With the ongoing 16-bit
-  separation, this is even more so important.  Here's the result of 
-  <tt>tools/winapi_check/winapi_check --none --progress --cross-call-win32-win16</tt>
-  (as of Nov 29, 2002):
-  <ul>
-    <li class=committed>dlls/wineps/driver.c: wineps: PSDRV_DeviceCapabilities: illegal call to PSDRV_DeviceCapabilities16
-    <li class=committed>dlls/wineps/driver.c: wineps: PSDRV_ExtDeviceMode: illegal call to PSDRV_ExtDeviceMode16
-    <li class=invalid>loader/ne/resource.c: krnl386.exe &amp; kernel32: NE_DefResourceHandler: illegal call to AllocResource16
-    <li class=invalid>loader/module.c: kernel32: WIN32_GetProcAddress16: illegal call to GetProcAddress16
-    <li class=invalid>loader/ne/module.c: krnl386.exe &amp; kernel32: FreeLibrary16: illegal call to FreeModule16
-    <li class=invalid>loader/task.c: krnl386.exe &amp; kernel32: SetThreadQueue16: illegal call to SetTaskQueue16
-    <li class=invalid>memory/global.c: krnl386.exe &amp; kernel32: GlobalFix16: illegal call to GlobalHandleToSel16
-    <li class=invalid>memory/global.c: krnl386.exe &amp; kernel32: GlobalReAlloc16: illegal call to GlobalHandleToSel16
-    <li class=invalid>memory/global.c: krnl386.exe &amp; kernel32: GlobalWire16: illegal call to WIN16_GlobalLock16
-    <li class=invalid>memory/global.c: kernel32: K32WOWGlobalLock16: illegal call to WIN16_GlobalLock16
-    <li class=invalid>memory/selector.c: krnl386.exe &amp; kernel32: IsBadReadPtr16: illegal call to IsBadHugeReadPtr16
-    <li class=invalid>windows/winproc.c: user.exe &amp; user32: CallWindowProc16: illegal call to __wine_call_wndproc_32A
-    <li class=invalid>windows/winproc.c: user.exe &amp; user32: CallWindowProc16: illegal call to __wine_call_wndproc_32W
-  </ul>
+  separation, this is even more so important. 
   <ul>
     <li>workers: <a href="mailto:hughes2002@btinternet.com">Andrew John Hughes</a>
-    <li>status: <span class=done>First patch committed.</span>
+    <li>status: <span class=done>Patches committed.</span>
     <li>updated: Jan 31, 2003
   </ul>
 
@@ -291,64 +274,7 @@
 
   <h4><tt>HEAP_strdupAtoW</tt></h4>
   These should be changed to <tt>MultiByteToWideChar</tt>,
-  or even better <tt>RtlCreateUnicodeStringFromAsciiz</tt>:
-  <ul>
-    <li class=committed> dlls/advapi32/eventlog.c:    LPWSTR lpUNCServerNameW = HEAP_strdupAtoW(GetProcessHeap(),0,lpUNCServerName);
-    <li class=committed> dlls/advapi32/eventlog.c:    LPWSTR lpSourceNameW = HEAP_strdupAtoW(GetProcessHeap(),0,lpSourceName);
-    <li class=committed> dlls/advapi32/registry.c:    LPWSTR lpFileW = HEAP_strdupAtoW( GetProcessHeap(), 0, lpFile );
-    <li class=committed> dlls/advapi32/registry.c:    LPWSTR lpSubKeyW = HEAP_strdupAtoW( GetProcessHeap(), 0, lpSubKey );
-    <li class=committed> dlls/advapi32/registry.c:    LPWSTR lpSubKeyW = HEAP_strdupAtoW( GetProcessHeap(), 0, lpSubKey );
-    <li class=committed> dlls/advapi32/registry.c:    LPWSTR lpNewFileW = HEAP_strdupAtoW( GetProcessHeap(), 0, lpNewFile );
-    <li class=committed> dlls/advapi32/registry.c:    LPWSTR lpOldFileW = HEAP_strdupAtoW( GetProcessHeap(), 0, lpOldFile );
-    <li class=committed> dlls/advapi32/registry.c:    LPWSTR machineW = HEAP_strdupAtoW( GetProcessHeap(), 0, machine );
-    <li class=committed> dlls/advapi32/security.c:    LPWSTR lpSystemNameW = HEAP_strdupAtoW(GetProcessHeap(), 0, lpSystemName);
-    <li class=committed> dlls/advapi32/security.c:    LPWSTR lpNameW = HEAP_strdupAtoW(GetProcessHeap(), 0, lpName);
-    <li class=committed> dlls/advapi32/security.c:           RtlInitUnicodeString(&amp;(xdi-&gt;ppdi.Name), HEAP_strdupAtoW(GetProcessHeap(),0,"DOMAIN"));
-    <li class=committed> dlls/advapi32/service.c:    LPWSTR lpMachineNameW = HEAP_strdupAtoW(GetProcessHeap(),0,lpMachineName);
-    <li class=committed> dlls/advapi32/service.c:    LPWSTR lpDatabaseNameW = HEAP_strdupAtoW(GetProcessHeap(),0,lpDatabaseName);
-    <li class=committed> dlls/advapi32/service.c:    LPWSTR lpServiceNameW = HEAP_strdupAtoW(GetProcessHeap(),0,lpServiceName);
-    <li class=committed> dlls/advapi32/service.c:        lpwstr[i]=HEAP_strdupAtoW(GetProcessHeap(), 0, lpServiceArgVectors[i]);
-    <li class=committed> dlls/commdlg/filedlg.c:        ofnW-&gt;lpstrInitialDir = HEAP_strdupAtoW(GetProcessHeap(),0,ofnA-&gt;lpstrInitialDir);
-    <li class=committed> dlls/commdlg/filedlg.c:    ofnW-&gt;lpstrTitle = HEAP_strdupAtoW(GetProcessHeap(),0, str);
-    <li class=committed> dlls/commdlg/filedlg.c:            ofnW-&gt;lpTemplateName = HEAP_strdupAtoW(GetProcessHeap(), 0, ofnA-&gt;lpTemplateName);
-    <li class=committed> dlls/oleaut32/variant.c:      pNewString = HEAP_strdupAtoW( GetProcessHeap(), 0, strIn );
-    <li class=committed> dlls/user/hook.c:            csW.lpszName = HEAP_strdupAtoW( GetProcessHeap(), 0, cbtcwA-&gt;lpcs-&gt;lpszName );
-    <li class=committed> dlls/user/hook.c:            csW.lpszClass = HEAP_strdupAtoW( GetProcessHeap(), 0, cbtcwA-&gt;lpcs-&gt;lpszClass );
-    <li class=committed> dlls/winmm/mmsystem.c:    LPCWSTR     ptr = HEAP_strdupAtoW(GetProcessHeap(), 0, resname);
-    <li class=committed> dlls/winmm/playsound.c:            wps-&gt;pszSound = HEAP_strdupAtoW(GetProcessHeap(), 0, pszSound);
-    <li class=committed> dlls/winspool/info.c:    piW-&gt;pServerName = HEAP_strdupAtoW(heap, 0, piA-&gt;pServerName);
-    <li class=committed> dlls/winspool/info.c:    piW-&gt;pPrinterName = HEAP_strdupAtoW(heap, 0, piA-&gt;pPrinterName);
-    <li class=committed> dlls/winspool/info.c:    piW-&gt;pShareName = HEAP_strdupAtoW(heap, 0, piA-&gt;pShareName);
-    <li class=committed> dlls/winspool/info.c:    piW-&gt;pPortName = HEAP_strdupAtoW(heap, 0, piA-&gt;pPortName);
-    <li class=committed> dlls/winspool/info.c:    piW-&gt;pDriverName = HEAP_strdupAtoW(heap, 0, piA-&gt;pDriverName);
-    <li class=committed> dlls/winspool/info.c:    piW-&gt;pComment = HEAP_strdupAtoW(heap, 0, piA-&gt;pComment);
-    <li class=committed> dlls/winspool/info.c:    piW-&gt;pLocation = HEAP_strdupAtoW(heap, 0, piA-&gt;pLocation);
-    <li class=committed> dlls/winspool/info.c:    piW-&gt;pSepFile = HEAP_strdupAtoW(heap, 0, piA-&gt;pSepFile);
-    <li class=committed> dlls/winspool/info.c:    piW-&gt;pPrintProcessor = HEAP_strdupAtoW(heap, 0, piA-&gt;pPrintProcessor);
-    <li class=committed> dlls/winspool/info.c:    piW-&gt;pDatatype = HEAP_strdupAtoW(heap, 0, piA-&gt;pDatatype);
-    <li class=committed> dlls/winspool/info.c:    piW-&gt;pParameters = HEAP_strdupAtoW(heap, 0, piA-&gt;pParameters);
-    <li class=committed> dlls/winspool/info.c:    LPWSTR lpPrinterNameW = HEAP_strdupAtoW(GetProcessHeap(),0,lpPrinterName);
-    <li class=committed> dlls/winspool/info.c:        DefaultW.pDatatype = HEAP_strdupAtoW(GetProcessHeap(), 0,
-    <li class=committed> dlls/winspool/info.c:    pNameW = HEAP_strdupAtoW(GetProcessHeap(), 0, pName);
-    <li class=committed> dlls/winspool/info.c:    LPWSTR lpszNameW = HEAP_strdupAtoW(GetProcessHeap(),0,lpszName);
-    <li class=committed> dlls/winspool/info.c:    LPWSTR pEnvW = HEAP_strdupAtoW(GetProcessHeap(),0,pEnvironment);
-    <li class=committed> dlls/winspool/info.c:        pNameW = HEAP_strdupAtoW(GetProcessHeap(), 0, pName);
-    <li class=committed> dlls/winspool/info.c:        pEnvironmentW = HEAP_strdupAtoW(GetProcessHeap(), 0, pEnvironment);
-    <li class=committed> include/heap.h:inline static LPWSTR HEAP_strdupAtoW( HANDLE heap, DWORD flags, LPCSTR str )
-    <li class=committed> loader/resource.c:            typeStr = HEAP_strdupAtoW( GetProcessHeap(), 0, type );
-    <li class=committed> loader/resource.c:            nameStr = HEAP_strdupAtoW( GetProcessHeap(), 0, name );
-    <li class=committed> memory/environ.c:    info-&gt;lpReserved = HEAP_strdupAtoW (GetProcessHeap(), 0, current_startupinfo.lpReserved );
-    <li class=committed> memory/environ.c:    info-&gt;lpDesktop  = HEAP_strdupAtoW (GetProcessHeap(), 0, current_startupinfo.lpDesktop );
-    <li class=committed> memory/environ.c:    info-&gt;lpTitle    = HEAP_strdupAtoW (GetProcessHeap(), 0, current_startupinfo.lpTitle );
-    <li class=committed> windows/winproc.c:        *plparam = (LPARAM)HEAP_strdupAtoW( GetProcessHeap(), 0, (LPCSTR)*plparam );
-    <li class=committed> windows/winproc.c:                xs-&gt;lpszName = xs-&gt;cs.lpszName = HEAP_strdupAtoW( GetProcessHeap(), 0,
-    <li class=committed> windows/winproc.c:                xs-&gt;lpszClass = xs-&gt;cs.lpszClass = HEAP_strdupAtoW( GetProcessHeap(), 0,
-    <li class=committed> windows/winproc.c:                cs-&gt;szClass = HEAP_strdupAtoW( GetProcessHeap(), 0,
-    <li class=committed> windows/winproc.c:                cs-&gt;szTitle = HEAP_strdupAtoW( GetProcessHeap(), 0,
-    <li class=committed> windows/winproc.c:          *plparam = (LPARAM)HEAP_strdupAtoW( GetProcessHeap(), 0, (LPCSTR)*plparam );
-    <li class=committed> windows/winproc.c:          *plparam = (LPARAM)HEAP_strdupAtoW( GetProcessHeap(), 0, (LPCSTR)*plparam );
-  </ul>
-  <ul>
+  or even better to <tt>RtlCreateUnicodeStringFromAsciiz</tt>.
     <li>workers: <a href="mailto:m.davison@virgin.net">Matthew Davison</a>
     <li>status: <span class=done>Completed.</span>
     <li>updated: Jan 27, 2003
@@ -360,7 +286,8 @@
   this is not the case in windows, and we should fix it (and first, fix 
   all the wine code relying on this)</i>
   <ul>
-    <li>worker: <a href="mailto:xolegpro@rbcmail.ru">Oleg Prokhorov</a>
+    <li>workers: <a href="mailto:xolegpro@rbcmail.ru">Oleg Prokhorov</a>,
+		 <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>.
     <li>status: <span class=inprogress>First patches submitted already</span>
     <li>updated: Oct 11, 2003
   </ul>
@@ -411,7 +338,7 @@
     <li> stackframe.h
     <li class=committed> syslevel.h
     <li class=committed> sysmetrics.h
-    <li> task.h
+    <li class=committed> task.h
     <li> thread.h
     <li class=committed> toolhelp.h
     <li> user.h
