@@ -53,17 +53,25 @@
 	    <li> status: ?
 	    <li> updated: Feb 5, 2004
 	  </ul>
-        <li> Download page (esp. source) needs work <span class="inprogress">[IN PROGRESS]</span>
+        <li> Download page (esp. source) needs work <span class="done">[DONE]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:hatky@users.sf.net">Hatky</a>
-	    <li> status: Work has started
-	    <li> updated: Feb 16, 2004
+	    <li> workers: <a href="mailto:hatky@users.sf.net">Hatky</a>,
+			  <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>, and
+			  <a href="mailto:jnewman@codeweavers.com">Jeremy Newman</a>
+	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2004/02/0204.html">patch</a> committed
+	    <li> updated: Feb 17, 2004
 	  </ul>
          <li> Acknowledgment page <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:twickline@skybest.com">Tom Wickline</a>
 	    <li> status: In the works
 	    <li> updated: Feb 16, 2004
+	  </ul>
+         <li> Introduction page <span class="inprogress">[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:VincentB@coppercolorado.com">Brian Vincent</a>
+	    <li> status: In the works (needs a Table of Contents)
+	    <li> updated: Feb 17, 2004
 	  </ul>
 	<li> UI status update <span class="todo">[TODO]</span>
 	  <ul>
@@ -182,11 +190,17 @@
 	    <li> status: ?
 	    <li> updated: Feb 14, 2004
           </ul>
-	<li> Create a man page for winedump <span class="inprogress">[IN PROGRESS]</span>
+	<li> Create a man page for winedump <span class="done">[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:mstefani@redhat.de">Michael Stefaniuc</a>
-	    <li> status: REAME needs to be migrated to a man page.
-	    <li> updated: Feb 14, 2004
+	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2004/02/0226.html">patch</a> committed
+	    <li> updated: Feb 18, 2004
+          </ul>
+	<li> Move winedump's README to appropriate place <span class=todo>[TODO]</span>
+	  <ul>
+	    <li> worker: ?
+	    <li> status: Part of it is already in the man page, rest must go into the Development Guide
+	    <li> updated: Feb 18, 2004
           </ul>
      </ol>
   <a name="conf"></a><h3> C. Wine configuration </h3>
@@ -274,11 +288,11 @@
      </ol>
   <h3> G. Tools </h3>
      <ol>
-	<li> Winebuild: build DLLs from .def files <span class=inprogress>[IN PROGRESS]</span>
+	<li> Winebuild: build DLLs from .def files <span class=done>[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard </a>
-	    <li> status: ?
-	    <li> updated: Feb 5, 2004
+	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2004/02/0217.html">patch</a> committed.
+	    <li> updated: Feb 17, 2004
 	  </ul>
 	<li> Winegcc: add simple gcc-independence <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
@@ -331,11 +345,11 @@
      </ol>
   <h3> H. Miscellaneous </h3>
      <ol>
-	<li> Testing daemon to run as a Windows service <span class=todo>[TODO]</span>
+	<li> Testing daemon to run as a Windows service <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: ?
-	    <li> status: ?
-	    <li> updated: Feb 5, 2004
+	    <li> worker: <a href="mailto:cmorgan@alum.wpi.edu">Chris Morgan</a>
+	    <li> status: Work has started, initial design ready
+	    <li> updated: Feb 18, 2004
 	  </ul>
 	<li> Exec-shield support <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
@@ -358,8 +372,8 @@
 	<li> Find packager for a PE-build of Wine on SF <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:puoti@inwind.it">Ivan Leo Murray-Smith</a>
-	    <li> status: working on it
-	    <li> updated: Feb 5, 2004
+	    <li> status: cleaning up PE-build
+	    <li> updated: Feb 18, 2004
 	  </ul>
 	<li> Standardize Wine handling in autoconf <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
