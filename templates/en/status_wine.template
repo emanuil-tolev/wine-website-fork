@@ -360,7 +360,7 @@
       <a href="?issue=41#Improving wrc">#41</a>,
       <a href="?issue=74#Wrc and alignment">#74</a>,
       <a href="?issue=166#Making%20Windres%20Similar%20to%20WRC">#166</a></td>
-      <td class="pct100">100% complete</td>
+      <td class="pct90">90% complete</td>
       <td>Dimitrie O. Paun</td>
     </tr>
     <tr>
@@ -420,7 +420,7 @@
       <td class="poor">Poor</td>
       <td><a href="?issue=128#Graphical Configuration Tool">#128</a></td>
       <td class="pct100">100% complete</td>
-      <td>Martin Pilka</td>
+      <td>Ivan Leo Murray-Smith,<br>Vincent Béron,<br>Alex Pasadyn</td>
     </tr>
     <tr>
       <td>Individual control status</td>
@@ -458,8 +458,8 @@
       <td>Wine configuration tool (winecfg)</td>
       <td class="nonexistent">Nonexistent</td>
       <td><a href="?issue=159#Making%20Config%20Tools">#159</a></td>
-      <td class="pct20">20% complete</td>
-      <td>Dimitrie O.Paun,<br>Jaco Greef,<br>Matthew Davison</td>
+      <td class="pct50">50% complete</td>
+      <td>Dimitrie O.Paun,<br>Mike Hearn</td>
     </tr>
     <tr class="hdr">
       <td colspan="5"><strong>No-Windows installation issues</strong></td>
@@ -488,63 +488,6 @@
       <td class="pct40">40% complete<br>
       Multimedia is preconfigured, but not printing.</td>
       <td>&nbsp;</td>
-    </tr>
-    <tr class="hdr">
-      <td colspan="5"><strong>Instructions</strong></td>
-    </tr>
-    <tr>
-      <td>How to install Wine</td>
-      <td class="good"><a href="http://www.winehq.com/docs/wine-user/">Good</td>
-      <td>None</td>
-      <td class="pct90"><a href="{$root}/site/status_todo#Instructions_">90% possible</a><br>
-      (on x86s running Linux, FreeBSD, or Solaris)</td>
-      <td>Andreas Mohr</td>
-    </tr>
-    <tr>
-      <td>How to debug</td>
-      <td class="adeqgood"><a href="http://www.winehq.com/docs/wine-user/bugs">Adequate</td>
-      <td><a href="?issue=33#Debugging Wine with Microsoft tools">#33</a>,
-      <a href="?issue=76#Setting up Winedbg">#76</a>,
-      <a href="?issue=113#Setting Breakpoints in the Debugger">#113</a>,
-      <a href="?issue=159#Finding%20Missing%20Locks%20with%20Smatch">#159</a>,
-      <a href="?issue=168#Updated%20Valgrind%20Instructions">#168</a>
-      </td>
-      <td class="pct80">80% possible</td>
-      <td>Andreas Mohr</td>
-    </tr>
-    <tr>
-      <td>How to create a useful bug report</td>
-      <td class="adeqgood"><a href="http://www.winehq.com/docs/wine-user/bug-reporting">Adequate</td>
-      <td><a href="?issue=122#Bugzilla: A Call to Arms">#122</a></td>
-      <td class="pct80">80% possible</td>
-      <td>Andreas Mohr</td>
-    </tr>
-    <tr>
-      <td>How to become a Wine developer</td>
-      <td class="adeqgood"><a href="http://www.winehq.com/docs/wine-devel/">Adequate</a></td>
-      <td><a href="?issue=103#More Window Handling Additions">#103</a>,
-      <a href="?issue=124#How *You* Can Help Wine">124 (1)</a>,
-      <a href="?issue=124#Code Practices">124 (2)</a>,
-      <a href="?issue=135#Patch Submission Tips">#135</a></td>
-      <td class="pct80">80% possible</td>
-      <td>Andreas Mohr</td>
-    </tr>
-    <tr>
-      <td>How to use Winelib</td>
-      <td class="outdadeq"><a href="http://www.winehq.com/docs/winelib-user/">Outdated</a></td>
-      <td><a href="?issue=123#What is WineLib?">#123</a>,
-      <a href="?issue=130#Imports in Winelib">#130</a>,
-      <a href="?issue=136#Mixing Unix and Windows Calls">#136</a>,
-      <a href='?issue=160#Porting%20With%20Winelib">#160</a></td>
-      <td class="pct60">60% possible</td>
-      <td>Andreas Mohr</td>
-    </tr>
-    <tr>
-      <td>How to compile MFC with Winelib</td>
-      <td class="outdadeq"><a href="http://www.winehq.com/docs/winelib-user/mfc-compiling">Outdated</td>
-      <td><a href="?issue=44#MFC and Wine">#44</a></td>
-      <td class="pct60">60% possible</td>
-      <td>Andreas Mohr</td>
     </tr>
   </table>
 </td>

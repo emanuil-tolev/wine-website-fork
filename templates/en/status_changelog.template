@@ -2,14 +2,26 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
- <p>Changes since October 1 2003:</p>
+<p>Changes since November 03, 2003:</p>
+
+ <ul>
+ <li>Remove - Instructions section</li>
+ <li>Remove - Jaco Greef, Matthew Davison as workers for Wine configuration tool (winecfg)</li>
+ <li>ADD - Mike Hearn as worker to Wine configuration tool (winecfg)</li>
+ <li<ADD - Ivan Leo Murray-Smith, Vincent Béron, Alex Pasadyn as workers to Wine Setup Tool (winesetuptk)</li>
+ <li>Wine Resource Compiler: 100% -&gt; 90%</li>
+ <li>Wine configuration tool (winecfg): 20% -&gt; 50%</li> 
+ </ul>
+ <br>
+
+ <p>Changes since October 01, 2003:</p>
 
  <ul>
  <li>ADD - link to API Status</li>
  </ul>
  <br>
 
- <p>Changes since September 28 2003:</p>
+ <p>Changes since September 28, 2003:</p>
 
  <ul>
  <li>Remove - Miscellaneous section from the Core Status page</li>
@@ -17,14 +29,14 @@
  </ul>
  <br>
 
- <p>Changes since August 23 2003:</p>
+ <p>Changes since August 23, 2003:</p>
 
  <ul>
  <li>ADD - http://www.badcomp.co.uk/ to Jason Edmeades</li>
  </ul>
  <br>
 
- <p>Changes since August 08 2003:</p>
+ <p>Changes since August 08, 2003:</p>
 
  <ul>
  <li>Remove - Some of the bullets from DirectX section</li>
@@ -35,14 +47,14 @@
  </ul>
  <br>
 
- <p>Changes since July 19 2003:</p>
+ <p>Changes since July 19, 2003:</p>
 
  <ul>
  <li>Cabinet.dll: 35% -&gt; 80%</li>
  </ul>
  <br>
 
- <p>Changes since July 17 2003:</p>
+ <p>Changes since July 17, 2003:</p>
  
  <ul>
  <li>All changes were made to Wine Status Core page</li>
@@ -83,7 +95,7 @@
  <br>
 
 
- <p>Changes since July 8 2003:</p>
+ <p>Changes since July 8, 2003:</p>
 
  <ul> 
  <li>changes made to Wine Status DLL's</li>
@@ -105,7 +117,7 @@
  <br>
 
  
- <p>Changes since May 27 2003:</p>
+ <p>Changes since May 27, 2003:</p>
 
  <ul>
  <li>All changes were made to Wine Status DLL's</li>
@@ -160,42 +172,6 @@
  <li>DirectShow: 0% -&gt; 5%</li>
  <li>rpcrt4: 5% -&gt; 20%</li>
  <li>odbc32: 70% -&gt; 60%</li>
- </ul>
- <br>
-
-
- <p>Changes since January 27 2003:</p>
-
- <ul>
- <li>ADD - Marcus Meissner as worker for ole32 & oleaut32</li>
- </ul>
- <br>
-
-
- <p>Changes since October 08 2002:</p>
-
- <ul>
- <li>Better grouping of entries</li>
- <li>New - wineboot</li>
- <li>New - JACK driver</li>
- <li>Font support: 80% -&gt; 90% (support w/o RENDER)</li>
- <li>wineconsole: 75% -&gt; 85% (ncurses)</li>
- <li>OSS driver: 100% -&gt; 95% (MIDI IN missing)</li>
- <li>Direct3D: 30% -&gt; 50%</li>
- <li>ODBC: 100% -&gt; 70%</li>
- <li>DLL separation: 75% -&gt; 85%</li>
- <li>winemaker: 70% -&gt; 75% (STRICT)</li>
- </ul>
- <br>
-
-
- <p>Changes since October 05 2002:</p>
-
- <ul>
- <li>Fixed the link to DLL overrides</li>
- <li>ADD - Links to WWN article coverage... Thanks to ( Brian Vincent )</li>
- <li>ADD - Greg Turner as new worker for rpcrt4: RPC/DCOM subsystem</li>
- <li>ADD - Jason Edmeads as new worker for Direct3D</li>
  </ul>
  <br>
 
