@@ -91,11 +91,11 @@
 			 and   <a href="http://www.winehq.com/hypermail/wine-cvs/2003/04/0123.html">committed</a>.
 	    <li> updated: Apr 18, 2003
 	  </ul>
-	<li> Fix documentation build process <span class=inprogress>[IN PROGRESS]</span>
+	<li> Fix documentation build process <span class="done">[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: Some patches submitted
-	    <li> updated: Sep 19, 2003
+	    <li> status: Patches committed
+	    <li> updated: Oct 17, 2003
           </ul>
 	<li> Move CVS docu from User Guide to Devel Guide <span class="done">[DONE]</span>
 	  <ul>
@@ -103,17 +103,17 @@
 	    <li> status: patch <a href="http://cvs.winehq.com/patch.py?id=6695">committed</a>.
 	    <li> updated: Dec 17, 2002
 	  </ul>
-	<li> Merge <tt>documentation/wine.texinfo</tt> into the Development Guide <span class=inprogress>[IN PROGRESS]</span>
+	<li> Merge <tt>documentation/wine.texinfo</tt> into the Development Guide <span class="done">[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: Review complete, patch in the works
-	    <li> updated: Sep 25, 2003
+	    <li> status: Patches <a href="http://www.winehq.org/hypermail/wine-cvs/2003/09/0349.html">committed</a>.
+	    <li> updated: Oct 17, 2003
           </ul>
-	<li> Merge <tt>documentation/HOWTO-winelib</tt> into the Development Guide <span class=inprogress>[IN PROGRESS]</span>
+	<li> Merge <tt>documentation/HOWTO-winelib</tt> into the Development Guide <span class="done">[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: Review almost complete
-	    <li> updated: Sep 25, 2003
+	    <li> status: Patches <a href="http://www.winehq.org/hypermail/wine-cvs/2003/09/0384.html">committed</a>.
+	    <li> updated: Oct 17, 2003
           </ul>
      </ol>
   <a name="conf"></a><h3> C. Wine configuration </h3>
@@ -226,12 +226,11 @@
 	    <li> status: some hacks exist, some more debugging needed
 	    <li> updated: May 26, 2003
 	  </ul>
-	<li> Finish DLL separation Phase 1 <span class=inprogress>[IN PROGRESS]</span>
+	<li> Finish DLL separation Phase 1 <span class=done>[DONE]</span>
 	  <ul>
-	    <li> workers: <a href="mailto:julliard@winehq.com">Alexandre Julliard</a>,
-			  <a href="mailto:eric.pouech@wanadoo.fr">Eric Pouech</a>.
-	    <li> status: being worked on
-	    <li> updated: Apr 14, 2003
+	    <li> workers: <a href="mailto:julliard@winehq.com">Alexandre Julliard</a>.
+	    <li> status: <a href="http://www.winehq.org/hypermail/wine-announce/2003/10/0000.html">completed</a>
+	    <li> updated: Oct 17, 2003
 	  </ul>
 	<li> Detect printing system at runtime <span class=done>[DONE]</span>
 	  <ul>
