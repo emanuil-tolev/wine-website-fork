@@ -293,8 +293,8 @@
 	<li> Visible region handling in server <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard </a>
-	    <li> status: ?
-	    <li> updated: Feb 5, 2004
+	    <li> status: window region <a href="http://cvs.winehq.org/patch.py?id=12703">moved</a>
+	    <li> updated: Jun 23, 2004
 	  </ul>
 	<li> Inter-process handle management <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
@@ -471,11 +471,12 @@
 	    <li> status: ?
 	    <li> updated: Feb 7, 2004
 	  </ul>
-	<li> Move graphics/*, objects/* -> dlls/gdi/ <span class=inprogress>[IN PROGRESS]</span>
+	<li> Move graphics/*, objects/* -> dlls/gdi/ <span class=done>[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
-	    <li> status: graphics/ was <a href="http://www.winehq.org/hypermail/wine-cvs/2004/02/0150.html">cleaned up</a>.
-	    <li> updated: Feb 12, 2004
+	    <li> status: graphics/ was <a href="http://www.winehq.org/hypermail/wine-cvs/2004/02/0150.html">cleaned up</a>,
+			 objects/ got <a href="http://www.winehq.org/hypermail/wine-cvs/2004/07/0244.html">moved</a>.
+	    <li> updated: Jul 21, 2004
 	  </ul>
 	<li> Move files/*, misc/* -> dlls/kernel/ dlls/user/ <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
