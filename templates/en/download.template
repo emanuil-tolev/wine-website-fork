@@ -52,7 +52,7 @@ FreeBSD
 <!-- Row 2 -->
 <tr>
 <td align=center rowspan="2" bgcolor="#e0e0e0">
-  Linux (glibc-2.2)
+  Linux (glibc-2.2, glibc-2.3)
 </td>
 
 <td align=center bgcolor="#ffffff">
@@ -130,7 +130,7 @@ FreeBSD
   Meissner</a></b>
 </td>
 <td bgcolor="#ffffff">
-  Regular Wine builds for SuSE 7.3 to 8.1. Maintained by Marcus
+  Regular Wine builds for SuSE 7.3 to 8.2. Maintained by Marcus
   Mei&szlig;ner
 </td>
 <td align=center bgcolor="#ffffff"> .rpm </td>
@@ -198,7 +198,7 @@ class=small>web-admin</a> in case of incorrect info !!</font></p>
 
 <p>
  Wine like all Linux software uses a library called glibc. Different versions of Linux distros
- ship versions of glibc. Make sure the Wine build you are downloading is built for your version
+ ship different versions of glibc. Make sure the Wine build you are downloading is built for your version
  of glibc.
 </p>
 
