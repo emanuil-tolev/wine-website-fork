@@ -3,7 +3,7 @@
 <h1>Wine Screenshot Gallery</h1>
 
 <div align=center>
-<table width="90%" border=0>
+<table border=0 cellpadding=10 cellspacing=0>
 <tr valign=top align=center>
   <td>{$im_0}</td>
   <td>{$im_1}</td>
@@ -13,6 +13,11 @@
   <td>{$im_3}</td>
   <td>{$im_4}</td>
   <td>{$im_5}</td>
+</tr>
+<tr valign=top align=center>
+  <td>{$im_6}</td>
+  <td>{$im_7}</td>
+  <td>{$im_8}</td>
 </tr>
 <tr valign=top>
   <td align=left>{$prev}</td>

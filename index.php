@@ -73,7 +73,7 @@ function home_page ()
 	
     // screenshot for homepage (random)
     $shots = get_files($file_root."/images/shots","png");
-    $c = intval(rand(0,count($shots) - 1));
+    $c = intval(rand(1,count($shots) - 1));
     $vars['screenshot'] = $html->ahref($html->img($file_root.'/images/shots/wine_'.$c.'.png','right'), $file_root.'/images/shots/full/wine_'.$c.'.png');
     
 	// get aboout box
@@ -130,7 +130,6 @@ function view_screenshots ($x)
 	$shots = get_files($file_root."/images/shots","png");
 
 	// setup vars
-    $x--;
 	$total = count($shots);
 	$num = 0;
 	$where = 0;
@@ -139,10 +138,10 @@ function view_screenshots ($x)
 	$vars['prev'] = "&nbsp;";
 
 	// loop and display images
-	while (list($c,$image) = each($shots))
+	for ($c = 1; $c < $total; $c++)
 	{
 		// do not show images less than current pos
-		if ($x > $c)
+		if ($x != 1 and $x >= $c)
 		  continue;
 
 		// display image
@@ -151,8 +150,8 @@ function view_screenshots ($x)
 		// count number of images displayed.
 		$num++;
 
-		// end at 6
-		if ($num == 6 or $num == $total)
+		// end at 9
+		if ($num == 9 or $num == $total)
 		{
 			$where = $c;
 			break;
@@ -160,17 +159,17 @@ function view_screenshots ($x)
 	}
     
 	// display prev link
-	if ($x)
+	if ($x > 1)
 	{
-		$prev = $x - 6;
-		$vars['prev'] = $html->ahref("&lt;&lt; Prev 4 Images","?ss=".$prev,"class=menuItem");
+		$prev = $total + 1 - $c;
+		$vars['prev'] = $html->ahref("&lt;&lt; Previous Screenshots","?ss=".$prev,"class=menuItem");
 	}
 
 	// display next link
-	if (($num + 6) < $total)
+	if (($x + 9) < $total)
 	{
-		$next = $where + 1;
-		$vars['next'] = $html->ahref("Next 4 Images &gt;&gt;","?ss=".$next,"class=menuItem");
+		$next = $where;
+		$vars['next'] = $html->ahref("More Screenshots &gt;&gt;","?ss=".$next,"class=menuItem");
 	}
 
     // load into template
