@@ -46,11 +46,11 @@
   (as of Nov 29, 2002):
   <ul>
     <li class=committed>controls/menu.c: user32: LoadMenuIndirectW: illegal call to LoadMenuIndirectA
-    <li>dlls/advapi32/crypt.c: advapi32: CryptAcquireContextW: illegal call to CryptAcquireContextA
-    <li>dlls/advapi32/crypt.c: advapi32: CryptEnumProviderTypesW: illegal call to CryptEnumProviderTypesA
-    <li>dlls/advapi32/crypt.c: advapi32: CryptEnumProvidersW: illegal call to CryptEnumProvidersA
-    <li>dlls/advapi32/crypt.c: advapi32: CryptGetDefaultProviderW: illegal call to CryptGetDefaultProviderA
-    <li>dlls/advapi32/crypt.c: advapi32: CryptSetProviderExW: illegal call to CryptSetProviderExA
+    <li class=submitted>dlls/advapi32/crypt.c: advapi32: CryptAcquireContextW: illegal call to CryptAcquireContextA
+    <li class=submitted>dlls/advapi32/crypt.c: advapi32: CryptEnumProviderTypesW: illegal call to CryptEnumProviderTypesA
+    <li class=submitted>dlls/advapi32/crypt.c: advapi32: CryptEnumProvidersW: illegal call to CryptEnumProvidersA
+    <li class=submitted>dlls/advapi32/crypt.c: advapi32: CryptGetDefaultProviderW: illegal call to CryptGetDefaultProviderA
+    <li class=submitted>dlls/advapi32/crypt.c: advapi32: CryptSetProviderExW: illegal call to CryptSetProviderExA
     <li class=committed>dlls/advapi32/registry.c: advapi32: RegConnectRegistryW: illegal call to RegOpenKeyA
     <li class=committed>dlls/advapi32/registry.c: advapi32: RegSaveKeyW: illegal call to HEAP_strdupWtoA
     <li class=committed>dlls/advapi32/registry.c: advapi32: RegSaveKeyW: illegal call to RegSaveKeyA
@@ -63,7 +63,7 @@
     <li class=committed>dlls/comctl32/imagelist.c: comctl32: ImageList_LoadImageW: illegal call to GetObjectA
     <li class=committed>dlls/commdlg/filetitle.c: comdlg32: GetFileTitleW: illegal call to GetFileTitleA
     <li class=committed>dlls/commdlg/filetitle.c: comdlg32: GetFileTitleW: illegal call to HEAP_strdupWtoA
-    <li class=invalid>dlls/commdlg/fontdlg.c: comdlg32: ChooseFontW: illegal call to HEAP_strdupWtoA
+    <li class=committed>dlls/commdlg/fontdlg.c: comdlg32: ChooseFontW: illegal call to HEAP_strdupWtoA
     <li class=committed>dlls/commdlg/printdlg.c: comdlg32: PrintDlgW: illegal call to GetWindowLongA
     <li>dlls/ddraw/main.c: ddraw: DirectDrawEnumerateExW: illegal call to DirectDrawEnumerateExA
     <li class=committed>dlls/gdi/enhmfdrv/init.c: gdi32: CreateEnhMetaFileW: illegal call to CreateDCA
@@ -203,7 +203,8 @@
 		 <a href="mailto:ulrich@codeweavers.com">Ulrich Czekalla</a>,
 		 <a href="mailto:mike@codeweavers.com">Mike McCormack</a>,
 		 <a href="mailto:juan_lang@yahoo.com">Juan Lang</a>,
-		 <a href="mailto:kevin@plop.org">Kevin Koltzau</a>.
+		 <a href="mailto:kevin@plop.org">Kevin Koltzau</a>,
+		 <a href="mailto:truiken@gmail.com">James Hawkins</a>.
     <li>status: <span class=inprogress>Over half done.</span>
     <li>updated: Apr 9, 2004
   </ul>
@@ -291,7 +292,7 @@
     <li class=committed> ntddscsi.h
     <li class=committed> ntddstor.h
     <li class=committed> ole.h
-    <li> options.h
+    <li class=committed> options.h
     <li class=committed> palette.h
     <li class=committed> path.h
     <li class=committed> queue.h
@@ -327,7 +328,7 @@
   This is tightly linked to the <b>DLL Separation</b> task, listed above.
   <ul>
     <li> controls
-    <li> files
+    <li class=committed> files
     <li class=committed> graphics
     <li class=committed> graphics/x11drv
     <li class=committed> loader/ne
@@ -335,7 +336,7 @@
     <li> misc
     <li class=committed> miscemu
     <li class=committed> msdos
-    <li> objects
+    <li class=committed> objects
     <li class=committed> relay32
     <li class=committed> scheduler
     <li class=committed> win32
