@@ -2,6 +2,108 @@
 
 <h1>Wine HowTo</h1>
 
-<p>
-Blah blah
-</p>
+
+<p>Before you install Wine make sure there is no previous Wine installation
+on your system.</p>
+
+<p>Many Linux distributions come with a Wine package, but this is usually a
+very old and sometimes broken version, so it is better to uninstall the old
+version and install a newer one. Refer to your distributions documentation
+on how to remove packages.</p>
+
+
+<ol>
+    <li><p><b>Download:</b></p>
+        
+        <p>You can download the latest Wine version <a href="?page=download">here</a>
+        or the latest source from <a href="?page=download">here</a>.</p>
+    </li>
+    
+    <li><p><b>Installation</b></p>
+    <ul>
+        <li><p><b>From Source</b></p>
+        
+        <p>Extract the downloaded file:
+         <table width="300" border=0 cellpadding=10><tr><td class=black>
+         <span class=inverse>tar zxvf Wine-YYYYMMDD.tar.gz</span>
+         </td></tr>
+         </table>        
+        This will create a new directory, enter this directory, they type:
+         <table width="300" border=0 cellpadding=10><tr><td class=black>
+         <span class=inverse>./tools/wineinstall</span>
+         </td></tr>
+         </table>
+        </li>
+        
+        <li><p><b>From Binary</b></p>
+        
+        <ul>
+            <li><p>RPM based</p>
+             <table width="300" border=0 cellpadding=10><tr><td class=black>
+             <span class=inverse>rpm -i wine-YYYYMMDD-i386.rpm</span>
+             </td></tr>
+             </table>
+            </li>
+            
+            <li><p>Debian</p>
+             <table width="300" border=0 cellpadding=10><tr><td class=black>
+             <span class=inverse>apt-get install wine</span>
+             </td></tr>
+             </table>
+            </li>
+        </ul>
+    </ul>
+    </li>
+
+    <li><p><b>Configuration</b></p>
+    
+    <p>In order to run Wine needs some files and directories.<br>
+    First you must create a virtual ('fake') windows drive<br>
+    The following directories mut exist in your $HOME directory:</p>
+    
+    <p>.wine/
+    <blockquote>
+        .wine/c_drive<br>
+        .wine/c_drive/Windows<br>
+        .wine/c_drive/Windows/Fonts<br>
+        .wine/c_drive/Windows/Start Menu/Programs<br>
+        .wine/c_drive/Windows/System<br>
+        .wine/c_drive/Windows/System32<br>
+        
+        .wine/c_drive/Windows/Temp<br>
+        .wine/c_drive/Program Files<br>
+        .wine/c_drive/Program Files/Common Files<br>
+    </blockquote>
+    </p>
+    
+    <p>After this copy the following files from wine-YYYYMMDD/documentation/samples
+    to $HOME/.wine/Windows:</p>
+    <blockquote>
+    system.ini<br>
+    win.ini
+    </blockquote>
+    
+    <p>All applications will be installed on this fake Windows drive.
+    Refered to C: inside of Windows applications.</p>
+    
+    <p>Wine also needs a configuration file. Copy the file config from wine-YYYYMMDD/documentation/samples
+    to $HOME/.wine.</p>
+    </li>
+
+
+    <li><p><b>The Wine configuration file</b><br>
+
+    <p>The config file is pretty self explanatory, just take a look at it. The
+    only thing you probably have to change is the mountpoint of the cdrom drive.<br>
+    You can get more information by typing:</p>
+    
+     <table width="300" border=0 cellpadding=10><tr><td class=black>
+     <span class=inverse>man wine.conf</span>
+     </td></tr>
+     </table>    
+     
+    </li>
+
+<ol>
+
+<p>&nbsp;</p>
