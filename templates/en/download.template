@@ -3,17 +3,21 @@
 <h1>Wine Binary Downloads</h1>
 
 <p>
-By downloading one of the binary packages given below, you acknowledge that
-the Wine devel team has <font color="red">absolutely no responsibility and
-authority</font> on these packages. The packagers frequently
-<font color="red">even fail to follow the Wine Packaging Guide</font>
-instructions, resulting in highly reduced functionality.
-In short: if you want to make sure that your Wine config is done as
-outlined (thus gaining pretty good compatibility), then use the Wine source and read the documentation very carefully.
+  <a href="http://sourceforge.net/project/showfiles.php?group_id=6241" target="_blank"><img
+  src="{$root}/images/download_wine.gif" border=1 width=88 height=31 vspace=20 hspace=10 align=left
+  alt="Download Wine"></a>
+  
+  By downloading one of the binary packages given below, you acknowledge that
+  the Wine devel team has <font color="red">absolutely no responsibility and
+  authority</font> on these packages. The packagers frequently
+  <font color="red">even fail to follow the Wine Packaging Guide</font>
+  instructions, resulting in highly reduced functionality.
+  In short: if you want to make sure that your Wine config is done as
+  outlined (thus gaining pretty good compatibility), then use the Wine source and read the documentation very carefully.
 </p>
 
 <p align=center>
-<font color="red" class=small>Please notify <a href="mailto:web-admin@winehq.com" class=small>web-admin</a> in case of incorrect info !!</font>
+  <font color="red" class=small>Please notify <a href="mailto:web-admin@winehq.com" class=small>web-admin</a> in case of incorrect info !!</font>
 </p>
 
 
@@ -30,6 +34,76 @@ outlined (thus gaining pretty good compatibility), then use the Wine source and 
 <td align=center bgcolor=black><b><font color=white class=small>Formats</font></b></td>
 </tr>
 
+<!-- Official Wine Versions -->
+<tr>
+<td colspan=4 align=center bgcolor="#777777">
+  <b><font color=white class=small>Official Wine Versions</font></b>
+</td>
+</tr>
+
+<!-- Row 1 -->
+<tr>
+<td align=center rowspan="1" bgcolor="#e0e0e0">
+Linux (glibc-2.2, [glibc-2.3 coming soon]), FreeBSD
+</td>
+
+<td align=center bgcolor="#ffffff">
+  <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241"><img
+      src="http://sourceforge.net/sflogo.php?group_id=6241"
+	  width="88" height="31" border="0" alt="SourceForge"></a></b>
+</td>
+<td bgcolor="#ffffff">
+  Official WineHQ builds hosted by <a
+  href="http://sourceforge.net/project/showfiles.php?group_id=6241">SourceForge.net</a>.
+  Updated with each release.
+</td>
+<td align=center bgcolor="#ffffff"> .rpm,  .tgz</td>
+</tr>
+
+<!-- Commercial Wine Versions -->
+<tr>
+<td colspan=4 align=center bgcolor="#777777">
+  <b><font color=white class=small>Commercial Wine Versions</font></b>
+</td>
+</tr>
+
+<!-- Row 2 -->
+<tr>
+<td align=center rowspan="2" bgcolor="#e0e0e0">
+  Linux (glibc-2.2)
+</td>
+
+<td align=center bgcolor="#ffffff">
+  <a href="http://www.codeweavers.com/products/crossover/">CrossOver Office</a>
+</td>
+<td bgcolor="#ffffff">
+  Award winning highly customimzed version with installer. Easy to use GUI tools to configure to work with
+  supported applications such as Microsoft Office. Email support available after purchase.
+  Multi-user server version also available. Evaluation versions available by request.
+  By <a href="http://www.codeweavers.com">CodeWeavers</a>.
+</td>
+<td align=center bgcolor="#ffffff"> Loki Installer </td>
+</tr>
+
+<tr>
+<td align=center bgcolor="#ffffff">
+  <b><a href="http://www.transgaming.com/">WineX</a></b>
+</td>
+<td bgcolor="#ffffff">
+  Custom version of Wine deisgned to work with DirectX based games.
+  Maintained by <a href="http://www.transgaming.com/">Transgaming</a>.
+</td>
+<td align=center bgcolor="#ffffff"> .rpm, .deb, source </td>
+</tr>
+
+<!-- Contributed Wine Versions -->
+<tr>
+<td colspan=4 align=center bgcolor="#777777">
+  <b><font color=white class=small>Contributed Wine Versions</font></b>
+</td>
+</tr>
+
+<!-- Row 3 -->
 <tr>
 <td align=center rowspan="4" bgcolor="#e0e0e0">
   Linux glibc-2.2 Systems (e.g. Debian 3.0, Red Hat 7.0 - 8.0, Slackware 8.1, Mandrake)
@@ -84,6 +158,8 @@ outlined (thus gaining pretty good compatibility), then use the Wine source and 
 <td align=center bgcolor="#ffffff"> .rpm </td>
 </tr>
 
+
+<!-- Row 4 -->
 <tr>
 <td align=center rowspan=3 bgcolor="#e0e0e0">
   Linux glibc-2.1 Systems (e.g. RedHat 6.x, Debian 2.2)
@@ -112,6 +188,7 @@ outlined (thus gaining pretty good compatibility), then use the Wine source and 
 <td align=center bgcolor="#ffffff"> .deb </td>
 </tr>
 
+<!-- Row 5 -->
 <tr>
 <td align=center rowspan=1 bgcolor="#e0e0e0">
   FreeBSD
@@ -125,23 +202,6 @@ outlined (thus gaining pretty good compatibility), then use the Wine source and 
   port information</a> at FreeBSD.
 </td>
 <td align=center bgcolor="#ffffff">.tgz </td>
-</tr>
-
-<tr>
-<td align=center bgcolor="#e0e0e0">
-  Commercial Linux Versions
-</td>
-
-<td align=center bgcolor="#ffffff">
-  <a href="http://www.codeweavers.com/products/crossover/">CrossOver Office</a>
-</td>
-<td bgcolor="#ffffff">
-  Award winning highly customimzed version with installer. Easy to use GUI tools to configure to work with
-  supported applications such as Microsoft Office. Email support available after purchase.
-  Multi-user server version also available. Evaluation versions available by request.
-  By <a href="http://www.codeweavers.com">CodeWeavers</a>.
-</td>
-<td align=center bgcolor="#ffffff"> Loki Installer </td>
 </tr>
 
 </table>

@@ -3,13 +3,19 @@
 <h1>Wine Source Downloads from Tarball</h1>
 
 <p>
-    You can get Wine Source tree, diffs, and docs from each release. Hosted by 
-    <a href="http://www.ibiblio.org">Ibiblio.org</a><br>
-    via
-    <a href="ftp://ftp.ibiblio.org/pub/Linux/ALPHA/wine/development/" target="_blank">[<b>FTP</b>]</a> or
-	<a href="http://www.ibiblio.org/pub/Linux/ALPHA/wine/development/" target="_blank">[<b>HTTP</b>]</a>. 
-    <br><br>
-    
+    You can get Wine Source tree, diffs, and docs from each release.
+    <br>Hosted by <a href="http://www.ibiblio.org">Ibiblio.org</a><br>
+</p>
+
+<blockquote>
+  <a href="http://www.ibiblio.org/pub/Linux/ALPHA/wine/development/" target="_blank"><img
+  src="{$root}/images/download_wine.gif" border=1 width=88 height=31
+  alt="Download Wine"><br><span
+  class="small">Download Source</span></a>
+</blockquote>
+
+
+<p>    
     To extract the file use:<br>
     
     <table width="300" border=0 cellpadding=10><tr><td class=black>
@@ -23,6 +29,11 @@
     After you have extracted Wine read the
     <a href="http://source.winehq.org/source/README">README</a>
     file included for further installation instructions.
+</p>
+
+<p>
+  <b>Note: </b> You can also download via
+  <a href="ftp://ftp.ibiblio.org/pub/Linux/ALPHA/wine/development/" target="_blank">FTP</a>.
 </p>
 
 <p>&nbsp;</p>
