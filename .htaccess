@@ -1,6 +1,9 @@
 # default permissions
 allow from all
 
+# 404 not found document
+ErrorDocument 404 http://www.winehq.org/?page=404
+
 # redirect old winehq pages to new locations
 RedirectPermanent /about.shtml                  http://www.winehq.org/?page=about
 RedirectPermanent /about/                       http://www.winehq.org/?page=about
