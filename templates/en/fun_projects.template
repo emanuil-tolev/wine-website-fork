@@ -310,10 +310,16 @@
   tracked also in Bugzilla, as 
   <a href="http://bugs.winehq.com/show_bug.cgi?id=1304">Bug #1304</a>.
 
-  <h3 class=todo>Wine Explorer</h3>
+  <h3 class=inprogress>Wine Explorer</h3>
   <p>A Windows Explorer replacement. People migrating from Windows would love it,
   and it would provide a great testbed for our <tt>shell32</tt> DLL, as well as
   some key controls such as the List-View Common Control.
+  <ul>
+    <li>worker: <a href="mailto:martin-fuchs_at_gmx.net">Martin Fuchs</a>
+    <li>status: <a href="http://www.sky.franken.de/explorer/index.html">active development</a>
+    <li>updated: Sep 9, 2003
+  </ul>
+  
 
   <h3 class=inprogress>Winetest Shell</h3>
   <p>Would be nice to have a shell exe (sort of like the one provided by JUnit), 
