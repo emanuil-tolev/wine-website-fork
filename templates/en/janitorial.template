@@ -225,33 +225,60 @@
     <li>updated: Jan 11, 2004
   </ul>
 
-  <h2>DLL separation</h2>
-  This one is broken down into two phases:
-  <dl>
-    <dt>Phase 1</dt>
-    <dd>DLLs make use of only the functions exported through the <tt>.spec</tt> files</dd>
-    <dt>Phase 2</dt>
-    <dd>Temporary hacks are eliminated out of the <tt>.spec</tt> files</dd>
-  </dl>
-
-  <h3>Phase 1</h3>
-  Please refer to the 
-  <a href="http://www.winehq.org/site/todo_lists">0.9 TODO</a>
-  for the status of this project.
-
-  <h3>Phase 2</h3>
-  A list of the functions that need attention can be found linked to
-  <a href="http://bugs.winehq.org/show_bug.cgi?id=96">Bug #96</a>,
-  or at the end of the <tt>.spec</tt> files.
-
-  <a name="winedos"></a><h3>WineDOS</h3>
-  Separate MSDOS support from kernel/ntdll into winedos. This task is
-  tracked by <a href="http://bugs.winehq.org/show_bug.cgi?id=546">Bug #546</a>.
+  <h3>DLL separation: Phase 2</h3>
+  Eliminate temporary hacks form the <tt>.spec</tt> files:
   <ul>
-    <li>worker: <a href="mailto:jhei@iki.fi">Jukka Heinonen</a>,
-    <li>status: <span class=inprogress>lots of patches submitted</span>
-    <li>updated: Jan 29, 2003
+    <li>ntdll.MODULE_DllThreadAttach(): kernel
+    <li>ntdll.MODULE_GetLoadOrderW(): kernel
+    <li>ntdll.VERSION_Init(): kernel
+    <li>ntdll.VIRTUAL_SetFaultHandler(): x11drv
+    <li>kernel32.DOSMEM_AllocSelector(): winedos
+    <li>kernel32.DOSMEM_Available(): winedos
+    <li>kernel32.DOSMEM_FreeBlock(): winedos
+    <li>kernel32.DOSMEM_GetBlock(): winedos
+    <li>kernel32.DOSMEM_Init(): winedos
+    <li>kernel32.DOSMEM_ResizeBlock(): winedos
+    <li>kernel32.LOCAL_Alloc(): gdi, user
+    <li>kernel32.LOCAL_Compact(): gdi
+    <li>kernel32.LOCAL_CountFree(): gdi
+    <li>kernel32.LOCAL_Free(): gdi, user
+    <li>kernel32.LOCAL_HeapSize(): gdi, user
+    <li>kernel32.LOCAL_Lock(): gdi, user
+    <li>kernel32.LOCAL_ReAlloc(): gdi, user
+    <li>kernel32.LOCAL_Size(): user
+    <li>kernel32.LOCAL_Unlock(): gdi, user
+    <li>kernel32.NE_DefResourceHandler(): user
+    <li>gdi32.CloseJob16(): wineps
+    <li>gdi32.DrvGetPrinterData16(): wineps
+    <li>gdi32.DrvSetPrinterData16(): wineps
+    <li>gdi32.OpenJob16(): wineps
+    <li>gdi32.SelectVisRgn16(): wineps, ttydrv, x11drv
+    <li>gdi32.SetDCHook(): x11drv
+    <li>gdi32.SetHookFlags16(): ttydrv, x11drv
+    <li>gdi32.WriteSpool16(): wineps
+    <li>gdi32.DIB_CreateDIBSection(): ddraw, x11drv
+    <li>gdi32.GDI_GetObjPtr(): x11drv
+    <li>gdi32.GDI_ReleaseObj(): x11drv
+    <li>user32.CallWindowProc16(): commdlg
+    <li>user32.CloseDriver16(): winmm
+    <li>user32.CreateDialogIndirectParam16(): commdlg
+    <li>user32.DefDriverProc16(): winmm
+    <li>user32.DefWindowProc16(): ctl3d
+    <li>user32.DestroyIcon32(): kernel
+    <li>user32.DialogBoxIndirectParam16(): commdlg
+    <li>user32.GetDriverModuleHandle16(): winmm
+    <li>user32.OpenDriver16(): winmm
+    <li>user32.SendDriverMessage16(): winmm
+    <li>user32.UserYield16(): winmm
+    <li>user32.HOOK_CallHooks(): ttydrv, x11drv
+    <li>user32.USER_Unlock(): x11drv
+    <li>user32.WINPOS_ActivateOtherWindow(): ttydrv, x11drv
+    <li>user32.WINPOS_GetMinMaxInfo(): x11drv
+    <li>user32.WINPOS_ShowIconTitle(): ttydrv, x11drv
+    <li>user32.WIN_GetPtr(): ttydrv, x11drv
+    <li>user32.WIN_SetStyle(): x11drv
   </ul>
+
 
   <h2>Stick to the Win32 API</h2>
   There are <em>many</em> reasons why we should use the Win32 API as much
@@ -276,19 +303,17 @@
     <li>dlls/winspool/info.c
     <li>dlls/wineps/escape.c
     <li>dlls/wineps/init.c
-    <li>windows/clipboard.c
   </ul>
   When these are finally removed, we can get rid of the non-standard include
   file <tt>heap.h</tt>.<p>
 
   <h3>Include file cleanup</h3>
   That is, no more Wine-specific headers in <tt>include/</tt>. This is tightly
-  related to the <b>DLL Separation</b> task, listed above. There are 13 Wine-only
+  related to the <b>DLL Separation</b> task, listed above. There are 11 Wine-only
   headers that need to be moved:
   <ul>
     <li> builtin16.h
     <li> cursoricon.h
-    <li> dce.h
     <li> dciddi.h
     <li> gdi.h
     <li> heap.h
@@ -303,7 +328,7 @@
     <li>workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>,
 		 <a href="mailto:pouech-eric@wanadoo.fr">Eric Pouech</a>.
     <li>status: <span class=inprogress>first patches committed.</span>
-    <li>updated: Jan 20, 2005
+    <li>updated: Mar 28, 2005
   </ul>
 
   <h3>Remove non-standard directories</h3>
@@ -479,6 +504,14 @@
     <li>completed: <span class="done">Nov 22, 2002</span>
   </ul>
 
+  <h4><tt>HEAP_strdupAtoW</tt></h4>
+  These should be changed to <tt>MultiByteToWideChar</tt>,
+  or even better to <tt>RtlCreateUnicodeStringFromAsciiz</tt>.
+  <ul>
+    <li>workers: Matthew Davison
+    <li>completed: <span class="done">Jan 27, 2003</span>
+  </ul>
+
   <h3>Get rid of 32-&gt;16 calls</h3>
   We should not call 16 bit from 32 bit code. With the ongoing 16-bit
   separation, this is even more so important. 
@@ -509,12 +542,11 @@
     <li>completed: <span class="done">Sep 9, 2003</span>
   </ul>
 
-  <h4><tt>HEAP_strdupAtoW</tt></h4>
-  These should be changed to <tt>MultiByteToWideChar</tt>,
-  or even better to <tt>RtlCreateUnicodeStringFromAsciiz</tt>.
+  <h3>DLL separation: Phase 1</h3>
+  DLLs make use of only the functions exported through the <tt>.spec</tt> files.
   <ul>
-    <li>workers: Matthew Davison
-    <li>completed: <span class="done">Jan 27, 2003</span>
+    <li>workers: Alexandre Julliard
+    <li>completed: <span class="done">Feb 7, 2004</span>
   </ul>
 
   <h3>Fix HeapReAlloc/RtlReAllocateHeap() calls</h3>
@@ -544,7 +576,7 @@
     <li>completed: <span class="done">Jan 25, 2005</span>
   </ul>
 
-  <h2>Remove HeapAlloc casts</h2>
+  <h3>Remove HeapAlloc casts</h3>
 
   Casting the return value of HeapAlloc and HeapReAlloc is unnecessary,
   and should be avoided.  All existing casts can be removed.  You can
