@@ -41,7 +41,7 @@ class config
                                         'Documentation' => $this->_file_root.'?page=documentation',
                                         'FAQ' => $this->_file_root.'?page=faq',
 										'HowTo' => $this->_file_root.'?page=howto',
-										'Bug Tracking' => 'http://bugs.winehq.org/',
+										'Bug Tracking' => $this->_file_root.'?page=bug_tracking',
                                         'Applications' => $this->_file_root.'?page=supported_applications',
 										//'Troubleshooting' => $this->_file_root.'?page=troubleshooting',
 										'Forums' => $this->_file_root.'?page=forums'
