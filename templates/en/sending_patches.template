@@ -2,8 +2,13 @@
 
 <h1>Generating and Submitting Patches</h1>
 
+<p><b>Note</b>: this is a quick reference on how to send us patches.
+For detailed instructions please see the
+<a href="{$root}/site/docs/wine-devel/patches">Submitting Patches</a>
+chapter in our online documentation.</p>
+
 <p>Please submit patches to the Wine patches mailing list,
-<a href="mailto:wine-patches@winehq.com">wine-patches@winehq.com</a>.
+<a href="mailto:wine-patches@winehq.org">wine-patches@winehq.org</a>.
 (Note that if you're not <a href="{$root}/site/forums">subscribed</a> to the mailing
 list, the mailing list administrators must first check your submission
 to make sure it's not spam before they can let it through.)</p>
@@ -25,7 +30,7 @@ file.  Then, use</p>
 
  <table width="300" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
-  cvs diff &gt; patch.diff
+  cvs diff -u &gt; patch.diff
  </span>
  </td></tr>
  </table>
@@ -82,6 +87,6 @@ a silent, featureless void. Please resubmit if this happens to your patch.</p>
 
 <p>There is no attempt to apply patches that appears in the newsgroup
 to the CVS tree. Please send patches to 
-<a href="mailto:wine-patches@winehq.com">wine-patches@winehq.com</a>.</p>
+<a href="mailto:wine-patches@winehq.org">wine-patches@winehq.org</a>.</p>
 
 <p>&nbsp;</p>
