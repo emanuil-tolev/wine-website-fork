@@ -190,11 +190,11 @@
     <li>memory/environ.c: kernel32: GetEnvironmentVariableW: illegal call to HEAP_strdupWtoA
     <li>memory/environ.c: kernel32: SetEnvironmentVariableW: illegal call to HEAP_strdupWtoA
     <li>memory/environ.c: kernel32: SetEnvironmentVariableW: illegal call to SetEnvironmentVariableA
-    <li>objects/dc.c: gdi32: CreateDCW: illegal call to CreateDCA
-    <li>objects/dc.c: gdi32: CreateDCW: illegal call to HEAP_strdupWtoA
-    <li>objects/dc.c: gdi32: ResetDCW: illegal call to ResetDCA
+    <li class=committed>objects/dc.c: gdi32: CreateDCW: illegal call to CreateDCA
+    <li class=committed>objects/dc.c: gdi32: CreateDCW: illegal call to HEAP_strdupWtoA
+    <li class=committed>objects/dc.c: gdi32: ResetDCW: illegal call to ResetDCA
     <li class=committed>objects/font.c: gdi32: GetKerningPairsW: illegal call to GetKerningPairsA
-    <li class=submitted>objects/metafile.c: gdi32: CopyMetaFileW: illegal call to CopyMetaFileA
+    <li class=committed>objects/metafile.c: gdi32: CopyMetaFileW: illegal call to CopyMetaFileA
     <li>scheduler/process.c: kernel32: CreateProcessW: illegal call to CreateProcessA
     <li>scheduler/process.c: kernel32: CreateProcessW: illegal call to HEAP_strdupWtoA
     <li class=committed>win32/except.c: kernel32: FatalAppExitW: illegal call to GetModuleHandleA
