@@ -15,6 +15,7 @@ class wwn
     var $summary;
     var $person;
     var $map_array;
+    var $inquote = 0;
     
     // init wwn object
     function wwn ()
@@ -22,7 +23,6 @@ class wwn
         $this->summary = array();
         $this->person = array();
         $this->map_array = array(
-                   "p"	    => "p",
                    "a"	    => "a",
                    "b"	    => "b",
                    "i"	    => "i",
@@ -351,6 +351,7 @@ class wwn
             case "SECTION":
               array_push($this->summary, $attrs{'TITLE'});
               $this->body .= $html->br();
+              $this->body .= "<a name=\"".$attrs{'TITLE'}."\"></a>\n";
               $this->body .= $html->frame_start("","100%","align=center", 0, "white");
               $this->body .= "<tr class=color0 bgcolor=\"#E0E0E0\">\n\n";
               $this->body .= "<td>".$attrs{'STARTDATE'}."</td>\n";
@@ -358,7 +359,6 @@ class wwn
               $this->body .= "<td align=right><a href=\"".$attrs{'ARCHIVE'}."\">Archive</a></td>\n";
               $this->body .= "</tr>\n";
               $this->body .= "<tr class=frameBody bgcolor=\"#FFFFFF\"><td colspan=3>\n\n";
-              $this->body .= "<a name=\"".$attrs{'TITLE'}."\"></a>\n";
               break;
             case "STATS":
               $pctMTO = intval(($attrs{'MULTIPLES'} / $attrs{'CONTRIB'}) * 100);
@@ -383,7 +383,8 @@ class wwn
                         );
               break;
             case "QUOTE":
-              $this->body .= "<blockquote><span class=\"wwnQuote\">";
+              $this->body .= '<span class="wwnQuote">';
+              $this->inquote = 1;
               break;
             case "INTERVIEW":
               break;
@@ -391,7 +392,16 @@ class wwn
               $this->body .= "<p><b>";
               break;
             case "ANSWER":
-              $this->body .= "<blockquote><span class=\"wwnQuote\">";
+              $this->body .= '<p class="indent"><span class="wwnQuote">';
+              break;
+            case "TOPIC":
+              $this->body .= "<b>";
+              break;
+            case "P":
+              if ($this->inquote)
+                $this->body .= '<p class="indent">';
+              else
+                $this->body .= "<p>";
               break;
             default:
               if (isset($this->map_array[strtolower($name)]))
@@ -438,19 +448,26 @@ class wwn
               $this->body .= $html->frame_end("");
               break;
             case "QUOTE":
-              $this->body .= "</span></blockquote>";
+              $this->body .= "</span>";
+              $this->inquote = 0;
               break;
             case "INTERVIEW":
-              
               break;
             case "QUESTION":
               $this->body .= "</b></p>";
               break;
             case "ANSWER":
-              $this->body .= "</span></blockquote>";
+              $this->body .= "</span></p>";
+              break;
+            case "TOPIC":
+              $this->body .= "</b>";
+              break;
+            case "P":
+              $this->body .= "</p>";
               break;
             case "BR":
               $this->body .= $html->br();
+              break;
             default:
               if (isset($this->map_array[strtolower($name)]))
                 $this->body .= "</".$this->map_array[strtolower($name)].">\n";			
