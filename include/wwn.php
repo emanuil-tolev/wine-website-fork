@@ -22,23 +22,24 @@ class wwn
         $this->summary = array();
         $this->person = array();
         $this->map_array = array(
-                   "p"		=> "p",
-                   "br"		=> "br",
-                   "a"		=> "a",
-                   "b"		=> "b",
-                   "i"		=> "i",
-                   "u"		=> "u",
-                   "ul"		=> "ul",
-                   "ol"		=> "ol",
-                   "li"		=> "li",
-                   "table"	=> "table",
-                   "tr"		=> "tr",
-                   "td"		=> "td",
+                   "p"	    => "p",
+                   "br"	    => "br",
+                   "a"	    => "a",
+                   "b"	    => "b",
+                   "i"	    => "i",
+                   "u"	    => "u",
+                   "ul"	    => "ul",
+                   "ol"	    => "ol",
+                   "li"	    => "li",
+                   "table"  => "table",
+                   "tr"	    => "tr",
+                   "td"	    => "td",
+                   "th"     => "th",
                    "dl"     => "dl",
                    "dt"     => "dt",
                    "dd"     => "dd",
                    "tt"     => "tt",
-                   "code"	=> "code",
+                   "code"   => "code",
                    "blockquote"	=> "blockquote"	   
                   );
     }
