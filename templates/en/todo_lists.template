@@ -7,9 +7,9 @@
   interfaces with the outside world:
   <ol type="A">
     <li> <a href="#winehq">WineHQ</a>        <span class="done">[READY]</span>
-    <li> <a href="#doc">Documentation</a>    <span class="todo">[BLOCKER]</span>
-    <li> <a href="#conf">Configuration</a>   <span class="todo">[BLOCKER]</span>
-    <li> <a href="#ui">User Interface</a>    <span class="inprogress">[ALMOST]</span>
+    <li> <a href="#doc">Documentation</a>    <span class="inprogress">[ALMOST]</span>
+    <li> <a href="#conf">Configuration</a>   <span class="inprogress">[ALMOST]</span>
+    <li> <a href="#ui">User Interface</a>    <span class="done">[READY]</span>
     <li> <a href="#formats">File Formats</a> <span class="done">[READY]</span>
     <li> <a href="#api">Exported API</a>     <span class="done">[READY]</span>
     <li> <a href="#tools">Tools</a>          <span class="done">[READY]</span>
@@ -125,11 +125,11 @@ committed</a>.
 	    <li> status: <a href="http://www.winehq.org/hypermail/wine-patches/2004/10/0141.html">update</a> committed.
 	    <li> updated: Dec 7, 2004
 	  </ul>
-	<li> Revise the 'Getting Wine' chapter <span class="inprogress">[IN PROGRESS]</span>
+	<li> Revise the 'Getting Wine' chapter <span class="done">[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:scott@open-vote.org">Scott Ritchie</a>
-	    <li> status: rewriting until things stop changing
-	    <li> updated: Dec 7, 2004
+	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2005/02/0244.html">patch</a> committed.
+	    <li> updated: Feb 19, 2005
 	  </ul>
 	<li> Update configuration instructions based winecfg & regedit <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
@@ -152,11 +152,11 @@ committed</a>.
      </ol>
   <h4> Devel Guide </h4>
     <ol> 
-	<li> Update COM section/widl <span class="todo">[TODO]</span>
+	<li> Add some DCOM docs <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: ?
-	    <li> status: ?
-	    <li> updated: Feb 5, 2004
+	    <li> worker: <a href="mailto:mike@theoretic.com">Mike Hearn</a>
+	    <li> status: first part committed, second part written already
+	    <li> updated: Feb 22, 2005
 	  </ul>
 	<li> Redo Multimedia section <span class="done">[DONE]</span>
 	  <ul>
@@ -164,11 +164,11 @@ committed</a>.
 	    <li> status: changes <a href="http://www.winehq.org/hypermail/wine-cvs/2004/10/0158.html">committed</a>.
 	    <li> updated: Oct 11, 2004
           </ul>
-	<li> Add i18n section <span class="inprogress">[IN PROGRESS]</span>
+	<li> Add i18n section <span class="todo">[TODO]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:vberon@mecano.gme.usherb.ca">Vincent B&eacute;ron</a>
+	    <li> worker: ?
 	    <li> status: ?
-	    <li> updated: Feb 5, 2004
+	    <li> updated: Feb 19, 2005
 	  </ul>
 	<li> Suggest adding tests w/ patches <span class="done">[DONE]</span>
 	  <ul>
