@@ -204,20 +204,20 @@ class html
     }
 
     // COOL FRAME START
-    function frame_start ($title = "", $width = "", $extra = "", $innerPad = 5)
+    function frame_start ($title = "", $width = "", $extra = "", $innerPad = 5, $class = "topMenu")
     {
         if ($width) { $width = 'width="'.$width.'"'; }
         $str = '<div align=center>'."\n";
         $str .= '<table '.$width.' border=0 cellpadding=0 cellspacing=0>'."\n";
         if($title)
         {
-    	    $str .= '<tr><td class="topMenu">'."\n";
+    	    $str .= '<tr><td class="'.$class.'">'."\n";
             $str .= '    <table width="100%" border=0 cellpadding=0 cellspacing=0><tr>'."\n";
     	    $str .= '        <td width="100%" align=center><span class=menuTitle> '.$title.' </span></td>'."\n";
             $str .= '    </tr></table>'."\n";
     	    $str .= '</td></tr>'."\n";
         }
-        $str .= '<tr><td class="topMenu">'."\n";	
+        $str .= '<tr><td class="'.$class.'">'."\n";	
         $str .= '<table width="100%" border=0 cellpadding='.$innerPad.' cellspacing=1 '.$extra.'>'."\n";
         return $str;
     }

@@ -58,9 +58,6 @@ function wwn_issues_list ($wwn, $cur, $limit = 0, $pos = 0)
 	$perpage = 12;
 	$total = count($wwn);
 	$where = 0;
-		
-	if ($limit > 0)
-	  $clim = 2;
 
 	$c = 0;
 	$num = -1;
@@ -86,7 +83,7 @@ function wwn_issues_list ($wwn, $cur, $limit = 0, $pos = 0)
 
 		// display summary
 		$xml = wwn_xml_parse($config->wwn_xml_path."/".$file);
-		$summary = wwn_format_summary($xml[1],$issue, $xml[2], $clim);
+		$summary = wwn_format_summary($xml[1],$issue, $xml[2]);
 		
 		if ($limit == 0)
 		  $back .= "\n\n<td>\n".$summary."\n</td>\n";
@@ -158,7 +155,7 @@ function wwn_issues_list ($wwn, $cur, $limit = 0, $pos = 0)
 }
 
 // format the summary box
-function wwn_format_summary ($array, $cur, $date = null, $limit = 0)
+function wwn_format_summary ($array, $cur, $date = null)
 {
 	global $PHP_SELF;
     
@@ -168,8 +165,6 @@ function wwn_format_summary ($array, $cur, $date = null, $limit = 0)
     $c = 0;	    
 	while(list($id,$sum) = each($array))
 	{
-		if ($limit != 0 && $c == $limit)
-		  break;
 		$summary .= '<li><a href="'.$PHP_SELF."?wwn=".$cur."#".$sum.'" class="small">'.$sum.'</a></li>'."\n";
 		$c++;
 	}
@@ -290,17 +285,17 @@ function wwn_startElement ($parser, $name, $attrs)
 		  $issue = $attrs{'DATE'};
 		  break;
 		case "INTRO":
-		  $body .= $html->frame_start("","","align=center");
+		  $body .= $html->frame_start("","","align=center", 0, "white");
 		  $body .= "<tr class=frameBody><td colspan=3 bgcolor=\"#FFFFFF\">\n\n";
 		  $body .= "<a name=\"Intro\"></a>\n";
         	  break;	
 		case "SECTION":
 		  array_push($summary, $attrs{'TITLE'});
 		  $body .= $html->br();
-		  $body .= $html->frame_start($attrs{'STARTDATE'},"","align=center");
+		  $body .= $html->frame_start("","","align=center", 0, "white");
 		  $body .= "<tr class=color0 bgcolor=\"#E0E0E0\">\n\n";
-		  $body .= "<td align=left><a href=\"#TOP\">Top</a></td>\n";
-		  $body .= "<td align=center width=\"100%\">".$attrs{'TITLE'}."</td>\n";
+          $body .= "<td>".$attrs{'STARTDATE'}."</td>\n";
+		  $body .= "<td align=center width=\"100%\"><b>".$attrs{'TITLE'}."</b></td>\n";
 		  $body .= "<td align=right><a href=\"".$attrs{'ARCHIVE'}."\">Archive</a></td>\n";
 		  $body .= "</tr>\n";
 		  $body .= "<tr class=frameBody bgcolor=\"#FFFFFF\"><td colspan=3>\n\n";
@@ -310,7 +305,7 @@ function wwn_startElement ($parser, $name, $attrs)
 		  $pctMTO = intval(($attrs{'MULTIPLES'} / $attrs{'CONTRIB'}) * 100);
 		  $pctLWK = intval(($attrs{'LASTWEEK'} / $attrs{'CONTRIB'}) * 100);
 		  $body .= $html->br();
-		  $body .= $html->frame_start("","","align=center");
+		  $body .= $html->frame_start("","","align=center", 0, "white");
 		  $body .= "<tr class=frameBody><td colspan=3 bgcolor=\"#FFFFFF\">\n\n";
 		  $body .= "<p> This week, ".$attrs{'POSTS'}." posts consumed ".$attrs{'SIZE'}." K. ".
 		          "There were ".$attrs{'CONTRIB'}." different contributors. ".
