@@ -75,7 +75,9 @@
         in the [Debug] section if you're being overwhelmed by certain
         functions. A good initial value for RelayExclude is:<p>
 
-          <code cols="72"> RtlEnterCriticalSection;RtlLeaveCriticalSection;_EnterSysLevel;_LeaveSysLevel;_CheckNotSysLevel;RtlAllocateHeap;RtlFreeHeap;LOCAL_Lock;LOCAL_Unlock </code><p>
+        <code> RtlEnterCriticalSection;RtlLeaveCriticalSection;_EnterSysLevel;_LeaveSysLevel;
+        _CheckNotSysLevel;RtlAllocateHeap;RtlFreeHeap;LOCAL_Lock;LOCAL_Unlock 
+        </code><p>
 
         Most of these functions are called a lot, but don't usually
         give any clues as to why a program might be failing. <p>
