@@ -1,23 +1,23 @@
 {$screenshot}
 
-<p>Wine is an implementation of the <a href="http://www.microsoft.com/windows/">Windows</a>
-Win32 and Win16 APIs on top of <a href="http://www.xfree86.org/">X</a> and
-Unix.</p>
+<p>Wine is an open-source implementation of the <a
+href="http://www.microsoft.com/windows/">Windows</a> API on top of <a
+href="http://www.xfree86.org/">X</a> and Unix.</p>
 
 <p>Think of Wine as a Windows compatibility layer. Wine does not require
 Microsoft Windows, as it is a completely alternative implementation
 consisting of 100% Microsoft-free code, but it can optionally use
 native system DLLs if they are available. Wine provides both a development
 toolkit (Winelib) for porting Windows sources to Unix and a program loader,
-allowing many unmodified Windows binaries to run under Intel (x86 based)
+allowing many unmodified Windows binaries to run on x86-based
 Unixes, including
 <a href="http://www.linux.org/">Linux</a>,
 <a href="http://www.freebsd.org/">FreeBSD</a>, and
 <a href="http://www.sun.com/solaris/">Solaris</a>.</p>
 
-<p> More information can be read in the articles <a href="?page=why">Why Wine
+<p>More information can be read in the articles <a href="?page=why">Why Wine
 is so important</a>,  and <a href="?page=myths">Debunking Wine Myths</a>.</p>
 
 <p>The <a href="http://source.winehq.com/source/LICENSE">licensing terms</a>
-are the <a href="http://source.winehq.org/source/COPYING.LIB">GNU Lesser General
-Public License</a>.</p>
+are the <a href="http://source.winehq.org/source/COPYING.LIB">GNU Lesser
+General Public License</a>.</p>

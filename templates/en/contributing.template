@@ -56,25 +56,30 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
 <h2>General maintenance</h2>
 
 <blockquote>
-    
+
     <a name="web"></a>
     <h3>Web site maintenance</h3>
-    <p>We are in the process of redoing the web site and we really could use some help.
-    The current beta is located at <a href="http://lostwages.winehq.org">http://lostwages.winehq.org</a>
-    Here is the current list of bugs that needs attention: 597, 598, 600, 601, 605, 607, 608.If you would
-    like to offer assistance with web maintenace feel free to contact <a href="mailto:wine-devel@winehq.com">
-    Wine-Develipmont</a>.
-    </p>
-    <p>You may also want to look at the discussion that 
-    took place on <a href="http://www.winehq.com/hypermail/wine-devel/2002/11/0358.html">Wine-Devel</a>
-    
-    mailing list.
-    </p>
-    Required skills:
-    <ul>
-    <li>General Web design 
-    </li></ul>
-    
+     <p>WineHQ has been redesigned recently. But there is still work to do.
+       So if you feel like writing about Wine or coding in PHP your
+       contribution will be appreciated. You can find the current task list
+       in <a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&bug_status
+=ASSIGNED&bug_status=REOPENED&product=WineHQ.com&component=misc-web">Bugzilla</a
+>,
+       but see also this <a href="http://www.winehq.com/hypermail/wine-devel/20
+03/03/0804.html">email</a>
+       for a great TODO list.
+       Getting started is easy. Just get the WineHQ sources by following the
+       instructions in our <a href="http://www.winehq.com/?page=cvs">CVS</a>
+       section and look at the files in templates/en. And to submit patches,
+       simply follow the instructions on our
+       <a href="http://www.winehq.com/?page=sending_patches">Sending Patches</a> page.
+     <p>Required skills:</p>
+     <ul>
+       <li>Writing skills</li>
+       <li>General Web design</li>
+       <li>Php (optional)</li>
+     </ul>
+
     <a name="draw"></a>
     <h3>Draw icons for Wine</h3>
     <p>Wine cannot reuse the Windows icons verbatim because of copyright issues. So we have to redraw 
@@ -84,12 +89,12 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     </p>
     Required skills:
     <ul>
-    <li>Drawing skills 
+    <li>Drawing skills
     </li></ul>
-    
+
     <a name="app_owners"></a>
     <h3>Application database: application owners</h3>
-    
+
     <p>Another very important aspect of Wine testing is to use or test real
     applications regularly and report regressions as soon as possible to the Wine 
     developers. This way regressions are caught early, while the set of changes
@@ -120,9 +125,9 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
         all actions required to get the application to run properly, e.g. 
         collected from the comments of visitors on the application/versions pages
       </li><li>Coding skills <b>not necessary</b>
-    
+
     </li></ul>
-    
+
     <a name="support"></a>
     <h3>Bug hunting and support</h3>
     <p>Because there are so many Windows applications out there, and because 
@@ -147,13 +152,13 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
         much easier for Wine developers to find the exact source of the bug and
         to come up with a fix.If the problem is not quickly resolved on the newsgroup
         or wine-users then starting a bug report in bugzilla. Search through the 
-        unconfirmed and new bug reports and get them in proper shape for developers. 
+        unconfirmed and new bug reports and get them in proper shape for developers.
         Subscribe to to wine bugs (<a href="mailto:wine-bugs@winehq.org">wine-bugs@winehq.org</a>) 
         This read-only list has all entries for unassigned bugs sent to it.Confirmiming unconfirmed bugs and 
         suggesting debug channels to try are just some of the tasks that need to be done
     </li></ul>
     Required skills:
-    
+
     <ul>
       <li>General knowledge of the Wine configuration to be able to tell 
          users how to switch from managed to unmanaged window management, how to 
@@ -172,10 +177,10 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
 <h2>Development</h2>
 
 <blockquote>
-    
+
     <a name="devel_task"></a>
     <h3>Some Development Task</h3>
-    
+
     <p>The overall implementation status of Wine can be checked on the <a href="http://www.dssd.ca/about/index.php?status">Wine Status
     page</a>.</p>
     <p>See the following task lists to find a development task:
@@ -193,7 +198,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
          Some tasks also draw on non-Wine specific knowledge. For instance
          a task may require being knowledgeable in Lex/Yacc so if you have
          an expertise in a given domain you may want to scan it.
-    
+
       </li><li><a name="FIXMEs"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;keywords=FIXME&amp;keywords_type=anywords">FIXMEs</a><br>
         This list contains tasks that are intermediate between those found
         in the Task list and the Task lets. Issues found in this list are
@@ -202,9 +207,9 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
         implement, it normally is not thought to require extensive 
         knowledge of multiple areas of Wine, or extensive reorganization 
         of the Wine code.
-    
+
       </li><li><a name="tasklist"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;keywords=tasklist&amp;keywords_type=anywords">Tasklist</a><br>
-    
+
         The major development tasks are listed there. This is the place to
         check out if you want to get involved in one of the larger / 
         longer-term projects. Bugs placed in this list have the following
@@ -220,10 +225,10 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
           </li><li>normally include a rational for why such development is
             desirable
         </li></ul>
-    
+
       </li><li><a name="wine_0_9_0"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;target_milestone=0.9.0&amp;order=bugs.bug_severity">Wine 0.9.0</a>
         and <a name="wine_1_x"></a><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;target_milestone=1.0.0&amp;order=bugs.bug_severity">Wine 1.x</a> task overviews<br>
-    
+
         Regroups the issues that need to be resolved before Wine 0.9.0 can
         be released. One word about Wine 0.9.0 and Wine 1.0: Wine 1.0 
         does not mean that Wine will run all Windows applications. It
@@ -248,12 +253,12 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
           </li><li>Then when everything is frozen we release 1.0
           </li><li>After 1.0.0 we will have stable and unstable branches
         </li></ul>
-    
+
         </li></ul>
-    
+
     <a name="conf_tests"></a>
     <h3>Conformance tests</h3>
-    
+
     <p>The goal of Wine's conformance testing is to make sure that the behavior 
     of Wine's APIs conforms to that of the corresponding Windows API. As there are many versions
     Window's from 95 to XP we need people to write the test as well as volunteers to run
@@ -276,12 +281,12 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
         written on Windows
       </li><li>A Windows install for testing...95, 98, 98SE, ME, XP, NT, 2000
       </li><li>Coding skills <b>not necessary</b> for running the test
-    
+
     </li></ul>
-    
+
     <a name="cross"></a>
     <h3>Cross referencing the Windows executables and libraries</h3>
-    
+
     <p>The idea is to write a Perl script that analyzes the Windows dlls and executables of a 
     regular Windows installation and cross references them. This would generate Web pages 
     telling you which API is used by which program/library and reciprocally.
@@ -296,10 +301,10 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     <li>Perl
     </li><li>General HTML
     </li></ul>
-    
+
     <a name="doc_win_api"></a>
     <h3>Documentation of the Windows API functions</h3>
-    
+
     <p><h5>The main reason is that as MS moves to new APIs it tends to remove all documentation of the old ones (e.g. Win
     3.1).</h5></p>
     <p>The goal is to write an independent documentation of the Windows API. Since we are re implementing all 
@@ -316,10 +321,10 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     <li>Knowledge of some documentation generation system for the person trying to enhance the documentation generation.
     </li><li>A bit of C to document the APIs themselves.
     </li></ul>
-    
+
     <a name="check_which"></a>
     <h3>Check which APIs are missing for a given program</h3>
-    
+
     <p>The scripts that scan a Windows environment could be modified to restrict the scan to the dependencies 
     of a given executable/set of executables. Then these results can be cross-referenced with the results 
     of the above script to tell you which APIs this program is missing, what percentage they represent, etc. 
@@ -334,14 +339,14 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     Required skills:
     <ul>
     <li>Perl
-    
+
     </li><li>General HTML to present the results
     </li><li>Maybe querying a database will be necessary too
     </li></ul>
-    
+
     <a name="port_app"></a>
     <h3>Port your Windows application to Wine</h3>
-    
+
     <p>If you are working on a Windows application, porting it to Wine may be the best way to get started 
     for contributing code to Wine. You can start by trying to run it in Wine and then try to compile it with Wine.
     The reason I suggest to start with an application you normally work on, is that first you obviously 
@@ -359,11 +364,11 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     </li><li>Debugging to fix them if possible
     </li><li>Programming in C/C++ if you want to try compiling the programs with Wine lib
     </li></ul>
-    
-    
+
+
     <a name="code_review"></a>
     <h3>Perform a focused code review</h3>
-    
+
     <p>A regular 'random' code review can be pretty boring and inefficient. But I think that if you are looking 
     for something specific it can be a productive way of finding and fixing bugs.
     Typically you would start by picking a subject. For instance I once found code that was using strncpy 
@@ -388,7 +393,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     </li><li>Inefficient uses of strcat (not really a bug and not really vital) 
     </li></ul>
     Required skills:
-    
+
     <ul>
     <li>C programming
     </li></ul>
@@ -401,14 +406,14 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
 <h2>Miscellaneous</h2>
 
 <blockquote>
-    
-    
+
+
     <a name="doc"></a>
     <h3>Documentation writing</h3>
     <p>Wine is in constant need of documentation updates.
     Wine has its "<a href="http://www.dssd.ca/Docs/">Guides</a>", like the Wine User Guide etc.
     The SGML source of the Guides can be found in the Wine CVS tree.
-    
+
     </p>
     <p>Other important documentation items are the README file
     and also the man pages and other files in the documentation/ directory.
@@ -433,12 +438,12 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
       <li>Relatively good understanding of programming and Wine preferred
       </li><li>Preferably proficient with SGML/DocBook and its tools
       </li><li>Persistent (constant feature changes !)
-    
+
     </li></ul>
-    
+
     <a name="localized"></a>
     <h3>Localization work</h3>
-    
+
     <p>Also, we need to have localized versions of the Wine Guides and man
     pages. For this to work, we'll need many people willing to translate
     changes to the main English docu into foreign languages. If you're
@@ -461,18 +466,18 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     </p>
     Requirements:
     <ul>
-    
+
     <li>Relatively good understanding of programming and Wine preferred
     </li><li>Preferably proficient with SGML/DocBook and its tools
     </li><li>Persistent (constant feature changes !)
     </li><li>Linguistics
     </li></ul>
-    
-    
+
+
     <h3><a name="pr_manager">PR manager</a></h3>
     <p>Currently we almost have no Public Relationship management at all.
     This should change for the better.
-    
+
     </p>
     <p>Currently almost the only form of PR is "preaching to the choir",
     since we're having articles on online IT sites (by far most are Linux only !).
@@ -489,15 +494,15 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     </li><li>Someone willing to demo Wine at LUG meetings, Computer shows, Linux Install-fest
     </li><li>Contacts to the press preferred, but by no means required
     </li></ul>
-    
+
     <a name="wpf"></a>
     <h3>Wine Party Fund</h3>
-    
+
     <p>The purpose of the Wine Party Fund is to show appreciation to Wine
     developers by collecting funds for small parties, dinners, virtual beers, etc.</p>
-    
+
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-    
+
     <p>Ways to contribute:
     <ul>
       <li><input type="image" src="images/ppdonate.gif" name="submit"
