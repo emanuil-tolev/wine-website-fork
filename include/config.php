@@ -59,13 +59,8 @@ class config
                                             'Winelib'           => '{$root}/site/winelib',
                                             'Status'            => '{$root}/site/status',
                                             'Resources'         => '{$root}/site/resources'
-										   ),
-                      'User' => array(
-                                      'User'                    => '{$root}/site/change_theme',
-                                      'Change Theme'            => '{$root}/site/change_theme'
-                                     )
+										   )
 			         );
-		
     // end of config()
     }
     
