@@ -111,7 +111,7 @@ avor of a UNIX file system?</a>
 <p>Dave Gardner maintained it from 1995-1998.</p>
 <p>Douglas Ridgway (ridgway@winehq.com) took it over in 1999.</p>
 <p>Andreas Mohr (amohr@codeweavers.com) converted it to FAQ-O-Matic in 2000.</p>
-<p>Dimitrie O. Paun, Keith Matthews and Thomas Wickline (in alphabetical order) reorganised it in 2002.</p>
+<p>Dimitrie O. Paun, Keith Matthews and Tom Wickline (in alphabetical order) reorganised it in 2002.</p>
 <p>For suggestions/additions/complaints regarding this FAQ, please send an email to
    <a href="mailto:wine-faq@winehq.org">wine-faq@winehq.org</a>
 </p>
@@ -249,19 +249,19 @@ can't change a 5000 desktop setup overnight without a lot of risk.</p>
  on to Alexandre Julliard, who has run it ever since. A <a href="news:comp.emulators.ms-windows.wine">newsgroup</a>
  was created in July 1994. Over the years, ports for other Unixes have been added, 
  along with support for Win32 as Win32 applications became popular.</p>
- <p>For more information,  see <a href="http://www.winehq.com/about.shtml">http://www.winehq.com/about.shtml</a></p>
+ <p>For more information,  see <a href="http://www.winehq.org/?page=about">About Wine</a></p>
  
 <h3><a name="What_is_the_current_version_of_Wine"></a>What is the current version of Wine?</h3>
 
 <p>A new version of Wine is distributed about every month. You will be able to keep up on all the
  latest releases by reading the newsgroup <a href="news:comp.emulators.ms-windows.wine">comp.emulators.ms-windows.wine</a>, 
  or by visiting the <a href="http://www.winehq.com">Wine HQ homepage</a>.  When downloading Wine from your FTP site
- of choice (see <a href="http://www.winehq.com/download.shtml">The Download page</a> for some of these choices),
+ of choice (see <a href="http://www.winehq.org/?page=download">The Download page</a> for some of these choices),
  you can make sure that you are getting the latest version by watching the version numbers in the distribution
  filename.  For instance, the distribution released on May 5th, 2003 was called <tt>Wine-20030508.tar.gz</tt>.
  Patch files are also available. If you are current to the previous version, you can download and apply 
  just the current patch file rather than the entire new distribution. The patch filenames follow the same
- conventions as the monthly distribution. <a href="http://www.winehq.com/dev.shtml">Read-only CVS</a> access is also available.</p> 
+ conventions as the monthly distribution. <a href="http://www.winehq.org/?page=cvs">Read-only CVS</a> access is also available.</p> 
 
 <h3><a name="What_is_the_current_Status_of_Wine"></a>What is the current Status of Wine?</h3>
 
@@ -271,7 +271,7 @@ the world. Wine is in active use by an estimated 100K people. Wine
 implements more than 90% of the calls in popular Windows specifications 
 such as ECMA-234 and Open32.</p>
 <p>You may also want to look at the 
-<a href="http://www.winehq.com/about/index.php?status">Status page</a> 
+<a href="http://www.winehq.org/?page=status">Status page</a> 
 for a global view on Wine's implementation progress.</p>
 
 <h3><a name="When_will_Wine_be_finished"></a>When will Wine be finished?</h3>
@@ -285,7 +285,7 @@ Right now we are working on releasing Wine 0.9 during 2003 </p>
 <h3><a name="Whos_responsible_for_Wine"></a>Who's responsible for Wine?</h3>
 
 <p>Wine is available thanks to the work of many people. 
-Please see the <a href="http://www.winehq.com/source/AUTHORS">AUTHORS</a> file
+Please see the <a href="http://source.winehq.org/source/AUTHORS">AUTHORS</a> file
 in the distribution for the complete list. Some companies that are or have been 
 involved with Wine development are Codeweavers, TransGaming, Corel, and Macadamian.</p>  
 
@@ -347,7 +347,7 @@ commercial UNIX and UNIX clone vendors as well.</p>
 <p>FreeBSD: Should work, with limitations in specific areas (mainly missing device/hardware support) 
 </p> 
 <p>Linux/x86: WORKS. If it doesn't, You may also want to see the 
-<a href="http://www.winehq.org/fom-meta/cache/19.html">Wine Troubleshooting Guide </a>
+<a href="http://www.winehq.org/?page=documentation">Wine Documentation</a>
 </p>
 
 <h3><a name="What__must_I_have_in_my_and_M"></a> What minimum CPU must I have in my computer to be able to run Wine and MS Windows applications smoothly?</h3>
@@ -370,7 +370,7 @@ install. </p>
 <p>Many development tools need to be installed in order to 
 compile Wine. A list of required packages for several distributions 
 is included in the <tt>README</tt>
-(<a href="http://www.winehq.com/source/README">http://www.winehq.com/source/README</a>).
+(<a href="http://source.winehq.org/source/README">http://source.winehq.org/source/README</a>).
 </p>
 <p>To run Wine, you will need the following:
 <ul>
@@ -405,7 +405,7 @@ If you have a CVS copy, you may not need to rebuild the whole thing every time y
  driver called dmsdos that will allow read/write access through Doublespaced and Drivespace 1.0 drives. More specifically,
  it supports mounting DOS 6.0 and 6.2 Doublespaced, DOS 6.22 Drivespaced, and Windows 95 Doublespaced compressed partitions
  (read and write access works fine, but write access is slow). It can be found at
- <a href="ftp://metalab.unc.edu/pub/Linux/system/filesystems/dosfs/">ftp://metalab.unc.edu/pub/Linux/system/file systems/dosfs/</a></p>
+ <a href="http://www.ibiblio.org/pub/Linux/system/filesystems/dosfs/">http://www.ibiblio.org/pub/Linux/system/filesystems/dosfs/</a></p>
 
 <h3><a name="Do_I_need_to_have_a_DOS_partition_on_my"></a>Do I need to have a DOS partition on my system to use Wine?</h3>
 
@@ -502,7 +502,7 @@ here. The sources are available from the following locations:</p>
     <li><a href="ftp://orcus.progsoc.uts.edu.au/pub/Wine/development/ ">ftp://orcus.progsoc.uts.edu.au/pub/Wine/development/</a>
 </ul>
 <p>It should also be available from any other site that mirrors
-ibiblio.org.For more download locations, see <a href="http://ftp search.lycos.com.">lycos</a></p> 
+ibiblio.org.For more download locations, see <a href="http://www.compucan.com/Lycos.htm">Lycos</a></p> 
 Some of these ftp sites may archive previous versions of Wine as well as 
 the current one. To determine which is the latest one, look at the 
 distribution file name, which will take the form <tt>Wine-YYYYMMDD.tar.gz</tt>. 
@@ -510,7 +510,7 @@ Simply replace <tt>YYYYMMDD</tt> in the distribution file name with the
 numbers for year, month and date, respectively. The latest one is the one to get.</p>
  
 <p>Wine binary packages are available for several OS'es and distributions.
-See <a href="http://www.winehq.com/download.shtml">the download page</a> for the most recent list.</p>
+See <a href="http://www.winehq.org/?page=download">the download page</a> for the most recent list.</p>
  
 <h3><a name="Is_there_a_CVS_tree"></a>Is there a CVS tree?</h3>
 
@@ -587,11 +587,11 @@ wine
 
 <hr size="3"><h2><a name="Installing_And_Configuring_Wine"></a>Installing And Configuring Wine</h2>
 <p>For installation trouble, You may also want to see the 
-<a href="http://www.winehq.org/fom-meta/cache/19.html">Wine Troubleshooting Guide </a></p>
+<a href="http://www.winehq.org/Docs/wine-user/">Wine User Guide </a></p>
  
 <h3><a name="How_do_I_compile_the_Wine_distribution"></a> How do I compile the Wine distribution source code?</h3>
  
-<p>See the <tt>README</tt> (<a href="http://www.winehq.com/source/README">http://www.winehq.com/source/README</a>) 
+<p>See the <tt>README</tt> (<a href="http://source.winehq.org/source/README">http://source.winehq.org/source/README</a>) 
 for instructions. Additionally, you may want to set the <tt>TMPDIR</tt> 
 environment variable <tt>TMPDIR=~/tmp</tt> or <tt>TMPDIR=/tmp</tt> 
 (if you are root).</p>
@@ -608,9 +608,9 @@ to extract Windows install archives to a directory that you want to use as Wine'
 <p>Wine requires that you have a config file as <tt>~/.wine/config</tt>. 
 The format of this file is explained in the <tt>wine.conf</tt> man page. 
 The file <tt>documentation/samples/config</tt> 
-(<a href="http://www.winehq.com/source/documentation/samples/config">http://www.winehq.com/source/documentation/samples/config</a>)
+(<a href="http://source.winehq.org/source/documentation/samples/config">http://source.winehq.org/source/documentation/samples/config</a>)
 contains a config file example. More explicit directions can be found in the <tt>README</tt> file 
-(<a href="http://www.winehq.com/source/README">http://www.winehq.com/source/README</a>) 
+(<a href="http://source.winehq.org/source/README">http://source.winehq.org/source/README</a>) 
 that will be located in the base Wine directory after you gunzip and untar the distribution file.</p>  
 
 <h3><a name="If_I_want_to_use_a_Windows_install"></a>If I want to use a Windows install, which versions are OK?</h3>
@@ -686,7 +686,7 @@ in your own filesystem.</p>
 
 <hr size="3"><h2><a name="About_running_Wine"></a>About running Wine</h2>
 <p>In case of problems when running Wine, You may also want to see the 
-<a href="http://www.winehq.com/Docs/wine-user/">Wine User Guide</a></p>
+<a href="http://www.winehq.org/Docs/wine-user/">Wine User Guide</a></p>
  
 <h3><a name="How_do_I_run_an_MS_Windows_program_under"></a> How do I run an MS Windows program under Wine?</h3>
  
@@ -736,13 +736,14 @@ a program has something that it's supposed to execute,and then it should just wo
 
 <h3><a name="Is_there_any_documentation_for_Wine"></a>Is there any documentation for Wine?  </h3>
 
-<p>Yes, see <a href="http://www.winehq.com/support.shtml">http://www.winehq.com/support.shtml</a>.</p>
+<p>Yes, see <a href="http://www.winehq.org/?page=documentation">http://www.winehq.org/?page=documentation</a>.</p>
 
 <h3><a name="I_couldnt_find_the_answer_to_my"></a>I couldn't find the answer to my question in the documentation, 
 but I've written a document explaining how to solve it. What should I do?</h3>
 
-<p>Updates and additions to the Wine documentation directory should be sent to the wine-patches mailing list at 
-<a href="http://www.winehq.com/dev.shtml#ml">http://www.winehq.com/dev.shtml#ml</a>. Website and FAQ additions 
+<p>Updates and additions to the Wine documentation directory should be sent to the wine-patches mailing list more information
+about sending patches can be found here  
+<a href="http://www.winehq.org/?page=sending_patches">http://www.winehq.org/?page=sending_patches</a>. Website and FAQ additions 
 should be added to the appropriate Wine Knowledgebase directory.</p> 
 
 <h3><a name="Is_there_a_Usenet_newsgroup_for_Wine"></a>Is there a Usenet newsgroup for Wine?</h3>
