@@ -40,7 +40,6 @@ function banner_ad ()
     $bannerads_path = $file_root.'/images/bannerads/';
 
 	// read dir and get list of banners
-    /*
 	$ads = array();
 	$d = opendir($bannerads_path);
 	while($entry = readdir($d))
@@ -51,10 +50,6 @@ function banner_ad ()
 	}
 	closedir($d);
     sort($ads);
-    */
-    
-    // hard code so we get 50/50 split (temp hack)
-    $ads = array('cw-ad03','cw-ad05');
     
 	// randomly select a banner and display it
 	$img = $ads[(rand(1,count($ads))-1)];
