@@ -38,8 +38,38 @@
   To be consistent, references to <tt>This->ref</tt> in TRACE's should be
   avoided as well.<p>
 
-  As of Jan 8, 2005, there are at least 135 files that appear to use thread
-  unsafe operations and 137 files that use TRACE's containing <tt>This->ref</tt>.<p>
+  As of Jan 11, 2005, there are at least 128 files in 25 dll's that appear to use thread
+  unsafe operations and/or have TRACE's containing <tt>This->ref</tt>:<p>
+
+  <ul>
+    <li>avifil32 : 7 files to check
+    <li>d3d8 : 12 files to check
+    <li>d3d9 : 17 files to check
+    <li>d3dx8 : 1 files to check
+    <li>d3dxof : 1 files to check
+    <li>dmband : 3 files to check
+    <li class=submitted>dmcompos : 4 files checked
+    <li>dmscript : 3 files to check
+    <li>dmstyle : 8 files to check
+    <li>dmsynth : 3 files to check
+    <li>dmusic : 11 files to check
+    <li>dpnet : 2 files to check
+    <li>dsound : 7 files to check
+    <li>dswave : 2 files to check
+    <li>dxdiagn : 2 files to check
+    <li>mlang : 1 files to check
+    <li>msdmo : 1 files to check
+    <li>ole32 : 6 files to check
+    <li>oleaut32 : 3 files to check
+    <li>shdocvw : 7 files to check
+    <li>shell32 : 16 files to check
+    <li>shlwapi : 3 files to check
+    <li>urlmon : 1 files to check
+    <li>wined3d : 3 files to check
+    <li>winmm : 3 files to check
+  </ul>
+
+  <p>Please note that patches have been submitted for the <span class=submitted>italic</span> entries.
 
   <ul>
     <li>workers: James Hawkins, Joris Huizer, Paul Vriens
