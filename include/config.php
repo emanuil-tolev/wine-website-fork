@@ -37,13 +37,13 @@ class config
 									  ),
 					 'Support' => array(
                                         'Support'       => '{$root}/site/support',
-					'Download'      => '{$root}/site/download',
+                                        'Download'      => '{$root}/site/download',
                                         'Documentation' => '{$root}/site/documentation',
                                         'FAQ'           => '{$root}/site/docs/wine-faq/index',
 										'HowTo'         => '{$root}/site/howto',
 										'Bug Tracking'  => 'http://bugs.winehq.org/',
                                         'Applications'  => '{$root}/site/supported_applications',
-										'Forums'        => '{$root}/site/forums'
+										'Mailing Lists' => '{$root}/site/forums'
 									   ),
 					 'Development' => array(
 					                        'Development'       => '{$root}/site/development',
