@@ -53,7 +53,11 @@ class config
                                             'TODO Lists' => $this->_file_root.'?page=todo_lists',
                                             'Status' => $this->_file_root.'?page=status',
                                             'Resources' => $this->_file_root.'?page=resources'
-										   )
+										   ),
+                      'User' => array(
+                                      'User' => $this->_file_root.'?page=change_theme',
+                                      'Change Theme' => $this->_file_root.'?page=change_theme'
+                                     )
 			         );
 		
     // end of config()

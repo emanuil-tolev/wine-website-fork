@@ -79,12 +79,12 @@ function home_page ()
 	// get aboout box
 	$about_box = $html->theme_box($config->theme, "box_title", "About Wine", "99%", $html->template("base", 'home_about', $vars), '10', 'white', 'topMenu');
     
-	// theme switch box
-	$theme_box = $html->theme_box($config->theme, "box_title", "Change Theme", "99%", $html->template("base", 'theme_box', $vars), '10', 'white', 'topMenu');
-
 	// get link to latest release
 	$latest_box = $html->theme_box($config->theme, "box_title", "Latest Release", "97%", $html->template("base", 'wine_release'), '10', 'white', 'topMenu');
 	
+    // get regular news
+    $news_box = $html->theme_box($config->theme, "box_title", "Latest News", "99%",  get_news(), '10', 'white', 'topMenu');
+    
 	// get wwn news
     $wwn = new wwn();
 	$issues = $wwn->get_list($config->wwn_xml_path);
@@ -96,10 +96,10 @@ function home_page ()
 	// load the template for home page and fill in
 	$vars = array(
 	              'about_box'   => $about_box,
+                  'news_box'    => $news_box,
 			      'latest_box'  => $latest_box,
 			      'wwn_box'     => $wwn_box,
-                  'sponsor_box' => $sponsor_box,
-                  'theme_box'   => $theme_box
+                  'sponsor_box' => $sponsor_box
 			     );
 	$text = $html->template($config->theme, 'home_page', $vars);	 
 	

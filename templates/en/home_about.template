@@ -1,60 +1,23 @@
 {$screenshot}
 
-<p>Wine is a free <a href="http://opensource.org/docs/def_print.php">open</a>
-implementation of the <a href="http://www.microsoft.com/windows/">Windows</a>
+<p>Wine is an implementation of the <a href="http://www.microsoft.com/windows/">Windows</a>
 Win32 and Win16 APIs on top of <a href="http://www.xfree86.org/">X</a> and
 Unix.</p>
 
-<p>Think of Wine as a Windows compatibility layer.  Wine
-provides both a development toolkit (Winelib) for porting
-Windows sources to Unix and a program loader, allowing many unmodified
-Windows 3.x/95/98/ME/NT/W2K/XP binaries to run under Intel Unixes.
-Wine works on most popular Intel (x86 based) Unixes, including <a
-href="http://www.linux.org/">Linux</a>, <a
-href="http://www.freebsd.org/">FreeBSD</a>, and <a
-href="http://www.sun.com/solaris/">Solaris</a>.</p>
+<p>Think of Wine as a Windows compatibility layer. Wine does not require
+Microsoft Windows, as it is a completely alternative implementation
+consisting of 100% Microsoft-free code, but it can optionally use
+native system DLLs if they are available. Wine provides both a development
+toolkit (Winelib) for porting Windows sources to Unix and a program loader,
+allowing many unmodified Windows binaries to run under Intel (x86 based)
+Unixes, including
+<a href="http://www.linux.org/">Linux</a>,
+<a href="http://www.freebsd.org/">FreeBSD</a>, and
+<ahref="http://www.sun.com/solaris/">Solaris</a>.</p>
 
-<p>Wine does not require Microsoft Windows, as it is a completely
-alternative implementation consisting of 100% Microsoft-free code,
-but it can optionally use native system DLLs if they are available.
-Wine comes with complete sources, documentation and examples and is
-freely redistributable.
-(The <a href="http://source.winehq.com/source/LICENSE">licensing terms</a>
+<p> More information can be read in the articles <a href="?page=why">Why Wine
+is so important</a>,  and <a href="?page=myths">Debunking Wine Myths</a>.</p>
+
+<p>The <a href="http://source.winehq.com/source/LICENSE">licensing terms</a>
 are the <a href="http://source.winehq.org/source/COPYING.LIB">GNU Lesser General
-Public License</a>.)</p>
-
-<p>As of mid 2002, Wine consists of over 1 million lines of C code, written by
-more than 300 developers from dozens of countries around the world.
-Wine is in active use by an estimated 90K people. Wine implements more than
-90% of the calls in popular Windows specifications such as ECMA-234 and
-Open32. New snapshot releases appear approximately every month.</p>
-
-<ul type=circle>
-	<li>
-	  <a href="?page=about">About</a> &middot; More details about Wine.
-	</li>
-	<li>
-	  <a href="?page=download">Download</a> &middot; Get the latest version of Wine.
-	</li>    
-	<li>
-	  <a href="?issue=latest">News</a> &middot; Latest News on the development
-	  of Wine.
-	</li>    
-	<li>
-	  <a href="?page=faq">FAQ</a> &middot; What people want to know about Wine.
-	</li>
-	<li>
-	  <a href="?page=why">Why ?</a> &middot; Why Wine is so important.
-	</li>
-	<li>
-	  <a href="?page=status">Status</a> &middot; Status Page on the development
-	  of Wine
-	</li>
-	<li>
-	  <a href="?page=myths">Myths</a> &middot; Debunking Wine Myths
-    </li>
-	<li>
-	  <a href="?page=contrib">Contributing</a> &middot; Information on ways to
-	  contribute to the project.
-	</li>    
-</ul>
+Public License</a>.</p>
