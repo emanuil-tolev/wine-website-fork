@@ -87,5 +87,3 @@ RedirectPermanent /find                         http://source.winehq.org/find
 RedirectPermanent /search                       http://source.winehq.org/search
 RedirectPermanent /diff                         http://source.winehq.org/search
 
-# we no longer use .shtml
-RedirectMatch ^/(.*)\.shtml(.*)$                http://www.winehq.org/$1$2
