@@ -275,6 +275,7 @@ what Aaron wrote about using it:</p>
         <ul><code>
     &#160;&#160;&#160;&#160;9:  545:        if ((mode&amp;~0x70)!=OF_READ)<br />
     &#160;&#160;&#160;&#160;6:  546:  &#160;&#160; return fd;<br />
+M
     &#160;&#160;&#160;&#160;3:  547:        if (fd==HFILE_ERROR)<br />
     #####:  548:                      &#160;&#160; return HFILE_ERROR;<br />
     &#160;&#160;&#160;&#160;3:  549:        cfd=LZInit(fd);<br />
@@ -339,13 +340,13 @@ what Aaron wrote about using it:</p>
 	 instead of 50.83%.  That's nearly a one percent improvement,
 	 which is awfully good.  The output file confirms this:
       <ul><code>
-       10:  545:        if ((mode&amp;~0x70)!=OF_READ)
-        6:  546:        &#160;&#160;  return fd;
-        4:  547:        if (fd==HFILE_ERROR)
-        1:  548:        &#160;&#160;  return HFILE_ERROR;
-        3:  549:        cfd=LZInit(fd);
-        3:  550:        if ((INT)cfd &lt;= 0) return fd;
-        3:  551:        return cfd;
+       10:  545:        if ((mode&amp;~0x70)!=OF_READ)<br />
+       &#160; 6:  546:        &#160;&#160;  return fd;<br />
+       &#160; 4:  547:        if (fd==HFILE_ERROR)<br />
+       &#160; 1:  548:        &#160;&#160;  return HFILE_ERROR;<br />
+       &#160; 3:  549:        cfd=LZInit(fd);<br />
+       &#160; 3:  550:        if ((INT)cfd &lt;= 0) return fd;<br />
+       &#160; 3:  551:        return cfd;
       </code></ul>
       </p><p>
         So there you have it: that's how to use gcov to increase the coverage
