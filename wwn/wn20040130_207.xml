@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="207" date="01/30/2004" />
 <intro> <p>This is the 207th issue of the Wine Weekly News publication.
-Its main goal is to go to WineConf.. happy birthday to me. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to go to WineConf. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="218" size="748" contrib="75" multiples="42" lastweek="35">
 
 <person posts="19" size="47" who="Dmitry Timoshkov" />
@@ -235,16 +235,43 @@ programs out of the box.</p>
 
 </section>
 <section 
-	title="" 
-	subject=""
-	archive="http://www.winehq.com/hypermail/wine-devel/2004/01/0.html" 
-	posts=""
-	startdate="12/  /2004"
-	enddate="12/  /2004"
+	title="Graphs of CVS Changes" 
+	subject="Re: WWN#206"
+	archive="http://www.winehq.com/hypermail/wine-devel/2004/01/0780.html" 
+	posts="1"
+	startdate="01/23/2004"
 >
-<topic></topic>
-<p>
+<topic>Documentation</topic>
+<p>Last week I mentioned Rein Klazes put together 
+<a href="http://home.wanadoo.nl/~wijn/wine/cvs.png">a graph</a> showing Wine 
+commits over the past five years.  I commented that it would be nice if
+there were a graph of the size of Wine's source code.  Well, Rein put one
+together and the numbers are pretty impressive:</p>
+<quote who="Rein Klazes"><p>
+You can find it here:
+<a href="http://home.wanadoo.nl/~wijn/wine/cvssize.png">
+http://home.wanadoo.nl/~wijn/wine/cvssize.png</a></p><p>
 
+Notes:
+<ul>
+<li> All files in the cvs wine tree are included, not just the sources.</li>
+<li> I excluded the (libs/)unicode directory. That is almost 5 MByte of
+mostly generated source files creating an ugly step in an otherwise
+smooth curve.</li>
+<li> The trend quite accurately represents the growth in the first 3 years.
+The last 2 years the rate of growth is clearly increasing. </li>
+<li> The number of cvs commits in October '98 was corrected to 258 commits.</li>
+</ul></p></quote>
+
+<p>A quick look a clean source directory shows everything to be about 53MB
+right now in including the generated source Rein mentions.  Another 
+interesting stat to look are the increases in mailing list messages.  Over
+the same period where the amount of source code has grown quicker than the
+5 year trend we've seen a corresponding increase in posts to both wine-patches 
+and wine-devel.  Until recently, CodeWeaver's patches haven't really appeared
+on wine-patches.  Alexandre did the merges directly.   
+</p><p>
+Does that make us the largest open source project without an official release?
 </p>
 </section>
 <section 
