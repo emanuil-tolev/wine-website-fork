@@ -165,7 +165,7 @@ to the GNU arch version control system.
 It marks the beginning of an experiment not just in new forms of source 
 control, but in new ways for the Wine project to be organized and
 function. Nobody knows if it will catch on, but a few of us (me, dimi and
-alexandre) have been discussing trying out arch for some time. Carpe dium!
+alexandre) have been discussing trying out arch for some time. Carpe diem!
 </p><p>
 For those who already know arch, here are the details:
 </p><p>
@@ -231,7 +231,7 @@ Now it's installed, run the following command:
      tla register-archive http://www.navi.cx/~mike/wine/archive/
      </code></ul></p><p>
 
-Once it's registered succesfully (you get a message when that
+Once it's registered successfully (you get a message when that
 happens), you can run the following command to check out the tree:
      <ul><code>
      tla get mike@winehq.org--wine/wine--mainline--0.9 winehq
@@ -480,7 +480,7 @@ mailing list.
 
 <p>Do you like to compile your own kernels?  Do you like trying
 out new patches to see what breaks?  If so, we could use your
-assistance..</p>
+assistance...</p>
 
 <p>Problems caused by Execshield and Prelinking still plague Wine
 development.  Thus far no good solutions have appeared.  Alexandre
@@ -531,7 +531,7 @@ Hacking away on winetest I encountered the following
 problem: under Windows and Wine (running cross compiled
 binaries) it's possible to redirect the stdout of a child
 process with CreateProcess using STARTF_USESTDHANDLES.
-However, if I CreateProcess an .exe.so from the WineLib
+However, if I CreateProcess a .exe.so from the WineLib
 version, the redirection is ignored.  The create_process
 function in process.c acts on this option in both cases, but
 I didn't investigate further.  Does anybody have an idea why
@@ -608,7 +608,7 @@ It's here...
 http://sourcenav.sourceforge.net/</a></ul></p><p>
 
 It's pretty cool if you want to follow what goes
-where. All the pretty arrows too. (It's horazontal
+where. All the pretty arrows too. (It's horizontal
 along the top of the screen, not vertical) You can
 follow functions, stucts, header files. I used it when
 I was a programmer... 
@@ -626,7 +626,7 @@ browsing through code:
 
 
 <p>It wasn't clear if Joel had meant to use one of these tools with
-Wine or not.  If so, Mike Hearn wasn't sure how use useful it would
+Wine or not.  If so, Mike Hearn wasn't sure how useful it would
 be.  Instead, he offered a quick overview of how things related
 to each other:</p>
 <quote who="Mike Hearn"><p>

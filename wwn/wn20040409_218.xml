@@ -78,7 +78,7 @@ WHAT'S NEW with Wine-20040408: (see
 </ul></p></quote>
 
 <p>The first of those, configuring drives and ports with symbolic links,
-are the results of the new filesystem changes.  There's definitely
+is the result of the new filesystem changes.  There's definitely
 some interesting stuff in there.  It might take a few
 days for all the builds to be available, but you can grab them from
 <a href="http://www.winehq.org/site/download">our download page.</a></p>
@@ -266,7 +266,7 @@ compatibility for Windows drivers.  For their Win32 subsystem they've
 adopted Wine.  It's been a win-win situation for both projects and
 this year they've really started to make a lot of progress on their
 user interfaces.   This week Steven Edwards forwarded a message from
-their mailing,
+their mailing list,
 <quote who="Steven Edwards">Run abiword lately after those recent 
 changes?  simply amazing...the first REAL app to run on ROS...</quote></p>
 
@@ -289,8 +289,8 @@ screenshot</a>.
 <p>Getting crypto and security related API's has come up more
 and more recently.  Jacek Chaupka wanted to know what was going on:</p>
 <quote who="Jacek Chaupka"><p>
-Has anybody started implementing CryptoApi in WINE?? If no mayby someone 
-can give me some clues how to start... I am not bad i C++ I think, but I 
+Has anybody started implementing CryptoApi in WINE?? If no maybe someone 
+can give me some clues how to start... I am not bad in C++ I think, but I 
 have never make thing like that. I don't promise I will do that, but I 
 can try... :)
 </p></quote>
@@ -380,8 +380,8 @@ I'm not familiar with the using "setarch i386" to solve the problem...
 I've also been working on the exec-shield problem over the last couple 
 of days.  My solution is similar to Mike Hearn's approach, but faster 
 and more compact, since it doesn't require loading of libc twice or 
-static linking with glibc.  The idea is to use a staticly linked ELF 
-object, reserve memory and then load the target dynamicly linked object.
+static linking with glibc.  The idea is to use a statically linked ELF 
+object, reserve memory and then load the target dynamically linked object.
 </p><p>
 It seems to do what I want, but will require a patch or two to wine to 
 use MAP_FIXED when mapping the first megabyte of address space, and to 
@@ -416,7 +416,7 @@ by a built-in scripting language engine.
 
 <p>Mike recognized the problem, 
 <quote who="Mike McCormack">
-Yeah, I'm aware of the problem with interitance... there might be a 
+Yeah, I'm aware of the problem with inheritance... there might be a 
 tricky way to fix it by setting WINELOADER to the name of a script that 
 runs "wld $winebinary"... otherwise wine will need to be modified.
 </quote></p>
@@ -512,7 +512,7 @@ So it appears people are interested.
 
 <section 
 	title="W95inf32 DLL Implementation" 
-	subject="W95INF32 implementation, incase it's useful to anybody"
+	subject="W95INF32 implementation, in case it's useful to anybody"
 	archive="http://www.winehq.org/hypermail/wine-devel/2004/04/0051.html" 
 	posts="1"
 	startdate="04/02/2004"
@@ -550,7 +550,7 @@ implementation</a> in the archives.</p>
 gateway (see <a href="http://www.winehq.com/?issue=217">issue #217</a>
 for more details), but Mike Hearn added a new tool this week:</p>
 <quote who="Mike Hearn"><p>
-At Dimis request, I've added a new script to the root of the gateway tree.
+At Dimi's request, I've added a new script to the root of the gateway tree.
 </p><p>
 The genpatch program takes a series of patch ids as parameters and can
 generate and send an email to wine-patches with the combined diff of all
@@ -586,15 +586,15 @@ up:</p>
 <quote who="Shachar Shemesh"><p>
  Here are the formal instructions for compiling Wine with bidi support. 
  When doing so, it is recommended that you use a fairly recent version of 
- ICU (2.6 and up), or else there is going to be a runtime soft dependancy 
+ ICU (2.6 and up), or else there is going to be a runtime soft dependency 
  on some ICU files in the resulting Wine. No big deal - if these files 
  are not there, Wine will work just fine, only without BiDi support. 
  Still, this is not necessary.
 </p><p>
 Instructions:
 <ol>
-   <li> If you use a precompiled package (relatvely rare for ICU,
-      unfortunatly), make sure it has the static libraries as well. ICU
+   <li> If you use a precompiled package (relatively rare for ICU,
+      unfortunately), make sure it has the static libraries as well. ICU
       does not have these by default. If they are there, you may skip to
       step 8. Please note, however, that this will add about 7MB to the
       size of the resulting gdi.dll.so.</li>
@@ -642,7 +642,7 @@ A few things to note:
       without the aforementioned patch, or set ICUUC_LIB and ICUDATA_LIB
       to the full path to libicuuc.a and libicudata.a respectively (they
       are called "libsicuuc.a" and "libsicudata.a" in newer version of
-      ICU). Please note that this means there is a runtime dependancy on
+      ICU). Please note that this means there is a runtime dependency on
       some ICU files for BiDi to work, as explained above.</li>
 </ul>
 </p><p>

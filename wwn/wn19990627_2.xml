@@ -150,7 +150,7 @@ if1632/builtin.c or relay32/builtin.c)
 <li /> native DLLs (the one used by Windows, allowing Wine to dynamically load
 libraries built for Windows)
 
-<li /> .so DLLs (.so is the Linux (and some other Unices) functionnaly
+<li /> .so DLLs (.so is the Linux (and some other Unices) functionally
 equivalent to Windows DLLs, exporting symbols - variables and functions -
 but no resources, nor importation of other DLLs (in a Wine
 understanding)
@@ -504,7 +504,7 @@ run on top off Micro-Windows driver is better.
 
 It seems Micro-Windows driver systmem (graphics engine) is designed
 (optimized) with the assumption that the underlying drivers only can do very
-low-level operation like pixel drawing that is they are basicly dumb frame
+low-level operation like pixel drawing that is they are basically dumb frame
 buffers.
 
 <p />
