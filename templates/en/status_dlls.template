@@ -1,6 +1,6 @@
 <!--TITLE:[Wine Status DLLs]-->
 
-<h1>Wine Status - DLLs</h1>
+<h1>Wine Status - Core DLLs</h1>
 
 <style>
 <!--
@@ -52,73 +52,220 @@
       <th>Recent primary workers</th>
     </tr>
     <tr>
-      <td>cabinet: Provides API to create and extract .cab compressed archives</td>
+      <td>advapi32.dll</td>
+      <td class="adequate"><a href="http://www.andreavb.com/API_ADVAPI32.html">advapi32 API calls</a></td>
+      <td>None</td>
+      <td class="pct60">60% complete</td>
+      <td>CodeWeavers</td>
+    </tr>
+    <tr>
+      <td>cabinet.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/setupapi/setup/cabinet_file_functions.asp">MSDN: Cabinet</a></td>
       <td>None</td>
       <td class="pct80">80% complete</td>
       <td>Greg Turner</td>
     </tr>
     <tr>
-      <td>comctl32: Common Controls</td>
+      <td>capi2032.dll</td>
+      <td class="adequate"><a href="http://www.hut.fi/~jwagner/cthp/vbdecl.doc">capi documentation</a></td>
+      <td>None</td>
+      <td class="pct100">100% complete</td>
+      <td>Marcus Meissner</td>
+    </tr>
+    <tr>
+      <td>cfgmgr32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/install/hh/install/cfgmgrfn_0zua.asp">MSDN: Configuration Manager Functions</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>comcat.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/com/htm/comp_cat_7hri.asp">MSDN: Component Categories Manager</a></td>
+      <td>None</td>
+      <td class="pct80">80% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>comctl32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/CommCtls/Common/Common.asp">MSDN: Common Controls</a></td>
       <td><a href="?issue=46#Address%20space%20separation">#116</a>,
       <a href="?issue=138#Listview%20Changes">#118</a>,
       <a href="?issue=163#Error%20Requiring%2032/16%20Bit%20DLL%20Combinations">#163</a></td>
       <td class="pct95">95% complete</td>
-      <td>Guy Albertelli,<br>Dimitrie O. Paun,<br>CodeWeavers</td>
+      <td>Dimitrie O. Paun,<br>CodeWeavers</td>
     </tr>
     <tr>
-      <td>comdlg32: Common Dialogs</td>
+      <td>comdlg32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/userinput/commondialogboxlibrary.asp">MSDN: Common Dialogs</a></td>
       <td><a href="?issue=155#File%20Dialog%20Options">#155</a></td>
       <td class="pct75">75% complete</td>
       <td>Dimitrie O. Paun</td>
     </tr>
     <tr>
-      <td>crtdll&amp;msvcrt: Standard C runtime library</td>
+      <td>crtdll.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_c_run.2d.time_libraries.asp">MSDN: C Run-Time Libraries</a></td>
       <td><a href="http://www.winehq.org/news/?view=4#Crtdll%20Implementation">#4</a></td>
-      <td class="pct60">60% complete</td>
-      <td>CodeWeavers,<br>Marcus Meissner,<br>Jon Griffiths</td>
+      <td class="pct100">100% complete</td>
+      <td>Jon Griffiths</td>
+    </tr> 
+    <tr>
+      <td>crypt32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnw98bk/html/thecryptoapifunctions.asp">MSDN: Crypto API Functions</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Mike McCormack</td>
     </tr>
     <tr>
-      <td>gdi32: Windows Graphical Device Interface (GDI)</td>
+      <td>ctl3d.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vcmfc98/html/_mfcnotes_tn051.asp">MSDN: Using CTL3D</a></td>
+      <td>None</td>
+      <td class="pct20">20% complete</td>
+      <td>Dmitry Timoshkov</td>
+    </tr>
+    <tr>
+      <td>gdi32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/wingdistart_9ezp.asp">MSDN: Windows GDI</a></td>
       <td><a href="?issue=156#GDI%20Performance">#156</a></td>
       <td class="pct60">60% complete</td>
-      <td>CodeWeavers,<br>Aric Stwart, <br>Huw D.M Davis,<br>Alexandre Julliard </td>
+      <td>CodeWeavers</td>
     </tr>
     <tr>
-      <td>imm32: IME (Input Method Editor)</td>
+      <td>icmp.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/iphlp/iphlp/retrieving_information_on_the_internet_protocol_and_the_internet_control_message_protocol.asp">MSDN: ICMP Functions</a></td>
+      <td>None</td>
+      <td class="pct75">75% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>imagehlp.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/debug/base/imagehlp_functions.asp">MSDN: ImageHlp Functions</a></td>
+      <td>None</td>
+      <td class="pct20">20% complete (debughlp imagehlp sibbling)</td>
+      <td>Eric Pouech</td>
+    </tr>
+    <tr>
+      <td>imm32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/w98ddk/hh/w98ddk/intl_1sc8.asp">MSDN: IME Interface Functions</a></td>
       <td>None</td>
       <td class="pct50">50% complete</td>
       <td>CodeWeavers,<br> Aric Stewart</td>
     </tr>
     <tr>
-      <td>iphlpapi: IP Helper API</td>
+      <td>iphlpapi.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/iphlp/iphlp/ip_helper_functions.asp">MSDN: IP Helper Functions</a></td>
       <td>None</td>
-      <td class="pct50">50% complete</td>
+      <td class="pct55">55% complete</td>
       <td>Juan Lang</td>
     </tr>
     <tr>
-      <td>kernel32: Contains Windows API Functions</td>
+      <td>kernel32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winprog/winprog/base_services.asp">MSDN: Base Services</a></td>
       <td>None</td>
       <td class="pct80">80% complete</td>
-      <td>Alexandre Julliard,<br> Eric Pouech</td>
+      <td>Alexandre Julliard,<br>Eric Pouech,</td>
     </tr>
     <tr>
-      <td>ntdll: Contains NT System Functions</td>
+      <td>lzexpand.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/fileio/base/file_management_functions.asp">MSDN: File Management Functions</a></td>
+      <td>None</td>
+      <td class="pct100">100% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>mapi32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/mapi/html/_mapi1book_about_the_mapi_architecture.asp">MSDN: MAPI Architecture</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>mpr.dll</td>
+      <td class="adequate"><a href="http://www.andreavb.com/API_MPR.html">mpr API calls</a></td>
+      <td>None</td>
+      <td class="pct20">20% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>mshtml.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnmshtml/html/mshtmleditplatf.asp">MSDN: MSHTML Editing Platform</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>msi.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/msi/setup/installer_function_reference.asp">MSDN: Installer Function Reference</a></td>
+      <td>None</td>
+      <td class="pct10">10% complete</td>
+      <td>Mike McCormack</td>
+    </tr>
+    <tr>
+      <td>msimg32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/vcrefCImage.asp">MSDN: CImage Class</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>msisys.ocx</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/mmc/mmc/using_custom_ocx_controls.asp">MSDN: Custom OCX Controls</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>msnet32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dbnetlib/htm/dbnetlib_1.asp">MSDN: Net-Library</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>msvcrt.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_c_run.2d.time_libraries.asp">MSDN: C Run-Time Libraries</a></td>
+      <td>None</td>
+      <td class="pct60">60% complete</td>
+      <td>Jon Griffiths</td>
+    </tr>
+    <tr>
+      <td>msvcrt20.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_c_run.2d.time_libraries.asp">MSDN: C Run-Time Libraries</a></td>
+      <td>None</td>
+      <td class="pct60">60% complete</td>
+      <td>Jon Griffiths</td>
+    </tr>
+    <tr>
+      <td>msvcrtd.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_c_run.2d.time_libraries.asp">MSDN: C Run-Time Libraries</a></td>
+      <td>None</td>
+      <td class="pct60">60% complete</td>
+      <td>Jon Griffiths</td>
+    </tr>
+    <tr>
+      <td>netapi32.dll</td>
+      <td class="adequate"><a href="http://www.andreavb.com/API_NETAPI32.html">netapi32 API calls</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Juan Lang</td>
+    </tr>
+    <tr>
+      <td>newdev.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/devio/base/installnewdevice.asp">MSDN: Install New Device</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Ulrich Czekalla</td>
+    </tr>
+    <tr>
+      <td>ntdll.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winprog/winprog/functions_by_release.asp">MSDN: Functions by Release</a></td>
       <td><a href="?issue=151#Separating%20NTDLL%20and%20Kernel32">#151</a>, 
       <a href="?issue=159#X11Drv%20/%20NTDll%20Separation">#159</a></td>
-      <td class="pct20">20% complete</td>
-      <td>Alexandre Julliard,<br> Eric Pouech</td>
+      <td class="pct40">40% complete</td>
+      <td>Alexandre Julliard,<br>Eric Pouech</td>
     </tr>
     <tr>
-      <td>odbc32: ODBC Database Manager</td>
+      <td>odbc32.dll</td>
       <td class="adequate"><a href="http://www.winehq.org/Docs/wine-user/odbc.shtml">WineHQ ODBC Docs</a><br>
       <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vccore98/html/_core_odbc.asp">MSDN: ODBC</a></td>
       <td><a href="?issue=115#ODBC%20and%20Wine">#115</a>,
@@ -127,8 +274,8 @@
       <td>CodeWeavers</td>
     </tr>
     <tr>
-      <td>ole32: OLE/COM core</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/com/htm/comportal_3qn9.asp">MSDN: COM </a><br>
+      <td>ole32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/com/htm/comportal_3qn9.asp">MSDN: COM</a><br>
       <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olpraboutthismanual.asp">MSDN: OLE Reference</a></td>
       <td><a href="?issue=109#MIDL%20and%20COM">#109</a>,
       <a href="?issue=117#More%20COM%20Work">#117</a></td>
@@ -136,335 +283,289 @@
       <td>CodeWeavers,<br>Marcus Meissner</td>
     </tr>
     <tr>
-      <td>oleaut32: OLE Automation core</td>
+      <td>oleacc.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnacc/html/actvaccess.asp">MSDN:  Active Accessibility</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>oleaut32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olprcore_chapter20.asp">MSDN: OLE BD Core</a></td>
       <td><a href="?issue=126#TransGaming%20Releasing%20Code">#126</a>,
       <a href="?issue=170#Separating%2016/32%20Bit%20OLE%20Functions">#170</a></td>
+      <td class="pct80">80% complete</td>
+      <td>Jon Griffiths,<br>Marcus Meissner,<br>CodeWeavers</td>
+    </tr>
+    <tr>
+      <td>olecli32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olpraboutthismanual.asp">MSDN: OLE Reference</a></td>
+      <td>None</td>
+      <td class="pct10">10% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>oledlg.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olpraboutthismanual.asp">MSDN: OLE Reference</a></td>
+      <td>None</td>
+      <td class="pct10">10% complete</td>
+      <td>Ulrich Czekalla</td>
+    </tr>
+    <tr>
+      <td>olepro32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olprcore_chapter20.asp">MSDN: OLE BD Core</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>olesvr32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olpraboutthismanual.asp">MSDN: OLE Reference</a></td>
+      <td>None</td>
+      <td class="pct10">10% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>psapi.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/perfmon/base/process_status_helper.asp">MSDN: Process Status Helper</a></td>
+      <td>None</td>
       <td class="pct60">60% complete</td>
-      <td>CodeWeavers,<br>Marcus Meissner</td>
+      <td>Eric Pouech</td>
     </tr>
     <tr>
-      <td>olecli32: OLE client library</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olpraboutthismanual.asp">MSDN: OLE Reference</a></td>
-      <td>None</td>
-      <td class="pct5">5% complete</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>oledlg: OLE user interface</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olpraboutthismanual.asp">MSDN: OLE Reference</a></td>
-      <td>None</td>
-      <td class="pct5">5% complete</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>olesvr32: OLE server library</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olpraboutthismanual.asp">MSDN: OLE Reference</a></td>
-      <td>None</td>
-      <td class="pct5">5% complete</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>rasapi32: Dial-Up Networking (DUN) and Remote Access Service (RAS)</td>
+      <td>rasapi32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/rras/rras/remote_access_service_functions.asp">MSDN: RAS Functions</a></td>
       <td>None</td>
-      <td class="pct0">0% complete<br>
+      <td class="pct20">20% complete<br>
       Most people just setup their Windows apps for LAN, then use their Linux tools to dial up.</td>
-      <td>&nbsp;</td>
+      <td></td>
     </tr>
     <tr>
-      <td>riched32: Rich Text Control</td>
+      <td>riched32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/indivcontrol.asp">MSDN: Rich Edit Controls</a></td>
       <td><a href="?issue=127#MS Write Support">#127</a>,
       <a href="?issue=137#MS Write Support (con't)">#137</td>
       <td class="pct20">20% complete</td>
-      <td>&nbsp;</td>
+      <td></td>
     </tr>
     <tr>
-      <td>rpcrt4: RPC/DCOM subsystem</td>
+      <td>rpcrt4.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/rpc/rpc/rpc_functions.asp">MSDN: RPC Functions</a><br><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcedcom/html/cerefComponentServicesCOMDCOM.asp">MSDN: DCOM Supported APIs</a></td>
       <td><a href="?issue=138#Remote%20Procedure%20Call%20Patch">#138</a>,
       <a href="?issue=155#RPC%20Data%20Marshalling">#155</a>,
       <a href="?issue=156#RPC%20Data%20Marshalling%20(cont'd)">#156</a>,
       <a href="?issue=170#RPC%20Documentation%20Update">#170</a></td>
-      <td class="pct20">20% complete</td>
+      <td class="pct30">30% complete</td>
       <td>TransGaming,<br>Ove Kåven,<br>Greg Turner</td>
     </tr>
     <tr>
-      <td>shell32: Shell interface</td>
+      <td>serialui.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wmisdk/wmi/win32_serialport.asp">MSDN: Win32 SerialPort</a></td>
+      <td>None</td>
+      <td class="pct60">60% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>setupapi.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/install/hh/install/setupapi_844n.asp">MSDN: Device Installation Functions</a></td>
+      <td>None</td>
+      <td class="pct60">60% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>shdocvw.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/htmlhelp/html/vsconovhtmlhelpapioverview.asp">MSDN: HTML Help API</a></td>
+      <td>None</td>
+      <td class="pct25">25% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>shell32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/shell/reference/functions/functions.asp">MSDN: Shell Functions</a></td>
       <td><a href="?issue=175#Displaying%20Icons%20for%20Executables">#175</a></td>
       <td class="pct80">80% complete</td>
       <td>CodeWeavers</td>
     </tr>
     <tr>
-      <td>shlwapi: Contains utility functions</td>
+      <td>shfolder.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/shell/programmersguide/shell_basics/shell_basics_programming/folder_id.asp">MSDN: Getting a Folder's ID </a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>shlwapi.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/shell/reference/shlwapi/shlwapi.asp">MSDN: Shlwapi Functions</a></td>
       <td>None</td>
       <td class="pct80">80% complete</td>
       <td>Jon Griffiths</td>
     </tr>
     <tr>
-      <td>tapi32: Telephony API (TAPI)</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcetapi/html/cmconPhoneDeviceFunctions.asp">MSDN: TAPI Functions</a></td>
-      <td>None</td>
-      <td class="pct0">0% complete</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>urlmon:Contains functions used by OLE</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/xpehelp/html/_component_Urlmon_library.asp">MSDN: Urlmon library</a></td>
+      <td>snmpapi.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/snmp/snmp/snmp_functions.asp">MSDN: SNMP Functions</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
-      <td>Eric Pouech</td>
+      <td></td>
     </tr>
     <tr>
-      <td>user32: User interface functions</td>
+      <td>sti.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/stillimg/sti_561x.asp">MSDN: Still Image Architecture</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tapi32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcetapi/html/cmconPhoneDeviceFunctions.asp">MSDN: TAPI Functions</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ttydrv</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/graphics/hh/graphics/prnspool_7ig7.asp">MSDN: Printer Drivers and Spooler Components</a></td>
+      <td>None</td>
+      <td class="pct80">80% complete</td>
+      <td>Dmitry Timoshkov</td>
+    </tr>
+    <tr>
+      <td>twain32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/still/hh/still/wia_drv_scan_7h2h.asp">MSDN: TWAIN-Compatible Applications</a></td>
+      <td>None</td>
+      <td class="pct25">25% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>unicows.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/mslu/winprog/using_the_microsoft_layer_for_unicode.asp">MSDN: Microsoft Layer for Unicode</a></td>
+      <td>None</td>
+      <td class="pct95">95% complete<br>needs manual override</td>
+      <td>Shachar Shemesh</td>
+    </tr>
+    <tr>
+      <td>url.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/shell/programmersguide/shell_int/shell_int_programming/shortcuts/internet_shortcuts.asp">MSDN: Internet Shortcuts</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>urlmon.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/xpehelp/html/_component_Urlmon_library.asp">MSDN: Urlmon library</a></td>
+      <td>None</td>
+      <td class="pct25">25% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>user32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/windowing/windows/windowreference/windowfunctions/adjustwindowrect.asp">MSDN: Window Functions</a></td>
       <td>None</td>
       <td class="pct95">95% complete</td>
-      <td>CodeWeavers,<br>Alexandre Julliard,<br>Eric Pouech</td>
+      <td>Alexandre Julliard</td>
     </tr>
     <tr>
-      <td>wininet: Internet application protocols</td>
+      <td>uxtheme.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnwxp/html/xptheming.asp">MSDN: Windows XP Visual Styles</a></td>
+      <td>None</td>
+      <td class="pct20">20% complete</td>
+      <td>Kevin Koltzau</td>
+    </tr>
+    <tr>
+      <td>version.dll</td>
+      <td class="adequate"><a href="http://www.andreavb.com/API_VERSION.html">version API calls</a></td>
+      <td>None</td>
+      <td class="pct85">85% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>winaspi.dll</td>
+      <td class="outdated"><a href="http://www.hochfeiler.it/alvise/WNASPI32.TXT">WNASPI32.INC</a></td>
+      <td><a href="?issue=33#SCSI%20support">#33</a></td>
+      <td class="pct85">85% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>winedos.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/win9x/msdos_6rdx.asp">MSDN: DOS Extensions Reference</a></td>
+      <td><a href="?issue=123#SoundBlaster Emulation">#123</a>,
+      <a href="?issue=154#Executing%20Batch%20Files">#154</a></td>
+      <td class="pct60"><a href="{$root}/site/status_todo#DOS">60% complete</a></td>
+      <td>Jukka Heinonen</td>
+    </tr>
+    <tr>
+      <td>wineps.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/prntspol_95id.asp">MSDN: Printing and Print Spooler Reference</a></td>
+      <td><a href="?issue=82#PS printer driver and fonts">#82</a></td>
+      <td class="pct90"><a href="{$root}/site/status_todo#Printers_">90% complete</a></td>
+      <td>Huw D M Davies</td>
+    </tr>
+    <tr>
+      <td>wininet.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wininet/wininet/wininet_functions.asp">MSDN: Wininet Functions</a></td>
       <td><a href="?issue=173#WinINet%20Work">#173</a></td>
       <td class="pct60"><a href="{$root}/site/status_todo#Native_Programs">60% complete</a></td>
-      <td>CodeWeavers,<br>Mike McCormack</td>
+      <td>Mike McCormack</td>
     </tr>
     <tr>
-      <td>wintab32: Interface for tablets/device input</td>
+      <td>winnls.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/intl/nls_8d0z.asp">MSDN: National Language Support Functions</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>winsock.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcesdkr/html/wcesdkrwinsock_module.asp">MSDN: Winsock Functions</a></td>
+      <td><a href="?issue=8#Winsock%20&%2032%20bit">#8</a>,
+      <a href="?issue=9#Winsock%20(cont'd)">#9</a>,
+      <a href="?issue=53#Winsock%20status">#53</a></td>
+      <td class="pct95"><a href="{$root}/site/status_todo#Winsock">95% complete</a><br>
+      </td>
+      <td>Martin Wilck,<br>Juan Lang</td>
+    </tr>
+    <tr>
+      <td>winspooldrv</td>
+      <td class="adequate"><a href="http://www.andreavb.com/API_WINSPOOL.html">winspool.drv API calls</a></td>
+      <td>None</td>
+      <td class="pct80">80% complete</td>
+      <td>Huw D M Davies</td>
+    </tr>
+    <tr>
+      <td>wintab32.dll</td>
       <td class="adequate"><a href="http://www.csl.sony.co.jp/projects/ar/restricted/wintabl.html">Wintab Interface Specification 1.1</a></td>
       <td><a href="?issue=175#Wintab%20Status">#175</a>,
       <a href="?issue=167#Wintab%20Status%20and%20Development">#167</a></td>
       <td class="pct25">25% complete</td>
-      <td>CodeWeavers,<br>Aric Stewart<br>Robert North</td>
+      <td>Aric Stewart</td>
     </tr>
     <tr>
-      <td>wnaspi32: Advanced SCSI Peripheral Interface</td>
-      <td class="outdated"><a href="http://www.hochfeiler.it/alvise/WNASPI32.TXT">WNASPI32.INC</a></td>
-      <td><a href="?issue=33#SCSI%20support">#33</a></td>
-      <td class="pct85">85% complete</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>ws2_32: SPI (service provide interface)</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcemain4/html/_wcesdk_winsock_module.asp">MSDN: Winsock 2 Functions</a></td>
+      <td>wintrust.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/security/security/cryptography_functions.asp">MSDN: Cryptography Functions</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
-      <td>Martin Wilck</td>
+      <td></td>
     </tr>
     <tr>
-      <td>ws2_32: WinSock 2</td>
+      <td>wsock32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcemain4/html/_wcesdk_winsock_module.asp">MSDN: Winsock 2 Functions</a></td>
       <td><a href="?issue=108#Winsock2">#108 (1)</a>,
       <a href="?issue=108#Overlapped%20I/O">#108 (2)</a>,
       <a href="?issue=121#Winsock2%20Patches">#121</a>,
       <a href="?issue=161#Need%20New%20Winsock%20Maintainer">#161</a></td>
       <td class="pct80">80% complete</td>
-      <td>Martin Wilck,<br>Mike McCormack</td>
+      <td>Juan Lang</td>
     </tr>
     <tr>
-      <td>wsock32: Windows Sockets (WinSock) 1.1</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcesdkr/html/wcesdkrwinsock_module.asp">MSDN: Winsock Functions</a></td>
-      <td><a href="?issue=8#Winsock%20&%2032%20bit">#8</a>,
-      <a href="?issue=9#Winsock%20(cont'd)">#9</a>,
-      <a href="?issue=53#Winsock%20status">#53</a></td>
-      <td class="pct90"><a href="{$root}/site/status_todo#Winsock">90% complete</a><br>
-      </td>
-      <td>Martin Wilck,<br>Mike McCormack</td>
-    </tr>
-    <tr class="hdr">
-      <td colspan="5"><strong>DirectX</strong></td>
-    </tr>
-    <tr>
-      <td><a href="http://www.bbrox.org/d3d_status.html">Direct3D {1-7}: For displaying 3D graphics</a></td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directx/graphics/reference/d3dx/functions/functions.asp">MSDN: D3D Functions</a></td>
-      <td><a href="?issue=76#TransGaming">#76</a>,
-      <a href="?issue=135#Direct3D%208%20Support">#135</a>,
-      <a href="?issue=150#Direct3D%20Update">#150</a>,
-      <a href="?issue=153#D3D%20Status%20Page">#153</a></td>
-      <td class="pct70"><a href="{$root}/site/status_todo#DirectX">50% All features complete<br> 90% Games complete</a></td>
-      <td>Lionel Ulmer,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
-    </tr>
-    <tr>
-      <td>Direct3D {8}: For displaying 3D graphics </td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directx/graphics/reference/d3dx/functions/functions.asp">MSDN: D3D Functions</a></td>
-      <td><a href="?issue=152#Direct%203D%20Status">#152</a>, 
-      <a href="?issue=170#Direct3D%20Status">#170</a>, 
-      <a href="?issue=174#Direct3D%20To%20Do%20List">#174</a></td>
-      <td class="pct80">80% complete</a></td>
-      <td>Rapha&euml;l Junqueira,<br><a href="http://www.badcomp.co.uk/">Jason Edmeades</a>,<br>Christian Costa</td>
-    </tr>
-    <tr>
-      <td>DirectDraw: For displaying 2D graphics</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/graphics/hh/graphics/ddfncs_66uf.asp">MSDN: DDraw Functions</a></td>
-      <td><a href="?issue=78#DirectDraw%20reorganization%20(cont'd)">#78</a>,
-      <a href="?issue=79#DirectDraw%20reorganization%20(cont'd)">#79</a></td>
-      <td class="pct85">85% complete</a></td>
-      <td>Lionel Ulmer,<br>Marcus Meissner</td>
-    </tr>
-    <tr>
-      <td>DMusic: For sound effects and music</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/stream/hh/stream/aud-design_0m94.asp">MSDN: DMusic Components</a></td>
-      <td><a href="?issue=175#DMusic%20Interfaces">#175</a></td>
-      <td class="pct50"><a href="{$root}/site/status_todo#DirectX">50% complete</a></td>
-      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira<br>Christian Costa</td>
-    </tr>
-    <tr>
-      <td>DirectSound: For sound effects and music</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx8_vb/directx_vb/audio_using_4vjj.asp?frame=true">MSDN: DSound Devices</a></td>
-      <td><a href="?issue=48#Merging%20DSound%20and%20WinMM%20drivers">#48</a></td>
-      <td class="pct90">90% complete</a></td>
-      <td>Fran&ccedil;ois Gouget,<br>Rok Mandeljc</td>
-    </tr>
-    <tr>
-      <td>DirectInput: To support input devices</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx8_c/directx_cpp/input_ovintro_9u0k.asp">MSDN: DInput</a></td>
-      <td><a href="?issue=116#DirectInput%20Key%20Mapping">#116</a>,
-      <a href="?issue=137#MS%20Write%20Support%20(con't)">#137</a></td>
-      <td class="pct70">70% complete</a></td>
-      <td>Lionel Ulmer,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
-    </tr>
-    <tr>
-      <td>DirectPlay/X: For network communication</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx8_c/directx_cpp/play_front_61q1.asp">MSDN: DPlay</a></td>
-      <td>None</td>
-      <td class="pct30">30% complete</a></td>
-      <td>Lionel Ulmer,<br>Rapha&euml;l Junqueira,<br>Christian Costa<br>Jason Edmeades</td>
-    </tr>
-    <tr>
-      <td>DirectShow: For movie playback</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx81_c/directx_cpp/htm/directshow.asp">MSDN: DShow</a></td>
-      <td><a href="?issue=122#Quartz.dll%20Removal">#122</a></td>
-      <td class="pct10">10% complete</a></td>
-      <td>Robert Shearman,<br>Lionel Ulmer</td>
-    </tr>
-    <tr class="hdr">
-      <td colspan="5"><strong>Multimedia</strong></td>
-    </tr>
-    <tr>
-      <td>ALSA multimedia driver</td>
-      <td class="adequate"><a href="http://www.alsa-project.org/documentation.php3">ALSA Users Documentation</a></td>
-      <td><a href="?issue=121#ALSA%20Driver">#121</a></td>
-      <td class="pct25">25% complete<br>
-      Preliminary Audio support for ALSA 0.9 and final interfaces.<br>
-      No implementation for MIDI/mixer...</td>
-      <td>Eric Pouech,<br>Jeff Smith,<br>Sylvain Petreolle,</td>
-    </tr>
-    <tr>
-      <td>aRtS multimedia driver</td>
-      <td class="adequate"><a href="http://www.arts-project.org/doc/manual/">aRts - documentation</a></td>
-      <td><a href="?issue=118#aRts%20Driver">#118</a></td>
-      <td class="pct25"><a href="#Sound_Drivers">25% complete</a><br>
-      Preliminary Audio support<br>
-      No implementation for midi/mixer...</td>
-      <td>Chris Morgan</td>
-    </tr>
-    <tr>
-      <td>AudioIO multimedia driver</td>
-      <td class="adequate"><a href="http://audacity.sourceforge.net/dox/html/classAudioIO.html">AudioIO Class Reference</a></td>
-      <td><a href="?issue=131#News:%20Wine20020804,%20CrossOver%20Office%201.2,%20WineX%202.1,%20Xandros%20beta%203">#131</a></td>
-      <td class="pct20">20% complete<br>
-      Preliminary Audio support.<br>
-      No implementation for midi/mixer...</td>
-      <td>Robert Lunnon</td>
-    </tr>
-    <tr>
-      <td>Avicap32: Video Capture</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/avicap_5e3p.asp">Video Capture Reference</a></td>
-      <td>None</td>
-      <td class="pct5">5% complete</td>
-      <td>Eric Pouech</td>
-    </tr>
-    <tr>
-      <td>JACK (JACK Audio Connection Kit) multimedia driver</td>
-      <td class="adequate"><a href="http://jackit.sourceforge.net/docs/">jack docs</a></td>
-      <td><a href="?issue=139#Jack%20Audio%20Driver">#139</a></td>
-      <td class="pct25"><a href="#Sound_Drivers">25% complete</a><br>
-      Preliminary Audio support<br>
-      No implementation for midi/mixer...</td>
-      <td>Chris Morgan</td>
-    </tr>
-    <tr>
-      <td>MCI (Media Control Interface) drivers</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/mci_7ir7.asp">MCI Functions</a></td>
-      <td><a href="?issue=29#CDs%20serial%20numbers">#29</a></td>
-      <td class="pct60">60% complete<br>
-      Missing the mcianim drivers.<br>
-      Problems with implementing mmtask.</td>
-      <td>Eric Pouech</td>
-    </tr>
-    <tr>
-      <td>msacm32: Audio Compression Manager (ACM)</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/mmfunc_27ar.asp">Multimedia Functions</a></td>
-      <td>None</td>
-      <td class="pct80">80% complete<br>
-      Codecs present for A/&micro; Law (G711), ADPCM (MS and IMA) &amp; MP3.</td>
-      <td>Eric Pouech</td>
-    </tr>
-    <tr>
-      <td>msvfw32: Video for Windows (VFW)</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/mmfunc_27ar.asp">Multimedia Functions</a></td>
-      <td>None</td>
-      <td class="pct40"><a href="{$root}/site/status_todo#Video">40% complete</td>
-      <td>Michael G�nnewig,<br>Eric Pouech</td>
-    </tr>
-    <tr>
-      <td>Multimedia CD audio</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/mci_3lbo.asp">CD Audio Command Set</a></td>
-      <td>None</td>
-      <td class="pct100">100% complete</td>
-      <td>Eric Pouech</td>
-    </tr>
-    <tr>
-      <td>Multimedia joystick driver</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/joy_1do3.asp">Joystick Functions</a></td>
-      <td>None</td>
-      <td class="pct80">80% complete<br>
-      Only implemented for Linux joystick API.</td>
-      <td>Eric Pouech</td>
-    </tr>
-    <tr>
-      <td>NAS (Network Audio Server) multimedia driver</td>
-      <td class="adequate"><a href="http://radscan.com/nas/nas-links.html">Network Audio System</td>
-      <td><a href="?issue=131#News:%20Wine20020804,%20CrossOver%20Office%201.2,%20WineX%202.1,%20Xandros%20beta%203">#131</a></a></td>
-      <td class="pct20">20% complete<br>
-      Preliminary Audio support<br>
-      No implementation for midi/mixer...</td>
-      <td>Nicolas Escuder</td>
-    </tr>
-    <tr>
-      <td>opengl32: OpenGL interface</td>
-      <td class="adequate"><a href="http://www.opengl.org/developers/documentation/">OpenGL Developer Documentation</a></td>
-      <td><a href="?issue=2#Some%20musing%20about%20OpenGL%20support">#2</a>,
-      <a href="?issue=8#Accelerated%20OpenGL%20&%20Wine">#8</a>,
-      <a href="?issue=44#OpenGL%20optimization">#44</a>,
-      <a href="?issue=45#OpenGL%20requirements">#45</a>,
-      <a href="?issue=158#Problems%20with%20OpenGL">#158</a></td>
-      <td class="pct90">90% complete<br>
-      Some compatibility problems.</td>
-      <td>Lionel Ulmer,<br>TransGaming</td>
-    </tr>
-    <tr>
-      <td>OSS (Open Sound System) multimedia driver</td>
-      <td class="adequate"><a href="http://www.4front-tech.com/pguide/">OSS Programmer's guide</a></td>
-      <td><a href="http://kt.zork.net/wine/wn20011212_110.html#2">#110</a></td>
-      <td class="pct95">95% complete<br>(MIDI IN support)</td>
-      <td>Eric Pouech</td>
-    </tr>  
-    <tr>
-      <td>winmm: Multimedia architecture</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/mmfunc_27ar.asp">Multimedia Functions</a></td>
-      <td><a href="?issue=5#Multimedia%20reorganisation">#5</a>,
-      <a href="?issue=48#Merging%20DSound%20and%20WinMM%20drivers">#48</a></td>
-      <td class="pct80">80% complete</td>
-      <td>Eric Pouech</td>
+      <td>x11drv</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/graphics/hh/graphics/dpyddi_8f1j.asp">MSDN: Display Drivers</a></td>
+      <td><a href="?issue=47#Feature: The X11 driver by Ove Kåven">#47</a>,
+      <a href="?issue=175#Workaround%20for%20Xvidmode%20Graphic%20Corruption">#175</a></td>
+      <td class="pct80"><a href="{$root}/site/status_todo#GDI">80% complete</a></td>
+      <td>Dmitry Timoshkov</td>
     </tr>
   </table>
 </td>
 </tr>
 </table>
 </div>
-
-<p>&nbsp;</p>
+<p></p>

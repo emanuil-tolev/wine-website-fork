@@ -2,13 +2,134 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since January 06, 2004:</p>
+
+ <ul>
+ <li>Update the status_todo page</li>
+ <li>Update the status front page</li>
+ <li>Split Status DLL's into three separate pages. DLL's, DirectX, Multimedia</li>
+ </ul>
+ <ul>
+ <li>Changes to DLL's page</li>
+ <li>ADD - advapi32.dll</li>
+ <li>ADD - capi2032.dll</li>
+ <li>ADD - cfgmgr32.dll</li>
+ <li>ADD - comcat.dll</li>
+ <li>ADD - split crtdll&msvcrt section</li>
+ <li>ADD - crypt32.dll</li>
+ <li>ADD - ctl3d.dll</li>
+ <li>ADD - icmp.dll</li>
+ <li>ADD - imagehlp.dll</li>
+ <li>ADD - lzexpand.dll</li>
+ <li>ADD - mapi32.dll</li>
+ <li>ADD - mpr.dll</li>
+ <li>ADD - mshtml.dll</li>
+ <li>ADD - msi.dll</li>
+ <li>ADD - msimg32.dll</li>
+ <li>ADD - msisys.ocx</li>
+ <li>ADD - msnet32.dll</li>
+ <li>ADD - msvcrt20.dll</li>
+ <li>ADD - msvcrtd.dll</li>
+ <li>ADD - netapi32.dll</li>
+ <li>ADD - newdev.dll</li>
+ <li>ADD - oleacc.dll</li>
+ <li>ADD - olepro32.dll</li>
+ <li>ADD - psapi.dll</li>
+ <li>ADD - serialui.dll</li>
+ <li>ADD - setupapi.dll</li>
+ <li>ADD - shdocvw.dll</li>
+ <li>ADD - shfolder.dll</li>
+ <li>ADD - snmpapi.dll</li>
+ <li>ADD - sti.dll</li>
+ <li>ADD - ttydrv</li>
+ <li>ADD - twain32.dll</li>
+ <li>ADD - unicows.dll</li>
+ <li>ADD - url.dll</li>
+ <li>ADD - uxtheme.dll</li>
+ <li>ADD - version.dll</li>
+ <li>ADD - winaspi.dll</li>
+ <li>ADD - winedos.dll</li>
+ <li>ADD - wineps.dll</li>
+ <li>ADD - winnls.dll</li>
+ <li>ADD - winspooldrv</li>
+ <li>ADD - wintrust.dll</li>
+ <li>ADD - x11drv</li>
+ <li>ADD - Jon Griffiths as worker to oleaut32.dll</li>
+ <li>ADD - Ulrich Czekalla as worker to oledlg.dll</li>
+ <li>ADD - Eric Pouech as worker to urlmon.dll</li>
+ <li>ADD - Juan Lang as worker to winsock.dll</li>
+ <li>ADD - Juan Lang as worker to wsock32.dll</li>
+ <li>Remove - Guy Albertelli as worker to comctl32.dll</li>
+ <li>Remove - Aric Stwart,Huw D.M Davies,Alexandre Julliard as worker to gdi32.dll</li>
+ <li>Remove - CodeWeavers,Eric Pouech as worker to user32.dll</li>
+ <li>Remove - CodeWeavers as worker to wininet.dll</li>
+ <li>Remove - CodeWeavers,Robert North as worker to wintab32.dll</li>
+ <li>Remove - Mike McCormack as worker to wsock.dll</li>
+ <li>Remove - Martin Wilck,Mike McCormack as worker to wsock32.dll</li>
+ <li>iphlpapi.dll 50% -&gt; 55%</li>
+ <li>ntdll.dll 20% -&gt; 40%</li>
+ <li>olecli32.dll 5% -&gt; 10%</li>
+ <li>oledlg.dll 5% -&gt; 10%</li>
+ <li>olesvr32.dll 5% -&gt; 10%</li>
+ <li>rasapi32.dll 0% -&gt; 20%</li>
+ <li>rpcrt4.dll 20% -&gt; 30%</li>
+ <li>tapi32.dll 0% -&gt; 5%</li>
+ <li>urlmon.dll 5% -&gt; 25%</li>
+ <li>winsock.dll 90% -&gt; 95%</li>
+ </ul>
+ <ul>
+ <li>Changes to DirectX page</li>
+ <li>List all dll's/components</li>
+ </ul>
+ <ul>
+ <li>Changes to multimedia page</li>
+ <li>ADD - <b>mappers</b></li>
+ <li>ADD - wave mapper (wavemap)</li>
+ <li>ADD - midi mapper (midimap)</li>
+ <li>ADD - <b>MCI drivers</b></li>
+ <li>ADD - Wave driver (mciwave)</li>
+ <li>ADD - Midi driver (mciseq)</li>
+ <li>ADD - Video driver (mcianim, mciavi)</li>
+ <li>ADD - <b>MSACM Codecs</b></li>
+ <li>ADD - ADPCM</li>
+ <li>ADD - G711: u/A law</li>
+ <li>ADD - MP3</li>
+ <li>ADD - <b>msvideo/msvfw32 Video codecs</b></li>
+ <li>ADD - MSRLE32</li>
+ <li>ADD - <b>Multimedia DLL's</b></li>
+ <li>ADD - avifil32.dll</li>
+ <li>ADD - winmm.dll</li>
+ <li>ADD - <b>Miscellaneous Multimedia Components</b></li>
+ <li>ADD - glu32.dll</li>
+ <li>ADD - glut32.dll</li>
+ <li>ADD - Christian Costa as worker to ALSA</li>
+ <li>ADD - Lindows.com as worker to aRtS</li>
+ <li>ADD - Dmitry Timoshkov as worker to msvideo.dll/msvfw32.dll</li>
+ <li>ADD - Michael G&uuml;nnewig as worker to winmm.dll</li>
+ <li>Remove - Eric Pouech,Jeff Smith as worker to ALSA</li>
+ <li>Remove - Robert Lunnon as worker to AudioIO</li>
+ <li>Remove - TransGaming as worker to opengl32.dll </li>
+ <li>ALSA  25% -&gt; 75%</li>
+ <li>msvideo.dll/msvfw32.dll 40% -&gt; 75%</li> 
+ </ul>
+ <ul>
+ <li>Changes to Core Status</li>
+ <li>ADD - MSDN Doc link to BiDi</li>
+ <li>ADD - Shachar Shemesh as worker to (NLS)</li>  
+ <li>ADD - Chris Morgan as worker to (winecfg)</li> 
+ <li>Remove - X11 display/window driver</li>
+ <li>Remove - Internal PostScript printer driver</li>
+ <li>Remove - DOS application support</li>
+ </ul>
+ <br>
+
 <p>Changes since November 03, 2003:</p>
 
  <ul>
  <li>Remove - Instructions section</li>
  <li>Remove - Jaco Greef, Matthew Davison as workers for Wine configuration tool (winecfg)</li>
  <li>ADD - Mike Hearn as worker to Wine configuration tool (winecfg)</li>
- <li<ADD - Ivan Leo Murray-Smith, Vincent Béron, Alex Pasadyn as workers to Wine Setup Tool (winesetuptk)</li>
+ <li>ADD - Ivan Leo Murray-Smith, Vincent Béron, Alex Pasadyn as workers to Wine Setup Tool (winesetuptk)</li>
  <li>Wine Resource Compiler: 100% -&gt; 90%</li>
  <li>Wine configuration tool (winecfg): 20% -&gt; 50%</li> 
  </ul>
@@ -44,134 +165,6 @@
  <li>ADD - RPCRT4 ToDo and entries</li>
  <li>ADD - Registry entries, to DirectShow ToDo</li>
  <li>DirectShow/Quartz: 5% -&gt; 10%</li>
- </ul>
- <br>
-
- <p>Changes since July 19, 2003:</p>
-
- <ul>
- <li>Cabinet.dll: 35% -&gt; 80%</li>
- </ul>
- <br>
-
- <p>Changes since July 17, 2003:</p>
- 
- <ul>
- <li>All changes were made to Wine Status Core page</li>
- <li>ADD - WWN link's (Thanks to Brian)</li>
- <li>ADD - Regedit to tool's section</li>
- <li>ADD - Winehelp to tool's section</li>
- <li>ADD - Wine configuration tool (winecfg)to tool's section</li>
- <li>ADD - Links to some Documentation section's</li>
- <li>ADD - Jukka Heinonen as worker to DOS application support</li>
- <li>ADD - Dimitrie O. Paun as worker to Wine Resource Compiler</li>
- <li>ADD - Eric Pouech as worker to Dll separation</li>
- <li>Remove - Native Windows printer drivers</li>
- <li>Remove - DLL placeholder file</li>
- <li>Remove - CPU emulation</li>
- <li>Remove - WineHQ and Corel relationship</li>
- <li>Remove - Bertho Stultiens as worker for Wine Resource Compiler</li>
- <li>Remove - Bertho Stultiens as worker for Wine Message Compiler</li>
- <li>Remove - Ove Kåven,Alexandre Julliard as workers for DOS</li>
- <li>Remove - broken links</li>
- <li>Change - The Wine release plan from 1.0 to 0.9 and add link to todo's on the front page.</li>
- <li>Fix bullet Links</li>
- <li>Bootup/autostart management (wineboot): 30% -&gt; 70%</li>
- <li>DLL separation: 85% -&gt; 80%</li>
- <li>Window management: 95% -&gt; 85%</li>
- <li>General printer setup: 70% -&gt; 80%</li>
- <li>Internal PostScript printer driver: 60% -&gt; 90%</li>
- <li>Unicode support: 80% -&gt; 85%</li> 
- <li>BiDi: 5% -&gt; 20%</li>
- <li>Dynamic Data Exchange (DDE): 80% -&gt; 85%</li>
- <li>I/O port access: 100% -&gt; 90%</li>
- <li>Multi-user support: 20% -&gt; 10%</li> 
- <li>Wine Resource Compiler: 95% -&gt; 100%</li>
- <li>Wine Porting Tool (winemaker): 75% -&gt; 60%</li>
- <li>How to use Winelib: 90% -&gt; 60%</li>
- <li>How to compile MFC with Winelib: 80% -&gt; 60%</li>
- <li>The History of the Wine Project: from Poor to Adequate</li>
- </ul>
- <br>
-
-
- <p>Changes since July 8, 2003:</p>
-
- <ul> 
- <li>changes made to Wine Status DLL's</li>
- <li>ADD - Documentation link's to Multimedia Component's</li>
- </ul>
- <br>
-
-
- <ul>
- <li>All changes where made to the ToDo Section</li>
- <li>New - X11drv section</li>
- <li>New - NTDLL section</li>
- <li>New - DirectX section</li>
- <li>New - FreeBSD section</li>
- <li>New - DOS section</li>
- <li>New - OLE section</li>
- <li>Update old Component's list</li>
- </ul>
- <br>
-
- 
- <p>Changes since May 27, 2003:</p>
-
- <ul>
- <li>All changes were made to Wine Status DLL's</li>
- <li>Put entries in alphabetical order</li>
- <li>New - cabinet.dll</li>
- <li>New - gdi32.dll</li>
- <li>New - imm32.dll</li>
- <li>New - iphlpapi.dll</li>
- <li>New - kernel32.dll</li>
- <li>New - ntdll.dll</li>
- <li>New - shlwapi.dll</li>
- <li>New - urlmon.dll</li>
- <li>New - user32.dll</li>
- <li>New - wintab32.dll</li>
- <li>New - ws2_32 SPI</li>
- <li>New - DirectX section</li>
- <li>New - D3D {1-7} section in DirectX</li>
- <li>New - D3D {8 } section in DirectX</li>
- <li>New - Dmusic section in DirectX</li>
- <li>New - Multimedia section</li>
- <li>New - Avicap section in multimedia</li>
- <li>ADD - Marcus Meissner, Jon Griffiths as worker's to crtdll&msvcr</li>
- <li>ADD - Lionel Ulmer, Marcus Meissner as worker's for DirectDraw</li>
- <li>ADD - Dimitrie O. Paun as worker to comdlg32</li>
- <li>ADD - TransGaming, Ove Kåven, as worker's to rpcrt4</li>
- <li>ADD - Mike McCormack as worker to wininet</li>
- <li>ADD - Robert North as worker to wintab32</li>
- <li>ADD - Lionel Ulmer, Raphaël Junqueira, Christian Costa as worker's to DirectInput</li>
- <li>ADD - Lionel Ulmer, Raphaël Junqueira, Christian Costa, Jason Edmeades as worker's for DirectPlay/X</li>
- <li>ADD - Robert Shearman, Lionel Ulmer as worker's for DirectShow</li>
- <li>ADD - Jeff Smith, Sylvain Petreolle as worker's for ALSA multimedia driver</li>
- <li>ADD - Michael Günnewig as worker to msvfw32: Video for Windows (VFW)
- <li>Remove - Marco Pietrobono as worker for ALSA multimedia drive</li>
- <li>Remove - TransGaming as worker for DirectDraw</li>
- <li>Remove - TransGaming as worker for DirectInput</li>
- <li>Remove - Peter Hunnisett as worker for DirectPlay</li>
- <li>Remove - TransGaming as worker for DirectSound</li>
- <li>Remove - wing: wing is now part of DirectX</li>
- <li>Remove - TransGaming as worker for opengl32: OpenGL interface</li>
- <li>Changes - ALSA multimedia driver change from .5 to .9</li>
- <li>Changes - Add link for msvfw32: Codec Status</li>
- <li>Changes - Add links to Documentation</li>
- <li>Changes - Add links to WWN article coverage Thanks to ( Brian Vincent )</li> 
- <li>ws2_32: 70% -&gt; 80%</li>
- <li>wininet: 50% -&gt; 60%</li>
- <li>ALSA multimedia driver: 20% -&gt; 25%</li>
- <li>aRtS multimedia driver: 20% -&gt; 25%</li>
- <li>JACK (JACK Audio Connection Kit): 20% -&gt; 25%</li>
- <li>msvfw32: 30% -&gt; 40%</li>
- <li>DirectPlay: 25% -&gt; 30%</li>
- <li>DirectSound: 80% -&gt; 90%</li>
- <li>DirectShow: 0% -&gt; 5%</li>
- <li>rpcrt4: 5% -&gt; 20%</li>
- <li>odbc32: 70% -&gt; 60%</li>
  </ul>
  <br>
 

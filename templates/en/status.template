@@ -42,7 +42,7 @@
 
     <h1>Wine Status</h1>
 
-    <p>Last update: November 03, 2003.<br>
+    <p>Last update: January 06, 2004.<br>
       If you would like the WWN to write a feature about some particular things in these
       tables, just <a href="mailto:wwn@winehq.org">mail us</a>.
     </p>
@@ -71,9 +71,14 @@
    </td></tr>
    <tr class=white><td>
         <dl>
+            <dt><a href="http://fgouget.free.fr/wine/winapi_stats-en.shtml"><b>API Status</b></a></dt>
+            <dd>
+               Status of APIs Implemented.
+            </dd>
+
             <dt><a href="{$root}/site/status_wine"><b>Core Status</b></a></dt>
             <dd>
-                Status of core Wine components, tools, and misc.
+               Status of core Wine components, tools, and misc.
             </dd>
 
             <dt><a href="{$root}/site/status_dlls"><b>DLLs Status</b></a></dt>
@@ -81,21 +86,24 @@
                Status of Windows DLL clones.
             </dd>
 
+            <dt><a href="{$root}/site/status_directx"><b>DirectX Status</b></a></dt>
+            <dd>
+               Status of DirectX DLL clones.
+            </dd>
+
+            <dt><a href="{$root}/site/status_multimedia"><b>Multimedia Status</b></a></dt>
+            <dd>
+               Status of multimedia elements.
+            </dd>
+
             <dt><a href="{$root}/site/status_ui"><b>UI Status</b></a></dt>
             <dd>
                Status of user interface elements.
             </dd>
 
-            </dd>
-
-            <dt><a href="http://fgouget.free.fr/wine/winapi_stats-en.shtml"><b>API Status</b></a></dt>
+            <dt><a href="{$root}/site/status_todo"><b>Known To Do's</b></a></dt>
             <dd>
-               Status of APIs Implemented.
-            </dd>
-
-            <dt><a href="{$root}/site/status_todo"><b>Known To Dos</b></a></dt>
-            <dd>
-              To Do list of known issues.
+               To Do list of known issues.
             </dd>
 
             <dt><a href="{$root}/site/status_changelog"><b>ChangeLog</b></a></dt>
@@ -148,7 +156,7 @@
 <td class="poor" colspan="4">Poor</td>
 <td class="outdated" colspan="5">Outdated</td>
 <td class="adequate" colspan="4">Adequate</td>
-<td class="good" colspan="4">Good</td>
+<td class="good" colspan="5">Good</td>
   </tr>
 </table>
 </div>

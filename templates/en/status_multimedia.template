@@ -1,0 +1,245 @@
+<!--TITLE:[Wine Status DLLs]-->
+
+<h1>Wine Status - Multimedia DLLs</h1>
+
+<style>
+<!--
+.hdr	{ background-color: #000000; color: #ffffff; }
+.pct0   { background-color: #ff5050; }
+.pct5   { background-color: #ff5d4f; }
+.pct10  { background-color: #ff694e; }
+.pct15  { background-color: #ff764d; }
+.pct20  { background-color: #ff824b; }
+.pct25  { background-color: #ff8f4a; }
+.pct30  { background-color: #ff9b49; }
+.pct35  { background-color: #ffa848; }
+.pct40  { background-color: #ffb447; }
+.pct45  { background-color: #ffc146; }
+.pct50  { background-color: #ffcd45; }
+.pct55  { background-color: #ffda43; }
+.pct60  { background-color: #ffe642; }
+.pct65  { background-color: #fff341; }
+.pct70  { background-color: #ffff40; }
+.pct75	{ background-color: #dcff48; }
+.pct80	{ background-color: #c8ff50; }
+.pct85	{ background-color: #b4ff58; }
+.pct90	{ background-color: #a0ff60; }
+.pct95	{ background-color: #8cff60; }
+.pct100	{ background-color: #60ff60; }
+.nonexistent	{ background-color: #ff5050; }
+.poor		{ background-color: #ff8f4a; }
+.outdated	{ background-color: #ffcd45; }
+.outdadeq	{ background-color: #ffff40; }
+.adequate	{ background-color: #dcff48; }
+.adeqgood	{ background-color: #c0ff54; }
+.good		{ background-color: #60ff60; }
+-->
+</style>
+
+
+<p>&nbsp;</p>
+
+<div align=center>
+<table width="95%" border="0" cellspacing="0" cellpadding="1" bgcolor="#6d6d6d">
+  <tr>
+<td>
+  <table width="100%" border="0" cellspacing="1" cellpadding="3" bgcolor="#ffffff">
+    <tr class="hdr">
+      <th>Aspect or Component</th>
+      <th>Documentation status</th>
+      <th>WWN article coverage</th>
+      <th>Implementation status (estimated)</th>
+      <th>Recent primary workers</th>
+    </tr>
+    <tr>
+    <td colspan="5"><strong>Low level drivers (audio, midi, mixer) </strong></td>
+    <tr>
+      <td>ALSA</td>
+      <td class="adequate"><a href="http://www.alsa-project.org/documentation.php3">ALSA Users Documentation</a></td>
+      <td><a href="?issue=121#ALSA%20Driver">#121</a></td>
+      <td class="pct75">75% complete<br>(x--) (basic support for MIDI)<br>
+      </td>
+      <td>Sylvain Petreolle,<br>Christian Costa</td>
+    </tr>
+    <tr>
+      <td>aRtS</td>
+      <td class="adequate"><a href="http://space.twc.de/~stefan/kde/arts-mcop-doc/artsbuilder/">aRts - documentation</a></td>
+      <td><a href="?issue=118#aRts%20Driver">#118</a></td>
+      <td class="pct25"><a href="#Sound_Drivers">25% complete</a><br>(x--)<br>
+      </td>
+      <td>Chris Morgan,<br><a href="http://www.lindows.com/">Lindows.com</a></td>
+    </tr>
+    <tr>
+      <td>AudioIO</td>
+      <td class="adequate"><a href="http://audacity.sourceforge.net/dox/html/classAudioIO.html">AudioIO Class Reference</a></td>
+      <td><a href="?issue=131#News:%20Wine20020804,%20CrossOver%20Office%201.2,%20WineX%202.1,%20Xandros%20beta%203">#131</a></td>
+      <td class="pct20">20% complete<br>(x--)<br>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>JACK</td>
+      <td class="adequate"><a href="http://jackit.sourceforge.net/docs/">jack docs</a></td>
+      <td><a href="?issue=139#Jack%20Audio%20Driver">#139</a></td>
+      <td class="pct25">25% complete</a><br>(x--)<br>
+      </td>
+      <td>Chris Morgan</td>
+    </tr>
+    <tr>
+      <td>NAS</td>
+      <td class="adequate"><a href="http://radscan.com/nas/nas-links.html">Network Audio System</td>
+      <td><a href="?issue=131#News:%20Wine20020804,%20CrossOver%20Office%201.2,%20WineX%202.1,%20Xandros%20beta%203">#131</a></a></td>
+      <td class="pct20">20% complete<br>(x--)<br>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OSS</td>
+      <td class="adequate"><a href="http://www.4front-tech.com/pguide/">OSS Programmer's guide</a></td>
+      <td><a href="http://kt.zork.net/wine/wn20011212_110.html#2">#110</a></td>
+      <td class="pct95">95% complete<br>(xxx)<br>
+      </td>
+      <td>Eric Pouech</td>
+    </tr> 
+    <td colspan="5"><strong>mappers</strong></td>
+    <tr>
+      <td>wave mapper (wavemap)</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_audio.asp">Multimedia Audio</a></td>
+      <td>None</td>
+      <td class="pct80">80% complete<br>(uses MSACM for audio codecs)</td>
+      <td>Eric Pouech</td>
+    </tr>
+    <tr>
+      <td>midi mapper (midimap)</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_audio.asp">Multimedia Audio</a></td>
+      <td>None</td>
+      <td class="pct80">80% complete</td>
+      <td>Eric Pouech</td>
+    </tr>
+    <td colspan="5"><strong>MCI drivers</strong></td>
+    <tr>
+      <td>CD audio driver (mcicda)</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/w98ddk/hh/w98ddk/mmedia_4s1g.asp">MCI Device Drivers</a></td>
+      <td>None</td>
+      <td class="pct100">100% complete</td>
+      <td>Eric Pouech</td>
+    </tr>
+    <tr>
+      <td>Wave driver (mciwave)</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/w98ddk/hh/w98ddk/mmedia_4s1g.asp">MCI Device Drivers</a></td>
+      <td>None</td>
+      <td class="pct60">60% complete<br>( Problems with implementing mmtask.)</td>
+      <td>Eric Pouech</td>
+    </tr>
+    <tr>
+      <td>Midi driver (mciseq)</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/w98ddk/hh/w98ddk/mmedia_4s1g.asp">MCI Device Drivers</a></td>
+      <td>None</td>
+      <td class="pct60">60% complete<br>( Problems with implementing mmtask.)</td>
+      <td>Eric Pouech</td>
+    </tr>
+    <tr>
+      <td>Video driver (mcianim, mciavi)</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/w98ddk/hh/w98ddk/mmedia_4s1g.asp">MCI Device Drivers</a></td>
+      <td>None</td>
+      <td class="pct75">75% complete<br>( Problems with implementing mmtask.)</td>
+      <td>Eric Pouech,<br>Michael G&uuml;nnewig,<br>Dmitry Timoshkov</td>
+    </tr>
+    <td colspan="5"><strong>MSACM Codecs</strong></td>
+    <tr>
+      <td>ADPCM</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcedshow/html/_cxrefACMWrapperFilter.asp">ACM Wrapper Filter</a></td>
+      <td>None</td>
+      <td class="pct50">50% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G711: u/A law</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcedshow/html/_cxrefACMWrapperFilter.asp">ACM Wrapper Filter</a></td>
+      <td>None</td>
+      <td class="pct50">50% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MP3</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcedshow/html/_cxrefACMWrapperFilter.asp">ACM Wrapper Filter</a></td>
+      <td>None</td>
+      <td class="pct50">50% complete</td>
+      <td></td>
+    </tr>
+    <td colspan="5"><strong>msvideo/msvfw32 Video codecs</strong></td>
+    <tr>
+      <td>MSRLE32</td>
+      <td class="adequate"><a href="http://www.jmcgowan.com/avitech.html">Windows Multimedia System</a></td>
+      <td>None</td>
+      <td class="pct100">100% complete</td>
+      <td>Michael G&uuml;nnewig</td>
+    </tr>
+    <td colspan="5"><strong>Multimedia DLL's</strong></td>
+    <tr>
+      <td>avicap32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/w98ddk/hh/w98ddk/mmedia_4v91.asp">Video Capture Reference</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Eric Pouech</td>
+    </tr>
+    <tr>
+      <td>avifil32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_functions.asp">Multimedia Functions</a></a></td>
+      <td>None</td>
+      <td class="pct70">70% complete</td>
+      <td>Michael G&uuml;nnewig</td>
+    </tr>
+    <tr>
+      <td>msvideo.dll/msvfw32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_functions.asp">Multimedia Functions</a></td>
+      <td>None</td>
+      <td class="pct75"><a href="{$root}/site/status_todo#Video">75% complete</td>
+      <td>Michael G&uuml;nnewig,<br>Dmitry Timoshkov</td>
+    </tr>
+    <tr>
+      <td>winmm.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_functions.asp">Multimedia Functions</a></td>
+      <td>None</td>
+      <td class="pct80">80% complete</td>
+      <td>Michael G&uuml;nnewig,<br>Eric Pouech</td>
+    </tr>
+    <td colspan="5"><strong>Miscellaneous Multimedia Components</strong></td>
+    <tr>
+      <td>Multimedia joystick driver</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/joy_1do3.asp">Joystick Functions</a></td>
+      <td>None</td>
+      <td class="pct80">80% complete<br>
+      Only implemented for Linux joystick API.</td>
+      <td>Eric Pouech</td>
+    </tr>
+    <tr>
+      <td>glu32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/opengl/glufnc01_0e43.asp">MSDN: GLU Functions</a></td>
+      <td>None</td>
+      <td class="pct75">75% complete</td>
+      <td>Huw D M Davies</td>
+    </tr>
+    <td>glut32.dll</td>
+      <td class="adequate"><a href="http://www.opengl.org/documentation/specs/glut/spec3/spec3.html">GLUT Programming Interface API</a></td>
+      <td>None</td>
+      <td class="pct100">100% complete</td>
+      <td>Jacek Caban</td>
+    </tr>
+    <tr>
+      <td>opengl32.dll</td>
+      <td class="adequate"><a href="http://www.opengl.org/documentation/index.html">OpenGL Documentation</a></td>
+      <td><a href="?issue=2#Some%20musing%20about%20OpenGL%20support">#2</a>,
+      <a href="?issue=8#Accelerated%20OpenGL%20&%20Wine">#8</a>,
+      <a href="?issue=44#OpenGL%20optimization">#44</a>,
+      <a href="?issue=45#OpenGL%20requirements">#45</a>,
+      <a href="?issue=158#Problems%20with%20OpenGL">#158</a></td>
+      <td class="pct90">90% complete</td>
+      <td>Lionel Ulmer</td>
+    </tr>
+  </table>
+</td>
+</tr>
+</table>
+</div>
+<p></p>

@@ -205,14 +205,6 @@
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td>X11 display/window driver</td>
-      <td class="good">Good</td>
-      <td><a href="?issue=47#Feature: The X11 driver by Ove Kåven">#47</a>,
-      <a href="?issue=175#Workaround%20for%20Xvidmode%20Graphic%20Corruption">#175</a></td>
-      <td class="pct90"><a href="{$root}/site/status_todo#GDI">90% complete</a></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
       <td>X11 font mapper</td>
       <td class="poor">Poor</td>
       <td><a href="?issue=75#Wine and fonts">#75</a></td>
@@ -237,13 +229,6 @@
       <td>Huw D M Davies</td>
     </tr>
     <tr>
-      <td>Internal PostScript printer driver</td>
-      <td class="adequate">Adequate</td>
-      <td><a href="?issue=82#PS printer driver and fonts">#82</a></td>
-      <td class="pct90"><a href="{$root}/site/status_todo#Printers_">90% complete</a></td>
-      <td>Huw D M Davies,<br>Ian Pilcher</td>
-    </tr>
-    <tr>
       <td>Unicode support</td>
       <td class="nonexistent">Nonexistent</td>
       <td><a href="?issue=41#Ansi and Unicode">#41</a>,
@@ -260,11 +245,11 @@
       <a href="?issue=121#XIM Internationlization Patch">#121 (2)</a>,
       <a href="?issue=176#Brazilian%20Portuguese%20Localization">#176</a></td>
       <td class="pct90"><a href="{$root}/site/status_todo#National_Language_Support">90% complete</a></td>
-      <td>Dmitry Timoshkov,<br>Alexandre Julliard</td>
+      <td>Dmitry Timoshkov,<br>Alexandre Julliard,<br>Shachar Shemesh</td>
     </tr>
     <tr>
       <td>BiDi</td>
-      <td class="nonexistent">Nonexistent</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/msi/setup/bidi_control_attribute.asp">MSDN: BiDi Control</a></td>
       <td><a href="?issue=119#Implementing BiDi Fonts">#119</a>,
       <a href="?issue=126#Preliminary BiDi Patch">#126</a>,
       <a href="?issue=127#Adding FriBiDi Support">#127</a>,
@@ -332,14 +317,6 @@
       <td><a href="?issue=137#CreateProcessA() and Environment Settings">#137</a></td>
       <td class="pct85">85% complete</td>
       <td>Eric Pouech</td>
-    </tr>
-    <tr>
-      <td>DOS application support</td>
-      <td class="nonexistent">Nonexistent</td>
-      <td> <a href="?issue=123#SoundBlaster Emulation">#123</a>,
-      <a href="?issue=154#Executing%20Batch%20Files">#154</a></td>
-      <td class="pct60"><a href="{$root}/site/status_todo#DOS">60% complete</td>
-      <td>Jukka Heinonen</td>
     </tr>
     <tr>
       <td>Multi-user support</td>
@@ -459,7 +436,7 @@
       <td class="nonexistent">Nonexistent</td>
       <td><a href="?issue=159#Making%20Config%20Tools">#159</a></td>
       <td class="pct50">50% complete</td>
-      <td>Dimitrie O.Paun,<br>Mike Hearn</td>
+      <td>Dimitrie O.Paun,<br>Mike Hearn,<br>Chris Morgan</td>
     </tr>
     <tr class="hdr">
       <td colspan="5"><strong>No-Windows installation issues</strong></td>

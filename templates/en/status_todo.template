@@ -5,6 +5,7 @@
 <h3><a name="Window_management"></a>Window management<br></h3>
 
 <ul>
+<li>Rewrite Wine's window management code to be able to change the visual of an X window once the window has been created.</li>
 <li>In Desktop Mode all processes started from one wine invocation should be confined to one desktop window.</li>
 <li>Window management needs proper inter-process handling of activation, focus, repaint.</li>
 <li>Workaround for the "no keyboard without Desktop mode" problem.</li>
@@ -14,166 +15,179 @@
 <h3><a name="National_Language_Support"></a>National Language Support<br></h3>
 
 <ul>
+<li>We currently lack a way to model hierarchical resources like those required by calendar information (each locale has a variable
+    number of calendars, with different attributes). This is a show stopper for completing the NLS Api (Get/EnumCalendarInfo etc).</li>
 <li>Make sure ASCII functions call the Unicode one and not the other way around.(probably will stay forever.)</li>
-<li>BiDi support (currently in works)</li>
 <li>Add localization to more languages.(probably will stay forever.)</li>
 <li>Add localization to more parts of Wine.(probably will stay forever.)</li>
 <li>Better support of Chinese, Korean, Japanese...(currently in works)</li>
+<li>Better support of BiDi - Arabic, Hebrew...</li>
 </ul>
-
-<h3><a name="x11drv"></a>x11drv<br></h3>
-
-<ul>
-<li>Add support for keyboard layout APIs.</li>
-</ul>
-
-<h3><a name="NTDLL"></a>NTDLL<br></h3>
-
-<ul>
-<li>Finish ntdll/kernel32 separation.</li>
-<li>Implement security APIs and make them use native OS security facilities.</li>
-</ul>
-
-<h3><a name="Winsock"></a>Winsock<br></h3>
-
-<ul>
-<li>Fix use of direct system calls by Winsock 1 (in particular, select()).
-    Use Wine Synchronization APIs instead.</li>
-<li>More unit tests, e.g. for asynchronous IO.</li>
-<li>Make sure OOB data is handled properly.</li>
-<li>WS2: Implement service programming interface (SPI), use for supporting
-    other services.</li>
-<li>Try to provide more services such as IrDA natively.</li>
-<li>Fix stubs left in ws2_32.spec</li>
-</ul>
-
-
-<h3><a name="rpcrt4"></a>RPCRT4<br></h3>
-
-<ul>
-<li>Implment the undocumented "NT Ports" API (aka "LPC") used by native NT</li>
-<li>Fill out the matrix of per-type /Oi marshalling API's.</li>
-<li>Some real RPC tests,although there are some tests of some peripheral rpcrt4 API's -- no actual RPC's are tested.</li>
-<li>Implement /Oicf "stubless" marshalling</li>
-<li>Implement full stub/proxy support for widl</li>
-<li>Invent, propose, and evangelize some solution to the Samba-vs-wine TCP/IP RPC port-grabbing problem.</li>
-<li>Get Wine's DCOM to use wine's RPC as appropriate.</li>
-</ul>
-
-
-<h3><a name="DirectX"></a>DirectX<br></h3>
-
-<pre>
-[DirectShow]
-
-    - Filter manager (IGraphBuilder)
-    - Video renderer
-    - Audio renderer
-    - AVI splitter
-    - Registry entries
-
-[DirectDraw]
-
-    - YUV overlays
-    - Support for FOURCC surface
-
-[D3D]
-
-    - Compressed texture support
-    - Improve Z Buffer support 
-    - Multi texturing (and more generally, OpenGL extension handling)
-    - Off screen rendering
-    - Proper color keying
-    - Finish migration of D3D1-7 code to use d3dcore 
-    - Add hardware vertex shader and pixel shader support
-    - LOD support
-    - Multisampling (antialising) support
-    - Palette texturing fixes (not really tested)
-    - Swapchain support
-    - Better device management (mainly caps)
-    - index/vertex buffer hardware support
-    - Surface->DC handling
-    - Real Preloading support (using a memory manager)
-    - UpdateTexture/UpdateSurface
-    - various optimisations
-
-[DirectSound]
-
-    - Hardware accelerated direct sound capture driver support using the Windows CE2 HAL API
-    - 3D buffer support in software is present but incomplete.
-    - 3D buffer hardware support
-    - Sound effects on buffers
-    - Capture effects
-    - Full duplex support is stubbed out but not functional.
-    - DX9 support for new PCM formats (24/32 bit and float samples) and for more than 2 channels is not present.
-
-[DirectMusic]
-
-    - DMusicPerformance scanning of files
-
-[DirectInput] 
-
-    - Improve DX8 support (especially joystick) 
-
-[DirectPlay] 
-
-    - Add support for DX8 
-
-</pre>
-
-<h3><a name="Sound_Drivers"></a>Sound Drivers<br></h3>
-
-<ul>
-<li>ALSA driver (on final 0.9 interface)</li>
-<li>Improve the jack audio server, e.g. WaveIn & Resampling.</li>
-<li>Implement the audio compression codecs.</li>
-<li>Fix Sound Blaster emulation.</li>
-</ul>
-
-<h3><a name="Video"></a>Video<br></h3>
-
-<pre>
-msrle32 : nearly complete
-     - some improvements possible
-     - ICM_DECOMPRESS_SET_PALETTE (if needed)
-
-avifil32: (sorted by decreasing priority)
-     - make the whole library thread save
-     - interface for AVI files:
-     - interleave support
-     - native version has problems with reading our files
-     - interface decompressing video:
-     - interface for WAV files:
-      - Sun Audio still missing.
-     * API for saving:
-      - only (semi-)stubs.
-     * API and interface for editing:
-      - only stubs, need implementation of IAVIEditStream interface
-     * API for clipboard:
-      - only stubs. (native version doesn't work).
-     * API for streaming:
-      - only stubs. (definitions in vfw.h are missing)
-      - translation of resource's to some often used languages: French, ...
-      
-msvfw32:
-     * DrawDib needs some work
-      - Some flags are ignored
-      - handle palette
-     * stub implementation for file dialogs with AVI preview
-     * stub implementation for codec-selection-dialog
-     * resources are missing (also see the 2 above points)
-     * StretchDib method is missing
-     * many 16-bit methods are missing
-
-avicap32: "Video Capture"
-     * only stub DLL.
-</pre>
 
 <h3><a name="FreeBSD"></a>FreeBSD<br></h3>
 
 <ul>
 <li>Add support for MZ_SUPPORTED</li>
 </ul>
+
+<h3><a name="WINEDBG"></a>Winedbg<br></h3>
+
+<pre>
+    * Make winedbg use dbghelp DLL
+    * Speed up PDB support
+     - Implement support for latest MSC formats 
+</pre>
+
+<h3><a name="GDB"></a>GDB<br></h3>
+
+<ul>
+<li>Add the MSC/PDB info support to gdb</li>
+</ul>
+
+
+<h3><a name="DDE"></a>DDE<br></h3>
+
+<ul>
+<li>Enhance memory management issues (interprocess sending)</li>
+</ul>
+
+<h3><a name="Native_Programs"></a>Native Programs<br></h3>
+
+<pre>
+    * Winhelp: fix invocation thru WinHelp
+     - lots of macros are still missing
+</pre>
+
+<h3><a name="File_Management"></a>File Management<br></h3>
+
+<ul>
+<li>Implement NT file namespace</li>
+<li>UNC support</li>
+<li>Allow flexibility in FS &quot;mounting&quot; (for example, SMB shares)<br></li>
+</ul>
+
+<h3><a name="FONTS"></a>Fonts<br></h3>
+
+<ul>
+<li>Support for non-TT fonts (eg Type1, bitmap,....)</li>
+<li>Subpixel rendering - a.k.a. ClearType</li>
+<li>Reduce per font startup time</li>
+</ul>
+
+<h3><a name="Printers_"></a>Printers<br></h3>
+
+<ul>
+<li>Write a printer configuration applet</li>
+</ul>
+
+<h3><a name="Tools_"></a>Tools<br></h3>
+
+<ul>
+<li>Wine installation process should install and configure wine</li>
+<li>Perform Windows' reboot operations automatically when required</li>
+<li>Winemaker fixes</li>
+<li>Run C regression tests on Windows with MSVC</li>
+<li>Work on WRC as it does not find system headers</li>
+<li>wineconsole: add configuration bar + resizing capabilities</li>
+</ul>
+
+<h3><a name="Instructions_"></a>Instructions<br></h3>
+
+<ul>
+<li>Documentation updates<br></li>
+</ul>
+
+<h3><a name="Aspect_or_Component_"></a>Aspect or Component<br></h3>
+
+<ul>
+<li>Review of Wine Server Protocol</li>
+<li>Finalize Server Protocol</li>
+<li>Visual C++'s native COM support</li>
+<li>Create replacement of browser component (Internet Explorer/IExplore)</li>
+</ul>
+
+<h3><a name="PORTING"></a>Porting issues for Mingw/Cygwin/MS_VC<br></h3>
+
+<ul>
+<li>Better separation of win16/32 code</li>
+<li>Remove/rewrite win16/9x API dependency on newer code</li>
+<li>Remove/rewrite wineisms from code</li>
+<li>Rewrite/fix unixisms in most WINE dlls</li>
+<li>Documentation fixes</li>
+</ul>
+
+<h3><a name="x11drv"></a>X11drv<br></h3>
+
+<ul>
+<li>Add support for keyboard layout APIs.</li>
+<li>Better integration with window managers</li>
+</ul>
+
+<h3><a name="NTDLL"></a>NTDLL<br></h3>
+
+<ul>
+<li>Implement security APIs and make them use native OS security facilities.</li>
+</ul>
+
+<h3><a name="KERNEL32"></a>Kernel32<br></h3>
+
+<ul>
+<li>Split 16/32 function, finish moving stuff into ntdll (review FS & device support)</li>
+<li>Implement non-local named pipes and mailslots over SMB</li>
+<li>Implement SMB over Netbios</li>
+</ul>
+
+<h3><a name="COMDLG32"></a>Comdlg32<br></h3>
+
+<ul>
+<li>Add a Network Neighborhood-style browser to the file dialog</li>
+</ul>
+
+<h3><a name="NETAPI32"></a>Netapi32<br></h3>
+
+<ul>
+<li>Implement the Net* functions using rpcrt4</li>
+<li>Implement NetServerEnum and NetShareEnum using SMB</li>
+<li>Netbios support for IPX</li>
+</ul>
+
+<h3><a name="WININET"></a>Wininet</a><br></h3>
+
+<ul>
+<li>Needs thread safety and unicodization</li>
+</ul>
+
+<h3><a name="Winsock"></a>Winsock<br></h3>
+
+<ul>
+<li>SIO_GET_INTERFACE_LIST support for IPX</li>
+<li>IPv6 support</li>
+<li>More unit tests, e.g. for asynchronous IO.</li>
+<li>Make sure OOB data is handled properly.</li>
+<li>WS2: Implement service programming interface (SPI), use for supporting other services.</li>
+<li>Try to provide more services such as IrDA natively.</li>
+<li>Fix stubs left in ws2_32.spec</li>
+</ul>
+
+<h3><a name="CABINET"></a>Cabinet<br></h3>
+
+<ul>
+<li>Compression API's remain unimplemented</li>
+</ul>
+
+<h3><a name="rpcrt4"></a>RPCRT4<br></h3>
+
+<pre>
+    * Implement the undocumented "NT Ports" API (aka "LPC") used by native NT
+    * Fill out the matrix of per-type /Oi marshalling API's.
+    * Some real RPC tests,although there are some tests of some peripheral rpcrt4 API's -- no actual RPC's are tested.
+    * Implement /Oicf "stubless" marshalling
+    * Implement full stub/proxy support for widl
+    * Get Wine's DCOM to use wine's RPC as appropriate.
+    * Fix the wire protocol
+     - Implement the OXID resolver and other ORPC peccadilloes
+</pre>
+
 
 <h3><a name="DOS"></a>DOS<br></h3>
 
@@ -199,97 +213,152 @@ avicap32: "Video Capture"
 <li>DIB engine</li>
 </ul>
 
-<h3><a name="GDB"></a>GDB<br></h3>
-
-<ul>
-<li>Add the MSC/PDB info support to gdb</li>
-</ul>
-
-<h3>Winedbg<br></h3>
-
-<ul>
-<li>Make winedbg use dbghelp DLL</li>
-<li>Speed up PDB support</li>
-</ul>
-
-<h3><a name="DDE"></a>DDE<br></h3>
-
-<ul>
-<li>Enhance memory management issues (interprocess sending)</li>
-</ul>
-
 <h3><a name="OLE"></a>OLE<br></h3>
 
 <ul>
 <li>Handle apartments properly in CoCreateInstance, etc.</li>
-<li>Fix type library support</li>
+<li>Type library handling (parsing them is not yet complete and saving them is not implemented at all)</li>
 <li>Implement ICreateTypeLib support</li>
 <li>Implement Var* (e.g. VarMod) and variant conversion routines</li>
+<li>User defined types (e.g. IRecordInfo)</li>
+<li>Custom marshalling functions for various data types</li>
 <li>Implement missing features in OLE*.</li>
 </ul>
 
-<h3><a name="Native_Programs"></a>Native Programs<br></h3>
+<h3><a name="DirectX"></a>DirectX<br></h3>
 
-<ul>
-<li>Winhelp: fix invocation thru WinHelp</li>
-</ul>
+<pre>
+[DirectShow]
 
-<h3>File Management<br></h3>
+    * Filter manager (IGraphBuilder)
+    * Video renderer
+    * Audio renderer
+    * Registry entries
 
-<ul>
-<li>Implement NT file namespace</li>
-<li>UNC support</li>
-<li>Allow flexibility in FS &quot;mounting&quot; (for example, SMB shares)<br></li>
-</ul>
+[DirectDraw]
 
-<h3><a name="Fonts"></a>Fonts<br></h3>
+    * YUV overlays
+    * Support for FOURCC surface
 
-<ul>
-<li>Support for non-TT fonts (eg Type1, bitmap,....)</li>
-<li>Subpixel rendering - a.k.a. ClearType</li>
-<li>Reduce per font startup time</li>
-</ul>
+[D3D]
 
-<h3><a name="Printers_"></a>Printers<br></h3>
+    * Begin to share most of the openGL code between d3d8 and d3d9, begining with shaders, textures and state blocks
+    * Abstract APIs to be usable by ddraw
+    * Implement a better drawing pipeline thinking about hardware and software shaders
+    * Compressed texture support
+    * Improve Z Buffer support 
+    * Multi texturing (and more generally, OpenGL extension handling)
+    * Off screen rendering
+    * Proper color keying
+    * Finish migration of D3D1-7 code to use d3dcore 
+    * Add hardware vertex shader and pixel shader support
+    * LOD support
+    * Multisampling (antialising) support
+    * Palette texturing fixes (not really tested)
+    * Swapchain support
+    * Better device management (mainly caps)
+    * index/vertex buffer hardware support
+    * Surface->DC handling
+    * Real Preloading support (using a memory manager)
+    * UpdateTexture/UpdateSurface
+    * various optimisations
 
-<ul>
-<li>Write a printer configuration applet</li>
-</ul>
+[DirectSound]
 
-<h3><a name="Tools_"></a>Tools<br></h3>
+    * Hardware accelerated direct sound capture driver support using the Windows CE2 HAL API
+    * 3D buffer support in software is present but incomplete.
+    * 3D buffer hardware support
+    * Sound effects on buffers
+    * Capture effects
+    * Full duplex support is stubbed out but not functional.
+    * DX9 support for new PCM formats (24/32 bit and float samples) and for more than 2 channels is not present.
 
-<ul>
-<li>Wine installation process should install and configure wine</li>
-<li>Perform Windows' reboot operations automatically when required</li>
-<li>Winemaker fixes</li>
-<li>Run C regression tests on Windows with MSVC</li>
-<li>Work on WRC as it does not find system headers</li>
-</ul>
+[DirectMusic]
 
-<h3><a name="Instructions_"></a>Instructions<br></h3>
+    * DMusicPerformance scanning of files
 
-<ul>
-<li>Documentation updates<br></li>
-</ul>
+[DirectInput] 
 
-<h3><a name="Aspect_or_Component_"></a>Aspect or Component<br></h3>
+    * Improve DX8 support (especially joystick)
 
-<ul>
-<li>Review of Wine Server Protocol</li>
-<li>Finalize Server Protocol</li>
-<li>Visual C++'s native COM support</li>
-<li>Create replacement of browser component (Internet Explorer/IExplore)</li>
-</ul>
+[DirectPlay] 
 
-<h3>Porting issues for Mingw/Cygwin/MS_VC<br></h3>
+    * Add support for DX8 
 
-<ul>
-<li>Better separation of win16/32 code</li>
-<li>Remove/rewrite win16/9x API dependency on newer code</li>
-<li>Remove/rewrite wineisms from code</li>
-<li>Rewrite/fix unixisms in most WINE dlls</li>
-<li>Documentation fixes</li>
-</ul>
+[MSDMO]
+
+    * Fix stubs left in msdmo.spec
+
+[DevEnum]
+
+    * Support the creation of special filters (Midi renderer, DSound renderer, WaveOut, WaveIn) 
+      and support the binding to these filters.
+</pre>
+
+<h3><a name="MULTIMEDIA"></a>Multimedia<br></h3>
+
+<pre>
+sound drivers:
+    * Improve the jack audio server, e.g. WaveIn & Resampling.
+    * Implement the audio compression codecs.
+    * Fix Sound Blaster emulation.
+
+all audio architecture:
+    * Improve audio latency
+    * No longer use the hack in Wine sound drivers to map the DSound driver interface to an existing WinMM driver. 
+     (impacts dsound.dll and winmm + all low level audio drivers)(will likely require a real installation scheme for MM drivers)
+
+ALSA multimedia driver:
+    * Mixer Support 
+    * MiDi inn Support
+    * Check for 1.0 correctness
+
+MCI (Media Control Interface) drivers
+    * Missing the mcianim drivers.
+
+mciavi:
+    * Handling of palettes
+    * Recording
+    * Lots of messages still need to be handled
+    * Synchronization
+    * Replace AVI file parser by using API from avifil32
+    * Support more and less than one audio stream
+    * Stopping while playing should stop audio playback ASAP
+    * Opening must be possible without filename (use load later to)
+
+avifil32: (sorted by decreasing priority)
+    * Make the whole library thread save
+    * Interface for AVI files:
+      - native version has problems with reading our files
+        (Is it still so?)
+    * API for clipboard:
+      - only stubs. (native version doesn't work).
+    * AVIFileProxy is missing.
+    * We have no implementation for IAVIStreaming, which doesn't
+      result in missing functionality, but in possible performance
+      loss. Even the native version has such an interface only for
+      the AVI file handler.
+      
+msvfw32:
+    * DrawDib needs some work:
+     - Some flags are ignored
+     - handle palette
+    * semi-stub implementation for file dialogs with AVI preview.
+      Need to use OFN_ENABLEHOOK flag.
+    * Stub implementation for codec-selection-dialog
+    * Resources are missing (also see the 2 above points)
+    * StretchDib method is missing
+    * Many 16-bit methods are missing
+    * MCIWnd:
+     - Bug: shouldn't open device with filename if none given.
+     - Bug: Windows stays empty when opening of device fails.
+
+avicap32: "Video Capture"
+    * Only stub DLL
+
+Opengl32:
+    * Support all WGL extensions which have GLX counterparts (like PBuffers or render to texture for example).
+</pre>
 
 <h3><a name="Low_priority_items_"></a>Low priority items<br></h3>
 
@@ -299,9 +368,9 @@ avicap32: "Video Capture"
 <br>
 
  For the full 0.9 Bug List, please see <span class="menuTitle"></span><a
- href="http://bugs.winehq.org/buglist.cgi?keywords=tasklet">Tasklets<br>
+ href="http://bugs.winehq.com/buglist.cgi?keywords=tasklet">Tasklets<br>
  <span style="color: rgb(0, 0, 0);"></span></a>For
  the full 1.0 Bug List, please see <a
- href="http://bugs.winehq.org/buglist.cgi?keywords=tasklist">Tasklist</a>
+ href="http://bugs.winehq.com/buglist.cgi?keywords=tasklist">Tasklist</a>
 
 <p>&nbsp;</p>
