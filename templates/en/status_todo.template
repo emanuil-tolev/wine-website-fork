@@ -326,8 +326,6 @@ mciavi:
     * Handling of palettes
     * Recording
     * Lots of messages still need to be handled
-    * Synchronization
-    * Replace AVI file parser by using API from avifil32
     * Support more and less than one audio stream
     * Stopping while playing should stop audio playback ASAP
     * Opening must be possible without filename (use load later to)
