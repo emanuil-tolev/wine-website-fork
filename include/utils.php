@@ -60,7 +60,7 @@ function get_news ()
         // only show 5 records
         if ($c == 4 && !$_GET['shownews'])
         {
-            $news_body .= $html->p($html->ahref('More News', '?shownews=archive'));
+            $news_body .= $html->p($html->ahref('More News', '?news=archive'));
             break;
         }
     } // end of news loop

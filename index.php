@@ -16,6 +16,11 @@ switch (true)
     $text .= view_page($page);
     break;
   
+  // view news archvie
+  case ($news):
+    $text .= $html->theme_box($config->theme, "box_title", 'News Archives', "100%", get_news($news), '10', 'white', 'topMenu');
+    break;
+  
   // view wwn issue
   case ($issue):
     $wwn = new wwn();
