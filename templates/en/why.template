@@ -125,22 +125,23 @@ then makes it possible for Linux to take off on the desktop, which
 increases its market share in that segment. In turn, this makes it viable
 for companies to produce Linux versions of their applications, and for
 new products to come out just for the Linux market.
-<p>
+</p><p>
 This reasoning could be dismissed easily if Wine was only capable of running
 Solitaire. However now it can run <a
-href="http://www.codeweavers.com/products/office/supported_applications.php">Microsoft
+href="http://appdb.winehq.org/appview.php?appId=31">Microsoft
 Office</a>, multi-media applications such as <a
-href="http://www.codeweavers.com/products/crossover/supported_plugins.php">QuickTime</a>
+href="http://appdb.winehq.org/appview.php?appId=1029">QuickTime</a>
 and <a
-href="http://www.codeweavers.com/products/crossover/supported_plugins.php">Windows
+href="http://appdb.winehq.org/appview.php?appId=131">Windows
 Media Player</a>, and even games such as <a
-href="http://www.transgaming.com/gamepage.php?gameid=29">Max Payne</a> or
-<a href="http://www.transgaming.com/gamepage.php?gameid=9">The
-SIMS</a>.<br>
+href="http://appdb.winehq.org/appview.php?appId=661">Max Payne</a> or
+<a href="http://appdb.winehq.org/appview.php?appId=768">The
+SIMS</a>.<br />
 Almost any other complex application can be made to run well given a bit of
 time.
 And each time that work is done to add one application to this list, many
-other applications benefit from this work and become usable too.
+other applications benefit from this work and become usable too.<br />
+Have a look at our <a href="http://appdb.winehq.org">Application Database</a> to get an idea on what can be run under Wine.
 
 <a name="benefits"></a>
 <h2>Wine benefits</h2>
