@@ -167,7 +167,7 @@
   the Windows controls available on Linux too? &lt;duck/&gt; :-)
   <ul>
     <li>worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-    <li class=modified>status: compiles, links, and runs!
+    <li>status: compiles, links, and runs!
                 The <a href="http://www.winehq.com/hypermail/wine-devel/2003/01/0153.html">patch</a>
 		has been accepted in the official wxWindows tree!
     <li>updated: Jan 7, 2003
@@ -187,6 +187,17 @@
   Rather than working around Wine bugs, I am fixing them as I go along, and submit them for integration
   in the Wine tree.
 
+  <a name="fox"></a><h4 class=inprogress>FOX Toolkit</h4>
+  Yet another nice cross-platform UI toolkit.
+  <ul>
+    <li>worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
+    <li>status: compiles, but does not link.
+    <li>updated: Sep 1, 2003
+    <li>homepage: <a href="http://www.fox-toolkit.org">www.fox-toolkit.org</a>
+  </ul>
+  This one compiled with just a couple of trivial fixes to Wine's headers, a few portability
+  fixes to their source, and just one or two Wine specific tweaks.
+
   <h3>Others</h3>
 
   <h4 class=todo>Make a ghostscript driver that uses Wine to print</h4>
@@ -196,6 +207,11 @@
   This is still a virtualization project, but at the printing
   subsystem level. The complementary project (use ghostscript
   to print from Wine) has been implemented, and working just fine.
+
+  <h4 class=todo>A Wine based GIMP plugin for using  Photoshop plugins</h4>
+  Suggested by <a href="mailto:meissner@suse.de">Marcus Meissner</a>:
+  Investigate if we could make a WINE based GIMP plugin which can handle
+  Photoshop plugins.
 
   <h2><a name="source"></a>Source portability</h2>
   We should be able to compile Wine with various C compilers.
@@ -215,7 +231,7 @@
   <ul>
     <li>worker: wanted
     <li>status: todo
-    <li>updated: Jan 6, 2003
+    <li>updated: May 26, 2003
     <li>homepage: <a href="http://www.borland.com/bcppbuilder/freecompiler/">www.borland.com/bcppbuilder/freecompiler</a>
   </ul>
 
@@ -249,8 +265,8 @@
   the resulting text file. This already being done with the wpbtk toolkit.
   <ul>
     <li>worker: <a href="mailto:compsol@ptd.net">Dave Miller</a>
-    <li>status: Prototype ready
-    <li>updated: Apr 11, 2003
+    <li>status: Prototype <a href="http://home.ptd.net/~compsol">ready</a>
+    <li>updated: Apr 23, 2003
   </ul>
   <strong>Update:</strong>
   Currently the script can make HTML maps of the dll imports.  I've been too
@@ -299,19 +315,15 @@
   and it would provide a great testbed for our <tt>shell32</tt> DLL, as well as
   some key controls such as the List-View Common Control.
 
-  <h3 class=todo>Winetest Shell</h3>
+  <h3 class=inprogress>Winetest Shell</h3>
   <p>Would be nice to have a shell exe (sort of like the one provided by JUnit), 
   that contains the little exes, extracts them in a temp dir one by one, 
   runs them, and displays a nice progress bar, together with a list with messages. 
-
-  <p>Essentially the main window should be a dialog that contains:
   <ul>
-    <li> A progress bar at the top that tracks the number of executed tests
-    <li> A listview in LVS_REPORT mode, which  displays the test messages
-    <li> A "Cancel" button (that changes to "Close" when tests are done)
-    <li> A "Report..." button that brings up a "Save As..." dialog
+    <li>worker: <a href="mailto:jakob@vmlinux.org">Jakob Eriksson</a>,
+		<a href="mailto:wferi@afavant.elte.hu">Ferenc Wagner</a>.
+    <li>status: we have a beginning of a shell, and some processing scripts.
+    <li>updated: Sep 1, 2003
   </ul>
-  Not hard to write, and quite cool to play with. Anyone familiar with the
-  Win32 API can do it.
 
 <p>&nbsp;</p>
