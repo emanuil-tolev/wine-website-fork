@@ -312,18 +312,18 @@ This is with a 32k buffer and a 1k chunk size.
 </p></quote>
 </section>
 <section 
-	title="" 
+	title="c:\\windows is not accessible Error (con't)" 
 	subject="config converting problem"
 	archive="http://www.winehq.com/hypermail/wine-devel/2004/08/0147.html" 
-	posts=""
+	posts="20"
 	startdate="08/11/2004"
-	enddate="07/  /2004"
+	enddate="08/12/2004"
 >
-<topic></topic>
+<topic>Configuration</topic>
 <p>Last week we described a problem where people couldn't access 
 a fake windows drive (WWN issue 
 <a href="http://www.winehq.com/?issue=234#c:\\windows%20is%20not%20accessible%20Error">#234</a>).  This week Henning Gerhardt wrote in with a pretty clear
-example of it occuring:</p>
+example of it occurring:</p>
 <quote who="Henning Gerhardt"><p>
 a friend of me would update the wine package (20030813) from his SuSE 9.0 
 system to the latest availabe package for this system (20040716). After the 
