@@ -105,7 +105,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/user/edit.c">LXR</a></td>
 	<td>Oct 8, 2004</td>
 	<td>Comctl32.dll 6.0</td>
-	<td class="pct80">80%: ES_{NUMBER,OEMCONVERT}, !ES_AUTO[HV]SCROLL, EN_ALIGN_{LTR,RTL}_EC, EM_[GS]ETIMESTATUS, EM_[GS]ETCUEBANNER, EM_{SHOW,HIDE}BALLOONTIP</td>
+	<td class="pct85">85%: ES_{NUMBER,OEMCONVERT}, EN_ALIGN_{LTR,RTL}_EC, EM_[GS]ETIMESTATUS, EM_[GS]ETCUEBANNER, EM_{SHOW,HIDE}BALLOONTIP</td>
 	<td><a href="mailto:dtimoshkov@codeweavers.com">Dmitry Timoshkov</a></td>
     </tr>
 
@@ -123,9 +123,9 @@
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/scrollbars/scrollbars.asp"><strong>Scroll Bar</strong></a></td>
 	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/user/scroll.c">CVS</a>
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/user/scroll.c">LXR</a></td>
-	<td>Oct 8, 2004</td>
+	<td>Mar 10, 2005</td>
 	<td>Comctl32.dll 6.0</td>
-	<td class="pct95">95%: Missing SCROLLBARINFO, SBM_GETSCROLLBARINFO, GetScrollBarInfo</td>
+	<td class="pct100">100%: Complete</td>
 	<td><a href="mailto:julliard@winehq.org">Alexandre Julliard</a></td>
     </tr>
 
@@ -147,9 +147,9 @@
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/animation/animation.asp"><strong>Animation</strong></a></td>
 	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/animate.c">CVS</a>
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/animate.c">LXR</a></td>
-	<td class="needed"></td>
-	<td class="needed"></td>
-	<td class="pct80">80%: Missing locking for infoPtr</td>
+	<td>Mar 15, 2005</td>
+	<td>Comctl32.dll 6.0</td>
+	<td class="pct95">95%: support 'rec ' list in AVI files</td>
 	<td><a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a></td>
     </tr>
 
