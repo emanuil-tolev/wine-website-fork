@@ -23,25 +23,25 @@ class wwn
         $this->summary = array();
         $this->person = array();
         $this->map_array = array(
-                   "a"	    => "a",
-                   "b"	    => "b",
-                   "i"	    => "i",
-                   "u"	    => "u",
-                   "ul"	    => "ul",
-                   "ol"	    => "ol",
-                   "li"	    => "li",
-                   "table"  => "table",
-                   "tr"	    => "tr",
-                   "td"	    => "td",
-                   "th"     => "th",
-                   "dl"     => "dl",
-                   "dt"     => "dt",
-                   "dd"     => "dd",
-                   "tt"     => "tt",
-                   "code"   => "code",
-                   "pre"    => "pre",
-                   "blockquote"	=> "blockquote"	   
-                  );
+                                 "a"	        => "a",
+                                 "b"	        => "b",
+                                 "br"	        => "br",
+                                 "i"	        => "i",
+                                 "u"	        => "u",
+                                 "ul"	        => "ul",
+                                 "ol"	        => "ol",
+                                 "li"	        => "li",
+                                 "table"        => "table",
+                                 "tr"	        => "tr",
+                                 "td"	        => "td",
+                                 "th"           => "th",
+                                 "dt"           => "dt",
+                                 "dd"           => "dd",
+                                 "tt"           => "tt",
+                                 "code"         => "code",
+                                 "pre"          => "pre",
+                                 "blockquote"	=> "blockquote"	   
+                                );
     }
     
     // read dir and get issues
@@ -338,6 +338,9 @@ class wwn
         // output opening HTML tags
         switch ($name)
         {
+            case "KC":
+            case "TITLE":
+              break;
             case "ISSUE":
               $this->issue = $attrs{'DATE'};
               $this->who = $attrs{'WHO'};
@@ -404,6 +407,12 @@ class wwn
               else
                 $this->body .= "<p>";
               break;
+            case "DL":
+              if ($this->inquote)
+                $this->body .= '<dl style="margin-left:1em;">';
+              else
+                $this->body .= '<dl>';
+              break;
             default:
               if (isset($this->map_array[strtolower($name)]))
               {
@@ -413,6 +422,10 @@ class wwn
                     $attribs .= " $key=\"$value\"";
                 }
                 $this->body .= "<".$this->map_array[strtolower($name)].$attribs.">";		  
+              }
+              else
+              {
+                $this->body .= "&lt;".strtolower($name)."&gt;";
               }
               break;
         }
@@ -425,6 +438,11 @@ class wwn
         // output closing HTML tags
         switch ($name)
         {
+            case "KC":
+            case "TITLE":
+            case "AUTHOR":
+            case "ISSUE":
+            case "PERSON":
             case "INTRO":
               break;	
             case "SECTION":
@@ -467,12 +485,21 @@ class wwn
             case "P":
               $this->body .= "</p>";
               break;
+            case "DL":
+              $this->body .= "</dl>";
+              break;
             case "BR":
               $this->body .= $html->br();
               break;
             default:
               if (isset($this->map_array[strtolower($name)]))
-                $this->body .= "</".$this->map_array[strtolower($name)].">\n";			
+              {
+                $this->body .= "</".$this->map_array[strtolower($name)].">\n";
+              }
+              else
+              {
+                $this->body .= "&lt;/".strtolower($name)."&gt;";
+              }
               break;
         }
     
