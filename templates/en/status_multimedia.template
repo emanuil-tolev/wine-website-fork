@@ -172,15 +172,22 @@
     </tr>
     <td colspan="5"><strong>msvideo/msvfw32 Video codecs</strong></td>
     <tr>
+    <td>ICCVID</td>
+      <td class="adequate"><a href="http://www.csse.monash.edu.au/~timf/videocodec/cinepak.txt">(CVID) stream format for AVI and QT</a></td>
+      <td>None</td>
+      <td class="pct100">100% complete</td>
+      <td>Mike McCormack</td>
+    </tr>
+    <tr>
       <td>MSRLE32</td>
       <td class="adequate"><a href="http://www.jmcgowan.com/avitech.html">Windows Multimedia System</a></td>
       <td>None</td>
       <td class="pct100">100% complete</td>
       <td>Michael G&uuml;nnewig</td>
     </tr>
-    </tr>
-    <td>ICCVID</td>
-      <td class="adequate"><a href="http://www.csse.monash.edu.au/~timf/videocodec/cinepak.txt">(CVID) stream format for AVI and QT</a></td>
+    <tr>
+    <td>MSVIDC32</td>
+      <td class="adequate"><a href="http://home.pcisys.net/~melanson/codecs/video1.txt">MS Video-1 Decoding Algorithm</a></td>
       <td>None</td>
       <td class="pct100">100% complete</td>
       <td>Mike McCormack</td>
