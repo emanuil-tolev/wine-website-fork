@@ -35,7 +35,7 @@ FreeBSD
 	  width="88" height="31" border="0" alt="SourceForge"></a></b>
 </td>
 <td bgcolor="#ffffff">
-  Official WineHQ builds hosted by <a
+  Official WineHQ builds for Linux Red Hat, Mandrake, Suse, Slackware and FreeBSD, hosted by <a
   href="http://sourceforge.net/project/showfiles.php?group_id=6241">SourceForge.net</a>.
   Updated with each release.
 </td>
@@ -60,7 +60,7 @@ FreeBSD
 </td>
 <td bgcolor="#ffffff">
   Award winning highly customized version with installer. Easy to use GUI tools to configure to work with
-  supported applications such as Microsoft Office. Email support available after purchase.
+  supported applications such as Microsoft(R) Office. Email support available after purchase.
   Multi-user server version also available. Evaluation versions available by request.
   By <a href="http://www.codeweavers.com">CodeWeavers</a>.
 </td>
@@ -72,7 +72,8 @@ FreeBSD
   <b><a href="http://www.transgaming.com/">WineX</a></b>
 </td>
 <td bgcolor="#ffffff">
-  Custom version of Wine designed to work with DirectX based games.
+  Custom version of Wine designed to work with DirectX<sup>&reg;</sup>
+  based games.
   Maintained by <a href="http://www.transgaming.com/">TransGaming</a>.
 </td>
 <td align=center bgcolor="#ffffff"> .rpm, .deb, source </td>
@@ -148,7 +149,7 @@ FreeBSD
   >FreeBSD Emulator Ports</a></b>
 </td> 
 <td bgcolor="#ffffff">
-  Also see <a href="http://www.freebsd.org/ports/emulators.html#wine-2003.05.08">emulator
+  Also see <a href="http://www.freebsd.org/ports/emulators.html#wine-20031016">emulator
   port information</a> at FreeBSD.
 </td>
 <td align=center bgcolor="#ffffff">.tgz </td>
@@ -175,7 +176,7 @@ class=small>web-admin</a> in case of incorrect info !!</font></p>
 </p>
 
 <ul>
-    <li><b>glibc 2.3</b> - Red Hat 9.0, Red Hat Enterprise 3, Fedora Core 1, Mandrake 9.x, and SuSE 9.x</li>
+    <li><b>glibc 2.3</b> - Red Hat 9.0, Red Hat Enterprise 3, Fedora Core 1, Mandrake 9.1 and 9.2, and SuSE 9.x</li>
     <li><b>glibc 2.2</b> - Red Hat 7.0 through 8.0, Mandrake 8.0 through 9.0, SuSE 8.x, and Debian 3.0</li>
     <li><b>glibc 2.1</b> - Red Hat 6.x, Mandrake 7.x, SuSE 7.x, and Debian 2.x</li>
 </ul>
