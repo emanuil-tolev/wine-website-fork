@@ -48,7 +48,7 @@
      listed as running under Windows OS, and over
      <a href="http://sourceforge.net/softwaremap/trove_list.php?form_cat=230">7,000</a>
      of them are listed as running under the Win32 environment.
-   All of the above have publically available source code, and
+   All of the above have publicly available source code, and
    most are decent candidates for this project. 
 
   <p>Obviously, we can not start porting all these applications. We have to pick a
@@ -139,9 +139,9 @@
      to be build using Cygwin's gcc also. As such, it
      should be considered a portability fix, rather than
      a Wine specific fix.
-    <li> The filnames used mixed case (not matching the actual
+    <li> The filenames used mixed case (not matching the actual
      name on disk), and some includes use backslash (\),
-     intead of forward slash (/). This problem is typical
+     instead of forward slash (/). This problem is typical
      and simple to address in a portable manner if you
      can modify the source. As we wanted to not touch
      the examples in any way, we had to find another way
@@ -153,7 +153,7 @@
   </ol>
 
   All these renames / symlinks creation was collected in a nice
-  little intallation script. So, without further delay, here
+  little installation script. So, without further delay, here
   are the instructions on how to try the sample under Wine:
 
   <br> <i>(place the Petzold CD in the CDROM drive)</i>
@@ -359,7 +359,7 @@
     </dd>
 
     <dt>Running</dt>
-    <dd>Arange so that a regular Unix executable is generated. <span class=done>[DONE]</span>
+    <dd>Arrange so that a regular Unix executable is generated. <span class=done>[DONE]</span>
 	<p>Improve the <tt>wineapploader</tt> so it can be used directly by the step above.
         <ul>
 	  <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>

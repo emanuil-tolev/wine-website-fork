@@ -289,8 +289,8 @@
   fall into this category.
 
   <h3>Getting rid of the global HEAP_strdup{AtoW,WtoA} functions</h3>
-  As of Dec 4, 2002, there are 98 occurences of <tt>HEAP_strdupWtoA</tt>,
-  and 54 occurences of <tt>HEAP_strdupAtoW</tt>.
+  As of Dec 4, 2002, there are 98 occurrences of <tt>HEAP_strdupWtoA</tt>,
+  and 54 occurrences of <tt>HEAP_strdupAtoW</tt>.
   
   <h4><tt>HEAP_strdupWtoA</tt></h4>
 
@@ -544,7 +544,7 @@
 	<li> WinNT: <a href="mailto:stras@ecf.toronto.edu">Luke Stras</a>
 	<li> WinME: <a href="mailto:whiting@MIT.EDU">James K Whiting</a>
 
-	<li> Win2k: <a href="mailto:twickline2@triad.rr.com">Thomas Wickline</a>,
+	<li> Win2k: <a href="mailto:twickline2@skybest.com">Tom Wickline</a>,
 		    <a href="mailto:kyethespy@liquid2k.com">Kye Lewis</a>
 	<li> WinXP: <a href="mailto:compsol@ptd.net">David Miller</a>, 
 		    <a href="mailto:kyethespy@liquid2k.com">Kye Lewis</a>
@@ -556,7 +556,7 @@
   platforms.
 
   <p>Once the initial fixing is done we will really need people doing 3 to
-  prevent bad tests from comming back.
+  prevent bad tests from coming back.
 
   <h3>Compilation with -DSTRICT</h3>
   Please refer to <a href="http://bugs.winehq.com/show_bug.cgi?id=90">Bug #90</a>

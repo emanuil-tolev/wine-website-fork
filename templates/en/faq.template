@@ -39,8 +39,7 @@
       <li><a href="#Do_I_need_to_have_a_DOS_partition_on_my">Do I need to have a DOS partition on my system to use Wine?</a>
       <li><a href="#Do_I_need_Windows">Does MS Windows need to be loaded into that partition in order to run MS Windows programs under Wine?</a>
       <li><a href="#If_Wine_completely_replaces_MS_Windows">If Wine completely replaces MS Windows, will it duplicate all of the functions of MS Windows?</a> 
-      <li><a href="#Will_I_be_able_to_install_MS_Windows_applications">Will I be able to install MS Windows applications in any fl
-avor of a UNIX file system?</a>
+      <li><a href="#Will_I_be_able_to_install_MS_Windows_applications">Will I be able to install MS Windows applications in any flavor of a UNIX file system?</a>
       <li><a href="#Will_Wine_run_only_under_X_or_can_it">Will Wine run only under X, or can it run in character mode?</a> 
       <li><a href="#Will_Wine_run_under_any_X_window_manager">Will Wine run under any X window manager? Does it require a window manager at all?</a> 
       <li><a href="#Will_32-bit_Windows_9598_applications">Will 32-bit Windows 95/98 applications run under Wine?</a>
@@ -98,7 +97,7 @@ avor of a UNIX file system?</a>
     </ol>
   <li><a href="#WineHQ_issues">Wine HQ issues</a>
     <ol>
-      <li><a href="#Why_are_the_maillists_set_to_reply_to">Why are the maillists set to reply to author, not to mailing list?</a> 
+      <li><a href="#Why_are_the_maillists_set_to_reply_to">Why are the mailing list set to reply to author, not to mailing list?</a> 
       <li><a href="#How_to_unsubscribe_from_the_mailing">How to unsubscribe from the mailing lists? </a>
     </ol>
 </ol>
@@ -111,7 +110,7 @@ avor of a UNIX file system?</a>
 <p>Dave Gardner maintained it from 1995-1998.</p>
 <p>Douglas Ridgway (ridgway@winehq.com) took it over in 1999.</p>
 <p>Andreas Mohr (amohr@codeweavers.com) converted it to FAQ-O-Matic in 2000.</p>
-<p>Dimitrie O. Paun, Keith Matthews and Tom Wickline (in alphabetical order) reorganised it in 2002.</p>
+<p>Dimitrie O. Paun, Keith Matthews and Tom Wickline (in alphabetical order) reorganized it in 2002.</p>
 <p>For suggestions/additions/complaints regarding this FAQ, please send an email to
    <a href="mailto:wine-faq@winehq.org">wine-faq@winehq.org</a>
 </p>
@@ -194,7 +193,7 @@ straight from your regular desktop environment, place that application's
 window side by side with native application windows, copy/paste from one
 to the other, and run it all at full speed.</p>
 
-<p>It is also a pretty vital part of migrating a large organisation, you 
+<p>It is also a pretty vital part of migrating a large organization, you 
 can't change a 5000 desktop setup overnight without a lot of risk.</p>
 
 <h3><a name="Which_one_of_the_different_Wine_packages"></a>Which one of the different Wine packages out there is good for me?</h3>
@@ -600,7 +599,7 @@ environment variable <tt>TMPDIR=~/tmp</tt> or <tt>TMPDIR=/tmp</tt>
 
 <p>Simple answer: you CAN'T.  Windows demands direct access to the hardware and cannot get it with Wine and UNIX in the way</p> 
 Wine is supposed to be used WITHOUT Windows primarily.  If you want to use a Windows installation, then use an existing installation 
-alongside the UNIX installation (see the dual-boot HOWTO for your OS for more details).  Or alternatively use the cabextract utility 
+alongside the UNIX installation (see the dual-boot HOWTO for your OS for more details).  Or alternatively use the cab extract utility 
 to extract Windows install archives to a directory that you want to use as Wine's Windows tree.</p>   
 
 <h3><a name="How_do_I_configure_Wine_to_run_on_my"></a>How do I configure Wine to run on my system?</h3>
@@ -675,12 +674,12 @@ rm -fR \[/path/\]Wine*
 </pre></p>
 <p>Make sure that you specify the exact path when using the powerful
 <tt>rm -fR</tt> command. If you are afraid that you might delete something
-important, or might otherwise delete other files within your filesystem,
+important, or might otherwise delete other files within your file system,
 cd into each Wine subdirectory singly and delete the files found there
 manually, one file or directory at a time.</p>
 <p>Neither the Wine developers and programmers, nor the Wine FAQ
 author/maintainer, can be held responsible for your deleting any files
-in your own filesystem.</p>
+in your own file system.</p>
  
 <a href="#TOP">Back to top</a>
 
@@ -690,12 +689,12 @@ in your own filesystem.</p>
  
 <h3><a name="How_do_I_run_an_MS_Windows_program_under"></a> How do I run an MS Windows program under Wine?</h3>
  
-<p>When invoking Wine, you must specify the entire path to the executable, or by filename only. 
+<p>When invoking Wine, you must specify the entire path to the executable, or by file name only. 
 For example to run Windows' solitaire, type any of the following:</p>
 <ul>
   <li> <tt>wine sol</tt> or <tt>wine sol.exe</tt> (using the search path to locate the file)
-  <li> <tt>wine c:\\windows\\sol.exe</tt> (using a DOS filename)
-  <li> <tt>wine /usr/windows/sol.exe</tt> (using a UNIX filename). 
+  <li> <tt>wine c:\\windows\\sol.exe</tt> (using a DOS file name)
+  <li> <tt>wine /usr/windows/sol.exe</tt> (using a UNIX file name). 
 </ul>
 <p>The path of the file will also be added to the path when a full name is supplied on the command line.</p>  
  
@@ -848,7 +847,7 @@ Wine.</p>
 
 <hr size="3"><h2><a name="WineHQ_issues"></a>Wine HQ issues</h2>
 
-<h3><a name="Why_are_the_maillists_set_to_reply_to"></a>Why are the maillists set to reply to author, not to mailing list?</h3>
+<h3><a name="Why_are_the_maillists_set_to_reply_to"></a>Why are the mailing list set to reply to author, not to mailing list?</h3>
 
 <p>There are very valid reasons for doing so.</p> 
 
