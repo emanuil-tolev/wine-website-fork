@@ -24,6 +24,13 @@
       <td>CodeWeavers</td>
     </tr>
     <tr>
+      <td>atl.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/comsrv2k/htm/cs_pp_buildingpipecomps_zved.asp">MSDN: ATL API overview</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Aric Stewart</td>
+    </tr>
+    <tr>
       <td>cabinet.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/setupapi/setup/cabinet_file_functions.asp">MSDN: Cabinet</a></td>
       <td><a href="{$root}/site/?issue=179#CAB%20Update">#179</a>,
@@ -59,7 +66,7 @@
           <a href="{$root}/site/?issue=138#Listview%20Changes">#118</a>,
           <a href="{$root}/site/?issue=163#Error%20Requiring%2032/16%20Bit%20DLL%20Combinations">#163</a></td>
       <td class="pct95">95% complete</td>
-      <td>Dimitrie O. Paun,<br>CodeWeavers</td>
+      <td>Filip Navara,<br>Thomas Weidenmüller,<br>Maxime Bellengé</td>
     </tr>
     <tr>
       <td>comdlg32.dll</td>
@@ -90,11 +97,18 @@
       <td>Dmitry Timoshkov</td>
     </tr>
     <tr>
+      <td>dbghelp.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/debug/base/debug_help_library.asp">MSDN: Debug Help Library</a></td>
+      <td>None</td>
+      <td class="pct50">50% complete</td>
+      <td>Eric Pouech</td>
+    </tr>
+    <tr>
       <td>gdi32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/wingdistart_9ezp.asp">MSDN: Windows GDI</a></td>
       <td><a href="{$root}/site/?issue=156#GDI%20Performance">#156</a></td>
       <td class="pct60">60% complete</td>
-      <td>CodeWeavers</td>
+      <td>Alexandre Julliard,<br>Huw D M Davies</td>
     </tr>
     <tr>
       <td>icmp.dll</td>
@@ -107,7 +121,7 @@
       <td>imagehlp.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/debug/base/imagehlp_functions.asp">MSDN: ImageHlp Functions</a></td>
       <td><a href="{$root}/site/?issue=199#Implementing%20Imagehlp%20Functions">#199</a></td>
-      <td class="pct20">20% complete (debughlp imagehlp sibbling)</td>
+      <td class="pct35">35% complete (debughlp imagehlp sibbling)</td>
       <td>Eric Pouech</td>
     </tr>
     <tr>
@@ -146,6 +160,13 @@
       <td></td>
     </tr>
     <tr>
+      <td>mlang.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/workshop/misc/mlang/reference/functions/functions.asp">MSDN: MLang Functions</a></td>
+      <td>None</td>
+      <td class="pct40">40% complete</td>
+      <td>CodeWeavers</td>
+    </tr>
+    <tr>
       <td>mpr.dll</td>
       <td class="adequate"><a href="http://www.andreavb.com/API_MPR.html">mpr API calls</a></td>
       <td>None</td>
@@ -163,8 +184,8 @@
       <td>msi.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/msi/setup/installer_function_reference.asp">MSDN: Installer Function Reference</a></td>
       <td><a href="{$root}/site/?issue=182#Beginnings%20of%20Microsoft%20Installer%20Support">#182</a></td>
-      <td class="pct10">10% complete</td>
-      <td>Mike McCormack</td>
+      <td class="pct40">40% complete</td>
+      <td>Mike McCormack,<br>Aric Stewart</td>
     </tr>
     <tr>
       <td>msimg32.dll</td>
@@ -246,7 +267,7 @@
           <a href="{$root}/site/?issue=167#Accessing%20ODBC%20Databases">#167</a>,
           <a href="{$root}/site/?issue=205#ODBC%20Fun%20-%20Tips%20and%20Tricks">#205</a></td>
       <td class="pct60">60% complete<br>(no Windows ODBC driver support, only UNIX)</td>
-      <td>CodeWeavers</td>
+      <td></td>
     </tr>
     <tr>
       <td>ole32.dll</td>
@@ -262,7 +283,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnacc/html/actvaccess.asp">MSDN:  Active Accessibility</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
-      <td></td>
+      <td>Mike McCormack</td>
     </tr>
     <tr>
       <td>oleaut32.dll</td>
@@ -335,7 +356,7 @@
           <a href="{$root}/site/?issue=194#Stubless%20Proxies">#194</a>
           <a href="{$root}/site/?issue=200#RPC%20Info">#200</a></td>
       <td class="pct30">30% complete</td>
-      <td>TransGaming,<br>Ove KÃ¥ven,<br>Greg Turner</td>
+      <td>Mike Hearn,<br>Robert Shearman,<br>Filip Navara</td>
     </tr>
     <tr>
       <td>rsabase.dll</td>

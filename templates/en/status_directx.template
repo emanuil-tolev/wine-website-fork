@@ -60,7 +60,7 @@
     <td colspan="5"><strong>DirectDraw</strong></td>
     <tr>
       <td>ddraw.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/graphics/hh/graphics/ddfncs_66uf.asp">MSDN: DDraw Functions</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/graphics/hh/graphics/ddfncs_6fa062cb-6d77-4d19-8548-880c5bacabe9.xml.asp">MSDN: DDraw-Supplied Functions</a></td>
       <td><a href="{$root}/site/?issue=78#DirectDraw%20reorganization%20(cont'd)">#78</a>,
           <a href="{$root}/site/?issue=79#DirectDraw%20reorganization%20(cont'd)">#79</a>
           <a href="{$root}/site/?issue=185#Why%20Native%20DirectX%20Doesn't%20Work">#185</a></td>
@@ -209,6 +209,12 @@
       <td class="pct5">5% complete</a></td>
       <td>Christian Costa</td>
     </tr>
+    <td>d3dxof.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx81_c/directx_cpp/Graphics/Reference/CPP/XFile/Functions/DirectXFileCreate.asp">MSDN: DirectXFileCreate</a></td>
+      <td>None</td>
+      <td class="pct50">50% complete</a></td>
+      <td>Christian Costa</td>
+    </tr>
     <td>dplayx.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx8_c/directx_cpp/play_front_61q1.asp">MSDN: DPlay</a></td>
       <td>None</td>
@@ -227,14 +233,14 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx8_vb/directx_vb/audio_using_4vjj.asp?frame=true">MSDN: DSound Devices</a></td>
       <td><a href="{$root}/site/?issue=48#Merging%20DSound%20and%20WinMM%20drivers">#48</a></td>
       <td class="pct90">90% complete</a></td>
-      <td>Rok Mandeljc</td>
+      <td>Francois Gouget</td>
     </tr>
     <tr>
      <td>msdmo.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directx/htm/dmofunctions.asp">MSDN: DMO Functions</a></td>
       <td>None</td>
       <td class="pct85">85% complete</a></td>
-      <td>Ulrich Czekalla</td>
+      <td></td>
     </tr>
     <tr>
      <td>qcap.dll</td>

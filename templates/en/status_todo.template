@@ -24,6 +24,15 @@
 <li>Better support of BiDi - Arabic, Hebrew...</li>
 </ul>
 
+<h3><a name="Winecfg"></a>Wine configuration tool (winecfg)<br></h3>
+
+<pre>
+     If you are interested in working on the Wine configuration tool you will
+     want to read these two post on wine-devel.
+     <a href="http://www.winehq.org/hypermail/wine-devel/2004/07/0427.html">ToDo #1</a>     
+     <a href="http://www.winehq.org/hypermail/wine-devel/2004/08/0007.html">ToDo #2</a>
+</pre>     
+
 <h3><a name="Registry"></a>Registry contents<br></h3>
 
 <ul>
@@ -194,7 +203,6 @@
     * Fix the wire protocol
      - Implement the OXID resolver and other ORPC peccadilloes
 </pre>
-
 
 <h3><a name="DOS"></a>DOS<br></h3>
 
