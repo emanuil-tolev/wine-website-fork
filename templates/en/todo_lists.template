@@ -259,11 +259,11 @@
 	    <li> status: tools needed, decide on overall interface
 	    <li> updated: Feb 29, 2004
           </ul>
-	<li> Merge winecheck into winecfg <span class=todo>[TODO]</span>
+	<li> Merge winecheck into winecfg <span class=done>[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:cmorgan@alum.wpi.edu">Chris Morgan</a>
-	    <li> status: almost done, fs checks need to be redone in winecfg after kernel/ntdll split
-	    <li> updated: Mar 15, 2004
+	    <li> status: done, fs checks need to be redone in winecfg after kernel/ntdll split
+	    <li> updated: Mar 29, 2004
           </ul>
 	<li> Remove wineconf <span class=todo>[TODO]</span>
 	  <ul>
@@ -381,7 +381,7 @@
 	<li> Winemaker: use dsw2make from MinGW <span class=todo>[TODO]</span>
 	  <ul>
 	    <li> worker: ?
-	    <li> status: code hosted at <a href="http://open.cyanworlds.com/DSW2Makev2">cyanworlds.com</a>
+	    <li> status: code hosted at <a href="http://cvs.sourceforge.net/viewcvs.py/mingw/utils/scripts/dsw2mak.in">MinGW</a>
 	    <li> updated: Feb 27, 2004
 	  </ul>
 	<li> Winemaker: no configure script <span class=done>[DONE]</span>
