@@ -79,7 +79,7 @@ function home_page ()
     // screenshot for homepage (random)
     $shots = get_files($file_root."/images/shots","png");
     $c = intval(rand(1,count($shots) - 1));
-    $vars['screenshot'] = $html->ahref($html->img($file_root.'/images/shots/wine_'.$c.'.png','right'), $file_root.'/images/shots/full/wine_'.$c.'.png');
+    $vars['screenshot'] = $html->ahref($html->img('shots/wine_'.$c.'.png','right','Screenshot'), $file_root.'/images/shots/full/wine_'.$c.'.png');
     
 	// get aboout box
 	$about_box = $html->theme_box($config->theme, "box_title", "About Wine", "99%", $html->template("base", 'home_about', $vars), '10', 'white', 'topMenu');
