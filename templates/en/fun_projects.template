@@ -21,6 +21,194 @@
    point of view. If you feel like working on any of these, please
    let me know.
   
+  <h2>Desktop Integration</h2>
+  Some of these range from fairly easy to somewhat difficult.  The payoff 
+  on these is high - how users interact with the desktop are some of the most 
+  visible parts of Wine.  Mike Hearn, who suggested most of these ideas, 
+  explained, these <i>"provide a good intro to Wine development for anybody 
+  who has been lurking on the sidelines and wants to get involved.  As usual no 
+  guarantees these patches would be accepted, that's Alexandre's call. 
+  But they probably would be, and you'll learn something while doing them!"</i>
+
+  <h4 class=todo>Create <i>My Documents</i></h4>
+  <p> Map CSIDL_PERSONAL (My Documents) to the $HOME directory if mapped. 
+   See the _SHGetDefaultValue function in dlls/shell32/shellpath.c for an 
+   explanation of how to do this.  It would probably be ok to grab $HOME 
+   using the UNIX getenv() and then using the libwine APIs to map them to a 
+   Win32 path. If the mapping fails (i.e. $HOME is not accessible given the 
+   users dosdevices) then just fail with a WARN().
+  <ul>
+    <li>workers: <i>wanted</i>
+    <li>status: <i>to do</i>
+    <li>updated: Dec 21, 2004
+  </ul>
+ 
+  
+  <h4 class=todo>Map <i>Desktop</i> Directory</h4>
+  <p>This is similar to above but with some extra work. Map the contents of 
+   the ~/Desktop directory to the Windows virtual Desktop folder. In file 
+   pickers and Explorer, the filesystem root is represented by a magic Desktop 
+   folder. In real Windows this reflects the icons that are on the desktop and 
+   is mapped to a real directory at some arbitrary point in the filing system. 
+   On Linux we have no such virtual root, however it'd be nice if icons that 
+   appeared in the KDE/GNOME desktop were put in their proper place. That way 
+   users won't be confused by the file being on their desktop but unavailable 
+   from their Windows applications file picker.
+  <p>
+   This should not be too hard. The Desktop folder is implemented by a COM 
+   object in dlls/shell32/shfldr_desktop.c. You just need to read the 
+   $HOME/Desktop folder and put the items you find in there inside. Ignore 
+   .desktop files for now, they are a bit tricker to map and aren't especially 
+   useful for us anyway.
+  <p>
+   You also want to map CSIDL_DESKTOP in dlls/shell32/shellpath.c, 
+   _SHGetDefaultValue. See above.
+  <p>
+   Bonus points for fixing the desktop icon while you're at it (an arrow??!) 
+  <ul>
+    <li>workers: <i>wanted</i>
+    <li>status: <i>to do</i>
+    <li>updated: Dec 21, 2004
+  </ul>
+ 
+  
+  <h4 class=todo>Use Icon Themes</h4>
+  <p> The freedesktop.org icon theme specification shows us how to find icons
+   for many different types of things. Implement support for loading and
+   using the following icons from the icon theme (it should be OK to use
+   native libraries for this like GdkPixbuf, just fall back to the compiled
+   in defaults if it's missing):
+  <ul>
+   <li> folder</li>
+   <li> desktop</li>
+   <li> computer</li>
+   <li> unknown document</li>
+   <li> any others??</li></ul>
+  </p><p>  
+   Don't do file types, as native icon&lt;-&gt;file type association is done by
+   mime types not extensions, and it'd make our file dialogs even slower than
+   they already are.
+  </p><p>
+   You may be tempted to use e.g., libpng to implement this. Don't! Use
+   GdkPixbuf instead, stock icons are allowed to be in many formats including
+   SVG.
+  </p><p>
+   Actually it's probably easier to use the new GTK+ APIs to implement this,
+   that takes care of not only rendering the image to a raw bitmap you can
+   then convert to an HICON, but it also implements the icon lookup algorithm
+   for you.  In future it'll probably also implement some fancy caching
+   mechanism to reduce memory overhead. Might as well get these benefits
+   easily!
+
+  <ul>
+    <li>workers: <i>wanted</i>
+    <li>status: <i>to do</i>
+    <li>updated: Dec 21, 2004
+  </ul>
+ 
+  
+  <h4 class=todo>XDG Menu Support</h4>
+  <p>Try updating the menu mapping code to support the new XDG menu
+   specification. Don't bother trying to make this work everywhere, it's a
+   total nightmare. Just try supporting the new standards. Be warned: not
+   every desktop/distro supports this yet!
+  </p><p>
+   This one might be quite hard.
+  <ul>
+    <li>workers: <i>wanted</i>
+    <li>status: <i>to do</i>
+    <li>updated: Dec 21, 2004
+  </ul>
+ 
+  
+  <h4 class=todo>Improve winebrowser Script</h4>
+  <p>Try improving the winebrowser script to take into account the user's
+   preferred applications. At the moment it just tries every browser it
+   knows about in a hard coded order. Hint: in modern GNOME desktops you can
+   use the "gnome-open" program to make this automatic. There is a KDE
+   equivalent (<tt>kfmclient openUrl</tt>).
+
+  <ul>
+    <li>workers: <i>wanted</i>
+    <li>status: <i>to do</i>
+    <li>updated: Dec 21, 2004
+  </ul>
+ 
+  
+  <h4 class=todo>Integrate Windows Screensavers</h4>
+  <p>Integrate Wine with XScreensaver, so installing Win32 screensavers makes
+   them automatically appear in the list. You may need to write patches for
+   xscreensaver to make this really slick.
+  </p><p>Bonus points for getting xscreensaver to respect the registry
+   setting <tt>LowPowerActive</tt>.
+
+  <ul>
+    <li>workers: <i>wanted</i>
+    <li>status: <i>to do</i>
+    <li>updated: Dec 21, 2004
+  </ul>
+ 
+  
+  <h4 class=todo>Take Out the Trash</h4>
+  <p> Steven Edwards suggested, <i>"add support to use the draft FreeDesktop 
+   trashcan spec."</i>
+  <ul>
+    <li>workers: <i>wanted</i>
+    <li>status: <i>to do</i>
+    <li>updated: Dec 21, 2004
+  </ul>
+ 
+  
+  <h4 class=todo>Integrate the Registry With Native Configurations</h4>
+  <p> Implement a bridge between the Windows registry and the GNOME/KDE
+   configuration systems. If you set the wallpaper in a Windows app
+   it should reflect on your real desktop. This is useful for programs
+   like the WebShots desktop.  This could be done by extending the 
+   wineexplorer 
+ 
+  <ul>
+    <li>workers: <i>wanted</i>
+    <li>status: <i>to do</i>
+    <li>updated: Dec 21, 2004
+  </ul>
+ 
+  
+  <h4 class=todo>Configure Some Default Registry Entries</h4>
+  <p>Stephan D&#246;singer suggested, "probably a bigger task: Look for common 
+   native applications and write entries for them into the registry. For 
+   example, I manually added an entry for KMail in \\Machine\\software\\clients 
+   and now I can select Kmail as the default Mail application in the internet 
+   options control panel (Which is created when Internet Explorer is installed).
+   My registry entries look like this:
+   <ul><code>
+   [Software\\Clients\\Mail\\Kmail] 1100110998<br />
+   @="KMail"
+   <br /><br />
+   [Software\\Clients\\Mail\\Kmail\\Protocols\\MailTo] 1100110998<br />
+   @="URL:MailTo Protocol"<br />
+   "EditFlags"=hex:02,00,00,00<br />
+   "URL Protocol"=""
+   <br /><br />
+   [Software\\Clients\\Mail\\Kmail\\Protocols\\MailTo\\DefaultIcon] 1100110998
+   <br />
+   @="C:\\Program Files\\Opera\\opera.exe,1"
+   <br /><br />
+   [Software\\Clients\\Mail\\Kmail\\Protocols\\MailTo\\shell\\open\\command] 
+   1100110998<br />
+   @="\"Z:\\usr\\kde\\3.3\\bin\\kmail\" \"%1\""
+   <br /><br />
+   With Z: mapped to /
+   </code> </ul></p><p>
+   I selected KMail as the default Mail application, and when I open an Mail
+   Address in MSIE kmail pops up. The same happens when I enter a mailto: 
+   address in Task Manager->New task.</p>
+  <ul>
+    <li>workers: <i>wanted</i>
+    <li>status: <i>to do</i>
+    <li>updated: Dec 21, 2004
+  </ul>
+ 
+  
   <h2>Virtualization Projects</h2>
   Virtualization environments tend to stress the host considerably,
   due to the inherent impedance mismatch between the two. As such,
