@@ -7,7 +7,17 @@
   Janitor's List</a>), and it's high time that we have one too.
   What is there to clean up? Well, lots of things! :)
 
-  <h2>Eliminate uses of strncpy/strncpyW</h2>
+  <h2>Remove HeapAlloc casts</h2>
+
+  Casting the return value of HeapAlloc and HeapReAlloc is unnecessary,
+  and should be avoided.  All existing casts can be removed.  You can
+  find them using:<p>
+
+  <tt>find . -name "*.[ch]" | xargs egrep "\) *Heap(Re)?Alloc"</tt>
+
+  As of the 23rd March 2005, there's 262 of these to be removed.
+
+  <h2>Check the usage of strncpy/strncpyW</h2>
 
   <i>strncpy(dst,src,n)</i> has two subtle
   <a href="http://weblogs.asp.net/oldnewthing/archive/2005/01/07.aspx">
@@ -42,22 +52,22 @@
   </ul>
   <p>
 
-  <h2>Portability fixes<h2>
+  <h2>Portability fixes</h2>
 
   <h3>Fix Wine to be compilable by a 64-bit compiler</h3>
-  <ol>
+  <ul>
     <li> Inspect and fix all public Win32 headers to match PSDK definitions.
     <li> Make sure that pointers do not get truncated.
     <li> Add support for Win64.
-  </ol>
+  </ul>
 
   <h3>Fix wrong assumptions in Wine about endianess</h3>
-  <ol>
+  <ul>
     <li> Inspect all Wine code and public headers to eliminate endianess dependent
          constructs (low/high parts of a field, bit fileds), add WORDS_BIGENDIAN
          when appropriate.
     <li> Make sure that Wine code handles data in an endianess independent way.
-  </ol>
+  </ul>
 
   <h2>Code cleanup</h2>
 
@@ -76,7 +86,7 @@
   aggregation, pUnkOuter should be checked to make it is NULL.<p>
 
   This usually means adding code like the following at the top of the
-  factory's CreateInstance method:
+  factory's CreateInstance method:<p>
 <pre>
    if( pUnkOuter )
       return CLASS_E_NOAGGREGATION;

@@ -31,6 +31,8 @@ to make sure it's not spam before they can let it through.)</p>
  <li>Avoid unnecessarily changing the formatting of the code.
 
  <li>Use standard C, avoid C++ comments and inline variable declarations.
+
+ <li>Read the diff and make sure it contains only what you want in it.
 </ul>
 
 <p>Accepted patches will appear in the <a href="{$root}/site/forums">wine-cvs</a> mailing list. 

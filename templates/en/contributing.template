@@ -58,7 +58,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     <h3>Web site maintenance</h3>
      <p>If you feel like writing about Wine or coding in PHP your
        contribution will be greatly appreciated. You can find current task that need work
-       in our <a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=WineHQ.com&component=misc-web">Bugzilla</a>.
+       in our <a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=WineHQ.com&amp;component=misc-web">Bugzilla</a>.
        Getting started is really easy, just get the WineHQ sources by following the
        instructions in our <a href="{$root}/site/cvs">CVS</a>
        section and look at the files in templates/en. And to submit patches,
@@ -278,8 +278,8 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     <a name="doc_win_api"></a>
     <h3>Documentation of the Windows API functions</h3>
 
-    <p><h5>The main reason is that as MS moves to new APIs it tends to remove all documentation of the old ones (e.g. Win
-    3.1).</h5></p>
+    <h5>The main reason is that as MS moves to new APIs it tends to remove all documentation of the old ones (e.g. Win
+    3.1).</h5>
     <p>The goal is to write an independent documentation of the Windows API. Since we are re implementing all 
     this API it would be a good coding practice to also document what we implement. We should in particular 
     concentrate on aspects that are not very well covered in the 'official' documentation like discrepancies 
