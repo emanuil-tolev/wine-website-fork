@@ -62,7 +62,7 @@ Its main goal is to huck cliffs. It also serves to inform you of what's going on
 
 </stats>
 <section 
-	title="ODBC Fun - Tip and Tricks" 
+	title="ODBC Fun - Tips and Tricks" 
 	subject="Wine User's guide : using Windows ODBC driver manager seems to work"
 	archive="http://www.winehq.org/hypermail/wine-devel/2004/01/0466.html" 
 	posts="5"
@@ -147,7 +147,7 @@ instalation and adding "odbc32"="native,builtin" in the config file. I
 Installed the psqlodbc driver from the Postgres database, and retried : 
 selecting "ODBC sources" in the "Attach tables" dialog box led me to the 
 usual ODBC manager dialogs, where I have been able to create a DSN to my 
-Postgres database. I have then been able to "Atach" my Postgres tables and 
+Postgres database. I have then been able to "Attach" my Postgres tables and 
 views to an M$ Access database and peruse them.
 </p><p>
 My conclusion is that such a setup can be used, if only to be able to 
