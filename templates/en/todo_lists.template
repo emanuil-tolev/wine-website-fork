@@ -299,11 +299,11 @@ committed</a>.
 
   <a name="ui"></a><h3> D. User Interface </h3>
      <ol>
-	<li> Visible region handling in server <span class="inprogress">[IN PROGRESS]</span>
+	<li> Visible region handling in server <span class="done">[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard </a>
-	    <li> status: window region <a href="http://cvs.winehq.org/patch.py?id=12703">moved</a>
-	    <li> updated: Jun 23, 2004
+	    <li> status: window region <a href="http://cvs.winehq.org/patch.py?id=12703">moved</a>, update region <a href="http://www.winehq.org/hypermail/wine-cvs/2004/12/0100.html">moved</a>.
+	    <li> updated: Dec 7, 2004
 	  </ul>
 	<li> Inter-process handle management <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
