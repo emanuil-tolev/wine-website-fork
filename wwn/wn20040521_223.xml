@@ -96,7 +96,7 @@ For example:
 <li> <tt>-Wmissing-declarations</tt> should point lots of missing APIs declarations 
 (I've done it in some cases, and I'm in the process of submitting some 
 fixes). We cannot turn this warning always on because there are lots of 
-cases where we have global functions without prototypes (most than 2/3 
+cases where we have global functions without prototypes (more than 2/3 
 of them are made out of the 16bit entry points)</li>
 
 <li> <tt>-Wcast-qual</tt> should point out all the (const bla*) => (foo*) casts. We 
@@ -133,10 +133,10 @@ Here are a couple extra suggestions:
  <dt> Add <tt>-Wwrite-strings</tt></dt>
    <dd>
    There has already been quite some work on this but I believe it's not
-finished yet. I'm not 100% sure of the status though.</dd>
+finished yet. I'm not 100% sure of the status though.<br /></dd>
 
 
- <dt> Patch ou min/max macros to catch signed/unsigned comparisons.</dt>
+ <dt> Patch our min/max macros to catch signed/unsigned comparisons.</dt>
  <dd>
    This generates a lot of warnings. Ideally they should be fixed
 without using casts but it may not always be possible.</dd></dl></p><p>
@@ -306,7 +306,7 @@ against spending much development time on it:</p>
 >
 <topic>Build Process</topic>
 <p>Guido Draheim followed up this week on a thread we covered 
-(<a href="http://www.winehq.com/?issue=222#Hiding%20Symbols%20&amp;%20PE%20vs.%20ELF">issue
+( <a href="http://www.winehq.com/?issue=222#Hiding%20Symbols%20&amp;%20PE%20vs.%20ELF">issue
 #222</a>) about hiding symbols:</p>
 <quote who="Guido Draheim">
 <p>
@@ -329,7 +329,7 @@ that can be checked up by a toolchain. Well, "IF" the tools check for them.
 The <tt>gcc -fvisibility</tt> exists since 3.1 and is supported by binutils. If you read up
 some web reports, it seems to have been invented for hiding stuff not quite
 unlike what the original poster wanted. The icc supports all -fvisibility options
-as well afair.</dd>
+as well afair.<br /></dd>
 
  <dt> the real problem</dt>
 
@@ -339,7 +339,7 @@ i.e. "static". Pretty 20year old unix stuff. The other symbols are referencable
 outside (in .o) and the standard shard linker will put all of them into the
 shared library symbol export table. - But now we want two different symbol
 flavours, one exported to the same library, the others for the rest of the world.
-Perhaps use a linker script to decide later about symbol visibility.</dd>
+Perhaps use a linker script to decide later about symbol visibility.<br /></dd>
 
 <dt>example solution</dt>
 <dd> gcc supports the universal attribute syntax, and it does now know about more
@@ -347,7 +347,7 @@ symbol flavours as to their visibility. Probably you want to have "hidden".
 <a href="http://www.winehq.com/hypermail/wine-devel/2004/05/0291.html">Attached</a>
 are two simple test*.c files and a makefile. The final sharedlib
 symbol table contains only test3 after stripping. - using a linker script instead
-of in-source __attribute__ is left as an excercise to the reader.</dd>
+of in-source __attribute__ is left as an excercise to the reader.<br /></dd>
 
 <dt>more hints</dt>
 
@@ -358,7 +358,7 @@ It's all in the tools. There is only one problem with opensource: many programme
 do not need to hide symbols to the extreme, so they did not write such tools
 so far. Not yet. There are some real ELF-educated people out there - hire one, and
 let him write the tool you need. The ELF format is well-defined and simple enough
-to allow everything and quite easily.</dd>
+to allow everything and quite easily.<br /></dd>
 </dl></p></quote>
 
 <p>Mike Hearn tried it out and reported success after stripping the
