@@ -119,14 +119,14 @@
 	  <ul>
 	    <li> proposal WineSetupTk by <a href="mailto:jwhite@codeweavers.com">Jeremy White </a>
 	  </ul>
-	<li> Make Wine's DLLs register themselves to avoid manual merging of the <tt>winedefault.reg</tt> <span class=inprogress>[IN PROGRESS]</span>
+	<li> Make Wine's DLLs register themselves to avoid manual merging of the <tt>winedefault.reg</tt> <span class=done>[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:jhohm@acm.org">John K. Hohm</a>
 	    <li> status: first draft <a href="http://www.winehq.com/hypermail/wine-devel/2002/11/1409.html">submitted</a> for  
 			 <a href="http://www.winehq.com/hypermail/wine-devel/2002/12/index.html#150">review</a>;
 			 first patch got <a href="http://www.winehq.com/hypermail/wine-cvs/2003/01/0189.html">committed</a>,
 			 another was <a href="http://www.winehq.com/hypermail/wine-patches/2003/01/0252.html">submitted</a>.
-	    <li> updated: Jan 28, 2003
+	    <li> updated: Aug 28, 2003
 	  </ul>
 	  From <a href="mailto:julliard@winehq.com">Alexandre Julliard </a>:
 	  <i>Part of it should be done with DllRegisterServer, the rest can be
