@@ -113,7 +113,7 @@ has a reward of $4326.50.</p>
 <topic>WineConf 2004</topic>
 <p>In case you hadn't heard, WineConf 2004 is this weekend in St. Paul, Minnesota.  
 Over thirty developers are expected to attend.  Almost everyone will be arriving
-tomorrow, if they're not there already.  Part of the reason this weeks' WWN
+tomorrow, if they're not there already.  Part of the reason this week's WWN
 is so small is because people are en route.  The other reason is I'm rushing
 out the door myself.  Next week there will definitely be 
 some form of update posted in the WWN.  I'll probably wait a few days to allow
@@ -141,14 +141,14 @@ by Art to work well):
 <ul><tt>
 mplayer -rtsp-stream-over-tcp rtsp://wine.codeweavers.com/wineconf-test.sdp</tt></ul></p><p>
 
-You can also use Quicktime, and the Player from Quicktime 6.3 should run
+You can also use QuickTime, and the Player from QuickTime 6.3 should run
 under Wine.  I haven't had time to nail down a version of
 Wine that runs it reliably; I had one working a few weeks
 ago, but now our CVS tip doesn't work for beans.  Hopefully
 I'll get enough time to push one out.
 </p><p>
 If someone else wants to take a poke, the key is to snag
-Quicktime 6.3 (it's a bit hard to find, but is out there),
+QuickTime 6.3 (it's a bit hard to find, but is out there),
 and make sure you use a Wine that is recent enough that it
 has the REUSEADDR badness in socket.c reverted.
 </p></quote>
@@ -263,8 +263,8 @@ The last 2 years the rate of growth is clearly increasing. </li>
 <li> The number of cvs commits in October '98 was corrected to 258 commits.</li>
 </ul></p></quote>
 
-<p>A quick look a clean source directory shows everything to be about 53MB
-right now in including the generated source Rein mentions.  Another 
+<p>A quick look at a clean source directory shows everything to be about 53MB
+right now, including the generated source Rein mentions.  Another 
 interesting stat to look are the increases in mailing list messages.  Over
 the same period where the amount of source code has grown quicker than the
 5 year trend we've seen a corresponding increase in posts to both wine-patches 

@@ -123,7 +123,7 @@ work."
 
 Alexandre identified installation and configuration as areas needing
 some attention, "We have all the tools, we're just not using them."
-In particular, we now have wineboot, winecfg, regedit, and DLL's
+In particular, we now have wineboot, winecfg, regedit, and DLLs
 that self-register.  The website is vastly improved compared to
 two years ago.  Documentation is in decent shape but needs some
 work.  One difficult problem is that the people who can write the
@@ -136,7 +136,7 @@ first five years of Wine development, 1993 - 1998, there were
 approximately 200,000 lines of code written.  In the five years
 since then we've seen 1,000,000 more appear and since the last
 Wineconf we've seen the code size double.  Clearly the license
-change to LGPL, a hot topic in 2002, hasn't proven to be hindrance.
+change to LGPL, a hot topic in 2002, hasn't proven to be a hindrance.
 
 </p><p>
 
@@ -149,7 +149,7 @@ similar to the To-Do list on WineHQ:
 	<li>Easy installation, including finishing winecfg</li>
 	<li>Move the configuration into the registry</li>
 	<li>Handle the initial registry setup</li>
-	<li>Better command-line handline</li>
+	<li>Better command-line handling</li>
 	<li>Winelib improvements, including using winegcc to build Wine</li>
 	<li>Better OLE/COM infrastructure</li>
 </ul></p><p>
@@ -186,7 +186,7 @@ improve the internationalization of it and that task is slated for the
 short-term as is the integration of a small Wine history page.  Adding
 in an automatic test framework also seems to be on track thanks to the
 work of Ferenc Wagner.  Documentation, overall, isn't in that bad of
-shape and no one complained at all about the tools used for creating
+a shape and no one complained at all about the tools used for creating
 documentation.  Dimi hoped someone could adapt the Winelib Guide to
 include information about using winegcc.  In the worst shape is the
 Wine Developer's Guide. Currently it's lacking information on widl and
@@ -400,12 +400,12 @@ within the next few months.
 
 </p><p>...</p><p>
 
-Day one ended wrapped up about 4:30.  Jeremy White invited everyone to
+Day one ended wrapped up at about 4:30.  Jeremy White invited everyone to
 dinner at the Mall of America.  In the mean time Michael Stefaniuc,
 Dimi Paun, Marcus Meissner, Shachar Shemesh, and I decided to visit
 the Ice Palace - a big event in Saint Paul.  Unbeknownst to us, this
 attraction seemed to draw the entire population of Minnesota.
-Given the -20 degree F (about -20 C).  Needless to say, we only managed to see 
+Given the -20 degree F (about -29 C).  Needless to say, we only managed to see 
 the Ice Palace from outside.  Dinner and drinks kept us out till about
 midnight again.
 
@@ -468,8 +468,8 @@ out that several applications use other Win32 specific features.)
 
 MinGW, winegcc, and winemaker appear to be an excellent combination.  
 Dimi, somewhat joking, said now with this porting system "we make
-half the problem someone elses problem."
-The MinGW resource compiler, windres, is now commandline compatible
+half the problem someone else's problem."
+The MinGW resource compiler, windres, is now command-line compatible
 with Wine's wrc.  After moving to Linux, winemaker can automate most
 of the code reformatting.  Then Winegcc wraps the regular gcc on Linux
 with the necessary <s>arcane magic</s> requirements to link with Wine.  
@@ -491,7 +491,7 @@ each exe/dll.
 This led into a presentation by Boaz Harrosh of the work he did recently
 to port a large application to Linux using Winelib.  He ran into 
 several obstacles and had a lot of suggestions for making the process
-better.  He really liked winemaker but felt it needed to easily
+better.  He really liked winemaker but felt it needed to be easily
 extensible to support more automated features.  The process needed
 to first accomplish some simple things such as:
 <ul>
@@ -716,7 +716,7 @@ for more API's will be added.
 By far the biggest problem is getting copy protected games to work.  A big
 discussion about it ensued.  Steven Edwards agreed to contact various folks
 to iron out the issues.  Technically it seems possible but there were 
-differing opinions of whether we should support the secdrv.sys driver using
+differing opinions on whether we should support the secdrv.sys driver using
 something like a Captive NTFS implementation or if there's another means
 to get it working.
 
