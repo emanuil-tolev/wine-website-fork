@@ -14,12 +14,11 @@
 <tr>		<th>Name</th>				<th>Dynamic</th><th>PerApp</th>	<th>Default value</th></tr>
 
 <tr class=section> <th colspan=5 align=left>[Drive X]</th></tr>
-<tr class=done> <td>Path</td>				<td>no</td>	<td>no</td>	<td></td>			</tr>
-<tr class=done> <td>Type</td>				<td>no</td>	<td>no</td>	<td></td>			</tr>
-<tr class=done> <td>Label</td>				<td>no</td>	<td>no</td>	<td></td>			</tr>
-<tr class=done> <td>Serial</td>				<td>no</td>	<td>no</td>	<td></td>			</tr>
-<tr class=done> <td>Filesystem</td>			<td>no</td>	<td>no</td>	<td></td>			</tr>
-<tr class=done> <td>Device</td>				<td>no</td>	<td>no</td>	<td></td>			</tr>
+<tr class=todo> <td>Path</td>				<td>no</td>	<td>no</td>	<td></td>			</tr>
+<tr class=todo> <td>Type</td>				<td>no</td>	<td>no</td>	<td></td>			</tr>
+<tr class=todo> <td>Label</td>				<td>no</td>	<td>no</td>	<td></td>			</tr>
+<tr class=todo> <td>Serial</td>				<td>no</td>	<td>no</td>	<td></td>			</tr>
+<tr class=todo> <td>Device</td>				<td>no</td>	<td>no</td>	<td></td>			</tr>
 <tr class=todo> <td>ReadVolInfo</td>			<td>no</td>	<td>no</td>	<td></td>			</tr>
 <tr class=todo> <td>FailReadOnly</td>			<td>no</td>	<td>no</td>	<td></td>			</tr>
 
