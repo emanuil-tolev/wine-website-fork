@@ -6,15 +6,15 @@
   a Wine version 0.9 release. For this release, we are trying to cleanup the project's
   interfaces with the outside world:
   <ol type="A">
-    <li> <a href="#winehq">WineHQ</a>
-    <li> <a href="#doc">Documentation</a>
-    <li> <a href="#conf">Configuration</a>
-    <li> <a href="#ui">User Interface</a>
-    <li> <a href="#formats">File Formats</a>
-    <li> <a href="#api">Exported API</a>
-    <li> <a href="#tools">Tools</a>
-    <li> <a href="#misc">Miscellaneous</a>
-    <li> <a href="#code">Source Code</a>
+    <li> <a href="#winehq">WineHQ</a>        <span class=done>[READY]</span>
+    <li> <a href="#doc">Documentation</a>    <span class=todo>[BLOCKER]</span>
+    <li> <a href="#conf">Configuration</a>   <span class=todo>[BLOCKER]</span>
+    <li> <a href="#ui">User Interface</a>    <span class=inprogress>[ALMOST]</span>
+    <li> <a href="#formats">File Formats</a> <span class=done>[READY]</span>
+    <li> <a href="#api">Exported API</a>     <span class=inprogress>[ALMOST]</span>
+    <li> <a href="#tools">Tools</a>          <span class=done>[READY]</span>
+    <li> <a href="#misc">Miscellaneous</a>   <span class=done>[READY]</span>
+    <li> <a href="#code">Source Code</a>     <span class=todo>[BLOCKER]</span>
   </ol>
   </p>
 
@@ -198,17 +198,17 @@
      </ol>
    <h4> Others </h4>
      <ol>
-	<li> Create a man page for winedbg <span class=todo>[TODO]</span>
+	<li> Create a man page for winedbg <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: ?
-	    <li> status: need to document differences from gdb
-	    <li> updated: Feb 16, 2004
+	    <li> worker: <a href="mailto:pouech-eric@wanadoo.fr">Eric Pouech</a>
+	    <li> status: <a href="http://www.winehq.org/hypermail/wine-patches/2004/05/0324.html">patch</a> submitted.
+	    <li> updated: May 30, 2004
           </ul>
-	<li> Create a man page for winegcc <span class=todo>[TODO]</span>
+	<li> Create a man page for winegcc <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: ?
+	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
 	    <li> status: need to document differences from MinGW gcc
-	    <li> updated: Feb 14, 2004
+	    <li> updated: May 30, 2004
           </ul>
 	<li> Create a man page for widl <span class="done">[DONE]</span>
 	  <ul>
@@ -239,13 +239,13 @@
 
   <a name="conf"></a><h3> C. Configuration </h3>
      <ol>
-	<li> Complete regedit <span class="inprogress">[IN PROGRESS]</span>
+	<li> Complete regedit <span class=done>[DONE]</span>
 	  <ul>
 	    <li> workers: <a href="mailto:kfoltman@portal.onet.pl">Krzysztof Foltman</a>,
 			  <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>,
 			  <a href="mailto:hijaszu@hlfslinux.hu">Zimler Attila</a>.
-	    <li> status: new/delete/rename key done, more refinement needed
-	    <li> updated: Mar 15, 2004
+	    <li> status: new/delete/rename key done
+	    <li> updated: Mar 31, 2004
           </ul> 
         <li> Complete winecfg <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
@@ -351,6 +351,12 @@
 	    <li> status: ?
 	    <li> updated: Feb 5, 2004
 	  </ul>
+	<li> Implement dbghelp and rewrite winedbg to use it<span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:pouech-eric@wanadoo.fr">Eric Pouech</a>
+	    <li> status: <a href="http://www.winehq.org/hypermail/wine-patches/2004/05/0324.html">patch</a> submitted.
+	    <li> updated: May 30, 2004
+          </ul>
      </ol>
 
 
@@ -415,23 +421,25 @@
 
   <a name="misc"></a><h3> H. Miscellaneous </h3>
      <ol>
-	<li> Testing daemon to run as a Windows service <span class=inprogress>[IN PROGRESS]</span>
+	<li> Testing daemon to run as a Windows service <span class=done>[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:cmorgan@alum.wpi.edu">Chris Morgan</a>
-	    <li> status: will be hosted at SourceFource as <a href="http://winrash.sourceforge.net/">winrash</a>
-	    <li> updated: Feb 26, 2004
+	    <li> status: Hosted at SourceFource as <a href="http://winrash.sourceforge.net/">winrash</a>
+	    <li> updated: May 29, 2004
 	  </ul>
-	<li> Exec-shield support <span class=inprogress>[IN PROGRESS]</span>
+	<li> Exec-shield/Prelink support <span class=done>[DONE]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:mike@theoretic.com">Mike Hearn</a>
-	    <li> status: proof of concept <a href="http://www.winehq.org/hypermail/wine-devel/2004/02/0285.html">submitted</a> for comments.
-	    <li> updated: Feb 14, 2004
+	    <li> worker: <a href="mailto:mike@theoretic.com">Mike Hearn</a>,
+			 <a href="mailto:mike@codeweavers.com">Mike McCormack</a>,
+			 <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>.
+	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2004/05/0280.html">patch</a> committed.
+	    <li> updated: May 29, 2004
 	  </ul>
-	<li> Prelink support <span class=inprogress>[IN PROGRESS]</span>
+	<li> 4G/4G support <span class=done>[DONE]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:mike@theoretic.com">Mike Hearn</a>
-	    <li> status: proof of concept <a href="http://www.winehq.org/hypermail/wine-devel/2004/02/0285.html">submitted</a> for comments.
-	    <li> updated: Feb 14, 2004
+	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
+	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2004/05/0228.html">patch</a> committed.
+	    <li> updated: May 29, 2004
 	  </ul>	
 	<li> Version symbols in libwine & libwine_unicode <span class=done>[DONE]</span>
 	  <ul>
@@ -502,7 +510,7 @@
 	<li> Move documentation/samples/system.ini -> winedefault.reg <span class=done>[DONE]</span>
 	  <ul>
 	    <li> workers: <a href="mailto:cmorgan@alum.wpi.edu">Chris Morgan</a>,
-		         <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
+		          <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
 	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2004/02/0363.html">moved</a>
 	    <li> updated: Feb 27, 2004
 	  </ul>
