@@ -121,8 +121,8 @@ the WINE work stands at this time and what the future looks like.
 I have heard a lot of good reports of FoxPro working with WINE but the
 last major issue I heard was that Microsoft was restricting the
 redistribution of the FoxPro runtime on Non-Microsoft platforms. It
-seems they dont like people writting apps with thier tools for
-non-windows platforms &lt;g&gt;. I cant find a link to this information
+seems they don't like people writing apps with their tools for
+non-windows platforms &lt;g&gt;. I can't find a link to this information
 though so I could be mistaken or they may have amended the EULA to
 allow this type of redistrabtution like in the case of MFC and ATL.
 </quote></p>
@@ -165,7 +165,7 @@ results are available.  Dimi provided a link for people to see a preview:</p>
 Look into:
 <ul><a href="http://test.winehq.org/data/">
     http://test.winehq.org/data/</a></ul></p><p>
-Todays test results can be found here:
+Today's test results can be found here:
 <ul><a href="http://test.winehq.org/data/200404192305/">
     http://test.winehq.org/data/200404192305/</a></ul></p>
 </quote>
@@ -205,48 +205,48 @@ or so.  Perhaps this is because they are increasingly used by programs.
 Steven Edwards started off a thread by sharing his thoughts about it:
 </p><quote who="Steven Edwards"><p>
  Note I only know a little about the Local Securty Authority but I think
- its not going to be too hard to implement if Wine and ReactOS work
+ it's not going to be too hard to implement if Wine and ReactOS work
  together on it. /me just doubts how much he can write.
 </p><p>
 The unix security design of users and groups with permissions is not
-bad its just outdated. The nice thing about Unix is adding new security
+bad it's just outdated. The nice thing about Unix is adding new security
 modules via PAM is not to bad except they are only for authentication.
 The unix concept of groups, users and permissions needs to be moved
 forward about 20 years. The SELinux stuff has really helped alot in
-this regard. (Please dont flame its the truth)
+this regard. (Please don't flame it's the truth)
 </p><p>
 I recently addressed this in a discussion about ReactOS. Currently our
 lsass does not exist. I think we have what we have parts of the
 security reference monitor already implemented in ntoskrnl and most of
 the parts are there for winlogon and the SAM database so we need to
-develop the lsass services and build out the authentaticaion modules
+develop the lsass services and build out the authentication modules
 for MSV1_0 auth.
 </p><p>
 One of the nice things about the design of the Windows security module
 is that we can make plugins at both ends so that users can be granted
 access either based on a "domain" concept in winlogin/Gina using
-plugins for LDAP and PAM or via the lsass so users can be authencated
+plugins for LDAP and PAM or via the lsass so users can be authenticated
 locally. 
 </p><p>
-It would be nice if we could work with the Winehq people on this as I
+It would be nice if we could work with the WineHQ people on this as I
 think we can share the parts of the security subsystem that reside in
 lsass. Think of it like this
 </p><p>
 <u>Kernel support</u>
 </p><p>
-wineserver/ntosknrl need to both implement the security refernce
-montior for privlaged use of the local system resources. I dont know
+wineserver/ntosknrl need to both implement the security reference
+monitor for privileged use of the local system resources. I don't know
 how much of this wineserver really needs to take in to account in the
 initial incarnation. 
 </p><p>
 <u>Local security subsystem</u>
 </p><p>
-Lsass works interactivly with services and the login system and can
+Lsass works interactively with services and the login system and can
 accept all sorts of nice plugins so we are not limited to just the
 standard Windows authentication. As a matter of fact you could replace
-large parts of they authentication system if you are supper paronoid.
+large parts of the authentication system if you are super paronoid.
 Think of lsass as the sentry for Windows. It talks to the SRM to make
-sure you are not doing anything you shouldnt be.
+sure you are not doing anything you shouldn't be.
 </p><p>
 <u>User interaction</u>
 </p><p>
@@ -256,7 +256,7 @@ of course be done via the authentication modules described above. Once
 the user
 </p><p>
 I wish I could attach the nice chart from Inside Windows NT so you
-could see the security subsystem. Its quite a piece of work and is
+could see the security subsystem. It's quite a piece of work and is
 quite a shame Windows security gets a bad name due to slack
 administrators.
 </p></quote>
@@ -282,11 +282,11 @@ actually get anything configured. When was the last time you saw ANY
 windows program installer that changes the file permissions in any way? 
 Last I checked, the standard installshield and wise template builders 
 didn't even have an option to do that! In other words, we should not 
-aspire to bring Window's security model into Linux. All the Windows 
+aspire to bring Windows' security model into Linux. All the Windows 
 security model did was cause every single user on the system to be an 
 administrator. 
 </p><p>
-At the moment, Wine is only aimed at single users installations. As long 
+At the moment, Wine is only aimed at single user installations. As long 
 as that is the case, each wine user is an "Administrator" over his own 
 fake-root wine installation. I don't see that changing.
 </p><p>
@@ -311,7 +311,7 @@ Windows apps into the Unix/Linux world, not to change Unix/Linux itself.
 </p></quote>
 
 <p>There's a lot of work to be done in this area, anyone interested 
-in examining the differences between Unix and Windows security models
+in examining the differences between the Unix and Windows security models
 might be interested in working on this.</p>
 
 </section>
@@ -375,7 +375,7 @@ the windows installer for winnt/2k</a></li>
 Ivan noted,
 <quote who="Ivan Leo Murray-Smith">
  Installing IE requires a windows license for the computer where you're
- installing it. This sort of restricts it's use with wine.
+ installing it. This sort of restricts its use with wine.
 </quote> But Jakob Eriksson pointed out that was not enforcable
 in every country and explained how it worked in Sweden:</p>
 <quote who="Jakob Eriksson"><p>
