@@ -2,6 +2,27 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since January 19, 2005:</p>
+
+ <ul>
+ <li>ADD - Christian Costa as worker to ddraw.dll, direct3D, dsurface & devenum.dll</li>
+ <li>ADD - WWN links to DirectX and Multimedia page's</li>
+ <li>Remove - Christian Costa as worker on dmusic dlls & d3dx8.dll</li>
+ <li>Remove - Lindows.com as worker on aRtS</li>
+ <li>Remove - Sylvain Petreolle as worker on ALSA</li> 
+ <li>Remove - Huw D M Davies as worker on glu32.dll</li>
+ <li>Remove - Ask WWN to write about a feature</li>
+ <li>Split the quartz dll into 2 parts: framework and filters</li>
+ <li>Group devenum.dll amstream.dll quartz.dll and qcap.dll together, in a Direct Show section</li>
+ <li>quartz framework now -&gt; 30%</li>
+ <li>quartz filters now -&gt; 10%</li>
+ <li>dmime.dll 10% -&gt; 20%</li>
+ <li>dmband.dll 25% -&gt; 30%</li>
+ <li>dmstyle.dll 25% -&gt; 30%</li>
+ <li>wined3d.dll 5% -&gt; 50%</li>
+ <li>d3d9.dll 20% -&gt; 50%</li>
+ <li>d3d8.dll 80% -&gt; 85%</li>
+
 <p>Changes since August 19, 2004:</p>
 
  <ul>

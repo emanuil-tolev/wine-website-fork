@@ -21,21 +21,22 @@
     <tr>
       <td>ALSA</td>
       <td class="adequate"><a href="http://www.alsa-project.org/documentation.php3">ALSA Users Documentation</a></td>
-      <td><a href="{$root}/site/?issue=121#ALSA%20Driver">#121</a>
+      <td><a href="{$root}/site/?issue=121#ALSA%20Driver">#121</a>,
 	  <a href="{$root}/site/?issue=196#ALSA%201.0%20Support">#196</a>,
-	  <a href="{$root}/site/?issue=200#Updated%20ALSA%20Support">#200</a></td>
+	  <a href="{$root}/site/?issue=200#Updated%20ALSA%20Support">#200</a>,
+          <a href="{$root}/site/?issue=243#Audio%20Driver%20Auto%20Detection">#243</a></td>
       <td class="pct75">75% complete<br>(xx-)</br>
       </td>
-      <td>Sylvain Petreolle,<br>Christian Costa</td>
+      <td>Christian Costa</td>
     </tr>
     <tr>
       <td>aRtS</td>
       <td class="adequate"><a href="http://space.twc.de/~stefan/kde/arts-mcop-doc/artsbuilder/">aRts - documentation</a></td>
-      <td><a href="{$root}/site/?issue=118#aRts%20Driver">#118</a>
+      <td><a href="{$root}/site/?issue=118#aRts%20Driver">#118</a>,
           <a href="{$root}/site/?issue=198#Winearts%20With%20KDE%203.2%20Beta">#198</td>
       <td class="pct60"><a href="{$root}/site/status_todo#MULTIMEDIA">60% complete</a><br>(x--)</br>
       </td>
-      <td>Chris Morgan,<br><a href="http://www.lindows.com/">Lindows.com</a></td>
+      <td>Chris Morgan</td>
     </tr>
     <tr>
       <td>AudioIO</td>
@@ -56,7 +57,7 @@
     <tr>
       <td>NAS</td>
       <td class="adequate"><a href="http://radscan.com/nas/nas-links.html">Network Audio System</td>
-      <td><a href="{$root}/site/?issue=131#News:%20Wine20020804,%20CrossOver%20Office%201.2,%20WineX%202.1,%20Xandros%20beta%203">#131</a></a></td>
+      <td><a href="{$root}/site/?issue=131#News:%20Wine20020804,%20CrossOver%20Office%201.2,%20WineX%202.1,%20Xandros%20beta%203">#131</a></td>
       <td class="pct20">20% complete<br>(x--)</br>
       </td>
       <td></td>
@@ -64,7 +65,8 @@
     <tr>
       <td>OSS</td>
       <td class="adequate"><a href="http://www.4front-tech.com/pguide/">OSS Programmer's guide</a></td>
-      <td><a href="http://kt.zork.net/wine/wn20011212_110.html#2">#110</a></td>
+      <td><a href="http://kt.zork.net/wine/wn20011212_110.html#2">#110</a>,
+          <a href="{$root}/site/"?issue=212#NetBSD%20Audio%20Driver>#212</a></td>
       <td class="pct95">95% complete<br>(xxx)</br>
       </td>
       <td>Eric Pouech</td>
@@ -182,9 +184,9 @@
     <tr>
       <td>winmm.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_functions.asp">Multimedia Functions</a></td>
-      <td>None</td>
+      <td><a href="{$root}/site/"?issue=244#WinMM%20Timer%20Events>#244</a></td>
       <td class="pct80">80% complete</td>
-      <td>Michael G&uuml;nnewig,<br>Eric Pouech</td>
+      <td>Eric Pouech,<br>Filip Navara</td>
     </tr>
     <td colspan="5"><strong>Miscellaneous Multimedia Components</strong></td>
     <tr>
@@ -200,7 +202,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/opengl/glufnc01_0e43.asp">MSDN: GLU Functions</a></td>
       <td>None</td>
       <td class="pct75">75% complete</td>
-      <td>Huw D M Davies</td>
+      <td></td>
     </tr>
     <td>glut32.dll</td>
       <td class="adequate"><a href="http://www.opengl.org/documentation/specs/glut/spec3/spec3.html">GLUT Programming Interface API</a></td>
@@ -215,7 +217,9 @@
           <a href="{$root}/site/?issue=8#Accelerated%20OpenGL%20&%20Wine">#8</a>,
           <a href="{$root}/site/?issue=44#OpenGL%20optimization">#44</a>,
           <a href="{$root}/site/?issue=45#OpenGL%20requirements">#45</a>,
-          <a href="{$root}/site/?issue=158#Problems%20with%20OpenGL">#158</a></td>
+          <a href="{$root}/site/?issue=158#Problems%20with%20OpenGL">#158</a>,
+          <a href="{$root}/site/?issue=235#Doom3%20&%20Wine">#235</a>,
+          <a href="{$root}/site/?issue=246#OpenGL%20Extension%20Viewer">#246</a></td>
       <td class="pct90">90% complete</td>
       <td>Lionel Ulmer</td>
     </tr>

@@ -25,35 +25,38 @@
           <a href="{$root}/site/?issue=170#Direct3D%20Status">#170</a>, 
           <a href="{$root}/site/?issue=174#Direct3D%20To%20Do%20List">#174</a>,
           <a href="{$root}/site/?issue=182#DirectX%20/%20Operation%20Flashpoint">#182</a></td>
-      <td class="pct80">80% complete</a></td>
+      <td class="pct85">85% complete</a></td>
       <td>Rapha&euml;l Junqueira,<br><a href="http://www.badcomp.co.uk/">Jason Edmeades</a>,<br>Christian Costa</td>
     </tr>
     <tr>
       <td>d3d9.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directx/graphics/reference/d3d/interfaces/interfaces.asp">MSDN: D3D9 Interfaces</a></td>
-      <td>None</td>
-      <td class="pct20">20% complete</td>
-      <td>Rapha&euml;l Junqueira,<br>Christian Costa<br>Jason Edmeades</td>
+      <td><a href="{$root}/site/?issue=240#DirectX%209%20Roadmap">#240</a>,
+          <a href="{$root}/site/?issue=244#Direct3D%209%20Work">#244</a>,
+          <a href="{$root}/site/?issue=253#Direct3D%209">#253</a>,
+          <a href="{$root}/site/?issue=257#Direct3D%20Update%20and%20Roadmap">#257</a></td>
+      <td class="pct50">50% complete</td>
+      <td>Jason Edmeades</td>
     </tr>
     <tr>
       <td>d3dx8.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_m/directx/ref/ns/microsoft.directx.direct3d/c/d3dx/d3dx.asp">MSDN: D3DX Class</a></td>
       <td>None</td>
-      <td class="pct5">5% complete</td>
-      <td>Rapha&euml;l Junqueira,<br>Christian Costa<br>Jason Edmeades</td>
+      <td class="pct10">10% complete</td>
+      <td></td>
     </tr>
     <tr>
       <td>wined3d.dll</td>
       <td class="adequate"></td>
       <td>None</td>
-      <td class="pct5">5% complete</td>
-      <td>Rapha&euml;l Junqueira,<br>Christian Costa<br>Jason Edmeades</td>
+      <td class="pct50">50% complete</td>
+      <td>Jason Edmeades</td>
     </tr>
     <td colspan="5"><strong>D3Dim</strong></td>
     <tr>
       <td>d3dim.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dnardir3d/html/d3dim.asp">MSDN: d3dim Framework</a></td>
-      <td>None</td>
+      <td><a href="{$root}/site/?issue=223#Direct3D%20Retained%20Mode">#223</a></td>
       <td class="pct5">5% complete</td>
       <td></td>
     </tr>
@@ -62,10 +65,11 @@
       <td>ddraw.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/graphics/hh/graphics/ddfncs_6fa062cb-6d77-4d19-8548-880c5bacabe9.xml.asp">MSDN: DDraw-Supplied Functions</a></td>
       <td><a href="{$root}/site/?issue=78#DirectDraw%20reorganization%20(cont'd)">#78</a>,
-          <a href="{$root}/site/?issue=79#DirectDraw%20reorganization%20(cont'd)">#79</a>
-          <a href="{$root}/site/?issue=185#Why%20Native%20DirectX%20Doesn't%20Work">#185</a></td>
+          <a href="{$root}/site/?issue=79#DirectDraw%20reorganization%20(cont'd)">#79</a>,
+          <a href="{$root}/site/?issue=185#Why%20Native%20DirectX%20Doesn't%20Work">#185</a>,
+          <a href="{$root}/site/?issue=233#S3%20Texture%20Compression">#233</a></td>
       <td class="pct85">85% complete</a></td>
-      <td>Lionel Ulmer,<br>Marcus Meissner,<br>Alex Pasadyn</td>
+      <td>Christian Costa,<br>Lionel Ulmer</td>
     </tr>
     <tr>
       <td>d3ddevice</td>
@@ -89,7 +93,7 @@
           <a href="{$root}/site/?issue=150#Direct3D%20Update">#150</a>,
           <a href="{$root}/site/?issue=153#D3D%20Status%20Page">#153</a></td>
       <td class="pct50">50% complete</td>
-      <td>Lionel Ulmer</td> 
+      <td>Christian Costa</td> 
     </tr> 
     <tr>
       <td>dpalette</td>
@@ -103,15 +107,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_m/directx/ref/ns/microsoft.directx.directdraw/c/surface/surface.asp">MSDN: Surface Class</a></td>
       <td>None</td>
       <td class="pct25">25% complete</td>
-      <td>Lionel Ulmer</td> 
-    </tr>
-    <td colspan="5"><strong>Devenum</strong></td>
-    <tr>
-      <td>devenum.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directx/htm/usingthesystemdeviceenumerator.asp">MSDN: Device Enumerator</a></td>
-      <td>None</td>
-      <td class="pct90">90% complete</td>
-      <td>Robert Shearman</td> 
+      <td>Christian Costa,<br>Lionel Ulmer</td> 
     </tr>
     <td colspan="5"><strong>DirectInput</strong></td>
     <tr>
@@ -127,57 +123,57 @@
       <td><a href="{$root}/site/?issue=116#DirectInput%20Key%20Mapping">#116</a>,
           <a href="{$root}/site/?issue=137#MS%20Write%20Support%20(con't)">#137</a></td>
       <td class="pct70">70% complete</a></td>
-      <td>Lionel Ulmer,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
+      <td>Christian Costa</td>
     </tr>
     <td colspan="5"><strong>DirectMusic</strong></td>
     <tr>
     <td>dmband.dll</td>
       <td class="adequate"></td>
       <td>None</td>
-      <td class="pct25">25% complete</td>
-      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
+      <td class="pct30">30% complete</td>
+      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira</td>
     </tr>
     <tr>
     <td>dmcompos.dll</td>
       <td class="adequate"></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
-      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
+      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira</td>
     </tr>
     <tr>
     <td>dmime.dll</td>
       <td class="adequate"></td>
       <td>None</td>
-      <td class="pct10">10% complete</td>
-      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
+      <td class="pct20">20% complete</td>
+      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira</td>
     </tr>
     <tr>
     <td>dmloader.dll</td>
       <td class="adequate"></td>
       <td>None</td>
       <td class="pct80">80% complete</td>
-      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
+      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira</td>
     </tr>
     <tr>
     <td>dmscript.dll</td>
       <td class="adequate"></td>
       <td>None</td>
       <td class="pct10">10% complete</td>
-      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
+      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira</td>
     </tr>
     <tr>
     <td>dmstyle.dll</td>
       <td class="adequate"></td>
       <td>None</td>
-      <td class="pct25">25% complete</td>
-      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
+      <td class="pct30">30% complete</td>
+      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira</td>
     </tr>
     <tr>
     <td>dmsynth.dll</td>
       <td class="adequate"></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
-      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
+      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira</td>
     </tr>
     <tr>
     <td>dmusic.dll</td>
@@ -185,14 +181,14 @@
       <td><a href="{$root}/site/?issue=175#DMusic%20Interfaces">#175</a>,
           <a href="{$root}/site/?issue=203#DirectMusic%20Update">#203</a></td>
       <td class="pct5">5% complete</td>
-      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
+      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira</td>
     </tr>
     <tr>
     <td>dmusic32.dll</td>
       <td class="adequate"></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
-      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
+      <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira</td>
     </tr>
     <tr>
     <td>dswave.dll</td>
@@ -201,7 +197,7 @@
       <td class="pct15">15% complete</td>
       <td>Rok Mandeljc</td>
     </tr>
-    <td colspan="5"><strong>Miscellaneous DirectX DLLs</strong></td>
+    <td colspan="5"><strong>DirectShow</strong></td>
     <tr>
       <td>amstream.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directX/htm/multimediastreaming.asp">MSDN: Multimedia Streaming </a></td>
@@ -209,6 +205,37 @@
       <td class="pct5">5% complete</a></td>
       <td>Christian Costa</td>
     </tr>
+      <td>devenum.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directx/htm/usingthesystemdeviceenumerator.asp">MSDN: Device Enumerator</a></td>
+      <td>None</td>
+      <td class="pct90">90% complete</td>
+      <td>Christian Costa,<br>Robert Shearman</td> 
+    </tr>
+    <tr>
+     <td>qcap.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directX/htm/wdmvideocapturefilter.asp">MSDN: Video Capture Filters</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</a></td>
+      <td></td>
+    </tr>
+    <tr> 
+      <td>quartz.dll (framework)</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx81_c/directx_cpp/htm/directshow.asp">MSDN: DShow</a></td>
+      <td><a href="{$root}/site/?issue=122#Quartz.dll%20Removal">#122</a>,
+          <a href="{$root}/site/?issue=177#DirectShow%20/%20Quartz%20Patches">#177</a>,
+	  <a href="{$root}/site/?issue=199#DirectShow%20/%20Quartz%20Status">#199</a>,
+          <a href="{$root}/site/?issue=237#Quartz%20Display%20Driver">#237</a></td>
+      <td class="pct30">30% complete</a></td>
+      <td>Christian Costa</td>
+    <tr> 
+      <td>quartz.dll (filters)</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directshow/htm/aboutdirectshowfilters.asp">MSDN: DShow Filters</a></td>
+      <td>None</td>
+      <td class="pct10">10% complete</a></td>
+      <td>Christian Costa</td>
+    </tr>
+    <td colspan="5"><strong>Miscellaneous DirectX DLLs</strong></td>
+    <tr>
     <td>d3dxof.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx81_c/directx_cpp/Graphics/Reference/CPP/XFile/Functions/DirectXFileCreate.asp">MSDN: DirectXFileCreate</a></td>
       <td>None</td>
@@ -231,7 +258,8 @@
     <tr>
       <td>dsound.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx8_vb/directx_vb/audio_using_4vjj.asp?frame=true">MSDN: DSound Devices</a></td>
-      <td><a href="{$root}/site/?issue=48#Merging%20DSound%20and%20WinMM%20drivers">#48</a></td>
+      <td><a href="{$root}/site/?issue=48#Merging%20DSound%20and%20WinMM%20drivers">#48</a>,
+          <a href="{$root}/site/?issue=235#DSound%20Mixer%20Speedup">#235</a></td>
       <td class="pct90">90% complete</a></td>
       <td>Francois Gouget</td>
     </tr>
@@ -241,22 +269,6 @@
       <td>None</td>
       <td class="pct85">85% complete</a></td>
       <td></td>
-    </tr>
-    <tr>
-     <td>qcap.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directX/htm/wdmvideocapturefilter.asp">MSDN: Video Capture Filter</a></td>
-      <td>None</td>
-      <td class="pct5">5% complete</a></td>
-      <td></td>
-    </tr>
-    <tr> 
-      <td>quartz.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx81_c/directx_cpp/htm/directshow.asp">MSDN: DShow</a></td>
-      <td><a href="{$root}/site/?issue=122#Quartz.dll%20Removal">#122</a>,
-          <a href="{$root}/site/?issue=177#DirectShow%20/%20Quartz%20Patches">#177</a>,
-	  <a href="{$root}/site/?issue=199#DirectShow%20/%20Quartz%20Status">#199</a></td>
-      <td class="pct30">30% complete</a></td>
-      <td>Robert Shearman,<br>Christian Costa</td>
     </tr>
   </table>
 </td>
