@@ -441,7 +441,8 @@
   it inside the spec file directly but it would be cleaner to have a separate crt0.o file;
   it's also needed if we want full msvcrt compatibility. We need at least a crt0.o to call 
   main(), and another .o providing the default main(). There may also be a need to handle 
-  msvcrt specially (i.e. link another .a in msvcrt mode).</i><br>
+  msvcrt specially (i.e. link another .a in msvcrt mode), so that we call exit() when
+  linked to msvcrt instead of calling ExitProcess() as we normally do.</i><br>
   From Dimi: <i>So, let's say we'll create a winecrt0-glibc.a and a winecrt0-msvcrt.a, 
   and in winegcc we assume that they are there, so we can just list the appropriate one
   as the last element on the linker command line.</i>
