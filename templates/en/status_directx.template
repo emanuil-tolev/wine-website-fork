@@ -56,9 +56,9 @@
     <tr>
       <td>d3d8.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx8_c/directx_cpp/graphics_iface_3ayb.asp">MSDN: Direct3D 8.0 Reference</a></td>
-      <td><a href="?issue=152#Direct%203D%20Status">#152</a>, 
-      <a href="?issue=170#Direct3D%20Status">#170</a>, 
-      <a href="?issue=174#Direct3D%20To%20Do%20List">#174</a></td>
+      <td><a href="{$root}/site/?issue=152#Direct%203D%20Status">#152</a>, 
+          <a href="{$root}/site/?issue=170#Direct3D%20Status">#170</a>, 
+          <a href="{$root}/site/?issue=174#Direct3D%20To%20Do%20List">#174</a></td>
       <td class="pct80">80% complete</a></td>
       <td>Rapha&euml;l Junqueira,<br><a href="http://www.badcomp.co.uk/">Jason Edmeades</a>,<br>Christian Costa</td>
     </tr>
@@ -95,8 +95,9 @@
     <tr>
       <td>ddraw.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/graphics/hh/graphics/ddfncs_66uf.asp">MSDN: DDraw Functions</a></td>
-      <td><a href="?issue=78#DirectDraw%20reorganization%20(cont'd)">#78</a>,
-      <a href="?issue=79#DirectDraw%20reorganization%20(cont'd)">#79</a></td>
+      <td><a href="{$root}/site/?issue=78#DirectDraw%20reorganization%20(cont'd)">#78</a>,
+          <a href="{$root}/site/?issue=79#DirectDraw%20reorganization%20(cont'd)">#79</a></td>
+          <a href="{$root}/site/?issue=185#Why%20Native%20DirectX%20Doesn't%20Work">#185</a></td>
       <td class="pct85">85% complete</a></td>
       <td>Lionel Ulmer,<br>Marcus Meissner,<br>Alex Pasadyn</td>
     </tr>
@@ -117,10 +118,10 @@
     <tr>
       <td>direct3d</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_m/directx/ref/ns/microsoft.directx.direct3d.asp">MSDN: DirectX Direct3D</a></td>
-      <td><a href="?issue=76#TransGaming">#76</a>,
-      <a href="?issue=135#Direct3D%208%20Support">#135</a>,
-      <a href="?issue=150#Direct3D%20Update">#150</a>,
-      <a href="?issue=153#D3D%20Status%20Page">#153</a></td>
+      <td><a href="{$root}/site/?issue=76#TransGaming">#76</a>,
+          <a href="{$root}/site/?issue=135#Direct3D%208%20Support">#135</a>,
+          <a href="{$root}/site/?issue=150#Direct3D%20Update">#150</a>,
+          <a href="{$root}/site/?issue=153#D3D%20Status%20Page">#153</a></td>
       <td class="pct50">50% complete</td>
       <td>Lionel Ulmer</td> 
     </tr> 
@@ -157,8 +158,8 @@
     <tr>
     <td>dinput.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx8_c/directx_cpp/input_ovintro_9u0k.asp">MSDN: DInput</a></td>
-      <td><a href="?issue=116#DirectInput%20Key%20Mapping">#116</a>,
-      <a href="?issue=137#MS%20Write%20Support%20(con't)">#137</a></td>
+      <td><a href="{$root}/site/?issue=116#DirectInput%20Key%20Mapping">#116</a>,
+          <a href="{$root}/site/?issue=137#MS%20Write%20Support%20(con't)">#137</a></td>
       <td class="pct70">70% complete</a></td>
       <td>Lionel Ulmer,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
     </tr>
@@ -236,7 +237,7 @@
     <tr>
     <td>dmusic.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directX/htm/directmusic.asp">MSDN: DMusic</a></td>
-      <td>None</td>
+      <td><a href="{$root}/site/?issue=175#DMusic%20Interfaces">#175</a></td>
       <td class="pct5">5% complete</td>
       <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
     </tr>
@@ -265,7 +266,7 @@
     <tr>
       <td>dsound.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx8_vb/directx_vb/audio_using_4vjj.asp?frame=true">MSDN: DSound Devices</a></td>
-      <td><a href="?issue=48#Merging%20DSound%20and%20WinMM%20drivers">#48</a></td>
+      <td><a href="{$root}/site/?issue=48#Merging%20DSound%20and%20WinMM%20drivers">#48</a></td>
       <td class="pct90">90% complete</a></td>
       <td>Rok Mandeljc</td>
     </tr>
@@ -286,7 +287,9 @@
     <tr> 
       <td>quartz.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx81_c/directx_cpp/htm/directshow.asp">MSDN: DShow</a></td>
-      <td><a href="?issue=122#Quartz.dll%20Removal">#122</a></td>
+      <td><a href="{$root}/site/?issue=122#Quartz.dll%20Removal">#122</a>,
+          <a href="{$root}/site/?issue=177#DirectShow%20/%20Quartz%20Patches">#177</a>,
+	  <a href="{$root}/site/?issue=199#DirectShow%20/%20Quartz%20Status">#199</a></td>
       <td class="pct25">25% complete</a></td>
       <td>Robert Shearman</td>
     </tr>

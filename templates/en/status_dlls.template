@@ -89,9 +89,9 @@
     <tr>
       <td>comctl32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/CommCtls/Common/Common.asp">MSDN: Common Controls</a></td>
-      <td><a href="?issue=46#Address%20space%20separation">#116</a>,
-      <a href="?issue=138#Listview%20Changes">#118</a>,
-      <a href="?issue=163#Error%20Requiring%2032/16%20Bit%20DLL%20Combinations">#163</a></td>
+      <td><a href="{$root}/site/?issue=46#Address%20space%20separation">#116</a>,
+          <a href="{$root}/site/?issue=138#Listview%20Changes">#118</a>,
+          <a href="{$root}/site/?issue=163#Error%20Requiring%2032/16%20Bit%20DLL%20Combinations">#163</a></td>
       <td class="pct95">95% complete</td>
       <td>Dimitrie O. Paun,<br>CodeWeavers</td>
     </tr>
@@ -105,7 +105,7 @@
     <tr>
       <td>crtdll.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_c_run.2d.time_libraries.asp">MSDN: C Run-Time Libraries</a></td>
-      <td><a href="http://www.winehq.org/news/?view=4#Crtdll%20Implementation">#4</a></td>
+      <td><a href="{$root}/site/?issue=4#Crtdll%20Implementation">#4</a></td>
       <td class="pct100">100% complete</td>
       <td>Jon Griffiths</td>
     </tr> 
@@ -126,7 +126,7 @@
     <tr>
       <td>gdi32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/wingdistart_9ezp.asp">MSDN: Windows GDI</a></td>
-      <td><a href="?issue=156#GDI%20Performance">#156</a></td>
+      <td><a href="{$root}/site/?issue=156#GDI%20Performance">#156</a></td>
       <td class="pct60">60% complete</td>
       <td>CodeWeavers</td>
     </tr>
@@ -236,6 +236,13 @@
       <td>Jon Griffiths</td>
     </tr>
     <tr>
+      <td>msvcrt40.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_c_run.2d.time_libraries.asp">MSDN: C Run-Time Libraries</a></td>
+      <td>None</td>
+      <td class="pct60">60% complete</td>
+      <td>Mike McCormack</td>
+    </tr>
+    <tr>
       <td>msvcrtd.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_c_run.2d.time_libraries.asp">MSDN: C Run-Time Libraries</a></td>
       <td>None</td>
@@ -259,8 +266,8 @@
     <tr>
       <td>ntdll.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winprog/winprog/functions_by_release.asp">MSDN: Functions by Release</a></td>
-      <td><a href="?issue=151#Separating%20NTDLL%20and%20Kernel32">#151</a>, 
-      <a href="?issue=159#X11Drv%20/%20NTDll%20Separation">#159</a></td>
+      <td><a href="{$root}/site/?issue=151#Separating%20NTDLL%20and%20Kernel32">#151</a>, 
+          <a href="{$root}/site/?issue=159#X11Drv%20/%20NTDll%20Separation">#159</a></td>
       <td class="pct40">40% complete</td>
       <td>Alexandre Julliard,<br>Eric Pouech</td>
     </tr>
@@ -268,8 +275,8 @@
       <td>odbc32.dll</td>
       <td class="adequate"><a href="http://www.winehq.org/Docs/wine-user/odbc.shtml">WineHQ ODBC Docs</a><br>
       <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vccore98/html/_core_odbc.asp">MSDN: ODBC</a></td>
-      <td><a href="?issue=115#ODBC%20and%20Wine">#115</a>,
-      <a href="?issue=167#Accessing%20ODBC%20Databases">#167</a></td>
+      <td><a href="{$root}/site/?issue=115#ODBC%20and%20Wine">#115</a>,
+          <a href="{$root}/site/?issue=167#Accessing%20ODBC%20Databases">#167</a></td>
       <td class="pct60">60% complete<br>(no Windows ODBC driver support, only UNIX)</td>
       <td>CodeWeavers</td>
     </tr>
@@ -277,8 +284,8 @@
       <td>ole32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/com/htm/comportal_3qn9.asp">MSDN: COM</a><br>
       <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olpraboutthismanual.asp">MSDN: OLE Reference</a></td>
-      <td><a href="?issue=109#MIDL%20and%20COM">#109</a>,
-      <a href="?issue=117#More%20COM%20Work">#117</a></td>
+      <td><a href="{$root}/site/?issue=109#MIDL%20and%20COM">#109</a>,
+          <a href="{$root}/site/?issue=117#More%20COM%20Work">#117</a></td>
       <td class="pct60">60% complete</td>
       <td>CodeWeavers,<br>Marcus Meissner</td>
     </tr>
@@ -292,8 +299,8 @@
     <tr>
       <td>oleaut32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olprcore_chapter20.asp">MSDN: OLE BD Core</a></td>
-      <td><a href="?issue=126#TransGaming%20Releasing%20Code">#126</a>,
-      <a href="?issue=170#Separating%2016/32%20Bit%20OLE%20Functions">#170</a></td>
+      <td><a href="{$root}/site/?issue=126#TransGaming%20Releasing%20Code">#126</a>,
+          <a href="{$root}/site/?issue=170#Separating%2016/32%20Bit%20OLE%20Functions">#170</a></td>
       <td class="pct80">80% complete</td>
       <td>Jon Griffiths,<br>Marcus Meissner,<br>CodeWeavers</td>
     </tr>
@@ -343,18 +350,18 @@
     <tr>
       <td>riched32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/indivcontrol.asp">MSDN: Rich Edit Controls</a></td>
-      <td><a href="?issue=127#MS Write Support">#127</a>,
-      <a href="?issue=137#MS Write Support (con't)">#137</td>
+      <td><a href="{$root}/site/?issue=127#MS%20Write%20Support">#127</a>,
+          <a href="{$root}/site/?issue=137#MS%20Write%20Support%20(con't)">#137</td>
       <td class="pct20">20% complete</td>
       <td></td>
     </tr>
     <tr>
       <td>rpcrt4.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/rpc/rpc/rpc_functions.asp">MSDN: RPC Functions</a><br><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcedcom/html/cerefComponentServicesCOMDCOM.asp">MSDN: DCOM Supported APIs</a></td>
-      <td><a href="?issue=138#Remote%20Procedure%20Call%20Patch">#138</a>,
-      <a href="?issue=155#RPC%20Data%20Marshalling">#155</a>,
-      <a href="?issue=156#RPC%20Data%20Marshalling%20(cont'd)">#156</a>,
-      <a href="?issue=170#RPC%20Documentation%20Update">#170</a></td>
+      <td><a href="{$root}/site/?issue=138#Remote%20Procedure%20Call%20Patch">#138</a>,
+          <a href="{$root}/site/?issue=155#RPC%20Data%20Marshalling">#155</a>,
+          <a href="{$root}/site/?issue=156#RPC%20Data%20Marshalling%20(cont'd)">#156</a>,
+          <a href="{$root}/site/?issue=170#RPC%20Documentation%20Update">#170</a></td>
       <td class="pct30">30% complete</td>
       <td>TransGaming,<br>Ove Kåven,<br>Greg Turner</td>
     </tr>
@@ -382,7 +389,7 @@
     <tr>
       <td>shell32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/shell/reference/functions/functions.asp">MSDN: Shell Functions</a></td>
-      <td><a href="?issue=175#Displaying%20Icons%20for%20Executables">#175</a></td>
+      <td><a href="{$root}/site/?issue=175#Displaying%20Icons%20for%20Executables">#175</a></td>
       <td class="pct80">80% complete</td>
       <td>CodeWeavers</td>
     </tr>
@@ -480,29 +487,29 @@
     <tr>
       <td>winaspi.dll</td>
       <td class="outdated"><a href="http://www.hochfeiler.it/alvise/WNASPI32.TXT">WNASPI32.INC</a></td>
-      <td><a href="?issue=33#SCSI%20support">#33</a></td>
+      <td><a href="{$root}/site/?issue=33#SCSI%20support">#33</a></td>
       <td class="pct85">85% complete</td>
       <td></td>
     </tr>
     <tr>
       <td>winedos.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/win9x/msdos_6rdx.asp">MSDN: DOS Extensions Reference</a></td>
-      <td><a href="?issue=123#SoundBlaster Emulation">#123</a>,
-      <a href="?issue=154#Executing%20Batch%20Files">#154</a></td>
+      <td><a href="{$root}/site/?issue=123#SoundBlaster%20Emulation">#123</a>,
+          <a href="{$root}/site/?issue=154#Executing%20Batch%20Files">#154</a></td>
       <td class="pct60"><a href="{$root}/site/status_todo#DOS">60% complete</a></td>
       <td>Jukka Heinonen</td>
     </tr>
     <tr>
       <td>wineps.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/prntspol_95id.asp">MSDN: Printing and Print Spooler Reference</a></td>
-      <td><a href="?issue=82#PS printer driver and fonts">#82</a></td>
+      <td><a href="{$root}/site/?issue=82#PS%20printer%20driver%20and%20fonts">#82</a></td>
       <td class="pct90"><a href="{$root}/site/status_todo#Printers_">90% complete</a></td>
       <td>Huw D M Davies</td>
     </tr>
     <tr>
       <td>wininet.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wininet/wininet/wininet_functions.asp">MSDN: Wininet Functions</a></td>
-      <td><a href="?issue=173#WinINet%20Work">#173</a></td>
+      <td><a href="{$root}/site/?issue=173#WinINet%20Work">#173</a></td>
       <td class="pct60"><a href="{$root}/site/status_todo#Native_Programs">60% complete</a></td>
       <td>Mike McCormack</td>
     </tr>
@@ -516,9 +523,9 @@
     <tr>
       <td>winsock.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcesdkr/html/wcesdkrwinsock_module.asp">MSDN: Winsock Functions</a></td>
-      <td><a href="?issue=8#Winsock%20&%2032%20bit">#8</a>,
-      <a href="?issue=9#Winsock%20(cont'd)">#9</a>,
-      <a href="?issue=53#Winsock%20status">#53</a></td>
+      <td><a href="{$root}/site/?issue=8#Winsock%20&%2032%20bit">#8</a>,
+          <a href="{$root}/site/?issue=9#Winsock%20(cont'd)">#9</a>,
+          <a href="{$root}/site/?issue=53#Winsock%20status">#53</a></td>
       <td class="pct95"><a href="{$root}/site/status_todo#Winsock">95% complete</a><br>
       </td>
       <td>Martin Wilck,<br>Juan Lang</td>
@@ -533,9 +540,9 @@
     <tr>
       <td>wintab32.dll</td>
       <td class="adequate"><a href="http://www.csl.sony.co.jp/projects/ar/restricted/wintabl.html">Wintab Interface Specification 1.1</a></td>
-      <td><a href="?issue=175#Wintab%20Status">#175</a>,
-      <a href="?issue=167#Wintab%20Status%20and%20Development">#167</a></td>
-      <td class="pct25">25% complete</td>
+      <td><a href="{$root}/site/?issue=167#Wintab%20Status%20and%20Development">#167</a>,
+          <a href="{$root}/site/?issue=175#Wintab%20Status">#175</a></td>
+      <td class="pct80">80% complete</td>
       <td>Aric Stewart</td>
     </tr>
     <tr>
@@ -548,18 +555,18 @@
     <tr>
       <td>wsock32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcemain4/html/_wcesdk_winsock_module.asp">MSDN: Winsock 2 Functions</a></td>
-      <td><a href="?issue=108#Winsock2">#108 (1)</a>,
-      <a href="?issue=108#Overlapped%20I/O">#108 (2)</a>,
-      <a href="?issue=121#Winsock2%20Patches">#121</a>,
-      <a href="?issue=161#Need%20New%20Winsock%20Maintainer">#161</a></td>
+      <td><a href="{$root}/site/?issue=108#Winsock2">#108 (1)</a>,
+          <a href="{$root}/site/?issue=108#Overlapped%20I/O">#108 (2)</a>,
+          <a href="{$root}/site/?issue=121#Winsock2%20Patches">#121</a>,
+          <a href="{$root}/site/?issue=161#Need%20New%20Winsock%20Maintainer">#161</a></td>
       <td class="pct80">80% complete</td>
       <td>Juan Lang</td>
     </tr>
     <tr>
       <td>x11drv</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/graphics/hh/graphics/dpyddi_8f1j.asp">MSDN: Display Drivers</a></td>
-      <td><a href="?issue=47#Feature: The X11 driver by Ove Kåven">#47</a>,
-      <a href="?issue=175#Workaround%20for%20Xvidmode%20Graphic%20Corruption">#175</a></td>
+      <td><a href="{$root}/site/?issue=47#Feature:%20The%20X11%20driver%20by%20Ove%20K%E5ven">#47</a>,
+          <a href="{$root}/site/?issue=175#Workaround%20for%20Xvidmode%20Graphic%20Corruption">#175</a></td>
       <td class="pct80"><a href="{$root}/site/status_todo#GDI">80% complete</a></td>
       <td>Dmitry Timoshkov</td>
     </tr>

@@ -24,6 +24,13 @@
 <li>Better support of BiDi - Arabic, Hebrew...</li>
 </ul>
 
+<h3><a name="Registry"></a>Registry contents<br></h3>
+
+<ul>
+<li>Implement DllRegisterServer for all COM components so that they can register the appropriate keys in the registry when wine is installed</li>
+<li>we also need to link that functionality into the wine install script</li>
+</ul>
+
 <h3><a name="FreeBSD"></a>FreeBSD<br></h3>
 
 <ul>
@@ -310,7 +317,6 @@ all audio architecture:
 
 ALSA multimedia driver:
     * Mixer Support 
-    * MiDi inn Support
     * Check for 1.0 correctness
 
 MCI (Media Control Interface) drivers

@@ -2,6 +2,33 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since January 14, 2004:</p>
+
+ <ul>
+ <li>ADD - msvcrt40.dll</li>
+ <li>ADD - ICCVID codec special thanks to <b>Dr. Tim Ferguson</b></li>
+ <li>ADD - WWN links to DirectX and Multimedia page's</li>
+ <li>ADD - Dimitrie O. Paun as worker to regedit</li>
+ <li>ADD - Robert Lunnon as worker on audioio</li>
+ <li>ADD - Marcus Meissner as worker to Wine Launcher</li>
+ <li>ADD - Wine gcc wrapper(winegcc)
+ <li>ADD - Wine IDL compiler (widl)</li>
+ <li>ADD - Wine DLL dump utility (winedump)</li>
+ <li>ADD - Wine API checker (winapi_check)</li>
+ <li>ADD - Wine menu builder (winemenubuilder)</li>
+ <li>Remove - Individual control status</li>
+ <li>Remove - Rolling cvs testing</li>
+ <li>Remove - MiDi inn Support from ALSA ToDo</li>
+ <li>Remove - Mike McCormack as worker on I/O port access</li>
+ <li>Remove - Eric Pouech,Andreas Mohr,Ove K&aring;ven as workers on Wine Launcher</li>
+ <li>fix bullets on Multimedia page</li>
+ <li>fix WWN article links</li>
+ <li>wintab32.dll 25% -&gt; 80%</li>
+ <li>BiDi 20% -&gt; 50%</li>
+ <li>aRtS 25% -&gt; 60%</li>
+ <li>JACK 25% -&gt; 60%</li>
+ <br>
+
 <p>Changes since January 06, 2004:</p>
 
  <ul>

@@ -56,40 +56,43 @@
     <tr>
       <td>ALSA</td>
       <td class="adequate"><a href="http://www.alsa-project.org/documentation.php3">ALSA Users Documentation</a></td>
-      <td><a href="?issue=121#ALSA%20Driver">#121</a></td>
-      <td class="pct75">75% complete<br>(x--) (basic support for MIDI)<br>
+      <td><a href="{$root}/site/?issue=121#ALSA%20Driver">#121</a></td>
+	  <a href="{$root}/site/?issue=196#ALSA%201.0%20Support">#196</a>,
+	  <a href="{$root}/site/?issue=200#Updated%20ALSA%20Support">#200</a></td>
+      <td class="pct75">75% complete<br>(xx-)</br>
       </td>
       <td>Sylvain Petreolle,<br>Christian Costa</td>
     </tr>
     <tr>
       <td>aRtS</td>
       <td class="adequate"><a href="http://space.twc.de/~stefan/kde/arts-mcop-doc/artsbuilder/">aRts - documentation</a></td>
-      <td><a href="?issue=118#aRts%20Driver">#118</a></td>
-      <td class="pct25"><a href="#Sound_Drivers">25% complete</a><br>(x--)<br>
+      <td><a href="{$root}/site/?issue=118#aRts%20Driver">#118</a></td>
+          <a href="{$root}/site/?issue=198#Winearts%20With%20KDE%203.2%20Beta">#198</td>
+      <td class="pct60"><a href="{$root}/site/status_todo#MULTIMEDIA">60% complete</a><br>(x--)</br>
       </td>
       <td>Chris Morgan,<br><a href="http://www.lindows.com/">Lindows.com</a></td>
     </tr>
     <tr>
       <td>AudioIO</td>
       <td class="adequate"><a href="http://audacity.sourceforge.net/dox/html/classAudioIO.html">AudioIO Class Reference</a></td>
-      <td><a href="?issue=131#News:%20Wine20020804,%20CrossOver%20Office%201.2,%20WineX%202.1,%20Xandros%20beta%203">#131</a></td>
-      <td class="pct20">20% complete<br>(x--)<br>
+      <td><a href="{$root}/site/?issue=131#News:%20Wine20020804,%20CrossOver%20Office%201.2,%20WineX%202.1,%20Xandros%20beta%203">#131</a></td>
+      <td class="pct20">20% complete<br>(x--)</br>
       </td>
-      <td></td>
+      <td>Robert Lunnon</td>
     </tr>
     <tr>
       <td>JACK</td>
       <td class="adequate"><a href="http://jackit.sourceforge.net/docs/">jack docs</a></td>
-      <td><a href="?issue=139#Jack%20Audio%20Driver">#139</a></td>
-      <td class="pct25">25% complete</a><br>(x--)<br>
+      <td><a href="{$root}/site/?issue=139#Jack%20Audio%20Driver">#139</a></td>
+      <td class="pct60">60% complete</a><br>(x--)</br>
       </td>
       <td>Chris Morgan</td>
     </tr>
     <tr>
       <td>NAS</td>
       <td class="adequate"><a href="http://radscan.com/nas/nas-links.html">Network Audio System</td>
-      <td><a href="?issue=131#News:%20Wine20020804,%20CrossOver%20Office%201.2,%20WineX%202.1,%20Xandros%20beta%203">#131</a></a></td>
-      <td class="pct20">20% complete<br>(x--)<br>
+      <td><a href="{$root}/site/?issue=131#News:%20Wine20020804,%20CrossOver%20Office%201.2,%20WineX%202.1,%20Xandros%20beta%203">#131</a></a></td>
+      <td class="pct20">20% complete<br>(x--)</br>
       </td>
       <td></td>
     </tr>
@@ -97,7 +100,7 @@
       <td>OSS</td>
       <td class="adequate"><a href="http://www.4front-tech.com/pguide/">OSS Programmer's guide</a></td>
       <td><a href="http://kt.zork.net/wine/wn20011212_110.html#2">#110</a></td>
-      <td class="pct95">95% complete<br>(xxx)<br>
+      <td class="pct95">95% complete<br>(xxx)</br>
       </td>
       <td>Eric Pouech</td>
     </tr> 
@@ -175,6 +178,13 @@
       <td class="pct100">100% complete</td>
       <td>Michael G&uuml;nnewig</td>
     </tr>
+    </tr>
+    <td>ICCVID</td>
+      <td class="adequate"><a href="http://www.csse.monash.edu.au/~timf/videocodec/cinepak.txt">(CVID) stream format for AVI and QT</a></td>
+      <td>None</td>
+      <td class="pct100">100% complete</td>
+      <td>Mike McCormack</td>
+    </tr>
     <td colspan="5"><strong>Multimedia DLL's</strong></td>
     <tr>
       <td>avicap32.dll</td>
@@ -194,7 +204,7 @@
       <td>msvideo.dll/msvfw32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_functions.asp">Multimedia Functions</a></td>
       <td>None</td>
-      <td class="pct75"><a href="{$root}/site/status_todo#Video">75% complete</td>
+      <td class="pct75"><a href="{$root}/site/status_todo#MULTIMEDIA">75% complete</td>
       <td>Michael G&uuml;nnewig,<br>Dmitry Timoshkov</td>
     </tr>
     <tr>
@@ -229,11 +239,11 @@
     <tr>
       <td>opengl32.dll</td>
       <td class="adequate"><a href="http://www.opengl.org/documentation/index.html">OpenGL Documentation</a></td>
-      <td><a href="?issue=2#Some%20musing%20about%20OpenGL%20support">#2</a>,
-      <a href="?issue=8#Accelerated%20OpenGL%20&%20Wine">#8</a>,
-      <a href="?issue=44#OpenGL%20optimization">#44</a>,
-      <a href="?issue=45#OpenGL%20requirements">#45</a>,
-      <a href="?issue=158#Problems%20with%20OpenGL">#158</a></td>
+      <td><a href="{$root}/site/?issue=2#Some%20musing%20about%20OpenGL%20support">#2</a>,
+          <a href="{$root}/site/?issue=8#Accelerated%20OpenGL%20&%20Wine">#8</a>,
+          <a href="{$root}/site/?issue=44#OpenGL%20optimization">#44</a>,
+          <a href="{$root}/site/?issue=45#OpenGL%20requirements">#45</a>,
+          <a href="{$root}/site/?issue=158#Problems%20with%20OpenGL">#158</a></td>
       <td class="pct90">90% complete</td>
       <td>Lionel Ulmer</td>
     </tr>
