@@ -63,16 +63,21 @@ To check out the entire Wine source tree
 
  <table width="300" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
- cvs -z 3 checkout wine
+ cvs -z 0 checkout wine
  </span>
  </td></tr>
  </table>
 
-or if you just want a subtree, or individual file, you can do that too:
+If you work over a slow link, you may want to compress the traffic
+with -z3. However, there are known bugs in CVS with this compressed
+communication mode, make sure you use cvs version 1.11.5 or later.
+<br> 
+
+Or if you just want a subtree, or individual file, you can do that too:
 
  <table width="500" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
- cvs -z 3 checkout wine/ANNOUNCE
+ cvs -z 0 checkout wine/ANNOUNCE
  </span>
  </td></tr>
  </table>
@@ -249,7 +254,7 @@ Some options are so useful you may want them in your <code>~/.cvsrc</code>
 
  <table width="300" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
-  cvs -z 3<br>
+  cvs -z 0<br>
   update -PAd<br>
   diff -u
  </span>
