@@ -225,7 +225,7 @@ interested.
 <quote who="Eric Pouech">
  when run with gdb, the PE symbol lookup doesn't work, gdb 
  doesn't know anything about PE. You need to use winedbg without the gdb 
- proxy. But you will loose the GUI debugging part (a la DDD, or kdbg...).
+ proxy. But you will lose the GUI debugging part (a la DDD, or kdbg...).
 </quote></p>
 
 <p>Shachar really needed a graphical debugging tool and 

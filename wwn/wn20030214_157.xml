@@ -200,7 +200,7 @@ this would grab the PRIMARY selection) and then hit control-c (Under X
 this would grab the CLIPBOARD selection). 
 </p><p>
 In think we should always be grabbing both PRIMARY and CLIPBOARD and
-releasing them when we loose either (ClearAllSelections=1). This seemed
+releasing them when we lose either (ClearAllSelections=1). This seemed
 to be the least confusing for many users as well. 
 </p><p>
 I'm in the process of finishing a large clipboard patch for CodeWeavers

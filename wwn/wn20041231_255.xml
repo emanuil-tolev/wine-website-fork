@@ -68,7 +68,7 @@ Its main goal is to watch fireworks. It also serves to inform you of what's goin
 <p>Some reviews of Xandros Desktop 3 Deluxe have come out this week.
 Xandros includes CrossOver Office and usually gets high marks for
 the integration it has with the rest of the desktop.  Once again,
-reviewers seem impressed with CodeWeaver's work.
+reviewers seem impressed with CodeWeavers' work.
 <a href="http://madpenguin.org/cms/?m=show&amp;id=3145&amp;page=2">Mad
 Penguin's review</a> thought CrossOver Office 4 showed good improvement
 over earlier versions.   
@@ -397,7 +397,7 @@ Comments/suggestions/whatever highly welcome.
 to test out the library he wrote to implement the CryptoAPI:</p>
 <quote who="Michael Jung"><p>
 In order to test rsaenh.dll, I'm looking for software, which applies the 
-Microsoft Crypto-API. Any suggestions? It would be ideal, if the source is 
+Microsoft Crypto-API. Any suggestions? It would be ideal if the source is 
 available.</p></quote>
 
 <p>Jesse Allen replied first,
@@ -421,11 +421,11 @@ available.</p></quote>
  I'm pretty sure Steam does.
 </p><p>
  And, coincidentally, Steam happens to be broken at the moment, although
- it does work in Crossover.
+ it does work in CrossOver.
 </p><p>
  Also, I think the open source eMule uses that DLL a bit, IIRC to
  generate a crypt key for each userid.  Previous hacks to get eMule
- working in Wine involved generating the key in a seperate program and
+ working in Wine involved generating the key in a separate program and
  then merging it in - there's an entire thread about it in the eMule
  forums.
 </p></quote>
@@ -444,7 +444,7 @@ available.</p></quote>
  After applying, include/heap.h can be removed from cvs.  
 </quote>  His changelog included this line,
 <quote who="Jon Griffiths">
- Remove heap.h, and simplyify code that used HEAP_strdupWtoA.
+ Remove heap.h, and simplify code that used HEAP_strdupWtoA.
 </quote></p>
 
 <p>Dimi Paun thought it obscured a different problem involving

@@ -357,7 +357,7 @@ things in press releases like, "WRS, an acknowledged Wine contributor,
 <p>Anyone want an optimization project?  Dmitry Timoshkov
 uncovered something that should be looked at:</p>
 <quote who="Dmitry Timoshkov"><p>
-While debugging one of applications I'm working on I noticed a lot
+While debugging one of the applications I'm working on I noticed a lot
 of GetPrivateProfileString calls with the same file name but in
 different case causes profile code to open and parse system.ini
 again. I sent a patch which helps to find a cached file in that

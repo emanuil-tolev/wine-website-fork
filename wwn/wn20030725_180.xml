@@ -171,7 +171,7 @@ tools for generating GUIDs/UUIDs. (if we are providing an IDL compiler and
 other such OLE-esque things, having a GUID/UUID generator is probably a 
 good thing to have, mainly it is just a stub around a call to CoCreateGUID</li>
 <li>write a clone of rebase.exe, a win32 PE image rebasing tool. Probobly not 
-useful to WINE but might be helpfull for ReactOS development, don't know.</li>
+useful to WINE but might be helpful for ReactOS development, don't know.</li>
 <li>writing a clone of the cards.dll used by the windows card games. Only 
 problem here is that I would need to find a suitably licenced set of card 
 images since I don't have the skills to draw them myself :)</li>

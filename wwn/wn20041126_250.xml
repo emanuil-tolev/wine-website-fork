@@ -434,7 +434,7 @@ required for building the winenas audio driver.
 Mike Hearn thought it would be nice to change the way the Debian
 package was arranged,
 <quote who="Mike Hearn">
-Cool! While you're at it could you please combine them altogether so the
+Cool! While you're at it could you please combine them all together so the
 packaging matches the upstream sources? Last time I checked the Debian
 packages were split into tons of little packages which is wrong and led to
 strange breakages. Just one package with everything installed by "make
@@ -645,8 +645,8 @@ There are some pros and cons to all of them:
 <li> Well, basically, we have to make an extra api :-), so there are more
 functions exported. Probably the existing and new functions will need to
 call each other, so this means an extra level of indirection.</li>
-<li> Kinda ugly hacking, though we don't loose win32 compatibility</li>
-<li> Nice, but we loose strict win32 compatibility, since there will be a
+<li> Kinda ugly hacking, though we don't lose win32 compatibility</li>
+<li> Nice, but we lose strict win32 compatibility, since there will be a
 magic flag that doesn't exist in win32.</li></ol></p></quote>
 
 <p>Mike suggested the 3rd approach,
