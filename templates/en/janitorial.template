@@ -425,6 +425,11 @@
   generate a dependency tree of our headers with makedep and compare
   that with one done with the Windows headers; the goal is to make them
   identical.</i>
+  <ul>
+    <li>workers: <a href="mailto:julliard@winehq.com">Alexandre Julliard</a>.
+    <li>status: <span class=done>patches committed.</span>
+    <li>updated: Sep 9, 2003
+  </ul>
 
   <h3>Compile Wine with other headers</h3>
   We have at least two other Win32 headers available: MSVC, and MinGW (w32api).
