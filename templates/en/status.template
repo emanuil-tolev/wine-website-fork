@@ -36,12 +36,40 @@
 -->
 </style>
 
-   <table width="300" align=right hspace=20 vspace=10 class=black>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="100%">
+
+    <h1>Wine Status</h1>
+
+    <p>Last update: Jan 27, 2003.<br>
+      If you would like the WWN to write a feature about some particular things in these
+      tables, just <a href="mailto:wwn@winehq.com">mail us</a>.
+    </p>
+    
+    <div align=center>
+    <table width="90%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+      <td bgcolor="#efefef"><strong>Disclaimer</strong>
+    <br>
+      Percentages shown are not exact measures of the current state of a component,
+      only estimates done by the Wine Weekly News. A component marked as "100% complete"
+      does not mean that the given component is perfect or bug-free, only that
+      no further development work is expected to be necessary for the component
+      to work properly in any expected situation.
+      </td>
+    </tr>
+    </table>
+    </div>
+
+</td>
+<td>
+
+   <table width="300" border=0 vspace=10 hspace=10 class=black>
    <tr class=black><td>
        <p class=small><b class=inverse>Wine Status Menu</b></p>
    </td></tr>
    <tr class=white><td>
-
         <dl>
             <dt><a href="?page=status_wine"><b>Core Status</b></a></dt>
             <dd>
@@ -67,43 +95,13 @@
             <dd>
                To get a feeling about development progress, please have a look the ChangeLog.
             </dd>
-
-
         </dl>
-
    </td></tr>
    </table>
 
-<h1>Wine Status</h1>
-
-
-<p>Last update: Jan 27, 2003.<br>
-  If you would like the WWN to write a feature about some particular things in these
-  tables, just <a href="mailto:wwn@winehq.com">mail us</a>.
-</p>
-
-<div align=center>
-<table width="90%" border="0" cellspacing="0" cellpadding="2">
-<tr>
-  <td bgcolor="#efefef"><strong>Disclaimer</strong>
-<br>
-  Percentages shown are not exact measures of the current state of a component,
-  only estimates done by the Wine Weekly News. A component marked as "100% complete"
-  does not mean that the given component is perfect or bug-free, only that
-  no further development work is expected to be necessary for the component
-  to work properly in any expected situation.
-  </td>
+</td>
 </tr>
 </table>
-</div>
-
-<p><!--
-These are the new colors.
-Uncomment the table to see a complete overview.
-If you want to update this list with color coding, copy a percentage from here:
-In-betweens are of course allowed if you need it. Make a new style entry and
-put a copy in the table.
--->
 
 <p>&nbsp;</p>
 
