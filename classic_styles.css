@@ -10,9 +10,9 @@ A:active	{ color: #FF0000; }
 A.hidden	{ text-decoration: none; color: #000000; }
 
 /* feneral fonts and sizes */
-OL,UL,P		{ font-family: Serif; }
-TD,TR,TH	{ font-family: Serif; }
-INPUT		{ font-family: Serif; }
+OL,UL,P		{ font-family: Sans-Serif; }
+TD,TR,TH	{ font-family: Sans-Serif; }
+INPUT		{ font-family: Sans-Serif; }
 PRE         { font-family: Fixed; }
 
 /* WWN Colors */
@@ -58,9 +58,9 @@ PRE         { font-family: Fixed; }
 .big		{ font-size: 14pt; }
 
 /* Generic Buttons */
-.button		 { background-color: #6b86bb; color: #ffffff; font-family: Serif; font-size: 10pt;
+.button		 { background-color: #6b86bb; color: #ffffff; font-family: Sans-Serif; font-size: 10pt;
                padding: 0; }
-.searchInput { background-color: #E0E0E0; color: #666666; font-family: Serif; font-size: 10pt;
+.searchInput { background-color: #E0E0E0; color: #666666; font-family: Sans-Serif; font-size: 10pt;
                padding: 0; }
 				  
 /* Note Blip */
