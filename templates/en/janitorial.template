@@ -432,6 +432,25 @@
     <li>updated: Aug 30, 2003
   </ul>
 
+  <h3><a name="crt0"></a>Make winegcc link automatically to a main() or a WinMain()</h3>
+  From Alexandre: <i>The easiest is with some sort of crt0 static library that provides 
+  main() if it's missing; you have a main() that basically calls WinMain(), compiled 
+  inside a .a library. At link time if you have a main() already the linker doesn't use 
+  the .a, otherwise it uses it. crt0 is the default C startup code, currently we generate 
+  it inside the spec file directly but it would be cleaner to have a separate crt0.o file;
+  it's also needed if we want full msvcrt compatibility. We need at least a crt0.o to call 
+  main(), and another .o providing the default main(). There may also be a need to handle 
+  msvcrt specially (i.e. link another .a in msvcrt mode).</i><br>
+  From Dimi: <i>So, let's say we'll create a winecrt0-glibc.a and a winecrt0-msvcrt.a, 
+  and in winegcc we assume that they are there, so we can just list the appropriate one
+  as the last element on the linker command line.</i>
+  <ul>
+    <li>workers: wanted
+    <li>status: <span class=todo>TODO</span>.
+    <li>updated: Aug 7, 2004
+  </ul>
+
+
   <h3><a name=tests></a>Fix the conformance tests so that they pass on Windows</h3>
   Entry submitted by <a href="mailto:fgouget@free.fr">Francois Gouget</a>.
 
