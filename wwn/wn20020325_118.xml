@@ -883,17 +883,17 @@ Ok, those are my thoughts.
  a few tunes well'.</quote>
 
 <p />As far as applications go, Francois Gouget mentioned that the Wine
-<a href="http://wine.codeweavers.com/appdb/">application database</a> allowed
+<a href="http://appdb.winehq.org/">application database</a> allowed
 people to vote for what applications they wanted to work the most:
 <quote who="Francois Gouget"><p />
 <ul>
  <li> You can see the applications sorted by votes:
-   <a href="http://appdb.codeweavers.com/votestats.php">
+   <a href="http://appdb.winehq.org/votestats.php">
    http://appdb.codeweavers.com/votestats.php</a></li>
 
  <li> And the instructions about how to vote are here.
    You have a total of 3 votes.
-   <a href="http://appdb.codeweavers.com/help/?topic=voting">
+   <a href="http://appdb.winehq.org/help/?topic=voting">
    http://appdb.codeweavers.com/help/?topic=voting</a></li>
 </ul>
 <p />
@@ -913,7 +913,7 @@ that bug's page.</li>
 
  <li> Use the following query to get a sorted list of the bugs by number of
 votes: [
-<a href="http://wine.codeweavers.com/bugzilla/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&votes=1&order=bugs.votes%20desc%2C%20bugs.creation_ts%20desc%2C%20bugs.bug_id">
+<a href="http://bugs.winehq.org/buglist.cgi">
 LINK </a> ] </li>
 </ul></quote>
 
@@ -1198,11 +1198,14 @@ Well, that's part of the unfinished items. Currently you have to:
  <li /> get the whole Wine tree to Windows 
  <li /> tweak programs/winetest/Makefile.win32 to adapt to the directory where 
         you have perl installed. 
-        Typically just replace <code>PERLDIR = 
-		c:\perl\5.6.0\lib\MSWin32-x86\CORE XSUBPPDIR = 
-        c:\perl\5.6.0\lib\ExtUtils with PERLDIR = 
-		c:\perl\5.6.1\lib\MSWin32-x86\CORE XSUBPPDIR =
-        c:\perl\5.6.1\lib\ExtUtils</code>
+        Typically just replace
+        <code>
+        PERLDIR = 
+		c:\perl\ 5.6.0\lib\MSWin32-x86\CORE XSUBPPDIR = 
+        c:\perl\ 5.6.0\lib\ExtUtils with PERLDIR = 
+		c:\perl\ 5.6.1\lib\MSWin32-x86\CORE XSUBPPDIR =
+        c:\perl\ 5.6.1\lib\ExtUtils
+        </code>
  <li /> run tests manually by invoking programs/winetest/runtests with the 
         right options. 
 </ul><p />
