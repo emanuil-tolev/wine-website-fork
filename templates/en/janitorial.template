@@ -354,6 +354,17 @@
     <li>updated: Jan 27, 2003
   </ul>
 
+  <h3>Fix HeapReAlloc() calls</h3>
+  From Eric: <i>there's lot of code which relies on HeapReAlloc would allocate a block 
+  if the block to reallocate is NULL (as realloc does in stdlib);
+  this is not the case in windows, and we should fix it (and first, fix 
+  all the wine code relying on this)</i>
+  <ul>
+    <li>workers: wanted
+    <li>status: <span class=todo>TODO</span>
+    <li>updated: Sep 25, 2003
+  </ul>
+
   <h3>Include file cleanup</h3>
   That is, no more Wine-specific headers in <tt>include/</tt>. This is tightly
   related to the <b>DLL Separation</b> task, listed above. There are 50 Wine-only
