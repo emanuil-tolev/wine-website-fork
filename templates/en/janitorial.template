@@ -77,7 +77,7 @@
     <li class=committed>dlls/commdlg/printdlg.c: comdlg32: PrintDlgW: illegal call to GetWindowLongA
     <li>dlls/ddraw/main.c: ddraw: DirectDrawEnumerateExW: illegal call to DirectDrawEnumerateExA
     <li class=committed>dlls/gdi/enhmfdrv/init.c: gdi32: CreateEnhMetaFileW: illegal call to CreateDCA
-    <li>dlls/gdi/mfdrv/init.c: gdi32: CreateMetaFileW: illegal call to CreateMetaFileA
+    <li class=committed>dlls/gdi/mfdrv/init.c: gdi32: CreateMetaFileW: illegal call to CreateMetaFileA
     <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to HEAP_strdupWtoA
     <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to StartDocA
     <li class=committed>dlls/imm32/imm.c: imm32: ImmGetCompositionStringW: illegal call to GetVersionExA
@@ -118,15 +118,15 @@
     <li>dlls/shlwapi/string.c: shlwapi: StrRetToStrW: illegal call to SHStrDupA
     <li>dlls/version/info.c: version: GetFileVersionInfoSizeW: illegal call to GetFileVersionInfoSizeA
     <li>dlls/version/install.c: version: VerInstallFileW: illegal call to VerInstallFileA
-    <li>dlls/wininet/ftp.c: wininet: FtpCreateDirectoryW: illegal call to FtpCreateDirectoryA
-    <li>dlls/wininet/ftp.c: wininet: FtpSetCurrentDirectoryW: illegal call to FtpSetCurrentDirectoryA
-    <li>dlls/wininet/http.c: wininet: HttpOpenRequestW: illegal call to HttpOpenRequestA
-    <li>dlls/wininet/http.c: wininet: HttpQueryInfoW: illegal call to HttpQueryInfoA
-    <li>dlls/wininet/http.c: wininet: HttpSendRequestW: illegal call to HttpSendRequestA
-    <li>dlls/wininet/internet.c: wininet: InternetCheckConnectionW: illegal call to InternetCheckConnectionA
-    <li>dlls/wininet/internet.c: wininet: InternetConnectW: illegal call to InternetConnectA
-    <li>dlls/wininet/internet.c: wininet: InternetOpenUrlW: illegal call to InternetOpenUrlA
-    <li>dlls/wininet/internet.c: wininet: InternetOpenW: illegal call to InternetOpenA
+    <li class=committed>dlls/wininet/ftp.c: wininet: FtpCreateDirectoryW: illegal call to FtpCreateDirectoryA
+    <li class=committed>dlls/wininet/ftp.c: wininet: FtpSetCurrentDirectoryW: illegal call to FtpSetCurrentDirectoryA
+    <li class=committed>dlls/wininet/http.c: wininet: HttpOpenRequestW: illegal call to HttpOpenRequestA
+    <li class=committed>dlls/wininet/http.c: wininet: HttpQueryInfoW: illegal call to HttpQueryInfoA
+    <li class=committed>dlls/wininet/http.c: wininet: HttpSendRequestW: illegal call to HttpSendRequestA
+    <li class=committed>dlls/wininet/internet.c: wininet: InternetCheckConnectionW: illegal call to InternetCheckConnectionA
+    <li class=committed>dlls/wininet/internet.c: wininet: InternetConnectW: illegal call to InternetConnectA
+    <li class=committed>dlls/wininet/internet.c: wininet: InternetOpenUrlW: illegal call to InternetOpenUrlA
+    <li class=committed>dlls/wininet/internet.c: wininet: InternetOpenW: illegal call to InternetOpenA
     <li class=committed>dlls/winmm/driver.c: winmm: OpenDriverW: illegal call to HEAP_strdupWtoA
     <li>dlls/winmm/driver.c: winmm: OpenDriverW: illegal call to OpenDriverA
     <li>dlls/winmm/joystick.c: winmm: joyGetDevCapsW: illegal call to joyGetDevCapsA
@@ -210,10 +210,11 @@
 		 <a href="mailto:pouech-eric@wanadoo.fr">Eric Pouech</a>,
 		 <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>,
 		 <a href="mailto:burner1@hotmail.com">Justin Chevrier</a>,
-		 <a href="mailto:ulrich@codeweavers.com">Ulrich Czekalla</a>.
+		 <a href="mailto:ulrich@codeweavers.com">Ulrich Czekalla</a>,
+		 <a href="mailto:mike@codeweavers.com">Mike McCormack</a>.
 
     <li>status: <span class=inprogress>Over half done.</span>
-    <li>updated: Mar 23, 2004
+    <li>updated: Mar 30, 2004
   </ul>
 
   <h2>DLL separation</h2>
