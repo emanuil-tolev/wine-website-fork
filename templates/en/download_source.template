@@ -3,12 +3,12 @@
 <h1>Wine Source Downloads from Tarball</h1>
 
 <p>
-    You can get Wine Source tree, diffs, and docs from each release.
-    <br>Hosted by <a href="http://www.ibiblio.org">Ibiblio.org</a><br>
+    You can get Wine Source tree and docs from each release.
+    <br>Hosted by <a href="http://www.sourceforge.net">Sourceforge.net</a><br>
 </p>
 
 <blockquote>
-  <a href="http://www.ibiblio.org/pub/Linux/ALPHA/wine/development/" target="_blank"><img
+  <a href="http://sourceforge.net/project/showfiles.php?group_id=6241" target="_blank"><img
   src="{$root}/images/download_wine.gif" border=1 width=88 height=31
   alt="Download Wine"><br><span
   class="small">Download Source</span></a>
@@ -32,9 +32,9 @@
 </p>
 
 <p>
-  <b>Note: </b> You can also download via
-  <a href="ftp://ftp.ibiblio.org/pub/Linux/ALPHA/wine/development/" target="_blank">FTP</a>
-  or <a href="{$root}/site/cvs">CVS</a>.
+  <b>Note: </b> You can also download the Wine Source tree, diffs, and docs via
+  <a href="ftp://ftp.ibiblio.org/pub/Linux/ALPHA/wine/development/" target="_blank">FTP,</a>
+  or you can get the current source code using <a href="{$root}/site/cvs">CVS</a>.
 </p>
 
 <p>The following mirrors are also available:
