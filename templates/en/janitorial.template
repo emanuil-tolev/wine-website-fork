@@ -102,26 +102,22 @@
   The ASCII to Unicode conversion is lossy; moreover, with the
   shift to Unicode, it's actually slower to deal in ASCII than
   in Unicode, because of the additional conversions required.
-  There are 78 cross calls from Unicode to ANSI as reported by
+  There are 65 cross calls from Unicode to ANSI as reported by
   <tt>tools/winapi_check/winapi_check --none --progress --cross-call-unicode-ascii</tt>
-  (as of Oct 14, 2004):
+  (as of Dec 23, 2004):
   <ul>
     <li>dlls/advapi32/crypt.c: advapi32: CryptAcquireContextW: illegal call to CryptAcquireContextA
     <li>dlls/advapi32/crypt.c: advapi32: CryptEnumProviderTypesW: illegal call to CryptEnumProviderTypesA
-    <li class=committed>dlls/advapi32/crypt.c: advapi32: CryptEnumProvidersW: illegal call to CryptEnumProvidersA
     <li>dlls/advapi32/crypt.c: advapi32: CryptGetDefaultProviderW: illegal call to CryptGetDefaultProviderA
     <li>dlls/advapi32/crypt.c: advapi32: CryptSetProviderExW: illegal call to CryptSetProviderExA
     <li>dlls/commdlg/colordlg.c: colordlg: ChooseColorW: illegal call to FindResourceA
     <li>dlls/commdlg/filedlg.c: colordlg: GetFileDialog95W: illegal call to GetCurrentDirectoryA
     <li>dlls/commdlg/filedlg.c: colordlg: GetFileDialog95W: illegal call to SetCurrentDirectoryA
     <li>dlls/commdlg/filedlg.c: colordlg: GetFileName31W: illegal call to GetWindowLongA
-    <li>dlls/commdlg/fontdlg.c: colordlg: FormatCharDlgProcW: illegal call to GetPropA
     <li>dlls/ddraw/main.c: ddraw: DirectDrawEnumerateExW: illegal call to DirectDrawEnumerateExA
     <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to HEAP_strdupWtoA
     <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to StartDocA
     <li>dlls/hhctrl.ocx/hhctrl.c: hhctrl.ocx: HtmlHelpW: illegal call to MessageBoxA
-    <li class=committed>dlls/kernel/comm.c: kernel32: CommConfigDialogW: illegal call to CommConfigDialogA
-    <li class=committed>dlls/kernel/comm.c: kernel32: CommConfigDialogW: illegal call to HEAP_strdupWtoA
     <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to HEAP_strdupWtoA
     <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to SetDefaultCommConfigA
     <li>dlls/kernel/locale.c: kernel32: GetLocaleInfoW: illegal call to GetModuleHandleA
@@ -152,23 +148,13 @@
     <li>dlls/version/install.c: version: VerInstallFileW: illegal call to VerInstallFileA
     <li>dlls/wininet/internet.c: wininet: InternetCheckConnectionW: illegal call to InternetCheckConnectionA
     <li>dlls/winmm/driver.c: winmm: OpenDriverW: illegal call to OpenDriverA
-    <li>dlls/winmm/joystick.c: winmm: joyGetDevCapsW: illegal call to joyGetDevCapsA
     <li>dlls/winmm/mci.c: winmm: mciSendStringW: illegal call to mciSendStringA
     <li>dlls/winmm/mmio.c: winmm: mmioRenameW: illegal call to mmioRenameA
     <li>dlls/winmm/mmio.c: winmm: mmioStringToFOURCCW: illegal call to mmioStringToFOURCCA
-    <li>dlls/winmm/winmm.c: winmm: auxGetDevCapsW: illegal call to auxGetDevCapsA
     <li>dlls/winmm/winmm.c: winmm: mciGetErrorStringW: illegal call to mciGetErrorStringA
     <li>dlls/winmm/winmm.c: winmm: mciSendCommandW: illegal call to MCI_MapMsgWtoA
     <li>dlls/winmm/winmm.c: winmm: mciSendCommandW: illegal call to mciSendCommandA
     <li>dlls/winmm/winmm.c: winmm: mciSendCommandW: illegal call to MCI_UnmapMsgWtoA
-    <li>dlls/winmm/winmm.c: winmm: midiInGetDevCapsW: illegal call to midiInGetDevCapsA
-    <li>dlls/winmm/winmm.c: winmm: midiOutGetDevCapsW: illegal call to midiOutGetDevCapsA
-    <li>dlls/winmm/winmm.c: winmm: mixerGetControlDetailsW: illegal call to mixerGetControlDetailsA
-    <li>dlls/winmm/winmm.c: winmm: mixerGetDevCapsW: illegal call to mixerGetDevCapsA
-    <li>dlls/winmm/winmm.c: winmm: mixerGetLineControlsW: illegal call to mixerGetLineControlsA
-    <li>dlls/winmm/winmm.c: winmm: mixerGetLineInfoW: illegal call to mixerGetLineInfoA
-    <li>dlls/winmm/winmm.c: winmm: waveInGetDevCapsW: illegal call to waveInGetDevCapsA
-    <li>dlls/winmm/winmm.c: winmm: waveOutGetDevCapsW: illegal call to waveOutGetDevCapsA
     <li>dlls/winspool/info.c: winspool.drv: AddPrinterW: illegal call to DEVMODEdupWtoA
     <li>dlls/winspool/info.c: winspool.drv: AddPrinterW: illegal call to RegSetValueExA
     <li>dlls/winspool/info.c: winspool.drv: DeviceCapabilitiesW: illegal call to DEVMODEdupWtoA
@@ -202,9 +188,11 @@
 		 <a href="mailto:mike@codeweavers.com">Mike McCormack</a>,
 		 <a href="mailto:juan_lang@yahoo.com">Juan Lang</a>,
 		 <a href="mailto:kevin@plop.org">Kevin Koltzau</a>,
-		 <a href="mailto:truiken@gmail.com">James Hawkins</a>.
-    <li>status: <span class=inprogress>Over half done.</span>
-    <li>updated: Aug 12, 2004
+		 <a href="mailto:truiken@gmail.com">James Hawkins</a>,
+		 <a href="mailto:xnavara@volny.cz">Filip Navara</a>,
+		 <a href="mailto:jack@itma.pwr.wroc.pl">Jacek Caban</a>.
+    <li>status: <span class=inprogress>Over 3/4 done.</span>
+    <li>updated: Dec 23, 2004
   </ul>
 
   <h2>DLL separation</h2>
@@ -282,7 +270,6 @@
     <li> nonclient.h
     <li> stackframe.h
     <li> thread.h
-    <li> user.h
     <li> win.h
     <li> winpos.h
   </ul>
