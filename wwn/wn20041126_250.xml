@@ -80,7 +80,6 @@ Its main goal is to eat deviled eggs. It also serves to inform you of what's goi
 <p>Wine and the <a href="http://www.reactos.org">ReactOS</a> 
 project have worked together for several years.  Recently
 they've added a newsletter similar to this one to 
-<s>spread propaganda in support of world domination</s>
 inform the broader community of what's going on.  
 <a href="http://www.tong-web.com/splash/index.html">Splash</a>,
 written by Zach Tong, 
@@ -253,11 +252,11 @@ Roland? Think of it as a challenge
 </p></quote>
 
 <p>Ha!  Those wacky kernel guys!  I won't even pretend to
-recognizing the pushing and popping going on above.  Davide
+recognize the pushing and popping going on above.  Davide
 Libenzi did understand though,
 <quote who="Davide Libenzi">
 You know you're sick, don't you? Making traps inc's to get you in the 
-correct opcode to move function in edx->fnp, is indeed fruit of a sick 
+correct opcode to move function in edx-&gt;fnp, is indeed fruit of a sick 
 mind :=)</quote></p>
 
 <p>Linus explained a little more about his little program
@@ -367,7 +366,7 @@ I actually broke down and am downloading the latest source tree of wine,
 let's see if I can find the place you do this.
 </p></quote>
 
-<p>After looking through dlls/ntdll/signal_i386.c, Linus thought
+<p>After looking through Wine's dlls/ntdll/signal_i386.c, Linus thought
 everything was ok.  </p>
 
 </section>
@@ -692,7 +691,7 @@ that properly, rather than trying to reuse the edit control.
 </p></quote>
 
 
-<p> asked for some clarification and explained what he was trying to
+<p>Michael asked for some clarification and explained what he was trying to
 do:</p>
 <quote who="Michael Ost"><p>
 This isn't quite clear to me. It sounds like you are saying there is a
