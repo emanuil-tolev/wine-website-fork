@@ -102,7 +102,7 @@ works perfectly. That's when the "testing" begins.
 I did like working on the DirectPlay stuff, it's too bad that the
 interaction between the DirectPlayLobby and DirectPlay stuff wasn't
 documented. It appears that they've at least changed their ways in that
-regard, but there are still several layers of interation which are not
+regard, but there are still several layers of interaction which are not
 documented so one would just have to go with a monolithic black box
 approach rather than exactly duplicating each of their dlls.  
 </p></answer>
@@ -298,7 +298,7 @@ X11 driver hasn't made sense. </p></answer>
 <answer><p><i>Peter:</i> Headaches and sleepless nights :( TransGaming
 solved the issue in the same way that was done for the NPTL - embrace the
 fact that we couldn't override errno and use pthreads. TransGaming dusted
-off our old pthreads implementation that we had donated to Winehq, and
+off our old pthreads implementation that we had donated to WineHQ, and
 basically extended it so that it would work on both LinuxThreads - Wine
 does a runtime binary patch rather than using pthreads in this situation -
 and with NPTL without the user having to configure differently. They are,
@@ -316,11 +316,11 @@ however, in essence the same. </p></answer>
 <answer><p><i>Peter:</i>
  The portions which represent our core technologies are incredibly
 different. Other areas depend on the volume of change on both sides. With
-every Winehq and WineX patch they diverge a little more since relatively
+every WineHQ and WineX patch they diverge a little more since relatively
 few people license their code for the ReWind project which is how we
 donate and receive patches. Another issue with ReWind patches is that
 often X11 patches depend on functionality of LGPL patches, so ReWind is
-not able to use them until the patch is availble with an X11 license or a
+not able to use them until the patch is available with an X11 license or a
 different patch with equivalent functionality is available. Another
 problem is that many LGPL patches are made to code we contributed so those
 improvements never come back. This just ends up making it more difficult
