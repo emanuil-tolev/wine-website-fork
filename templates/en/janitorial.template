@@ -42,6 +42,23 @@
   </ul>
   <p>
 
+  <h2>Portability fixes<h2>
+
+  <h3>Fix Wine to be compilable by a 64-bit compiler</h3>
+  <ol>
+    <li> Inspect and fix all public Win32 headers to match PSDK definitions.
+    <li> Make sure that pointers do not get truncated.
+    <li> Add support for Win64.
+  </ol>
+
+  <h3>Fix wrong assumptions in Wine about endianess</h3>
+  <ol>
+    <li> Inspect all Wine code and public headers to eliminate endianess dependent
+         constructs (low/high parts of a field, bit fileds), add WORDS_BIGENDIAN
+         when appropriate.
+    <li> Make sure that Wine code handles data in an endianess independent way.
+  </ol>
+
   <h2>Code cleanup</h2>
 
   Some parts of Wine have become too big and complex to debug, and should
