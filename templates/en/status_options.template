@@ -11,7 +11,6 @@
 <tr class=todo> <td>Serial</td>				<td>no</td>	<td>no</td>	<td></td>			</tr>
 <tr class=todo> <td>Device</td>				<td>no</td>	<td>no</td>	<td></td>			</tr>
 <tr class=todo> <td>ReadVolInfo</td>			<td>no</td>	<td>no</td>	<td></td>			</tr>
-<tr class=todo> <td>FailReadOnly</td>			<td>no</td>	<td>no</td>	<td></td>			</tr>
 
 <tr class=section> <th colspan=5 align=left>[wine]</th></tr>
 <tr class=todo> <td>Windows</td>			<td>no</td>	<td>no</td>	<td>c:\\windows</td>		</tr>
@@ -34,9 +33,6 @@
 <tr class=done> <td>UseTakeFocus</td>			<td>yes</td>	<td>no</td>	<td>yes</td>			</tr>
 <tr class=done> <td>DXGrab</td>				<td>no</td>	<td>no</td>	<td>no</td>			</tr>
 <tr class=done> <td>DesktopDoubleBuffered</td>		<td>no</td>	<td>no</td>	<td>no</td>			</tr>
-
-<tr class=section> <th colspan=5 align=left>[Tweak.Layout]</th></tr>
-<tr class=todo> <td>WineLook</td>			<td>yes</td>	<td>no</td>	<td>Win98</td>			</tr>
 
 <tr class=section> <th colspan=5 align=left>[DSound]</th></tr>
 <tr class=todo> <td>HardwareAcceleration</td>		<td>no</td>	<td>no</td>	<td>true</td>			</tr>
