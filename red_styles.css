@@ -1,6 +1,5 @@
 /* Body Document Defaults */
-BODY 		{ background-color: #601919; background-image: url("./images/red_bg.gif");
-              background-repeat: no-repeat;
+BODY 		{ background-color: #893535;
               color: #000000; margin: 0; }
 
 /* Top Background Span */
@@ -15,9 +14,9 @@ A:active	{ color: #FF0000; }
 A.hidden	{ text-decoration: none; color: #000000; }
 
 /* feneral fonts and sizes */
-OL,UL,P		{ font-family: Helvetica, Arial; font-size: 10pt; }
-TD,TR,TH	{ font-family: Helvetica, Arial; font-size: 10pt; }
-INPUT		{ font-family: Helvetica, Arial; font-size: 10pt; }
+OL,UL,P		{ font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt; }
+TD,TR,TH	{ font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt; }
+INPUT		{ font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt; }
 PRE         { font-family: Fixed; font-size: 10pt; }
 
 /* WWN Colors */
@@ -47,14 +46,15 @@ PRE         { font-family: Fixed; font-size: 10pt; }
 .strike 	{ text-decoration: line-through; }
 
 /* Menu Config */
-.menuTitle	{ font-size: 12px; color: #ffffff; font-weight: bold; }
-.menuTitle:visited { font-size: 12px; color: #ffffff; font-weight: bold; }
-.menuTitle:hover { font-size: 12px; color: #C0C0C0; font-weight: bold; }
+.menuTitle	{ font-size: 12px; color: #000000; font-weight: bold; }
+.menuTitle:visited { font-size: 12px; color: #000000; font-weight: bold; }
+.menuTitle:hover { font-size: 12px; color: #999999; font-weight: bold; }
 .menuLink	{ font-size: 10px; color: #ffffff; font-weight: bold; }
 .menuItem	{ font-size: 10px; color: #000000; }
 .menuItem:visited { font-size: 10px; color: #000000; }
 .menuItem:hover { font-size: 10px; color: #A50D0D; font-weight: bold; }
-.topMenu	{ background-color: #492525; }
+
+.topMenu	{ background-color: #FFFFFF; }
 .sideMenu	{ background-color: #FFFFFF; }
 
 /* Misc */
@@ -63,9 +63,9 @@ PRE         { font-family: Fixed; font-size: 10pt; }
 .big		{ font-size: 14pt; }
 
 /* Generic Buttons */
-.button		 { background-color: #6b86bb; color: #ffffff; font-family: Helvetica, Arial; font-size: 10pt;
+.button		 { background-color: #6b86bb; color: #ffffff; font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt;
                padding: 0; }
-.searchInput { background-color: #E0E0E0; color: #666666; font-family: Helvetica, Arial; font-size: 10pt;
+.searchInput { background-color: #E0E0E0; color: #666666; font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt;
                padding: 0; } 
 				  
 /* Note Blip */

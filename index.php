@@ -71,7 +71,10 @@ function home_page ()
     
 	// get aboout box
 	$about_box = $html->theme_box($config->theme, "box_title", "About Wine", "99%", $html->template("base", 'home_about', $vars), '10', 'white', 'topMenu');
-	
+    
+	// theme switch box
+	$theme_box = $html->theme_box($config->theme, "box_title", "Change Theme", "99%", $html->template("base", 'theme_box', $vars), '10', 'white', 'topMenu');
+
 	// get link to latest release
 	$latest_box = $html->theme_box($config->theme, "box_title", "Latest Release", "97%", $html->template("base", 'wine_release'), '10', 'white', 'topMenu');
 	
@@ -87,7 +90,8 @@ function home_page ()
 	              'about_box'  => $about_box,
 			      'latest_box' => $latest_box,
 			      'wwn_box' => $wwn_box,
-                  'sponsor_box' => $sponsor_box
+                  'sponsor_box' => $sponsor_box,
+                  'theme_box' => $theme_box
 			     );
 	$text = $html->template($config->theme, 'home_page', $vars);	 
 	
