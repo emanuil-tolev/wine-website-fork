@@ -34,7 +34,7 @@ Wine 19990923 has been released. Here's the changelog summary:
 
 <p />
 
-Some changes also occured with version handling (of .EXE and .DLL); if
+Some changes also occurred with version handling (of .EXE and .DLL); if
 you encounter error messages regarding version handling, try to run
 wine with the -winver XX option (XX being win31, win95, win98, nt35,
 nt40), it helps in some cases.

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="180" date="07/25/2003" />
 <intro> <p>This is the 180th release of the weekly Wine Weekly News publication.
-Its main goal is to circumvent the proofreading process so that small grammatical errors will keep the reader attentive. It also serves inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of Wine as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.com">www.winehq.com</a></p> </intro>
+Its main goal is to circumvent the proofreading process so that small grammatical errors will keep the reader attentive. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of Wine as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.com">www.winehq.com</a></p> </intro>
 <stats posts="240" size="771" contrib="52" multiples="34" lastweek="37">
 
 <person posts="32" size="90" who="Mike Hearn" />
@@ -151,8 +151,8 @@ pages on WineHQ.  This week Jonathon Wilson wanted to start working on
 something and he posted his list asking for feedback:</p>
 <quote who="Jonathon Wilson"><p>
 After looking at all the things windows provides, I have identified the 
-folowing possible programs that I could write for the wine project. Some of 
-them are usefull for WINE itself and some of them might be usefull for (for 
+following possible programs that I could write for the wine project. Some of 
+them are useful for WINE itself and some of them might be useful for (for 
 example) ReactOS
 </p><p>
 Things:
@@ -161,33 +161,33 @@ Things:
 PrintDlgEx and generally make comdlg32.dll behave more like the windows 
 counterpart (implement a few other things as well, like some of the 
 currently stubbed out items).</li>
-<li>work on wine notepad. Wont do this until the changes refered to before 
+<li>work on wine notepad. Won't do this until the changes referred to before 
 are merged.</li>
 <li>write a clone of fontview.exe (windows font sample viewer). This is 
-probobly not usefull for WINE but might be usefull for ReactOS, plus it 
+probably not useful for WINE but might be useful for ReactOS, plus it 
 would be a good excercise in windows GDI programming.</li>
 <li>write clones of guidgen.exe and/or uuidgen.exe, 2 different windows SDK 
 tools for generating GUIDs/UUIDs. (if we are providing an IDL compiler and 
-other such OLE-esque things, having a GUID/UUID generator is probobly a 
+other such OLE-esque things, having a GUID/UUID generator is probably a 
 good thing to have, mainly it is just a stub around a call to CoCreateGUID</li>
 <li>write a clone of rebase.exe, a win32 PE image rebasing tool. Probobly not 
-usefull to WINE but might be helpfull for ReactOS development, dont know.</li>
+useful to WINE but might be helpfull for ReactOS development, don't know.</li>
 <li>writing a clone of the cards.dll used by the windows card games. Only 
-problem here is that I would need to find a sutably licenced set of card 
-images since I dont have the skills to draw them myself :)</li>
+problem here is that I would need to find a suitably licenced set of card 
+images since I don't have the skills to draw them myself :)</li>
 <li>writing a clone of the card games (solitare,freecell etc) included with 
 windows to use said cards.dll (hey, we have WineMine...)</li>
-<li>writing a character map applet (basically a clone of charmap.exe). Dont 
-know if WINE needs this but ReactOS probobly does (how else are you going 
+<li>writing a character map applet (basically a clone of charmap.exe). Don't 
+know if WINE needs this but ReactOS probably does (how else are you going 
 to insert all those fancy foreign language characters and dingbats? :)</li>
-<li>writing a calculaor app (i.e. a calc.exe clone), again dont know if WINE 
+<li>writing a calculator app (i.e. a calc.exe clone), again don't know if WINE 
 needs one but ReactOS might...</li>
-<li>writing a clone of the Win32 volume control applet. Dont think WINE 
+<li>writing a clone of the Win32 volume control applet. Don't think WINE 
 needs this (since the linux sound API has one already) but ReactOS might...</li>
 </ol></p><p>
-Which of these should I work on? Which of these are usefull to 
+Which of these should I work on? Which of these are useful to 
 Wine/ReactOS? Are any of these considered "a big beast" (as richedit was 
-refered to by Dimitrie O. Paun?)
+referred to by Dimitrie O. Paun?)
 </p></quote>
 
 <p>A few people wrote in to discourage working on anything that
@@ -320,9 +320,9 @@ The primary motivation for this bugfix was to enable the DCOM98
 installer to work again correctly. It requires at least &lt; 4.something,
 otherwise it refuses to install. As our OLE framework isn't yet up to
 scratch for some tasks, being able to install it is important (hopefully
-once I finish digesting Oves work maybe it will be less important).
+once I finish digesting Ove's work maybe it will be less important).
 </p><p>
-I suppose we could make it every so slightly below the version DCOM98
+I suppose we could make it ever so slightly below the version DCOM98
 requires, but there are only so many versions, and if an app checks for
 the version shipped in the DCOM updates, it'd still be too low.
 </p><p>
@@ -411,7 +411,7 @@ with termcap entries.  Just kidding.  I don't.
 began running into obstacles.  First he reported:</p>
 <quote who="Steven Edwards"><p>
 On just about every file that is built we are getting this warrning. This is the most minor
-problem we have with the alpha build but I couldnt figure it out.
+problem we have with the alpha build but I couldn't figure it out.
 <ul><code>
 ../../include/wine/debug.h: In function `wine_dbgstr_guid':<br />
 ../../include/wine/debug.h:152: warning: cast from pointer to integer of different size<br />
@@ -451,10 +451,10 @@ be warned that compiling for Win64 is a completely unexplored terrain.
 
 <p>Steven wrote back with more details on the system,
 <quote who="Steven Edwards">
-Its gcc on RH 7.1 for Alpha. On a Dec PWS 500 workstation. I dont know anything about Alpha asm so
+Its gcc on RH 7.1 for Alpha. On a Dec PWS 500 workstation. I don't know anything about Alpha asm so
 I cannot implement the interlocked* functions or the import and spec support in winebuild so I
 have just stubbed it for now. The other issues I am having is with compiling resources. WRC
-doesnot work proplerly on Alpha and I dont know why.</quote></p>
+does not work properly on Alpha and I don't know why.</quote></p>
 
 <p>And in another email added,
 <quote who="Steven Edwards">

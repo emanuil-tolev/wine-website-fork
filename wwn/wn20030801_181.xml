@@ -123,7 +123,7 @@ need to wait for wineprofile functionality.
 <p>Jeremy wasn't sure how well that would work:</p>
 <quote who="Jeremy White"><p>
 I'm told (and have been persuaded of this), that Wine's internal
-structures preclue a 'normal' profiler from working properly,
+structures preclude a 'normal' profiler from working properly,
 hence the need for a Wine specific one.
 </p><p>
 I know we toyed with adapting gprof to Wine semantics, but
@@ -161,7 +161,7 @@ problem with the Wine debugger:</p>
  exception wine will start a debugger.
 </p><p>
  I sent some memory dumps to the developer of the security dll, and he 
- said that it behaves like it was running under a debugger.  He's 
+ said that it behaves like it was running under a debugger.  His 
  question was something like does wine have an always "on" debugger?
 </p></quote>
 
@@ -204,7 +204,7 @@ he did with the Mono/Wine integration:</p>
  Each sample contains the sourcecode, makefile and screenshots.
  I will try to create these samples for each of the controls in SWF
 </p><p> 
- I will however make seperate projects for controls which use images,
+ I will however make separate projects for controls which use images,
  because these don't seem to run on SWF yet. (For example a button with a
  background image)
 </p><p>

@@ -304,7 +304,7 @@ remember going through the same process of trying to find a register
 that I could be sure was preserved across library calls, and even
 consulted Stan Shebs (one of the gcc PPC developers). I couldn't find
 anything that seemed appropriate in time, so I just gave up. I have no
-recollection whether using pthreads' local storage even occured to me
+recollection whether using pthreads' local storage even occurred to me
 then.
 </quote>
 
