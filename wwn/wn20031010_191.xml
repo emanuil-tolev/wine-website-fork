@@ -173,7 +173,7 @@ suggested this project to the list there was suggestions that doing it
 with uxtheme.dll was the way to go. I agreed, but didn't have winxp to
 play with, so I kept tinkering on this project with the intent of
 learning a bit more about how wine works (which meant learning a lot
-about how GDI and X works, though I didn't realise that I'd need to know
+about how GDI and X work, though I didn't realise that I'd need to know
 that stuff when I started on the project). I actually managed to get
 some results which were starting to look promising (though there's no
 way I'd submit that code as a patch). Screenshots here (the checkbox
@@ -205,7 +205,7 @@ posted.</p></quote>
 
 <p>Kevin then detailed an area he was looking into:</p>
 <quote who="Kevin Koltzau"><p>
-I'm currently working on implementing support for .msstyles themes (of which 
+I'm currently working on implementing support for .msstyles themes (which 
 are used by XP) primarily because the format follows the API pretty closely 
 and will be easier to test my implementation against an XP box.
 </p><p>
@@ -226,9 +226,9 @@ of defining themes for WINE.
 several days later wondering how to set up configuration options.  At
 that point Steven Edwards brought up a topic on a similar tangent,
 <quote who="Steven Edwards">
-Is there a way we can merge the winelook option in to the themeing
+Is there a way we can merge the winelook option in to the theming
 support? The work I have been doing to port comdlg32 is kind of stalled
-because of tweak_winelook being incompleate in this dll. It would be
+because of tweak_winelook being incomplete in this dll. It would be
 nice if we could plan on moving all of this stuff together post 1.0
 </quote></p>
 
@@ -236,8 +236,8 @@ nice if we could plan on moving all of this stuff together post 1.0
 how Windows' theming worked:</p>
 <quote who="Kevin Koltzau"><p>
 I'm not very familiar with how the winelook is handled in code, what does it 
-do exactly? if it simply affects system metrics &amp; colors that would be easily 
-merged with themes, if its more then that (like for example different common 
+do exactly? If it simply affects system metrics &amp; colors that would be easily 
+merged with themes, if its more than that (like for example different common 
 dialogs) it may be more difficult
 </p><p>
 Full blown theming in windows uses a combination of .theme files and .msstyles 
@@ -253,7 +253,7 @@ not define icons &amp; cursors).
 </p><p>
 The two theme formats are coupled very loosely, they can be used together 
 (primarily to enable defining icons &amp; cursors with a graphical theme) or 
-seperate. When used together, any metrics &amp; colors defined in the msstyles 
+separate. When used together, any metrics &amp; colors defined in the msstyles 
 override those defined in the .theme
 </p><p>
 Alexandre has requested I use the registry keys that windows uses to define 
@@ -345,14 +345,14 @@ up a 'Windows' like 'Start Menu' onto the Window
 managers. That's good.Thanks.
 </p><p>
 But as I see it, this task is REALLY easy.
-Once we resolve the Windows shorcut files,figuring out
+Once we resolve the Windows shortcut files, figuring out
 how to implement the resolved menu entries for
 respective Desktop environments is dependent on the
 Desktop environment themselves, and people wanting to
 implement the 'Start Menu' on that environment.
-Windows maintains it's 'Start Menu' under
+Windows maintains its 'Start Menu' under
 '%ROOTDIR%\Documents and Settings\%USER%\Start Menu'
-(yeah I am talking >=NT,Win2k. For 9x, it will be
+(yeah I am talking >=NT, Win2k. For 9x, it will be
 probably 'C:\WINDOWS\Start Menu'), and this folder
 contains LOADS of shortcut (.lnk) files.
 So if we can just recurse through this folder and read
@@ -369,14 +369,14 @@ Unfortunately, 'winemenubuilder' shipped from
 Wine-20030618 - the VERY version from which
 IPersistFile::Load() (the VERY function used to
 resolve windows shortcuts) got broken, so I could not
-see 'winemenubuilder' in practise!
+see 'winemenubuilder' in practice!
 (Mike, if you are reading this, could you tell me on
 what Wine ver you originally developed it, and does
 'winemenubuilder' work now ? Thanks)
 </p><p>
 You yourself may try out 'winemenubuilder', and if it
 works let me know. I will know that I was at fault all
-along,and that would be good news for me !
+along, and that would be good news for me !
 </p><p>
 Now, there arises the problem. Microsoft really does
 not tell us what's the data structure of .lnk files,
@@ -417,7 +417,7 @@ systems :)
 
 <p>Robert jumped in and described some work he's done:</p>
 <quote who="Robert van Herk"><p>
->From discussions with others from this list, I understand that you 
+From discussions with others from this list, I understand that you 
 should not just want to list the entries in the start menu folder, but 
 also other things (control panel, etc).
 </p><p>
@@ -436,7 +436,7 @@ really hard on the communication between the server and the client.
 Pipes won't probably be a good idea, because you want bidirectional 
 communication.
 </p><p>
-Anyhow, the first client is set up using QT. I am not shure whether this 
+Anyhow, the first client is set up using QT. I am not sure whether this 
 is general enough, so please tell me if this is not wise to do, for 
 example if it won't be compatible with Gnome. If everything is QT 
 compatible, only the very frontend of the client will have to be 
@@ -447,7 +447,7 @@ most classes could be recycled from the KDE version.
 <p>In a similar vein, Dimi Paun posted a patch to move around some
 documentation.  Part of it included the following note,
 <quote who="Dimitrie Paun">Nearly complete informations about the binary formats 
-of .lnk files avaiable at 
+of .lnk files available at 
 <a href="http://www.wotsit.org">http://www.wotsit.org</a></quote></p>
 
 </section>
@@ -461,7 +461,7 @@ of .lnk files avaiable at
 >
 <topic>Utilities</topic>
 <p>From time to time I mention ReactOS in passing
-(sometimes refered to as simply ROS).  If you're not familiar with 
+(sometimes referred to as simply ROS).  If you're not familiar with 
 the project you may want to check out the <a href="http://www.reactos.com">
 ReactOS website</a>.  Their Win32 subsystem relies on Wine and
 a lot of Wine portability and janitorial work has come out of
