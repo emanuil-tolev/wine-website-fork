@@ -20,43 +20,44 @@ class config
             exit();
         }
         
-		// read global config file
-		$this->readConfig($path);
+        // read global config file
+        $this->readConfig($path);
         
         // navigation
-		$this->nav = array(
-					 'About' => array(
-					                  'About'           => '{$root}/site/about',
-                                      'Introduction'    => '{$root}/site/about',
-                                      'Features'        => '{$root}/site/wine_features',
-									  'Screenshots'     => '{$root}/site?ss=1',
-									  'Contributing'    => '{$root}/site/contributing',
-									  'News'            => '{$root}/site?news=archive',
-                                      'Press'           => '{$root}/site/press',
-                                      'License'         => '{$root}/site/license'
-									  ),
-					 'Support' => array(
-                                        'Support'       => '{$root}/site/support',
-                                        'Download'      => '{$root}/site/download',
-                                        'Documentation' => '{$root}/site/documentation',
-                                        'FAQ'           => '{$root}/site/docs/wine-faq/index',
-										'HowTo'         => '{$root}/site/howto',
-										'Bug Tracking'  => 'http://bugs.winehq.org/',
-                                        'Applications'  => '{$root}/site/supported_applications',
-										'Mailing Lists' => '{$root}/site/forums'
-									   ),
-					 'Development' => array(
-					                        'Development'       => '{$root}/site/development',
-                                            'CVS'               => '{$root}/site/cvs',
-                                            'Sending Patches'   => '{$root}/site/sending_patches',
-                                            'To Do Lists'       => '{$root}/site/todo_lists',
-                                            'Fun Projects'      => '{$root}/site/fun_projects',
-                                            'Janitorial'        => '{$root}/site/janitorial',
-                                            'Winelib'           => '{$root}/site/winelib',
-                                            'Status'            => '{$root}/site/status',
-                                            'Resources'         => '{$root}/site/resources'
-										   )
-			         );
+	$this->nav = array(
+	    'About' => array(
+                'About'           => '{$root}/site/about',
+                'Introduction'    => '{$root}/site/about',
+                'Features'        => '{$root}/site/wine_features',
+                'Screenshots'     => '{$root}/site?ss=1',
+                'Contributing'    => '{$root}/site/contributing',
+                'News'            => '{$root}/site?news=archive',
+                'Press'           => '{$root}/site/press',
+                'License'         => '{$root}/site/license'
+            ),
+           'Support' => array(
+                'Support'         => '{$root}/site/support',
+                'Download'        => '{$root}/site/download',
+                'Documentation'   => '{$root}/site/documentation',
+                'FAQ'             => '{$root}/site/docs/wine-faq/index',
+                'HowTo'           => '{$root}/site/howto',
+                'Bug Tracking'    => 'http://bugs.winehq.org/',
+                'Applications'    => 'http://appdb.winehq.org',
+                'Forums'          => '{$root}/site/forums'
+           ),
+           'Development' => array(
+                'Development'     => '{$root}/site/development',
+                'CVS'             => '{$root}/site/cvs',
+                'Sending Patches' => '{$root}/site/sending_patches',
+                'To Do Lists'     => '{$root}/site/todo_lists',
+                'Fun Projects'    => '{$root}/site/fun_projects',
+                'Janitorial'      => '{$root}/site/janitorial',
+                'Winelib'         => '{$root}/site/winelib',
+                'Status'          => '{$root}/site/status',
+                'Resources'       => '{$root}/site/resources'
+           )
+       );
+
     // end of config()
     }
     
