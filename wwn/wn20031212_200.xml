@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="200" date="12/12/2003" />
 <intro> <p>This is the 200th issue of the Wine Weekly News publication.
-Its main goal is to be scared of #300. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.com">www.winehq.com</a></p> </intro>
+Its main goal is to be scared of #300. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="155" size="481" contrib="43" multiples="28" lastweek="24">
 
 <person posts="15" size="36" who="Alexandre Julliard" />
@@ -54,7 +54,7 @@ Its main goal is to be scared of #300. It also serves to inform you of what's go
 <section 
 	title="News: Issue #200" 
 	subject="News"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/12/0.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/12/0.html" 
 	posts="1"
 	startdate="12/06/2003"
 	enddate="12/12/2003"
@@ -107,7 +107,7 @@ May you all make it to a healthy 100 and a half!!
 <section 
 	title="C++: Where's the Love?" 
 	subject="I made a wish, wrote a letter to Santa..."
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/12/0.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/12/0.html" 
 	posts="12"
 	startdate="12/09/2003"
 	enddate="12/10/2003"
@@ -121,7 +121,7 @@ that he would let his elves use C++ in WINE.
 </p><p>
 (Just in case, you did not know Santa's email address, it's 
 'julliard[at]winehq.org', and you can make your wishes at 
-'wine-devel[at]winehq.com'..)
+'wine-devel[at]winehq.org'..)
 </p><p>
 You see, Santa was always so good - he answered people's prayers 
 and got together his obedient elves to run Win32 on Non-Windows 
@@ -201,7 +201,7 @@ Microsoft: Literally everything at Microsoft is built using various flavors of V
 <p>Subhobroto certainly isn't the first to ask for this; the topic
 tends to come up about once a year.  In fact, looking back in the
 archives I see it appeared in 
-<a href="http://www.winehq.com/?issue=153#No%20C++%20in%20Wine">issue #153</a>.
+<a href="http://www.winehq.org/?issue=153#No%20C++%20in%20Wine">issue #153</a>.
 At the time Alexandre certainly wasn't against the idea, he just didn't
 know a compelling reason to allow it.  Surprise.. his view hasn't
 changed as evidenced by his reply:</p>
@@ -236,7 +236,7 @@ changed as evidenced by his reply:</p>
 <section 
 	title="Using Native DLL's in a Winelib App" 
 	subject="Using a windows dll from a winelib or possibly native linux app."
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/12/0231.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/12/0231.html" 
 	posts="6"
 	startdate="12/09/2003"
 	enddate="12/10/2003"
@@ -356,7 +356,7 @@ the dlls list)</li>
 <section 
 	title="RPC Info" 
 	subject="rpcrt4 and rpcss with WINE and ReactOS"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/12/0214.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/12/0214.html" 
 	posts="6"
 	startdate="12/08/2003"
 	enddate="12/09/2003"
@@ -440,7 +440,7 @@ http://cvs.reactos.com/cvsweb.cgi/reactos/ntoskrnl/lpc/</a>
 <section 
 	title="Updated ALSA Support" 
 	subject="Status of winealsa patch"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/12/0194.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/12/0194.html" 
 	posts="10"
 	startdate="12/07/2003"
 	enddate="12/10/2003"
@@ -510,7 +510,7 @@ adding WaveIn support to the ALSA driver and noted,
 <section 
 	title="DirectX Status Page" 
 	subject="DirectX Status Section"
-	archive="http://www.winehq.com/hypermail/wine-devel/2003/12/0242.html" 
+	archive="http://www.winehq.org/hypermail/wine-devel/2003/12/0242.html" 
 	posts="1"
 	startdate="12/09/2003"
 >
@@ -519,7 +519,7 @@ adding WaveIn support to the ALSA driver and noted,
 components.  He put together a page for DirectX and asked for comments.
 Unfortunately the colorful HTML won't display properly if I try to include
 it here, so instead I'll just refer you to 
-<a href="http://www.winehq.com/hypermail/wine-devel/2003/12/0242.html">Tom's
+<a href="http://www.winehq.org/hypermail/wine-devel/2003/12/0242.html">Tom's
 original post</a> in the archives.  
 </p>
 

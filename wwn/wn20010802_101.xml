@@ -29,7 +29,7 @@ changes:</p>
 
 <stats posts="173" size="530" contrib="41" multiples="23" lastweek="18">
 
-<person posts="26" size="61" who="Alexandre Julliard &lt;julliard@winehq.com&gt;" />
+<person posts="26" size="61" who="Alexandre Julliard &lt;julliard@winehq.org&gt;" />
 <person posts="10" size="29" who="Ian Pilcher &lt;ian.pilcher@home.com&gt;" />
 <person posts="6" size="13" who="Marcus Meissner &lt;marcus@jet.franken.de&gt;" />
 <person posts="12" size="31" who="Bill Medland &lt;medbi01@accpac.com&gt;" />
@@ -52,7 +52,7 @@ changes:</p>
 <section
   title="Using Native DLL's"
   subject="native dll's"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/07/0207.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/07/0207.html"
   posts="4"
   startdate="07/25/2001"
   enddate="07/27/2001"
@@ -104,7 +104,7 @@ changes:</p>
 <section
   title="Adding 16-bit Headers"
   subject="Re: more misc fixes"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/07/0151.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/07/0151.html"
   posts="5"
   startdate="07/19/2001"
   enddate="07/20/2001"
@@ -171,7 +171,7 @@ Alexandre said that was exactly what he wanted, <quote who="Alexandre Julliard">
 <section
   title="Shared Source a Danger?"
   subject="Microsoft source code releases - a danger to Wine?"
-  archive="http://www.winehq.com/hypermail/wine-devel/2001/07/0171.html"
+  archive="http://www.winehq.org/hypermail/wine-devel/2001/07/0171.html"
   posts="11"
   startdate="07/21/2001"
   enddate="07/24/2001"
@@ -293,7 +293,7 @@ Alexandre said that was exactly what he wanted, <quote who="Alexandre Julliard">
 <section
 	title="CallWindowProc Syntax"
 	subject="CallWindowProc syntax"
-	archive="http://www.winehq.com/hypermail/wine-devel/2001/07/0203.html"
+	archive="http://www.winehq.org/hypermail/wine-devel/2001/07/0203.html"
   	posts="2"
   	startdate="07/25/2001"
   	enddate="07/25/2001"
@@ -333,7 +333,7 @@ Alexandre said that was exactly what he wanted, <quote who="Alexandre Julliard">
 <section
 	title="Documenting Functions"
 	subject="Documenting functions"
-	archive="http://www.winehq.com/hypermail/wine-devel/2001/07/.html"
+	archive="http://www.winehq.org/hypermail/wine-devel/2001/07/.html"
   	posts="10"
   	startdate="07/31/2001"
   	enddate="08/02/2001"
@@ -467,7 +467,7 @@ too.</p>
    <p>Well, it's just that I'm a fan of JavaDoc-like formats and that I've
 always been a bit skeptical of the current system (c2man). Does it still
 work btw? Is 
-<a href="http://www.winehq.com/WineAPI/">http://www.winehq.com/WineAPI/</a> up to date?</p>
+<a href="http://www.winehq.org/WineAPI/">http://www.winehq.org/WineAPI/</a> up to date?</p>
 
    <p>Also it seems we should have documentation on what messages do,
 especially for things like LVM_XXX. Maybe these could be documented with
