@@ -46,8 +46,9 @@ exit();
 // load and display a template page
 function view_page ($view)
 {
-    global $config, $html, $page;
-    return $html->theme_box($config->theme, "box_title", $page, "100%", $html->template("base", $view), '10', 'white', 'topMenu');
+    global $config, $html;
+    $template = $html->template("base", $view);
+    return $html->theme_box($config->theme, "box_title", $html->template_title, "100%", $template, '10', 'white', 'topMenu');
 }
 
 // load the home page

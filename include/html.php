@@ -723,6 +723,11 @@ class html
             // oops not found, load 404 template
 			$in = join("",file($this->_file_root."/templates/404.template"));
 		}
+        // get page name from template
+        if (eregi("<!--TITLE:\[(.+)\]-->", $in, $arr))
+        {
+            $this->template_title = $arr[1];
+        }
         // default path var
 		$vars['root'] = $this->_file_root;
         // replace vars in template

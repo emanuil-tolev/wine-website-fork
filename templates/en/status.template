@@ -1,25 +1,25 @@
+<!--TITLE:[Wine Status]-->
 
 <!-- Please remember to close your <td> and <tr> tags -->
 
-  <style>
-
+<style>
 <!--
 	.hdr	{ background-color: #64a4ff; }
-        .pct0   { background-color: #ff5050; }
-        .pct5   { background-color: #ff5d4f; }
-        .pct10  { background-color: #ff694e; }
-        .pct15  { background-color: #ff764d; }
-        .pct20  { background-color: #ff824b; }
-        .pct25  { background-color: #ff8f4a; }
-        .pct30  { background-color: #ff9b49; }
-        .pct35  { background-color: #ffa848; }
-        .pct40  { background-color: #ffb447; }
-        .pct45  { background-color: #ffc146; }
-        .pct50  { background-color: #ffcd45; }
-        .pct55  { background-color: #ffda43; }
-        .pct60  { background-color: #ffe642; }
-        .pct65  { background-color: #fff341; }
-        .pct70  { background-color: #ffff40; }
+    .pct0   { background-color: #ff5050; }
+    .pct5   { background-color: #ff5d4f; }
+    .pct10  { background-color: #ff694e; }
+    .pct15  { background-color: #ff764d; }
+    .pct20  { background-color: #ff824b; }
+    .pct25  { background-color: #ff8f4a; }
+    .pct30  { background-color: #ff9b49; }
+    .pct35  { background-color: #ffa848; }
+    .pct40  { background-color: #ffb447; }
+    .pct45  { background-color: #ffc146; }
+    .pct50  { background-color: #ffcd45; }
+    .pct55  { background-color: #ffda43; }
+    .pct60  { background-color: #ffe642; }
+    .pct65  { background-color: #fff341; }
+    .pct70  { background-color: #ffff40; }
 	.pct75	{ background-color: #dcff48; }
 	.pct80	{ background-color: #c8ff50; }
 	.pct85	{ background-color: #b4ff58; }
@@ -34,8 +34,9 @@
 	.adeqgood	{ background-color: #c0ff54; }
 	.good		{ background-color: #60ff60; }
 -->
-  </style>
-  <p><big>Wine Status</big></p>
+</style>
+
+<h1>Wine Status</h1>
                                                                         
  
   <p>Last update: Oct 08, 2002.<br>
