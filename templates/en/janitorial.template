@@ -201,12 +201,12 @@
     <li>windows/clipboard.c: user32: GetClipboardFormatNameW: illegal call to GetClipboardFormatNameA
     <li>windows/clipboard.c: user32: RegisterClipboardFormatW: illegal call to HEAP_strdupWtoA
     <li>windows/clipboard.c: user32: RegisterClipboardFormatW: illegal call to RegisterClipboardFormatA
-    <li>windows/input.c: user32: GetKeyNameTextW: illegal call to GetKeyNameTextA
-    <li>windows/input.c: user32: GetKeyboardLayoutNameW: illegal call to GetKeyboardLayoutNameA
-    <li>windows/input.c: user32: MapVirtualKeyExW: illegal call to MapVirtualKeyA
-    <li>windows/input.c: user32: MapVirtualKeyW: illegal call to MapVirtualKeyA
-    <li>windows/input.c: user32: VkKeyScanExW: illegal call to VkKeyScanA
-    <li>windows/input.c: user32: VkKeyScanW: illegal call to VkKeyScanA
+    <li class=committed>windows/input.c: user32: GetKeyNameTextW: illegal call to GetKeyNameTextA
+    <li class=committed>windows/input.c: user32: GetKeyboardLayoutNameW: illegal call to GetKeyboardLayoutNameA
+    <li class=committed>windows/input.c: user32: MapVirtualKeyExW: illegal call to MapVirtualKeyA
+    <li class=committed>windows/input.c: user32: MapVirtualKeyW: illegal call to MapVirtualKeyA
+    <li class=committed>windows/input.c: user32: VkKeyScanExW: illegal call to VkKeyScanA
+    <li class=committed>windows/input.c: user32: VkKeyScanW: illegal call to VkKeyScanA
     <li>windows/sysparams.c: user32: SystemParametersInfoW: illegal call to SystemParametersInfoA
     <li>windows/winhelp.c: user32: WinHelpW: illegal call to WinHelpA
     <li>windows/winproc.c: user32: CallWindowProcW: illegal call to WINPROC_CallProc32WTo32A
@@ -218,9 +218,10 @@
     <li>workers: <a href="mailto:rolf.kalbermatter@citeng.com">Rolf Kalbermatter</a>,
 		 <a href="nailto:Stefan.Leichter@camLine.com">Stefan Leichter</a>,
 		 <a href="mailto:m.davison@virgin.net">Matthew Davison</a>,
-		 <a href="mailto:tony_lambregts@telusplanet.net">Tony Lambregts</a>.
+		 <a href="mailto:tony_lambregts@telusplanet.net">Tony Lambregts</a>,
+		 <a href="mailto:dmitry@codeweavers.com">Dmitry Timoshkov</a>.
     <li>status: <span class=inprogress>first patches submitted</span>
-    <li>updated: Dec 2, 2002
+    <li>updated: Feb 22, 2004
   </ul>
 
   <h2>DLL separation</h2>
