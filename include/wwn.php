@@ -350,7 +350,7 @@ class wwn
             case "SECTION":
               array_push($this->summary, $attrs{'TITLE'});
               $this->body .= $html->br();
-              $this->body .= $html->frame_start("","","align=center", 0, "white");
+              $this->body .= $html->frame_start("","100%","align=center", 0, "white");
               $this->body .= "<tr class=color0 bgcolor=\"#E0E0E0\">\n\n";
               $this->body .= "<td>".$attrs{'STARTDATE'}."</td>\n";
               $this->body .= "<td align=center width=\"100%\"><b>".$attrs{'TITLE'}."</b></td>\n";
