@@ -81,7 +81,7 @@ Its main goal is to slip on scree. It also serves to inform you of what's going 
 <topic>News</topic>
 <p>CodeWeavers rolled out an updated CrossOver Office this week adding
 support for Macromedia products:</p>
-<quote who="Codeweavers"><p>
+<quote who="CodeWeavers"><p>
  "Now, with additional support for Macromedia Dreamweaver MX and Flash MX, 
  combined with our existing support for Adobe Photoshop, CrossOver Office 2.1 
  gives web developers and design firms the first Linux solution for their
@@ -109,9 +109,9 @@ experienced as an applince: All of the management software is
 designed to run on Windows, and only Windows. ...
 we were able to run -- albeit not completely-- POPassist on
 SuSE Linux Desktop with the help of CrossOver Office.  The
-only glitch comes in actually fiding the POPnetserver.  That
-function would not work, which left us manually inputting
-the new address e discovered with LiSA and My Network Places."</ul></p>
+only glitch comes in actually finding the POPnetserver.  That
+function would not work, which left us manually inputing
+the new address e-discovered with LiSA and My Network Places."</ul></p>
 </quote>
 
 
@@ -132,7 +132,7 @@ Winesetuptk 0.7 is at the wine sourceforge page
 <a href="http://sourceforge.net/project/showfiles.php?group_id=6241">
 http://sourceforge.net/project/showfiles.php?group_id=6241</a></ul></p><p>
 This new version contains an updated winedefault.reg, you don't need to run
-regedit winedefault.reg any more,  and it's updated to configurate all the
+regedit winedefault.reg any more,  and it's updated to configure all the
 latest and greatest features of wine.
 </p><p>
 This release was possible thanks to the help and contributions of 
@@ -197,14 +197,14 @@ use a current CVS or the latest snapshot of WINE.
 </p></quote>
 </section>
 <section 
-	title="Installshield 7 Notes" 
-	subject="Installshield7 notes"
+	title="InstallShield 7 Notes" 
+	subject="InstallShield7 Notes"
 	archive="http://www.winehq.com/hypermail/wine-devel/2003/10/0866.html" 
 	posts="2"
 	startdate="10/29/2003"
 >
 <topic>Fixes</topic>
-<p>Carlos Lozano shared some info concerning apps using Installshield 7:</p>
+<p>Carlos Lozano shared some info concerning apps using InstallShield 7:</p>
 <quote who="Carlos Lozano"><p>
 Here goes some notes about how to install installshield 7 programs
 with the actual wine releases (sorry, i haven't been able to install
@@ -232,7 +232,7 @@ enable the Desktop mode, in ~/.wine/config:
 I have found some programs, what give problems with Desktop mode,
 exiting during install with X11 errors (Praetoriams demo for example). 
 In this cases you can use yet another trick. Disable Desktop, and 
-enable "Managed" = "Y", then in the file the file "dlls/x11drv/window.c", 
+enable "Managed" = "Y", then in the file "dlls/x11drv/window.c", 
 you will find the function "inline static BOOL is_window_managed( WND *win )",
 in the end of this function, there are this 3 lines:
 <ul><code>  
@@ -262,7 +262,7 @@ if someone could give a pointer to a free installer he could test with.</p>
 <topic>Internationalization</topic>
 <p>Sylvain Petreolle mentioned that although his keyboard works
 fine in Wine there seems to be problems detecting it. Dmitry
-Timoshkov explained someone of the issues:</p>
+Timoshkov explained some of the issues:</p>
 <quote who="Dmitry Timoshkov"><p>
 I think that this topic was explained many times already.
 Anyway, here is yet another attempt.
@@ -305,7 +305,7 @@ current keyboard.
 I have thought of two ways for Wine to do that - either it checks what 
 name the symbol files is loaded as, or it scans the keymap (as it does 
 today). Either way - it will have to have some mapping between currently 
-loaded keymap and language. Hence the affect it has over X keyboard 
+loaded keymap and language. Hence the effect it has over X keyboard 
 detection.
 </p></quote>
 <p>Dmitry wondered how that info could be queried from X.  Shachar 
@@ -318,11 +318,11 @@ know each keyboard layout we support (though, not necessarily know exactly).
 <li> Use the XKB name</li></ol></p><p>
 
 2 will mean that we reduce the keyboard source to a table of names, and 
-their respective language IDs. I.e - "us" means English, "fr" means 
+their respective language IDs. I.e. - "us" means English, "fr" means 
 French, "he" means Hebrew etc. This will probably make adding new 
 keyboard easier (and less error prone), but will ONLY work on XKB. Then 
 again, keyboard selection (also part of the currently missing APIs) will 
-only work on XKB anyways, so wer'e probably going to have to soft-depend 
+only work on XKB anyways, so we're probably going to have to soft-depend 
 on XKB whatever we do.</p></quote>
 
 

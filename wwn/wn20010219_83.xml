@@ -94,7 +94,7 @@ but not new mail, ( pegasus email uses single files per new mail, and
 a index/data pair of files for mail folders ). Also when I try send
 email to locate users the mail does not get sent for read/write
 errors. This is because local mail delivery is done by the client
-program, by writting into the users maildir. How this is done is under
+program, by writing into the users maildir. How this is done is under
 novel you can Create files in directories that you cannot see (if that 
 permission is granted to you). But you can't do this under unix. So the
 need to implement file i/o for novell files arises.</quote>
