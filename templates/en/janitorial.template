@@ -455,7 +455,7 @@
   The conversion is mostly mechanical, but must be checked manually
   to watch for potential simplifications that may be possible with the
   new scheme.
-  <ul class=modified>
+  <ul>
     <li>workers: <a href="mailto:tony_lambregts@telusplanet.net">Tony Lambregts</a>
 
     <li>status: <span class=inprogress>First patches already submitted</span>
@@ -470,7 +470,7 @@
   be used. The algorithm for doing this change should be: if the included
   file is not present in the same directory as the .c-file, change the
   include to use &lt;&gt;.
-  <ul class=modified>
+  <ul>
 
     <li>workers: <a href="mailto:ps@leissner.se">Patrik Stridvall</a>
     <li>status: <span class=inprogress>
@@ -525,7 +525,7 @@
 	<li>updated: Dec 1, 2002
      </ul>
    <li> People to fix the tests so that they actually pass on *all* Windows platforms
-     <ul class=modified>
+     <ul>
 	<li>workers: <a href="mailto:fgouget@free.fr">Francois Gouget</a>,
 		     <a href="mailto:Martin.Wilck@Fujitsu-Siemens.com">Martin Wilck</a>
 
@@ -593,21 +593,6 @@
 
     <li>status: <span class=done>100% done</span>
     <li>updated: Nov 22, 2002
-  </ul>
-
-  <h2>ChangeLog</h2>
-  <p>Entries modified from last release are displayed in <b>bold</b>.
-  <p>The work-in-progress version of the list is always available <a href="http://www.dssd.ca/wine/Wine-Janitorial.html">here</a>.
-     Please note that this version is constantly changing; it is relative to the last released version.
-     This is important to keep in mind when looking at the <b>bold</b> items. For example, if you look
-     at this version right after a new version is released, nothing is going to be <b>bold</b>, as nothing
-     has changed from the released version.
-
-  <ul>
-
-    <li> 0.2 (Dec  4, 2002): in progress
-    <li> 0.1 (Dec  4, 2002): first release, split off of <a href="http://www.dssd.ca/wine/Wine-Fun.html">Wine Fun Projects</a>;
-			     available <a href="http://www.dssd.ca/wine/Wine-Janitorial-0.1.html">here</a>.
   </ul>
 
 <p>&nbsp;</p>

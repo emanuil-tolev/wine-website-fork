@@ -176,11 +176,11 @@
   the Windows controls available on Linux too? &lt;duck/&gt; :-)
   <ul>
     <li>worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-    <li class=modified>status: compiles, links, and runs!
+    <li>status: compiles, links, and runs!
                 The <a href="http://www.winehq.com/hypermail/wine-devel/2003/01/0153.html">patch</a>
 
 		has been accepted in the official wxWindows tree!
-    <li class=modified>updated: Jan 7, 2003
+    <li>updated: Jan 7, 2003
     <li>homepage: <a href="http://www.wxwindows.org">www.wxwindows.org</a>
   </ul>
   The first try at porting wxWindows to Wine was attempted by 
@@ -290,25 +290,5 @@
 
   Not hard to write, and quite cool to play with. Anyone familiar with the
   Win32 API can do it.
-
-  <h2>ChangeLog</h2>
-  <p>Entries modified from last release are displayed in <b>bold</b>.
-  <p>The work-in-progress version of the list is always available <a href="http://www.dssd.ca/wine/Wine-Fun.html">here</a>.
-     Please note that this version is constantly changing; it is relative to the last released version.
-     This is important to keep in mind when looking at the <b>bold</b> items. For example, if you look
-     at this version right after a new version is released, nothing is going to be <b>bold</b>, as nothing
-     has changed from the released version.
-
-  <ul>
-
-    <li> 0.4 (Jan  7, 2003): in progress
-    <li> 0.3 (Jan  7, 2003): too many changes to list, the page changed almost completly
-	<a href="http://www.dssd.ca/wine/Wine-Fun-0.3.html">[link]</a>
-    <li> 0.2 (Nov 14, 2002): first HTML release, greatly expanded
-	<a href="http://www.dssd.ca/wine/Wine-Fun-0.2.html">[link]</a>
-    <li> 0.1 (Nov  8, 2002): first release, sent out as an email
-	<a href="http://www.winehq.com/hypermail/wine-devel/2002/11/0588.html">[link]</a>
-
-  </ul>
 
 <p>&nbsp;</p>

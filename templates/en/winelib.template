@@ -188,7 +188,7 @@
 
   <p>One of the largest free software projects that we can support with Winelib.
      Having this one compile, and run under Winelib would be a real <i>tour de force</i>.
-  <ul class=modified>
+  <ul>
     <li>worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
     <li>status: working on the MinGW port
     <li>updated: Dec 31, 2002
@@ -208,7 +208,7 @@
      and be able to just recompile your Win32 app that was built with Visual-Mingw 
      and the w32api package plus reduce some of the redunancy Wine,
      Mingw and ReactOS have by finding areas where we are not in sync.</i>
-  <ul class=modified>
+  <ul>
     <li>worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
 
     <li>status: compiles, links, and runs! 
@@ -220,7 +220,7 @@
 
   <h3 class=done><a name="putty" href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">PuTTY</a></h3>
   <p>A most loved Windows tool.
-  <ul class=modified>
+  <ul>
 
     <li>worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
     <li>status: compiles, links, and runs!
@@ -370,23 +370,5 @@
     </dd>
 
   </dl>
-
-  <h2>ChangeLog</h2>
-
-  <p>Entries modified from last release are displayed in <b>bold</b>.
-  <p>The work-in-progress version of the list is always available <a href="http://www.dssd.ca/wine/Winelib-Apps.html">here</a>.
-     Please note that this version is constantly changing; it is relative to the last released version.
-     This is important to keep in mind when looking at the <b>bold</b> items. For example, if you look
-     at this version right after a new version is released, nothing is going to be <b>bold</b>, as nothing
-     has changed from the released version.
-
-  <ul>
-    <li> 0.3 (Dec 23, 2002): in progress
-    <li> 0.2 (Dec 23, 2002): too many changes to list here;
-			     available <a href="http://www.dssd.ca/wine/Winelib-Apps-0.2.html">here</a>
-
-    <li> 0.1 (Nov 25, 2002): initial release;
-			     available <a href="http://www.dssd.ca/wine/Winelib-Apps-0.1.html">here</a>
-  </ul>
 
 <p>&nbsp;</p>
