@@ -3,8 +3,8 @@
 <h1>Janitorial Projects</h1>
 
   Any self respecting project has a Janitorial project 
-  (e.g. <a href="http://www.sourceforge.net/projects/kernel-janitor">Kernel Janitor's List</a>),
-  and it's high time that we have one too.
+  (e.g. <a href="http://www.sourceforge.net/projects/kernel-janitor">Kernel 
+  Janitor's List</a>), and it's high time that we have one too.
   What is there to clean up? Well, lots of things! :)
 
   <h2>Tools</h2>
@@ -30,21 +30,11 @@
 
   <h2>Cross-calls that are Just Wrong (TM)</h2>
   The inspiration for the next two projects comes from our
-  Perl hacker extraordinaire, <a href="mailto:ps@leissner.se">Patrik Stridvall</a>.
-  More to the point, a few days back I've asked him:
-  <br><i>...what would it take to add checks for calls to 16bit funcs from 32bit funcs,
-     and from Unicode funcs to ANSI funcs?</i>
-  <br>He promptly replied:
-  <br><i>It is already done. Years ago. :-)</i>
-
-  <h3>Get rid of 32->16 calls</h3>
-  We should not call 16 bit from 32 bit code. With the ongoing 16-bit
-  separation, this is even more so important. 
-  <ul>
-    <li>workers: <a href="mailto:hughes2002@btinternet.com">Andrew John Hughes</a>
-    <li>status: <span class=done>Patches committed.</span>
-    <li>updated: Jan 31, 2003
-  </ul>
+  Perl hacker extraordinaire, <a href="mailto:ps@leissner.se">Patrik 
+  Stridvall</a>.  More to the point, a while ago Dimi asked him,
+  "<i>...what would it take to add checks for calls to 16bit funcs from 32bit 
+  funcs, and from Unicode funcs to ANSI funcs?</i>"
+  He promptly replied: "<i>It is already done. Years ago. :-)</i>"
 
   <h3>Get rid of W->A calls</h3>
   We should not call ASCII functions from Unicode functions. 
@@ -257,35 +247,13 @@
   This can go on, and on, but I think the point is clear. The following tasks
   fall into this category.
 
-  <h3>Getting rid of the global HEAP_strdup{AtoW,WtoA} functions</h3>
-  As of Dec 4, 2002, there are 98 occurrences of <tt>HEAP_strdupWtoA</tt>,
-  and 54 occurrences of <tt>HEAP_strdupAtoW</tt>.
-  
-  <h4><tt>HEAP_strdupWtoA</tt></h4>
+  <h3>Getting rid of the global 
+      <font size="-1"><tt>HEAP_strdupWtoA</tt></font> function</h3>
+  As of Dec 4, 2002, there were 98 occurrences of <tt>HEAP_strdupWtoA</tt>.
   These functions invocations should go away during the W -&gt; A cross-call
   cleanup. It is better to directly fix that sort of cross call, rather than
   replace this function by other alternatives. The few of them that can not
   be eliminated this way, should be replaced by calls to <tt>WideCharToMultiByte</tt>.
-
-  <h4><tt>HEAP_strdupAtoW</tt></h4>
-  These should be changed to <tt>MultiByteToWideChar</tt>,
-  or even better to <tt>RtlCreateUnicodeStringFromAsciiz</tt>.
-    <li>workers: <a href="mailto:m.davison@virgin.net">Matthew Davison</a>
-    <li>status: <span class=done>Completed.</span>
-    <li>updated: Jan 27, 2003
-  </ul>
-
-  <h3>Fix HeapReAlloc/RtlReAllocateHeap() calls</h3>
-  From Eric: <i>there's lot of code which relies on HeapReAlloc would allocate a block 
-  if the block to reallocate is NULL (as realloc does in stdlib);
-  this is not the case in windows, and we should fix it (and first, fix 
-  all the wine code relying on this)</i>
-  <ul>
-    <li>workers: <a href="mailto:xolegpro@rbcmail.ru">Oleg Prokhorov</a>,
-		 <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>.
-    <li>status: <span class=done>Completed</span>
-    <li>updated: Mar 10, 2004
-  </ul>
 
   <h3>Include file cleanup</h3>
   That is, no more Wine-specific headers in <tt>include/</tt>. This is tightly
@@ -346,7 +314,7 @@
   </ul>
 
   <p>Please note that patches have been submitted for the <span class=submitted>italic</span> entries;
-     the <span class=committed>grayed out</span> entries have already been fixed. 
+    the <span class=committed>grayed out</span> entries have already been fixed.
   <ul>
     <li>workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>.
     <li>status: <span class=inprogress>first patches committed.</span>
@@ -374,24 +342,12 @@
     <li> windows
   </ul>
 
-  <p>Please note that patches have been submitted for the <span class=submitted>italic</span> entries;
-     the <span class=committed>grayed out</span> entries have already been fixed. 
+  <p>Please note that patches have been submitted for the <span class=submitted>     italic</span> entries; the <span class=committed>grayed out</span> entries 
+     have already been fixed. 
   <ul>
     <li>workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>.
     <li>status: <span class=inprogress>first patches committed.</span>
     <li>updated: Mar 10, 2004
-  </ul>
-
-  <h3>Header dependencies cleanup</h3>
-  From Alexandre: <i>...most of our headers are including way
-  too much stuff compared to what Windows does. It should be possible to
-  generate a dependency tree of our headers with makedep and compare
-  that with one done with the Windows headers; the goal is to make them
-  identical.</i>
-  <ul>
-    <li>workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>.
-    <li>status: <span class=done>patches committed.</span>
-    <li>updated: Sep 9, 2003
   </ul>
 
   <h3>Compile Wine with other headers</h3>
@@ -405,7 +361,71 @@
     <li>updated: Aug 30, 2003
   </ul>
 
-  <h2>Miscellaneous</h2>
+ <h2>Miscellaneous</h2>
+
+  <h3>Use Compiler Warnings to Fix Errors</h3>
+  Having gcc print out some warnings could isolate some problems.  There are 
+  at least three different ones that we should investigate:
+  <ul>
+
+     <li> <tt>-Wmissing-declarations</tt>
+     should point lots of missing APIs declarations 
+     (Eric has done it in some cases, and is in the process of submitting some 
+     fixes). We cannot turn this warning always on because there are lots of 
+     cases where we have global functions without prototypes (more than 2/3 
+     of them are made out of the 16bit entry points)</li>
+   
+     <li><tt>-Wwrite-strings</tt>
+     There has already been quite some work on this, but we think there's 
+     more to do.</li>
+
+     <li> <tt>-Wcast-qual</tt>
+     should point out all the (const bla*) => (foo*) casts. We 
+     use quite a bit this, and in some cases it would prevent some errors. 
+     These are the main cases pointed out by this warning:
+      <ol>
+       <li> const void* ptr; and then reading a value from ptr (word...) like 
+       *(WORD*)ptr which should be written *(const WORD*). The warning in this 
+        case is harmless.</li>
+
+       <li> const void* ptr; and then setting it to another const pointer: const
+       WORD* pw = (WORD*)ptr; which should be written pw = (const WORD*)ptr;. 
+       This warning is harmless if pw is really defined as const, in some cases 
+       it isn't and this should be fixed.</li>
+
+       <li> const void* ptr; and then setting it to a pointer to a pointer (used
+       a lot for qsort/bsearch... callbacks), when dealing with arrays of 
+       pointers. Here again, what's const is the first pointer, so const foo* f 
+       = *(const foo**)ptr is wrong, it should be const foo* f = (const foo* 
+       const*)ptr; This could be harmfull if not declared properly.
+       Unfortunately, we cannot turn this warning on all the time because some 
+       C functions implementation would always trigger it (strstr for example), 
+       unless we use intergral values (not pointer) to cast from the const 
+       char* to the returned char*), and this is uglier IMO than the warning we 
+       try to avoid.</li> </ol> </li>
+     </ul> 
+
+  <p>This project was suggested by Eric Pouech and Francois Gouget.  
+     For more information <a href="/site/who">contact</a> them directly or 
+     the wine-devel <a href="/site/forums">mailing list</a>.
+  <ul>
+  <li> workers: wanted
+  <li> status: <span class=todo>TODO</span>
+  <li> updated: May 21, 2004</ul>
+
+
+ 
+  <h3>Fix min/max macros</h3>
+  <p>From Francois Gouget: <i>"Patch our min/max macros to catch 
+    signed/unsigned comparisons.  This generates a lot of warnings. Ideally 
+    they should be fixed without using casts but it may not always be possible.
+    (the modified min/max macros where borrowed from a Linux kernel patch)"</i>
+    <ul>
+    <li> workers: wanted
+    <li> status: <span class=todo>TODO</span>
+    <li> updated: May 21, 2004</ul>
+
+
 
   <h3><a name="dprintf"></a>Replace DPRINTFs with TRACEs where possible</h3>
   Currently, the debug layer is smart enough to concatenate consecutive
@@ -420,18 +440,6 @@
     <li>updated: Mar 14, 2003
   </ul>
 
-
-  <h3><a name="include-quotes"></a>Include statements should use &lt;&gt; instead of ""</h3>
-  Wine uses "" in most of it <tt>#include</tt> statements for historical
-  reasons that are no longer an issue. It needs to be changed to use
-  &lt;&gt; instead. We will keep the quotes in the .c-files, as an indication
-  that the header is a Wine header, rather than a system header. For header
-  files we don't have this luxury as they can cause problems for Winelib developpers.
-  <ul class=modified>
-    <li>workers:  <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-    <li>status: <span class=done><a href="http://www.winehq.org/hypermail/wine-cvs/2003/08/0238.html">patch</a> committed</span>.
-    <li>updated: Aug 30, 2003
-  </ul>
 
   <h3><a name="crt0"></a>Make winegcc link automatically to a main() or a WinMain()</h3>
   From Alexandre: <i>The easiest is with some sort of crt0 static library that provides 
@@ -526,16 +534,68 @@
   <p>Once the initial fixing is done we will really need people doing 3 to
   prevent bad tests from coming back.
 
+  <h2>Completed Projects</h2>
+
+  <p>Several janitorial projects have been completed in the past and we'd
+  like to thank everyone who pitched in.  Just in case you're wondering
+  what we've done, the list is preserved below:
+
   <h3>Compilation with -DSTRICT</h3>
-  Please refer to <a href="http://bugs.winehq.org/show_bug.cgi?id=90">Bug #90</a>
-  for more information on this project. 
+  Please refer to <a href="http://bugs.winehq.org/show_bug.cgi?id=90">Bug 
+  #90</a> for more information on this project. 
   <ul>
-    <li>workers: <a href="mailto:mstefani@redhat.de">Michael Stefaniuc</a>,
-		 <a href="mailto:hughes2002@btinternet.com">Andrew John Hughes </a>,
-		 <a href="mailto:jdahlin@async.com.br">Johan Dahlin</a>,
-		 <a href="mailto:julliard@wine.codeweavers.com">Alexandre Julliard</a>
-    <li>status: <span class=done>100% done</span>
-    <li>updated: Nov 22, 2002
+    <li>workers: Michael Stefaniuc, Andrew John Hughes, Johan Dahlin,
+		 Alexandre Julliard
+    <li>completed: <span class="done">Nov 22, 2002</span>
+  </ul>
+
+  <h3>Get rid of 32-&gt;16 calls</h3>
+  We should not call 16 bit from 32 bit code. With the ongoing 16-bit
+  separation, this is even more so important. 
+  <ul>
+    <li>workers: Andrew John Hughes
+    <li>completed: <span class="done">Jan 31, 2003</span>
+  </ul>
+
+  <h3><a name="include-quotes"></a>Include statements should use &lt;&gt; instead of ""</h3>
+  Wine uses "" in most of it <tt>#include</tt> statements for historical
+  reasons that are no longer an issue. It needs to be changed to use
+  &lt;&gt; instead. We will keep the quotes in the .c-files, as an indication
+  that the header is a Wine header, rather than a system header. For header
+  files we don't have this luxury as they can cause problems for Winelib developpers.
+  <ul class=modified>
+    <li>workers:  Dimitrie O. Paun
+    <li>completed: <span class="done">Aug 30, 2003</span>
+  </ul>
+
+  <h3>Header dependencies cleanup</h3>
+  From Alexandre: <i>...most of our headers are including way
+  too much stuff compared to what Windows does. It should be possible to
+  generate a dependency tree of our headers with makedep and compare
+  that with one done with the Windows headers; the goal is to make them
+  identical.</i>
+  <ul>
+    <li>workers: Alexandre Julliard
+    <li>completed: <span class="done">Sep 9, 2003</span>
+  </ul>
+
+  <h4><tt>HEAP_strdupAtoW</tt></h4>
+  These should be changed to <tt>MultiByteToWideChar</tt>,
+  or even better to <tt>RtlCreateUnicodeStringFromAsciiz</tt>.
+  <ul>
+    <li>workers: Matthew Davison
+    <li>completed: <span class="done">Jan 27, 2003</span>
+  </ul>
+
+  <h3>Fix HeapReAlloc/RtlReAllocateHeap() calls</h3>
+  From Eric: <i>there's lot of code which relies on HeapReAlloc would allocate 
+  a block if the block to reallocate is NULL (as realloc does in stdlib);
+  this is not the case in windows, and we should fix it (and first, fix 
+  all the wine code relying on this)</i>
+  <ul>
+    <li>workers: Oleg Prokhorov
+		 Dimitrie O. Paun
+    <li>completed: <span class="done">Mar 10, 2004</span>
   </ul>
 
 <p>&nbsp;</p>
