@@ -93,11 +93,12 @@
 	    <li> status: review of the comctl32 source needed
 	    <li> updated: Mar 15, 2004
 	  </ul>
-	<li> Integrate API status into WineHQ <span class="todo">[TODO]</span>
+	<li> Integrate API status into WineHQ <span class="done">[DONE]</span>
 	  <ul>
-	    <li> worker: ?
-	    <li> status: code exists <a href="http://fgouget.free.fr/wine/winapi_stats-en.shtml">here</a>
-	    <li> updated: Feb 5, 2004
+	    <li> workers: Ofir Petruska <hatky@users.sf.net>,
+			  Jeremy Newman <jnewman@codeweavers.com>
+	    <li> status: <a href="http://cvs.winehq.org/patch.py?id=11665">patch</a> committed.
+	    <li> updated: Mar 24, 2004
 	  </ul>
 	<li> Server-side support for winrash <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
@@ -223,10 +224,10 @@
 	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2004/02/0226.html">patch</a> committed
 	    <li> updated: Feb 18, 2004
           </ul>
-	<li> Move winedump's README to appropriate place <span class=todo>[TODO]</span>
+	<li> Move winedump's README to appropriate place <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: ?
-	    <li> status: Part of it is already in the man page, rest must go into the Development Guide
+	    <li> worker: <a href="mailto:mstefani@redhat.de">Michael Stefaniuc</a>
+	    <li> status: Move it into the Development Guide
 	    <li> updated: Feb 18, 2004
           </ul>
 	<li> Simplify the DEVELOPER-GUIDE <span class=todo>[TODO]</span>
