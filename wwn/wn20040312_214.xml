@@ -92,7 +92,7 @@ others.  Some of the larger changes proposed by Eric haven't
 been implemented yet.  
 </p>
 
-<p>Vincent B&#233;ron pointed out that RedHat RPM's wouldn't
+<p>Vincent B&#233;ron pointed out that RedHat RPMs wouldn't
 be available for a few days.  Otherwise, 
 <a href="http://www.winehq.org/site/download">go download it</a>.
 </p>
@@ -224,7 +224,7 @@ of projects have wanted to utilize proprietary Windows
 libraries.  The general solution right now is to make
 a Winelib program that does it.  Writing a Winelib program
 is a bit of overhead though.  Most people would just like
-to dynamically load the library and rsuh off to use the
+to dynamically load the library and rush off to use the
 API.  Boaz Harrosh wondered how general of a solution this
 was and Mike Hearn replied with some of the deficiencies of
 the approach:</p>
@@ -246,7 +246,7 @@ The intention is to have a module wine-sharedlib.so that you can dlopen
 and call a method in there to have Wine initialize itself.  After this
 you can call the API as a library.
 </p><p>
-Now, this might not be as helpful to others as you might thinkg, unless
+Now, this might not be as helpful to others as you might think, unless
 they dlopen/dlsym every symbol they want to import (this is what we do
 with Mono: every symbol we need has to be explicitly invoked).
 </p><p>
@@ -409,7 +409,7 @@ default is warning off.</dd>
 <p>A lot of Wine options are being moved into environment variables - 
 DLL overrides have been gone for a while and debug messages are next.
 Mike Hearn posted a small script to allow changing the options on the
-commandline easier.  If you call the script "vino" as Mike suggested,
+commandline more easily.  If you call the script "vino" as Mike suggested,
 you can invoke it with "vino +relay ole32=n [program.exe]" for example.
 The script:</p>
 <quote who="Mike Hearn"><p>

@@ -93,7 +93,7 @@ Find them here:
   
 <p>Later he reported on cross-compiling all of Wine:</p>
 <quote who="Hans Leidekker"><p>
-I spent some time cross compiling all of Wine with MinGW according
+I spent some time cross-compiling all of Wine with MinGW according
 to this recipe:
 <ul>  <a href="http://winehq.com/?issue=123#Cross-compiling%20Wine">
   http://winehq.com/?issue=123#Cross-compiling Wine</a></ul></p><p>
@@ -186,7 +186,7 @@ option listed above.</p>
 	enddate="02/26/2004"
 >
 <topic>Multimedia</topic>
-<p>Yorick Hardy created a sounddriver for NetBSD:</p>
+<p>Yorick Hardy created a sound driver for NetBSD:</p>
 <quote who="Yorick Hardy"><p>
  This patch adds the audio driver winenbsd using the native NetBSD
  audio system as an alternative to OSS. On the one hand

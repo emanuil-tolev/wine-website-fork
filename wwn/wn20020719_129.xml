@@ -170,7 +170,7 @@ weeks ago). Dmitry Tmishkov has also been doing some work to unicodify
 the entire file API. His work should be available in two weeks or so.
 </p><p>
 The blocker for #1 is to convince Alexandre that NT really deals with
-pathes the way my patch does... which involves writing some test
+paths the way my patch does... which involves writing some test
 programs on NT. We need to understand the NtQueryDirectoryFile function
 in more detail to do this.
 </p></quote>

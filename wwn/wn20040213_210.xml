@@ -124,7 +124,7 @@ this one is it seems to have appeared in dead tree format on newstands.</p>
 Linux-isms: exec shield and prelinking.  
 <a href="http://lwn.net/Articles/31032/">Exec shield</a> is a security
 mechanism to prevent overflows from being exploited.  It relies on 
-changing the memory layout of an executable.. unfortunately Wine
+changing the memory layout of an executable... unfortunately Wine
 requires a very particular layout. 
 <a href="http://www.crast.us/james/articles/prelink.php">Prelinking</a>
 is a method to speed up application startup time by having a preferred
@@ -343,7 +343,7 @@ needs love (I'm sure you'll find stuff &lt; g &gt;).
 </p><p>
 Here are the list of icons:
 (Please note that to get these you'll need to build wine. These
-resources are not includes "as is" in the code, rather they are
+resources are not included "as is" in the code, rather they are
 hex encoded as text in resource files (.rc). The build process
 extracts them from there into the files listed below, via a tool
 of ours (tools/bin2res). If you modify these extracted files, 
@@ -484,7 +484,7 @@ And the list of bitmaps:
 
 <p>Anyone wanting to help Terry may want to contact him, 
 his email address is on his
-<a href="http://www.winehq.org/hypermail/wine-devel/2004/02/0174.html">original post</a>
+<a href="http://www.winehq.org/hypermail/wine-devel/2004/02/0174.html">original post</a>.
 </p>
 
 </section>

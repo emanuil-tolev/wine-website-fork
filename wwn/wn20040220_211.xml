@@ -102,12 +102,12 @@ the To Do items:
 
 <p>Some newsworthy items came out of TransGaming this week.
 The biggest story is the release of WineX 3.3:</p>
-<quote who="Transgaming"><p>
+<quote who="TransGaming"><p>
 The majority of the technical improvements in WineX 3.3 have been
 driven by the implementation of support of Steam. Support for its
 online games has resulted in improved socket and pipe support as well
 as a major enhancement to font support. In addition to Steam, this
-release contains copyprotection enhancements and support for Dark Age
+release contains copy protection enhancements and support for Dark Age
 Of Camelot as well some success in making a number of other titles
 functional with workarounds, although not yet to a point where we can
 say that they are supported. You will find some of these titles 
@@ -167,7 +167,7 @@ manager that leaked the original story got his ass handed to him on a platter.
 <p>Kevin Koltzau is making progress on adding theming to Wine. 
 In a patch on Sunday he remarked,
 <quote who="Kevin Koltzau">
-With this some apps may start looking partly themed (eg. the toolbar buttons 
+With this some apps may start looking partly themed (e.g. the toolbar buttons 
 in newer versions of mIRC are themed), and we can start adding theming code 
 to widgets</quote></p>
 
@@ -298,7 +298,7 @@ This program looks for a file matching $queuedir/rep*/report, takes it
 apart in its directory while also creating summary.txt.  If an error
 occurs the directory is renamed to errXXXXX to avoid future attempts
 at processing this report.  If everything goes flawlessly the whole
-directory is renamed (based on the information learned in the process)
+directory is renamed (based on the information learnt in the process)
 to $datadir/BUILD/VERSION_TAG_DIGIT where DIGIT is for resolving name
 clashes and $datadir/BUILD/outdated is created to signal the change in
 the given build.  Allowed builds are those in $builds.  See also the
@@ -308,7 +308,7 @@ head of the file.
 <li> gather
 <ul>
 This program is intended to run as a second stage.  See the sample
-crontab file, races and concurrency problems must be dealed with on
+crontab file, races and concurrency problems must be dealt with on
 that higher level.  The program looks for a file matching
 $datadir/*/outdated, creates index.html in the same directory and
 removes the outdated file.  See also the head of the file.
@@ -337,7 +337,7 @@ The file to have $builds point to.
 <topic>Patches</topic>
 <p>Marcus spent some time this week getting Windows kernel
 drivers loading.  Specifically, he tried to get SafeDisc working
-so that copy protection on games would be support.  This was
+so that copy protection on games would be supported.  This was
 discussed a bit at WineConf and various ideas were kicked
 around.  SafeDisc isn't working yet, and it's not even clear
 it's possible to support it, but Marcus took a stab at it.
@@ -355,9 +355,9 @@ Changelog:
 	Added a possibility to load Windows WDM kernel drivers,
 	a bit hackish.
         <br />
-	Implemented a seperate PE loader for WDMs, but reuse
+	Implemented a separate PE loader for WDMs, but reuse
 	common functionality from normal PE loader (relocation
-	fixup, relayhandling, module override.) Uses NtLoadDriver.
+	fixup, relay handling, module override.) Uses NtLoadDriver.
 	<br />
 	Implemented DeviceIoControl passing to kernel drivers. 
 </ul></p></quote>
@@ -453,7 +453,7 @@ from an INF file:</p>
 Here is a first pass at replacing winedefault.reg with a windows inf file and 
 dll registration.  The registry entries in the inf file are not complete.  
 Other than quite a few missed entries I've also left out the keys for 
-Codepages and the Country List entries as these are pretty large(lots of 
+Codepages and the Country List entries as these are pretty large (lots of 
 typing, I'm lazy).  
 </p><p>
 setupregistry is a shell script that registers dlls with regsvr32 and then 

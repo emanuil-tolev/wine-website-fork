@@ -72,7 +72,7 @@ of audio work is being tackled.  A new ALSA driver is being
 developed and latency issues in games such as <i>Medal of Honor: 
 Allied Assault</i> have been fixed.  The top ranked technology
 items in February were:</p>
-<quote who="Transgaming"><p>
+<quote who="TransGaming"><p>
 <ul>
     <li> Improved ALSA Support</li>
     <li> DirectX 9</li>
@@ -122,7 +122,7 @@ what he was considering:</p>
 <quote who="Mike Hearn"><p>
 Perhaps Wine should start considering a kernel-like approach with some
 developers having their own trees where some experimental patches are
-tried out first then percolate up to Alexandres tree?
+tried out first then percolate up to Alexandre's tree?
 </p><p>
 Another thing I'd really like to see is a move to GNU arch version control
 - it makes distributed development and branching a *lot* easier. I
@@ -171,7 +171,7 @@ have some pretty important reasons to go down this path, and
 </p></quote>
 
 <p>This led Mike to put together a really nice list of things
-that arch could for Wine and how development could be improved.
+that arch could do for Wine and how development could be improved.
 Some of the tools Dimi wanted replacements for already exist:</p>
 
 <quote who="Mike Hearn"><p>
@@ -185,9 +185,9 @@ Arch already has this built in, effectively. Arch works in a
 fundamentally different way to CVS - it's based on applying changesets
 in order rather than keeping track of HEAD and working backwards.
 </p><p>
-ie running <tt>tla get wine</tt> or whatever actually downloads the first
+i.e. running <tt>tla get wine</tt> or whatever actually downloads the first
 checkin then all the patches and applies them in turn. Obviously that's
-too slow for most projects so you can stow cached revisions (ie tree
+too slow for most projects so you can stow cached revisions (i.e. tree
 snapshots) along the way so it only downloads the last revision then
 works from there. That only occurs on initial checkout of course.
 </p><p>
@@ -214,19 +214,19 @@ understands things like file renames/moves/symlinks.
 </p><p>
 <u>OK, so why should we use arch?</u></p><p>
 
-Wine is a project that operates similar to the Linux kernel. There is a
+Wine is a project that operates similarly to the Linux kernel. There is a
 benign dictator, who controls CVS. We all grab CVS, hack in our own
 branches, separate the changes out into a patch and email it to
 wine-patches. Normally, if we got it right, Alexandre will check it in
 forming a logical changeset, and we then all run cvs update which
-downloads everyones changes.
+downloads everyone's changes.
 </p><p>
 This works OK but has a number of disadvantages:
 <dl>
 <dt> No branches. </dt>
 
 <dd>Some Wine work would be best done in parallel to the main tree. For
-instance, the filesystem work, the WM rewrite etc. Wines current modus
+instance, the filesystem work, the WM rewrite etc. Wine's current modus
 operandi makes this very hard, as effectively CVS HEAD must be at least
 dogfoodable at all times. This also makes it hard to do R&amp;D projects
 like the shared memory wineserver while keeping the results of that R&amp;D
@@ -237,7 +237,7 @@ usable.</dd>
 working on Wine. Sometimes because those patches are incomplete or
 wrong, sometimes because they get forgotten or missed, sometimes because
 Alexandre doesn't agree that the code belongs in the main Wine tree
-(things like the system tray patch, delayed debug tracing patch etc
+(things like the system tray patch, delayed debug tracing patch, etc
 spring to mind).
 <br />
 Over time, a particular checkout of wine will accumulate debugging
@@ -392,7 +392,7 @@ I have opened up the source to the WineHQ appdb. Anyone with spare time
 and some PHP skills is welcome to help improve it.
 </p><p>
 The tree has not been touched in over a year. I did some work to clean
-it up for this import, and thats about it. I will be available to answer
+it up for this import, and that's about it. I will be available to answer
 any questions on it.
 </p><p>
 Check it out:
@@ -483,7 +483,7 @@ instead of X:</p>
 You're not going to gain anything by letting rundll32 not import user32,
 because it has to load all the dlls it's telling to self-register
 anyway, and many of them will import user32 themselves even if rundll32
-don't.
+doesn't.
 </p><p>
 In my debian packages I go the ttydrv route, with the 
 <a href="http://www.winehq.org/hypermail/wine-devel/2004/03/0298.html">following

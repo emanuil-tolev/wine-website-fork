@@ -158,7 +158,7 @@ functions from DLLs.</li></ul></p></quote>
 Wine.  Their addition is also nicely compartmentalized. Miguel de Icaza 
 hoped it would get integrated,
 <quote who="Miguel de Icaza">We are running some SWF applications now 
-with Mono and this patch;  And we are fairly happy, since its a small
+with Mono and this patch;  And we are fairly happy, since it's a small
 patch to maintain this time.  Of course, it would be best to make it
 part of Wine, so the user does not need two separate Wine installations.
 </quote></p>
@@ -185,17 +185,17 @@ it might not even work for larger apps but I am happy with the results
 so far.
 </p><p>
 I was thinking the other day that ReactOS and WINE/Linux might get a
-big boost if we can push support in the embedded enviroment so I
+big boost if we can push support in the embedded environment so I
 started taking a look at WinCE and Microsoft Embedded Visual C++ 4.0
-.BTW: Its a free download now. 
+.BTW: It's a free download now. 
 <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=1dacdb3d-50d1-41b2-a107-fa75ae960856&amp;DisplayLang=en">
 http://www.microsoft.com/downloads/details.aspx?FamilyID=1dacdb3d-50d1-41b2-a107-fa75ae960856&amp;DisplayLang=en</a>
 </p><p>
 I started looking at WinCE and thought it would be nice if we could be
 source compatible with WinCE apps and binary compatbile on x86. Well it
-seems that WinCE apps dont differ much from standard Win32 apps execpt
-the subsystem ID is differnt. If you attempt to run a WinCE application
-on Windows it will say that its not able to run. Ok no problem, we just
+seems that WinCE apps don't differ much from standard Win32 apps except
+the subsystem ID is different. If you attempt to run a WinCE application
+on Windows it will say that it's not able to run. Ok no problem, we just
 run "editbin /subsystem:windows blah.exe" and check it out. Now the app
 is looking for coredll.dll. No problem there I have created a stub
 coredll.dll that just forwards all calls to the proper Win32 dlls such
@@ -205,13 +205,13 @@ as user32, kernel32, etc.....
 soon then I go and run the same test on ReactOS but this time I run a
 copy of messagebox without changing the subsystem ID...Hey what do you
 know. It works =). I talked with Alexandre about it a bit and he said
-that WINE like ReactOS also shouldnt care about the subsystem ID so if
+that WINE like ReactOS also shouldn't care about the subsystem ID so if
 someone is interested in testing just drop the messagebox programs and
 coredll.dll in to a directory and give it a shot.
 </p><p>
 I am having trouble getting more complex apps (hello world) to work atm
 so I think i am just going to take a break and clear my head for a few
-days. Some of the WinCE API and Win32 is not 100% compatible so we cant
+days. Some of the WinCE API and Win32 is not 100% compatible so we can't
 just forward all parts to the Win32 implementation but I think we can
 do it for most of it. If anyone is interested in helping out the source
 is in the ROS CVS tree and attached to this email......

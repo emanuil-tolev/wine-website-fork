@@ -523,7 +523,7 @@ in wine, when you know it could be safely run in Windows?
 In just a few embedded bytes in the code it could remove your home directory 
 in a single syscall. Would you expect that? - I wouldnt.
 </p><p>
-Cant we atleast try implement some protection in wine against these attacks,
+Can't we at least try implement some protection in wine against these attacks,
 before something really nasty happens. I do think company policy decissions
 againt using wine, will do just as much damage to the wine movement as too
 the free software movement at large. 
