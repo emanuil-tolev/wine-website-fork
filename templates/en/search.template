@@ -1,13 +1,16 @@
-<div align=center><table border=0 cellpadding=0 cellspacing=0><tr><td>
-<form method=post name=webSearch action="/cgi-bin/htsearch">
-    <span class="small">Search WineHQ</span><br><input
-    type=text name="words" value="Enter Search!" onBlur="if (value == '') {value = 'Enter Search!'}" 
-    onFocus="if (value == 'Enter Search!') {value =''}" size=12 maxlength=80 class="searchInput"><input
-    type="hidden" name="method" value="any"><input
-    type="hidden" name="format" value="builtin-short"><input
-    type="hidden" name="sort" value="score"><input
-    type="hidden" name="config" value="htdig"><input
-    type="hidden" name="restrict" value=""><input
-    type="hidden" name="exclude" value="">
-</form>
-</td></tr></table></div>
+
+<div align=center><table border=0 cellpadding=0 cellspacing=0>
+<tr><td>
+    <!-- SiteSearch Google -->
+    <FORM method=GET action="http://www.google.com/search">
+    <span class="small">Search WineHQ</span><br>
+    <input type="text" name="q" value="Enter Search!"
+       onBlur="if (value == '') {value = 'Enter Search!'}" 
+       onFocus="if (value == 'Enter Search!') {value =''}"
+       size=12 maxlength=80 class="searchInput">
+    <input type=hidden name=domains value="www.winehq.org">
+    <input type=hidden name=sitesearch value="www.winehq.org">
+    </FORM>
+    <!-- SiteSearch Google -->
+</td></tr>
+</table></div>
