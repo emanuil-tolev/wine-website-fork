@@ -87,7 +87,7 @@ FreeBSD
 
 <!-- Row 3 -->
 <tr>
-<td align=center rowspan="2" bgcolor="#e0e0e0">
+<td align=center rowspan="1" bgcolor="#e0e0e0">
   Linux (glibc-2.2, glibc2.3)
 </td>
 
@@ -99,17 +99,6 @@ FreeBSD
   <a href="mailto:kreide@online.no">Kristian Eide</a>
 </td>
 <td align=center bgcolor="#ffffff"> .rpm </td>
-</tr>
-
-<tr>
-<td align=center bgcolor="#ffffff">
-  <b><a href="http://people.debian.org/~andreas/">Daily Debian Wine</a></b>
-</td>
-<td bgcolor="#ffffff">
-  Maintained by 
-  <a href="mailto:andreas@schuldei.org">Andreas Schuldei</a>.
-</td>
-<td align=center bgcolor="#ffffff"> .deb</td>
 </tr>
 
 <!-- Contributed Wine Versions -->
