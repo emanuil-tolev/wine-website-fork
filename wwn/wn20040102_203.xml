@@ -62,7 +62,7 @@ Its main goal is to write the wrong year on checks. It also serves to inform you
 >
 <topic></topic>
 <p>Once again.. here I am just a few minutes from putting out an issue
-of WWN and I realize I have no news.  Well, that just doesn't isn't
+of WWN and I realize I have no news.  Well, that just isn't
 acceptable.  It's usually possible to scrounge <i>something</i> up.  
 This week <a href="http://www.frankscorner.org">Frank's Corner</a>
 came through with 
@@ -76,7 +76,7 @@ than TransGaming's WineX.  </p>
 
 </section>
 <section
-        title="DMusic Update"
+        title="DirectMusic Update"
         subject="DMUSIC: my latest work"
         archive="http://www.winehq.com/hypermail/wine-patches/2004/01/0007.html"
         posts="1"
@@ -91,7 +91,7 @@ with his patch:</p>
 I finally found some time to organise my dmusic work of last two months
 in useful patch. Dmusic is now DX9 compatible, we have almost fully
 implemented (but not working :( )
-IDirectMusicCollection/IDirectMusicInstrument, fully implemented
+IDirectMusicCollection / IDirectMusicInstrument, fully implemented
 IDirectMusicContainer and almost completely (but fully working I believe
 IDirectMusicLoader)...
 </p><p>
@@ -146,7 +146,7 @@ fellow workman
 </p><p>
     I have successfully Beta released a WinLib port of a, 1 million 
 lines of code, windows program. QA will Install a first Linux Machine 
-and will start to bang on it tomorrow. (Well more like an advanced Alfa 
+and will start to bang on it tomorrow. (Well more like an advanced alpha 
 I guess)
 </p><p>
     Technologies successfully compiled and running in the Project:
@@ -219,7 +219,7 @@ time this issue came out.
         startdate="12/30/2003"
 >
 <topic>Integration</topic>
-<p>Mike Hearn wrote a script to install IE for you. 
+<p>Mike Hearn wrote a script to install Internet Explorer for you. 
 Lots of programs these days depend on IE to be installed in order
 for them to work.  So to simplify that process Mike automated it
 and made the script available at, 
