@@ -365,7 +365,7 @@ Warnings.</p></quote>
 
 <p>Sylvain Petreolle asked what version of Wine he was running.  
 Philipp reported it was the latest CVS.  Roderick Colenbrander
-jumped in an diagnosed the problem, 
+jumped in and diagnosed the problem, 
 <quote who="Roderick Colenbrander">
  The problem you have is a bug in the dga code of the ati drivers. To
 workaround the problem set the option UseDGA to N in your config file. The strange
@@ -413,7 +413,7 @@ sucking.... maybe valgrind might help?
 </quote></p>
 
 <p> Shachar Shemesh had an idea how memory use could be tracked but
-it involved Changing the way Wine allocates memory :</p>
+it involved changing the way Wine allocates memory :</p>
 <quote who="Shachar Shemesh"><p>
 Something else that might help is an algorithm I suggested a long time 
 ago, and which was not thought as worth the effort. Since I have not 

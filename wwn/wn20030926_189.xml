@@ -82,7 +82,7 @@ Its main goal is to walk carefully on thin ledges. It also serves to inform you 
 <topic>Filesystems</topic>
 <p>Alexandre's work on NTDLL/Kernel32 DLL separation was kicked
 into high gear a few weeks ago.  Much work has been done.  Eric
-Pouech has been relatively quiet though in this latest round.
+Pouech has been relatively quiet through in this latest round.
 He wrote in to give an update on what he's concentrating on:</p>
 
 <quote who="Eric Pouech"><p>
@@ -90,7 +90,7 @@ He wrote in to give an update on what he's concentrating on:</p>
  I was working on the NtCreateFile implementation.
 </p><p>
 Even, if it's not ready for prime time, I've been running lots of apps 
-since once week without issues (which doesn't mean that none are left).
+since one week without issues (which doesn't mean that none are left).
 You'll find attached the patch for review.
 (Since Alexandre has been busy lately, better to share some info)
 </p><p>
@@ -119,10 +119,11 @@ I'm still thinking of either:
 <li> beef up the device server object to store this information (unix 
 device name, fake label, fake serial number).</li>
 </ul></p><p>
-The later is in fact more suited for an evolution of the current server 
+The latter is in fact more suited for an evolution of the current server 
 device object.
 </p><p>
 My final question is more on which order we go on:
+</p><p>
 Solution 1:
 <ol>
 <li> get the NtCreateFile ready and include it in the tree</li>
@@ -131,7 +132,7 @@ Solution 1:
     <li> convert the file/paths related functions</li></ol></li>
 <li> finish the server side objects (devices...)</li></ol>
 </p><p>
-Solution 1:
+Solution 2:
 <ul>
  3. <br />
  1  <br />
@@ -189,7 +190,7 @@ WINEDLLOVERRIDES="ole32,oleaut32,rpcrt4=n" wine myprog.exe
 </code></ul></p><p>
 is only slightly longer. 
 </p><p>
-Why must wines command line options be removed though? They are often
+Why must wine's command line options be removed though? They are often
 handy for testing things out.
 </p></quote>
 
@@ -239,7 +240,7 @@ few years, and having obsolete information in there is way worse
 than having no information at all. There are better places to
 put such info: man pages, web pages (WineHQ), etc. Having it
 duplicated somewhere in the depths of these manuals serves no 
-purpose then to create more (and useless) work for us.
+purpose than to create more (and useless) work for us.
 </p><p>
 Third, we have to try to make these things look as books, and
 less likely a motley collection of files, interlaced with
@@ -259,7 +260,7 @@ I imagine most of the documentation guides.  But, hey, it's always
 fun to rehash this stuff because who knows how many folks are just
 tuning in.  Simple question:
 </p><quote who="flyker">
-<p>Can i compile my program to executable file that can be run without wine ?
+<p>Can i compile my program to an executable file that can be run without wine ?
 
 </p></quote>
 
@@ -268,7 +269,7 @@ tuning in.  Simple question:
 
 <p>That prompted the original person to reach an epiphany:</p>
 <quote who="flyker"><p>
-Hmmm.... Than i don't see any reason to compile program using winelib.
+Hmmm.... Then i don't see any reason to compile program using winelib.
 What is the difference between
 <ul><code>
 wine program.exe</code></ul>
@@ -304,7 +305,7 @@ so it's not a complete waste of time.</p></quote>
 Wine from the equation:</p>
 <quote who="Shachar Shemesh"><p>
 
-A Win32 program needs Win32 environment. Be that a registry, the Win32 
+A Win32 program needs a Win32 environment. Be that a registry, the Win32 
 APIs, or a forest directory structure and "My Documents" and "Program 
 Files". While you may theoretically get the APIs by statically linking 
 the DLLs into the executable, all of the rest are only available if Wine 
@@ -315,7 +316,7 @@ It is true that we can let go of the PE loader (in principle), but that
 is such a minor part of the grand scheme of things, that I don't see any 
 reason to even attempt it.
 </p><p>
-As things stand, and it's certanly what I'm recommending to people - if 
+As things stand, and it's certainly what I'm recommending to people - if 
 all you want is to have your program function on an i386 Linux - just 
 make sure the same PE works on Wine.</p></quote>
 
@@ -332,11 +333,11 @@ use ld.so instead of wine, it's in the ability to take a port slowly but
 surely, maybe never being completed but along the way getting sufficient
 integration for it not to matter.</p></quote>
 
-<p>Michael Stefaniuc mentioned that a app ported with Winelib is also
+<p>Michael Stefaniuc mentioned that an app ported with Winelib is also
 capable of running on non-x86 machines.  (At least in theory.)  That's
 a pretty good summary of this topic.  No one mentioned speed as a reason
 for using Winelib, the reason being is that there really isn't any 
-difference.  So the short answer is.. Winelib has it's 
+difference.  So the short answer is... Winelib has it's 
 advantages but it's probably not for the reasons you think.  
 </p>
 </section>
