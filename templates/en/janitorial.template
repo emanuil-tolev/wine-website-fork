@@ -169,14 +169,8 @@
     <li class=invalid>dlls/shlwapi/string.c: shlwapi: StrRetToStrW: illegal call to SHStrDupA
     <li>dlls/version/install.c: version: VerInstallFileW: illegal call to VerInstallFileA
     <li>dlls/wininet/internet.c: wininet: InternetCheckConnectionW: illegal call to InternetCheckConnectionA
-    <li>dlls/winmm/driver.c: winmm: OpenDriverW: illegal call to OpenDriverA
-    <li>dlls/winmm/mci.c: winmm: mciSendStringW: illegal call to mciSendStringA
     <li>dlls/winmm/mmio.c: winmm: mmioRenameW: illegal call to mmioRenameA
     <li>dlls/winmm/mmio.c: winmm: mmioStringToFOURCCW: illegal call to mmioStringToFOURCCA
-    <li>dlls/winmm/winmm.c: winmm: mciGetErrorStringW: illegal call to mciGetErrorStringA
-    <li>dlls/winmm/winmm.c: winmm: mciSendCommandW: illegal call to MCI_MapMsgWtoA
-    <li>dlls/winmm/winmm.c: winmm: mciSendCommandW: illegal call to mciSendCommandA
-    <li>dlls/winmm/winmm.c: winmm: mciSendCommandW: illegal call to MCI_UnmapMsgWtoA
     <li>dlls/winsock/socket.c: winsock: WSAStringToAddressW: illegal call to WSAStringToAddressA
     <li>dlls/winspool/info.c: winspool.drv: AddPrinterW: illegal call to DEVMODEdupWtoA
     <li>dlls/winspool/info.c: winspool.drv: AddPrinterW: illegal call to RegSetValueExA
