@@ -354,7 +354,7 @@
     <li>updated: Jan 27, 2003
   </ul>
 
-  <h3>Fix HeapReAlloc() calls</h3>
+  <h3>Fix HeapReAlloc/RtlReAllocateHeap() calls</h3>
   From Eric: <i>there's lot of code which relies on HeapReAlloc would allocate a block 
   if the block to reallocate is NULL (as realloc does in stdlib);
   this is not the case in windows, and we should fix it (and first, fix 
@@ -362,7 +362,7 @@
   <ul>
     <li>workers: wanted
     <li>status: <span class=todo>TODO</span>
-    <li>updated: Sep 25, 2003
+    <li>updated: Oct 6, 2003
   </ul>
 
   <h3>Include file cleanup</h3>
