@@ -23,7 +23,6 @@ class wwn
         $this->person = array();
         $this->map_array = array(
                    "p"	    => "p",
-                   "br"	    => "br",
                    "a"	    => "a",
                    "b"	    => "b",
                    "i"	    => "i",
@@ -40,6 +39,7 @@ class wwn
                    "dd"     => "dd",
                    "tt"     => "tt",
                    "code"   => "code",
+                   "pre"    => "pre",
                    "blockquote"	=> "blockquote"	   
                   );
     }
@@ -449,6 +449,8 @@ class wwn
             case "ANSWER":
               $this->body .= "</span></blockquote>";
               break;
+            case "BR":
+              $this->body .= $html->br();
             default:
               if (isset($this->map_array[strtolower($name)]))
                 $this->body .= "</".$this->map_array[strtolower($name)].">\n";			
