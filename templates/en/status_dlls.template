@@ -188,7 +188,7 @@
       <a href="?issue=156#RPC%20Data%20Marshalling%20(cont'd)">#156</a>,
       <a href="?issue=170#RPC%20Documentation%20Update">#170</a></td>
       <td class="pct20">20% complete</td>
-      <td>Transgaming,<br>Ove Kåven,<br>Greg Turner</td>
+      <td>Transgaming,<br>Ove KÃ¥ven,<br>Greg Turner</td>
     </tr>
     <tr>
       <td>shell32: Shell interface</td>
@@ -345,7 +345,7 @@
     </tr>
     <tr>
       <td>ALSA multimedia driver</td>
-      <td class="adequate">Adequate</td>
+      <td class="adequate"><a href="http://www.alsa-project.org/documentation.php3">ALSA Users Documentation</a></td>
       <td><a href="?issue=121#ALSA%20Driver">#121</a></td>
       <td class="pct25">25% complete<br>
       Preliminary Audio support for ALSA 0.9 and final interfaces.<br>
@@ -354,7 +354,7 @@
     </tr>
     <tr>
       <td>aRtS multimedia driver</td>
-      <td class="adequate">Adequate</td>
+      <td class="adequate"><a href="http://www.arts-project.org/doc/manual/">aRts - documentation</a></td>
       <td><a href="?issue=118#aRts%20Driver">#118</a></td>
       <td class="pct25"><a href="#Sound_Drivers">25% complete</a><br>
       Preliminary Audio support<br>
@@ -363,7 +363,7 @@
     </tr>
     <tr>
       <td>AudioIO multimedia driver</td>
-      <td class="adequate">Adequate</td>
+      <td class="adequate"><a href="http://audacity.sourceforge.net/dox/html/classAudioIO.html">AudioIO Class Reference</a></td>
       <td><a href="?issue=131#News:%20Wine20020804,%20CrossOver%20Office%201.2,%20WineX%202.1,%20Xandros%20beta%203">#131</a></td>
       <td class="pct20">20% complete<br>
       Preliminary Audio support.<br>
@@ -372,14 +372,14 @@
     </tr>
     <tr>
       <td>Avicap32: Video Capture</td>
-      <td class="adequate">Adequate</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/avicap_5e3p.asp">Video Capture Reference</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
       <td>Eric Pouech</td>
     </tr>
     <tr>
       <td>JACK (JACK Audio Connection Kit) multimedia driver</td>
-      <td class="poor">Poor</td>
+      <td class="adequate"><a href="http://jackit.sourceforge.net/docs/">jack docs</a></td>
       <td><a href="?issue=139#Jack%20Audio%20Driver">#139</a></td>
       <td class="pct25"><a href="#Sound_Drivers">25% complete</a><br>
       Preliminary Audio support<br>
@@ -388,7 +388,7 @@
     </tr>
     <tr>
       <td>MCI (Media Control Interface) drivers</td>
-      <td class="adequate">Adequate</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/mci_7ir7.asp">MCI Functions</a></td>
       <td><a href="?issue=29#CDs%20serial%20numbers">#29</a></td>
       <td class="pct60">60% complete<br>
       Missing the mcianim drivers.<br>
@@ -397,7 +397,7 @@
     </tr>
     <tr>
       <td>msacm32: Audio Compression Manager (ACM)</td>
-      <td class="poor">Poor</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/mmfunc_27ar.asp">Multimedia Functions</a></td>
       <td>None</td>
       <td class="pct80">80% complete<br>
       Codecs present for A/&micro; Law (G711), ADPCM (MS and IMA) &amp; MP3.</td>
@@ -405,21 +405,21 @@
     </tr>
     <tr>
       <td>msvfw32: Video for Windows (VFW)</td>
-      <td class="poor">Poor</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/mmfunc_27ar.asp">Multimedia Functions</a></td>
       <td>None</td>
       <td class="pct40"><a href="#Video">40% complete</td>
-      <td>Michael Günnewig,<br>Eric Pouech</td>
+      <td>Michael GÃ¼nnewig,<br>Eric Pouech</td>
     </tr>
     <tr>
       <td>Multimedia CD audio</td>
-      <td class="adequate">Adequate</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/mci_3lbo.asp">CD Audio Command Set</a></td>
       <td>None</td>
       <td class="pct100">100% complete</td>
       <td>Eric Pouech</td>
     </tr>
     <tr>
       <td>Multimedia joystick driver</td>
-      <td class="adequate">Adequate</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/joy_1do3.asp">Joystick Functions</a></td>
       <td>None</td>
       <td class="pct80">80% complete<br>
       Only implemented for Linux joystick API.</td>
@@ -427,8 +427,8 @@
     </tr>
     <tr>
       <td>NAS (Network Audio Server) multimedia driver</td>
-      <td class="adequate">Adequate</td>
-      <td><a href="?issue=131#News:%20Wine20020804,%20CrossOver%20Office%201.2,%20WineX%202.1,%20Xandros%20beta%203">#131</a></td>
+      <td class="adequate"><a href="http://radscan.com/nas/nas-links.html">Network Audio System</td>
+      <td><a href="?issue=131#News:%20Wine20020804,%20CrossOver%20Office%201.2,%20WineX%202.1,%20Xandros%20beta%203">#131</a></a></td>
       <td class="pct20">20% complete<br>
       Preliminary Audio support<br>
       No implementation for midi/mixer...</td>
@@ -436,7 +436,7 @@
     </tr>
     <tr>
       <td>opengl32: OpenGL interface</td>
-      <td class="good">Good</td>
+      <td class="adequate"><a href="http://www.opengl.org/developers/documentation/">OpenGL Developer Documentation</a></td>
       <td><a href="?issue=2#Some%20musing%20about%20OpenGL%20support">#2</a>,
       <a href="?issue=8#Accelerated%20OpenGL%20&%20Wine">#8</a>,
       <a href="?issue=44#OpenGL%20optimization">#44</a>,
@@ -448,14 +448,14 @@
     </tr>
     <tr>
       <td>OSS (Open Sound System) multimedia driver</td>
-      <td class="adequate">Adequate</td>
+      <td class="adequate"><a href="http://www.4front-tech.com/pguide/">OSS Programmer's guide</a></td>
       <td><a href="http://kt.zork.net/wine/wn20011212_110.html#2">#110</a></td>
       <td class="pct95">95% complete<br>(MIDI IN support)</td>
       <td>Eric Pouech</td>
     </tr>  
     <tr>
       <td>winmm: Multimedia architecture</td>
-      <td class="good">Good</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/mmfunc_27ar.asp">Multimedia Functions</a></td>
       <td><a href="?issue=5#Multimedia%20reorganisation">#5</a>,
       <a href="?issue=48#Merging%20DSound%20and%20WinMM%20drivers">#48</a></td>
       <td class="pct80">80% complete</td>
