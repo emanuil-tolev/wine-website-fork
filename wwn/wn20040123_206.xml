@@ -118,7 +118,7 @@ the press release:</p>
 CodeWeavers' Desktop Linux Certification Program includes several key elements:
 <ul>
 <li> A new online CodeWeavers CrossOver Compatibility Center, 
-nicknamed "C4", a Internet-based "headquarters" where Independent 
+nicknamed "C4", an Internet-based "headquarters" where Independent 
 Software Vendors (ISVs) can get information about Linux desktop 
 certification for their Windows applications. C4 also gives the 
 Linux desktop community -- now numbering in the millions -- a place 
@@ -284,7 +284,7 @@ I also believe in the tooth fairy and Santa Claus, so make what
 you will of that &lt;grin&gt;.
 </p><p>
 At any rate, this is a brand new initiative for us; call it
-an 0.1.7 release.  We're very open to comments and thoughts
+a 0.1.7 release.  We're very open to comments and thoughts
 and suggestions, so I would greatly appreciate any public
 or private comments you have to make.
 </p></quote>
@@ -442,7 +442,7 @@ it's something along the lines of phpBB, then it's perfect.
 In my mind, the appdb is great, but better, threaded, discussion areas were 
 needed for people to really get serious about it.
 </p><p>
-As for wine vs Crossover -- I presume that "plain old wine" users are welcome 
+As for wine vs CrossOver -- I presume that "plain old wine" users are welcome 
 to participate?  If so, then there really isn't a problem.
 </p></quote>
 
@@ -457,7 +457,7 @@ to participate?  If so, then there really isn't a problem.
 
 <p>CodeWeavers has managed to build a nice community around its products.
 With a little luck that community will be sufficiently large enough to
-help maintain C4.  It's something Wine community has never really been
+help maintain C4.  It's something the Wine community has never really been
 able to do with its <a href="http://appdb.winehq.org">AppDB</a>.  
 That's not to say the AppDB isn't useful - if you dig deep enough you
 may find the solution to your problems.  However, taking it to the next
@@ -544,7 +544,7 @@ http://home.wanadoo.nl/~wijn/wine/cvs.png </a></ul></p>
 <p>Mike wondered why the end of 1998 seemed so productive.
 Rein felt two factors might have had a hand it: in October
 CVS mistakenly reported the same commit more than once, however at
-time Corel was actively working on Wine and there geniunely
+the time Corel was actively working on Wine and there genuinely
 were a lot of commits.</p>
 
 <p>Note - this graph does not reflect the size of the Wine
@@ -717,7 +717,7 @@ This installation will copy a lot of files, then FAIL. That's not a problem.
 </p><p>
 You'll then grab the following files from your working Windows installation:
 <ul>
-<li> stdole32.tlb (This one is the only one needed for Winword, Powerpoint and 
+<li> stdole32.tlb (This one is the only one needed for Winword, PowerPoint and 
 maybe Excel).</li>
 <li> ole32.dll</li>
 <li> vbajet32.dll (and maybe vba332.dll (that's not a typo), can't recall at 
@@ -743,7 +743,7 @@ Office apps try to launch a "helpful" dialog box "presenting" the
 application, which have trouble communicating with the main program. I 
 found that minimizing and restoring the main window may help. Don't ask me why.
 </p><p>
-As far as my limited test can tell, Winword and Powerpoint work fine. With 
+As far as my limited test can tell, Winword and PowerPoint work fine. With 
 the relevant fonts in xfs and a correct CUPS setup, printing is automatic 
 and gives very good results.
 </p><p>
@@ -810,11 +810,11 @@ Well, I don't think we need to implement it, unless we find some other
 program that uses it but doesn't install IE first.
 </p><p>
 I started writing this because IE didn't seem to install INSENG.DLL when 
-  using Version=win2k, but later found that it was a wierd dll override 
+  using Version=win2k, but later found that it was a weird dll override 
 problem.
 </p><p>
 Rather than just throw away the work from that misadventure, I decided 
-to post it here incase somebody did need it or was curious :)
+to post it here in case somebody did need it or was curious :)
 </p></quote>
 
 </section></kc>

@@ -741,7 +741,7 @@ Greg set about building the app using named pipes for communication.
    In lazy mode I assume that I'll have at least one incoming
    connection (if not I time out after 20 minutes); after that,
    once all endpoints are unmapped (all RPC-specific code
-   is unimplmented, but this is what RPCSS_empty() is supposed
+   is unimplemented, but this is what RPCSS_empty() is supposed
    to detect) I time out after a short delay (20 sec.)
    In server mode, I just wait around forever until I'm told to
    terminate (unimplemented, will be a command-line arg in the

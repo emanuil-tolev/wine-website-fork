@@ -83,7 +83,7 @@ message to wine-devel:
   <p>Anyway, what I'd basically need to get this to work properly is</p>
   <p><ul><li>	typelib registration</li>
 	 <li>   <code>IDispatch::Invoke()</code></li>
-	 <li>   <code>RegisterBindStatusCallback()</code> and probably asyncronous bind contexts</li>
+	 <li>   <code>RegisterBindStatusCallback()</code> and probably asynchronous bind contexts</li>
 	 <li>   probably a "real" URL Moniker, not just <code>CreateURLMoniker()</code> using a File
                 Moniker </li>
   </ul></p>

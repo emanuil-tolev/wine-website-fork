@@ -137,7 +137,7 @@ you have to embed mono into wine.</li>
 to the pthread stuff (monowinehooks.so) but I'm not really qualified to
 talk about that.</li>
 
-<li> The SWF class heirarchy is rather stubby, the SWFTest app doesn't work
+<li> The SWF class hierarchy is rather stubby, the SWFTest app doesn't work
 for instance, due to stubs in the .NET code. I used the MenuTest app
 that was in Alexandres email.</li>
 
@@ -156,7 +156,7 @@ though.</li>
 <li> You need a special version of the garbage collector (libgc).</li></ul>
 </p><p>
  Hopefully once it's all integrated work on filling out the SWF class
- heirarchy will pick up - it would be extremely cool to be able to run
+ hierarchy will pick up - it would be extremely cool to be able to run
  Windows .NET apps. There aren't many (any?) in wide circulation at the
  moment, but that's going to change fast in the next few years.
 </p></quote>

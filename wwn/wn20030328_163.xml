@@ -414,7 +414,7 @@ just manipulate init scripts.  So, for example:
   <li>... etc.</li></ul>
 </p><p>
 Now, we create "wineservices.exe", create sudo permissions on this
-for the appropriate users, and implment it very, very carefully.
+for the appropriate users, and implement it very, very carefully.
 </p><p>
 Needless to say, this is a very sketchy proposition.  It is "correct," 
 from a certain perspective; it's also very, very likely that people

@@ -57,8 +57,8 @@
   <h3>How</h3>
   <p>Compiling apps under Winelib should theoretically involve only makefile changes.
   In practice, you will encounter header problems, and the likes -- for these it is
-  much better (and faster) to submit a patch, rather then document them. So for the
-  remaining of the section, let's assume the Wine headers are good enough for the
+  much better (and faster) to submit a patch, rather than document them. So for the
+  remainder of the section, let's assume the Wine headers are good enough for the
   application in question.
 
   <p>We are now faced with adapting the build process to Wine's needs. As things
@@ -280,7 +280,7 @@ make<br>
      people that are writing Windows apps on Windows if they had a IDE for GCC 
      that was cross-platform. [...] the idea is to run Visual-Mingw under WINElib 
      and be able to just recompile your Win32 app that was built with Visual-Mingw 
-     and the w32api package plus reduce some of the redunancy Wine,
+     and the w32api package plus reduce some of the redundancy Wine,
      Mingw and ReactOS have by finding areas where we are not in sync.</i>
   <ul>
     <li>worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
