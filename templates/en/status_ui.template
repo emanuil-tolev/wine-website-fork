@@ -28,7 +28,7 @@
 	<td></td>
 	<td></td>
 	<td></td>
-	<td class="pcti90">90%: Is handled through the server now, some scrolling bugs remain</td>
+	<td class="pct100">100%: Complete</td>
 	<td><a href="mailto:julliard@winehq.org">Alexandre Julliard</a></td>
     </tr>
 
@@ -115,7 +115,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/user/listbox.c">LXR</a></td>
 	<td>Oct 9, 2004</td>
 	<td>Comctl32.dll 6.0</td>
-	<td class="pct90">90%: LB_GETLISTBOXINFO, LBS_{COMBOBOX,NODATA,STANDARD}, locate and tab stops fixes</td>
+	<td class="pct90">90%: LB_GETLISTBOXINFO, LBS_{COMBOBOX,NODATA,STANDARD}, locale and tab stops fixes</td>
 	<td><a href="mailto:julliard@winehq.org">Alexandre Julliard</a></td>
     </tr>
 
@@ -244,7 +244,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/listview.c">LXR</a></td>
 	<td>Oct 21, 2002</td>
 	<td>Comctl32.dll 6.0</td>
-	<td class="pct70">70%: Missing hotitem, mouse hovering, workareas, tiles, groups, unicode notifications</td>
+	<td class="pct70">70%: Missing support for hotitem, mouse hovering, workareas, tiles, groups, and unicode notifications</td>
 	<td><a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a></td>
     </tr>
 
@@ -422,7 +422,9 @@
 	<td></td>
 	<td></td>
 	<td class="pct15">15%: mainly a wrapper around a regular edit box</td>
-	<td><a href="mailto:mike@codeweavers.com">Mike McCormack</a></td>
+	<td><a href="mailto:kfoltman@portal.onet.pl">Krzysztof Foltman</a>,
+            <a href="mailto:phil@newstar.rinet.ru">Phil Krylov</a>.
+        </td>
 
     </tr>
 
@@ -538,7 +540,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/ttydrv/">LXR</a></td>
 	<td></td>
 	<td></td>
-	<td class="pct90">90%: Mostly done.</td>
+	<td class="pct100">100%: Complete.</td>
 	<td><a href="mailto:julliard@winehq.org">Alexandre Julliard</a></td>
     </tr>
 
