@@ -212,7 +212,7 @@ The unix security design of users and groups with permissions is not
 bad it's just outdated. The nice thing about Unix is adding new security
 modules via PAM is not to bad except they are only for authentication.
 The unix concept of groups, users and permissions needs to be moved
-forward about 20 years. The SELinux stuff has really helped alot in
+forward about 20 years. The SELinux stuff has really helped a lot in
 this regard. (Please don't flame it's the truth)
 </p><p>
 I recently addressed this in a discussion about ReactOS. Currently our

@@ -88,7 +88,7 @@ Installer APIs:</p>
 <quote who="Aric Stewart"><p>
 
  Long time no post :) I just wanted to give an update that Mike M. and
-I have done alot of msi work over the first few weeks of December which
+I have done a lot of msi work over the first few weeks of December which
 caused a few significant changes to particularly action.c where we
 eliminated many of the static buffers for file paths and replaced them
 with dynamic buffers. Vitaly Lipatov's patches reminded me that i should

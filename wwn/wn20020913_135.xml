@@ -200,7 +200,7 @@ level of mesa (tough! thats all I have). It also has all the c parts in the
 d3d8 directory, completely separate (and in some cases duplicating code from
 the ddraw code), which may or may not be desired. I also don't have a clue
 about the configure tests and makefile.in, so I have just a basic structure
-which works enough for me. I'm also relatively certain I havent necessarily
+which works enough for me. I'm also relatively certain I haven't necessarily
 used the highest performing code everywhere, I have done the best I could
 with my limited knowledge.
 </p><p>

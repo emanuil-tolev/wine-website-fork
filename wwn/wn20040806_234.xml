@@ -196,7 +196,7 @@ trying to track down why people are receiving a
 details of the problem and asked if anyone else had run across it:</p> 
 <quote who="Mike Hearn"><p>
 It seems quite a few people have been seeing this message lately, and I'm
-not sure why. This occurs even with a non-existent ~/.wine directory, so
+not sure why. This occurs even with a nonexistent ~/.wine directory, so
 wineprefixcreate should set up a correct system for them.
 </p><p>
 Examples:

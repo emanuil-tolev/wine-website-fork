@@ -237,7 +237,7 @@ bidi support via the fribidi libraryu.  Alexandre suggested:</p>
 <quote who="Alexandre Julliard"><p>
 I suggest you write the real code first, and let us worry about the
 configure stuff later. There is no point in adding configure
-dependencies for non-existing code, and once the code is done we can
+dependencies for nonexistent code, and once the code is done we can
 have a better idea of what dependencies you actually need.
 </p><p>
 As mentioned already, I think including the fribidi algorithms

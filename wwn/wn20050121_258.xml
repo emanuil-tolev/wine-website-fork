@@ -146,7 +146,7 @@ such as Object Linking and Embedding to work.  OLE sits on top of COM
 and lets you do things like stick an Excel spreadsheet in Word by
 actually embedding an instance of Excel in the other program.</p>
 
-<p>That concept in and of itself it quite useful.  Microsoft took this 
+<p>That concept in and of itself is quite useful.  Microsoft took this 
 a step further and came up with the idea of "Distributed COM".  With DCOM,
 different processes and threads can talk to each other.  As Mike described
 it,
@@ -200,7 +200,7 @@ exchanges, Mike summarized things from a Wine perspective:</p>
 
 As Rob has pointed out, we're not duplicating anything as the code we need
 does not exist. There is no NIH (<i>ed. note: Not Invented Here</i>) syndrome
-here: if you can point to a LGPL
+here: if you can point to an LGPL
 or BSD/X11 licensed implementation of OLE32, OLEAUT32 and things like
 CreateProxyFromTypeInfo then we'd be very interested. The only one we do
 know of is in Cedega and we already used quite a lot of code from that.
@@ -296,7 +296,7 @@ their heads.</p>
 <topic>Integration</topic>
 
 <p>Screenshots are just cool.  Screenshots showing off
-one of the hottest selling new games running on Wine
+one of the hottest selling new games running on Wine are
 <a href="http://www.winehq.com/hypermail/wine-devel/2005/01/att-0460/01-pirates_small.jpg">kick ass</a>.
 Pirates!, a remake of that game from the 80's some of
 us lost our youth to, was coaxed into work thanks to
@@ -312,11 +312,11 @@ and have managed to get
  Meier's Pirates!</a>
  working better than it does for me under Cedega
  along with quite a few demos
- using Directx 9.
+ using DirectX 9.
 </p><p>
  There's still quite a lot of work to do to get a full
- Directx 9 implementation but it shouldn't take too
- long to get Directx 9 in wine as functional as DirectX
+ DirectX 9 implementation but it shouldn't take too
+ long to get DirectX 9 in wine as functional as DirectX
  under cedega.
 </p><p>
  I'm just doing a bit of housekeeping so the patches
@@ -332,7 +332,7 @@ explained:</p>
  bit of game play, no videos yet, I haven't tried
  installing and I always use no-cd patches.
 </p><p>
- The speeds a bit choppy, but playable, and there are a
+ The speed's a bit choppy, but playable, and there are a
  few minor graphics gliches (I've got a test case for
  one so it shouldn't be too hard to fix) I would rather
  have slow gameplay than buggy gameplay.
@@ -341,10 +341,10 @@ explained:</p>
  DirectX but hopefully the OLE and MSI work that's been
  going on lately should help that out.
 </p><p>
- I'm also thinking working on half-life 2 and possibly
- WoW and Sim 2 as some point, but I may just try to get
+ I'm also thinking of working on half-life 2 and possibly
+ WoW and The Sims 2 as some point, but I may just try to get
  the DirectX 9 implementation as complete as possible
- first. [unless the makers of Sim 2 give me enough
+ first. [unless the makers of The Sims 2 give me enough
  money to pay the rent!]
 </p></quote>
 
@@ -352,7 +352,7 @@ explained:</p>
 <quote who="Oliver Stieber"><p>
  I'm testing some of the more complex DirectX 9
  functionality at the moment and working on an annoying
- clipping bug to try and improve directX with
+ clipping bug to try and improve DirectX with
  everything, but I'll have a look at Pirates again
  soon.
 </p><p>
@@ -381,7 +381,7 @@ Pirates uses a MSI installer, I had to
 <li>When prompted about directX 9 say no. (or yes if you
 really want to).</li></ul></p><p>
 If you get an OLE error make a note and try again, I
-managed to install on the forth attempt.
+managed to install on the fourth attempt.
 </p><p>
 Then to run Pirates you need to...
 <ul>
@@ -390,7 +390,7 @@ Then to run Pirates you need to...
 or you get missing textures.
 </p><p>
 I'd also suggest turning down the detail (just
-incase), but it doesn't seem to matter that much.
+in case), but it doesn't seem to matter that much.
 </p><p>
 The problems I've come across so far are:
 Memory issues: Unknown cause as yet.
@@ -408,11 +408,11 @@ above.
 
 </p><p>
 I get 7-12 FPS in sailing, everything else is a lot
-quicker (upto 70fps).
+quicker (up to 70fps).
 </p><p>
 AMD 2000+ 512MB Ram  ATI-9600.
 </p><p>
-I've tried a few other Direct x 9 games but I
+I've tried a few other DirectX 9 games but I
 generally can't get passed the installer (using wine
 or cegeda).</p></quote>
 
@@ -459,7 +459,7 @@ disables clientside font rendering and also causes the entire screen to go
 black whenever a Wine application has focus.
 </p><p>
 Just letting people know in case they see similar symptoms. I normally run
-with the binary nvidia driver which doesn't have the same problem, so I'll
+with the binary nvidia driver which doesn't have the same problem, so I will
 not be debugging this anytime soon.
 
 </p></quote>

@@ -327,7 +327,7 @@ requires, but there are only so many versions, and if an app checks for
 the version shipped in the DCOM updates, it'd still be too low.
 </p><p>
 The real fix is just to get the DCOM infrastructure to the point where
-nobody needs to install Microsofts version anymore, but it's going to be
+nobody needs to install Microsoft's version anymore, but it's going to be
 a couple of months before I have this patch in a form suitable for
 submission I suspect (unless Ove decides to beat me to it).
 </p></quote>

@@ -337,7 +337,7 @@ dooooont do it ! even wineboot isn't started by the server !</quote></p>
 
 <p>Steven thought about it and remarked,
 <quote who="Steven Edwards">
-I havent been following how wineboot operates as I don't have a need for it under Mingw or Cygwin
+I haven't been following how wineboot operates as I don't have a need for it under Mingw or Cygwin
 ATM. Sylvain is right you should look at the way wineboot and rpcss work under WINE and then
 implement services as such. It would be nice if you add a net command to wcmd so we can net stop
 service-name

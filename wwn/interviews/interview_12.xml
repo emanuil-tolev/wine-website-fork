@@ -149,7 +149,7 @@ to be done?
 <answer><p><i>Peter:</i> Well the question of speed, as with anything,
 depends on your perspective. For a random application it probably doesn't
 matter much especially when it doesn't work. But for applications which
-tend to make alot of calls doing file I/O or synchronization the slowdown
+tend to make a lot of calls doing file I/O or synchronization the slowdown
 can become obvious. The paper that we produced, so the shared memory
 wineserver would have some documentation, gave some good examples. Quake
 3, for instance, saw no improvement, however Alice, which is based on the

@@ -127,7 +127,7 @@ With his latest patch, he noted the following changes:</p>
 This clears out the next blocking part of the d3d9 / wined3d support and has
 been a real pain to implement. I think I've got it right now, and it adds
 support for render targets but more importantly the beginnings of a front
-and back buffer which lots of the code relied upon.
+and back buffer which a lot of the code relied upon.
 </p><p>
 Unfortunately I couldn't get this next step any smaller than the patch
 attached....
@@ -200,7 +200,7 @@ really are welcome, and I'll try to answer any questions I can.
 </p><p>
 I wouldn't spent too much time trying to move existing functionality between
 d3d8 to wined3d unless you really want to as I am trying to get this move
-completed asap. I really don't want to discourage any d3d assistance, its
+completed asap. I really don't want to discourage any d3d assistance, it's
 just I know where I am and what I have left to do.
 </p><p>
 I have generally been doing a patch and getting it committed both due to
@@ -225,7 +225,7 @@ resource8 subclasses in one go etc...
 </p><p>
 The problem I had with the latest patch was purely being able
 to add the support for getfrontbuffer etc which needed to return d3d8 or
-d3d9 objects, but the initial crates being done in the wined3d layer. A
+d3d9 objects, but the initial creates being done in the wined3d layer. A
 single callback sounds useful, as I know I'll have to do something similar
 for stencildepth surfaces (nothing else is created purely from the wined3d
 layer, so I don't think others need the same).
@@ -234,11 +234,11 @@ FWIW I do the same, ie find demos on the web with source code, and then try
 to get them working. That's how most of the d3d8 support came about as it's
 a lot easier making a demo work than finding why there's a small amount of
 corruption for a particular game. I wouldn't claim to be a directx nor
-opengl expert - its all been a learning experience as I go! Maybe we should
+opengl expert - it's all been a learning experience as I go! Maybe we should
 collect some useful test program links!
 </p><p>
 If there's any d3d8/9 programmers out there, there's definitely a fun
-project to do to produce test programs for wine. They cant be automated (I
+project to do to produce test programs for wine. They can't be automated (I
 think!) but it would be useful to be able to visually see the effect
 differences of all the render states, the texture states, prove the shader
 support works in both hw and sw vertex and pixel code etc etc. 
@@ -261,7 +261,7 @@ support works in both hw and sw vertex and pixel code etc etc.
 <p>Some discussion carried over to wine-devel about improving
 performance of Wine on Linux.  At the heart of the matter is
 how much different Linux is compared to Windows at scheduling
-processes to run.  Andi Mohr point out a recent thread that
+processes to run.  Andi Mohr pointed out a recent thread that
 started on a kernel mailing list (Con Kolivas').  Con
 suggested that to improve performance,
 <quote who="Con Kolivas">
@@ -533,7 +533,7 @@ when this is happening and inherit appropriate priorities, but they have
 their own overhead and aren't as effective as proper blocking in the 
 first place.</p><p>
 Generous use of blocking where appropriate is the answer to being 
-friendly to any scheduler. Hoping dependant threads will complete in 
+friendly to any scheduler. Hoping dependent threads will complete in 
 time is futile as the speed of execution of each thread will change on 
 different schedulers, hardware etc.
 </p></quote>

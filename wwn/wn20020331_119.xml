@@ -379,11 +379,11 @@ for doing this, but wasn't sure.
  copied back when needed, same method..
 <p />
  One of the big savers here is that the ShmPixmap means we don't have to
- be sending stuff between X server/client, saves alot of time..
+ be sending stuff between X server/client, saves a lot of time..
 <p />
  As for X supporting multiple depths - I investigated this and talked to
  some of the X coders, its still not "wonderfully" supported.. ehm, it
- lacks alot of the most common modes - eg 8bit paletted - its not really
+ lacks a lot of the most common modes - eg 8bit paletted - its not really
  worth it from what I can see..
  The X developers suggested that if I wanted to go down this road to
  first write an X extension, ShmPixmaps were nicer and almost as fast...

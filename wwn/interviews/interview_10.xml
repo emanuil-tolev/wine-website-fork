@@ -92,7 +92,7 @@ implement a given function. For example, until a few months ago, the
 latest versions of native msvcrt wouldn't even load in Wine, due to
 it getting a too low version number from one of ntdlls version API
 calls. Even now there is a problem with memory management using this
-version of the dll, although I havent tracked down what it is doing
+version of the dll, although I haven't tracked down what it is doing
 with heap allocation that could be the cause.
 </p><p>
 I guess I don't really consider the C run time to be peripheral. Can
@@ -110,7 +110,7 @@ functionality. I also like to work around the same areas since it's
 satisfying to watch something move towards completion. But
 occasionally I randomly pick something for a change and work on that
 for a while. Just recently I started some OLE work which snowballed
-into enough code that i havent figured out how to merge it yet!
+into enough code that i haven't figured out how to merge it yet!
 </p></answer>
 
 

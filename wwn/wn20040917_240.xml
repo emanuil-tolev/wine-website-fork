@@ -232,9 +232,9 @@ huge code duplication would be required</li>
 Now, I am not a 3d graphics programmer - I learnt d3d8 as I implemented it
 (for wine) out of interest to see how things were done. I am happy to try to
 do the same for d3d9, and would prefer approach (1). I have a few concerns
-though - Mostly I havent done enough research to know if its possible, and I
-may end up having a shared library with 2 implementations anyway... I havent
-found any major stumbling block yet, but I havent researched it far enough
+though - Mostly I haven't done enough research to know if its possible, and I
+may end up having a shared library with 2 implementations anyway... I haven't
+found any major stumbling block yet, but I haven't researched it far enough
 either.
 </p><p>
 My other concern is if I start doing it and have to give up due to work or

@@ -125,7 +125,7 @@ anyone any opinions on this topic.
 
 <p>Sylvain Petreolle questioned the usefulness,
 <quote who="Sylvain Petreolle">
-This isn't a windows system dll. Isnt that another attempt like
+This isn't a windows system dll. Isn't that another attempt like
 cards.dll ?</quote>  Mike Hearn thought it would be a welcome addition:</p>
 <quote who="Mike Hearn"><p>
 Sure it is. Apps attempt to LoadLibrary it if they detect it to enhance
@@ -411,7 +411,7 @@ namespace extension (I think :).
 Anyway, it would be great if we figured out the remaining structure of 
 .lnk files, and finished the IShellLink implementation properly, and no 
 matter how things are done, we need that code to be complete.  The best 
-way to do that, IMO, is to examine alot of .lnk files from windows 
+way to do that, IMO, is to examine a lot of .lnk files from windows 
 systems :)
 </p></quote>
 

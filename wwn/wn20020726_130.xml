@@ -214,7 +214,7 @@ services from the generic layer, that's where the "WPU..." ("Winsock
 Provider Upcall") calls come into play. 
 </p><p>
 That is, WPU* functions are only relevant for externally registered
-protocols which are non-existent under Wine. It wouldn't make much sense
+protocols which are nonexistent under Wine. It wouldn't make much sense
 to support them actually, because which network protocols are supported
 under Wine is dependent on what protocols the OS it is running on
 supports. This could be worked around by using raw sockets and

@@ -138,7 +138,7 @@ is message mode.  Message mode apparently preserves the size of data
 written to the pipe, so reads will return data in chunks the same size 
 as those that were written.
 </p><p>
-It took me alot of time to understand how the connections are 
+It took me a lot of time to understand how the connections are 
 established and torn down without race conditions.  Dan Kegel's test 
 program was a great help.
 </p></answer>
@@ -155,10 +155,10 @@ program was a great help.
 
 <answer><p><i>Mike:</i>
  Most developers write their own tests, but I was lucky enough to con Dan 
- into writing one for me :)  Alot of the work that wine developers do 
+ into writing one for me :)  A lot of the work that wine developers do 
  goes into writing test programs, as it makes it easier to understand 
  where the problems are in Wine if you can see what a program is trying 
- to do.  It makes alot of sense to have different people writing the 
+ to do.  It makes a lot of sense to have different people writing the 
  tests and the implementation because developers aren't that good at 
  testing their own code - "it all works perfectly!" :)
 </p></answer>
@@ -190,7 +190,7 @@ notification and that in Windows.  The main ones are that Windows
 distinguishes between files and directories changing, and can do 
 recursive change notification (on a complete directory structure). Both 
 those things are not yet implemented in Wine.  The hardest thing was to 
-get the signal handling right... Alexandre helped alot with that.
+get the signal handling right... Alexandre helped a lot with that.
 </p></answer>
 
 <question><p><i>BV: </i>
@@ -200,7 +200,7 @@ get the signal handling right... Alexandre helped alot with that.
 <answer><p><i>Mike:</i>
 The main obstacle was trying to make Alexandre comfortable with my patch 
 :) Signal handling creates many opportunities for races and I wasn't 
-fully aware of all the problems, so I learned alot from Alexandre.
+fully aware of all the problems, so I learned a lot from Alexandre.
 </p></answer>
 
 

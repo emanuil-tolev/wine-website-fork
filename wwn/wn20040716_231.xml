@@ -333,7 +333,7 @@ In Wine, our DCOM implementation is <i>not</i> based on the RPC runtime, as
 while few programs use DCOM even fewer use RPC directly so it was
 developed some time after OLE32/OLEAUT32 were. Eventually this will have
 to be fixed, otherwise our DCOM will never be compatible with
-Microsofts. Bear this in mind as you read through the code however.
+Microsoft's. Bear this in mind as you read through the code however.
 </p><p>
 
 <u>PROXIES AND STUBS</u>
@@ -434,7 +434,7 @@ The IRpc[Proxy/Stub]Buffer interfaces are used to control the proxy/stub
 objects and are one of the many semi-public interfaces used in DCOM.
 </p><p>
 DCOM is theoretically an internet RFC <a href="#bullet2">[2]</a> and is specced out, but in
-reality the only implementation of it apart from ours is Microsofts, and
+reality the only implementation of it apart from ours is Microsoft's, and
 as a result there are lots of interfaces which <i>can</i> be used if you want
 to customize or control DCOM but in practice are badly documented or not
 documented at all, or exist mostly as interfaces between MIDL generated

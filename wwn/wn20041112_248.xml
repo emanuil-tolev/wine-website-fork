@@ -301,7 +301,7 @@ M
         do the job:
 	<ul><code>
 	INT file;<br />
- 	/* Check for non-existent file. */<br />
+ 	/* Check for nonexistent file. */<br />
 	file = LZOpenFile("badfilename_", &amp;test, OF_READ);<br />
 	ok(file == LZERROR_BADINHANDLE, 
    		"LZOpenFile succeeded on nonexistent file\n");<br />
