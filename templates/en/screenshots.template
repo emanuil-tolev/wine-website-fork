@@ -5,19 +5,46 @@
 <div align=center>
 <table border=0 cellpadding=10 cellspacing=0>
 <tr valign=top align=center>
-  <td>{$im_0}</td>
-  <td>{$im_1}</td>
-  <td>{$im_2}</td>
+  <td width="33%">
+    {$im_0}<br />
+    <span class=small>{$ds_0}</span>
+  </td>
+  <td width="34%">
+    {$im_1}<br />
+    <span class=small>{$ds_1}</span>
+  </td>
+  <td width="33%">
+    {$im_2}<br />
+    <span class=small>{$ds_2}</span>
+  </td>
 </tr>
 <tr valign=top align=center>
-  <td>{$im_3}</td>
-  <td>{$im_4}</td>
-  <td>{$im_5}</td>
+  <td width="33%">
+    {$im_3}<br />
+    <span class=small>{$ds_3}</span>
+  </td>
+  <td width="34%">
+    {$im_4}<br />
+    <span class=small>{$ds_4}</span>
+  </td>
+  <td width="33%">
+    {$im_5}<br />
+    <span class=small>{$ds_5}</span>
+  </td>
 </tr>
 <tr valign=top align=center>
-  <td>{$im_6}</td>
-  <td>{$im_7}</td>
-  <td>{$im_8}</td>
+  <td width="33%">
+    {$im_6}<br />
+    <span class=small>{$ds_6}</span>
+  </td>
+  <td width="34%">
+    {$im_7}<br />
+    <span class=small>{$ds_7}</span>
+  </td>
+  <td width="33%">
+    {$im_8}<br />
+    <span class=small>{$ds_8}</span>
+  </td>
 </tr>
 <tr valign=top>
   <td align=left>{$prev}</td>

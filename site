@@ -230,6 +230,9 @@ function view_screenshots ($x)
 		// display image
 		$vars['im_'.$num] = $html->ahref($html->img($file_root.'/images/shots/wine_'.$c.'.png'), $file_root.'/images/shots/full/wine_'.$c.'.png');
         
+        // add description
+        list($vars['ds_'.$num]) = get_xml_tags($file_root.'/images/shots/desc/wine_'.$c.'.xml',array('description'));
+        
 		// end at 9
 		if ($num == 9 or $num == $total)
 		{
