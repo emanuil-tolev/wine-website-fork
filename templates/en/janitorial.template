@@ -157,17 +157,17 @@
     <li>dlls/wininet/internet.c: wininet: InternetConnectW: illegal call to InternetConnectA
     <li>dlls/wininet/internet.c: wininet: InternetOpenUrlW: illegal call to InternetOpenUrlA
     <li>dlls/wininet/internet.c: wininet: InternetOpenW: illegal call to InternetOpenA
-    <li>dlls/winmm/driver.c: winmm: OpenDriverW: illegal call to HEAP_strdupWtoA
+    <li class=committed>dlls/winmm/driver.c: winmm: OpenDriverW: illegal call to HEAP_strdupWtoA
     <li>dlls/winmm/driver.c: winmm: OpenDriverW: illegal call to OpenDriverA
     <li>dlls/winmm/joystick.c: winmm: joyGetDevCapsW: illegal call to joyGetDevCapsA
     <li>dlls/winmm/mci.c: winmm: mciSendStringW: illegal call to mciSendStringA
-    <li>dlls/winmm/mmio.c: winmm: mmioOpenW: illegal call to HEAP_strdupWtoA
-    <li>dlls/winmm/mmio.c: winmm: mmioRenameW: illegal call to HEAP_strdupWtoA
+    <li class=committed>dlls/winmm/mmio.c: winmm: mmioOpenW: illegal call to HEAP_strdupWtoA
+    <li class=committed>dlls/winmm/mmio.c: winmm: mmioRenameW: illegal call to HEAP_strdupWtoA
     <li>dlls/winmm/mmio.c: winmm: mmioRenameW: illegal call to mmioRenameA
-    <li>dlls/winmm/mmio.c: winmm: mmioStringToFOURCCW: illegal call to HEAP_strdupWtoA
+    <li class=committed>dlls/winmm/mmio.c: winmm: mmioStringToFOURCCW: illegal call to HEAP_strdupWtoA
     <li>dlls/winmm/mmio.c: winmm: mmioStringToFOURCCW: illegal call to mmioStringToFOURCCA
     <li>dlls/winmm/winmm.c: winmm: auxGetDevCapsW: illegal call to auxGetDevCapsA
-    <li>dlls/winmm/winmm.c: winmm: mciGetDeviceIDW: illegal call to HEAP_strdupWtoA
+    <li class=committed>dlls/winmm/winmm.c: winmm: mciGetDeviceIDW: illegal call to HEAP_strdupWtoA
     <li>dlls/winmm/winmm.c: winmm: mciGetErrorStringW: illegal call to mciGetErrorStringA
     <li>dlls/winmm/winmm.c: winmm: midiInGetDevCapsW: illegal call to midiInGetDevCapsA
     <li>dlls/winmm/winmm.c: winmm: midiOutGetDevCapsW: illegal call to midiOutGetDevCapsA
