@@ -370,7 +370,7 @@
   <ul>
     <li> controls
     <li> files
-    <li> graphics
+    <li class=committed> graphics
     <li class=committed> graphics/x11drv
     <li class=committed> loader/ne
     <li class=committed> memory
@@ -389,7 +389,7 @@
   <ul>
     <li>workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>.
     <li>status: <span class=inprogress>first patches committed.</span>
-    <li>updated: Sep 19, 2003
+    <li>updated: Mar 10, 2004
   </ul>
 
   <h3>Header dependencies cleanup</h3>
