@@ -15,8 +15,10 @@ ErrorDocument 404 http://www.winehq.org/site/404
 
 # redirect winehq services to appropriate web sites
 RedirectMatch ^/?page=(.*)$                     http://www.winehq.org/site/$1
+RedirectMatch ^/index.php?page=(.*)$            http://www.winehq.org/site/$1
 
 # redirect old winehq pages to new locations
+RedirectPermanent /index.php                    http://www.winehq.org/site
 RedirectPermanent /about.shtml                  http://www.winehq.org/site/about
 RedirectPermanent /about/                       http://www.winehq.org/site/about
 RedirectPermanent /about                        http://www.winehq.org/site/about
