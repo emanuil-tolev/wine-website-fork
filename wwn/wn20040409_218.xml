@@ -56,14 +56,33 @@ Its main goal is to get ready to go on vacation. It also serves to inform you of
 
 </stats>
 <section
-	title="News: developerWorks Article, WiX" 
+	title="News: Wine-20040408, developerWorks Article, WiX" 
 	subject="Mews"
 	archive="http://www-106.ibm.com/developerworks/linux/library/l-wine/?ca=dgr-lnxw04FineWine" 
-	posts="3"
+	posts="4"
 	startdate="04/03/2004"
 	enddate="04/09/2004"
 >
 <topic>News</topic>
+<p>Just after I thought I'd finished this week's issue, Alexandre 
+came out with Wine-20040408:</p>
+<quote who="Alexandre Julliard"><p>
+WHAT'S NEW with Wine-20040408: (see 
+<a href="http://cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.82&amp;content-type=text/x-cvsweb-markup">ChangeLog</a> for details)
+<ul>
+        <li> DOS devices and drives are now configured through symlinks.</li>
+        <li> Many shell32 improvements.</li>
+        <li> New task manager merged from ReactOS.</li>
+        <li> First version of wineprefixcreate tool for initial setup.</li>
+         <li> Lots of bug fixes.</li>
+</ul></p></quote>
+
+<p>The first of those, configuring drives and ports with serial links,
+are the results of the new filesystem changes.  There's definitely
+some interesting stuff in there.  It might take a few
+days for all the builds to be available, but you can grab them from
+<a href="http://www.winehq.org/site/download">our download page.</a></p>
+
 <p>IBM's developerWorks put together an article titled 
 "<i><a href="http://www-106.ibm.com/developerworks/linux/library/l-wine/?ca=dgr-lnxw04FineWine">A
 taste of Wine: Transition from Windows to Linux</a></i>".  It provides
