@@ -7,6 +7,9 @@ DirectoryIndex site index.html index.shtml index.cgi index.php
 # 404 not found document
 ErrorDocument 404 http://www.winehq.org/site/404
 
+# Tell PHP how we want to handle global vars
+php_value register_globals 0
+
 # force the php to accept PATH_INFO
 <Files ~ (site)$>
   AcceptPathInfo On

@@ -5,8 +5,13 @@
   by Jeremy Newman <jnewman@codeweavers.com>
 */
 
+// load libs
 $file_root = ".";
 require($file_root."/include/"."incl.php");
+
+// set default page
+if (!$page)
+    $page = $_REQUEST['page'];
 
 // choose the mode
 switch (true)
@@ -17,30 +22,30 @@ switch (true)
     break;
   
   // view news archvie
-  case ($news):
-    $text .= $html->theme_box($config->theme, "box_title", 'News Archives', "100%", view_news($news), '10', 'white', 'topMenu');
+  case ($_REQUEST['news']):
+    $text .= $html->theme_box($config->theme, "box_title", 'News Archives', "100%", view_news($_REQUEST['news']), '10', 'white', 'topMenu');
     break;
   
   // view wwn issue
-  case ($issue):
+  case ($_REQUEST['issue']):
     $wwn = new wwn();
-    $text .= $wwn->view_issue($issue);
+    $text .= $wwn->view_issue($_REQUEST['issue']);
     break;
 
   // view interviews
-  case ($interview):
+  case ($_REQUEST['interview']):
     $wwn = new wwn();
-    $text .= $wwn->view_interview($interview);
+    $text .= $wwn->view_interview($_REQUEST['interview']);
     break;
   
   // view latest annouce
-  case ($announce):
-    $text .= view_announce($announce);
+  case ($_REQUEST['announce']):
+    $text .= view_announce($_REQUEST['announce']);
     break;
 
   // display screen shots
-  case ($ss):
-    $text .= view_screenshots($ss);
+  case ($_REQUEST['ss']):
+    $text .= view_screenshots($_REQUEST['ss']);
     break;
 
   // default mode (Home Page)
