@@ -56,6 +56,112 @@
     <li>dlls/urlmon/umon.c
   </ul>
 
+  <h2>COM objects</h2>
+
+  <h3>Use Interlocked functions in AddRef and Release methods</h3>
+
+  Most OLE objects should be threadsafe, which requires use of the thread-safe
+  increment and decrement functions <tt>InterlockedIncrement(&This->ref)</tt>
+  and <tt>InterlockedDecrement(&This->ref)</tt> instead of <tt>This->ref++</tt>
+  or <tt>This->ref--</tt>.  See an example
+  <a href="http://cvs.winehq.org/patch.py?id=13781">patch</a>
+  of how to fix this problem.<p>
+
+  As of Sept 14, 2004), there are at least 32 files that appear to use thread
+   unsafe operations:<br>
+  <tt>find . -name \*.c -exec grep ef-- {} \; -ls</tt>
+  <ul>
+    <li>dlls/avifil32/avifile.c
+    <li>dlls/oleaut32/tests/vartype.c
+    <li>dlls/oleaut32/olefont.c
+    <li>dlls/oleaut32/olepicture.c
+    <li>dlls/oleaut32/dispatch.c
+    <li>dlls/oleaut32/connpt.c
+    <li>dlls/dsound/buffer.c
+    <li>dlls/ole32/datacache.c
+    <li>dlls/ole32/oleobj.c
+    <li>dlls/ole32/stg_stream.c
+    <li>dlls/ole32/defaulthandler.c
+    <li>dlls/ole32/storage.c
+    <li>dlls/ole32/storage32.c
+    <li>dlls/ole32/hglobalstream.c
+    <li>dlls/ole32/antimoniker.c
+    <li>dlls/ole32/filemoniker.c
+    <li>dlls/ole32/bindctx.c
+    <li>dlls/ole32/oleproxy.c
+    <li>dlls/ole32/clipboard.c
+    <li>dlls/ole32/memlockbytes.c
+    <li>dlls/ole32/memlockbytes16.c
+    <li>dlls/ole32/itemmoniker.c
+    <li>dlls/ole32/moniker.c
+    <li>dlls/ole32/compositemoniker.c
+    <li>dlls/ole32/marshal.c
+    <li>dlls/ole32/rpc.c
+    <li>dlls/dinput/mouse.c
+    <li>dlls/dinput/joystick_linux.c
+    <li>dlls/dinput/device.c
+    <li>dlls/dinput/joystick_linuxinput.c
+    <li>dlls/dinput/keyboard.c
+    <li>dlls/urlmon/umon.c
+  </ul>
+
+  <h3>IClassFactory->CreateInstance aggregation check</h3>
+
+  The CreateInstance method of IClassFactory takes pUnkOuter as the second
+  member. This parameter must be null unless the class supports aggregation,
+  which many don't.  If the object the class factory creates doesn't support
+  aggregation, pUnkOuter should be checked to make it is NULL.<p>
+
+  This usually means adding code like the following at the top of the
+  factory's CreateInstance method:
+<pre>
+   if( pUnkOuter )
+      return CLASS_E_NOAGGREGATION;
+</pre>
+  <p>
+
+  There appears to be quite a few COM object in which that is not done.<p>
+  
+  <h3>Implement DllCanUnloadNow and IClassFactory->LockServer</h3>
+
+  COM objects that support activation as in-proc servers are implemented as
+  DLLs.  The COM specifies that these DLLs should provide an entry point
+  named DllCanUnloadNow which returns true or false depending on whether
+  the DLL is still in use or not.  Many of Wine's COM objects stub that
+  entrypoint to return TRUE always.<p>
+
+  To implement DllCanUnloadNow, a counter should be created to keep track of
+  the number of active objects that use the DLL's code.  Additionally
+  LockServer(TRUE) should increment that counter by one and LockServer(FALSE)
+  should decrement it by one.<p>
+
+  DLLs that appear to have this problem:
+  <ul>
+    <li>dlls/dmcompos/dmcompos_main.c
+    <li>dlls/dmusic/dmusic_main.c
+    <li>dlls/dmsynth/dmsynth_main.c
+    <li>dlls/dmband/dmband_main.c
+    <li>dlls/dswave/dswave_main.c
+    <li>dlls/dxdiagn/dxdiag_main.c
+    <li>dlls/msi/msi.c
+    <li>dlls/itss/itss.c
+    <li>dlls/olepro32/olepro32stubs.c
+    <li>dlls/dmime/dmime_main.c
+    <li>dlls/oleaut32/oleaut.c
+    <li>dlls/dpnhpast/main.c
+    <li>dlls/mlang/mlang.c
+    <li>dlls/dmscript/dmscript_main.c
+    <li>dlls/dsound/dsound_main.c
+    <li>dlls/dinput8/dinput8_main.c
+    <li>dlls/shdocvw/shdocvw_main.c
+    <li>dlls/dinput/dinput_main.c
+    <li>dlls/mpr/mpr_main.c
+    <li>dlls/urlmon/urlmon_main.c
+    <li>dlls/shell32/shell32_main.c
+    <li>dlls/ddraw/main.c
+    <li>dlls/dmstyle/dmstyle_main.c
+  </ul>
+
   <h2>Tools</h2>
 
   <h3>Smatch</h3>
