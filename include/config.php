@@ -35,13 +35,9 @@ class config
                                       'Press'           => '{$root}/site/press',
                                       'License'         => '{$root}/site/license'
 									  ),
-					 'Download' => array(
-					                     'Download'     => '{$root}/site/download',
-                                         'Binaries'     => '{$root}/site/download',
-										 'Source'       => '{$root}/site/download_source'
-										),
 					 'Support' => array(
                                         'Support'       => '{$root}/site/support',
+					'Download'      => '{$root}/site/download',
                                         'Documentation' => '{$root}/site/documentation',
                                         'FAQ'           => '{$root}/site/docs/wine-faq/index',
 										'HowTo'         => '{$root}/site/howto',

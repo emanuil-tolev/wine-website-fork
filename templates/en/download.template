@@ -2,216 +2,149 @@
 
 <h1>Wine Binary Downloads</h1>
 
-<!-- START OF DOWNLOAD TABLE -->
+<p>Official WineHQ builds for Linux Red Hat, Mandrake, SuSE, Slackware and FreeBSD,
+hosted by <a href="http://sourceforge.net/project/showfiles.php?group_id=6241">SourceForge.net</a>.
+Updated with each release. See the 
+<a href="{$root}/site/howto">installation and configuration how-to</a> 
+for post-installation instructions.</p>
 
-<div align=center>
-<table width="95%" border=0 cellpadding=0 cellspacing=0><tr><td bgcolor="#EFEFEF">
-<table width="100%" border=0 cellpadding=5 cellspacing=1>
+<table width="95%" border=0 cellpadding=5 cellspacing=1 bgcolor="#EFEFEF">
 
-<tr>
-<td align=center bgcolor=black><b><font color=white class=small>System</font></b></td>
-<td align=center bgcolor=black><b><font color=white class=small>From</font></b></td>
-<td align=center bgcolor=black><b><font color=white class=small>Notes</font></b></td>
-<td align=center bgcolor=black><b><font color=white class=small>Formats</font></b></td>
-</tr>
+  <tr>
+    <td align=center bgcolor=black><b><font color=white class=small>System</font></b></td>
+    <td align=center bgcolor=black><b><font color=white class=small>Notes</font></b></td>
+    <td align=center bgcolor=black><b><font color=white class=small>Maintainer</font></b></td>
+  </tr>
 
-<!-- Official Wine Versions -->
-<tr>
-<td colspan=4 align=center bgcolor="#777777">
-  <b><font color=white class=small>Official Wine Versions</font></b>
-</td>
-</tr>
-
-<!-- Row 1 -->
-<tr>
-<td align=center rowspan="1" bgcolor="#e0e0e0">
-Linux (glibc-2.2, glibc-2.3)<br>
-FreeBSD
-</td>
-
-<td align=center bgcolor="#ffffff">
-  <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241"><img
-      src="http://sourceforge.net/sflogo.php?group_id=6241"
-	  width="88" height="31" border="0" alt="SourceForge"></a></b>
-</td>
-<td bgcolor="#ffffff">
-  Official WineHQ builds for Linux Red Hat, Mandrake, SuSE, Slackware and FreeBSD, hosted by <a
-  href="http://sourceforge.net/project/showfiles.php?group_id=6241">SourceForge.net</a>.
-  Updated with each release.
-</td>
-<td align=center bgcolor="#ffffff"> .rpm,  .tgz</td>
-</tr>
-
-<!-- Commercial Wine Versions -->
-<tr>
-<td colspan=4 align=center bgcolor="#777777">
-  <b><font color=white class=small>Commercial Wine Versions</font></b>
-</td>
-</tr>
-
-<!-- Row 2 -->
-<tr>
-<td align=center rowspan="2" bgcolor="#e0e0e0">
-  Linux (glibc-2.2, glibc-2.3)
-</td>
-
-<td align=center bgcolor="#ffffff">
-  <b><a href="http://www.codeweavers.com/products/crossover/">CrossOver Office</a></b>
-</td>
-<td bgcolor="#ffffff">
-  Award winning highly customized version with installer. Easy to use GUI tools to configure to work with
-  supported applications such as Microsoft<sup>&reg;</sup> Office. Email support available after purchase.
-  Multi-user server version also available. Evaluation versions available by request.
-  By <a href="http://www.codeweavers.com">CodeWeavers</a>.
-</td>
-<td align=center bgcolor="#ffffff"> Loki Installer </td>
-</tr>
-
-<tr>
-<td align=center bgcolor="#ffffff">
-  <b><a href="http://www.transgaming.com/">WineX</a></b>
-</td>
-<td bgcolor="#ffffff">
-  Custom version of Wine designed to work with DirectX<sup>&reg;</sup>
-  based games.
-  Maintained by <a href="http://www.transgaming.com/">TransGaming</a>.
-</td>
-<td align=center bgcolor="#ffffff"> .rpm, .deb, source </td>
-</tr>
-
-<!-- Daily CVS Builds -->
-<tr>
-<td colspan=4 align=center bgcolor="#777777">
-  <b><font color=white class=small>Daily CVS Builds (unstable)</font></b>
-</td>
-</tr>
-
-<!-- Row 3 -->
-<tr>
-<td align=center rowspan="1" bgcolor="#e0e0e0">
-  Linux (glibc-2.2, glibc2.3)
-</td>
-
-<td align=center bgcolor="#ffffff">
-  <b><a href="http://wine.dataparty.no">Wine Daily Builds</a></b>
-</td>
-<td bgcolor="#ffffff">
-  Maintained by
-  <a href="mailto:kreide@online.no">Kristian Eide</a>
-</td>
-<td align=center bgcolor="#ffffff"> .rpm </td>
-</tr>
-
-<!-- Contributed Wine Versions -->
-<tr>
-<td colspan=4 align=center bgcolor="#777777">
-  <b><font color=white class=small>Contributed Wine Versions</font></b>
-</td>
-</tr>
-
-<!-- Row 4 -->
-<tr>
-<td align=center rowspan=3 bgcolor="#e0e0e0">
-  Linux (glibc-2.1)
-</td>
-
-<tr>
-<td align=center bgcolor="#ffffff">
-  <b><a href="http://rpmseek.com/rpm-pl/wine.html?hl=com&cs=wine:PN:0:0:0"
-  >RpmSeek</a></b>
-</td>
-<td bgcolor="#ffffff">
-  Various versions of Wine for many RPM based distributions. Maintained by
-  <a href="http://www.rpmseek.com/index.html">RpmSeek.com</a>
-</td>
-<td align=center bgcolor="#ffffff"> .rpm </td>
-</tr>
-
-<!-- Row 5 -->
-<tr>
-<td align=center bgcolor="#ffffff">
-  <b><a href="http://www.debian.org/Packages/unstable/otherosfs/wine.html">Debian</a></b>
-</td>
-<td bgcolor="#ffffff">
-  The official Debian Wine package. Contact 
-  <a href="mailto:andrewl@debian.org">Andrew D. Lenharth</a>
-</td>
-<td align=center bgcolor="#ffffff"> .deb </td>
-</tr>
-
-<!-- Row 6 -->
-<tr>
-<td align=center rowspan=1 bgcolor="#e0e0e0">
-  FreeBSD
-</td>
-<td align=center bgcolor="#ffffff">
-  <b><a href="ftp://ftp.freebsd.org/pub/FreeBSD/branches/-current/ports/emulators/wine.tar"
-  >FreeBSD Emulator Ports</a></b>
-</td> 
-<td bgcolor="#ffffff">
-  Also see <a href="http://www.freebsd.org/ports/emulators.html#wine-20031016">emulator
-  port information</a> at FreeBSD.
-</td>
-<td align=center bgcolor="#ffffff">.tgz </td>
-</tr>
-
+  <tr bgcolor="#ffffff">
+    <td align=center><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&package_id=77396">
+	  <img src="{$root}/images/distro/redhat.gif" width="50" height="50" alt="RedHat Linux" border="0"></a>
+    </td>
+    <td> <b>Red Hat</b> binary and source .rpms for RedHat 7.3, 8, 9, and Fedora Core 1</td>
+    <td><a href="mailto:vberon@mecano.gme.usherb.ca">Vincent Bron</a></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align=center><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&package_id=79444">
+	  <img src="{$root}/images/distro/suse.gif" width="50" height="50" alt="Suse linux" border="0"></a>
+    </td>
+    <td> <b>SuSE</b> binary and source .rpms for SuSE 8.0, 8.1, 8.2, and 9.0</td>
+    <td><a href="mailto:meissner@suse.de">Marcus Meissner</a></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align=center><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&package_id=80066">
+	  <img src="{$root}/images/distro/mandrake.gif" width="50" height="50" alt="LinuxMandrake" border="0"></a>
+    </td>
+    <td> <b>Mandrake</b> binary .rpms</td>
+    <td><a href="mailto:puoti@inwind.it">Ivan Leo Murray-Smith</a></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align=center><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&package_id=6301">
+	  <img src="{$root}/images/distro/slackware.gif" width="50" height="50" alt="Slackware linux" border="0"></a>
+    </td>
+    <td> <b>Slackware</b> binary .tgz for Slackware 9</td>
+    <td><a href="mailto:sadam@clemson.edu">Adam Schreiber</a></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align=center><a href="http://www.debian.org/Packages/unstable/otherosfs/wine.html">
+	  <img src="{$root}/images/distro/debian.gif" width="50" height="50" alt="Debian linux" border="0"></a>
+    </td>
+    <td> <b>Debian</b> binary and source .debs</td>
+    <td><a href="mailto:ovehk@ping.uio.no">Ove Kaaven</a></td>
+  </tr>
+  <tr bgcolor="#ffffff">
+    <td align=center><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&package_id=77562">
+	  <img src="{$root}/images/distro/freebsd.gif" width="50" height="54" alt="FreeBsd" border="0"></a>
+    </td>
+    <td> <b>FreeBSD</b> binary .tgz</td>
+    <td><a href="mailto:pfeifer@dbai.tuwien.ac.at">Gerald Pfeifer</a></td>
+  </tr>
+  
 </table>
-</td></tr></table>
-</div>
 
-<p><font color="red" class=small>Please notify <a href="mailto:web-admin@winehq.org"
-class=small>web-admin</a> in case of incorrect info !!</font></p>
+<h1>Commercial Wine Versions</h1>
 
+<table width="95%" border=0 cellpadding=5 cellspacing=1 bgcolor="#EFEFEF">
 
-<!-- END OF DOWNLOAD TABLE -->
+  <tr>
+    <td align=center bgcolor=black><b><font color=white class=small>Product</font></b></td>
+    <td align=center bgcolor=black><b><font color=white class=small>Description</font></b></td>
+  </tr>
 
-
-
-<h1>Know Your glibc</h1>
-
-<p>
- Wine like all Linux software uses a library called glibc. Different versions of Linux distros
- ship different versions of glibc. Make sure the Wine build you are downloading is built for your version
- of glibc.
-</p>
-
-<ul>
-    <li><b>glibc 2.3</b> - Red Hat 9.0, Red Hat Enterprise 3, Fedora Core 1, Mandrake 9.1 and 9.2, and SuSE 9.x</li>
-    <li><b>glibc 2.2</b> - Red Hat 7.0 through 8.0, Mandrake 8.0 through 9.0, SuSE 8.x, and Debian 3.0</li>
-    <li><b>glibc 2.1</b> - Red Hat 6.x, Mandrake 7.x, SuSE 7.x, and Debian 2.x</li>
-</ul>
-
-
-
-<h1>How to Install Binary Packages</h1>
-
-<p><a href="http://www.rpm.org">RPM</a> and <a href="http://www.debian.org">DEB</a>
-are the most common formats (just see above).
-</p>
-
-<p>&middot; Most distributions provide a graphical tool for installing
-	  RPM packages, you can use it by simply clicking (Or double clicking,
-	  depending on your system settings) on the RPM. If you don't have a
-	  graphical RPM manager installed, using a shell, switch to the
-	  directory where you downloaded the RPM package file to.
-	  Once there, type this one command as root, adapting the
-	  package file name as required:
- <table width="300" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>rpm -i wine-YYYYMMDD-i386.rpm</span>
- </td></tr>
- </table>
-<span class=small>(make sure you remove any conflicting previously installed Wine packages before doing so !)</span>
-</p>
-
-<p>&middot; To install via DEB (Debian-based distributions)
- <table width="300" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>apt-get install wine</span>
- </td></tr>
- </table>
-</p>
+  <tr>
+    <td align=center bgcolor="#ffffff">
+      <a href="http://www.codeweavers.com/site/products/">
+        <img src="{$root}/images/distro/crossover.gif" 
+         width="50" height="50" alt="CrossOver Office" border="0">
+      </a>
+    </td>
+    <td align=left bgcolor="#ffffff">
+      <b><a href="http://www.codeweavers.com/site/products/">CrossOver</a></b> - 
+      Award winning highly customized version with installer. Easy to use GUI tools to configure to work with
+      supported applications such as Microsoft<sup>&reg;</sup> Office. Email support available after purchase.
+      Multi-user server version also available. Evaluation versions available by request.
+      By <a href="http://www.codeweavers.com">CodeWeavers</a>.
+    </td>
+  </tr>
+  
+  <tr>
+    <td align=center bgcolor="#ffffff">
+      <a href="http://www.transgaming.com/"><img 
+        src="{$root}/images/distro/transgaming.gif" width="50" height="50" alt="WineX" border="0"></a>
+    </td>
+    <td align=left bgcolor="#ffffff">
+      <b><a href="http://www.transgaming.com/">WineX</a></b> - 
+      Custom version of Wine designed to work with DirectX<sup>&reg;</sup> based games.
+      Maintained by <a href="http://www.transgaming.com/">TransGaming</a>.
+    </td>
+  </tr>
+  
+</table>
 
 
+<h1>Wine Source Downloads</h1>
 
+<table width="95%" border=0 cellpadding=5 cellspacing=1 bgcolor="#EFEFEF">
+
+  <tr>
+    <td align=center bgcolor=black><b><font color=white class=small>Location</font></b></td>
+    <td align=center bgcolor=black><b><font color=white class=small>Description</font></b></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td> <a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=77449" target="_blank">sourceforge.net</a></td>
+    <td> Our official release site. </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td> <a href="{$root}/site/cvs">cvs.winehq.org</a> </td>
+    <td> For the latest development version. </td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td><a href="ftp://ftp.ibiblio.org/pub/Linux/ALPHA/wine/development/">ftp.ibiblio.org</a></td>
+    <td> Alternative download site for the official source and documentation tarballs. </td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td><a href="ftp://ftp.infomagic.com/pub/mirrors/linux/sunsite/ALPHA/wine/development/">ftp.infomagic.com</a></td>
+    <td>iBiblio mirror hosted by Infomagic.</td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td><a href="ftp://ftp.fu-berlin.de/unix/linux/mirrors/sunsite.unc.edu/ALPHA/wine/development/">ftp.fu-berlin.de</a></td>
+    <td>iBiblio mirror hosted by Berlin University. </td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td><a href="ftp://orcus.progsoc.uts.edu.au/pub/Wine/development/">orcus.progsoc.uts.edu.au</a></td>
+    <td>iBiblio mirror hosted by University of Technology, Sydney.</td>
+  </tr>
+  
+</table>
 
 <h1>Link to Us</h1>
 
