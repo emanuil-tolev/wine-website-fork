@@ -467,7 +467,7 @@
           <a href="{$root}/site/?issue=232#Contacting%20Testers">#232</a>,
           <a href="{$root}/site/?issue=246#Test%20Dependencies">#246</a>,
           <a href="{$root}/site/?issue=257#Intro%20to%20Conformance%20Tests">#257</a></td>
-      <td class="pct70">70% complete</td>
+      <td class="pct100">100% complete</td>
       <td>Paul Millar,<br>Ferenc Wagner,<br>Jakob Eriksson,<br>Paul Vriens</td>
     </tr>
     <tr>
@@ -497,7 +497,7 @@
       <td class="good"><a href="http://cvs.winehq.org/cvsweb/wine/tools/winedump/README">Good</a></td>
       <td>None</td>
       <td class="pct90">90% complete</td>
-      <td>Eric Pouech</td>
+      <td></td>
     </tr>
     <tr>
       <td>Wine API checker (winapi_check)</td>
@@ -513,6 +513,13 @@
           <a href="{$root}/site/?issue=192#Integrating%20Start%20Menu%20Shortcuts">#192</a></td>
       <td class="pct90">90% complete</td>
       <td>Fran&ccedil;ois Gouget</td>
+    </tr>
+    <tr>
+      <td>wineshelllink</td>
+      <td class="nonexistent">Nonexistent</td>
+      <td>None</td>
+      <td class="pct10">10% complete</td>
+      <td></td>
     </tr>
     <tr class="hdr">
       <td colspan="5"><strong>No-Windows installation issues</strong></td>
