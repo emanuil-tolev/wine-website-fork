@@ -40,7 +40,7 @@ just downgrade again. </p>
          <span class=inverse>./tools/wineinstall</span>
          </td></tr>
          </table>
-	When it asks, create a "no-windows" install. Although the
+	If it asks, create a "no-windows" install. Although the
 	idea of reusing an existing Windows installation from another
 	drive may sound tempting, in general there is too much
 	garbage on these setups and they can destabilize Wine. It's
@@ -70,64 +70,35 @@ just downgrade again. </p>
 
     <li><p><b>Configuration</b></p>
     
-    <p>In order to run Wine needs some files and directories.<br>  You
-    need at least a fake windows drive and config file, however the
-    source code wineinstall program, as well as most binary packages,
-    will have already done this for you.  To check, try running
-    the <b>notepad</b> program. Some programs are built into wine,
-    examples are "notepad", "control", "wcmd", "winemine" and so
-    on. You can normally run these just by typing in their names from
-    the command line. For other programs, you need to type "wine programname.exe".</p>
-
-    <p>In particular, the source .tar.gz file, and the Red Hat RPMs will set it all up for you.
-      After installing, just start notepad and play with it. In particular, check the File | Open
-      dialog box, to make sure you can access your favourite drives. This should work fine, but if not
-      try altering the drive mappings in the config file.</p>
+    <p>Since around May 2004, Wine will automatically generate a ~/.wine directory as needed,
+    including all the previous tasks that had to be done manually like merging the default registry,
+    creating a fake windows drive, setting up drive mappings and so on. Therefore Wine is now mostly
+    self configuring. If you wish to manually create your ~/.wine directory for whatever reason you
+    can use the "wineprefixcreate" tool to do so. </p>
     
-    <p>If notepad doesn't work for you, you may need
-    to create these directories yourself. To do that, create the
-    following directories in your home directory:</p>
-    
-    <p>.wine/
-    <blockquote>
-        .wine/c_drive<br>
-        .wine/c_drive/Windows<br>
-        .wine/c_drive/Windows/Fonts<br>
-        .wine/c_drive/Windows/Start Menu/Programs<br>
-        .wine/c_drive/Windows/System<br>
-        .wine/c_drive/Windows/System32<br>
-        
-        .wine/c_drive/Windows/Temp<br>
-        .wine/c_drive/Program Files<br>
-        .wine/c_drive/Program Files/Common Files<br>
-    </blockquote>
-    </p>
-    
-    <p>After this copy the following files from wine-YYYYMMDD/documentation/samples
-    to $HOME/.wine/Windows:</p>
-    <blockquote>
-    system.ini<br>
-    win.ini
-    </blockquote>
-    
-    <p>All applications will be installed on this fake Windows drive.
-    Referred to C: inside of Windows applications.</p>
-    
-    <p>Wine also needs a configuration file. Copy the file config from wine-YYYYMMDD/documentation/samples
-    to $HOME/.wine.</p>
     </li>
 
+    <li><p><b>The Wine configuration file</b>
 
-    <li><p><b>The Wine configuration file</b><br>
-
-    <p>The config file is pretty self explanatory, just take a look at it. The
-    only thing you probably have to change is the mountpoint of the cdrom drive.<br>
-    You can get more information by typing:</p>
+    <p>The config file is pretty self explanatory, just take a look at it.
+    Since around mid 2004 the drive mappings are configured by using symlinks in the
+    ~/.wine/dosdevices directory. To add a new drive use something like the following command:</p>
     
-     <table width="300" border=0 cellpadding=10><tr><td class=black>
-     <span class=inverse>man wine.conf</span>
-     </td></tr>
-     </table>    
+    <table width="300" border=0 cellpadding=10>
+      <tr><td class=black>
+        <span class=inverse>ln -s /mnt/mydrive ~/.wine/dosdevices/e:</span>
+      </td></tr>
+    </table>
+
+    <p>... which will map whatever is mounted at /mnt/mydrive to the virtual Windows drive letter E. </p>
+
+    <p>You can get more information by typing: </p>
+
+    <table width="300" border=0 cellpadding=10>
+      <tr><td class=black>
+        <span class=inverse>man wine.conf</span>
+      </td></tr>
+    </table>    
      
     </li>
 
