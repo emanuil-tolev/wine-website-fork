@@ -1,0 +1,538 @@
+<!--TITLE:[Wine UI Status]-->
+
+<h1>Wine Status - User Interface</h1>
+
+<style>
+<!--
+.hdr	{ background-color: #000000; color: #ffffff; }
+.pct0   { background-color: #ff5050; }
+.pct5   { background-color: #ff5d4f; }
+.pct10  { background-color: #ff694e; }
+.pct15  { background-color: #ff764d; }
+.pct20  { background-color: #ff824b; }
+.pct25  { background-color: #ff8f4a; }
+.pct30  { background-color: #ff9b49; }
+.pct35  { background-color: #ffa848; }
+.pct40  { background-color: #ffb447; }
+.pct45  { background-color: #ffc146; }
+.pct50  { background-color: #ffcd45; }
+.pct55  { background-color: #ffda43; }
+.pct60  { background-color: #ffe642; }
+.pct65  { background-color: #fff341; }
+.pct70  { background-color: #ffff40; }
+.pct75	{ background-color: #dcff48; }
+.pct80	{ background-color: #c8ff50; }
+.pct85	{ background-color: #b4ff58; }
+.pct90	{ background-color: #a0ff60; }
+.pct95	{ background-color: #8cff60; }
+.pct100	{ background-color: #60ff60; }
+.nonexistent	{ background-color: #ff5050; }
+.poor		{ background-color: #ff8f4a; }
+.outdated	{ background-color: #ffcd45; }
+.outdadeq	{ background-color: #ffff40; }
+.adequate	{ background-color: #dcff48; }
+.adeqgood	{ background-color: #c0ff54; }
+.good		{ background-color: #60ff60; }
+-->
+</style>
+
+<p>&nbsp;</p>
+
+<div align=center>
+<table width="95%" border="0" cellspacing="0" cellpadding="1" bgcolor="#6d6d6d">
+  <tr>
+<td>
+  <table width="100%" border="0" cellspacing="1" cellpadding="3" bgcolor="#ffffff">
+  
+
+    <tr class="hdr">
+      <th>Component</th>
+      <th>Audit date</th>
+      <th>Reference</th>
+
+      <th>Implementation status</th>
+      <th>Recent primary workers</th>
+    </tr>
+
+    <tr class="hdr">
+      <td colspan="5"><strong>Fundamentals</strong></td>
+    </tr>
+
+      <td><strong>Visible Region</strong></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct70">70%: Needs to handled through the server, fix scrolling bugs</td>
+	<td><a href="mailto:julliard@winehq.com">Alexandre Julliard</a></td>
+    </tr>
+
+    </tr>
+
+      <td><strong>Window Management</strong></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct60">60%: Needs to be rewritten</td>
+	<td><a href="mailto:julliard@winehq.com">Alexandre Julliard</a></td>
+    </tr>
+
+    </tr>
+
+      <td><strong>MDI Support</strong></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct80">80%: Various problems still exist</td>
+	<td><a href="mailto:julliard@winehq.com">Alexandre Julliard</a></td>
+    </tr>
+
+    </tr>
+
+      <td><strong>DefWndProc</strong></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct">Needs status update</td>
+	<td><a href="mailto:">?</a></td>
+    </tr>
+
+    </tr>
+
+      <td><strong>DefDlgProc</strong></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct">Needs status update</td>
+	<td><a href="mailto:">?</a></td>
+    </tr>
+
+    <tr class="hdr">
+
+      <td colspan="5"><strong>Standard Controls</strong></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/buttons/buttons.asp"><strong>Button</strong></a></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct95">95%: Complete</td>
+
+	<td><a href="mailto:dtimoshkov@codeweavers.com">Dmitry Timoshkov</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/comboboxes/comboboxes.asp"><strong>ComboBox</strong></a></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct95">95%: roll up problems in Netscape</td>
+
+	<td><a href="mailto:julliard@winehq.com">Alexandre Julliard</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/editcontrols/editcontrols.asp"><strong>Edit</strong></a></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct80">80%: ES_{CENTER,RIGHT,NUMBER,OEMCONVERT}, !ES_AUTO[HV]SCROLL</td>
+
+	<td><a href="mailto:dtimoshkov@codeweavers.com">Dmitry Timoshkov</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/listboxes/listboxes.asp"><strong>List Box</strong></a></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct95">95%: Complete</td>
+
+	<td><a href="mailto:julliard@winehq.com">Alexandre Julliard</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/scrollbars/scrollbars.asp"><strong>Scroll Bar</strong></a></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct95">95%: Complete</td>
+
+	<td><a href="mailto:julliard@winehq.com">Alexandre Julliard</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/staticcontrols/staticcontrols.asp"><strong>Static</strong></a></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct95">95%: Complete</td>
+
+	<td><a href="mailto:dtimoshkov@codeweavers.com">Dmitry Timoshkov</a></td>
+    </tr>
+
+    <tr class="hdr">
+      <td colspan="5"><strong>Common Controls</strong></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/animation/animation.asp"><strong>Animation</strong></a></td>
+
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct80">80%: Missing locking for infoPtr</td>
+	<td><a href="mailto:jcb@macadamian.com">Jean-Claude Batista</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/comboex/reflist.asp"><strong>ComboBoxEx</strong></a></td>
+
+	<td>Sep 9, 2002</td>
+	<td>Comctl32.dll 6.0</td>
+	<td class="pct100">100%: Complete</td>
+	<td><a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a></td>
+    </tr>
+
+    <tr>
+
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/datetime/reflist.asp"><strong>Date and Time Picker</strong></a></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct60">60%: Control works but it seems to require work</td>
+	<td><a href="mailto:cmorgan@codeweavers.com">Chris Morgan</a></td>
+    </tr>
+
+    <tr>
+
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/draglb/reflist.asp"><strong>Drag List Box</strong></a></td>
+	<td></td>
+	<td></td>
+	<td class="pct20">20%: Currently, it is just a regular listbox</td>
+	<td><a href="mailto:ekohl@abo.rhein-zeitung.de">Eric Kohl</a></td>
+    </tr>
+
+    <tr>
+
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/flatsb/reflist.asp"><strong>Flat Scroll Bar</strong></a></td>
+	<td></td>
+	<td></td>
+	<td class="pct10">10%: Only stubs, forwarding handling to standard scroll bars</td>
+	<td><a href="mailto:ekohl@abo.rhein-zeitung.de">Eric Kohl</a></td>
+    </tr>
+
+    <tr>
+
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/header/header_header.asp"><strong>Header</strong></a></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct60">60%: Unicodification, drag &amp; drop, new messages, notifications, bugs.</td>
+	<td><a href="mailto:ekohl@abo.rhein-zeitung.de">Eric Kohl</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/hotkey/reflist.asp"><strong>Hot Key</strong></a></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct95">95%: Determine how to handle WM_CHAR</td>
+	<td><a href="mailto:nog@sdf.lonestar.org">Gyorgy 'Nog' Jeney</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/imagelist/reflist.asp"><strong>Image List</strong></a></td>
+	<td>Sep 12, 2002</td>
+	<td>Comctl32.dll 6.0</td>
+	<td class="pct85">85%: Fix hotspot handling, implement the ILD_*, and ILS_* styles</td> 
+	<td><a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a></td>
+
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/ipaddress/reflist.asp"><strong>IP Address</strong></a></td>
+	<td>Sep 9, 2002</td>
+	<td>Comctl32.dll 6.0</td>
+	<td class="pct100">100%: Complete</td>
+
+	<td><a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/listview/reflist.asp"><strong>List-View</strong></a></td>
+	<td>Oct 21, 2002</td>
+	<td>Comctl32.dll 6.0</td>
+
+	<td class="pct70">70%: Missing hotitem, mouse hovering, workareas, tiles, groups</td>
+	<td><a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/monthcal/reflist.asp"><strong>Month Calendar</strong></a></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+
+	<td class="pct80">80%: i18n, keyboard handling, internationalization</td>
+	<td><a href="mailto:cmorgan@codeweavers.com">Chris Morgan</a></td>
+    </tr>
+
+    <tr>
+      <td><strong>Native Font</strong></td>
+	<td>N/A</td>
+
+	<td>N/A</td>
+	<td class="pct10">10%: empty stub, this control is not documented by MS</td>
+	<td><a href="mailto:ekohl@abo.rhein-zeitung.de">Eric Kohl</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/pager/reflist.asp"><strong>Pager</strong></a></td>
+
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct90">90%: better keyboard handling, size changes, drag &amp; drop</td>
+	<td><a href="mailto:galberte@neo.lrun.com">Guy L. Albertelli</a></td>
+    </tr>
+
+    <tr>
+
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/progbar/reflist.asp"><strong>Progress Bar</strong></a></td>
+	<td>Sep 9, 2002</td>
+	<td>Comctl32.dll 6.0</td>
+	<td class="pct95">95%: lacks PBS_MARQUE support</td>
+	<td><a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/propsheet/reflist.asp"><strong>Property Sheet</strong></a></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct80">80%: tab order, Unicode property sheets</td>
+	<td><a href="mailto:galberte@neo.lrun.com">Guy L. Albertelli</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/rebar/reflist.asp"><strong>Rebar</strong></a></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct70">70%: vertical placement, layout code, some messages, notifications</td>
+	<td><a href="mailto:galberte@neo.lrun.com">Guy L. Albertelli</a></td>
+    </tr>
+
+    <tr>
+      <td><strong>Smooth Scroll</strong></td>
+	<td>N/A</td>
+	<td>N/A</td>
+	<td class="pct10">10%: empty stub that does regular scrolling only, undocumented by MS</td>
+	<td><a href="mailto:marcus@jet.franken.de">Marcus Meissner</a></td>
+
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/status/reflist.asp"><strong>Status Bar</strong></a></td>
+	<td>Sep 24, 2002</td>
+	<td>Comctl32.dll 6.0</td>
+	<td class="pct90">90%: Lacks CCS_* styles support</td>
+
+	<td><a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/syslink/syslink.asp"><strong>SysLink</strong></a></td>
+	<td></td>
+	<td></td>
+	<td class="pct0">0%: nothing done</td>
+
+	<td>Nobody</td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/tab/reflist.asp"><strong>Tab</strong></a></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct80">80%: image list support, Unicode support</td>
+
+	<td><a href="mailto:galberte@neo.lrun.com">Guy L. Albertelli</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/toolbar/reflist.asp"><strong>Toolbar</strong></a></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct70">70%: callbacks, Unicode support, messages, notifications, etc.</td>
+
+	<td><a href="mailto:galberte@neo.lrun.com">Guy L. Albertelli</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/tooltip/reflist.asp"><strong>ToolTip</strong></a></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="pct80">80%: custom draw support, Unicode support</td>
+
+	<td><a href="mailto:h.davies@codeweavers.com">Huw D M Davies</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/trackbar/reflist.asp"><strong>Trackbar</strong></a></td>
+	<td>Sep 12, 2002</td>
+	<td>Comctl32.dll 6.0</td>
+
+	<td class="pct100">100%: Complete</td>
+	<td><a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/treeview/reflist.asp"><strong>Tree-View</strong></a></td>
+	<td class="needed"></td>
+	<td class="needed"></td>
+
+	<td class="pct70">70%: some notifications, styles, redraw optimizations</td>
+	<td><a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/updown/reflist.asp"><strong>Up-Down</strong></a></td>
+	<td>Sep 9, 2002</td>
+
+	<td>Comctl32.dll 6.0</td>
+	<td class="pct100">100%: Complete</td>
+	<td><a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a></td>
+    </tr>
+
+    <tr class="hdr">
+      <td colspan="5"><strong>Miscellaneous Controls</strong></td>
+
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/mciwnd_5uer.asp"><strong>MCIWnd</strong></a></td>
+	<td></td>
+	<td></td>
+	<td class="pct25">25%: very limitted, missing extended styles, notification, MCIWNDM_*</td>
+	<td><a href="mailto:eric.pouech@wanadoo.fr">Eric Pouech</a></td>
+
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/richedit/richeditcontrols.asp"><strong>Rich Edit</strong></a></td>
+	<td></td>
+	<td></td>
+	<td class="pct15">15%: mainly a wrapper around a regular edit box</td>
+	<td><a href="mailto:jcb@macadamian.com">Jean-Claude Batista</a></td>
+
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/workshop/browser/webbrowser/reference/IFaces/IWebBrowser2/IWebBrowser2.asp"><strong>Web Browser</strong></a></td>
+	<td></td>
+	<td></td>
+	<td class="pct0">0%: nothing done</td>
+	<td><a href="mailto:ender@enderboi.com">J.Brown (Ender/Amigo)</a></td>
+
+    </tr>
+
+    <tr class="hdr">
+      <td colspan="5"><strong>Common Dialogs</strong></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/userinput/commondialogboxlibrary/colordialogbox.asp"><strong>Color</strong></a></td>
+	<td class="needed"></td>
+
+	<td class="needed"></td>
+	<td class="">?</td>
+	<td><a href="mailto:"></a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/FindandReplaceDialogBoxes.asp"><strong>Find/Replace</strong></a></td>
+	<td class="needed"></td>
+
+	<td class="needed"></td>
+	<td class="">?</td>
+	<td><a href="mailto:"></a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/FontDialogBox.asp"><strong>Font</strong></a></td>
+	<td class="needed"></td>
+
+	<td class="needed"></td>
+	<td class="">?</td>
+	<td><a href="mailto:"></a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/OpenandSaveAsDialogBoxes.asp"><strong>Open/Save As</strong></a></td>
+	<td class="needed"></td>
+
+	<td class="needed"></td>
+	<td class="">?</td>
+	<td><a href="mailto:"></a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/PageSetupDialogBox.asp"><strong>Page Setup</strong></a></td>
+	<td class="needed"></td>
+
+	<td class="needed"></td>
+	<td class="">?</td>
+	<td><a href="mailto:"></a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/PrintDialogBox.asp"><strong>Print</strong></a></td>
+	<td class="needed"></td>
+
+	<td class="needed"></td>
+	<td class="">?</td>
+	<td><a href="mailto:"></a></td>
+    </tr>
+
+    <tr>
+      <td><strong>Print Setup</strong></td>
+	<td class="needed"></td>
+
+	<td class="needed"></td>
+	<td class="">Deprecated by MS, use <b>Page Setup</b> instead</td>
+	<td><a href="mailto:"></a></td>
+    </tr>
+
+    <tr>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/PrintPropertySheet.asp"><strong>Print Property Sheet</strong></a></td>
+
+	<td class="needed"></td>
+	<td class="needed"></td>
+	<td class="">?</td>
+	<td><a href="mailto:"></a></td>
+    </tr>
+
+    <tr class="hdr">
+      <td colspan="5"><strong>Drivers</strong></td>
+
+    </tr>
+
+    <tr>
+      <td><strong>x11drv</strong></td>
+	<td>N/A</td>
+	<td>N/A</td>
+	<td class="">?</td>
+
+	<td><a href="mailto:"></a></td>
+    </tr>
+
+    <tr>
+      <td><strong>ttydrv</strong></td>
+	<td>N/A</td>
+	<td>N/A</td>
+	<td class="">?</td>
+
+	<td><a href="mailto:"></a></td>
+    </tr>
+
+    <tr>
+      <td><strong>SDL</strong></td>
+	<td>N/A</td>
+	<td>N/A</td>
+	<td class="">?</td>
+
+	<td><a href="mailto:"></a></td>
+    </tr>
+  
+  
+  </table>
+</td>
+  </tr>
+</table>
+</div>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>

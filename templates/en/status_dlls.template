@@ -1,0 +1,360 @@
+<!--TITLE:[Wine Status DLLs]-->
+
+<h1>Wine Status - DLLs</h1>
+
+<style>
+<!--
+.hdr	{ background-color: #000000; color: #ffffff; }
+.pct0   { background-color: #ff5050; }
+.pct5   { background-color: #ff5d4f; }
+.pct10  { background-color: #ff694e; }
+.pct15  { background-color: #ff764d; }
+.pct20  { background-color: #ff824b; }
+.pct25  { background-color: #ff8f4a; }
+.pct30  { background-color: #ff9b49; }
+.pct35  { background-color: #ffa848; }
+.pct40  { background-color: #ffb447; }
+.pct45  { background-color: #ffc146; }
+.pct50  { background-color: #ffcd45; }
+.pct55  { background-color: #ffda43; }
+.pct60  { background-color: #ffe642; }
+.pct65  { background-color: #fff341; }
+.pct70  { background-color: #ffff40; }
+.pct75	{ background-color: #dcff48; }
+.pct80	{ background-color: #c8ff50; }
+.pct85	{ background-color: #b4ff58; }
+.pct90	{ background-color: #a0ff60; }
+.pct95	{ background-color: #8cff60; }
+.pct100	{ background-color: #60ff60; }
+.nonexistent	{ background-color: #ff5050; }
+.poor		{ background-color: #ff8f4a; }
+.outdated	{ background-color: #ffcd45; }
+.outdadeq	{ background-color: #ffff40; }
+.adequate	{ background-color: #dcff48; }
+.adeqgood	{ background-color: #c0ff54; }
+.good		{ background-color: #60ff60; }
+-->
+</style>
+
+
+<p>&nbsp;</p>
+
+<div align=center>
+<table width="95%" border="0" cellspacing="0" cellpadding="1" bgcolor="#6d6d6d">
+  <tr>
+<td>
+  <table width="100%" border="0" cellspacing="1" cellpadding="3" bgcolor="#ffffff">
+    <tr class="hdr">
+      <th>Aspect or Component</th>
+      <th>Documentation status</th>
+          <th>WWN article coverage</th>
+      <th>Implementation status (estimated)</th>
+      <th>Recent primary workers</th>
+    </tr>
+    <tr>
+      <td>crtdll&amp;msvcrt: Standard C runtime library</td>
+          <td class="nonexistent">Nonexistent</td>
+      <td><a href="http://www.winehq.org/news/?view=4#Crtdll Implementation">#4</a></td>
+      <td class="pct60">60% complete</td>
+      <td>CodeWeavers</td>
+    </tr>
+    <tr>
+      <td>comctl32: Common Controls</td>
+          <td class="nonexistent">Nonexistent</td>
+      <td><a href="?issue=46#Address space separation">#116</a>,
+      <a href="?issue=138#Listview Changes">#118</a></td>
+      <td class="pct95">95% complete</td>
+      <td>Guy Albertelli,<br>Dimitrie O. Paun,<br>CodeWeavers</td>
+        </tr>
+    <tr>
+      <td>comdlg32: Common Dialogs</td>
+      <td class="nonexistent">Nonexistent</td>
+      <td>None</td>
+      <td class="pct75">75% complete</td>
+      <td>&nbsp;</td>
+        </tr>
+    <tr>
+      <td>riched32: Rich Text Control</td>
+      <td class="nonexistent">Nonexistent</td>
+      <td><a href="?issue=127#MS Write Support">#127</a>,
+      <a href="?issue=137#MS Write Support (con't)">#137</td>
+      <td class="pct20">20% complete</td>
+      <td>&nbsp;</td>
+        </tr>
+    <tr>
+      <td>shell32: Shell interface</td>
+      <td class="poor">Poor</td>
+      <td>None</td>
+      <td class="pct80">80% complete</td>
+      <td>CodeWeavers</td>
+        </tr>
+    <tr>
+      <td>tapi32: Telephony API (TAPI)</td>
+      <td class="nonexistent">Nonexistent</td>
+      <td>None</td>
+      <td class="pct0">0% complete</td>
+      <td>&nbsp;</td>
+        </tr>
+    <tr>
+      <td>rasapi32: Dial-Up Networking (DUN) and Remote Access Service (RAS)</td>
+      <td class="nonexistent">Nonexistent</td>
+      <td>None</td>
+      <td class="pct0">0% complete<br>
+      Most people just setup their Windows apps for LAN, then use their Linux tools to dial up.</td>
+          <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>wsock32: Windows Sockets (WinSock) 1.1</td>
+      <td class="outdated">Outdated</td>
+      <td><a href="?issue=8#Winsock & 32 bit">#8</a>,
+      <a href="?issue=9#Winsock (cont'd)">#9</a>,
+      <a href="?issue=53#Winsock status">#53</a></td>
+      <td class="pct90"><a href="#Winsock">90% complete</a><br>
+          </td>
+      <td>Martin Wilck,<br>Mike McCormack</td>
+    </tr>
+    <tr>
+      <td>ws2_32: WinSock 2</td>
+      <td class="nonexistent">Nonexistent</td>
+          <td><a href="?issue=108#Winsock2">#108 (1)</a>,
+      <a href="?issue=108#Overlapped I/O">#108 (2)</a>,
+      <a href="?issue=121#Winsock2 Patches">#121</a></td>
+      <td class="pct70">70% complete</td>
+      <td>Martin Wilck,<br>Mike McCormack</td>
+    </tr>
+    <tr>
+      <td>wininet: Internet application protocols</td>
+          <td class="nonexistent">Nonexistent</td>
+      <td>None</td>
+      <td class="pct50"><a href="#Native_Programs">50% complete</a></td>
+      <td>CodeWeavers</td>
+    </tr>
+    <tr>
+          <td>winmm: Multimedia architecture</td>
+      <td class="good">Good</td>
+      <td><a href="?issue=5#Multimedia reorganisation">#5</a>,
+      <a href="?issue=48#Merging DSound and WinMM drivers">#48</a></td>
+      <td class="pct80">80% complete</td>
+      <td>Eric Pouech</td>
+    </tr>
+        <tr>
+      <td>OSS (Open Sound System) multimedia driver</td>
+      <td class="adequate">Adequate</td>
+      <td><a href="http://kt.zork.net/wine/wn20011212_110.html#2">#110</a></td>
+      <td class="pct95">95% complete<br>(MIDI IN support)</td>
+      <td>Eric Pouech</td>
+        </tr>
+    <tr>
+      <td>ALSA multimedia driver</td>
+      <td class="adequate">Adequate</td>
+      <td><a href="?issue=121#ALSA Driver">#121</a></td>
+      <td class="pct20">20% complete<br>
+      Preliminary Audio support for ALSA 0.5 and final interfaces.<br>
+              No implementation for MIDI/mixer...</td>
+      <td>Marco Pietrobono,<br>Eric Pouech</td>
+    </tr>
+        <tr>
+      <td>JACK (JACK Audio Connection Kit) multimedia driver</td>
+      <td class="nonexistent">Nonexistent</td>
+      <td>None</td>
+          <td class="pct20"><a href="#Sound_Drivers">20% complete</a><br>
+      Preliminary Audio support<br>
+      No implementation for midi/mixer...</td>
+      <td>Chris Morgan</td>
+        </tr>
+    <tr>
+      <td>aRtS multimedia driver</td>
+      <td class="adequate">Adequate</td>
+      <td><a href="?issue=118#aRts Driver">#118</a></td>
+          <td class="pct20"><a href="#Sound_Drivers">20% complete</a><br>
+      Preliminary Audio support<br>
+      No implementation for midi/mixer...</td>
+      <td>Chris Morgan</td>
+    </tr>
+    <tr>
+      <td>AudioIO multimedia driver</td>
+          <td class="adequate">Adequate</td>
+      <td><a href="?issue=131#News: Wine20020804, CrossOver Office 1.2, WineX 2.1, Xandros beta 3">#131</a></td>
+      <td class="pct20">20% complete<br>
+      Preliminary Audio support.<br>
+      No implementation for midi/mixer...</td>
+      <td>Robert Lunnon</td>
+        </tr>
+    <tr>
+      <td>NAS (Network Audio Server) multimedia driver</td>
+      <td class="adequate">Adequate</td>
+      <td><a href="?issue=131#News: Wine20020804, CrossOver Office 1.2, WineX 2.1, Xandros beta 3">#131</a></td>
+      <td class="pct20">20% complete<br>
+      Preliminary Audio support<br>
+              No implementation for midi/mixer...</td>
+      <td>Nicolas Escuder</td>
+    </tr>
+    <tr>
+      <td>Multimedia joystick driver</td>
+      <td class="adequate">Adequate</td>
+      <td>None</td>
+          <td class="pct80">80% complete<br>
+      Only implemented for Linux joystick API.</td>
+      <td>Eric Pouech</td>
+    </tr>
+    <tr>
+      <td>Multimedia CD audio</td>
+      <td class="adequate">Adequate</td>
+          <td>None</td>
+      <td class="pct100">100% complete</td>
+      <td>Eric Pouech</td>
+    </tr>
+    <tr>
+      <td>MCI (Media Control Interface) drivers</td>
+      <td class="adequate">Adequate</td>
+          <td><a href="?issue=29#CDs serial numbers">#29</a></td>
+      <td class="pct60">60% complete<br>
+      Missing the mcianim drivers.<br>
+      Problems with implementing mmtask.</td>
+      <td>Eric Pouech</td>
+    </tr>
+        <tr>
+      <td>msacm32: Audio Compression Manager (ACM)</td>
+      <td class="nonexistent">Nonexistent</td>
+      <td>None</td>
+      <td class="pct80">80% complete<br>
+      Codecs present for A/&micro; Law (G711), ADPCM (MS and IMA) &amp; MP3.</td>
+          <td>Eric Pouech</td>
+    </tr>
+    <tr>
+      <td>msvfw32: Video for Windows (VFW)</td>
+      <td class="nonexistent">Nonexistent</td>
+      <td>None</td>
+      <td class="pct30"><a href="#Video">30% complete</a><br> No codec implemented</td>
+      <td>Eric Pouech</td>
+    </tr>
+    <tr>
+      <td>ddraw: DirectDraw</td>
+      <td class="poor">Poor</td>
+      <td><a href="?issue=78#DirectDraw reorganization (cont'd)">#78</a>,
+      <a href="?issue=79#DirectDraw reorganization (cont'd)">#79</a></td>
+          <td class="pct85">85% complete</td>
+          <td><a href="http://www.transgaming.com/">TransGaming</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.bbrox.org/d3d_status.html">Direct3D</a></td>
+      <td class="poor">Poor</td>
+      <td><a href="?issue=76#TransGaming">#76</a>,
+      <a href="?issue=135#Direct3D 8 Support">#138</a>,
+      <a href="?issue=150#Direct3D Update">#150</a>,
+      <a href="?issue=153#D3D Status Page">#153</a></td>
+          <td class="pct50">50% complete</td>
+          <td>Lionel Ulmer,<br>Rapha&euml;l Junqueira,<br>Christian Costa,<br>Jason Edmeades</td>
+    </tr>
+    <tr>
+      <td>dinput: DirectInput</td>
+      <td class="nonexistent">Nonexistent</td>
+      <td><a href="?issue=116#DirectInput Key Mapping">#116</a>,
+      <a href="?issue=137#MS Write Support (con't)">#137</a></td>
+          <td class="pct70">70% complete</td>
+      <td>TransGaming</td>
+    </tr>
+    <tr>
+      <td>dplayx: DirectPlay</td>
+      <td class="adequate">Adequate</td>
+      <td>None</td>
+          <td class="pct25">25% complete</td>
+      <td>Peter Hunnisett</td>
+    </tr>
+    <tr>
+      <td>dsound: DirectSound</td>
+      <td class="poor">Poor</td>
+      <td><a href="?issue=48#Merging DSound and WinMM drivers">#48</a></td>
+          <td class="pct80"><a href="#DirectSound">80% complete</a></td>
+      <td>TransGaming,<br>Fran&ccedil;ois Gouget,<br>Rok Mandeljc</td>
+    </tr>
+    <tr>
+      <td>quartz: DirectShow core</td>
+      <td class="nonexistent">Nonexistent</td>
+          <td><a href="?issue=122#Quartz.dll Removal">#122</a></td>
+      <td class="pct0">0% complete</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>wing: WinG 16-bit game library</td>
+      <td class="nonexistent">Nonexistent</td>
+          <td><a href="?issue=72#Wine developers still have time to play">#72</a></td>
+      <td class="pct50">50% complete</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>rpcrt4: RPC/DCOM subsystem</td>
+      <td class="nonexistent">Nonexistent</td>
+          <td><a href="?issue=138#Remote Procedure Call Patch">#138</a></td>
+      <td class="pct5">5% complete</td>
+      <td>Greg Turner</td>
+    </tr>
+    <tr>
+      <td>ole32: OLE/COM core</td>
+      <td class="nonexistent">Nonexistent</td>
+          <td><a href="?issue=109#MIDL and COM">#109</a>,
+      <a href="?issue=117#More COM Work">#117</a></td>
+      <td class="pct60">60% complete</td>
+      <td>CodeWeavers</td>
+    </tr>
+    <tr>
+      <td>oleaut32: OLE Automation core</td>
+      <td class="nonexistent">Nonexistent</td>
+          <td><a href="?issue=126#TransGaming Releasing Code">#126</a></td>
+      <td class="pct60">60% complete</td>
+      <td>CodeWeavers</td>
+    </tr>
+    <tr>
+      <td>olecli32: OLE client library</td>
+      <td class="nonexistent">Nonexistent</td>
+          <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>olesvr32: OLE server library</td>
+      <td class="nonexistent">Nonexistent</td>
+          <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>oledlg: OLE user interface</td>
+      <td class="nonexistent">Nonexistent</td>
+          <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>opengl32: OpenGL interface</td>
+      <td class="good">Good</td>
+          <td><a href="?issue=2#Some musing about OpenGL support">#2</a>,
+      <a href="?issue=8#Accelerated OpenGL & Wine">#8</a>,
+      <a href="?issue=44#OpenGL optimization">#44</a>,
+      <a href="?issue=45#OpenGL requirements">#45</a></td>
+      <td class="pct90">90% complete<br>
+      Some compatibility problems.</td>
+      <td>Lionel Ulmer,<br>TransGaming</td>
+    </tr>
+    <tr>
+      <td>odbc32: ODBC Database Manager</td>
+      <td class="adequate"><a
+      href="http://www.winehq.org/Docs/wine-user/odbc.shtml">Adequate</a></td>
+      <td><a href="?issue=115#ODBC and Wine">#115</a></td>
+      <td class="pct70">70% complete<br>(no Windows ODBC driver support, only UNIX)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>wnaspi32: Advanced SCSI Peripheral Interface</td>
+          <td class="outdated">Outdated</td>
+      <td><a href="?issue=33#SCSI support">#33</a></td>
+      <td class="pct85">85% complete</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</td>
+  </tr>
+</table>
+</div>
+
+<p>&nbsp;</p>

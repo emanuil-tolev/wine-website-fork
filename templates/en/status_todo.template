@@ -1,0 +1,162 @@
+<!--TITLE:[Wine Status Known To dos]-->
+
+<h1>Wine Status - Known To Dos</h1>
+
+<h3><a name="Window_management"></a>Window management<br></h3>
+
+<ul>
+<li>Window management needs proper inter-process handling of activation, focus, repaint</li>
+</ul>
+
+<h3><a name="National_Language_Support"></a>National Language Support<br></h3>
+
+<ul>
+<li>Make sure ASCII functions call the Unicode one and not the other way around</li>
+<li>BiDi support</li>
+<li>Add support for Hebrew and Arabic</li>
+<li>Add support for more keyboard layouts to x11drv</li>
+<li>Figure out what should be done for better support of Chinese, Korean, Japanese...</li>
+</ul>
+
+<h3><a name="Winsock"></a>Winsock<br></h3>
+
+<ul>
+<li>Winsock1 calls,in particular select(),use direct system calls instead of using related wine APIs</li>
+<li>More unit tests need to be written</li>
+<li>Make sure OOB data is handled properly. Check client-size blocking</li>
+<li>WS2: Support other kind of services, like IrDA</li>
+<li>Fix stubs left in ws2_32.spec</li>
+</ul>
+
+<h3><a name="DirectSound"></a>DirectSound<br></h3>
+
+<ul>
+<li>Make the latency configurable (tunable)</li>
+<li>More intelligent prebuffering</li>
+<li>Complete support for hardware secondary buffers through the HAL (for a future ALSA multimedia wave audio driver)</li>
+<li>3D sound buffers</li>
+<li>Sound capture (recording)</li>
+</ul>
+
+<h3><a name="Sound_Drivers"></a>Sound Drivers<br></h3>
+
+<ul>
+<li>ALSA driver (on final 0.9 interface)</li>
+<li>Improve driver for THE one true audio server: JACK !</li>
+</ul>
+
+<h3><a name="Video"></a>Video<br></h3>
+
+<ul>
+<li>Implement native codecs (RLE...)</li>
+</ul>
+
+<h3><a name="GDI"></a>GDI<br></h3>
+
+<ul>
+<li>Write a DIB engine</li>
+<li>DIB engine to do 32-bit graphics manipulation&nbsp;</li>
+</ul>
+
+<h3><a name="GDB"></a>GDB<br></h3>
+
+<ul>
+<li>Add the MSC/PDB info support to gdb</li>
+</ul>
+
+<h3>Winedbg<br></h3>
+
+<ul>
+<li>Make winedbg use dbghelp DLL</li>
+<li>Speed up PDB support&nbsp;</li>
+</ul>
+
+<h3><a name="DDE"></a>DDE<br></h3>
+
+<ul>
+<li>Enhance memory management issues (interprocess sending)</li>
+</ul>
+
+<h3><a name="Native_Programs"></a>Native Programs<br></h3>
+
+<ul>
+<li>Winhelp: fix invocation thru WinHelp</li>
+</ul>
+
+<h3>File Management<br></h3>
+
+<ul>
+<li>Implement NT file namespace</li>
+<li>UNC support</li>
+<li>Allow flexibility in FS &quot;mounting&quot; (for example, SMB shares)<br></li>
+</ul>
+
+<h3><a name="Fonts"></a>Fonts<br></h3>
+
+<ul>
+<li>Support for non-TT fonts (eg Type1, bitmap,....)</li>
+<li>Subpixel rendering - a.k.a. ClearType</li>
+<li>Integration with libfontconfig</li>
+<li>Reduce per font startup time</li>
+<li>libfontconfig support</li>
+</ul>
+
+<h3><a name="Printers_"></a>Printers<br></h3>
+
+<ul>
+<li>Write a printer configuration applet</li>
+<li>Fix the Type1 font downloader for HP4000 printers<br></li>
+</ul>
+
+<h3><a name="Tools_"></a>Tools<br></h3>
+
+<ul>
+<li>Wine installation process should install and configure wine</li>
+<li>Winemaker fixes</li>
+<li>Run C regression tests on Windows with MSVC</li>
+<li>Work on WRC as it does not find system headers</li>
+</ul>
+
+<h3><a name="Instructions_"></a>Instructions<br></h3>
+
+<ul>
+<li>Write a proper Users Guide Introduction</li>
+<li>Documentation updates<br></li>
+</ul>
+
+<h3><a name="Aspect_or_Component_"></a>Aspect or Component<br></h3>
+
+<ul>
+<li>More DLL Separation</li>
+<li>Review of Wine Server Protocol</li>
+<li>Finalize Server Protocol</li>
+<li>PAM (Pluggable Authentication Modules)&nbsp;</li>
+<li>Visual C++'s native COM support&nbsp;</li>
+<li>Create replacement of browser component (Internet Explorer/IExplore)</li>
+</ul>
+
+<h3>Porting issues for Mingw/Cygwin/MS_VC<br></h3>
+
+<ul>
+<li>Better separation of win16/32 code</li>
+<li>Remove/rewrite win16/9x API dependancy on newer code</li>
+<li>Remove/rewrite wineisms from code</li>
+<li>Rewrite/fix unixisms in most WINE dlls&nbsp;</li>
+<li>Documentation fixes</li>
+</ul>
+
+<h3><a name="Low_priority_items_"></a>Low priority items<br></h3>
+
+<ul>
+<li>VxD support with dynamic loading</li>
+<li>Multi-user support</li>
+</ul>
+<br>
+
+ For the full 0.9 Bug List, please see <span class="menuTitle"></span><a
+ href="http://bugs.winehq.com/buglist.cgi?keywords=tasklet">Tasklets<br>
+ <span style="color: rgb(0, 0, 0);"></span></a>For
+ the full 1.0 Bug List, please see <a
+ href="http://bugs.winehq.com/buglist.cgi?keywords=tasklist">Tasklist</a>
+
+<p>&nbsp;</p>
