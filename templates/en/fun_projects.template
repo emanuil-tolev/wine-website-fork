@@ -2,7 +2,7 @@
 
   <h1>Fun Projects</h1>
 
-   <table align=right hspace=20 class=black>
+   <table align=right class=black>
    <tr class=black><td>
        <p><b class=inverse>Color Key</b></p>
    </td></tr>
@@ -84,7 +84,7 @@
    <li> computer</li>
    <li> unknown document</li>
    <li> any others??</li></ul>
-  </p><p>  
+  <p>  
    Don't do file types, as native icon&lt;-&gt;file type association is done by
    mime types not extensions, and it'd make our file dialogs even slower than
    they already are.
@@ -179,8 +179,8 @@
    example, I manually added an entry for KMail in \\Machine\\software\\clients 
    and now I can select Kmail as the default Mail application in the internet 
    options control panel (Which is created when Internet Explorer is installed).
-   My registry entries look like this:
-   <ul><code>
+   My registry entries look like this:</p>
+   <ol><code>
    [Software\\Clients\\Mail\\Kmail] 1100110998<br />
    @="KMail"
    <br /><br />
@@ -198,8 +198,8 @@
    @="\"Z:\\usr\\kde\\3.3\\bin\\kmail\" \"%1\""
    <br /><br />
    With Z: mapped to /
-   </code> </ul></p><p>
-   I selected KMail as the default Mail application, and when I open an Mail
+   </code></ol>
+   <p>I selected KMail as the default Mail application, and when I open an Mail
    Address in MSIE kmail pops up. The same happens when I enter a mailto: 
    address in Task Manager->New task.</p>
   <ul>
