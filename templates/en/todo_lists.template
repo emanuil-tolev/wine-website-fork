@@ -119,11 +119,17 @@ committed</a>.
   <a name="doc"></a><h3> B. Documentation </h3>
   </a><h4> User Guide </h4>
     <ol>
-	<li> Revise the introduction <span class="inprogress">[IN PROGRESS]</span>
+	<li> Revise the introduction <span class="done">[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:scott@open-vote.org">Scott Ritchie</a>
-	    <li> status: update <a href="http://www.winehq.org/hypermail/wine-patches/2004/10/0141.html">submitted</a>.
-	    <li> updated: Oct 10, 2004
+	    <li> status: <a href="http://www.winehq.org/hypermail/wine-patches/2004/10/0141.html">update</a> committed.
+	    <li> updated: Dec 7, 2004
+	  </ul>
+	<li> Revise the getting wine chapter <span class="inprogress">[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:scott@open-vote.org">Scott Ritchie</a>
+	    <li> status: rewriting until things stop changing
+	    <li> updated: Dec 7, 2004
 	  </ul>
 	<li> Update configuration instructions based winecfg & regedit <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>

@@ -1,0 +1,61 @@
+<!--TITLE:[Wine for Debian based distributions]-->
+
+<h1><a name="debian"></a><img src="{$root}/images/distro/debian.gif" width="50" height="50" alt="Debian Linux" border="0">
+Wine for Debian based distributions</h1>
+
+<p>Debian and Debian based distributions, such as Ubuntu, utilize a special tool
+for managing packages known as APT.  APT is able to automagically install all of
+the needed dependencies for a software package, as well as keep the package 
+up to date, by scanning what are known as APT repositories.  Debian based 
+distributions have their own repositories of software, many of which include
+wine, however we keep the latest available packages here for download.
+</p>
+
+<p>Packages here are designed to function on Debian unstable, and are meant to 
+replace the older Debian-provided ones.  Like most packages for Debian unstable, 
+these packages also work in Ubuntu Linux, where they are tested regularly. 
+There is no need to worry about which architecture version of a package to 
+download, as APT will automatically get the one most suitable for your system if
+it is available.</p>
+
+<h2>Installing from the WineHQ APT Repository with Synaptic:</h2>
+
+<p>To install wine from the WineHQ APT repository, you need to configure APT to
+look in the right place for the wine packages.  On Ubuntu systems, and those 
+using the Synaptic Package Manager, this can be done easily by opening up 
+Synaptic and selecting Settings->Repositories.  Then click add and enter the 
+following information:</p>
+
+<img src="{$root}/images/distro/synaptic-repository-deb.png" alt="Synaptic Package Repository Screenshot" border="0">
+
+<p>Then, simply click reload and search for the package wine for installation. 
+If you already have a wine package installed, selecting mark all upgrades and
+opting for the "smart upgrade" option should update wine to the newest version.
+</p>
+
+<h2>Installing from the WineHQ APT Repository with the console:</h2>
+
+<p>If your system doesn't use Synaptic, you will need to edit APT's 
+configuration file by hand.  To do this, open up a console, su to root, and add 
+the following to the file /etc/apt/sources.list:</p>
+
+<p>deb http://wine.sourceforge.net/Ubuntu/apt/ binary/<br>
+deb-src http://wine.sourceforge.net/Ubuntu/apt/ source/</p>
+
+<p>Then, you can run apt-get update to update APT's package information. 
+Finally, to install wine, do apt-get install wine.</p>
+
+<h2>Building the Wine Package from Source using APT:</h2>
+
+<p>APT also allows easy compilation from source of a package.  This is useful if
+there is no binary package available for your architecture, or if you wish to 
+create a fresh .deb file from scratch.  To do this, first follow the 
+instructions for installing from the console above, except instead of running
+apt-get install wine run apt-get build-dep wine.  This will download the needed
+development packages for your system to make the wine package.  Then, run 
+apt-get --build source wine, have a snack, and wait for the compiling to finish.
+</p>
+
+<p>To install your newly created package (which should be in whatever directory
+you were in when you ran apt-get --build source), run dpkg -i wine*.deb as root.
+</p>
