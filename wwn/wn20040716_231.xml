@@ -96,7 +96,7 @@ the Microsoft Installer API and Mike sent a message to the list:</p>
  Consider adding "msi" = "native, builtin" to your Wine configuration 
  files, and not installing the MSI redistributables straight away when 
  you encounter an installer that uses msi.dll :)  Let us know what bugs 
- that turns up.
+ turn up.
 </p></quote>
 
 <p>Michael Stefaniuc wondered 
@@ -124,7 +124,7 @@ http://www.winehq.org/hypermail/wine-bugs/2002/12/0066.html</a></li>
 http://http://bugs.winehq.com/show_bug.cgi?id=326</a></li></ul></p><p>
 
 I have tried esddsp, but it sometimes does not work, so, I decided to write the 
-Esd sound module, it's based the Arts sound module, just replaced the arts 
+Esd sound module, it's based on the Arts sound module, I just replaced the arts 
 calls with esd calls, and fixed some problems related to esd.
 It works fine for me, I attach the patch here, and if it works for the others, 
 it may close the old bug #326.</p></quote>
@@ -182,7 +182,7 @@ around that issue (which I also use for RH packages).
 than that,
 <quote who="Shachar Shemesh">
  I am creating the 
-initial config from an RPM, giving the winehq RPM as a dependancy. For 
+initial config from an RPM, giving the winehq RPM as a dependency. For 
 the time being, I solved this problem by having my RPM create a new user 
 (which it has to anyways), and copy over a complete .wine directory. 
 However, I'm afraid that if things change in the future, the config may 
