@@ -4,8 +4,6 @@
 
 <h1>About Wine</h1>
 
-<img src="./images/grey_pixel.gif" width="95%" height=1 border=0 alt="-"><br>
-
        <h3> Binary Compatibility </h3>
        <ul>
          <li> Support for loading Win32 (9x/NT/XP), Windows 3.x and DOS binaries
@@ -46,9 +44,10 @@
          <li> Built-in debugger and configurable trace messages
        </ul>
 
-<img src="./images/grey_pixel.gif" width="95%" height=1 border=0 alt="-"><br>
 
-<h2> History </h2>
+
+<h1> History </h1>
+
 <p>The Wine project started in 1993 as a way to support running Windows 3.1
 programs on Linux. Bob Amstadt was the original coordinator, but turned
 it over fairly early on to Alexandre Julliard, who has run it ever since.
@@ -57,9 +56,8 @@ in July 1994.
 Over the years, ports for other Unixes have been added, along with support
 for Win32 as Win32 applications became popular.</p>
 
-<img src="./images/grey_pixel.gif" width="95%" height=1 border=0 alt="-"><br>
 
-<h2> Wine Status </h2>
+<h1> Wine Status </h1>
 
 <p>Wine is still under development, and it is not yet suitable for general use.
 Nevertheless, many people find it useful in running a growing number of Windows programs.
@@ -76,9 +74,9 @@ page</a> for a global view on Wine's implementation progress.
   <li> <a href="/source/documentation/ChangeLog.OLD">ChangeLog.OLD</a> The complete history, from 1993 to October 1998
 </ul>
 
-<img src="./images/grey_pixel.gif" width="95%" height=1 border=0 alt="-"><br>
 
-<h2> Contact </h2>
+
+<h1> Contact </h1>
 
 <p>A broad spectrum of Wine developers can be reached on the <a href="news:comp.emulators.ms-windows.wine">Wine newsgroup</a>
 or the <a href="mailto:wine-devel@winehq.com">Wine development list</a>.</p>
@@ -91,9 +89,9 @@ email at <a href="mailto:julliard@winehq.com">julliard@winehq.com</a>.</p>
 
 <p>For a list of current developers, see the Wine <a href="?page=who">Who's Who</a>.</p>
 
-<img src="./images/grey_pixel.gif" width="95%" height=1 border=0 alt="-"><br>
 
-<h2> Legal </h2>
+
+<h1> Legal </h1>
 
 <p>Wine may be used and redistributed under the terms
 of the <a href="http://source.winehq.com/source/LICENSE">LGPL</a>.
