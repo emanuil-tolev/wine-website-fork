@@ -8,42 +8,47 @@ alt="Wine in action"></a>
 
 <h3> Binary Compatibility </h3>
 <ul>
- <li> Support for loading Win32 (9x/NT/XP), Windows 3.x and DOS binaries
- <li> Support for Win32 and Win16 function calls
- <li> 32 and 16 bit x86 code
- <li> Large interrupt library for programs using real-mode INTxx calls
- <li> Advanced thunking capabilities
- <li> Optional use of external vendor DLLs
- <li> Reverse-engineering design assures ``bug-for-bug'' compatibility
+ <li> Loads Windows 9x/NT/2000/XP, Windows 3.x and DOS programs and libraries
+ <li> Win32 compatible memory layout, exception handling, threads and processes
+ <li> Designed for POSIX compatible operatings systems (eg. Linux and FreeBSD)
+ <li> ``bug-for-bug'' compatibility with Windows
 </ul>
 <h3> Graphics </h3>
 <ul>
- <li> X11-based graphics or SDL or text/ttydrv display
- <li> Remote display to any X terminal
- <li> Supports full GDI and many new features of GDI32
- <li> Partial DirectX support for games (limited Direct3D support)
- <li> Supports native Win16 printer drivers (outdated)
- <li> Internal PostScript driver printing interface
- <li> Metafile driver
+ <li> X11-based graphics allows remote display to any X terminal
+ <li> X11, TrueType (.ttf/.ttc) and Windows Bitmap (.fon) Fonts
+ <li> DirectX support for games (limited Direct3D support)
+ <li> Printing via PostScript driver or legacy native Win16 printer drivers
+ <li> Enhanced Metafile (EMF) and Windows Metafile (WMF) driver
  <li> Desktop-in-a-box or mixable windows
+ <li> Windows MultiMedia (WinMM) layer support with builtin codecs
 </ul>
-<h3> Other Features </h3>
+<h3> Allows Windows program to interface with: </h3>
 <ul>
- <li> Good support for sound, alternative input devices
- <li> Modems, serial devices are supported
- <li> Winsock TCP/IP networking
- <li> ASPI Scanner support
- <li> advanced Win32 common controls support
+ <li> Sound devices via ALSA, OSS, ARTS, JACK, and libaudio etc
+ <li> Multi-lingual keyboards and CJK input method support via XIM
+ <li> Modems, serial devices
+ <li> Networks (TCP/IP and IPX)
+ <li> ASPI Scanners
+ <li> Windows Tablets via XInput (eg. Wacom)
 </ul>
 <h3> Wine API </h3>
 <ul>
- <li> Designed for source compatibility with Win32 code
- <li> Sample programs
+ <li> Designed for source and binary compatibility with Win32 code
+ <li> Win32 API test suite to ensure compatability
+ <li> Compilable on a wide range of C compilers
+ <li> Permits mixing of Win32 and POSIX code
+ <li> Permits mixing of ELF (.so) and PE (.dll/.exe) binaries in one address space
+ <li> Win32 compatible header files
  <li> Automatically generated API documentation
- <li> 32-bit resource compiler
- <li> Partial Unicode and support
+ <li> Resource compiler
+ <li> Message compiler
+ <li> IDL compiler
+ <li> extensive Unicode support
  <li> Internationalization -- Wine supports 16 languages
  <li> Built-in debugger and configurable trace messages
+ <li> External memory checker support using Valgrind
+ <li> Sample programs
 </ul>
 
 <hr>
