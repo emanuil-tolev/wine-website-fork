@@ -108,12 +108,12 @@
     <li>dlls/shlwapi/string.c: shlwapi: StrRetToStrW: illegal call to SHStrDupA
     <li class=committed>dlls/version/info.c: version: GetFileVersionInfoSizeW: illegal call to GetFileVersionInfoSizeA
     <li>dlls/version/install.c: version: VerInstallFileW: illegal call to VerInstallFileA
-    <li>dlls/wininet/ftp.c: wininet: FtpCreateDirectoryW: illegal call to FtpCreateDirectoryA
-    <li>dlls/wininet/ftp.c: wininet: FtpSetCurrentDirectoryW: illegal call to FtpSetCurrentDirectoryA
+    <li class=committed>dlls/wininet/ftp.c: wininet: FtpCreateDirectoryW: illegal call to FtpCreateDirectoryA
+    <li class=committed>dlls/wininet/ftp.c: wininet: FtpSetCurrentDirectoryW: illegal call to FtpSetCurrentDirectoryA
     <li class=committed>dlls/wininet/http.c: wininet: HttpOpenRequestW: illegal call to HttpOpenRequestA
     <li class=committed>dlls/wininet/http.c: wininet: HttpQueryInfoW: illegal call to HttpQueryInfoA
     <li class=committed>dlls/wininet/http.c: wininet: HttpSendRequestW: illegal call to HttpSendRequestA
-    <li>dlls/wininet/internet.c: wininet: InternetCheckConnectionW: illegal call to InternetCheckConnectionA
+    <li class=committed>dlls/wininet/internet.c: wininet: InternetCheckConnectionW: illegal call to InternetCheckConnectionA
     <li class=committed>dlls/wininet/internet.c: wininet: InternetConnectW: illegal call to InternetConnectA
     <li class=committed>dlls/wininet/internet.c: wininet: InternetOpenUrlW: illegal call to InternetOpenUrlA
     <li class=committed>dlls/wininet/internet.c: wininet: InternetOpenW: illegal call to InternetOpenA
@@ -202,8 +202,8 @@
 		 <a href="mailto:burner1@hotmail.com">Justin Chevrier</a>,
 		 <a href="mailto:ulrich@codeweavers.com">Ulrich Czekalla</a>,
 		 <a href="mailto:mike@codeweavers.com">Mike McCormack</a>,
-		 <a href="mailto:juan_lang@yahoo.com">Juan Lang</a>.
-
+		 <a href="mailto:juan_lang@yahoo.com">Juan Lang</a>,
+		 <a href="mailto:kevin@plop.org">Kevin Koltzau</a>.
     <li>status: <span class=inprogress>Over half done.</span>
     <li>updated: Apr 9, 2004
   </ul>
@@ -272,7 +272,7 @@
     <li class=committed> ddrawi.h
     <li class=committed> drive.h
     <li class=committed> dsdriver.h
-    <li> file.h
+    <li class=committed> file.h
     <li class=committed> font.h
     <li> gdi.h
     <li class=committed> global.h
@@ -460,57 +460,9 @@
     <li>updated: Aug 7, 2004
   </ul>
 
-
   <h3><a name=tests></a>Fix the conformance tests so that they pass on Windows</h3>
   Entry submitted by <a href="mailto:fgouget@free.fr">Francois Gouget</a>.
 
-  <p>14 tests out of 42 have failures on one or more Windows platforms (last 
-  time I counted). That's 33% of incorrect tests! Making progress. It is 
-  much better than the initial 75% of 2002/12/03 :-)
- 
-  <p>Current status for the tests is tracked by Francois on this page:
-     <a href="http://fgouget.free.fr/wine/tests-en.shtml">http://fgouget.free.fr/wine/tests-en.shtml</a>,
-     or by the <a href="http://www.astro.gla.ac.uk/users/paulm/WRT/wrt.php">WINE Regression Testing</a> project.
-
-  <p>Needless to say, this is very bad. Windows is our reference platform,
-  and a test that fails in Windows, and succeeds in Wine may very well be
-  hiding a bug. We need to fix them.
-
-  <p>We have a way to pretty easily compile tests on Windows. Here's the procedure:
-  <ul>
-    <li> Get the Wine source
-    <li> Run <tt>./tools/winapi/msvcmaker --no-wine</tt>
-    (it's a perl script so you might even be able to do it on Windows)
-    <li> Make those source accessible by a Windows machine (e.g. export them via Samba)
-    <li> Load <tt>winetest.dsw</tt> in Visual C++
-    <li> Hit that build button
-  </ul>
-  Alternatively, you can simply download the precompiled tests from
-  <a href="http://fgouget.free.fr/wine/winetests.zip">http://fgouget.free.fr/wine/winetests.zip</a>.
-
-  <p>The tests output all the results to stderr. To redirect
-  all info into a file when starting the batch file use:
-  <pre>
-	runtests.bat&gt;&gt;result.txt 2&gt;&amp;1
-  </pre>
-  This will not work on Win9x, but it does on Win2K and WinXP.
-
-  <p>What we need next:
-  <ol>
-   <li> A way to run all tests. A batch file would do the job nicely.
-     <ul>
-	<li>worker: <a href="mailto:ps@leissner.se">Patrik Stridvall</a>
-	<li>status: <span class=done><a href="http://cvs.winehq.org/patch.py?id=6450">patch</a> committed.</span>
-	<li>updated: Dec 1, 2002
-     </ul>
-   <li> People to fix the tests so that they actually pass on *all* Windows platforms
-     <ul class=modified>
-	<li>workers: <a href="mailto:fgouget@free.fr">Francois Gouget</a>,
-		     <a href="mailto:Martin.Wilck@Fujitsu-Siemens.com">Martin Wilck</a>
-	<li>status: <span class=inprogress>more patches</span>
-		    <a href="http://www.winehq.org/hypermail/wine-devel/2003/01/0210.html">committed</a>.
-	<li>updated: Jan 6, 2003
-     </ul>
    <li> Volunteers who will run the tests their Windows platform of choice on a 
         regular basis so that we quickly fix incorrect tests
      <ul>
@@ -526,13 +478,6 @@
 		    <a href="mailto:kyethespy@liquid2k.com">Kye Lewis</a>
      </ul>
   </ol>
-
-  <p>The people doing 2 could definitely use the help of a couple of people
-  doing 3 since they will probably not have access to all Windows
-  platforms.
-
-  <p>Once the initial fixing is done we will really need people doing 3 to
-  prevent bad tests from coming back.
 
   <h2>Completed Projects</h2>
 
