@@ -43,7 +43,7 @@ class config
                 'HowTo'           => '{$root}/site/howto',
                 'Bug Tracking'    => 'http://bugs.winehq.org/',
                 'Applications'    => 'http://appdb.winehq.org',
-                'Forums'          => '{$root}/site/forums'
+                'Mailing Lists'   => '{$root}/site/forums'
            ),
            'Development' => array(
                 'Development'     => '{$root}/site/development',
