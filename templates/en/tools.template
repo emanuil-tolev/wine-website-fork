@@ -1,0 +1,220 @@
+ 
+<h1>Wine Tools</h1>
+
+       
+       Here are a number of tools which may be useful for Wine developers and
+       Wine users.
+       Some are Windows platform, and some are Unix.
+       
+      
+<p><hr size=2 noshade><p>
+
+       <h2> Browsing the Wine source </h2>
+       Thanks to <a href="http://lxr.linux.no/">LXR</a>, WineHQ provides
+       <ul>
+         <li> <a href="/source">http://www.winehq.com/source</a> Cross-referenced,
+         marked up source
+         <li> <a href="/ident">http://www.winehq.com/ident</a> Identifier location 
+         (where it's defined, everywhere it's used) 
+         <li> <a href="/search">http://www.winehq.com/search</a> Full-text search.
+       </ul>
+       Similar but less complete 
+       functionality is available locally by using tags in emacs or vi.
+       
+       <h2> Windows development tools </h2>
+       <h3> Win32 SDKs </h3>
+       <ul> 
+         <li> <A HREF="http://sources.redhat.com/cygwin/">Cygwin</a> Cygnus's 
+           port of GCC and GNU toolchain for Win32 (now owned by Red Hat). Includes
+           complete environment for porting Unix software to Win32 platforms.
+           <a href="ftp://ftp.deninc.com/">Mirror</a> Including Sergey Ohkapin's work.
+         <li> <a href="http://www.mingw.org/">MinGW</a> &quot;Minimalist&quot; GNU toolchain, based on Cygwin32, 
+       aimed at those not needing the Unix system calls
+       provided by Cygwin32's cygwin.dll
+         <li> <a href="ftp://ftp.coda.cs.cmu.edu/pub/tools/">Cygwin32 for Linux</a> Binary and source RPMs of Cygwin32 compiled for Linux by Peter Braam.
+         <li> <a href="ftp://ftp.mathematik.uni-bielefeld.de/pub/tex/systems/msdos/dpmigcc/">RSXNT</a> 
+	 Another GCC port.
+         <li> <a href="http://www.cs.virginia.edu/~lcc-win32/">LCC-Win32</a>
+       LCC is a free win32 compiler/development environment. 
+       Includes win32 compiler, assembler, linker, header files, resource compiler,
+       Wedit editor, and various other tools. Smaller, simpler, and less sophisticated
+       than GNU toolchain. Entertaining documentation.
+        Also see the
+       <a href="http://www.geocities.com/SiliconValley/Heights/9069/">Unofficial homepage</a>.
+       Works under Wine.
+         <li> <a href="ftp://ftp.mathematik.tu-darmstadt.de:/pub/linux/bonnes/lcc-linux-announce">LCC-Linux</a> LCC tools (compiler, linker, resource compiler, PE dumper, make, and lburg) ported to Linux. <a href="ftp://ftp.mathematik.tu-darmstadt.de:/pub/linux/bonnes/lcc-unixbin-alpha.tar.gz">Unix binaries</a>
+         <li> <a href="http://www.planet.net/pjoshv/cross-elf.html">Cross-ELF</a> Produce win32 code under Linux, support DOS, Linux, and win32 with a single executable
+         <li> <a href="http://www.winsite.com/free/freeutil/">WinSite utils</a> Win95 tools courtesy UI archive
+       </ul>
+       
+       <h3> Win16 SDKs </h3>
+       There are lots of commercial environments. I'd appreciate links to other
+       free ones.
+       <ul>
+         <li> <a href="http://www.delorie.com/djgpp/">DJGPP</a> A DOS compiler based
+              on GCC. It will run under Linux using <a>DOSEMU</a>. 
+	      There is <a href="http://www.delorie.com/djgpp/16bit/">partial
+	      support</a> for producing and linking 16-bit code.
+             <a href="http://www.delorie.com/djgpp/v2faq/faq3_6.html">
+             with trouble and additional tools</a>.
+         <li> <a href="ftp://x2ftp.oulu.fi/pub/msdos/programming/djgpp2/">DJGPP2</a>
+         <li> <a href="ftp://x2ftp.oulu.fi/pub/msdos/programming/djgpp2/xlib031.txt">xlib-emu</a> Wrappers for Xlib calls allow porting X programs to pure DOS systems
+       </ul>
+       
+       <h3> Resource Compilers </h3>
+       Yes, I know that these are usually part of SDKs, so most of the
+       environments listed above will come with resource compilers.
+       <ul>
+         <li> <a href="/source/tools/wrc/README.wrc">wrc</a> The Wine resource compiler
+	 <li> <a>Twin rc</a>
+	 <li> <a>windres</a> Part of binutils 2.9.1.
+       </ul>
+
+       <h2> Utilities </h2>
+       <ul> 
+         <li> <a href="http://www.cs.colorado.edu/homes/zorn/public_html/MallocDebug.html">MallocDebug</a> Nice set of links on malloc debugging tools
+         <li> <a href="http://www.cse.ogi.edu/DISC/projects/immunix/StackGuard/">StackGuard</a> GCC extension to detect stack smashing
+         <li> <a href="ftp://dse.doc.ic.ac.uk/pub/misc/bcc">Bcc</a> Bounds checking  patch for GCC.
+         <li> <a href="ftp://ftp.winehq.com/pub/wine/disasm.tar.gz">PE disassembler</a> By Sang Cho, ported by Uwe Bonnes. Also available <a href="ftp://elektron.ikp.physik.tu-darmstadt.de/pub/disasm.tar.gz">here</a>, or see the original
+       <a href="http://www.simtel.net/pub/simtelnet/win95/prog/disassem.zip">here</a>.
+         <li> <a href="ftp://ftp.sunsite.org.uk/Mirrors/ftp.cdrom.com/pub/simtelnet/msdos/disasm/ida37fw.zip">IDA</a> Interactive Disassembler
+         <li> <a href="http://www.alphalink.com.au/~mvertes/xlab.html">XLab</a> (broken link)
+       Automation/macros/testing under X
+       </ul>
+       
+       Wine has the following useful utilities builtin:
+       <ul> 
+         <li> debugger 
+       	<br> Understands both segmented and flat addresses, Unix and Windows
+                    symbol tables, and lots of other stuff.
+               <br> Invoke by either a) Using <code>winedbg</code> instead of <code>wine</code> on the command line.
+                    b) waiting for Wine or the Windows program to crash.
+         <li> system call tracer / API spy (-debugmsg +relay), 
+         <li> message tracer (-debugmsg +message)
+         <li> disassembler (disass while inside debugger)
+       </ul>
+       
+       <h3> Other utilities </h3>
+       <ul> 
+       <li><a>pedump</a> File dumper for 32-bit PE executables.
+       A good one (based on code distributed with
+       <a href="index.php?refs#w95secrets">Windows 95 System Programming Secrets</a>) is available as part of the 
+       <a href="http://www.cs.virginia.edu/~lcc-win32/index.html">LCC</a>
+        environment. The ELF equivalent is <code>objdump</code>.
+       <li> <a>file (1)</a> This standard Unix utility can 
+       recognize various kinds of DOS/Windows executables and give a small amount of information about them.
+       <li> <a>whead</a> Header dumper for 16-bit NE executables. Included with Twin.
+       <li> <a href="http://www.anatom.uni-tuebingen.de/~richi/linux/binfmt_misc.html">binfmt_misc</a> Linux kernel patch to recognize
+       DOS/Windows/Java executables as the natively supported formats they are. Available as a patch to Linux 2.0.x, and it is integrated into 2.1.43 
+       and above.
+         <li> API Spy for Windows. There are several, including free ones.
+       </ul>
+       
+       
+       <h2> X displays for Windows </h2>
+       Remote display of Windows apps (running under Wine on a Unix server) to 
+       Unix client desktops is as easy as any
+       other X program. (For tips on remote X display,
+       see the <a href="http://www.linuxdoc.org/HOWTO/mini/Remote-X-Apps.html">Remote X mini-HOWTO</a> for many details.)
+       It's nearly as easy to deliver to a Windows desktop,  but
+       you need an X display running on the Windows desktop. Here are a few, for
+       a more exhaustive list, with reviews, see 
+       <a href="http://www.rahul.net/kenton/xsites.html#XMicrosoft">Ken Lee</a>'s site.
+       <ul>
+         <li> <a href="http://xfree86.cygwin.com/">Cygwin/XFree86</a> - Windows port of XFree86.
+         <li> <a href="http://tnt.microimages.com/www/html/freestuf/mix/">Mix</a>
+       Free X server for Windows (it seems however latest versions became commercial)
+         <li> <a href="http://www.starnet.com/">x-win32</a> Shareware X-Server for Windows
+         <li> <a href="http://www.hummingbird.com/products/nc/exceed/">Exceed</a> Commercial X-Server for Windows from <a href="http://www.hummingbird.com/">Hummingbird</a>
+         <li> <a href="http://www.wrq.com/products/evaluate/download/rxchoice.html">Reflection X</a> Free time-locked demo.
+         <li> <a href="http://www.xtreme.it/xappeal/">XAppeal</a> DOS. Based on X11R6 
+         and XFree. Shareware / commercial.
+       
+       </ul>
+       
+       
+       <h2> Fonts </h2>
+       <h3> Browsing, viewing, installing </h3>
+       Most of these come with any version of X. Consult their man pages
+       for details.
+       <ul>
+         <li> xlsfonts, fslsfonts -- list available fonts from X server or a
+	      font server
+	 <li> fsinfo -- information about a font server
+	 <li> mkfontdir -- create the fonts.dir file for a directory (part of
+	 installing a font)
+	 <li> <a href="http://www.darmstadt.gmd.de/~pommnitz/ttmkfdir.tar.gz">ttmkfdir</a> Like mkfontdir, but for TTF fonts. Not a part of X.
+	 <li> <a href="http://rpmfind.net/linux/RPM/type1inst.html">type1inst</a> Like mkfontdir, but for Type 1 fonts. (Also see <a href="http://aix2.uottawa.ca/~s1204672/linux/gglyph/patch-type1inst.diff">this patch</a>).
+	 <li> xset q, xset fp -- query / alter the font path used by the X server
+	 <li> xfontsel, xfd -- select / view a font
+	 <li> showfont -- dump a font from a font server. (Not to be confused 
+	 with the Linux console showfont -- this one is installed as /usr/X11R6/bin/showfont.)
+	 <li> <a href="http://filewatcher.org/sec/gglyph.html">GGlyph</a> T1 previewer, installer. GTK based.
+       </ul>
+       <h3> Conversion </h3>
+       <ul>
+         <li> fnt2bdf -- included with Wine
+	 <li> fstobdf -- output any font known to a font server in BDF format. Standard X utility.
+	 <li> <a href="ftp://prep.ai.mit.edu/pub/gnu/fontutils/fontutils-0.7.tar.gz">
+	 fontutils</a> GNU tools from FSF (also see
+	 <a href="http://www-personal.engin.umich.edu/~jgotts/projects/fontutils.diff">
+	 Linux patch</a>) Bitmap to outline conversion, bitmap editing.
+	 Works with TeX and PostScript formats.
+         <li> <a href="ftp://ftp.univie.ac.at/packages/tex/fonts/utilities/ttf2pt1/">ttf2pfa</a> TrueType to Postscript Type 3
+	 <li> <a href="http://www.netspace.net.au/~mheath/ttf2pt1/">ttf2pt1</a> TrueType to Postscript Type 1
+	 <li> <a>ttf2bdf</a> --  Use a TTF font server and fstobdf, or ttf2bdf in FreeType contrib
+	 <li> <a>ttf2pfb</a> -- See FreeType contrib
+	 <li> <a href="ftp://ftp.freetype.org/pub/freetype/">ttfdump</a> Display information about a TTF font
+	 <li> <a href="ftp://ftp.blueneptune.com/pub/users/ram/misc/t1utils.tar.gz">t1utils</a> PostScript Type 1 to/from human readable ASCII converters
+       </ul>
+       <h3> Font Servers </h3>
+       Font servers allow the task of rendering fonts to be delegated to 
+       another process, possibly on another machine. Add a font server to
+       your font path with a command like <code>xset fp+ tcp/machinename:7100</code>.
+       <ul>
+         <li> xfs -- the standard X font server, which can deal with standard X fonts. This is the building block for most other font servers.
+	 <li> <a 
+	 href="http://www.dcs.ed.ac.uk/home/jec/programs/xfsft/">xfsft</a> --
+	 xfs extended to deal with TTF fonts using <a href="http://www.freetype.org/">FreeType</a>.
+	 <li> <a href="http://hawk.ise.chuo-u.ac.jp/student/person/tshiozak/x-tt/index-eng.html">X-TT</a> Another extension to xfs using Freetype. This one
+	 implements lazy glyph rendering, which is crucial for East Asian
+	 fonts.
+  <li> <a href="http://www.netlab.is.tsukuba.ac.jp/~yokota/izumi/Xatm/">Xatm</a> xfs extended for Postscript fonts, using Ghostscript. Web page is Japanese.
+	 <li> <a href="ftp://sunsite.unc.edu/pub/Linux/X11/fonts/">Xfstt</a>
+	 A TTF-only font server. Simple to configure.
+	 <li> Commercial: the font servers shipped with Solaris 2.6, Irix 6.3,
+	AIX 4.3.3
+	 and the Fontastic server that comes with Applixware can all serve TTF
+	 fonts.
+       </ul>
+       <p>
+       Some sample TTF fonts are
+       available: 
+         <a href="http://www.fontpool.com/">here</a>,
+         <a href="http://www.winsite.com/win3/fonts/truetype/index.html">here</a>,
+	 <a href="http://voyager.cns.ohiou.edu/~sadkins/web_library/fonts/font_archive/">here</a>,
+	 <a href="http://babel.uoregon.edu/yamada/fonts.html">here</a>,
+         <a href="http://www.hooked.net/~flubble/typography.html">here</a>,
+         <a href="http://www.pagesz.net/~mhare/fonts/index.htm">here</a>,
+         <a href="http://klink.net/~rcklueg/font1.html">here</a>,
+         <a href="http://www.fonthead.com/freeware.html">here</a>,
+         <a href="http://www.microsoft.com/truetype">here</a>,
+	 <a href="http://www.cnd.org/">here</a>,
+       and
+         <a href="http://www.geocities.com/SoHo/7554/downloads/fonts">here</a>,
+       as well as many other places.
+       
+       <p>
+       Various possibly useful fonts:
+       <ul>
+	 <li> <a href="http://www.cl.cam.ac.uk/~mgk25/ucs-fonts.html">Unicode X fonts</a>
+       </ul>
+
+<h2> Color management </h2>
+<ul>
+  <li> <a href="http://www.cs.ucl.ac.uk/students/c.nentwich/ptc/">Prometheus TrueColor for X.</a> Site unreachable, but see <a href="http://libsdl.org/projects/PTC/">here</a> 
+</ul>
+     
+<p>&nbsp;</p>
+[ <a href="javascript:history.back();">Back</a> ]
+<p>&nbsp;</p>

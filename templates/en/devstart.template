@@ -1,0 +1,224 @@
+<h1>Starting with Wine development</h1>
+
+WineHQ hosts a number of services aiding the Wine development process.
+Here is a <a href="#list">list of things</a> that you should know when
+starting to develop Wine or trying to port an application.
+<p><hr size=2 noshade><p>
+
+
+<h2>Getting Started</h2>
+
+Wine uses an <a href="index.php?refs#open_source">open source, open
+process</a> development model.  Anyone may get the code, post opinions
+on what should be done, and contribute patches. You will need to know
+C and/or perl, and something about <a href="index.php?refs">Unix and Windows</a>.
+<!--
+No one will tell you what to do, but if you need ideas, try the <a
+href="projects/">WineHQ Projects list</a>.
+-->
+Other ways to start include trying to debug an application that you use
+(Wine binary compatibility) or port an application that you wrote (Wine source compatibility).
+<a name="list">&nbsp;</a>
+<ul>
+<li><a href="#CVS">The Wine CVS Tree</a>
+  <ul>
+    <li><a href="#co">Getting a local copy of Wine</a>
+    <li><a href="#cvstar">Getting Wine CVS .tar.bz2 archive</a>
+    <li><a href="#ftpcvs">Getting Wine via FTP and converting to CVS</a>
+    <li><a href="#uptodate">Staying Up-To-Date</a>
+    <li><a href="#useful">Useful Options</a>
+    <li><a href="#modules">Other modules available via CVS from WineHQ</a>
+  </ul>
+</ul>
+<p>
+
+<a name="CVS"><h2>The Wine CVS Tree</h2></a>
+<p>
+<a href="http://www.cvshome.org/">CVS</a> is the leading source code
+control system in the Free software community. CVS features flexible
+branching, intelligent merging, high quality <a
+href="http://www.loria.fr/~molli/cvs/doc/cvs_toc.html">documentation</a>
+and client/server access with a wide choice of <a
+href="http://www.loria.fr/cgi-bin/molli/wilma.cgi/rel">clients</a>.
+Current Wine sources are available via anonymous client/server CVS.
+You will need CVS 1.9 or above. 
+If you are coming from behind a firewall, you will either 
+need a hole in
+the firewall for the CVS port (2401) or use <a href="http://www.cyclic.com/cvs/dev-net.html">SOCKS</a>.
+<p>
+<a name="co"><h3>Getting a local copy of Wine</h3></a>
+Wine's CVS tree is mirrored at several places arround the world to make
+sure that the source is easily accessible. Note that not all servers have all
+repositories available, but all have at least the Wine source.
+CVS access is granted through CVS' "<code>pserver</code>" authentication. You should set
+your <code>CVSROOT</code> environment variable to point to one of the servers
+using this format:
+<p>
+<pre>
+CVSROOT=:pserver:&lt;Username&gt;@&lt;CVS Server&gt;:&lt;Server root&gt;
+</pre>
+Substitude the applicable fields from the table below.
+<p>
+Just do a traceroute and a ping on all servers below to find out which are
+closest to you.
+<p>
+<table align="center" border="1" cellpadding="8">
+	<tr>
+		<th rowspan="2">CVS Server</th>
+		<th rowspan="2">Username</th>
+		<th rowspan="2">Password</th>
+		<th colspan="3">Repository</th>
+		<th rowspan="2">Server root</th>
+	</tr>
+	<tr>
+		<td>wine</td>
+		<td>Winehq_com</td>
+		<td>c2man</td>
+	</tr>
+	<tr>
+		<td align="left">cvs.winehq.com<br><br>Minnesota, USA (CodeWeavers)</td>
+		<td align="center">cvs</td>
+		<td align="center">cvs</td>
+		<td align="center">Yes</td>
+		<td align="center">Yes</td>
+		<td align="center">Yes</td>
+		<td align="center">/home/wine</td>
+	</tr>
+<!--
+	<tr>
+		<td align="left">winehq.tiepmiep.dk<br><br>Denmark (&Aring;rhus)</td>
+		<td align="center">cvs</td>
+		<td align="center">cvs</td>
+		<td align="center">Yes</td>
+		<td align="center">No</td>
+		<td align="center">No</td>
+		<td align="center">/home/wine</td>
+	</tr>
+-->
+	<tr>
+		<td align="left">rhlx01.fht-esslingen.de<br><br>Southern Germany (Esslingen, BaW&uuml;)</td>
+		<td align="center">cvs</td>
+		<td align="center">cvs</td>
+		<td align="center">Yes</td>
+		<td align="center">No</td>
+		<td align="center">No</td>
+		<td align="center">/home/wine</td>
+	</tr>
+<!--
+	<tr>
+		<td align="left">x.bourg.net (currently down :-()<br><br>USA (Seattle, WA)</td>
+		<td align="center">cvs</td>
+		<td align="center">cvs</td>
+		<td align="center">Yes</td>
+		<td align="center">No</td>
+		<td align="center">No</td>
+		<td align="center">/home/wine</td>
+	</tr>
+-->
+</table>
+
+To login to the CVS tree, then do
+<pre>
+cvs login
+</pre>
+Use the password mentionned in the table above, depending on the server you chose.
+<p>
+Once you are logged in, you can checkout the different modules or update your version.
+To check out the entire Wine source tree 
+(but read the next section before actually doing this!), do
+<pre>
+cvs -z 3 checkout wine
+</pre>
+or if you just want a subtree, or individual file, you can do that too:
+<pre>
+cvs -z 3 checkout wine/ANNOUNCE
+</pre>
+       
+<a name="cvstar"><h3>Getting Wine CVS .tar.bz2 archive</h3></a>
+The easiest method of gathering a complete CVS tree:<br>
+Daily .tar.bz2 archives of the current CVS source tree are available from
+<a href="http://rhlx01.fht-esslingen.de/~andi/wine_files/">Andi's Wine Files</a>.
+
+<a name="ftpcvs"><h3>Getting Wine via FTP and converting to CVS</h3></a>
+Getting the entire Wine source tree via 
+CVS is pretty slow, especially compared to getting Wine from an
+FTP mirror near you. It's possible to convert a Wine tarball to a CVS
+sandbox, just like you would get by checking out the entire source
+via CVS. Here's how to do it:
+<ul>
+  <li> Get the latest Wine snapshot: Wine-<i>YYMMDD</i>.tar.gz
+  <li> Get wine-cvsdirs-<i>YYMMDD</i>.tar.gz from <a href="ftp://ftp.winehq.com/pub/wine/">ftp://ftp.winehq.com/pub/wine</a><br>
+       Use an FTP client rather than a web browser, and be sure to turn off passive mode, otherwise the fetch will hang.<br>
+       e.g.:<br>
+<pre>
+ftp ftp.winehq.com
+cd pub/wine
+passive off
+ls
+</pre>
+  <li> Untar them on top of each other:
+<pre>
+tar xzf Wine-<i>YYYYMMDD</i>.tar.gz
+mv wine-<i>YYYYMMDD</i> wine
+tar xzf wine-cvsdirs-<i>YYYYMMDD</i>.tar.gz
+</pre>
+  <li> Update from main tree: login as above, then do
+<pre>
+cd wine
+cvs update -PAd
+</pre>
+</ul>
+You will now be completely up to date.
+The <code>-A</code> is required to get the latest version in the tree. 
+
+<a name="uptodate"><h3>Staying Up-To-Date</h3></a>
+Run
+<pre>
+cvs update
+</pre>
+to merge changes from the tree with the current directory. (Local changes will
+not be lost.) Do this from the top Wine
+directory to update the entire tree. When a new directory is added to Wine,
+you will need to do a
+<pre>cvs update -PAd</pre>
+to get the new directory and delete any old ones. But
+read the next section and you won't have to worry about that.
+
+<a name="useful"><h3>Useful Options</h3></a>
+Some options are so useful that you should put them in your <code>~/.cvsrc</code>:
+<pre>
+cvs -z 3
+update -PAd
+diff -u
+</pre>
+<code>-z</code> sets the compression level. 
+(Levels higher than 3 will probably not result in faster downloading
+unless you have a fast machine and a slow network connection.)
+<code>-Pd</code> will delete empty directories and create newly added ones.
+<code>-A</code> will reset any previous tag.
+<code>-u</code> will create the easiest to read patches. Please
+do not submit patches with <code>diff -w</code>.<br>
+
+Examples of other useful options (see the CVS documentation for details):
+<ul>
+  <li> <code>cvs -n update </code> (test only, don't make changes) 
+  <li> <code>cvs update -r Wine-<i>YYYYMMDD</i></code> (get the revision with
+ the tag for a Wine snapshot)
+  <li> <code>cvs update -D <i>date</i></code> (get the revision associated
+with an arbitrary date)
+</ul>
+
+<a name="modules"><h3>Other modules available via CVS from WineHQ</h3></a>
+The WineHQ CVS server makes a couple of other things available as well. 
+To get these, log in anonymously
+as above and do <code>cvs co <i>modulename</i></code> where 
+<code><i>modulename</i></code>
+is one of:
+<ul>
+  <li> <tt>Winehq_com</tt> -- source for the WineHQ web site
+  <li> <tt>c2man</tt>  -- automatic documentation system, specially modified for Wine
+</ul>
+
+<p>&nbsp;</p>
+[ <a href="javascript:history.back();">Back</a> ]
+<p>&nbsp;</p>

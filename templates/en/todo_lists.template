@@ -1,0 +1,305 @@
+  <h2>Introduction</h2>
+
+  Before I start, a quick reminder for the 0.9 criteria:
+  <ul>
+    <li> Users can start using Wine
+      <ul>
+        <li> works well for a fair number of apps
+        <li> no MS DLLs required (from real Windows)
+      </ul>
+    <li> User facing stuff (website, docs, etc.) are in a decent state
+  </ul>
+  Out of scope for 0.9:
+  <ul>
+    <li> stable server protocol (no binary compatibility)
+    <li> DLL separation (phase 2)
+  </ul>
+
+  <p>Please review it, and let me know if:
+  <ul>
+    <li> I've left something out
+    <li> Something is in, and it doesn't belong in here (for 0.9 that is)
+    <li> I have put your name on a task you are not working on
+    <li> I have not put your name on a task you are working on
+    <li> You have a status update (if you're working on something)
+    <li> You want to start working on some of these.
+  </ul>
+
+  <p>Please send all comments, flames, and suggestions to
+     <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>.
+
+  <h2>TODO</h2>
+
+  <h3> A. WineHQ work </h3>
+  Beta available <a href="http://lostwages.winehq.org">here</a>
+      <ol>
+	<li> Website redesign <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:jnewman@codeweavers.com">Jeremy Newman</a>
+	    <li> status: backend is getting finalized
+	    <li> updated: Nov 7, 2002
+	  </ul>
+	<li> Move the doc scripts out of <tt>documentation</tt> into the <tt>tools</tt> CVS module <span class=todo>[TODO]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:jnewman@codeweavers.com">Jeremy Newman</a>
+	    <li> status: should remind Jeremy to do it :)
+	    <li> updated: Nov 7, 2002
+	  </ul>
+	<li> Reorganize the navigational menu <span class="done">[DONE]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:fgouget@free.fr">Francois Gouget</a> &amp; al.
+	    <li> status: merged into new site
+	    <li> updated: Nov 5, 2002
+	  </ul>
+	<li> Create some really sexy screenshots <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:vinn@theshell.com">Brian Vincent</a>
+	    <li> status: please send screenshots to the above mentioned maintainer
+	    <li> updated: Nov 12, 2002
+	    <li> criteria: listed <a href="#screenshots">here</a>
+	  </ul>
+	<li> Rework the FAQ interface <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> workers: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>, 
+			  <a href="mailto:keith_m@sweeney.demon.co.uk">Keith Matthews</a>, 
+			  <a href="mailto:twickline2@triad.rr.com">Thomas Wickline</a>
+	    <li> status: released for public review <a href="http://www.dssd.ca/Wine-FAQ.html">here</a>
+	    <li> updated: Nov 9, 2002
+	  </ul>
+	<li> Enlist some 'official' distribution maintainers <span class="done">[DONE]</span>
+	  <ul>
+	    <li> RedHat: <a href="mailto:vberon@mecano.gme.usherb.ca">Vincent Béron</a>
+	    <li> SUSE: <a href="mailto:meissner@suse.de">Marcus Meissner</a>
+	    <li> Mandrake: <a href="mailto:kyethespy@liquid2k.com">Kye Lewis</a>
+	    <li> Debian: <a href="mailto:ovehk@ping.uio.no">Ove Kaaven</a>
+	    <li> FreeBSD: <a href="mailto:pfeifer@dbai.tuwien.ac.at">Gerald Pfeifer</a>
+	    <li> status: completed
+	    <li> updated: Nov 7, 2002
+	  </ul>
+	<li> Create nice page with apps that run virtually flawless <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> workers: <a href="mailto:clozano@andago.com">Carlos Lozano</a>, 
+			  <a href="mailto:speeddymon@yahoo.com">Dustin Navea</a>
+	    <li> status: list <a href="http://www.winehq.com/hypermail/wine-devel/2002/11/0636.html">submitted</a> for discussion,
+				        and partly posted <a href="http://www.dssd.ca/wine/Wine-SAL.html">here</a> as a HTML page.
+	    <li> updated: Nov 13, 2002
+	    <li> criteria: not MS dlls required, no tricks, etc.
+	  </ul>
+     </ol>
+  <h3> B. Documentation work </h3>
+     <ol>
+	<li> Fix incomplete and/or out of date documentation. <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> workers: <a href="mailto:speeddymon@yahoo.com">Dustin Navea</a>,
+			  <a href="mailto:tony_lambregts@telusplanet.net">Tony Lambregts</a>
+	    <li> status: 7.5% complete (first round of patches committed, help would be appreciated)
+	    <li> updated: Nov 12, 2002
+	  </ul>
+	<li> Fix documentation build process <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:vberon@mecano.gme.usherb.ca">Vincent Beron</a>
+	    <li> status: <a href="http://www.winehq.com/hypermail/wine-patches/2002/11/0147.html">patch</a> submitted
+	    <li> updated: Nov 10, 2002
+          </ul>
+	<li> Move CVS docu from User Guide to Devel Guide <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:Bill.Medland@accpac.com">Bill Medland</a>
+	    <li> status: just started
+	    <li> updated: Nov 7, 2002
+	  </ul>
+	<li> Merge <tt>documentation/wine.texinfo</tt> into the Development Guide <span class=todo>[TODO]</span>
+	<li> Merge <tt>documentation/HOWTO-winelib</tt> into the Development Guide <span class=todo>[TODO]</span>
+	<li> Do something about <tt>documentation/installation-und-konfiguration.german</tt> <span class=todo>[TODO]</span>
+	<li> Do something about <tt>documentation/shell32</tt> <span class=todo>[TODO]</span>
+	<li> Do something about <tt>documentation/status</tt> <span class=todo>[TODO]</span>
+     </ol>
+  <h3> C. Wine configuration </h3>
+     <ol>
+	<li> Merge configuration into the registry <span class=todo>[TODO]</span>
+	<li> Write control panel applets for editing it <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:jaco@puxedo.org">Jaco Greeff</a>
+	    <li> status: 7.5% (screenshots <a href="winecfg1.png">here</a>, and <a href="winecfg2.png">here</a>)
+	    <li> updated: Nov 11, 2002
+	  </ul>
+	<li> Have decent defaults so we can start control panel without prior configuration <span class=todo>[TODO]</span>
+	<li> Have wizard like app to autoconfigure wine <span class=todo>[TODO]</span>
+	  <ul>
+	    <li> proposal: WineSetupTk by <a href="mailto:jwhite@codeweavers.com">Jeremy White </a>
+	  </ul>
+	<li> Make Wine's DLLs register themselves to avoid manual merging of the <tt>winedefault.reg</tt> <span class=todo>[TODO]</span>
+	<li> Write <tt>wine.inf</tt> script to setup a new Wine installation <span class=todo>[TODO]</span>
+	<li> Have a wineboot script for RunOnce stuff <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> workers: <a href="mailto:andi@rhlx01.fht-esslingen.de">Andreas Mohr</a>,
+			  <a href="mailto:wine-devel@sun.consumer.org.il">Shachar Shemesh </a>
+	    <li> status: 50%
+	    <li> updated: Nov 7, 2002
+	  </ul>
+     </ol>
+  <h3> D. Stabilize utilities </h3>
+     <ol>
+	<li> Get rid of the init directive from .spec files <span class=done>[DONE]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:julliard@winehq.com">Alexandre Julliard </a>
+	    <li> status: implemented by <a href="http://cvs.winehq.com/patch.py?id=6180">this</a>
+	    <li> updated: Nov 7, 2002
+	  </ul>
+	<li class=modified> Make sure the .spec file format is fairly stable <span class=done>[DONE]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:julliard@winehq.com">Alexandre Julliard </a>
+	    <li> status: patch <a href="http://cvs.winehq.com/patch.py?id=6327">committed</a>
+	    <li> updated: Nov 18, 2002
+	    <li> what: get rid of the <tt>rsrc</tt> directive
+	  </ul>
+	<li> Ensure the various utilities' options are stable <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> status: Alexandre fixed winebuild options
+	    <li> updated: Nov 7, 2002
+	    <li> what: audit the other utilites
+	  </ul>
+	<li> Get rid of the Perl testing framework <span class=done>[DONE]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
+	    <li> status: patch <a href="http://www.winehq.com/hypermail/wine-patches/2002/11/0106.html">submitted</a>,
+			 and committed (<a href="http://www.winehq.com/hypermail/wine-cvs/2002/11/0069.html">[1]</a>, and 
+					<a href="http://www.winehq.com/hypermail/wine-cvs/2002/11/0071.html">[2]</a>)
+	    <li> updated: Nov 11, 2002
+	  </ul>
+     </ol>
+
+  <h3> E. Important fixes </h3>
+     <ol>
+	<li> Window management rewrite, so we can install apps in managed mode. <span class=todo>[TODO]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:julliard@winehq.com">Alexandre Julliard </a>
+	    <li> status: not started
+	  </ul>
+	<li> Finish DLL separation Phase 1 <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: ?
+	    <li> status: <a href="http://www.winehq.com/hypermail/wine-devel/2002/11/0777.html">deferred</a>
+	    <li> updated: Nov 11, 2002
+	    <li> criteria:  DLLs should use only functions exported through .spec file.
+	  </ul>
+	<li> Detect printing system at runtime <span class=todo>[TODO]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:huw@codeweavers.com">Huw Davies </a>
+	    <li> status: <i>Yup, I'm going to do this in the near future. </i>
+	    <li> updated: Nov 7, 2002
+	  </ul>
+	<li class=modified> Detect OpenGL system at runtime <span class=done>[DONE]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:lionel.ulmer@free.fr">Lionel Ulmer</a>
+	    <li> status: Patch  <a href="http://www.winehq.com/hypermail/wine-patches/2002/11/0144.html">submitted</a>, and
+				<a href="http://cvs.winehq.com/patch.py?id=6301">commited</a>.
+	    <li> updated: Nov 14, 2002
+	  </ul>
+	<li> Start builtin WinHelp when invoked from apps <span class=done>[DONE]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:eric.pouech@wanadoo.fr">Eric Pouech</a>
+	    <li> status: patches submitted 
+					(<a href="http://www.winehq.com/hypermail/wine-patches/2002/11/0150.html">client</a>, 
+					 <a href="http://www.winehq.com/hypermail/wine-patches/2002/11/0151.html">server</a>) for review,
+					and <a href="http://cvs.winehq.com/patch.py?id=6224">accepted</a>.
+	    <li> updated: Nov 11, 2002
+	  </ul>
+	<li> Add macro support to the builin WinHelp <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:eric.pouech@wanadoo.fr">Eric Pouech</a>
+	    <li class=modified> status: Patch <a href="http://www.winehq.com/hypermail/wine-patches/2002/11/0189.html">submitted</a>,
+					and <a href="http://cvs.winehq.com/patch.py?id=6294">commited</a>.
+	    <li> updated: Nov 14, 2002
+	  </ul>
+	<li> Add CHM support to builtin WinHelp <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:ender@enderboi.com">J.Brown (Ender/Amigo)</a>
+	    <li> status: <a href="http://www.winehq.com/hypermail/wine-devel/2002/11/0613.html">Cabextract</a>, and
+			 <a href="http://www.winehq.com/hypermail/wine-devel/2002/11/0795.html">CHMtools</a> donated to Wine
+	    <li> updated: Nov 11, 2002
+	  </ul>
+	<li>Good support for VisualBasic apps <span class=todo>[TODO]</span>
+	  <ul>
+	    <li> worker: ?
+	    <li> status: ?
+	    <li> updated: Nov 9, 2002
+	    <li> tests: <a href="http://www.winehq.com/hypermail/wine-devel/2002/11/0635.html">submitted</a> by <a href="mailto:thunderbird2k@gmx.net">Roderick Colenbrander</a>
+	  </ul>
+     </ol>
+
+  <h2>Resources</h2>
+  <ul>
+    <li><a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=Wine&target_milestone=0.9.0&order=bugs.bug_severity">0.9 tasks</a>
+    <li><a href="http://www.dssd.ca/wine/Wine-Fun.html">Fun Projects</a>
+    <li><a href="http://www.winehq.org/about/index.php?contrib#devel">other tasks</a>
+  </ul>
+
+
+  <h2>ChangeLog</h2>
+
+  <p>Entries modified from last release are displayed in <b>bold</b>.
+  <p>The work-in-progress version of the list is always available <a href="http://www.dssd.ca/wine/Wine-0.9-TODO.html">here</a>.
+     Please note that this version is constantly changing; it is relative to the last released version.
+     This is important to keep in mind when looking at the <b>bold</b> items. For example, if you look
+     at this version right after a new version is released, nothing is going to be <b>bold</b>, as nothing
+     has changed from the released version.
+
+  <ul>
+    <li> 0.6 (Nov 14, 2002): in progress
+    <li> 0.5 (Nov 14, 2002): many items changed, section about making screenshots was added; 
+			     available <a href="http://www.dssd.ca/wine/Wine-0.9-TODO-0.5.html">here</a>
+    <li> 0.4 (Nov  9, 2002): too many changes to list; 
+			     available <a href="http://www.dssd.ca/wine/Wine-0.9-TODO-0.4.html">here</a>
+    <li> 0.3 (Nov  7, 2002): lot of updates; 
+			     available <a href="http://www.dssd.ca/wine/Wine-0.9-TODO-0.3.html">here</a>
+    <li> 0.2 (Nov  7, 2002): updated, and transformed to HTML (not available)
+    <li> 0.1 (Nov  6, 2002): released to <a href="http://www.winehq.com/hypermail/wine-devel/2002/11/0447.html">wine-devel</a>
+  </ul>
+
+  <h2 id="screenshots">How to do a sexy screenshot</h2>
+
+  A screenshot for Wine should showcase what Wine can do. In theory, it should
+  run apps well, so we should try to show exactly that:
+  <dl>
+    <dt><strong>Do not complicate the screen with other apps.</strong></dt> 
+	<dd>We try to show Wine, not that you have a complicated desktop.
+	For example, what am I showing <a href="wine-ss-what.png">here</a>?
+	Avoid fancy, complicated backgrounds. The best would be to use the 
+	distribution's default look and feel to make it more recongnizable.</dd>
+    <dt><strong>Include the desktop in the shot.</strong></dt>
+	<dd>This should make it clear that the app is running under Linux, 
+	and that it integrates nicely with the desktop of your choice.
+	In some cases a partial desktop could be enough, especially if the 
+	application window is small (CD players, Trillian, etc). In general,
+	try to follow the 80/20 rule: 80% of the screenshot should be covered
+	by the application, while the rest of 20% by desktop, etc.
+	Is <a href="wine-ss-where.png">this</a> running under Wine?</dd>
+    <dt><strong>Show a complex scenario for the app.</strong></dt>
+	<dd>This will show that Wine is capable of running complex setups,
+	and makes the screeshot a lot more interesting. A screen with
+	an empty Word window is very borring, and unimpressive: "Wow,
+	Wine can draw a large white background...".
+	Take a look at <a href="wine-ss-boring.png">this</a>.</dd>
+    <dt><strong>Make sure it shows nice fonts.</strong></dt>
+	<dd>Install the fonts from <a href="http://corefonts.sourceforge.net">CoreFonts</a>
+	 and make sure you have a FreeType library with hinting.
+	For the purpose of the screenshot, you can cheat and use 
+	<a href="http://www.codeweavers.com">CrossOver</a> which has
+	all the above mentioned tweaks.</dd>
+    <dt><strong>Do not make the screenshot too large.</strong></dt>
+	<dd>The images should be 800x600; many people don't have very large
+	resolutions, and it is very annoying to have to scroll to view the
+	image. <a href="wine-ss-ok-large.png">See</a>?
+    <dt><strong>Do not scale the screenshot.</strong></dt>
+        <dd>It makes the fonts unreadable, and the picture 
+	<a href="wine-ss-ok-fuzzy.png">fuzzy</a>. Instead use a VNC server,
+	or set the right resolution in your X session, and take a screenshot
+	of that.</dd>
+  </dl>
+  A more decent try is <a href="wine-ss-ok.png">this</a>. It shows Word, nicely
+  integrated in the KDE desktop (notice how it is listed in the task bar like
+  all the other apps), displaying a reasonable document with tables. It can be 
+  improved a bit if the document would show some embedded pictures, a bunch of 
+  fonts, complicated embedded formulae, etc. Stuff that shows how <em>much</em> 
+  of Word is actually usable under Wine. Please note that this one is still
+  scaled, due to lack of time on my part. Do not attempt this at home.

@@ -1,0 +1,625 @@
+<h2>Wine Who's Who</h2>
+
+Last update: September 27, 2002<br>
+<small>(That doesn't mean the list is up to date by any means.)<br>
+Please email additions, corrections, and flames to
+<a href="mailto:web-admin@winehq.com" class="small">WineHQ Web Admin</a>.
+</small>
+<hr size=1 noshade>
+
+<blockquote>
+
+	<H2>VIPs</H2>
+	The VIPs are the guys that have responsibilities for the project above just writing code.
+
+
+	<H3 style="color: red">Alexandre Julliard</H3>
+	<blockquote>
+	<b>Location:</b> Switzerland<BR>
+	<b>Email:</b> julliard@lrc.epfl.ch<BR>
+	<b>Role:</b> Project Leader, Master Developer<BR>
+	<P>
+	The enigmatic Alexandre Julliard, who has been in the project since its beginning in early 1993,
+	has worked on and maintained the official Wine source ever since Bob Amstadt turned the helm
+	over to him quite early. Although he enforces strict control over the official source tree
+	(thus ensuring that every change must pass his scrutiny), nobody questions his abilities as the
+	project leader, his commitment to quality, and his dedication to the Wine project; many
+	'disadvantageous' patches have been avoided by his strict quality control.
+	</blockquote>
+
+	<H3 style="color: red">Douglas Ridgway</H3>
+	<blockquote>
+	<b>Location:</b> Canada<BR>
+	<b>Email:</b> ridgway@winehq.com<BR>
+	<b>Role:</b> WineHQ Master Site Maintainer, American Wine Party Fund Maintainer<BR>
+	<P>
+	The WineHQ site was created in 1997 by Douglas Ridgway, and has now become the official Wine
+	home site. Douglas has done a fine job of maintaining the site these years, and is doing a
+	good job of making the Wine project and its goals visible to the general public. Our own
+	PR man.
+	</blockquote>
+
+	<A HREF="http://marcus.home.pages.de/"><H3 style="color: red">Marcus Meissner</H3></A>
+	<blockquote>
+	<b>Location:</b> Germany, Bavaria, Erlangen<BR>
+	<b>Email:</b> marcus@jet.franken.de<BR>
+	<b>Role:</b> European Wine Party Fund Maintainer, High-Profile Developer<BR>
+	<P>
+	Marcus 'BugNix' Meissner has been working on WINE since 1995 and contributed a lot of
+    patches and bugfixes.<br><br>
+    He is personally to blame for the first revisions of reading and saving
+    the Registry, starting the DirectX implementation, doing the second OLE
+    out of process COM support implementation, and more.<br><br>
+    Marcus is part time WINE evangelist, is holding WINE talks in Germany
+    and can occasionaly be found manning WINE demo points on Opensource fairs.<br><br>
+	Marcus studied computer science at the university of Erlangen and
+    finished with diploma in 1997. After doing civil duty in he started working
+	as Senior Developer for Caldera Systems in 1999, working on distribution development.
+    After Caldera closed its development office in 2002 he started and am now working for
+	the SuSE Linux AG as a Developer in the PowerPC group
+	</blockquote>
+
+	<A HREF="http://www.akhphd.au.dk/~bertho/"><H3 style="color: red">Bertho Stultiens</H3></A>
+	<blockquote>
+	<b>Location:</b> Denmark<BR>
+	<b>Email:</b> bertho@panter.soci.aau.dk<BR>
+	<b>Role:</b> WineHQ European Site Maintainer, Active Developer<BR>
+	<P>
+	Having the bandwidth to spare, Bertho runs WineHQ's European master site, which is a
+	mirror of the master WineHQ site, but all DNS records point here, both because most
+	developers are in Europe, and to offload the master site. As a developer, Bertho is
+	specializing in Wine DLL loader issues, having written Wine's current resource compiler,
+	and currently developing the so-called 'elf-dlls' that will modularize the currently
+	quite monolithic Wine.
+	</blockquote>
+
+    <!-- ----------------------------------------------------------------------------------------------------- -->
+
+
+	<hr size=1 noshade>
+	<H2>Other Core Developers</H2>
+	The core developers are active developers who are familiar with many parts of Wine's
+	code base, and are dedicated to contributing on a large scale, particularly in Wine's
+	own core.
+
+
+
+	<H3 style="color: red">Ulrich Weigand</H3>
+	<blockquote>
+	<b>Location:</b> Germany<BR>
+	<b>Email:</b> weigand@informatik.uni-erlangen.de<BR>
+	<b>Role:</b> High-Profile Developer<BR>
+	<P>
+	Ulrich Weigand, a real programming ace, has stunned many other developers with his
+	incredible ability to write large amounts of working code very quickly, necessitating
+	the question of whether he is actually a group of clones all named Ulrich. He mostly
+	works at Wine's core, where he is quite busy rearranging code to work better.
+	</blockquote>
+	
+
+	<A HREF="http://www.ds9.net/schmied/"><H3 style="color: red">Jürgen Schmied</H3></A>
+	<blockquote>
+	<b>Location:</b> Germany<BR>
+	<b>Email:</b> juergen.schmied@pop3.pop.debitel.net<BR>
+	<b>Role:</b> Active Developer<BR>
+	<P>
+	A major workhorse in the work of making the Windows Explorer work under Wine,
+	having written most of shell32, compobj, classfactory, and many related things.
+	</blockquote>
+	
+
+	<A HREF="http://home.nexgo.de/andi.mohr/"><H3 style="color: red">Andreas Mohr</H3></A>
+	<blockquote>
+	<b>Location:</b> Germany<BR>
+	<b>Email:</b> andi@lisas.de<BR>
+	<b>Role:</b> Active Developer<BR>
+	<P>
+	Mostly working on file system things, installer support, memory management.
+	Has been working on device interface code (like interrupts and ASPI),
+	but also the man behind e.g. Win16 self-loader support
+	and uncountable fixes, as well as the #WineHQ IRC channel on the
+	irc.openprojects.net network.
+	</blockquote>
+	
+
+	<a HREF="http://www.arcticnet.no/~ovek/"><h3 style="color: red">Ove Kåven</h3></a>
+	<blockquote>
+	<b>Location:</b> Norway<br>
+	<b>Email:</b> ovek@arcticnet.no<br>
+	<b>Role:</b> Active Developer<br>
+	<p>
+	Specializes on DOS support. This touches a lot of core things by itself,
+	but he has also worked on improvements to the Windows user interface and
+	win16 serial port code.
+	</blockquote>
+	
+
+	<A HREF="http://perso.wanadoo.fr/eric.pouech/"><H3 style="color: red">Eric Pouech</H3></A>
+	<blockquote>
+	<b>Location:</b> France<BR>
+	<b>Email:</b> Eric.Pouech@wanadoo.fr<BR>
+	<b>Role:</b> Active Developer<BR>
+	<P>
+	Specializes on multimedia, which touches many core things, but he has
+	also submitted improvements to window handling and the Wine debugger.
+	</blockquote>
+
+
+    <!-- ----------------------------------------------------------------------------------------------------- -->
+
+
+	<hr size=1 noshade>
+	<H2>Other Important People</H2>
+	Wine, like other projects, needs help other than development. These people help out
+	in other important aspects. 
+
+
+
+	<A HREF="http://www.dracowulf.com/"><H3 style="color: red">Jeremy Newman</H3></A>
+	<blockquote>
+	<b>Location:</b> United States, Minnesota<BR>
+	<b>Email:</b> jnewman@codeweavers.com<BR>
+	<b>Role:</b> Webmaster<BR>
+	<P>
+	A geek who specializes on PHP and Perl web based development. Co-wrote and designed
+	the Wine Application database, redesigned the WineHQ website, and wrote the XML parser
+	for Wine Weekly News.
+	</blockquote>
+
+
+    <!-- ----------------------------------------------------------------------------------------------------- -->
+
+
+	<hr size=1 noshade>
+	<H2>Other Contributing Developers</H2>
+	These are developers that are less active or whose contributions are mostly to
+	one area, particularly non-core ones. Not to diminish their importance, however,
+	the Wine project needs a lot of volunteers in order to move forward at an
+	acceptable pace (and even small but critical bugs can be quite some beasts to
+	track down in a project of this magnitude).
+
+
+
+	<A HREF="http://fgouget.free.fr/wine/"><H3 style="color: red">François Gouget</H3></A>
+	<blockquote>
+	<b>Location:</b> France<BR>
+	<b>Email:</b> fgouget@free.fr<BR>
+	<b>Role:</b> Active Developer<BR>
+	<P>
+	Specializes on COM, and wrote the bilingual (both C and C++) ICOM macros.
+	Also worked on the Winsock ICMP stuff.
+	</blockquote>
+
+
+	<H3 style="color: red">Huw D M Davies</H3>
+	<blockquote>
+	<b>Location:</b> United Kingdom<BR>
+	<b>Email:</b> h.davies1@physics.ox.ac.uk<BR>
+	<b>Role:</b> Active Developer<BR>
+	<P>
+	Specializes on printing and Wine's internal PostScript driver,
+	and does some work on metafiles.
+	</blockquote>
+
+
+	<H3 style="color: red">Eric Kohl</H3>
+	<blockquote>
+	<b>Location:</b> Germany<BR>
+	<b>Email:</b> ekohl@abo.rhein-zeitung.de<BR>
+	<b>Role:</b> Active Developer<BR>
+	<P>
+	Specializes on common controls, and wrote most of the framework for comctl32,
+	as well as implementing several of the controls.
+	</blockquote>
+
+
+	<a href="http://www.dssd.ca/~dimi/"><H3 style="color: red">Dimitrie O. Paun</H3></a>
+	<blockquote>
+	<b>Location:</b> Toronto, Canada<BR>
+	<b>Email:</b> dpaun@rogers.com<BR>
+	<b>Role:</b> Improving the Common Controls, misc. fixes, and cleanups.
+	<p>
+	Introduced the debug channels way back in '97, 
+	many cleanups, a lot of work in the common controls area.
+	</blockquote>
+
+
+	<H3 style="color: red">Patrik Stridvall</H3>
+	<blockquote>
+	<b>Location:</b> Sweden<BR>
+	<b>Email:</b> ps@leissner.se<BR>
+	<b>Role:</b> Active Developer<BR>
+	<P>
+	Specializes on porting Wine to other platforms (than Linux/X11), having done
+	ANSI C compliancy fixes, separating X11 code out of the core,
+	and more.
+	</blockquote>
+
+
+	<A HREF="http://www.multimania.com/bbrox/"><H3 style="color: red">Lionel Ulmer</H3></A>
+	<blockquote>
+	<b>Location:</b> France<BR>
+	<b>Email:</b> lionel.ulmer@free.fr<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Specializes on DirectX, mostly working on OpenGL.
+	</blockquote>
+
+
+	<H3 style="color: red">Chris Morgan</H3>
+	<blockquote>
+	<b>Location:</b> Boston MA, United States<BR>
+	<b>Email:</b> cmorgan@alum.wpi.edu<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Tech support in #winehq on openprojects.net. Currently working on fixing wine to
+	support his employers Windows only tools.
+	</blockquote>
+
+
+	<H3 style="color: red">James Abbatiello</H3>
+	<blockquote>
+	<b>Location:</b> United States<BR>
+	<b>Email:</b> abbeyj@wpi.edu<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Contributes to common controls.
+	</blockquote>
+
+
+	<H3 style="color: red">Guy Albertelli</H3>
+	<blockquote>
+	<b>Location:</b> United States<BR>
+	<b>Email:</b> galberte@neo.lrun.com<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Contributes fixes.
+	</blockquote>
+
+
+	<H3 style="color: red">Dennis Björklund</H3>
+	<blockquote>
+	<b>Location:</b> Sweden<BR>
+	<b>Email:</b> dennisb@cs.chalmers.se<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Did some Win98 look fixes.
+	</blockquote>
+
+
+	<H3 style="color: red">Uwe Bonnes</H3>
+	<blockquote>
+	<b>Location:</b> Germany<BR>
+	<b>Email:</b> bon@elektron.ikp.physik.tu-darmstadt.de<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Contributes bug fixes.
+	</blockquote>
+
+
+	<H3 style="color: red">Klaas van Gend</H3>
+	<blockquote>
+	<b>Location:</b> Netherlands<BR>
+	<b>Email:</b> klaas@vangend.demon.nl<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Specializes on printing.
+	</blockquote>
+
+
+	<H3 style="color: red">Kevin Holbrook</H3>
+	<blockquote>
+	<b>Location:</b> United States<BR>
+	<b>Email:</b> kwh@neosoft.com<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Contributes bug fixes.
+	</blockquote>
+
+
+	<H3 style="color: red">James Juran</H3>
+	<blockquote>
+	<b>Location:</b> Virginia, United States<BR>
+	<b>Email:</b> jamesjuran@alumni.psu.edu<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Contributes documentation fixes and some bug fixes.
+	</blockquote>
+
+
+	<H3 style="color: red">Rein Klazes</H3>
+	<blockquote>
+	<b>Location:</b> Netherlands?<BR>
+	<b>Email:</b> rklazes@casema.net<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Contributes bug fixes.
+	</blockquote>
+
+
+	<H3 style="color: red">Alex Korobka</H3>
+	<blockquote>
+	<b>Location:</b> United States<BR>
+	<b>Email:</b> alex@aikea.ams.sunysb.edu<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Specializes on window and DC management (wrote much of the
+	original code, but is not very active currently).
+	</blockquote>
+
+
+	<H3 style="color: red">Keith Matthews</H3>
+	<blockquote>
+	<b>Location:</b> United Kingdom<BR>
+	<b>Email:</b> keith_m@sweeney.demon.co.uk<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Specializes on DDE.
+	</blockquote>
+
+
+	<H3 style="color: red">Gerard Patel</H3>
+	<blockquote>
+	<b>Location:</b> France<BR>
+	<b>Email:</b> g.patel@wanadoo.fr<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Contributes bug fixes and bug reports.
+	</blockquote>
+
+
+	<H3 style="color: red">Dave Pickles</H3>
+	<blockquote>
+	<b>Location:</b> United Kingdom<BR>
+	<b>Email:</b> davep@nugate.demon.co.uk<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Works on wcmd (Wine's command.com/cmd.exe replacement).
+	</blockquote>
+
+
+	<H3 style="color: red">Alex Priem</H3>
+	<blockquote>
+	<b>Location:</b> Netherlands<BR>
+	<b>Email:</b> alexp@sci.kun.nl<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Works on common controls.
+	</blockquote>
+
+
+	<H3 style="color: red">Ian Schmidt</H3>
+	<blockquote>
+	<b>Location:</b> United States<BR>
+	<b>Email:</b> ischmidt@cfl.rr.com<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Contributes bug fixes.
+	</blockquote>
+
+
+	<H3 style="color: red">Michael Veksler</H3>
+	<blockquote>
+	<b>Location:</b> Israel<BR>
+	<b>Email:</b> mveksler@techunix.technion.ac.il<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Split the Wine header files into smaller, more modular pieces.
+	</blockquote>
+
+
+	<H3 style="color: red">Lawson Whitney</H3>
+	<blockquote>
+	<b>Location:</b> United States<BR>
+	<b>Email:</b> lawson_whitney@juno.com<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Contributes bug fixes.
+	</blockquote>
+
+
+	<H3 style="color: red">Jean-Louis Thirot</H3>
+	<blockquote>
+	<b>Location:</b> France<BR>
+	<b>Email:</b> thirot@univ-brest.fr<BR>
+	<b>Role:</b> Tcl/Tk Hacker<BR>
+	<P>
+	Wrote TkWine.
+	</blockquote>
+
+
+	<A HREF="http://www.gojazz.net/"><H3 style="color: red">Adam Sacarny</H3></A>
+	<blockquote>
+	<b>Location:</b> United States<BR>
+	<b>Email:</b> magicbox@bestweb.net<BR>
+	<b>Role:</b> Inefficient Perl Hacker (his own words)<BR>
+	<P>
+	Wrote the tools/bug_report.pl script.
+	</blockquote>
+
+
+	<A HREF="http://webhome.idirect.com/~kbmed/Bill/index.html"><H3 style="color: red">Bill Medland</H3></A>
+	<blockquote>
+	<b>Location:</b> Canada (British Columbia)<BR>
+	<b>Email:</b> medbi01_1@accpac.com, billmedland@look.ca<BR>
+	<b>Role:</b> Very occasional contributing developer<BR>
+	<p>
+	I have been a programmer for more years than I like to count.  My
+	contributions generally aim to improve Wine's ability to run the software
+	produced by my employer.  As such they tend to be in a variety of areas but
+	are primarily in the basic capabilities.
+	</blockquote>
+
+
+	<A HREF="http://www.astro.gla.ac.uk/users/paulm"><H3 style="color: red">Paul Millar</H3></A>
+	<blockquote>
+	<b>Location:</b> Glasgow, Scotland<BR>
+	<b>Email:</b> paulm@astro.gla.ac.uk<BR>
+	<b>Role:</b> Rolling cvs regression testing and occasional patch contributor<BR>
+	<P>
+
+	</blockquote>
+
+
+	<H3 style="color: red">Thomas Wickline</H3>
+	<blockquote>
+	<b>Location:</b> United States, North Carolina<BR>
+	<b>Email:</b> twickline2@triad.rr.com<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Work on Keeping the Wine Status page up to date.
+	Wine Advocate, Advocacy
+	</blockquote>
+
+
+	<H3 style="color: red">Jon Griffiths</H3>
+	<blockquote>
+	<b>Location:</b> New Zealand & SE Asia<BR>
+	<b>Email:</b> jon_p_griffiths@yahoo.com<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Formerly msvcrt, nowadays shlwapi.dll.
+	</blockquote>
+	
+
+	<H3 style="color: red">Shachar Shemesh</H3>
+	<blockquote>
+	<b>Location:</b> Israel<BR>
+	<b>Email:</b> wine-devel@sun.consumer.org.il<BR>
+	<b>Role:</b> BiDi and occasional contributer<BR>
+	<P>
+	10 years proffesional programmer, currently a security consultant.
+	</blockquote>
+
+
+	<A HREF="http://www.reactos.com"><H3 style="color: red">Steven Edwards</H3></A>
+	<blockquote>
+	<b>Location:</b> Greenville SC in USA<BR>
+	<b>Email:</b> Steven_Ed4153@yahoo.com<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Works on the port of WINE to the Mingw-gcc compiler for Microsoft Windows and compatible
+	systems (<A HREF="http://www.reactos.com">ReactOS</a>). The goal of his work is to provide
+	the Window API support from WINE for ReactOS project. In his spare time he plays with porting
+	WINE to other platforms like Cygwin and Microsoft Services for Unix.<br><br>
+	Currently self employed as a network/security consultant to allow free time to work on WINE and
+	ReactOS. Steven has been a WINE user for over 5 years and a ReactOS developer for almost 2 years.
+	</blockquote>
+	
+
+	<H3 style="color: red">Andriy Palamarchuk</H3>
+	<blockquote>
+	<b>Location:</b> Ukraine, now in Boston, MA, United States<BR>
+	<b>Email:</b> apa3a@yahoo.com<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Wine programs, bug research, bug fixes, documentation, and conformance tests.
+	</blockquote>
+	
+
+
+    <!-- ----------------------------------------------------------------------------------------------------- -->
+
+
+	<hr size=1 noshade>
+	<H2>CodeWeavers Developers</H2>
+
+
+	<a href="http://www.whitesen.org"><H3 style="color: red">Jeremy White</H3></a>
+	<blockquote>
+	<b>Location:</b> United States, Minnesota<BR>
+	<b>Email:</b> jwhite@codeweavers.com<BR>
+	<b>Role:</b> Active Developer<BR>
+	<P>
+	President and CEO of CodeWeavers. Contributes quite a bit of
+	code and patches to Wine.
+	</blockquote>
+
+
+	<H3 style="color: red">Aric Stewart</H3>
+	<blockquote>
+	<b>Location:</b> United States, Minnesota<BR>
+	<b>Email:</b> aric@codeweavers.com<BR>
+	<b>Role:</b> Active Developer<BR>
+	<P>
+	Contributes fixes for application support.
+	</blockquote>
+
+
+	<H3 style="color: red">Mike McCormack</H3>
+	<blockquote>
+	<b>Location:</b> Austrailia<BR>
+	<b>Email:</b> mike@codeweavers.com<BR>
+	<b>Role:</b> Active Developer<BR>
+	<P>
+	Contributes fixes for application support.
+	</blockquote>
+
+
+	<H3 style="color: red">Martin Pilka</H3>
+	<blockquote>
+	<b>Location:</b> Slovakia<BR>
+	<b>Email:</b> martin@codeweavers.com<BR>
+	<b>Role:</b> Active Developer<BR>
+	<P>
+    Maintains winesetuptk, and bug fixes.
+	</blockquote>
+
+
+	<H3 style="color: red">Dusan Lacko</H3>
+	<blockquote>
+	<b>Location:</b> Slovokia<BR>
+	<b>Email:</b> dusan@codeweavers.com<BR>
+	<b>Role:</b> Active Developer<BR>
+	<P>
+	Contributes bug fixes.
+	</blockquote>
+
+	
+	<H3 style="color: red">Dmitry Timoshkov</H3>
+	<blockquote>
+	<b>Location:</b> Siberia, Russia<BR>
+	<b>Email:</b> dmitry@codeweavers.com<BR>
+	<b>Role:</b> Active Developer<BR>
+	<P>
+	Contributes bug fixes.
+	</blockquote>
+
+
+	<H3 style="color: red">Andrew Bogott</H3>
+	<blockquote>
+	<b>Location:</b> United States, Minnesota<BR>
+	<b>Email:</b> andrew@codeweavers.com<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Contributes bug fixes.
+	</blockquote>
+
+
+	<H3 style="color: red">Charles Leop</H3>
+	<blockquote>
+	<b>Location:</b> Netherlands<BR>
+	<b>Email:</b> charles@codeweavers.com<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	Contributes bug fixes, and co-wrote the Wine Application DB.
+	</blockquote>
+
+
+	<H3 style="color: red">Ulrich Czekalla</H3>
+	<blockquote>
+	<b>Location:</b> Canada<BR>
+	<b>Email:</b> ulrich@codeweavers.com<BR>
+	<b>Role:</b> Casual Contributor<BR>
+	<P>
+	</blockquote>
+	
+
+
+
+</blockquote>
+
+<hr size=1 noshade>
+<p>[ <a href="javascript:history.back();">Back</a> ]</p>
+
+<p>&nbsp;</p>

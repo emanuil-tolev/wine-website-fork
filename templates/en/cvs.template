@@ -1,0 +1,333 @@
+
+<h2><a name="CVS" class=hidden>The Wine CVS Tree</a></h2>
+Wine uses an <a href="index.php?refs#open_source">open source, open
+process</a> development model.  Anyone may get the code, post opinions
+on what should be done, and contribute patches. You will need to know
+C and/or perl, and something about <a href="index.php?refs">Unix and Windows</a>.
+
+<p>
+<b>Please read <a href="index.php?devstart">the starter's manual</a></b> if you are
+starting with CVS and Wine. There you will also find links and requirements
+when using CVS.
+
+<p>
+Wine's CVS tree is mirrored at several places arround the world to make
+sure that the source is easily accessible. Note that not all servers have all
+repositories available, but all have at least the Wine source.
+CVS access is granted through CVS' "<code>pserver</code>" authentication. You should set
+your <code>CVSROOT</code> environment variable to point to one of the servers
+using this format:
+
+<p>
+<pre>
+CVSROOT=:pserver:&lt;Username&gt;@&lt;CVS Server&gt;:&lt;Server root&gt;
+</pre>
+Substitude the applicable fields from the table below.
+
+<p>
+Just do a traceroute and a ping on all servers below to find out which are
+closest to you.
+<p>
+
+<table align="center" border="1" cellpadding="8">
+	<tr>
+		<th rowspan="2">CVS Server</th>
+		<th rowspan="2">Username</th>
+		<th rowspan="2">Password</th>
+		<th colspan="3">Repository</th>
+		<th rowspan="2">Server root</th>
+	</tr>
+	<tr>
+		<td>wine</td>
+		<td>Winehq_com</td>
+		<td>c2man</td>
+	</tr>
+	<tr>
+		<td align="left">cvs.winehq.com<br><br>Minnesota, USA (CodeWeavers)</td>
+		<td align="center">cvs</td>
+		<td align="center">cvs</td>
+		<td align="center">Yes</td>
+		<td align="center">Yes</td>
+		<td align="center">Yes</td>
+		<td align="center">/home/wine</td>
+	</tr>
+<!--
+	<tr>
+		<td align="left">winehq.tiepmiep.dk<br><br>Denmark (&Aring;rhus)</td>
+		<td align="center">cvs</td>
+		<td align="center">cvs</td>
+		<td align="center">Yes</td>
+		<td align="center">No</td>
+		<td align="center">No</td>
+		<td align="center">/home/wine</td>
+	</tr>
+-->
+	<tr>
+		<td align="left">rhlx01.fht-esslingen.de<br><br>Southern Germany (Esslingen, BaW&uuml;)</td>
+		<td align="center">cvs</td>
+		<td align="center">cvs</td>
+		<td align="center">Yes</td>
+		<td align="center">No</td>
+		<td align="center">No</td>
+		<td align="center">/home/wine</td>
+	</tr>
+<!--
+	<tr>
+		<td align="left">x.bourg.net (currently down :-()<br><br>USA (Seattle, WA)</td>
+		<td align="center">cvs</td>
+		<td align="center">cvs</td>
+		<td align="center">Yes</td>
+		<td align="center">No</td>
+		<td align="center">No</td>
+		<td align="center">/home/wine</td>
+	</tr>
+-->
+</table>
+<p>
+<b>Notes:</b>
+<ol>
+<li>If you change servers once in a while, then you <b>may need to use</b>
+CVS' command-line override "<code>-d</code>" to get the data from the
+specified server. Normally, <code>cvs</code> will prefer the server from which the initial
+checkout was performed (this can be found in the files "<code>.../CVS/Root</code>"
+on your local filesystem). Use "<code>cvs -d $CVSROOT ...</code>" to make sure that
+you get the data from the right server.
+<li>Changing to another (previously unused) server requires you to login once.
+The password will be cached in "<code>~/.cvspass</code>".
+</ol>
+<p>
+
+<p align=center><img src="../images/grey_pixel.gif" width="95%" height=1 border=0 alt="-" ></p>
+
+
+<h3>Getting the CVS repository itself</h3>
+Most people will not need or want the complete repository itself, however it
+is available via FTP: 
+<a href="ftp://ftp.winehq.com/pub/wine/">ftp://ftp.winehq.com/pub/wine/full-cvs-<i>date</i>.tar.gz</a>.
+If you wish to maintain an up-to-date copy of the repository itself
+(not just the Wine source), you should use <a href="http://www.polstra.com/projects/freeware/CVSup/">CVSup</a>, repository 
+<code>wine</code>, release <code>wine</code>. Contact 
+<a href="mailto:andi@lisas.de">andi@lisas.de</a>
+for details.
+
+<p align=center><img src="../images/grey_pixel.gif" width="95%" height=1 border=0 alt="-" ></p>
+
+<h2><a name="sourcetree" class=hidden>Source Tree Browsing</a></h2>
+The sourcecode of the entire Wine tree is (<a href="http://lxr.linux.no/">LXR</a>-based)
+cross-referenced and available for browsing, including a search engine.
+This cross-references source is based on the snapshot-releases and is made available at:
+<ul>
+  <li><a href="http://source.winehq.com/">source.winehq.com</a>
+</ul>
+
+<p>
+Direct access to the complete CVS tree is also possible, using Bill Fenner's
+<a href="http://www.freebsd.org/~fenner/cvsweb/">cvsweb</a> package:
+<ul>
+  <li><a href="http://cvs.winehq.com/cvsweb">cvs.winehq.com/cvsweb</a>, on the primary CVS repository
+  <li><a href="http://winehq.tiepmiep.dk/cvsweb">winehq.tiepmiep.dk/cvsweb</a>, on a secondary CVS repository
+</ul>
+
+<p align=center><img src="../images/grey_pixel.gif" width="95%" height=1 border=0 alt="-" ></p>
+
+<h3>Releases</h3>
+Snapshot releases from the CVS tree will be made about once every
+three or four weeks.
+
+<p align=center><img src="../images/grey_pixel.gif" width="95%" height=1 border=0 alt="-" ></p>
+
+<h2><a name="patches">Generating and Submitting Patches</a></h2>
+<p>Please submit patches to the Wine patches mailing list,
+<a href="mailto:wine-patches@winehq.com">wine-patches@winehq.com</a>.
+(Note that if you're not <a href="#ml">subscribed</a> to the mailing
+list, the mailing list administrators must first check your submission
+to make sure it's not spam before they can let it through.)</p>
+
+<p>It's best to send small patches against the current tree.
+The best way do to this is with CVS. First, you'll need to make sure your tree is up to date.
+To do this, just run
+<pre>
+cvs update
+</pre>
+in the top-level Wine directory. Make sure that you've set up the proper options in your
+<code><a href="index.php?devstart#useful">.cvsrc</a></code> file.  Then, use
+<pre>
+cvs diff &gt; patch.diff
+</pre>
+to generate the patch from the top wine directory and save the output to a file.
+<code>cvs diff</code> will always ignore newly added files, so you'll
+need to do something like:
+<pre>
+diff -u /dev/null newfile.c &gt;&gt; patch.diff
+</pre>
+to make a patch for newly added files. 
+Use <code>diff -Nu olddir/ newdir/</code> in case of multiple files to add.</p>
+
+<p>If you can't use <code>cvs diff</code> for some reason (computer not connected to the net,
+modified a Wine snapshot release rather than CVS, etc.), or just prefer not to use it, you can also use the
+<code>diff</code> program as the output of both programs is compatible. You will need
+a copy of the original tree you used, excluding any modification you did (let's label it
+<code>oldwinedir/</code>), and a copy of your modified tree without all the build files
+(<code>*.o</code>, <code>*.so</code>, etc.): let's label it <code>newwinedir/</code>. You can obtain such a tree
+by copying the one you use for development to a new directory and issuing a <code>make distclean</code> in it.
+Then, using the following command-line:
+<pre>
+diff -urN oldwinedir/ newwinedir/ &gt; patch.diff
+</pre>
+will get you a patch almost ready to be sent to <a href="#ml">wine-patches</a>.</p>
+
+<p>Include a comment for the changelog that gives your name and email address (if desired),
+along with a description of what your patch does. For examples of the formatting of
+patch submissions and changelog entries, read a few messages in the <a href="#ml">wine-patches</a>
+mailing list archive.  Please give your message a descriptive subject line.</p>
+
+<p>Be careful to not corrupt the patch through line-wrapping. If you are sending the patch
+in the body of the message, make sure that line-wrapping is turned off.  If you are using a GUI
+mail program like Outlook or Evolution, you may need to attach the patch file instead of simply
+inserting it in your message to avoid corruption.  If you send the patch as an attachment, please try
+to send the attachment using the text/plain MIME type.  This makes it much easier for readers of the email
+to look at your patch.</p>
+
+<p>Accepted patches will appear in the <a href="#ml">wine-cvs</a> mailing list. 
+Rejected patches might receive a note in the <a href="#ml">wine-devel</a> mailing list, 
+and accidentally ignored patches will disappear into
+a silent, featureless void. Please resubmit if this happens to your patch.</p>
+
+<p>There is no attempt to apply patches that appears in the newsgroup
+to the CVS tree. Please send patches to
+<a href="mailto:wine-patches@winehq.com">wine-patches@winehq.com</a>.</p>
+
+<a name="CVS" class=hidden><big>Wine Source from CVS</big></a>
+<p>
+<a href="http://www.cvshome.org/" target="_blank">CVS</a> is the leading source code
+control system in the freeware community. CVS features flexible
+branching, intelligent merging, high quality <a
+href="http://www.loria.fr/~molli/cvs/doc/cvs_toc.html" target="_blank">documentation</a>
+and client/server access with a wide choice of <a
+href="http://www.loria.fr/cgi-bin/molli/wilma.cgi/rel" target="_blank">clients</a>.
+Current Wine sources are available via anonymous client/server CVS.
+You will need CVS 1.9 or above. 
+If you are coming from behind a firewall, you will either 
+need a hole in
+the firewall for the CVS port (2401) or use <a href="http://www.cyclic.com/cvs/dev-net.html">SOCKS</a>.
+<p>
+<ul>
+    <li><a href="#co">Getting a local copy of Wine</a>
+    <li><a href="#ftpcvs">Getting Wine via FTP and converting to CVS</a>
+    <li><a href="#uptodate">Staying Up-To-Date</a>
+    <li><a href="#useful">Useful Options</a>
+    <li><a href="#modules">Other modules available via CVS from WineHQ</a>
+    <li><a href="#other">Other projects using CVS</a>
+    <li><a href="#utils">Utilities</a>
+    <li><a href="#links">Other links</a>
+</ul>
+
+<p>
+<a name="co" class="hidden"><big>Getting a local copy of Wine</big></a>
+<p>
+To login to the CVS tree, do 
+<pre>
+export CVSROOT=:pserver:cvs@cvs.winehq.com:/home/wine
+cvs login
+</pre>
+Use ``cvs'' as the password (without the quotes). Note that
+<code>/home/wine</code>
+is a path on the <b>server</b>, not on your machine.
+<p>
+To check out the entire Wine source tree 
+(but read the next section before actually doing this!), do
+<pre>
+cvs -z 3 checkout wine
+</pre>
+or if you just want a subtree, or individual file, you can do that too:
+<pre>
+cvs -z 3 checkout wine/ANNOUNCE
+</pre>
+
+<img src="../images/grey_pixel.gif" width="95%" height=1 border=0 alt="-"><br>
+
+<a name="ftpcvs" class="hidden"><big>Getting Wine via FTP and converting to CVS</big></a>
+<p>
+Getting the entire Wine source tree via 
+CVS is pretty slow, especially compared to getting Wine from an
+FTP mirror near you. It's possible to convert a Wine tarball to a CVS
+sandbox, just like you would get by checking out the entire source
+via CVS. Here's how to do it:
+<ul>
+  <li>Get the latest Wine snapshot: Wine-<i>YYMMDD</i>.tar.gz
+  <li>Get wine-cvsdirs-<i>YYMMDD</i>.tar.gz from
+  <a href="ftp://ftp.winehq.com/pub/wine/">ftp://ftp.winehq.com/pub/wine</a>
+  <li>Untar them on top of each other:
+<pre>
+tar xzf Wine-<i>YYMMDD</i>.tar.gz
+mv wine-<i>YYMMDD</i> wine
+tar xzf wine-cvsdirs-<i>YYMMDD</i>.tar.gz
+</pre>
+  <li>Update from main tree: login as above, then do
+<pre>
+cd wine
+cvs update -PAd
+</pre>
+</ul>
+You will now be completely up to date.
+The <code>-A</code> is required to get the latest version in the tree. 
+<p>
+
+<img src="../images/grey_pixel.gif" width="95%" height=1 border=0 alt="-"><br>
+
+<a name="uptodate" class="hidden"><big>Staying Up-To-Date</big></a>
+<p>
+Run
+<pre>
+cvs update
+</pre>
+to merge changes from the tree with the current directory. (Local changes will
+not be lost.) Do this from the top Wine
+directory to update the entire tree. When a new directory is added to Wine,
+you will need to do a
+<pre>cvs update -PAd</pre>
+to get the new directory and delete any old ones. But
+read the next section and you won't have to worry about that.
+<p>
+
+<img src="../images/grey_pixel.gif" width="95%" height=1 border=0 alt="-"><br>
+
+<a name="useful" class="hidden"><big>Useful Options</big></a>
+<p>
+Some options are so useful you may want them in your <code>~/.cvsrc</code>
+<pre>
+cvs -z 3
+update -PAd
+diff -u
+</pre>
+<code>-z</code> sets the compression level. 
+(Levels higher than 3 will probably not result in faster downloading
+unless you have a fast machine and a slow network connection.)
+<code>-Pd</code> will delete empty directories and create newly added ones.
+<code>-u</code> will create the easiest to read patches. Please
+do not submit patches with diff -w.
+
+Examples of other useful options (see the CVS documentation for details):
+<ul>
+  <li><code>cvs update -A</code> (update from the head of the tree,
+  and ignore tags) 
+  <li><code>cvs -n update </code> (test only, don't make changes) 
+  <li><code>cvs update -r Wine-<i>YYMMDD</i></code> (get the revision with
+ the tag for a Wine snapshot)
+  <li><code>cvs update -D <i>date</i></code> (get the revision associated
+with an arbitrary date)
+</ul>
+
+<img src="../images/grey_pixel.gif" width="95%" height=1 border=0 alt="-"><br>
+
+<a name="modules" class="hidden"><big>Other modules available via CVS from WineHQ</big></a>
+<p>
+The WineHQ CVS server makes a couple of other things available as well. 
+To get these, log in anonymously
+as above and do <code>cvs co <i>modulename</i></code> where 
+<code><i>modulename</i></code>
+is one of:
+<ul>
+  <li><tt>Winehq_com</tt> -- source for the WineHQ web site
+  <li><tt>c2man</tt>  -- automatic documentation system, specially modified for Wine
+</ul>
