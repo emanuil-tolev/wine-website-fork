@@ -43,8 +43,7 @@ class html
             $body .= $this->frame_end("");
         }
         $search = $this->template("base", "search");
-        // display the html (gzip compressed)
-        ob_start("ob_gzhandler");
+        // display the html
         $this->http_header(); 
         echo 
         $this->template(
@@ -58,7 +57,6 @@ class html
                               'banner_ad'     => $this->banner_ad
                              )
                 );
-        ob_end_flush();
     }
 
     function error_page ($message = null)
