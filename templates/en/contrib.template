@@ -333,49 +333,46 @@ Requirements:
 <p><hr size=2 noshade>
 <p>
 
+
+
 <a name="donate"><h2>Monetary or equipment donations</h2></a>
 
-<p>Wine has no formal organization (yet ?), so it's not possible to directly
+<p>Wine has no formal organization, so it's not possible to directly
 donate money to a Wine development organization.
 However, some means for donating do exist...
 
 <h3>Donations of hardware / software / documentation</h3>
+
 <p>If you want to give something to a Wine developer, or you are a Wine
-developer who needs something, you can post to <a
-href="news:comp.emulators.ms-windows.wine">comp.emulators.ms-windows.wine</a>
-or <a href="mailto:ridgway@winehq.com">email me</a> and get it listed here.
-<h4>Offered</h4>
-<ul>
-  <li>Complete Windows 3.1 SDK -- books and software.
-</ul>
+developer who needs something, you can post to
+<a href="news:comp.emulators.ms-windows.wine">comp.emulators.ms-windows.wine</a>.
 
 <h3>Wine Party Fund</h3>
 <p>The purpose of the Wine Party Fund is to show appreciation to Wine
-developers by collecting funds for small parties, dinners,
-virtual beers, etc.
-Ways to contribute:
+developers by collecting funds for small parties, dinners, virtual beers, etc.</p>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+<p>Ways to contribute:
 <ul>
-  <li>Europe -- send contributions to<br>
-     <a href="mailto:marcus@jet.franken.de">Marcus Meissner</a><br>
-  <li>North America -- send contributions to<br> 
-     <a href="mailto:ridgway@winehq.com">Douglas Ridgway</a><br>
-	6624 124 St.<br>
-	Edmonton, Alberta<br>
-	T6H 3V3<br>
-        CANADA<br><br>
+  <li><input type="image" src="images/ppdonate.gif" name="submit"
+      width="88" height="31" border="0" alt="Donate to Wine with PayPal!"><br>
+      <span class="small">Our PayPal Account</span>
+  </li><br>
+        
   <li>Purchase books or music from <a href="http://www.amazon.com/exec/obidos/redirect-home/winehq">Amazon.com</a>
        or <a href="http://www.cdnow.com/from=sr-1093221">CDnow</a> (Use
-       these specific links only, so that the Wine Party Fund gets the credit.)
+       these specific links only, so that the Wine Party Fund gets the credit.)</li>
 </ul>
-A page for party reports is planned.
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="donate@winehq.com">
+<input type="hidden" name="item_name" value="Wine donation">
+</form>  
+</p>
 
-<h3>Post a bounty at the <a href="http://visar.csustan.edu/bazaar/">Free Software Bazaar</a></h3>
-<p>Also post to the newsgroup, so that people know the offer exists.
-If enough people started using this, it could become a viable
-mechanism for funding free software development. Run by Axel Boldt.
+<p><hr size=2 noshade></p>
 
-<p><hr size=2 noshade>
-<p>
+
 
 <a name="other"><h2>Donations to other related organizations</h2></a>
 
