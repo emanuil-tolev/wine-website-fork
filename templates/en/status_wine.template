@@ -55,8 +55,8 @@
     </tr>
     <tr>
       <td>Wine's fundamental architecture</td>
-      <td class="outdadeq"><a href="http://www.winehq.com/docs/wine-devel/architecture.shtml">Getting outdated</a></td>
-      <td><a href="?issue=50#Feature: Wine Architecture by Ove Kåven">#50</a>,
+      <td class="outdadeq"><a href="http://www.winehq.com/site/docs/wine-devel/architecture">Getting outdated</a></td>
+      <td><a href="?issue=50#Feature: Wine Architecture by Ove KÃ¥ven">#50</a>,
       <a href="?issue=154#Kernel%20Module%20/%20Shared%20Memory%20Revisited">#154</a></td>
       <td class="pct85">85% complete</td>
       <td>Alexandre Julliard</td>
@@ -88,7 +88,7 @@
     <tr>
       <td>Scheduling and synchronization</td>
       <td class="nonexistent">Nonexistent</td>
-      <td><a href="?issue=50#Feature: Wine Architecture by Ove Kåven">#50</a>,
+      <td><a href="?issue=50#Feature: Wine Architecture by Ove KÃ¥ven">#50</a>,
       <a href="?issue=161#Thread%20Latency">#161</a></td>
       <td class="pct100">100% complete</td>
       <td>Alexandre Julliard</td>
@@ -96,7 +96,7 @@
     <tr>
       <td>Supervisory process (wineserver)</td>
       <td class="nonexistent">Nonexistent</td>
-      <td><a href="?issue=50#Feature: Wine Architecture by Ove Kåven">#50</a>,
+      <td><a href="?issue=50#Feature: Wine Architecture by Ove KÃ¥ven">#50</a>,
       <a href="?issue=102#Navigating Through Wine">#102</a></td>
       <td class="pct90"><a href="{$root}/site/status_todo#Aspect_or_Component_">90% complete</a></td>
       <td>Alexandre Julliard</td>
@@ -146,8 +146,8 @@
     </tr>
     <tr>
       <td>Native DLL overrides</td>
-      <td class="good"><a href="http://www.winehq.org/docs/wine-user/dll-config.shtml">Good</a></td>
-      <td><a href="?issue=46#Feature: DLL overrides by Ove Kåven">#46</a>,
+      <td class="good"><a href="http://www.winehq.org/site/docs/wine-user/dll-config">Good</a></td>
+      <td><a href="?issue=46#Feature: DLL overrides by Ove KÃ¥ven">#46</a>,
       <a href="?issue=134#Native vs.Builtin DLL's">#134</a></td>
       <td class="pct95">95% complete</td>
       <td>&nbsp;</td>
@@ -207,7 +207,7 @@
     <tr>
       <td>X11 display/window driver</td>
       <td class="good">Good</td>
-      <td><a href="?issue=47#Feature: The X11 driver by Ove Kåven">#47</a>,
+      <td><a href="?issue=47#Feature: The X11 driver by Ove KÃ¥ven">#47</a>,
       <a href="?issue=175#Workaround%20for%20Xvidmode%20Graphic%20Corruption">#175</a></td>
       <td class="pct90"><a href="{$root}/site/status_todo#GDI">90% complete</a></td>
       <td>&nbsp;</td>
@@ -445,7 +445,7 @@
     </tr>
     <tr>
       <td>Wine Conformance Test Suite</td>
-      <td class="good"><a href="http://www.winehq.org/Docs/wine-devel/testing.shtml">Good</a></td>
+      <td class="good"><a href="http://www.winehq.org/docs/wine-devel/testing">Good</a></td>
       <td><a href="?issue=119#Improving Regression Testing">#119</a>,
       <a href="?issue=120#CreateProcess Test">#120</a>,
       <a href="?issue=121#More Tests">#121</a>,
@@ -468,7 +468,7 @@
       <td>Initial registry contents</td>
       <td class="poor">Poor</td>
       <td><a href="?issue=48#MZ (aka DOS) executable support">#48</a>,
-      <a href="?issue=52#Feature: Replacing Windows by Ove Kåven">#52</a></td>
+      <a href="?issue=52#Feature: Replacing Windows by Ove KÃ¥ven">#52</a></td>
       <td class="pct25">25% complete<br>
       Added on a need-to-have basis.</td>
       <td>&nbsp;</td>
@@ -476,7 +476,7 @@
     <tr>
       <td>Initial directory structure</td>
       <td class="nonexistent">Nonexistent</td>
-      <td><a href="?issue=52#Feature: Replacing Windows by Ove Kåven">#52</a>,
+      <td><a href="?issue=52#Feature: Replacing Windows by Ove KÃ¥ven">#52</a>,
       <a href="?issue=173#Adding%20a%20Root%20Drive%20Mapping">#173</a></td>
       <td class="pct90">90% complete</td>
       <td>&nbsp;</td>
@@ -494,7 +494,7 @@
     </tr>
     <tr>
       <td>How to install Wine</td>
-      <td class="good"><a href="http://www.winehq.com/Docs/wine-user/">Good</td>
+      <td class="good"><a href="http://www.winehq.com/docs/wine-user/">Good</td>
       <td>None</td>
       <td class="pct90"><a href="{$root}/site/status_todo#Instructions_">90% possible</a><br>
       (on x86s running Linux, FreeBSD, or Solaris)</td>
@@ -502,7 +502,7 @@
     </tr>
     <tr>
       <td>How to debug</td>
-      <td class="adeqgood"><a href="http://www.winehq.com/Docs/wine-user/bugs.shtml">Adequate</td>
+      <td class="adeqgood"><a href="http://www.winehq.com/docs/wine-user/bugs">Adequate</td>
       <td><a href="?issue=33#Debugging Wine with Microsoft tools">#33</a>,
       <a href="?issue=76#Setting up Winedbg">#76</a>,
       <a href="?issue=113#Setting Breakpoints in the Debugger">#113</a>,
@@ -514,7 +514,7 @@
     </tr>
     <tr>
       <td>How to create a useful bug report</td>
-      <td class="adeqgood"><a href="http://www.winehq.com/Docs/wine-user/bug-reporting.shtml">Adequate</td>
+      <td class="adeqgood"><a href="http://www.winehq.com/docs/wine-user/bug-reporting">Adequate</td>
       <td><a href="?issue=122#Bugzilla: A Call to Arms">#122</a></td>
       <td class="pct80">80% possible</td>
       <td>Andreas Mohr</td>
@@ -541,7 +541,7 @@
     </tr>
     <tr>
       <td>How to compile MFC with Winelib</td>
-      <td class="outdadeq"><a href="http://www.winehq.com/Docs/winelib-user/mfc-compiling.shtml">Outdated</td>
+      <td class="outdadeq"><a href="http://www.winehq.com/docs/winelib-user/mfc-compiling">Outdated</td>
       <td><a href="?issue=44#MFC and Wine">#44</a></td>
       <td class="pct60">60% possible</td>
       <td>Andreas Mohr</td>

@@ -248,7 +248,7 @@ more platforms would mostly confirm already known bugs. If you fix a test
 let me know and I will update this page accordingly.<br />
 See the following URL for instructions on how to compile (and debug) the
 tests on Windows using Visual C++:
-<a href="http://www.winehq.com/docs/wine-devel/testing-windows.shtml">http://www.winehq.com/docs/wine-devel/testing-windows.shtml</a>
+<a href="http://www.winehq.com/docs/wine-devel/testing-windows.html">http://www.winehq.com/docs/wine-devel/testing-windows</a>
 </p>
 <p><a name="incorrect">Note</a>: These tests are conformance tests which means
 their main function is to describe the behavior of Windows APIs, and then to

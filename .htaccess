@@ -15,7 +15,7 @@ ErrorDocument 404 http://www.winehq.org/site/404
 
 # redirect winehq services to appropriate web sites
 RedirectMatch ^/?page=(.*)$                     http://www.winehq.org/site/$1
-RedirectMatch ^/index\.php?page=(.*)$            http://www.winehq.org/site/$1
+RedirectMatch ^/index\.php?page=(.*)$           http://www.winehq.org/site/$1
 
 # redirect old winehq pages to new locations
 RedirectPermanent /index.php                    http://www.winehq.org/site
@@ -53,10 +53,15 @@ RedirectPermanent /cvs                          http://www.winehq.org/site/cvs
 RedirectPermanent /forums/                      http://www.winehq.org/site/forums
 RedirectPermanent /forums                       http://www.winehq.org/site/forums
 
-# fix old style documentation links
-RedirectMatch ^/(Docs|Docs/)$			http://www.winehq.org/site/documentation
-RedirectMatch ^/Docs/(\w+-\w+)/$		http://www.winehq.org/site/docs/$1/index
+# fix documentation links
+RedirectMatch ^/(Docs|Docs/)$                   http://www.winehq.org/site/documentation
+RedirectMatch ^/(docs|docs/)$                   http://www.winehq.org/site/documentation
+RedirectMatch ^/Docs/(\w+-\w+)/$                http://www.winehq.org/site/docs/$1/index
 RedirectMatch ^/Docs/(\w+-\w+)/(.*)\.shtml$     http://www.winehq.org/site/docs/$1/$2 
+RedirectMatch ^/docs/(\w+-\w+)/$                http://www.winehq.org/site/docs/$1/index
+RedirectMatch ^/docs/(\w+-\w+)/(.*)\.shtml$     http://www.winehq.org/site/docs/$1/$2 
+RedirectMatch ^/site/docs/([a-z-]+)/$           http://www.winehq.org/site/docs/$1/index
+RedirectMatch ^/site/(docs|docs/)$              http://www.winehq.org/site/documentation
 
 # redirect winehq services to appropriate web sites
 RedirectMatch ^/(APPS|Apps|apps)/$              http://appdb.winehq.org/
@@ -82,3 +87,5 @@ RedirectPermanent /find                         http://source.winehq.org/find
 RedirectPermanent /search                       http://source.winehq.org/search
 RedirectPermanent /diff                         http://source.winehq.org/search
 
+# we no longer use .shtml
+RedirectMatch ^/(.*)\.shtml(.*)$                http://www.winehq.org/$1$2
