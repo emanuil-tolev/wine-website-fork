@@ -102,6 +102,13 @@
     <li>updated: Apr 16, 2004
     <li>homepage: <a href="http://www.abisource.com/">abisource.com</a>
   </ul>
+  To build under Winelib, simply do:
+  <table width="500" border=0 cellpadding=10><tr><td class=black>
+  <span class=inverse>
+make ABI_OPT_WINELIB=1<br>
+</span>
+  </td></tr>
+  </table>
 
 
   <a name="winamp"></a><h3 class=inprogress>WinAMP</h3>
@@ -123,8 +130,8 @@
      hobby project a Winelib port of this would be nice to see.</i>
   <ul>
     <li>worker: none
-    <li>status: needs love
-    <li>updated: Nov 30, 2003
+    <li>status: There is a <a href="http://www.openoffice.org/issues/show_bug.cgi?id=24588">MinGW porting effort</a>, some <a href="http://tools.openoffice.org/dev_docs/build_windows_mingw.html">instructions</a> available already.
+    <li>updated: Apr 19, 2004
     <li>homepage: <a href="http://www.openoffice.org/">www.openoffice.org</a>
   </ul>
 
