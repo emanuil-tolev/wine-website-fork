@@ -102,9 +102,9 @@
     <li class=committed>dlls/kernel/comm.c: kernel32: GetDefaultCommConfigW: illegal call to HEAP_strdupWtoA
     <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to HEAP_strdupWtoA
     <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to SetDefaultCommConfigA
-    <li>dlls/kernel/format_msg.c: kernel32: FormatMessageW: illegal call to GetModuleHandleA
-    <li>dlls/kernel/format_msg.c: kernel32: FormatMessageW: illegal call to HEAP_strdupWtoA
-    <li>dlls/kernel/format_msg.c: kernel32: FormatMessageW: illegal call to load_messageA
+    <li class=committed>dlls/kernel/format_msg.c: kernel32: FormatMessageW: illegal call to GetModuleHandleA
+    <li class=committed>dlls/kernel/format_msg.c: kernel32: FormatMessageW: illegal call to HEAP_strdupWtoA
+    <li class=committed>dlls/kernel/format_msg.c: kernel32: FormatMessageW: illegal call to load_messageA
     <li>dlls/kernel/locale.c: kernel32: GetLocaleInfoW: illegal call to GetModuleHandleA
     <li>dlls/kernel/sync.c: kernel32: WaitNamedPipeW: illegal call to CreateEventA
     <li>dlls/lzexpand/lzexpand_main.c: lz32: LZOpenFileW: illegal call to LZOpenFileA
@@ -222,10 +222,11 @@
 		 <a href="mailto:dmitry@codeweavers.com">Dmitry Timoshkov</a>,
 		 <a href="mailto:pouech-eric@wanadoo.fr">Eric Pouech</a>,
 		 <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>,
-		 <a href="mailto:burner1@hotmail.com">Justin Chevrier</a>.
+		 <a href="mailto:burner1@hotmail.com">Justin Chevrier</a>,
+		 <a href="mailto:ulrich@codeweavers.com>Ulrich Czekalla</a>.
 
-    <li>status: <span class=inprogress>71 left to go</span>
-    <li>updated: Mar 8, 2004
+    <li>status: <span class=inprogress>Over half done.</span>
+    <li>updated: Mar 23, 2004
   </ul>
 
   <h2>DLL separation</h2>
