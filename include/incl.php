@@ -21,11 +21,10 @@ $config = new config();
 require($file_root."/include/"."html.php");
 require($file_root."/include/"."db.php");
 require($file_root."/include/"."session.php");
-
-// load local libs
 require($file_root."/include/"."sidebar.php");
 require($file_root."/include/"."winehq.php");
 require($file_root."/include/"."wwn.php");
+require($file_root."/include/"."utils.php");
 
 // create html object
 $html = new html($file_root);

@@ -736,7 +736,7 @@ class html
 		    $in = ereg_replace('\{\$'.$key.'\}', $val, $in);
 	    }
         // remove all the unset vars
-        $in = preg_replace('/\{\$[a-z_]+\}/', $val, $in);
+        $in = preg_replace('/\{\$[a-z0-9_]+\}/', $val, $in);
 		return $in;
     }
     

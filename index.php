@@ -8,7 +8,7 @@
 $file_root = ".";
 require($file_root."/include/"."incl.php");
 
-// choose the mode based on the $view var
+// choose the mode
 switch (true)
 {
   // view page
@@ -24,6 +24,11 @@ switch (true)
   // view latest annouce
   case ($announce):
     $text .= view_announce($announce);
+    break;
+
+  // display screen shots
+  case ($ss):
+    $text .= view_screenshots($ss);
     break;
 
   // default mode (Home Page)
@@ -56,8 +61,13 @@ function home_page ()
 {
     global $file_root, $config, $html;
 	
+    // screenshot for homepage (random)
+    $shots = get_files($file_root."/images/shots","png");
+    $c = intval(rand(0,count($shots) - 1));
+    $vars['screenshot'] = $html->ahref($html->img($file_root.'/images/shots/wine_'.$c.'.png','right'), $file_root.'/images/shots/full/wine_'.$c.'.png');
+    
 	// get aboout box
-	$about_box = $html->theme_box($config->theme, "box_title", "About Wine", "99%", $html->template("base", 'home_about'), '10', 'white', 'topMenu');
+	$about_box = $html->theme_box($config->theme, "box_title", "About Wine", "99%", $html->template("base", 'home_about', $vars), '10', 'white', 'topMenu');
 	
 	// get link to latest release
 	$latest_box = $html->theme_box($config->theme, "box_title", "Latest Release", "97%", $html->template("base", 'wine_release'), '10', 'white', 'topMenu');
@@ -93,6 +103,65 @@ function view_announce ($announce)
         return $html->theme_box($config->theme, "box_title", 'Announce', "100%", $html->format_msg($announce), '10', 'white', 'topMenu');
     }
     $html->redirect($file_root);
+}
+
+// load the annouce file for latest version of wine
+function view_screenshots ($x)
+{
+    global $file_root, $config, $html;
+        
+	// Grab list of images from screenshot dir
+	$shots = get_files($file_root."/images/shots","png");
+
+	// setup vars
+    $x--;
+	$total = count($shots);
+	$num = 0;
+	$where = 0;
+    $vars = array();
+	$vars['next'] = "&nbsp;";
+	$vars['prev'] = "&nbsp;";
+
+	// loop and display images
+	while (list($c,$image) = each($shots))
+	{
+		// do not show images less than current pos
+		if ($x > $c)
+		  continue;
+
+		// display image
+		$vars['im_'.$num] = $html->ahref($html->img($file_root.'/images/shots/wine_'.$c.'.png'), $file_root.'/images/shots/full/wine_'.$c.'.png');
+        
+		// count number of images displayed.
+		$num++;
+
+		// end at 6
+		if ($num == 6 or $num == $total)
+		{
+			$where = $c;
+			break;
+		}
+	}
+    
+	// display prev link
+	if ($x)
+	{
+		$prev = $x - 6;
+		$vars['prev'] = $html->ahref("&lt;&lt; Prev 4 Images","?ss=".$prev,"class=menuItem");
+	}
+
+	// display next link
+	if (($num + 6) < $total)
+	{
+		$next = $where + 1;
+		$vars['next'] = $html->ahref("Next 4 Images &gt;&gt;","?ss=".$next,"class=menuItem");
+	}
+
+    // load into template
+    $template = $html->template('base', 'screenshots', $vars);
+    
+    // return the text
+    return $html->theme_box($config->theme, "box_title", 'Screen Shots', "100%", $template, '10', 'white', 'topMenu');
 }
 
 // end of file

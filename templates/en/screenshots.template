@@ -1,9 +1,28 @@
-<!--TITLE:[Wine Screenshots]-->
+<!--TITLE:[Wine Screenshot Gallery]-->
 
-<h1>Wine Screenshots</h1>
+<h1>Wine Screenshot Gallery</h1>
 
-Happy Users present screenshots of Windows programs running under Wine.
-<p>
+<div align=center>
+<table width="90%" border=0>
+<tr valign=top align=center>
+  <td>{$im_0}</td>
+  <td>{$im_1}</td>
+  <td>{$im_2}</td>
+</tr>
+<tr valign=top align=center>
+  <td>{$im_3}</td>
+  <td>{$im_4}</td>
+  <td>{$im_5}</td>
+</tr>
+<tr valign=top>
+  <td align=left>{$prev}</td>
+  <td>&nbsp;</td>
+  <td align=right>{$next}</td>
+</tr>
+</table>
+</div>
+
+<p>Links to other Screenshots
 <ul>
   <li> Browse the <a href="http://appdb.codeweavers.com">Wine Application Database</a>
   <li> Ian Schmidt's <a href="http://wine.godmonkey.com">Unofficial WINE Screenshots</a>
@@ -13,5 +32,3 @@ Happy Users present screenshots of Windows programs running under Wine.
   <li> <a href="http://butthead.ton.tut.fi/screenshots/2000_12_19_0048_shot.jpeg">How many</a> games do you want to play on Wine ?
   <li> Andreas Mohr's <a href="http://home.nexgo.de/andi.mohr/wineshots/">miscellaneous screenshots</a>
 </ul>
-
-<p align=center><img src="../images/grey_pixel.gif" width="100%" height=1 border=0 alt="-" ></p>
