@@ -13,6 +13,7 @@
 
     <tr class="hdr">
       <th>Component</th>
+      <th>Src</th>
       <th>Audit date</th>
       <th>Reference</th>
       <th>Implementation status</th>
@@ -24,6 +25,7 @@
     </tr>
 
       <td><strong>Visible Region</strong></td>
+	<td></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct70">70%: Needs to handled through the server, fix scrolling bugs</td>
@@ -33,6 +35,7 @@
     </tr>
 
       <td><strong>Window Management</strong></td>
+	<td></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct60">60%: Needs to be rewritten</td>
@@ -42,6 +45,8 @@
     </tr>
 
       <td><strong>MDI Support</strong></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/windows/mdi.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/windows/mdi.c">LXR</a></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct80">80%: Various problems still exist</td>
@@ -51,18 +56,22 @@
     </tr>
 
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/Windowing/WindowProcedures/WindowProcedureReference/WindowProcedureFunctions/DefWindowProc.asp?frame=true"><strong>DefWndProc</strong></a></td>
-	<td class="needed"></td>
-	<td class="needed"></td>
-	<td class="pct90">90%: Complete</td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/windows/defwnd.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/windows/defwnd.c">LXR</a></td>
+	<td></td>
+	<td></td>
+	<td class="pct100">100%: Complete</td>
 	<td><a href="mailto:">?</a></td>
     </tr>
 
     </tr>
 
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/Windowing/DialogBoxes/DialogBoxReference/DialogBoxFunctions/DefDlgProc.asp"><strong>DefDlgProc</strong></a></td>
-	<td class="needed"></td>
-	<td class="needed"></td>
-	<td class="pct90">90%: Complete</td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/windows/defdlg.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/windows/defdlg.c">LXR</a></td>
+	<td></td>
+	<td></td>
+	<td class="pct100">100%: Complete</td>
 	<td><a href="mailto:">?</a></td>
     </tr>
 
@@ -72,6 +81,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/buttons/buttons.asp"><strong>Button</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/user/button.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/user/button.c">LXR</a></td>
 	<td>Oct 3, 2004</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct90">90%: WM_CHAR, WM_SETFOCUS, WM_NCCREATE, WM_SYSKEYUP, BCM_*, BCN_*, some BN_*, NM_CUSTOMDRAW</td>
@@ -80,6 +91,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/comboboxes/comboboxes.asp"><strong>ComboBox</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/user/combo.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/user/combo.c">LXR</a></td>
 	<td>Oct 4, 2004</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct95">95%: CB_GETCOMBOBOXINFO, CB_[GS]ETMINVISIBLE, CB_LIMITTEXT, CB_SETTOPINDEX</td>
@@ -88,6 +101,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/editcontrols/editcontrols.asp"><strong>Edit</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/user/edit.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/user/edit.c">LXR</a></td>
 	<td>Oct 8, 2004</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct80">80%: ES_{CENTER,RIGHT,NUMBER,OEMCONVERT}, !ES_AUTO[HV]SCROLL, EN_ALIGN_{LTR,RTL}_EC, EM_[GS]ETIMESTATUS, EM_[GS]ETCUEBANNER, EM_{SHOW,HIDE}BALLOONTIP</td>
@@ -96,6 +111,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/listboxes/listboxes.asp"><strong>List Box</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/user/listbox.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/user/listbox.c">LXR</a></td>
 	<td>Oct 9, 2004</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct90">90%: LB_GETLISTBOXINFO, LBS_{COMBOBOX,NODATA,STANDARD}, locate and tab stops fixes</td>
@@ -104,6 +121,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/scrollbars/scrollbars.asp"><strong>Scroll Bar</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/user/scroll.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/user/scroll.c">LXR</a></td>
 	<td>Oct 8, 2004</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct95">95%: Missing SCROLLBARINFO, SBM_GETSCROLLBARINFO, GetScrollBarInfo</td>
@@ -112,6 +131,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/staticcontrols/staticcontrols.asp"><strong>Static</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/user/static.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/user/static.c">LXR</a></td>
 	<td>Oct 4, 2004</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct85">85%: Some SS_* styles, STN_{DISABLE,ENABLE}, IMAGE_CURSOR, IMAGE_ENHMETAFILE</td>
@@ -124,7 +145,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/animation/animation.asp"><strong>Animation</strong></a></td>
-
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/animate.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/animate.c">LXR</a></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct80">80%: Missing locking for infoPtr</td>
@@ -133,7 +155,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/comboex/reflist.asp"><strong>ComboBoxEx</strong></a></td>
-
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/comboex.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/comboex.c">LXR</a></td>
 	<td>Sep 9, 2002</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct100">100%: Complete</td>
@@ -143,15 +166,19 @@
     <tr>
 
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/datetime/reflist.asp"><strong>Date and Time Picker</strong></a></td>
-	<td class="needed"></td>
-	<td class="needed"></td>
-	<td class="pct60">60%: Control works but it seems to require work</td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/datetime.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/datetime.c">LXR</a></td>
+	<td>Oct 20, 2004</td>
+	<td>Comctl32.dll 6.0</td>
+	<td class="pct90">90%: DTS_{APPCANPARSE,SHORTDATECENTURYFORMAT}, DTN_{CLOSEUP,FORMAT,FORMATQUERY,USERSTRING,WMKEYDOWN}, DTM_[GS]ETMCFONT, FORMATCALLBACK</td>
 	<td><a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a></td>
     </tr>
 
     <tr>
 
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/draglb/reflist.asp"><strong>Drag List Box</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/draglist.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/draglist.c">LXR</a></td>
 	<td>Mar 10, 2004</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct100">100%: Complete</td>
@@ -161,6 +188,8 @@
     <tr>
 
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/flatsb/reflist.asp"><strong>Flat Scroll Bar</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/flatsb.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/flatsb.c">LXR</a></td>
 	<td></td>
 	<td></td>
 	<td class="pct10">10%: Only stubs, forwarding handling to standard scroll bars</td>
@@ -170,6 +199,8 @@
     <tr>
 
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/header/header_header.asp"><strong>Header</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/header.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/header.c">LXR</a></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct60">60%: Unicodification, drag &amp; drop, new messages, notifications, bugs.</td>
@@ -178,6 +209,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/hotkey/reflist.asp"><strong>Hot Key</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/hotkey.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/hotkey.c">LXR</a></td>
 	<td>Sep 21, 2004</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct100">100%: Complete</td>
@@ -186,6 +219,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/imagelist/reflist.asp"><strong>Image List</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/imagelist.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/imagelist.c">LXR</a></td>
 	<td>Sep 12, 2002</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct85">85%: Fix hotspot handling, implement the ILD_*, and ILS_* styles</td> 
@@ -195,6 +230,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/ipaddress/reflist.asp"><strong>IP Address</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/ipaddress.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/ipaddress.c">LXR</a></td>
 	<td>Sep 9, 2002</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct100">100%: Complete</td>
@@ -203,6 +240,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/listview/reflist.asp"><strong>List-View</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/listview.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/listview.c">LXR</a></td>
 	<td>Oct 21, 2002</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct70">70%: Missing hotitem, mouse hovering, workareas, tiles, groups, unicode notifications</td>
@@ -211,14 +250,18 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/monthcal/reflist.asp"><strong>Month Calendar</strong></a></td>
-	<td class="needed"></td>
-	<td class="needed"></td>
-	<td class="pct80">80%: i18n, keyboard handling, internationalization</td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/monthcal.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/monthcal.c">LXR</a></td>
+	<td>Mar 10, 2004</td>
+	<td>Comctl32.dll 6.0</td>
+	<td class="pct90">90%: i18n, keyboard handling, some fixmes</td>
 	<td><a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a></td>
     </tr>
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/faq/localization.asp"<strong>Native Font</strong></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/nativefont.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/nativefont.c">LXR</a></td>
 	<td></td>
 	<td></td>
 	<td class="pct10">10%: empty stub</td>
@@ -227,6 +270,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/pager/reflist.asp"><strong>Pager</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/pager.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/pager.c">LXR</a></td>
 	<td>Sep 18, 2004</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct90">90%: better keyboard handling, size changes, drag &amp; drop</td>
@@ -236,6 +281,8 @@
     <tr>
 
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/progbar/reflist.asp"><strong>Progress Bar</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/progress.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/progress.c">LXR</a></td>
 	<td>Aug 6, 2004</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct100">100%: Complete</td>
@@ -244,6 +291,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/propsheet/reflist.asp"><strong>Property Sheet</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/propsheet.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/propsheet.c">LXR</a></td>
 	<td>Sep 12, 2004</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct80">80%: tab order, Unicode property sheets, wizard 97 handling</td>
@@ -252,14 +301,18 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/rebar/reflist.asp"><strong>Rebar</strong></a></td>
-	<td class="needed"></td>
-	<td class="needed"></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/rebar.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/rebar.c">LXR</a></td>
+	<td>Oct 19, 2004</td>
+	<td>Comctl32.dll 6.0</td>
 	<td class="pct70">70%: vertical placement, layout code, some messages, notifications</td>
 	<td><a href="mailto:xnavara@volny.cz">Filip Navara</a></td>
     </tr>
 
     <tr>
       <td><strong>Smooth Scroll</strong></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/smoothscroll.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/smoothscroll.c">LXR</a></td>
 	<td>N/A</td>
 	<td>N/A</td>
 	<td class="pct10">10%: empty stub that does regular scrolling only,<a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/scrollbars/scrollbarreference/scrollbarfunctions/scrollwindowex.asp"><strong>undocumented</strong></a> by MS</td>
@@ -269,6 +322,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/status/reflist.asp"><strong>Status Bar</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/status.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/status.c">LXR</a></td>
 	<td>Sep 24, 2002</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct90">90%: Lacks CCS_* styles support</td>
@@ -277,6 +332,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/syslink/syslink.asp"><strong>SysLink</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/syslink.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/syslink.c">LXR</a></td>
 	<td>Aug 6, 2004</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct80">80%: problems with focus handling and dumb string parsing </td>
@@ -285,6 +342,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/tab/reflist.asp"><strong>Tab</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/tab.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/tab.c">LXR</a></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct80">80%: image list support, Unicode support</td>
@@ -293,6 +352,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/toolbar/reflist.asp"><strong>Toolbar</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/toolbar.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/toolbar.c">LXR</a></td>
 	<td>Mar 14, 2004</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct90">90%: some messages, some notifications</td>
@@ -301,6 +362,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/tooltip/reflist.asp"><strong>ToolTip</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/tooltip.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/tooltip.c">LXR</a></td>
 	<td>Sep. 08, 2004</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct80">80%: custom draw support</td>
@@ -309,6 +372,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/trackbar/reflist.asp"><strong>Trackbar</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/trackbar.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/trackbar.c">LXR</a></td>
 	<td>Sep 12, 2002</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct100">100%: Complete</td>
@@ -317,6 +382,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/treeview/reflist.asp"><strong>Tree-View</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/treeview.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/treeview.c">LXR</a></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct70">70%: some notifications, styles, redraw optimizations</td>
@@ -325,6 +392,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/updown/reflist.asp"><strong>Up-Down</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/comctl32/updown.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/updown.c">LXR</a></td>
 	<td>Sep 9, 2002</td>
 	<td>Comctl32.dll 6.0</td>
 	<td class="pct100">100%: Complete</td>
@@ -337,6 +406,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/mciwnd_5uer.asp"><strong>MCIWnd</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/msvideo/mciwnd.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/msvideo/mciwnd.c">LXR</a></td>
 	<td></td>
 	<td></td>
 	<td class="pct75">75%: missing extended styles, notification, some MCI_* and MCIWNDM_* messages</td>
@@ -346,6 +417,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/richedit/richeditcontrols.asp"><strong>Rich Edit</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/richedit/">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/richedit/">LXR</a></td>
 	<td></td>
 	<td></td>
 	<td class="pct15">15%: mainly a wrapper around a regular edit box</td>
@@ -355,6 +428,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/workshop/browser/webbrowser/reference/IFaces/IWebBrowser2/IWebBrowser2.asp"><strong>Web Browser</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/shdocvw/">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/shdocvw/">LXR</a></td>
 	<td></td>
 	<td></td>
 	<td class="pct25">25%: implement shdocvw.dll</td>
@@ -368,6 +443,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/userinput/commondialogboxlibrary/colordialogbox.asp"><strong>Color</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/commdlg/colordlg.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/commdlg/colordlg.c">LXR</a></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct95">95%: Refresh bugs</td>
@@ -376,6 +453,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/FindandReplaceDialogBoxes.asp"><strong>Find/Replace</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/commdlg/finddlg.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/commdlg/finddlg.c">LXR</a></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct90">90%: missing help and context menu handling</td>
@@ -384,6 +463,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/FontDialogBox.asp"><strong>Font</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/commdlg/fontdlg.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/commdlg/fontdlg.c">LXR</a></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct90">90%:  missing script selection</td>
@@ -392,6 +473,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/OpenandSaveAsDialogBoxes.asp"><strong>Open/Save As</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/commdlg/filedlg.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/commdlg/filedlg.c">LXR</a></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct60">60%:  Unicode handling, hook messages, various styles not implemented</td>
@@ -400,6 +483,7 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/PageSetupDialogBox.asp"><strong>Page Setup</strong></a></td>
+	<td></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct0">0%: nothing done</td>
@@ -408,6 +492,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/PrintDialogBox.asp"><strong>Print</strong></a></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/commdlg/printdlg.c">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/commdlg/printdlg.c">LXR</a></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct60">60%: verify how windows handles printer stats, implement printer help</td>
@@ -416,15 +502,16 @@
 
     <tr>
       <td><strong>Print Setup</strong></td>
+	<td></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
-	<td class="">Deprecated by MS, use <b>Page Setup</b> instead</td>
+	<td class="">Deprecated by Microsoft, use <b>Page Setup</b> instead</td>
 	<td><a href="mailto:"></a></td>
     </tr>
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/PrintPropertySheet.asp"><strong>Print Property Sheet</strong></a></td>
-
+	<td></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct0">0%: nothing done</td>
@@ -433,11 +520,12 @@
 
     <tr class="hdr">
       <td colspan="5"><strong>Drivers</strong></td>
-
     </tr>
 
     <tr>
       <td><a href="http://cvs.winehq.org/cvsweb/wine/dlls/x11drv/"><strong>x11drv</strong></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/x11drv/">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/x11drv/">LXR</a></td>
 	<td></td>
 	<td></td>
 	<td class="pct80">80%: keyboard input problems, integration with window managers</td>
@@ -446,6 +534,8 @@
 
     <tr>
       <td><a href="http://cvs.winehq.org/cvsweb/wine/dlls/ttydrv/"><strong>ttydrv</strong></td>
+	<td><a class="srclink" href="http://cvs.winehq.org/cvsweb/wine/dlls/ttydrv/">CVS</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/ttydrv/">LXR</a></td>
 	<td></td>
 	<td></td>
 	<td class="pct50">50%: we could possiably use an internal framebuffer and aalib</td>
