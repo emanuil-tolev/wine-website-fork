@@ -117,12 +117,12 @@ pointers. Here again, what's const is the first pointer, so const foo* f
 const*)ptr; This could be harmfull if not declared properly.
 Unfortunately, we cannot turn this warning on all the time because some 
 C functions implementation would always trigger it (strstr for example), 
-unless we use intergral values (not pointer) to cast from the const 
+unless we use integral values (not pointer) to cast from the const 
 char* to the returned char*), and this is uglier IMO than the warning we 
 try to avoid.</li></ol></li></ul>
 </p><p>
-Some others warnings could be used as well. Trying also the Intel 
-compiler gave lots of interesting warnings (and a tons of not so usefull 
+Some other warnings could be used as well. Trying also the Intel 
+compiler gave lots of interesting warnings (and a tons of not so useful 
 too).
 </p></quote>
 <p>
@@ -192,7 +192,7 @@ email contains any mistakes.
 by new distributions.  Marcus Meissner speculated it was part of a
 larger plot,
 <quote who="Marcus Meissner">
- Could it be that Redhat is trying to deliberately break WINE every half year ;)
+ Could it be that Red Hat is trying to deliberately break WINE every half year ;)
 </quote></p>
 
 </section>
@@ -212,7 +212,7 @@ week we finally understand what's been motivating him:</p>
 <quote who="Raphael Junqueira"><p>
 
   I'm glad to announce that now (with this little patch) Unreal2 is working 
-and playable (it's only slow and i havent seen graphics problems for now).
+and playable (it's only slow and i haven't seen graphics problems for now).
 </p><p>
   Now play :) 
 </p><p>
@@ -336,7 +336,7 @@ as well afair.<br /></dd>
 <dd>
 traditionally, one can kill local systems which are usable within one file only,
 i.e. "static". Pretty 20year old unix stuff. The other symbols are referencable
-outside (in .o) and the standard shard linker will put all of them into the
+outside (in .o) and the standard shared linker will put all of them into the
 shared library symbol export table. - But now we want two different symbol
 flavours, one exported to the same library, the others for the rest of the world.
 Perhaps use a linker script to decide later about symbol visibility.<br /></dd>
@@ -347,7 +347,7 @@ symbol flavours as to their visibility. Probably you want to have "hidden".
 <a href="http://www.winehq.com/hypermail/wine-devel/2004/05/0291.html">Attached</a>
 are two simple test*.c files and a makefile. The final sharedlib
 symbol table contains only test3 after stripping. - using a linker script instead
-of in-source __attribute__ is left as an excercise to the reader.<br /></dd>
+of in-source __attribute__ is left as an exercise to the reader.<br /></dd>
 
 <dt>more hints</dt>
 

@@ -106,8 +106,8 @@ in his announcement that this is just a minor release,
 <p>CodeWeavers and Lycoris have 
 <a 
 href="http://www.codeweavers.com/site/about/general/press/?id=20040616">teamed
-up</a> to offer a product that bundles CrossOver Office with the Lycrois 
-Desktop/LX distribution. <quote who="Codeweavers">
+up</a> to offer a product that bundles CrossOver Office with the Lycoris 
+Desktop/LX distribution. <quote who="CodeWeavers">
 Lycoris will also begin selling CrossOver Office as a standalone product to 
 the public via all Lycoris wholesale and retail outlets as well as its Lycoris 
 store.</quote></p>
@@ -122,7 +122,7 @@ means, <quote who="LinuxDevCenter.com">
 you'll need a licensed copy of Windows to use</quote>. They admit that 
 CrossOver Office would have been a nice solution,
 <quote who="LinuxDevCenter.com">
-CodeWeavers doesn't offer support for Project. If it had, Crossover would have 
+CodeWeavers doesn't offer support for Project. If it had, CrossOver would have 
 been a good choice: it's fast, resource-light, and inexpensive </quote></p>
 
 </section>
@@ -143,7 +143,7 @@ handling in some games:</p>
  remove this funny mouse-warping-stuff.
 </p><p>
  the mouse feels much better this way, but I am new to wine and maybe I 
- missed something important and/or did not remove the mousewarping cleanly.
+ missed something important and/or did not remove the mouse-warping cleanly.
 </p></quote>
 
 <p>Lionel Ulmer didn't like the patch at all:</p>
@@ -163,7 +163,7 @@ handling in some games:</p>
 <p>James admitted he didn't know what it was but asked for an
 explanation to help understand better:</p>
 <quote who="James Dean Anderson"><p>
- There are several things in wine I don't know yet (eg 
+ There are several things in wine I don't know yet (e.g. 
  what does GEN_EVENT do exactly / what are these critical-sections / etc.).
  But I think doing mouse-warping in 3 states and across different 
  functions is much to complicated and while it works great in MaxPayne, 
@@ -256,7 +256,7 @@ code at once. It's essential for things like linked list manipulation.
 Because the entirety of Win32 is thread safe you will see this sort of
 thing all over the place.
 </p><p>
-If a thread deadlocks on a critical section (ie is queued up waiting to
+If a thread deadlocks on a critical section (i.e. is queued up waiting to
 enter for a long time) you will see a message like this:
 <ul><code>
 err:ntdll:RtlpWaitForCriticalSection thread 0x9 timed out waiting for
@@ -342,7 +342,7 @@ And pressing OK causes nothing, I mean, I don't need to press OK to have
 the 'gnome-terminal' with no problem.
 </p><p>
 Again, with the 'fake_windows' provided by the 'WineTools' [2], I can
-install 'Photoshop 7.0' with all the options (included 'ImageReady').
+install 'Photoshop 7.0' with all the options (including 'ImageReady').
 The only problem I get is an error creating the icon set, but pressing
 'OK' lets the installation process to finish cleanly.
 </p><p>
@@ -372,7 +372,7 @@ of various games with Wine.  He provided links to demos and
 opened <a href="http://bugs.winehq.org">Bugzilla tickets</a>
 on things that didn't work:</p>
 <quote who="Mike Kost"><p>
- Here a continuation of my game testing efforts. Same rules still apply in my 
+ Here is a continuation of my game testing efforts. Same rules still apply in my 
  efforts: All games tested are freely available as demos or F/OSS games on the 
  Internet and they don't work right. I know 20040505 is showing its age, but  
  there isn't a 200406xx yet.
@@ -444,8 +444,8 @@ message).
 </p><p>
 This won't be merged so I'm sending it to wine-devel not wine-patches.
 Getting it merged is blocking on either somebody giving me example code
-for [un]marshaling an HICON into a block of memory or (best fix) images
-being moved into the wineserver. This is on Ulrichs todo list but if
+for [un]marshalling an HICON into a block of memory or (best fix) images
+being moved into the wineserver. This is on Ulrich's todo list but if
 anybody wants to beat him to it, go ahead, it's still some time off yet.
 </p></quote>
 

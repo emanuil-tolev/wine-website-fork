@@ -157,7 +157,7 @@ have been installed by other applications.  It's not pretty, but it
 does work.  Steven Edwards shared a new version this week:</p>
 <quote who="Steven Edwards"><p>
 This a replacement control panel that was developed for ReactOS until
-the Control Panel namespace in Shell32 is done. Its far from perfect
+the Control Panel namespace in Shell32 is done. It's far from perfect
 but seems to be a little better than the older implementation. Feedback
 is welcome.</p></quote>
 
@@ -351,7 +351,7 @@ Some of the things in here:
   <li> cleanup of naming conventions. Things shared with the
      public header *always* start with MSVCRT_</li>
   <li> stuff that's private, doesn't start with MSVCRT_
-     From this two rules follows that a symbol starts
+     From these two rules follows that a symbol starts
      with MSVCRT_ if and only if it's shared with the
      public headers, where it appears without MSVCRT_</li>
   <li> most private functions start with msvcrt_ now,
