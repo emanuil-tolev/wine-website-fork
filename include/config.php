@@ -24,6 +24,7 @@ class config
 					 'About' => array(
 					                  'About' => $this->_file_root.'?page=about',
                                       'Introduction' => $this->_file_root.'?page=about',
+                                      'Featrues' => $this->_file_root.'?page=wine_features',
 									  'Screenshots' => $this->_file_root.'?ss=1',
 									  'Contributing' => $this->_file_root.'?page=contrib',
 									  'News' => $this->_file_root.'?issue=latest',

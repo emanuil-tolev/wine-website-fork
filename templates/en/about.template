@@ -4,97 +4,29 @@
 
 <h1>About Wine</h1>
 
-       <h3> Binary Compatibility </h3>
-       <ul>
-         <li> Support for loading Win32 (9x/NT/XP), Windows 3.x and DOS binaries
-         <li> Support for Win32 and Win16 function calls
-         <li> 32 and 16 bit x86 code
-         <li> Large interrupt library for programs using real-mode INTxx calls
-         <li> Advanced thunking capabilities
-         <li> Optional use of external vendor DLLs
-         <li> Reverse-engineering design assures ``bug-for-bug'' compatibility
-       </ul>
-       <h3> Graphics </h3>
-       <ul>
-         <li> X11-based graphics or SDL or text/ttydrv display
-         <li> Remote display to any X terminal
-         <li> Supports full GDI and many new features of GDI32
-         <li> Partial DirectX support for games (Direct3D missing)
-         <li> Supports native Win16 printer drivers (outdated)
-         <li> Internal PostScript driver printing interface
-         <li> Metafile driver
-         <li> Desktop-in-a-box or mixable windows
-       </ul>
-       <h3> Other Features </h3>
-       <ul>
-         <li> Good support for sound, alternative input devices
-         <li> Modems, serial devices are supported
-         <li> Winsock TCP/IP networking
-         <li> ASPI Scanner support
-         <li> advanced Win32 common controls support
-       </ul>
-       <h3> Wine API </h3>
-       <ul>
-         <li> Designed for source compatibility with Win32 code
-         <li> Sample programs
-         <li> Automatically generated API documentation
-         <li> 32-bit resource compiler
-         <li> Partial Unicode and support
-         <li> Internationalization -- Wine supports 16 languages
-         <li> Built-in debugger and configurable trace messages
-       </ul>
+<p>The Wine project started in 1993 as a way to support running 
+Windows 3.1 programs on Linux. Bob Amstadt was the original 
+coordinator, but turned it over fairly early on to Alexandre 
+Julliard, who has run it ever since. Over the years, ports 
+for other Unixes have been added, along with support for Win32
+as Win32 applications became popular.</p>
 
+<p>Wine is still under development, and it is not yet suitable for 
+general use. Nevertheless, many people find it useful in running
+a growing number of Windows programs. Please see the
+<a href="http://appdb.winehq.com/">Application Database</a>
+for success and failure reports for hundreds of Windows 
+programs, as well as the <a href="http://bugs.winehq.com/">Bug
+Tracking Database</a> for a list of known issues, and the
+<a href="?page=status">Status</a> page for a global view on Wine's 
+implementation progress.</p>
 
-
-<h1> History </h1>
-
-<p>The Wine project started in 1993 as a way to support running Windows 3.1
-programs on Linux. Bob Amstadt was the original coordinator, but turned
-it over fairly early on to Alexandre Julliard, who has run it ever since.
-The <a href="news:comp.emulators.ms-windows.wine">newsgroup</a> was created
-in July 1994.
-Over the years, ports for other Unixes have been added, along with support
-for Win32 as Win32 applications became popular.</p>
-
-
-<h1> Wine Status </h1>
-
-<p>Wine is still under development, and it is not yet suitable for general use.
-Nevertheless, many people find it useful in running a growing number of Windows programs.
-Please see the <a href="http://appdb.codeweavers.com">Application Database</a>
-for success and failure reports for hundreds of Windows programs, as well as
-the <a href="http://bugs.codeweavers.com/">Bug Tracking Database</a>
-for a list of known issues, and the <a href="index.php?status">Status
-page</a> for a global view on Wine's implementation progress.
-</p>
-
-<ul>
-  <li> <a href="/source/ANNOUNCE">ANNOUNCE</a> News about the latest release
-  <li> <a href="/source/ChangeLog">ChangeLog</a> Tracking all recent changes
-  <li> <a href="/source/documentation/ChangeLog.OLD">ChangeLog.OLD</a> The complete history, from 1993 to October 1998
-</ul>
-
-
-
-<h1> Contact </h1>
-
-<p>A broad spectrum of Wine developers can be reached on the <a href="news:comp.emulators.ms-windows.wine">Wine newsgroup</a>
-or the <a href="mailto:wine-devel@winehq.com">Wine development list</a>.</p>
-
-<p>Comments about the <a href="http://www.winehq.com">winehq.com</a> website can be emailed to
-<a href="mailto:web-admin@winehq.com">web-admin@winehq.com</a>.</p>
-
-<p>Alexandre Julliard leads the Wine project, and may be reached by
-email at <a href="mailto:julliard@winehq.com">julliard@winehq.com</a>.</p>
-
-<p>For a list of current developers, see the Wine <a href="?page=who">Who's Who</a>.</p>
-
-
-
-<h1> Legal </h1>
-
-<p>Wine may be used and redistributed under the terms
-of the <a href="http://source.winehq.com/source/LICENSE">LGPL</a>.
-All trademarks are property of their respective owners.</p>
+<p>A broad spectrum of Wine developers can be reached in the 
+<a href="?page=forums">Wine forums</a>. Comments about the winehq.com
+website can be emailed to <a
+href="mailto:web-admin@winehq.com">web-admin@winehq.com</a>. Alexandre
+Julliard leads the Wine project, and may be reached by email at
+<a href="mailto:julliard@winehq.com">julliard@winehq.com</a>. For a list of 
+current developers, see the <a href="?page=who">Wine Who's Who</a>.</p>
 
 <p>&nbsp;</p>
