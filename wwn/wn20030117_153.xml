@@ -287,7 +287,7 @@ port using Apple's WebCore wrapper system I think I will take a break on
 my current code and play with that a little. Personally I didn't want to
 have to take on the chore myself, but this whole Safari thing IS creating
 more intrest in non-X11/QT platforms... it definatly changes the playing
-field, and with the large speed and compatability merges from Safari
+field, and with the large speed and compatibility merges from Safari
 lately my current tree is hopelessly out of date anyway :)
 </p><p>
 So I think I will play with that and work on the DLL layout and COM
@@ -297,7 +297,7 @@ use in a 'real' non-KDE application. There's no point rushing into a
 WINE-specific implementation if something more closely tied to the
 upstream code is released meer weeks later.
 </p><p>
-Of course there still a small problem of having to seperate the code into
+Of course there still a small problem of having to separate the code into
 MS compatible COM objects and DLLs... I will have to benchmark the speed
 impact of stubbing the MS dll's into khtml.dll/kjs.dll ecetra, instead of
 replicating the exports more natively.

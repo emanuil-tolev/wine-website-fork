@@ -75,7 +75,7 @@ Ulrich Weigand gave the full explanation:
 <quote who="Ulrich Weigand">
 The problem is that we implement thunks differently than Win95 does,
 with the most important difference being that we actually have two
-seperate stacks per app, a 16-bit one and a 32-bit one, where Win95
+separate stacks per app, a 16-bit one and a 32-bit one, where Win95
 has  only <b>one</b> stack:  16-bit apps have their 16-bit stack, and when
 thunking to 32-bit, ESP is simply set to the appropriate 32-bit flat
 pointer pointing to the current 16-bit stack location; 32-bit apps

@@ -316,7 +316,7 @@ meant compiling with -DSTRICT was coming soon.  Michael went into detail:
  <li>2045 of them are of type "int format, HANDLE arg", this leaves</li>
  <li>1343 lines of warnings to look at.</li>
 </ul></p><p>
-I'm almost finished a short perl script to automaticly convert the "int
+I'm almost finished a short perl script to automatically convert the "int
 format, HANDLE arg" warnings, which would leave us with the other 1343
 warnings. Wine compiles and even seems to run so if Alexander would
 like to speed up the conversion he could change the remaining handles to

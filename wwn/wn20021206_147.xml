@@ -309,7 +309,7 @@ our own CVS that require native dlls :)
 That brings me to my other WIP, de-QT'ing KHTML and turning it into a
 working browser implementation for WINE. So far this is actually coming
 along quite well, and besides a few points it definatly makes an effective
-browser and IE compatability seems to generally be good enough to keep the
+browser and IE compatibility seems to generally be good enough to keep the
 majority of IWebBrowser using applications happy. I've since abandoned my
 earlier hopes to keep the changes minor (in order to make it easier to
 backport fixes from the main KDE cvs), simply because it was making the
@@ -339,7 +339,7 @@ Hearn gave a good list of reasons for KHTML:</p>
 
 <li> Simple</li>
 <li> No XPCOM dependancies</li>
-<li> Could be more easily hacked to add IE compatability (and was more IE
+<li> Could be more easily hacked to add IE compatibility (and was more IE
 compatible to start with)</li>
 <li> Small, good for embedding, relatively fast (gecko embedding is huge)</li>
 <li> Would be possible to include in the Wine CVS tree as opposed to Gecko

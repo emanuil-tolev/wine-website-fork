@@ -449,7 +449,7 @@ Anywhere here is the first patch that removes a few of these imports if
 this may need some cleanup/review from a OLE guru on Linux but it builds 
 for me without warnings or errors under Mingw.
 </p><p>
-Changelog: Seperate Win16 and Win32 Ole support in memlockbytes.
+Changelog: Separate Win16 and Win32 Ole support in memlockbytes.
 </p></quote>
 
 </section><section 

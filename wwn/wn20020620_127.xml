@@ -329,7 +329,7 @@ text:</p>
  I'm seeing two possible solutions to this
  problem:
 <ul>
-  <li> If Fribidi was present during compile, check for its existance during
+  <li> If Fribidi was present during compile, check for its existence during
  run time. If not present, don't enable the run time option. or </li>
   <li> Copy (port?) Fribidi into the WINE code. It's LGPL, so the license
  does allow that.</li>
@@ -386,7 +386,7 @@ client (version 4.6.7).  In the course of discussion Ian
 mentioned that it had worked about a year ago but a patch had
 caused a problem at some point.  Tony Lambregts mentioned,
 <quote who="Tony Lambregts">
- I estimate that it should take no more then 12 itinerations to
+ I estimate that it should take no more than 12 itinerations to
  find the day of patch that broke it </quote>  Ian wanted to
 avoid installing Wine multiple times because of the hassle of
 tweaking the installations.  Several people jumped in to mention

@@ -180,7 +180,7 @@ a native Windows viewer using nothing but the WebBrowser ActiveX control.
 </p><p>
 The secondary problem is how to display the HTML + JavaScript needed for a
 CHM viewer. I've started work on this several times, and so far the *best*
-(in terms of existing compatability with IE's CSS/JS/HTML 'features') has
+(in terms of existing compatibility with IE's CSS/JS/HTML 'features') has
 been KJs and KHtml from the KDE project.
 </p><p>
 Gecko doesn't cut it - it's quite slow, bulky and worst of all too strict
@@ -199,7 +199,7 @@ existing dll structure is complicated... and I know next to nothing about
 writing ActiveX objects.
 </p><p>
 The second is that I never could get an answer from Alexandre as to adding
-C++ code to WINE itself. It would be possible to write it as a seperate
+C++ code to WINE itself. It would be possible to write it as a separate
 non-core implementation, but many of these DLLs also have non-browser
 related APIs that need to be in WINE itself. Again, diverting api calls
 between the versions in WINE and our browser versions is complicated and

@@ -293,7 +293,7 @@ used for.</quote>
 Gavriel State wondered 
 <quote who="Gavriel State">
 Is there really any reason not to just use pthread directly? We're not
-constrained by binary compatability issues on LinuxPPC (or MacOS X),
+constrained by binary compatibility issues on LinuxPPC (or MacOS X),
 so there's no need to preserve any special registers.
 
 <p />

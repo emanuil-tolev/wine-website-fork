@@ -162,7 +162,7 @@ My thoughts for the FS implementation are this:
 <li>  Make directories use real server handles, rather than pointers to
     client structures. NtCreateFile supports taking a directory handle
     and a relative path name from that directory to open files. I've
-    tried to keep my SMB implementation seperate from everything else to
+    tried to keep my SMB implementation separate from everything else to
     facilitate this.</li>
 </p><p>
 As you probably know, I've been working on #1 (see my patch from a few
