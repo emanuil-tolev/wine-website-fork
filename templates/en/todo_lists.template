@@ -287,7 +287,7 @@
      </ol>
 
 
-  <a name="ui"><h3> D. User Interface </h3>
+  <a name="ui"></a><h3> D. User Interface </h3>
      <ol>
 	<li> Visible region handling in server <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
@@ -305,7 +305,7 @@
      </ol>
 
 
-  <a name="formats"><h3> E. File Formats </h3>
+  <a name="formats"></a><h3> E. File Formats </h3>
      <ol>
 	<li> Finalize the .spec file format <span class=done>[DONE]</span>
 	  <ul>
@@ -328,7 +328,7 @@
      </ol>
 
 
-  <a name="api"><h3> F. Exported API </h3>
+  <a name="api"></a><h3> F. Exported API </h3>
      <ol>
 	<li> Finish DLL separation Phase 1 <span class=done>[DONE]</span>
 	  <ul>
@@ -353,7 +353,7 @@
      </ol>
 
 
-  <a name="tools"><h3> G. Tools </h3>
+  <a name="tools"></a><h3> G. Tools </h3>
      <ol>
 	<li> Winebuild: build DLLs from .def files <span class=done>[DONE]</span>
 	  <ul>
@@ -412,7 +412,7 @@
      </ol>
 
 
-  <a name="misc"><h3> H. Miscellaneous </h3>
+  <a name="misc"></a><h3> H. Miscellaneous </h3>
      <ol>
 	<li> Testing daemon to run as a Windows service <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
@@ -454,7 +454,7 @@
      </ol>
 
 
-  <a name="code"><h3> I. Source Code </h3>
+  <a name="code"></a><h3> I. Source Code </h3>
      <ol>
 	<li> Move controls/*, windows/* -> dlls/user/ <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
