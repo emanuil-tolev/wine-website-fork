@@ -13,19 +13,33 @@
 
 <table width="100%" border=0 cellpadding=0 cellspacing=0>
 <tr>
-    <td class="topbk">
+    <td>
       <table width="100%" border=0 cellpadding=0 cellspacing=0>
       <tr>
 	    <td><a href="{$root}"><img src="{$root}/images/winehq_top_logo.png" border=0 alt="WineHQ"></a></td>
 	    <td width="100%">
-		&nbsp;
-	    </td>
-	    <td>
-        
-            <!-- SEARCH -->
+		    <!-- BANNER AD -->
+            {$banner_ad}
             &nbsp;
+            <!-- END BANNER AD -->
+	    </td>
+	    <td valign="middle" align="center">
+            <!-- SEARCH -->
+            <form method=post name=webSearch action="/cgi-bin/htsearch">
+              <span class="small">Search WineHQ</span><br><input
+              type=text name="words" value="Search!" onBlur="if (value == '') {value = 'Enter Search!'}" 
+              onFocus="if (value == 'Enter Search!') {value =''}" size=12 maxlength=80 class="searchInput"><input
+              type="hidden" name="method" value="any"><input
+              type="hidden" name="format" value="builtin-short"><input
+              type="hidden" name="sort" value="score"><input
+              type="hidden" name="config" value="htdig"><input
+              type="hidden" name="restrict" value=""><input
+              type="hidden" name="exclude" value="">
+            </form>
             <!-- END SEARCH -->
-        
+        </td>
+        <td>
+          <img src="{$root}/images/blank.gif" border=0 width=10 height=1 alt="-">
         </td>
 	  </tr>
 	 </table>

@@ -1,13 +1,25 @@
 <table width="150" border="0" cellspacing="0" cellpadding="0">
 <tr>
-  <td width="100%" class="topMenu">&nbsp;<a href="{$url}" class="menuTitle">{$name}</a></td>
-  <td align="right" valign="bottom"><img src="{$root}/images/{$theme}_border_top_right.png" border="0" alt="-"></td>
- </tr>
+<td colspan=2>
+    <table width="150" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="100%" class="topMenu">&nbsp;<a href="{$url}" class="menuTitle">{$name}</a></td>
+      <td align="right" valign="bottom"><img src="{$root}/images/{$theme}_border_top_right.png" border="0" alt="-"></td>
+     </tr>
+    </table>
+</td>
+</tr>
+<tr>
+<td>
+    <table width="145" border="0" cellspacing="0" cellpadding="1">
+    <tr class="topMenu"><td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5">
+    {$body}
+      </table>
+    </td></tr>
+    </table>
+</td>
+<td><img src="{$root}/images/blank.gif" border=0 width=5 height=1 alt="-"></td>
+</tr>
 </table>
-<table width="150" border="0" cellspacing="0" cellpadding="1">
-<tr class="topMenu"><td>
-  <table width="100%" border="0" cellspacing="0" cellpadding="5">
-{$body}
-  </table>
-</td></tr>
-</table><br>
+<br>

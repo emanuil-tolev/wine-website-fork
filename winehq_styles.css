@@ -15,9 +15,9 @@ A:active	{ color: #FF0000; }
 A.hidden	{ text-decoration: none; color: #000000; }
 
 /* feneral fonts and sizes */
-OL,UL,P		{ font-family: Helvetica, Arial; font-size: 10pt; }
-TD,TR,TH	{ font-family: Helvetica, Arial; font-size: 10pt; }
-INPUT		{ font-family: Helvetica, Arial; font-size: 10pt; }
+OL,UL,P		{ font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt; }
+TD,TR,TH	{ font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt; }
+INPUT		{ font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt; }
 PRE         { font-family: Fixed; font-size: 10pt; }
 
 /* WWN Colors */
@@ -54,8 +54,10 @@ PRE         { font-family: Fixed; font-size: 10pt; }
 .menuItem	{ font-size: 10px; color: #000000; }
 .menuItem:visited { font-size: 10px; color: #000000; }
 .menuItem:hover { font-size: 10px; color: #A50D0D; font-weight: bold; }
+
 .topMenu	{ background-color: #601919; }
 .sideMenu	{ background-color: #FFFFFF; }
+.border	    { background-color: #000000; }
 
 /* Misc */
 .tiny		{ font-size: 6pt; }
@@ -63,10 +65,10 @@ PRE         { font-family: Fixed; font-size: 10pt; }
 .big		{ font-size: 14pt; }
 
 /* Generic Buttons */
-.button		 { background-color: #6b86bb; color: #ffffff; font-family: Helvetica, Arial; font-size: 10pt;
+.button		 { background-color: #6b86bb; color: #ffffff; font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt;
                padding: 0; }
-.searchInput { background-color: #E0E0E0; color: #666666; font-family: Helvetica, Arial; font-size: 10pt;
-               padding: 0; } 
+.searchInput { background-color: #EFEFEF; color: #000000; font-family: Helvetica, Arial, Sans-Serif; font-size: 10pt;
+               padding: 0; }
 				  
 /* Note Blip */
 .blip		{ color: #ff0000; font-size: 8pt; }				   

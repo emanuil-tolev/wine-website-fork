@@ -29,7 +29,7 @@ outlined (thus gaining pretty good compatibility), then use the Wine source and 
 
 <tr>
 <td align=center rowspan="4" bgcolor="#e0e0e0">
-  Linux glibc-2.2 Systems (e.g. Debian 2.3, updated RH7, Slackware 8.1, MDK8, FIXME: others?)
+  Linux glibc-2.2 Systems (e.g. Debian 3.0, updated RH7, Slackware 8.1, MDK8, FIXME: others?)
 </td>
 
 <td align=center>
@@ -44,40 +44,38 @@ outlined (thus gaining pretty good compatibility), then use the Wine source and 
 
 <tr>
 <td align=center>
-  <b><a href="http://www.linux-easy.com/daily/">Linux Easy</a><br>
-  (<a
-  href="http://spazioinwind.libero.it/nonsolomicrosoft/wineen.html">fast
-  mirror</a>)</b>
+  <b><a href="http://mecano.gme.usherb.ca/~vberon/wine">Mecano</a></b>
 </td>
 <td>
-  RedHat 7 RPMs. Will not work on RH7 for glibc &lt; 2.2 (at least not 2.1.92, __sysconf
-  missing) ! Maintained by Bernhard Rosenkr&auml;nzer
+  Packages for RedHat 8.0. Based on the configuration options used in
+  the official RedHat package for RedHat 8.0 (wine-20020605-1.i386.rpm).
+  Maintained by <a href="mailto:vberon@nospamplease.mecano.gme.usherb.ca">Vincent B&eacute;ron</a>.
 </td>
 <td align=center> .rpm </td>
 </tr>
 
 <tr>
 <td align=center>
-  <b><a href="http://gluck.debian.org/~andreas/">Daily Debian Wine</a></b>,<br>used to
-  be the 'Drunkard' builds.
+  <b><a href="http://people.debian.org/~andreas/">Daily Debian Wine</a></b>,<br>
+  used to be the 'Drunkard' builds.
 </td>
 <td>
   Built daily from CVS tree. Maintained by 
   <a href="mailto:andreas@schuldei.org">Andreas Schuldei</a>.<br>
   Put these lines into /etc/apt/sources.list, fetch via apt-get:<br>
-  deb http://gluck.debian.org/%7Eandreas/debian wine main<br>
-  deb-src http://gluck.debian.org/%7Eandreas/debian wine main
+  deb http://people.debian.org/~andreas/debian wine main<br>
+  deb-src http://people.debian.org/~andreas/debian wine main
 </td>
 <td align=center> .deb, Debian auto upgrade </td>
 </tr>
 
 <tr>
 <td align=center>
-  <b><a href="ftp://ftp.suse.com/pub/people/meissner/wine/">SuSE / Marcus
+  <b><a href="ftp://ftp.suse.com/pub/people/meissner/wine">SuSE / Marcus
   Meissner</a></b>
 </td>
 <td>
-  Bi-weekly Wine builds for SuSE 7.3 and 8.0. Maintained by Marcus
+  Regular Wine builds for SuSE 7.3 to 8.1. Maintained by Marcus
   Mei&szlig;ner
 </td>
 <td align=center> .rpm </td>
@@ -85,43 +83,17 @@ outlined (thus gaining pretty good compatibility), then use the Wine source and 
 
 <tr>
 <td align=center rowspan=3 bgcolor="#e0e0e0">
-  Linux glibc-2.1 Systems (e.g. RedHat 6.x, Debian 2.2/2.3)
+  Linux glibc-2.1 Systems (e.g. RedHat 6.x, Debian 2.2)
 </td>
 <td align=center>
-  <b><a href="http://www.codeweavers.com">CodeWeavers</a></b>
+  <b><a href="http://www.codeweavers.com/technology/wine/download.php">CodeWeavers</a></b>
 </td>
 <td>
   Wine Preview. Tons more information and a visual tour available at the website.
-  <a href="mailto:info@codeweavers.com">CodeWeavers</a>
+  <a href="http://www.codeweavers.com">CodeWeavers</a>
 </td>
 <td align=center> .rpm </td>
 </tr>
-
-<!-- no longer maintained
-<tr>
-<td align=center>
-  <b><a href="http://www.winehq.com/~ovek/">~ovek</a></b>
-</td>
-<td>
-  <b>Currently unmaintained.</b> Maintained by Ove K&aring;ven.
-  Binary packages of the latest release for both Debian-stable and -unstable.
-</td>
-<td align=center> .deb, Debian auto upgrade </td>
-</tr>
--->
-
-<!-- not updated since 11/2001
-<tr>
-<td align=center>
-  <b><a href="http://panter.soci.aau.dk/~dailywine/">Daily Wine</a></b>
-</td>
-<td>
-  Built daily from the CVS tree. Maintained by 
-  <a href="mailto:magicbox@bestweb.net">Adam</a>.
-</td>
-<td align=center> stripped and unstripped .bz2 </td>
-</tr>
--->
 
 <tr>
 <td align=center>
@@ -133,7 +105,7 @@ outlined (thus gaining pretty good compatibility), then use the Wine source and 
   <a href="http://www.rpmfind.net">RpmFind.net</a>
 </td>
 <td align=center> .rpm </td>
-</tr>	
+</tr>
 
 <tr>
 <td align=center>
@@ -145,23 +117,6 @@ outlined (thus gaining pretty good compatibility), then use the Wine source and 
 </td>
 <td align=center> .deb </td>
 </tr>
-
-<!-- not updated since 11/2001
-<tr>
-<td align=center bgcolor="#e0e0e0">
-  Linux glibc-2.0 Systems (e.g. RedHat 5.x, Debian 2.0/2.1)
-</td>
-
-<td align=center>
-  <b><a href="http://panter.soci.aau.dk/~dailywine/">Daily Wine</a></b>
-</td>
-<td>
-  Built daily from the CVS tree. Maintained by 
-  <a href="mailto:magicbox@bestweb.net">Adam</a>.
-</td>
-<td align=center> stripped and unstripped .bz2 </td>
-</tr>
--->
 
 <tr>
 <td align=center rowspan=1 bgcolor="#e0e0e0">
@@ -178,34 +133,6 @@ outlined (thus gaining pretty good compatibility), then use the Wine source and 
 <td align=center>.tgz </td>
 </tr>
 
-<!-- not updated since 11/2001
-<tr>
-<td align=center>
-  <b><a href="http://panter.soci.aau.dk/~dailywine/">Daily Wine</a></b>
-</td>
-<td>
-  Built daily from the CVS tree. Maintained by 
-  <a href="mailto:magicbox@bestweb.net">Adam</a>.
-</td>
-<td align=center> stripped and unstripped .bz2 </td>
-</tr>
--->
-
-<!-- currently no package build possible
-<tr>
-<td align=center bgcolor="#e0e0e0">
-  Caldera OpenLinux
-</td>
-<td align=center>
-  <b><a href="http://www.lst.de/~mm/wine.html">LST</a></b>
-</td>
-<td>
-  Built weekly from the CVS tree. Maintained by Marcus Mei&szlig;ner.
-</td>
-<td align=center> .rpm, .srpm </td>
-</tr>
--->
-
 <tr>
 <td align=center bgcolor="#e0e0e0">
   Source
@@ -213,7 +140,7 @@ outlined (thus gaining pretty good compatibility), then use the Wine source and 
 <td align=center>
   <b><a href="http://www.ibiblio.org/pub/Linux/ALPHA/wine/development/">[HTTP]</a>
   <a href="ftp://ftp.ibiblio.org/pub/Linux/ALPHA/wine/development/">[FTP]</a></b>
-</td> 
+</td>
 <td>
   Source tree, diffs, and docs from each release. Hosted by 
   <a href="http://www.ibiblio.org">Ibiblio.org</a>
@@ -269,6 +196,3 @@ outlined (thus gaining pretty good compatibility), then use the Wine source and 
 
 <p>&nbsp;</p>
 
-<img src="../images/grey_pixel.gif" width="95%" height=1 border=0 alt="-"><br>
-
-<p>&nbsp;</p>
