@@ -546,29 +546,6 @@
       <td class="pct60">60% possible</td>
       <td>Andreas Mohr</td>
     </tr>
-    <tr class="hdr">
-      <td colspan="5"><strong>Miscellaneous</strong></td>
-    </tr>
-    <tr>
-      <td><a href="{$root}/site/todo_lists">Wine 0.9 Release Plan</a></td>
-      <td>N/A</td>
-      <td><a href="?issue=41#Ansi and Unicode">#41</a>,
-      <a href="?issue=118#Regression Testing">#118</a></td>
-      <td class="pct80">Known Remaining:<br>
-       Documentation Work<br>
-       Wine configuration<br>
-       Stabilize utilities<br>
-       Finish DLL separation Phase 1<br>
-       Quality assurance</td>
-      <td><a href="http://www.codeweavers.com/about/">CodeWeavers</a></td>
-    </tr>
-    <tr>
-      <td>The History of the Wine Project</td>
-      <td class="adequate">Adequate</td>
-      <td>None</td>
-      <td class="pct90">MS is definitely getting nervous</td>
-      <td>&nbsp;</td>
-    </tr>
   </table>
 </td>
 </tr>
