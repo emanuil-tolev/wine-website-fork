@@ -42,8 +42,8 @@ class config
                                         'FAQ' => $this->_file_root.'?page=faq',
 										'HowTo' => $this->_file_root.'?page=howto',
 										'Bug Tracking' => 'http://bugs.winehq.org/',
-                                        'Application DB' => $this->_file_root.'?page=supported_applications',
-										'Troubleshooting' => $this->_file_root.'?page=troubleshooting',
+                                        'Applications' => $this->_file_root.'?page=supported_applications',
+										//'Troubleshooting' => $this->_file_root.'?page=troubleshooting',
 										'Forums' => $this->_file_root.'?page=forums'
 									   ),
 					 'Development' => array(
@@ -52,6 +52,7 @@ class config
                                             //'Developer Hints' => $this->_file_root.'?page=developer_hints',
                                             'Sending Patches' => $this->_file_root.'?page=sending_patches',
                                             'To Do Lists' => $this->_file_root.'?page=todo_lists',
+                                            'Fun Projects' => $this->_file_root.'?page=fun_projects',
                                             'Status' => $this->_file_root.'?page=status',
                                             'Resources' => $this->_file_root.'?page=resources'
 										   ),
