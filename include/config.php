@@ -42,16 +42,16 @@ class config
                                         'FAQ' => $this->_file_root.'?page=faq',
 										'HowTo' => $this->_file_root.'?page=howto',
 										'Bug Tracking' => 'http://bugs.winehq.org/',
-                                        'Applications' => $this->_file_root.'?page=supported_applications',
+                                        'Application DB' => $this->_file_root.'?page=supported_applications',
 										'Troubleshooting' => $this->_file_root.'?page=troubleshooting',
 										'Forums' => $this->_file_root.'?page=forums'
 									   ),
 					 'Development' => array(
 					                        'Development' => $this->_file_root.'?page=development',
                                             'CVS' => $this->_file_root.'?page=cvs',
-                                            'Developer Hints' => $this->_file_root.'?page=developer_hints',
+                                            //'Developer Hints' => $this->_file_root.'?page=developer_hints',
                                             'Sending Patches' => $this->_file_root.'?page=sending_patches',
-                                            'TODO Lists' => $this->_file_root.'?page=todo_lists',
+                                            'To Do Lists' => $this->_file_root.'?page=todo_lists',
                                             'Status' => $this->_file_root.'?page=status',
                                             'Resources' => $this->_file_root.'?page=resources'
 										   ),

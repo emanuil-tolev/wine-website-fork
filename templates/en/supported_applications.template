@@ -1,4 +1,26 @@
-<!--TITLE:[Supported Applications List]-->
+<!--TITLE:[Application DB]-->
+
+<style type="text/css">
+<!--
+span.todo       { color: red; }
+span.inprogress { color: yellow; }
+span.done       { color: limegreen; }
+li.modified     { font-weight: bold; }
+table.gold      { background-color: wheat; }
+dl.silver       { background-color: silver; }
+tr.rowtitle     { background-color: black; color: white; font-weight: bold; }
+-->
+</style>
+
+<h1>Wine Application Database</h1>
+
+<p>
+Wine has an <a href="http://appdb.winehq.com/">Application Database</a> where Windows
+application compatability is recorded. Registered users can submit new apps, and comment
+on existing ones. Screen shots are also available for many apps. Users can also vote on their
+favorite apps.
+</p>
+
 
 <h1>Supported Applications List</h1>
 
@@ -12,52 +34,58 @@ direct formatting related flames to <a href="mailto:dpaun@rogers.com">Dimitrie O
 <p>Applications which install and run virtually flawless on a 
    out-of-the-box Wine installation make it to the Gold list: <br>
 <table class=gold>
-  <tr>
+  <tr class=rowtitle>
     <th>Application</th><th>Version</th><th>Description</th><th>Tucows top</th><th>Notes</th><th>Screenshot</th>
   </tr>
-  <tr>
+
+  <tr class=white>
     <td>Acrobat Reader</td>
     <td>5.0.5</td>
     <td>This is the solution to your PDF troubles.</td>
     <td>6</td>
     <td>Dlls installed by the program: advpack.dll, msvcrt.dll, shfolder.dll, w95inf32.dll, msvcp60.dll, oleaut32.dll, w95inf16.dll</td>
-    <td>TODO</td>
+
+    <td><span class=todo>TODO</span></td>
   </tr>
 
-  <tr>
+  <tr class=white>
     <td>WS-FTP LE</td>
     <td>5.08</td>
     <td>A great application that allows remote file edits, chmods on UNIX boxes and file moves.</td>
+
     <td>9</td>
     <td>No dlls installed.</td>
-    <td>TODO</td>
+    <td><span class=todo>TODO</span></td>
   </tr>
 
-  <tr>
+  <tr class=white>
     <td><a href="http://www.mirc.co.uk">mIRC</a></td>
+
     <td>6.03</td>
     <td>This is a popular IRC client.</td>
     <td>25</td>
     <td>No dlls installed.</td>
-    <td>TODO</td>
+    <td><span class=todo>TODO</span></td>
   </tr>
 
-  <tr>
+  <tr class=white>
     <td>FTP Commander</td>
     <td>5.58</td>
     <td>A remote file management and command-line FTP client.</td>
     <td>83</td>
     <td>No dlls installed.</td>
-    <td>TODO</td>
+
+    <td><span class=todo>TODO</span></td>
   </tr>
 
-  <tr>
+  <tr class=white>
     <td>12Ghosts Zip</td>
     <td>XP/31</td>
     <td>This is a fast compression utility.</td>
+
     <td>N/A</td>
     <td>No dlls installed.</td>
-    <td>TODO</td>
+    <td><span class=todo>TODO</span></td>
   </tr>
 </table>
 
@@ -65,9 +93,10 @@ direct formatting related flames to <a href="mailto:dpaun@rogers.com">Dimitrie O
 <p>The Silver list contains apps which we hope we can easily fix so they make it
    to Gold status:
 <dl class=silver>
-<dt>WinZip - The most popular compression utility for Windows just got better.</dt>
+
+<dt class=ltgrey><b>WinZip</b> - The most popular compression utility for Windows just got better.</dt>
 <dd>
-   <ul>
+   <ul class=white>
      <li> VERSION 8.1
      <li> Install: Yes. (Dlls installed none)
      <li> Run: Yes,(but it needs riched20.dll to shown the text in zipped files what
@@ -76,10 +105,10 @@ direct formatting related flames to <a href="mailto:dpaun@rogers.com">Dimitrie O
   </ul>
 </dd>
 
-<dt>ICQ for Windows - The new and improved ICQ is here with all the great
+<dt class=ltgrey><b>ICQ for Windows</b> - The new and improved ICQ is here with all the great
 features you've come to expect -- plus a whole new set!</dt>
 <dd>
-   <ul>
+   <ul class=white>
    <li> VERSION 2002a
    <li> Install: Yes, but it need "touch /c/windows/system/setupapi.dll"
      (Dlls installed atl.dll,msvcrt.dll)
@@ -90,10 +119,10 @@ features you've come to expect -- plus a whole new set!</dt>
   </ul>
 </dd>
 
-<dt>Winamp - This program has so many possibilities and offers such a wide
+<dt class=ltgrey><b>Winamp</b> - This program has so many possibilities and offers such a wide
 range of interfaces, you'll need no other player.</dt>
 <dd>
-   <ul>
+   <ul class=white>
     <li> VERSION 3.0
     <li> Install: Yes. (Dlls installed none)
     <li> Run: No. (Need native msvcrt.dll then works)
@@ -101,10 +130,10 @@ range of interfaces, you'll need no other player.</dt>
   </ul>
 </dd>
 
-<dt>WinRAR - This is a version of the popular RAR compression format, offering
+<dt class=ltgrey><b>WinRAR</b> - This is a version of the popular RAR compression format, offering
 significantly improved compression ratios.</dt>
 <dd>
-   <ul>
+   <ul class=white>
     <li> VERSION 3.00
     <li> Install: Yes. (It will install winrar in the directory what you are
       when run the installer, it is a buggy because you must stop the
@@ -115,9 +144,9 @@ significantly improved compression ratios.</dt>
   </ul>
 </dd>
 
-<dt>Putty - This simple Telnet application could hang with the big boys.</dt>
+<dt class=ltgrey><b>Putty</b> - This simple Telnet application could hang with the big boys.</dt>
 <dd>
-   <ul>
+   <ul class=white>
     <li> VERSION 0.52
     <li> Install: No needed install.
     <li> Run: No. (it doesn't show the right part of the window, it was working
@@ -126,9 +155,9 @@ significantly improved compression ratios.</dt>
   </ul>
 </dd>
 
-<dt>WinMX - Take file sharing to a new level.</dt>
+<dt class=ltgrey><b>WinMX</b> - Take file sharing to a new level.</dt>
 <dd>
-   <ul>
+   <ul class=white>
     <li> VERSION 3.22
     <li> Install: Yes (Dlls installed none)
     <li> Run: Yes. (listbox is not working in it (comctl32))
@@ -136,10 +165,10 @@ significantly improved compression ratios.</dt>
   </ul>
 </dd>
 
-<dt>Pegasus Mail. This is the e-mail client of choice for many beginner and
+<dt class=ltgrey><b>Pegasus Mail</b> - This is the e-mail client of choice for many beginner and
 advanced users.</dt>
 <dd>
-   <ul>
+   <ul class=white>
     <li> VERSION 4.02
     <li> Install: Yes
     <li> Run: Yes? (the normal options works, but "how do i send/receive a
@@ -148,9 +177,9 @@ advanced users.</dt>
   </ul>
 </dd>
 
-<dt>SnagIt - Use this to capture and manage images, text, and video.</dt>
+<dt class=ltgrey><b>SnagIt</b> - Use this to capture and manage images, text, and video.</dt>
 <dd>
-   <ul>
+   <ul class=white>
     <li> VERSION 6.1.1
     <li> Install: Yes. (Dlls installed advpack.dll, setupapi.dll, w95inf16.dll,
       cfgmgr32.dll,shfolder.dll,w95inf32.dll)
@@ -160,9 +189,9 @@ advanced users.</dt>
   </ul>
 </dd>
 
-<dt>Filezilla - How easy can an FTP client get?</dt>
+<dt class=ltgrey><b>Filezilla</b> - How easy can an FTP client get?</dt>
 <dd>
-   <ul>
+   <ul class=white>
     <li> VERSION 2.0.2
     <li> Install: Yes. (Dlls installed none)
     <li> Run: Yes. (When you do doubleclick about a file, it will crashes :()
@@ -171,3 +200,5 @@ advanced users.</dt>
 </dd>
 
 </dl>
+
+<p>&nbsp;</p>

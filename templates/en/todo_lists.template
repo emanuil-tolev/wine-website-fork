@@ -1,20 +1,25 @@
 <!--TITLE:[To Do Lists]-->
 
+<style type="text/css">
+  <!--
+    span.todo {background-color: red}
+    span.inprogress {background-color: yellow}
+    span.done {background-color: limegreen}
+    li.modified {font-weight: bold}
+  -->
+</style>
+
 <h1>To Do Lists</h1>
 
-    <style type="text/css">
-      <!--
-        span.todo {background-color: red}
-        span.inprogress {background-color: yellow}
-        span.done {background-color: limegreen}
-        li.modified {font-weight: bold}
-      -->
-    </style>
+  <p>The following To Do lists are what the Wine development team hopes to accomplish for
+  a Wine version 0.9 release.</p>  
 
 
   <h3> A. WineHQ work </h3>
+  
   Beta available <a href="http://lostwages.winehq.org">here</a>
-      <ol>
+
+    <ol>
         <li> Website redesign <span class=inprogress>[IN PROGRESS]</span>
           <ul>
             <li> worker: <a href="mailto:jnewman@codeweavers.com">Jeremy Newman</a>
@@ -70,6 +75,8 @@
             <li> criteria: not MS dlls required, no tricks, etc.
           </ul>
      </ol>
+     
+     
   <h3> B. Documentation work </h3>
      <ol>
         <li> Update the Wine User Guide <span class=inprogress>[IN PROGRESS]</span>
@@ -106,6 +113,8 @@
         <li> Do something about <tt>documentation/shell32</tt> <span class=todo>[TODO]</span>
         <li> Do something about <tt>documentation/status</tt> <span class=todo>[TODO]</span>
      </ol>
+     
+     
   <h3> C. Wine configuration </h3>
      <ol>
         <li> Merge configuration into the registry <span class=todo>[TODO]</span>
@@ -151,6 +160,8 @@
             <li> updated: Jan 14, 2003
           </ul>
      </ol>
+     
+     
   <h3> D. Stabilize utilities </h3>
      <ol>
         <li> Get rid of the init directive from .spec files <span class=done>[DONE]</span>
@@ -206,6 +217,7 @@
             <li> updated: Nov 11, 2002
           </ul>
      </ol>
+
 
   <h3> E. Important fixes </h3>
      <ol>
@@ -276,3 +288,5 @@
             <li> updated: Dec 3, 2002
           </ul>
      </ol>
+
+<p>&nbsp;</p>
