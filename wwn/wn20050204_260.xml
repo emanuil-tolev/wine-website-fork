@@ -142,7 +142,7 @@ window. The loose ends are mostly related to dll separation, the
 exported functions in user32.spec can give you a rough idea of what
 remains to be done. For OpenGL what we need is to implement proper
 clipping when drawing to a child window. There are also a number of
-window management hacks in the Crossover tree that need to be cleaned
+window management hacks in the CrossOver tree that need to be cleaned
 up and brought over.</p></quote>
 
 <p>Lionel Ulmer described some of issues with OpenGL:</p>
@@ -239,7 +239,7 @@ completed riched20 code.
 </p><p>
 Code review notes:
 </p><p>
-You've writen the code to deal with unicode as default, which is good,
+You've written the code to deal with unicode as default, which is good,
 but you need to deal with both ASCII and unicode messages in the window
 procedure.
 </p><p>
@@ -253,7 +253,7 @@ Similarly, you'll need to use "winbase.h" and friends instead of
  From what I can see in the old riched32 code, the rtf parser looks
 quite good, so don't try rewrite that (which from my quick check you
 haven't).  We can merge the parser into the riched20 code quite
-easily... it's just  enters the text into the existing control using
+easily... it just enters the text into the existing control using
 EM_SETSEL and some formatting messages.
 </p><p>
 I have a test I can send to you if you wish.  Again, my preference is to
@@ -286,7 +286,7 @@ not what I want it to be, but it's better than nothing.</li>
 
 <p>Rob Shearman had some suggestions concerning "undo" functionality:</p>
 <quote who="Robert Shearman"><p>
-Undo should be pretty easy as long as you can represent easily represent
+Undo should be pretty easy as long as you can easily represent
 user actions in a transactions stack.
 A user doing something will then cause an action to be pushed onto the
 stack (although you would probably want some coalescing so that you
@@ -322,7 +322,7 @@ it. Is that OK ?
 
 </p><p> 
 It's not like everything is done the way it should be (for instance, 
-coordinate system is still pixel-based and not twips-based), but in this 
+coordinate system is still pixel-based and not twips-based), but at this 
 stage the risk of having to constantly rewrite everyone else's code is 
 much lower.</p></quote>
 
@@ -344,7 +344,7 @@ any problem. The only things missing are the RTF parser and the
 MS-RichEdit emulation (Data types and message translations). But it
 looks like these two are what above patch and existing code has. I am
 almost positive that if such a parser (And emulation layer) is submitted
-to the Scintilla project it will be farther maintained by the project.
+to the Scintilla project it will be further maintained by the project.
 One more thing good about it, that makes a lot of sense, is its
 popularity, which means there are a lot of people that know this
 code-base and can help fix problems. (And it does compile under wine out
@@ -500,7 +500,7 @@ easier on the eyes:</p>
 Not really related to the actual wine development but more to the 
 make/build/install environment.
 </p><p>
-Remembering the most wine users will not necessarily be developers we should 
+Remembering that most wine users will not necessarily be developers we should 
 consider improving the output of running (./configure &amp;&amp; make) to make it 
 more user friendly.  Hopefully it should also be less confronting and 
 confusing to non developers.  I propose something similar to the way the 

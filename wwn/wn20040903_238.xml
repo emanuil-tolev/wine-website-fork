@@ -448,7 +448,7 @@ it:</p>
 
 I'm going to play with the richedit control to try get it to draw RTF 
 documents with formatting.  My plan is to write a program that can 
-display but not edit, then let somebody else add the editting 
+display but not edit, then let somebody else add the editing 
 functionality afterwards :)  Once I can get the attached program to 
 work, the plan is to change the code in text-writer.c to add the 
 formatting information to the richedit control via standard richedit 
