@@ -72,17 +72,17 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/buttons/buttons.asp"><strong>Button</strong></a></td>
-	<td class="needed"></td>
-	<td class="needed"></td>
-	<td class="pct95">95%: Complete</td>
+	<td>Oct 3, 2004</td>
+	<td>Comctl32.dll 6.0</td>
+	<td class="pct90">90%: WM_CHAR, WM_SETFOCUS, WM_NCCREATE, WM_SYSKEYUP, BCM_*, BCN_*, some BN_*, NM_CUSTOMDRAW</td>
 	<td><a href="mailto:dtimoshkov@codeweavers.com">Dmitry Timoshkov</a></td>
     </tr>
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/comboboxes/comboboxes.asp"><strong>ComboBox</strong></a></td>
-	<td class="needed"></td>
-	<td class="needed"></td>
-	<td class="pct95">95%: roll up problems in Netscape</td>
+	<td>Oct 4, 2004</td>
+	<td>Comctl32.dll 6.0</td>
+	<td class="pct95">95%: CB_GETCOMBOBOXINFO, CB_[GS]ETMINVISIBLE, CB_LIMITTEXT, CB_SETTOPINDEX</td>
 	<td><a href="mailto:julliard@winehq.org">Alexandre Julliard</a></td>
     </tr>
 
@@ -112,9 +112,9 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/staticcontrols/staticcontrols.asp"><strong>Static</strong></a></td>
-	<td class="needed"></td>
-	<td class="needed"></td>
-	<td class="pct95">95%: Complete</td>
+	<td>Oct 4, 2004</td>
+	<td>Comctl32.dll 6.0</td>
+	<td class="pct85">85%: Some SS_* styles, STN_{DISABLE,ENABLE}, IMAGE_CURSOR, IMAGE_ENHMETAFILE</td>
 	<td><a href="mailto:dtimoshkov@codeweavers.com">Dmitry Timoshkov</a></td>
     </tr>
 
