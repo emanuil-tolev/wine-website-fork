@@ -190,7 +190,7 @@ etc. Basically any mechanism that ensures that we do the strict
 minimum number of context switches and schedule() calls for a server
 call. And probably also a way to transfer chunks of memory from the
 client address space so that we don't need the shared memory area.
-</quote>. David already suggested a new protocol (AF_WINE) which could 
+</quote> David already suggested a new protocol (AF_WINE) which could 
 nicely fit into this category (and also let the ability to use the
 internal API on non Linux platforms, although the kernel module had to 
 be rewritten).
@@ -201,11 +201,11 @@ David also asked Alexandre how does he <quote who="David Howells">plan on doing
 the locking stuff for Read/WriteFile? Cache it locally? It is
 unfortunate, but you can't really make use of UNIX file locking, since
 this is mostly advisory and as such doesn't actively stop read/write
-calls.</quote>. Alexandre quickly replied <quote who="Alexandre Julliard">Yes, we'll
+calls.</quote> Alexandre quickly replied <quote who="Alexandre Julliard">Yes, we'll
 need to store the locks in the server and check them before each
 read/write (and probably also release them afterwards if
 necessary). There may be some optimizations possible, but we should
-probably do it the easy way first.</quote>. This would, of course,
+probably do it the easy way first.</quote> This would, of course,
 require some more server calls.
 
 <p />

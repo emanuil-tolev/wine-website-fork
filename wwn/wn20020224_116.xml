@@ -705,7 +705,7 @@ complicated the issue,</p>
 	etc). It should be enough to keep the keyboard layout table mess in *one*
 	place in Wine (in the keyboard code, where MapVirtualKey resides), not
 	two.</p>
-</quote>.
+</quote>
 
 <p>So Arjen went back to his patch and worked on it so that some scancodes
 used MapVirtualKey to do the conversion and others used a table to lookup 

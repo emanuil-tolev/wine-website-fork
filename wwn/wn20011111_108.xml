@@ -511,7 +511,7 @@ Michielsen replied, <quote who="Travis Michielsen">
  codecs.  I did some detective work and found the problem to be a mistake in 
  <code>dlls/msacm/driver.c</code>.  Included is a patch to fix this error.  However, I 
  noticed that with this patch, the codecs are found, but for some reason are 
- listed many times for each codec!?</quote>.</p>
+ listed many times for each codec!?</quote></p>
 
 <p>Roger posted a note that Avery Lee, the author of VirtualDub, had
 sent him:</p>

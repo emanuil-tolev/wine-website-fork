@@ -130,7 +130,7 @@ changes:</p>
 	<quote who="Patrik Stridvall">
 		However IMO all exported functions whether they are 16-bit or 32-bit
 		and whether they are actually uses by other files or not should have
-		declarations in some header file.</quote>.   Because of Winelib this
+		declarations in some header file.</quote>   Because of Winelib this
 		is necessary for 32-bit functions, however Patrik felt there were 
 		several advantages for 16-bit ones too.  </p>
 		<p>Alexandre disagreed and

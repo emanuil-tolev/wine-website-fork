@@ -486,7 +486,7 @@ Very likely this is due to the implementation of 'fork' in cygwin.</quote> That 
 Chris to ask, <quote who="Chris Morgan">
 
  Ahh, very cool.  Is there anything we can do to keep cygwin from replacing 
- wines/libc's fork with its own and presumably fix this problem?</quote>.  
+ wines/libc's fork with its own and presumably fix this problem?</quote>  
 </p><p>
 Dmitry didn't think so,<quote who="Dmitry Timoshkov">
  I'm afraid it's impossible to replace cygwin's fork by an one from libc.

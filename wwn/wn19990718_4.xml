@@ -653,7 +653,7 @@ expansion and LF-CRLF conversion are disabled for such files.
 
 Noel Borthwick he's <quote who="Noel Borthwick">looking into making some changes
 to the windows clipboard code in order to allow the wine clipboard to
-integrate better with the X clipboard.</quote>.
+integrate better with the X clipboard.</quote>
 
 <p />
 
@@ -924,7 +924,7 @@ even between two Wine processes? This would nicely fix that problem ...
 Noel noted that this might not work because <quote who="Noel Borthwick">the X
 clipboard always works in "delayed render" mode. i.e. we need to return the
 actual WINE clipboard data in an X atom only in response to an 
-XSelectionRequest event.</quote>. Ulrich confirmed that since Wine currently
+XSelectionRequest event.</quote> Ulrich confirmed that since Wine currently
 uses a single connection to X server in a service thread.
 
 <p />

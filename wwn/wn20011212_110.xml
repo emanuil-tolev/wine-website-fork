@@ -380,7 +380,7 @@ wondering,
  <quote who="James Brown">
  Any idea when Oves interprocess patches will be put into the main Wine CVS
  tree? The code currently in WineX isn't really that ugly at all, and it is a
- very important part of Wine to have working IS6 support.</quote>. </p>
+ very important part of Wine to have working IS6 support.</quote></p>
 <p>
 Alexandre responded, <quote who="Alexandre Julliard">
  It could certainly be applied, even if it's not 100% clean it will
@@ -527,7 +527,7 @@ the patch so linux-centric, <quote who="Robert Lunnon">
  I have installed wine cvs and I have here on this machine Windows XP pro 
  installed..now - the partition is fat32 and I can access it with /mnt/win without any 
  problem.  However, the tools/wineinstall script simply doesn't recognize my windows 
- partition</quote>.</p>
+ partition.</quote></p>
 
 <p>Lawson Whitney suggested going into /etc/fstab and taking a
 look at where it mounts the Windows partition.  He suggested

@@ -122,7 +122,7 @@ support does not ever get initialized, regardless if a printer is installed.
 Alexandre replied, <quote who="Alexandre Julliard">actually the 16-bit driver 
 support is temporarily broken (not that it really worked well before anyway). 
 It shouldn't be too hard to fix, but I haven't had time yet. Volunteers are 
-welcome...</quote>.  </p>
+welcome...</quote></p>
 
 <p>Ladislav dug a little deeper and discovered that the unknown driver 
 error has actually always been occurring, but the message only recently
@@ -132,11 +132,11 @@ The real reason for the crash is that the application calls Escape16 with
 hdc equal to 0 and function equal to GETPRINTINGOFFSET. I do not understand
 why, they did not even start to print.  Maybe, this is an undocumented windows
 function?  After I temporarily disabled Escape16, the application began to
-work. </quote>.  To reenable Escape16 he would require working 16-bit
+work. </quote>  To reenable Escape16 he would require working 16-bit
 printer drivers.  What Alexandre wondered though was, 
 <quote who="Alexandre Julliard">
 It's not supposed to crash even if the hdc is invalid. Do you have a
-backtrace of the crash?</quote>.</p>
+backtrace of the crash?</quote></p>
 <p>Ladislav replied:</p><quote who="Ladislav Sladecek"><p>
 I ovelooked that the EscapeXXXX functions changed too.</p>
 <p>
@@ -174,7 +174,7 @@ using it to sub class the button class. Does wine not support this?</p>
 <p>Dmitry Timoshkov asked to see the offending code which Craig 
 provided.  Craig has had the program working under all versions of
 Windows for years.  Dmitry suggested, <quote who="Dmitry Timshkov">
-As a temporary workaround you could use unique class names for local classes. </quote>.
+As a temporary workaround you could use unique class names for local classes. </quote>
 In addition he provided some patches to try out.</p>
 
 <p>Craig tried this and replied, <quote who="Craig Chandler">
@@ -276,12 +276,12 @@ Anyone know anyone who works at the Open Group? :-) </p></quote>
 <p>This was just a question and answer.  Vitaly Kuznetsov wondered,
 <quote who="Vitaly Kuznetsov">
 Is there currently any way to debug winelib application? I read winedbg
-doc, but there are only samples for windows executables. </quote>.  </p>
+doc, but there are only samples for windows executables. </quote></p>
 <p>Eric
 Pouech replied, <quote who="Eric Pouech">
 you can also debug winelib applications with winedbg and you should get
 access to both the executable information and the different loaded DLL
-(counting the Wine builtin ones)</quote>.</p>
+(counting the Wine builtin ones).</quote></p>
 </section>
 
 

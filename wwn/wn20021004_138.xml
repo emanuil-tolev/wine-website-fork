@@ -210,7 +210,7 @@ Guy Albertelli submitted
 to
 <quote who="Guy Albertelli">
  Prevent Explorer.exe from renaming directories to !$!$...
-</quote>.  This is likely something a wine user has come
+</quote>  This is likely something a wine user has come
 across if they've used explorer.exe and likely a cause of
 frustration (that's why the Wine docs say not to run it.)
 Anyway, patching file.c to not allow it drew a bunch of 
