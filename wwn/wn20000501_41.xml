@@ -279,7 +279,7 @@ Dmitry Timoshkov didn't like this proposal, and rather suggested to
 <quote who="Dmitry Timoshkov">Wine should have only one functional implementation
 indeed. I think, it should be implemented like in NT: all actual work
 does Unicode version, ANSI version simply converts ANSI to Unicode and 
-then calls Unicode work horse. But this transition will consume a lot
+then calls Unicode workhorse. But this transition will consume a lot
 of time and efforts.</quote>
 
 <p />

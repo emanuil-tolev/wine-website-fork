@@ -185,7 +185,7 @@ brings righteous death.</quote></p>
 build Wine. Otherwise Wine will not work. I believe that not even
 "./wine" will work. Do you have warnings about an unresolved main symbol
 when you link Wine's dlls? This is one of the symptoms. Another is when
-that strip does not understand "--strip-uneeded".
+that strip does not understand "--strip-unneeded".
 </p><p>
    Also note that just tweaking the PATH is not enough to switch from
 the Solaris toolchain to the GNU toolchain. That's because gcc is

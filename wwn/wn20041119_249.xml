@@ -89,7 +89,7 @@ Its main goal is to get a sugar buzz from candy. It also serves to inform you of
 Office was released this week.  This time the version number was bumped up to
 4.0 to signify a major release.  New applications are now supported which
 the press release describes:</p>
-<quote who="Codeweavers"><p>
+<quote who="CodeWeavers"><p>
  iTunes, which recently celebrated its 100 millionth music download, 
 allows users to import music in AAC, MP3 or Apple Lossless formats 
 and convert unprotected WMAs to MP3. Users can sync with their iPod, 
@@ -99,9 +99,9 @@ computer to a stereo located in any room in their home. Apple's hugely
 popular iTunes Music Store, accessible from iTunes, currently contains 
 more than 700,000 tracks and 450 independent labels with 30-second previews.
 </p><p>
-Adobe Framemaker (www.adobe.com) is an enterprise-class authoring and 
+Adobe FrameMaker (www.adobe.com) is an enterprise-class authoring and 
 publishing solution that combines the simplicity of word processing 
-with the power of XML. Framemaker support under CrossOver will allow 
+with the power of XML. FrameMaker support under CrossOver will allow 
 Linux users to develop professional-looking documents for both print 
 and the web.
 </p><p>
@@ -160,7 +160,7 @@ tracked down what had changed and explained:</p>
 <quote who="Jesse Allen"><p>
 For the past two weeks I've been tracking an issue that I found with kernels
 greater than 2.6.8 / 2.6.8.1 and wine.  Starting with kernel 2.6.9-rc1, 
-Warcraft III copy protection would not work -- ie please insert disc.  I found 
+Warcraft III copy protection would not work -- i.e. please insert disc.  I found 
 changes to the cdrom driver in rc1.  Reversing them did not work.  For a while 
 I was lost to what could have changed.  Then I had an idea:  search for 
 changes that could affect the way processes run.  That led me to reverse 
@@ -224,18 +224,18 @@ In Wine case:
 <ul>
 <li> the handler is wine's implementation to send the single step event to wineserver</li>
 <li> our code implies that the handler is not seen from wineserver (basically, that 
-after executing the single step, the debugging event is sent to wine server)</li>
+after executing the single step, the debugging event is sent to wineserver)</li>
 </ul></p><p>
 To sum up, it's not a wine bug nor a linux bug, it's just a change in linux 
 behavior that breaks wine. Linux's new approach is to say a signal handler is part 
 of the application, and should be traced (in a debugger for example) as a 
-regular function. Wine sees signal handler (at least SIGTRAP, SIGSEGV...) as 
+regular function. Wine sees signal handlers (at least SIGTRAP, SIGSEGV...) as 
 kernel plugs put in the application (NTDLL) and used to send back information to 
 Wine server. Those two options are not compatible.
 </p><p>
 IMO, the best option would be to add an option to turn on/off the behavior in 
 ptrace (to allow or not single stepping in signal handlers).
-Fixing Wine would be doable, but somehow ugly (ie it would mean turning the TF 
+Fixing Wine would be doable, but somehow ugly (i.e. it would mean turning the TF 
 off in Wine server to let our handlers run...)
 </p></quote>
 
@@ -271,7 +271,7 @@ to the signal.c code, so it's unclear what the direction on this is.</p>
 <p>Profiling has been a topic that's popped up from time
 to time as being an area Wine needs to tackle.  Some of 
 the major architectural issues, such as DLL separation
-and stabilizing wineserver, have been slowly become reality.
+and stabilizing wineserver, have been slowly becoming reality.
 What's now evident is there are bottlenecks that could
 be identified leading to an increase in performance.
 Brian Gunlogson started a thread this week about just
@@ -329,7 +329,7 @@ Stores the flat profile in a file called myreport.log.</code></ul></p></quote>
 
 <p>Jason Edmeades outlined the current direction of Direct3D:</p>
 <quote who="Jason Edmeades"><p>
-Firstly thanks for the profiling info - its something I have been waiting to
+Firstly thanks for the profiling info - it's something I have been waiting to
 try when I get through the d3d9 changes. We have always known that routine
 was bad (hence the name 'slow'!) but that confirms it. 
 </p><p>
@@ -365,7 +365,7 @@ windows performance we can get and identify the bottlenecks.
 	startdate="11/16/2004"
 	enddate="11/17/2004"
 >
-<topic>Codeweavers</topic>
+<topic>CodeWeavers</topic>
 <p>Almost every thread covered in the Wine Weekly News comes
 from the 
 <a href="http://www.winehq.com/hypermail/wine-devel/">wine-devel</a> mailing list.
@@ -384,7 +384,7 @@ The menus in iTunes disappear as you roll the mouse over them.
 When adding files to the library, the dialog box that is up showing the 
 progress of the import is supposed to be an application modal box, 
 which, should stop you from bringing the iTunes app to the forefront but 
-you can, requiring an ALT+TAB to bring it the dialog to the front.
+you can, requiring an ALT+TAB to bring the dialog to the front.
 </p><p>
 Still receiving the the error about the CD/DVD burning driver not being 
 installed properly. I know it is not supported, but there must be some 
@@ -404,8 +404,8 @@ iTunes is a highly threaded application, and has some strange
 mechanics in how it delivers sound to the audio system (and Wine's
 audio system is imperfect, at best).
 </p><p>
-You can improve the situation in several ways; the faqs on Quicktime
-sound settings can help (set Quicktime sound output to waveOut
+You can improve the situation in several ways; the faqs on QuickTime
+sound settings can help (set QuickTime sound output to waveOut
 and to the sound frequency supported by your sound card, which
 might be 48khz).  Also, the mini player seems less affected
 (although it's still not great).
@@ -418,7 +418,7 @@ an overly complex architecture that is vulnerable to timing
 changes (Linux timing is different than that of Windows,
 to my dismay).
 </p><p>
-Mike and Alexandre and I worked on this all through the weekend
+Mike, Alexandre and I worked on this all through the weekend
 and could not get to the bottom of it; Mike and Alexandre
 are continuing on in the hope that we can have a fix.
 </p><p>
@@ -480,13 +480,13 @@ be taken a step further:</p>
 <quote who="Roderick Colenbrander"><p>
  Now that I have thought about it a while longer perhaps it is the right idea
  to already start using uxtheme. If I remember correctly uxtheme is already
- usable the only problem is that we don't use it to actually modify the look
+ usable, the only problem is that we don't use it to actually modify the look
  of wine widgets. Kevin Koltzau, the original uxtheme author, made the dll
  able to parse original windows xp themes and further he used it to theme his
- own app with it (atleast the color part). It might be a good idea to stick
+ own app with it (at least the color part). It might be a good idea to stick
  to the old wine colors and add a winelook uxtheme option. When the option is
  enabled we use uxtheme to parse a theme file and it will then adjust the
- colors. The theme file will be then of the same type as the files used on
+ colors. The theme file would be of the same type as the files used on
  windows, so you could even use windows themes. After this a gtk/qt backend
  could be added to uxtheme.</p></quote>
  
@@ -497,7 +497,7 @@ be taken a step further:</p>
  loaded it can for example be used to load a bitmap and draw as for example
  the background of a window or it can change the color of controls.
 </p><p>
- Uxtheme can be used in two ways. Useally all theming is done by windows
+ Uxtheme can be used in two ways. Usually all theming is done by windows
  itself. To do the theming microsoft ships a new version of the user and
  common dialog dlls which use uxtheme to do the theming. In the other case
  you can call uxtheme yourself and then you can decide yourself what you want
@@ -505,7 +505,7 @@ be taken a step further:</p>
 </p><p>
  Not sure if I said it all correctly. Likely Kevin Koltzau knows it a bit
  better as he is working on uxtheme. Not sure what the current status of the
- dll is but atleast our controls aren't using it for theming yet.
+ dll is but at least our controls aren't using it for theming yet.
 </p></quote>
 
 <p>The big issue with using uxtheme seems to center on Wine's controls
@@ -517,7 +517,7 @@ a manifest in its resources requesting comctl 6.0. If an app was written
 for Win95 it will always draw with the old style as it has no manifest.
 However, the color scheme of the theme will still be applied to all applications
 </p><p>
-It is possible to add a a manifest for an existing application without modifying
+It is possible to add a manifest for an existing application without modifying
 the executable by placing a &lt;app&gt;.exe.manifest file in the same directory
 as the application executables, but your mileage may vary on this approach.
 </p><p>
@@ -584,7 +584,7 @@ for him to be away for a while,
  first, which isn't trivial out here...  So yes, updates are going to
  be a bit painful over the next couple of weeks. The good news is that
  it's all part of an evil plan to prevent Jer from getting in touch
- with me so that I can concentrate on the wm [<i>ed note: window manager</i>]
+ with me so that I can concentrate on the wm [<i>ed note: window management</i>]
  work for a while &lt;g&gt;
 </quote></p>
 

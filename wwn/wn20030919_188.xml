@@ -424,7 +424,7 @@ and you fill it in with signatures. When you release the memory, you
 check that the signatures are ok. Tweaking the amount of extra memory 
 can cause you to not corrupt the heap structure at some point, which 
 will allow you reliable pin-pointing the buffer in which the overflow 
-occures.
+occurs.
 </p><p>
 I have never worked with valgrind (though I love the principle behind 
 it), so I can't say whether it is more effective at this sort of 

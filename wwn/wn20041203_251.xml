@@ -127,7 +127,7 @@ None of these should be especially hard, and so would provide a good intro
 to Wine development for anybody who has been lurking on the sidelines and
 wants to get involved.
 </p><p>
-As usual no guarantees these patches would be accepted, that's Alexandres
+As usual no guarantees these patches would be accepted, that's Alexandre's
 call. But they probably would be, and you'll learn something while doing
 them! :)
 </p><p>
@@ -138,7 +138,7 @@ the _SHGetDefaultValue function in dlls/shell32/shellpath.c for an
 explanation of how to do this. 
 <br /><br />
 I think it'd be ok to grab $HOME using the UNIX getenv() and then using
-the libwine APIs to map them to a Win32 path. If the mapping fails (ie
+the libwine APIs to map them to a Win32 path. If the mapping fails (i.e.
 $HOME is not accessible given the users dosdevices) then just fail with a
 WARN().
 </ul></p><p>
@@ -168,7 +168,7 @@ Bonus points for fixing the desktop icon while you're at it (an arrow??!)
 
 Task 3:<ul>
  The freedesktop.org icon theme specification shows us how to find icons
- for many different types of thing. Implement support for loading and
+ for many different types of things. Implement support for loading and
  using the following icons from the icon theme (it should be OK to use
  native libraries for this like GdkPixbuf, just fall back to the compiled
  in defaults if it's missing):
@@ -183,7 +183,7 @@ Task 3:<ul>
  mime types not extensions, and it'd make our file dialogs even slower than
  they already are.
 <br /><br />
- You may be tempted to use eg, libpng to implement this. Don't! Use
+ You may be tempted to use e.g., libpng to implement this. Don't! Use
  GdkPixbuf instead, stock icons are allowed to be in many formats including
  SVG.
 <br /><br />[<i>ed note: and later he added...</i>]
@@ -205,7 +205,7 @@ This one might be quite hard.
 </ul></p><p>
 
 Task 5:<ul>
-Try improving the winebrowser script to take into account the users
+Try improving the winebrowser script to take into account the user's
 preferred applications. At the moment it just tries every browser it
 knows about in a hard coded order. Hint: in modern GNOME desktops you can
 use the "gnome-open" program to make this automatic. There is a KDE
@@ -225,16 +225,16 @@ In kde the command is '<tt>kfmclient openUrl &lt;url&gt;</tt>'.
 
 <p>Alban Browaeys had a suggestion for task #4:</p>
 <quote who="Alban Browaeys"><p>
- wineshelllink support update-menu which itself build xdg complient menu
- (via /etc/menu-methos/menu-xdg).
+ wineshelllink supports update-menu which itself builds xdg compliant menus
+ (via /etc/menu-methods/menu-xdg).
 </p><p>
  I know mandrake and debian distro use "menu", need confirmation for
  RH/Novell newest releases.
 </p><p>
  It would be more elegant to let menu manage gnome/kde/xgd/wmaker ... than
- reimplementing them in wineshellink . The strongest point is that menu
+ reimplementing them in wineshelllink . The strongest point is that menu
  build menu via methods which are tweakable by distro builder. Thus it will
- avoid to upgrade wineshellink whenever we want ot support gnustep xdg
+ avoid to upgrade wineshelllink whenever we want to support gnustep xdg
  version 12 and the like.</p></quote>
 
 <p>Steven Edwards added another idea:</p>
@@ -270,7 +270,7 @@ registry entries look like this:
 With Z: mapped to /
 </code>	</ul></p><p>
 I selected KMail as the default Mail application, and when I open an Mail
-Address in MSIE kmail pops up. The same happens when I enter a maito: address
+Address in MSIE kmail pops up. The same happens when I enter a mailto: address
 in Task Manager->New task.</p></quote>
 
 <p>Then Mike came up:</p>
@@ -310,7 +310,7 @@ developers together to smash bugs in Wine:</p>
  where, at a designated time, a group of wine developers would get
  together on #winehackers (or some other channel). We would pick a bug
  (or maybe more) from wine's bug tracker and work together to fix the
- bug(s).  This would serve several good purposed.  First, we would be
+ bug(s).  This would serve several good purposes.  First, we would be
  giving more attention to wine's bugzilla and getting rid of a lot of
  those bugs.  Second, many newcomers can witness and take part in the
  wine development process.  I'm sure everyone can remember how daunting
@@ -335,14 +335,14 @@ There were more suggestions and James summarized them,
 <p>Tony Lambregts expanded on some of those ideas:</p>
 <quote who="Tony Lambregts"><p>
  There is nothing wrong with fixing a bug for its own sake and any bug we fix
- will ultimately improve wine and provide some insites into debugging wine.
+ will ultimately improve wine and provide some insights into debugging wine.
 </p><p>
  That being said, I would agree that at least to some degree this should be a
- training execise and that whatever bug(s) we go after, some (budding?) developer
+ training exercise and that whatever bug(s) we go after, some (budding?) developer
  would like to have fixed. However there should be a bug report in bugzilla so
  that developers can research the bug in the first place and we can keep track of
  what was done for these sessions. I have created a key word "BugBuster" in
- Bugzilla to keep track of candidates. Hopefully after several sesions we will
+ Bugzilla to keep track of candidates. Hopefully after several sessions we will
  have a list of fixed bugs that new developers can use as a reference.
 </p></quote>
 
@@ -425,7 +425,7 @@ works)</li>
 <p>Mike encouraged Krzysztof to just make it available:</p>
 <quote who="Mike McCormack"><p>
 I have been working on richedit a little also, and am quite keen to get 
-the ball rolling by having some richedit 2.0 code in winehq that others 
+the ball rolling by having some richedit 2.0 code in winehq so that others 
 can help work on it.  I'm quite interested to see the source for this.
 </p><p>
 Whether you show us or not, the copyright for the source still belongs 
@@ -443,8 +443,8 @@ still be submitted against it, and you'll experience the same licensing
 problems if you wish to incorporate other people's code.
 </p><p>
 Frankly speaking, people promising to release their source code "at a 
-later date" is an impedement to development, because nobody is motivated 
-to work on the promised feature in the mean time.
+later date" are an impedement to development, because nobody is motivated 
+to work on the promised feature in the meantime.
 </p><p>
 Please consider "release early, release often", so we can work together 
 on this :)
@@ -467,7 +467,7 @@ it depend on native DCOM.  This week Segawa changed the script and
 announced:</p>
 <quote who="Hajime Segawa"><p>
 I changed the install script a bit and it does not depend on DCOM98,
-MFC4.0, etc... anymore. So, you can run IE6 completely out-of-box.
+MFC4.0, etc... anymore. So, you can run IE6 completely out-of-the-box.
 </p><p>
 New script is here :
 <ul><a href="http://sidenet.ddo.jp/winetips/files/wine-config-sidenet-1.5.3.tgz">
@@ -510,9 +510,9 @@ http://sidenet.ddo.jp/winetips/files/wine-config-sidenet-1.6.2.tgz</a></ul></p>
 <topic>Winelib</topic>
 <topic>Ports</topic>
 <p>Wine and Winelib, although intricately bound together, really
-serve two different audiences.  Whereas Wine is normally use to just
+serve two different audiences.  Whereas Wine is normally used to just
 run existing Windows binaries, Winelib holds the promise of
-being able to take the source code to a Windows application
+being able to take the source code of a Windows application
 and recompile it as a native application.  In theory, Microsoft
 could use it to make Word run on Solaris.  
 </p><p>

@@ -134,7 +134,7 @@ later...</quote></p>
 </section>
 <section 
 	title="InstallShield Status" 
-	subject="COM / Installshield status?"
+	subject="COM / InstallShield status?"
 	archive="http://www.winehq.com/hypermail/wine-devel/2004/10/0669.html" 
 	posts="3"
 	startdate="10/31/2004"
@@ -147,10 +147,10 @@ gets installed.  Support has certainly improved over the past few
 years and we've gone from no-chance of installation to, well, a chance.   
 It led Dan Kegel to wonder what the current status on all this is,
 <quote who="Dan Kegel">
-what's the current status of Installshield support,
+what's the current status of InstallShield support,
 and how much work would it be to fully support
-Installshield-based installers?  I don't see any
-open Installshield bug reports, maybe I should file
+InstallShield-based installers?  I don't see any
+open InstallShield bug reports, maybe I should file
 one against the apps I have that don't install at
 the moment.  (Or would that be overkill?)</quote>
 </p><p>
@@ -217,7 +217,7 @@ anyway</quote></p>
 
 <p>Alexandre replied,
 <quote who="Alexandre Julliard">
- Actually I already did a similar hack in the Crossover tree; it's not
+ Actually I already did a similar hack in the CrossOver tree; it's not
  merged because it's full of races (which at first glance seems to be
  the case with yours too).
 </quote></p>
@@ -300,7 +300,7 @@ only allow for an app to define two.  Michael Stefaniuc described
 the caveat and also answered Andi's question:</p>
 <quote who="Michael Stefaniuc"><p>
 There are plenty of signals available to applications besides SIGUSR1 
-and SIGUSR2. This are the real time signals in the range SIGRTMIN ... 
+and SIGUSR2. These are the real time signals in the range SIGRTMIN ... 
 SIGRTMAX specified by POSIX 1003.1-2001. The only main difference to the 
 "normal" signals is that these signals can be queued.
 </p><p>
@@ -315,7 +315,7 @@ sigqueue(2).
 </p><p>
 The question now is how portable this is. Linux has SIGRTMIN ... 
 SIGRTMAX at least in the 2.4 and 2.6 kernels, Solaris and Irix (from 
-Google hits) seem to have it too, but i don't know about the *BSD 
+Google hits) seem to have it too, but I don't know about the *BSD 
 variants including Darwin.
 </p></quote>
 
@@ -367,7 +367,7 @@ what he's done before:</p>
 I think the way is to leave the original headers on there, and add the 
 LGPL header above it, perhaps with a note saying something like:
 <ul>
-<code>/* This file was derived from code written by Tom St. Denis which the 
+<code>/* This file was derived from code written by Tom St. Denis with the 
 following license: */</code></ul></p></quote>
 <p>With regard to cutting down code, Mike explained:</p>
 <quote who="Mike McCormack"><p>
@@ -376,12 +376,12 @@ modify as little as possible, but remove all the #ifdefs and code that
 isn't relevant to the WIN32 platform.
 </p><p>
 It's likely that the code will diverge from libtomcrypt over time 
-anyway, and there maybe be win32 "features" that we wish to implement... 
+anyway, and there may be win32 "features" that we wish to implement... 
 NSAKEY anybody? ;)
 </p></quote>
 
 <p>Alexandre thought removing any unnecessary code was desirable
-as a long as it was a noticable amount.  </p>
+as a long as it was a noticeable amount.  </p>
 
 
 </section>
@@ -397,9 +397,9 @@ as a long as it was a noticable amount.  </p>
 
 <p>Years ago Wine was often criticized and the
 argument usually sounded something like, <i>"Windows
-is evil therefore Wine is evil."</i>.  Hearing
+is evil therefore Wine is evil"</i>.  Hearing
 that gets boring pretty quick and a few years
-ago we put together two article about
+ago we put together two articles about
 <a href="http://www.winehq.com/site/why">why Wine
 is important</a> and 
 <a href="http://www.winehq.com/site/myths">debunking
@@ -435,7 +435,7 @@ But I wonder if this is in fact true.
 I am a pure Linux user; I began my migration a year and a half ago, 
 moving from a dual-boot, to a multi-boot (2 versions of Windows and 5 
 distributions of Linux on one system), and finally ditched all alternate 
-boots except the Linux a few months ago.
+boots except the Linux one a few months ago.
 </p><p>
 So I'm not all that far from the migration mindset, since I used Windows 
 for over 10 years, but as a pure Linux user, I'm not all that close to 
@@ -537,7 +537,7 @@ together.  Scott Ritchie gave a pointer to another
 source for success stories,
 <quote who="Scott Ritchie">
  This exact story is on the CodeWeavers page somewhere, as an
- advertisement for Crossover.  At the least, read it first :)
+ advertisement for CrossOver.  At the least, read it first :)
 </quote></p>
 
 <p>Anyone out there have a success story they'd like to

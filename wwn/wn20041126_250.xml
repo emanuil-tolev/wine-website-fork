@@ -154,7 +154,7 @@ Sound obscure?  It is.  Eric Pouech explained one of the
 cases Wine would need to use something like this:</p>
 <quote who="Eric Pouech"><p>
 we have (to control what's generated inside the 
-various exception) to ptrace from our NT-kernel-like process (the ptracer) to 
+various exceptions) to ptrace from our NT-kernel-like process (the ptracer) to 
 get the context of the exception. Restart from the ptracer is done with 
 PTRACE_SINGLESTEP.</p></quote>
 
@@ -296,12 +296,12 @@ tried it out and reported,
 old kernel and then under a new one.  Eric Pouech went through them
 and deciphered the differences:</p>
 <quote who="Eric Pouech"><p>
-For the linux folks, here a small comparison of what happens in the working 
+For the linux folks, here is a small comparison of what happens in the working 
 (old) case and in the non-working (new) case:
 </p><p>
-In both case
+In both cases
 <ol>
-<li> Wine gets a first SIGTRAP (in it's sig_trap handler)
+<li> Wine gets a first SIGTRAP (in its sig_trap handler)
 <ul>    
 	<li> Wine converts it into a Windows exception (w-exception in short).
 	  This includes creating a context for the generic CPU registers</li>
@@ -317,7 +317,7 @@ In both case
 		  the SIGTRAP.</li>
 		<li> Wine server wait4:s on the SIGSTOP (after ptrace:attach)</li>
 		<li> modify (with ptrace) the debug registers</li>
-		<li>> and resumes excution (ptrace: cont)</li></ul>
+		<li> and resumes execution (ptrace: cont)</li></ul>
         </li>
 	<li> wine terminates the sig trap handler and resumes the execution with
 	  the modified basic registers (from the saved context), and the
@@ -326,10 +326,10 @@ In both case
 <li> a second sig trap is generated
 	<ul><li> since the wine server is still ptrace:attached, it gets the signal.</li></ul>
 </li></ol></p><p>
-What differs then in both execution:
+What differs then in both executions:
 in the working case, the sig trap handler is called on the client side, 
 whereas it's never called in the non-working case. We do have a couple of 
-protection (to avoid some misbehaving apps), but none of them get triggered. So 
+protections (to avoid some misbehaving apps), but none of them gets triggered. So 
 it seems like the trap handler is not called (ugh).
 </p><p>
 A couple of notes:
@@ -392,8 +392,8 @@ Some major things I noticed:
 <ol>
 <li> There were a lot of old hacks in the package that are probably no
 longer necessary, due to advancements in wine like wineprefixcreate and
-such.  There was also the remenants of a very old problem with compiling
-using flex (which I remember experiencing the old days) in the form of a
+such.  There was also the remnants of a very old problem with compiling
+using flex (which I remember experiencing in the old days) in the form of a
 special exception for installing newer flex packages.</li>
 
 <li> Very old packages like winesetuptk should now be officially obsoleted
@@ -413,12 +413,12 @@ benefit from.  A good example would be the alsa development files.
 These are all things that should be included in the build dependencies
 for the package.</li></ol>
 </p><p>
-So far, my list of build dependant packages is the following:
+So far, my list of build dependent packages is the following:
 flex, bison, libx11-dev, libasound2-dev, libxt-dev, libicu28-dev
 </p><p>
 However, I'm not sure if this means the wine binary package should
 depend on them, since it's compiled in.  So, should I make libicu28 a
-dependancy for wine?
+dependency for wine?
 </p><p>
 Now, this leads to the question: is it worth even having a package
 maintainers guide?  If so, who wants to update it?
@@ -460,7 +460,7 @@ print out different messages for each distro giving the package name
 needed.
 </p><p>
 It's not just my script. Wine and Windows programs sometimes assume these
-applets are present too (eg notepad, wineboot, regedit, regsvr32).
+applets are present too (e.g. notepad, wineboot, regedit, regsvr32).
 </p><p>
 The packaging on Red Hat/SuSE/Mandrake etc didn't have this problem
 because they mostly followed upstream conventions.
@@ -593,7 +593,7 @@ last patch got checked in:
 
 .... and of course, the big cheese ....
 <ul>
-<li> Write the migration code to pull the users current config across to the
+<li> Write the migration code to pull the user's current config across to the
   new registry branch so we can actually start thinking about switching
   the config file off once and for all. Bonus points for adding an 
   explanation of what happened to the old config file itself!
@@ -604,7 +604,7 @@ last patch got checked in:
 
 <p>Robert then presented a dilemna:</p>
 <quote who="Robert van Herk"><p>
-Thanks to Mike's help, I succeeded in showing a SHBrowseForFolder 
+Thanks to Mike's help, I succeeded in showing an SHBrowseForFolder 
 thingy, in the winecfg program, so that people can pick a directory they 
 want to use as virtual C drive.
 </p><p>
@@ -633,27 +633,27 @@ be done a few different ways, so he asked for some advice:</p>
 
 OK, so how to do this? I see 3 ways:
 <ol>
-<li> Implement an extra api that do the same as the normal file open/save
+<li> Implement an extra api that does the same as the normal file open/save
 and browse for folder api, but then with the Unix file system</li>
 <li> Implement a thread local variable so that threads can put the Wine
 file dialogs into unix file system mode / windows file system mode</li>
 <li> Define some magic wine flags in the file dialogs that make the
 dialogs appear in Unix mode</li></ol></p><p>
 
-There are some pro's and con's to all of them:
+There are some pros and cons to all of them:
 <ol>
 <li> Well, basically, we have to make an extra api :-), so there are more
 functions exported. Probably the existing and new functions will need to
 call each other, so this means an extra level of indirection.</li>
 <li> Kinda ugly hacking, though we don't loose win32 compatibility</li>
 <li> Nice, but we loose strict win32 compatibility, since there will be a
-magic flags that doesn't exist in win32.</li></ol></p></quote>
+magic flag that doesn't exist in win32.</li></ol></p></quote>
 
 <p>Mike suggested the 3rd approach,
 <quote who="Mike Hearn">
 This is the most lightweight so I'd go for it for now. If we find that the
 flag value we pick is already in use we can just change it, no big deal.
-We already use custom Wine flags in other parts of the code (eg
+We already use custom Wine flags in other parts of the code (e.g.
 WS_EX_TRAYWINDOW).</quote></p>
 
 </section>
@@ -679,11 +679,11 @@ state of them is in Wine:</p>
 <quote who="Mike McCormack"><p>
 RICHEDIT_CLASS20A is provided by riched20.dll, not riched32.dll.  The 
 windows 2000 implementation uses riched20.dll to implement riched32.dll 
-  (ie. moves the richedit code to riched20.dll and implements the 
+  (i.e. moves the richedit code to riched20.dll and implements the 
 RICHEDIT_CLASS10A class using the new RICHEDIT_CLASS20A class.
 </p><p>
 In short, the existing code registers the correct class name, but we 
-need to make a new dll dlls/riched20, and do alot of work on the 
+need to make a new dll dlls/riched20, and do a lot of work on the 
 richedit control :)
 </p><p>
 Actually, since we need to work on riched20, we might as will implement 
@@ -728,7 +728,7 @@ CodeWeavers has a hack to get around that fact and Mike described
 it:</p>
 <quote who="Mike McCormack"><p>
 We have an empty implementation of riched20 that simply forwards 
-requests to edit.  That is the wrong, and the existing riched32 code is 
+requests to edit.  This is the wrong way, and the existing riched32 code is 
 broken too (since it uses the edit control).
 </p><p>
 CrossOver's riched20 code is attached... it's a quick and easy way to 

@@ -99,9 +99,9 @@ On a more positive note, Chris Morgan and Tony Lambregts hacked on the
 Wine <a href="http://appdb.winehq.org">AppDB</a> this week and added
 support for maintainers.  One problem with the database is simply
 keeping it up to date.  The hope is that people will sign up to become
-maintainers of an application and then make sure comments are up to date
-and any other relevant info.  This is actually quite similar to how 
-CodeWeaver's 
+maintainers of an application and then make sure comments and any other
+relevant info are up to date.  This is actually quite similar to how 
+CodeWeavers' 
 <a href="http://www.codeweavers.com/site/compatibility/">Compatibility 
 Center</a> works.  For instance, if you check out Wine's page on 
 <a href="http://appdb.winehq.org/appview.php?appId=10&amp;versionId=67">
@@ -111,11 +111,11 @@ account and log in you'll be given an option to be an app maintainer.
 </p><p>
 If you regularly use an application it would really help to maintain
 a page in the AppDB.  The time commitment is minimal and it could really
-help others.  For instance, on the Word 2000 you'll find something like
-136 comments.  A bunch of them are from 2001 one and clearly aren't
+help others.  For instance, on Word 2000 you'll find something like
+136 comments.  A bunch of them are from 2001 and clearly aren't
 relevant.  There's also no screenshot.  By maintaining the app you
 can clean up the comments, post comments of your own, and soon you'll
-be able to add your own screenshot.  Lastly, if you're a PHP hacker
+be able to add your own screenshots.  Lastly, if you're a PHP hacker
 you might be interested in working on the AppDB itself.  If so, 
 contact <a href="mailto:chmorgan_at_charter.net">Chris Morgan</a>. </p>
 
@@ -158,7 +158,7 @@ the Windows Direct3D API.
 </p></quote>
 
 <p>That makes a lot of sense.  If you think about it though,
-Wine also has a NTDLL and we also have a Direct3D implementation
+Wine also has an NTDLL and we also have a Direct3D implementation
 so in theory you could use those instead of the native Windows
 ones.  It just so happens Dimi Paun spent some time doing a 
 Winelib port.  He reported this week,

@@ -396,9 +396,9 @@ starting from nt5 and I'm not yet sure where a write goes to)
 
 <li />I would let the server handle at least the handles of the registry. 
 since you can duplicate registry handles with DuplicateHandle and 
-inherit these, this are obviously K32 objects. This would enable us 
+inherit these, these are obviously K32 objects. This would enable us 
 to have change notitifications on keys. (It would be interesting to 
-test if CloseHandle() is are working with registy handles to)
+test if CloseHandle() is working with registy handles to)
 
 <li />Let the server handling the values to would give us a durable 
 mechanism to have consistent data wint more than one process.

@@ -140,7 +140,7 @@ it,
 <quote who="Juan Lang">
 No.  Generally, creating static libs is something we
  avoid in wine.  More specifically, these functions are
- already exported by advapi32, and you already link
+ already exported by advapi32, and you already link to
  advapi32 (to get access to the registry) so there's no
  advantage to having a copy in both places.</quote></p>
 
@@ -362,7 +362,7 @@ since there must be some Windows programs depending on that export.
 
 <p>Mike McCormack cautioned:</p>
 <quote who="Mike McCormack"><p>
-GradientFill is pretty slow, as it files the rectangle line by line. 
+GradientFill is pretty slow, as it fills the rectangle line by line. 
 I'm not sure how much this is going to slow down a normal application. 
 It used to draw pixel by pixel, and that was a very noticable 
 slowdown... line by line is much faster than that, but it still may 
@@ -456,7 +456,7 @@ helped, but still wasn't in ICA or RDP class with Wine).
 might find helpful:</p>
 <quote who="Nikolas"><p>
 While browsing the web i found a little tool which i expect to be quite
-helpfull: the opengl extension viewer. Though its written for windows,
+helpful: the opengl extension viewer. Though it's written for windows,
 it runs perfectly on wine and allows people working on d3d and so on to
 have a quick overview of the functions.
 </p><p>
