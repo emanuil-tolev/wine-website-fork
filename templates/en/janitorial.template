@@ -180,10 +180,10 @@
     <li class=committed>loader/module.c: kernel32: GetBinaryTypeW: illegal call to GetBinaryTypeA
     <li class=committed>loader/module.c: kernel32: GetBinaryTypeW: illegal call to HEAP_strdupWtoA
     <li class=committed>loader/module.c: kernel32: GetModuleFileNameW: illegal call to GetModuleFileNameA
-    <li>loader/module.c: kernel32: GetModuleHandleW: illegal call to GetModuleHandleA
-    <li>loader/module.c: kernel32: GetModuleHandleW: illegal call to HEAP_strdupWtoA
-    <li>loader/module.c: kernel32: LoadLibraryExW: illegal call to HEAP_strdupWtoA
-    <li>loader/module.c: kernel32: LoadLibraryExW: illegal call to LoadLibraryExA
+    <li class=committed>loader/module.c: kernel32: GetModuleHandleW: illegal call to GetModuleHandleA
+    <li class=committed>loader/module.c: kernel32: GetModuleHandleW: illegal call to HEAP_strdupWtoA
+    <li class=committed>loader/module.c: kernel32: LoadLibraryExW: illegal call to HEAP_strdupWtoA
+    <li class=committed>loader/module.c: kernel32: LoadLibraryExW: illegal call to LoadLibraryExA
     <li class=committed>memory/environ.c: kernel32: ExpandEnvironmentStringsW: illegal call to ExpandEnvironmentStringsA
     <li class=committed>memory/environ.c: kernel32: ExpandEnvironmentStringsW: illegal call to HEAP_strdupWtoA
     <li class=committed>memory/environ.c: kernel32: GetEnvironmentVariableW: illegal call to GetEnvironmentVariableA
@@ -195,8 +195,8 @@
     <li class=committed>objects/dc.c: gdi32: ResetDCW: illegal call to ResetDCA
     <li class=committed>objects/font.c: gdi32: GetKerningPairsW: illegal call to GetKerningPairsA
     <li class=committed>objects/metafile.c: gdi32: CopyMetaFileW: illegal call to CopyMetaFileA
-    <li>scheduler/process.c: kernel32: CreateProcessW: illegal call to CreateProcessA
-    <li>scheduler/process.c: kernel32: CreateProcessW: illegal call to HEAP_strdupWtoA
+    <li class=committed>scheduler/process.c: kernel32: CreateProcessW: illegal call to CreateProcessA
+    <li class=committed>scheduler/process.c: kernel32: CreateProcessW: illegal call to HEAP_strdupWtoA
     <li class=committed>win32/except.c: kernel32: FatalAppExitW: illegal call to GetModuleHandleA
     <li>windows/clipboard.c: user32: GetClipboardFormatNameW: illegal call to GetClipboardFormatNameA
     <li>windows/clipboard.c: user32: RegisterClipboardFormatW: illegal call to HEAP_strdupWtoA
@@ -207,7 +207,7 @@
     <li class=committed>windows/input.c: user32: MapVirtualKeyW: illegal call to MapVirtualKeyA
     <li class=committed>windows/input.c: user32: VkKeyScanExW: illegal call to VkKeyScanA
     <li class=committed>windows/input.c: user32: VkKeyScanW: illegal call to VkKeyScanA
-    <li>windows/sysparams.c: user32: SystemParametersInfoW: illegal call to SystemParametersInfoA
+    <li class=committed>windows/sysparams.c: user32: SystemParametersInfoW: illegal call to SystemParametersInfoA
     <li>windows/winhelp.c: user32: WinHelpW: illegal call to WinHelpA
     <li>windows/winproc.c: user32: CallWindowProcW: illegal call to WINPROC_CallProc32WTo32A
   </ul>
@@ -220,10 +220,12 @@
 		 <a href="mailto:m.davison@virgin.net">Matthew Davison</a>,
 		 <a href="mailto:tony_lambregts@telusplanet.net">Tony Lambregts</a>,
 		 <a href="mailto:dmitry@codeweavers.com">Dmitry Timoshkov</a>,
-		 <a href="mailto:pouech-eric@wanadoo.fr">Eric Pouech</a>.
+		 <a href="mailto:pouech-eric@wanadoo.fr">Eric Pouech</a>,
+		 <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>,
+		 <a href="mailto:burner1@hotmail.com">Justin Chevrier</a>.
 
-    <li>status: <span class=inprogress>first patches submitted</span>
-    <li>updated: Feb 29, 2004
+    <li>status: <span class=inprogress>71 left to go</span>
+    <li>updated: Mar 8, 2004
   </ul>
 
   <h2>DLL separation</h2>
