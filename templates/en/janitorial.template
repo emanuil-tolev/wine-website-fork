@@ -102,37 +102,55 @@
   The ASCII to Unicode conversion is lossy; moreover, with the
   shift to Unicode, it's actually slower to deal in ASCII than
   in Unicode, because of the additional conversions required.
-  There are 54 cross calls from Unicode to ANSI as reported by
+  There are 78 cross calls from Unicode to ANSI as reported by
   <tt>tools/winapi_check/winapi_check --none --progress --cross-call-unicode-ascii</tt>
-  (as of Aug 12, 2004):
+  (as of Oct 14, 2004):
   <ul>
-    <li class=submitted>dlls/advapi32/crypt.c: advapi32: CryptAcquireContextW: illegal call to CryptAcquireContextA
-    <li class=submitted>dlls/advapi32/crypt.c: advapi32: CryptEnumProviderTypesW: illegal call to CryptEnumProviderTypesA
+    <li>dlls/advapi32/crypt.c: advapi32: CryptAcquireContextW: illegal call to CryptAcquireContextA
+    <li>dlls/advapi32/crypt.c: advapi32: CryptEnumProviderTypesW: illegal call to CryptEnumProviderTypesA
     <li class=committed>dlls/advapi32/crypt.c: advapi32: CryptEnumProvidersW: illegal call to CryptEnumProvidersA
-    <li class=submitted>dlls/advapi32/crypt.c: advapi32: CryptGetDefaultProviderW: illegal call to CryptGetDefaultProviderA
-    <li class=submitted>dlls/advapi32/crypt.c: advapi32: CryptSetProviderExW: illegal call to CryptSetProviderExA
+    <li>dlls/advapi32/crypt.c: advapi32: CryptGetDefaultProviderW: illegal call to CryptGetDefaultProviderA
+    <li>dlls/advapi32/crypt.c: advapi32: CryptSetProviderExW: illegal call to CryptSetProviderExA
+    <li>dlls/commdlg/colordlg.c: colordlg: ChooseColorW: illegal call to FindResourceA
+    <li>dlls/commdlg/filedlg.c: colordlg: GetFileDialog95W: illegal call to GetCurrentDirectoryA
+    <li>dlls/commdlg/filedlg.c: colordlg: GetFileDialog95W: illegal call to SetCurrentDirectoryA
+    <li>dlls/commdlg/filedlg.c: colordlg: GetFileName31W: illegal call to GetWindowLongA
+    <li>dlls/commdlg/fontdlg.c: colordlg: FormatCharDlgProcW: illegal call to GetPropA
     <li>dlls/ddraw/main.c: ddraw: DirectDrawEnumerateExW: illegal call to DirectDrawEnumerateExA
     <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to HEAP_strdupWtoA
     <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to StartDocA
+    <li>dlls/hhctrl.ocx/hhctrl.c: hhctrl.ocx: HtmlHelpW: illegal call to MessageBoxA
     <li>dlls/kernel/comm.c: kernel32: CommConfigDialogW: illegal call to CommConfigDialogA
     <li>dlls/kernel/comm.c: kernel32: CommConfigDialogW: illegal call to HEAP_strdupWtoA
     <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to HEAP_strdupWtoA
     <li>dlls/kernel/comm.c: kernel32: SetDefaultCommConfigW: illegal call to SetDefaultCommConfigA
     <li>dlls/kernel/locale.c: kernel32: GetLocaleInfoW: illegal call to GetModuleHandleA
+    <li>dlls/kernel/resource.c: kernel32: FindResourceExW: illegal call to get_res_name_type_WtoA
     <li>dlls/kernel/sync.c: kernel32: WaitNamedPipeW: illegal call to CreateEventA
+    <li>dlls/lzexpand/lzexpand_main.c: lz32: GetExpandedNameW: illegal call to GetExpandedNameA
     <li>dlls/lzexpand/lzexpand_main.c: lz32: LZOpenFileW: illegal call to LZOpenFileA
+    <li>dlls/rpcrt4/rpc_binding.c: rpcrt4: RPCRT4_CreateBindingW: illegal call to RPCRT4_strdupWtoA
+    <li>dlls/rpcrt4/rpc_binding.c: rpcrt4: RPCRT4_CompleteBindingW: illegal call to RPCRT4_strdupWtoA
+    <li>dlls/rpcrt4/rpc_binding.c: rpcrt4: RPCRT4_CompleteBindingW: illegal call to RPCRT4_strndupA
     <li>dlls/rpcrt4/rpc_binding.c: rpcrt4: RpcBindingToStringBindingW: illegal call to RpcBindingToStringBindingA
     <li>dlls/rpcrt4/rpc_binding.c: rpcrt4: RpcBindingToStringBindingW: illegal call to RpcStringFreeA
     <li>dlls/rpcrt4/rpc_server.c: rpcrt4: RpcServerUseProtseqEpExW: illegal call to RPCRT4_strdupWtoA
     <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to DialogBoxIndirectParamA
     <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to HEAP_strdupWtoA
     <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to LoadIconA
+    <li>dlls/shell32/shell32_main.c: shell32: ShellAboutW: illegal call to FindResourceA
     <li>dlls/shell32/shellole.c: shell32: DragQueryFileW: illegal call to DragQueryFileA
     <li>dlls/shell32/systray.c: shell32: Shell_NotifyIconW: illegal call to Shell_NotifyIconA
+    <li>dlls/shlwapi/ordinal.c: shlwapi: SHStringFromGUIDW: illegal call to SHStringFromGUIDA
+    <li>dlls/shlwapi/ordinal.c: shlwapi: SHCreateWorkerWindowW: illegal call to SHCreateWorkerWindowA
+    <li>dlls/shlwapi/ordinal.c: shlwapi: SHCreateWorkerWindowW: illegal call to LoadCursorA
+    <li>dlls/shlwapi/ordinal.c: shlwapi: SHCreateWorkerWindowW: illegal call to SetWindowLongA
     <li>dlls/shlwapi/string.c: shlwapi: StrCmpLogicalW: illegal call to SHLWAPI_ChrCmpHelperA
     <li>dlls/shlwapi/string.c: shlwapi: StrFormatByteSizeW: illegal call to StrFormatByteSize64A
     <li>dlls/shlwapi/string.c: shlwapi: StrRetToStrW: illegal call to SHStrDupA
+    <li>dlls/shlwapi/string.c: shlwapi: StrRStrIW: illegal call to ChrCmpIA
     <li>dlls/version/install.c: version: VerInstallFileW: illegal call to VerInstallFileA
+    <li>dlls/wininet/internet.c: wininet: InternetCheckConnectionW: illegal call to InternetCheckConnectionA
     <li>dlls/winmm/driver.c: winmm: OpenDriverW: illegal call to OpenDriverA
     <li>dlls/winmm/joystick.c: winmm: joyGetDevCapsW: illegal call to joyGetDevCapsA
     <li>dlls/winmm/mci.c: winmm: mciSendStringW: illegal call to mciSendStringA
@@ -140,6 +158,9 @@
     <li>dlls/winmm/mmio.c: winmm: mmioStringToFOURCCW: illegal call to mmioStringToFOURCCA
     <li>dlls/winmm/winmm.c: winmm: auxGetDevCapsW: illegal call to auxGetDevCapsA
     <li>dlls/winmm/winmm.c: winmm: mciGetErrorStringW: illegal call to mciGetErrorStringA
+    <li>dlls/winmm/winmm.c: winmm: mciSendCommandW: illegal call to MCI_MapMsgWtoA
+    <li>dlls/winmm/winmm.c: winmm: mciSendCommandW: illegal call to mciSendCommandA
+    <li>dlls/winmm/winmm.c: winmm: mciSendCommandW: illegal call to MCI_UnmapMsgWtoA
     <li>dlls/winmm/winmm.c: winmm: midiInGetDevCapsW: illegal call to midiInGetDevCapsA
     <li>dlls/winmm/winmm.c: winmm: midiOutGetDevCapsW: illegal call to midiOutGetDevCapsA
     <li>dlls/winmm/winmm.c: winmm: mixerGetControlDetailsW: illegal call to mixerGetControlDetailsA
@@ -156,9 +177,12 @@
     <li>dlls/winspool/info.c: winspool.drv: DocumentPropertiesW: illegal call to DEVMODEdupWtoA
     <li>dlls/winspool/info.c: winspool.drv: DocumentPropertiesW: illegal call to DocumentPropertiesA
     <li>dlls/winspool/info.c: winspool.drv: DocumentPropertiesW: illegal call to HEAP_strdupWtoA
+    <li>dlls/winspool/info.c: winspool.drv: OpenPrinterW: illegal call to RegCreateKeyA
+    <li>programs/winedbg/winedbg.c: winedbg: dbg_outputW: illegal call to dbg_outputA
     <li>windows/clipboard.c: user32: GetClipboardFormatNameW: illegal call to GetClipboardFormatNameA
     <li>windows/clipboard.c: user32: RegisterClipboardFormatW: illegal call to HEAP_strdupWtoA
     <li>windows/clipboard.c: user32: RegisterClipboardFormatW: illegal call to RegisterClipboardFormatA
+    <li>windows/defwnd.c: user32: DEFWND_ImmIsUIMessageW: illegal call to GetModuleHandleA
     <li>windows/winhelp.c: user32: WinHelpW: illegal call to WinHelpA
     <li>windows/winproc.c: user32: CallWindowProcW: illegal call to WINPROC_CallProc32WTo32A
   </ul>
