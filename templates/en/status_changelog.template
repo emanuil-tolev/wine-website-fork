@@ -2,6 +2,49 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since February 03, 2005:</p>
+
+ <ul>
+ <li>ADD - Fran&ccedil;ois Gouget as worker to (winemenubuilder)</li>
+ <li>ADD - Fran&ccedil;ois Gouget  as worker to Wine API checker (winapi_check)</li>
+ <li>ADD - Dmitry Timoshkov as worker to Dynamic Data Exchange (DDE)</li>
+ <li>ADD - Dmitry Timoshkov as worker to Standard Windows Controls</li>
+ <li>ADD - Multiple Document Interface (MDI) section</li>
+ <li>ADD - Access Control & Authorization section</li>
+ <li>ADD - Ferenc Wagner as worker to Wine Conformance Test Suite</li>
+ <li>ADD - Paul Vriens as worker to Wine Conformance Test Suite</li>
+ <li>Remove - Eric Pouech as worker on Dynamic Data Exchange (DDE)</li>
+ <li>Remove - Mike McCormack as worker on (winemenubuilder)</li>
+ <li>Remove - Marcus Meissner as worker on Wine Launcher</li>
+ <li>Remove - Marcus Meissner as worker on ole32.dll</li>
+ <li>Remove - Marcus Meissner as worker on oleaut32.dll</li>
+ <li>Remove - Dimitrie O. Paun as worker on Wine Resource Compiler (wrc)</li>
+ <li>Remove - Dimitrie O. Paun as worker on Wine Registry Editor (regedit)</li>
+ <li>Remove - Dimitrie O. Paun as worker on Wine configuration tool (winecfg)</li>
+ <li>Remove - Chris Morgan as worker on Wine configuration tool (winecfg)</li>
+ <li>Remove - Chris Morgan as worker on Initial registry contents</li>
+ <li>Remove - Chris Morgan as worker on Initial directory structure</li>
+ <li>Remove - Chris Morgan as worker on Initial INI files</li>
+ <li>Remove - Shachar Shemesh as worker on BiDi</li>
+ <li>Remove - Shachar Shemesh as worker on Bootup/autostart management (wineboot)</li>
+ <li>Remove - Shachar Shemesh as worker on National Language Support (NLS)</li>
+ <li>Remove - Andreas Mohr as worker on Bootup/autostart management (wineboot)</li>
+ <li>Remove - Andreas Mohr as worker on Wine Installer (wineinstall)</li>
+ <li>Remove - Andriy Palamarchuk as worker on Wine Conformance Test Suite</li>
+ <li>Remove - Fran&ccedil;ois Gouget as worker on Wine Conformance Test Suite</li>
+ <li>Remove - CodeWeavers as worker on Wine Porting Tool (winemaker)</li>
+ <li>Remove - Patrik Stridvall as worker on Wine API checker (winapi_check)</li>
+ <li>Remove - Alexandre Julliard as worker on National Language Support (NLS)</li>
+ <li>Fixed a couple bad links</li>
+ <li>msi.dll 40% -&gt; 45%</li>
+ <li>Window management 85% -&gt; 90%</li>
+ <li>DLL separation 80% -&gt; 90%</li>
+ <li>Wine IDL compiler (widl) 50% -&gt; 70%</li>
+ <li>Wine Registry Editor (regedit) 60% -&gt; 80%</li>
+ <li>Wine gcc wrapper(winegcc) 70% -&gt; 90%</li>
+ </ul>
+ <br>
+
 <p>Changes since January 29, 2005:</p>
 
  <ul>
@@ -29,7 +72,7 @@
  <li>Put winecfg in Native Programs</li>
  <li>Window management needs proper inter-process handling of activation, focus, repaint. has been completed</li>
  <li>Workaround for the "no keyboard without Desktop mode" problem. has been fixed</li>
- <li>Make sure ASCII functions call the Unicode one and not the other way around (a lot of work has been done on this)</li>
+ <li>Make sure ASCII functions call the Unicode one and not the other way around (alot of work has been done on this)</li>
  <li>"Registry contents" is done as there is now a wine.inf script.</li>
  <li>Eric has been hard at work implementing two winedbg todos.</li>
  <li>We have now moved the file code into NTDLL and limited UNC support is available through manual mounting.</li>
