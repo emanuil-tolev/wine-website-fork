@@ -107,7 +107,7 @@
     <li class=committed>dlls/commdlg/printdlg.c: comdlg32: PrintDlgW: illegal call to GetWindowLongA
     <li>dlls/ddraw/main.c: ddraw: DirectDrawEnumerateExW: illegal call to DirectDrawEnumerateExA
     <li class=committed>dlls/gdi/enhmfdrv/init.c: gdi32: CreateEnhMetaFileW: illegal call to CreateDCA
-    <li>dlls/gdi/mfdrv/init.c: gdi32: CreateMetaFileW: illegal call to CreateMetaFileA
+    <li class=submitted>dlls/gdi/mfdrv/init.c: gdi32: CreateMetaFileW: illegal call to CreateMetaFileA
     <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to HEAP_strdupWtoA
     <li>dlls/gdi/printdrv.c: gdi32: StartDocW: illegal call to StartDocA
     <li class=committed>dlls/imm32/imm.c: imm32: ImmGetCompositionStringW: illegal call to GetVersionExA
@@ -194,8 +194,8 @@
     <li class=committed>files/drive.c: kernel32: GetDiskFreeSpaceExW: illegal call to HEAP_strdupWtoA
     <li class=committed>files/profile.c: kernel32: GetPrivateProfileIntW: illegal call to GetPrivateProfileIntA
     <li class=committed>files/profile.c: kernel32: GetPrivateProfileIntW: illegal call to HEAP_strdupWtoA
-    <li>loader/module.c: kernel32: GetBinaryTypeW: illegal call to GetBinaryTypeA
-    <li>loader/module.c: kernel32: GetBinaryTypeW: illegal call to HEAP_strdupWtoA
+    <li class=submitted>loader/module.c: kernel32: GetBinaryTypeW: illegal call to GetBinaryTypeA
+    <li class=submitted>loader/module.c: kernel32: GetBinaryTypeW: illegal call to HEAP_strdupWtoA
     <li class=committed>loader/module.c: kernel32: GetModuleFileNameW: illegal call to GetModuleFileNameA
     <li>loader/module.c: kernel32: GetModuleHandleW: illegal call to GetModuleHandleA
     <li>loader/module.c: kernel32: GetModuleHandleW: illegal call to HEAP_strdupWtoA
@@ -211,7 +211,7 @@
     <li>objects/dc.c: gdi32: CreateDCW: illegal call to HEAP_strdupWtoA
     <li>objects/dc.c: gdi32: ResetDCW: illegal call to ResetDCA
     <li class=committed>objects/font.c: gdi32: GetKerningPairsW: illegal call to GetKerningPairsA
-    <li>objects/metafile.c: gdi32: CopyMetaFileW: illegal call to CopyMetaFileA
+    <li class=submitted>objects/metafile.c: gdi32: CopyMetaFileW: illegal call to CopyMetaFileA
     <li>scheduler/process.c: kernel32: CreateProcessW: illegal call to CreateProcessA
     <li>scheduler/process.c: kernel32: CreateProcessW: illegal call to HEAP_strdupWtoA
     <li class=committed>win32/except.c: kernel32: FatalAppExitW: illegal call to GetModuleHandleA
@@ -360,9 +360,9 @@
   this is not the case in windows, and we should fix it (and first, fix 
   all the wine code relying on this)</i>
   <ul>
-    <li>workers: wanted
-    <li>status: <span class=todo>TODO</span>
-    <li>updated: Oct 6, 2003
+    <li>worker: <a href="mailto:xolegpro@rbcmail.ru">Oleg Prokhorov</a>
+    <li>status: <span class=inprogress>First patches submitted already</span>
+    <li>updated: Oct 11, 2003
   </ul>
 
   <h3>Include file cleanup</h3>
@@ -373,7 +373,7 @@
     <li> async.h
     <li> bitmap.h
     <li> builtin16.h
-    <li> callback.h
+    <li class=committed> callback.h
     <li> clipboard.h
     <li> cursoricon.h
     <li class=committed> d3dhal.h
@@ -388,12 +388,13 @@
     <li> global.h
     <li> heap.h
     <li class=committed> input.h
+    <li class=committed> instance.h
     <li> local.h
     <li class=committed> message.h
     <li> miscemu.h
     <li class=committed> mmddk.h
     <li> module.h
-    <li> msdos.h
+    <li class=committed> msdos.h
     <li class=committed> netspi.h
     <li> nonclient.h
     <li class=committed> ntddcdrm.h
@@ -404,7 +405,7 @@
     <li> palette.h
     <li class=committed> path.h
     <li class=committed> queue.h
-    <li> selectors.h
+    <li class=committed> selectors.h
     <li class=committed> snoop.h
     <li class=committed> spy.h
     <li> stackframe.h
@@ -412,7 +413,7 @@
     <li class=committed> sysmetrics.h
     <li> task.h
     <li> thread.h
-    <li> toolhelp.h
+    <li class=committed> toolhelp.h
     <li> user.h
     <li> win.h
     <li> winpos.h
@@ -439,16 +440,15 @@
     <li> files
     <li> graphics
     <li> graphics/x11drv
-    <li> loader
-    <li> loader/ne
-    <li> memory
+    <li class=committed> loader/ne
+    <li class=committed> memory
     <li> misc
-    <li> miscemu
-    <li> msdos
+    <li class=committed> miscemu
+    <li class=committed> msdos
     <li> objects
     <li class=committed> relay32
-    <li> scheduler
-    <li> win32
+    <li class=committed> scheduler
+    <li class=committed> win32
     <li> windows
   </ul>
 
