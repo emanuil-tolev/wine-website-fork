@@ -89,12 +89,12 @@ little slower than normal in the Wine world.  The mailing lists
 and CVS have seen less activity than they have in the previous
 few months.  </p>
 
-<p>Part of that means it's a little harder to find news stories..
+<p>Part of that means it's a little harder to find news stories...
 but of course that's why Google exists.  I found a page describing
 how to use Wine to run some 
 <a href="http://www.ccp14.ac.uk/solution/wine/">specialized scientific</a>
 (crystallography)  software.  It appears these instructions have
-been around for a while, but the screenshots are still nice..
+been around for a while, but the screenshots are still nice...
 
 
 </p>
@@ -135,7 +135,7 @@ wine-announce.
 </p></quote>
 
 <p>The web page above includes more detail:</p>
-<quote who="Codeweavers"><p>
+<quote who="CodeWeavers"><p>
 Everyone is welcome at the second semi regular conference of Wine enthusiasts. Come and gather with fellow Wine hackers to:
 <ul>
     <li> Discuss the future of Wine</li>
@@ -175,15 +175,15 @@ Saturday, January 31st and Sunday, February 1st, 2004.
 <p>Carlos Lozano posted some success stories for games running under
 a standard Wine installation:</p>
 <quote who="Carlos Lozano"><p>
-Is it time for playing games on WINE? Here goes some sucessfull stories :)
-If you need more screenshots, logs or another info about this games,
+Is it time for playing games on WINE? Here goes some successful stories :)
+If you need more screenshots, logs or another info about these games,
 leave me know.
 </p><p>
 Date of the test: 20031101
 </p><p>
 <u>Star Wars: The Phantom Menace.</u>
 </p><p>
-   CDROM: Original disc, not necessary any trick.
+   CDROM: Original disc, no trick needed.
    Additional wine patches: No
 <ul>
    <li> Install: Yes.</li>
@@ -226,7 +226,7 @@ Date of the test: 20031101
 
 <u>Commandos 3: Destination Berlin Demo</u></p><p>
 
-   CDROM: Using the original disc, not necessary any trick.<br />
+   CDROM: Using the original disc, no trick needed.<br />
    Additional wine patches:
         <ul>
         <a href="http://www.winehq.org/hypermail/wine-patches/2003/11/0000.html">http://www.winehq.org/hypermail/wine-patches/2003/11/0000.html</a><br />
@@ -249,7 +249,7 @@ Date of the test: 20031101
 
 <u>Haegemonian Demo (no playable demo).</u></p><p>
 
-   CDROM: Using the original disc, not necessary any trick.<br />
+   CDROM: Using the original disc, no trick needed.<br />
    Additional wine patches:
    	<ul>
         <a href="http://62.93.166.115/device.diff">http://62.93.166.115/device.diff</a>  -- (IDirect3DDevice8Impl_CopyRects)</ul>
@@ -270,7 +270,7 @@ Date of the test: 20031101
 
 <u>Anno 1602.</u></p><p>
 
-   Notes: Using the original disc, not necessary any trick.<br />
+   Notes: Using the original disc, no trick needed.<br />
    Additional wine patches:
    <ul><a href="http://www.winehq.org/hypermail/wine-patches/2003/10/0274.html">http://www.winehq.org/hypermail/wine-patches/2003/10/0274.html</a></ul></p><p>
    <ul>
@@ -289,7 +289,7 @@ Date of the test: 20031101
 
 <u>Praetoriam Demo.</u></p><p>
 
-   Notes: Using the original disc, not necessary any trick.<br />
+   Notes: Using the original disc, no trick needed.<br />
    Additional wine patches: No
    <ul>
    <li> Install: Yes (using native dlls for InstallShield 7)</li>
@@ -311,8 +311,8 @@ fixme:ddraw:Main_IDirect3DDeviceImpl_7_Load</li>
 Wine's support for games.  At one point
 Raphael Junqueria remarked, 
 <quote who="Raphael Junqueira">
-And i have already a simple but working d3d9 prototype (who use a new d3dcore 
-lib)</quote> Later in the week some of that new d3dcore arrive on wine=patches.
+And i have already a simple but working d3d9 prototype (which uses a new d3dcore 
+lib)</quote> Later in the week some of that new d3dcore arrived on wine-patches.
 </p>
 
 </section>
@@ -325,11 +325,11 @@ lib)</quote> Later in the week some of that new d3dcore arrive on wine=patches.
 	enddate="11/08/2003"
 >
 <p>I remember back in the 80's the gaming industry discovered
-people could copy floppy disks.  A few friends I used to spend
+people could copy floppy disks.  With a few friends I used to spend
 countless hours figuring out how to get around the latest copy
 protection schemes.  Ultimately we always discovered a solution -
 finding a cracked game hacked by some underground group or a way to use
-one of the popular game copying programs.  Fast forward 15 years..
+one of the popular game copying programs.  Fast forward 15 years...
 nothing has changed.  Game manufacturers still use copy protection
 and it's still as useless as always.  I doubt any 14 year old has a
 problem downloading the latest Grand Theft Auto cracked executable
@@ -376,9 +376,9 @@ the nt line).
 The current status is (AFAIK):
 <ul>
 <li>2 was committed to wine CVS.</li>
-<li>The problems behind 1 and 3 were fixed in the meanwhile.</li>
+<li>The problems behind 1 and 3 were fixed in the meantime.</li>
 <li>I have read a discussion about 4 on wine-devel. If I remember correctly it was 
-aggreed that it should be added to wine sooner or later. But I dont see it 
+agreed that it should be added to wine sooner or later. But I dont see it 
 yet in the CVS.</li>
 <li>5 is the only part which is related to safedisc. The SECDRV device handler is 
 implemented in the secdrv.sys file which comes with the copy protected CD. 
@@ -431,7 +431,7 @@ control-circumvention law dissolves in the face of open-source software.
 Moreover, in the face of (L)GPL open-source software, it dissolves by 
 *design* - you can not withhold source-code if you want to release 
 binaries. IIRC, this was one of the major stumbling blocks for 
-Transgaming and the Wine/LGPL debate - they have copyprotection support 
+TransGaming and the Wine/LGPL debate - they have copyprotection support 
 that they legally can not dream of releasing source for. Some argue that 
 binaries are a form of source code anyway, and that you can "read" them 
 in the sense that you can interpret and modify their operation. However, 
@@ -494,7 +494,7 @@ dummy Wine driver you do; since the dummy Wine driver is not an
 "authorized" way to get access it's circumvention. It doesn't matter
 at all whether it lets you use copied CDs or not.
 </p><p>
-Besides, I 1don't see how you could possibly prove that our
+Besides, I don't see how you could possibly prove that our
 implementation does exactly the same thing as the original one. Maybe
 the original doesn't only prevent copied CDs, maybe it also checks the
 phase of the moon or whatever, you have no way to make sure the

@@ -124,13 +124,13 @@ and then do the stats from 7/1 on.  </p>
 	because they are Win16 functions calling Win16
 	functions.
 	</p><p>
-	I do not say this is nessary wrong, but are
+	I do not say this is necessarily wrong, but are
 	you (Dimitry) really sure this is how it should be?
 	</p><p>
 	Sure it probably runs a little faster, but then Win16
 	applications on a modern computer are likely to be 
 	_very_ fast, so it is really worth risking potential
-	compabillity errors because of some probably irrelavant
+	compatibility errors because of some probably irrelevant
 	speed differences.
 	</p><p>
 	Not that functions like DeleteObject are likely to
