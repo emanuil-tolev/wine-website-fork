@@ -50,7 +50,7 @@ PRE         { font-family: Fixed; }
 .menuLink	        { color: #ffffff; font-weight: bold; }
 .menuItem	        { color: #000000; }
 .menuItem:visited   { color: #000000; }
-.menuItem:hover     { color: #A50D0D; font-weight: bold; }
+.menuItem:hover     { color: #A50D0D; }
 .topMenu	        { background-color: #999999; background-image: url("./images/checker.gif"); }
 .sideMenu	        { background-color: #FFFFFF; }
 

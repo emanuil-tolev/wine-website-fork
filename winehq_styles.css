@@ -50,7 +50,7 @@ PRE         { font-family: Fixed; font-size: 10pt; }
 .menuLink	       { font-size: 10px; color: #ffffff; font-weight: bold; }
 .menuItem	       { font-size: 10px; color: #000000; }
 .menuItem:visited  { font-size: 10px; color: #000000; }
-.menuItem:hover    { font-size: 10px; color: #A50D0D; font-weight: bold; }
+.menuItem:hover    { font-size: 10px; color: #A50D0D; }
 
 .topMenu	{ background-color: #601919; }
 .sideMenu	{ background-color: #FFFFFF; }
