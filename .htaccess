@@ -54,6 +54,7 @@ RedirectPermanent /forums/                      http://www.winehq.org/site/forum
 RedirectPermanent /forums                       http://www.winehq.org/site/forums
 
 # fix old style documentation links
+RedirectMatch ^/(Docs|Docs/)$			http://www.winehq.org/site/documentation
 RedirectMatch ^/Docs/(\w+-\w+)/$		http://www.winehq.org/site/docs/$1/index
 RedirectMatch ^/Docs/(\w+-\w+)/(.*)\.shtml$     http://www.winehq.org/site/docs/$1/$2 
 
