@@ -188,8 +188,8 @@
     <li>dlls/winspool/info.c: winspool.drv: GetDefaultPrinterW: illegal call to GetDefaultPrinterA
     <li class=committed>dlls/winspool/info.c: winspool.drv: GetPrinterDriverDirectoryW: illegal call to GetPrinterDriverDirectoryA
     <li class=committed>dlls/winspool/info.c: winspool.drv: GetPrinterDriverDirectoryW: illegal call to HEAP_strdupWtoA
-    <li>files/dos_fs.c: kernel32: QueryDosDeviceW: illegal call to HEAP_strdupWtoA
-    <li>files/dos_fs.c: kernel32: QueryDosDeviceW: illegal call to QueryDosDeviceA
+    <li class=committed>files/dos_fs.c: kernel32: QueryDosDeviceW: illegal call to HEAP_strdupWtoA
+    <li class=committed>files/dos_fs.c: kernel32: QueryDosDeviceW: illegal call to QueryDosDeviceA
     <li class=committed>files/drive.c: kernel32: GetDiskFreeSpaceExW: illegal call to GetDiskFreeSpaceExA
     <li class=committed>files/drive.c: kernel32: GetDiskFreeSpaceExW: illegal call to HEAP_strdupWtoA
     <li class=committed>files/profile.c: kernel32: GetPrivateProfileIntW: illegal call to GetPrivateProfileIntA
@@ -394,10 +394,10 @@
     <li class=committed> path.h
     <li class=committed> queue.h
     <li> selectors.h
-    <li> snoop.h
+    <li class=committed> snoop.h
     <li class=committed> spy.h
     <li> stackframe.h
-    <li> syslevel.h
+    <li class=committed> syslevel.h
     <li class=committed> sysmetrics.h
     <li> task.h
     <li> thread.h
@@ -417,6 +417,36 @@
     <li>workers: <a href="mailto:julliard@winehq.com">Alexandre Julliard</a>.
     <li>status: <span class=inprogress>first patches committed.</span>
     <li>updated: Dec 6, 2002
+  </ul>
+
+  <h3>Remove non-standard directories</h3>
+  There are 15 directories that do not fit into the current organization. 
+  They are historical remnants of a troubled past, they need to do. 
+  This is tightly linked to the <b>DLL Separation</b> task, listed above.
+  <ul>
+    <li> controls
+    <li> files
+    <li> graphics
+    <li> graphics/x11drv
+    <li> loader
+    <li> loader/ne
+    <li> memory
+    <li> misc
+    <li> miscemu
+    <li> msdos
+    <li> objects
+    <li class=committed> relay32
+    <li> scheduler
+    <li> win32
+    <li> windows
+  </ul>
+
+  <p>Please note that patches have been submitted for the <span class=submitted>italic</span> entries;
+     the <span class=committed>grayed out</span> entries have already been fixed. 
+  <ul>
+    <li>workers: <a href="mailto:julliard@winehq.com">Alexandre Julliard</a>.
+    <li>status: <span class=inprogress>first patches committed.</span>
+    <li>updated: Sep 19, 2003
   </ul>
 
   <h3>Header dependencies cleanup</h3>
