@@ -30,7 +30,7 @@
   ease the parsing of the dumped code. Most of the perl scripts are for
   the Linux Kernel but writing new scripts seems to be easy. I wrote
   (well, mostly adapted an existing script for the kernel) 
-  <a href="http://people.redhat.com/mstefani/wine/smatch/enter_leave.pl">one script</a>
+  <a href="http://people.redhat.com/mstefani/wine/smatch/">one script</a>
 
   (if we decide to adopt smatch it should probably go to <tt>$wine/tools/smatch/</tt>)
   to find code paths with missing <tt>LeaveCriticalSection</tt>'s. Scripts to find
@@ -257,7 +257,7 @@
 
   <h3>Phase 1</h3>
   Please refer to the 
-  <a href="http://www.dssd.ca/wine/Wine-0.9-TODO.html">0.9 TODO</a>
+  <a href="http://63.138.153.104/wine/Wine-0.9-TODO-0.9.html">0.9 TODO</a>
 
   for the status of this project.
 
