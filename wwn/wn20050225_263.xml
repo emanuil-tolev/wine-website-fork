@@ -145,13 +145,13 @@ replaced, including MSI and DCOM.  </p>
 favorable:</p>
 <quote who="Government Computer News"><p>
 But by far the most powerful feature of Xandros is its ability to run 
-Microsoft Office applications through a program called Crossover, written by 
-CodeWeavers Inc. of St. Paul, Minn. Crossover Office 4.1, originally bundled 
+Microsoft Office applications through a program called CrossOver, written by 
+CodeWeavers Inc. of St. Paul, Minn. CrossOver Office 4.1, originally bundled 
 in Xandros 2.5, lets several supported Windows applications such as Microsoft 
-Office 97, 2000, and XP run in the Linux environment. Crossover also makes 
-Adobe PhotoShop 6, Adobe FrameMaker 7.1 and Dream-Weaver MX file compatible in 
-the Xandros environment. With Crossover, government agencies using Lotus 
-Notes 5 or later are also safe to use those applications. The Crossover 
+Office 97, 2000, and XP run in the Linux environment. CrossOver also makes 
+Adobe Photoshop 6, Adobe FrameMaker 7.1 and Dreamweaver MX file compatible in 
+the Xandros environment. With CrossOver, government agencies using Lotus 
+Notes 5 or later are also safe to use those applications. The CrossOver 
 application makes the transition from a Windows environment to a Linux world 
 particularly easy.</p></quote>
 
@@ -173,9 +173,9 @@ Linux desktop--WINE to the rescue.</p></quote>
 <a href="http://www.linux-gamers.net/modules/news/article.php?storyid=707">about
 World of Warcraft</a> appeared complementing a thread on wine-devel that's 
 covered below.  Just a few years ago it seemed like gaming with Wine was 
-stagnant so the recent activity seems is great to see:</p>
+stagnant so the recent activity is great to see:</p>
 <quote who="linuX-gamers.net"><p>
-Since the were only two things preventing operation of the game. The people at 
+Since there was only two things preventing operation of the game. The people at 
 WineHQ have got World of Warcraft working with the help of Blizzard's WoW 
 maintainer on the latest cvs and some patches provided on the developer 
 mailing list. The game is playable under OpenGL using Raphael's Pbuffer patch.
@@ -429,7 +429,7 @@ tree is at /sources/wine:
 The last step will spit out many errors mostly because
 Wine targets Unix platforms, not a Windows platform like
 MinGW. But most dlls will actually build if you ignore
-the erros (make -k) or cd into the dll's directory first.
+the errors (make -k) or cd into the dll's directory first.
 </p></quote>
 
 </section>
@@ -443,7 +443,7 @@ the erros (make -k) or cd into the dll's directory first.
 >
 <topic></topic>
 <p>Bill Medland wanted to know the details about how Wine's threading
-works and what were involved with implementing it:</p>
+works and what was involved with implementing it:</p>
 <quote who="Bill Medland"><p>
 Does anyone know any site or book or something with a decent discussion about
 the problems of the different threading models and their implementations?

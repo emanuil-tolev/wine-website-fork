@@ -120,7 +120,7 @@
  <li>Put winecfg in Native Programs</li>
  <li>Window management needs proper inter-process handling of activation, focus, repaint. has been completed</li>
  <li>Workaround for the "no keyboard without Desktop mode" problem. has been fixed</li>
- <li>Make sure ASCII functions call the Unicode one and not the other way around (alot of work has been done on this)</li>
+ <li>Make sure ASCII functions call the Unicode one and not the other way around (a lot of work has been done on this)</li>
  <li>"Registry contents" is done as there is now a wine.inf script.</li>
  <li>Eric has been hard at work implementing two winedbg todos.</li>
  <li>We have now moved the file code into NTDLL and limited UNC support is available through manual mounting.</li>

@@ -422,8 +422,8 @@ Duane Clark ran into a problem,
  <quote who="Huw Davies">
  I think you have a buggy version of libXrender.so.  Could you check
  that this patch stops the crash?  Unfortunately it will disable client
- side font rendering.  Jeremy came up with a truely horrible hack to
- workaround this problem but for some reason that I can't possibly
+ side font rendering.  Jeremy came up with a truly horrible hack to
+ work around this problem but for some reason that I can't possibly
  imagine Alexandre left it out when he committed the last xrender
  changes &lt;g&gt;.
  </quote>

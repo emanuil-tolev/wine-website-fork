@@ -267,7 +267,7 @@ After exchanging some mail, Patrik asked,
 
  <p>This is more a problem of inter-dependencies of X11DRV and USER32 (as the
  former should NEVER be loaded before the latter)... But as I could not fix
- this problem, I prefered going 'around' the problem :-) </p>
+ this problem, I preferred going 'around' the problem :-) </p>
 
  <p>And thus the attached patch (I see it was already done for DDraw) :</p>
 </quote>

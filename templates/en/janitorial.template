@@ -17,7 +17,7 @@
 
   Wine code should avoid the use of strncpy for these reasons, and instead
   use lstrcpynA/W or memcpy. You can use the following command to find
-  occurences of strncpy in the Wine source code:<p>
+  occurrences of strncpy in the Wine source code:<p>
 
   <tt>find . -name \*.c -exec grep strncpy {} \; -ls</tt><p>
 

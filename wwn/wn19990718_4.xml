@@ -523,7 +523,7 @@ The patch tries to solve the following problems.
    use CRTDLL instead of libc.
 <li />Making is possible to for WineLib apps to use CRTDLL instead of libc.
 <li />Making it possible for WineLib apps to choose between using 
-   the CRTDLL or the libc variant of a funtion. 
+   the CRTDLL or the libc variant of a function. 
 </ol>
 
 <p />

@@ -42,7 +42,7 @@ Then, see the instructions below for building the package in the console.</p>
 <p>If your system doesn't use a graphical package manager like Synaptic, you 
 will need to edit APT's configuration file by hand. You will need root access to
 do this and run the commands below. Switch to root by typing '<b>su</b>'. If you 
-are an Ubuntu user, you can instead preceed each command with '<b>sudo</b>'. Now, 
+are an Ubuntu user, you can instead precede each command with '<b>sudo</b>'. Now, 
 use your favorite text editor to open the file /etc/apt/sources.list or use the 
 console editor by typing '<b>nano /etc/apt/sources.list</b>' and then add the 
 following lines to the end:</p>

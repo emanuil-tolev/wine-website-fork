@@ -154,7 +154,7 @@ As some of you may know, Microsoft is planning to totally restrict
 access to the Microsoft download center to all non-genuine Windows 
 users. So you would expect some check for pirated copies of Windows 
 to be involved. If you visit the download center with IE you get an 
-activex control, but if you try with Firefox, you'll have to download
+ActiveX control, but if you try with Firefox, you'll have to download
 a little program, that returns a code you have to copy into
 the download page, to get access to the download you selected.
 </p><p>
@@ -239,7 +239,7 @@ last time I saw it.
 We may also need to adjust the RPC runtime so that it runs a message 
 loop (for re-entrancy), but I don't think that'd be too hard.
 </p><p>
-So, maybe a week or two? It certainly should not be broken for more than 
+So, maybe a week or two? It certainly should not be broken for more than a
 month.</p></quote>
 
 <p>Rob followed up a few hours later with the patch:</p>
@@ -320,12 +320,12 @@ affects shadows and odd shaped windows etc...</li>
 on the up side.
 <ul>
 <li>Stateblock support seems to be more complete than
-TransGamings.</li>
+TransGaming's.</li>
 
 <li>Swapchains are working, TransGaming doesn't have them.</li>
 
 <li>Non-power of two textures should work on all opengl
-video cards, transgaming only support a subset of
+video cards, transgaming only supports a subset of
 cards.</li>
 
 <li>Querys are stubbed, and I've got a version of
@@ -342,7 +342,7 @@ on-par with cedega.
 I'm looking at offscreen surfaces soon.
 </p><p>
 There are lots of easy performance boosters that can
-be implemented at somepoint.
+be implemented at some point.
 </p><p>
 Of the games I've tested this version works more often
 than Cedega, but that doesn't mean too much since most
@@ -382,14 +382,14 @@ Thanks for the incredible work so far!
 <p>Oliver explained why he wanted to look into it:</p>
 <quote who="Oliver Stieber"><p>
 Avalon depends heavily on DirectX 9, I'm not out to do
-Transgaming out of work so I'd prefer to focus on what
-isn't currently supported by Cedega/Crossover office,
-this would be things like Directx 9 applications, and
+TransGaming out of work so I'd prefer to focus on what
+isn't currently supported by Cedega/CrossOver Office,
+this would be things like DirectX 9 applications, and
 games that aren't FPS's or RTS's.
 </p><p>
 If Half Life 2 happens to work so be it, but I'm even
 less a fan of DRM/steam then I am of duplicating
-Transgaming's work.
+TransGaming's work.
 </p><p>
 If you would like me to work on something just ask. (I
 have to get a Job soon though, so my output will drop
@@ -412,7 +412,7 @@ and it now shows stuff! For shots check
 <li><a href="http://roderick.student.utwente.nl/cstrike.png">http://roderick.student.utwente.nl/cstrike.png</a></li></ul></p>
 <p>
 Both games come to the menu screens I think (not sure what it all has to look 
-like) but from then on not much happens. In case of halfife2 I see some birds 
+like) but from then on not much happens. In the case of halfife2 I see some birds 
 flying on the background so the game isn't stuck. I think the menus aren't 
 drawn and I guess that might be related to the fixme 
 "<tt>d3d:IWineD3DDeviceImpl_SetSamplerState out of range sampler 0</tt>" which I'm 
@@ -519,7 +519,7 @@ task bar and immediately restore themselves. Any suggestions where could it be?
 People have commented on this before. To reiterate: all programs (that I have)
 behave in this manner, not staying minimized.
 </p><p>
-BTW one side affect of this patch - application icon is not displayed in the
+BTW one side effect of this patch - application icon is not displayed in the
 task bar anymore. Now it's back to wine's logo.
 
 </p></quote>
@@ -566,7 +566,7 @@ wineprefixcreate
 <quote who="Paul van Schayck"><p>
 
 I was just about to send a patch doing almost exactly the same things.
-Including the fix you put in to properply add a drive letter to the
+Including the fix you put in to properly add a drive letter to the
 working_mask.
 </p><p>
 And are we ready to let wineprefixcreate use winecfg? Or do we want
@@ -630,7 +630,7 @@ Hey, we won by a large margin!
 http://www.linuxquestions.org/questions/showthread.php?s=&amp;threadid=272137</a>
 </p><p><ul><table>
 <tr><td>Wine  </td><td>	 		293</td><td>  	42.59%</td></tr>
-<tr><td>Crossover Office </td><td>	139 </td><td>	20.20%</td></tr>
+<tr><td>CrossOver Office </td><td>	139 </td><td>	20.20%</td></tr>
 <tr><td>Cedega 	</td><td>		131 </td><td>	19.04%</td></tr>
 <tr><td>VMware 	</td><td>		101 </td><td>	14.68%</td></tr>
 <tr><td>Win4lin </td><td>		 24 </td><td>	3.49%</td></tr>

@@ -43,7 +43,7 @@ way,</quote> and to cope with lack of mmap() (which is also the case of SCO
 
 <p />
 
-Alexandre prefered not to put too much <code>#ifdef</code> in the code, and
+Alexandre preferred not to put too much <code>#ifdef</code> in the code, and
 rather use stubs for missing functions (like mmap) in a compatibility layer
 and have them return failure values.
 
