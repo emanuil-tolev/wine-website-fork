@@ -185,7 +185,7 @@ him directly.  (Click on the link above for his address.)
 <p>We discussed Jason Edmeades plans to work on 
 Direct3D 9 a few weeks ago (see WWN issue 
 <a href="http://www.winehq.com/?issue=240#DirectX%209%20Roadmap">#240</a>).
-The concensus seemed to be created a shared library between
+The consensus seemed to be to create a shared library between
 Direct3D 8 and Direct3D 9 code given how similar they are.
 The other alternative is to copy all the D3D8 code and then
 add in the D39D changes.  However, this scheme creates 
@@ -198,7 +198,7 @@ show the direction this is headed.</p>
 
 <p>Patch #1:</p>
 <quote who="Jason Edmeades"><p>
-First dx9 related patch - Its mostly a 'feeler' patch to ensure the
+First dx9 related patch - It's mostly a 'feeler' patch to ensure the
 direction I am going is not rejected, and as discussed I plan to move the
 code into the wined3d library from d3d8, and use it for d3d9.
 </p><p>
@@ -210,7 +210,7 @@ anything, let me know by email directly asap.
 Changelog
 <ul>
 Make a wined3d interface, and generate a wined3d object in the d3d9 create
-method. Make the first (aimple) call implementation into the new wined3d
+method. Make the first (simple) call implementation into the new wined3d
 interface  (d3d8 change will follow later), and ensure the wined3d8 object
 has access to the locks required for later on.</ul>
 </p></quote>
@@ -236,7 +236,7 @@ Also move another stub into the common library
  creating utils.c to store them in. Eventually the ones in d3d8 will be
  removed but for now just duplicate the code
 </p><p>
- BTW Before anyone asks, dont hold your breath for any working d3d9 support -
+ BTW Before anyone asks, don't hold your breath for any working d3d9 support -
  This may take months!
 </p></quote>
 
@@ -271,7 +271,7 @@ all the gl declarations into the more global wined3d_gl header file</ul>
 Well I've almost completed the simple interface, and the logical progression
 is onto the hardest!!
 </p><p>
-I have also only called the new code from d3d9 for now as its a complete
+I have also only called the new code from d3d9 for now as it's a complete
 skeleton to be built on.
 </p><p>
 Changelog
@@ -288,8 +288,8 @@ IDirect3DDevice object is created.</ul>
 
 <p>Patch #10:</p>
 <quote who="Jason Edmeades"><p>
-Fully support (as far as was previously - they havent changed in dx9)
-VertexBuffer and Resource classes and use when called from d3d9 (not d3d8
+Fully support (as far as was previously - they haven't changed in dx9)
+VertexBuffer and Resource classes and use them when called from d3d9 (not d3d8
 yet - later!). This also reduces the header includes in all the d3d9
 interface, as they will be included from the private header when needed and
 it will be easier to remove them when they are no longer needed
@@ -320,10 +320,10 @@ the private header</li></ul>
 <p>With the D3D9 changes, Jason ran into
 some issues sharing code and explained:</p>
 <quote who="Jason Edmeades"><p>
- If you havent noticed, I'm trying to port the d3d8 code into wined3d and
+ If you haven't noticed, I'm trying to port the d3d8 code into wined3d and
  make it common for use from d3d9, and this is all COM objects. I have come
  across something which in theory would enable me to tidy my code simply, but
- I cant see how to make it work in C.
+ I can't see how to make it work in C.
 </p><p>
  Now I have a class, for example FRED who implements some common functions,
  and all the code for it would be in fred.c. I also have a subclass, defined
@@ -349,24 +349,24 @@ IJimVtbl Jim_Vtbl =
  defined (I think this is a necessity for emulating subclassing in C?).
 </p><p>
  Now, obviously if the common funcs need changing I can copy in the code, and
- change the vtbl to have a local override but at the moment I dont need to
+ change the vtbl to have a local override but at the moment I don't need to
  (they are mostly stubs even in the d3d8 code today).
 </p><p>
- However, doing this fails to compile - It wont allow me to have a vtbl in
+ However, doing this fails to compile - It won't allow me to have a vtbl in
  jim.c which includes pointers to functions which are in fred.c, even if I
  have extern prototypes defined. Basically this is because array
  initialization requires constant values.
 </p><p>
- However, this would seem something which is so common - ie inheritence is
+ However, this would seem something which is so common - i.e. inheritence is
  used all over the place. How do people handle this? I've looked through a
- few places in the code and cant see how this can be done. I could 'pretend'
+ few places in the code and can't see how this can be done. I could 'pretend'
  by initializing the Vtbl as I create the com object and do some LoadLibrary
  type dynamic addressing but I really want link time resolution not load time
  resolution.
 </p><p>
 One solution would be to put the common routines in a header file, and
-#include it, but code in headers or #including modules is uaually frowned
-upon! I cant see any sensible way of doing this and I'd rather not do lots
+#include it, but code in headers or #including modules is usually frowned
+upon! I can't see any sensible way of doing this and I'd rather not do lots
 of code duplication if avoidable as this common class is used in about 7
 other classes!
 </p></quote>
@@ -386,13 +386,13 @@ he was trying to solve:</p>
 I like the solutions of putting the structures in - thats a neat
 way of ensuring consistency...</p><p>
 
-However, I think the vtbl issue is different - Dont you get away with
+However, I think the vtbl issue is different - Don't you get away with
 constructing the vtbl because all subclasses are in the same C part, or
 have I missed something?
 </p><p>
-BTW I dont want to call cross shared library for inheritance, but I
+BTW I don't want to call cross shared library for inheritance, but I
 do want to call cross 'C' part in the same library, so hopefully
-shouldnt need to use the spec file.
+shouldn't need to use the spec file.
 </p><p>
 Any thoughts? If not, I'll go for forwarding functions - painful,
 but not the end of the world.</p></quote>
@@ -429,7 +429,7 @@ winmm/time.c</i>)</p><p>
 However, I'd appreciate a gut check from anyone more
 experienced with it than I.
 </p><p>
-The fundamental problem is that Powerpoint does a
+The fundamental problem is that PowerPoint does a
 timeBeginPeriod(1), trying to set timer resolution
 to 1 ms; we steadfastly discard that, and continue
 generating time updates and events on a roughly
@@ -439,7 +439,7 @@ lead to some awkward delays.
 Some investigation with a test program shows that most Windows systems 
 start with a default resolution of 1 ms.
 This test program is attached; the 'average' reported
-at the top is the default resolution.  Further, Windows seem to
+at the top is the default resolution.  Further, Windows seems to
 steadfastly ignore any timeBeginPeriod(x)
 where x > the current period.  I surveyed about 6 systems;
 a mix on Win98/Win2k and Win XP.  All but one rogue
@@ -479,7 +479,7 @@ GetTickCount() could have a resolution of 55ms, hence you couldn't rely
 on it and had to do the job yourself for a better resolution.
 </p><p>
 Wine provides 1ms resolution in GetTickCount, ReactOs does also (through 
-  a quicly browsing of the code) (and the number of cases where winmm 
+  a quick browsing of the code) (and the number of cases where winmm 
 will be run on Windows), so the basic proposition sounds fine.
 </p><p>
  From an implementation point of view, there's something wrong with it. 
@@ -527,7 +527,7 @@ that's possible.  Lars Segerlund inquired about that
 this week:</p>
 <quote who="Lars Segerlund"><p>
  I was thinking of a silly thing to try, namely 
- replacing windows dll's with wines, does anybody 
+ replacing windows dll's with wine's, does anybody 
  have any thoughts about it ?
 </p><p>
  I just thought about it as a debugging trick I 
@@ -541,7 +541,7 @@ this week:</p>
 directly since apparently it's a great way to 
 cripple a working system:</p>
 <quote who="Steven Edwards"><p>
-It wont work well. I have done it before. The best thing to do is the
+It won't work well. I have done it before. The best thing to do is the
 change your dlls search order and use a copy of the Wine dlls built for
 Mingw and test them under Windows that way. Certain key processes such
 as winlogon are tied to ole32 and friends.</p></quote>
@@ -561,18 +561,18 @@ I  am using a patched SFC.DLL + a tool called 'Wfpadmin' for the job.
 applications using an undocumented trick on Windows,
 <quote who="Steven Edwards">
 Under Windows you can just compile the dll using mingw and then drop
-the dll in to the program direct that you want to test. Lets say you
-have a app name foo.exe you can copy the wine comctl32.dll to that
+the dll in to the program direct that you want to test. Let's say you
+have an app named foo.exe you can copy the wine comctl32.dll to that
 directory that contains foo.exe and the make a copy of foo.exe and name
 the copy foo.exe.local When you create a *.exe.local file it exposes a
 hidden hack in Windows that forces it to search the local directory
-first for dlls no matter what the registry setting is. Note this only
+first for dlls no matter what the registry setting is. Note that this only
 works for comctl32, shell32, shlwapi, ole32 and a few others. Dlls from
 Wine like user32, gdi32, ntdll, kernel32 and friends cannot be loaded
 on Windows.</quote></p>
 
 <p>The neat thing about this approach is it lets you
-mix and match native DLL's on Windows to figure out
+mix and match native DLLs on Windows to figure out
 potential problems.  </p>
 
 </section>

@@ -200,7 +200,7 @@ following dilemna:</p>
 <p>From there the discussion evolved into ways of setting up the autoconf
 checks and exactly what versions of Freetype should be supported.  Red Hat
 shipped FreeType 1.4 with their 7.0 distribution while with 7.1 they
-included FreeType 2.0.1 too.  The concensus seemed to be that FreeType
+included FreeType 2.0.1 too.  The consensus seemed to be that FreeType
 2.0 API should be used.   From there Ian went on to add autoconf checks for
 the FreeType header files.</p>
  

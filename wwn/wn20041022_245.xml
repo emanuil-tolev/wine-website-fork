@@ -93,7 +93,7 @@ for details)
 </quote>
 
 <p>It looks like our packaging crew has been at work and you can find
-updated versions on Wine on our 
+updated versions of Wine on our 
 <a href="http://www.winehq.com/site/download">download page.</a>  It
 should also be pointed out that the FreeBSD and Debian packages haven't
 been updated in a while.  Gerald Pfeifer has reported problems with the
@@ -123,15 +123,15 @@ I have a win32 program written in C++. I am trying to port it to linux
 using winelib. The software contanis one exe file and several dll files. I
 would like to keep this structure when moving them to linux. That is, I
 still would like to generate several corresponding shared libraries
-(instead of statically linking all files together) in llinux and they will be
+(instead of statically linking all files together) in linux and they will be
 loaded at the runtime.
 </p><p>
 However using winelib tools (winemaker, configure, make) for shared
-library generation, I get unresolved symbols error.
+library generation, I get unresolved symbol errors.
 </p><p>
 It seems that I have to write a spec file for each dll to import(and
-export) functions provide by other dlls. However, since they all written
-in c++ and what need to be imported can either be class or class method,
+export) functions provided by other dlls. However, since they are all written
+in c++ and what need to be imported can either be a class or a class method,
 and parameters can be class either. SO I don't know how to handle this in
 spec file. Beside each dll file exports  many functions or classes. It
 would be tedious to write a lengthy spec file manually.
@@ -209,27 +209,27 @@ void using_ddls()
 }<br />  
 // this code forces the winebuild to pull-in listed dlls as well</code></ul>
 </p><p>
-link every thing the regular wine way this way DLLS load in the right 
+link everything the regular wine way this way DLLs load in the right 
 order, get initialized, and their Windows "import tables", like calls to 
 kernel32 etc, gets initialized by the loader.
-But (and here is where I'm out of dated) also specify the .so as a link 
+But (and here is where I'm out of date) also specify the .so as a link 
 option to the gcc linker. (ld)
 </p><p>
 In the old system, before winegcc. One would do -lmydll on the winebuild 
-command line. And than in turn -lmydll on the ld command line - for 
-resolve of C++ symbols. Now that we use winegcc I'm not sure what is the 
+command line. And then in turn -lmydll on the ld command line - to 
+resolve the C++ symbols. Now that we use winegcc I'm not sure what is the 
 switch for additional libs like .so and static libs. Look maybe it is 
 documented. (Dimi how do you add external libs to a winelib link stage 
 under winegcc?)
 </p><p>
 But be careful with this approach. It is an order of a magnitude slower 
-on load time than DLL linkage on windows. I came to a dead end with one 
-of my projects, where I managed to compile and run every thing but I had 
+at load time than DLL linkage on windows. I came to a dead end with one 
+of my projects, where I managed to compile and run everything but I had 
 to revert to PE compiled code because it took my app 4-6 minutes to 
 load. (PE takes 40 seconds). It was a 1.2 M lines of C++ code divided in 
 to 37 DLLs + MFC in a dll.
 </p><p>
-We have talked about the right solution with Alexander on Wineconf. What 
+We have talked about the right solution with Alexander at Wineconf. What 
 he suggested was:
 <ol>  
 <li> make the __declspec( export ) macro expand to a gcc "section" 
@@ -285,10 +285,10 @@ faster, so I'm curious where all of the time is spent.
 <quote who="Boaz Harrosh"><p>
 Most definitely the Linux-shared loader. It took ages. The code is heavy 
 C++ code full of templates with weak symbols, inline virtual functions, 
-and plain horizontal code structure. almost any thing you can do to slow 
+and plain horizontal code structure. almost anything you can do to slow 
 a linker down. The PE export-import tables are much better in this 
 situation since there is no searching to do. (and no fixups) All 
-searching if any is done in link-time. (Run time on the other hand is 
+searching if any is done at link-time. (Run time on the other hand is 
 slower). Actually this app is very bad on Windows too. So we compile it: 
 "all libraries static" when doing "Release" code. We use DLLs in debug 
 because the static linking takes 15 minutes.
@@ -297,16 +297,16 @@ Speaking of which I was never able to statically link the winlib app on
 Linux. I put up a machine with 2-Gg of ram + setup 2Gg of swap space. 
 The linker would work for 5-10 minutes than it would hit the swap space. 
 Memory would go up  and up until about 50 minutes where the kernel 
-starts to kill every thing in sight including the Linker. MSVC++ does 
+starts to kill everything in sight including the Linker. MSVC++ does 
 not do that, it uses temporary files. Lots of them, to finish the link. 
-I did not even try none-debug builds because the all point of the winlib 
+I did not even try non-debug builds because the whole point of the winelib 
 was that Developers could use full screen debugger (Kdevelop) to debug 
-Linux problems. If we only have traces and relays than PE is Just good 
+Linux problems. If we only have traces and relays then PE is Just good 
 enough.
 </p><p>
 Thanks for letting me whine.  ;-)
 Please do post your results on how to Link the .so on the winegcc 
-command line. And also most important if you succeed with prelinking. I 
+command line. And also, most importantly, if you succeed with prelinking. I 
 think that is the best way to go but I'm not a Linux guru and didn't 
 manage to do it. </p></quote>
 
@@ -335,9 +335,9 @@ minor problems:
 <li>Icon Backgrounds are white instead of grey</li>
 <li>All the Icons were drawn a few pixels below where they belong, which 
 makes them a bit overdrawn by the Icon below.</li>
-<li>The Strings above the seperator were drawn next to the right border 
+<li>The Strings above the separator were drawn next to the right border 
 wich makes them partially overdrawn by the Buttons Icon.
-(Strings and Buttons beyond the seperator are drawn right)</li>
+(Strings and Buttons beyond the separator are drawn right)</li>
 </ul></p><p>
 If the mouse hovers over the button, the text redraws at the right place
 </p></quote>
@@ -440,7 +440,7 @@ removed the "Windows" parameter that let's you specify
 where Wine should expect to find the <tt>windows</tt>
 directory.  Most normal and sane people choose this
 to be the default <tt>c:\windows</tt>, but Microsoft
-does allow this to be configuable.  Alexandre committed
+does allow this to be configurable.  Alexandre committed
 the patch except for that one parameter and mentioned
 that it's still being used by the registry code.  
 Dimi wondered where specifically it was being read
