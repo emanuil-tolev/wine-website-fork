@@ -156,7 +156,7 @@ class wwn
             if ($pos >= $perpage)
             {
                 $prev = $pos - $perpage;
-                $prevLink = $html->ahref("&lt;&lt; Prev $perpage Issues",$PHP_SELF."?wwn=back;pos=".$prev,"class=menuItem");
+                $prevLink = $html->ahref("&lt;&lt; Prev $perpage Issues",$PHP_SELF."?issue=back;pos=".$prev,"class=menuItem");
             }
             else
             {
