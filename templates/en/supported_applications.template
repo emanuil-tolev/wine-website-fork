@@ -49,7 +49,6 @@ direct formatting related flames to <a href="mailto:dpaun@rogers.com">Dimitrie O
     <td>This is the solution to your PDF troubles.</td>
     <td>6</td>
     <td>Dlls installed by the program: advpack.dll, msvcrt.dll, shfolder.dll, w95inf32.dll, msvcp60.dll, oleaut32.dll, w95inf16.dll</td>
-
     <td><span class=todo>TODO</span></td>
   </tr>
 
@@ -57,7 +56,6 @@ direct formatting related flames to <a href="mailto:dpaun@rogers.com">Dimitrie O
     <td>WS-FTP LE</td>
     <td>5.08</td>
     <td>A great application that allows remote file edits, chmods on UNIX boxes and file moves.</td>
-
     <td>9</td>
     <td>No dlls installed.</td>
     <td><span class=todo>TODO</span></td>
@@ -65,11 +63,19 @@ direct formatting related flames to <a href="mailto:dpaun@rogers.com">Dimitrie O
 
   <tr class=white>
     <td><a href="http://www.mirc.co.uk">mIRC</a></td>
-
     <td>6.03</td>
     <td>This is a popular IRC client.</td>
     <td>25</td>
     <td>No dlls installed.</td>
+    <td><span class=todo>TODO</span></td>
+  </tr>
+
+  <tr class=white>
+    <td>Putty</td>
+    <td>0.52</td>
+    <td>Simple Telnet/SSH client & console.</td>
+    <td>29</td>
+    <td>No install needed.</td>
     <td><span class=todo>TODO</span></td>
   </tr>
 
@@ -79,7 +85,15 @@ direct formatting related flames to <a href="mailto:dpaun@rogers.com">Dimitrie O
     <td>A remote file management and command-line FTP client.</td>
     <td>83</td>
     <td>No dlls installed.</td>
+    <td><span class=todo>TODO</span></td>
+  </tr>
 
+  <tr class=white>
+    <td>Pegasus Mail</td>
+    <td>4.02</td>
+    <td>E-mail client of choice for many beginner and advanced users.</td>
+    <td>96</td>
+    <td>You may need to mark WINSOCK.DLL as "On demand only" in Tools-&gt;Options-&gt;Advanced</td>
     <td><span class=todo>TODO</span></td>
   </tr>
 
@@ -87,7 +101,6 @@ direct formatting related flames to <a href="mailto:dpaun@rogers.com">Dimitrie O
     <td>12Ghosts Zip</td>
     <td>XP/31</td>
     <td>This is a fast compression utility.</td>
-
     <td>N/A</td>
     <td>No dlls installed.</td>
     <td><span class=todo>TODO</span></td>
@@ -149,17 +162,6 @@ significantly improved compression ratios.</dt>
   </ul>
 </dd>
 
-<dt class=ltgrey><b>Putty</b> - This simple Telnet application could hang with the big boys.</dt>
-<dd>
-   <ul class=white>
-    <li> VERSION 0.52
-    <li> Install: No needed install.
-    <li> Run: No. (it doesn't show the right part of the window, it was working
-      30 days ago regression????)
-    <li> Tucows top 100 ladder: 29
-  </ul>
-</dd>
-
 <dt class=ltgrey><b>WinMX</b> - Take file sharing to a new level.</dt>
 <dd>
    <ul class=white>
@@ -167,18 +169,6 @@ significantly improved compression ratios.</dt>
     <li> Install: Yes (Dlls installed none)
     <li> Run: Yes. (listbox is not working in it (comctl32))
     <li> Tucows top 100 ladder: 50
-  </ul>
-</dd>
-
-<dt class=ltgrey><b>Pegasus Mail</b> - This is the e-mail client of choice for many beginner and
-advanced users.</dt>
-<dd>
-   <ul class=white>
-    <li> VERSION 4.02
-    <li> Install: Yes
-    <li> Run: Yes? (the normal options works, but "how do i send/receive a
-      email? they have hidden the config account options???)
-    <li> Tucows top 100 ladder: 96
   </ul>
 </dd>
 
