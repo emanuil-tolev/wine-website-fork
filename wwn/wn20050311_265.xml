@@ -117,7 +117,7 @@ WHAT'S NEW with Wine-20050310: (see
 can <a href="http://prdownloads.sourceforge.net/wine/Wine-20050310.tar.gz">
 snag the source</a> now.  </p>
 <p> 
-Slashdot linked to good article at HEXUS.net about 
+Slashdot linked to a good article at HEXUS.net about 
 <a href="http://www.hexus.net/content/reviews/review.php?dXJsX3Jldmlld19JRD0xMDEx">gaming
 on Linux</a>.  They covered a lot of different aspects of gaming
 including native ports, gaming with TransGaming's Cedega, and
@@ -128,7 +128,7 @@ came out this week.  Finally, Gavriel State wrote a column on
 <a href="http://www.transgaming.com/gavstates.php">cross-platform 
 development</a>.</p>
 
-<p>Joe Barr wrote an article for Newforge about 
+<p>Joe Barr wrote an article for NewsForge about 
 <a href="http://software.newsforge.com/software/05/03/02/1449240.shtml?tid=130">
 running CwGet</a>, some ham radio software, with Wine:</p>
 <quote who="Joe Barr"><p>
@@ -150,7 +150,7 @@ science in general.  Bethe was one of the last links to the old age of
 physics before relativity and quantum theory.  I was sort of sad to see his
 passing didn't make much news.  If you want to hear an excellent discussion 
 of physics, check out Cornell's
-<a href="http://bethe.cornell.edu/">Quicktime movies of Bethe</a> from
+<a href="http://bethe.cornell.edu/">QuickTime movies of Bethe</a> from
 1999. </p> 
 
 </section>
@@ -163,7 +163,7 @@ of physics, check out Cornell's
 	enddate="03/08/2005"
 >
 <topic>Configuration</topic>
-<p>The winecfg tool (that someday will be used, we promise) requires
+<p>The winecfg tool (that someday will be used, we promise) needs
 a way to access the the complete underlying Unix filesystem.  It's a
 Winelib app, so there's multiple ways of doing this.  Michael Jung 
 put together a patch last week, but it wasn't committed.  He asked
@@ -183,7 +183,7 @@ I think the extension itself is perfectly reasonable. The thing I'm
 not sure about is creating a brand new dll for it, adding
 Wine-specific dlls should be avoided if possible.</p></quote>
 
-<p>Michael thought of a another way to do it:</p>
+<p>Michael thought of another way to do it:</p>
 <quote who="Michael Jung"><p>
 Would you consider it more reasonable to implement unixfs as a part of 
 shell32? We would not have to alter the APIs exported by shell32 to do this.
@@ -220,7 +220,7 @@ At least, I think that is what is needed. Alexandre may have other ideas.
 >
 <topic>Configuration</topic>
 
-<p>While we're on the topic drives and setting up drives,
+<p>While we're on the topic of drives and setting up drives,
 Mike Hearn went through and outlined some problems that 
 need to be addressed.  If you're looking for a way to get
 involved with Wine, some of these are good ways:</p>
@@ -232,7 +232,7 @@ So, there are 4 obvious problems with our current drive management code:
   a big delay in the file open dialogs as we poll the drive which sits
   there spinning its motors naval-gazing. How many people still use
   floppy disks in 2005 anyway? I'm hoping the answer is "virtually none"
-  <br /><br />
+  <br />
   An alternative solution would be to poll the drives in a non-blocking
   manner, though I'm not sure this would work for apps which do their own
   file dialogs like Office.
@@ -243,11 +243,11 @@ So, there are 4 obvious problems with our current drive management code:
 
 <li> The artwork in the file pickers sucks ass. Sorry, it does. It's ugly as
   sin and for some reason the Desktop icon is an arrow, not a desk.
-  <br /><br />
+  <br />
   This doesn't matter when you only have C: and Z: drives. It does matter
   when you have 2 CD drives, 2 Windows drives, a floppy and a few other
   drives.
-  <br /><br />
+  <br />
   Fixing this is theoretically easy but for some reason it never gets
   done. If any of you non-coders are reading this and want to contribute
   then this would be a good way to start. Good artwork already exists,
@@ -258,8 +258,8 @@ So, there are 4 obvious problems with our current drive management code:
   start a Windows program and then realize that my work is actually on a
   USB key, if I plug that key in Nautilus and GTK+ (and probably KDE)
   apps will detect it and see it, but we won't. Not even if I restart the
-  app! This is bad.<br /><br />
-  <br /><br />
+  app! This is bad.
+  <br />
   Fixing this is not, in theory, super hard. When HAL detects a new
   hotplug device it modifies the fstab file and mounts. If we watch the
   /etc/fstab file for changes and rerun drive detection therefore we can
@@ -281,7 +281,7 @@ briefly explained what Windows does,
  There is an API to watch for File
  System changes. From files (for editors), to folders and drives. The
  standard Shell control (Used in file dialogs and Explorer) uses this API
- by default. Also apps that do their own Dialogs like office.</quote></p>
+ by default. Also apps that do their own Dialogs like Office.</quote></p>
 
 <p>Andi Mohr thought implementing that in Wine was the way to go:</p>
 <quote who="Andreas Mohr"><p>
@@ -290,7 +290,7 @@ applies to volume notification as well? Or is it still a somewhat separate
 API?
 </p><p>
 Nevermind, at least you just told us that this API exists, so we should
-try to get the hal/hotplug/fam stuff integratedf towards this API.
+try to get the hal/hotplug/fam stuff integrated with this API.
 </p></quote>
 
 <p>Steven Edwards also provided some info on how Windows manages the
@@ -315,7 +315,7 @@ and KDE xp style
 (<a href="http://kdelook.org/content/show.php?content=1499">
 http://kdelook.org/content/show.php?content=1499</a>). The main problem
 is that both have GPL licence, but we could ask authors to let us use them
-in Wine. Their icons are really cool and I belive Wine would look much
+in Wine. Their icons are really cool and I believe Wine would look much
 better with them.</quote></p>
 
 </section>
@@ -337,7 +337,7 @@ current state:</p>
 Steam has had a serious problem for quite some time, failing with a
 strange debug assertion error popup at the dreaded 27% mark.
 </p><p>
-What's interesting, however, is that Steam works perfectly in Crossover
+What's interesting, however, is that Steam works perfectly in CrossOver
 4.1 - since I don't think Steam is supported, this is not due to a
 special hack, and the failure in Steam therefore represents a serious
 regression in Wine.
@@ -363,13 +363,13 @@ more testing.
 
 <p>Stefan wrote back several hours later and described his progress:</p>
 <quote who="Stefan Dosinger"><p>
-Steam runs indeed nice with wine. I don't know why it works all over the 
+Steam runs indeed nice with wine. I don't know why it works all of a
 sudden, but it works ;-)
 </p><p>
 These are the problems I found:
 <ul>
 <li>Microsoft Internet explorer needed: I didn't get the builtin shdocvw working. 
-The automatical download of the Mozilla active X control didn't work. I 
+The automatic download of the Mozilla active X control didn't work. I 
 downloaded it manually and installed it but it still didn't work
 
 Can someone give me a hint how I make the builtin shdocvw work?</li>
@@ -444,7 +444,7 @@ patch</a> to make Wine work with Valgrind 2.2.0:</p>
 I notice there has been interest from developers wanting to run valgrind
 with wine. I have been doing this successfully with the attached patch
 applied. Note that there are some false positives from the thread start
-routines caused by a bug in valgrind. Apparantly this is fixed in the
+routines caused by a bug in valgrind. Apparently this is fixed in the
 latest cvs, but I have not tried it. I find the --tool=memcheck option
 the most useful, which can be used for finding the source of memory
 corruption.
