@@ -1,43 +1,57 @@
 # default permissions
 allow from all
 
+# Set Our Default Directory Index
+DirectoryIndex site index.html index.shtml index.cgi index.php
+
 # 404 not found document
-ErrorDocument 404 http://www.winehq.org/?page=404
+ErrorDocument 404 http://www.winehq.org/site/404
+
+# force the php to accept PATH_INFO
+<Files ~ (site)$>
+  AcceptPathInfo On
+  ForceType application/x-httpd-php
+</Files>
+
+# redirect winehq services to appropriate web sites
+RedirectMatch ^/?page=(.*)$                     http://www.winehq.org/site/$1
 
 # redirect old winehq pages to new locations
-RedirectPermanent /about.shtml                  http://www.winehq.org/?page=about
-RedirectPermanent /about/                       http://www.winehq.org/?page=about
-RedirectPermanent /about                        http://www.winehq.org/?page=about
-RedirectPermanent /about/index.php              http://www.winehq.org/?page=about
-RedirectPermanent /community.shtml              http://www.winehq.org/?page=contributions
-RedirectPermanent /dev.shtml                    http://www.winehq.org/?page=cvs
-RedirectPermanent /dev.html                     http://www.winehq.org/?page=cvs
-RedirectPermanent /devstart.shtml               http://www.winehq.org/?page=cvs
-RedirectPermanent /download/                    http://www.winehq.org/?page=download
-RedirectPermanent /download                     http://www.winehq.org/?page=download
-RedirectPermanent /download/index.php           http://www.winehq.org/?page=download
-RedirectPermanent /download.shtml               http://www.winehq.org/?page=download
-RedirectPermanent /download.html                http://www.winehq.org/?page=download
-RedirectPermanent /download-mirrors.html        http://www.winehq.org/?page=download
-RedirectPermanent /download-mirrors.shtml       http://www.winehq.org/?page=download
-RedirectPermanent /support.shtml                http://www.winehq.org/?page=documentation
-RedirectPermanent /News/status.html             http://www.winehq.org/?page=status
-RedirectPermanent /status                       http://www.winehq.org/?page=status
-RedirectPermanent /status/                      http://www.winehq.org/?page=status
-RedirectPermanent /faq/                         http://www.winehq.org/?page=faq
-RedirectPermanent /faq                          http://www.winehq.org/?page=faq
-RedirectPermanent /screenshots/                 http://www.winehq.org/?page=screenshots
-RedirectPermanent /screenshots                  http://www.winehq.org/?page=screenshots
-RedirectPermanent /news/                        http://www.winehq.org/?news=archive
-RedirectPermanent /news                         http://www.winehq.org/?news=archive
-RedirectPermanent /howto/                       http://www.winehq.org/?page=howto
-RedirectPermanent /howto                        http://www.winehq.org/?page=howto
-RedirectPermanent /todo/                        http://www.winehq.org/?page=todo
-RedirectPermanent /todo                         http://www.winehq.org/?page=todo
-RedirectPermanent /cvs/                         http://www.winehq.org/?page=cvs
-RedirectPermanent /cvs                          http://www.winehq.org/?page=cvs
-RedirectPermanent /forums/                      http://www.winehq.org/?page=forums
-RedirectPermanent /forums                       http://www.winehq.org/?page=forums
+RedirectPermanent /about.shtml                  http://www.winehq.org/site/about
+RedirectPermanent /about/                       http://www.winehq.org/site/about
+RedirectPermanent /about                        http://www.winehq.org/site/about
+RedirectPermanent /about/index.php              http://www.winehq.org/site/about
+RedirectPermanent /community.shtml              http://www.winehq.org/site/contributions
+RedirectPermanent /dev.shtml                    http://www.winehq.org/site/cvs
+RedirectPermanent /dev.html                     http://www.winehq.org/site/cvs
+RedirectPermanent /devstart.shtml               http://www.winehq.org/site/cvs
+RedirectPermanent /download/                    http://www.winehq.org/site/download
+RedirectPermanent /download                     http://www.winehq.org/site/download
+RedirectPermanent /download/index.php           http://www.winehq.org/site/download
+RedirectPermanent /download.shtml               http://www.winehq.org/site/download
+RedirectPermanent /download.html                http://www.winehq.org/site/download
+RedirectPermanent /download-mirrors.html        http://www.winehq.org/site/download
+RedirectPermanent /download-mirrors.shtml       http://www.winehq.org/site/download
+RedirectPermanent /support.shtml                http://www.winehq.org/site/documentation
+RedirectPermanent /News/status.html             http://www.winehq.org/site/status
+RedirectPermanent /status                       http://www.winehq.org/site/status
+RedirectPermanent /status/                      http://www.winehq.org/site/status
+RedirectPermanent /faq/                         http://www.winehq.org/site/faq
+RedirectPermanent /faq                          http://www.winehq.org/site/faq
+RedirectPermanent /screenshots/                 http://www.winehq.org/site/screenshots
+RedirectPermanent /screenshots                  http://www.winehq.org/site/screenshots
+RedirectPermanent /news/                        http://www.winehq.org/site?news=archive
+RedirectPermanent /news                         http://www.winehq.org/site?news=archive
+RedirectPermanent /howto/                       http://www.winehq.org/site/howto
+RedirectPermanent /howto                        http://www.winehq.org/site/howto
+RedirectPermanent /todo/                        http://www.winehq.org/site/todo
+RedirectPermanent /todo                         http://www.winehq.org/site/todo
+RedirectPermanent /cvs/                         http://www.winehq.org/site/cvs
+RedirectPermanent /cvs                          http://www.winehq.org/site/cvs
+RedirectPermanent /forums/                      http://www.winehq.org/site/forums
+RedirectPermanent /forums                       http://www.winehq.org/site/forums
+
+
 
 # redirect winehq services to appropriate web sites
 RedirectMatch ^/(APPS|Apps|apps)/$              http://appdb.winehq.org/

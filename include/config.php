@@ -22,45 +22,44 @@ class config
         // navigation
 		$this->nav = array(
 					 'About' => array(
-					                  'About' => $this->_file_root.'?page=about',
-                                      'Introduction' => $this->_file_root.'?page=about',
-                                      'Features' => $this->_file_root.'?page=wine_features',
-									  'Screenshots' => $this->_file_root.'?ss=1',
-									  'Contributing' => $this->_file_root.'?page=contributing',
-									  'News' => $this->_file_root.'?news=archive',
-                                      'Press' => $this->_file_root.'?page=press',
-                                      'License' => $this->_file_root.'?page=license'
+					                  'About'           => '{$root}/site/about',
+                                      'Introduction'    => '{$root}/site/about',
+                                      'Features'        => '{$root}/site/wine_features',
+									  'Screenshots'     => '{$root}/site?ss=1',
+									  'Contributing'    => '{$root}/site/contributing',
+									  'News'            => '{$root}/site?news=archive',
+                                      'Press'           => '{$root}/site/press',
+                                      'License'         => '{$root}/site/license'
 									  ),
 					 'Download' => array(
-					                     'Download' => $this->_file_root.'?page=download',
-                                         'Binaries' => $this->_file_root.'?page=download',
-										 'Source' => $this->_file_root.'?page=download_source'
+					                     'Download'     => '{$root}/site/download',
+                                         'Binaries'     => '{$root}/site/download',
+										 'Source'       => '{$root}/site/download_source'
 										),
 					 'Support' => array(
-                                        'Support' => $this->_file_root.'?page=support',
-                                        'Documentation' => $this->_file_root.'?page=documentation',
-                                        'FAQ' => $this->_file_root.'?page=faq',
-										'HowTo' => $this->_file_root.'?page=howto',
-										'Bug Tracking' => 'http://bugs.winehq.org/',
-                                        'Applications' => $this->_file_root.'?page=supported_applications',
-										//'Troubleshooting' => $this->_file_root.'?page=troubleshooting',
-										'Forums' => $this->_file_root.'?page=forums'
+                                        'Support'       => '{$root}/site/support',
+                                        'Documentation' => '{$root}/site/documentation',
+                                        'FAQ'           => '{$root}/site/faq',
+										'HowTo'         => '{$root}/site/howto',
+										'Bug Tracking'  => 'http://bugs.winehq.org/',
+                                        'Applications'  => '{$root}/site/supported_applications',
+										'Forums'        => '{$root}/site/forums'
 									   ),
 					 'Development' => array(
-					                        'Development' => $this->_file_root.'?page=development',
-                                            'CVS' => $this->_file_root.'?page=cvs',
-                                            //'Developer Hints' => $this->_file_root.'?page=developer_hints',
-                                            'Sending Patches' => $this->_file_root.'?page=sending_patches',
-                                            'To Do Lists' => $this->_file_root.'?page=todo_lists',
-                                            'Fun Projects' => $this->_file_root.'?page=fun_projects',
-                                            'Janitorial' => $this->_file_root.'?page=janitorial',
-                                            'Winelib' => $this->_file_root.'?page=winelib',
-                                            'Status' => $this->_file_root.'?page=status',
-                                            'Resources' => $this->_file_root.'?page=resources'
+					                        'Development'       => '{$root}/site/development',
+                                            'CVS'               => '{$root}/site/cvs',
+                                            //'Developer Hints' => '{$root}/site/developer_hints',
+                                            'Sending Patches'   => '{$root}/site/sending_patches',
+                                            'To Do Lists'       => '{$root}/site/todo_lists',
+                                            'Fun Projects'      => '{$root}/site/fun_projects',
+                                            'Janitorial'        => '{$root}/site/janitorial',
+                                            'Winelib'           => '{$root}/site/winelib',
+                                            'Status'            => '{$root}/site/status',
+                                            'Resources'         => '{$root}/site/resources'
 										   ),
                       'User' => array(
-                                      'User' => $this->_file_root.'?page=change_theme',
-                                      'Change Theme' => $this->_file_root.'?page=change_theme'
+                                      'User'                    => '{$root}/site/change_theme',
+                                      'Change Theme'            => '{$root}/site/change_theme'
                                      )
 			         );
 		

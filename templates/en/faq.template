@@ -248,19 +248,19 @@ can't change a 5000 desktop setup overnight without a lot of risk.</p>
  on to Alexandre Julliard, who has run it ever since. A <a href="news:comp.emulators.ms-windows.wine">newsgroup</a>
  was created in July 1994. Over the years, ports for other Unixes have been added, 
  along with support for Win32 as Win32 applications became popular.</p>
- <p>For more information,  see <a href="http://www.winehq.org/?page=about">About Wine</a></p>
+ <p>For more information,  see <a href="http://www.winehq.org/site/about">About Wine</a></p>
  
 <h3><a name="What_is_the_current_version_of_Wine"></a>What is the current version of Wine?</h3>
 
 <p>A new version of Wine is distributed about every month. You will be able to keep up on all the
  latest releases by reading the newsgroup <a href="news:comp.emulators.ms-windows.wine">comp.emulators.ms-windows.wine</a>, 
  or by visiting the <a href="http://www.winehq.com">Wine HQ homepage</a>.  When downloading Wine from your FTP site
- of choice (see <a href="http://www.winehq.org/?page=download">The Download page</a> for some of these choices),
+ of choice (see <a href="http://www.winehq.org/site/download">The Download page</a> for some of these choices),
  you can make sure that you are getting the latest version by watching the version numbers in the distribution
  filename.  For instance, the distribution released on May 5th, 2003 was called <tt>Wine-20030508.tar.gz</tt>.
  Patch files are also available. If you are current to the previous version, you can download and apply 
  just the current patch file rather than the entire new distribution. The patch filenames follow the same
- conventions as the monthly distribution. <a href="http://www.winehq.org/?page=cvs">Read-only CVS</a> access is also available.</p> 
+ conventions as the monthly distribution. <a href="http://www.winehq.org/site/cvs">Read-only CVS</a> access is also available.</p> 
 
 <h3><a name="What_is_the_current_Status_of_Wine"></a>What is the current Status of Wine?</h3>
 
@@ -270,7 +270,7 @@ the world. Wine is in active use by an estimated 100K people. Wine
 implements more than 90% of the calls in popular Windows specifications 
 such as ECMA-234 and Open32.</p>
 <p>You may also want to look at the 
-<a href="http://www.winehq.org/?page=status">Status page</a> 
+<a href="http://www.winehq.org/site/status">Status page</a> 
 for a global view on Wine's implementation progress.</p>
 
 <h3><a name="When_will_Wine_be_finished"></a>When will Wine be finished?</h3>
@@ -346,7 +346,7 @@ commercial UNIX and UNIX clone vendors as well.</p>
 <p>FreeBSD: Should work, with limitations in specific areas (mainly missing device/hardware support) 
 </p> 
 <p>Linux/x86: WORKS. If it doesn't, You may also want to see the 
-<a href="http://www.winehq.org/?page=documentation">Wine Documentation</a>
+<a href="http://www.winehq.org/site/documentation">Wine Documentation</a>
 </p>
 
 <h3><a name="What__must_I_have_in_my_and_M"></a> What minimum CPU must I have in my computer to be able to run Wine and MS Windows applications smoothly?</h3>
@@ -509,7 +509,7 @@ Simply replace <tt>YYYYMMDD</tt> in the distribution file name with the
 numbers for year, month and date, respectively. The latest one is the one to get.</p>
  
 <p>Wine binary packages are available for several OS'es and distributions.
-See <a href="http://www.winehq.org/?page=download">the download page</a> for the most recent list.</p>
+See <a href="http://www.winehq.org/site/download">the download page</a> for the most recent list.</p>
  
 <h3><a name="Is_there_a_CVS_tree"></a>Is there a CVS tree?</h3>
 
@@ -537,7 +537,7 @@ cvs checkout wine/ANNOUNCE
 </pre>
  
 <p>For the CVS mirror list, see :
-<a href="http://www.winehq.com/?page=cvs#cvsservers">Wine CVS Mirror's </a></p>
+<a href="http://www.winehq.com/site/cvs#cvsservers">Wine CVS Mirror's </a></p>
 
 <p>Patch files are also available, so that you don't have to download, install,
 and configure the entire distribution each week if you are current to
@@ -735,14 +735,14 @@ a program has something that it's supposed to execute,and then it should just wo
 
 <h3><a name="Is_there_any_documentation_for_Wine"></a>Is there any documentation for Wine?  </h3>
 
-<p>Yes, see <a href="http://www.winehq.org/?page=documentation">Wine Documentation</a>.</p>
+<p>Yes, see <a href="http://www.winehq.org/site/documentation">Wine Documentation</a>.</p>
 
 <h3><a name="I_couldnt_find_the_answer_to_my"></a>I couldn't find the answer to my question in the documentation, 
 but I've written a document explaining how to solve it. What should I do?</h3>
 
 <p>Updates and additions to the Wine documentation directory should be sent to the wine-patches mailing list more information
 about sending patches can be found here  
-<a href="http://www.winehq.org/?page=sending_patches">http://www.winehq.org/?page=sending_patches</a>. Website and FAQ additions 
+<a href="http://www.winehq.org/site/sending_patches">http://www.winehq.org/site/sending_patches</a>. Website and FAQ additions 
 should be added to the appropriate Wine Knowledgebase directory.</p> 
 
 <h3><a name="Is_there_a_Usenet_newsgroup_for_Wine"></a>Is there a Usenet newsgroup for Wine?</h3>
@@ -786,9 +786,9 @@ You should include at least the following:
  
 <h3><a name="How_do_I_become_a_Wine_developer_What"></a> How do I become a Wine developer? What do I need to know?</h3>
  
-<p>If you can program C, that's a good start. Download the sources via (<a href="http://www.winehq.com/?page=cvs">CVS,</a>) subscribe to the mailing lists, 
+<p>If you can program C, that's a good start. Download the sources via (<a href="http://www.winehq.com/site/cvs">CVS,</a>) subscribe to the mailing lists, 
 look around the source, and pay attention to the <tt>comp.emulators.ms-windows.wine</tt> newsgroup and the mailing lists 
-(<a href="http://www.winehq.com/?page=forums">Wine mailing list & forums</a>). See if there's anything 
+(<a href="http://www.winehq.com/site/forums">Wine mailing list & forums</a>). See if there's anything 
 that you think you can fix or work on. You won't have much trouble finding areas that need work in Wine (grep for FIXMEs in the source).</p>   
 
 <h3><a name="How_can_I_help_contribute_to_the_Wine"></a>How can I help contribute to the Wine project, and in what way(s)?</h3>
@@ -797,7 +797,7 @@ that you think you can fix or work on. You won't have much trouble finding areas
    or monetary or equipment donations, to aid the Wine 
    developers in reaching their goals.</p>
 <p>For a list of ideas of how you can help, please consult the
-   <a href="http://www.winehq.com/?page=contributing">Wine contrib page</a>.</p>
+   <a href="http://www.winehq.com/site/contributing">Wine contrib page</a>.</p>
 
 <h3><a name="I_want_to_help_beta_test_Wine._How_can_I"></a>I want to help beta test Wine. How can I do this?</h3>
 
@@ -808,7 +808,7 @@ and try it out at any time.</p>
 <h3><a name="I_have_written_some_code_that_I_would"></a>I have written some code that I would like to submit to the Wine project. How do I go about doing this?</h3>
 
 <p>Patches are greatly appreciated and should be submitted to the wine-patches mailing list 
-(<a href="http://www.winehq.org/?page=sending_patches">http://www.winehq.org/?page=sending_patches</a>).Also see this page 
+(<a href="http://www.winehq.org/site/sending_patches">http://www.winehq.org/site/sending_patches</a>).Also see this page 
 for a description of what happens to submitted patches.</p>
 
 <a href="#TOP">Back to top</a>
@@ -853,7 +853,7 @@ Wine.</p>
 
 <h3><a name="How_to_unsubscribe_from_the_mailing"></a>How to unsubscribe from the mailing lists?</h3>
 
-<p> Please see: <a href="http://www.winehq.org/?page=forums">http://www.winehq.org/?page=forums</a>
+<p> Please see: <a href="http://www.winehq.org/site/forums">http://www.winehq.org/site/forums</a>
 And select [(Un-)Subscribe]</p>
 
 <a href="#TOP">Back to top</a>

@@ -24,6 +24,27 @@ class html
         $this->page = "";
     }
 
+    // FIND ROOT (based on path info, get the web root)
+    function find_root ()
+    {
+        $d = $_SERVER['PATH_INFO'];
+        if ($d)
+        {
+            $dirs = split('/',$d);
+            for ($c=0;$c<(count($dirs)-1);$c++)
+            {
+                if ($n)
+                    $n .= '/';
+                $n .= '..';
+            }
+            return $n;
+        }
+        else
+        {
+            return $this->_file_root;
+        }
+    }
+
     // SHOWPAGE (display the current page)
     function showpage ($theme, $title)
     {
@@ -31,7 +52,7 @@ class html
         if (!$this->_error_mode)
         {
             // only show nav bar in non-error modes
-            $sidebar = new sidebar($config->theme, $config->nav);
+            $sidebar = new sidebar($config->theme, $config->nav, $this->find_root());
             $menu = $sidebar->menu();
         }
         $body = $this->status_message;
@@ -116,7 +137,7 @@ class html
         {
             // load image from images dir
             $size = getimagesize($this->_file_root."/images/".$src);
-            return '<img src="'.$this->_file_root."/images/".$src.'" border="0" '."{$size[3]}".$doAlign.$doAlt.' />';
+            return '<img src="'.$this->find_root()."/images/".$src.'" border="0" '."{$size[3]}".$doAlign.$doAlt.' />';
         }
         else if ($src)
         {
@@ -730,7 +751,7 @@ class html
             $this->template_title = $arr[1];
         }
         // default path var
-		$vars['root'] = $this->_file_root;
+		$vars['root'] = $this->find_root();
         // replace vars in template
 	    while (list($key,$val) = each($vars))
 	    {

@@ -60,13 +60,13 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
        So if you feel like writing about Wine or coding in PHP your
        contribution will be appreciated. You can find the current task list
        in <a href="http://bugs.winehq.com/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=WineHQ.com&component=misc-web">Bugzilla</a>,
-       but see also this <a href="http://www.winehq.com/hypermail/wine-devel/2003/03/0804.html">email</a>
+       but see also this <a href="{$root}/hypermail/wine-devel/2003/03/0804.html">email</a>
        for a great TODO list.
        Getting started is easy. Just get the WineHQ sources by following the
-       instructions in our <a href="http://www.winehq.com/?page=cvs">CVS</a>
+       instructions in our <a href="{$root}/site/cvs">CVS</a>
        section and look at the files in templates/en. And to submit patches,
        simply follow the instructions on our
-       <a href="http://www.winehq.com/?page=sending_patches">Sending Patches</a> page.
+       <a href="{$root}/site/sending_patches">Sending Patches</a> page.
      <p>Required skills:</p>
      <ul>
        <li>Writing skills</li>
@@ -175,7 +175,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     <a name="devel_task"></a>
     <h3>Some development tasks</h3>
 
-    <p>The overall implementation status of Wine can be checked on the <a href="http://www.winehq.org/?page=status">Wine Status
+    <p>The overall implementation status of Wine can be checked on the <a href="{$root}/site/status">Wine Status
     page</a>.</p>
     <p>See the following task lists to find a development task:
     </p>
@@ -365,7 +365,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     <a name="doc"></a>
     <h3>Documentation writing</h3>
     <p>Wine is in constant need of documentation updates.
-    Wine has its "<a href="http://www.winehq.org/?page=documentation">Guides</a>", like the Wine User Guide etc.
+    Wine has its "<a href="{$root}/site/documentation">Guides</a>", like the Wine User Guide etc.
     The SGML source of the Guides can be found in the Wine CVS tree.
 
     </p>
@@ -381,7 +381,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     the workings of their patch at all !)
     </p>
     <p>If you spend a lot of time monitoring either the newsgroup or wine-users 
-    you are a good candidate for suggesting updates to the <a href="http://www.winehq.org/docs/wine-faq/t1.shtml">wine FAQ.</a>
+    you are a good candidate for suggesting updates to the <a href="{$root}/docs/wine-faq/t1.shtml">wine FAQ.</a>
     </p>
     <p>
     The documentation updates would be done by sending "cvs diff"s of the

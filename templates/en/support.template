@@ -26,7 +26,7 @@
     HOWTOs, useful config hints for many applications. (<a
     href="/about/index.php?contrib">please contribute</a>)<p>
 
-    <li><a href="?page=faq"><span class="listTitle">FAQ</span></a><br>
+    <li><a href="{$root}/site/faq"><span class="listTitle">FAQ</span></a><br>
     Some quick answers on basic questions about Wine as a whole.<p>
     
     <li><a href="http://www.la-sorciere.de/wine/index.html"><span class="listTitle">Wine HOWTO</span></a><br>
@@ -45,7 +45,7 @@
     The Wine newsgroup is the primary place for questions, bug reports, development 
     discussions, and everything else related to Wine.</li><p>
 
-    <li><a href="?page=forums"><span class="listTitle">Mailing Lists</span></a><br>
+    <li><a href="{$root}/site/forums"><span class="listTitle">Mailing Lists</span></a><br>
     WineHQ hosts several mailing lists for submitting patches, tracking CVS commits, and discussing Wine.</li><p>
 
     <li><span class="listTitle">#WineHQ</span><br>

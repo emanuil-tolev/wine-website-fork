@@ -4,7 +4,7 @@
 
 <p>Please submit patches to the Wine patches mailing list,
 <a href="mailto:wine-patches@winehq.com">wine-patches@winehq.com</a>.
-(Note that if you're not <a href="?page=forums">subscribed</a> to the mailing
+(Note that if you're not <a href="{$root}/site/forums">subscribed</a> to the mailing
 list, the mailing list administrators must first check your submission
 to make sure it's not spam before they can let it through.)</p>
 
@@ -61,11 +61,11 @@ Then, using the following command-line:</p>
  </td></tr>
  </table>
 
-<p>will get you a patch almost ready to be sent to <a href="?page=forums">wine-patches</a>.</p>
+<p>will get you a patch almost ready to be sent to <a href="{$root}/site/forums">wine-patches</a>.</p>
 
 <p>Include a comment for the changelog that gives your name and email address (if desired),
 along with a description of what your patch does. For examples of the formatting of
-patch submissions and changelog entries, read a few messages in the <a href="?page=forums">wine-patches</a>
+patch submissions and changelog entries, read a few messages in the <a href="{$root}/site/forums">wine-patches</a>
 mailing list archive.  Please give your message a descriptive subject line.</p>
 
 <p>Be careful to not corrupt the patch through line-wrapping. If you are sending the patch
@@ -75,8 +75,8 @@ inserting it in your message to avoid corruption.  If you send the patch as an a
 to send the attachment using the text/plain MIME type.  This makes it much easier for readers of the email
 to look at your patch.</p>
 
-<p>Accepted patches will appear in the <a href="?page=forums">wine-cvs</a> mailing list. 
-Rejected patches might receive a note in the <a href="?page=forums">wine-devel</a> mailing list, 
+<p>Accepted patches will appear in the <a href="{$root}/site/forums">wine-cvs</a> mailing list. 
+Rejected patches might receive a note in the <a href="{$root}/site/forums">wine-devel</a> mailing list, 
 and accidentally ignored patches will disappear into
 a silent, featureless void. Please resubmit if this happens to your patch.</p>
 

@@ -42,4 +42,10 @@ if (isset($_GET['theme']) and in_array($_GET['theme'], $config->themes))
 // load a banner ad
 $html->banner_ad = banner_ad();
 
+if ($_SERVER['PATH_INFO'])
+{
+    $dirs = split('/',$_SERVER['PATH_INFO']);
+    $page = $dirs[1];
+}
+
 ?>

@@ -71,27 +71,27 @@
    </td></tr>
    <tr class=white><td>
         <dl>
-            <dt><a href="?page=status_wine"><b>Core Status</b></a></dt>
+            <dt><a href="{$root}/site/status_wine"><b>Core Status</b></a></dt>
             <dd>
                 Status of core Wine components, tools, and misc.
             </dd>
 
-            <dt><a href="?page=status_dlls"><b>DLLs Status</b></a></dt>
+            <dt><a href="{$root}/site/status_dlls"><b>DLLs Status</b></a></dt>
             <dd>
                Status of Windows DLL clones.
             </dd>
 
-            <dt><a href="?page=status_ui"><b>UI Status</b></a></dt>
+            <dt><a href="{$root}/site/status_ui"><b>UI Status</b></a></dt>
             <dd>
                Status of user interface elements.
             </dd>
 
-            <dt><a href="?page=status_todo"><b>Known To Dos</b></a></dt>
+            <dt><a href="{$root}/site/status_todo"><b>Known To Dos</b></a></dt>
             <dd>
               To Do list of known issues.
             </dd>
 
-            <dt><a href="?page=status_changelog"><b>ChangeLog</b></a></dt>
+            <dt><a href="{$root}/site/status_changelog"><b>ChangeLog</b></a></dt>
             <dd>
                To get a feeling about development progress, please have a look the ChangeLog.
             </dd>

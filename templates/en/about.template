@@ -1,6 +1,6 @@
 <!--TITLE:[About Wine]-->
 
-<img src="./images/glass.gif" width=248 height=399 border=0 align=right alt="Wine Logo">
+<img src="{$root}/images/glass.gif" width=248 height=399 border=0 align=right alt="Wine Logo">
 
 <h1>About Wine</h1>
 
@@ -18,15 +18,15 @@ a growing number of Windows programs. Please see the
 for success and failure reports for hundreds of Windows 
 programs, as well as the <a href="http://bugs.winehq.com/">Bug
 Tracking Database</a> for a list of known issues, and the
-<a href="?page=status">Status</a> page for a global view on Wine's 
+<a href="{$root}/site/status">Status</a> page for a global view on Wine's 
 implementation progress.</p>
 
 <p>A broad spectrum of Wine developers can be reached in the 
-<a href="?page=forums">Wine forums</a>. Comments about the winehq.com
+<a href="{$root}/site/forums">Wine forums</a>. Comments about the winehq.com
 website can be emailed to <a
 href="mailto:web-admin@winehq.com">web-admin@winehq.com</a>. Alexandre
 Julliard leads the Wine project, and may be reached by email at
 <a href="mailto:julliard@winehq.com">julliard@winehq.com</a>. For a list of 
-current developers, see the <a href="?page=who">Wine Who's Who</a>.</p>
+current developers, see the <a href="{$root}/site/who">Wine Who's Who</a>.</p>
 
 <p>&nbsp;</p>

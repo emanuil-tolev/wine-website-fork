@@ -12,12 +12,14 @@
 class sidebar 
 {
     // init the sidebar object
-    function sidebar ($theme, &$menus)
+    function sidebar ($theme, &$menus, $root)
     {
         // use current theme
         $this->_theme = $theme;
         // load in the menus array
         $this->_menus = $menus;
+        // root
+        $this->_file_root = $root;
     }
 
 	function menu ()
@@ -29,6 +31,7 @@ class sidebar
 			while(list($item, $url) = each($menus))
 			{
 				if ($item == $name) continue;
+                $url = ereg_replace('\{\$root\}', $this->_file_root, $url);
 			    $g->add($item, $url);
 			}
 			$_menu .= $g->done("");
