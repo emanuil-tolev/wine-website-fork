@@ -9,6 +9,8 @@ class wwn
     var $currentTag;
     var $issue;
     var $who;
+    var $author;
+    var $email;
     var $body;
     var $summary;
     var $person;
@@ -217,6 +219,7 @@ class wwn
                           'date'    => $this->issue,
                           'summary' => $summary_box,
                           'xml'     => $wwn{$cur},
+                          'author' => $html->ahref($this->author, 'mailto:'.$this->email),
                           'body'    => $this->body,
                          );
         $wwn_body = $html->template("base", "wwn", $wwn_vars);
@@ -243,9 +246,10 @@ class wwn
         
         // load issue into template
         $wwn_vars = array(
-                          'who'   => $this->who,
-                          'date'  => $this->issue,
-                          'body'    => $this->body,
+                          'who'    => $this->who,
+                          'date'   => $this->issue,
+                          'author' => $html->ahref($this->author, 'mailto:'.$this->email),
+                          'body'   => $this->body,
                          );
         $wwn_body = $html->template("base", "wwn_interview", $wwn_vars);
     
@@ -314,6 +318,9 @@ class wwn
               $this->issue = $attrs{'DATE'};
               $this->who = $attrs{'WHO'};
               break;
+            case "AUTHOR":
+              $this->email = $attrs{'EMAIL'};
+              break;
             case "INTRO":
               $this->body .= "<a name=\"Intro\"></a>\n";
               break;	
@@ -343,9 +350,9 @@ class wwn
               break;
             case "PERSON":
               $this->person{$attrs{'WHO'}} = array(
-                             "POSTS" => $attrs{'POSTS'},
-                             "SIZE" => $attrs{'SIZE'}
-                                );
+                                                   "POSTS" => $attrs{'POSTS'},
+                                                   "SIZE" => $attrs{'SIZE'}
+                                                  );
               break;
             case "QUOTE":
               $this->body .= "<blockquote><span class=\"wwnQuote\">";
@@ -432,6 +439,7 @@ class wwn
             case "TITLE":
               break;
             case "AUTHOR":
+              $this->author = $data;
               break;		  
             default:
               $this->body .= $data;
