@@ -84,7 +84,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     </li></ul>
 
     <a name="app_owners"></a>
-    <h3>Application database: application owners</h3>
+    <h3>Application database: application maintainers</h3>
 
     <p>Another very important aspect of Wine testing is to use or test real
     applications regularly and report regressions as soon as possible to the Wine 
@@ -95,7 +95,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     application (they cannot buy all the applications out there) or do not know
     it well enough to test it properly.
     </p>
-    <p>You can help even further by becoming an 'application owner', that is by 
+    <p>You can help even further by becoming an 'application maintainer', that is by 
     maintaining that application's entry in the <a href="http://appdb.winehq.org/">Application Database</a>. Many 
     applications can be made to run (or run better) by using just the right mix
     of native (Windows) and built-in (Wine) libraries. By testing the application 
