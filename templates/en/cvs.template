@@ -112,18 +112,22 @@ closest to you.
 		<td rowspan="2"><b><font color=white class=small>CVS Server</font></b></td>
 		<td rowspan="2"><b><font color=white class=small>Username</font></b></td>
 		<td rowspan="2"><b><font color=white class=small>Password</font></b></td>
-		<td colspan="3"><b><font color=white class=small>Repository</font></b></td>
+		<td colspan="5"><b><font color=white class=small>Repository</font></b></td>
 		<td rowspan="2"><b><font color=white class=small>Server root</font></b></td>
 	</tr>
 	<tr bgcolor="#888888">
 		<td><b><font color=white class=small>wine</font></b></td>
 		<td><b><font color=white class=small>lostwages</font></b></td>
+		<td><b><font color=white class=small>appdb</font></b></td>
+		<td><b><font color=white class=small>tools</font></b></td>
 		<td><b><font color=white class=small>c2man</font></b></td>
 	</tr>
 	<tr bgcolor="#ffffff">
 		<td align="left">cvs.winehq.org<br><br>Minnesota, USA (<a href="http://www.codeweavers.com/">CodeWeavers</a>)</td>
 		<td align="center">cvs</td>
 		<td align="center">cvs</td>
+		<td align="center">Yes</td>
+		<td align="center">Yes</td>
 		<td align="center">Yes</td>
 		<td align="center">Yes</td>
 		<td align="center">Yes</td>
@@ -137,6 +141,8 @@ closest to you.
 		<td align="center">Yes</td>
 		<td align="center">No</td>
 		<td align="center">No</td>
+		<td align="center">No</td>
+		<td align="center">No</td>
 		<td align="center">/home/wine</td>
 	</tr>
 -->
@@ -147,6 +153,8 @@ closest to you.
 		<td align="center">Yes</td>
 		<td align="center">No</td>
 		<td align="center">No</td>
+		<td align="center">No</td>
+		<td align="center">No</td>
 		<td align="center">/home/wine</td>
 	</tr>
 <!--
@@ -155,6 +163,8 @@ closest to you.
 		<td align="center">cvs</td>
 		<td align="center">cvs</td>
 		<td align="center">Yes</td>
+		<td align="center">No</td>
+		<td align="center">No</td>
 		<td align="center">No</td>
 		<td align="center">No</td>
 		<td align="center">/home/wine</td>
