@@ -372,10 +372,14 @@ class wwn
                   "<p>The top 5 posters of the week were:</p>";
               break;
             case "PERSON":
-              $this->person{$attrs{'WHO'}} = array(
-                                                   "POSTS" => $attrs{'POSTS'},
-                                                   "SIZE" => $attrs{'SIZE'}
-                                                  );
+              array_push(
+                         $this->person,
+                         array(
+                               "WHO"   => $attrs{'WHO'},
+                               "POSTS" => $attrs{'POSTS'},
+                               "SIZE"  => $attrs{'SIZE'}
+                              )
+                        );
               break;
             case "QUOTE":
               $this->body .= "<blockquote><span class=\"wwnQuote\">";
@@ -418,13 +422,14 @@ class wwn
             case "STATS":
               $this->body .= "<ol>\n";
               $c = 0;
-              // FIXME :: NEED TO SORT THIS BY POSTS
-              while(list($id,$array) = each($this->person))
+              array_qsort($this->person, "POSTS", SORT_DESC);
+              foreach ($this->person as $array)
               {
                 if ($c == 5)
                   break;
-                $this->body .= "<li>".$array{'POSTS'}." posts in ".
-                         $array{'SIZE'}."K by ".$html->urlify($id)."</li>\n";
+                $this->body .= "<li>".$array['POSTS']." posts in ".
+                               $array['SIZE']."K by ".
+                               $html->urlify($array['WHO'])."</li>\n";
                 $c++;
               }
               $this->body .= "</ol>\n";
