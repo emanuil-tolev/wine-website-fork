@@ -156,7 +156,7 @@ My thoughts for the FS implementation are this:
 <li>  Implement "a real driver model" in the client side for dealing with
     ReadFile, WriteFile, delete, rename, SetFilePointer, etc. Probably a
     structure containing function pointers for each operation, which can
-    be registered with the client and refered to from wineserver by an
+    be registered with the client and referred to from wineserver by an
     index.</li>
 
 <li>  Make directories use real server handles, rather than pointers to
