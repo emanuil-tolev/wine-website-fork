@@ -372,7 +372,7 @@ We'll just use these flags since they do what we want.</p></quote>
 <quote who="Patrick Stridvall">
 <p>However regardless of this, uname shouldn't be used
 (at least not directly). Autoconf provides a standard
-way to do this (which BTW happends to use uname).
+way to do this (which BTW happens to use uname).
 It can be used as below.</p>
 <p><code>AC_CANONICAL_HOST<br />
 

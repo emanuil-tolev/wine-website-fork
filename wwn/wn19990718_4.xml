@@ -977,13 +977,13 @@ about the necessity of this feature.
 <p />
 
 At present, it is possible to run multiple Win32 apps by starting 
-seperate Wine processes manually at the command line, which would then
-start seperate Wine server processes along with the app.  These processes
+separate Wine processes manually at the command line, which would then
+start separate Wine server processes along with the app.  These processes
 cannot communicate amongst each other using standard Win32 IPC APIs,
 may have problems due to unserialized access to registry files, etc.
 Some of this may be solvable by having a shared Wine server process.
 Extending the Wine server model in this way is <b>not</b> what people are 
-discussing as seperate address spaces though, right?
+discussing as separate address spaces though, right?
 
 <p />
 
@@ -996,14 +996,14 @@ that might be expected in these circumstances.
 <p />
 
 The problem with the shared address space model is that it does not
-provide the memory protection that would be provided with the seperated
+provide the memory protection that would be provided with the separated
 model, and that the new process will not have the same memory layout
 it would have had in Windows, right?
 
 <p />
 
 If that's all it is, why is it a big deal?  Unless I'm mistaken, 
-providing seperated address spaces will be a <b>big</b> deal, requiring
+providing separated address spaces will be a <b>big</b> deal, requiring
 marshalling of all message data, and various other tweaky-to-get-right
 tasks.  On the other side of the coin, how common is the use of 
 CreateProcess amongst the apps people want to run?  Is this useful

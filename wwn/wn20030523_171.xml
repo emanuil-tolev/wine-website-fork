@@ -274,7 +274,7 @@ was primarily concerned with a handful of DLL's:
 At one point Dimi thought a dsp2make utility would be a useful addition and Steven 
 mentioned ReactOS had one.  He went on to discuss some future plans,
 <quote who="Steven Edwards">
- My goal if the ReactOS guys can get more then winhello working is to have WINEs 
+ My goal if the ReactOS guys can get more than winhello working is to have WINEs 
  shell32 and comctl32 running for Linux world</quote>.   </p>
 
 <p>All in all the meeting was quite successful and a lot of people were glad to
@@ -400,7 +400,7 @@ holding off linking with FriBiDi hoping that Behdad, or anyone else,
 will put in the new interface (that will also let me implement some of 
 GetCharacterProperties more obscure features). That is not likely to 
 happen. I suspect FriBidi has fallen off the end of the earth. It does 
-not implement mirroring, nor does it implement Arabic Shaping (wierd, 
+not implement mirroring, nor does it implement Arabic Shaping (weird, 
 considering that the maintainer is from Iran). It only supports UCS-4.
 </p><p>
 Also - like I told Mike H on IRC, static linking ICU will mean that we 

@@ -404,7 +404,7 @@ there are still plenty of bugs in WINE which need fixing - most are simple 1 lin
 
 </section><section 
 	title="Separating 16/32 Bit OLE Functions" 
-	subject="PATCH - Start seperating 16/32 in Ole and ole32 memlockbytes"
+	subject="PATCH - Start separating 16/32 in Ole and ole32 memlockbytes"
 	archive="http://www.winehq.com/hypermail/wine-devel/2003/05/0404.html" 
 	posts="2"
 	startdate="05/15/2003"
@@ -414,7 +414,7 @@ there are still plenty of bugs in WINE which need fixing - most are simple 1 lin
 OLE32.  He gave an update of what he's trying to do and some of
 the issues involved:</p>
 <quote who="Steven Edwards"><p>
- I am doing some work trying to seperate Ole* and Ole32 for use in 
+ I am doing some work trying to separate Ole* and Ole32 for use in 
  ReactOS. Before we can make use of most of the WINE code all of the 
  Non-Win32api imported functions are going to need to be compiled out or 
  rewitten. I dont need someone to do this for me but I am going to need a 

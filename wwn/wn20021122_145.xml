@@ -598,14 +598,14 @@ getpwnam_r exists. And yes, you really should use the
 reentrent variant if present as well as having an
 alternative implementation if not.
 </p><p>
-As to the implict existance question: I'm not sure.
+As to the implicit existence question: I'm not sure.
 First of all, to answer the related question:
 Should you have a alternative implementation for 
 defined(HAVE_GETPWUID) &amp;&amp; !defined(HAVE_GETPWNAM)?
 </p><p>
 IMHO the answer is no. It is not worth the effort to
 support hypotetical platforms unless we can verify the
-existance of one.
+existence of one.
 </p><p>
 To return to the original question:
 I suggest that we should detect the presence or absence
