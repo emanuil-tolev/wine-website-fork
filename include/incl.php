@@ -62,4 +62,7 @@ if (isset($lang) and in_array($lang, $config->languages))
     $winehq->lang = $lang;
 }
 
+// load a banner ad
+$html->banner_ad = banner_ad();
+
 ?>

@@ -95,11 +95,11 @@ function home_page ()
     
 	// load the template for home page and fill in
 	$vars = array(
-	              'about_box'  => $about_box,
-			      'latest_box' => $latest_box,
-			      'wwn_box' => $wwn_box,
+	              'about_box'   => $about_box,
+			      'latest_box'  => $latest_box,
+			      'wwn_box'     => $wwn_box,
                   'sponsor_box' => $sponsor_box,
-                  'theme_box' => $theme_box
+                  'theme_box'   => $theme_box
 			     );
 	$text = $html->template($config->theme, 'home_page', $vars);	 
 	

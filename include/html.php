@@ -42,6 +42,7 @@ class html
             $body .= $this->frame_tr($this->frame_td($this->span($this->errorlog,"class=tiny"),"class=ltgrey"));
             $body .= $this->frame_end("");
         }
+        $search = $this->template("base", "search");
         // display the html (gzip compressed)
         ob_start("ob_gzhandler");
         $this->http_header(); 
@@ -52,7 +53,9 @@ class html
                         array(
                               'page_title'    => $title,
                               'page_body'     => $body,
-                              'page_sidebar'  => $menu
+                              'page_sidebar'  => $menu,
+                              'page_search'   => $search,
+                              'banner_ad'     => $this->banner_ad
                              )
                 );
         ob_end_flush();
@@ -103,7 +106,7 @@ class html
     // HTML BR
     function br ($count = 1)
     {
-	    return $this->do_indent(str_repeat("<br>", $count));
+	    return $this->do_indent(str_repeat("<br />", $count));
     }
     
     // HTML IMG Tag
@@ -115,14 +118,14 @@ class html
         {
             // load image from images dir
             $size = getimagesize($this->_file_root."/images/".$src);
-            return '<img src="'.$this->_file_root."/images/".$src.'" border="0" '."{$size[3]}".$doAlign.$doAlt.'>';
+            return '<img src="'.$this->_file_root."/images/".$src.'" border="0" '."{$size[3]}".$doAlign.$doAlt.' />';
         }
         else if ($src)
         {
             // load other image
             if ($width) $width = ' width="'.$width.'"';
             if ($height) $height = ' height="'.$height.'"';
-            return '<img src="'.$src.'" border="0"'.$width.$height.$doAlign.$doAlt.'>';
+            return '<img src="'.$src.'" border="0"'.$width.$height.$doAlign.$doAlt.' />';
         }
     }
     
