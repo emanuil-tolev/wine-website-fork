@@ -392,9 +392,7 @@ the original slow qt5 player in wine window :)
 </p></quote>
 <p>The work involved snagging some DLL's from QuickTime 5 and the
 SDK, using wine-20020310, and other messy stuff.  The mplayer folks
-hope to clean this up soon.  Oh, here's
-<a href="http://www.mplayerhq.hu/homepage/images/svq3_shot2.jpg">a
-screenshot</a>.</p>
+hope to clean this up soon.</p>
 
 
 </section>
@@ -623,7 +621,7 @@ to these. If more and better tests are needed, just ask.
 explained his experiences,
 <quote who="Jason Edmeades">
 I have a VB prog (see 
-<a href="http://www.badcomp.co.uk">www.badcomp.co.uk</a>
+<a href="http://www.badcomp.co.uk/">http://www.badcomp.co.uk/</a>
 ) which I spent a long time getting
 working under Wine and fixed all the oleaut32 Var* routines it used. However
 if you look at that dll, there are still a huge number of stubs.
@@ -655,7 +653,7 @@ have time!)</quote></p>
 <p>Dimi Paun posted a message about my offer last week to
 accept screenshots.  If you don't know how to make a screenshot
 stop reading news about Wine development and go find out
-<a href="http://docs.kde.org/3.0/kdegraphics/ksnapshot/">how
+<a href="http://docs.kde.org/en/3.1/kdegraphics/ksnapshot/">how
 to use ksnapshot</a>. Heck, xv has been around for the past million
 years, use that. Then send me a screenshot doing something
 interesting.  Send it to vinn -at- theshell.com.  

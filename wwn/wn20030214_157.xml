@@ -157,8 +157,8 @@ happy with what he found:</p>
 <quote who="Mike Hearn"><p>
 I've been poking around inside the wine clipboard system, in an attempt
 to make it properly compliant with the agreed upon specs over at 
-<ul><a href="http://www.freedesktop.org/standards/clipboards.txt">
-http://www.freedesktop.org/standards/clipboards.txt</a></ul>
+<ul><a href="http://www.freedesktop.org/standards/clipboards-spec/clipboards.txt">
+http://www.freedesktop.org/standards/clipboards-spec/clipboards.txt</a></ul>
 </p><p>
 At the moment, Wine mixes up CLIPBOARD and PRIMARY, which is not a good
 idea. Ideally, Wine would work like GTK, Qt, Mozilla and all the rest
@@ -275,8 +275,8 @@ internal represantation of the code and a set of perl modules/scripts to
 ease the parsing of the dumped code. Most of the perl scripts are for
 the Linux Kernel but writing new scripts seems to be easy. I wrote
 (well, mostly adapted an existing script for the kernel) one script
-<a href="http://people.redhat.com/mstefani/wine/smatch/enter_leave.pl">
-http://people.redhat.com/mstefani/wine/smatch/enter_leave.pl</a>
+<a href="http://people.redhat.com/mstefani/wine/smatch/">
+http://people.redhat.com/mstefani/wine/smatch/</a>
 (if we decide to adopt smatch it should probably go to 
 <tt>$wine/tools/smatch/</tt>)
 to find code path with missing LeaveCriticalSection's. Scripts to find

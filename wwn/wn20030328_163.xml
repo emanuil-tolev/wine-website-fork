@@ -273,8 +273,8 @@ The workaround is to give the command
    export LD_ASSUME_KERNEL=2.2.5</code></ul></p><p>
 before running Wine (and probably before running configure, too).
 (This is documented in each distro's beta release notes, e.g.
-<a href="http://tux.cprm.net/pub/ftp.redhat.com/beta/phoebe/en/os/i386/">
-http://tux.cprm.net/pub/ftp.redhat.com/beta/phoebe/en/os/i386/</a>)
+<a href="http://rpmfind.net/linux/redhat/beta/phoebe-3/en/os/i386/">
+http://rpmfind.net/linux/redhat/beta/phoebe-3/en/os/i386/</a>)
 Have you tried this yet?
 </p><p>
 The changes needed are deep.  Alexandre has started on them, but
