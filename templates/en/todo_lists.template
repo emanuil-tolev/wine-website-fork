@@ -11,268 +11,386 @@
 
 <h1>To Do Lists</h1>
 
-  <p>The following To Do lists are what the Wine development team hopes to accomplish for
+  <p>The following To Do lists is what the Wine development team need's to accomplish for
   a Wine version 0.9 release.</p>
 
   <h3> A. WineHQ work </h3>
-      <ol>
-	<li> Website redesign <span class="done">[DONE]</span>
+    <ol>
+	<li> History page <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:jnewman@codeweavers.com">Jeremy Newman</a>
-	    <li> status: new site is live!
-	    <li> updated: Mar 25, 2003
+	    <li> worker: <a href="mailto:VincentB@coppercolorado.com">Brian Vincent</a>
+	    <li> status: Sent for inclusion a draft can be found <a href="http://users.theshell.com/~vinn/wine-history.html">here</a>.
+	    <li> updated: Feb 7, 2004
 	  </ul>
-	<li> Reorganize the navigational menu <span class="done">[DONE]</span>
+	<li> Testing status <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:fgouget@free.fr">Francois Gouget</a> &amp; al.
-	    <li> status: merged into new site
-	    <li> updated: Nov 5, 2002
+	    <li> worker: <a href="mailto:wferi@afavant.elte.hu">Ferenc Wagner</a>
+	    <li> status: Working code <a href="http://afavant.elte.hu/~wferi/wine/">available</a>
+	    <li> updated: Feb 7, 2004
 	  </ul>
-	<li> Create some really sexy screenshots <span class="done">[DONE]</span>
+	<li> I18n status <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:vinn@theshell.com">Brian Vincent</a>
-	    <li> status: please send screenshots to Brian; 
-				submitted shots available <a href="http://www.theshell.com/~vinn/ss/">here</a>,
-				and a preview <a href="http://www.theshell.com/~vinn/ss/preview.html">here</a>.
-	    <li> updated: Dec 2, 2002
-	    <li> criteria: listed <a href="#screenshots">here</a>
+	    <li> worker: <a href="mailto:vberon@mecano.gme.usherb.ca">Vincent Béron</a>
+	    <li> status: some working <a href="http://www.winehq.org/hypermail/wine-patches/2004/01/0244.html">code</a> available
+	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Rework the FAQ interface <span class="done">[DONE]</span>
+	<li> Porting status <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
 	    <li> workers: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>, 
-			  <a href="mailto:keith_m@sweeney.demon.co.uk">Keith Matthews</a>, 
-			  <a href="mailto:twickline@skybest.com">Tom Wickline</a>
-	    <li> status: completed
-	    <li> updated: Nov 25, 2002
+			  <a href="mailto:steven_ed4153@yahoo.com">Steven Edwards</a>
+	    <li> status: Initial version posted <a href="http://www.winehq.org/hypermail/wine-devel/2003/10/0312.html">here</a>
+	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Enlist some 'official' distribution maintainers <span class="done">[DONE]</span>
+	<li> Who's Who <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
-	    <li> RedHat: <a href="mailto:vberon@mecano.gme.usherb.ca">Vincent Béron</a>
-	    <li> SuSE: <a href="mailto:meissner@suse.de">Marcus Meissner</a>
-	    <li> Mandrake: <a href="mailto:puoti@inwind.it">Ivan Leo Murray-Smith</a>
-	    <li> Debian: <a href="mailto:ovehk@ping.uio.no">Ove Kaaven</a>
-	    <li> FreeBSD: <a href="mailto:pfeifer@dbai.tuwien.ac.at">Gerald Pfeifer</a>
-	    <li> Slackware: <a href="mailto:sadam@clemson.edu">Adam Schreiber</a>
-	    <li> status: completed
-	    <li> updated: Apr 11, 2003
+	    <li> worker: <a href="mailto:VincentB@coppercolorado.com">Brian Vincent</a>
+	    <li> status: work has already started
+	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li class=modifed> Remove the doc scripts out of <tt>documentation</tt> <span class=done>[DONE]</span>
+	<li> Documentation page update <span class="todo">[TODO]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: Patches committed.
-	    <li> updated: Sep 25, 2003
+	    <li> worker: ?
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+	  </ul>
+        <li> Download page (esp. source) needs work <span class="todo">[TODO]</span>
+	  <ul>
+	    <li> worker: ?
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+	  </ul>
+         <li> Acknowledgment page <span class="todo">[TODO]</span>
+	  <ul>
+	    <li> worker: ?
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+	  </ul>
+	<li> UI status update <span class="todo">[TODO]</span>
+	  <ul>
+	    <li> worker: ?
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+	  </ul>
+	<li> Integrate API status into WineHQ <span class="todo">[TODO]</span>
+	  <ul>
+	    <li> worker: ?
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
 	  </ul>
      </ol>
   <a name="doc"></a><h3> B. Documentation work </h3>
-     <ol>
-	<li> Update the Wine User Guide <span class="done">[DONE]</span>
+
+  </a><h4> User Guide </h4>
+    <ol>
+	<li> Update configuration instructions based winecfg & regedit <span class="todo">[TODO]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:andi@rhlx01.fht-esslingen.de">Andreas Mohr</a>
-	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2003/03/0369.html">Updated</a>, good enough for now. 
-	    <li> updated: May 26, 2003
+	    <li> worker: ?
+	    <li> status: ? 
+	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Update the Winelib User Guide <span class=inprogress>[IN PROGRESS]</span>
+	<li> Suggest winefile instead of Calmira  <span class=todo>[TODO]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>.
-	    <li> status: Will update it to reflect the new process built around
-			<tt>winegcc</tt>/<tt>winewrap</tt>.
-	    <li> updated: Apr 12, 2003
+	    <li> worker: ?
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Update the Wine Developers Guide  <span class=inprogress>[IN PROGRESS]</span>
+	<li> Misc cleanups  <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: Requires cleanup.
-	    <li> updated: Sep 16, 2003
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Update the Wine Packagers Guide <span class="done">[DONE]</span>
+     </ol>
+  <h4> Devel Guide </h4>
+    <ol> 
+	<li> Update COM section/wid <span class="todo">[TODO]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>.
-	    <li> status: Patch <a href="http://www.winehq.org/hypermail/wine-patches/2003/04/0134.html">submitted</a>,
-			 and   <a href="http://www.winehq.org/hypermail/wine-cvs/2003/04/0123.html">committed</a>.
-	    <li> updated: Apr 18, 2003
+	    <li> worker: ?
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Fix documentation build process <span class="done">[DONE]</span>
+	<li> Redo Multimedia section <span class="todo">[TODO]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: Patches committed
-	    <li> updated: Oct 17, 2003
+	    <li> worker: ?
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
           </ul>
-	<li> Move CVS docu from User Guide to Devel Guide <span class="done">[DONE]</span>
+	<li> Add i18n section <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:Bill.Medland@accpac.com">Bill Medland</a>
-	    <li> status: patch <a href="http://cvs.winehq.org/patch.py?id=6695">committed</a>.
-	    <li> updated: Dec 17, 2002
+	    <li> worker: <a href="mailto:vberon@mecano.gme.usherb.ca">Vincent Béron</a>
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Merge <tt>documentation/wine.texinfo</tt> into the Development Guide <span class="done">[DONE]</span>
+	<li> Suggest adding tests w/ patches <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: Patches <a href="http://www.winehq.org/hypermail/wine-cvs/2003/09/0349.html">committed</a>.
-	    <li> updated: Oct 17, 2003
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
           </ul>
-	<li> Merge <tt>documentation/HOWTO-winelib</tt> into the Development Guide <span class="done">[DONE]</span>
+	<li> Cross compilation on RH <span class="inprogress">[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:mstefani@redhat.de">Michael Stefaniuc</a>
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+          </ul>
+        <li> Add section on KERNEL32 <span class="todo">[TODO]</span>
+	  <ul>
+	    <li> worker: ?
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+          </ul>
+	<li> Misc cleanups <span class="inprogress">[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a> 
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+          </ul>
+     </ol>
+  <h4> Winelib Guide </h4>
+    <ol> 
+         <li> Update around MinGW/winegcc <span class="inprogress">[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>  
+                         <a href="mailto:fgouget@free.fr">Francois Gouget </a>
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+	  </ul>
+	<li> Misc updates <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: Patches <a href="http://www.winehq.org/hypermail/wine-cvs/2003/09/0384.html">committed</a>.
-	    <li> updated: Oct 17, 2003
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
           </ul>
      </ol>
   <a name="conf"></a><h3> C. Wine configuration </h3>
      <ol>
-	<li> Merge configuration into the registry <span class=todo>[TODO]</span>
-	  <br>From <a href="mailto:julliard@winehq.org">Alexandre Julliard </a>:
-	  <i>...it basically means making the Wine/Config branch into a
-	  normal registry branch. It's more a user interface issue, we need
-	  tools to edit it because you don't want to make users dig through
-	  system.reg manually.</i>
-	<a name="winecfg"></a><li> Write control panel applets for editing it <span class=inprogress>[IN PROGRESS]</span>
+	<li> Complete regedit <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
-	    <li> workers: <a href="mailto:mike@theoretic.com">Mike Hearn</a>,
-			  <a href="mailto:robert@robertvanherk.nl">Robert van Herk</a>.
-	    <li> status: 20% (screenshots <a href="winecfg1.png">here</a>, and <a href="winecfg2.png">here</a>);
-			 Work is in progress.
-	    <li> updated: Sep 5, 2003
-	  </ul>
-	<li> Have decent defaults so we can start control panel without prior configuration <span class=todo>[TODO]</span>
-	<li> Have wizard like app to autoconfigure wine <span class=todo>[TODO]</span>
+	    <li> workers: <a href="mailto:hijaszu@hlfslinux.hu">Zimler Attila</a>
+                          <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
+	    <li> status: new/delete/rename key needed
+	    <li> updated: Feb 7, 2004
+          </ul> 
+        <li> Complete winecfg <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
-	    <li> proposal WineSetupTk by <a href="mailto:jwhite@codeweavers.com">Jeremy White </a>
-	  </ul>
-	<li> Make Wine's DLLs register themselves to avoid manual merging of the <tt>winedefault.reg</tt> <span class=done>[DONE]</span>
+	    <li> workers: <a href="mailto:cmorgan@alum.wpi.edu">Chris Morgan</a>
+                          <a href="mailto:mike@theoretic.com">Mike Hearn</a>
+	    <li> status:  patch almost ready
+	    <li> updated: Feb 7, 2004
+          </ul> 
+        <li> Setup API .inf scripts <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:jhohm@acm.org">John K. Hohm</a>
-	    <li> status: first draft <a href="http://www.winehq.org/hypermail/wine-devel/2002/11/1409.html">submitted</a> for  
-			 <a href="http://www.winehq.org/hypermail/wine-devel/2002/12/index.html#150">review</a>;
-			 first patch got <a href="http://www.winehq.org/hypermail/wine-cvs/2003/01/0189.html">committed</a>,
-			 another was <a href="http://www.winehq.org/hypermail/wine-patches/2003/01/0252.html">submitted</a>.
-	    <li> updated: Aug 28, 2003
-	  </ul>
-	  From <a href="mailto:julliard@winehq.org">Alexandre Julliard </a>:
-	  <i>Part of it should be done with DllRegisterServer, the rest can be
-	  handled by the .inf script. And I think it's OK to add the necessary
-	  DllRegisterServer entry points even if the native dll doesn't have them.</i>
-	<li> Write <tt>wine.inf</tt> script to setup a new Wine installation <span class=todo>[TODO]</span>
-	  <br>The <tt>setupapi</tt> DLL should support everything we need for this one.
-	  Relevant documentation: 
-	   the <a href="http://msdn.microsoft.com/library/en-us/install/hh/install/create-inf_4l47.asp">INF File Format</a>, and
-	   the <a href="http://msdn.microsoft.com/library/en-us/install/hh/install/setupapi_2faf.asp">Setup API</a>.
-	<li> Have a wineboot script for RunOnce stuff <span class=done>[DONE]</span>
-	  <ul>
-	    <li> worker: <a href="mailto:wine-devel@sun.consumer.org.il">Shachar Shemesh </a>
-	    <li> status: working version integrated in the official tree.
-	    <li> updated: May 26, 2003
-	  </ul>
-	<li> Implement write support for regedit <span class=inprogress>[IN PROGRESS]</span>
-	  <ul>
-	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: Started cleaning it up
-	    <li> updated: Dec 11, 2003
+	    <li> worker: <a href="mailto:cmorgan@alum.wpi.edu">Chris Morgan</a>
+	    <li> status: work has started
+	    <li> updated: Feb 7, 2004
           </ul>
      </ol>
-  <h3> D. Stabilize utilities </h3>
+  <h3> D. UI Code </h3>
+     <ol>
+	<li> Visible region handling in server <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard </a>
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+	  </ul>
+	<li> Inter-process handle management <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
+                          <a href="mailto:ulrich@codeweavers.com">Ulrich Czekalla</a>
+	    <li> status: menu handle patch almost ready
+	    <li> updated: Feb 7, 2004
+	  </ul>
+     </ol>
+  <h3> E. File Formats </h3>
      <ol>
 	<li> Get rid of the init directive from .spec files <span class=done>[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard </a>
 	    <li> status: implemented by <a href="http://cvs.winehq.org/patch.py?id=6180">this</a>
-	    <li> updated: Nov 7, 2002
+	    <li> updated: Feb 7, 2004
 	  </ul>
 	<li> Make sure the .spec file format is fairly stable <span class=done>[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard </a>
 	    <li> status: patch <a href="http://cvs.winehq.org/patch.py?id=6327">committed</a>
-	    <li> updated: Nov 18, 2002
+	    <li> updated: Feb 7, 2004
 	    <li> what: get rid of the <tt>rsrc</tt> directive
-	  </ul>
-	<li> Implement import libraries <span class=done>[DONE]</span>
+	  </ul>	
+	<li> .reg file format <span class=done>[DONE]</span>
+         <ul>
+          <li> worker: <a href="mailto:medbi01@accpac.com">Bill Medland</a>
+          <li> status : patch <a href="http://www.winehq.org/hypermail/wine-cvs/2002/06/0136.html">committed</a> 
+          <li> updated: Feb 7, 2004
+         </ul>
+	<li> I18n output <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard </a>
-	    <li> status: patch <a href="http://cvs.winehq.org/patch.py?id=6587">committed</a>
-	    <li> updated: Dec 12, 2002
-	  </ul>
-	<li>Stabilize <tt>winebuild</tt>'s options <span class=done>[DONE]</span>
-	  <ul>
-	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard </a>
-	    <li> status: fixed now by a series of patches.
-	    <li> updated: Dec 7, 2002
-	  </ul>
-	<li>Stabilize <tt>wrc</tt>'s options <span class=done>[DONE]</span>
-	  <ul>
-	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: <tt>wrc</tt> is now <tt>windres</tt> command line compatible,
-			 options are cleaned up, documentation updated.
-	    <li> updated: Mar 27, 2003
-	  </ul>
-	<li>Complete the <tt>winegcc/wineg++</tt> tools <span class=inprogress>[IN PROGRESS]</span>
-	  <ul>
-	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: mostly works, needs refinement, documentation
-	    <li> updated: Dec 24, 2002
-	  </ul>
-	<li>Complete the <tt>winewrap</tt> tool <span class=inprogress>[IN PROGRESS]</span>
-	  <ul>
-	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: mostly works, needs portability work (depends on gcc), maybe merge into <tt>winebuild</tt>
-	    <li> updated: Dec 19, 2002
-	  </ul>
-	<li> Get rid of the Perl testing framework <span class=done>[DONE]</span>
-	  <ul>
-	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: patch <a href="http://www.winehq.org/hypermail/wine-patches/2002/11/0106.html">submitted</a>,
-			 and committed (<a href="http://www.winehq.org/hypermail/wine-cvs/2002/11/0069.html">[1]</a>, and 
-					<a href="http://www.winehq.org/hypermail/wine-cvs/2002/11/0071.html">[2]</a>)
-	    <li> updated: Nov 11, 2002
+	    <li> worker: <a href="mailto:vberon@mecano.gme.usherb.ca">Vincent Béron</a>
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
 	  </ul>
      </ol>
-
-  <h3> E. Important fixes </h3>
+  <h3> F. Exported API </h3>
      <ol>
-	<li> Fix window management, so we can install apps in managed mode. <span class=inprogress>[IN PROGRESS]</span>
-	  <ul>
-	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
-	    <li> status: some hacks exist, some more debugging needed
-	    <li> updated: May 26, 2003
-	  </ul>
 	<li> Finish DLL separation Phase 1 <span class=done>[DONE]</span>
 	  <ul>
 	    <li> workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>.
 	    <li> status: <a href="http://www.winehq.org/hypermail/wine-announce/2003/10/0000.html">completed</a>
-	    <li> updated: Oct 17, 2003
+
+	    <li> updated: Feb 7, 2004
 	  </ul>
-	<li> Detect printing system at runtime <span class=done>[DONE]</span>
+	<li> DLL separation II <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:meissner@suse.de">Marcus Meissner</a>
-	    <li> status: Patch  <a href="http://www.winehq.org/hypermail/wine-patches/2002/11/0163.html">submitted</a>, and
-				<a href="http://www.winehq.org/hypermail/wine-cvs/2002/11/0097.html">committed</a>.
-	    <li> updated: Jan 28, 2003
+	    <li> workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
+                          <a href="mailto:pouech-eric@wanadoo.fr">Eric Pouech</a>
+	    <li> status: work has started
+	    <li> updated: Feb 7, 2004
 	  </ul>
-	<li> Detect OpenGL system at runtime <span class=done>[DONE]</span>
+	<li> Wineserver protocol <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:lionel.ulmer@free.fr">Lionel Ulmer</a>
-	    <li> status: Patch  <a href="http://www.winehq.org/hypermail/wine-patches/2002/11/0144.html">submitted</a>, and
-				<a href="http://cvs.winehq.org/patch.py?id=6301">committed</a>.
-	    <li> updated: Nov 14, 2002
+	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard </a>
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Start builtin WinHelp when invoked from apps <span class=done>[DONE]</span>
+     </ol>
+  <h3> G. Tools </h3>
+     <ol>
+	<li> Winebuild: build DLLs from .def files <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
-	    <li> worker: <a href="mailto:eric.pouech@wanadoo.fr">Eric Pouech</a>
-	    <li> status: patches submitted 
-			(<a href="http://www.winehq.org/hypermail/wine-patches/2002/11/0150.html">client</a>, 
-			 <a href="http://www.winehq.org/hypermail/wine-patches/2002/11/0151.html">server</a>) for review,
-			and <a href="http://cvs.winehq.org/patch.py?id=6224">accepted</a>.
-	    <li> updated: Nov 11, 2002
+	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard </a>
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li>Fix install location for header files <span class=done>[DONE]</span>
+	<li> Winegcc: add simple gcc-independence <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: patch <a href="http://www.winehq.org/hypermail/wine-patches/2002/12/0013.html">submitted</a>, and
-			 <a href="http://cvs.winehq.org/patch.py?id=6482">committed</a>.
-	    <li> updated: Dec 3, 2002
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
 	  </ul>
-	<li> Cleanup the directory structure <span class=inprogress>[IN PROGRESS]</span>
+	<li> Winegcc: generate DLLs/-shared <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+	  </ul>
+	<li> Winemaker: generate MinGW compatible makefiles <span class=todo>[TODO]</span>
+	  <ul>
+	    <li> worker: ?
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+	  </ul>
+	<li> Winemaker: use dsw2make from MinGW <span class=todo>[TODO]</span>
+	  <ul>
+	    <li> worker: ?
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+	  </ul>
+	<li> Winemaker: no configure script <span class=todo>[TODO]</span>
+	  <ul>
+	    <li> worker: ?
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+	  </ul>
+	<li> Autoconf: add all Wine-specific macros to the aclocal <span class=todo>[TODO]</span>
+	  <ul>
+	    <li> worker: ?
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+	  </ul>
+	<li> Winedesktop: create new tool <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:ajp@mail.utexas.edu">Alex Pasadyn</a>
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+	  </ul>
+     </ol>
+  <h3> H. Miscellaneous </h3>
+     <ol>
+	<li> Testing daemon to run as a Windows service <span class=todo>[TODO]</span>
+	  <ul>
+	    <li> worker: ?
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+	  </ul>
+	<li>  Exec-shield support <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:mike@theoretic.com">Mike Hearn</a>
+	    <li> status: work has started
+	    <li> updated: Feb 7, 2004
+	  </ul>
+	<li> Prelink support <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:mike@theoretic.com">Mike Hearn</a>
+	    <li> status: work has started
+	    <li> updated: Feb 7, 2004
+	  </ul>	
+	<li> Version symbols in libwine & libwine_unicode <span class=inprogress>[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
-	    <li> status: tracked on <a href="http://www.winehq.org/site/janitorial">Janitorial</a> list
-	    <li> updated: Sep 25, 2003
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+	  </ul>
+	<li>  Find packager for a PE-build of Wine on SF <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:puoti@inwind.it">Ivan Leo Murray-Smith</a>
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+	  </ul>
+	<li> Standardize Wine handling in autoconf <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+	  </ul>	
+     </ol>
+  <h3> I. Source Code </h3>
+     <ol>
+	<li> Move controls/*, windows/* -> dlls/user/ <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
+	    <li> status: ?
+	    <li> updated: Feb 7, 2004
+	  </ul>
+	<li> Move graphics/*, objects/* -> dlls/gdi/ <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
+	    <li> status: ?
+	    <li> updated: Feb 7, 2004
+	  </ul>
+	<li> Move files/*, misc/* -> dlls/kernel/ dlls/user/ <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
+	    <li> status: ?
+	    <li> updated: Feb 7, 2004
+	  </ul>
+	<li> Flatten dlls/: msacm/*, msvideo/msrle32, winmm/* <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
+	    <li> status: ?
+	    <li> updated: Feb 7, 2004
+	  </ul>
+	<li> Move documentation/ddraw.txt somewhere <span class=todo>[TODO]</span>
+	  <ul>
+	    <li> worker: ?
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+	  </ul>
+	<li>  Move documentation/samples/generic.ppd -> dlls/wineps <span class=inprogress>[IN PROGRESS]</span>
+	  <ul>
+	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
+	    <li> status: ?
+	    <li> updated: Feb 7, 2004
+	  </ul>
+	<li> Move documentation/samples/config -> winedefault.reg <span class=todo>[TODO]</span>
+	  <ul>
+	    <li> worker: ?
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
+	  </ul>
+	<li> Move documentation/samples/system.ini -> winedefault.reg <span class=todo>[TODO]</span>
+	  <ul>
+	    <li> worker: ?
+	    <li> status: ?
+	    <li> updated: Feb 5, 2004
 	  </ul>
      </ol>
 
