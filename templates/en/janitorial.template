@@ -15,55 +15,6 @@
   increment and decrement functions <tt>InterlockedIncrement(&This->ref)</tt>
   and <tt>InterlockedDecrement(&This->ref)</tt> instead of <tt>This->ref++</tt>
   or <tt>This->ref--</tt>.  See an example
-  <a href="http://www.winehq.org/hypermail/wine-patches/2004/09/0248.html">patch</a>
-  of how to fix this problem.<p>
-
-  As of Sept 14, 2004), there are at least 32 files that appear to use thread
-   unsafe operations:<br>
-  <tt>find . -name \*.c -exec grep ef-- {} \; -ls</tt>
-  <ul>
-    <li>dlls/avifil32/avifile.c
-    <li>dlls/oleaut32/tests/vartype.c
-    <li>dlls/oleaut32/olefont.c
-    <li>dlls/oleaut32/olepicture.c
-    <li>dlls/oleaut32/dispatch.c
-    <li>dlls/oleaut32/connpt.c
-    <li>dlls/dsound/buffer.c
-    <li>dlls/ole32/datacache.c
-    <li>dlls/ole32/oleobj.c
-    <li>dlls/ole32/stg_stream.c
-    <li>dlls/ole32/defaulthandler.c
-    <li>dlls/ole32/storage.c
-    <li>dlls/ole32/storage32.c
-    <li>dlls/ole32/hglobalstream.c
-    <li>dlls/ole32/antimoniker.c
-    <li>dlls/ole32/filemoniker.c
-    <li>dlls/ole32/bindctx.c
-    <li>dlls/ole32/oleproxy.c
-    <li>dlls/ole32/clipboard.c
-    <li>dlls/ole32/memlockbytes.c
-    <li>dlls/ole32/memlockbytes16.c
-    <li>dlls/ole32/itemmoniker.c
-    <li>dlls/ole32/moniker.c
-    <li>dlls/ole32/compositemoniker.c
-    <li>dlls/ole32/marshal.c
-    <li>dlls/ole32/rpc.c
-    <li>dlls/dinput/mouse.c
-    <li>dlls/dinput/joystick_linux.c
-    <li>dlls/dinput/device.c
-    <li>dlls/dinput/joystick_linuxinput.c
-    <li>dlls/dinput/keyboard.c
-    <li>dlls/urlmon/umon.c
-  </ul>
-
-  <h2>COM objects</h2>
-
-  <h3>Use Interlocked functions in AddRef and Release methods</h3>
-
-  Most OLE objects should be threadsafe, which requires use of the thread-safe
-  increment and decrement functions <tt>InterlockedIncrement(&This->ref)</tt>
-  and <tt>InterlockedDecrement(&This->ref)</tt> instead of <tt>This->ref++</tt>
-  or <tt>This->ref--</tt>.  See an example
   <a href="http://cvs.winehq.org/patch.py?id=13781">patch</a>
   of how to fix this problem.<p>
 
@@ -120,7 +71,9 @@
 </pre>
   <p>
 
-  There appears to be quite a few COM object in which that is not done.<p>
+  There appears to be quite a few COM object in which that is not done.
+  See an example <a href="http://cvs.winehq.org/patch.py?id=13797">patch</a>
+  of how to fix this problem.<p>
   
   <h3>Implement DllCanUnloadNow and IClassFactory->LockServer</h3>
 
