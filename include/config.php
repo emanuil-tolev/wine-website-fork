@@ -11,14 +11,18 @@
  
 class config 
 { 
-    function config ()
+    function config ($path = "")
     {
-        global $PHP_SELF;
+        // exit if config not found
+        if (!file_exists($path))
+        {
+            echo 'config file not found!';
+            exit();
+        }
         
 		// read global config file
-		$config_path = "/etc/winehq.conf";
-		$this->readConfig($config_path);
-		
+		$this->readConfig($path);
+        
         // navigation
 		$this->nav = array(
 					 'About' => array(
@@ -48,7 +52,6 @@ class config
 					 'Development' => array(
 					                        'Development'       => '{$root}/site/development',
                                             'CVS'               => '{$root}/site/cvs',
-                                            //'Developer Hints' => '{$root}/site/developer_hints',
                                             'Sending Patches'   => '{$root}/site/sending_patches',
                                             'To Do Lists'       => '{$root}/site/todo_lists',
                                             'Fun Projects'      => '{$root}/site/fun_projects',
@@ -69,7 +72,7 @@ class config
 	// reads config from text file
 	function readConfig ($file)
 	{	
-		$fd = fopen ($file, "r");
+		$fd = fopen ($file, "r",TRUE);
 		while (!feof ($fd)) {
 	        $buffer = trim(fgets($fd, 4096));
 			if (ereg('^\#', $buffer)) continue;
