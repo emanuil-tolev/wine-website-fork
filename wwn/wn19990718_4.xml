@@ -508,7 +508,7 @@ heavily anyway, apart maybe in the registry code.
 <p />
 
 Patrik didn't think that tunneling through CRTDLL the existing libc
-functions is completly doable, especially when dealing with 64 bit
+functions is completely doable, especially when dealing with 64 bit
 Unix platforms providing a 32 bit CRTDLL.
 
 <p />

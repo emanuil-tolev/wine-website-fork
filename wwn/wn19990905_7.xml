@@ -133,7 +133,7 @@ being switched to later in time when everyhing has been fixed.
 Some more detailed discussions outlooked the modifications to be applied to
 the build tool: Bertho did propose his dllglue code to generate export
 tables, import tables and resource embedding (as well as NE &amp; PE headers).
-This would actually completly replace build (which only provides export
+This would actually completely replace build (which only provides export
 tables for now). His idea was to create a brand new tool (using lex &amp; yacc
 for better readability / maintenance) for elfdlls and only use build for the
 soon obsolete built-in DLLs). Ulrich Weigand disagreed and was in favor of

@@ -47,7 +47,7 @@ Matthew J. Francis reported a crash in GetCommandLine for a C++
 program he tried to make working using winelib. After some
 investigations by Ulrich Weigand, it turned out that this program
 has global objects whose constructors call into Windows APIs. While
-completly correct under Windows, this doesn't work under Wine.
+completely correct under Windows, this doesn't work under Wine.
 
 <p />
 

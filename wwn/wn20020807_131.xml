@@ -484,7 +484,7 @@ later.  He noted the following changes:</p>
 </p><p>
  I compiled the wineserver under i386-solaris, and it runs.  I do not have the 
  resources to compile ALL of wine under i386, or on any OS other than Solaris so 
- the linux and BSD portions of this code are completly un-tested.
+ the linux and BSD portions of this code are completely un-tested.
 </p><p>
  ChangeLog:<br/>
  Improved wineserver's handling of LWPs by following recommendations from 

@@ -95,7 +95,7 @@ Its main goal is to ponder. It also serves to inform you of what's going on arou
 Xandros 2.0 Deluxe</a> for OSNews.com.  He briefly mentions the included
 CrossOver products integrated into the system:</p>
 <quote who="Barry Smith"><p>
-Codeweavers worked as expected. It ran MS Office and Adobe Photoshop and Paint Shop Pro quite well. Codeweavers did have the potentially annoying habit of trying to automatically install any and all Windows disks that you stuck into either drive, but such is life and the feature can easily be disabled. I call Codeweavers a neutral aspect as far as my use goes. But for someone who really needs to run a few specialized Windows programs, and who cannot or will not setup a dual boot system, this is a good alternative. </p></quote>
+CodeWeavers worked as expected. It ran MS Office and Adobe Photoshop and Paint Shop Pro quite well. CodeWeavers did have the potentially annoying habit of trying to automatically install any and all Windows disks that you stuck into either drive, but such is life and the feature can easily be disabled. I call CodeWeavers a neutral aspect as far as my use goes. But for someone who really needs to run a few specialized Windows programs, and who cannot or will not setup a dual boot system, this is a good alternative. </p></quote>
 
 </section>
 <section 
@@ -122,7 +122,7 @@ The current output is a large patch, available here:
 <a href="http://perso.wanadoo.fr/pouech-eric/ep-file.diff.gz"> 
 http://perso.wanadoo.fr/pouech-eric/ep-file.diff.gz</a> (400 KB uncompressed)
 </ul></p><p>
-It's not completly ready yet for inclusion, however some ongoing 
+It's not completely ready yet for inclusion, however some ongoing 
 discussions could overlap with what I've currently done (like how to 
 configure drive without a config file, SMB handling...). So better 
 discuss it widely (yet another flame war).
@@ -152,7 +152,7 @@ What has been removed (from current implementation):
 UNIXCP code page)</li></ul>
 
 </p><p>
-What still need some improvement
+What still needs some improvement
 <ul>
 <li> fix all the introduced bugs (even if all the current tests actually pass)</li>
 <li> setting a first default environment (even if tools/winefs provides it - 
@@ -441,7 +441,7 @@ week Chris gave an update,
 <quote who="Chris Morgan">
 Alexandre wanted winebrowser implemented as a winelib application and also to 
 be more easily configured.  Here is the winebrowser winelib application.  It 
-uses a registry key(I'm not sure if this is the correct path for the key 
+uses a registry key (I'm not sure if this is the correct path for the key 
 since I didn't see any other config keys in the registry) and creates a key 
 with the defaults if no key exists.
 </quote></p>
@@ -505,16 +505,16 @@ I did some quick testing and it appears that this will work.
 I have broken it into 2 patches
 </p><p>
 wine_wintab.diff is all the wintab work except for the x11drv stuff
-wine_x11_wintab.diff is the changes to x11drv. the reason for this is 
+wine_x11_wintab.diff is the changes to x11drv. The reason for this is 
 because i still have the ime patch that i submitted earlier in my wine 
 tree so i had to had edit that x11 patch to try to make it not dependent 
 on the xim stuff being already applied. This make there a chance that 
 there are bits that may not apply cleanly, and if you are committing 
-both of my patches (xim and this) then they wont apply cleanly without a 
+both of my patches (xim and this) then they won't apply cleanly without a 
 bit of fudging.
 </p><p>
 I am also giving you 2 test applications i used for wintab testing. 
-SYSPRESS.EXE and TILTTEST.EXE These applications helped alot on testing 
+SYSPRESS.EXE and TILTTEST.EXE These applications helped a lot on testing 
 things. They where found on the wacom developers site, i think i still 
 have the source kicking around somewhere.
 </p><p>
