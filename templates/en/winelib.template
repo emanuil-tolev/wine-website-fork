@@ -103,7 +103,7 @@
     <li>homepage: <a href="http://upp.sourceforge.net/">upp.sourceforge.net</a>
   </ul>
 
-  <a name="abiword""></a><h3 class=done>AbiWord</h3>
+  <a name="abiword"></a><h3 class=done>AbiWord</h3>
   <ul>
     <li>worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
     <li>status: builds &amp; runs cleanly, 
@@ -341,7 +341,7 @@ make<br>
     <li> I had to uncomment <tt>PSH_WIZARD97</tt> in <tt>/wine/prsht.h</tt> (fixed by Francois)
     <li> The packing pragmas looks handled by gcc-3.2.1, so we may remove all modifications made by winemaker
     <li> I had to force winnt.h to use nameless struct and unions (fixed by Dimi)
-    <li> I added </tt>#define EDEADLOCK EDEADLK</tt> in <tt>/wine/msvcrt/errno.h</tt> (fixed by Francois)
+    <li> I added <tt>#define EDEADLOCK EDEADLK</tt> in <tt>/wine/msvcrt/errno.h</tt> (fixed by Francois)
     <li> I linked _alloca() to alloca() function (fixed by Alexandre)
     <li> There was a conflict on HKEY type between  <tt>afxres.h</tt> and <tt>wine/windef.h</tt>
     <li> Some little others syntax issues like: <tt>__try __expect, asm {}, unsigned short(x), (LPCTSTR)CString</tt>
