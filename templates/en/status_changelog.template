@@ -2,8 +2,24 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since March 15, 2004:</p>
+
+ <ul>
+ <li>ADD - amstream.dll</li>
+ <li>ADD - Christian Costa as worker to quartz.dll</li>
+ <li>ADD - Mike McCormack as worker to shdocvw.dll</li>
+ <li>ADPCM 50% -&gt; 80%</li>
+ <li>G711: u/A law 50% -&gt; 80%</li>
+ <li>MP3 50% -&gt; 80%</li>
+ <li>ICCVID 100% -&gt; 50%</li>
+ <li>MSRLE32 100% -&gt; 50%</li>
+ <li>MSVIDC32 100% -&gt; 50%</li>
+ <li>Quartz.dll 25% -&gt; 30%</li>
+ </ul>
+ <br>
+
 <p>Changes since February 17, 2004:</p>
- 
+
  <ul>
  <li>ADD - rsabase.dll</li>
  <li>ADD - Chris Morgan as worker to Initial registry contents</li>
@@ -195,39 +211,6 @@
  <li>ADD - Ivan Leo Murray-Smith, Vincent Béron, Alex Pasadyn as workers to Wine Setup Tool (winesetuptk)</li>
  <li>Wine Resource Compiler: 100% -&gt; 90%</li>
  <li>Wine configuration tool (winecfg): 20% -&gt; 50%</li> 
- </ul>
- <br>
-
- <p>Changes since October 01, 2003:</p>
-
- <ul>
- <li>ADD - link to API Status</li>
- </ul>
- <br>
-
- <p>Changes since September 28, 2003:</p>
-
- <ul>
- <li>Remove - Miscellaneous section from the Core Status page</li>
- <li>DMusic: 5% -&gt; 50%</li>
- </ul>
- <br>
-
- <p>Changes since August 23, 2003:</p>
-
- <ul>
- <li>ADD - http://www.badcomp.co.uk/ to Jason Edmeades</li>
- </ul>
- <br>
-
- <p>Changes since August 08, 2003:</p>
-
- <ul>
- <li>Remove - Some of the bullets from DirectX section</li>
- <li>Remove - File Source filter from DirectShow ToDo</li>
- <li>ADD - RPCRT4 ToDo and entries</li>
- <li>ADD - Registry entries, to DirectShow ToDo</li>
- <li>DirectShow/Quartz: 5% -&gt; 10%</li>
  </ul>
  <br>
 

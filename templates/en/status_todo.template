@@ -238,6 +238,8 @@
 [DirectShow]
 
     * Filter manager (IGraphBuilder)
+     - splitters
+     - transform filters
     * Video renderer
     * Audio renderer
     * Registry entries
@@ -283,6 +285,14 @@
 [DirectMusic]
 
     * DMusicPerformance scanning of files
+
+[Dmime]
+    * Segment tracks loading (all type of tracks needs to be implemented)
+
+[Dmscript]
+    * VB script execution support (actually only source is loaded). Maybe using a 
+      generic wine VB script kernel (as the vbscript.dll seems to provide on 
+      windows) using ole32/com (most of the needs are already here)
 
 [DirectInput] 
 

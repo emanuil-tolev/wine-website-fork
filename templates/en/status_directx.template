@@ -183,7 +183,7 @@
     <td>dmime.dll</td>
       <td class="adequate"></td>
       <td>None</td>
-      <td class="pct5">5% complete</td>
+      <td class="pct10">10% complete</td>
       <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
     </tr>
     <tr>
@@ -197,7 +197,7 @@
     <td>dmscript.dll</td>
       <td class="adequate"></td>
       <td>None</td>
-      <td class="pct5">5% complete</td>
+      <td class="pct10">10% complete</td>
       <td>Rok Mandeljc,<br>Rapha&euml;l Junqueira,<br>Christian Costa</td>
     </tr>
     <tr>
@@ -238,7 +238,13 @@
     </tr>
     <td colspan="5"><strong>Miscellaneous DirectX DLLs</strong></td>
     <tr>
-      <td>dplayx.dll</td>
+      <td>amstream.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directX/htm/multimediastreaming.asp">MSDN: Multimedia Streaming </a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</a></td>
+      <td>Christian Costa</td>
+    </tr>
+    <td>dplayx.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx8_c/directx_cpp/play_front_61q1.asp">MSDN: DPlay</a></td>
       <td>None</td>
       <td class="pct30">30% complete</a></td>
@@ -278,8 +284,8 @@
       <td><a href="{$root}/site/?issue=122#Quartz.dll%20Removal">#122</a>,
           <a href="{$root}/site/?issue=177#DirectShow%20/%20Quartz%20Patches">#177</a>,
 	  <a href="{$root}/site/?issue=199#DirectShow%20/%20Quartz%20Status">#199</a></td>
-      <td class="pct25">25% complete</a></td>
-      <td>Robert Shearman</td>
+      <td class="pct30">30% complete</a></td>
+      <td>Robert Shearman,<br>Christian Costa</td>
     </tr>
   </table>
 </td>

@@ -153,21 +153,21 @@
       <td>ADPCM</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcedshow/html/_cxrefACMWrapperFilter.asp">ACM Wrapper Filter</a></td>
       <td>None</td>
-      <td class="pct50">50% complete</td>
+      <td class="pct80">80% complete</td>
       <td></td>
     </tr>
     <tr>
       <td>G711: u/A law</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcedshow/html/_cxrefACMWrapperFilter.asp">ACM Wrapper Filter</a></td>
       <td>None</td>
-      <td class="pct50">50% complete</td>
+      <td class="pct80">80% complete</td>
       <td></td>
     </tr>
     <tr>
       <td>MP3</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcedshow/html/_cxrefACMWrapperFilter.asp">ACM Wrapper Filter</a></td>
       <td>None</td>
-      <td class="pct50">50% complete</td>
+      <td class="pct80">80% complete</td>
       <td></td>
     </tr>
     <td colspan="5"><strong>msvideo/msvfw32 Video codecs</strong></td>
@@ -175,21 +175,21 @@
     <td>ICCVID</td>
       <td class="adequate"><a href="http://www.csse.monash.edu.au/~timf/videocodec/cinepak.txt">(CVID) stream format for AVI and QT</a></td>
       <td><a href="{$root}/site/?issue=205#Radius%20Cinepak%20Decoder%20and%20Directory%20Structure">#205</a></td>
-      <td class="pct100">100% complete</td>
+      <td class="pct50">50% complete<br> ( Only decoding is supported ) </td>
       <td>Mike McCormack</td>
     </tr>
     <tr>
       <td>MSRLE32</td>
       <td class="adequate"><a href="http://www.jmcgowan.com/avitech.html">Windows Multimedia System</a></td>
       <td>None</td>
-      <td class="pct100">100% complete</td>
+      <td class="pct50">50% complete ( Only decoding is supported ) </td>
       <td>Michael G&uuml;nnewig</td>
     </tr>
     <tr>
     <td>MSVIDC32</td>
       <td class="adequate"><a href="http://home.pcisys.net/~melanson/codecs/video1.txt">MS Video-1 Decoding Algorithm</a></td>
       <td>None</td>
-      <td class="pct100">100% complete</td>
+      <td class="pct50">50% complete ( Only decoding is supported ) </td>
       <td>Mike McCormack</td>
     </tr>
     <td colspan="5"><strong>Multimedia DLL's</strong></td>
