@@ -454,19 +454,23 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     <h3>Wine Party Fund</h3>
 
     <p>The purpose of the Wine Party Fund is to show appreciation to Wine
-    developers by collecting funds for small parties, dinners, virtual beers, etc.</p>
+       developers by collecting funds for developer meetings, such as future Wine Conferences, 
+       or in some cases to purchase documentation.</p>
 
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <p><b>Ways to contribute:</b></p>
+    
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><li>
+	  <input type="hidden" name="cmd" value="_xclick">
+	  <input type="hidden" name="business" value="donate@winehq.org">
+	  <input type="hidden" name="item_name" value="Wine donation">
+      <input type="image" src="{$root}/images/ppdonate.gif" name="submit"
+      align=absmiddle alt="Donate to Wine with PayPal!"> Our PayPal Account
+      </li></form>
 
-    <p>Ways to contribute:
-    <ul>
-      <li><input type="image" src="images/ppdonate.gif" name="submit"
-          alt="Donate to Wine with PayPal!">
-          Our PayPal Account
+      <p><li>We also have a SourceForge PayPal account <a HREF="http://sourceforge.net/donate/index.php?group_id=6241">sourceforge.net</a> 
       </li></p>
-      <p>
-      <li>You can also send cash, checks or international money order<br>
-          in US funds to:
+
+      <p><li>You can also send cash, checks or international money order in US funds to:
 
           <b><pre>
           The Wine Party Fund
@@ -475,17 +479,12 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
           2550 University Ave West
           Suite 439S
           St. Paul, MN 55116
-       </li></b></pre></p>
+       </li></pre></p>
        <p>         
       <li>Purchase books or music from <a href="http://www.amazon.com/exec/obidos/redirect-home/winehq">Amazon.com</a>
            or <a href="http://www.cdnow.com/from=sr-1093221">CDnow</a> (Use
            these specific links only, so that the Wine Party Fund gets the credit.)</li>
-    </ul>
-    <input type="hidden" name="cmd" value="_xclick">
-    <input type="hidden" name="business" value="donate@winehq.org">
-    <input type="hidden" name="item_name" value="Wine donation">
-    </form>  
-    </p>
+      </ul></p>
 
 </blockquote>
 
