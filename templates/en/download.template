@@ -20,7 +20,7 @@ for post-installation instructions.</p>
 
   <tr bgcolor="#ffffff">
     <td align=center><a href="{$root}/site/download-rh">
-	  <img src="{$root}/images/distro/redhat.gif" width="50" height="50" alt="RedHat Linux" border="0"></a>
+	  <img src="{$root}/images/distro/redhat.png" width="50" height="50" alt="RedHat Linux" border="0"></a>
     </td>
     <td> <b><a href="{$root}/site/download-rh">Red Hat</a></b>
          binary and source .rpms for RedHat 7.3, 8, 9, Fedora Core 1, 2 and 3, White Box Enterprise Linux 3.0 (RHEL 3.0 compatible)</td>
@@ -29,7 +29,7 @@ for post-installation instructions.</p>
   
   <tr bgcolor="#ffffff">
     <td align=center><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&package_id=79444">
-	  <img src="{$root}/images/distro/suse.gif" width="50" height="50" alt="SUSE Linux" border="0"></a>
+	  <img src="{$root}/images/distro/suse.png" width="50" height="50" alt="SUSE Linux" border="0"></a>
     </td>
     <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&package_id=79444">SuSE</a></b>
          binary and source .rpms for SuSE 8.1, 8.2, 9.0, and 9.1</td>
@@ -38,7 +38,7 @@ for post-installation instructions.</p>
   
   <tr bgcolor="#ffffff">
     <td align=center><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&package_id=80066">
-	  <img src="{$root}/images/distro/mandrake.gif" width="50" height="50" alt="LinuxMandrake" border="0"></a>
+	  <img src="{$root}/images/distro/mandrake.png" width="50" height="50" alt="LinuxMandrake" border="0"></a>
     </td>
     <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&package_id=80066">Mandrake</a></b> 
          binary .rpms for Mandrake 9.2, 10.0 and 10.1</td>
@@ -47,7 +47,7 @@ for post-installation instructions.</p>
   
   <tr bgcolor="#ffffff">
     <td align=center><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&package_id=6301">
-	  <img src="{$root}/images/distro/slackware.gif" width="50" height="50" alt="Slackware linux" border="0"></a>
+	  <img src="{$root}/images/distro/slackware.png" width="50" height="50" alt="Slackware linux" border="0"></a>
     </td>
     <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&package_id=6301">Slackware</a></b>
          binary .tgz for Slackware 10</td>
@@ -65,7 +65,7 @@ for post-installation instructions.</p>
 
   <tr bgcolor="#ffffff">
     <td align=center><a href="{$root}/site/download-deb">
-	  <img src="{$root}/images/distro/debian.gif" width="50" height="50" alt="Debian linux" border="0"></a>
+	  <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian linux" border="0"></a>
     </td>
     <td> <b><a href="{$root}/site/download-deb">Debian</a></b> 
 	 binary and source .debs for Debian unstable</td>
@@ -74,14 +74,14 @@ for post-installation instructions.</p>
 
   <tr bgcolor="#ffffff">
     <td align=center><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&package_id=77562">
-	  <img src="{$root}/images/distro/freebsd.gif" width="50" height="54" alt="FreeBSD" border="0"></a>
+	  <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
     </td>
     <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&package_id=77562">FreeBSD</a></b> binary .tgz for FreeBSD 4.8, 4.9, 5.0, 5.1</td>
     <td><a href="mailto:gerald@pfeifer.com">Gerald Pfeifer</a></td>
   </tr>
   <tr bgcolor="#ffffff">
     <td align=center><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&package_id=112520">
-	  <img src="{$root}/images/distro/windows.gif" width="50" height="54" alt="Windows" border="0"></a>
+	  <img src="{$root}/images/distro/windows.png" width="50" height="54" alt="Windows" border="0"></a>
     </td>
     <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&package_id=112520">Windows</a></b> binary .zips</td>
     <td><a href="mailto:puoti@inwind.it">Ivan Leo Puoti</a></td>
@@ -101,7 +101,7 @@ for post-installation instructions.</p>
   <tr>
     <td align=center bgcolor="#ffffff">
       <a href="http://www.codeweavers.com/site/products/">
-        <img src="{$root}/images/distro/crossover.gif" 
+        <img src="{$root}/images/distro/crossover.png" 
          width="50" height="50" alt="CrossOver Office" border="0">
       </a>
     </td>
@@ -117,7 +117,7 @@ for post-installation instructions.</p>
   <tr>
     <td align=center bgcolor="#ffffff">
       <a href="http://www.transgaming.com/"><img 
-        src="{$root}/images/distro/transgaming.gif" width="50" height="50" alt="Cedega" border="0"></a>
+        src="{$root}/images/distro/transgaming.png" width="50" height="50" alt="Cedega" border="0"></a>
     </td>
     <td align=left bgcolor="#ffffff">
       <b><a href="http://www.transgaming.com/">Cedega</a></b> - 
@@ -168,7 +168,7 @@ for post-installation instructions.</p>
   <tr>
     <td align=center bgcolor="#ffffff">
       <a href="http://www.frankscorner.org/winetools/">
-        <img src="{$root}/images/distro/winetools.gif" 
+        <img src="{$root}/images/distro/winetools.png" 
          width="50" height="50" alt="Frank's Wine Tools" border="0">
       </a>
     </td>
@@ -184,7 +184,7 @@ for post-installation instructions.</p>
 
 <p>
   <a href="http://www.winehq.org/site/download" target="_blank"><img
-  src="{$root}/images/download_wine.gif" border=1 width=88 height=31 vspace=0 hspace=5 align=left
+  src="{$root}/images/download_wine.png" border=1 width=88 height=31 vspace=0 hspace=5 align=left
   alt="Download Wine"></a>
   Use this image if you want to link to our download page.
 </p>
