@@ -389,7 +389,7 @@ complicated in my opinion too.
 <li />there is more functionality needed for mapping single files to 
 subtrees of the registry, load, unload and flush these.
 
-<li />there is some mechanism like softlinks nessesary. to make it 
+<li />there is some mechanism like softlinks necessary. To make it 
 more complicated HCR should be a _merged_ view of 
 HKCU\Software\Classes and HKLM\Software\Classes. (This is new 
 starting from nt5 and I'm not yet sure where a write goes to)

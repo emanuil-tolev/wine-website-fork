@@ -139,7 +139,7 @@ for better readability / maintenance) for elfdlls and only use build for the
 soon obsolete built-in DLLs). Ulrich Weigand disagreed and was in favor of
 making build evolve to dllglue (even it is means starting to rewrite it,
 with the same set of features, with lex &amp; yacc). One issue of the process is
-to know wether is existing .spec files (the export tables) can be used by
+to know whether existing .spec files (the export tables) can be used by
 both tools (or said in other words, whether the syntax will be the same).
 Patrik Stridvall noticed that as long we don't know what needs to be
 changed: <quote who="Ulrich Weigand">We _must_ properly see the problem

@@ -233,7 +233,7 @@ so maybe this will be fixed. Corel will need it anyway, so all hope is not
 lost.
 
 <li /> 2&amp;3/ It's a recent problem. I intend to attack some scrollbar problems
-real soon now. Wether I will win or the scrollbar will win is an open
+real soon now. Whether I will win or the scrollbar will win is an open
 question. I will probably try your code while I'm at it. In a week or
 two.
 
@@ -255,7 +255,7 @@ But, he also noticed (after diving into the code) that <quote who="Dennis
 Bjvrklund">there is still a lot of (graphical) problems with the scrollbars
 in win9x mode. So I started to fix some small problems. And since I have
 some free weeks now in the sommer I could spend some time fixing the
-scrollbars for real.</quote> and asked wether someone else was also looking
+scrollbars for real.</quote> and asked whether someone else was also looking
 at those issues.
 
 <p />
@@ -475,7 +475,7 @@ compile on BeOS.
 
 <p />
 
-Marcus Meissner provided some improvement on the patch and asked wether BeOS
+Marcus Meissner provided some improvement on the patch and asked whether BeOS
 was supporting mmap().
 
 <p />
@@ -497,7 +497,7 @@ Ulrich and Howard then discussed the different points. mmap() could be
 implemented by reading all the file into memory (which would result in bad
 performances with MapViewOfFile on large files). mmap() is also now used as
 an improvement for passing data back and forth to the server (instead of
-sending them through the pipe); Ulrich asked wether a shared memory feature
+sending them through the pipe); Ulrich asked whether a shared memory feature
 exists on Be? Howard said yes: Areas.
 
 <p />

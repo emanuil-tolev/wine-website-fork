@@ -262,7 +262,7 @@ with UNIX processes?
 <quote who="Dimitrie Paun"><p>
 
 Well, indeed, this is the $10000 question. I don't much care at this
-point wether Gimp can work with the Plugins or not, what I care about
+point whether Gimp can work with the Plugins or not, what I care about
 is to export their interface in a an ELF library so that Unix processes
 can call them. This is non-trivial, so the first question is:
 <ul>
