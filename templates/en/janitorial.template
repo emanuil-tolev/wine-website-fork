@@ -195,7 +195,7 @@
   The ASCII to Unicode conversion is lossy; moreover, with the
   shift to Unicode, it's actually slower to deal in ASCII than
   in Unicode, because of the additional conversions required.
-  There are 43 cross calls from Unicode to ANSI as reported by
+  There are 40 cross calls from Unicode to ANSI as reported by
   <tt>tools/winapi_check/winapi_check --none --progress --cross-call-unicode-ascii</tt>
   (as of Jan 11, 2005):
   <ul>
@@ -323,10 +323,9 @@
 
   <h3>Include file cleanup</h3>
   That is, no more Wine-specific headers in <tt>include/</tt>. This is tightly
-  related to the <b>DLL Separation</b> task, listed above. There are 16 Wine-only
-  headers that need to be moved, as of Aug 12, 2004:
+  related to the <b>DLL Separation</b> task, listed above. There are 13 Wine-only
+  headers that need to be moved:
   <ul>
-    <li> async.h
     <li> builtin16.h
     <li> cursoricon.h
     <li> dce.h
@@ -336,16 +335,15 @@
     <li> local.h
     <li> miscemu.h
     <li> module.h
-    <li> nonclient.h
     <li> stackframe.h
     <li> thread.h
-    <li> win.h
     <li> winpos.h
   </ul>
   <ul>
-    <li>workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>.
+    <li>workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>,
+		 <a href="mailto:pouech-eric@wanadoo.fr">Eric Pouech</a>.
     <li>status: <span class=inprogress>first patches committed.</span>
-    <li>updated: Dec 6, 2002
+    <li>updated: Jan 20, 2005
   </ul>
 
   <h3>Remove non-standard directories</h3>
