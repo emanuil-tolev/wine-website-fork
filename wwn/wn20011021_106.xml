@@ -321,7 +321,7 @@ I'm looking forward for any hints.
  Now we can presumably forget about the VxD and the undocumented NETBIOS DLL
  and concentrate on implementing the documented NETAPI32 DLL.
 </p><p>
- It would be intresting to know what the content of NCB structure that
+ It would be interesting to know what's the content of the NCB structure that
  Netbios takes as pointer to as argument.
 </p><p>
  So the next step would be to make a Wine implementation of the NETAPI32.DLL

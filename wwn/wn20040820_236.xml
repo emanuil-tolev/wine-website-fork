@@ -79,7 +79,7 @@ WHAT'S NEW with Wine-20040813: (see
 <quote who="WineHQ"><p>
 Tom Wickline updated the 
 <a href="http://www.winehq.com/site/status">status pages</a>, including the
-addition of builtin versions atl.dll, d3dxof.dll, dbghelp.dll, and mlang.dll.
+addition of builtin versions of atl.dll, d3dxof.dll, dbghelp.dll, and mlang.dll.
 Our <a href="http://www.winehq.com/site/janitorial">janitorial projects</a>
 received a bit of their own janitorial clean up courtesy of Dimi Paun. 
 They also saw  the addition of -Wsign-compare as a useful gcc warning to 
@@ -148,7 +148,7 @@ tell winedbg to just dump the backtrace and continue.
 <p>Several people, however, liked the idea of just getting a simple
 backtrace.  Dimi Paun explained:</p>
 <quote who="Dimitrie Paun">
-<p>I am not 100% how the patch that Robert's proposing would work in
+<p>I am not 100% sure how the patch that Robert's proposing would work in
 practice, but I can tell you (from working with Java for a long
 time now) that having readily available backtraces is invaluable.
 </p><p>
@@ -330,7 +330,7 @@ of the details. I know that when I hit these sorts of problems it was due
 to the large number of threads blowing the fd limit (there were lots of
 sockets as well).</quote></p>
 
-<p>Dan Kegel like Shachar's idea and offered some advice:</p>
+<p>Dan Kegel liked Shachar's idea and offered some advice:</p>
 <quote who="Dan Kegel"><p>
 By all means, let's try epoll.</p><p>
 FWIW, I wrote a wrapper layer that illustrates how to detect

@@ -79,7 +79,7 @@ summed up pretty succinctly - iTunes support.  CNet also has
 <a href="http://news.com.com/Start-up+to+make+iTunes+sing+on+Linux/2100-1041_3-5293915.html">an article</a>
 that closely mirrors the press release.  It appears only some aspects of
 iTunes are working, but more support is on the way:</p>
-<quote who="Codeweavers"><p>
+<quote who="CodeWeavers"><p>
 With iTunes support, CrossOver Office users will be able to download and 
 organize songs from the iTunes Music Store. Soon they will also be able to 
 plug their iPod into their Linux PC for music transfers and other 
@@ -196,7 +196,7 @@ trying to track down why people are receiving a
 details of the problem and asked if anyone else had run across it:</p> 
 <quote who="Mike Hearn"><p>
 It seems quite a few people have been seeing this message lately, and I'm
-not sure why. This occurs even with a non-existant ~/.wine directory, so
+not sure why. This occurs even with a non-existent ~/.wine directory, so
 wineprefixcreate should set up a correct system for them.
 </p><p>
 Examples:

@@ -295,7 +295,7 @@ thread</a> on wine-devel about a month ago.  </p>
 
 <quote who="James Brown"><p>
 	I'm just posting a quick update on my various WINE work for those
-intrested.
+interested.
 </p><p>
 I currently have a working HTML Help viewer, which seems to work pretty
 well on everything I've tested so far. It does however need some more work
@@ -309,7 +309,7 @@ our own CVS that require native dlls :)
 </p><p>
 That brings me to my other WIP, de-QT'ing KHTML and turning it into a
 working browser implementation for WINE. So far this is actually coming
-along quite well, and besides a few points it definatly makes an effective
+along quite well, and besides a few points it definitely makes an effective
 browser and IE compatibility seems to generally be good enough to keep the
 majority of IWebBrowser using applications happy. I've since abandoned my
 earlier hopes to keep the changes minor (in order to make it easier to

@@ -227,7 +227,7 @@ such.
 </p><p>
 Yup i am looking hard at the setupapi device calls and cfgmgr to try to 
 get some usb support targeted toward the iPod. I have made some progress 
-and am beginning to have an understand of how usb is handled in windows 
+and am beginning to have an understanding of how usb is handled in windows 
 (Win2K is my target version) and how to try to handle it in Wine.
 </p><p>
 I do have some difficulty figuring out how Win2K is translating vendor 
@@ -326,7 +326,7 @@ a fake windows drive (WWN issue
 example of it occurring:</p>
 <quote who="Henning Gerhardt"><p>
 a friend of me would update the wine package (20030813) from his SuSE 9.0 
-system to the latest availabe package for this system (20040716). After the 
+system to the latest available package for this system (20040716). After the 
 update following error message appears on each start of wine:
 <ul><code>
 Warning: the specified Windows directory L"C:\\Windows" is not accessible.<br />
@@ -343,10 +343,10 @@ lrwxrwxrwx 1 julian users 28 10. Aug 18:50 c: -> ../%HOME%/.wine/fake_windows
 </ul> 
 </p><p>
 
-I think the problem is the ${HOME} variable which is not parsed / correct 
-replaced during the convert process.</p><p>
+I think the problem is the ${HOME} variable which is not parsed / correctly 
+replaced during the conversion process.</p><p>
 
-Have anyone an idea to solve this problem ? Or is it only a problem of the 
+Has anyone an idea to solve this problem ? Or is it only a problem of the 
 SuSE distribution ?
 </p></quote>
 
@@ -399,7 +399,7 @@ edited by your favorite text editor.  The syntax itself
 isn't a whole lot different than the existing config file.  The huge
 benefit is that Wine's registry reading/writing code is pretty stable
 now and it's worth using one set of functions for handling all that
-stuff.  Since the registry is accessible via Win32 API's it's possible to
+stuff.  Since the registry is accessible via Win32 APIs it's possible to
 write graphical configuration tools (such as winecfg) using Winelib.</p>
 </section>
 <section
@@ -433,7 +433,7 @@ run with out any problems.</li></ul></p><p>
 the X-Server a Wine-Server resource. Will using a different user help?
 Will using desktop mode help? Has any one been successful with letting
 different network users connect and run Windows Apps under wine? How did
-they Setup wine? How does Codeweavers do it with their Server Product?
+they Setup wine? How does CodeWeavers do it with their Server Product?
 </p></quote>
 
 <p>Alexandre described a couple of different workarounds,

@@ -147,7 +147,7 @@ Other Darwine news is that there was an interview with moi on osViews:
 <quote who="Jim White"><p>
 
 And perhaps the most interesting news is that Darwine's lead developer 
-Pierre d'Herbemont has sucessfully ported QEMU (fast X86 emulator) to 
+Pierre d'Herbemont has successfully ported QEMU (fast X86 emulator) to 
 Mac OS X:
 <ul><p>
  QEMU on Mac OS X<br />
@@ -186,7 +186,7 @@ The opportunities for optimization are very very high with the Darwine approach
 because the problem that a general processor emulator has is its compilation 
 window... Like QUMU compiles instructions... and compiles them into native code 
 and runs that, but since it doesn't know things like 'what are code blocks' and 
-this sort of thing... its very limited in what it can do there.... its window 
+this sort of thing... it's very limited in what it can do there.... its window 
 translating scheme.
 </p><p>
 But with Darwine, down the road... since we know things like, 'what are code blocks' things could could actually be natively translated. {This allows} a block of code to be compiled in native code and not have to use dynamic compilation at all. Performance could potentially get MUCH better than systems that use operating system virtualization.
@@ -220,7 +220,7 @@ ideas off other developers,
 </quote></p>
 
 <p>That actually seemed to open the floor to some discussion that's not seen 
-very often on the list.  In the case it centered around getting Wine to
+very often on the list.  In this case it centered around getting Wine to
 use QEMU as a CPU-level emulator, but without running a separate operating
 system on top of it.  Now, in the interview above Jim alludes to running
 Linux on QEMU running on MacOS X.  Within that sandbox he could also run
@@ -239,7 +239,7 @@ there is a corresponding binary string consisting of a bunch of 1's and 0's.
 Let's take a really simple example simplified to the point where the example
 is wrong, but the idea is right.  Let's examine what happens to the number
 65,534 when it's stored in memory.  First, you can break 65534 down into a
-hexidecimal number FFFE, or in hex notation 0xFFFE.  Now, the geeks among you 
+hexadecimal number FFFE, or in hex notation 0xFFFE.  Now, the geeks among you 
 (and judging from this 
 audience it's probably most of you) will truly recognize that for what it
 is - two bytes of information.  (For the sake of this discussion we won't
@@ -250,7 +250,7 @@ Up to this point the whole world of mathematics and computer
 science agrees on everything.  Things begin to fall apart when we need to
 store these bytes in computer memory.  Now, on both big-endian and little-endian
 architectures each memory location addresses 1 byte. How these memory 
-locations are assigned differ though.  On a big-endian machine (PPC) the
+locations are assigned differs though.  On a big-endian machine (PPC) the
 most significant byte (in this case, 0xFF) is stored at a memory location 
 with the lowest address,
 the next most significant byte (0xFE) is stored in the next address, etc.  So 
@@ -471,7 +471,7 @@ modifying the script or patches).
 <p>The 
 <a href="http://www.winehq.com/hypermail/wine-devel/2004/08/0527.html">list</a>
 was quite lengthy with 286 possible cases. Compare that to the 54 we list on
-the janitorial page and it looks as we haven't even started.  Rob Shearman
+the janitorial page and it looks as if we haven't even started.  Rob Shearman
 pointed out the latest CVS might contain less since a very recent patch
 corrected calls to GetWindowLongA.  Vincent reran the test and found things
 improved!  We dropped to 270!  (Sorry, I just got done watching <i>The Daily
@@ -546,7 +546,7 @@ not using them anyway.
 In any case, seeing that getting your patch accepted will take some 
 effort, it's probably a good idea to use the glibc version functions 
 first, and deal with the problem of missing epoll functions in older 
-glibcs in a seperate patch.</p></quote>
+glibcs in a separate patch.</p></quote>
 
 <p>Shachar ran some benchmarks and posted the results:</p>
 <quote who="Shachar Shemesh"><p>

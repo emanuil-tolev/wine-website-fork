@@ -188,7 +188,7 @@ tutorials. (9 out of 11 work reasonably well).
 </p><p>
 I don't have a problem with the code remaining personal to me and probably
 archived, as I have learnt a lot by doing it (which was my original aim),
-but if it is agreed that adding directx 8 support completely different to
+but if it is agreed that adding directx 8 support completely different from
 the TransGaming code is ok, then I may try to submit some patches.
 </p><p>
 Note the current code is nowhere near ideal, so don't get your hopes up.
@@ -330,7 +330,7 @@ and exactly what would currently build.  Patrik replied,
  date, so it'd be somewhere around there...).  When I went to run it today 
  (after several CVS updates on wine, including "moments ago"), after the 
  company data file is opened, the main menu bar goes away.  This was 
- definately NOT a problem the last time I ran QuickBooks, so I surmise that it 
+ definitely NOT a problem the last time I ran QuickBooks, so I surmise that it 
  is the result of a change committed to CVS within the past two to three weeks  
  that is causing this behaviour.  It happens in both managed and unmanaged 
  window mode.
