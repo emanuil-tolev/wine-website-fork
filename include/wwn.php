@@ -238,7 +238,7 @@ class wwn
                           'date'    => $this->issue,
                           'summary' => $summary_box,
                           'xml'     => $wwn{$cur},
-                          'author' => $html->ahref($this->author, 'mailto:'.$this->email),
+                          'author'  => $this->author,
                           'body'    => $this->body,
                          );
         $wwn_body = $html->template("base", "wwn", $wwn_vars);
