@@ -507,9 +507,9 @@
   <h3>Use Interlocked functions in AddRef and Release methods</h3>
 
   Most OLE objects should be threadsafe, which requires use of the thread-safe
-  increment and decrement functions <tt>InterlockedIncrement(&This->ref)</tt>
-  and <tt>InterlockedDecrement(&This->ref)</tt> instead of <tt>This->ref++</tt>
-  or <tt>This->ref--</tt>.  See an example
+  increment and decrement functions <tt>InterlockedIncrement(&amp;This-&gt;ref)</tt>
+  and <tt>InterlockedDecrement(&amp;This-&gt;ref)</tt> instead of <tt>This-&gt;ref++</tt>
+  or <tt>This-&gt;ref--</tt>.  See an example
   <a href="http://cvs.winehq.org/patch.py?id=15239">patch</a>
   of how to fix this problem.<p>
 
