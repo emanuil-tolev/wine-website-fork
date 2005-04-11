@@ -11,7 +11,7 @@ global $config, $html;
 $form =& $this->params['form'];
 
 // dbfile
-$db_file = '/tmp/'.$this->params['db'].'.txt';
+$db_file = $html->_file_root.'/data/'.$this->params['db'].'.txt';
 
 // main
 if (isset($_GET['done']))
