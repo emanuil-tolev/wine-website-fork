@@ -644,7 +644,7 @@ that DTR wasn't supported:</p>
 
 	<p>Additionally, there were some problems in the
 	GetCommState/SetCommState code that saw DTR_CONTROL_HANDSHAKE
-	accidently turned on, so make sure that it is really the application
+	accidentally turned on, so make sure that it is really the application
 	that is requesting it.</p>
 
 	<p>As Marcus pointed out, the linux kernel itself does not support

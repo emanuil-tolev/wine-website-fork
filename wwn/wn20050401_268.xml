@@ -207,7 +207,7 @@ acceptable way for Wine. If there is, please let me know.
 </p><p>
 Gecko API is based on XPCOM that is quite similar to MSCOM. We cannot use
 Gecko's headers as they are designed for C++, but I wrote idl files that can
-be used by widl to generate binary-compatibile headers. Fortunately,
+be used by widl to generate binary-compatible headers. Fortunately,
 excluding
 interfaces, we can do everything using only C functions. Currently Wine's
 implementation uses Mozilla ActiveX Control. It's enough for some

@@ -152,7 +152,7 @@ Wine.
 We discussed this issue internally and felt that the other alternative
 (losing both PRIMARY and CLIPBOARD selections on loss of PRIMARY) would be
 even worse. Suppose a Windows user copied something into the clipboard using
-Edit | Copy. Now if you were to accidently mark a selection in XTerm or some
+Edit | Copy. Now if you were to accidentally mark a selection in XTerm or some
 other app. This would cause the content of the clipboard to be lost. This
 would be pretty non-intuitive for Windows users.
 
