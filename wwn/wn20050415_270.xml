@@ -107,7 +107,7 @@ now commonly come across situations where we say, "OK, let's start on the follow
 will be those associated with the ADS support, and the additional file system features. The file system features are what started the whole Samba4 effort -- Samba4 was initially called the "Samba NTVFS" project, referring to the new virtual file 
 system layer that allows for NT semantics on top of both POSIX and non-POSIX file systems.
 </p><p>
-One simple but important example of how the new NTVFS layer helps is the addition of support for "NT file streams." A file in a NT filesystem can have multiple "streams," where the primary stream (called ":$DATA") is the normal file data that people 
+One simple but important example of how the new NTVFS layer helps is the addition of support for "NT file streams." A file in an NT filesystem can have multiple "streams," where the primary stream (called ":$DATA") is the normal file data that people 
 are used to thinking about, but there can be any number of other named streams containing other types of data, such as meta-data describing who wrote the file, or an audio stream, or even some data from an anti-virus scan of the file. Importantly, 
 recent updates to WindowsXP use streams to store security information about where a file came from, which allows Windows to display a warning when you try to execute a file that comes from an untrusted "security zone." POSIX file systems have no 
 concept of multiple streams, and as Samba was originally designed as a tool for representing a POSIX filesystem to Windows clients, there was no attempt to add stream support. The situation has now changed, with streams becoming a more essential 
@@ -164,10 +164,10 @@ forward.  Perhaps it's best to provide a bit of history here, as to why
 Samba4 got started in the first place:
 </p><p>
 Samba4 was started, because tridge was working for IBM research on an
-advanced network storage solution, which included it's own network file-
+advanced network storage solution, which included its own network file
 system, capable of providing full NTFS semantics.
 </p><p>
-While the file-system clearly worked with Samba being a POSIX app, and
+While the file system clearly worked with Samba being a POSIX app, and
 the remote FS mounted in the kernel, providing proper NTFS semantics was
 simply not possible: so much information was lost on the POSIX
 transition.  Tridge then worked to construct a VFS layer for Samba that
@@ -177,7 +177,7 @@ CIFS backend, as well as the 'posix' backend we use for storing real
 files locally, and this does work.  
 </p><p>
 So, what I'm trying to say is this: why should wine lose all this
-information as it tries to push things though to POSIX interface of the
+information as it tries to push things through the POSIX interface of the
 kernel?  Even extended, I just don't see that interface providing
 consistent support for a remote filesystem in the way windows works, and
 for local filesystems, there is still the need for someone (Samba, Wine,
@@ -195,7 +195,7 @@ share modes. </p></quote>
 >
 <topic>Status Updates</topic>
 <p>Ivan Leo Puoti wanted to get some feedback on work
-he's doing to get Safedisk copy protection to run.  He 
+he's been doing to get Safedisk copy protection to run.  He 
 hopes to gather more info about how other builds of the
 driver, secdrv.sys, behave.  If he's lucky, someone will
 figure out why it doesn't throw an exception.</p>
@@ -239,12 +239,12 @@ DeviceIoControl (It must always be 0xef002407), it then reads the input
 buffer, if byte 0xc in the buffer is 0x3c it checks the debug registers, 
 other values trigger other checks. It also checks the length of both 
 input and output buffers. It should then read the debug registers, and 
-this should rise and exception that we will somehow handle. However for 
+this should rise an exception that we will somehow handle. However for 
 some unknown reason this doesn't happen, and the status of the IO 
 operation is STATUS_UNSUCCESSFUL, note that this value is in the IRP 
-sturct under Irp.IoStatus.Status, DispatchDeviceControl always returns 
+struct under Irp.IoStatus.Status, DispatchDeviceControl always returns 
 0. At this point I would like to know if other safedisk 1 protected 
-games yield different results. I would love to step trough secdrv.sys 
+games yield different results. I would love to step through secdrv.sys 
 with winedbg, but it just hangs or crashes. The code in ntoskrnl prints 
 the interesting buffer values that secdrv.sys checks for, it currently 
 prints
@@ -288,13 +288,13 @@ it as he went along.  He also mentioned some areas that
 would be useful for someone to jump in and help on. 
 In the first email he wrote:</p>
 <quote who="Steven Edwards"><p>
-This is my first real attempt to add a new feature so its going to take quite some time. My long
+This is my first real attempt to add a new feature so it's going to take quite some time. My long
 term goal is to implement the RecycleBin for ReactOS and for Wine to make it interface with the
-FreeDesktop.org draft trashcan spec. The latter might require a extension to Wines or some other
+FreeDesktop.org draft trashcan spec. The latter might require an extension to Wine or some other
 process to move files out of the C:\Recycled folder and in to the users ~/Desktop/Trash
 </p><p>
 I have started by adding a little support for the FOF_ALLOWUNDO flag in SHFileOperationW. Windows
-can use either Drive:\Recycled or Drive:\Recycler depending on if the TrashCan is on a NTFS drive
+can use either Drive:\Recycled or Drive:\Recycler depending on if the TrashCan is on an NTFS drive
 or not so I am not sure how we want to handle it in Wine. With my first patch if you delete a file
 with this flag it will move the file to C:\Trash which is a file not a directory.
 </p><p>
@@ -316,9 +316,9 @@ attached]
 
 <quote who="Steven Edwards"><p>
 Yes I know this [<a href="http://www.winehq.com/hypermail/wine-devel/2005/04/att-0324/01-trash-fd.diff">patch</a>] 
-does not look that nice atm. Its still a work in progress but you get the idea of
+does not look that nice atm. It's still a work in progress but you get the idea of
 where I am going with it. With this patch any SHFileOperation with the FOF_ALLOWUNDO flag will
-move files to the users ~/.Trash. There is a draft spec on 
+move files to the user's ~/.Trash. There is a draft spec on 
 <a href="http://www.freedesktop.org">www.freedesktop.org</a> on how the Trash is
 supposed to work but currently KDE does something totally different and GNOME is not compliant so
 I am not sure how I am going to deal with that yet.</p></quote>
@@ -338,13 +338,13 @@ I am not sure how I am going to deal with that yet.</p></quote>
 <p>Lars Segerlund wanted to know about USB device and
 Wine:</p>
 <quote who="Lars Segerlund"><p>
- What is the status of wines USB support ?
+ What is the status of wine's USB support ?
 </p><p>
-I have an IDE for a developement board and I really would like to flash it from
+I have an IDE for a development board and I really would like to flash it from
 Linux, ( I don't have windows), and this uses USB to talk to the board.
 Is there anything done yet or am I on my own ?
 </p><p>
-Can someone also giva a hint on the feasibility, complexity of managing a USB
+Can someone also give a hint on the feasibility, complexity of managing a USB
 implementation for Wine ? I am rather good at linux device drivers and such.
 </p></quote>
 
@@ -369,7 +369,7 @@ least enumerate. Talking to the devices then is another big step. Not many
 windows programs will talk to the devices by using something like libusb. So
 either something like ndiswrapper for USB would be needed in the kernel to
 load windows drivers, with infrastructure in wine to to talk to the driver,
-or the windows driver need to be be reengineered to exposed a API to the
+or the windows driver need to be be reengineered to expose an API to the
 user program like with windows driver, but internally use Linux means
 (libusb, etc).
 </p><p>
