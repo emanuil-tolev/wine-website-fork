@@ -66,6 +66,35 @@ Its main goal is to buy a car. It also serves to inform you of what's going on a
 
 </stats>
 <section 
+	title="News: WineConf" 
+	subject="News"
+	archive="http://www.winehq.org/hypermail/wine-devel/2005/04/0400.html" 
+	posts="2"
+	startdate="04/18/2005"
+>
+<topic>News</topic>
+<p>Let's see..
+<ul><li>camera... check</li>
+<li>110V to 220V AC adapter... check</li>
+<li>dinner reservations for 60 people... hopefully checked</li>
+</ul></p>
+
+<p>WineConf 2005 is next weekend in Stuttgart and most of the plans
+are in place.  For those of you
+not attending, there will likely be a bunch of people at the conference
+hanging out in IRC (irc.freenode.net) on #winehackers.  We will not have 
+streaming audio or video this year.  We failed miserably at it
+last year and it really seemed to take up a lot of time at the
+conference.  Of course, if someone shows up at WineConf with a
+killer streaming audio system that's reliable we'll probably use
+it.  For any last minute details like that, keep an eye on wine-devel
+or maybe even WineHQ.</p>
+
+<p>This is also the cue that there probably won't be an issue of WWN
+next week.</p>
+
+</section>
+<section 
 	title="MSHTML &amp; Gecko" 
 	subject="Enabling Gecko in MSHTML"
 	archive="http://www.winehq.org/hypermail/wine-devel/2005/04/0382.html" 
@@ -218,109 +247,6 @@ crashes if it's started with WINEDEBUG=+quartz and when you go to webcam
 settings screen? you can save me a lot of frustration.. thanks!!!
 </p></quote>
 
-</section>
-<section 
-	title="DirectX 9 - Merges?" 
-	subject="D3D9 Work?"
-	archive="http://www.winehq.org/hypermail/wine-devel/2005/04/0486.html" 
-	posts="4"
-	startdate="04/20/2005"
-	enddate="04/21/2005"
->
-<topic>DirectX</topic>
-<p>So Oliver Stieber's DirectX 9 haven't been merged into WineHQ and
-some folks are a little anxious to get it in.  It seems other DirectX
-work is waiting on that.  It led Benjamin Cutler to ask:</p>
-<quote who="Benjamin Cutler"><p>
-I was discussing this with some others who hang out in the #winehackers
-channel, and I'm curious who else might be working on the D3D9 portion
-of Wine. I was unsure of how ready for inclusion into the main branch
-the unofficial patches are, but I've heard from a couple sources that
-most of the patch isn't. I'd like to get some opinions on what's ready
-and what's not. I'd hate to start submitting pieces of the patch, only
-to find out that person X was already working on that part and had
-something better in mind, or even worse to find out that somebody's been
-maintaining contact with Oliver and I'm just getting overeager to see
-the patches in Wine.
-</p><p>
-Somebody also mentioned that there are others waiting for Oliver's
-patches to be submitted so that they can continue their D3D9 work, so I
-was curious if there were any of you out there that fall into that category.
-</p><p>
-At present, the best I can really do to contribute is help keep the
-branch synced up with the current CVS (migrating the 20050310 patch to
-20050419 resulted in a lot of conflicts that took me most of the night
-to work through), but given some time I could probably learn enough
-about DX9 to get a better handle on how things are supposed to work and
-start making more solid contributions. That will probably have to wait
-until late May, however, once this college year ends.
-</p></quote>
-
-<p>He didn't hear anything back, so the next day he worked on it 
-and reported:</p>
-<quote who="Benjamin Cutler"><p>
-I spent most of the night trying to merge the old 20050310 patch into
-the 20050419 release, and I came up with the diff linked below. Keep in
-mind that I only attempted to get it to compile, I did not attempt to
-make sure it was stable or correct. For what it's worth, I *was* able to
-get my test games to launch and they ran pretty much exactly as they did
-with the old patches, but that's no guarantee of anything.
-</p><p>
-Oliver seems to be MIA. His home page has disappeared and nobody I've
-asked has been able to successfully contact him. If somebody wants to
-clean this up and merge it back into the main WINE tree, please do,
-because I don't know enough about DX9 to even think of attempting such
-an undertaking myself.
-<ul><a href="http://www.cs.colostate.edu/~cutler/d3d9patch.2005-04-19.diff">
-http://www.cs.colostate.edu/~cutler/d3d9patch.2005-04-19.diff</a></ul></p>
-<p>
-Of course, I'll feel rather foolish if Oliver pops up tomorrow and has a
-real patch, but here's what I can offer for now.
-</p></quote>
-
-<p>Jesse Allen thought some work could be done on it,
-<quote who="Jesse Allen">
-Well at minimal, you can submit small bug-fix patches to try to avoid
-duplicate work.  I've been testing D3D9 and I know for sure there are
-bugs out there.  There may be some in Oliver's patch, and I'm sure
-he'd appreciate the help when he gets back.  So in case there is some
-other work going on, just keep testing a little what we got and we can
-make the life easier for someone that knows more and can spend time on
-it.</quote></p>
-
-<p>Jason Edmeades, who started the recent DirectX 9 push, replied as
-well:</p>
-<quote who="Jason Edmeades"><p>
-
-FYI I stopped d3d9/wined3d work when I got to a point I had completed the
-parts I was doing, and Oliver had sped ahead so I was ending up duplicating
-work he was doing - I've put it to one side while waiting on the cvs tree to
-get up to where he was. 
-</p><p>
-The last I heard, Raphael was also willing to look into the shader side of
-things, and had an outstanding patch for hardware vertex buffer objects to
-help performance, but I think again this was waiting on Oliver's commits.
-</p><p>
-However, if there seems to be problems, I don't mind continuing, or helping
-people work through his patch into manageable chunks for submission - I can
-easily give guidance in this area.
-</p><p>
-I have only limited time, and work a patch at a time, until it gets in cvs,
-because as is the case with his current patch, basically it needs reworking
-into submittable chunks! However, I think we should give Oliver a little
-more time (I wont be touching it until after wineconf anyway). 
-</p><p>
-Not knowing anthing about d3d8/9 shouldn't hold you back - I knew nothing
-when I started on the d3d8 stuff, and it doesn't take that long to pick up
-the threads.
-</p><p>
-FWIW I tried applying the patch sent on here the other day and it failed to
-compile (WINED3DFORMAT vs D3DFORMAT), but after fixing that, I tried running
-a simple textured demo and it failed (Tutorial 5 from
-<a href="http://www.two-kings.de/tutorials/d3d.html">
-http://www.two-kings.de/tutorials/d3d.html</a>) - Any chance you could see if it
-works for you and if it does send me (offline) a patch for current cvs?
-</p></quote>
 </section>
 <section 
 	title="USB Support (con't)" 
@@ -589,4 +515,4 @@ programname.exe.local trick with the IE5 setup wizard. Extract the IE5 wizard in
 and lauch IE5 setup and you will see the *.exe.local file. iTunes even does it.
 </p></quote>
 
-</section></kc>
+</section></kc> 
