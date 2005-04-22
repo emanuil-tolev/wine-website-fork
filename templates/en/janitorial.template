@@ -7,31 +7,6 @@
   Janitor's List</a>), and it's high time that we have one too.
   What is there to clean up? Well, lots of things! :)
 
-  <h2>Check the usage of strncpy/strncpyW</h2>
-
-  <i>strncpy(dst,src,n)</i> has two subtle
-  <a href="http://weblogs.asp.net/oldnewthing/archive/2005/01/07.aspx">
-  problems</a>.  The first is that it always fills the whole <i>dst</i>
-  buffer (<i>n</i> characters).  The second is that it doesn't always nul
-  terminate the <i>dst</i> buffer that it's filling.<p>
-
-  Wine code should avoid the use of strncpy for these reasons, and instead
-  use lstrcpynA/W or memcpy. You can use the following command to find
-  occurrences of strncpy in the Wine source code:<p>
-
-  <tt>find . -name \*.c -exec grep strncpy {} \; -ls</tt><p>
-
-  The aim is to make sure that we only copy as many bytes as necessary into
-  the <i>dst</i> buffer, and always nul terminate the buffer when we
-  intended to.<p>
-
-  Julliard 
-  <a href="http://www.winehq.org/hypermail/wine-devel/2005/01/0390.html">says</a>:
-  "A careful review of the code to ensure that lstrcpyn semantics are really what
-  we want. In several cases we know that we are copying less than the full string,
-  and in that case we have to use memcpy instead, lstrcpyn won't do the right
-  thing."<p>
-
   <h2>Regedit fixes</h2>
 
   Regedit lacks a few features.  We need to improve regedit to:
@@ -186,8 +161,8 @@
     <li class=invalid>dlls/shlwapi/string.c: shlwapi: StrRetToStrW: illegal call to SHStrDupA
     <li>dlls/version/install.c: version: VerInstallFileW: illegal call to VerInstallFileA
     <li>dlls/wininet/internet.c: wininet: InternetCheckConnectionW: illegal call to InternetCheckConnectionA
-    <li>dlls/winmm/mmio.c: winmm: mmioRenameW: illegal call to mmioRenameA
-    <li>dlls/winmm/mmio.c: winmm: mmioStringToFOURCCW: illegal call to mmioStringToFOURCCA
+    <li class=invalid>dlls/winmm/mmio.c: winmm: mmioRenameW: illegal call to mmioRenameA
+    <li class=invalid>dlls/winmm/mmio.c: winmm: mmioStringToFOURCCW: illegal call to mmioStringToFOURCCA
     <li>dlls/winsock/socket.c: winsock: WSAStringToAddressW: illegal call to WSAStringToAddressA
     <li>dlls/winspool/info.c: winspool.drv: AddPrinterW: illegal call to DEVMODEdupWtoA
     <li>dlls/winspool/info.c: winspool.drv: AddPrinterW: illegal call to RegSetValueExA
@@ -231,7 +206,6 @@
     <li>ntdll.MODULE_DllThreadAttach(): kernel
     <li>ntdll.MODULE_GetLoadOrderW(): kernel
     <li>ntdll.VERSION_Init(): kernel
-    <li>ntdll.VIRTUAL_SetFaultHandler(): x11drv
     <li>kernel32.DOSMEM_AllocSelector(): winedos
     <li>kernel32.DOSMEM_Available(): winedos
     <li>kernel32.DOSMEM_FreeBlock(): winedos
@@ -256,7 +230,7 @@
     <li>gdi32.SetDCHook(): x11drv
     <li>gdi32.SetHookFlags16(): ttydrv, x11drv
     <li>gdi32.WriteSpool16(): wineps
-    <li>gdi32.DIB_CreateDIBSection(): ddraw, x11drv
+    <li>gdi32.DIB_CreateDIBSection(): ddraw
     <li>gdi32.GDI_GetObjPtr(): x11drv
     <li>gdi32.GDI_ReleaseObj(): x11drv
     <li>user32.CallWindowProc16(): commdlg
@@ -332,17 +306,16 @@
   </ul>
 
   <h3>Remove non-standard directories</h3>
-  There are only 2 directories left that do not fit into the current organization.
-  They are historical remnants of a troubled past, they need to go. 
+  There is only 1 directory left that does not fit into the current organization.
+  It is a historical remnants of a troubled past, and it needs to go. 
   This is tightly linked to the <b>DLL Separation</b> task, listed above.
   <ul>
-    <li> misc
     <li> windows
   </ul>
   <ul>
     <li>workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>.
     <li>status: <span class=inprogress>first patches committed.</span>
-    <li>updated: Jan 29, 2005
+    <li>updated: Apr 20, 2005
   </ul>
 
   <h3>Compile Wine with other headers</h3>
@@ -589,6 +562,36 @@
   <ul>
     <li>workers: Jacob Ericson (completed in one day!)
     <li>completed: <span class="done">Mar 25, 2005</span>
+  </ul>
+
+  <h3>Check the usage of strncpy/strncpyW</h3>
+
+  <i>strncpy(dst,src,n)</i> has two subtle
+  <a href="http://weblogs.asp.net/oldnewthing/archive/2005/01/07.aspx">
+  problems</a>.  The first is that it always fills the whole <i>dst</i>
+  buffer (<i>n</i> characters).  The second is that it doesn't always nul
+  terminate the <i>dst</i> buffer that it's filling.<p>
+
+  Wine code should avoid the use of strncpy for these reasons, and instead
+  use lstrcpynA/W or memcpy. You can use the following command to find
+  occurrences of strncpy in the Wine source code:<p>
+
+  <tt>find . -name \*.c -exec grep strncpy {} \; -ls</tt><p>
+
+  The aim is to make sure that we only copy as many bytes as necessary into
+  the <i>dst</i> buffer, and always nul terminate the buffer when we
+  intended to.<p>
+
+  Julliard 
+  <a href="http://www.winehq.org/hypermail/wine-devel/2005/01/0390.html">says</a>:
+  "A careful review of the code to ensure that lstrcpyn semantics are really what
+  we want. In several cases we know that we are copying less than the full string,
+  and in that case we have to use memcpy instead, lstrcpyn won't do the right
+  thing."<p>
+
+  <ul>
+    <li>workers: Peter Berg Larsen, Alexandre Julliard
+    <li>completed: <span class="done">Apr 21, 2005</span>
   </ul>
 
 <p>&nbsp;</p>
