@@ -40,6 +40,7 @@ class config
                 'Download'        => '{$root}/site/download',
                 'Documentation'   => '{$root}/site/documentation',
                 'FAQ'             => '{$root}/site/docs/wine-faq/index',
+                'Wine Wiki'       => 'http://wiki.winehq.org',
                 'HowTo'           => '{$root}/site/howto',
                 'Bug Tracking'    => 'http://bugs.winehq.org/',
                 'Applications Database'    => 'http://appdb.winehq.org',
