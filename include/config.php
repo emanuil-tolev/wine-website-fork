@@ -52,7 +52,7 @@ class config
                 'Sending Patches' => '{$root}/site/sending_patches',
                 'To Do Lists'     => '{$root}/site/todo_lists',
                 'Fun Projects'    => '{$root}/site/fun_projects',
-                'Janitorial'      => '{$root}/site/janitorial',
+                'Janitorial'      => 'http://wiki.winehq.org/JanitorialProjects',
                 'Winelib'         => '{$root}/site/winelib',
                 'Status'          => '{$root}/site/status',
                 'Resources'       => '{$root}/site/resources'
