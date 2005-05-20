@@ -65,6 +65,7 @@
 <tr class=todo> <td>ClientSideWithCore</td>		<td>no</td>	<td>yes</td>	<td>yes</td>			</tr>
 <tr class=todo> <td>ClientSideAntiAliasWithRender</td>	<td>no</td>	<td>yes</td>	<td>yes</td>			</tr>
 <tr class=todo> <td>ClientSideAntiAliasWithCore</td>	<td>no</td>	<td>yes</td>	<td>yes</td>			</tr>
+<tr class=todo> <td>UsePrimarySelection</td>		<td>yes</td>	<td>no</td>	<td>false</td>			</tr>
 
 <tr class=section> <th colspan=5 align=left>[fonts]</th></tr>
 <tr class=todo> <td>Resolution</td>			<td>no</td>	<td>no</td>	<td>&lt;auto&gt;</td>		</tr>
@@ -108,11 +109,6 @@
 <tr class=todo> <td>WritetoHomeRegistryFiles</td>	<td>no</td>	<td>no</td>	<td>true</td>			</tr>
 <tr class=todo> <td>PeriodicSave</td>			<td>no</td>	<td>no</td>	<td>600</td>			</tr>
 <tr class=todo> <td>SaveOnlyUpdatedKeys</td>		<td>no</td>	<td>no</td>	<td>true</td>			</tr>
-
-<tr class=section> <th colspan=5 align=left>[Clipboard]</th></tr>
-<tr class=todo> <td>ClearAllSelections</td>		<td>yes</td>	<td>no</td>	<td>false</td>			</tr>
-<tr class=todo> <td>PersistentSelection</td>		<td>yes</td>	<td>no</td>	<td>true</td>			</tr>
-<tr class=todo> <td>UsePrimary</td>			<td>yes</td>	<td>no</td>	<td>false</td>			</tr>
 
 <tr class=section> <th colspan=5 align=left>[afmdirs]</th></tr>
 <tr class=todo> <td>1</td>				<td>no</td>	<td>no</td>	<td>/usr/share/ghostscript/fonts</td> </tr>
