@@ -149,11 +149,11 @@
      </ol>
   <h4> Devel Guide </h4>
     <ol> 
-	<li> Add some DCOM docs <span class="inprogress">[IN PROGRESS]</span>
+	<li> Add some DCOM docs <span class="done">[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:mike@theoretic.com">Mike Hearn</a>
 	    <li> status: first part committed, second part written already
-	    <li> updated: Feb 22, 2005
+	    <li> updated: Apr 18, 2005
 	  </ul>
 	<li> Redo Multimedia section <span class="done">[DONE]</span>
 	  <ul>
@@ -179,17 +179,18 @@
 	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2004/02/0065.html">patch</a> committed.
 	    <li> updated: Feb 14, 2004
           </ul>
-        <li> Add section on KERNEL32/NTDLL <span class="inprogress">[IN PROGRESS]</span>
+        <li> Add section on KERNEL32/NTDLL <span class="done">[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:pouech-eric@wanadoo.fr">Eric Pouech</a>
-	    <li> status: first patch <a href="http://cvs.winehq.org/patch.py?id=12530">committed</a>
-	    <li> updated: Oct 14, 2004
+	    <li> status: first <a href="http://cvs.winehq.org/patch.py?id=12530">patch</a>, and
+                         second <a href="http://www.winehq.org/hypermail/wine-cvs/2005/04/0161.html">patch</a> committed.
+	    <li> updated: Apr 24, 2005
           </ul>
-	<li> Misc cleanups <span class="inprogress">[IN PROGRESS]</span>
+	<li> Misc cleanups <span class="done">[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a> 
-	    <li> status: ?
-	    <li> updated: Feb 5, 2004
+	    <li> status: little fixed merged already
+	    <li> updated: Apr 24, 2005
           </ul>
      </ol>
   <h4> Winelib Guide </h4>
@@ -337,7 +338,7 @@
 
   <a name="api"></a><h3> F. Exported API </h3>
      <ol>
-	<li> Finish DLL separation Phase 1 <span class="done">[DONE]</span>
+	<li> DLL separation Phase 1 <span class="done">[DONE]</span>
 	  <ul>
 	    <li> workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>.
 	    <li> status: <a href="http://www.winehq.org/hypermail/wine-announce/2003/10/0000.html">completed</a>
@@ -348,8 +349,8 @@
 	  <ul>
 	    <li> workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>,
                           <a href="mailto:pouech-eric@wanadoo.fr">Eric Pouech</a>
-	    <li> status: work has started
-	    <li> updated: Feb 7, 2004
+	    <li> status: tracked on the <a href="http://winehq.org/site/janitorial">Janitorial</a> page.
+	    <li> updated: Apr 3, 2005
 	  </ul>
 	<li> Wineserver protocol <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
