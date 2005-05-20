@@ -140,7 +140,7 @@
   <tt>tools/winapi_check/winapi_check --none --progress --cross-call-unicode-ascii</tt>
   (as of Jan 11, 2005):
   <ul>
-    <li>dlls/advapi32/crypt.c: advapi32: CryptAcquireContextW: illegal call to CryptAcquireContextA
+    <li class=invalid>dlls/advapi32/crypt.c: advapi32: CryptAcquireContextW: illegal call to CryptAcquireContextA
     <li>dlls/advapi32/crypt.c: advapi32: CryptEnumProviderTypesW: illegal call to CryptEnumProviderTypesA
     <li>dlls/advapi32/crypt.c: advapi32: CryptGetDefaultProviderW: illegal call to CryptGetDefaultProviderA
     <li>dlls/advapi32/crypt.c: advapi32: CryptSetProviderExW: illegal call to CryptSetProviderExA
@@ -207,20 +207,6 @@
     <li>ntdll.MODULE_GetLoadOrderW(): kernel
     <li>ntdll.VERSION_Init(): kernel
     <li>kernel32.DOSMEM_AllocSelector(): winedos
-    <li>kernel32.DOSMEM_Available(): winedos
-    <li>kernel32.DOSMEM_FreeBlock(): winedos
-    <li>kernel32.DOSMEM_GetBlock(): winedos
-    <li>kernel32.DOSMEM_Init(): winedos
-    <li>kernel32.DOSMEM_ResizeBlock(): winedos
-    <li>kernel32.LOCAL_Alloc(): gdi, user
-    <li>kernel32.LOCAL_Compact(): gdi
-    <li>kernel32.LOCAL_CountFree(): gdi
-    <li>kernel32.LOCAL_Free(): gdi, user
-    <li>kernel32.LOCAL_HeapSize(): gdi, user
-    <li>kernel32.LOCAL_Lock(): gdi, user
-    <li>kernel32.LOCAL_ReAlloc(): gdi, user
-    <li>kernel32.LOCAL_Size(): user
-    <li>kernel32.LOCAL_Unlock(): gdi, user
     <li>kernel32.NE_DefResourceHandler(): user
     <li>gdi32.CloseJob16(): wineps
     <li>gdi32.DrvGetPrinterData16(): wineps
@@ -251,6 +237,13 @@
     <li>user32.WINPOS_ShowIconTitle(): ttydrv, x11drv
     <li>user32.WIN_GetPtr(): ttydrv, x11drv
     <li>user32.WIN_SetStyle(): x11drv
+  </ul>
+  <ul>
+    <li>workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>,
+		 <a href="mailto:pouech-eric@wanadoo.fr">Eric Pouech</a>,
+		 <a href="mailto:dimi@lattica.com">Dimi Paun</a>.
+    <li>status: <span class=inprogress>Work in under way</span>
+    <li>updated: May 10, 2005
   </ul>
 
 
@@ -283,16 +276,14 @@
 
   <h3>Include file cleanup</h3>
   That is, no more Wine-specific headers in <tt>include/</tt>. This is tightly
-  related to the <b>DLL Separation</b> task, listed above. There are 11 Wine-only
+  related to the <b>DLL Separation</b> task, listed above. There are 9 Wine-only
   headers that need to be moved:
   <ul>
-    <li> builtin16.h
     <li> cursoricon.h
     <li> dciddi.h
     <li> gdi.h
     <li> heap.h
     <li> local.h
-    <li> miscemu.h
     <li> module.h
     <li> stackframe.h
     <li> thread.h
