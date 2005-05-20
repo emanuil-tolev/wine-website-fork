@@ -475,8 +475,9 @@
 	<li> Move controls/*, windows/* -> dlls/user/ <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
-	    <li> status: controls/* got <a href="http://cvs.winehq.org/patch.py?id=13556">moved</a>
-	    <li> updated: Sep 7, 2004
+	    <li> status: controls/* got <a href="http://cvs.winehq.org/patch.py?id=13556">moved</a>,
+                         most windows/* <a href="http://cvs.winehq.org/patch.py?id=17231">moved</a> too.
+	    <li> updated: Apr 25, 2005
 	  </ul>
 	<li> Move graphics/*, objects/* -> dlls/gdi/ <span class="done">[DONE]</span>
 	  <ul>
