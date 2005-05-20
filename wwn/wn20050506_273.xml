@@ -154,7 +154,7 @@ with a cheerleader camp would be much appreciated.
 <p>In the category of real news, we've got a few items.  DesktopLinux.com
 put together their 
 <a href="http://www.desktoplinux.com/articles/AT2127420238.html">2004
-Desktop Linux Market surbey</a> and included a question asking about
+Desktop Linux Market survey</a> and included a question asking about
 people running Windows apps under Linux.  They found:</p>
 <quote who="DesktopLinux.com"><p>
 Last year's poll results revealed that about 60 percent of the 3,946
@@ -163,7 +163,7 @@ Linux and expected to do so in the future.</p><p>
 The numbers haven't changed at all in the year since, nor have the
 solutions. Both this year and last year, Wine surfaced as the top 
 choice of 34 percent of respondants. About 16 percent expressed a 
-preference for Crossover, and VMWare exhibited a stable base of 14 
+preference for CrossOver, and VMWare exhibited a stable base of 14 
 percent both years.</p></quote>
 
 <p>I think there's a few significant things in there.  First, the results
@@ -229,7 +229,7 @@ Feel free to add further stuff there!</p></quote>
 this might help:</p>
 <table>
 <tr><td>2005_04_30_10_12_39.avi</td><td> Dimi Paun- Status Update</td></tr>
-<tr><td>2005_04_30_11_13_44.avi</td><td> Shachar Shemesh? - PGP party announcement</td></tr>
+<tr><td>2005_04_30_11_13_44.avi</td><td> Shachar Shemesh - PGP party announcement</td></tr>
 <tr><td>2005_04_30_11_22_59.avi</td><td> Charles Stevenson - Wine &amp;
 	Commercial Development</td></tr>
 <tr><td>2005_04_30_13_31_16.avi</td><td> Juan Lang - Wine &amp; samba</td></tr>
@@ -307,14 +307,14 @@ workings of InstallShield</a> and put it on the wiki.</p>
 <p>Oliver Stieber has updated his large DirectX 9 patch:</p>
 <quote who="Oliver Stieber"><p>
 
-I've put an updated patch and some new screeshost on
+I've put an updated patch and some new screenshot on
 sourceforge for the time being
 <a href="http://directxwine.sourceforge.net/">
 http://directxwine.sourceforge.net/</a>, I'm now at the
 point where I'm happy to stop fixing bugs in DirectX 9
 and start sending in more patches..
 </p><p>
-Thanks for evertyone help and support.
+Thanks for everyone's help and support.
 </p></quote>
 
 <p>Thus far no patches have appeared on wine-patches.
@@ -345,7 +345,7 @@ already know how to use the patch utility, but I did not.
 <p>An interesting question came up from Kees Cook:</p>
 <quote who="Kees Cook"><p>
 I'm trying to figure out if there is a way to short-circuit a dialog 
-box.  Basically, I want to traps calls to DialogBoxParam, pump calls 
+box.  Basically, I want to trap calls to DialogBoxParam, pump calls 
 into lpDialogFunc for dialog init, and then clicking of the "Ok" button, 
 and finally trap calls to EndDialog.
 </p><p>
@@ -396,7 +396,7 @@ themselves?)  The ttydrv doesn't like trying to open the dialog:
 <topic>Auth / Crypto</topic>
 <p>Kees Cook has been working on implementing two API's: CryptProtectData 
 and CryptUnprotectData.  These functions take some arbitrary data and
-encrypts/decrypts it.  There were some threads last month I didn't 
+encrypt/decrypt it.  There were some threads last month I didn't 
 cover as Kees was working on it (patch revision 
 <a href="http://www.winehq.com/hypermail/wine-devel/2005/04/0047.html">#1</a>,
 <a href="http://www.winehq.com/hypermail/wine-devel/2005/04/0083.html">#2</a>,
@@ -418,7 +418,7 @@ and said:</p>
 <p>Kees had some questions based on that:</p>
 <quote who="Kees Cook"><p>
 I'd really like to get my Crypt*Protect data patches in, so I want to 
-make sure that I do this rewrite in a way that'll bet accepted.  If I 
+make sure that I do this rewrite in a way that'll be accepted.  If I 
 understand correctly, you want me to:
 <ul>
 <li> parse the Windows data format as best I can</li>
@@ -475,7 +475,7 @@ new key based on the following parameters: A hash of the user's login
 password, the description and the entropy. The client provided DATA_BLOB is 
 then encrypted given this key and passed back to the user. It is not stored 
 anywhere. In fact AFAIK, the Crypt(Un)ProtectData functions do not store 
-anything whatsoever. The caller is responsible to store the encrypted 
+anything whatsoever. The caller is responsible for storing the encrypted 
 DATA_BLOB somewhere. He also has to be able to restore in some way the 
 entropy and the description, if he wants to decrypt the DATA_BLOB at some 
 later time.
@@ -498,12 +498,12 @@ not the case here.)
 
 We don't have access to a hash of the user's login 
 password, so we can't provide real security here. Therefore I think we should 
-not try to pretend it. IMO you should'nt do any encryption. Just pass back 
+not try to pretend it. IMO you shouldn't do any encryption. Just pass back 
 the DATA_BLOB.
 </p><p>
 That said, if the caller actually provides the pszDataDescription and 
 pOptionalEntropy parameters, you could derive a key from those. The CryptoAPI 
-is accessible by the Crypt* family of API's in advapi32.dll. All that is 
+is accessible by the Crypt* family of APIs in advapi32.dll. All that is 
 necessary for this to implement should be available in wine already.
 </p></quote>
 
@@ -560,7 +560,7 @@ probably be used by other similar things as well.
 You can also specify a preferred mirror in the registry
 (Software\\Wine\\getsffile, key SFPreferredMirror. If the file is not
 available from that mirror (mirror down, not yet synced, etc.), it'll
-try another one (up to 3 times). The list of mirrors is got from sf.net,
+try another one (up to 3 times). The list of mirrors is retrieved from sf.net,
 it's not maintained in getsffile.
 </p><p>
 Basically, to use it to get the Mozilla ActiveX control, what needs to
@@ -603,7 +603,7 @@ Here's just a sample of the results from PC Mark 04:</p>
 <tr><td>File Decompression </td><td> 45.547 MB/s</td><td>45.863 MB/s</td></tr>
 <tr><td>Image Processing </td><td> 18.544 MPixels/s</td><td>19.273 MPixels/s</td></tr>
 <tr><td>Virus Scanning </td><td> 3205.915 MB/s</td><td>4049.208 MB/s</td></tr>
-<tr><td>Grammer Check </td><td> 2.783 KB/s</td><td>3.071 KB/s</td></tr>
+<tr><td>Grammar Check </td><td> 2.783 KB/s</td><td>3.071 KB/s</td></tr>
 <tr><td>File Decryption </td><td> 107.727 MB/s</td><td>108.715 MB/s</td></tr>
 <tr><td>Audio Conversion </td><td> 2940.131 KB/s</td><td>2943.677 KB/s</td></tr>
 <tr><td>Web Page Rendering </td><td> 7.096 pages/s</td><td>na</td></tr>
@@ -618,8 +618,8 @@ Tom cautioned:</p>
 <quote who="Tom Wickline"><p>
 Before you put any merit into any of my results I would highly
 recommend that you run the benchmark software yourself. I am only
-sharing <i>MY</i> results, your results may very depending on your Linux
-distro, Linux config, Wine config as well as your systems hardware.
+sharing <i>MY</i> results, your results may vary depending on your Linux
+distro, Linux config, Wine config as well as your system's hardware.
 </p></quote>
 
 
