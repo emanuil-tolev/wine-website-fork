@@ -412,6 +412,9 @@ class wwn
               else
                 $this->body .= '<dl>';
               break;
+            case "BR":
+              $this->body .= $html->br();
+              break;
             default:
               if (isset($this->map_array[strtolower($name)]))
               {
@@ -488,7 +491,6 @@ class wwn
               $this->body .= "</dl>";
               break;
             case "BR":
-              $this->body .= $html->br();
               break;
             default:
               if (isset($this->map_array[strtolower($name)]))
