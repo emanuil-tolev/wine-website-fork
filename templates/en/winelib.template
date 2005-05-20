@@ -33,7 +33,7 @@
    All of the above have publicly available source code, and
    most are decent candidates for this project. 
 
-  <p>Obviously, we can not start porting all these applications. We have to pick a
+  <p>Obviously, we cannot start porting all these applications. We have to pick a
      few important ones, and work with those.
 
   <h3>How</h3>
@@ -323,7 +323,7 @@ make<br>
     <li>updated: Nov 27, 2002
     <li>homepage: <a href="http://www.bloodshed.net/dev/devcpp.html">www.bloodshed.net/dev/devcpp.html</a>
   </ul>
-  <p><strong>Update</strong>: This project can not be ported using Winelib, 
+  <p><strong>Update</strong>: This project cannot be ported using Winelib, 
      as it is written in Pascal/Delphi.
      It should be possible to port it to Linux using Kylix relatively easily.
      

@@ -449,7 +449,7 @@ pages suggest (but don't state clearly) that this
 is the expected behavior.
 </p><p>
 This behavior essentially means that on most Windows systems
-the timer resolution of winmm is 1ms and can not be changed.
+the timer resolution of winmm is 1ms and cannot be changed.
 </p><p>
 So, question #1:  anyone object if I fix the timer resolution at 1 ms?
 </p><p>

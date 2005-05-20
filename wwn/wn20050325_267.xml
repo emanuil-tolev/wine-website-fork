@@ -321,7 +321,7 @@ http://img87.exs.cx/my.php?loc=img87.=winewiththemedbuttons3xh.png</a></ul>
 <p>Dmitry Timoshkov felt more work needed to go into the
 low-level parts of it,
 <quote who="Dmitry Timoshkov">
- user32 can not depend on uxtheme or any other high level dll. You need to
+ user32 cannot depend on uxtheme or any other high level dll. You need to
  make all the work inside of uxtheme by subclassing/patching every class you
  wish to change the painting for, and do all the painting inside of uxtheme.
  I'm not sure how to do it cleanly without adding an explicit dependency of

@@ -10,7 +10,7 @@
 <intro>
 <p>This is the 155th release of the Wine's kernel cousin publication. 
 Its main goal is to perpetuate the belief that this incredibly useful
-piece of software is some how nearing beta quality.
+piece of software is somehow nearing beta quality.
 It also serves to inform you of what's going on around Wine (the Un*x 
 Windows emulator).</p>
 </intro>
@@ -130,7 +130,7 @@ He is using a glibc 2.3 headbranch snapshot (the one we will ship in SuSE
 confirmed first suspicions.
 </p><p>
 __errno_location and __h_errno_location are no longer weak symbols
-and so can not be overwritten any longer. The internal glibc systemcall
+and so cannot be overwritten any longer. The internal glibc systemcall
 wrappers no longer call the functions by reference, but directly.
 </p><p>
 Investigations and several talks to one of our glibc gurus (Andreas Schwab)
@@ -169,7 +169,7 @@ as not enough memory, no space left on a device, or permission
 denied.  And by it's nature, glibc is the place where system calls
 live.  So the problem is with what Marcus said, <i>
 __errno_location and __h_errno_location are no longer weak symbols
-and so can not be overwritten any longer</i></p>
+and so cannot be overwritten any longer</i></p>
 
 <p>But wait, why are we even in this mess?  Why doesn't Wine just
 use the standard Unix pthread implementation?  The last time the WINE 
@@ -182,8 +182,8 @@ under Linux is clone(2).  The
 "wineserver" process is what's responsible for waiting on those
 threads and it operates as a single process with a giant poll()
 loop.  So it seems we're back to the age-old question of whether Wine 
-can some how graft Windows' threading into the pthreads model 
-or whether it needs to continue it's own.</p>
+can somehow graft Windows' threading into the pthreads model 
+or whether it needs to continue its own.</p>
 
 <p>This problem is going to be even more apparent in a few months
 when RedHat ships a version of glibc that won't work with Wine.</p>
@@ -196,7 +196,7 @@ Excuse me, but somehow I think this is p*ss poor.
 </p><p>
 I mean, both Wine and glibc are successful (?) OSS projects,
 so they should be able to come up with something much better than this
-terribly embarassing solution (after all everybody knew that
+terribly embarrassing solution (after all everybody knew that
 OSS development was a "superiour" approach, didn't they ? ;-).
 </p><p>
 I for one would feel much better if we simply rejected that particular

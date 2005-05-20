@@ -110,14 +110,14 @@ included with his email:</p>
 <quote who="Jacek Caban"><p>
 
 Now MSHTML is ready for a patch that enables HTML rendering over
-Gecko API. I attached the patch that makes IE works with Wine's MSHTML.
+Gecko API. I attached the patch that makes IE work with Wine's MSHTML.
 Any comments/suggestions are welcome. If you want to see how
 it works, you need to have a working installation of IE and Mozilla
 installed under Wine. Then just set mshtml.dll to be loaded as built in.
-Excluding many not implemented parts of API, it needs a better algorithm 
-searching for Mozilla installation (eg. currently it can't work with only
+Excluding many not implemented parts of the API, it needs a better algorithm 
+searching for the Mozilla installation (e.g. currently it can't work with only
 Mozilla ActiveX
-Control installed) and better messaging user that it needs Mozilla, but
+Control installed) and better inform user that it needs Mozilla, but
 I'll fix it in next patches.
 </p><p>
 I'm not sure if I should presently send it to wine-patches. I still hope
@@ -130,14 +130,14 @@ without success as yet. Problem is that we need to pass a native
 window handle to
 nsIBaseWindow::InitWindow (you may see this call in view.c). In case of
 windows version it's no problem as it
-means passing HWND, but in case of Linux it is Gtk/GdkWindow
+means passing an HWND, but in case of Linux it is Gtk/GdkWindow
 (well, not always as Mozilla can be built to use xlib or qt, but
 currently in most cases it's not and we can take care of it later).
 To not use gtk/gdk directly in Wine we could patch Mozilla to detect
 XID passed and use gdk_window_foreign_new to create GdkWindow.
 It should work, I believe, but I was not able to do so. It would be
 wonderful if
-anyone could give me any insight on it, eg. I'm not sure if I have a
+anyone could give me any insight on it, e.g. I'm not sure if I have a
 good understanding of how to get the XID for Wine's window. Also I'd
 like to know if using gdk inside Wine's windows needs any
 tricks/is possible. If you think I should give up and stay with the Windows
@@ -148,16 +148,16 @@ version, I'll send this patch to wine-patches.
 Linux Gecko (e.g. Mozilla).  Jacek thought it would, but asked if
 anyone could help with it:</p>
 <quote who="Jacek Caban"><p>
-Yes, I believe. Unfortunatelly I've not succeeded in this as my knowlage
+Yes, I believe. Unfortunatelly I've not succeeded in this as my knowledge
 about
-X and gtk programing is poor. So I need some help on it. A patch that makes
+X and gtk programming is poor. So I need some help on it. A patch that makes
 nonwindow-like stuff to enable UNIX Gecko is attached. To make it
 complete, 'just' one error in view.c has to be fixed.
 </p><p>
-As it's the development version, path to Mozilla dir is hardcoded -
+As it's the development version, the path to the Mozilla dir is hardcoded -
 it'll be simple
-to fix, but first I'd like to see it working. To make changes more
-clear, this patch
+to fix, but first I'd like to see it working. To make changes
+clearer, this patch
 depends on my last patch I've sent yesterday. Parts of code that depend on
 version of Gecko used are ifdef-ed by UNIX_GECKO.
 </p><p>
@@ -173,7 +173,7 @@ Any help/suggestions very welcomed.
 	enddate="04/20/2005"
 >
 <topic>Integration</topic>
-<p>Maarten Lankhorst sent two message this week with patches
+<p>Maarten Lankhorst sent two messages this week with patches
 outlining work he's done to get webcams to work:</p>
 <quote who="Maarten Lankhorst"><p>
 SInce stuff is missing from msvideo (ICSeqCompressFrame{Start,,Stop})
@@ -190,7 +190,7 @@ set quartz, qcap and devenum to builtin (qcap just to be sure..)
 set msvfw32 to native (and make sure you have a native msvfw32)
 regsvr32 quartz.dll
 Run msn messenger (I tested it with MSN 6.2, dutch version, not sure
-wether it will work under 7.0)
+whether it will work under 7.0)
 Now you can use the 'webcam'
 </p><p>
 If you want, you can even make some patterns by changing the following
@@ -208,8 +208,8 @@ this, I would happily accept :)
 <p>The second email described further work:</p>
 <quote who="Maarten Lankhorst"><p>
 Now that I'm pretty much done with cleaning up the stuff, I'm wondering
-on how to seperate /dev/video0 from /dev/video1, in the current code I
-don't have the seperation, and I'm unsure on how to add it...
+on how to separate /dev/video0 from /dev/video1, in the current code I
+don't have the separation, and I'm unsure on how to add it...
 </p><p>
 Anyway, this is my first attempt to get v4l2 to work with msn 6.2, it is
 very unstable but it somehow.. works..
@@ -290,7 +290,7 @@ scanners, for example, so the parameters to these
 functions would be well known. For most other hardware
 it is trivial to reverse engineer it if necessary.
 </p><p>
-The problem is, Wine does all I/O (ie. ReadFile(),
+The problem is, Wine does all I/O (i.e. ReadFile(),
 WriteFile(), DeviceIoControl()) using the @&amp;#$!"*
 wineserver, by querying the wineserver for a file
 descriptor (int obtained by the POSIX open() function
@@ -303,7 +303,7 @@ problem is that you need ways to:
 <ol>
 <li> Associate particular file descriptors to a
 dynamically linked library that would be identified by
-the CreateFile() argument (eg. for \\MiiScan0\, maybe
+the CreateFile() argument (e.g. for \\MiiScan0\, maybe
 the library would be MiiScan0.so).</li>
 
 <li> Load up the library on CreateFile() with a
@@ -316,7 +316,7 @@ and ioctl's.</li>
 <li> (This is the hardest part) Make ReadFile(),
 WriteFile() and DeviceIoControl() aware of which file
 descriptor identifies which library, and call the
-right libraries functions. This probably requires
+right library functions. This probably requires
 changes to the wineserver.</li></ol></p><p>
 
 Phew, I thought I'd type a short reply! Interested in
@@ -326,7 +326,7 @@ working on this? I can't do it all alone.
 <p>Hiji thought between Damjan and Lars Segerlund
 there might be an opportunity to develop something:</p>
 <quote who="Hiji"><p>
-There's not much I can do other then try to encourage
+There's not much I can do other than try to encourage
 you and Lars to work together (as I'm not a C
 developer).  Damjan, it sounds like you have already
 covered a lot of the groundwork through your research
@@ -341,7 +341,7 @@ functionality.
 </p><p>
 I suppose the last piece missing is to consult the
 expert on the wineserver (as far as USB is concerned)
-to see if any changes would truely need to be made
+to see if any changes would truly need to be made
 there.  Who would that be?
 </p></quote>
 
@@ -435,9 +435,9 @@ easily give guidance in this area.
 I have only limited time, and work a patch at a time, until it gets in cvs,
 because as is the case with his current patch, basically it needs reworking
 into submittable chunks! However, I think we should give Oliver a little
-more time (I wont be touching it until after wineconf anyway). 
+more time (I won't be touching it until after wineconf anyway). 
 </p><p>
-Not knowing anthing about d3d8/9 shouldn't hold you back - I knew nothing
+Not knowing anything about d3d8/9 shouldn't hold you back - I knew nothing
 when I started on the d3d8 stuff, and it doesn't take that long to pick up
 the threads.
 </p><p>
@@ -459,7 +459,7 @@ works for you and if it does send me (offline) a patch for current cvs?
 >
 <topic>Integration</topic>
 <p>Jakob Eriksson wanted to know if anyone had used Wine's
-DLL's on Windows:</p>
+DLLs on Windows:</p>
 <quote who="Jakob Eriksson"><p>
 Has anybody else thought of using DLLs (like ReactOS' dlls) as a 
 compatibility layer to different Windows versions?
@@ -497,7 +497,7 @@ runs.</quote></p>
 <p>It led Rolf Kalbermatter to ask:</p>
 <quote who="Rolf Kalbermatter"><p>
 
-Why would you need the .local file? Has there anything changed in XP or
+Why would you need the .local file? Has anything changed in XP or
 2003 which would
 prefer Windows or system DLLs over local DLLs in the same directory as
 the calling executable?
@@ -512,7 +512,7 @@ way for me in the past, too.
 The behavior of LoadLibrary has changed at least once that I know of for Windows 2003. The default
 search order can be set per application in the registry as well. Microsoft even does the
 programname.exe.local trick with the IE5 setup wizard. Extract the IE5 wizard in to a temp folder
-and lauch IE5 setup and you will see the *.exe.local file. iTunes even does it.
+and launch IE5 setup and you will see the *.exe.local file. iTunes even does it.
 </p></quote>
 
 </section></kc> 

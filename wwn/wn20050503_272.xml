@@ -30,7 +30,7 @@ went to bed.  WineConf ended earlier in the evening.
 I guess I can take solace in the fact ten Wine developers are
 still sitting downstairs and will probably be a lot more tired than me
 in the morning.  I surely won't finish writing this summary tonight,
-but it's nice to look back and reflect on what a great three days its been.
+but it's nice to look back and reflect on what a great three days it has been.
 </p><p>
 Some of you might be looking for the short summary version, so it's
 worth recapping some major highlights.  First, Alexandre has imposed some
@@ -44,7 +44,7 @@ WineConf 2005 unofficially kicked off Friday night  at the Deutsche Telekom
 Tangungshotel Stuttgart.  There was a really nice outside
 patio at the hotel and a bar inside.  We spent a little while discussing
 going out somewhere, but we were having too good of a time to be bothered
-trying to leave.  Before we knew it we'd some how consumed a bunch
+trying to leave.  Before we knew it we'd somehow consumed a bunch
 of pizzas Andi Mohr ordered and the bar began shutting down.
 </p><p>
 Saturday morning we kicked off WineConf with a short presentation from
@@ -114,7 +114,7 @@ window manager.  Finally, Marcus Meissner asked if we have
 plans for 64-bit support. Alexandre said there's no reason 
 not to but it would take someone motivated to do it.	
 </p><p>
-Overall, this is a much more remarkable than last year.  I think 
+Overall, this is much more remarkable than last year.  I think 
 after last year's presentation everyone was left with a sense there
 was a lot more work that needed to be done and it hadn't been
 thought about.  Even worse, only Alexandre could do it.  
@@ -149,7 +149,7 @@ for that would be sometime after 0.9 but before 1.0.
 </p><p>
 Dimi then outlined the key focus of the to do list is
 to standardize on interfaces: UI within Wine, WineHQ
-as a information conduit, file formats and exported
+as an information conduit, file formats and exported
 API's for developers, etc.  As far as that goes, we're
 in great shape.  There's really nothing left to be
 done except move the config into the registry.  
@@ -281,7 +281,7 @@ happen.  He implemented a new wineserver request to test
 reading from a file.  He benchmarked wineserver with a 
 100MB file and various buffer sizes.  He then went
 through and compared this performance with open, 
-Createfile, and Createfile on a mounted SMB share.  
+CreateFile, and CreateFile on a mounted SMB share.  
 He further compared it with the number of clients
 within wineserver to see how well it scaled.  The
 results looked extremely promising.  With regard
@@ -308,7 +308,7 @@ He opened with some questions, such as what could/should we
 cooperate on, whether or not we should aim for
 Samba and Wine interoperability, and if we 
 cooperate how we should go about doing it.  Samba
-doesn't about API compatibility but Wine does.
+doesn't care about API compatibility but Wine does.
 Samba doesn't have to worry about object level 
 compatibility, just wire level.  However, both 
 of us need to get the same things right.  We 
@@ -321,7 +321,7 @@ to be most common areas we could look at in the
 near-term, with the possible exception of the
 talk Andrew Bartlett presented next.
 </p><p>
-The RPC world could present some interesting,
+The RPC world could present some interesting
 areas for working with Samba.
 Looking at IDL compilers, it's apparent Wine's widl
 compiler and Samba's pidl compiler were built for
@@ -382,7 +382,7 @@ The new Samba will contain an interface similar to Microsoft's
 SSPI and can be called from everywhere.  It can sit both on
 the client and server side and handle blob passing.  The 
 library behind this is Andrew's GENSEC.  He thought it might
-be possible to wrap GENSEC into the SSPI API's Wine has to
+be possible to wrap GENSEC into the SSPI APIs Wine has to
 implement.  At the very least GENSEC can provide a way to
 learn about SSPI and would help us build it properly.  
 </p><p>
@@ -398,7 +398,7 @@ gets designed will have to take that into account.
 </p><p>
 After that we wrapped up and meandered back to the hotel to
 get ready for the night.  We headed downtown to the Rosenau for
-a dinner put on by CodeWeaver's.  We had a fantastic time.
+a dinner put on by CodeWeavers.  We had a fantastic time.
 I had an interesting conversation with Jerry Carter and Ira 
 Krakow about the dynamics of open source projects as well
 as other random stuff.  We stayed at the restaurant fairly
@@ -410,7 +410,7 @@ were the last ones to get to bed.
 Breakfast came really early.  To start out the agenda we
 had Steven Edwards and Hyperion from the ReactOS project
 show off their latest work.  Things really seem to have
-improved from last year.  Rather running it in VMWare, 
+improved from last year.  Rather than running it in VMWare, 
 Steven actually booted his laptop into ROS.  The running
 joke seemed to be something like Samba is hard, Wine is
 daunting, and the ROS guys are just crazy.  They aim to
@@ -419,7 +419,7 @@ system, including support for devices and drivers.  That
 always raises the question of why bother, but I like to
 think back to something Steven mentioned a few years ago:
 Linux was just trying to be a free replacement for Unix,
-so ROS is just trying to be a free replacement of Windows.
+so ROS is just trying to be a free replacement for Windows.
 </p><p>
 A lot of things work this year and many areas are progressing.  
 Thanks to Wine they can
@@ -427,7 +427,7 @@ run applications like OpenOffice, AbiWord, and PuTTY.  They
 have driver support now for nvidia and ATI.  Under development
 they have more networking support, OpenGL/DirectX, and 
 plug 'n play support.  The kernel is getting more stable,
-but they need to a better job at things like syscall and return value
+but they need to do a better job at things like syscall and return value
 checking in order to get more stable.  Many large projects
 haven't been started yet though, including a printing 
 subsystem, security subsystem, NTFS support, etc.  
@@ -485,10 +485,10 @@ to package up calls and maybe pass them through to the driver.
 </p><p>
 So where are we at?  Wine's Direct3D 8 code is relatively 
 complete.  D3D9 won't be a massive change and centers around 
-adding shader support.  Things aren't in that good of shape at
+adding shader support.  Things aren't in that good of a shape at
 the moment though.  The new wined3d library was implemented
 for combining D3D8 and D3D9 code.  However, only part of the
-code has been moved into the library.  It's goal right now is
+code has been moved into the library.  Its goal right now is
 to implement D3D9 on top of it and then switch D3D8 over to it.
 But that process remains to be done.  Oliver Stieber's work
 has been written with wined3d in mind, but it needs to get
@@ -514,7 +514,7 @@ you need to do really impressive stuff.  Moving on, he showed
 a demo of the game <i>Mafia</i> with all kinds of cool D3D
 effects.  Equally impressive were some of the demos with
 3DMark.  Jason pointed out that due to rebuilding his system
-we were actually the demos running on CVS code rather than
+the demos were actually running on CVS code rather than
 his development tree.
 </p><p>
 --
@@ -606,7 +606,7 @@ For a couple of years Wine, or at least CodeWeavers, has been trying to
 develop an automated testing suite that tests graphical apps.  Right now
 the Wine test suite is great for testing API's, but it doesn't do any
 good for actually testing a real world application and finding regressions.
-The idea is to some how run a graphical program, make it do things, and
+The idea is to somehow run a graphical program, make it do things, and
 then test to make sure those things were done correctly.  If someone
 fails, then you can begin looking at patches to figure out which one 
 caused the regression.
@@ -618,7 +618,7 @@ If that sounds difficult, it's because it is.  Jeremy mentioned they had
 spent a year just looking for a solution before deciding on the elements of
 CXTest.  Now it appears 
 <a href="http://www.cxtest.org">CXTest</a> is ready for widespread use.
-Besides just testing different programs and Wine, it let's us test things
+Besides just testing different programs and Wine, it lets us test things
 against different distros and kernels.  It's completely possible a new
 kernel could break things.  If you're interested in the technical details 
 of CXTest and how to go about running it, check out the CXTest 
@@ -630,14 +630,14 @@ capture a picture, send key strokes, capture clicks, etc.  Basically it's
 an automated way to control graphical elements you'd normally never have
 control over.  The components involved include scripts and some custom
 Winelib stuff (part of the package and GPL'ed.)  
-elements and click on different things.  The reporting side can send test 
+to click on different things.  The reporting side can send test 
 results to a central website and get formatted nicely.  
 </p><p>
 A large discussion ensued about how useful it would be for Wine.  What
 we seem to have learned is we're decent at collecting bug reports and
 finding which patch caused a regression.  However, we're not that great
 at responding to such reports.  Whether or not we need a lot more data
-is debatable.  In the end it seems running the tests are easy, so maybe
+is debatable.  In the end it seems running the tests is easy, so maybe
 we just need to do it.
 </p><p>
 --
@@ -660,7 +660,7 @@ Another area we could improve upon are just various UI issues.  Some
 window manager extensions would help, but we also know things we could
 do.  For example, a DIB renderer is needed and theming support integrated
 with the desktop would be nice as well.  Dimi also brought up his
-(healthy) obsession with DLL's.  All this is important just because it's
+(healthy) obsession with DLLs.  All this is important just because it's
 what the user ends up seeing - it can easily project a bad image.
 </p><p>
 Better desktop integration could also be done.  For instance, mapping 

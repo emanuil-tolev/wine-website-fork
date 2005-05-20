@@ -270,7 +270,7 @@
   As of Jan 9, 2005, there were 11 occurrences of <tt>HEAP_strdupWtoA</tt>.
   These functions invocations should go away during the W -&gt; A cross-call
   cleanup. It is better to directly fix that sort of cross call, rather than
-  replace this function by other alternatives. The few of them that can not
+  replace this function by other alternatives. The few of them that cannot
   be eliminated this way, should be replaced by calls to <tt>WideCharToMultiByte</tt>.<p>
   <tt>find dlls -name \*.c -exec grep -q HEAP_strdupWtoA {} \; -ls</tt>
   <ul>
