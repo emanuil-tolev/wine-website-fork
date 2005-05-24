@@ -408,7 +408,7 @@ in the changes Andi mentioned he found a solution:</p>
  at least not any more.
 </p><p>
  So I'm a little unsure on how the headers should be organised.
- winternl.h contains to little information to fully replace
+ winternl.h contains too little information to fully replace
  ntdef.h/ntddk.h in fact in some cases of the enums in winternl.h
  is incomplete but the full enum exists in ntddk.h!!!
 </p><p>

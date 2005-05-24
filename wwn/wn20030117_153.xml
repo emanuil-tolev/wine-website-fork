@@ -200,7 +200,7 @@ to applications or web functionality.
 <p>Just to recap the story so far, it's come down to
 two ideas for creating the IWebBrowser processing engine.  The first is to use 
 Mozilla, the second is to use KHTML.  Mozilla has pretty much been ruled out -
-it's way to big and maintaining the code within Wine's CVS would be next to
+it's way too big and maintaining the code within Wine's CVS would be next to
 impossible.  KHTML has the advantage of being a lot smaller and easier to 
 integrate.  According to the developers it would also handle the eccentricities
 of IE better.  KHTML's problem is historically it's been tied to Qt.  

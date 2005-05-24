@@ -91,7 +91,7 @@ by Romuald Vieux and Yvon Benoist:</p>
  I was away on vacation in the past few days which is why this got 
 delayed a bit. But now that I'm back, here's a patch to translate the 
 Wine FAQ to French using the new po4a/ directory. Note that the patch is 
-pretty big : 136KB (not compressed). That's because that how big the FAQ 
+pretty big : 136KB (not compressed). That's because that's how big the FAQ 
 translation is. Once this is in I will send patches to add a translation 
 for the Wine User Guide and the WineLib User Guide.
 </p><p>
@@ -155,11 +155,11 @@ Status: Nearly complete, need testers.
 <a href="http://wiki.winehq.org/MSN_Messenger_webcam_support">
 http://wiki.winehq.org/MSN_Messenger_webcam_support</a></ul>
 </p><p>
-You need the native quartz dll, which get installed with internet 
+You need the native quartz dll, which gets installed with internet 
 explorer, as the builtin quartz doesn't work properly when changing 
 media format on initialisation. IFilterGraph Reconnect isn't 
 implemented, and for some reason *looks strangely at Robert* instead of 
-a FIXME() there's a TRACE telling it is a stub...</p></quote>`
+a FIXME() there's a TRACE telling it is a stub...</p></quote>
 
 <p>Maarten then took a closer look at the builtin quartz DLL and found
 some problems with it.  It appears he was able to fix them and get it
@@ -168,11 +168,11 @@ though perhaps there's another dependency on it.</p>
 </section>
 <section 
 	title="Windows Problems" 
-	subject=""
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/02/0.html" 
-	posts=""
-	startdate="02/  /2005"
-	enddate="02/  /2005"
+	subject="Q for AJ? Re: UT2003 Windowing Regression - Yet Another nights effort..."
+	archive="http://www.winehq.org/hypermail/wine-devel/2005/05/0662.html" 
+	posts="5"
+	startdate="05/18/2005"
+	enddate="05/20/2005"
 >
 <topic></topic>
 <p>This was a pretty slow week on the wine-devel mailing list.  However,
@@ -223,13 +223,13 @@ Woohoo... Should be easy then!
 </p><p>
 From forum updates it appears Notes, Unreal2, UT2003, UT2004, Empire Earth
 and MS Office 2003 for a start are all affected by this problem, and testing
-seems to confirm its wrong, so I would start by changing it with a patch and
+seems to confirm it's wrong, so I would start by changing it with a patch and
 see what breaks, since we have no evidence anything will as far as I know.
 </p><p>
-But first I'll have a play under wine to compare my testing results with my
+But first I'll have a play under wine to compare my test results with my
 suggested patch and see what breaks...
 </p><p>
-Unfortunately I cant really think of a 'test' I can add into the wine tests
+Unfortunately I can't really think of a 'test' I can add into the wine tests
 for this as most of the testing was under windows since wine just loops!</p>
 </quote>
 
@@ -255,7 +255,7 @@ error and validates the window to break the loop.</quote></p>
 to the FAQ.  I decided to do it but quickly discovered the FAQ was one
 of the docs that got moved to SourceForge (see 
 <a href="http://www.winehq.com/?issue=274#Documentation%20Moved%20to%20SourceForge">WWN #274</a> for details.)  
-I figured it was a good time to add a FAQ entry about how to update the
+I figured it was a good time to add an FAQ entry about how to update the
 FAQ as well.  Now that those new entries were added, it led me to ask,
 <quote who="Brian Vincent">
 has WineHQ been updated to build the FAQ/docs from SF rather than WineHQ CVS?
@@ -357,10 +357,10 @@ effort.</p></quote>
 
 I'm glad people like the Wiki. It can become an amazing resource,
 but only if people contribute and take care of it. I think it's already
-on it's way of being a great development resource.
+on its way to being a great development resource.
 </p><p>
 If you have any complaints, needs or wants, please don't hesitate
-to voice them -- I'd be more then happy to address them.
+to voice them -- I'd be more than happy to address them.
 
 </p></quote>
 </section></kc>

@@ -171,7 +171,7 @@ compiler.</p>
 
 <p>Video capture devices have seen some work lately.  This
 is a new area for Wine so there's been work at trying to
-figure out how to implement it.  The seems to be building on
+figure out how to implement it.  It seems to be building on
 the Video4Linux services.  Two folks have been looking at
 this and coming at it from different angles.  Rolf Kalbermatter
 explained how all this works in Windows and how it could
@@ -193,11 +193,11 @@ seems.
 Avicap32 implements two functions, one is for the enumeration of the VfW
 devices registered in the system. For this it does enumerate all entries
 in
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvid
-eo and for compatibilty reasons with 16bit Windows also in the Drivers32
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\msvideo
+and for compatibilty reasons with 16bit Windows also in the Drivers32
 section in system.ini. I have an untested version of this code already.
 The enumeration function does not try to detect any devices other than
-what it finds in above mentioned places. I assume that a webcam driver
+what it finds in the above mentioned places. I assume that a webcam driver
 installation would have to do that. 
 The second function in Avicap32.dll creates a (hidden) window which
 handles the actual interaction with the video device as well as being an
@@ -217,16 +217,16 @@ other possible video source objects which would provide a direct
 interface to WDM stream class devices somehow and could be enumerated by
 devenum as well.
 </p><p>
-DirectShow seems to be somwhat complicated. Video sources can be
+DirectShow seems to be somewhat complicated. Video sources can be
 provided from VfW again, which is provided by the "VfW Capture Filter"
 class in qcap.dll. This is basically a DirectShow filter wrapper around
 the same installable driver interface as is used in avicap32.dll (and
 through above mentioned vfwwdm32.dll driver an application can also
 access WDM stream class video capture sources indirectly. How the direct
-interface to WDM stream class devices is provide I haven't found out yet
+interface to WDM stream class devices is provided I haven't found out yet
 but according to MSDN it should be possible somehow.
 </p><p>
-For Wine purposes the VfW path seems the most interesting one.
+For Wine's purposes the VfW path seems the most interesting one.
 Separating the Video4Linux interface into an installable multimedia
 driver such as winev4l would cleanly separate platform specific code
 from the rest of the Wine DirectShow and Avicap implementation. Trying
@@ -265,7 +265,7 @@ to the CVS SourceForge:
 They clearly did not belong in the tree, and we decided at
 WineConf05 to move them out of there. So we did.
 </p><p>
-I have renamed the files for a more uniform naming, and dropped
+I have renamed the files for a more uniform naming, and dropped a
 couple of unused files in the process. We still need to change
 WineHQ's scripts to point them to the new location. Help with
 this would be appreciated.
@@ -323,7 +323,7 @@ fine. Ideally they should all be based on real apps.
 >
 <topic>Architecture</topic>
 
-<p>Flattening the various DLL directories has come up a few times over the past year.  Basically the issue are any of Wine's DLL's that have subdirectories.  For example, if you go into dlls/winmm/ you'll see a ton of subdirectories.  Christian Costa took a stab at one this week and asked for some feedback:</p>
+<p>Flattening the various DLL directories has come up a few times over the past year.  Basically the issue is any of Wine's DLLs that have subdirectories.  For example, if you go into dlls/winmm/ you'll see a ton of subdirectories.  Christian Costa took a stab at one this week and asked for some feedback:</p>
 
 <quote who="Christian Costa"><p>
 I plan to flatten the ddraw directory and perform some files renaming in it.
@@ -345,7 +345,7 @@ better than surface/hal.c?</quote></p>
 <ol>
 <li> This removes the directories hierarchy (which is not really necessary)</li>
 <li> You don't have several files with the same name (there are 6 main.c, 
-   3 hal.c,... and when there are all opened for editing, this begins to be 
+   3 hal.c,... and when they are all opened for editing, this begins to be 
    a little confusing)</li></ol></p></quote>
    
 <p>Alexandre thought it would be a good time to do more cleanup,
@@ -366,7 +366,7 @@ really don't need one header for each source file.</quote></p>
 Uwe Bonnes reported:</p>
 <quote who="Uwe Bonnes"><p>
 
-I updated yesterday and today. Compiling with todays CVS gives:
+I updated yesterday and today. Compiling with today's CVS gives:
 <ul><code>
 ../../../tools/winegcc/winegcc -B../../../tools/winebuild -mconsole<br />
 joystick.o keyboard.o mouse.o testlist.o  -o dinput_test.exe.so<br />

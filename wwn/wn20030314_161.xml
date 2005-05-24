@@ -143,7 +143,7 @@ far from beeing perfect).
 
 What prevents wine from distributing timeslices correctly? Even if i
 renice/boost linux kernel sheduler of the whole wine process(es) things go
-wrong a lot. The processing thread gets way to small amount of attention.
+wrong a lot. The processing thread gets way too little attention.
 </p><p>
 
 Do you have some hints on how to boost the processing thread a bit? I'm
