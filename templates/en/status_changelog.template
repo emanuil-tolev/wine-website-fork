@@ -2,10 +2,18 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since June 1, 2005:</p>
+
+ <ul>
+ <li>ADD - Maarten Lankhorst as worker to qcap.dll </li>
+ <li>qcap.dll 5% -&gt; 40%</li>
+ </ul>
+ <br>
+
 <p>Changes since February 23, 2005:</p>
 
  <ul>
- <li>ADD - CodeWeavers as worker on (winemenubuilder)</li>
+ <li>ADD - CodeWeavers as worker to (winemenubuilder)</li>
  <li>ADD - Robert North as worker to wintab32.dll</li>
  <li>ADD - James Hawkins as worker to advapi32.dll</li>
  <li>ADD - Alex Villacís Lasso as worker to odbc32.dll</li>
@@ -21,7 +29,7 @@
  <li>ADD - A link to Olivers DirectX page</li>
  <li>ADD - A link to MSDN OpenGL Documentation (opengl32.dll)</li>
  <li>ADD - A link to Process/Address Space model Documentation</li> 
- <li>Remove - Fran&ccedil;ois Gouget as worker on (winemenubuilder)</li>
+ <li>Remove - Fran&ccedil;ois Gouget as worker to (winemenubuilder)</li>
  <li>Remove - Dmitry Timoshkov as worker on ttydrv</li>
  <li>Remove - Michael Jung as worker on secure32.dll</li>
  <li>Remove - Shachar Shemesh as worker on unicows.dll</li>

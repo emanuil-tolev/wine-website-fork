@@ -366,7 +366,18 @@ msvfw32:
      - Bug: Windows stays empty when opening of device fails.
 
 avicap32: "Video Capture"
-    * Only stub DLL
+    * Capturegraphbuilder(1/2)
+    * Infinite pin tee filter
+    * Smart tee filter
+    * vfwcapture
+    * audiocapturefilter
+    * avi muxer
+    * avicompressor
+    * filewriter
+    * audio in mixer prop
+    * vfw capture prop
+    * avi mux prop
+    * avi mux prop1
 
 Opengl32:
     * Support all WGL extensions which have GLX counterparts (like PBuffers or render to texture for example).
