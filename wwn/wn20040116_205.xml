@@ -143,7 +143,7 @@ and anything to add?".
 </p><p>
 Well, I do. In the same setup as before, I have been able to use the 
 *native* odbc32.dll ODBC driver by pulling it from a real Windows 
-instalation and adding "odbc32"="native,builtin" in the config file. I 
+installation and adding "odbc32"="native,builtin" in the config file. I 
 Installed the psqlodbc driver from the Postgres database, and retried : 
 selecting "ODBC sources" in the "Attach tables" dialog box led me to the 
 usual ODBC manager dialogs, where I have been able to create a DSN to my 

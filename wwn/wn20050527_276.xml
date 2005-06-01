@@ -96,7 +96,7 @@ Its main goal is to miss deadlines. It also serves to inform you of what's going
 Jacek Caban has been busy implementing MSHTML on top of Mozilla.  
 MSHTML.DLL is a massive chunk of Internet Explorer; it's responsible
 for parsing and rendering HTML.  His first round worked with the 
-Windows version of Mozilla, now he's try to wrap the Linux version.
+Windows version of Mozilla, now he's trying to wrap the Linux version.
 This week he asked on wine-devel how to proceed with a native Linux
 Mozilla:</p>
 <quote who="Jacek Caban"><p>
@@ -177,7 +177,7 @@ First, it tries to initialise, and lets the constructor function fill
 this struct, then if something is needed, it just calls 
 Capture->SetFormat(Capture->pMine, parameters..), this is the qcap 
 implementation, but I'm sure that if I write some parts of it so it will 
-be DirectShow indepent, it can be used by avicap and qcap, I'm not 
+be DirectShow independent, it can be used by avicap and qcap, I'm not 
 really interested in avicap, but in the very least 
 capgetdriverdescription should use the same code as qcap, because 
 writing the same twice would mean a huge overhead.
@@ -249,7 +249,7 @@ To quote myself from
 </p><p> 
 Large majority of PE executables have sections that are page-aligned in 
 memory but not in the PE file image. Linux's mmap() doesn't support 
-mappings that are not aligned to page boundries with regard to file 
+mappings that are not aligned to page boundaries with regard to file 
 offsets. Currently it forces wineserver to fake mmap() by allocating 
 anonymous pages and using read() to load the sections.
 </p><p>
@@ -270,7 +270,7 @@ Given an fd and an offset, a new fd is returned. Using mmap() on that new
 fd, the mapping will be aligned with the given offset, which can be smaller 
 than PAGE_SIZE.
 </p><p>
-A wineserver implementation can check the existance of that module in the 
+A wineserver implementation can check the existence of that module in the 
 kernel (i.e "/proc/upmfs/interface" exists) and use its functionality.
 </p><p>
 The code for the upmfs source package 
@@ -294,7 +294,7 @@ cabinet.dll:</p>
 I just want to let you know that I'm working at the FCI functions of
 CABINET.DLL. I had a look at this a few years ago, but gave up soon.
 Two weeks ago I made a new attempt and next weekend I should
-be able I post a patch which implements all FCI functions and
+be able to post a patch which implements all FCI functions and
 will work with spanning cabinets. Real file compression will not be
 implemented at that point of time as I still have to write missing parts
 and complete error handling first. This work took me longer than
@@ -326,8 +326,8 @@ debugging symbols.
 
 <p>Rapha&#235;l confirmed that's the case:</p>
 <quote who="Raphael Junqueira"><p>
-dwarf2 debug format is the standard format since gcc3 (and dwarf3 format which
-is a dwarf2 extension already specified so gcc4/5 may use it).
+dwarf2 debug format is the standard format since gcc3 (and the dwarf3 format which
+is a dwarf2 extension is already specified so gcc4/5 may use it).
 </p><p>
 Stabs format (use when -gstabs+ option is used) is only supported (without 
 any evolution) for backward compatibility with olders debuggers.
@@ -388,14 +388,14 @@ Mike McCormack gave nice presentation at WineConf about getting involved and
 how to go about doing work on it.  After some discussion this week,
 Aric dropped a large patch and announced:</p>
 <quote who="Aric Stewart"><p>
-We have been concentrating alot of effort on Office 2003 and 
-specifically on getting office 2003 to install and come up properly. We 
+We have been concentrating a lot of effort on Office 2003 and 
+specifically on getting Office 2003 to install and come up properly. We 
 would love to work more directly with you and the whole Wine community 
 in this goal.
 </p><p>
 With this patch I have enabled the dialog code that Mike has put into 
 Wine and started a basic structure for handling ControlEvents sent to 
-and from various dialog controls. Alot of this code is still pretty 
+and from various dialog controls. A lot of this code is still pretty 
 hacky and incorrect but the basic functionality and structure is there. 
 It also should allow you to actually start installing Office.  With the 
 current CVS tip Office2003 fails to install due to actions relating to 
@@ -408,10 +408,10 @@ come up.
 We here at CodeWeavers are constantly trying to work closer with the 
 Wine community.  I am bad about keeping up on wine-devel, so you can 
 always e-mail me directly with MSI related things, and i know Mike 
-McCormack and a number of other are very good at keeping up on the 
+McCormack and a number of others are very good at keeping up on the 
 mailing list. I also hang out in the irc channel quite a bit.
 </p><p>
-With some work and some luck we should be able to get office 2003 
+With some work and some luck we should be able to get Office 2003 
 looking pretty good.
 </p></quote>
 
