@@ -27,7 +27,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
   <li><a href="#web_site">General maintenance</a>
 
    <ol>
-    <li><a href="#web">Web site maintenance</a>
+    <li><a href="http://wiki.winehq.org/CreateFonts">Creating fonts</a>
     </li><li><a href="#draw">Draw icons for Wine</a>
     </li><li><a href="#app_owners">Application owners</a>
     </li><li><a href="#support">Bug hunting and support</a>
@@ -52,28 +52,6 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
  </li>
 
 </ol>
-
-<a name="web_site"></a>
-<h2>General maintenance</h2>
-
-<blockquote>
-
-    <a name="web"></a>
-    <h3>Web site maintenance</h3>
-     <p>If you feel like writing about Wine or coding in PHP your
-       contribution will be greatly appreciated. You can find current task that need work
-       in our <a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=WineHQ.com&amp;component=misc-web">Bugzilla</a>.
-       Getting started is really easy, just get the WineHQ sources by following the
-       instructions in our <a href="{$root}/site/cvs">CVS</a>
-       section and look at the files in templates/en. And to submit patches,
-       simply follow the instructions on our
-       <a href="{$root}/site/sending_patches">Sending Patches</a> page.
-     <p>Required skills:</p>
-     <ul>
-       <li>Writing skills</li>
-       <li>General Web design</li>
-       <li>Php (optional)</li>
-     </ul>
 
     <a name="draw"></a>
     <h3>Draw icons for Wine</h3>
