@@ -426,13 +426,13 @@ much about that little detail.
 
 Eric's patch to printdrv.c looked like this:
 <ul><code>
--&#160;&#160;&#160;&#160;system(psCmdP);
-+#if defined(__hpux) || (defined(__sun) &amp;&amp; defined(__SVR4))
-+&#160;&#160;&#160;&#160;execl("/usr/bin/sh", "sh", "-c", psCmdP, 0);
-+#else
-+&#160;&#160;&#160;&#160;execl("/bin/sh", "sh", "-c", psCmdP, 0);
-+#endif
-+&#160;&#160;&#160;&#160;/* If the exec fails, we'll just take our chances and exit */
+-&#160;&#160;&#160;&#160;system(psCmdP);<br />
++#if defined(__hpux) || (defined(__sun) &amp;&amp; defined(__SVR4))<br />
++&#160;&#160;&#160;&#160;execl("/usr/bin/sh", "sh", "-c", psCmdP, 0);<br />
++#else<br />
++&#160;&#160;&#160;&#160;execl("/bin/sh", "sh", "-c", psCmdP, 0);<br />
++#endif<br />
++&#160;&#160;&#160;&#160;/* If the exec fails, we'll just take our chances and exit */<br />
 &#160;&#160;&#160;&#160;&#160;exit(0);
 </code></ul></p>
 
