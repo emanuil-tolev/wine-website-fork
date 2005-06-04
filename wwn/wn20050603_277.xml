@@ -115,7 +115,7 @@ different projects are represented, including Wine (we were one of the first
 It works like this: students will receive $4500 for completing their
 project.  The sponsoring organization will receive an additional $500.
 Up to 200 individuals will get sponsorship making the grand total
-$2,000,000 being invested by Google.  That's a pretty significant number.
+$1,000,000 being invested by Google.  That's a pretty significant number.
 Check out Google's 
 <a href="http://code.google.com/summfaq.html">participant FAQ</a> for
 details and eligibility requirements.  </p>
@@ -343,7 +343,7 @@ has never got this far with safedisc 1.
 http://www003.portalis.it/115/download/aoe.png</a></ul></p></quote>
 
 <p>The screenshot is rather anticlimatic - it simply shows the splash
-screen for AoE2 before crashing.  What's going on behind the scenes is
+screen for AoE2.  What's going on behind the scenes is
 more interesting.  Ivan has implemented a minimal ntoskrnl.exe interface
 that can load the real Safedisc driver shipped with the game.  So all
 those no-cd cracks wouldn't be necessary for Safedisc v1 games.</p>
@@ -358,7 +358,8 @@ Some of it sucks (See QueryServiceStatus for the worst hack
 ever, that doesn't even usually work), but the design should be more or 
 less ok. It needs lots of cleanup and optimisation.</p></quote>
 
-<p>Stephen Torri ran into a problem and Andi Mohr explained how to fix it:
+<p>Stephen Torri ran into a problem and Andi Mohr explained what the errors
+meant:
 </p><quote who="Andreas Mohr"><p>
 ntstatus.h:
 <ul><code>
