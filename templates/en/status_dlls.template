@@ -106,7 +106,7 @@
           <a href="{$root}/site/?issue=230#OpenSSL%20vs.%20NSS">#230</a>,
           <a href="{$root}/site/?issue=239#Transport%20Layer%20Security:%20SSL%20vs.%20GnuTLS">#239</a></td>
       <td class="pct5">5% complete</td>
-      <td>Mike McCormack</td>
+      <td>Juan Lang</td>
     </tr>
     <tr>
       <td>cryptdll.dll</td>
@@ -182,7 +182,7 @@
       <td>itss.dll</td>
       <td class="adequate"><a href="http://www.speakeasy.org/~russotto/chm/itolitlsformat.html">Microsoft's ITOL/ITLS format</a></td>
       <td>None</td>
-      <td class="pct5">5% complete</td>
+      <td class="pct30">30% complete</td>
       <td>Mike McCormack</td>
     </tr>
     <tr>
@@ -342,7 +342,7 @@
           <a href="{$root}/site/?issue=244#COM%20Inheritance">#244</a>,
           <a href="{$root}/site/?issue=253#Apartment%20Breakage">#253</a>,
           <a href="{$root}/site/?issue=256#DCOM%20Status%20Update%20and%20Roadmap">#256</a></td>
-      <td class="pct60">60% complete</td>
+      <td class="pct80">80% complete</td>
       <td>Robert Shearman,<br>CodeWeavers</td>
     </tr>
     <tr>
@@ -357,7 +357,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olprcore_chapter20.asp">MSDN: OLE BD Core</a></td>
       <td><a href="{$root}/site/?issue=126#TransGaming%20Releasing%20Code">#126</a>,
           <a href="{$root}/site/?issue=170#Separating%2016/32%20Bit%20OLE%20Functions">#170</a></td>
-      <td class="pct80">80% complete</td>
+      <td class="pct90">90% complete</td>
       <td>Jon Griffiths,<br>CodeWeavers</td>
     </tr>
     <tr>
@@ -412,8 +412,8 @@
           <a href="{$root}/site/?issue=238#Richedit%20Control">#238</a>,
           <a href="{$root}/site/?issue=250#No%20RichEdit20A%20Window%20Class">#250</a>,
           <a href="{$root}/site/?issue=251#RichEdit%20(con't)">#251</a></td>
-      <td class="pct20">20% complete</td>
-      <td></td>
+      <td class="pct40">40% complete</td>
+      <td>Krzysztof Foltman,<br>Phil Krylov</td>
     </tr>
     <tr>
       <td>rpcrt4.dll</td>
@@ -426,7 +426,7 @@
           <a href="{$root}/site/?issue=194#Stubless%20Proxies">#194</a>,
           <a href="{$root}/site/?issue=200#RPC%20Info">#200</a>,
           <a href="{$root}/site/?issue=212#Implementing%20NdrClientCall/NdrClientCall2">#200</a></td>
-      <td class="pct30">30% complete</td>
+      <td class="pct40">40% complete</td>
       <td>Mike Hearn,<br>Robert Shearman,<br>Filip Navara</td>
     </tr>
     <tr>

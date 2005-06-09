@@ -64,22 +64,16 @@
     <tr>
       <td>ddraw.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/graphics/hh/graphics/ddfncs_6fa062cb-6d77-4d19-8548-880c5bacabe9.xml.asp">MSDN: DDraw-Supplied Functions</a></td>
-      <td><a href="{$root}/site/?issue=78#DirectDraw%20reorganization%20(cont'd)">#78</a>,
-          <a href="{$root}/site/?issue=79#DirectDraw%20reorganization%20(cont'd)">#79</a>,
-          <a href="{$root}/site/?issue=185#Why%20Native%20DirectX%20Doesn't%20Work">#185</a>,
-          <a href="{$root}/site/?issue=233#S3%20Texture%20Compression">#233</a></td>
-      <td class="pct90">90% complete</a></td>
-      <td>Christian Costa,<br>Lionel Ulmer</td>
-    </tr>
-    <tr>
-      <td>ddraw.dll (direct3d)</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_m/directx/ref/ns/microsoft.directx.direct3d.asp">MSDN: DirectX Direct3D</a></td>
       <td><a href="{$root}/site/?issue=76#TransGaming">#76</a>,
+          <a href="{$root}/site/?issue=78#DirectDraw%20reorganization%20(cont'd)">#78</a>,
+          <a href="{$root}/site/?issue=79#DirectDraw%20reorganization%20(cont'd)">#79</a>,
           <a href="{$root}/site/?issue=135#Direct3D%208%20Support">#135</a>,
           <a href="{$root}/site/?issue=150#Direct3D%20Update">#150</a>,
-          <a href="{$root}/site/?issue=153#D3D%20Status%20Page">#153</a></td>
-      <td class="pct85">85% complete</td>
-      <td>Christian Costa</td> 
+          <a href="{$root}/site/?issue=153#D3D%20Status%20Page">#153</a>,
+          <a href="{$root}/site/?issue=185#Why%20Native%20DirectX%20Doesn't%20Work">#185</a>,
+          <a href="{$root}/site/?issue=233#S3%20Texture%20Compression">#233</a></td>
+      <td class="pct80">80% complete</a></td>
+      <td>Christian Costa,<br>Lionel Ulmer</td>
     </tr>
     <td colspan="5"><strong>DirectInput</strong></td>
     <tr>
@@ -95,7 +89,7 @@
       <td><a href="{$root}/site/?issue=116#DirectInput%20Key%20Mapping">#116</a>,
           <a href="{$root}/site/?issue=137#MS%20Write%20Support%20(con't)">#137</a></td>
       <td class="pct70">70% complete</a></td>
-      <td>Christian Costa</td>
+      <td>Christian Costa,<br>Lionel Ulmer</td>
     </tr>
     <td colspan="5"><strong>DirectMusic</strong></td>
     <tr>
@@ -187,7 +181,7 @@
      <td>qcap.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directX/htm/wdmvideocapturefilter.asp">MSDN: Video Capture Filters</a></td>
       <td>None</td>
-      <td class="pct5">40% complete</a></td>
+      <td class="pct40">40% complete</a></td>
       <td>Maarten Lankhorst</td>
     </tr>
     <tr> 
@@ -208,6 +202,13 @@
     </tr>
     <td colspan="5"><strong>Miscellaneous DirectX DLLs</strong></td>
     <tr>
+    <td>d3drm.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dnardir3d/html/d3dapi.asp">MSDN: DirectXFileCreate</a></td>
+      <td><a href="{$root}/site/?issue=223#Direct3D%20Retained%20Mode">#223</a></td>
+      <td class="pct5">5% complete</a></td>
+      <td></td>
+    </tr>
+    <tr>
     <td>d3dxof.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx81_c/directx_cpp/Graphics/Reference/CPP/XFile/Functions/DirectXFileCreate.asp">MSDN: DirectXFileCreate</a></td>
       <td>None</td>
@@ -215,9 +216,15 @@
       <td>Christian Costa</td>
     </tr>
     <td>dplayx.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx8_c/directx_cpp/play_front_61q1.asp">MSDN: DPlay</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_m/directx/ref/microsoft.directx.directplay.asp">MSDN: DPlay</a></td>
       <td>None</td>
       <td class="pct30">30% complete</a></td>
+      <td></td>
+    </tr>
+    <td>dpnet.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_m/directx/ref/microsoft.directx.directplay.asp">MSDN: DPlay</a></td>
+      <td>None</td>
+      <td class="pct10">10% complete</a></td>
       <td></td>
     </tr>
     <tr>

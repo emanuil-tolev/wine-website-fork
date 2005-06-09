@@ -2,6 +2,25 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since June 8, 2005:</p>
+
+ <ul>
+ <li>ADD - Juan Lang as worker to crypt32.dll</li>
+ <li>ADD - Krzysztof Foltman, Phil Krylov as workers to riched32.dll</li>
+ <li>ADD - Lionel Ulmer as worker to dinput.dll</li>
+ <li>ADD - d3drm.dll section</li>
+ <li>ADD - dpnet.dll section</li>
+ <li>Remove - ddraw.dll (direct3d) section</li>
+ <li>Remove - Mike McCormack as worker on crypt32.dll</li>
+ <li>ddraw.dll 90% -&gt; 80%</li>
+ <li>itss.dll 5% -&gt; 30%</li>
+ <li>ole32.dll 60% -&gt; 80%</li>
+ <li>oleaut32.dll 80% -&gt; 90%</li>
+ <li>riched32.dll 20% -&gt; 40%</li>
+ <li>rpcrt4.dll 30% -&gt; 40%</li>
+ </ul>
+ <br>
+
 <p>Changes since June 1, 2005:</p>
 
  <ul>
@@ -13,23 +32,23 @@
 <p>Changes since February 23, 2005:</p>
 
  <ul>
- <li>ADD - CodeWeavers as worker to (winemenubuilder)</li>
- <li>ADD - Robert North as worker to wintab32.dll</li>
- <li>ADD - James Hawkins as worker to advapi32.dll</li>
- <li>ADD - Alex Villacís Lasso as worker to odbc32.dll</li>
- <li>ADD - Robert Shearman as worker to ole32.dll</li>
- <li>ADD - Jon Griffiths as worker to mapi32.dll</li>
- <li>ADD - Eric Kohl as worker to setupapi.dll</li>
- <li>ADD - Hans Leidekker as worker to unicows.dll</li>
- <li>ADD - Mike McCormack as worker to atl.dll</li>
- <li>ADD - CodeWeavers as worker to advpack.dll</li>
- <li>ADD - Hans Leidekker as worker to winsock.dll</li>
- <li>ADD - Hans Leidekker as worker to winsock32.dll</li>
- <li>ADD - Dmitry Timoshkov as worker to user32.dll</li>
+ <li>ADD - CodeWeavers as worker on (winemenubuilder)</li>
+ <li>ADD - Robert North as worker on wintab32.dll</li>
+ <li>ADD - James Hawkins as worker on advapi32.dll</li>
+ <li>ADD - Alex Villacís Lasso as worker on odbc32.dll</li>
+ <li>ADD - Robert Shearman as worker on ole32.dll</li>
+ <li>ADD - Jon Griffiths as worker on mapi32.dll</li>
+ <li>ADD - Eric Kohl as worker on setupapi.dll</li>
+ <li>ADD - Hans Leidekker as worker on unicows.dll</li>
+ <li>ADD - Mike McCormack as worker on atl.dll</li>
+ <li>ADD - CodeWeavers as worker on advpack.dll</li>
+ <li>ADD - Hans Leidekker as worker on winsock.dll</li>
+ <li>ADD - Hans Leidekker as worker on winsock32.dll</li>
+ <li>ADD - Dmitry Timoshkov as worker on user32.dll</li>
  <li>ADD - A link to Olivers DirectX page</li>
  <li>ADD - A link to MSDN OpenGL Documentation (opengl32.dll)</li>
  <li>ADD - A link to Process/Address Space model Documentation</li> 
- <li>Remove - Fran&ccedil;ois Gouget as worker to (winemenubuilder)</li>
+ <li>Remove - Fran&ccedil;ois Gouget as worker on (winemenubuilder)</li>
  <li>Remove - Dmitry Timoshkov as worker on ttydrv</li>
  <li>Remove - Michael Jung as worker on secure32.dll</li>
  <li>Remove - Shachar Shemesh as worker on unicows.dll</li>
@@ -61,14 +80,14 @@
 <p>Changes since February 03, 2005:</p>
 
  <ul>
- <li>ADD - Fran&ccedil;ois Gouget as worker to (winemenubuilder)</li>
- <li>ADD - Fran&ccedil;ois Gouget  as worker to Wine API checker (winapi_check)</li>
- <li>ADD - Dmitry Timoshkov as worker to Dynamic Data Exchange (DDE)</li>
- <li>ADD - Dmitry Timoshkov as worker to Standard Windows Controls</li>
+ <li>ADD - Fran&ccedil;ois Gouget as worker on (winemenubuilder)</li>
+ <li>ADD - Fran&ccedil;ois Gouget  as worker on Wine API checker (winapi_check)</li>
+ <li>ADD - Dmitry Timoshkov as worker on Dynamic Data Exchange (DDE)</li>
+ <li>ADD - Dmitry Timoshkov as worker on Standard Windows Controls</li>
  <li>ADD - Multiple Document Interface (MDI) section</li>
  <li>ADD - Access Control & Authorization section</li>
- <li>ADD - Ferenc Wagner as worker to Wine Conformance Test Suite</li>
- <li>ADD - Paul Vriens as worker to Wine Conformance Test Suite</li>
+ <li>ADD - Ferenc Wagner as worker on Wine Conformance Test Suite</li>
+ <li>ADD - Paul Vriens as worker on Wine Conformance Test Suite</li>
  <li>Remove - Eric Pouech as worker on Dynamic Data Exchange (DDE)</li>
  <li>Remove - Mike McCormack as worker on (winemenubuilder)</li>
  <li>Remove - Marcus Meissner as worker on Wine Launcher</li>
@@ -108,10 +127,10 @@
  <li>ADD - cryptdll.dll</li>
  <li>ADD - wtsapi32.dll</li>
  <li>ADD - stdole32.tlb</li>
- <li>ADD - Oliver Stieber as worker to d3d9.dll</li>
- <li>ADD - Oliver Stieber as worker to wined39.dll</li>
- <li>ADD - Rapha&euml;l Junqueira as worker to d3d9.dll</li>
- <li>ADD - Rapha&euml;l Junqueira as worker to wined39.dll</li>
+ <li>ADD - Oliver Stieber as worker on d3d9.dll</li>
+ <li>ADD - Oliver Stieber as worker on wined39.dll</li>
+ <li>ADD - Rapha&euml;l Junqueira as worker on d3d9.dll</li>
+ <li>ADD - Rapha&euml;l Junqueira as worker on wined39.dll</li>
  <li>Remove - d3ddevice from ddraw.dll section</li>
  <li>Remove - dclipper from ddraw.dll section</li>
  <li>Remove - dpalette from ddraw.dll section</li>
@@ -236,38 +255,5 @@
  <li>msi.dll 10% -&gt; 40%</li>
  </ul>
  <br>
-
-<p>Changes since March 15, 2004:</p>
-
- <ul>
- <li>ADD - amstream.dll</li>
- <li>ADD - Christian Costa as worker to quartz.dll</li>
- <li>ADD - Mike McCormack as worker to shdocvw.dll</li>
- <li>ADPCM 50% -&gt; 80%</li>
- <li>G711: u/A law 50% -&gt; 80%</li>
- <li>MP3 50% -&gt; 80%</li>
- <li>ICCVID 100% -&gt; 50%</li>
- <li>MSRLE32 100% -&gt; 50%</li>
- <li>MSVIDC32 100% -&gt; 50%</li>
- <li>Quartz.dll 25% -&gt; 30%</li>
- </ul>
- <br>
-
-<p>Changes since February 17, 2004:</p>
-
- <ul>
- <li>ADD - rsabase.dll</li>
- <li>ADD - Chris Morgan as worker to Initial registry contents</li>
- <li>ADD - Chris Morgan as worker to Initial directory structure</li>
- <li>ADD - Chris Morgan as worker to Initial INI files</li>
- <li>ADD - Paul Millar and Jakob Eriksson as workers to Wine Conformance Test Suite</li>
- <li>ADD - WWN Article links</li>
- <li>Remove - joystick,keyboard,mouse sections under dinput subdirectories have been removed.</li>
- <li>Initial registry contents 25% -&gt; 80%</li>
- <li>Initial INI files 40% -&gt; 80%</li>
- <li>uxtheme.dll 20% -&gt; 60%</li>
- </ul>
- <br>
-
 
 <p>&nbsp;</p>
