@@ -141,7 +141,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/wingdistart_9ezp.asp">MSDN: Windows GDI</a></td>
       <td><a href="{$root}/site/?issue=156#GDI%20Performance">#156</a>,
           <a href="{$root}/site/?issue=246#Gradient%20Fills">#246</a</td>
-      <td class="pct60">60% complete</td>
+      <td class="pct75">75% complete</td>
       <td>Alexandre Julliard,<br>Huw D M Davies</td>
     </tr>
     <tr>
@@ -389,6 +389,13 @@
       <td></td>
     </tr>
     <tr>
+      <td>powrprof.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/power/base/power_management_functions.asp">MSDN: Power Management Functions</a></td>
+      <td>None</td>
+      <td class="pct10">10% complete</td>
+      <td>Benjamin Cutler</td>
+    </tr>
+    <tr>
       <td>psapi.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/perfmon/base/process_status_helper.asp">MSDN: Process Status Helper</a></td>
       <td>None</td>
@@ -513,7 +520,7 @@
       <td>stdole32.tlb</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/automat/htm/chap10_725v.asp">MSDN: Type Building Interfaces</a></td>
       <td>None</td>
-      <td class="pct5">5% complete</td>
+      <td class="pct100">100% complete</td>
       <td>Huw D M Davies</td>
     </tr>
     <tr>
