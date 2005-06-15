@@ -53,6 +53,17 @@ deb-src http://wine.sourceforge.net/apt/ source/</p></i>
 <p>Then, you can run '<b>apt-get update</b>' to update APT's package information. 
 Finally, to install Wine, do '<b>apt-get install wine</b>'.</p>
 
+<p>If you want to make sure that apt-get will install the WineHQ wine package
+instead of the Debian wine package (which usually has the same version),
+then add something like the following entry to /etc/apt/preferences:</p>
+
+<i><p>Package: wine<br>
+Pin: release l=WineHQ APT Repository<br>
+Pin-Priority: 1000</p></i>
+
+<p>Or alternatively use a modified rule to adjust the installation relationship
+between WineHQ and Debian packages in a different way.</p>
+
 <h2>Building the Wine Package from Source using APT:</h2>
 
 <p>APT also allows easy compilation from source of a package.  This is useful if
