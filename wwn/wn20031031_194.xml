@@ -247,7 +247,7 @@ because you could have problems later with other windows.
 
 </p></quote>
 
-<p>Greg Turner offered to look at the problems with Wine's builtin DLL's
+<p>Greg Turner offered to look at the problems with Wine's builtin DLLs
 if someone could give a pointer to a free installer he could test with.</p>
 
 </section>
@@ -394,7 +394,7 @@ used yet (?).
 Unfortunately, stubless proxies have been the recommended (by Microsoft) mode 
 of generating code from MIDL for many years.  Increasingly, I see calls to 
 NdrClientCall2.  The only solution (aside from coding wine) is to use native 
-rpcrt4/ole32 -- but this, in turn, means you must use Windows 98 dll's or 
+rpcrt4/ole32 -- but this, in turn, means you must use Windows 98 dlls or 
 else you will bump up against the missing "Ports" API if ncalrpc is used (it 
 usually is -- this is why I keep musing that I want to take a crack at 
 implementing this).

@@ -85,9 +85,9 @@ guess the version a program needs.
 
 <ul>
 
-<li />First the version detection looks onto the native dll's provided.
+<li />First the version detection looks onto the native dlls provided.
 This is necessary since most programs are able to run on
-win95/98 as well as on nt4. The native dll's are not that tolerant.
+win95/98 as well as on nt4. The native dlls are not that tolerant.
 
 <li />The most important information is the subsystem version (pe-exe-
 header). If this version is &gt;=4 the executable is a 'real' (not win32s)
@@ -95,9 +95,9 @@ program. This value is constant for all subsequently versions of
 windows (win95/98/nt4/nt5).
 
 <li />Unfortunately there is no documented way to detect if a given set
-of native dll's and a program is a win95/98 (ascii) or nt4/5
+of native dlls and a program is a win95/98 (ascii) or nt4/5
 (unicode) version of the program. I solved this by looking into the
-import-table of the native dll's. All system-dll's (comctl32, comdlg32,
+import-table of the native dlls. All system-dlls (comctl32, comdlg32,
 shell32, ole32) are importing the ntdll. Any try to distinct by any
 fields in the pe header or by the version resource does not work.
 

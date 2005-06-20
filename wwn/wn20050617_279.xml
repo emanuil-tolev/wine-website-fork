@@ -305,7 +305,7 @@ admit my configure check is not that good. The FFMpeg build
 the static lib by default and it's not likely you find a shared version
 lying somewhere when building Wine.</p></quote>
 
-<p>Marcus Meissner wondered if separate DLL's could be build to access
+<p>Marcus Meissner wondered if separate DLLs could be build to access
 FFMpeg and then dropped in to provide the functionality.  It would sort
 of turn it into more of a packaging issue:</p>
 <quote who="Marcus Meissner"><p>
@@ -313,7 +313,7 @@ What I think of is putting all codecs that can benefit from libavcodec
 into a wine-quartz-avcoded.rpm which contains one (1) q_avcodec.dll which can
 register all these filters.
 </p><p>
-So just 1 add-on RPM to install additionaly.
+So just 1 add-on RPM to install additionally.
 </p><p>
 Since this can be provided by external contributors a distributor would not
 have to worry about libavcoded related problems.
@@ -365,11 +365,11 @@ For more details on that effort, see WWN issues
 <a href="http://www.winehq.com/?issue=275#Webcams%20&amp;%20MSN%20Messenger">#275</a>, and 
 <a href="http://www.winehq.com/?issue=276#Video%20Driver%20Infrastructure">#276</a>.
 He posted another patch this week that implemented more functionality.  
-Messenger 6.2 is now closer to working with builtin DLL's.  Maarten
+Messenger 6.2 is now closer to working with builtin DLLs.  Maarten
 described how to get it running, but it doesn't sound like it's for the
 faint of heart:</p>
 <quote who="Maarten Lankhorst"><p>
-MSN Messenger 6.2 (!!) seems to run fairly well with only builtin dll's,
+MSN Messenger 6.2 (!!) seems to run fairly well with only builtin dlls,
 from what I can tell the only real thing missing is CreateTextServices
 in riched20.dll, SSL support and urlmon's obtainuseragent (or
 something), webcams will work without any additional native dll now, if
@@ -416,12 +416,12 @@ in config), because else smilies appear to be invisible.
 What I miss however, is the icon in the system tray, while this works
 fine under KDE it really *HURTS* not to have it in gnome.
 </p><p>
-I currently use the following native dll's:
+I currently use the following native dlls:
 msvcp60.dll/RTC{DLL,RES,RTP}.dll
 </p><p>
 The above 4 aren't really interesting, as they are required by the
 mozilla activeX control, and not worth implementing. I can't remember
-wether it was installed by mozilla activeX, but I believe it was.
+whether it was installed by mozilla activeX, but I believe it was.
 </p><p>
 What is more interesting is that there is now only 1 file needed for msn
 6.2 to work builtin (MSN+ works perfectly too):

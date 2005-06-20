@@ -119,7 +119,7 @@ a page</a> dedicated to Wine.  </p>
 <p>Travis Michielsen posted a message requesting some ideas on 
 implementing the advapi32.dll - the cryptography API that is
 being used in more and more applications.  Currently Microsoft
-splits this into several small DLL's and Travis was wondering
+splits this into several small DLLs and Travis was wondering
 if he should use the same architecture or simply create one
 monolithic DLL.  One large DLL would prevent using the smaller
 native versions, but it would also be easier to implement using

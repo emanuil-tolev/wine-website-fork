@@ -72,7 +72,7 @@ Alexandre then moved on to the big items that must be worked on.
 DLL separation is still on the plate.  Yes, we've been trying to 
 do that for years,
 but now we're just down to separation of kernel32, ntdll, user32,
-and gdi32.  Not much work is actively being done since those DLL's
+and gdi32.  Not much work is actively being done since those DLLs
 can never be replaced with native components.  So it remains on
 the to-do list, but not as a priority.
 The config has to go into the registry and the config file must
@@ -576,7 +576,7 @@ recognize certain constructs.  For example, gcc and MSVC will write completely
 different constructs with different calling conventions.  Marcus
 opened up one of the digital camera drivers he wrote for gphoto and showed what
 it did and various constructs it used.  He moved on to discussing the
-implementation of stub DLL's.  The high-level needs of Wine can get more info on
+implementation of stub DLLs.  The high-level needs of Wine can get more info on
 what needs to be done by implementing stubs and fleshing them out.
 </p><p>
 --

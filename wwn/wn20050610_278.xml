@@ -129,7 +129,7 @@ much trouble they go through to sweep it under the rug.</p>
 Steam has been sort of working with Wine for a while, although there's been
 some difficulty getting it to run.  The notable change with this howto compared
 to past attempts is that it's no longer necessary to install Internet Explorer.
-A bunch of native DLL's are still required and instructions for installing
+A bunch of native DLLs are still required and instructions for installing
 them are given.  
 </p>
 </section>
@@ -206,7 +206,7 @@ Christian Costa sent a large patch in for Quartz and described it:</p>
 <quote who="Christian Costa"><p>
 
 This wrapper only support rle, msvideo1 and mjpeg for now.
-To enable support for it, download lastest FFMpeg package, built it and 
+To enable support for it, download the latest FFMpeg package, build it and 
 install it.
 Also copy avcodec.h, rational.h and common.h into a ffmpeg directory 
 created in a
@@ -254,12 +254,12 @@ which I mailed on May 15?
 So far I haven't received any replies, despite this probably being rather
 interesting, given that it is implemented by many of our winmm threads...
 </p><p>
-Or should this remain untested until I will have a sizeable amount of
+Or should this remain untested until I have a sizeable amount of
 time for testing myself during LinuxTag?
 </p></quote>
 
 <p>The patch from May required some work to set up properly, but has
-the potential improve anything highly dependent on the scheduler, such
+the potential to improve anything highly dependent on the scheduler, such
 as games.  Andi described the patch:</p>
 <quote who="Andreas Mohr"><p>
 That stuff will require a REAL self-made kernel,
@@ -328,7 +328,7 @@ the easy way to make something work.  Paul Vriens asked this week
 about something like that:</p>
 <quote who="Paul Vriens"><p>
 
-I've just finished another test for NtQuerySystemInformatio. In this
+I've just finished another test for NtQuerySystemInformation. In this
 test I test the structure SYSTEM_PROCESS_INFORMATION. The structure is
 however different for NT4.
 </p><p>
@@ -369,7 +369,7 @@ reviewing the applications that Google forwards to us. So now if your
 application gets rejected you know who's to blame ;-)
 </p></quote>
 
-<p>In a different thread, Dan Kegel gave an update of the number of
+<p>In a different thread, Dan Kegel gave an update on the number of
  applications received so far.  Later statistics put the average at around
  320 per day.  All in all, there's going to be a lot of competition,
  which can only be a good thing for a lot of open source projects.
@@ -378,7 +378,7 @@ application gets rejected you know who's to blame ;-)
 Google hasn't sent out any applications to
 the mentoring organizations (e.g. Wine) yet,
 but they did just release a breakdown of the
-number of proposals recieved for each project.
+number of proposals received for each project.
 The count for Wine is at 77!
 No idea how many of those will make it through
 the selection process, but at least a few
@@ -488,13 +488,13 @@ relatively easy Cocoa work that's mostly done already.
 More economically visible than the user base, however, is the almost
 overnight growth in Wine's potential market Apple's decision has caused.
 Right now, there are quite a few small firms roughly the size of
-Codeweavers that make a majority of their money JUST porting games from
+CodeWeavers that make a majority of their money JUST porting games from
 Wintel to OSX on PowerPC. As we know, porting these programs with Wine
 is far more efficient than rewriting the code from scratch to use
 completely different APIs, even if we have to expand Wine a little in
 the process. Moreover, as Wine gets better and better it becomes
 increasingly easier to port applications - I'm sure our users (and
-Transgaming's customers) wouldn't mind games working better in the free
+TransGaming's customers) wouldn't mind games working better in the free
 version of Wine. In economic terms, that not only means that our
 production technology is much better, it means we face increasing
 returns to scale: we can provide the same service cheaper, and the
@@ -502,14 +502,14 @@ advantage is increasingly ours the more we do it.
 </p><p>
 Simply put, with Apple's move to x86 companies using Wine now have the
 potential to displace these small porting firms very quickly. Since
-Codeweavers is currently the only company of Wine experts out there, I
+CodeWeavers is currently the only company of Wine experts out there, I
 can't think of a better firm to enter this newly changed market. If I
-were Codeweavers, I'd strongly consider investing in a Cocoa developer
+were CodeWeavers, I'd strongly consider investing in a Cocoa developer
 and a development kit, and put him to work making a Cocoa version of the
-Crossover interface. At the very least, I'd give Apple a call and see if
+CrossOver interface. At the very least, I'd give Apple a call and see if
 they have any desire to help.
 </p><p>
-And Apple should be helping a lot. Now, I can't be sure if Codeweaver's
+And Apple should be helping a lot. Now, I can't be sure if CodeWeavers
 don't have a secret agreement with Apple already (it would certainly be
 Apple's style), nor can I be sure that Apple isn't already secretly
 forking Wine (much like they did with Konqueror). However, the point

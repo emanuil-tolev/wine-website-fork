@@ -755,7 +755,7 @@ need to fetch the real libc handle?  It seems to me RTLD_NEXT should
 be enough. </quote></p>
 
 <p>Ove thought it might not be enough and wondered about other
-DLL's breaking it,
+DLLs breaking it,
 <quote who="Ove Kaaven">
 I'm not sure, what happens if opengl32.dll.so or d3d8.dll.so links against
 a libGL.so that links against libpthread.so that overrides fork() ? Would

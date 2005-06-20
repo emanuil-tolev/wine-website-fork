@@ -330,9 +330,9 @@ directory and you are back.</quote></p>
 <topic>Utilities</topic>
 <p>Back in <a href="http://www.winehq.org/index.php?issue=156#Windows%20API%20Database%20(cont'd)">issue #156</a>
 we discussed building a 
-table or database of how Windows DLL's are interrelated.
+table or database of how Windows DLLs are interrelated.
 By running a perl utility you can scan a Windows installation
-to locate DLL's and dump API imports and exports using
+to locate DLLs and dump API imports and exports using
 winedump.  
 Dave Miller wrote in to announce more work he'd done on this tool:</p>
 <quote who="Dave Miller"><p>

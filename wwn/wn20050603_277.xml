@@ -160,7 +160,7 @@ There does seem to be code within Wine to have it run on SPARC machines,
 but it currently does not seem to compile, at least on the Solaris
 version.
 </p><p>
-I have attached a small patch that allows me to get throught the 'make
+I have attached a small patch that allows me to get through the 'make
 depend' section of the compile.  Since it is my first patch, please look
 at and let me know what I did wrong :)
 </p></quote>
@@ -222,7 +222,7 @@ already rejected them.  I think there are only one or two essential ones now.
 </p><p>
 Good idea about the autoconf test for gas support, That's not hard to do, so  
 I'll contribute this ASAP. Sun's as doesn't work (on x86 anyway) the operand 
-orders are different to gas so it won't assemble as expected.
+orders are different from gas so it won't assemble as expected.
 </p><p>
 You don't need gnu ld at all, x86 Solaris ld works fine. My GCC is built to 
 use gas + Solaris ld so I can use it to build kernel modules. Aside from 
@@ -253,7 +253,7 @@ to be using Solaris 8, while Chuck was using 9.  As a result, Chuck
 uncovered an issue:</p>
 <quote who="Chuck Hall"><p>
 
-Started to go through this and found something intresting.  lwp.h does
+Started to go through this and found something interesting.  lwp.h does
 exist and is found, so HAVE_SYS_LWP_H is defined.  The test for
 _lwp_create fails.  Looking a bit deeper I found that the lwp.h for
 Solaris 9 is different from the one in Solaris 10 (which is what I am
@@ -289,9 +289,9 @@ least for copy protection that needs a kernel driver to work):
 <ol>
  <li>Implement a WINE implementation of that kernel driver (in the same way 
 various stock windows kernel drivers have been implemented). Problem with 
-this is that there is a big DMCA risk (which is why AFAIK its been rejected)
+this is that there is a big DMCA risk (which is why AFAIK it's been rejected)
 </li>
- <li>Implement a fake NTOSKRNL that has just the entrypoints for accessing and 
+ <li>Implement a fake NTOSKRNL that has just the entry points for accessing and 
 loading copy protection drivers (the set of kernel calls needed by the copy 
 protection drivers is only a very small subset of the total set of kernel 
 calls and AFAIK none of them are hardware related)<br />
@@ -387,13 +387,13 @@ is printed ok but after that the app crashes.
 I use LPD for printing and my command line from wine is 
 'lpr -Pmyprinter'. I also try to print without MFC support 
 i.e creating the printer DC by hand etc - the crash is the 
-same, it follows EndDoc() call.
+same, it follows the EndDoc() call.
 </p><p>
-There is no crash like this at the same linux configuration using 
+There is no crash like this in the same linux configuration using 
 in a 'pure' Win32 simple application without MFC though the code 
 for printing is the same. 
 </p><p>
-When i print to file, all is ok. So , my current workaround is 
+When i print to file, all is ok. So, my current workaround is 
 printing to a temp file and then send the file to lpr.
 </p><p>
 I use RH9.0, wine20050419. My [spooler] section in config is the 

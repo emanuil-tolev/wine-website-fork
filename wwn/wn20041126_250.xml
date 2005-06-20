@@ -539,7 +539,7 @@ I took some screenshots.
 http://sidenet.ddo.jp/winetips/files/</a></ul></p></quote>
 
 <p>If you dissect the script you'll notice a lot of what it
-does is install some proprietary DLL's.  Specifically, DCOM98,
+does is install some proprietary DLLs.  Specifically, DCOM98,
 MFC 4.0, and Microsoft Installer.  So yes, it's cheating and
 Wine isn't running these completely out of the box.  However,
 you can run them.  </p>

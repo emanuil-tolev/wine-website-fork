@@ -251,22 +251,22 @@ more like saws and hammers.&lt;g&gt;.</quote></p>
 	enddate="03/17/2003"
 >
 <topic>Utilities</topic>
-<p>Brad Campbell needed some help determining what DLL's were
+<p>Brad Campbell needed some help determining what DLLs were
 imported by his app:</p>
 <quote who="Brad Campbell"><p>
 I'm using wine in a small control system to run a gui win32 program.
-I had an idea that I could determine what dll's this program used and 
+I had an idea that I could determine what dlls this program used and 
 only including the wine.dll.so files that were required to run this program.
 </p><p>
 I started by doing a strings on the .exe file and using that to 
 determine which .dlls it referenced. I thought I could use the same 
-process to determine which dll's were then referenced by the dll's the 
-.exe pulled in. Plus including the core dll's by default.
+process to determine which dlls were then referenced by the dlls the 
+.exe pulled in. Plus including the core dlls by default.
 </p><p>
 Am I missing something, or will this work ?
 </p><p>
 I'm in the process of developing a batch file to do it for me, is there 
-a more accurate way of determining which dll's a dll references than 
+a more accurate way of determining which dlls a dll references than 
 doing a text search for dll names in the binary?
 </p></quote>
 
@@ -288,7 +288,7 @@ yet, not your case I guess).
 </p></quote>
 
 <p>Winedump worked fine on Brad's executable, but he wasn't able to
-run it on Wine's own DLL's.  Since most DLL's import other ones 
+run it on Wine's own DLLs.  Since most DLLs import other ones 
 he couldn't determine the minimum ones he needed.  Rather than using
 +loaddll he thought it might be better to just manually check the
 imports in each DLL makefile.  Dmitry Timoshkov offered another

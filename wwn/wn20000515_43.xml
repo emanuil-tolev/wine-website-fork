@@ -55,7 +55,7 @@ This change impacted Michael Cardenas' project:
 <quote who="Michael Cardenas">
 I just picked up the latest cvs tree and made the necessary changes to
 my project for the dll separation. To get my project to link I had to
-explicitly link a number of dll's including:
+explicitly link a number of dlls including:
 <ul>
 <li />libcomdlg32.so
 <li />libcomctl32.so
@@ -156,11 +156,11 @@ of it (as it's done with XFree, KDE...)
 Michael then explained that Deneba ships canvas as an executable +
 libcv7.so. Here  libcv.so is just libwine with the name and the soname
 changed (in the configure scripts...), <quote who="Michael Cardenas">
-I think that having a ton of little dll's all over for wine is probably not
+I think that having a ton of little dlls all over for wine is probably not
 good for developers since it will introduce a bunch of linking problems,
 and cause more hassles creating installers for new apps and worrying about
 .so files loading properly, etc. This approach would introduce a benefit
-though, because we won't have to include all the extra dll's in our
+though, because we won't have to include all the extra dlls in our
 distribution, which will allow for smaller installers and faster downloads.
 It also allows us to fix a problem in a particular dll and distribute just
 that dll.

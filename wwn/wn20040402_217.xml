@@ -95,7 +95,7 @@ using custom ".owm" installation scripts.  These scripts vary
 in complexity and at the most basic level just download and
 run an application installer.  At the other end of the spectrum
 it's possible to tell the script to manually extract cab files
-and use native DLL's (using Wine AppDefaults in the config
+and use native DLLs (using Wine AppDefaults in the config
 file.)  From their
 <a href="http://www.ibiblio.org/onebase/onebase-linux.org/About/aboutol.html">about</a>
 page:</p>

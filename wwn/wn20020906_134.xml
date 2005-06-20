@@ -232,7 +232,7 @@ patches to ReWind, so it's considered LGPL).
 
 
 <section
-  title="Native vs. Builtin DLL's"
+  title="Native vs. Builtin DLLs"
   subject="Press: Running Windows Games with WineX 2.1"
   archive="http://www.winehq.org/hypermail/wine-devel/2002/08/0430.html"
   posts="5"
@@ -241,8 +241,8 @@ patches to ReWind, so it's considered LGPL).
 <topic>Documentation</topic>
 <p>
 Jas Sandys-Lumsdaine wanted to know exactly how much better or
-worse it was to use native Windows DLL's instead of the corresponding
-built-in ones.  Francous Gouget quickly explained,
+worse it was to use native Windows DLLs instead of the corresponding
+built-in ones.  Francois Gouget quickly explained,
 
 <quote who="Francois Gouget">
  This very much depends on the application. Some application will work
@@ -252,7 +252,7 @@ built-in ones.  Francous Gouget quickly explained,
  native libraries (e.g. from a Windows partition) than with the builtin
  ones.</quote>
 </p>
-<p>Jas still didn't understand why native DLL's wouldn't always
+<p>Jas still didn't understand why native DLLs wouldn't always
 work:</p>
 <quote who="Jas Sandys-Lumsdaine"><p>
 Assuming native Windows dlls etc are correct (by definition of what Wine's

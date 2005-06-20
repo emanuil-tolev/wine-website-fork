@@ -300,7 +300,7 @@ upstream code is released meer weeks later.
 </p><p>
 Of course there still a small problem of having to separate the code into
 MS compatible COM objects and DLLs... I will have to benchmark the speed
-impact of stubbing the MS dll's into khtml.dll/kjs.dll ecetra, instead of
+impact of stubbing the MS dlls into khtml.dll/kjs.dll ecetra, instead of
 replicating the exports more natively.
 </p></quote>
 

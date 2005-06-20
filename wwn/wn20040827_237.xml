@@ -476,7 +476,7 @@ pointed out the latest CVS might contain less since a very recent patch
 corrected calls to GetWindowLongA.  Vincent reran the test and found things
 improved!  We dropped to 270!  (Sorry, I just got done watching <i>The Daily
 Show</i>, so pretend Jon Stewart is reading this paragraph out loud.)  Rolf
-Kalbermatter did point out that calls in the shell related DLL's might not
+Kalbermatter did point out that calls in the shell related DLLs might not
 be a problem.  In a different thread, Vincent described how this has been
 overlooked:</p>
 <quote who="Vincent Beron"><p>

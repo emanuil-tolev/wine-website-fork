@@ -359,7 +359,7 @@ windoze APIs.
 For example, KDX implements it's own GUI, it does not use the windoze API 
 for that.  Also, KDX even implements it's own graphics routines, it does 
 not use the windoze GDI functions (except for the final step of getting 
-the images onto the screen).  KDX loads no obscure DLL's, it's just a 
+the images onto the screen).  KDX loads no obscure DLLs, it's just a 
 single .exe file.   It does not use MDI or any crap like that.  It does 
 not access the registry.  It does not use MFC.  So I think it would be 
 much easier for WINE than your average windoze program.

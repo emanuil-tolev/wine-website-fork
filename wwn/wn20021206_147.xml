@@ -327,7 +327,7 @@ require it - but there are a few points to consider:
 <li> It is C++. So far, all of WINEs dlls are plain C. Is this really a
 rule, or just a result of the current areas of focus? I can't really
 de-C++ khtml and co, but I'm unsure as to whether it's okay to add a
-requirement for a working C++ compile environment on core dll's.</li>
+requirement for a working C++ compile environment on core dlls.</li>
 
 <li> It is somewhat big, several megabytes of new code. Hopefully I can chop
 it down after removing a lot of the unneeded KDE and QT code I currently
@@ -551,14 +551,14 @@ C&gt;</code></ul>
 
 
 </section><section 
-	title="Self-Registering DLL's" 
-	subject="Registering DLL's"
+	title="Self-Registering DLLs" 
+	subject="Registering DLLs"
 	archive="http://www.winehq.org/hypermail/wine-devel/2002/12/0150.html" 
 	posts="5" 
 	startdate="12/04/2002"
 >
 <topic>Patches</topic>
-<p>Jeff Smith had a question about making DLL's enter their
+<p>Jeff Smith had a question about making DLLs enter their
 own registry entries:</p>
 <quote who="Jeff Smith"><p>
 I was looking at entry C.5 of the 0.9 Todo list:
@@ -621,7 +621,7 @@ just start submitting patches, then.
 
 </section><section 
 	title="Configuring Wine" 
-	subject="Registering DLL's"
+	subject="Registering DLLs"
 	archive="http://www.winehq.org/hypermail/wine-devel/2002/12/0150.html" 
 	posts="2" 
 	startdate="12/04/2002"

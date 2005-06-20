@@ -373,7 +373,7 @@ run and the OS is self-hosting using
 <a href="http://www.mingw.org">mingw</a>.  The plan is to
 use Wine as the Win32 subsystem once DLL separation is
 complete.  The main obstacles are:
-<ul><li />Building the DLL's under Mingw 
+<ul><li />Building the DLLs under Mingw 
     <li />DLL separation - ReactOS can't use internal
           wineserver functions
     <li />Interfacing ReactOS and the Wine debugger

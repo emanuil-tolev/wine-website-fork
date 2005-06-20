@@ -236,7 +236,7 @@ the FreeType header files.</p>
   such an error?           </p></quote>
  
 <p>Eric Pouech thought the problem was a loader issue.  At some point the
-  native DLL's weren't being registered most likely because Wine's
+  native DLLs weren't being registered most likely because Wine's
   initialization functions weren't being called. </p>
  
 <p>Francois Gouget was digging through configure.in and noticed that

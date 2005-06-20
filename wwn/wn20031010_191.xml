@@ -151,7 +151,7 @@ version. The uxtheme aware version contains lots of changes and uses uxtheme for
 theming. To use uxtheme you need to add uxtheme support to the dlls that need
 it which looks like a huge job. Perhaps this is something post Wine-1.0?</p></quote>
 
-<p>Dimi wondered why two DLL's were needed and Roderick explained:</p>
+<p>Dimi wondered why two DLLs were needed and Roderick explained:</p>
 <quote who="Roderick Colenbrander"><p>
 The "old" dll that MS ships with WindowsXP is comctl32.dll version 5.x which 
 is the same as on other Windows versions.

@@ -127,9 +127,9 @@
       <td>Native DLL overrides</td>
       <td class="good"><a href="http://www.winehq.org/site/docs/wine-user/config-dll">Good</a></td>
       <td><a href="{$root}/site/?issue=46#Feature:%20DLL%20overrides%20by%20Ove%20K%E5ven">#46</a>,
-          <a href="{$root}/site/?issue=134#Native%20vs.%20Builtin%20DLL's">#134</a>,
-          <a href="{$root}/site/?issue=180#Configuring%20Native%20OLE%20DLL's">#180</a>,
-          <a href="{$root}/site/?issue=200#Using%20Native%20DLL's%20in%20a%20Winelib%20App">#200</a></td>
+          <a href="{$root}/site/?issue=134#Native%20vs.%20Builtin%20DLLs">#134</a>,
+          <a href="{$root}/site/?issue=180#Configuring%20Native%20OLE%20DLLs">#180</a>,
+          <a href="{$root}/site/?issue=200#Using%20Native%20DLLs%20in%20a%20Winelib%20App">#200</a></td>
       <td class="pct95">95% complete</td>
       <td></td>
     </tr>
@@ -406,7 +406,7 @@
       <td>Wine Porting Tool (winemaker)</td>
       <td class="outdated">Outdated</td>
       <td><a href="{$root}/site/?issue=66#A%20tool%20to%20help%20Wine%20making">#66</a>,
-          <a href="{$root}/site/?issue=101#Using%20Native%20DLL's">#101</a>,
+          <a href="{$root}/site/?issue=101#Using%20Native%20DLLs">#101</a>,
           <a href="{$root}/site/?issue=189#Winelib:%20Advantages%20and%20Disadvantages">#189</a>,
           <a href="{$root}/site/?issue=203#Winelib%20Porting%20Report">#203</a>,</td>
       <td class="pct60">60% complete</td>

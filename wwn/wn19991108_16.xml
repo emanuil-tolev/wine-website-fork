@@ -42,7 +42,7 @@ going on around Wine (the Un*x Windows emulator).
 Mel Gorman reported some issues while using WineLib:
 
 <quote who="Mel Gorman">I'm writing a plugin for <a href="http://www.xmms.org/">XMMS</a> for
-playing VQF's using WineLIB and windows DLL's. I had a nice amount of
+playing VQF's using WineLIB and windows DLLs. I had a nice amount of
 success in getting a plugin to work but I had to separate XMMS and the
 plugin into two separate programs which is kruddy as hell. When I try
 to merge them together, there is segfaults every direction when the

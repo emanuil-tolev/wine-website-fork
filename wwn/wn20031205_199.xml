@@ -474,7 +474,7 @@ already did. </p></quote>
 </quote></p>
 
 <p>The real problem with InstallShield is its use of OLE and DCOM.  
-Running with native versions of those DLL's helps, but obviously it's
+Running with native versions of those DLLs helps, but obviously it's
 not the desired solution.  Rob Shearman mentioned some of the problems
 with native OLE/DCOM:</p>
 <quote who="Robert Shearman"><p>
@@ -557,7 +557,7 @@ of any (current) effort to remedy that?
 	enddate="12/05/2003"
 >
 <topic>Debugging</topic>
-<p>Imagehlp.DLL is one of those odd system DLL's that live on the periphery
+<p>Imagehlp.DLL is one of those odd system DLLs that live on the periphery
 of implementation.  It's purpose is to analyze the structure of a PE file,
 such as another DLL.  This library contains a slew of functions for working
 with and manipulating that structure.  It's critical for debugging and

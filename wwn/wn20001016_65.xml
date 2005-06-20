@@ -334,7 +334,7 @@ applications (corporate user).
 <p />
 
 The GXExplorer works quite good with wine but you have to use some
-native dll's since it's using quite a bit of the ole stuff. Last time
+native dlls since it's using quite a bit of the ole stuff. Last time
 I tried (some months ago) I had to use ole* dlls and many registry
 keys from a native windows. This program is a good test for the build
 in shell32, comctl32 and ole* since it uses many advanced features.

@@ -256,7 +256,7 @@ After an hour break we resumed discussions at 1:30.
 Next up, Tom Wickline put together a presentation about getting applications to
 run.  Tom has worked quite a bit with Wine and CrossOver Office and
 had some tricks for getting things to work.  The key to just getting
-something to run seems to be using native Windows DLL's.  He has a copy
+something to run seems to be using native Windows DLLs.  He has a copy
 of Windows 98 to copy things to and from.  Generally he starts with
 CrossOver Office and adds the following things in this order:
 <ul>
@@ -273,20 +273,20 @@ and games he's tested.
 </p><p>
 
 One problem with this approach is it relies on access to native
-versions of DLL's.  The goal of Wine is to not have this requirement
+versions of DLLs.  The goal of Wine is to not have this requirement
 which of course leads to the magnitude of the project.  It did however
 lead to an interesting revelation by Mark Tempel of a useful way to
 debug problems.  If you simply rename an executable it will first 
-search the local directory for all of the DLL's it needs to run.  This
+search the local directory for all of the DLLs it needs to run.  This
 can lead to many useful scenarios:
 <ul>
 	<li>On Windows you can simply replace some of the major	
-	controls by copying Wine PE DLL's in the local directory.
+	controls by copying Wine PE DLLs in the local directory.
 	It's probably a bad idea to replace any in c:\windows\system
 	because it may (and Mark said probably) would prevent Windows
-	from booting.  The ReactOS guys already maintain PE DLL's 
+	from booting.  The ReactOS guys already maintain PE DLLs 
 	that Windows could use natively.</li>
-	<li>A trial and error process of replacing some DLL's will
+	<li>A trial and error process of replacing some DLLs will
 	definitely find shortcomings with Wine.  </li>
 </ul></p><p>...</p><p>
 

@@ -192,7 +192,7 @@ Half-Life's intro.  Tim made the driver available to Wine under the
 provisions of the LGPL.  
 
 The new DLL led to some discussion of exactly how to structure the
-codebase to accept some DLL's.  After Mike submitted the patch, 
+codebase to accept some DLLs.  After Mike submitted the patch, 
 Dmitry Timoshkov requested,
 <quote who="Dmitry Timoshkov">
  Mike, could you put the iccvid sources at the same place
@@ -208,7 +208,7 @@ appropriate place.  I don't mind either way...</quote></p>
 consistency.  If the ICCVID driver was moved to wine/dlls then
 MSRLE32 should be moved there as well.  Dimi Paun was in favor
 of a flatter directory structure and advocated it be placed with
-the other DLL's.  Eric Pouech disagreed,
+the other DLLs.  Eric Pouech disagreed,
 <quote who="Eric Pouech">
  I still don't see the point of having a unique dlls/ flat structure. 
  Which more than 100 dlls right now, I do think we need to structure it. 

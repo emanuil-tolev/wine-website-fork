@@ -256,7 +256,7 @@ Miguel de Icaza showed up to represent Mono and discuss some of their recent Win
 work (see the related thread in this issue for more info).  Miguel was very 
 happy with their current patch because it didn't require much work for them.
 Alexandre thought the real solution to Mono integration involved a deeper issue
-and hacking Wine DLL's to turn them into ELF libraries wasn't the way to do it.
+and hacking Wine DLLs to turn them into ELF libraries wasn't the way to do it.
 He went on to mention the need for a way to <quote who="Alexandre Julliard">
 turn a normal unix app into a winelib
 app on the fly, basically by dlopening libwine.</quote>  Jeremy White felt
@@ -268,8 +268,8 @@ tree,
 </quote></p>
 
 <p>Steven Edwards showed up to represent the ReactOS project.  Currently Steven's
-work involves splitting up 16/32 bit DLL's.  He mentioned that the ReactOS project
-was primarily concerned with a handful of DLL's:
+work involves splitting up 16/32 bit DLLs.  He mentioned that the ReactOS project
+was primarily concerned with a handful of DLLs:
  ole* shlwapi, winmm, comctl32, comdlg32 and shell32.  
 At one point Dimi thought a dsp2make utility would be a useful addition and Steven 
 mentioned ReactOS had one.  He went on to discuss some future plans,
