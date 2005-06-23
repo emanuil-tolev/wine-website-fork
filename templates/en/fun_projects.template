@@ -435,6 +435,17 @@
   <h2>Miscellaneous Projects</h2>
   This is a catch-all category for all sort of strange (and sometimes cute) ideas.
 
+  <h3 class=todo>wined3d use wgl</h3>
+  Make wined3d (or d3d8) use wgl (windows opengl) instead of glx. (just search for glx commands and
+  replace then with the wgl equivalents) Doing so would enable wine's d3d to run on windows in place of
+  the windows driver and without the rest of WINE which would greatly help in debugging. It would also 
+  allow wined3d to use the wgl implementation in wine.</p>
+  <ul>
+    <li>workers: <i>wanted</i>
+    <li>status: <i>to do</i>
+    <li>updated: Jun 22, 2005
+  </ul>
+
   <a name="cross"></a><h3 class=inprogress>Cross referencing the Windows executables and libraries</h3>
   <p>The idea is to write a Perl script that analyzes the Windows dlls and executables of a 
   regular Windows installation and cross references them. This would generate Web pages 
