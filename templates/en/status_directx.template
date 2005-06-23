@@ -36,7 +36,7 @@
           <a href="{$root}/site/?issue=253#Direct3D%209">#253</a>,
           <a href="{$root}/site/?issue=257#Direct3D%20Update%20and%20Roadmap">#257</a></td>
       <td class="pct50">50% complete</td>
-      <td>Jason Edmeades,<br><a href="http://www.oliverthered.f2s.com/projects/wine/">Oliver Stieber</a>,<br>Rapha&euml;l Junqueira</td>
+      <td>Jason Edmeades,<br><a href="http://directxwine.sourceforge.net/">Oliver Stieber</a>,<br>Rapha&euml;l Junqueira</td>
     </tr>
     <tr>
       <td>d3dx8.dll</td>
@@ -143,7 +143,7 @@
     </tr>
     <tr>
     <td>dmusic.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directX/htm/directmusic.asp">MSDN: DMusic</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/DMusicC/htm/directmusic.asp">MSDN: DMusic</a></td>
       <td><a href="{$root}/site/?issue=175#DMusic%20Interfaces">#175</a>,
           <a href="{$root}/site/?issue=203#DirectMusic%20Update">#203</a></td>
       <td class="pct5">5% complete</td>
@@ -166,27 +166,27 @@
     <td colspan="5"><strong>DirectShow</strong></td>
     <tr>
       <td>amstream.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directX/htm/multimediastreaming.asp">MSDN: Multimedia Streaming </a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directshow/htm/multimediastreaming.asp">MSDN: Multimedia Streaming </a></td>
       <td>None</td>
       <td class="pct5">5% complete</a></td>
       <td>Christian Costa</td>
     </tr>
       <td>devenum.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directx/htm/usingthesystemdeviceenumerator.asp">MSDN: Device Enumerator</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directshow/htm/usingthesystemdeviceenumerator.asp">MSDN: Device Enumerator</a></td>
       <td>None</td>
       <td class="pct90">90% complete</td>
       <td>Christian Costa,<br>Robert Shearman</td> 
     </tr>
     <tr>
      <td>qcap.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directX/htm/wdmvideocapturefilter.asp">MSDN: Video Capture Filters</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directshow/htm/wdmvideocapturefilter.asp">MSDN: Video Capture Filters</a></td>
       <td>None</td>
       <td class="pct40">40% complete</a></td>
       <td>Maarten Lankhorst</td>
     </tr>
     <tr> 
       <td>quartz.dll (framework)</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx81_c/directx_cpp/htm/directshow.asp">MSDN: DShow</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directshow/htm/aboutdirectshow.asp">MSDN: DShow</a></td>
       <td><a href="{$root}/site/?issue=122#Quartz.dll%20Removal">#122</a>,
           <a href="{$root}/site/?issue=177#DirectShow%20/%20Quartz%20Patches">#177</a>,
 	  <a href="{$root}/site/?issue=199#DirectShow%20/%20Quartz%20Status">#199</a>,
@@ -229,14 +229,14 @@
     </tr>
     <tr>
       <td>dpnhpast.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directx/play/understand/networking/ports.asp">MSDN: DirectPlay & Ports</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/directx9_c/directx/play/ref/ifaces/idirectplaynathelp/idirectplay8natresolver.asp">MSDN: DirectPlay & Ports</a></td>
       <td>None</td>
       <td class="pct5">5% complete</a></td>
       <td></td>
     </tr>
     <tr>
       <td>dsound.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx8_vb/directx_vb/audio_using_4vjj.asp?frame=true">MSDN: DSound Devices</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_m/directx/ref/microsoft.directx.directsound.asp">MSDN: DirectSound</a></td>
       <td><a href="{$root}/site/?issue=48#Merging%20DSound%20and%20WinMM%20drivers">#48</a>,
           <a href="{$root}/site/?issue=235#DSound%20Mixer%20Speedup">#235</a></td>
       <td class="pct90">90% complete</a></td>
@@ -244,7 +244,7 @@
     </tr>
     <tr>
      <td>msdmo.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directx/htm/dmofunctions.asp">MSDN: DMO Functions</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directshow/htm/dmofunctions.asp">MSDN: DMO Functions</a></td>
       <td>None</td>
       <td class="pct85">85% complete</a></td>
       <td></td>

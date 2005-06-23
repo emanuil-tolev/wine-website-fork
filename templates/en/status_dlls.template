@@ -17,6 +17,13 @@
       <th>Recent primary workers</th>
     </tr>
     <tr>
+      <td>activeds.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/adsi/adsi/adsi_functions.asp">advapi32 API calls</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Detlef Riekenberg<br></td>
+    </tr>
+    <tr>
       <td>advapi32.dll</td>
       <td class="adequate"><a href="http://www.andreavb.com/API_ADVAPI32.html">advapi32 API calls</a></td>
       <td>None</td>
@@ -61,14 +68,14 @@
     </tr>
     <tr>
       <td>cfgmgr32.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/install/hh/install/cfgmgrfn_0zua.asp">MSDN: Configuration Manager Functions</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/install/hh/install/cfgmgrfn_3abba546-6876-468e-9dc5-2cb1b286fb9f.xml.asp">MSDN: Configuration Manager Functions</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
       <td></td>
     </tr>
     <tr>
       <td>comcat.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/com/htm/comp_cat_7hri.asp">MSDN: Component Categories Manager</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/com/html/bd43ef98-2299-4c8a-9f35-bf9aceb074ab.asp">MSDN: Component Categories Manager</a></td>
       <td>None</td>
       <td class="pct80">80% complete</td>
       <td></td>
@@ -101,7 +108,7 @@
     </tr> 
     <tr>
       <td>crypt32.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnw98bk/html/thecryptoapifunctions.asp">MSDN: Crypto API Functions</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/seccrypto/security/cryptography_functions.asp">MSDN: Cryptography Functions</a></td>
       <td><a href="{$root}/site/?issue=220#Windows%20Local%20Security%20Authority">#220</a>,
           <a href="{$root}/site/?issue=230#OpenSSL%20vs.%20NSS">#230</a>,
           <a href="{$root}/site/?issue=239#Transport%20Layer%20Security:%20SSL%20vs.%20GnuTLS">#239</a></td>
@@ -166,7 +173,7 @@
     </tr>
     <tr>
       <td>imm32.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/w98ddk/hh/w98ddk/intl_1sc8.asp">MSDN: IME Interface Functions</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/intl/ime_038z.asp">MSDN: Input Method Editor Functions</a></td>
       <td>None</td>
       <td class="pct50">50% complete</td>
       <td>CodeWeavers,<br> Aric Stewart</td>
@@ -194,14 +201,14 @@
     </tr>
     <tr>
       <td>lzexpand.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/fileio/base/file_management_functions.asp">MSDN: File Management Functions</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/fileio/fs/file_management_functions.asp">MSDN: File Management Functions</a></td>
       <td>None</td>
       <td class="pct100">100% complete</td>
       <td></td>
     </tr>
     <tr>
       <td>mapi32.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/mapi/html/_mapi1book_about_the_mapi_architecture.asp">MSDN: MAPI Architecture</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/mapi/html/42a10169-99a3-4e30-a511-4854174d196f.asp">MSDN: MAPI Architecture</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
       <td>Jon Griffiths</td>
@@ -321,7 +328,7 @@
     </tr>
     <tr>
       <td>odbc32.dll</td>
-      <td class="adequate"><a href="http://www.winehq.org/Docs/wine-user/odbc.shtml">WineHQ ODBC Docs</a><br>
+      <td class="adequate"><a href="http://www.winehq.org/site/docs/wine-user/config-odbc">WineHQ ODBC Docs</a><br>
       <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vccore98/html/_core_odbc.asp">MSDN: ODBC</a></td>
       <td><a href="{$root}/site/?issue=115#ODBC%20and%20Wine">#115</a>,
           <a href="{$root}/site/?issue=167#Accessing%20ODBC%20Databases">#167</a>,
@@ -331,8 +338,8 @@
     </tr>
     <tr>
       <td>ole32.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/com/htm/comportal_3qn9.asp">MSDN: COM</a><br>
-      <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olpraboutthismanual.asp">MSDN: OLE Reference</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/com/html/3578ca42-a4b6-44b3-ad5b-aeb5fa61f3f4.asp">MSDN: COM</a><br>
+      <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/mobilesdk5/html/mob5grfolereference.asp">MSDN: OLE Reference</a></td>
       <td><a href="{$root}/site/?issue=109#MIDL%20and%20COM">#109</a>,
           <a href="{$root}/site/?issue=117#More%20COM%20Work">#117</a>,
           <a href="{$root}/site/?issue=231#COM%20and%20OLE%20Marshalling%20Tutorial">#231</a>,
@@ -347,14 +354,14 @@
     </tr>
     <tr>
       <td>oleacc.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnacc/html/actvaccess.asp">MSDN:  Active Accessibility</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnacc/html/actvaccess.asp">MSDN: Active Accessibility</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
       <td>Mike McCormack</td>
     </tr>
     <tr>
       <td>oleaut32.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olprcore_chapter20.asp">MSDN: OLE BD Core</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/oledbpart2_ole_db_core.asp">MSDN: OLE BD Core</a></td>
       <td><a href="{$root}/site/?issue=126#TransGaming%20Releasing%20Code">#126</a>,
           <a href="{$root}/site/?issue=170#Separating%2016/32%20Bit%20OLE%20Functions">#170</a></td>
       <td class="pct90">90% complete</td>
@@ -362,28 +369,28 @@
     </tr>
     <tr>
       <td>olecli32.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olpraboutthismanual.asp">MSDN: OLE Reference</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/mobilesdk5/html/mob5grfolereference.asp">MSDN: OLE Reference</a></td>
       <td>None</td>
       <td class="pct10">10% complete</td>
       <td></td>
     </tr>
     <tr>
       <td>oledlg.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olpraboutthismanual.asp">MSDN: OLE Reference</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/mobilesdk5/html/mob5grfolereference.asp">MSDN: OLE Reference</a></td>
       <td>None</td>
       <td class="pct10">10% complete</td>
       <td>Ulrich Czekalla</td>
     </tr>
     <tr>
       <td>olepro32.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olprcore_chapter20.asp">MSDN: OLE BD Core</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/oledbpart2_ole_db_core.asp">MSDN: OLE BD Core</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
       <td></td>
     </tr>
     <tr>
       <td>olesvr32.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/olpraboutthismanual.asp">MSDN: OLE Reference</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/mobilesdk5/html/mob5grfolereference.asp">MSDN: OLE Reference</a></td>
       <td>None</td>
       <td class="pct10">10% complete</td>
       <td></td>
@@ -412,7 +419,7 @@
     </tr>
     <tr>
       <td>riched32.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/indivcontrol.asp">MSDN: Rich Edit Controls</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/richedit/richeditcontrols.asp">MSDN: Rich Edit Controls</a></td>
       <td><a href="{$root}/site/?issue=127#MS%20Write%20Support">#127</a>,
           <a href="{$root}/site/?issue=137#MS%20Write%20Support%20(con't)">#137</a>,
           <a href="{$root}/site/?issue=202#Wine's%20RichEdit%20Control%20Sucks">#202</a>,
@@ -438,7 +445,7 @@
     </tr>
     <tr>
       <td>rsabase.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/security/security/microsoft_base_cryptographic_provider.asp">MSDN: Base Cryptographic Provider</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/seccrypto/security/microsoft_base_cryptographic_provider.asp">MSDN: Base Cryptographic Provider</a></td>
       <td><a href="{$root}/site/?issue=233#rsabase.dll%20Work">#233</a>,
           <a href="{$root}/site/?issue=210#Crypto%20and%20RSABASE.DLL">#210</a></td>
       <td class="pct5">5% complete<br>
@@ -475,7 +482,7 @@
     </tr>
     <tr>
       <td>setupapi.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/install/hh/install/setupapi_844n.asp">MSDN: Device Installation Functions</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/install/hh/install/setup-ref_cbb06c1d-ca20-49bd-9896-742cf4e25481.xml.asp">MSDN: General Setup Functions</a></td>
       <td>None</td>
       <td class="pct60">60% complete</td>
       <td>Eric Kohl</td>
@@ -539,14 +546,14 @@
     </tr>
     <tr>
       <td>ttydrv</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/graphics/hh/graphics/prnspool_7ig7.asp">MSDN: Printer Drivers and Spooler Components</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/graphics/hh/graphics/splarch_db01a91d-067b-42d1-b951-6ee58fdc7df3.xml.asp">MSDN: Printer Drivers and Spooler Components</a></td>
       <td><a href="{$root}/site/?issue=231#Using%20Multiple%20Graphics%20Drivers">#231</a></td>
       <td class="pct80">80% complete</td>
       <td></td>
     </tr>
     <tr>
       <td>twain32.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/still/hh/still/wia_drv_scan_7h2h.asp">MSDN: TWAIN-Compatible Applications</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/still/hh/still/WIA_drv_scan_4093579b-6122-4f3e-b811-2fbc797123c5.xml.asp">MSDN: TWAIN-Compatible Applications</a></td>
       <td><a href="{$root}/site/?issue=257#Setting%20Up%20a%20Scanner">#257</a></td>
       <td class="pct25">25% complete</td>
       <td></td>
@@ -567,7 +574,7 @@
     </tr>
     <tr>
       <td>urlmon.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/xpehelp/html/_component_Urlmon_library.asp">MSDN: Urlmon library</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/workshop/security/szone/overview/overview.asp">MSDN: URL Security Zones</a></td>
       <td>None</td>
       <td class="pct25">25% complete</td>
       <td></td>
@@ -701,7 +708,7 @@
     </tr>
     <tr>
       <td>x11drv</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/graphics/hh/graphics/dpyddi_8f1j.asp">MSDN: Display Drivers</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wceddk5/html/wce50conDisplayDrivers.asp">MSDN: Display Drivers</a></td>
       <td><a href="{$root}/site/?issue=47#Feature:%20The%20X11%20driver%20by%20Ove%20K%E5ven">#47</a>,
           <a href="{$root}/site/?issue=175#Workaround%20for%20Xvidmode%20Graphic%20Corruption">#175</a>,
           <a href="{$root}/site/?issue=183#Configuring%20Keyboard%20Layouts">#183</a>,

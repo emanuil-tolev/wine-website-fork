@@ -27,7 +27,7 @@
           <a href="{$root}/site/?issue=243#Audio%20Driver%20Auto%20Detection">#243</a></td>
       <td class="pct75">75% complete<br>(xx-)</br>
       </td>
-      <td>Christian Costa</td>
+      <td>Jeremy White</td>
     </tr>
     <tr>
       <td>aRtS</td>
@@ -89,28 +89,28 @@
     <td colspan="5"><strong>MCI drivers</strong></td>
     <tr>
       <td>CD audio driver (mcicda)</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/w98ddk/hh/w98ddk/mmedia_4s1g.asp">MCI Device Drivers</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_mci.asp">MCI</a></td>
       <td>None</td>
       <td class="pct100">100% complete</td>
       <td>Eric Pouech</td>
     </tr>
     <tr>
       <td>Wave driver (mciwave)</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/w98ddk/hh/w98ddk/mmedia_4s1g.asp">MCI Device Drivers</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_mci.asp">MCI</a></td>
       <td>None</td>
       <td class="pct60">60% complete<br>( Problems with implementing mmtask.)</td>
       <td>Eric Pouech</td>
     </tr>
     <tr>
       <td>Midi driver (mciseq)</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/w98ddk/hh/w98ddk/mmedia_4s1g.asp">MCI Device Drivers</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_mci.asp">MCI</a></td>
       <td>None</td>
       <td class="pct60">60% complete<br>( Problems with implementing mmtask.)</td>
       <td>Eric Pouech</td>
     </tr>
     <tr>
       <td>Video driver (mcianim, mciavi)</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/w98ddk/hh/w98ddk/mmedia_4s1g.asp">MCI Device Drivers</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_mci.asp">MCI</a></td>
       <td>None</td>
       <td class="pct75">75% complete<br>( Problems with implementing mmtask.)</td>
       <td>Eric Pouech,<br>Michael G&uuml;nnewig,<br>Dmitry Timoshkov</td>
@@ -154,7 +154,7 @@
     </tr>
     <tr>
     <td>MSVIDC32</td>
-      <td class="adequate"><a href="http://home.pcisys.net/~melanson/codecs/video1.txt">MS Video-1 Decoding Algorithm</a></td>
+      <td class="adequate"><a href="http://www.multimedia.cx/video1.txt">MS Video-1 Decoding Algorithm</a></td>
       <td>None</td>
       <td class="pct50">50% complete ( Only decoding is supported ) </td>
       <td>Mike McCormack</td>
@@ -162,7 +162,7 @@
     <td colspan="5"><strong>Multimedia DLLs</strong></td>
     <tr>
       <td>avicap32.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/w98ddk/hh/w98ddk/mmedia_4v91.asp">Video Capture Reference</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_video_capture_reference.asp">Video Capture Reference</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
       <td>Eric Pouech</td>
@@ -191,7 +191,7 @@
     <td colspan="5"><strong>Miscellaneous Multimedia Components</strong></td>
     <tr>
       <td>Multimedia joystick driver</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/joy_1do3.asp">Joystick Functions</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_joystick_functions.asp">Joystick Functions</a></td>
       <td>None</td>
       <td class="pct80">80% complete<br>
       Only implemented for Linux joystick API.</td>
@@ -212,7 +212,7 @@
     </tr>
     <tr>
       <td>opengl32.dll</td>
-      <td class="adequate"><a href="http://www.opengl.org/documentation/index.html">OpenGL Documentation</a></td>
+      <td class="adequate"><a href="http://www.opengl.org/documentation/spec.html">OpenGL Documentation</a></td>
       <td><a href="{$root}/site/?issue=2#Some%20musing%20about%20OpenGL%20support">#2</a>,
           <a href="{$root}/site/?issue=8#Accelerated%20OpenGL%20&%20Wine">#8</a>,
           <a href="{$root}/site/?issue=44#OpenGL%20optimization">#44</a>,
@@ -221,7 +221,7 @@
           <a href="{$root}/site/?issue=235#Doom3%20&%20Wine">#235</a>,
           <a href="{$root}/site/?issue=246#OpenGL%20Extension%20Viewer">#246</a></td>
       <td class="pct90">90% complete</td>
-      <td>Lionel Ulmer</td>
+      <td>Lionel Ulmer<br>Rapha&euml;l Junqueira</td>
     </tr>
   </table>
 </td>
