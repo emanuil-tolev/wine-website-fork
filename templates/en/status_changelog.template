@@ -2,6 +2,19 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since June 24, 2005:</p>
+
+ <ul>
+ <li>ADD -  Jacek Caban as worker to mshtml.dll</li>
+ <li>ADD -  Jacek Caban as worker to Web Browser</li>
+ <li>Remove -  Mike McCormack as worker on Web Browser</li>
+ <li>atl.dll 5% -&gt; 15%</li>
+ <li>mshtml.dll 5% -&gt; 15%</li>
+ <li>riched32.dll 40% -&gt; 25%</li>
+ <li>Web Browser 100% -&gt; 70%</li>
+ </ul>
+ <br>
+
 <p>Changes since June 23, 2005:</p>
 
  <ul>

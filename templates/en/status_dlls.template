@@ -18,7 +18,7 @@
     </tr>
     <tr>
       <td>activeds.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/adsi/adsi/adsi_functions.asp">advapi32 API calls</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/adsi/adsi/adsi_functions.asp">MSDN: ADSI Functions</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
       <td>Detlef Riekenberg<br></td>
@@ -41,7 +41,7 @@
       <td>atl.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/comsrv2k/htm/cs_pp_buildingpipecomps_zved.asp">MSDN: ATL API overview</a></td>
       <td>None</td>
-      <td class="pct5">5% complete</td>
+      <td class="pct15">15% complete</td>
       <td>Mike McCormack</td>
     </tr>
     <tr>
@@ -238,8 +238,8 @@
       <td>mshtml.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnmshtml/html/mshtmleditplatf.asp">MSDN: MSHTML Editing Platform</a></td>
       <td><a href="{$root}/site/?issue=206#MSHTML%20Changes">#206</a></td>
-      <td class="pct5">5% complete</td>
-      <td></td>
+      <td class="pct15">15% complete</td>
+      <td>Jacek Caban</td>
     </tr>
     <tr>
       <td>msi.dll</td>
@@ -426,7 +426,7 @@
           <a href="{$root}/site/?issue=238#Richedit%20Control">#238</a>,
           <a href="{$root}/site/?issue=250#No%20RichEdit20A%20Window%20Class">#250</a>,
           <a href="{$root}/site/?issue=251#RichEdit%20(con't)">#251</a></td>
-      <td class="pct40">40% complete</td>
+      <td class="pct25">25% complete</td>
       <td>Krzysztof Foltman,<br>Phil Krylov</td>
     </tr>
     <tr>
