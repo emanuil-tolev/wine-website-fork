@@ -94,7 +94,7 @@ Its main goal is to steal pens off your desk. It also serves to inform you of wh
 <section 
 	title="News: StartCom Linux"
 	subject="News"
-	archive="http://www.startcom.org/index.php?lang=en&amp;app=23">
+	archive="http://www.startcom.org/index.php?lang=en&amp;app=23"
 	posts="1"
 	startdate="06/18/2005"
 	enddate="06/24/2005"
@@ -253,7 +253,7 @@ compatible one, if needed.
 <p>Brad then went in search of ReactOS' Eric Kohl to ask about the
 ROS registry implementation.  
 That was pretty much the end of the discussion.  It wasn't clear
-if a binary registry was simply a problem in search of a solution, or
+if a binary registry was simply a solution in search of a problem, or
 if there are real performance concerns that need addressing.  Alexandre
 doesn't seem to be in favor of the idea, though some of the ideas 
 regarding separate applications do sound interesting.  </p>
@@ -698,6 +698,6 @@ tablets and using a word processor).
 </p><p>
 For anybody who is interested in moving their own Wine development to 
 Subversion and SVK, there is a page on the Wiki describing what to do at 
-<a href="http://wiki.winehq.com/SVK">http://wiki.winehq.com/SVK></a>.
+<a href="http://wiki.winehq.com/SVK">http://wiki.winehq.com/SVK</a>.
 </p></quote>
 </section></kc>
