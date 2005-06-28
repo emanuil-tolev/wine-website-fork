@@ -34,7 +34,13 @@
       <td><a href="{$root}/site/?issue=240#DirectX%209%20Roadmap">#240</a>,
           <a href="{$root}/site/?issue=244#Direct3D%209%20Work">#244</a>,
           <a href="{$root}/site/?issue=253#Direct3D%209">#253</a>,
-          <a href="{$root}/site/?issue=257#Direct3D%20Update%20and%20Roadmap">#257</a></td>
+          <a href="{$root}/site/?issue=257#Direct3D%20Update%20and%20Roadmap">#257</a>,
+          <a href="{$root}/site/?issue=258#Pirates!%20Screenshot">#258</a>,
+          <a href="{$root}/site/?issue=262#DirectX%209%20and%20HalfLife2">#262</a>,
+          <a href="{$root}/site/?issue=266#News:%20Enterprise%20Architect%20&%20DirectX9">#266</a>,
+          <a href="{$root}/site/?issue=267#Direct3D%20Update">#267</a>,
+          <a href="{$root}/site/?issue=271#DirectX%209%20-%20Merges?">#271</a>,
+          <a href="{$root}/site/?issue=273#DirectX%209%20Updated,%20Not%20Merged">#273</a></td>
       <td class="pct50">50% complete</td>
       <td>Jason Edmeades,<br><a href="http://directxwine.sourceforge.net/">Oliver Stieber</a>,<br>Rapha&euml;l Junqueira</td>
     </tr>
@@ -48,7 +54,7 @@
     <tr>
       <td>wined3d.dll</td>
       <td class="adequate"></td>
-      <td>None</td>
+      <td><a href="{$root}/site/?issue=280#WineD3D%20Fun%20Project">#280</a></td>
       <td class="pct50">50% complete</td>
       <td>Jason Edmeades,<br>Oliver Stieber,<br>Rapha&euml;l Junqueira</td>
     </tr>
@@ -71,7 +77,8 @@
           <a href="{$root}/site/?issue=150#Direct3D%20Update">#150</a>,
           <a href="{$root}/site/?issue=153#D3D%20Status%20Page">#153</a>,
           <a href="{$root}/site/?issue=185#Why%20Native%20DirectX%20Doesn't%20Work">#185</a>,
-          <a href="{$root}/site/?issue=233#S3%20Texture%20Compression">#233</a></td>
+          <a href="{$root}/site/?issue=233#S3%20Texture%20Compression">#233</a>,
+          <a href="{$root}/site/?issue=274#Flattening%20Source%20Directories">#274</a></td>
       <td class="pct80">80% complete</a></td>
       <td>Christian Costa,<br>Lionel Ulmer</td>
     </tr>
@@ -180,7 +187,9 @@
     <tr>
      <td>qcap.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directshow/htm/wdmvideocapturefilter.asp">MSDN: Video Capture Filters</a></td>
-      <td>None</td>
+      <td><a href="{$root}/site/?issue=271#Webcams%20with%20Wine">#271</a>,
+          <a href="{$root}/site/?issue=274#Video%20Capture%20in%20Windows">#274</a>,
+          <a href="{$root}/site/?issue=276#Video%20Driver%20Infrastructure">#276</a></td>
       <td class="pct40">40% complete</a></td>
       <td>Maarten Lankhorst</td>
     </tr>
@@ -190,7 +199,9 @@
       <td><a href="{$root}/site/?issue=122#Quartz.dll%20Removal">#122</a>,
           <a href="{$root}/site/?issue=177#DirectShow%20/%20Quartz%20Patches">#177</a>,
 	  <a href="{$root}/site/?issue=199#DirectShow%20/%20Quartz%20Status">#199</a>,
-          <a href="{$root}/site/?issue=237#Quartz%20Display%20Driver">#237</a></td>
+          <a href="{$root}/site/?issue=237#Quartz%20Display%20Driver">#237</a>,
+          <a href="{$root}/site/?issue=278#FFMpeg%20Video%20Wrapper">#278</a>,
+          <a href="{$root}/site/?issue=279#FFMpeg%20Video%20Wrapper%20(con't)">#279</a></td>
       <td class="pct30">30% complete</a></td>
       <td>Christian Costa</td>
     <tr> 
@@ -238,7 +249,8 @@
       <td>dsound.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_m/directx/ref/microsoft.directx.directsound.asp">MSDN: DirectSound</a></td>
       <td><a href="{$root}/site/?issue=48#Merging%20DSound%20and%20WinMM%20drivers">#48</a>,
-          <a href="{$root}/site/?issue=235#DSound%20Mixer%20Speedup">#235</a></td>
+          <a href="{$root}/site/?issue=235#DSound%20Mixer%20Speedup">#235</a>,
+          <a href="{$root}/site/?issue=264#World%20of%20Warcraft%20(con'td)%20&%20Sound">#264</a></td>
       <td class="pct90">90% complete</a></td>
       <td>Francois Gouget</td>
     </tr>

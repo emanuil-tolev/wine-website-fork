@@ -55,7 +55,9 @@
           <a href="{$root}/site/?issue=187#Glibc%20Breakage">#187</a>,
           <a href="{$root}/site/?issue=192#Detecting%20NPTL%20At%20Runtime">#192</a>,
           <a href="{$root}/site/?issue=227#Doc%20Update%20&%20Critical%20Section%20Explanation">#227</a>,
-          <a href="{$root}/site/?issue=236#Threading%20Issues?">#236</a></td>
+          <a href="{$root}/site/?issue=236#Threading%20Issues?">#236</a>,
+          <a href="{$root}/site/?issue=263#Why%20Custom%20Threading?">#263</a>,
+          <a href="{$root}/site/?issue=269#CAP_SYS_NICE%20&%20Win32%20Thread%20Priorities">#269</a></td>
       <td class="pct100">100% complete</td>
       <td>Alexandre Julliard</td>
     </tr>
@@ -64,7 +66,8 @@
       <td class="nonexistent">Nonexistent</td>
       <td><a href="{$root}/site/?issue=50#Feature:%20Wine%20Architecture%20by%20Ove%20K%E5ven">#50</a>,
           <a href="{$root}/site/?issue=161#Thread%20Latency">#161</a>,
-          <a href="{$root}/site/?issue=257#Wine%20and%20Scheduling">#257</a></td>
+          <a href="{$root}/site/?issue=257#Wine%20and%20Scheduling">#257</a>,
+          <a href="{$root}/site/?issue=278#Kernel%20Scheduling%20Problems%20&%20Wine">#278</a></td>
       <td class="pct100">100% complete</td>
       <td>Alexandre Julliard</td>
     </tr>
@@ -72,7 +75,9 @@
       <td>Supervisory process (wineserver)</td>
       <td class="nonexistent">Nonexistent</td>
       <td><a href="{$root}/site/?issue=50#Feature:%20Wine%20Architecture%20by%20Ove%20K%E5ven">#50</a>,
-          <a href="{$root}/site/?issue=102#Navigating%20Through%20Wine">#102</a></td>
+          <a href="{$root}/site/?issue=102#Navigating%20Through%20Wine">#102</a>,
+          <a href="{$root}/site/?issue=265#Wine's%20Server%20Protocol">#265</a>,
+          <a href="{$root}/site/?issue=266#Mailslots">#266</a></td>
       <td class="pct90">90% complete</a></td>
       <td>Alexandre Julliard</td>
     </tr>
@@ -100,7 +105,8 @@
           <a href="{$root}/site/?issue=55#Shared%20heaps">#55</a>,
           <a href="{$root}/site/?issue=98#Virtual%20Memory%20Problems">#98</a>,
           <a href="{$root}/site/?issue=188#Finding%20Memory%20Management%20Problems">#188</a>,
-          <a href="{$root}/site/?issue=222#Staying%20Within%202GB%20Memory%20Boundary">#222</a></td>
+          <a href="{$root}/site/?issue=222#Staying%20Within%202GB%20Memory%20Boundary">#222</a>,
+          <a href="{$root}/site/?issue=276#Unaligned%20mmap()">#276</a></td>
       <td class="pct90">90% complete<br>
       Wine's memory manager is known to be slow.</td>
       <td>Alexandre Julliard</td>
@@ -154,7 +160,10 @@
           <a href="{$root}/site/?issue=218#Managing%20Windows">#218</a>,
           <a href="{$root}/site/?issue=221#Window%20Management%20Ideas">#221</a>,
           <a href="{$root}/site/?issue=247#Windows%20Update%20Region%20Changes">#247</a>,
-          <a href="{$root}/site/??issue=252#Window%20Region%20Handling">#252</a></td>
+          <a href="{$root}/site/?issue=252#Window%20Region%20Handling">#252</a>,
+          <a href="{$root}/site/?issue=260#Window%20Management%20Rewrite%20Details">#260</a>,
+          <a href="{$root}/site/?issue=262#Window%20Management%20Problems">#262</a>,
+          <a href="{$root}/site/?issue=275#Windows%20Problems">#275</a></td>
       <td class="pct90">90% complete</a></td>
       <td>Alexandre Julliard</td>
     </tr>
@@ -194,7 +203,9 @@
       <td>Registry handling</td>
       <td class="good">Good</td>
       <td><a href="{$root}/site/?issue=5#Registry%20rewrite">#5</a>,
-          <a href="{$root}/site/?issue=48#MZ%20(aka%20DOS)%20executable%20support">#48</a></td>
+          <a href="{$root}/site/?issue=48#MZ%20(aka%20DOS)%20executable%20support">#48</a>,
+          <a href="{$root}/site/?issue=266#Permissions%20on%20Wine%20Registry">#266</a>,
+          <a href="{$root}/site/?issue=280#Binary%20Registry%20Ideas">#280</a></td>
       <td class="pct90">90% complete</td>
       <td></td>
     </tr>
@@ -202,7 +213,8 @@
       <td>X11 font mapper</td>
       <td class="poor">Poor</td>
       <td><a href="{$root}/site/?issue=75#Wine%20and%20fonts">#75</a>,
-          <a href="{$root}/site/?issue=187#Locating%20Font%20Paths">#187</a></td>
+          <a href="{$root}/site/?issue=187#Locating%20Font%20Paths">#187</a>,
+          <a href="{$root}/site/?issue=280#Finding%20and%20Using%20Fonts">#280</a></td>
       <td class="pct90">90% complete</a></td>
       <td>Huw D M Davies</td>
     </tr>
@@ -215,7 +227,8 @@
           <a href="{$root}/site/?issue=197#Using%20Standard%20Fonts">#197</a>,
           <a href="{$root}/site/?issue=222#Marlett%20Font%20Replacement">#222</a>,
           <a href="{$root}/site/?issue=240#New%20Fonts">#240</a>, 
-          <a href="{$root}/site/?issue=241#Fonts%20Status">#241</a></td>
+          <a href="{$root}/site/?issue=241#Fonts%20Status">#241</a>,
+          <a href="{$root}/site/?issue=261#Configuring%20TrueType%20Fonts">#261</a></td>
       <td class="pct80">80% complete</a></td>
       <td>Huw D M Davies</td>
     </tr>
@@ -298,7 +311,8 @@
       <td>Standard Windows Controls</td>
       <td class="nonexistent">Nonexistent</td>
       <td><a href="{$root}/site/?issue=116#Question%20about%20ToolbarWindowProc">#116</a>,
-          <a href="{$root}/site/?issue=155#File%20Dialog%20Options">#155</a></td>
+          <a href="{$root}/site/?issue=155#File%20Dialog%20Options">#155</a>,
+          <a href="{$root}/site/?issue=273#Short%20Circuiting%20Dialogs">#273</a></td>
       <td class="pct95">95% complete</td>
       <td>Dmitry Timoshkov</td>
     </tr>
@@ -317,7 +331,9 @@
       <td>I/O port access</td>
       <td class="adequate">Adequate</td>
       <td><a href="{$root}/site/?issue=99#Direct%20Port%20Access">#99</a>,
-          <a href="{$root}/site/?issue=120#More%20Async%20IO%20Fixes">#120</a></td>
+          <a href="{$root}/site/?issue=120#More%20Async%20IO%20Fixes">#120</a>,
+          <a href="{$root}/site/?issue=270#USB%20Support">#270</a>,
+          <a href="{$root}/site/?issue=271#USB%20Support%20(con't)">#271</a></td>
       <td class="pct90">90% complete<br>
       Needs root privileges.</td>
       <td></td>
@@ -358,7 +374,10 @@
       <td>Desktop Integration</td>
       <td class="nonexistent">Nonexistent</td>
       <td><a href="{$root}/site/?issue=251#Desktop%20Integration%20Tasks">#251</a>,
-          <a href="{$root}/site/?issue=252#Systray%20Support%20Revisited">#252</a></td>
+          <a href="{$root}/site/?issue=252#Systray%20Support%20Revisited">#252</a>,
+          <a href="{$root}/site/?issue=261#Recycle%20Bin%20Needs%20Implementing">#261</a>,
+          <a href="{$root}/site/?issue=270#Taking%20Out%20the%20Trash">#270</a>,
+          <a href="{$root}/site/?issue=279#Windows%20Icons%20in%20KDE">#279</a></td>
       <td class="pct5">5% complete</td>
       <td></td>
     </tr>
@@ -393,12 +412,14 @@
           <a href="{$root}/site/?issue=192#Setting%20Up%20A%20Backtrace">#192</a>,
           <a href="{$root}/site/?issue=199#List%20of%20Debug%20Channels">#199</a>,
           <a href="{$root}/site/?issue=201#Delayed%20Debug%20Tracing">#201</a>,
-          <a href="{$root}/site/?issue=215#Delayed%20Debugging%20Patch%20Updated>#215</a>,
+          <a href="{$root}/site/?issue=215#Delayed%20Debugging%20Patch%20Updated">#215</a>,
           <a href="{$root}/site/?issue=225#Winedbg%20Issue%20and%20New%20Changes">#225</a>,
           <a href="{$root}/site/?issue=225#Winedbg%20&%20DDD">#225#2</a>,
           <a href="{$root}/site/?issue=236#Generating%20Backtraces">#236</a>,
           <a href="{$root}/site/?issue=242#Analyzing%20Debug%20Traces">#242</a>,
-          <a href="{$root}/site/?issue=245#Winedbg:%20Broken%20Watchpoints">#245</a></td>
+          <a href="{$root}/site/?issue=245#Winedbg:%20Broken%20Watchpoints">#245</a>,
+          <a href="{$root}/site/?issue=268#Scripting%20Around%20Winedbg">#268</a>,
+          <a href="{$root}/site/?issue=276#DWARF2%20Debug%20Support">#276</a></td>
       <td class="pct85">85% complete</a></td>
       <td>Eric Pouech</td>
     </tr>
@@ -466,7 +487,9 @@
           <a href="{$root}/site/?issue=226#Winrash%20Update">#226</a>,
           <a href="{$root}/site/?issue=232#Contacting%20Testers">#232</a>,
           <a href="{$root}/site/?issue=246#Test%20Dependencies">#246</a>,
-          <a href="{$root}/site/?issue=257#Intro%20to%20Conformance%20Tests">#257</a></td>
+          <a href="{$root}/site/?issue=257#Intro%20to%20Conformance%20Tests">#257</a>,
+          <a href="{$root}/site/?issue=267#Finding%20Regressions">#267</a>,
+          <a href="{$root}/site/??issue=270#Hexdump%20Function">#270</a></td>
       <td class="pct100">100% complete</td>
       <td>Paul Millar,<br>Ferenc Wagner,<br>Jakob Eriksson,<br>Paul Vriens</td>
     </tr>
@@ -481,7 +504,10 @@
           <a href="{$root}/site/?issue=233#Configuration%20To-Do%20List">#233</a>,
           <a href="{$root}/site/?issue=234#More%20Winecfg%20To%20Do's">#234</a>,
           <a href="{$root}/site/?issue=242#WineCfg%20Status%20Update">#242</a>,
-          <a href="{$root}/site/?issue=250#Customizing%20File%20Browsing">#250</a></td>
+          <a href="{$root}/site/?issue=250#Customizing%20File%20Browsing">#250</a>,
+          <a href="{$root}/site/?issue=262#Drive%20Detection">#262</a>,
+          <a href="{$root}/site/?issue=265#Winecfg%20&%20Unixfs">#265</a>,
+          <a href="{$root}/site/?issue=279#Winecfg%20Goes%20Live">#279</a></td>
       <td class="pct50">50% complete</td>
       <td>Mike Hearn</td>
     </tr>
@@ -538,7 +564,8 @@
       <td>Initial directory structure</td>
       <td class="nonexistent">Nonexistent</td>
       <td><a href="{$root}/site/?issue=52#Feature:%20Replacing%20Windows%20by%20Ove%20K%E5ven">#52</a>,
-          <a href="{$root}/site/?issue=173#Adding%20a%20Root%20Drive%20Mapping">#173</a></td>
+          <a href="{$root}/site/?issue=173#Adding%20a%20Root%20Drive%20Mapping">#173</a>,
+          <a href="{$root}/site/?issue=265#Drive%20Management">#265</a></td>
       <td class="pct90">90% complete</td>
       <td></td>
     </tr>

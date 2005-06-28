@@ -48,9 +48,11 @@
       <td>cabinet.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/setupapi/setup/cabinet_file_functions.asp">MSDN: Cabinet</a></td>
       <td><a href="{$root}/site/?issue=179#CAB%20Update">#179</a>,
-          <a href="{$root}/site/?issue=181#Library%20of%20Microsoft%20Compression%20Formats">#181</a></td>
+          <a href="{$root}/site/?issue=181#Library%20of%20Microsoft%20Compression%20Formats">#181</a>,
+          <a href="{$root}/site/?issue=264#Tests%20for%20cabinet.dll">#264</a>,
+          <a href="{$root}/site/?issue=276#Cabinet.dll:%20File%20Creation%20Interfaces">#276</a></td>
       <td class="pct80">80% complete</td>
-      <td></td>
+      <td>Gerold J. Wucherpfennig</td>
     </tr>
     <tr>
       <td>capi2032.dll</td>
@@ -88,7 +90,8 @@
           <a href="{$root}/site/?issue=163#Error%20Requiring%2032/16%20Bit%20DLL%20Combinations">#163</a>,
           <a href="{$root}/site/?issue=241#UpdateWindow%20vs.%20WM_PAINT">#241</a>,
           <a href="{$root}/site/?issue=242#Progress%20Bar%20Changes">#242</a>,
-          <a href="{$root}/site/?issue=245#Start%20Menu%20Brokenness">#245</a></td>
+          <a href="{$root}/site/?issue=245#Start%20Menu%20Brokenness">#245</a>,
+          <a href="{$root}/site/?issue=267#Theming%20Revisited">#267</a></td>
       <td class="pct95">95% complete</td>
       <td>Filip Navara,<br>Thomas Weidenmüller,<br>Maxime Bellengé</td>
     </tr>
@@ -111,7 +114,8 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/seccrypto/security/cryptography_functions.asp">MSDN: Cryptography Functions</a></td>
       <td><a href="{$root}/site/?issue=220#Windows%20Local%20Security%20Authority">#220</a>,
           <a href="{$root}/site/?issue=230#OpenSSL%20vs.%20NSS">#230</a>,
-          <a href="{$root}/site/?issue=239#Transport%20Layer%20Security:%20SSL%20vs.%20GnuTLS">#239</a></td>
+          <a href="{$root}/site/?issue=239#Transport%20Layer%20Security:%20SSL%20vs.%20GnuTLS">#239</a>,
+          <a href="{$root}/site/?issue=273#Crypt(Un)ProtectData">#273</a></td>
       <td class="pct5">5% complete</td>
       <td>Juan Lang</td>
     </tr>
@@ -237,7 +241,10 @@
     <tr>
       <td>mshtml.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnmshtml/html/mshtmleditplatf.asp">MSDN: MSHTML Editing Platform</a></td>
-      <td><a href="{$root}/site/?issue=206#MSHTML%20Changes">#206</a></td>
+      <td><a href="{$root}/site/?issue=206#MSHTML%20Changes">#206</a>,
+          <a href="{$root}/site/?issue=268#MSHTML%20Work">#268</a>,
+          <a href="{$root}/site/?issue=271#MSHTML%20&%20Gecko">#271</a>,
+          <a href="{$root}/site/?issue=276#MSHTML%20&%20Mozilla%20&%20XEmbed">#276</a></td>
       <td class="pct15">15% complete</td>
       <td>Jacek Caban</td>
     </tr>
@@ -248,7 +255,8 @@
           <a href="{$root}/site/?issue=230#Microsoft%20Installer%20Work">#230</a>,
           <a href="{$root}/site/?issue=231#Status%20of%20MSI">#231</a>,
           <a href="{$root}/site/?issue=232#MSIExec.exe%20Replacement">#232</a>,
-          <a href="{$root}/site/?issue=253#MSI%20Status%20Update">#253</a></td>
+          <a href="{$root}/site/?issue=253#MSI%20Status%20Update">#253</a>,
+          <a href="{$root}/site/?issue=276#MSI%20Dialogs">#276</a></td>
       <td class="pct50">50% complete</td>
       <td>Mike McCormack,<br>Aric Stewart</td>
     </tr>
@@ -348,7 +356,12 @@
           <a href="{$root}/site/?issue=240#Spying%20on%20COM">#240</a>,
           <a href="{$root}/site/?issue=244#COM%20Inheritance">#244</a>,
           <a href="{$root}/site/?issue=253#Apartment%20Breakage">#253</a>,
-          <a href="{$root}/site/?issue=256#DCOM%20Status%20Update%20and%20Roadmap">#256</a></td>
+          <a href="{$root}/site/?issue=256#DCOM%20Status%20Update%20and%20Roadmap">#256</a>,
+          <a href="{$root}/site/?issue=258#FreeDCE%20&%20Wine%20&%20DCOM">#258</a>,
+          <a href="{$root}/site/?issue=259#More%20DCOM%20Notes">#259</a>,
+          <a href="{$root}/site/?issue=262#COM%20&%20InstallShield">#262</a>,
+          <a href="{$root}/site/?issue=263#OLE%20Status">#263</a>,
+          <a href="{$root}/site/?issue=268#InstallShield%20Breakage">#268</a></td>
       <td class="pct80">80% complete</td>
       <td>Robert Shearman,<br>CodeWeavers</td>
     </tr>
@@ -407,7 +420,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/perfmon/base/process_status_helper.asp">MSDN: Process Status Helper</a></td>
       <td>None</td>
       <td class="pct60">60% complete</td>
-      <td>Eric Pouech</td>
+      <td>Felix Nawothnig</td>
     </tr>
     <tr>
       <td>rasapi32.dll</td>
@@ -425,7 +438,10 @@
           <a href="{$root}/site/?issue=202#Wine's%20RichEdit%20Control%20Sucks">#202</a>,
           <a href="{$root}/site/?issue=238#Richedit%20Control">#238</a>,
           <a href="{$root}/site/?issue=250#No%20RichEdit20A%20Window%20Class">#250</a>,
-          <a href="{$root}/site/?issue=251#RichEdit%20(con't)">#251</a></td>
+          <a href="{$root}/site/?issue=251#RichEdit%20(con't)">#251</a>,
+          <a href="{$root}/site/?issue=260#RichEdit%20Control%20Code">#260</a>,
+          <a href="{$root}/site/?issue=264#RichEdit%20Work">#264</a>,
+          <a href="{$root}/site/?issue=266#RichEdit:%20RTF%20Writer">#266</a></td>
       <td class="pct25">25% complete</td>
       <td>Krzysztof Foltman,<br>Phil Krylov</td>
     </tr>
@@ -457,7 +473,8 @@
       <td><a href="{$root}/site/?issue=210#Crypto%20and%20RSABASE.DLL">#210</a>,
           <a href="{$root}/site/?issue=218#CryptoAPI%20Needs%20Help">#218</a>,
           <a href="{$root}/site/?issue=246#MS%20Enhanced%20Provider%20Library">#246</a>,
-          <a href="{$root}/site/?issue=255#Software%20to%20Test%20Crypto%20API">#255</a></td>
+          <a href="{$root}/site/?issue=255#Software%20to%20Test%20Crypto%20API">#255</a>,
+          <a href="{$root}/site/?issue=263#Forwarding%20rsabase%20to%20rsaenh">#263</a></td>
       <td class="pct70">70% complete</td>
       <td>Michael Jung</td>
     </tr>
@@ -628,7 +645,8 @@
     <tr>
       <td>wineps.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/prntspol_95id.asp">MSDN: Printing and Print Spooler Reference</a></td>
-      <td><a href="{$root}/site/?issue=82#PS%20printer%20driver%20and%20fonts">#82</a></td>
+      <td><a href="{$root}/site/?issue=82#PS%20printer%20driver%20and%20fonts">#82</a>,
+          <a href="{$root}/site/?issue=277#Forking%20and%20Printing">#277</a></td>
       <td class="pct90">90% complete</a></td>
       <td>Huw D M Davies</td>
     </tr>
@@ -670,7 +688,8 @@
       <td class="adequate"><a href="http://www.csl.sony.co.jp/projects/ar/restricted/wintabl.html">Wintab Interface Specification 1.1</a></td>
       <td><a href="{$root}/site/?issue=167#Wintab%20Status%20and%20Development">#167</a>,
           <a href="{$root}/site/?issue=175#Wintab%20Status">#175</a>,
-          <a href="{$root}/site/?issue=204#Updated%20Tablet%20Support">#204</a></td>
+          <a href="{$root}/site/?issue=204#Updated%20Tablet%20Support">#204</a>,
+          <a href="{$root}/site/?issue=261#Wintab%20Status">#261</a></td>
       <td class="pct60">60% complete</td>
       <td>Aric Stewart,<br>Robert North</td>
     </tr>

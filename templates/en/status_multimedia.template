@@ -24,7 +24,8 @@
       <td><a href="{$root}/site/?issue=121#ALSA%20Driver">#121</a>,
 	  <a href="{$root}/site/?issue=196#ALSA%201.0%20Support">#196</a>,
 	  <a href="{$root}/site/?issue=200#Updated%20ALSA%20Support">#200</a>,
-          <a href="{$root}/site/?issue=243#Audio%20Driver%20Auto%20Detection">#243</a></td>
+          <a href="{$root}/site/?issue=243#Audio%20Driver%20Auto%20Detection">#243</a>,
+          <a href="{$root}/site/?issue=280#ALSA%20Initialization%20Changes">#280</a></td>
       <td class="pct75">75% complete<br>(xx-)</br>
       </td>
       <td>Jeremy White</td>
@@ -163,7 +164,7 @@
     <tr>
       <td>avicap32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_video_capture_reference.asp">Video Capture Reference</a></td>
-      <td>None</td>
+      <td><a href="{$root}/site/?issue=267#Images%20from%20video4linux%20Devices">#267</a></td>
       <td class="pct5">5% complete</td>
       <td>Eric Pouech</td>
     </tr>
@@ -219,7 +220,8 @@
           <a href="{$root}/site/?issue=45#OpenGL%20requirements">#45</a>,
           <a href="{$root}/site/?issue=158#Problems%20with%20OpenGL">#158</a>,
           <a href="{$root}/site/?issue=235#Doom3%20&%20Wine">#235</a>,
-          <a href="{$root}/site/?issue=246#OpenGL%20Extension%20Viewer">#246</a></td>
+          <a href="{$root}/site/?issue=246#OpenGL%20Extension%20Viewer">#246</a>,
+          <a href="{$root}/site/?issue=263#World%20of%20Warcraft%20&%20PBuffers">#263</a></td>
       <td class="pct90">90% complete</td>
       <td>Lionel Ulmer<br>Rapha&euml;l Junqueira</td>
     </tr>
