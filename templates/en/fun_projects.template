@@ -249,7 +249,7 @@
   </ul>
 
 
-  <h3>Runtimes</h3>
+  <h2>Runtimes</h2>
   Over the past 10 years, a number of portable runtimes have been created.
   Why not use them in a way they weren't meant to be used? That is, compile
   and run their Windows port on Linux under Wine. For this to happen, they
@@ -304,7 +304,7 @@
   <a href="http://uucode.com/texts/python-mingw/python-mingw.html">article</a>
   containing a log of succesfull compilation of Python 2.2 using MinGW.
 
-  <h3>Toolkits</h3>
+  <h2>Toolkits</h2>
   While some have focused on portable runtimes (see above), others tried
   to create portable UI toolkits. Due to the large UI component of the
   Win32 API, these are a perfect test for Wine.
@@ -372,21 +372,6 @@
   This one compiled with just a couple of trivial fixes to Wine's headers, a few portability
   fixes to their source, and just one or two Wine specific tweaks.
 
-  <h3>Others</h3>
-
-  <h4 class=todo>Make a ghostscript driver that uses Wine to print</h4>
-  When we are going to support native Windows printer
-  drivers, this is going to allow ghostscript to use
-  any of the existing gazillion printer drivers out there.
-  This is still a virtualization project, but at the printing
-  subsystem level. The complementary project (use ghostscript
-  to print from Wine) has been implemented, and working just fine.
-
-  <h4 class=todo>A Wine based GIMP plugin for using  Photoshop plugins</h4>
-  Suggested by <a href="mailto:meissner@suse.de">Marcus Meissner</a>:
-  Investigate if we could make a WINE based GIMP plugin which can handle
-  Photoshop plugins.
-
   <h2><a name="source"></a>Source portability</h2>
   We should be able to compile Wine with various C compilers.
 
@@ -432,10 +417,22 @@
     <li>updated: Dec 1, 2002
   </ul>
 
-  <h2>Miscellaneous Projects</h2>
-  This is a catch-all category for all sort of strange (and sometimes cute) ideas.
+  <h2>Others</h2>
 
-  <h3 class=todo>wined3d use wgl</h3>
+  <h4 class=todo>Make a ghostscript driver that uses Wine to print</h4>
+  When we are going to support native Windows printer
+  drivers, this is going to allow ghostscript to use
+  any of the existing gazillion printer drivers out there.
+  This is still a virtualization project, but at the printing
+  subsystem level. The complementary project (use ghostscript
+  to print from Wine) has been implemented, and working just fine.
+
+  <h4 class=todo>A Wine based GIMP plugin for using  Photoshop plugins</h4>
+  Suggested by <a href="mailto:meissner@suse.de">Marcus Meissner</a>:
+  Investigate if we could make a WINE based GIMP plugin which can handle
+  Photoshop plugins.
+
+ <h3 class=todo>wined3d use wgl</h3>
   Make wined3d (or d3d8) use wgl (windows opengl) instead of glx. (just search for glx commands and
   replace then with the wgl equivalents) Doing so would enable wine's d3d to run on windows in place of
   the windows driver and without the rest of WINE which would greatly help in debugging. It would also 
@@ -445,6 +442,10 @@
     <li>status: <i>to do</i>
     <li>updated: Jun 22, 2005
   </ul>
+
+  <h2>Miscellaneous Projects</h2>
+  This is a catch-all category for all sort of strange (and sometimes cute) ideas.
+
 
   <a name="cross"></a><h3 class=inprogress>Cross referencing the Windows executables and libraries</h3>
   <p>The idea is to write a Perl script that analyzes the Windows dlls and executables of a 
@@ -484,13 +485,26 @@
     <li>updated: Apr 11, 2003
   </ul>
 
-  <h3 class=inprogress>GDI Engine</h3>
-  Integrate the GDI engine contributed by the 
+  <h3 class=todo>Mono GDI+ Wrapper</h3>
+  <p>Microsoft GDIplus currently works on Wine already, however it might be faster if we can take advantage of the 
+     Mono project's <a href="http://svn.myrealbox.com/viewcvs/trunk/libgdiplus/">libgdiplus</a> implementation as 
+     it can use the Cairo vector graphics library or OpenGL as a backend. There are 4 efforts underway at this time 
+     to make a free gdiplus.dll replacement for Windows and one example is The Gimp for Win32. However they are still 
+     going to suffer from the same problem of being implemented on top of the GDI. And if we can use the Mono 
+     libgdiplus we just might end up with apps that render faster than on Windows.
+  <ul>
+    <li>workers: <i>Steven Edwards</i>
+    <li>status: <i>initial work has just started</i>
+    <li>updated: June 26, 2005
+  </ul>
+
+  <h3 class=todo>GDI Engine</h3>
+  <p>Integrate the GDI engine <a href="http://www.winehq.org/hypermail/wine-patches/2002/09/0250.html">contributed</a> by the 
   <a href="http://www.transgaming.com">TransGaming</a> folks.
   <ul>
     <li>workers: <i>wanted</i>
     <li>status: <i>to do</i>
-    <li>updated: Mar 15, 2005
+    <li>updated: June 24, 2005
   </ul>
 
   <a name="wineconsole"></a><h3 class=todo>Wineconsole Copy &amp; Paste toolbar support</h3>
