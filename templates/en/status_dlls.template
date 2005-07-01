@@ -233,7 +233,7 @@
     </tr>
     <tr>
       <td>mscms.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/icm/icm_20kz.asp">MSDN: ICM Reference</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/icm/icm_20kz.asp">MSDN: Image Color Management</a></td>
       <td>None</td>
       <td class="pct25">25% complete</td>
       <td>Hans Leidekker</td>
@@ -462,8 +462,8 @@
     <tr>
       <td>rsabase.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/seccrypto/security/microsoft_base_cryptographic_provider.asp">MSDN: Base Cryptographic Provider</a></td>
-      <td><a href="{$root}/site/?issue=233#rsabase.dll%20Work">#233</a>,
-          <a href="{$root}/site/?issue=210#Crypto%20and%20RSABASE.DLL">#210</a></td>
+      <td><a href="{$root}/site/?issue=210#Crypto%20and%20RSABASE.DLL">#210</a>,
+          <a href="{$root}/site/?issue=233#rsabase.dll%20Work">#233</a></td>
       <td class="pct5">5% complete<br>
       <td>Mike McCormack</td>
     </tr>

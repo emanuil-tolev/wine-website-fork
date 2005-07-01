@@ -2,74 +2,43 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
-<p>Changes since June 26, 2005:</p>
+<p>Changes since June 30, 2005:</p>
 
  <ul>
- <li>ADD -  Felix Nawothnig as worker to psapi.dll</li>
- <li>ADD -  Gerold J. Wucherpfennig as worker to cabinet.dll</li>
- <li>Remove -  Eric Pouech as worker on psapi.dll</li>
- <li>Upate WWN links</li>
- </ul>
- <br>
-
-<p>Changes since June 24, 2005:</p>
-
- <ul>
- <li>ADD -  Jacek Caban as worker to mshtml.dll</li>
- <li>ADD -  Jacek Caban as worker to Web Browser</li>
- <li>Remove -  Mike McCormack as worker on Web Browser</li>
- <li>atl.dll 5% -&gt; 15%</li>
- <li>mshtml.dll 5% -&gt; 15%</li>
- <li>riched32.dll 40% -&gt; 25%</li>
- <li>Web Browser 100% -&gt; 70%</li>
- </ul>
- <br>
-
-<p>Changes since June 23, 2005:</p>
-
- <ul>
- <li>ADD - activeds.dll section</li>
+ <li>ADD - Felix Nawothnig as worker to psapi.dll</li>
+ <li>ADD - Gerold J. Wucherpfennig as worker to cabinet.dll</li>
+ <li>ADD - Jacek Caban as worker to mshtml.dll</li>
+ <li>ADD - Jacek Caban as worker to Web Browser</li>
  <li>ADD - Rapha&euml;l Junqueira as worker to opengl32.dll</li>
  <li>ADD - Jeremy White as worker to ALSA</li>
- <li>Remove - Christian Costa as worker on ALSA</li>
- <li>Update link to Oliver's D3D9 site</li>
- <li>Update documentation links</li> 
- </ul>
- <br>
-
-<p>Changes since June 13, 2005:</p>
-
- <ul>
- <li>ADD - powrprof.dll section</li>
- <li>gdi32.dll 60% -&gt; 75%</li>
- <li>stdole32.tlb 5% -&gt; 100%</li>
- </ul>
- <br>
-
-<p>Changes since June 8, 2005:</p>
-
- <ul>
  <li>ADD - Juan Lang as worker to crypt32.dll</li>
  <li>ADD - Krzysztof Foltman, Phil Krylov as workers to riched32.dll</li>
  <li>ADD - Lionel Ulmer as worker to dinput.dll</li>
+ <li>ADD - Maarten Lankhorst as worker to qcap.dll </li>
+ <li>ADD - activeds.dll section</li>
  <li>ADD - d3drm.dll section</li>
  <li>ADD - dpnet.dll section</li>
- <li>Remove - ddraw.dll (direct3d) section</li>
+ <li>ADD - powrprof.dll section</li>
+ <li>Remove - Eric Pouech as worker on psapi.dll</li>
+ <li>Remove - Mike McCormack as worker on Web Browser</li>
+ <li>Remove - Christian Costa as worker on ALSA</li>
  <li>Remove - Mike McCormack as worker on crypt32.dll</li>
+ <li>Remove - ddraw.dll (direct3d) section</li>
+ <li>Update - link to Oliver's D3D9 site</li>
+ <li>Update - documentation links</li> 
+ <li>Update - WWN links</li>
+ <li>atl.dll 5% -&gt; 15%</li>
+ <li>mshtml.dll 5% -&gt; 15%</li>
+ <li>riched32.dll 20% -&gt; 25%</li>
+ <li>Web Browser 100% -&gt; 70%</li>
+ <li>gdi32.dll 60% -&gt; 75%</li>
+ <li>stdole32.tlb 5% -&gt; 100%</li>
+ <li>qcap.dll 5% -&gt; 40%</li>
  <li>ddraw.dll 90% -&gt; 80%</li>
  <li>itss.dll 5% -&gt; 30%</li>
  <li>ole32.dll 60% -&gt; 80%</li>
  <li>oleaut32.dll 80% -&gt; 90%</li>
- <li>riched32.dll 20% -&gt; 40%</li>
  <li>rpcrt4.dll 30% -&gt; 40%</li>
- </ul>
- <br>
-
-<p>Changes since June 1, 2005:</p>
-
- <ul>
- <li>ADD - Maarten Lankhorst as worker to qcap.dll </li>
- <li>qcap.dll 5% -&gt; 40%</li>
  </ul>
  <br>
 
