@@ -8,13 +8,13 @@
   <ol type="A">
     <li> <a href="#winehq">WineHQ</a>        <span class="done">[READY]</span>
     <li> <a href="#doc">Documentation</a>    <span class="inprogress">[ALMOST]</span>
-    <li> <a href="#conf">Configuration</a>   <span class="inprogress">[ALMOST]</span>
+    <li> <a href="#conf">Configuration</a>   <span class="done">[READY]</span>
     <li> <a href="#ui">User Interface</a>    <span class="done">[READY]</span>
     <li> <a href="#formats">File Formats</a> <span class="done">[READY]</span>
     <li> <a href="#api">Exported API</a>     <span class="done">[READY]</span>
     <li> <a href="#tools">Tools</a>          <span class="done">[READY]</span>
     <li> <a href="#misc">Miscellaneous</a>   <span class="done">[READY]</span>
-    <li> <a href="#code">Source Code</a>     <span class="inprogress">[ALMOST]</span>
+    <li> <a href="#code">Source Code</a>     <span class="done">[READY]</span>
   </ol>
 
   <a name="winehq"></a><h3> A. WineHQ </h3>
@@ -81,7 +81,7 @@
 	  <ul>
 	    <li> workers: <a href="mailto:R.J.Shearman@warwick.ac.uk">Robert Shearman</a>,
 			  <a href="mailto:dpaun@rogers.com">Dimitrie O. Paun</a>
-	    <li> status: needs audit of the Flat Scroll Bar, Header, Native Font, Tab, Tree-View controls.
+	    <li> status: needs audit of the Flat Scroll Bar, Header, Native Font, Tree-View controls.
 	    <li> updated: Mar 16, 2005
 	  </ul>
 	<li> Integrate API status into WineHQ <span class="done">[DONE]</span>
@@ -260,12 +260,12 @@
 	    <li> status: new/delete/rename key done
 	    <li> updated: Mar 31, 2004
           </ul> 
-        <li> Complete winecfg <span class="inprogress">[IN PROGRESS]</span>
+        <li> Complete winecfg <span class="done">[DONE]</span>
 	  <ul>
 	    <li> workers: <a href="mailto:cmorgan@alum.wpi.edu">Chris Morgan</a>,
                           <a href="mailto:mike@theoretic.com">Mike Hearn</a>.
-	    <li> status: switchover to be done by June 30th
-	    <li> updated: June 10, 2005
+	    <li> status: switchover is <a href="http://www.winehq.org/hypermail/wine-cvs/2005/06/0382.html">done</a>
+	    <li> updated: June 16, 2005
           </ul> 
         <li> Setup API .inf scripts <span class="done">[DONE]</span>
 	  <ul>
@@ -349,7 +349,7 @@
 	  <ul>
 	    <li> workers: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>,
                           <a href="mailto:pouech-eric@wanadoo.fr">Eric Pouech</a>
-	    <li> status: tracked on the <a href="http://winehq.org/site/janitorial">Janitorial</a> page.
+	    <li> status: tracked on the <a href="http://wiki.winehq.org/JanitorialProjects">Janitorial</a> page.
 	    <li> updated: Apr 3, 2005
 	  </ul>
 	<li> Wineserver protocol <span class="inprogress">[IN PROGRESS]</span>
@@ -497,7 +497,8 @@
 	<li> Flatten dlls/: msacm/*, msvideo/msrle32, winmm/* <span class="inprogress">[IN PROGRESS]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
-	    <li> status: msvideo/msrle32 got <a href="http://www.winehq.org/hypermail/wine-cvs/2004/02/0357.html">moved</a>
+	    <li> status: msvideo/msrle32 got <a href="http://www.winehq.org/hypermail/wine-cvs/2004/02/0357.html">moved</a>,
+                         status is tracked <a href="http://wiki.winehq.org/FlattenDllDirectories">here</a>.
 	    <li> updated: Feb 27, 2004
 	  </ul>
 	<li> Move documentation/ddraw.txt somewhere <span class="done">[DONE]</span>
@@ -512,11 +513,11 @@
 	    <li> status: <a href="http://www.winehq.org/hypermail/wine-cvs/2004/02/0362.html">moved</a>
 	    <li> updated: Feb 27, 2004
 	  </ul>
-	<li> Remove documentation/samples/config <span class="inprogress">[IN PROGRESS]</span>
+	<li> Remove documentation/samples/config <span class="done">[DONE]</span>
 	  <ul>
 	    <li> worker: <a href="mailto:julliard@winehq.org">Alexandre Julliard</a>
-	    <li> status: options are gradually moved into the registry
-	    <li> updated: May 20, 2004
+	    <li> status: patch <a href="http://www.winehq.org/hypermail/wine-cvs/2005/06/0334.html">committed</a>
+	    <li> updated: Jun 14, 2005
 	  </ul>
 	<li> Move documentation/samples/system.ini -> winedefault.reg <span class="done">[DONE]</span>
 	  <ul>
