@@ -456,7 +456,7 @@ Mentioned in the patch is:
         ** an uninitialized stack variable could cause this to fail.<br />     
         ** This is fixed in version 1.5, which seems to correspond to <br />
         ** Xfree &gt;= 4.2<br />
-        ** In the mean time, we do a total kludge to attempt to address this:<br />
+        ** In the meantime, we do a total kludge to attempt to address this:<br />
         ** we call it twice, and pray that the second time it is<br />
         ** initialized (and nudge the stack while we're at it).  <br />
         ** If it doesn't, we just bail.

@@ -121,7 +121,7 @@ market through the use of CrossOver technology."</p></quote>
 mailing list concerning this.  All in all this is pretty exciting and it
 offers a lot of interesting possibilities for Wine and CodeWeavers.</p>
 
-<p>Tom Wickline has gone through and update Wine's 
+<p>Tom Wickline has gone through and updated Wine's 
 <a href="http://www.winehq.com/site/status">status pages</a> to reflect 
 work that's been done over the past six months.  As usual, these are rough
 estimates of how well things are implemented.  If you look at the 
@@ -176,14 +176,14 @@ and those entries still get read into the
 <tt>HKLM\Software\Wine\Wine\Config</tt>
 branch.  However, those entries are dead.  All of the real Wine settings 
 have been migrated elsewhere in the registry.  To configure Wine, your first
-stop should be to check out <tt>winecfg</tt> program to see if it can make a
+stop should be to check out the <tt>winecfg</tt> program to see if it can make a
 change in the registry for you.  If you feel like changing registry
 settings using <tt>regedit</tt>, you should first look in 
 <tt>HKCU\Software\Wine </tt>
 since many settings have been migrated there. </p> 
 
 <p>The next work to be done in this area will remove the actual code
-that reads the config file.  In the mean time, if you have a config file
+that reads the config file.  In the meantime, if you have a config file
 you'll want to archive the settings somewhere and then ditch it.</p>
 
 </section>
@@ -212,7 +212,7 @@ concerning a Mac port:</p>
  of CrossOver make business sense...until now.
 </p><p> 
  We're still figuring out just how we want to attack this,
- and so on (and waiting for our dev kit to arrive &amp;lt;g&amp;gt;
+ and so on (and waiting for our dev kit to arrive &amp;lt;g&amp;gt;)
  Right now, we're trying to encourage
  ISVs to partner with us; the more interest we can generate
  now, the more energy we can put into this prior to the
@@ -253,7 +253,7 @@ should be back to the old behaviour:
 This will also help you to figure out if a problem is due to unixfs. If you do 
 'regsvr32 shell32' again, the key will be re-created.</p></quote>
 
-<p>Dimi wondered why registring it was necessary,
+<p>Dimi wondered why registering it was necessary,
 <quote who="Dimitrie Paun">
 This is fantastic! Way to go Michael, you've nailed an important
 integration issue. BTW, if it is registered by default, why do we 
@@ -308,21 +308,21 @@ The reward is, like most of Wine code, to say "I made that work" :)
 Let me know if you're interested.
 </p></quote>
 
-<p>Jacek described some more detail about how to tackle it:</p>
+<p>Jacek described some more details about how to tackle it:</p>
 <quote who="Jacek Caban"><p>
 
 I think it will be great to have it done. I'd like to
 point out one thing for the way to implement it:
 the most important is to have it working with
 native shdocvw.dll and mshtml.dll. It won't work
-with built in in the current state of them, but it
+with builtin in their current state, but it
 will be fixed soon and I believe it can be in CVS
 even if it doesn't work without these dlls.
 While implementing then we shouldn't pay too much
 attention to get it working with Mozilla ActiveX
 Control - it will never work perfectly and I hope
 to get rid of its dependency soon. Of course you
-may do it working, but, as my tests show, it's
+may get it working, but, as my tests show, it's
 far from compatible with MS. Also, we need to
 use itss.dll, which is impossible with Mozilla ActiveX
 (I'm not sure if Mozilla has support for chm protocol,
@@ -341,7 +341,7 @@ http://66.93.236.84/~jedwin/projects/chmlib/</a>
 that Mike used in itss to decompress chm.
 </p><p>
 As a conclusion: it would be really good to have
-this working in Wine. It uses most of IE related API
+this working in Wine. It uses most of IE's related API
 (I didn't mention URLMoniker here, which also needs
 some work) and getting it to work out of box will be
 a great test for Wine.
@@ -379,7 +379,7 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR cmdline, int cmds
 <topic>Project Management</topic>
 <p>Jeremy White announced the status of Google's Summer of Code.
 We still haven't seen the details yet or who will be working with
-Wine.  In the mean time, Jeremy outlined the process they went
+Wine.  In the meantime, Jeremy outlined the process they went
 through:</p>
 <quote who="Jeremy White"><p>
 
@@ -404,7 +404,7 @@ I think Google jumped into this without being as
 prepared as you might otherwise hope, and there
 have been challenges in figuring this all out.
 (We're still largely clueless about the responsibilities
-of mentors from Googles perspective, for example).
+of mentors from Google's perspective, for example).
 </p><p>
 
 So, thanks to everyone that submitted a proposal.
@@ -543,7 +543,7 @@ static void initialize() {
        // _mmap = dlsym(RTLD_NEXT, "mmap");</code></ul>
 }</code></ul></p><p>
 
-Finally it is the printf who does the magic and not the wrapped mmap! The
+Finally it is the printf which does the magic and not the wrapped mmap! The
 above example also worked for me. Can we still solve this problem with
 logic?
 </p></quote>

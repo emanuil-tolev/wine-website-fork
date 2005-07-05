@@ -533,7 +533,7 @@ Dimi Paun wrote,
  However can't yet see whether its going to do anything as in order to 
  actually run programs it looks like we need tolink miscemu/main.c
  Problem here being that it wants to link with ntdll, which doesn't build 
- yet. That still needs a lot more work... In the mean time a very simple 
+ yet. That still needs a lot more work... In the meantime a very simple 
  patch that does nothing for context_i386.c is below in case anyone else 
  wants to try...</quote></p>
 

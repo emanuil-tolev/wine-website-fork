@@ -156,7 +156,7 @@ I've looked into using a Balanced Tree DB from BerkelyDB as a quicker
 interface to the registry.  I think it would be a good solution, but
 the question is whether or not you want the overhead of another library
 added to wine. That's why I'm writing here actually - I need to know
-if it's ok to add this dependancy to wine, or if I should find a different 
+if it's ok to add this dependency to wine, or if I should find a different 
 approach.
 </p><p>
 
@@ -216,7 +216,7 @@ registry format. This way you could use real Windows registry files,
 and can read and update registry piecewise. It's organized like a
 little file system - or database if you want to see it this way. It's
 not documented. But you could have a look at the ReactOS
-implementation, which claimes to be compatible to NT4.
+implementation, which claims to be compatible with NT4.
 </quote></p>
 
 <p>James Liggett looked into it and reported,
@@ -288,7 +288,7 @@ to work only for keys rooted at the config key "HKCU\Software\Wine".
 </p><p>
 My question is: Am I doomed to implement the caching on my own for this key, 
 should I generalize the helper functions, or do you think this configuration 
-option should'nt be in winecfg at all?</p></quote>
+option shouldn't be in winecfg at all?</p></quote>
 
 <p>Mike Hearn wondered when a user <i>wouldn't</i> want that to be
 set up.  Michael described why it should be configurable:</p>
@@ -575,9 +575,9 @@ could tackle that might prove to be interesting:</p>
      I have another 'fun' and useful project to add to
 the list.
 </p><p>
-It should be fairly to make wined3d (or d3d8) use the
+It should be fairly easy to make wined3d (or d3d8) use the
 wgl (windows opengl) instead of glx. (just search for
-glx commands and replace then with the wgl
+glx commands and replace them with the wgl
 equivalents)
 </p><p>
 Doing so would enable Wine's d3d to run on windows in
