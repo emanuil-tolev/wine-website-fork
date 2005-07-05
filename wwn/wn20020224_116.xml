@@ -762,7 +762,7 @@ about changes to x11drv:</p>
 	<p>1 &amp; 4 bit - very rarely used (unless you're talking about monochrome screens 
 	in embedded - by then 4 bit is important for gray scales..)</p>
 
-	<p>8 bit - used mostly on old system with old graphics cards when 16 bit & up 
+	<p>8 bit - used mostly on old system with old graphics cards when 16 bit &amp; up 
 	are slow - I'm talking about graphics chips like : trident 89xx family, ATI 
 	Mach 8, Cirrus Logic (all ISA versions), ancient S3 chips, and Number 9 (ISA) 
 	- on all of those cards it is better to run XFree in 8 bit or else you'll get 
