@@ -75,7 +75,7 @@ Its main goal is to lose trailers. It also serves to inform you of what's going 
 long time thorn in the side of Wine users, is getting some attention.
 CodeWeavers announced plans to get any installer running under Wine.
 If your favorite program doesn't install, then contact CodeWeavers and 
-they'll promise to fix the bugs in Wine to prevent it.  In return, 
+they'll promise to fix the bugs in Wine and make it work.  In return, 
 you'll have to use their test framework to make sure regressions don't
 slip in later that breaks things.  </p>
 
@@ -323,8 +323,8 @@ and it freezes and nothing happens.</p></quote>
 	startdate="07/11/2005"
 	enddate="07/22/2005"
 >
-<topic></topic>
-<p>Hans Leidekker began implementing 
+<topic>Integration</topic>
+<p>Hans Leidekker has been implementing 
 <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/ldap/ldap/lightweight_directory_access_protocol_ldap_api.asp">WLDAP32</a>
 for several weeks now.  He originally posted this message about two weeks
 ago:</p> 
