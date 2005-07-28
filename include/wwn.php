@@ -459,9 +459,10 @@ class wwn
               {
                 if ($c == 5)
                   break;
+                $array['WHO'] = preg_replace("/&lt;.*&gt;/", "", $array['WHO']);
                 $this->body .= "<li>".$array['POSTS']." posts in ".
                                $array['SIZE']."K by ".
-                               $html->urlify($array['WHO'])."</li>\n";
+                               $array['WHO']."</li>\n";
                 $c++;
               }
               $this->body .= "</ol>\n";
@@ -549,6 +550,8 @@ function _translateLiteral2NumericEntities ($xmlSource, $reverse = FALSE)
 // fix other issues in wwn xml
 function _translateWWN2valid ($xmlSource)
 {
+    // fix any stray ampersands
+    $xmlSource = eregi_replace("&", "&#038;", $xmlSource);
     // strip out comments
     $xmlSource = eregi_replace("<!-- .* -- />", "", $xmlSource);	
     return $xmlSource;
