@@ -280,7 +280,7 @@ http://people.redhat.com/mstefani/wine/smatch/</a>
 (if we decide to adopt smatch it should probably go to 
 <tt>$wine/tools/smatch/</tt>)
 to find code path with missing LeaveCriticalSection's. Scripts to find
-some other usefull things like fd, DC, GDI obejects leaks should be easy
+some other useful things like fd, DC, GDI objects leaks should be easy
 to write.
 </ul></p></quote>
 

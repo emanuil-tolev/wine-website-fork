@@ -102,10 +102,10 @@ However I think I have found an hopefully acceptable solution.
 <p />
 
 Using preprocessor "magic" it seems to be possible to rename the name 
-spaces to avoid collsions. Instead of doing 
+spaces to avoid collisions. Instead of doing 
 <ul><code>
         #include &lt;stdio.h&gt; /* libc */<br />
-        #include "stdio.h&gt; /* CRTDLL */
+        #include "stdio.h" /* CRTDLL */
 </code></ul>
 you do 
 <ul><code>

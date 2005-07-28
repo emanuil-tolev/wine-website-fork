@@ -92,7 +92,7 @@ of them really touched on the development going on in the tree.  There's
 definitely been a lot of CVS commits, so don't base development on the
 lack of mailing list threads.
 </p>
-<p>More Direct3D 9 work has made it's way into the Wine tree. 
+<p>More Direct3D 9 work has made its way into the Wine tree. 
 Oliver Stieber announced this week that Half-Life 2 will now run, however
 performance seems to be pretty bad and requires more work.  More
 importantly, you can now run demos and check for regressions.
@@ -108,8 +108,8 @@ General overview
 <ul>
 <li> some demos give odd crash on exit</li>
 <li> resizing windows is hacked (blame me) -- instead of stretching the output
--- it simply changes the vireport size</li>
-<li> for programs that enumerate display modes the screen flashes alot</li>
+-- it simply changes the viewport size</li>
+<li> for programs that enumerate display modes the screen flashes a lot</li>
 <li> for programs that enumerate display formats it takes a LONG time to
 startup</li></ul></p></quote>
 <p>
@@ -125,7 +125,7 @@ http://www.winehq.org/hypermail/wine-patches/2005/04/0289.html</a></ul></p>
 I've been working on an improved version that looks up
 what the graphics card supports once and generates a
 lookup table for later validation which makes the
-checks more or less instant, but it's not quite yet
+checks more or less instantaneous, but it's not quite yet
 ready yet.</p></quote>
 
 <p>Jesse Allen reported some realworld things were working better:</p>
@@ -206,7 +206,7 @@ one wineserver synchronize locks:</p>
 I guessed it is not needed to communicate between servers... I think user
 program will calls shared wineserver directly.
 </p><p>
-I need to get worked shared wineserver ASAP and am ready to do some coding for
+I need to get a working shared wineserver ASAP and am ready to do some coding for
 it.
 Have you any instructions for me or I need to patching it as I see.
 </p></quote>
@@ -289,7 +289,7 @@ main+0xc6(1, 8047868, 8047870)<br />
 _start+0x5d(1, 804795c, 0, 8047979, 80479f6, 8047a0a)
 </code></ul>
 </p><p>
-bebugger_attach calls suspend_process then stop_thread
+debugger_attach calls suspend_process then stop_thread
 </p><p>
 stop_thread sends a SIGUSR1 at the thread of interest. The result of this is 
 that the thread is terminated and there is nothing to attach to....
@@ -329,7 +329,7 @@ In future it'll also store the sigcontext so copy protection and such
 works.</p></quote>
 
 <p>POSIX defines two different user-defined signals that can be sent
-and caught be applications: SIGUSR1 and SIGUSR2.  Wine currently uses
+and caught by applications: SIGUSR1 and SIGUSR2.  Wine currently uses
 both and there's a need for more.  That may or may not have
 been what Mike was referring to when he said SIGUSR1 could also be used
 for the sigcontext.  Discussion in the past focused on muxing the

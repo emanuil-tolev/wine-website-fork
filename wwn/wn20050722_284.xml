@@ -91,7 +91,7 @@ We are on a mission to improve Wine until it can run nearly every Windows progra
 </p><p>
 Over the past year we've completed support for a set of technologies key to making Windows applications install: the Component Object Model (COM aka OLE) DLLs and the Microsoft Installer service (MSI). That work is now largely done, and we would like to start taking advantage of it to showcase what Wine can do.
 </p><p>
-The basic idea is that if you send us a piece of software, we will commit to making it install. In exchange, we need you to promise to run a regression test of that installation, thereby insuring that it continues to install into the future. </p></quote> 
+The basic idea is that if you send us a piece of software, we will commit to making it install. In exchange, we need you to promise to run a regression test of that installation, thereby ensuring that it continues to install into the future. </p></quote> 
 
 </section>
 <section 
@@ -103,7 +103,7 @@ The basic idea is that if you send us a piece of software, we will commit to mak
 >
 <topic>RPC / COM / OLE</topic>
 <p>Jeremy White sent a long email to wine-devel to discuss the
-big projects tackled by Codeweavers over the past few months:</p>
+big projects tackled by CodeWeavers over the past few months:</p>
 <quote who="Jeremy White"><p>
 
 You may have noticed Rob submitting a long string of OLE
@@ -111,7 +111,7 @@ patches.
 </p><p>
 That is formally the last set of 'hard work' we planned to
 do as part of our work on our 5.0 release.  Now we just
-have to do the 'easy part' - stabilizing for release &amp;&lt;g&amp;&gt;.
+have to do the 'easy part' - stabilizing for release &amp;lt;g&amp;gt;.
 </p><p>
 The big picture items included the window manager rewrite,
 the OLE/COM work, and the work on MSI.
@@ -187,7 +187,7 @@ marshaling proxies?), but installs most of the time. InstallShield.</li>
 <li>Dark Ages of Camelot - Installs fine.</li>
 <li>World of Warcraft - Installs fine.</li>
 <li>Starcraft - Installs fine.</li>
-<li>Wordperfect Office 12 - Installs fine. InstallShield.</li>
+<li>WordPerfect Office 12 - Installs fine. InstallShield.</li>
 <li>CSI Dark Motives - Installs fine. InstallShield.</li>
 <li>Google Earth - Installs fine. InstallShield.</li>
 <li>X-Win32 LX - Installs fine. InstallShield.</li>
@@ -271,7 +271,7 @@ with the stdole2.tlb typelib.  For some background on this, see WWN
 <a href="http://www.winehq.com/?issue=238#Creating%20Type%20Libraries">#238</a>
 for more information about this topic.  Ivan wrote:</p>
 <quote who="Ivan Gyurdiev"><p>
-I was wondering what the status is of stdole2.tlb in wine.
+I was wondering what the status of stdole2.tlb is in wine.
 GTA: San Andreas will not install without it..
 
 <ul><a href="http://bugs.winehq.org/show_bug.cgi?id=3108">
@@ -284,7 +284,7 @@ generated using widl without some extensions.</p><p>
 There are two options:
 <ol>
 <li> Generate the file manually by invoking ICreateTypeLib2 functions (I 
-believe Microsoft do it this way).</li>
+believe Microsoft does it this way).</li>
 <li> Add another mode to widl that allows the necessary forward references 
 in idl files. Huw Davies knows more about this problem.</li>
 
@@ -395,7 +395,7 @@ more and more ...
 At least five apps from wine-bug mailinglist throw up
 an exception which either reads: "Assertion Failed
 !bogus context in Local_Unwind()" or "in
-Exception_Handler". As a reference a filed 2 bugs, and
+Exception_Handler". As a reference I filed 2 bugs, and
 commented another one where you can read the
 +relay,+seh logs:
 <ul>

@@ -106,7 +106,7 @@ Its main goal is to get lost in the woods. It also serves to inform you of what'
 <a href="http://www.startcom.org">StartCom
 Linux</a>.  This week they released a new version of their Multimedia Edition, 
 <a href="http://www.startcom.org/index.php?lang=en&amp;app=40">ML-4.0.4</a>,
-with a new version of Wine.  They've put together their own RPM's, but
+with a new version of Wine.  They've put together their own RPMs, but
 don't be fooled by the 0.99 version number.  What you're actually getting
 is wine-20050524.  
 </p>
@@ -127,11 +127,11 @@ his recent patches:</p>
 
 <p>1.</p>
 <quote who="Oliver Stieber"><p>
-This patch agains winecvs 2005-05-13 adds support for
+This patch against winecvs 2005-05-13 adds support for
 Stateblocks, sampler states and swapchains to wined3d
 There are a few spelling fixes and tidyups,
-and a fix for some errors with cubtexture introduced
-in the interface seperation patch.
+and a fix for some errors with cubetexture introduced
+in the interface separation patch.
 </p><p>
 With this patch the following demos now run correctly:
 </p><p>
@@ -187,7 +187,7 @@ This patch adds support for Vertex declarations.
 The parsing of vertex declarations has been tidied up,
 d3d8 declarations are
 converted into d3d9 declarations so that only one type
-of declaration need to
+of declaration needs to
 be managed in the code. Vertex declarations are no
 longer parsed into FVF's
 since the fvf doesn't support everything vertex
@@ -195,8 +195,8 @@ declarations support.
 </p><p>
 There is a minor issue in that vertex shader constants
 provided by d3d8 declarations aren't
-parsed properly yet, but this will be impmeted with
-vertx shaders.
+parsed properly yet, but this will be implemented with
+vertex shaders.
 </p></quote>
 
 <p>3.</p>
@@ -208,7 +208,7 @@ to the correct
 <ul>
 _D3DCAPS9.PixelShader1xMaxValue;</ul></p><p>
 
-To my knowlage this doesn't fix anything but does
+To my knowledge this doesn't fix anything but does
 enable code with the correct name to compile properly.
 </p></quote>
 
@@ -231,7 +231,7 @@ wined3d make it into cvs.
 
 <p>6.</p>
 <quote who="Oliver Stieber"><p>
- This patch causses d3d9 to call wined3d for
+ This patch causes d3d9 to call wined3d for
 GetDirect3D instead of using the ->direct3D instance,
 which is no longer valid.
 </p></quote>
@@ -242,7 +242,7 @@ which is no longer valid.
  wined3d.
 </p><p> 
  additionally a couple of minor issues that prevented
- anything from running have been fixes.
+ anything from running have been fixed.
 </p><p> 
  the non-power2 texture check in wined3d/device.c has
  been changed to ignore rendertargets
@@ -256,7 +256,7 @@ which is no longer valid.
 <quote who="Oliver Stieber"><p>
 This patch tidies up a few texture bugs
 <ul>
-    <li>Makes all newly created surfces dirty, so that
+    <li>Makes all newly created surfaces dirty, so that
 they are loaded properly the first time around.</li>
     <li>Replaces some calls to cubetexture in basetexture
 to calls to basetexture.</li>
@@ -293,7 +293,7 @@ support additional versions of Direct3D.
 This patch implements rendertargets using either
 textures, swapchains or standalone surfaces.
 </p><p>
-This patch is only dependand on winecvs but.....
+This patch is only dependent on winecvs but.....
 </p><p>
 When applying this patch along with the stateblock
 patch the following lines in wined3d/stateblock.c :
@@ -310,7 +310,7 @@ render target calls with relays to wined3d.
 <p>13.</p>
 <quote who="Oliver Stieber"><p>
 This patch against wine-cvs adds support adds support
-for vertex decalrations to wined3d and d3d9.
+for vertex declarations to wined3d and d3d9.
 </p></quote>
 
 <p>14.</p>
@@ -368,7 +368,7 @@ description of that tab to briefly explain it links to other ones
 (inc. "Graphics").  In fact, I'm procrastinating, so maybe I'll just
 try to submit a patch for that.
 </p><p>
-So if you want to change systemwide overrides:
+So if you want to change system-wide overrides:
 <ol>
 <li> Select "Default Settings" in the Applications tab.</li>
 <li> Then move to the "Libraries" tab and enter the name of the DLL in
@@ -391,7 +391,7 @@ The current design is totally braindead from a usability standpoint:
 <ul>
 <li> As you pointed out it's not very intuitive that selecting an item in
   the first tab affects the semantics of the other tabs (even if it
-  would be documented).</li>
+  were documented).</li>
 
 <li> It's not clear which settings are global-only - we could disable the
   controls but it would still be confusing IMHO. Also the drives tab
@@ -434,7 +434,7 @@ settings invariably exist to work around :)
 Eg, even "Windows Version" will hopefully be fixed sometime later this
 year (?) by switching us to 2K/XP mode by default and by nailing the last
 DCOM problems. Desktop mode will eventually (I hope) become the
-"winedesktop" program that was done years ago, I'm not sure what AJ plans
+"winedesktop" program that was done years ago, I'm not sure what AJ's plans
 are here though.
 </p><p>
 Eventually nobody should have to use winecfg for anything. Let's spend our
@@ -494,7 +494,7 @@ cabinet.dll. What's the best way to accomplish this?
 <li> dynamically loading an elf library at runtime</li>
 <li> do configure checks at ./configure and link statically</li>
 <li> do the same and link dynamically</li>
-<li> checkin a windows-version of this LZX compressor to wine cvs and use 
+<li> check in a windows-version of this LZX compressor to wine cvs and use 
   that at runtime.</li>
 </ol></p><p>
 Web site:
@@ -505,7 +505,7 @@ http://www.speakeasy.org/~russotto/chm/</a></ul></p></quote>
 compressor and explained,
 <quote who="Steven Edwards">
 
-If its not too big I would rather go this route to make it less trouble 
+If it's not too big I would rather go this route to make it less trouble 
 to share the dll with ROS.
 </quote></p>
 
