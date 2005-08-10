@@ -80,7 +80,7 @@ Using this tool I was able to install a number of Windows programs that I have
 stored on my C: in their executable form. Again, this may seem like the type 
 of thing that a long-time Linux user would scoff at but if you are trying to 
 move to Linux in a a gradual manner or you just happen to be attached to 
-certain programs tools like this can prove invaluable. This process could be 
+certain programs, tools like this can prove invaluable. This process could be 
 done in just a few clicks but took a good deal longer than a standard Windows 
 installation due to the internal adjustments that must be made.</p></quote>
 
@@ -134,7 +134,7 @@ PHP, you might be interested in looking at the to-do list.
 <topic>Architecture</topic>
 <p>It's known there are performance issues with some sensitive areas
 of Wine.  On Windows, calls between threads and processes can be
-handled really fast directly within the server.  With Wine, those
+handled really fast directly within the kernel.  With Wine, those
 same calls require the wineserver to handle the synchronization, which
 itself is just another Linux process.  Those roundtrip IPC calls to
 the server can be expensive, and a lot of work has gone into trying
@@ -143,19 +143,19 @@ to make sure those roundtrips are minimized.  </p>
 <p>Oliver M&#214;ssinger illustrated an example of a performance
 problem with a test program:</p>
 <quote who="Oliver Mossinger"><p>
-attached i have a test case whitch demonstates the differece between Windows 
+attached i have a test case which demonstrates the difference between Windows 
 and wine. There is also a sample program 'TEST.CPP' attached.</p><p>
 
 On Windows XP
 <ol>
 <li> Start 'test.exe' from a dos-box... you see some FAST counting integers</li>
-<li> Start a other (loop.pl) program witch consumes mutch cpu time.</li>
+<li> Start another (loop.pl) program which consumes much cpu time.</li>
 <li> the output of 'test.exe' is slower but FAST</li></ol></p><p>
 
 On wine
 <ol>
 <li> Start 'test.exe' from a dos-box... you see some FAST counting integers</li>
-<li> Start a other (loop.pl) program witch consumes mutch cpu time.</li>
+<li> Start another (loop.pl) program which consumes much cpu time.</li>
 <li> the output of 'test.exe' is very slow</li></ol></p><p>
 
 This different behavior starts from wine version 20041201. The version before 
@@ -177,7 +177,7 @@ probably improve the behavior on Windows too.
 <p>Felix Nawothnig thought there was a real issue here that needed
 fixing:</p>
 <quote who="Felix Nawothnig"><p>
-That's just a workaround. Our PeekMessage is definitly misbehaving - I 
+That's just a workaround. Our PeekMessage is definitely misbehaving - I 
 ran the attached test-program in Wine and WinXP... here are the results:
 </p><p>
 Wine:
@@ -194,7 +194,7 @@ WinXP:
      PeekMessage(...) yielded 0 times<br />
      PeekMessage(... PM_NOYIELD) yielded 0 times
 </ul></p><p>
-(The numbers slightly differ between runs for obvious reasons but they 
+(The numbers differ slightly between runs for obvious reasons but they 
 are close enough (with an error margin of +/- 10 we could maybe make 
 this a real testcase))
 </p><p>

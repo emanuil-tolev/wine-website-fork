@@ -94,7 +94,7 @@ Its main goal is to synthesize. It also serves to inform you of what's going on 
 <topic>News</topic>
 <p>Linux Magazine has a good 
 <a href="http://www.linux-mag.com/content/view/2040/112/">interview</a>
-with CodeWeaver's Jeremy White.  There's a lot of interesting stuff in
+with CodeWeavers' Jeremy White.  There's a lot of interesting stuff in
 there, such as Longhorn, CXTest, and DRM issues.  From the interview:</p>
 <quote who="Linux Magazine"><p>
 <i>LM: So, first of all, give us a little background on the Installer Challenge.
@@ -144,23 +144,23 @@ Now it's time to write about this patch. For now it can use
 Gecko installed with Mozilla Suite or Mozilla ActiveX
 Control - it could use any Gecko-based product, but
 we have to be able to search for it (every Gecko-based
-product has its own registry settings for Gecko path). I'm
+product has its own registry settings for the Gecko path). I'm
 planning to add Firefox support, but it doesn't work yet
 and I have to find why. If you think there should be support
 for any other application, please let me know. As our
-shdocvw still uses Mozilla ActiveX Control, I think it should
+shdocvw still uses the Mozilla ActiveX Control, I think it should
 be preferred (it's the first one on the search list and it's
-smallest). In future, when we'll implement shdocvw on top
-on MSHTML and get rid of Mozilla ActiveX Control
+smallest). In future, when we implement shdocvw on top
+on MSHTML and get rid of the Mozilla ActiveX Control
 dependency, I think it will be better to have a package like
 wine-gecko with an installer, downloaded  automatically
 when  needed (well, not automatically in MS sense, user will
 be informed about it ;-) ). We need a very limited version
-of Gecko, so it will be just small package.
+of Gecko, so it will be just a small package.
 </p><p>
 What does this patch change? You may see IE working on
 Gecko engine! Not much of its functionality is implemented
-yet, but a HTML document is displayed. Soon there will be
+yet, but an HTML document is displayed. Soon there will be
 more! To see how it works for your program, probably you
 will have to set shdocvw to native (and usually urlmon,
 maybe wininet) and mshtml as builtin.</p></quote>
@@ -322,7 +322,7 @@ offset by XP's faster graphics.
 <topic>Ports</topic>
 <topic>Build Process</topic>
 <p>
-Isn't it great when you ask a question on mailing list and someone
+Isn't it great when you ask a question on a mailing list and someone
 replies with an answer a few minutes later?  Isn't it especially great
 when it's a slightly bizarre question that you don't expect anyone to
 have a detailed answer for?  John Connor wanted to know about cross-compiling
@@ -352,7 +352,7 @@ cd /usr/src/wine<br />
 </code></ul></p><p>
 Note there is no support for arm in Wineserver, kernel32 or ntdll so winelib 
 won't run yet. Most everything else should compile as Winelib works on i386, 
-PPC and SPARC. You might be able to get by stubbing the set_thread_context 
+PPC and SPARC. You might be able to get by by stubbing the set_thread_context 
 stuff out for simple apps.</p></quote>
 
 <p>We sort of touched on this subject last winter in WWN
@@ -415,7 +415,7 @@ static libs have not gone over very well".</li>
 </ul></p><p>
 I don't like the current code duplication for theming that much, but I'm
 a bit unsure what else could be done. Perhaps you have some comments or
-suggestions, and hopefully there will be some consent of what approach
+suggestions, and hopefully there will be some consensus of what approach
 would be best for Wine.</p></quote>
 
 <p>Rob Shearman suggested another approach,
