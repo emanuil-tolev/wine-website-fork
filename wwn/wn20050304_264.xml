@@ -668,7 +668,7 @@ support that vary from one sound card to the next (and to some extent
 from one Alsa configuration / OSS emulation version to the next) and
 which all cause trouble.
 </p><p>
-&amp;lt;rant&amp;gt;
+&lt;rant&gt;
 </p><p>
 And Wine is way too sensible to these issues, even more so if the
 application uses DirectSound. Part of this is because the Windows API is
@@ -705,7 +705,7 @@ not-low-latency stereo sound and unfortunately I have not seen any
 progress on this in the past couple of years (i.e. there are still about
 has many users having problems now as two years ago).
 </p><p>
-&amp;lt;/rant&amp;gt;
+&lt;/rant&gt;
 </p></quote>
 
 </section>

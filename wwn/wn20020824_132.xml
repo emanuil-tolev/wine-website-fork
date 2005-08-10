@@ -188,7 +188,7 @@ I use this:<ul><code>
 #!/bin/sh<br />
 #&lt;wine&gt;/documentation/*.sgml reader (c) 2000- Lawson Whitney<br />
 # Use, distribute, or change at your own risk.<br />
-sed -e 's/&lt;[^&lt;&gt;]*&gt;//g' -e 's/&amp;lt;/&lt;/g' -e 's/&amp;gt;/&gt;/g' $1 |less -ni
+sed -e 's/&lt;[^&lt;&gt;]*&gt;//g' -e 's/&lt;/&lt;/g' -e 's/&gt;/&gt;/g' $1 |less -ni
 </code></ul></p>
 </quote>
 

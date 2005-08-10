@@ -382,7 +382,7 @@ only days before by Alexandre):</p>
 <quote who="Huw Davies"><p>
 
 Yup, that's the fonts substitutes mechanism which is different from the
-replacements one&amp;lt;g&amp;gt;  See LoadReplaceList in gdi/freetype.c
+replacements one&lt;g&gt;  See LoadReplaceList in gdi/freetype.c
 </p><p>
 You need something like this:
 <ul><code>

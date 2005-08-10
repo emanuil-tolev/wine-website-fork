@@ -108,7 +108,7 @@ an understandable UI</li></ul></p><p>
 help is required to:
 <ul>
 <li> get some decent icons for toolbar (I don't feel like a graphic designer)</li>
-<li> &amp;lt;put here what you want&amp;gt;</li></ul></p><p>
+<li> &lt;put here what you want&gt;</li></ul></p><p>
 
 downside: the get_symbol function in system.c is really ugly. I wouldn't 
 be surprised if Alexandre doesn't like it (I don't like it myself). A 

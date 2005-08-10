@@ -212,7 +212,7 @@ concerning a Mac port:</p>
  of CrossOver make business sense...until now.
 </p><p> 
  We're still figuring out just how we want to attack this,
- and so on (and waiting for our dev kit to arrive &amp;lt;g&amp;gt;)
+ and so on (and waiting for our dev kit to arrive &lt;g&gt;)
  Right now, we're trying to encourage
  ISVs to partner with us; the more interest we can generate
  now, the more energy we can put into this prior to the
@@ -351,7 +351,7 @@ a great test for Wine.
 hhctrl.ocx control:</p>
 <quote who="Jacek Caban"><p>
 <code>
-#include &amp;lt;windows.h&amp;gt;<br /><br />
+#include &lt;windows.h&gt;<br /><br />
 
 typedef int WINAPI DOWINMAIN(HMODULE hMod, LPSTR cmdline);<br /><br />
 
