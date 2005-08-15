@@ -192,65 +192,6 @@ involving Active Server Pages support.</p>
 
 </section>
 <section 
-	title="Summer of Code Projects"
-	subject="Summer of Code Projects"
-	archive="http://wiki.winehq.org/SummerOfCode"
-	posts="0"
-	startdate="08/12/2005"
->
-<topic>Project Management</topic>
-<p>After the Summer of Code projects were selected we never told
-anyone what they were.  Google themselves haven't published anything
-because they're still sorting out paperwork (taxes, etc).  So I've 
-done a little legwork and tried to figure out what's going on.  
-</p><p>
-You might remember that Wine had 6 projects approved by Google out
-of a total of 18 recommended by a group consisting of Alexandre,
-Jeremy White, Dimi Paun, Lionel Ulmer, and Dan Kegel.  Of those six,
-it appears one has gone MIA.  So that leaves us with five:
-
-<ul>
-<li>Jacek Caban has been working on implementing MSHTML using a
-Gecko rendering engine.  We've covered this quite a bit over the past
-few months, including a status update two weeks ago in 
-<a href="http://www.winehq.com/?issue=285#MSHTML%20Update">WWN #285</a>.
-The <a href="http://wiki.winehq.org/MozillaIntegration">MozillaIntegration</a>
-page has more info.  Mike McCormack is mentoring this project.
-</li>
-<li>Theming support being tacked by Frank Richter, alluded to in Alexandre's 
-last CVS drop and also covered in 
-<a href="http://www.winehq.com/?issue=285#Theming%20Work">WWN 
-#285</a>, has also been progressing.  The work centers on hooking into
-theming into Wine's controls and making them paint the current theme.  
-This past week saw a lot of patches hit wine-patches and were
-subsequently committed by Alexandre.  Kevin Koltzau is mentoring this one.</li>
-<li>Daniel Remenak has been working on improving DirectInput
-support in Wine.  A few weeks ago we talk about the
-addition of force feedback code that was just starting to appear 
-(<a href="http://www.winehq.com/?issue=285#Force%20Feedback">WWN #285</a>).
-Daniel is behind that work and there's even more stuff to come. 
-Lionel Ulmer is mentoring this project. </li>
-
-<li>Now we get into two projects we haven't really discussed.  
-<a href="http://wiki.winehq.org/KaiBlin">Kai Blin</a> is just starting
-to post patches to get authentication working in Wine.  His wiki page,
-referenced in that link, contains a good project roadmap.  There's a
-lot of code to wrap your head around and it sounds like he's getting
-there.  The goal is to implement Microsoft's SSPI security API's using
-Samba's GENSEC module.  Kai's mentor is Juan Lang. </li>
-
-<li>Finally, Ivan Pechorin is working on wire-compatible DCOM.  Rob
-Shearman is mentoring the project.  Although initial contact has been
-made, nothing has appeared yet.</li>
-</ul></p>
-
-<p>The project that appears to be dropped was proposed by Ivan Memruk
-involving Active Server Pages support.</p>
-
-
-
-</section>
-<section 
 	title="News: WGA on Slashdot" 
 	subject="Wine passes WGA test"
 	archive="http://www.winehq.org/hypermail/wine-devel/2005/08/0138.html" 
