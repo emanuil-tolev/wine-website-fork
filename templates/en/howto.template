@@ -6,7 +6,7 @@
 <p>Before you install Wine, first make sure that there is no previous Wine 
 installation on your system, either from a package or from source. If you 
 haven't yet installed Wine, you should be fine. See the 
-<a href="{$root}/site/docs/wine-user/index">Removing old Wine versions</a> 
+<a href="{$root}/site/docs/wine-user/installing-wine-source#UNINSTALLING-WINE-SOURCE">Removing old Wine versions</a> 
 chapter in the User Guide for details.</p>
 <!--update this link after fixing User Guide-->
 
@@ -21,7 +21,7 @@ is still very much in beta, current Wine releases are generally not subject to
 much quality assurance in favor of more development work. This means that newer 
 Wine versions might be a bit buggy, but it also means that there is no 
 particular reason to try running an old version, as they are generally no more 
-stable than the latest. If a recent Wine upgrade has caused a formerly funtional
+stable than the latest. If a recent Wine upgrade has caused a formerly functional
  application to stop working, please help us and see the section on fixing 
 regressions in the <a href="{$root}/site/helping-applications">helping 
 applications work</a> guide.</p>
@@ -34,9 +34,7 @@ installing from a package or from source, please consult the Getting Wine
 chapter of the User guide <a href="{$root}/site/docs/wine-user/getting-wine">
 here</a>.</p>
 
-<p>Wine is currently in a transitionary phase. We are working on replacing the 
-cryptic configuration file with an easy to use graphical utility called winecfg.
-In the meantime, however, we recommend that you use a handy program called 
+<p>If your using an old version of Wine we recommend that you use a handy program called 
 <a href="{$root}/site/download#third-party">Winetools</a> to setup Wine for you.
 Winetools will painlessly configure Wine with some excellent defaults, and 
 also provides some easy to use tools to install Internet Explorer and DCOM, 
