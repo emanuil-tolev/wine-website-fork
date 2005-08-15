@@ -40,7 +40,7 @@
         an application performs an illegal operation (ie crashes) or
         occasionally a program will throw their own exceptions. UNIX
         signals are converted into SEH exceptions by Wine and you can
-        watch their propogation using this channel. It's handy because
+        watch their propagation using this channel. It's handy because
         often applications will trap their own crash to, for instance,
         peform an emergency save. The most common exception to watch
         for is STATUS_ACCESS_VIOLATION or <b>0xC0000005</b> which is
@@ -88,7 +88,7 @@
         between two native DLLs. The information produced by this
         channel is not as good as relay data, as there is no
         information on the parameters used. Snoop inspects the stack
-        and disassemblies function prologues to try and guess what the
+        and disassembles function prologues to try and guess what the
         parameters are, and so may destabilise the application. <p>
       </li>
 
@@ -342,7 +342,7 @@
       <li>
         Win32 code uses HeapAlloc(GetProcessHeap(), 0, allocsize)
         instead of malloc(allocsize) and therefore so does Wine. In
-        pratice this rule isn't strictly enforced so you may see both. <p>
+        practice this rule isn't strictly enforced so you may see both. <p>
       </li>
     </ul>
 
@@ -377,7 +377,7 @@
       compiled yourself so you can get used to what it looks like. The
       Intel instruction set is vast but very few instructions are used
       frequently. If you know what to expect, you won't be tripped up
-      by bad disassemblies or anti-disassembly tricks which can
+      by bad disassembles or anti-disassembly tricks which can
       corrupt the output. </p>
 
     <p> Firstly, if you do decide to disassemble a program, be aware of what
@@ -399,17 +399,17 @@
         call followed by a check against this register, you're very
         likely to be seeing a check for an error code. <p> </li>
 
-      <li> Call instructions which dereference a value like so: "call
+      <li> Call instructions which deference a value like so: "call
         *0x12345678" are usually calls into other DLLs (often API
         calls). Winedbg should be able to show you which API the call
         instruction is invoking. Instruction sequences that move a
-        value into a register from the stack and then dereference it in
+        value into a register from the stack and then deference it in
         a call instruction could well be COM method invocations. <p> </li>
 
       <li> C++ applications compiled using Microsoft Visual C++ (the
         most popular C++ compiler on Windows) use the thiscall calling
         convention, in which the instance pointer is stored in
-        %ecx. If you get a crash dereferencing the value of %ecx in a
+        %ecx. If you get a crash differencing the value of %ecx in a
         C++ program, you might be seeing a null pointer deference on
         an object instance. This is especially likely if the offset is
         quite large, ie a crash accessing 0x36 is a pretty good
