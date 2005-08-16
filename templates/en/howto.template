@@ -3,49 +3,56 @@
 <h1>Wine HowTo</h1>
 
 
-<p>Before you install Wine, first make sure that there is no previous Wine 
-installation on your system, either from a package or from source. If you 
-haven't yet installed Wine, you should be fine. See the 
-<a href="{$root}/site/docs/wine-user/installing-wine-source#UNINSTALLING-WINE-SOURCE">Removing old Wine versions</a> 
+<p>Before you install Wine, first make sure that there is no previous Wine
+installation on your system, either from a package or from source. If you
+haven't yet installed Wine, you should be fine. See the
+<a href="{$root}/site/docs/wine-user/installing-wine-source#UNINSTALLING-WINE-SOURCE">Removing old Wine versions</a>
 chapter in the User Guide for details.</p>
 <!--update this link after fixing User Guide-->
 
-<p>Many Linux distributions come with an included Wine package, but due to 
-Wine's rapid development rate these are usually old and sometimes broken 
-versions. It is best to uninstall included package versions and update to the 
+<p>Many Linux distributions come with an included Wine package, but due to
+Wine's rapid development rate these are usually old and sometimes broken
+versions. It is best to uninstall included package versions and update to the
 latest Wine version available here.</p>
 
-<p>Since Wine has not yet met its goals for a stable 0.9 release, current 
+<p>Since Wine has not yet met its goals for a stable 0.9 release, current
 version numbers are instead given by date in the format Year/Month/Day. As Wine 
-is still very much in beta, current Wine releases are generally not subject to 
-much quality assurance in favor of more development work. This means that newer 
-Wine versions might be a bit buggy, but it also means that there is no 
-particular reason to try running an old version, as they are generally no more 
+is still very much in alpha, current Wine releases are generally not subject to
+much quality assurance in favor of more development work. This means that newer
+Wine versions might be a bit buggy, but it also means that there is no
+particular reason to try running an old version, as they are generally no more
 stable than the latest. If a recent Wine upgrade has caused a formerly functional
- application to stop working, please help us and see the section on fixing 
-regressions in the <a href="{$root}/site/helping-applications">helping 
+ application to stop working, please help us and see the section on fixing
+regressions in the <a href="{$root}/site/helping-applications">helping
 applications work</a> guide.</p>
 
-<p>Ready-made, updated binary packages for Wine can be found at the WineHQ 
-downloads page <a href="{$root}/site/download">here</a>. In addition, full 
-source code is available for both the current Wine development tree and every 
-Wine release <a href="{$root}/site/download#source">here</a>. For help with 
-installing from a package or from source, please consult the Getting Wine 
+<p>Ready-made, updated binary packages for Wine can be found at the WineHQ
+downloads page <a href="{$root}/site/download">here</a>. In addition, full
+source code is available for both the current Wine development tree and every
+Wine release <a href="{$root}/site/download#source">here</a>. For help with
+installing from a package or from source, please consult the Getting Wine
 chapter of the User guide <a href="{$root}/site/docs/wine-user/getting-wine">
 here</a>.</p>
 
-<p>If your using an old version of Wine we recommend that you use a handy program called 
+<p>As of Wine release 20050628 we have transitioned away from the config file and
+now place these values in registry files found in your .wine directory.
+winecfg (wine configurator) in conjunction with regedit (registry editor) are
+two graphical front ends that makes changing registry values easier for end user's.
+winecfg while still beta software can be used for basic configuration and optimizations,
+more advanced users may wish to use regedit to make changes that winecfg isn't capable of performing.</p>
+
+<p>If your using an old version of Wine we recommend that you use a handy program called
 <a href="{$root}/site/download#third-party">Winetools</a> to setup Wine for you.
-Winetools will painlessly configure Wine with some excellent defaults, and 
-also provides some easy to use tools to install Internet Explorer and DCOM, 
+Winetools will painlessly configure Wine with some excellent defaults, and
+also provides some easy to use tools to install Internet Explorer and DCOM,
 which provide native DLL files useful for running applications that Wine doesn't
 fully support yet.</p>
 
-<p><b><i>Note to Debian users:</i></b> The packages included in the main 
-distribution are currently very out of date.  We're working on having the 
-latest packages available officially from Debian's servers, but until then we 
+<p><b><i>Note to Debian users:</i></b> The packages included in the main
+distribution are currently very out of date.  We're working on having the
+latest packages available officially from Debian's servers, but until then we
 suggest you install the latest Wine by using our apt repository <a 
-href="{$root}/site/download-deb">here</a>. Ubuntu users can install the latest 
+href="{$root}/site/download-deb">here</a>. Ubuntu users can install the latest
 Wine packages by using one of the repositories from the <a 
 href="http://ubuntuforums.org/forumdisplay.php?f=47">Ubuntu backports project
 </a>.</p>
