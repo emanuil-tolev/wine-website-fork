@@ -399,18 +399,18 @@
         call followed by a check against this register, you're very
         likely to be seeing a check for an error code. <p> </li>
 
-      <li> Call instructions which deference a value like so: "call
+      <li> Call instructions which dereference a value like so: "call
         *0x12345678" are usually calls into other DLLs (often API
         calls). Winedbg should be able to show you which API the call
         instruction is invoking. Instruction sequences that move a
-        value into a register from the stack and then deference it in
+        value into a register from the stack and then dereference it in
         a call instruction could well be COM method invocations. <p> </li>
 
       <li> C++ applications compiled using Microsoft Visual C++ (the
         most popular C++ compiler on Windows) use the thiscall calling
         convention, in which the instance pointer is stored in
-        %ecx. If you get a crash differencing the value of %ecx in a
-        C++ program, you might be seeing a null pointer deference on
+        %ecx. If you get a crash dereferencing the value of %ecx in a
+        C++ program, you might be seeing a null pointer dereference on
         an object instance. This is especially likely if the offset is
         quite large, ie a crash accessing 0x36 is a pretty good
         indication that it's a C++ object and not just a very large C
