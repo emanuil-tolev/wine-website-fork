@@ -26,6 +26,7 @@ class wwn
                                  "a"	        => "a",
                                  "b"	        => "b",
                                  "i"	        => "i",
+                                 "img"          => "img",
                                  "u"	        => "u",
                                  "ul"	        => "ul",
                                  "ol"	        => "ol",
