@@ -80,7 +80,7 @@ Its main goal is to prove the relativity of measurements of time.  It also serve
 for 2005 and 2006.  This is significant for a lot of reasons.  We
 get glimpses of the direction CodeWeavers is heading from time to
 time, and if you follow the daily CVS commits and wine-patches you
-can glean even more info.  However, rarely do we a concise summary
+can glean even more info.  However, rarely do we get a concise summary
 of what's going on.  CodeWeavers drives a lot of the development
 behind Wine, especially when it comes to implementing new features
 from the ground up.  I would include the 
@@ -161,12 +161,12 @@ page has more info.  Mike McCormack is mentoring this project.
 <li>Theming support being tacked by Frank Richter, alluded to in Alexandre's 
 last CVS drop and also covered in 
 <a href="http://www.winehq.com/?issue=285#Theming%20Work">WWN 
-#285</a>, has also been progressing.  The work centers on hooking into
+#285</a>, has also been progressing.  The work centers on hooking
 theming into Wine's controls and making them paint the current theme.  
 This past week saw a lot of patches hit wine-patches and were
 subsequently committed by Alexandre.  Kevin Koltzau is mentoring this one.</li>
 <li>Daniel Remenak has been working on improving DirectInput
-support in Wine.  A few weeks ago we talk about the
+support in Wine.  A few weeks ago we talked about the
 addition of force feedback code that was just starting to appear 
 (<a href="http://www.winehq.com/?issue=285#Force%20Feedback">WWN #285</a>).
 Daniel is behind that work and there's even more stuff to come. 
@@ -377,7 +377,7 @@ did the crackling appear in the first place, even though the direct
 hardware pointer was used.
 </p></quote>
 
-<p>A few days later he found the proper fixed and described it:</p>
+<p>A few days later he found the proper fix and described it:</p>
 <quote who="Alex Villacis Lasso"><p>
 Reading through my own previous explanation, I realized that the 
 original crackling problem lies in the fact that the hardware pointer is 

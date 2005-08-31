@@ -69,29 +69,29 @@ problem:</p>
 <quote who="Stefan Dosinger"><p>
 I am trying(once again) to get Empire Earth running with wine. After 
 solving a few problems, I've run into a strange access violation crash. It 
-looks like a buffer overrun, followed by a return to an invalid adress.
+looks like a buffer overrun, followed by a return to an invalid address.
 </p><p>
 
 The crash messages look a little bit different every time, with illegal 
 instructions / access violations or even a Segmentation Fault without 
-starting winedbg at various addreses(Attached file crashes). On very rare 
+starting winedbg at various addresses(Attached file crashes). On very rare 
 occasions, this crash doesn't occur, and the game continues to load and 
 crashes later in some ddraw function. Instead of crashing it complains about 
 a corrupted heap:
 <ul><code>
  err:heap:HEAP_ValidateInUseArena Heap 0x7fd80000: prev arena 0x7fe01640 is 
 not prev for in-use 0x7fe01cb0</code></ul></p><p>
-I've looked at a +heap trace, but I couldn't find anything usefull.
+I've looked at a +heap trace, but I couldn't find anything useful.
 (See ee-nocrash for a log). I've also attached a normal log without any 
 special debug flags set(ee-normal.log.gz). I've added a few ERR statements 
 for testing in some functions.
 </p>
 <p>So my questions are:
 <ul><li>
-Am I right with my suspection that the problems are caused by a incorrect 
+Am I right with my suspicion that the problems are caused by an incorrect 
 return?</li>
 <li>How can I get a disassembly of Low-Level 
-Engine.?Deactivate_at_GERasterizer@@UAEJXZ or simmilar functions. I didn't find 
+Engine.?Deactivate_at_GERasterizer@@UAEJXZ or similar functions. I didn't find 
 this symbol.</li></ul></p></quote>
 
 <p>James Liggett recognized the problem,
@@ -106,11 +106,11 @@ of the problem:</p>
 <quote who="Stefan Dosinger"><p>
 I was lucky with setting a breakpoint in the wine code. The crash happens in 
 the DDraw implementation. The return from 
-Main_DirectDraw_Release(ddraw_main.c:154) leads to a random adress. The call 
+Main_DirectDraw_Release(ddraw_main.c:154) leads to a random address. The call 
 which leads to this is "HeapFree(GetProcessHeap(), 0, This);" in 
 Main_DirectDrawSurface_Destroy, surface_main.c:154. If I comment out this 
 call, Empire Earth continues loading and crashes more or less randomly at 
-some later points.
+some later point.
 </p><p>
 I've edited the IDirectDrawSurfaceImpl structure and added a 2048 byte block 
 at the beginning and the end. This makes the crashes reliable: With the 
@@ -140,10 +140,10 @@ ago.  More work showed a way to reproduce a problem, though perhaps
 not the same problem:</p>
 <quote who="Stefan Dosinger"><p>
 This is interesting: Setting the +heap trace flag sets the bad address 
-realiably to 0xaaaaaaaa (without my changes to DDraw). Does this say anything?
+reliably to 0xaaaaaaaa (without my changes to DDraw). Does this say anything?
 </p></quote>
 
-<p>Andreas Mohr grepped through the code and pointed out a potentional
+<p>Andreas Mohr grepped through the code and pointed out a potential
 culprit:</p>
 <quote who="Andreas Mohr"><p>
 <code>dlls/ntdll/heap.c:#define ARENA_FREE_FILLER      0xaa</code></p><p>
@@ -188,7 +188,7 @@ contains some bugs with known fixes that haven't made their way into Wine.
 Kevin wondered about it though,
 <quote who="Kevin DeKorte">
 Well the patch does improve the cursor. I can now see it. Although it is only 
-grey. It there any reason why the best cursor selection method always checks 
+grey. Is there any reason why the best cursor selection method always checks 
 for bits == 1. What about color cursors?</quote>
 </p><p>
 Duane Clark also reported success,
@@ -198,7 +198,7 @@ I don't really understand how the patch fixed things, but...
 Riven uses a bunch of color cursors (hands pointing various directions). 
 Without the patch, only the standard pointer cursor was generated. This 
 cursor appeared and disappeared normally (the cursor is supposed to 
-disappear while some Quicktime clips are playing, and then reappear).
+disappear while some QuickTime clips are playing, and then reappear).
 With the patch, the color cursors reappeared and all are correct.
 </quote></p>
 
@@ -251,10 +251,10 @@ commctrl doesn't have any effect on this error.
 </p></quote>
 
 <p>Andi Mohr wanted to know if Jesse was running either both of the
-DLL's as native or both as builtin.  These DLL's can't be mixed and
+DLLs as native or both as builtin.  These DLLs can't be mixed and
 matched between native and builtin.  Jesse replied that both of them
 were in fact native.  Mike McCormack didn't think there was a reason
-to still use native DLL's:</p>
+to still use native DLLs:</p>
 <quote who="Mike McCormack"><p>
 
 You shouldn't need to use the native comctl32 any longer.  Please update 
@@ -267,7 +267,7 @@ sweeping the problem under the carpet and using the native dll.
 </p></quote>
 
 <p>Jesse described the specific problem he was running into with 
-DreamWeaver.  Mike supplied a patch:</p>
+Dreamweaver.  Mike supplied a patch:</p>
 <quote who="Mike McCormack"><p>
 
 OK, there is a patch that is in CrossOver that has not yet been 
@@ -349,7 +349,7 @@ Try "kernel32.97;kernel32.98".</p></quote>
 <quote who="Tom Wickline"><p>
 
 I am in the process of updating our  "Acknowledgement" &amp; "Who's Who"
-pages and if anyone here wants to be included and your currently not
+pages and if anyone here wants to be included and you're currently not,
 just send me a mail and ask for inclusion.
 </p><p>
 If you want inclusion on the "Acknowledgement" page let me know what

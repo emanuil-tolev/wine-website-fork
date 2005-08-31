@@ -505,7 +505,7 @@ However, for GUI apps, people need to provide the WinMain entry
 point instead of main. Maybe we can export some sort of init function,
 so that they can keep their main(), and simply call a wine_init().
 Doing so, we maintain the appearance of a Unix app. Of course, the
-limitation would be that no Wine-related funtionality can be called
+limitation would be that no Wine-related functionality can be called
 before the wine_init() call. So no more static C++ initializers, etc.
 Would this be doable?</p></quote>
 

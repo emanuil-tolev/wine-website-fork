@@ -109,7 +109,7 @@ showing lots of different controls.  Of course it works with non-Winelib
 apps as well.  
 <a href="http://www.winehq.org/images/wwn289-theme-2.jpg">Here's</a> Word 
 Viewer showing a document and drop down menu.  All in all, theming seems
-to progressing nicely.  The user interface in winecfg could use a little
+to be progressing nicely.  The user interface in winecfg could use a little
 work, such as browsing for .msstyles files and automatically installing
 them, but considering the <i>Appearance</i> tab is only a week old it's
 understandable.
@@ -220,7 +220,7 @@ a mirror should be set up, but really it doesn't appear to be
 worth the effort.  Ivan Leo Puoti pointed out many things will be
 accessible:</p>
 <quote who="Ivan Leo Puoti"><p>
-Luckly we've got a CVS mirror, for those who didn't know, you can use the european mirror following 
+Luckily we've got a CVS mirror, for those who didn't know, you can use the european mirror following 
 these instructions
 <ul><a href="http://66.102.9.104/search?q=cache:DK5XI0Uyp_MJ:www.winehq.com/site/cvs+&amp;hl=en">
 http://66.102.9.104/search?q=cache:DK5XI0Uyp_MJ:www.winehq.com/site/cvs+&amp;hl=en</a></ul></p><p>
@@ -278,17 +278,17 @@ Doing SEH via the application stack is correct in the current code.
 Passing exceptions to the debugger via the application stack is not
 correct.  I've attached a small C file which will demonstrate the
 problem.  On windows, you can single step through the assembly code
-correctly, on Wine, you can not.  The one conclusion that we can draw
+correctly, on Wine, you cannot.  The one conclusion that we can draw
 is that the method for calling the debugger on Windows must not use
 the application stack at all.  Furthermore, if an exception does occur
 while the stack pointer is bad in windows, the debugger will trap it
-and let you examine the situation.  Wine right now crashes.
+and let you examine the situation.  Right now Wine crashes.
 </p><p>
 Moving the calling of the debugger into the signal handler takes away
 the dependance on a correct signal stack.  It lets us:
 <ol>
 
-<li> Debug a program without having to modify it's memory to call the
+<li> Debug a program without having to modify its memory to call the
 debugger.</li>
 
 <li> Set breakpoints and single step through areas where the stack
@@ -306,9 +306,9 @@ It would make sense for the wine debugger to be equally capable.
 </p><p>
 Now, if calling the debugger shifts positions to the signal stack, it
 is possible to detect whether we can deliver a corresponding SE to the
-applications SEH.  If we can detect when the exception can not
+application's SEH.  If we can detect when the exception cannot
 actually be delivered, then we can force the debugger to stop, even if
-this is the first notification of a excpetion to the debugger.  The
+this is the first notification of an exception to the debugger.  The
 point behind the non-continuable change was to tell the debugger this.
 That patch was wrong.  I should have used EH_STACK_INVALID (it would
 be impossible to even pass this flag to the debugger if the debugger
@@ -380,7 +380,7 @@ some problems:</p>
 Googletalk is a free chat program from Google with integrated VoIP.  I 
 installed the program and received a message saying Googletalk required 
 Windows 2000, XP or 2003.  The program started after installation and 
-almost immewdiately crashed.  
+almost immediately crashed.  
 <a href="http://www.winehq.com/hypermail/wine-devel/2005/08/0518.html">Here</a>
 is the output.</p></quote>
 

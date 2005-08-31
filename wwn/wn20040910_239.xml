@@ -155,7 +155,7 @@ the website</p></quote>
         an application performs an illegal operation (ie crashes) or
         occasionally a program will throw their own exceptions. UNIX
         signals are converted into SEH exceptions by Wine and you can
-        watch their propogation using this channel. It's handy because
+        watch their propagation using this channel. It's handy because
         often applications will trap their own crash to, for instance,
         perform an emergency save. The most common exception to watch
         for is STATUS_ACCESS_VIOLATION or 0xC0000005 which is the closest
@@ -433,7 +433,7 @@ the website</p></quote>
 
         Win32 code uses HeapAlloc(GetProcessHeap(), 0, allocsize)
         instead of malloc(allocsize) and therefore so does Wine. In
-        pratice this rule isn't strictly enforced so you may see both. 
+        practice this rule isn't strictly enforced so you may see both. 
       </li>
     </ul></p>
 
@@ -499,7 +499,7 @@ the website</p></quote>
         most popular C++ compiler on Windows) use the thiscall calling
         convention, in which the instance pointer is stored in %ecx. If
         you get a crash dereferencing the value of %ecx in a C++
-        program, you might be seeing a null pointer deference on an
+        program, you might be seeing a null pointer dereference on an
         object instance.  </li>
 
       <li> Optimizing compilers do a lot of interesting things, such

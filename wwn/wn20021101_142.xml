@@ -550,7 +550,7 @@ sophisticated application-level security measures exist.
 </p><p>
 We've recently talked about some ways to move forward towards implementing
 the NT-style security model in wine.  When those plans move forward, one of the
-issues to consider is the tendency of windows to propogate virii, and the 
+issues to consider is the tendency of windows to propagate virii, and the 
 possible need to selectively prohibit wine from accessing resources that
 the user invoking wine might have full control of.
 </p><p>
