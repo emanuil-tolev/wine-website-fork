@@ -191,7 +191,8 @@ somewhat plausible.  For instance,
 <a href="http://www.jankratochvil.net/project/captive/">CaptiveNTFS</a>
 actually led to a real, working implementation of getting 
 Microsoft's ntfs.sys to operate under Linux and let NTFS filesystems
-work under Linux.  These kind of things are <i>hard</i>.  </p>
+work under Linux.  As you can imagine, these kind of things are <i>hard.</i>  
+</p>
 
 <p>Device drivers have been popping up more and more on wine-devel,
 especially in the context of things like the Safedisc(tm) (evil)
@@ -351,7 +352,8 @@ Summary of all the ideas and requirements:
    other way around. Unless we implement int 0x2e handling and replace
    wineserver with ntoskrnl. (this is wine not reactos, ntdll already has all
    the required functionality)</li>
-<li> Drivers can not be ran in a process that requires them (drivers we concerned
+<li> Drivers can not be ran in a process that requires them (drivers we are
+   concerned
    about keep information that is shared between different processes, drivers
    require their own environment that is different from a user process
    environment, ntdll has no means nor should it have them to run a driver)</li>
@@ -370,7 +372,7 @@ I know folks you have more ideas, keep them coming.
 </p></quote>
 
 <p>A few more ideas were discussed, but the architecture Vitaliy described
-seemed to be the concensus.  </p>
+seemed to be the consensus.  </p>
 
 </section>
 <section 
@@ -387,26 +389,29 @@ Julliard reviews and commits each patch himself.  That's a pretty
 difficult model to pull off, especially when it comes to reviewing the
 number of patches that go into Wine.  </p>
 <p>Each year at WineConf we've discussed whether that model works or
-not.  In fact, it's usually one of the first topics that get addressed.
+not.  In fact, it's usually one of the first topics that gets addressed.
 Each year we've decided that the present model is working.  Alexandre
-is comfortable handling the amount of patches coming in.  Everyone
-else thinks his judgement is correct.  Alexandre has said he has a 
+is comfortable handling the amount of patches coming in and everyone
+else thinks his judgement is correct.  In the event a patch doesn't end up
+in CVS, Alexandre has said he has a 
 not-quite-sure bin of patches where he keeps a running list of patches
 that he's unsure of.  Sometimes they just need to be reworked slightly
 to get in, other times they're so large it takes a while to review them.
 It's not uncommon for a patch to end up there with no response.  If
 it doesn't get committed, he suggests contacting him a few days after a 
 patch hits wine-patches to find out why.  </p>
-<p>Now, one thing not addressed at WineConf is new developers.  That
-process may be quite frustrating for new developers to figure out.  We
+<p>Now, one thing not addressed at WineConf is new developers.  Figuring out
+that process may be quite frustrating for new developers and we
 don't really hear about it at WineConf since we don't have many new
 developers there.  A few weeks ago there was a discussion that started
 out as someone that seemed to think there were tons of forks of Wine,
 meandered into car analogies, and ended up with a long discussion of
 the Wine management structure.  It seems to point to a very real 
-communication problem, though we never reached a point where any
+communication problem.  At the end of the thread it appeared a few things
+could be done to help the process, however it doesn't appear anyone will
+step up to work on it.  
 real solutions were offered. </p>
-<p>Troy Rollo started the discussion going with:</p>
+<p>Troy Rollo started the discussion with:</p>
 <quote who="Troy Rollo"><p>
 I should preface this by saying that I don't mean any criticism or offence by 
 this.  You asked the question and the following reflects my observations of 
@@ -472,8 +477,8 @@ pool of developers is a desirable goal.
 </p></quote>
 
 <p>Quite a few people immediately replied to point out things that 
-they disagreed with.  Ivan Leo Puoti agreed with 
-"Alexandre knows what he doesn't want" model,
+they disagreed with.  However, Ivan Leo Puoti agreed with 
+"Alexandre knows what he doesn't want" comment,
 <quote who="Ivan Leo Puoti">
 That's a problem Vitaliy and I now have, ntoskrnl can run kernel mode drivers just fine (Ok, it has 
 for months but only recently it's started using real device handles), but Alexandre doesn't like 
