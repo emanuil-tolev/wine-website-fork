@@ -112,7 +112,7 @@ describe the contents.  In turn, we can use the Docbook utilities to
 convert the SGML into whatever we want, such as PDF's, HTML, etc.  That
 documentation used to live within the core Wine CVS tree, but we split
 it out earlier in the summer.  Now it has its own CVS tree and Dimi Paun
-has been making commit.  Tom Wickline described how to get to the docs:</p>
+has been making commits.  Tom Wickline described how to get to the docs:</p>
 <quote who="Tom Wickline"><p>
 
 To get the docs in a terminal run :
@@ -295,7 +295,7 @@ real-world applications need anything like that or not.  </p>
 <topic>DirectX</topic>
 <p>
 Most modern games use DirectX 8 or 9, and the near-term
-focus in Wine seems is to develop that area.  Those two versions are
+focus in Wine is to develop that area.  Those two versions are
 relatively similar and can share a lot of functionality.  Wine's DX7
 and earlier implementations don't share any code with the newer versions.
 However, the plan that's been discussed is to develop a new library,
@@ -362,7 +362,7 @@ in there.)
 Boaz Harrosh asked an interesting question this week, one that's 
 surprisingly never come up in the past four years:</p>
 <quote who="Boaz Harrosh"><p>
-Ok, what you guys think.
+Ok, what do you guys think.
 
 </p><p>
 I have an Arm based machine Running Windows CE. Same machine also runs 
@@ -422,6 +422,15 @@ to be different.</p><p>
 What I'm afraid of is the things I don't know, which is how x86 is Wine. 
 And how separated is that from the rest of the code.</p></quote>
 
+<p>Andi Mohr took a stab at why Windows CE appeared so foreign,
+<quote who="Andreas Mohr">
+Just an outrageously wild guess: OS/2?
+Maybe the standard Windows headers were going back to the time where they
+cooperated with IBM to create OS/2, so they decided to play it safe and create
+a completely new header set that they would be able to reuse for their main
+Windows tree in case IBM were to sue them in the very distant future?
+The same goes for the actual CE source code, I guess.</quote>
+</p>
 
 </section>
 <section 
