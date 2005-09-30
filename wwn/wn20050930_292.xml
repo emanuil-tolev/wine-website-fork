@@ -129,7 +129,7 @@ get wine to use ntlm_auth.
   Negotiate authentication, a lot of functions defined in the API still
   are stubs.</li></ul>
 
-</p><p><u>Conclusion:</u>
+</p><p><u>Conclusion:</u></p><p>
 
 As soon as the code is in cvs, wine should be able to do basic NTLM and
 Negotiate authentication, server and client side. Client side just
@@ -165,7 +165,7 @@ keep doing so for a while.
 <p>Another Summer of Code project was to add theming to Wine.  Frank
 Richter gave a status update of his project:</p>
 <quote who="Frank Richter"><p>
-as some of you may have noticed, I did a bunch of theming-related work
+As some of you may have noticed, I did a bunch of theming-related work
 in Wine, which was done within a project in Google's Summer of Code.
 </p><p>
 This is a small overview over what I've done:
@@ -313,9 +313,11 @@ I tried add line: #include "winldap.h" to winldap.h too, but it makes double
 declaration errors.
 </p></quote>
 
-<p>Molle Bestefich somewhat rudely pointed out they should RTFM, or rather,
+<p>Molle Bestefich pointed out they should RTFM, or rather,
 search the mailing list archives and dig through Bugzilla first before
-posting on wine-devel.  However, Molle did have a good idea that showstopper
+posting on wine-devel.  In this case the problem was obscure enough
+that posting to wine-devel was probably ok.  However, Molle did have a good 
+idea that showstopper
 items like that should be posted as news items on WineHQ.  At this point
 it's a little late to include warnings for the August drop when September's
 is likely close.  I replied back along those lines:</p>
@@ -372,11 +374,10 @@ wine: Call from 0x4154ba5c to unimplemented function<br />
 usp10.dll.ScriptCacheGetHeight, aborting</code></ul></p></quote>
 
 <p>Troy Rollo asked if it worked when Wine's builtin usp10.dll.so was
-deleted from /usr/local/lib/wine.  Kevin reported that it worked
-after deleting it.  Alternatively, Oliver Stieber suggested just disabling 
-the DLL in the DLL overrides.
+deleted from /usr/local/lib/wine.  Kevin reported that it did.  Alternatively, 
+Oliver Stieber suggested just disabling the DLL in the DLL overrides.
 
-</p><p>Troy then blamed it on Wine's stub implementation
+</p><p>Troy blamed it on Wine's stub implementation
 and described the correct fix:</p>
 <quote who="Troy Rollo"><p>
 
@@ -404,7 +405,7 @@ will need to fill out the ScriptFreeCache entry in the spec file).
 >
 <topic>Debugging</topic>
 <p>Trying to track down bugs can be daunting in any project, let
-alone one the size of Wine.  Jason Edmeades described a weird 
+alone one the size of Wine.  Jason Edmeades described a strange 
 one this week and asked for help:</p>
 <quote who="Jason Edmeades"><p>
 
