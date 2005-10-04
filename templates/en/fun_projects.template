@@ -30,7 +30,7 @@
   guarantees these patches would be accepted, that's Alexandre's call. 
   But they probably would be, and you'll learn something while doing them!"</i>
 
-  <h4 class=todo>Create <i>My Documents</i></h4>
+  <h4 class=done>Create <i>My Documents</i></h4>
   <p> Map CSIDL_PERSONAL (My Documents) to the $HOME directory if mapped. 
    See the _SHGetDefaultValue function in dlls/shell32/shellpath.c for an 
    explanation of how to do this.  It would probably be ok to grab $HOME 
@@ -38,13 +38,13 @@
    Win32 path. If the mapping fails (i.e. $HOME is not accessible given the 
    users dosdevices) then just fail with a WARN().
   <ul>
-    <li>workers: <i>wanted</i>
-    <li>status: <i>to do</i>
-    <li>updated: Dec 21, 2004
+    <li>workers: <i>Juan Lang</i>
+    <li>status: <i><a href="http://www.winehq.org/hypermail/wine-cvs/2005/06/0043.html">committed</a> to the tree.</i>
+    <li>updated: Oct 3, 2005
   </ul>
  
   
-  <h4 class=todo>Map <i>Desktop</i> Directory</h4>
+  <h4 class=done>Map <i>Desktop</i> Directory</h4>
   <p>This is similar to above but with some extra work. Map the contents of 
    the ~/Desktop directory to the Windows virtual Desktop folder. In file 
    pickers and Explorer, the filesystem root is represented by a magic Desktop 
@@ -66,9 +66,9 @@
   <p>
    Bonus points for fixing the desktop icon while you're at it (an arrow??!) 
   <ul>
-    <li>workers: <i>wanted</i>
-    <li>status: <i>to do</i>
-    <li>updated: Dec 21, 2004
+    <li>workers: <i>Juan Lang</i>
+    <li>status: <i><a href="http://www.winehq.org/hypermail/wine-cvs/2005/06/0043.html">committed</a> to the tree.</i>
+    <li>updated: Oct 3, 2005
   </ul>
  
   
