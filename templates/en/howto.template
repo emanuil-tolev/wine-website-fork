@@ -36,10 +36,12 @@ here</a>.</p>
 
 <p>As of Wine release 20050628 we have transitioned away from the config file and
 now place these values in registry files found in your .wine directory.
-winecfg (wine configurator) in conjunction with regedit (registry editor) are
+Winecfg (wine configurator) in conjunction with regedit (registry editor) are
 two graphical front ends that makes changing registry values easier for end user's.
-winecfg while still beta software can be used for basic configuration and optimizations,
+Winecfg while still beta software can be used for basic configuration and optimizations,
 more advanced users may wish to use regedit to make changes that winecfg isn't capable of performing.</p>
+
+<p>If you are upgrading don't forget to update your registry using the wineprefixcreate command. This will ensure that you have all default registry values set.</p>
 
 <p>If your using an old version of Wine we recommend that you use a handy program called
 <a href="{$root}/site/download#third-party">Winetools</a> to setup Wine for you.
