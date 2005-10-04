@@ -184,7 +184,7 @@ So overall, things are looking good.  </p>
 >
 <topic>Architecture</topic>
 <p>Device drivers have always been a hot topic with Wine.  The idea
-of some how running Windows device drivers with Wine comes up every
+of somehow running Windows device drivers with Wine comes up every
 few months.  In recent years, some of the discussion has actually
 gotten pretty serious and some of the ideas have actually seemed
 somewhat plausible.  For instance,
@@ -201,7 +201,7 @@ device driver into loading; you also have to make it usable by
 the standard Win32 API.  Vitaliy Margolen asked this week:</p>
 <quote who="Vitaliy Margolen"><p>
 We need ntoskrnl to run some subset of drivers on wine. Notably cd protection
-drivers. They are not a hardware drivers, but a means to access something that
+drivers. They are not hardware drivers, but a means to access something that
 is not accessible from user space. So in a sense ntoskrnl is just a process to
 run those drivers in, and send/receive requests to/from those drivers.
 </p><p>
@@ -231,7 +231,7 @@ Solutions for (1):
 <ul>
 1.1. Use a hack to determine that passed name is a device name. (Device names
     don't have colon in them).<br />
-1.2. Check against all possible names other then device names. (A:..Z:, 
+1.2. Check against all possible names other than device names. (A:..Z:, 
      etc.)<br />
 1.3. Try it last if all else fails. (since name spaces don't intersect this
     should work.)<br />
@@ -254,7 +254,7 @@ Solutions for (2):
     ntoskrnl to create an IRP. ntoskrnl will process them and notify wineserver
     when call is complete.
     (This is the most complicated and closer represents what windows does.
-    There are still a problem communicating to ntoskrnl. It is probably the
+    There is still a problem communicating with ntoskrnl. It is probably the
     way to go in the future. But that will require number of things implemented
     which are not trivial.)<br />
 </ul></li></ul>
@@ -286,20 +286,20 @@ which is a user mode implementation of ntoskrnl, something like User
 Mode Linux.
 </p><p>
 That would require being able to write to a process's memory from the
-ntoskrnl, which is what your really need to implement ReadFile and
+ntoskrnl, which is what you really need to implement ReadFile and
 WriteFile so device driver can work properly.
 </p><p>
 That project is really beyond the scope of Wine... but an interesting
-one none the less :)</p></quote>
+one nonetheless :)</p></quote>
 
 <p>Peter Beutner wanted to know about one of the methods Vitaliy had
 mentioned,
 <quote who="Peter Beutner">
 
 
-Why implement ntoskrnl as a seperate process plus inventing a new IPC
+Why implement ntoskrnl as a separate process plus inventing a new IPC
 protocol to talk to it? As you said: "ntoskrnl for windows _is_ what
-wineserver for wine.". So why not implement the needed ntoskrnl stuff
+wineserver is for wine.". So why not implement the needed ntoskrnl stuff
 into wineserver?</quote></p>
 
 
@@ -352,7 +352,7 @@ Summary of all the ideas and requirements:
    other way around. Unless we implement int 0x2e handling and replace
    wineserver with ntoskrnl. (this is wine not reactos, ntdll already has all
    the required functionality)</li>
-<li> Drivers can not be ran in a process that requires them (drivers we are
+<li> Drivers cannot be run in a process that requires them (drivers we are
    concerned
    about keep information that is shared between different processes, drivers
    require their own environment that is different from a user process
@@ -410,7 +410,7 @@ the Wine management structure.  It seems to point to a very real
 communication problem.  At the end of the thread it appeared a few things
 could be done to help the process, however it doesn't appear anyone will
 step up to work on it.  
-real solutions were offered. </p>
+Real solutions were offered. </p>
 <p>Troy Rollo started the discussion with:</p>
 <quote who="Troy Rollo"><p>
 I should preface this by saying that I don't mean any criticism or offence by 
@@ -462,7 +462,7 @@ virtually certain that the patch would be accepted.
 A supporting facility you would probably need would likely include either 
 separate mailing lists for each sub-project (things get lost in wine-devel 
 <i>now</i> with consolidated read-only lists for people who want a convenient 
-way of watching all of the discussions or a shift to an NNTP heirarchy with 
+way of watching all of the discussions or a shift to an NNTP hierarchy with 
 mailing gateways.
 </p><p>
 These structures are nothing new - most of the really big projects work this 
@@ -643,7 +643,7 @@ might remember that Oliver began working on DirectX 9 about nine months
 ago.  He maintained much of that code outside of the Wine tree for a
 long time and only began submitting patches a few months ago.  That was
 sort of frustrating for a lot of Wine developers, but things have really
-progressed.  Oliver has broken his DirectX work into small, contained
+progressed.  Oliver has broken his DirectX work into small, self-contained
 patches and Alexandre has committed almost all of them.  Oliver wrote:</p>
 <quote who="Oliver Stieber"><p>
 I thought it was about time I gave a status update on DirectX9/wined3d, so here goes.
@@ -747,7 +747,7 @@ Just because no one else has said it yet:
 </p><p>
 Nice work, Jer!
 </p><p>
-(Jer is masking all the behind the scenese wrangling
+(Jer is masking all the behind the scenes wrangling
 he did with our two ISPs to arrange this, and the
 mad scramble to replace a raided drive that
 had fried, and the rebuild to Debian.  )
@@ -758,7 +758,7 @@ done in a day.
 
 <p>The change to Pipermail and the way it handles attachments seemed
 to cause some issues.  Jeremy worked on the MIME magic and the problems
-seemed to go away.  Later, Jonathan Ernst asked if GD2 was on the webserver
+seemed to go away.  Later, Jonathon Wilson asked if GD2 was on the webserver
 and Newman replied it was.  That opens the door for some AppDB improvements
 for things like screenshots.</p>
 </section>
@@ -768,7 +768,7 @@ for things like screenshots.</p>
 	archive="http://www.winehq.com/hypermail/wine-devel/2005-September/040079.html"
 	posts="2"
 >
-<p>Is Wine SMP safe?  Well.. it certainly seems like a topic someone would
+<p>Is Wine SMP safe?  Well... it certainly seems like a topic someone would
 have brought up if there were issues.  Dan Kegel asked about a bug report:</p>
 <quote who="Dan Kegel"><p>
 I've seen conflicting reports about whether Wine is safe
@@ -789,7 +789,7 @@ to see if he can still reproduce it.</p></quote>
 
 I'm running it since 1.5 years on a SMP system (P4, HT enabled and smp
 kernel). I don't remember to have run into SMP problems. Or better said
-in the problems i tried to debug there wasn't a SMP bug.</quote></p>
+in the problems i tried to debug there wasn't an SMP bug.</quote></p>
 
 
 </section>

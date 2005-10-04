@@ -104,27 +104,27 @@ get wine to use ntlm_auth.
 
 </p><p><u>Things that got done:</u><ul>
 
-<li> Base64 codec
+<li> Base64 codec<br/>
   ntlm_auth was first designed as a helper for squid. Squid talks to
-  it's helpers using base64, wine just had an encoder for it.</li>
+  its helpers using base64, wine just had an encoder for it.</li>
 
-<li> Code to run ntlm_auth
+<li> Code to run ntlm_auth<br/>
   ntlm_auth doesn't store all the state information needed for the
   protocol handshake, so some wrapping code was needed.</li>
 
 <li> Code that implements the security support providers for NTLM and
-  Negotiate.
+  Negotiate.<br/>
   To make the sspi functions behave properly, the api functions have to
   do the right thing.</li></ul>
 
 </p><p><u>Work still left to do:</u><ul>
 
-<li> Getting the code into cvs:
+<li> Getting the code into cvs:<br/>
   While most of the code was already submitted to the wine-patches list,
   a lot of it was still in need of improvements. I'm currently working
   on this.</li>
 
-<li> Getting more of the stubs to actually do something
+<li> Getting more of the stubs to actually do something.<br/>
   While the code that exists so far can handle the basic NTLM and
   Negotiate authentication, a lot of functions defined in the API still
   are stubs.</li></ul>
@@ -138,7 +138,7 @@ correctly, and when using samba 3, access to the winbindd named pipe for
 the user running wine. 
 </p><p>
 Real use of this code seems limited, as most use cases also use the
-schannel protocol, which isn't implmented yet. Juan Lang is working on
+schannel protocol, which isn't implemented yet. Juan Lang is working on
 this, but needs to get more of crypt32 implemented for that.
 </p><p>
 I will continue to work on this, there's still a lot of providers to go.
@@ -147,7 +147,7 @@ I would like to use this summary to extend my thanks to Google and Chris
 DiBona for getting the whole Summer of Code set up.
 </p><p>
 Also, I'd like to thank you guys, particularly Juan, for the help I have
-recieved so far. It's really fun to work with the project, I hope to
+received so far. It's really fun to work with the project, I hope to
 keep doing so for a while.
 </p></quote>
 
@@ -170,7 +170,7 @@ in Wine, which was done within a project in Google's Summer of Code.
 </p><p>
 This is a small overview over what I've done:
 <ul>
-<li> All "non-standard" controls(those that are provided by comctl32, e.g.
+<li> All "non-standard" controls (those that are provided by comctl32, e.g.
 </li>
 Tabs) are themed and seem to work quite well so far.
 <li> All standard controls except Buttons and Scrollbars are themed, though
@@ -204,14 +204,14 @@ so I guess I'll stick around a bit longer and try to get them fixed.
 <topic>Build Process</topic>
 <p>Have you downloaded a Wine RPM for Red Hat or Fedora lately?  Hopefully
 not.  Vincent B&#233;ron has been pretty busy and hasn't been able to
-build any for a few months.  As a result, we've got some stale RPM's
+build any for a few months.  As a result, we've got some stale RPMs
 on SourceForge.  Michael Ost seems to be interested in stepping up and
 building a recent version:</p>
 <quote who="Michael Ost"><p>
 Can someone who understands wine build issues review this RPM spec file
 for me, please?
 </p><p>
-The RPMs for Redhat 8 are getting pretty long in the tooth on the Wine
+The RPMs for RedHat 8 are getting pretty long in the tooth on the Wine
 downloads page... dating back to May 24. I wanted to build a source RPM
 to work with, so I modified the 20050524 spec file for 20050830.
 </p><p>
@@ -221,7 +221,7 @@ tampering with issues beyond my grasp. Do the attached changes to the
 spec file look ok (temporarily marked with "todo")? Any gotchas?
 Anything missing?</p></quote>
 
-<p>  Apparently Vincent has spent some time on it apparently:</p>
+<p>  Apparently Vincent has spent some time on it:</p>
 <quote who="Vincent Beron"><p>
 
 
@@ -229,7 +229,7 @@ Anything missing?</p></quote>
  is the spec file I'm using for 20050830 on RH8 (not finished
 building on all other distributions yet).</p><p>
 --sysconfdir is not needed anymore by configure (harmless if present).
-dlls/wineps had a installable file not installed by default (fixed since
+dlls/wineps had an installable file not installed by default (fixed since
 then). See the diff for the rest of it, but your changes pretty much
 covered it.
 </p><p>
@@ -260,7 +260,7 @@ undefined reference to __wine_call_from_16_long'</code></ul></p></quote>
 
 <p>Marcelo Duarte reported the quick fix:</p>
 <quote who="Marcelo Duarte"><p>
- To fix the problem for me, instead of clean, I'd do the folowing command
+ To fix the problem for me, instead of clean, I'd do the following command
  in wine tree:
 <ul><code>rm */*/*.spec.*</code></ul></p></quote>
 
@@ -329,7 +329,7 @@ items to the front page, so definitely feel free to drop me an email
 when you think of things like that.  How about WWN coverage instead?</li>
 
 <li>  CVS drops are just that - drops.  They haven't been compiled on a
-bizillion systems or tested with real-world applications to ensure
+bazillion systems or tested with real-world applications to ensure
 things aren't massively broken.  Furthermore, no work was done to
 stabilize the release other than normal bug fixes.  Instead, it
 represents a point in time where Alexandre ran the regression tests,

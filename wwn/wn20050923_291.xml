@@ -67,7 +67,7 @@ Its main goal is to fix scripts and hate the new pipermail interface less. It al
 >
 <topic>News</topic>
 <p>Only because I don't want the next news item to get a real headline,
-I'm going to give a link to Newsforge that 
+I'm going to give a link to NewsForge that 
 <a href="http://programming.newsforge.com/programming/05/09/19/223211.shtml?tid=25&amp;tid=132">mentions Wine</a> in passing.  Google's Summer of Code has
 wrapped up and Chris DiBona had a lot to say about the success of the program.
 </p>
@@ -109,7 +109,7 @@ well, it might even be doing more harm than good.  </p>
 <p>Those three docs are written in SGML, which is quite similar to HTML.
 We use the <a href="http://www.docbook.org">Docbook</a> schemas to
 describe the contents.  In turn, we can use the Docbook utilities to
-convert the SGML into whatever we want, such as PDF's, HTML, etc.  That
+convert the SGML into whatever we want, such as PDFs, HTML, etc.  That
 documentation used to live within the core Wine CVS tree, but we split
 it out earlier in the summer.  Now it has its own CVS tree and Dimi Paun
 has been making commits.  Tom Wickline described how to get to the docs:</p>
@@ -137,7 +137,7 @@ a little outdated, but it's a good starting point:</p>
 I started in on this about a year ago and there's a pretty good
 outline to work from.  Some of the actual content is just plain wrong
 now, but it's probably about 90% accurate.  There have been changes
-the the DLL Overrides and Drive Settings part of Winecfg.  I'd also
+to the DLL Overrides and Drive Settings part of Winecfg.  I'd also
 consider this stuff to be a little light on the configuration side. 
 For example, to configure just application settings you need to add an
 app on the first tab of winecfg and then make the overrides on the
@@ -184,7 +184,7 @@ duplicated in some form or another on the web site.  I'd like to see as
 much stuff like that removed from the User Guide as possible, we can
 simply refer people to WineHQ for more info.  (I think the reason for the
 duplication is that the website docs simply didn't exist when the User
-Guide was written, now the website has superceded the User Guide.)
+Guide was written, now the website has superseded the User Guide.)
 When it's all said and done we should be left with the following sections:
 <ul> 
 <li> Introduction</li>
@@ -314,7 +314,7 @@ ready to take calls to WineD3D. I've noticed the following problems so far:
 <li> Headers: WineD3D depends on the d3d8 or d3d9 headers. I've made the check 
 pass with d3d.h, but I had to copy a lot of definitions from d3d9types.h. The 
 thing compiles without errors or warnings now, but there may be side effects 
-I don't know for now.</li>
+I don't know of for now.</li>
 
 <li> Surfaces... You mentioned it, I think I don't need to explain anything 
 here ;-)</li>
@@ -334,7 +334,7 @@ created WINED3DFOOBAR and put into include/wine/wined3dtypes.h, this
 should be easy enough to extend to d3d7.
 </p><p>
 
-p.s. the reason for intergrating with ddraw is so that X11Drv works properly 
+p.s. the reason for integrating with ddraw is so that X11Drv works properly 
 with wined3d, this affects things like locking the mouse to a window in full 
 screen mode and being able to Get and Release the DC for the surface.
 </p></quote>
@@ -408,14 +408,14 @@ strange:</p>
 Even the Wine-headers are closer to the original SDK than CE. The order 
 of function is different, the macros, the styling. There is no 
 resemblance, not even one name of one parameter. Just the Function name 
-and the Header name. Its like they had a copyright problem and needed to 
+and the Header name. It's like they had a copyright problem and needed to 
 write it from scratch.:)</p><p>
   Now for wine I will not do the same. I'll try to keep the same 
 headers, and where there are ABI differences. Like calling convention 
 parameter sizes.. I'll try to use a macro.</p><p>
   On the implementation side Linux is Linux is Linux so I guess that 
 should work well. But it looks like The Win32 API was shifted around a 
-bit so in CE functions don't sit in the same Dll's as they sit in Win32, 
+bit so in CE functions don't sit in the same Dlls as they sit in Win32, 
 and apps are linked differently. So spec files and Makefiles will have 
 to be different.</p><p>
 

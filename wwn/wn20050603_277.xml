@@ -257,7 +257,7 @@ Started to go through this and found something interesting.  lwp.h does
 exist and is found, so HAVE_SYS_LWP_H is defined.  The test for
 _lwp_create fails.  Looking a bit deeper I found that the lwp.h for
 Solaris 9 is different from the one in Solaris 10 (which is what I am
-using).  Based on this and something I read awhile ago, I believe that Sun
+using).  Based on this and something I read a while ago, I believe that Sun
 is attempting to phase out the lwp stuff on Solaris.
 </p><p>
 It looks like a workaround will need to be created for _lwp_create.  I
