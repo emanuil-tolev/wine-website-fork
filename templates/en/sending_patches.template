@@ -4,7 +4,7 @@
 
 <p><b>Note</b>: this is a quick reference on how to send us patches.
 For detailed instructions please see the
-<a href="{$root}/site/docs/wine-devel/patches">Submitting Patches</a>
+<a href="{$root}/site/docs/wine-devel/codingpractice">Coding Practice</a>
 chapter in our online documentation.</p>
 
 <p>Please submit patches to the Wine patches mailing list,
@@ -38,8 +38,10 @@ to make sure it's not spam before they can let it through.)</p>
 <p>Accepted patches will appear in the <a href="{$root}/site/forums">wine-cvs</a> mailing list. 
 If your patch is not applied, review it carefully and check it against the above points.</p>
 <p>Rejected patches might receive a note in the <a href="{$root}/site/forums">wine-devel</a>
-mailing list, however they also may be silently ignored.  If you receive no response to your patch
-try checking it against the above points, and resubmitting it.</p>
+mailing list, however they also may be silently dropped.  If you receive no
+response to your patch don't give up! Try checking it against the above
+points, asking for guidance on wine-devel if you find no obvious issue, and
+resubmitting it.</p>
 
 <hr>
 
