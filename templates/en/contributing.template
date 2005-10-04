@@ -57,8 +57,7 @@ knowledge of the Windows internals. Let us know if you are interested in tacklin
     <h3>Draw icons for Wine</h3>
     <p>Wine cannot reuse the Windows icons verbatim because of copyright issues. So we have to redraw 
     them, keeping a similar design so that users are not completely lost, all while making them 
-    different enough (and possibly nicer). You'll see this if you open a file selection dialog 
-    (but should the folder icons really be grey???).
+    different enough (and possibly nicer). You'll see this if you open a file selection dialog.
     </p>
     Required skills:
     <ul>
