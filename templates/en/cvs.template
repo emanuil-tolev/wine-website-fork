@@ -348,9 +348,12 @@ is one of:
 <p>
 The documentation lives in a separate CVS tree on Sourceforge.<br />
 To get the docs in a terminal run:
+ <table width="550" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
   cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/wine co -P docs<br />
  </span>
+ </td></tr>
+ </table>
 When prompted for a password press the enter key.
 A subdirectory named docs will be created.
 
