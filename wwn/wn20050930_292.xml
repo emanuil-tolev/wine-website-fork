@@ -390,7 +390,7 @@ atrocious even by Microsoft standards. At a guess Notes has called
 ScriptGetFontProperties, which should populate the script variable.
 </p><p>
 Try the 
-<a href="http://mail.google.com/mail/?view=att&amp;disp=attd&amp;attid=0.1&amp;th=106955b06dd806e2">following</a>
+<a href="http://www.winehq.com/pipermail/wine-devel/2005-September/040393.html">following</a>
  (untested, may not even compile) as a starting point (You
 will need to fill out the ScriptFreeCache entry in the spec file).
 </p></quote>

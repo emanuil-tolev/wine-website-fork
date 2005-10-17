@@ -467,8 +467,13 @@ going to consider my original proposal, but frankly I don't care about WIne
 anymore - I definitely don't like this 'pay me' attitude (rather than normal 
 'sorry, we didn't have time to fix it yet' attitude).</p></quote>
 
-<p>A quick look in Bugzilla shows 58 bugs closed this month.  In addition,
-a bunch of bugfixes have come in related to Wine 0.9.  A lot of those
+<p>A quick look in Bugzilla shows 464 bugs resolved this month.  Now that
+doesn't mean there were 464 patches since some were duplicates and
+some of them couldn't be reproduced.  Jonathan Ernst has been heading up
+the triage and spent a lot of time cleaning things up.  </p>
+
+<p>In addition, a bunch of bugfixes have come in related to Wine 0.9.  
+A lot of those
 came from Wine's non-paid developers, including Vijay Kiran Kamuju, 
 Vitaliy Margolen, Krzysztof Foltman, Luis Lenders, Raphael Junqueira, 
 Ivan Leo Puoti, Robert Reif, Peter Berg Larsen, and Christian Costa.  
