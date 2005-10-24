@@ -50,7 +50,7 @@ class config
                 'Development'     => '{$root}/site/development',
                 'CVS'             => '{$root}/site/cvs',
                 'Sending Patches' => '{$root}/site/sending_patches',
-                'To Do Lists'     => '{$root}/site/todo_lists',
+                'To Do Lists'     => 'http://wiki.winehq.org/TodoList',
                 'Fun Projects'    => '{$root}/site/fun_projects',
                 'Janitorial'      => 'http://wiki.winehq.org/JanitorialProjects',
                 'Winelib'         => '{$root}/site/winelib',
