@@ -9,14 +9,12 @@ C and/or perl, and something about <a href="{$root}/site/resources">Unix and Win
 <p><a href="http://www.cvshome.org/" target="_blank">CVS</a> is the leading source code
 control system in the open source community. CVS features flexible
 branching, intelligent merging, high quality <a
-href="http://www.loria.fr/~molli/cvs/doc/cvs_toc.html" target="_blank">documentation</a>
-and client/server access with a wide choice of <a
-href="http://www.loria.fr/cgi-bin/molli/wilma.cgi/rel" target="_blank">clients</a>.
+href="http://ximbiot.com/cvs/wiki/index.php">documentation</a>
+and client/server access with a wide choice of clients.
 Current Wine sources are available via anonymous client/server CVS.
 You will need CVS 1.9 or above. 
 If you are coming from behind a firewall, you will either 
-need a hole in
-the firewall for the CVS port (2401) or use <a href="http://www.cyclic.com/cvs/dev-net.html">SOCKS</a>.
+need a hole in the firewall for the CVS port (2401) or use SOCKS.
 </p>
 
 <p>Wine's CVS tree is avalible on 2 servers, one in the United States, and one
@@ -348,8 +346,7 @@ This cross-references source is based on the snapshot-releases and is made avail
 </ul>
 
 <p>
-Direct access to the complete CVS tree is also possible, using Bill Fenner's
-<a href="http://www.freebsd.org/~fenner/cvsweb/">cvsweb</a> package:
+Direct access from the web to the complete CVS tree is also possible, using <a href="http://www.freebsd.org/projects/cvsweb.html">cvsweb</a> package:
 <ul>
   <li><a href="http://cvs.winehq.org/cvsweb">cvs.winehq.org/cvsweb</a>, on the primary CVS repository
 </ul>
