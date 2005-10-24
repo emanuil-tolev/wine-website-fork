@@ -146,7 +146,7 @@ following dilemna:</p>
  <li> shift the x11drv and wineps over to using the DDK Font Engine APIs
    that are currently just stubs.</li>
  
- <li> Implement a FreeType font driver that links to Freetype and uses
+ <li> Implement a FreeType font driver that links to FreeType and uses
    the FreeType APIs for all font metrics data as well as rasterization.</li>
 
  <li> Implement an X11-dependent font driver in the Font Engine to rely
@@ -198,7 +198,7 @@ following dilemna:</p>
   built-in instead of having to run a separate tool. </quote></p>
  
 <p>From there the discussion evolved into ways of setting up the autoconf
-checks and exactly what versions of Freetype should be supported.  Red Hat
+checks and exactly what versions of FreeType should be supported.  Red Hat
 shipped FreeType 1.4 with their 7.0 distribution while with 7.1 they
 included FreeType 2.0.1 too.  The consensus seemed to be that FreeType
 2.0 API should be used.   From there Ian went on to add autoconf checks for

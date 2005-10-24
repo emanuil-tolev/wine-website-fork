@@ -720,7 +720,7 @@ have huge load times since they have so many glyphs. He also demonstrated a
 number of truetype fonts with transformations applied such as rotations, 3d,
 curved text and gradient text. 
 <p />
-Huw discussed the fact that his implementation relies on Freetype. Freetype
+Huw discussed the fact that his implementation relies on FreeType. FreeType
 is a free TrueType font renderer. He also discussed the requirements for
 someone who wants to use it and compile it. He also mentioned that there are
 still patent issues with Apple and the TrueType format. 

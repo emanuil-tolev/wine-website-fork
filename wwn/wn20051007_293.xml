@@ -242,7 +242,7 @@ or refresh. What I mean here is that the function Load
 gets IMoniker interface that should be used to load the
 page, but the current implementation just gets URL by
 GetDisplayName and lets Gecko load the page. Not only
-it is a hack, it limits the functionality so that only
+is it a hack, it limits the functionality so that only
 protocols supported by Gecko may be used - which
 definitely is not what we want. Among others HTML Help,
 because of this, can't work with current implementation,
@@ -265,12 +265,12 @@ if I'm wrong). Other things that have to be done are:
 
 <ul><li> More functionality of MSHTML: there are leaks in its
 functionality. Although I don't think edit mode is something
-we should really care, there are things like refresh or stop.
+we should really care about, there are things like refresh or stop.
 </li>
 
 <li> WebBrowser control implementation - when we have
 its true implementation, MSHTML will become truly useful
-and in most apps HTML pages should work out of box.
+and in most apps HTML pages should work out of the box.
 </li></ul></p></quote>
 
 <p>Dimi Paun asked Jacek to update the wiki page to include a
@@ -283,8 +283,8 @@ described what was going on with it:</p>
 <quote who="Jacek Caban"><p>
 
 Builtin MSHTML works fine with shdocvw. urlmon
-is a bit worse. It currently fails after BindToStorage
-call. I didn't try to get it working with current
+is a bit worse. It currently fails after the BindToStorage
+call. I didn't try to get it working with the current
 implementation as it's really just a hack and my
 tests show that it's very buggy. Switching
 to use pluggable protocol means rewriting it
@@ -295,7 +295,7 @@ implementation of WebBrowser control. Some
 apps work fine with it, so we need to have them
 working with our own  implementation before we
 can get rid of Mozilla ActiveX in shdocvw (and have
-only Gecko depended MSHTML). Meantime
+only Gecko depended MSHTML). In the meantime
 we can develop the WebBrowser version that is
 used when Mozilla ActiveX control is not
 available (it's just a stub now) to use MSHTML.
@@ -435,11 +435,11 @@ It's worth browsing through the comments for a few of these.
 <p>Huw Davies developed a new patch within the CrossOver tree that
 changed the way fonts get displayed.  Basically it enabled hinting
 within of fonts within Wine.  Now, that's sort of a problem since
-Apple holds patents on that process (the Freetype website has a
+Apple holds patents on that process (the FreeType website has a
 <a href="http://www.freetype.org/patents.html">good description</a>
 of the problem.)  CodeWeavers can get away with it in CrossOver
 Office since they've licensed the technology from Apple.  Within
-Wine it just causes problems unless you've compiled Freetype yourself
+Wine it just causes problems unless you've compiled FreeType yourself
 and enabled hinting, which practically no one does.  Mike Hearn
 explained the issue:</p>
 <quote who="Mike Hearn"><p>
@@ -470,7 +470,7 @@ make bitmapped copies of a hinted Tahoma at small sizes, for instance.
 <p>Dmitry Timoshkov disagreed:</p>
 <quote who="Dmitry Timoshkov"><p>
 I'd argue that it's not a Wine problem/bug at all, we can do nothing to improve
-hinting support in FreeType. And crippling Crossover (by making it differ with
+hinting support in FreeType. And crippling CrossOver (by making it differ with
 WineHQ for no good reason) because of that is not a way to go IMO.
 </p><p>
 In any case if a Wine user wants to see correctly displayed TrueType fonts with
@@ -538,7 +538,7 @@ The previous version of Wine that worked properly was 20050725.
 <li>Notes crashed and complained about usp10 missing some entry points
 </li>
 <li>I ran wineprefixcreate (Note that you cannot go back to Wine 20050725 after 
-you do this, so back up you .wine tree before running this)
+you do this, so backup your .wine tree before running this)
 </li>
 <li>Ran winecfg and set usp10 to Windows Only
 </li>
@@ -551,7 +551,7 @@ changes the default version from WIN98 to NT2K
 </li>
 <li>Ran winecfg and set the default version to Win98
 </li>
-<li>Restated Notes and the application works and saving attachments works 
+<li>Restarted Notes and the application works and saving attachments works 
 </li>
 
 </ul></p><p>
@@ -593,10 +593,10 @@ some new work he's done with it:</p>
 <quote who="Eric Pouech"><p>
 For those of you who might be interested, I wrote a test harness for winedbg.
 </p><p>
-It still doesn't cover all of the commands of winedbg, but it's very 
+It still doesn't cover all of the commands of winedbg, but it's a very 
 good starting point for catching some errors (and regressions). Basic 
 features are tested (starting winedbg, step &amp; cont, break points &amp; 
-watch points, global and local var access, expression &amp; types handling)
+watch points, global and local var access, expression &amp; type handling)
 </p><p>
 Unfortunately, it's not ready yet for CVS inclusion.
 Anyway, if some of you want to do some real winedbg hacking, get back to 
@@ -614,15 +614,15 @@ checks the results</li></ol>
 The reasons why this can't be included yet in cvs are:
 <ul>
 <li> we need to recompile 2. in order to make the test to take place (or at 
-least to have its binary image). Actually, to do a full testing, we 
+least to have its binary image). Actually, to do a full test, we 
 should have binaries images of 2. compiled by different compilers 
 (winelib app with gcc &amp; stabs, EXE with mingw &amp; stabs, EXE with msvc 
 &amp; PDB...) so that we can also stress the dbghelp's support for the various 
 debugging formats (stabs, PDB...)</li>
 <li> I ran the harness both on Wine and Windows (with native dbghelp) 
-(that's the good news), but there are some critic discrepencies, like 
-first like number of a function being different (is it on first open 
-brace or on first instruction ?), so the test is still not simply portable</li>
+(that's the good news), but there are some critical discrepencies, like 
+first line number of a function being different (is it on first open 
+brace or on first instruction ?), so the test is still not easily portable</li>
 </ul>
 </p><p>
 For the rest of the story, while running the test on Windows &amp; native 
@@ -642,8 +642,8 @@ patches to make dbghelp (and winedbg) in sync with native dbghelp
 	posts="1"
 >
 <topic>Documentation</topic>
-<p>Microsoft has undocumented API's?  Nooooo.. not Microsoft.  </p>
-<p>Of course they have undocumented API's.  For the most part, they're
+<p>Microsoft has undocumented APIs?  Nooooo.. not Microsoft.  </p>
+<p>Of course they have undocumented APIs.  For the most part, they're
 used internally between different components of Windows.  However,
 the interfaces are exposed and it's not unheard of for programs (especially
 those created by Microsoft) to use those functions.  Ivan Leo Puoti

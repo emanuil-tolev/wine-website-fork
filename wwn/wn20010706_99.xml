@@ -20,7 +20,7 @@ window management stuff that's come up in the past few weeks.</p>
 
 <p>We also saw wn20010629 unleashed.  The release notes include the following
 changes:
-<ul>	<li>	Better font metrics support in Postscript driver using Freetype.</li>
+<ul>	<li>	Better font metrics support in Postscript driver using FreeType.</li>
 	<li>	Major window management redesign (still in progress).	</li>
 	<li> 	Message queues in wineserver to prepare for inter-process messaging.</li>
 	<li>	DDE merged from Corel tree, plus various fixes.</li>
