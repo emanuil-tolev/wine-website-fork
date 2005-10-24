@@ -318,12 +318,8 @@
     <li>updated: Jan 6, 2003
     <li>homepage: <a href="http://www.trolltech.com/products/qt/windows.html">www.trolltech.com/products/qt/windows.html</a>
   </ul>
-  <strong>Update:</strong> Unfortunately, QT/Windows is not free software. Moreover, it
-  requires MSVC or the Borland toolchain to build. Before we can start thinking about
-  a Wine port, there has to be a MinGW port first. I don't see this happening anytime
-  soon, as it seems there is little political motivation on the 
-  <a href="http://www.troll.no">Troll's</a> part to support such an effort. 
-  If you think you can make a case for it, please let us now.
+  <strong>Update:</strong> It seems that both Qt3 and Qt4 can be compiled with MinGW.
+  This should make a Winelib port feasible.
 
   <a name="gtk"></a><h4 class=todo>Gtk+</h4>
   This is maybe a little less interesting than the others, as Gtk+ does not use
