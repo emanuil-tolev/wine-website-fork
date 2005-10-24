@@ -64,7 +64,7 @@ To connect to the EU server, run
  </td></tr>
  </table>
 
-Use ``cvs'' as the password (without the quotes). Note that
+Use &quot;cvs&quot; as the password (without the quotes). Note that
 <code>/home/wine</code> is a path on the <b>server</b>, not on your machine.
 
 <p>
@@ -112,7 +112,7 @@ closest to you.
 		<td rowspan="2"><b><font color=white class=small>CVS Server</font></b></td>
 		<td rowspan="2"><b><font color=white class=small>Username</font></b></td>
 		<td rowspan="2"><b><font color=white class=small>Password</font></b></td>
-		<td colspan="5"><b><font color=white class=small>Repository</font></b></td>
+		<td colspan="6"><b><font color=white class=small>Repository</font></b></td>
 		<td rowspan="2"><b><font color=white class=small>Server root</font></b></td>
 	</tr>
 	<tr bgcolor="#888888">
@@ -121,6 +121,7 @@ closest to you.
 		<td><b><font color=white class=small>appdb</font></b></td>
 		<td><b><font color=white class=small>tools</font></b></td>
 		<td><b><font color=white class=small>c2man</font></b></td>
+		<td><b><font color=white class=small>bugzilla</font></b></td>
 	</tr>
 	<tr bgcolor="#ffffff">
 		<td align="left">cvs.winehq.org<br><br>Minnesota, USA (<a href="http://www.codeweavers.com/">CodeWeavers</a>)</td>
@@ -131,21 +132,9 @@ closest to you.
 		<td align="center">Yes</td>
 		<td align="center">Yes</td>
 		<td align="center">Yes</td>
-		<td align="center">/home/wine</td>
-	</tr>
-<!--
-	<tr bgcolor="#ffffff">
-		<td align="left">winehq.tiepmiep.dk<br><br>Denmark (&Aring;rhus)</td>
-		<td align="center">cvs</td>
-		<td align="center">cvs</td>
 		<td align="center">Yes</td>
-		<td align="center">No</td>
-		<td align="center">No</td>
-		<td align="center">No</td>
-		<td align="center">No</td>
 		<td align="center">/home/wine</td>
 	</tr>
--->
 	<tr bgcolor="#ffffff">
 		<td align="left">rhlx01.fht-esslingen.de<br><br>Southern Germany (Esslingen, BaW&uuml;)</td>
 		<td align="center">cvs</td>
@@ -155,21 +144,9 @@ closest to you.
 		<td align="center">No</td>
 		<td align="center">No</td>
 		<td align="center">No</td>
-		<td align="center">/home/wine</td>
-	</tr>
-<!--
-	<tr bgcolor="#ffffff">
-		<td align="left">x.bourg.net (currently down :-()<br><br>USA (Seattle, WA)</td>
-		<td align="center">cvs</td>
-		<td align="center">cvs</td>
-		<td align="center">Yes</td>
-		<td align="center">No</td>
-		<td align="center">No</td>
-		<td align="center">No</td>
 		<td align="center">No</td>
 		<td align="center">/home/wine</td>
 	</tr>
--->
 </table>
 </td></tr></table></div>
 
@@ -336,6 +313,7 @@ is one of:
   <li><tt>lostwages</tt> -- source for the WineHQ web site</li>
   <li><tt>tools</tt>  -- tools used on the WineHQ site</li>
   <li><tt>appdb</tt>  -- source for the application database web site</li>
+  <li><tt>bugzilla</tt>  -- source for the bugzilla version used on the WineHQ site</li>
 </ul>
 
 <p><img src="./images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
