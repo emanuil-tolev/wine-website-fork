@@ -586,7 +586,7 @@ http://bugs.winehq.org/show_bug.cgi?id=2863</a>
 <topic>Debugging</topic>
 <p>Since Wine deals with bizarre things not normally found on Linux
 platforms, such as PE vs. ELF files and different debugging formats, we've
-developed our own debugger.  It has hooks into gcc, but it
+developed our own debugger.  It has hooks for gdb, but it
 does a lot of stuff on its own.  Eric Pouech has been the driving
 force behind it for quite a few years and this week he announced
 some new work he's done with it:</p>
