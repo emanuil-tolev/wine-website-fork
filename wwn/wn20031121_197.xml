@@ -295,10 +295,10 @@ it's not my itch any more.</quote></p>
 functions for compilation:</p>
 <quote who="Ralf Juengling"><p>
 A Makefile created by winemaker &amp; configure adds <tt>
-/whereever/include/wine/windows</tt> to the include paths.
+/wherever/include/wine/windows</tt> to the include paths.
 </p><p>
 Why doesn't it also add
-<tt>/whereever/include/wine/msvcrt </tt>?
+<tt>/wherever/include/wine/msvcrt </tt>?
 </p><p>What is the status of the include files in msvcrt?</p></quote>
 
 

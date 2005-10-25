@@ -63,18 +63,18 @@ Its main goal is to throw boomerangs. It also serves to inform you of what's goi
 
 </stats>
 <section 
-	title="News: Newsforge Article"
+	title="News: NewsForge Article"
 	subject="News"
 	archive="http://trends.newsforge.com/article.pl?sid=05/10/21/1251200"
 	posts="1"
 >
 <topic>News</topic>
-<p>Newsforge picked up on the pending beta release of Wine with an
+<p>NewsForge picked up on the pending beta release of Wine with an
 article titled, 
 <a href="http://trends.newsforge.com/article.pl?sid=05/10/21/1251200">Wine 
 will go beta next week</a>.  Quite a few quotes from Alexandre and Jeremy
 White were included.  From the article:</p>
-<quote who="Newsforge"><p>
+<quote who="NewsForge"><p>
 "Wine has historically had a very frustrating history because it has been 
 alpha software," White said. "This is really hard work. We're replicating the 
 work of a billion-dollar company. The reason we're saying it's alpha is 
@@ -120,7 +120,7 @@ status of Fedora and Red Hat builds:</p>
 We really need binary builds for Fedora for this release.
 It would be a pitty to fail to provide binary .rpms for
 this one, while we have constantly provided them for
-all the alpha releases for more then one (two?) years now.</p></quote>
+all the alpha releases for more than one (two?) years now.</p></quote>
 
 <p>Vincent B&#233;ron seems to be building packages again and said:</p>
 <quote who="Vicnent Beron"><p>
@@ -131,7 +131,7 @@ CentOS 4 installation yet). The download page on winehq hasn't been
 updated yet because it's a mess when all RH-distros are not ready at the
 same time.
 </p><p>
-I won't be home this week-end, so it'll go to Monday night at the
+I won't be home this week-end, so it'll go in Monday night at the
 earliest.
 
 </p></quote>
@@ -284,7 +284,7 @@ done on the swap buffer call) but it could be a temporary solution waiting
 for a real OpenGL guru (i.e. not me) to fix using funky extensions :-)
 </p></quote>
 
-<p>Huw then came up with a something to play with:</p>
+<p>Huw then came up with something to play with:</p>
 <quote who="Huw Davies"><p>
 Ok, here's a patch for fun.
 </p><p>
@@ -313,7 +313,7 @@ gurus apply within.
 <p>Vitaliy Margolen wanted to know if the process to download and
 install the Mozilla ActiveX control could be improved:</p>
 <quote who="Vitaliy Margolen"><p>
-At present Wine asks the use it he/she wants to download and install Mozilla
+At present Wine asks the user if he/she wants to download and install Mozilla
 ActiveX. But it doesn't work and doesn't tell the user that it didn't work. This
 is not right. We either should say that download/install failed, or don't show
 this message in the first place, unless we fix it.
@@ -343,7 +343,7 @@ The download functions normally.
 B&#233;ron thought another problem was hiding:</p>
 <quote who="Vincent Beron"><p>
 That doesn't solve the capacity problem (which was a real one the last
-time this discussion occured, and is the reason why the address is not
+time this discussion occurred, and is the reason why the address is not
 in wine.inf).
 </p><p>
 Newman wasn't very fond of hosting it on winehq either. Sourceforge

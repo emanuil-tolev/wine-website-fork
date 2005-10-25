@@ -215,7 +215,7 @@ Since I am new to this, I was wondering how I can create a stubbed
 implementation. As far as I can tell I need to:
 <ol>
 <li> update the urlmon.idl (add IInternetSecurityManager)</li>
-<li> create a stubbed implemenation in <tt>dlls/urlmon/</tt>; making sure the stubbed
+<li> create a stubbed implementation in <tt>dlls/urlmon/</tt>; making sure the stubbed
 interface also gets registered during 'wineprefixcreate'.</li></ol>
 </p><p>
 Are there any (wine) pointers on implementing a new (stubbed) COM interface?

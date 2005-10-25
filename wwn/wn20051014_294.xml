@@ -153,7 +153,7 @@ existing surface memory. If != NULL is passed, no memory is reserved by
 WineD3D, and it's not Released on WineD3DSurface_Release</li>
 <li> When releasing the WineD3DDevice, don't release the parents of the 
 RenderTarget, the DepthStencilBuffer, BackBuffer and FrontBuffer, because 
-ddraw.dll needs it's surfaces. Instead, release the WineD3DSurfaces only.
+ddraw.dll needs its surfaces. Instead, release the WineD3DSurfaces only.
 </li></ul></p><p>
 The whole thing is far from being useable, if anyone is interested in the 
 code, I can send it, but be warned, it's quite a mess at the moment. My plan 
@@ -167,13 +167,13 @@ CVS commit and upload a big patch somewhere for prior testing.
 How do you handle the 'special' case Blits (between surface and texture,
 between surfaces, ...) ?</quote></p>
 
-<p>Stefan hopes there won't need to many changes:</p>
+<p>Stefan hopes they won't need too many changes:</p>
 <quote who="Stefan Dosinger"><p>
-Well, I must admit that I don't have an totally detailed plan, but the DDraw
+Well, I must admit that I don't have a totally detailed plan, but the DDraw
 surface and the WineD3D surface share the same memory area. So those Blits
 will be handled by the original DirectDraw surface implementation in any
-case, and if a WineD3D surface is attached, the DDraw surface implemenation
-updates the WineD3D surface whereever it might be necessary. I hope that I
+case, and if a WineD3D surface is attached, the DDraw surface implementation
+updates the WineD3D surface wherever it might be necessary. I hope that I
 can avoid extra memcpy()s
 </p><p>
 I don't know if there might occur any problems if DGA is used, and I can't
@@ -341,7 +341,7 @@ for bugfixing.  Despite that, Wine is a massive project and regressions
 are common.  John Smith wrote to wine-devel to illustrate that point:</p>
 <quote who="John Smith"><p>
 There was a discussion here about 2 months ago, where I asked for a way to 
-embed WINE config strings into Win32 executable (for example, as string 
+embed WINE config strings into a Win32 executable (for example, as string 
 resources). I was told that it is better to fix the problem rather than to 
 create workarounds, and that fixing bugs is trivial and takes at most 2-3 
 days as soon as it is reproducible.
@@ -377,15 +377,15 @@ Because of this, we don't usually have the same sense of urgency
 as other projects to fix them -- there is an infinite stream of 
 them just around the corner.
 </p><p>
-Not an excuse -- I'm just trying to explain why we don't just on
-the bugs when they are filled in Bugzilla. Now that we have 0.9
+Not an excuse -- I'm just trying to explain why we don't just jump on
+the bugs when they are filed in Bugzilla. Now that we have 0.9
 on the way (hopefully followed by 1.0), this attitude seems to be
 changing.</p></quote>
 <p>Marcus Meissner:</p>
 <quote who="Marcus Meissner"><p>
 Yes, we welcome you to the wonderful world of OpenSource.
 </p><p>
-Please understand that a lot of us are not being paid ... and so just chose
+Please understand that a lot of us are not being paid ... and so just choose
 what to do. Some of us are paid to work on Wine, but for specific tasks.
 </p></quote>
 
@@ -463,7 +463,7 @@ sense, as 'bugs are usually fixed within 2-3 days', which I had serious
 doubts about (it just doesn't work that way), so I've made a little 
 experiment. I was right, you guys were wrong, and now you're trying to blame 
 me? I don't really think that after all that heated conversation somebody is 
-going to consider my original proposal, but frankly I don't care about WIne 
+going to consider my original proposal, but frankly I don't care about Wine 
 anymore - I definitely don't like this 'pay me' attitude (rather than normal 
 'sorry, we didn't have time to fix it yet' attitude).</p></quote>
 
