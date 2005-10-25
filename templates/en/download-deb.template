@@ -19,10 +19,12 @@ these packages also work in Ubuntu Linux, where they are tested regularly. </p>
 <p>To install Wine from the WineHQ APT repository, you need to configure APT to
 look in the right place for the Wine packages.  On Ubuntu systems, and those 
 using the Synaptic Package Manager, this can be done easily by opening up 
-Synaptic and selecting Settings->Repositories.  Then click add and enter the 
-following information:</p>
+Synaptic and selecting Settings->Repositories.  Then click add, select custom, 
+and enter the following:</p>
 
-<img src="{$root}/images/distro/synaptic-repository-binary.png" alt="Synaptic Package Repository Screenshot" border="0">
+<i><p>deb http://wine.sourceforge.net/apt/ binary/</p></i>
+
+<img src="{$root}/images/distro/synaptic-repository-binary2.png" alt="Synaptic Package Repository Screenshot" border="0">
 
 <p>Then, simply click reload and search for the package 'wine' for installation. 
 If you already have a 'wine' package installed, selecting mark all upgrades and
@@ -32,10 +34,13 @@ opting for the "smart upgrade" option should update Wine to the newest version.
 <p>Currently, we only have i386 binary packages available. If you do not use an 
 i386 architecture, or wish to compile the package in an optimized way, you can 
 build the wine package using the source repository instead. To do this, add a 
-source repository with the same URI, but using the distribution source/ instead.
-Then, see the instructions below for building the package in the console.</p>
+source repository with the the following:</p>
 
-<img src="{$root}/images/distro/synaptic-repository-source.png" alt="Synaptic Package Repository Screenshot" border="0">
+<i><p>deb-src http://wine.sourceforge.net/apt/ source/</p></i>
+
+<p>Then, see the instructions below for building the package in the console.</p>
+
+<img src="{$root}/images/distro/synaptic-repository-source2.png" alt="Synaptic Package Repository Screenshot" border="0">
 
 <h2>Installing from the WineHQ APT Repository with the console:</h2>
 
