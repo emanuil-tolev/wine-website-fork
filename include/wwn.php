@@ -25,11 +25,12 @@ class wwn
         $this->map_array = array(
                                  "a"	        => "a",
                                  "b"	        => "b",
+                                 "blockquote"	=> "blockquote",
+                                 "center"       => "center",
+                                 "code"         => "code",
+                                 "div"          => "div",
                                  "i"	        => "i",
                                  "img"          => "img",
-                                 "u"	        => "u",
-                                 "ul"	        => "ul",
-                                 "ol"	        => "ol",
                                  "li"	        => "li",
                                  "table"        => "table",
                                  "tr"	        => "tr",
@@ -38,9 +39,10 @@ class wwn
                                  "dt"           => "dt",
                                  "dd"           => "dd",
                                  "tt"           => "tt",
-                                 "code"         => "code",
                                  "pre"          => "pre",
-                                 "blockquote"	=> "blockquote"	   
+                                 "u"	        => "u",
+                                 "ul"	        => "ul",
+                                 "ol"	        => "ol",
                                 );
     }
     
