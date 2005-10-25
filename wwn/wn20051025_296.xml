@@ -13,7 +13,7 @@
 	subject="Beta: How We Got Here"
 >
 <p><center><img alt="Wine 0.9" height="202" width="340"
-src="http://www.winehq.org/images/wwn296-wine0-9.jpg" />
+src="http://www.winehq.org/images/wwn296-wine0-9.jpg" /></center>
 <p>With Wine hitting a beta release today, it's fitting to look back on the
 past few years of development and pick out some highlights.  We have a 
 pretty good <a href="http://www.winehq.com/site/history">history of Wine</a>
@@ -164,7 +164,7 @@ configuration tool</a>.  That work
 <a href="http://www.winehq.org/?issue=159#Making%20Config%20Tools">began</a>
 in early 2003 and
 <a href="http://www.winehq.org/?issue=186#Winecfg%20Revisited">continued</a>
-<a href="http://www.winehq.org/?issue=188#Winecfg%20Status%20&%20Preferences">on</a>
+<a href="http://www.winehq.org/?issue=188#Winecfg%20Status%20&amp;%20Preferences">on</a>
 <a href="http://www.winehq.org/?issue=206#Winecfg%20Additions">and</a>
 <a href="http://www.winehq.org/?issue=233#Configuration%20To-Do%20List">on</a>.
 For the most part the tool was complete in the middle of 2004.  However,
@@ -247,7 +247,7 @@ support were implemented on top of native Linux libraries (in that case
 SANE.)  The 
 <a href="http://www.winehq.org/?issue=103#Crypto%20API">CryptoAPI</a> popped
 up in 2001 as well as improvements to the
-<a href="http://www.winehq.org/?issue=110#SHLWAPI%20Additions">Shell Lightweight API<a/>.  Work on advanced controls, such as 
+<a href="http://www.winehq.org/?issue=110#SHLWAPI%20Additions">Shell Lightweight API</a>.  Work on advanced controls, such as 
 <a href="http://www.winehq.org/?issue=141#Listview%20Update%20(con't)">Listview</a> 
 and more recently 
 <a href="http://www.winehq.org/?issue=260#RichEdit%20Control%20Code">RichEdit 2.0</a>, 
@@ -361,7 +361,7 @@ support.
 
 <ul><i>"We are now working on the last missing piece ... to complete the transition from 
 a Win3.1 architecture to a NT-like architecture. Once this is done we'll be able 
-to release 1.0. I won't give any dates though..."
+to release 1.0. I won't give any dates though..."</i>
  <ul>Alexandre Julliard, October 29th, 2001</ul></ul>
 
 </p><p>
