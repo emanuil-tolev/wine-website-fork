@@ -30,6 +30,8 @@ RedirectPermanent /community.shtml              http://www.winehq.org/site/contr
 RedirectPermanent /dev.shtml                    http://www.winehq.org/site/cvs
 RedirectPermanent /dev.html                     http://www.winehq.org/site/cvs
 RedirectPermanent /devstart.shtml               http://www.winehq.org/site/cvs
+RedirectPermanent /documentation/               http://www.winehq.org/site/documentation
+RedirectPermanent /documentation                http://www.winehq.org/site/documentation
 RedirectPermanent /download/                    http://www.winehq.org/site/download
 RedirectPermanent /download                     http://www.winehq.org/site/download
 RedirectPermanent /download/index.php           http://www.winehq.org/site/download
@@ -93,4 +95,3 @@ RedirectPermanent /diff                         http://source.winehq.org/search
 # redirect old wineconf pages
 RedirectMatch ^/wineconf$                       http://www.winehq.org/site/wineconf
 RedirectMatch ^/wineconf/$                      http://www.winehq.org/site/wineconf
-
