@@ -12,8 +12,8 @@
 	title="Beta: How We Got Here"
 	subject="Beta: How We Got Here"
 >
-<p><center><img alt="Wine 0.9" height="202" width="340"
-src="http://www.winehq.org/images/wwn296-wine0-9.jpg" /></center>
+<p><img align="center" alt="Wine 0.9" height="202" width="340"
+src="http://www.winehq.org/images/wwn296-wine0-9.jpg" /></p>
 <p>With Wine hitting a beta release today, it's fitting to look back on the
 past few years of development and pick out some highlights.  We have a 
 pretty good <a href="http://www.winehq.com/site/history">history of Wine</a>
@@ -21,7 +21,7 @@ that provides a pretty good introduction to how Wine came to be.  It also
 covers the ups and downs of Wine's commercial development, various
 conferences we've had, and Wine's licensing flamewars^H^H^H^H^H^H^H^H^H 
 discussions.  This special issue of WWN aims to take more of a technical 
-look at Wine's internals and show you how things have progressed.</p>
+look at Wine's internals and show you how things have progressed.
 
 </p><p>
 
@@ -40,6 +40,7 @@ different contributors over its twelve year history.
 speed up as more programmers become familiar with the project. New BETA 
 releases will be released periodically as Wine progresses."</i>
 <ul>Bob Amstadt, August, 1994 (Linux Journal #4)</ul></ul>
+</p><p>
 
 In the beginning, Wine set out to run early Windows programs.  A hefty
 infrastructure based on a DOS-style architecture emerged.  Windowing
