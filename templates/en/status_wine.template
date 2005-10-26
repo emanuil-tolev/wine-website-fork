@@ -20,7 +20,7 @@
     </tr>
     <tr>
       <td>Wine's fundamental architecture</td>
-      <td class="outdadeq"><a href="http://www.winehq.org/site/docs/wine-devel/architecture">Getting outdated</a></td>
+      <td class="outdadeq"><a href="http://www.winehq.org/site/docs/winedev-guide/part-two">Getting outdated</a></td>
       <td><a href="{$root}/site/?issue=50#Feature:%20Wine%20Architecture%20by%20Ove%20K%E5ven">#50</a>,
           <a href="{$root}/site/?issue=154#Kernel%20Module%20/%20Shared%20Memory%20Revisited">#154</a>,
           <a href="{$root}/site/?issue=178#Viva%20la%20Kernel%20Module%20Idea">#178</a>,
@@ -31,7 +31,7 @@
     </tr>
     <tr>
       <td>Process/Address Space model</td>
-      <td class="good"><a href="http://winehq.org/site/docs/wine-devel/x2493#ARCH-MEM">Good</td>
+      <td class="good"><a href="http://winehq.org/site/docs/winedev-guide/x2591#ARCH-MEM">Good</td>
       <td><a href="{$root}/site/?issue=4#Address%20Space%20Separation%20/%20Stability%20vs%20Correctness">#4</a>,
           <a href="{$root}/site/?issue=39#Some%20more%20bits%20on%20address%20space%20separation">#39</a>,
           <a href="{$root}/site/?issue=46#Address%20space%20separation">#46</a></td>
@@ -131,7 +131,7 @@
     </tr>
     <tr>
       <td>Native DLL overrides</td>
-      <td class="good"><a href="http://www.winehq.org/site/docs/wine-user/config-dll">Good</a></td>
+      <td class="good"><a href="http://www.winehq.org/site/docs/wineusr-guide/config-dll">Good</a></td>
       <td><a href="{$root}/site/?issue=46#Feature:%20DLL%20overrides%20by%20Ove%20K%E5ven">#46</a>,
           <a href="{$root}/site/?issue=134#Native%20vs.%20Builtin%20DLLs">#134</a>,
           <a href="{$root}/site/?issue=180#Configuring%20Native%20OLE%20DLLs">#180</a>,
@@ -471,7 +471,7 @@
     </tr>
     <tr>
       <td>Wine Conformance Test Suite</td>
-      <td class="good"><a href="http://www.winehq.org/site/docs/wine-devel/testing">Good</a></td>
+      <td class="good"><a href="http://www.winehq.org/site/docs/winedev-guide/testing">Good</a></td>
       <td><a href="{$root}/site/?issue=119#Improving%20Regression%20Testing">#119</a>,
           <a href="{$root}/site/?issue=120#CreateProcess%20Test">#120</a>,
           <a href="{$root}/site/?issue=121#More%20Tests">#121</a>,

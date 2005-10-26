@@ -352,8 +352,8 @@ submitted:</p>
 Hi!  My crypt32 protectdata tests were just added to CVS (thanks!) but
 they were added without the <tt>#ifndef STANDALONE</tt> stuff that exists in the
 recommended example from the lzexpand test code.  The steps here:
-<ul><a href="http://www.winehq.com/site/docs/wine-devel/testing-windows">
-http://www.winehq.com/site/docs/wine-devel/testing-windows</a></ul>
+<ul><a href="http://www.winehq.com/site/docs/winedev-guide/testing-windows">
+http://www.winehq.com/site/docs/winedev-guide/testing-windows</a></ul>
 don't have a method for doing the build with the free-of-charge windows
 CLI compiler (which the "STANDALONE" stuff works fine with).
 </p><p>
