@@ -4,7 +4,7 @@
 Wine for Red Hat based distributions</h1>
 
 <p>This page lists the current Wine packages for various Red Hat based
-distributions (more specifically Fedora Core 1, 2 and 3, Red Hat Linux
+distributions (more specifically Fedora Core 1, 2, 3 and 4, Red Hat Linux
 7.3, 8.0 and 9, White Box Enterprise Linux 3.0 (a RHEL 3.0
 compatible) and CentOS 4 (a RHEL 4.0 compatible)).</p>
 
@@ -14,6 +14,40 @@ updates (where applicable), White Box Enterprise Linux updates or
 CentOS updates.</p>
 
 <table width="95%" border=0 cellpadding=5 cellspacing=1 bgcolor="#EFEFEF">
+
+  <tr>
+    <td align=center colspan=2 bgcolor=black><b><font color=white><a name="fc4"></a>Fedora Core 4</font></b></td>
+  </tr>
+
+  <tr bgcolor="#7f7f7f">
+    <td align=center>Architectures</td>
+    <td>File link</td>
+  </tr>
+
+  <tr>
+    <td>i686</td>
+    <td><a href="http://prdownloads.sourceforge.net/wine/wine-{$snapshot_date_rh}-1fc4winehq.i686.rpm?download">wine-{$snapshot_date_rh}-1fc4winehq.i686.rpm</a></td>
+  </tr>
+
+  <tr>
+    <td>i386</td>
+    <td><a href="http://prdownloads.sourceforge.net/wine/wine-{$snapshot_date_rh}-1fc4winehq.i386.rpm?download">wine-{$snapshot_date_rh}-1fc4winehq.i386.rpm</a></td>
+  </tr>
+
+  <tr>
+    <td>athlon</td>
+    <td><a href="http://prdownloads.sourceforge.net/wine/wine-{$snapshot_date_rh}-1fc4winehq.athlon.rpm?download">wine-{$snapshot_date_rh}-1fc4winehq.athlon.rpm</a></td>
+  </tr>
+
+  <tr>
+    <td>Development package</td>
+    <td><a href="http://prdownloads.sourceforge.net/wine/wine-devel-{$snapshot_date_rh}-1fc4winehq.i386.rpm?download">wine-devel-{$snapshot_date_rh}-1fc4winehq.i386.rpm</a></td>
+  </tr>
+
+  <tr>
+    <td>Source</td>
+    <td><a href="http://prdownloads.sourceforge.net/wine/wine-{$snapshot_date_rh}-1fc4winehq.src.rpm?download">wine-{$snapshot_date_rh}-1fc4winehq.src.rpm</a></td>
+  </tr>
 
   <tr>
     <td align=center colspan=2 bgcolor=black><b><font color=white><a name="fc3"></a>Fedora Core 3</font></b></td>
@@ -50,7 +84,7 @@ CentOS updates.</p>
   </tr>
 
   <tr>
-    <td align=center colspan=2 bgcolor=black><b><font color=white><a name="fc2"></a>Fedora Core 2</font></b></td>
+    <td align=center colspan=2 bgcolor=black><b><font color=white><a name="fc2"></a>Fedora Core 2 (NOT AVAILABLE YET!)</font></b></td>
   </tr>
 
   <tr bgcolor="#7f7f7f">
@@ -84,7 +118,7 @@ CentOS updates.</p>
   </tr>
 
   <tr>
-    <td align=center colspan=2 bgcolor=black><b><font color=white><a name="fc1"></a>Fedora Core 1</font></b></td>
+    <td align=center colspan=2 bgcolor=black><b><font color=white><a name="fc1"></a>Fedora Core 1 (NOT AVAILABLE YET!)</font></b></td>
   </tr>
 
   <tr bgcolor="#7f7f7f">
@@ -118,7 +152,7 @@ CentOS updates.</p>
   </tr>
 
   <tr>
-    <td align=center colspan=2 bgcolor=black><b><font color=white><a name="centos4"></a>CentOS 4 (RHEL 4.0 compatible)</font></b></td>
+    <td align=center colspan=2 bgcolor=black><b><font color=white><a name="centos4"></a>CentOS 4 (RHEL 4.0 compatible) (NOT AVAILABLE YET!)</font></b></td>
   </tr>
 
   <tr bgcolor="#7f7f7f">
@@ -152,7 +186,7 @@ CentOS updates.</p>
   </tr>
 
   <tr>
-    <td align=center colspan=2 bgcolor=black><b><font color=white><a name="wbel3"></a>White Box Enterprise Linux 3.0 (RHEL 3.0 compatible)</font></b></td>
+    <td align=center colspan=2 bgcolor=black><b><font color=white><a name="wbel3"></a>White Box Enterprise Linux 3.0 (RHEL 3.0 compatible) (NOT AVAILABLE YET!)</font></b></td>
   </tr>
 
   <tr bgcolor="#7f7f7f">
@@ -186,7 +220,7 @@ CentOS updates.</p>
   </tr>
 
   <tr>
-    <td align=center colspan=2 bgcolor=black><b><font color=white><a name="rh9"></a>Red Hat Linux 9</font></b></td>
+    <td align=center colspan=2 bgcolor=black><b><font color=white><a name="rh9"></a>Red Hat Linux 9 (NOT AVAILABLE YET!)</font></b></td>
   </tr>
 
   <tr bgcolor="#7f7f7f">
