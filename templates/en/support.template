@@ -16,21 +16,21 @@
 
 <big>Documentation</big>
 <ul>
-    <li><a href="/Docs/"><span class="listTitle">Official Wine documentation</span></a><br>
+    <li><a href="{$root}/site/documentation/"><span class="listTitle">Official Wine documentation</span></a><br>
     The official Wine &amp; Winelib guides<p>
     
-    <li><a href="/Trouble/"><span class="listTitle">Wine Troubleshooting Guide</span></a><br>
+    <li><a href="{$root}/site/docs/wine-faq/index"><span class="listTitle">Wine Troubleshooting Guide</span></a><br>
     Resolves all your daily Wine trouble - now with Money Back Guarantee :-)<p>
     
     <li><a href="http://appdb.winehq.org"><span class="listTitle">Application Database</span></a><br>
     HOWTOs, useful config hints for many applications. (<a
-    href="/about/index.php?contrib">please contribute</a>)<p>
+    href="{$root}/site/contributing#app_owners">please contribute</a>)<p>
 
-    <li><a href="{$root}/site/faq"><span class="listTitle">FAQ</span></a><br>
+    <li><a href="{$root}/site/docs/wine-faq"><span class="listTitle">FAQ</span></a><br>
     Some quick answers on basic questions about Wine as a whole.<p>
     
-    <li><a href="http://www.la-sorciere.de/wine/index.html"><span class="listTitle">Wine HOWTO</span></a><br>
-    Alternative info on configuring/using Wine <small>(OUTDATED!)</small><p>
+    <li><a href="http://wiki.winehq.org/FrontPage"><span class="listTitle">Wine Wiki</span></a><br>
+    A place for developers and users to document and share their experiences<p>
 
     
 </ul>
