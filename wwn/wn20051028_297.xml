@@ -129,7 +129,7 @@ Its main goal is to celebrate a beta release! It also serves to inform you of wh
 <topic>News</topic>
 <p>Do we really need to say what the headline is this week?  Wait for it.. 
 wait for it..
-</p><h1>Beta!</h1>
+</p><ul><ul><ul><b>Beta!</b></ul></ul></ul>
 <p>In the past, Wine releases followed a standard format.  About every
 month Alexandre would release a CVS snapshot with the format of YYYYMMDD,
 such as wine-20050930.  Those CVS snapshots were just that: a point in
@@ -186,7 +186,7 @@ a pretty good record of the major projects tackled over the past six years so
 I took a look back and summarized what some of the critical ones for the
 beta release were.  </p><p>
 
-In other big news over at CodeWeavers, CrossOver Office 5.0 was released.  
+In other big news, CodeWeavers released CrossOver Office 5.0 on the same day.  
 There's definitely a lot of new stuff under the hood with this release;
 a lot of which can be found in Wine 0.9.  As usual, Jeremy White's
 <a href="http://crossover.codeweavers.com/pipermail/announce/2005-October/000030.html">announcement</a>
@@ -210,7 +210,7 @@ this week (let me know if you see more):
 <li><a href="http://www.betanews.com/article/Wine_Reaches_Beta_After_12_Years/1130338797">BetaNews</a></li>
 <li><a href="http://www.internetnews.com/dev-news/article.php/3559281">internetnews.com</a></li>
 <li><a href="http://www.osnews.com/story.php?news_id=12402">OSNews</a></li>
-<li><a href="http://www.desktoplinux.com/news/NS2381189162.html">DesktopLinux.com</a></li>
+<li><a href="http://www.desktoplinux.com/news/NS2381189162.html">DesktopLinux.com</a> (CXO 5)</li>
 <li><a href="http://www.techspot.com/news/19182-crossover-office-50-released.html">TechSpot</a> (CXO 5)</li>
 <li><a href="http://www.linuxelectrons.com/article.php/2005102510203237">LinuxElectrons</a> (CXO 5)</li></ul></p><p>
 
@@ -249,8 +249,8 @@ etc.), and we need better support for the various code obfuscation
 tools, it's probably the number one cause of apps not even starting
 today.</p></quote>
 
-<p>Jonathan Wilson asked if that last item meant support for Safedisk,
-Securom and other copy protection methods and Alexandre replied,
+<p>Jonathan Wilson asked if that last item meant support for Safedisc,
+Securom and other copy protection methods. Alexandre replied,
 <quote who="Alexandre Julliard">
 As far as possible, yes. I think the goal for 1.0 should be that
 anybody has to be able to try Wine and see that it's for real. This
@@ -392,7 +392,7 @@ Patches not sent are listed hereunder long with the reasons...
 </p><p>
 
 
-Possibly essential (Show stoppers)
+<u>Possibly essential (Show stoppers)</u>
 </p><p>
 ptrace stub patch 
 <ul> Disable debugger by returning error for all ptrace calls,
@@ -411,7 +411,7 @@ have two runtime startoff libraries.  Patch won't be submitted until a final
 solution is found.
 </ul></p><p>
 
-Recommended functionality patches
+<u>Recommended functionality patches</u>
 </p><p>
 cpuid patch 
 <ul>CPUID detection using x86 cpuid instruction - previously
@@ -421,7 +421,7 @@ wineconsole/curses.c
 <ul> Patch non-essential and FAR too hacky at this point -
 just removes all mouse code.</ul>
 </p><p>
-Other Patches
+<u>Other Patches</u>
 </p><p>
 tools 
 <ul>automation patches to allow unattended build No interest to Wine
@@ -462,7 +462,7 @@ What worked:
 wine-20050524; sidenet-1.8.1; Dragon NS v7 prefered En. and v7 pref Fr
 Ensoniq 1371 pci "soundblaster"</ul>
 </p><p>
-what won't:
+What won't:
 <ul>
 winecfg based wine releases ; more recent sidenet on previous above wine.
 muse5.1 cmipci (too quiet)</ul>
@@ -579,12 +579,14 @@ idea regarding graphics drivers:</p>
 infrastructure. The new Windows graphics vista driver model.
 <ul>
 <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/Display_d/hh/Display_d/DisplayDriverModel_Guide_c96d975e-dcc9-49b5-be73-b4d8b9f06eb8.xml.asp">
-http://msdn.microsoft.com/library/default.asp?url=/library/en-us/Display_d/hh/Display_d/DisplayDriverModel_Guide_c96d975e-dcc9-49b5-be73-b4d8b9f06eb8.xml.asp</a></ul>
+http://msdn.microsoft.com/library/default.asp?url=/library/en-us/Display_d/hh/Display_d/
+DisplayDriverModel_Guide_c96d975e-dcc9-49b5-be73-b4d8b9f06eb8.xml.asp</a></ul>
 </p><p>
 And what made me think we could have support for it in linux.
 <ul>
 <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/Display_d/hh/Display_d/DisplayDriverModel_Guide_c96d975e-dcc9-49b5-be73-b4d8b9f06eb8.xml.asp">
-http://msdn.microsoft.com/library/default.asp?url=/library/en-us/Display_d/hh/Display_d/DisplayDriverModel_Guide_c96d975e-dcc9-49b5-be73-b4d8b9f06eb8.xml.asp</a></ul>
+http://msdn.microsoft.com/library/default.asp?url=/library/en-us/Display_d/hh/Display_d/
+DisplayDriverModel_Guide_c96d975e-dcc9-49b5-be73-b4d8b9f06eb8.xml.asp</a></ul>
 </p><p>
 It seem to me that having the most important parts of the driver
 being in user mode would really help to use it on other systems.
@@ -626,5 +628,5 @@ Longhorn Display Driver Model Reference.</p></quote>
 <p>That's a pretty significant change: Direct3D being at the heart
 of the display.  Reaction was mixed on wine-devel.  Stefan D&#246;singer
 was against the idea while Krzysztof Foltman was for it.  From there
-the idea soft of died off.</p>
+the idea sort of died off.</p>
 </section></kc>
