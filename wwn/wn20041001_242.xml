@@ -258,15 +258,10 @@ config file and discuss Winecfg instead.  Without actually being able to
 use Winecfg these changes are useless, but it's probably worth looking
 this over to see whether these docs are headed in the right direction.
 For now, the biggest changes can be found in configuring.sgml  (which
-translates into the "Configuring Wine" part of the guide.)  A diff is
-available here:
-<ul><a href="http://www.theshell.com/~vinn/wine-user-guide.diff">
- http://www.theshell.com/~vinn/wine-user-guide.diff</a></ul></p><p>
+translates into the "Configuring Wine" part of the guide.) 
 
-However, this stuff is best looked at as a side-by-side comparison with
-the existing docs.  You can find that here:
-<ul><a href="http://www.theshell.com/~vinn/wine-user-guide.html">
- http://www.theshell.com/~vinn/wine-user-guide.html</a></ul></p><p>
+</p><p>
+
 (Not having looked at Mike's recent patches, I'm sure this will soon be out
 of date.  Things like drive detection are missing.  There's also parts that
 I left undone: such as the printing config, an appendix listing reg keys would

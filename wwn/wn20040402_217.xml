@@ -76,7 +76,7 @@ Its main goal is to take apart electronic things not meant to be taken apart. It
 <section 
 	title="News: Onebase Linux &amp; Wine, WineTools Update" 
 	subject="News"
-	archive="http://www.onebase-linux.org" 
+	archive="http://www.ibiblio.org/onebase/" 
 	posts="1"
 	startdate="03/27/2004"
 	enddate="04/02/2004"
@@ -84,23 +84,19 @@ Its main goal is to take apart electronic things not meant to be taken apart. It
 <topic>News</topic>
 
 <p>Earlier this week we posted a news item about 
-<a href="http://www.onebase-linux.org">Onebase Linux</a> and
+<a href="http://www.ibiblio.org/onebase/">Onebase Linux</a> and
 its new support for Wine.  Onebase is a new community-driven
 distribution.  It features an entirely new package management
 system, part of which includes the ability to interact with 
 Wine and Win32 programs.  They've put together 
-<a href="http://www.ibiblio.org/onebase/onebase-linux.org/wineapps/">a
-gallery</a> of applications that can be downloaded and installed
+a gallery of applications that can be downloaded and installed
 using custom ".owm" installation scripts.  These scripts vary
 in complexity and at the most basic level just download and
 run an application installer.  At the other end of the spectrum
 it's possible to tell the script to manually extract cab files
 and use native DLLs (using Wine AppDefaults in the config
-file.)  From their
-<a href="http://www.ibiblio.org/onebase/onebase-linux.org/About/aboutol.html">about</a>
-page:</p>
+file.)  From their about page:</p>
 <quote who="Onebase"><p>
-
 Onebase provides fine integration of WINE software for easier 
 and trouble-free installation and execution of Win32 applications 
 through the "Onebase WINe support". 

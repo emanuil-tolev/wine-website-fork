@@ -151,17 +151,9 @@ Last year I sent this to wine-devel talking about it:
 </p><p>
 
 For now, the biggest changes can be found in configuring.sgml  (which
-translates into the "Configuring Wine" part of the guide.)  A diff is
-available here:
+translates into the "Configuring Wine" part of the guide.) 
 
- <ul><a href="http://www.theshell.com/~vinn/wine-user-guide.diff">
- http://www.theshell.com/~vinn/wine-user-guide.diff</a></ul></p><p>
-
-However, this stuff is best looked at as a side-by-side comparison with
-the existing docs.  You can find that here:
-
- <ul><a href="http://www.theshell.com/~vinn/wine-user-guide.html">
- http://www.theshell.com/~vinn/wine-user-guide.html</a></ul></p><p>
+</p><p>
 
 (Not having looked at Mike's recent patches, I'm sure this will soon be out
 of date.  Things like drive detection are missing.  There's also parts that
