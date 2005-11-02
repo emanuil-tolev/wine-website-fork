@@ -15,6 +15,7 @@ class html
     var $_file_root;
     var $page;
     var $template_title;
+    var $in404;
 
     // HTML init object
     function html ($root)
@@ -66,7 +67,16 @@ class html
         }
         $search = $this->template("base", "search");
         // display the html
-        $this->http_header(); 
+        if ($this->in404)
+        {
+            // 404 not found
+            header("HTTP/1.1 404 Not Found");
+        }
+        else
+        {
+            // normal HTTP Headers
+            $this->http_header();
+        }
         echo 
         $this->template(
                         $theme,
@@ -749,6 +759,7 @@ class html
         // oops not found, load 404 template
 		if (!$in)
         {
+            $this->in404 = 1;
             $in = '';
             if ($config->web_debug)
                 $in = $this->p($theme."|".$template);
