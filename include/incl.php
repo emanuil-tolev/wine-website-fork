@@ -39,9 +39,6 @@ if (isset($_GET['theme']) and in_array($_GET['theme'], $config->themes))
     $config->theme = $_GET['theme'];
 }
 
-// load a banner ad
-$html->banner_ad = banner_ad();
-
 // load the path for the page
 if ($_SERVER['PATH_INFO'])
 {

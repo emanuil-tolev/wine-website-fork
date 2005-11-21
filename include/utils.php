@@ -3,7 +3,7 @@
 /*
   WineHQ
   by Jeremy Newman <jnewman@codeweavers.com>
-*/  
+*/
 
 /*
  * winehq misc utils
@@ -31,34 +31,6 @@ function get_files ($dir, $filter = null)
     sort($files);
     
     return $files;
-}
-
-// load and display banner ads
-function banner_ad ()
-{
-	global $file_root, $html;
-    $bannerads_path = $file_root.'/images/bannerads/';
-
-	// read dir and get list of banners
-	$ads = array();
-	$d = opendir($bannerads_path);
-	while($entry = readdir($d))
-	{
-		if(!ereg("(.+)\\.gif$", $entry, $arr))
-			continue;
-		array_push($ads, $arr[1]);
-	}
-	closedir($d);
-    sort($ads);
-    
-	// randomly select a banner and display it
-	$img = $ads[(rand(1,count($ads))-1)];
-	list($url, $alt) = get_xml_tags($bannerads_path.$img.'.xml', array('url', 'alt'));
-
-	// da banner
-	$banner = $html->ahref($html->img('bannerads/'.$img.".gif", "", $alt), $url);	
-
-	return $banner;
 }
 
 // open file and display contents of selected tag (very simple)

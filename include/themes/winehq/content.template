@@ -20,13 +20,9 @@
         <td>
           <img src="{$root}/images/blank.gif" border=0 width=10 height=1 alt="">
         </td>
-        <td width="100%" align="center" valign="middle">
+        <td width="468" align="center" valign="middle">
             <!-- BANNER AD -->
-            <table border=0 cellpadding=1 cellspacing=0>
-            <tr><td valign="middle" align="center" class="black"
-                >{$banner_ad}</td
-            ></tr>
-            </table>
+            <iframe src="{$root}/bin/ad" scrolling="no" frameBorder="0" height="60" width="468"></iframe>
             <!-- END BANNER AD -->
 	    </td>
         <td>

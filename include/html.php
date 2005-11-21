@@ -85,8 +85,7 @@ class html
                               'page_title'    => $title,
                               'page_body'     => $body,
                               'page_sidebar'  => $menu,
-                              'page_search'   => $search,
-                              'banner_ad'     => $this->banner_ad
+                              'page_search'   => $search
                              )
                 );
     }
