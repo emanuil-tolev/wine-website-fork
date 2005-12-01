@@ -118,7 +118,7 @@ that many people have tried to shoot for in other operating systems--lxrun
 inside various Unixes and Windows 3.0 inside of OS/2, just to name two--and 
 such emulation has received mixed results in the market because emulators 
 tend to make emulated applications run slowly and emulators are often cranky 
-and buggy. Now is your chance to see if the open source Win Project community 
+and buggy. Now is your chance to see if the open source Wine Project community 
 can--and has done--a better job than prior commercial emulators of the 
 past. </p></quote>
 </section>
@@ -178,7 +178,7 @@ publication. Anyone interested can find the article available online at
 cover them as two separate threads.  Rob Done had a Winelib app he 
 wanted to run on Solaris x86:</p>
 <quote who="Rob Done"><p>
-Ive been trying to figure how to get a (single) Wine application to be able
+I've been trying to figure how to get a (single) Wine application to be able
 to display dialogs on each of 3 monitors in a non xinerama setup (DISPLAY
 :0.0, :0.1, and :0.2).
 </p><p>
@@ -186,8 +186,8 @@ I am well aware that xinerama mode would allow this quite easily, but
 xinerama is not an option, partly since CDE on Solaris will not work in
 xinerama mode, and a little thing called Software Requirements Specification.
 </p><p>
-I am also aware this isnt specifically a wine issue, but in researching
-what could be done about over the past week, I found several references to
+I am also aware this isn't specifically a wine issue, but in researching
+what could be done about it over the past week, I found several references to
 gdi_display, x11drv_thread_data, and various other constructs and class
 members in Wine that describe which display to use. This leads me to
 believe there is some method to allow Wine to enable the desired functionality.
@@ -213,7 +213,7 @@ There are "WindowStations"</p></quote>
 
 <p>Rob thought about it more and came up with something to try,
 <quote who="Rob Done">
-Since alot of the Wine code refers to "thread_display" attributes, I spose
+Since a lot of the Wine code refers to "thread_display" attributes, I spose
 I could try to create a separate helper thread for each display, each
 somehow kludged to link to a separate display at startup, and marshal
 display requests for each, but it seems that there could be an easier way.
@@ -234,9 +234,9 @@ but nothing seemed to work.  Then the next thread popped up...</p>
 Someone wanted to know how to get two Windows apps to  talk to each
 other with Wine:</p>
 <quote who="wino_at_piments.com"><p>
-I dont know much about the message queue works on Wine but wondered if  
-there was means of running two progams in the same context on wine in such  
-a way that they use the same message queue and can therefore potencially  
+I don't know much about how the message queue works on Wine but wondered if  
+there was a means of running two progams in the same context on wine in such  
+a way that they use the same message queue and can therefore potentially  
 interact.
 </p><p>
 As I understand it, running two instance of command line wine is more  
@@ -285,7 +285,7 @@ mechanism  that could send the output to the X window with the input focus.</li>
 <li> Using wininet to open a link to a bespoke client on 127.0.0.1 that  
 could redirect the output in X.</li></ol>
 </p><p>
-As you can see are barely thought out ideas just to map possible ways to  
+As you can see these are barely thought out ideas just to map possible ways to  
 explore.
 </p><p>
 Any comments on the merit of any of these approaches?
@@ -296,27 +296,27 @@ It could be a cool project for someone looking to hook speech-to-text
 into Linux apps though.</p>
 
 <p>Rob then replied with an idea about his earlier thread concerning
-multimonitor supoort:</p>
+multimonitor support:</p>
 <quote who="Rob Done"><p>
 So I could create 2 wine apps that simply duplicate the window creation and 
-message handling , and have them use FindWindow and the like to enable 
+message handling, and have them use FindWindow and the like to enable 
 using SendMessage and such to synchronize the windows?
 </p><p>
-If so, that would MUCH simpler than the method I had started formulating.
+If so, that would be MUCH simpler than the method I had started formulating.
 </p></quote>
 
 <p>He replied to himself about four hours later:</p>
 <quote who="Rob Done"><p>
-I was going to wait til tomorrow to test this, but couldnt wait.
-This works perfectly for my app and couldnt have came at a better time.
+I was going to wait till tomorrow to test this, but couldn't wait.
+This works perfectly for my app and couldn't have come at a better time.
 </p><p>
 I just created a simple Win32 dispatcher program for each screen and sent 
 the window creation messages to the HWNDs from FindWindow instead of the 
 local app and it creates the dialogs on any screen I want. Joy Joy!!!!!
 </p><p>
 It worked out perfectly since the threads that create windows have to send 
-messages to the main loop for it to create them so that the dialogs dont 
-from close when the thread exits anyway.
+messages to the main loop for it to create them so that the dialogs don't 
+close when the thread exits anyway.
 </p><p>
 It is refreshing that after I went through all the battles of getting 
 multihead display, gcc, and wine running on Solaris that FINALLY something 
@@ -337,16 +337,16 @@ Thanks again to the whole Wine crew that made this possible!!!
 week about the merits of a particular method:</p>
 <quote who="wino_at_piments.com"><p>
 I often have wine finish uncleanly or need to break in if it is
-misbehaving , this leaves some processes lying around and often means wine
+misbehaving, this leaves some processes lying around and often means wine
 cannot be restarted correctly.
 </p><p>
-I find killing it by hand labourious so I used the following command to
+I find killing it by hand laborious so I used the following command to
 clean up and have now defined it as an alias to make life easier.
 
 <ul><code>
 pgrep wine|while read p; do kill -9 $p ; done;</code></ul>
 </p><p>
-It works nicely but just wondered if anyone would say OMG dont do that !
+It works nicely but just wondered if anyone would say OMG don't do that !
 </p></quote>
 
 <p>That launched a series of people describing their favorite methods for
@@ -378,13 +378,13 @@ signal.</quote></p>
 confused with the regular Linux eject command, it gets invoked by <tt>wine 
 eject</tt>.  The idea remains the same though, to eject CD-ROMs.  It's 
 particularly useful for things like multidisc installation programs.  
-Christian Cost ran into problems using it:</p>
+Christian Costa ran into problems using it:</p>
 
 <quote who="Christian Costa"><p>
 
 I tried to use the new eject command and this does not seem to work.
 </p><p>
-For that, I run a exe on the cdrom and try to eject the cdrom with:
+For that, I run an exe on the cdrom and try to eject the cdrom with:
 <ul><code>
 WINEDEBUG=+eject wine eject</code></ul>
 </p><p>
@@ -405,7 +405,7 @@ Is there anything particular to do ?
 </p><p>
 Morover,  it seems eject is not installed so I have to run from the 
 programs directory.
-I have also found that there is already a eject command in my distro 
+I have also found that there is already an eject command in my distro 
 (Mandrake).
 So this conflict may require renaming the eject command.
 </p><p>
@@ -436,13 +436,13 @@ If I set H: to autodetect, GetDriveType returns DRIVE_FIXED (3).</quote></p>
 Then you need to figure out why FILE_GetDeviceInfo doesn't recognize
 it as a CDROM.</quote></p>
 
-<p>After more investigation decided to hack it into working:</p>
+<p>After more investigation Christian decided to hack it into working:</p>
 <quote who="Christian Costa"><p>
 I will hack FILE_GetDeviceInfo just to make it recognize my cdrom as removable
 and try to see if it helps.
 </p><p>
 However, I don't understand well why forcing the drive as cdrom (instead of relying
-on autodetection) is not taken into account. This could be also usefull for ISO images.
+on autodetection) is not taken into account. This could be also useful for ISO images.
 Unless this option is planned to be removed !?!
 
 </p></quote>

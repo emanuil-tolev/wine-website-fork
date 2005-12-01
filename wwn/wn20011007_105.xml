@@ -96,11 +96,11 @@ with winelib.  He was going through the following steps:</p>
 	Well, i compiled the part of mfc which i need for use the program without 
 	erros or unresolved functions and compiled the mfc program with the 
 	libmfc.so without errors or unresolved functions, but when i ran the mfc 
-	program hapned "Segmentation Fault". 
+	program happened "Segmentation Fault". 
 	</p><p>
 	I tried use gdb and winedbg but i can't run these debuggers, with gdb 
-	happned "Segmentation Fault" with or without breakpoints in the 
-	begining of the source and winedbg write only the first line in the 
+	happened "Segmentation Fault" with or without breakpoints in the 
+	beginning of the source and winedbg write only the first line in the 
 	window and go out. 
 </p></quote>
 <p>Francois Gouget wanted to know what kernel and compiler version was being used.

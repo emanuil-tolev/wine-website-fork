@@ -198,7 +198,7 @@ You can also find a new thing,
 <a href="http://www.codeweavers.com/products/cxoffice/bottles/"><i>bottles</i></a>, 
 that let you install applications into their own virtual Windows drive.  Each 
 bottle can contain its own custom configuration.  Then you can package it up 
-into and RPM for installation elsewhere.   
+into an RPM for installation elsewhere.   
 </p><p>
 Go <a href="http://www.codeweavers.com/store/?cat=cxof">buy it</a> now and
 give yourself the warm, fuzzy feeling of supporting free software development.
@@ -220,7 +220,7 @@ time.  Well, my $.02 is that we're no longer planning any big projects that
 will steal your lunch money.  In the past we had things on the to-do list
 like "window management rewrite".  Well, we knew that would break a lot
 of things.  We don't really have anything like that on the list now.  Sure,
-there's going to be some huge additions to individual DLL's that will 
+there's going to be some huge additions to individual DLLs that will 
 certainly cause regressions, but hopefully those can just be worked out.</p>
 
 </section>
@@ -239,7 +239,7 @@ the near future as developers complete patches they've been working
 on during the past few weeks of freeze.</p><p>  
 
 While the core internals of Wine are
-now complete, there remains a lot of work fleshing out various DLL's.
+now complete, there remains a lot of work fleshing out various DLLs.
 In the course of discussion, Alexandre mentioned some of the things
 that need to get fixed before 1.0:</p>
 <quote who="Alexandre Julliard"><p>
@@ -274,9 +274,9 @@ just getting into a fresh installation with 0.9
 </p><p>
 ran up winecfg and tried to add a device for my dvd burner.
 </p><p>
-editing the device name is unusable. No cursor , then after a first
+editing the device name is unusable. No cursor, then after a first
 character is entered the edit seems to jump to insert mode and puts the
-cursor at the begingin of the line. There seems no way enter text normally
+cursor at the beginning of the line. There seems to be no way enter text normally
 to enter a device name.
 </p><p>
 This whole interface seems badly broken. I had to fall back to good old
@@ -339,7 +339,7 @@ It is totally unrealistic to think that others will go do the
 verification -- they lack the software, the context, and the motivation/
 </p><p>
 Second, we had close to a thousand bugs in that state. They do more
-harm then good lingering about. If the original reporter can not be
+harm than good lingering about. If the original reporter cannot be
 bothered to verify it, they should be closed.</p></quote>
 
 
@@ -388,7 +388,7 @@ binary packages, it's not necessary to start out with the niceties all there
 (This particularly happens when I get deep into week long debugging
 sessions).
 </p><p>
-Patches not sent are listed hereunder long with the reasons...
+Patches not sent are listed hereunder along with the reasons...
 </p><p>
 
 
@@ -455,11 +455,11 @@ After a lot of heaving and grunting I managed to reinstall Dragon
 Naturally Speaking into a fresh user account with the help of sidenet.
 </p><p>
 This time I carefully documented the steps I took so as to be sure it was  
-reproducable.
+reproducible.
 </p><p>
 What worked:
 <ul>
-wine-20050524; sidenet-1.8.1; Dragon NS v7 prefered En. and v7 pref Fr
+wine-20050524; sidenet-1.8.1; Dragon NS v7 preferred En. and v7 pref Fr
 Ensoniq 1371 pci "soundblaster"</ul>
 </p><p>
 What won't:
@@ -470,11 +470,11 @@ muse5.1 cmipci (too quiet)</ul>
 Required natives: 
 <ul>comdlg32.dll only</ul>
 </p><p>
-That it in a nut shell , here's the log:
+That it in a nutshell , here's the log:
 
 
 </p><p>
-<u>INSTALLATION NOTES FOR NATURALLY SPEAKING 7 PREFERED</u>
+<u>INSTALLATION NOTES FOR NATURALLY SPEAKING 7 PREFERRED</u>
 <ol>
 <li>installed wine is 20050524</li>
 
@@ -516,13 +516,13 @@ PATH=c:\windows;c:\windows\system;c:\windows\command</ul></li>
 
 <li><code>wine h:setup</code></li>
 
-<li>installshield says req reboot , ok restarts</li>
+<li>installshield says req reboot, ok restarts</li>
 
 <li>into reg code entry dlg OK.</li>
 
-<li>#file select dlg crashes , rerun and accept default folders.</li>
+<li>#file select dlg crashes, rerun and accept default folders.</li>
 
-<li>installation runs cleanly and exits , then throws following to console:
+<li>installation runs cleanly and exits, then throws following to console:
 <ul>
 <code>bash #  ~/.wine/dosdevices $ fixme:ddeml:DdeConnectList  <br />
 (1,0xc000,0xc000,(nil),(nil)): stub<br />
@@ -539,7 +539,7 @@ err:wineboot:ProcessRunKeys Error running cmd #1 (0)</code></ul>
 <li><code>~/.wine/c/Program Files/ScanSoft/NaturallySpeaking/Program $ wine  
 natspeak.exe<br />
 
-"cannot find windows/system/comdlg32 "
+"cannot find windows/system/comdlg32"
 </code><br />
 OK exits cleanly.
 </li>
@@ -552,7 +552,7 @@ enter user general training.</li>
 use alsamixer or similar to ensure capture is on MIK and capture level  
 around 80% (YMMV)<br />
 
-84 vol gives 22 quality rating but message says too high , basic training  
+84 vol gives 22 quality rating but message says too high, basic training  
 sticky.<br />
 req reduce vol to 82: fine
 </li></ol>
@@ -599,14 +599,14 @@ GPU and send the command buffer to it.
 This would need the Wine Expertise of DirectX reimplementation as
 well as some good kernel hacker, but in the end maybe the struggle
 to have linux specific support from Graphics adapter vendors could
-be one for all removed if we had LDDM driver support and then and
-X build on top of it (same philosofy as Xgl).
+be once and for all removed if we had LDDM driver support and then
+X build on top of it (same philosophy as Xgl).
 </p><p>
 it could also benefit to the wine project itself as we would have
-really windows driver being used, it should help to increase
+really windows driver being used, it should help increase
 compatibility.
 </p><p>
-sorry if it sound crazy... </p></quote>
+sorry if it sounds crazy... </p></quote>
 
 <p>Well, that's not as crazy as a it seems.  The new graphics
 model in Windows Vista will be completely different than any
