@@ -193,7 +193,7 @@ For those of you who don't speak italian, here's a
 They included some technical bits to illustrate using Wine.</p>
 
 <p>Steven J. Vaughan-Nichols 
-<a href="http://www.eweek.com/article2/0,1895,1886920,00.asp">reviewed</a> u
+<a href="http://www.eweek.com/article2/0,1895,1886920,00.asp">reviewed</a>
 CrossOver Office 5 for eWeek and had a lot of positive comments.  Interestingly,
 Steven included a link to a CrossOver mailing list post which shows he's
 more familiar with the product than just being a casual reviewer.  From his
@@ -257,8 +257,8 @@ support for permanent objects. There will be some modification required
 for ntoskrnl for that to work. I'm just about finished integrating new OM
 into ntoskrnl tree and almost ready to give it a try.
 </p><p>
-As far as OM goes it's mostly finished and passes all but two of om
-tests. Also it don't see any side-affects from it either. All the
+As far as OM goes it's mostly finished and passes all but two om
+tests. Also it don't see any side-effects from it either. All the
 programs I've tested work in the same way as they were before. All named
 object moved to directories and using RootDirectory part of
 OBJECT_ATTRIBUTES for create/open.
@@ -310,7 +310,7 @@ can mail the current code too).
 himself:</p>
 <quote who="Stephan Dosinger"><p>
 
-I have sorted that texture problem out now(Incorrect Loading and the
+I have sorted out that texture problem out now(Incorrect Loading and the
 TEXTUREHANDLE render state was missing), and to my eyes Tomb Raider 3 runs
 correct now with WineD3D.
 </p><p>
@@ -336,7 +336,7 @@ what he was doing:</p>
 <quote who="Oliver Stieber"><p>
 I've put together a Direct3D 8 wrapper for wined3d which should hopefully 
 replace the current Direct3D 8 code. The patch needs a little bit of tidying, 
-some work of vertex declarations and a hell of a lot of testing before it 
+some work on vertex declarations and a hell of a lot of testing before it 
 can go into Wine. 
 </p><p>
 So far I've tested Rail Road Tycoon 3, Celebrity Death match, Madden NFL 2004 
@@ -376,7 +376,7 @@ https://sourceforge.net/project/shownotes.php?release_id=371929&amp;group_id=134
 	posts="7"
 >
 <topic>Documentation</topic>
-<p>Wine has documented the Win32 similar to how Microsoft has done with
+<p>Wine has documented the Win32 similarly to how Microsoft has done with
 MSDN.  While it's definitely a work in progress, it does provide an
 alternative source of information for various API's.  Robert Shearman
 mentioned WineHQ was out of date regarding it:</p>
@@ -448,7 +448,7 @@ screen.
 Next time I booted with grub-floppy and then restored the MBR with
 grub-install /dev/hda.
 Please let me know what additional information you need.
-It's happend on Slackware 10.2 system, 2.6.14 kernel with ck-3 patches. 
+It's happened on Slackware 10.2 system, 2.6.14 kernel with ck-3 patches. 
 </p></quote>
 
 <p>A bunch of people asked for different output to try to figure out
@@ -567,7 +567,7 @@ Also part of the problem, though I don't think it comes close to scale as
 far as its impact, is that our architectures are different.  For example,
 the code obfuscation tools (securom, safedisk et al) depend on device
 drivers being loaded by ntoskrnl.exe.  This is related to the hidden
-assumpmtions problem I described already, but sometimes we have to
+assumptions problem I described already, but sometimes we have to
 implement a large amount of silliness that we didn't anticipate having to
 do, or reimplement stuff that was already working for some apps.  ReactOS
 can potentially avoid some of these issues, since they're copying much
@@ -618,7 +618,7 @@ deep interwoven dependencies.
 </p><p>
 So, to summarize, the punishment to Microsoft for illegally
 pushing IE and destroying Netscape is...the continued
-use of IE as an monopolistic lever.  Nice.</p></quote>
+use of IE as a monopolistic lever.  Nice.</p></quote>
 
 <p>From there the thread went in different directions.</p>
 </section>
@@ -632,10 +632,10 @@ use of IE as an monopolistic lever.  Nice.</p></quote>
 <p>Charles A wanted to know how to go about using Wine on a machine
 without X running, specifically running a cron job:</p>
 <quote who="Charles A"><p>
-   I'm not able to use wine command in crontab it giving following error
+   I'm not able to use wine command in crontab due to it giving the following error
 <tt>"Error opening terminal: unknown"</tt>
 </p><p>
-I'm using wine 0.9, i have added following command in crontab
+I'm using wine 0.9, i have added the following command in crontab
 <ul><code>
       20 10 * * * /home/Maven/test.sh
 </code></ul>
@@ -762,7 +762,7 @@ winebrowser to handle sending email:</p>
 <quote who="Hans Leidekker"><p>
 Modeled after winebrowser. Local testing found that thunderbird
 (know as mozilla-thunderbird on Debian-based systems) and evolution
-accept a mailto: url on the command line. kmail however has it's
+accept a mailto: url on the command line. kmail however has its
 own interface. Any other GUI-based mail client of interest that
 handles these urls? Test it like so:
 <ul><code>
@@ -945,7 +945,7 @@ out of FD.O scope (and for which work-arounds are known):
   &lt;=&gt; one context rule).</li>
 
  <li> GLX extension that would export the 'clip-list' functionnalities of cards
-  (or at lest the one which is in the X code itself). Would help on
+  (or at least the one which is in the X code itself). Would help on
   applications (like Wine) that do their own in-window clipping.</li>
 
  <li> same point as before but for Xv the day we will re-add this code for
@@ -958,14 +958,14 @@ Some 'misc' stuff that is really in the 'we could use it' category:
   X setting (resolution, mouse acceleration, ...), as soon as this client
   exits, restore the previous configuration. Would be useful to prevent
   having people restarting X because Wine crashed after having changed the
-  resolution using XRand.</li>
+  resolution using XRandR.</li>
 
  <li> have a non-connection limited mouse-grab. To explain better, this would
   enable one to grab the pointer into a window (i.e. the mouse would never
   leave this window) while still sending events to all connections and not
   only to the connection which started the grab. This could be nice to
   simulate 'full-screen desktop mode' or for DXGrab. No idea if with Wine's
-  current event model this is still usefull though.</li></ul>
+  current event model this is still useful though.</li></ul>
 </p><p>
 Another 'let's dream' possibilities:
 <ul>
@@ -1079,10 +1079,10 @@ explained what some of the likely problems were:</p>
 
 I do not know what special needs the VB database apps have but for sure 
 they need a good oleaut32.dll. At least the variant arithmetic functions 
-aren't good enough for your requirements. With good enough I mean is 
+aren't good enough for your requirements. With good enough what I mean is 
 that they do not handle all the input variants that native oleaut32 are 
 handling. That isn't hard to implement but requires a lot of tests as 
-this functions are very poorly documented and are designed specificaly 
+these functions are very poorly documented and are designed specifically 
 to support only the variants they get passed down by the VB runtime. 
 Good examples of such tests and implementation are VarMul, VarAdd and 
 1-2 other functions (from which I adapted the tests for VarMul and 
