@@ -128,7 +128,7 @@ since I can publish it there directly.
 <section 
 	title="wine.git"
 	subject="Git"
-	archive="http://wiki.winehq.org/GitWine">
+	archive="http://wiki.winehq.org/GitWine"
 	posts="1"
 >
 <topic>Project Management</topic>
@@ -485,46 +485,9 @@ http://www.blastwave.org/wine</a> ?</p></quote>
 
 </section>
 <section 
-	title="Installing the Mozilla ActiveX Control"
-	subject="Does the Windows version of Mozilla need to be installed to use the Mozilla ActiveX plugin?"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-November/042878.html"
-	posts="5"
->
-<topic>Web/HTML</topic>
-<p>The Mozilla ActiveX control is currently used when an application
-requires a <tt>WebBrowser</tt> control to embed OLE documnents, namely HTML,
-within an application.  Ongoing work by Jacek Caban to implement
-MSHTML.DLL and SHDOCVW.DLL will hopefully obviate the need for it, but
-that work isn't complete enough yet (although Jacek sent about a
-bizillion patches last week.)  That led David Hagood to ask this week:</p>
-<quote who="David Hagood"><p>
-Does the Windows version of Mozilla need to be in place for the Mozilla 
-Active X control to work, or is there a way to point the control at my 
-Linux install of Mozilla?</p></quote>
-
-<p>Aric Cyr replied:</p>
-<quote who="Aric Cyr"><p>
-Yup, you'll need to install a win32 version of mozilla.  There is a decent
-little Mozilla ActiveX HOWTO at:<ul>
-<a href="http://gentoo-wiki.com/HOWTO_Install_and_update_World_Of_Warcraft_with_wine">
-http://gentoo-wiki.com/HOWTO_Install_and_update_World_Of_Warcraft_with_wine</a>
-</ul>
-</p><p>
-(Installing Active X for the new Patchsystem)
-</p>
-</quote>
-
-<p>Jacek pointed out that was actually incorrect and it was easier,
-<quote who="Jacek Caban">
-Mozilla ActiveX Control doesn't need any version of Mozilla. It just uses
-Gecko (Mozilla's engine), which is provided with it, so you don't have
-to install anything else.</quote></p>
-
-</section>
-<section 
 	title="Quake 2 Evolved &amp; Winelib"
 	subject="A working winelib application"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-December/042975.html">
+	archive="http://www.winehq.com/pipermail/wine-devel/2005-December/042975.html"
 	posts="1"
 >
 <topic>Winelib</topic>
