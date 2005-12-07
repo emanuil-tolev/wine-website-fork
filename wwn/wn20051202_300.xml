@@ -182,16 +182,16 @@ and would be shared by all, applications and wined3d alike. Work-arounds for the
 various glX revisions (recently discussed glx 1.2, 1.3, etc) would also be
 localized to a single dll.
 </p><p>
-Of course, on the down side, we take a hit of one extra layer of indirection by
+Of course, on the downside, we take a hit of one extra layer of indirection by
 going through WGL.  However as WGL/glX functions are rarely called, this should
 be a minimal of a performance hit.
 </p><p>
-All in all I think it would be worth while, but I'd still like to hear from
+All in all I think it would be worthwhile, but I'd still like to hear from
 others so as not to waste (a lot!) of my time.</p></quote>
 
 <p>Oliver Stieber wrote back:</p>
 <quote who="Oliver Stieber"><p>
-If wines WGL implementation is fully implemented then it may be a good idea 
+If wine's WGL implementation is fully implemented then it may be a good idea 
 switching to wgl, a wgl implemenatation would also make debugging much easier 
 because wined3d can be run under windows to isolate problems.
 </p><p>
@@ -408,11 +408,11 @@ Wine and try to fix it.</li></ol>
 >
 <topic>Web/HTML</topic>
 <p>The Mozilla ActiveX control is currently used when an application
-requires a <tt>WebBrowser</tt> control to embed OLE documnents, namely HTML,
+requires a <tt>WebBrowser</tt> control to embed OLE documents, namely HTML,
 within an application.  Ongoing work by Jacek Caban to implement
 MSHTML.DLL and SHDOCVW.DLL will hopefully obviate the need for it, but
 that work isn't complete enough yet (although Jacek sent about a
-bizillion patches last week.)  That led David Hagood to ask this week:</p>
+bazillion patches last week.)  That led David Hagood to ask this week:</p>
 <quote who="David Hagood"><p>
 Does the Windows version of Mozilla need to be in place for the Mozilla 
 Active X control to work, or is there a way to point the control at my 
