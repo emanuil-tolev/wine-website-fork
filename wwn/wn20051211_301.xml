@@ -74,7 +74,7 @@ Its main goal is to break drill bits. It also serves to inform you of what's goi
 <section 
 	title="News: Wine 0.9.3"
 	subject="News"
-	archive="http://www.winehq.com/?announce=1.107">
+	archive="http://www.winehq.com/?announce=1.107"
 	posts="1"
 >
 <topic>News</topic>
@@ -134,13 +134,13 @@ GetDC/ReleaseDC a lot.
 </p><p>
 While the patch fixes the conversion bottleneck for various games it doesn't 
 handle 8bit paletted which is used by games like StarCraft as OpenGL doesn't 
-support this by default. The second patch which I attached aswell adds 
-support for this. On cards (atleast all nvidia cards from geforce 1 to the 
+support this by default. The second patch which I attached as well adds 
+support for this. On cards (at least all nvidia cards from geforce 1 to the 
 fx) that support the opengl paletted texture extension this extension is 
 used. It makes StarCraft very fast atleast on my Athlon XP2000 system with a 
 GeforceFX where the game was slow before. As not all cards support paletted 
 textures I emulated this using a simple fragment shader. (a 1D texture 
-containing the palette is used as a loopup table)
+containing the palette is used as a lookup table)
 </p><p>
 The 
 <a href="http://www.winehq.org/pipermail/wine-devel/attachments/20051204/ca64706a/ddraw_over_d3d-0001.patch">attached</a>
@@ -161,7 +161,7 @@ I can fix the patches and submit them to wine-patches.</p></quote>
 <p>Jesse Allen asked some questions about it:</p>
 <quote who="Jesse Allen"><p>
 Is Starcraft really that slow?   How does this compare with using DGA?
- I'm not too sure because its speed vaires.  I've been testing
+ I'm not too sure because its speed varies.  I've been testing
 Starcraft this weekend and it has been plenty speedy.   But I do
 remember when trying to play it multiplayer a few months ago and was
 burned when it ran slow.  In fact it slowed *everyone* down.  Not fun.
@@ -191,12 +191,12 @@ and the rendering of them.
 </p><p>
 I think the patch is a reasonable solution to work around various depth
 conversion problems. For sure it is the fastest way for the conversion as
-the videocard basicly does it for free. On my system StarCraft and the
+the videocard basically does it for free. On my system StarCraft and the
 Command &amp; Conquer series (although they crash quite quickly due to threading
 issues) felt a lot faster, I think that the speed is close to that of DGA.
 </p><p>
 Perhaps I should clarify some misunderstandings that some people have. (I
-hope I explain it correctly) Basicly DirectDraw provides a mechanism to
+hope I explain it correctly) Basically DirectDraw provides a mechanism to
 directly access the framebuffer of the videocard. This is the fastest way to
 render 2D images on the screen. Games like StarCraft, Total Annihilation,
 C&amp;C and lots of others use DirectDraw in this way. Second there's another
@@ -206,13 +206,13 @@ then use GetDC/ReleaseDC to get a device context so that they can draw in
 the surface. (directly into the video memory)
 </p><p>
 In case of X direct framebuffer access is only possible through DGA but it
-is unsecure and has other issues. When DGA works correctly it can accelerate
+is insecure and has other issues. When DGA works correctly it can accelerate
 games like StarCraft. Further DGA doesn't have any depth conversion issues
 as it does depth switching. Without DGA the rendering operations need to go
 through X. Because of limitations of X, depth conversion problems appear
 when the depth of the desktop and X aren't the same.
 </p><p>
-For depth conversion purposes Wine's DirectDraw uses a DIB section. Basicly
+For depth conversion purposes Wine's DirectDraw uses a DIB section. Basically
 all pixels of an image are translated to the depth of X. This is slow and
 especially for the case when the application requests 8bit paletted mode
 using a 24bit desktop. In this case a color lookup needs to happen in a
@@ -241,7 +241,7 @@ StarCraft (much) as for those DIBs were only used for depth conversion and
 the conversion algorithm stays the same (it can't be tweaked much if at
 all). So there's not really a way to speedup games like StarCraft for old
 videocards. Perhaps XShm might be of use but not sure how much it would
-help. (think it would only be usefull for GetDC/ReleaseDC games)</p>
+help. (think it would only be useful for GetDC/ReleaseDC games)</p>
 </quote>
 
 <p>Pretty much everyone was in favor of any patch that would improve
@@ -257,7 +257,7 @@ I think that to merge Roderick's and your (<i>ed note:</i> Stephan's) patch,
 the best would be to directly hook WineD3D even at the 2D level and not have 
 DDraw hook DDraw's D3D which then goes into WineD3D.
 </p><p>
-This way we would have an unified DDraw.
+This way we would have a unified DDraw.
 </p><p>
 Of course, then the problem remains of what to do with older cards :-)
 </p></quote>
@@ -269,11 +269,11 @@ a quite long chain. I abandoned it as too much work at first, but it's surely
 worth considering.
 </p><p>
 How about moving the current 2D code to WineD3D, and making DDraw running over 
-WineD3D in any case. Then WineD3D could decide wether to use plain X11, DGA 
+WineD3D in any case. Then WineD3D could decide whether to use plain X11, DGA 
 or OpenGL for 2D rendering. :)
 </p><p>
 Maybe we should have a close look at the details of such a thing. I do not 
-really recommend a ad-hoc attemt, as d3d7-&gt;WineD3D was nearly too much.
+really recommend a ad-hoc attempt, as d3d7-&gt;WineD3D was nearly too much.
 </p></quote>
 
 <p>Lionel liked the idea:</p>
@@ -312,7 +312,7 @@ So what's the point of this mail? While a D3D7-&gt;WineD3D wrapping can be done
 by wrapping D3D7 only and leave DirectDraw in ddraw.dll, it has a few ugly
 drawbacks:
 <ul>
-<li> Device initalisation: In D3D7, the first step is to create a IDirectDraw
+<li> Device initialization: In D3D7, the first step is to create a IDirectDraw
 Device, set up the device, create a surface and then create a Direct3D
 Device. When creating the WineD3DDevice in the last step, I have to do some
 ugly things to wrap the already existing Surface to a newly created
@@ -340,7 +340,7 @@ adopt it for D3D9 and D3D8.</li>
 
 <li> The IWineD3DSurface interface gets additional functionality for DirectDraw
 operations. I'd suggest 3 versions of the 2D functions: One based on plain
-X11(for compatiblity) calls, one that uses DGA(speed without 3D
+X11(for compatibility) calls, one that uses DGA(speed without 3D
 acceleration), and one that uses OpenGL(For fast rendering without /dev/mem
 access). For DXVersion > 7 the OpenGL version is used, and for DX7 it can be
 decided when the primary surface is created.</li>
@@ -429,7 +429,7 @@ can also be the most time consuming part of fixing a bug.  So figuring
 out exactly what broke something can get you really close to having a
 fix.  </p><p>
 
-(There's also some exceptions to this, such as adding in stubbed
+(There are also some exceptions to this, such as adding in stubbed
 functions that cause programs to suddenly break.  The right fix is not
 to remove the stub, but to turn the stub into a complete function.. which
 may be a lot of work.)</p><p>
@@ -512,7 +512,7 @@ once be a problem?</p></quote>
 >
 <topic>Build Process</topic>
 <p>Apparently Fedora's 64-bit version doesn't provide some of the
-32-bit compatbility libraries necessary for Wine.  (Which is somewhat
+32-bit compatibility libraries necessary for Wine.  (Which is somewhat
 surprising since Wine doesn't have as many dependencies as you'd
 expect.)  Pavel Roskin came up with a script to work around it:</p>
 <quote who="Pavel Roskin"><p>
@@ -589,7 +589,7 @@ Wine crashes the first time it enters/uses a entry/function using the
 debug setup from ntdll/relay.c:RELAY_SetupDLL. (Which happens to be a 
 RtlInitUnicode in kernel/module:GetModuleHandleW) . If you exclude the 
 ntdll in relaying, wine - without parameters - does not crash. BUT at soon 
-as you try running a program it will cracsh when calling a kernel32/* 
+as you try running a program it will crash when calling a kernel32/* 
 function.</quote></p>
 
 <p>Mike McCormack knew of it as well and mentioned there was a 
@@ -611,6 +611,6 @@ Try booting with <tt>noexec=off</tt>. I tried that when I asked wine-devel a
 month ago, but my mandrake crashed - for some obscure reasons - before reaching 
 a prompt.</quote></p>
 
-<p>So that's where we stand.  A problem with a possible workaround, but 
+<p>So that's where we stand: a problem with a possible workaround, but 
 insufficient info to have a real fix.  Is it a Wine problem?  Kernel?  </p>
 </section></kc>
