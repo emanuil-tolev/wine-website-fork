@@ -71,9 +71,10 @@
         aren't sure what's going wrong. It shows you each call into
         and out of Wine modules at the DLL boundaries. This includes
         calls between Wine DLLs: for instance, from GDI32 to
-        KERNEL32. Investigate the RelayInclude and RelayExclude keys
-        in the [Debug] section if you're being overwhelmed by certain
-        functions. A good initial value for RelayExclude is:<p>
+        KERNEL32. Investigate the RelayInclude and RelayExclude string
+        values in [HKCU\Software\Wine\Debug] if you're being
+        overwhelmed by certain functions. A good initial value for
+        RelayExclude is:<p>
 
         <code> RtlEnterCriticalSection;RtlLeaveCriticalSection;_EnterSysLevel;_LeaveSysLevel;
         _CheckNotSysLevel;RtlAllocateHeap;RtlFreeHeap;LOCAL_Lock;LOCAL_Unlock 
