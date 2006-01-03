@@ -137,7 +137,7 @@ handle 8bit paletted which is used by games like StarCraft as OpenGL doesn't
 support this by default. The second patch which I attached as well adds 
 support for this. On cards (at least all nvidia cards from geforce 1 to the 
 fx) that support the opengl paletted texture extension this extension is 
-used. It makes StarCraft very fast atleast on my Athlon XP2000 system with a 
+used. It makes StarCraft very fast at least on my Athlon XP2000 system with a 
 GeforceFX where the game was slow before. As not all cards support paletted 
 textures I emulated this using a simple fragment shader. (a 1D texture 
 containing the palette is used as a lookup table)
@@ -185,7 +185,7 @@ using Mesa, I could try that soon using some games but it doesn't have to be
 slower than the current code as Mesa uses Xlib too in the indirect case. In
 general about all cards these days have some form of opengl support (intel,
 via, ati, nvidia, ..) perhaps only the latest S3 GPUs and perhaps some SIS
-ones (thought some have drivers) lack support. Note that cards don't need
+ones (though some have drivers) lack support. Note that cards don't need
 much functionality at all as OpenGL is only for the uploading of textures
 and the rendering of them.
 </p><p>
@@ -201,7 +201,7 @@ directly access the framebuffer of the videocard. This is the fastest way to
 render 2D images on the screen. Games like StarCraft, Total Annihilation,
 C&amp;C and lots of others use DirectDraw in this way. Second there's another
 class of games like Age Of Empires2, Heroes of Might and Magic IV and others
-which mix ddraw with GDI. They for instance render a image using ddraw and
+which mix ddraw with GDI. They for instance render an image using ddraw and
 then use GetDC/ReleaseDC to get a device context so that they can draw in
 the surface. (directly into the video memory)
 </p><p>
@@ -273,7 +273,7 @@ WineD3D in any case. Then WineD3D could decide whether to use plain X11, DGA
 or OpenGL for 2D rendering. :)
 </p><p>
 Maybe we should have a close look at the details of such a thing. I do not 
-really recommend a ad-hoc attempt, as d3d7-&gt;WineD3D was nearly too much.
+really recommend an ad-hoc attempt, as d3d7-&gt;WineD3D was nearly too much.
 </p></quote>
 
 <p>Lionel liked the idea:</p>
@@ -312,7 +312,7 @@ So what's the point of this mail? While a D3D7-&gt;WineD3D wrapping can be done
 by wrapping D3D7 only and leave DirectDraw in ddraw.dll, it has a few ugly
 drawbacks:
 <ul>
-<li> Device initialization: In D3D7, the first step is to create a IDirectDraw
+<li> Device initialization: In D3D7, the first step is to create an IDirectDraw
 Device, set up the device, create a surface and then create a Direct3D
 Device. When creating the WineD3DDevice in the last step, I have to do some
 ugly things to wrap the already existing Surface to a newly created
@@ -525,7 +525,7 @@ don't always provide *.so symlinks for 32-bit libraries.  So I wrote
 The script creates all missing links in one directory (/usr/local/lib is
 the default).  Not only was libcups found next time, but also the old
 workaround with imake has become unneeded.  The configure script runs
-out-of-box and finds X11 libraries.
+out-of-the-box and finds X11 libraries.
 </p><p>
 I'm posting the script here in hope that it will be useful for some Wine
 users.  I'm not sure it it merits inclusion in Wine, but I would not
@@ -538,7 +538,7 @@ Pavel replied with more details:</p>
 <quote who="Pavel Roskin"><p>
 
 They are provided for some basic libraries, such as zlib and ncurses.
-Other libraries, such as cups, as missing, but my script can remedy it,
+Other libraries, such as cups, are missing, but my script can remedy it,
 because the only missing file is the symlink to *.so for the linker.
 </p><p>
 Unfortunately, openssl support cannot be fixed by the script

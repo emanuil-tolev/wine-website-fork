@@ -154,11 +154,11 @@ to be following.  Tony wrote:</p>
 &lt;Rant&gt;
 Well that is a real sore spot with me. You know that I am a strong
 supporter of wine but it really concerns me that we have gone beta and
-not addressed preventing regessions from getting into our releases in
+not addressed preventing regressions from getting into our releases in
 any way. We currently have no freeze or notification of exactly when
 the next release is going to go out. Sure we had the one big code
 freeze just before 0.9 but then we went back to releasing without any
-notification. At his point even if our application maintainers test
+notification. At this point even if our application maintainers test
 their app every day there is no way for them to prevent that
 regression going into the next release.
 </p><p>
@@ -192,17 +192,17 @@ progressing:</p>
 <quote who="Tony Lambregts"><p>
 Perhaps it's partly a matter of  perception then.
 </p><p>
-If  I understand you 0.9 was a major release then, and 0.9.1 and
+If I understand you, 0.9 was a major release then, and 0.9.1 and
 company are minor releases, with the next major release being 1.0. So
 I anticipate that we will have a major freeze before 1.0 just like we
 had before 0.9?
 </p><p>
-Since I'm pretty sure we do not have the resources to do nightly's
+Since I'm pretty sure we do not have the resources to do nightlies
 like they did for Mozilla, then once certainly every two weeks is
 better than once a month.
 </p><p>
 If we could count on a release every two weeks that would be ideal.
-That way people like me who use CVS ( or GIT) could help prevent
+That way people like me who use CVS (or GIT) could help prevent
 regressions even getting into the minor releases, which in turn would
 encourage more people to use the minor releases. I would prefer to see
 that releases were done on a Tuesday, myself, since I have more free
@@ -268,7 +268,7 @@ and report problems.</p>
 >
 <topic>Project Management</topic>
 <p>We mentioned a few weeks ago (WWN
-<a href="http://www.winehq.com/?issue=299#Desktop%20Summit">#299</a>) there
+<a href="http://www.winehq.com/?issue=299#Desktop%20Summit">#299</a>) that there
 was a desktop summit being sponsored by OSDL.  Well, Jeremy White and Dan
 Kegel both attended the event and Jeremy wrote the following over on
 OSDL's <a href="http://lists.osdl.org/pipermail/desktop_architects/2005-December/000354.html">desktop_architects</a>
@@ -343,7 +343,7 @@ need the cash; Microsoft doesn't.
 That's it; didn't have that much to say; but now
 I feel better &lt;grin&gt;
 </p><p>
-And the honest truth is that I didn't really need to
+And the honest truth is that I didn't really need to be
 present in Portland; we didn't have any major gaps that
 group could have addressed.  While Wine certainly depends
 on a range of other projects, we've actually found folks
@@ -402,14 +402,14 @@ team, notably Eric Frias and Juraj Hercek, submitting patches back to Wine.
 <a href="http://news.inq7.net/infotech/index.php?index=1&amp;story_id=60585">Apparently</a>
 SpecOpsLabs has released a product based on their Project David stuff.  What 
 is that?  Well, we don't really know.  The last time it came up it was 
-determined they had simply stolen CodeWeaver's CrossOver product.  They
+determined they had simply stolen CodeWeavers CrossOver product.  They
 haven't bothered to engage in any dialog with the community, so it's unknown
 what their intentions are.  </p><p>
 Tom Wickline pointed out the link above and Willie Sippel followed up by
-mentioning it was a part of TurboLinux FUJI.  Tom ask if anyone knew where
+mentioning it was a part of TurboLinux FUJI.  Tom asked if anyone knew where
 the source code to the Wine changes were and Jeremy White reminded him:</p>
 <quote who="Jeremy White"><p>
-In fact, the only person that can demand anything with regart to the LGPL is
+In fact, the only person that can demand anything with regard to the LGPL is
 someone that is running their software.  So if someone has bought
 a copy of TurboLinux 11 in Japan, they have the right to demand
 a copy of the source code to the Wine bits in Project David; presumably
@@ -444,7 +444,7 @@ their product:
 <li>  That was followed shortly thereafter by Mike McCormack discovering
 a CrossOver only hack was visible in a screenshot.  So they basically
 ripped off CodeWeavers.  SpecOpsLabs never had an explanation for why
-a CrossOver specific bug some how made it into their tree.  In fact,
+a CrossOver specific bug somehow made it into their tree.  In fact,
 they specifically denied using CXO:
 <ul><li><a href="http://www.osviews.com/modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=1454">OSViews</a></li>
 </ul>
@@ -540,10 +540,10 @@ is the right one, but it works quite nicely :-)  We use gcc/gas.
 	posts="4"
 >
 <topic>Debugging</topic>
-<p>With Wine you can easily generate debugging logs that trace the API's
+<p>With Wine you can easily generate debugging logs that trace the APIs
 called by a program.  Corey McClymonds asked if there was a way to do
 that on Windows, apparently to be able to compare the code paths used
-by Windows DLL's and Wine's:</p>
+by Windows' DLLs and Wine's:</p>
 <quote who="Corey McClymonds"><p>
 There is a game, known as Continuum, that has a very complicated setup
 before it actually starts the game, to prevent cheating.  Due to this, the
