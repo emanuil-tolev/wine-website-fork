@@ -254,16 +254,9 @@ are interested and pool their resources together, it will happen.
 <a name="no_copy_protection"></a>
 <h2>Myth 11: &quot;My game has copy protection that doesn't work with Wine&quot;</h2>
 
-TransGaming has done extensive work to get copy protection
-working.  They've added support for popular formats such
-as SecuRom and SafeDisc.  In the case of the latter they've
-licensed SafeDisc LT from Macrovision and incorporated
-the necessary changes into the core parts of their Wine tree.
-<p>
-Currently in the LGPL Wine tree you can find support for
-SafeDisc 1 with SafeDisc 2 on the way.  The caveat being
-that Wine must run in NT mode (configure winver &quot;nt40&quot;
-in the Wine config file).
+Currently SecuRom works in Wine, and directory objects support has been added to 
+get us toward implementing an ntoskrnl.exe that will support loading copy protection drivers 
+like Safedisc. Once ntoskrnl.exe is implemented Wine will have full support for Safedisc versions 1 and 2 
 
 <hr>
 <table width="100%" border=0 cellpadding=0 cellspacing=0>
