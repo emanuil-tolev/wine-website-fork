@@ -428,15 +428,15 @@
   Investigate if we could make a WINE based GIMP plugin which can handle
   Photoshop plugins.
 
- <h3 class=todo>wined3d use wgl</h3>
+ <h3 class=inprogress>wined3d use wgl</h3>
   Make wined3d (or d3d8) use wgl (windows opengl) instead of glx. (just search for glx commands and
   replace then with the wgl equivalents) Doing so would enable wine's d3d to run on windows in place of
   the windows driver and without the rest of WINE which would greatly help in debugging. It would also 
   allow wined3d to use the wgl implementation in wine.</p>
   <ul>
-    <li>workers: <i>wanted</i>
-    <li>status: <i>to do</i>
-    <li>updated: Jun 22, 2005
+    <li>workers: <i>Aric Cyr</i>
+    <li>status: <i>debug phase</i>
+    <li>updated: Jan 12, 2006
   </ul>
 
   <h2>Miscellaneous Projects</h2>
