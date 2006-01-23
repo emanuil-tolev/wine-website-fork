@@ -12,8 +12,7 @@ branching, intelligent merging, high quality <a
 href="http://ximbiot.com/cvs/wiki/index.php">documentation</a>
 and client/server access with a wide choice of clients.
 Current Wine sources are available via anonymous client/server CVS.
-You will need CVS 1.9 or above. 
-If you are coming from behind a firewall, you will either 
+You will need CVS 1.9 or above. If you are coming from behind a firewall, you will either 
 need a hole in the firewall for the CVS port (2401) or use SOCKS.
 </p>
 
@@ -66,27 +65,23 @@ Use &quot;cvs&quot; as the password (without the quotes). Note that
 <code>/home/wine</code> is a path on the <b>server</b>, not on your machine.
 
 <p>
-To check out the entire Wine source tree 
-(but read the next section before actually doing this!), do
+To check out the entire Wine source tree (but read the next section before actually doing this!), do
 
  <table width="300" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
- cvs -z 0 checkout wine
+ cvs -z 3 checkout wine
  </span>
  </td></tr>
  </table>
 
-If you're using a slow internet connection, like a 56k modem,
-you may want to compress the traffic with -z3. However, there
-are known bugs in CVS with this compressed communication mode,
-make sure you use cvs version 1.11.5 or later.
+Make sure your cvs version is 1.11.5 or later if you use -z 3.
 
 <p>
 Or if you just want a subtree, or individual file, you can do that too:
 
  <table width="500" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
- cvs -z 0 checkout wine/ANNOUNCE
+ cvs -z 3 checkout wine/ANNOUNCE
  </span>
  </td></tr>
  </table>
@@ -100,8 +95,7 @@ Or if you just want a subtree, or individual file, you can do that too:
 <h1>Wine CVS Servers</h1>
 
 <p>
-Just do a traceroute and a ping on all servers below to find out which are
-closest to you.
+Just do a traceroute and a ping on all servers below to find out which are closest to you.
 <p>
 
 <div align=center><table border="0" cellpadding="0" cellspacing=0><tr><td bgcolor="#e0e0e0">
@@ -177,16 +171,16 @@ FTP mirror near you. It's possible to convert a Wine tarball to a CVS
 sandbox, just like you would get by checking out the entire source
 via CVS. Here's how to do it:
 <ul>
-  <li>Get the latest Wine snapshot: Wine-<i>YYMMDD</i>.tar.gz
-  <li>Get wine-cvsdirs-<i>YYMMDD</i>.tar.gz from
+  <li>Get the latest Wine snapshot: Wine-<i>x.x.x</i>.tar.gz
+  <li>Get wine-cvsdirs-<i>x.x.x</i>.tar.gz from
   <a href="ftp://ftp.winehq.org/pub/wine/">ftp://ftp.winehq.org/pub/wine</a>
   <li>Untar them on top of each other:
 
  <table width="300" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
-  tar xzf Wine-<i>YYMMDD</i>.tar.gz<br>
-  mv wine-<i>YYMMDD</i> wine<br>
-  tar xzf wine-cvsdirs-<i>YYMMDD</i>.tar.gz<br>
+  tar xzf Wine-<i>x.x.x</i>.tar.gz<br>
+  mv wine-<i>x.x.x</i> wine<br>
+  tar xzf wine-cvsdirs-<i>x.x.x</i>.tar.gz<br>
  </span>
  </td></tr>
  </table>
@@ -203,8 +197,7 @@ via CVS. Here's how to do it:
  </table>
 
 </ul>
-You will now be completely up to date.
-The <code>-A</code> is required to get the latest version in the tree. 
+You will now be completely up to date. The <code>-A</code> is required to get the latest version in the tree. 
 <p>
 
 <p><img src="./images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
@@ -213,19 +206,17 @@ The <code>-A</code> is required to get the latest version in the tree.
 
 <h1>Cleaning up your existing tree</h1>
 
-A quick way to clean up your tree after you've been modifying it
- and want a clean copy of Wine again is this:
+A quick way to clean up your tree after you've been modifying it and want a clean copy of Wine again is this:
  <table width="300" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
   cd wine<br>
   cvs update -PAd<br>
-  cvs diff &gt; total-<i>YYMMDD</i>.diff<br>
-  patch -p0 -R &lt; total-<i>YYMMDD</i>.diff
+  cvs diff &gt; total-<i>x.x.x</i>.diff<br>
+  patch -p0 -R &lt; total-<i>x.x.x</i>.diff
  </span>
  </td></tr>
  </table>
-By using the current date in <i>YYMMDD</i>, you can keep a history
- of changes that were in your Wine tree.
+By using the current x.x.x tags, you can keep a history of changes that were in your Wine tree.
 <p>
 
 <h1>Staying Up-To-Date</h1>
@@ -241,9 +232,8 @@ Run
  </table>
 
 to merge changes from the tree with the current directory. (Local changes will
-not be lost.) Do this from the top Wine
-directory to update the entire tree. When a new directory is added to Wine,
-you will need to do a
+not be lost.) Do this from the top Wine directory to update the entire tree. 
+When a new directory is added to Wine, you will need to do a
 
  <table width="300" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
@@ -267,7 +257,7 @@ Some options are so useful you may want them in your <code>~/.cvsrc</code>
 
  <table width="300" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
-  cvs -z 0<br>
+  cvs -z 3<br>
   update -PAd<br>
   diff -u
  </span>
@@ -279,18 +269,13 @@ Some options are so useful you may want them in your <code>~/.cvsrc</code>
 (Levels higher than 3 will probably not result in faster downloading
 unless you have a fast machine and a slow network connection.)
 <code>-Pd</code> will delete empty directories and create newly added ones.
-<code>-u</code> will create the easiest to read patches. Please
-do not submit patches with diff -w.
+<code>-u</code> will create the easiest to read patches. Please do not submit patches with diff -w.
 
 Examples of other useful options (see the CVS documentation for details):
 <ul>
-  <li><code>cvs update -A</code> (update from the head of the tree,
-  and ignore tags) 
+  <li><code>cvs update -A</code> (update from the head of the tree, and ignore tags) 
   <li><code>cvs -n update </code> (test only, don't make changes) 
-  <li><code>cvs update -r Wine-<i>YYMMDD</i></code> (get the revision with
- the tag for a Wine snapshot)
-  <li><code>cvs update -D <i>date</i></code> (get the revision associated
-with an arbitrary date)
+  <li><code>cvs update -r Wine-<i>x.x.x</i></code> (get the revision with the tag for a Wine snapshot)
 </ul>
 
 <p><img src="./images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
@@ -302,10 +287,8 @@ with an arbitrary date)
 
 <p>
 The WineHQ CVS server makes a couple of other things available as well. 
-To get these, log in anonymously
-as above and do <code>cvs co <i>modulename</i></code> where 
-<code><i>modulename</i></code>
-is one of:
+To get these, log in anonymously as above and do <code>cvs co <i>modulename</i></code> where 
+<code><i>modulename</i></code> is one of:
 <ul>
   <li><tt>c2man</tt>  -- automatic documentation system, specially modified for Wine</li>
   <li><tt>lostwages</tt> -- source for the WineHQ web site</li>
@@ -330,8 +313,7 @@ To get the docs in a terminal run:
  </span>
  </td></tr>
  </table>
-When prompted for a password press the enter key.
-A subdirectory named docs will be created.
+When prompted for a password press the enter key. A subdirectory named docs will be created.
 
 <p><img src="./images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
 </p>
