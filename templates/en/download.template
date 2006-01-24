@@ -122,13 +122,18 @@ for post-installation instructions.</b></p>
       </a>
     </td>
     <td align=left bgcolor="#ffffff">
-
       <b><a href="http://www.von-thadden.de/Joachim/WineTools/">Wine Tools</a></b> - 
       WineTools  is a menu driven installer for installing Windows programs.
       This software lets you install the following Windows software: DCOM98, 
       IE6, Windows Core Fonts, Windows System Software, Office &amp; Office Viewer, 
-      Adobe Photoshop 7, Illustrator 9 and many other programs. 
-      By <a href="http://www.von-thadden.de/Joachim/WineTools/">Joachim von Thadden</a>.
+      Adobe Photoshop 7, Illustrator 9 and many other programs.<br />
+      By <a href="http://www.von-thadden.de/Joachim/WineTools/">Joachim von
+      Thadden</a>.<br />
+      <div style="margin: 10px; padding: 5px; border: 1px solid #C0C0C0; background-color: #F0F0F0;">
+        <b>Note:</b> WineTools only recommended if installation or operability of
+        Windows software failed on pure Wine or because the Wine developers need
+        your feedback from testing.
+      </div>
     </td>
   </tr>
 </table>
