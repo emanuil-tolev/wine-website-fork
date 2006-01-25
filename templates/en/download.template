@@ -118,11 +118,11 @@ for post-installation instructions.</b></p>
     <td align=center bgcolor="#ffffff">
       <a href="http://www.von-thadden.de/Joachim/WineTools/">
         <img src="../images/distro/winetools.png" 
-         width="50" height="50" alt="Wine Tools" border="0">
+         width="50" height="50" alt="WineTools" border="0">
       </a>
     </td>
     <td align=left bgcolor="#ffffff">
-      <b><a href="http://www.von-thadden.de/Joachim/WineTools/">Wine Tools</a></b> - 
+      <b><a href="http://www.von-thadden.de/Joachim/WineTools/">WineTools</a></b> - 
       WineTools  is a menu driven installer for installing Windows programs.
       This software lets you install the following Windows software: DCOM98, 
       IE6, Windows Core Fonts, Windows System Software, Office &amp; Office Viewer, 
@@ -131,8 +131,9 @@ for post-installation instructions.</b></p>
       Thadden</a>.<br />
       <div style="margin: 10px; padding: 5px; border: 1px solid #C0C0C0; background-color: #F0F0F0;">
         <b>Note:</b> WineTools only recommended if installation or operability of
-        Windows software failed on pure Wine or because the Wine developers need
-        your feedback from testing.
+        Windows software failed on pure Wine. Since WineTools radically alters your
+        Wine configuration please do not report bugs in programs with WineTools 
+        installed.
       </div>
     </td>
   </tr>
