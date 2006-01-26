@@ -25,7 +25,9 @@
           <a href="{$root}/site/?issue=154#Kernel%20Module%20/%20Shared%20Memory%20Revisited">#154</a>,
           <a href="{$root}/site/?issue=178#Viva%20la%20Kernel%20Module%20Idea">#178</a>,
           <a href="{$root}/site/?issue=184#Environment%20Variable%20Handling%20in%20Wine's%20Config">#184</a>,
-          <a href="{$root}/site/?issue=229#Making%20Wine%20Upgradable">#229</a></td>
+          <a href="{$root}/site/?issue=229#Making%20Wine%20Upgradable">#229</a>,
+          <a href="{$root}/site/?issue=286#PeekMessage%20and%20Performance">#286</a>,
+          <a href="{$root}/site/?issue=290#Device%20Drivers%20Still%20Suck">#290</a></td>
       <td class="pct85">85% complete</td>
       <td>Alexandre Julliard</td>
     </tr>
@@ -78,7 +80,7 @@
           <a href="{$root}/site/?issue=102#Navigating%20Through%20Wine">#102</a>,
           <a href="{$root}/site/?issue=265#Wine's%20Server%20Protocol">#265</a>,
           <a href="{$root}/site/?issue=266#Mailslots">#266</a></td>
-      <td class="pct90">90% complete</a></td>
+      <td class="pct90">90% complete</td>
       <td>Alexandre Julliard</td>
     </tr>
     <tr>
@@ -106,7 +108,10 @@
           <a href="{$root}/site/?issue=98#Virtual%20Memory%20Problems">#98</a>,
           <a href="{$root}/site/?issue=188#Finding%20Memory%20Management%20Problems">#188</a>,
           <a href="{$root}/site/?issue=222#Staying%20Within%202GB%20Memory%20Boundary">#222</a>,
-          <a href="{$root}/site/?issue=276#Unaligned%20mmap()">#276</a></td>
+          <a href="{$root}/site/?issue=276#Unaligned%20mmap()">#276</a>,
+          <a href="{$root}/site/?issue=281#World%20of%20Warcraft%20Broken">#281</a>,
+          <a href="{$root}/site/?issue=288#Heap%20Corruption">#288</a>,
+          <a href="{$root}/site/?issue=291#Finding%20Memory%20Leaks">#291</a></td>
       <td class="pct90">90% complete<br>
       Wine's memory manager is known to be slow.</td>
       <td>Alexandre Julliard</td>
@@ -126,7 +131,7 @@
           <a href="{$root}/site/?issue=74#Feature:%20Of%20Dynamic%20loading%20in%20Wine%20by%20Eric%20Pouech">#74</a>,
           <a href="{$root}/site/?issue=159#X11Drv%20/%20NTDll%20Separation">#159</a>,
           <a href="{$root}/site/?issue=189#Filesystem%20Roadmap">#189</a></td>
-      <td class="pct90">90% complete</a></td>
+      <td class="pct90">90% complete</td>
       <td>Alexandre Julliard,<br>Eric Pouech</td>
     </tr>
     <tr>
@@ -164,7 +169,7 @@
           <a href="{$root}/site/?issue=260#Window%20Management%20Rewrite%20Details">#260</a>,
           <a href="{$root}/site/?issue=262#Window%20Management%20Problems">#262</a>,
           <a href="{$root}/site/?issue=275#Windows%20Problems">#275</a></td>
-      <td class="pct90">90% complete</a></td>
+      <td class="pct90">90% complete</td>
       <td>Alexandre Julliard</td>
     </tr>
     <tr>
@@ -179,7 +184,9 @@
           <a href="{$root}/site/?issue=209#New%20Filesystem%20Code%20Merge%20Commencing">#209</a>,
           <a href="{$root}/site/?issue=219#Problems%20With%20Automounted%20Filesystems">#219</a>,
           <a href="{$root}/site/?issue=221#More%20Filesystem%20Work">#221</a>,
-          <a href="{$root}/site/?issue=254#File%20Optimization">#254</a></td>
+          <a href="{$root}/site/?issue=254#File%20Optimization">#254</a>,
+          <a href="{$root}/site/?issue=283#File%20Locking">#283</a>,
+          <a href="{$root}/site/?issue=287#Ejecting%20CD's">#287</a></td>
       <td class="pct100">100% complete</td>
       <td>Mike McCormack</td>
     </tr>
@@ -195,7 +202,8 @@
       <td class="adequate">Adequate</td>
       <td><a href="{$root}/site/?issue=77#CDROMs%20handling">#77</a>,
           <a href="{$root}/site/?issue=112#Mixed%20Mode%20CD%20Labels">#112</a>,
-          <a href="{$root}/site/?issue=121#Wine%20Not%20Releasing%20CDROM">#121</a></td>
+          <a href="{$root}/site/?issue=121#Wine%20Not%20Releasing%20CDROM">#121</a>,
+          <a href="{$root}/site/?issue=298#Wine%20Eject">#298</a></td>
       <td class="pct90">90% complete</td>
       <td>Eric Pouech</td>
     </tr>
@@ -214,8 +222,10 @@
       <td class="poor">Poor</td>
       <td><a href="{$root}/site/?issue=75#Wine%20and%20fonts">#75</a>,
           <a href="{$root}/site/?issue=187#Locating%20Font%20Paths">#187</a>,
-          <a href="{$root}/site/?issue=280#Finding%20and%20Using%20Fonts">#280</a></td>
-      <td class="pct90">90% complete</a></td>
+          <a href="{$root}/site/?issue=280#Finding%20and%20Using%20Fonts">#280</a>,
+          <a href="{$root}/site/?issue=286#Turning%20off%20Anti-Aliasing">#286</a>,
+          <a href="{$root}/site/?issue=293#Font%20Issue%20(Fixed)">#293</a></td>
+      <td class="pct90">90% complete</td>
       <td>Huw D M Davies</td>
     </tr>
     <tr>
@@ -229,7 +239,7 @@
           <a href="{$root}/site/?issue=240#New%20Fonts">#240</a>, 
           <a href="{$root}/site/?issue=241#Fonts%20Status">#241</a>,
           <a href="{$root}/site/?issue=261#Configuring%20TrueType%20Fonts">#261</a></td>
-      <td class="pct80">80% complete</a></td>
+      <td class="pct80">80% complete</td>
       <td>Huw D M Davies</td>
     </tr>
     <tr>
@@ -238,8 +248,10 @@
       <td><a href="{$root}/site/?issue=11#PrintDlg%20errors">#11</a>,
           <a href="{$root}/site/?issue=12#Wine%20and%20printers">#12</a>,
           <a href="{$root}/site/?issue=198#Default%20Printer%20Question">#198</a>,
-          <a href="{$root}/site/?issue=201#Printing%20With%20No%20Printer">#201</a></td>
-      <td class="pct80">80% complete</a></td>
+          <a href="{$root}/site/?issue=201#Printing%20With%20No%20Printer">#201</a>,
+          <a href="{$root}/site/?issue=282#Printers%20and%20Network%20Folders">#282</a>,
+          <a href="{$root}/site/?issue=291#Printing%20&%20Acrobat%20Reader">#291</a></td>
+      <td class="pct80">80% complete</td>
       <td>Huw D M Davies</td>
     </tr>
     <tr>
@@ -263,7 +275,7 @@
           <a href="{$root}/site/?issue=224#Internationalization%20of%20Calendars">#224</a>
           <a href="{$root}/site/?issue=232#Translating%20Wine">#232</a>,
           <a href="{$root}/site/?issue=233#Wine%20&%20Locales">#233</a></td>
-      <td class="pct90">90% complete</a></td>
+      <td class="pct90">90% complete</td>
       <td>Dmitry Timoshkov</td>
     </tr>
     <tr>
@@ -277,7 +289,7 @@
           <a href="{$root}/site/?issue=183#BiDi%20Test%20Program">#183</a>,
           <a href="{$root}/site/?issue=218#How%20To%20Set%20Up%20BiDi%20Support">#218</a>,
           <a href="{$root}/site/?issue=230#Pango%20vs.%20ICU">#230</a></td>
-      <td class="pct50">50% complete</a></td>
+      <td class="pct50">50% complete</td>
       <td></td>
     </tr>
     <tr>
@@ -297,14 +309,14 @@
       <td class="nonexistent">Nonexistent</td>
       <td><a href="{$root}/site/?issue=105#DDEConnect%20Errors">#105</a>,
           <a href="{$root}/site/?issue=188#System%20Tray%20Support">#188</a></td>
-      <td class="pct85">85% complete</a><br></td>
+      <td class="pct85">85% complete</td>
       <td>Dmitry Timoshkov</td>
     </tr>
     <tr>
       <td>Multiple Document Interface (MDI)</td>
       <td class="nonexistent">Nonexistent</td>
       <td>None</td>
-      <td class="pct90">90% complete</a><br></td>
+      <td class="pct90">90% complete</td>
       <td>Dmitry Timoshkov</td>
     </tr>
     <tr>
@@ -419,8 +431,13 @@
           <a href="{$root}/site/?issue=242#Analyzing%20Debug%20Traces">#242</a>,
           <a href="{$root}/site/?issue=245#Winedbg:%20Broken%20Watchpoints">#245</a>,
           <a href="{$root}/site/?issue=268#Scripting%20Around%20Winedbg">#268</a>,
-          <a href="{$root}/site/?issue=276#DWARF2%20Debug%20Support">#276</a></td>
-      <td class="pct85">85% complete</a></td>
+          <a href="{$root}/site/?issue=276#DWARF2%20Debug%20Support">#276</a>,
+          <a href="{$root}/site/?issue=283#Debugger%20on%20Solaris">#283</a>,
+          <a href="{$root}/site/?issue=288#Exluding%20Call%20in%20Relay%20Traces">#288</a>,
+          <a href="{$root}/site/?issue=292#Finding%20Stack%20Corruption">#292</a>,
+          <a href="{$root}/site/?issue=293#Test%20Harness%20for%20winedbg">#293</a>,
+          <a href="{$root}/site/?issue=301#Relay%20Segfaults">#301</a></td>
+      <td class="pct85">85% complete</td>
       <td>Eric Pouech</td>
     </tr>
     <tr>
@@ -438,7 +455,7 @@
       <td class="poor">Poor</td>
       <td><a href="{$root}/site/?issue=121#Bumps%20in%20Wineinstall">#121</a>,
           <a href="{$root}/site/?issue=227#Nuking%20Wineinstall">#227</a</td>
-      <td class="pct90">90% complete</a></td>
+      <td class="pct90">90% complete</td>
       <td></td>
     </tr>
     <tr>
@@ -451,7 +468,8 @@
     <tr>
       <td>Wine Help Viewer (winhelp)</td>
       <td class="nonexistent">Nonexistent</td>
-      <td><a href="{$root}/site/?issue=172#Building%20a%20CHM%20Viewer">#172</a></td>
+      <td><a href="{$root}/site/?issue=172#Building%20a%20CHM%20Viewer">#172</a>,
+          <a href="{$root}/site/?issue=290#HTML%20Help">#290</a></td>
       <td class="pct70">70% complete</td>
       <td>Eric Pouech</td>
     </tr>
@@ -507,14 +525,17 @@
           <a href="{$root}/site/?issue=250#Customizing%20File%20Browsing">#250</a>,
           <a href="{$root}/site/?issue=262#Drive%20Detection">#262</a>,
           <a href="{$root}/site/?issue=265#Winecfg%20&%20Unixfs">#265</a>,
-          <a href="{$root}/site/?issue=279#Winecfg%20Goes%20Live">#279</a></td>
+          <a href="{$root}/site/?issue=279#Winecfg%20Goes%20Live">#279</a>,
+          <a href="{$root}/site/?issue=282#winecfg%20Usage%20Notes">#282</a>,
+          <a href="{$root}/site/?issue=297#Winecfg%20Drive%20Config%20Problem">#297</a>,
+          <a href="{$root}/site/?issue=303#Winecfg%20&%20Audio">#303</a></td>
       <td class="pct50">50% complete</td>
       <td>Mike Hearn</td>
     </tr>
     <tr>
       <td>Wine IDL compiler (widl)</td>
       <td class="nonexistent">Nonexistent</td>
-      <td>None</td>
+      <td><a href="{$root}/site/?issue=289#Sharing%20IDL%20Generated%20Headers">#289</a></td>
       <td class="pct70">70% complete</td>
       <td>Huw D M Davies</td>
     </tr>
@@ -556,8 +577,9 @@
       <td><a href="{$root}/site/?issue=48#MZ%20(aka%20DOS)%20executable%20support">#48</a>,
           <a href="{$root}/site/?issue=52#Feature:%20Replacing%20Windows%20by%20Ove%20K%E5ven">#52</a>,
           <a href="{$root}/site/?issue=211#Registry%20Setup%20Script">#211</a>,
-          <a href="{$root}/site/?issue=242#Upgrade%20Management">#242</a></td>
-      <td class="pct80">80% complete</a></td>
+          <a href="{$root}/site/?issue=242#Upgrade%20Management">#242</a>,
+          <a href="{$root}/site/?issue=295#Automatically%20Downloading%20ActiveX">#295</a></td>
+      <td class="pct80">80% complete</td>
       <td></td>
     </tr>
     <tr>

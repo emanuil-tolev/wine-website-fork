@@ -25,7 +25,8 @@
 	  <a href="{$root}/site/?issue=196#ALSA%201.0%20Support">#196</a>,
 	  <a href="{$root}/site/?issue=200#Updated%20ALSA%20Support">#200</a>,
           <a href="{$root}/site/?issue=243#Audio%20Driver%20Auto%20Detection">#243</a>,
-          <a href="{$root}/site/?issue=280#ALSA%20Initialization%20Changes">#280</a></td>
+          <a href="{$root}/site/?issue=280#ALSA%20Initialization%20Changes">#280</a>,
+          <a href="{$root}/site/?issue=287#ALSA%20Hardware%20Acceleration%20Fix">#287</a></td>
       <td class="pct75">75% complete<br>(xx-)</br>
       </td>
       <td>Jeremy White</td>
@@ -34,7 +35,8 @@
       <td>aRtS</td>
       <td class="adequate"><a href="http://space.twc.de/~stefan/kde/arts-mcop-doc/artsbuilder/">aRts - documentation</a></td>
       <td><a href="{$root}/site/?issue=118#aRts%20Driver">#118</a>,
-          <a href="{$root}/site/?issue=198#Winearts%20With%20KDE%203.2%20Beta">#198</td>
+          <a href="{$root}/site/?issue=198#Winearts%20With%20KDE%203.2%20Beta">#198</a>,
+          <a href="{$root}/site/?issue=301#Feedback%20on%20aRTs,%20ESounD,%20and%20JACK%20Drivers">#301</a></td>
       <td class="pct60"><a href="{$root}/site/status_todo#MULTIMEDIA">60% complete</a><br>(x--)</br>
       </td>
       <td>Chris Morgan</td>
@@ -50,7 +52,8 @@
     <tr>
       <td>JACK</td>
       <td class="adequate"><a href="http://jackit.sourceforge.net/docs/">jack docs</a></td>
-      <td><a href="{$root}/site/?issue=139#Jack%20Audio%20Driver">#139</a></td>
+      <td><a href="{$root}/site/?issue=139#Jack%20Audio%20Driver">#139</a>,
+          <a href="{$root}/site/?issue=301#Feedback%20on%20aRTs,%20ESounD,%20and%20JACK%20Drivers">#301</a></td>
       <td class="pct60">60% complete</a><br>(x--)</br>
       </td>
       <td>Chris Morgan</td>
@@ -193,7 +196,7 @@
     <tr>
       <td>Multimedia joystick driver</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_joystick_functions.asp">Joystick Functions</a></td>
-      <td>None</td>
+      <td><a href="{$root}/site/?issue=285#Force%20Feedback">#285</a></td>
       <td class="pct80">80% complete<br>
       Only implemented for Linux joystick API.</td>
       <td>Eric Pouech</td>
@@ -221,7 +224,9 @@
           <a href="{$root}/site/?issue=158#Problems%20with%20OpenGL">#158</a>,
           <a href="{$root}/site/?issue=235#Doom3%20&%20Wine">#235</a>,
           <a href="{$root}/site/?issue=246#OpenGL%20Extension%20Viewer">#246</a>,
-          <a href="{$root}/site/?issue=263#World%20of%20Warcraft%20&%20PBuffers">#263</a></td>
+          <a href="{$root}/site/?issue=263#World%20of%20Warcraft%20&%20PBuffers">#263</a>,
+          <a href="{$root}/site/?issue=295#OpenGL%20&%20Child%20Window%20Breakage">#295</a>,
+          <a href="{$root}/site/?issue=300#Linking%20libGL.so">#300</a></td>
       <td class="pct90">90% complete</td>
       <td>Lionel Ulmer<br>Rapha&euml;l Junqueira</td>
     </tr>

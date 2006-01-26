@@ -50,7 +50,8 @@
       <td><a href="{$root}/site/?issue=179#CAB%20Update">#179</a>,
           <a href="{$root}/site/?issue=181#Library%20of%20Microsoft%20Compression%20Formats">#181</a>,
           <a href="{$root}/site/?issue=264#Tests%20for%20cabinet.dll">#264</a>,
-          <a href="{$root}/site/?issue=276#Cabinet.dll:%20File%20Creation%20Interfaces">#276</a></td>
+          <a href="{$root}/site/?issue=276#Cabinet.dll:%20File%20Creation%20Interfaces">#276</a>,
+          <a href="{$root}/site/?issue=282#Compressor%20for%20Cabinet.DLL">#282</a></td>
       <td class="pct80">80% complete</td>
       <td>Gerold J. Wucherpfennig</td>
     </tr>
@@ -91,7 +92,8 @@
           <a href="{$root}/site/?issue=241#UpdateWindow%20vs.%20WM_PAINT">#241</a>,
           <a href="{$root}/site/?issue=242#Progress%20Bar%20Changes">#242</a>,
           <a href="{$root}/site/?issue=245#Start%20Menu%20Brokenness">#245</a>,
-          <a href="{$root}/site/?issue=267#Theming%20Revisited">#267</a></td>
+          <a href="{$root}/site/?issue=267#Theming%20Revisited">#267</a>,
+          <a href="{$root}/site/?issue=288#Comctl32%20Fixes">#288</a></td>
       <td class="pct95">95% complete</td>
       <td>Filip Navara,<br>Thomas Weidenmüller,<br>Maxime Bellengé</td>
     </tr>
@@ -158,7 +160,8 @@
     <tr>
       <td>hhctrl.ocx</td>
       <td class="adequate"><a href="http://www.helpware.net/htmlhelp/hh_info.htm">HTML Help overview</a></td>
-      <td>None</td>
+      <td><a href="{$root}/site/?issue=284#HTML%20Help%20Status">#284</a>,
+      <td><a href="{$root}/site/??issue=290#HTML%20Help">#290</a></td>
       <td class="pct5">5% complete</td>
       <td>Mike McCormack</td>
     <tr>
@@ -244,7 +247,10 @@
       <td><a href="{$root}/site/?issue=206#MSHTML%20Changes">#206</a>,
           <a href="{$root}/site/?issue=268#MSHTML%20Work">#268</a>,
           <a href="{$root}/site/?issue=271#MSHTML%20&%20Gecko">#271</a>,
-          <a href="{$root}/site/?issue=276#MSHTML%20&%20Mozilla%20&%20XEmbed">#276</a></td>
+          <a href="{$root}/site/?issue=276#MSHTML%20&%20Mozilla%20&%20XEmbed">#276</a>,
+          <a href="{$root}/site/?issue=281#Microsoft%20HTML%20Help">#281</a>,
+          <a href="{$root}/site/?issue=285#MSHTML%20Update">#285</a>,
+          <a href="{$root}/site/?issue=293#Summer%20of%20Code%20Update:%20MSHTML">#285</a></td>
       <td class="pct15">15% complete</td>
       <td>Jacek Caban</td>
     </tr>
@@ -256,7 +262,8 @@
           <a href="{$root}/site/?issue=231#Status%20of%20MSI">#231</a>,
           <a href="{$root}/site/?issue=232#MSIExec.exe%20Replacement">#232</a>,
           <a href="{$root}/site/?issue=253#MSI%20Status%20Update">#253</a>,
-          <a href="{$root}/site/?issue=276#MSI%20Dialogs">#276</a></td>
+          <a href="{$root}/site/?issue=276#MSI%20Dialogs">#276</a>,
+          <a href="{$root}/site/?issue=290#Wine's%20MSI%20-%20Help%20Us%20Break%20It">#276</a></td>
       <td class="pct50">50% complete</td>
       <td>Mike McCormack,<br>Aric Stewart</td>
     </tr>
@@ -286,7 +293,8 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_c_run.2d.time_libraries.asp">MSDN: C Run-Time Libraries</a></td>
       <td><a href="{$root}/site/?issue=197#Using%20Wine's%20Builtin%20C%20Runtime">#197</a>,
           <a href="{$root}/site/?issue=225#MSVCRT%20Headers">#225</a>,
-          <a href="{$root}/site/?issue=228#Remove%20the%20MSVCRT()%20Macro">#228</a></td>
+          <a href="{$root}/site/?issue=228#Remove%20the%20MSVCRT()%20Macro">#228</a>,
+          <a href="{$root}/site/?issue=300#MSVCRT%20Clashes%20With%20LibC">#300</a></td>
       <td class="pct60">60% complete</td>
       <td>Jon Griffiths</td>
     </tr>
@@ -361,7 +369,8 @@
           <a href="{$root}/site/?issue=259#More%20DCOM%20Notes">#259</a>,
           <a href="{$root}/site/?issue=262#COM%20&%20InstallShield">#262</a>,
           <a href="{$root}/site/?issue=263#OLE%20Status">#263</a>,
-          <a href="{$root}/site/?issue=268#InstallShield%20Breakage">#268</a></td>
+          <a href="{$root}/site/?issue=268#InstallShield%20Breakage">#268</a>,
+          <a href="{$root}/site/?issue=284#Installer%20Challenge%20&%20DCOM">#284</a></td>
       <td class="pct80">80% complete</td>
       <td>Robert Shearman,<br>CodeWeavers</td>
     </tr>
@@ -376,7 +385,8 @@
       <td>oleaut32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/oledbpart2_ole_db_core.asp">MSDN: OLE BD Core</a></td>
       <td><a href="{$root}/site/?issue=126#TransGaming%20Releasing%20Code">#126</a>,
-          <a href="{$root}/site/?issue=170#Separating%2016/32%20Bit%20OLE%20Functions">#170</a></td>
+          <a href="{$root}/site/?issue=170#Separating%2016/32%20Bit%20OLE%20Functions">#170</a>,
+          <a href="{$root}/site/?issue=299#VB%20Apps%20&%20OLEAUT32">#299</a></td>
       <td class="pct90">90% complete</td>
       <td>Jon Griffiths,<br>CodeWeavers</td>
     </tr>
@@ -455,7 +465,8 @@
           <a href="{$root}/site/?issue=178#RPC%20Via%20Windows%20Messages%20and%20Other%20OLE%20Fun">#178</a>,
           <a href="{$root}/site/?issue=194#Stubless%20Proxies">#194</a>,
           <a href="{$root}/site/?issue=200#RPC%20Info">#200</a>,
-          <a href="{$root}/site/?issue=212#Implementing%20NdrClientCall/NdrClientCall2">#200</a></td>
+          <a href="{$root}/site/?issue=212#Implementing%20NdrClientCall/NdrClientCall2">#200</a>,
+          <a href="{$root}/site/?issue=291#FreeDCE%20&%20Wine">#291</a></td>
       <td class="pct40">40% complete</td>
       <td>Mike Hearn,<br>Robert Shearman,<br>Filip Navara</td>
     </tr>
@@ -550,7 +561,8 @@
     <tr>
       <td>sti.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/stillimg/sti_561x.asp">MSDN: Still Image Architecture</a></td>
-      <td>None</td>
+      <td><a href="{$root}/site/?issue=294#Still%20Image%20Architecture">#294</a>,
+          <a href="{$root}/site/?issue=303#Still%20Image%20Capture%20(STI)">#303</a></td>
       <td class="pct5">5% complete</td>
       <td></td>
     </tr>
@@ -564,7 +576,8 @@
     <tr>
       <td>ttydrv</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/graphics/hh/graphics/splarch_db01a91d-067b-42d1-b951-6ee58fdc7df3.xml.asp">MSDN: Printer Drivers and Spooler Components</a></td>
-      <td><a href="{$root}/site/?issue=231#Using%20Multiple%20Graphics%20Drivers">#231</a></td>
+      <td><a href="{$root}/site/?issue=231#Using%20Multiple%20Graphics%20Drivers">#231</a>,
+          <a href="{$root}/site/?issue=299#Running%20Non-Graphical%20Programs">#299</a></td>
       <td class="pct80">80% complete</td>
       <td></td>
     </tr>
@@ -604,12 +617,21 @@
       <td>Alexandre Julliard,<br>Dmitry Timoshkov</td>
     </tr>
     <tr>
+      <td>usp10.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/intl/uniscrib_35k5.asp">MSDN: Uniscribe</a></td>
+      <td><a href="{$root}/site/?issue=292#Lotus%20Notes%20Breakage%20and%20Fix">#292</a></td>
+      <td class="pct5">5% complete</td>
+      <td>Hans Leidekker</td>
+    </tr>
+    <tr>
       <td>uxtheme.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnwxp/html/xptheming.asp">MSDN: Windows XP Visual Styles</a></td>
       <td><a href="{$root}/site/?issue=191#Theming%20&%20UXTheme.DLL">#191</a>,
           <a href="{$root}/site/?issue=211#Theming%20Update">#211</a>,
           <a href="{$root}/site/?issue=212#Theming%20Widgets">#212</a>,
-          <a href="{$root}/site/?issue=249#Changing%20Wine's%20Look%20and%20Feel">#249</a</td>
+          <a href="{$root}/site/?issue=249#Changing%20Wine's%20Look%20and%20Feel">#249</a>,
+          <a href="{$root}/site/?issue=285#Theming%20Work">#285</a>,
+          <a href="{$root}/site/?issue=289#Theming%20Support">#289</a></td>
       <td class="pct80">80% complete</td>
       <td>Frank Richter,<br>Kevin Koltzau</td>
     </tr>
@@ -699,6 +721,13 @@
       <td>None</td>
       <td class="pct5">5% complete</td>
       <td></td>
+    </tr>
+    <tr>
+      <td>wldap32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/ldap/ldap/lightweight_directory_access_protocol_ldap_api.asp">MSDN: Lightweight Directory Access Protocol</a></td>
+      <td><a href="{$root}/site/?issue=284#WLDAP32">#284</a></td>
+      <td class="pct5">5% complete</td>
+      <td>Hans Leidekker</td>
     </tr>
     <tr>
       <td>wow32.dll</td>
