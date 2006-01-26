@@ -161,7 +161,7 @@
       <td>hhctrl.ocx</td>
       <td class="adequate"><a href="http://www.helpware.net/htmlhelp/hh_info.htm">HTML Help overview</a></td>
       <td><a href="{$root}/site/?issue=284#HTML%20Help%20Status">#284</a>,
-      <td><a href="{$root}/site/??issue=290#HTML%20Help">#290</a></td>
+          <a href="{$root}/site/??issue=290#HTML%20Help">#290</a></td>
       <td class="pct5">5% complete</td>
       <td>Mike McCormack</td>
     <tr>
@@ -320,6 +320,20 @@
       <td>Jon Griffiths</td>
     </tr>
     <tr>
+      <td>mswsock.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winsock/winsock/winsock_reference.asp">MSDN: Winsock Reference</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>msxml3.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnanchor/html/anch_xmlprod.asp">MSDN: XML Products</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Huw Davies</td>
+    </tr>
+    <tr>
       <td>netapi32.dll</td>
       <td class="adequate"><a href="http://www.andreavb.com/API_NETAPI32.html">netapi32 API calls</a></td>
       <td><a href="{$root}/site/?issue=198#NetBIOS%20Functionality">#198</a></td>
@@ -343,6 +357,13 @@
       <td>Alexandre Julliard,<br>Eric Pouech</td>
     </tr>
     <tr>
+      <td>objsel.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/ad/ad/directory_object_picker.asp">MSDN: Directory Object Picker</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Thomas Weidenmueller</td>
+    </tr>
+    <tr>
       <td>odbc32.dll</td>
       <td class="adequate"><a href="http://www.winehq.org/site/docs/wineusr-guide/misc-things-to-configure#AEN414">WineHQ ODBC Docs</a><br>
       <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vccore98/html/_core_odbc.asp">MSDN: ODBC</a></td>
@@ -351,6 +372,13 @@
           <a href="{$root}/site/?issue=205#ODBC%20Fun%20-%20Tips%20and%20Tricks">#205</a></td>
       <td class="pct60">60% complete<br>(no Windows ODBC driver support, only UNIX)</td>
       <td>Alex Villacís Lasso</td>
+    </tr>
+    <tr>
+      <td>odbccp32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/odbc/htm/odbc_appendixes.asp">MSDN: ODBC Appendixes</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Hans Leidekker</td>
     </tr>
     <tr>
       <td>ole32.dll</td>
@@ -441,6 +469,13 @@
       <td></td>
     </tr>
     <tr>
+      <td>riched20.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/richedit/richeditcontrols.asp">MSDN: Rich Edit Controls</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Krzysztof Foltman,<br>Phil Krylov</td>
+    </tr>
+    <tr>
       <td>riched32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/richedit/richeditcontrols.asp">MSDN: Rich Edit Controls</a></td>
       <td><a href="{$root}/site/?issue=127#MS%20Write%20Support">#127</a>,
@@ -495,6 +530,14 @@
       <td class="pct5">5% complete</td>
       <td></td>
     </tr>
+     <tr>
+      <td>security.dll</td>
+      <td class="nonexistent">Nonexistent</td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Robert Shearman</td>
+    </tr>
+     <tr>
       <td>sensapi.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/syncmgr/syncmgr/sens_object.asp">MSDN: SENS Reference</a></td>
       <td>None</td>
@@ -552,8 +595,16 @@
       <td></td>
     </tr>
     <tr>
+      <td>stdole2.tlb</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/automat/html/aad137b1-b747-4d74-8d6c-5ec9b6e6983d.asp">MSDN: Type Building Interfaces</a></td>
+      <td><a href="{$root}/site/?issue=154#InstallShield%206%20Insight">#154</a>,
+          <a href="{$root}/site/?issue=284#stdole2.tlb">#284</a></td>
+      <td class="pct100">100% complete</td>
+      <td>Huw D M Davies</td>
+    </tr>
+    <tr>
       <td>stdole32.tlb</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/automat/htm/chap10_725v.asp">MSDN: Type Building Interfaces</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/automat/html/aad137b1-b747-4d74-8d6c-5ec9b6e6983d.asp">MSDN: Type Building Interfaces</a></td>
       <td>None</td>
       <td class="pct100">100% complete</td>
       <td>Huw D M Davies</td>
@@ -738,7 +789,7 @@
     </tr>
     <tr>
       <td>wsock32.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcemain4/html/_wcesdk_winsock_module.asp">MSDN: Winsock 2 Functions</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winsock/winsock/winsock_reference.asp">MSDN: Winsock 2 Functions</a></td>
       <td><a href="{$root}/site/?issue=108#Winsock2">#108 (1)</a>,
           <a href="{$root}/site/?issue=108#Overlapped%20I/O">#108 (2)</a>,
           <a href="{$root}/site/?issue=121#Winsock2%20Patches">#121</a>,
