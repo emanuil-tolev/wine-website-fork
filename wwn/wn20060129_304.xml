@@ -356,103 +356,84 @@ and after that the patches did get committed.</p>
 
 </section>
 <section 
-	title="Hook Problems"
-	subject="Global hooks problems (WH_MOUSE_LL)"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-January/044395.html"
-	posts="8"
+	title="JACK Audio Driver"
+	subject="wine and jack =&gt; segfault? / wine and OSS not working"
+	archive="http://www.winehq.com/pipermail/wine-devel/2006-January/044324.html"
+	posts="7"
 >
-<p>Windows has a concept of <i>hooks</i> that allow an application to monitor
-the system for various events that might occur.  For example, you can use
-the <tt>WH_MOUSE</tt> hook to intercept mouse messages before they're
-normally processed.  Vitaliy Margolen noticed a problem last week with
-Wine's implementation:</p>
-<quote who="Vitaliy Margolen"><p>
-  Trying to track down the problem with our DInput implementation I found
-some interesting stuff - our global hooks don't work correctly because
-hook callbacks are never called if event is generated in the different
-thread. I don't think this is a revelation to number of people who knew
-that before. But how do we fix it?
-</p><p>
-Here is what I dug up so far:
-<ol>
-<li> Installing global hook we setting it as WINEVENT_INCONTEXT while msdn
-   and tests indicate that it qualifies as WINEVENT_OUTOFCONTEXT instead.
-   Unless of course we don't want to call post_win_event in step 5 and go
-   to step 6 instead.</li>
-<li> All HW mouse messages start here:
-   <ul><a href="http://source.winehq.org/source/dlls/x11drv/mouse.c#L191">
-   http://source.winehq.org/source/dlls/x11drv/mouse.c#L191</a></ul>
-   From looking at it I assume that all the HW mouse hooks should be
-   handled by HOOK_CallHooks function. This is because there are no code
-   related to hooks in send_message server call.</li>
-<li> First thing that HOOK_CallHooks does is calling HOOK_IsHooked with
-   checks only current thread for installed hooks. So this is first place
-   that is wrong. Let's comment that check out for now. I think we need
-   to move that check farther down, after the call to server.</li>
-<li> We call start_hook_chain 
-   <a href="http://source.winehq.org/source/server/hook.c#L468">
-   http://source.winehq.org/source/server/hook.c#L468</a>
-   to start hook callback chain. There we call get_first_valid_hook on local 
-   and then global if no local hooks exist. But there again we check for 
-   <a href="http://source.winehq.org/source/server/hook.c#L211">
-   http://source.winehq.org/source/server/hook.c#L211</a>
-   the hook callback thread being local (which is again not the case for global
-   hooks). This is problem #2.</li>
-<li> Now we have post_win_event of but right before it we hitting an assert
-   so this is not the right way?</li>
-<li> Say we returned with success and back to HOOK_CallHooks that now tries
-   to call MSG_SendInternalMessageTimeout. Which for some reason fails to
-   deliver message to our global hook.</li>
-</ol>
-</p><p>
+<topic>Multimedia</topic>
+<p>Wine has a lot of audio drivers, but some of them don't get used
+very often and might not work at all.  This week Joachim F&#246;rster
+posted a problem about the low-latency audio server
+<a href="http://jackit.sourceforge.net/">JACK</a>:
+<quote who="Joachim Forster"><p>
 
-So my question is to anyone who knows. What is the proper way to deliver
-these messages to global hooks that are in a different thread/process?
+some days ago I sent some mails to the wine-users list. My problem: the
+JACK output driver of wine does not work => wine segfaults; and the OSS
+output driver does not work, too. Windows Media Player (used for
+testing) says, it cannot find the audio hardware.
+</p><p>
+Since then, nobody on the wine-users list had any idea what could be
+wrong, so now I am posting this here:
+</p><p>
+I am new to this list and just wanted to ask a question regarding Wine
+and JACK:
+</p><p>
+I'm running JACK as my sound daemon and today I installed Wine (from the
+APT-Repository). I setup my .wine directory with the help of winetools.
+So far everything works fine, except sound output (tested with wmplayer
+and a simple wav file). So I selected "jack" as Audio driver.
+</p><p>
+But wine segfaults with wmplayer as soon as opening the wav file:
+<ul><code>
+$ wine .wine/c/Programme/Windows\ Media\ Player/mplayer2.exe<br />
+fixme:process:SetProcessPriorityBoost (0xffffffff,1): stub<br />
+fixme:powermgnt:SetThreadExecutionState (0x2): stub, harmless.<br />
+fixme:powermgnt:SetThreadExecutionState (0x80000000): stub, harmless.<br />
+This sound card's driver does not support direct access<br />
+The (slower) DirectSound HEL mode will be used instead.<br />
+Segmentation fault</code></ul>
+</p><p>
+I started qjackctl to see what the JACK says:
+<ul><code>
+20:01:39.052 Audio connection graph change.<br />
+20:01:39.136 Audio connection change.<br />
+20:01:39.314 XRUN callback (1).<br />
+20:01:39.317 Audio connection graph change.</code></ul>
+</p><p>
+So, I assume there was an "connection" established between Wine and JACK?
+</p><p>
+Does anybody know something about this problem? Tell me if I have to
+provide more (log/debug) output etc. ...
+</p><p>
+I am running Ubuntu Breezy (breezy kernel 2.6.12-10-686).
+</p><p>
+PS: Direct output to ALSA works (with jackd not running).
 </p></quote>
 
-<p>Rolf Kalbermatter added to it:</p>
-<quote who="Rolf Kalbermatter"><p>
+
+<p>Eric Pouech asked for a <tt>+winmm,+oss,+wave</tt> trace to see if he
+could figure out where the problem was.  Joachim did and noted it was
+<quote who="Joachim Forster">
+using OSS-output driver and oss2jack</quote>.  Eric replied,
+<quote who="Eric Pouech">
+oss2jack doesn't provide a proper mixer interface
+does the attached patch help ?</quote></p>  Joachim reported it did and
+noted a few issues:</p>
+<quote who="Joachim Forster"><p>
 
 
-Just an observation I did in a Windows program running under WinXP.
-Not sure if this is related somehow but it seems quite like the opposite
-of what you describe here although with windows message hooks.
+Yes. Great, thank you very much :-) !
 </p><p>
-I had a program that was hooking window messages for a particular window.
-When using SendMessage from the same thread as in which the Windows message
-loop was running (doesn't make much sense of course but it was just for
-testing purposes) I could not receive any events above WM_USER, lower
-events did seem to get received properly though. When placing SendMessage
-in a different thread the events did come through.
+BTW: I had to set "Hardware Acceleration" to "Emulation" (instead of
+"Full", but did not try other levels) to make mplayer2.exe play all my
+test wave files _right_.
 </p><p>
-Not exactly sure yet what this is all about but message handling and
-especially hooking in Windows for sure can be a tricky business.</p></quote>
+I used the c:/Windows/Media/*.wav files. And the strange thing was, that
+mplayer2.exe (with "Full") played some of them right and others wrong (=
+sounds like sampling freq. (transformation) issue).</p></quote>
 
-<p>Alexandre replied and outlined what was going on:</p>
-<quote who="Alexandre Julliard"><p>
-That's because the new win event code changed the meaning of the
-thread field, and the low-level hooks haven't been updated for it. Try
-something like <a href="http://www.winehq.com/pipermail/wine-devel/2006-January/044439.html">this</a>.
-</p></quote>
-
-<p>Vitaliy reported it worked:</p>
-<quote who="Vitaliy Margolen"><p>
-
-
-It does work thank you. The only question I have : does that cover
-WINEVENT_OUTOFCONTEXT hooks too?
-</p><p>
-I'm working on a test to test hooks. Hopefully there will be a way to
-test it.
-</p><p>
-And it looks like we will have to rethink our DInput - the game still
-doesn't work. It seems that the thread which acquired mouse doesn't
-have a message loop.
-</p></quote>
-
-<p>Regarding Vitaliy's question about WINEEVENT_OUTOFCONTEXT hooks,
-Alexandre asked if he knew they were broken.  Vitaliy replied that he
-was just asking.</p>
+<p>Eric submitted another patch to wine-patches later to address the issue.</p>
 </section>
 <section 
 	title="Overriding Executables With Winecfg"
