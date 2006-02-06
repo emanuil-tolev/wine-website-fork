@@ -163,24 +163,21 @@ although Windows NT (and thus the Win32 API) already existed, it only
 supported Windows 3.1 applications. Anyway, almost no-one used Windows
 NT in that time anyway.
 <p>
-But these days are long gone. The Windows 3.1 support may still be more
-complete than that of the Win32 API but most of the development nowadays
-happens for the Win32 API. Furthermore I should point out two more
-things. First, it seems people complaining about Wine supporting only
-Windows 3.1 usually do not realize that Wine also includes some support
-for the DOS API. That's because a non negligible percentage of Windows
-3.1 and even Windows 9x applications still make calls to the DOS
-interrupts! Second, Winelib only supports the Win32 API. The Win16 header
-files (necessary for compiling a Win16 application) have been moved out
-of the way to simplify development. So in some way the Win32 API is
-better supported than the Win16 one.
+But these days are long gone.  Since August 2005, Wine advertises its version
+as Windows 2000, and for several years before this it was Windows 98, so really
+Win32 is the primary thing Wine supports.  Support for Windows 3.1 applications
+is still around, of course, as is some support for DOS applications.
 <p>
-So currently Wine does not support the Win64 API at all. But the Wine
-team does take Win64 into account when making architectural decisions.
-In fact we'll probably see history repeating itself: the Win64 API has
-not been released in a commercial product yet, so no-one is using it
-anyway. So I can predict that when it becomes widespread we'll see Wine
-developers starting to work on supporting it.
+Win64 support would allow Wine to run native Windows 64-bit executables, and
+as of February 2006, Wine does not yet have this support.  That's okay, since
+there are very few commercially available Win64 applications.  One exception,
+Unreal Tournament 2004, is available in a native Linux 64-bit version, so
+nobody (except maybe a Wine hacker) should want to run the Windows version
+anyway.
+<p>
+This doesn't mean that Wine will not work on 64-bit systems.  It does.  See
+<a href="http://wiki.winehq.org/WineOn64bit">this entry</a> in the
+<a href="http://wiki.winehq.org/">Wine Wiki</a> for more info.
 
 <a name="only_linux"></a>
 <h2>Myth 9: &quot;Wine is for Linux only&quot;</h2>
