@@ -591,14 +591,14 @@ there is interested here's how it is set up.
 </p><p>
 In regedit:
 
-<ul><li> disabled auto winedbg by renaming AeDebug<br> 
+<ul><li> disabled auto winedbg by renaming AeDebug<br /> 
         I changed HKEY_LOCAL_MACHINE/Software/Microsoft/Windows
         NT/Current Version/AeDebug to AeDebug-DISABLED. Without this gdb
         doesn't seem to be able to get a hold of SEGFAULTs.</li></ul>
       </p><p>  
 In eclipse's Run/Debug dialog box:
 
-<ul><li> set the c/c++ application to WINE_SRC/loader/wine-pthread<br>
+<ul><li> set the c/c++ application to WINE_SRC/loader/wine-pthread<br />
         WINE_SRC points to a compiled version of wine. For me, I got the
         wine src rpm and ran rpmbuild -bb. This is where main() is,
         which eclipse looks for at start up.</li>
