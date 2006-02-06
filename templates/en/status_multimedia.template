@@ -130,14 +130,6 @@
     </tr>
     <td colspan="5"><strong>MSACM Codecs</strong></td>
     <tr>
-    <tr>
-      <td>msacm.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_functions.asp">Multimedia Functions</a></a></td>
-      <td>None</td>
-      <td class="pct70">70% complete</td>
-      <td>Alex Villacís Lasso</td>
-    </tr>
-    <tr>
       <td>ADPCM</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcedshow/html/_cxrefACMWrapperFilter.asp">ACM Wrapper Filter</a></td>
       <td>None</td>
@@ -201,6 +193,13 @@
       <td>None</td>
       <td class="pct75"><a href="{$root}/site/status_todo#MULTIMEDIA">75% complete</td>
       <td>Dmitry Timoshkov</td>
+    </tr>
+    <tr>
+      <td>msacm.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_functions.asp">Multimedia Functions</a></a></td>
+      <td>None</td>
+      <td class="pct70">70% complete</td>
+      <td>Alex Villacís Lasso</td>
     </tr>
     <tr>
       <td>winmm.dll</td>
