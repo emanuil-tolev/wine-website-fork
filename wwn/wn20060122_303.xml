@@ -172,7 +172,7 @@ year in Colorado in practically 30 years.  Needless to say, I've gotten my
 fair share of days in this year.  
 
 </p><p>We return this week with an attempt to catch up
-on some of the development that's occured. </p><p>
+on some of the development that's occurred. </p><p>
 
 First, let's take a look at the recent Wine snapshots.  As we noted in
 the last issue (WWN <a href="http://www.winehq.com/?issue=302#Short%20Term%20Release%20Schedule">#302</a>),
@@ -207,7 +207,7 @@ the headline even appeared.  </p>
 <a href="http://crossover.codeweavers.com/pipermail/announce/2006-January/000031.html">version 5.0.1</a> 
 of CrossOver Office.  This is a maintenance release for version 5.0 and
 just contains bug fixes.  From the announcement:</p>
-<quote who="Codeweavers"><p>
+<quote who="CodeWeavers"><p>
 We had a number of minor glitches that we felt were important
 to release to our customers.
 </p><p>
@@ -223,7 +223,7 @@ for his speedy fix to Wine to that end.
 </p><p>
 We have a fix for ipod support that we decided to exclude
 from this release because we worried that it might break
-other programs.  However, we are going to put up a FAQ
+other programs.  However, we are going to put up an FAQ
 on our web site in the next day or two to give interested
 customers a workaround.
 </p><p>
@@ -283,7 +283,7 @@ to inject code.</p></quote>
 <quote who="Marcus Meissner">
 Only allow whitelisted escape codes when playing metafiles.</quote></p>
 
-<p>So while SetAbortProc started the while thing off, Marcus' final patch
+<p>So while SetAbortProc started the thing off, Marcus' final patch
 took into account other problematic calls.  The patch made it into Wine
 and CrossOver Office 5.0.1.  </p>
 
@@ -308,7 +308,7 @@ http://wiki.winehq.org/BenchMark-0.9.5</a></ul></p></quote>
 <p>Chris Morgan pointed out Wine appeared to be doing better,
 <quote who="Chris Morgan">
 We appear to be faster now, leading in 67 tests vs. 63 for a previous
-set of benchmarks?  Its difficult to see the trend over time having to
+set of benchmarks?  It's difficult to see the trend over time having to
 go back and forth between pages.</quote></p>
 
 <p>There were some suggestions for improving it and Tom made some of
@@ -379,7 +379,7 @@ otherwise and there's plenty of work to be done.</p>
 >
 <topic>Status Updates</topic>
 <p>Whither ntoskrnl.exe?  A lot of work has gone into supporting Safedisc
-and getting a ntoskrnl.exe working with Wine to load the driver it requires.
+and getting ntoskrnl.exe working with Wine to load the driver it requires.
 In fact, it's probably the single biggest chunk of work that's been 
 pending.  A lot of that work requires more changes within Wine in order
 to be merged properly.  Until then, it's living outside of the main tree.
@@ -387,17 +387,17 @@ Vitaliy Margolen is maintaining it, or, at least keeping it on his
 hard drive.  He gave a bit of an update this week on what's going on:</p>
 <quote who="Vitaliy Margolen"><p>
 
-I'm sure number of people wonder where did ntoskrnl go. It's still here in
+I'm sure a number of people wonder where did ntoskrnl go. It's still here in
 the too hackish form to be committed.
 </p><p>
 For the past month it didn't even compile because of all the changes to
 different parts of Wine. I just thought I should put it back together and
 see if it's still working. And surprise surprise it still works. So here
-it is again, before I'll break it again re-implementing the way the user
+it is again, before I break it again, re-implementing the way the user
 space talks to it.
 </p><p>
 BTW, it is still just barely enough to run safedisc 1.x copy-protection.
-Diff against wine-0.9.6
+Diff against wine-0.9.6.
 </p></quote>
 
 
@@ -511,13 +511,13 @@ Wine should be more portable than ever soon.</p>
 </section>
 <section
         title="Running Winelib Apps"
-        subject="Compiling test application (Notepad) with winelib - executeable segfaults"
+        subject="Compiling test application (Notepad) with winelib - executable segfaults"
         archive="http://www.winehq.com/pipermail/wine-devel/2006-January/043794.html"
         posts="3"
 >
 <topic>Winelib</topic>
 
-<p>Richard Wild had a question regarding the using Winelib:</p>
+<p>Richard Wild had a question regarding using Winelib:</p>
 <quote who="Richard Wild"><p>
 
 I was trying to compile the test application (Notepad) with winelib to 
@@ -544,7 +544,7 @@ new world for a developer.  Vitaliy Margolen responded with the quick
 answer: </p>
 <quote who="Vitaliy Margolen"><p>
 
-No winelib application is not a standalone as you would think. You need
+No a winelib application is not as standalone as you would think. You need
 to run it in the same way as all the rest exe files: <tt>wine notepad2</tt>
 </p></quote>
 
@@ -566,7 +566,7 @@ I've put together a little Microsoft Office on BSD howto on the Wiki,
 If anyone here uses OpenBSD, NetBSD or DragonFlyBSD I would be
 interested to know if you can get Office 2000 to install and run with
 Wine out of the box or with my cheats.  :D  So others who read the
-howto in the future will know the status of there distro.
+howto in the future will know the status of their distro.
 
 <ul><a href="http://wiki.winehq.org/Office-BSD?action=show">
 http://wiki.winehq.org/Office-BSD?action=show</a>
@@ -591,14 +591,14 @@ there is interested here's how it is set up.
 </p><p>
 In regedit:
 
-<ul><li> disabled auto winedbg by renaming AeDebug 
+<ul><li> disabled auto winedbg by renaming AeDebug<br> 
         I changed HKEY_LOCAL_MACHINE/Software/Microsoft/Windows
         NT/Current Version/AeDebug to AeDebug-DISABLED. Without this gdb
         doesn't seem to be able to get a hold of SEGFAULTs.</li></ul>
       </p><p>  
 In eclipse's Run/Debug dialog box:
 
-<ul><li> set the c/c++ application to WINE_SRC/loader/wine-pthread
+<ul><li> set the c/c++ application to WINE_SRC/loader/wine-pthread<br>
         WINE_SRC points to a compiled version of wine. For me, I got the
         wine src rpm and ran rpmbuild -bb. This is where main() is,
         which eclipse looks for at start up.</li>
@@ -634,7 +634,7 @@ the build tree)</li></ul></p><p>
 You would this way:
 <ul>
 <li> keep all the preloader stuff, so that your memory layout is better 
-(and the same than when run from command line)</li>
+(and the same as when run from command line)</li>
 <li> still be compatible with the segfault stuff</li></ul></p></quote>
 
 </section>
@@ -659,7 +659,7 @@ knowing that most people will have to change hardware acceleration to
 "emulation" and they will not be able to do so.</p></quote>
 
 <p>Robert gave a rundown of the current state of audio configuration
-a list of known issues:</p>
+and a list of known issues:</p>
 <quote who="Robert Reif"><p>
 I agree with you but can you be more specific?
 </p><p>
@@ -793,7 +793,7 @@ NEWDEV.DLL.
 </quote>
 </p>
 <p>Rob didn't think that sounded right for use with Wine.  He suggested
-some how building the functionality into Winecfg.  </p>
+somehow building the functionality into Winecfg.  </p>
 <p>Regarding general development, Mike McCormack suggested getting the
 code out there as soon as possible:</p>
 <quote who="Mike McCormack"><p>
@@ -803,12 +803,12 @@ will require you to change the way things are done before he accepts it
 into Wine.
 </p><p>
 With this in mind, you should submit what you have early to get feedback 
-on it.  You should also attempt to break it up into smaller seperate, 
+on it.  You should also attempt to break it up into smaller separate, 
 independent parts where possible.
 </p><p>
 For example, if you've changed include/sti.h, you could submit those 
 changes first, as they're low risk and should be applied without any 
-trouble.  Same for any other improvements to Wine that makes sense on 
+trouble.  Same for any other improvements to Wine that make sense on 
 their own.
 </p><p>
 Some people are working on a driver framework for Wine, so you might 

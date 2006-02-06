@@ -94,11 +94,11 @@ On the one hand, WineTools is used by <i>a lot</i> of people to get common
 programs to install.  It'll automatically install Internet Explorer
 and a lot of low-level libraries (DCOM) needed to run it.  It offers
 a very simple way for people to get things running with Wine.  The
-fact that CodeWeaver's has a similar tool, cxsetup, shows that such
+fact that CodeWeavers has a similar tool, cxsetup, shows that such
 a thing is valued by users.  
 </p><p>
 Wine developers are arguing that WineTools is doing more harm than good.
-It's unclear whether which of the additional libraries are needed.
+It's unclear which of the additional libraries are needed.
 WineTools also messes with Wine's default configuration by changing
 the default overrides for every library to be native Windows ones 
 over Wine's internal ones.  That tends to break a lot of things.  
@@ -113,7 +113,7 @@ month ago):</p>
 From Sven Paschukat I was informed about the discussion of removing the
 WineTools link from the winehq website. I read all remarks made to that
 hotly discussed topic and I am willing to tell you all a bit about the
-purpose and history of WineTools as well as I will answer the questions
+purpose and history of WineTools as well as answer the questions
 made by Tom Wickline. So this will be a little longish mail and I beg
 your pardon for that and hope you have enough patience to read it all.
 </p><p>
@@ -155,7 +155,7 @@ install and use as many Windows programs as possible. This did in no way
 regard to the fact that it is not very helpful for the wine developers.
 It was just a practical decision.
 </p><p>
->From time to time, Sven Paschukat and me are testing wine versions to
+From time to time, Sven Paschukat and me are testing wine versions to
 figure out, whether we can skip some of the M$ stuff. We have not been
 very successful with that until now, so this is why there are so many
 remainings of the first start of the project in the concept. But again:
@@ -183,13 +183,13 @@ Sven Paschukat suggested to implement a mode for WineTools to install
 without native components and without that tampering in the registry.
 This allows automatic installations *and* insight for developers if
 something goes wrong. We can also add a debugging mode to enable the
-logging of wines debug channels, to make a mailable report of bugs.
+logging of wine's debug channels, to make a mailable report of bugs.
 Also the other suggested corrections will be looked over and changed if
 applicable.
 </p><p>
 If you look through the mailing
 list you will find, that Sven and me are already giving support on the
-wine-users mailing list. That we will not and can not maintain a channel
+wine-users mailing list. That we will not and cannot maintain a channel
 should be clear as we are not earning our money by looking at channels.
 Also the demand by Vitaly to provide rapid fixes to requests on such a
 channel or the list is something that can be only meant as a joke!!! If
@@ -245,16 +245,16 @@ run and don't run with and without winetools. Also please redirect all
 those users to appDB. We need information there available for everyone to
 see, not in your e-mail box (no offense).
 </p><p>
-Winetools has setup
+Winetools has setup the
 environment in a such a way that it is unified! If you're saying that all
 you did is tinkered with lots of stuff to get few applications to work,
-this in not good. Wine is not cedega designed to run games and games
+this is not good. Wine is not cedega designed to run games and games
 only. That just proves my point that environment you have setup with
-winetools is less flexible and more restrictive then Wine itself.
+winetools is less flexible and more restrictive than Wine itself.
 </p><p>
 I think it's really silly for Wine trying to be the pure replacement of
 Windows and yet advertise such a utility that clearly undermines
-development in number of critical areas.</p></quote>
+development in a number of critical areas.</p></quote>
 
 <p>Juan Lang outlined some ideas that would help WineTools users work
 with Wine better:</p>
@@ -442,8 +442,8 @@ sounds like sampling freq. (transformation) issue).</p></quote>
 	posts="4"
 >
 <topic>Configuration</topic>
-<p>Winecfg now sets overrides for DLL's allowing you to you to choose native
-Windows DLL's over Wine's own builtin ones.  Sometimes it's also necessary
+<p>Winecfg now sets overrides for DLLs allowing you to you to choose native
+Windows DLLs over Wine's own builtin ones.  Sometimes it's also necessary
 to override an executable as well.  Ulisses de Sousa Penna ran into that
 problem this week:</p>
 <quote who="Ulisses de Sousa Penna"><p>
@@ -477,13 +477,13 @@ In fact there are a little more with same problem: start.exe and sound.dll
 
 
 However "winecfg" does not allow me to input free form strings (at least I
-try and could not find a way).
+tried and could not find a way).
 It does only allow me to navigate throught the file system and choose the
 application.
-And the "Libraries" tab, in winecfg, it is only for DLL's - I guess! (Am I
+And the "Libraries" tab, in winecfg, it is only for DLLs - I guess! (Am I
 wrong?)
 The only solution I tried is using "vi" to edit ~/.wine/user.reg but I
-think I made a mistake because wien still segfaults.</p><p>
+think I made a mistake because wine still segfaults.</p><p>
 Here is the KEY I have put:
 <ul><code>
 [Software\\Wine\\AppDefaults\\*user.exe\\DllOverrides]  1138094570<br />
@@ -498,7 +498,7 @@ calling "wine user.exe":
 <p>Stefan D&#246;singer explained Winecfg does in fact work:</p>
 <quote who="Stefan Dosinger"><p>
 
-No, it can be used for .exes too, you only have to specify the full name(e.g.
+No, it can be used for .exes too, you only have to specify the full name (e.g.
 "user.exe" for user.exe compared to "oleaut" for oleaut.dll)
 </p><p>
 I often use it for dplaysvr.exe, so it works</p></quote>
@@ -518,13 +518,13 @@ Wine's implementation:</p>
 <quote who="Vitaliy Margolen"><p>
   Trying to track down the problem with our DInput implementation I found
 some interesting stuff - our global hooks don't work correctly because
-hook callbacks are never called if event is generated in the different
-thread. I don't think this is a revelation to number of people who knew
+hook callbacks are never called if the event is generated in a different
+thread. I don't think this is a revelation to a number of people who knew
 that before. But how do we fix it?
 </p><p>
 Here is what I dug up so far:
 <ol>
-<li> Installing global hook we setting it as WINEVENT_INCONTEXT while msdn
+<li> Installing global hook we are setting it as WINEVENT_INCONTEXT while msdn
    and tests indicate that it qualifies as WINEVENT_OUTOFCONTEXT instead.
    Unless of course we don't want to call post_win_event in step 5 and go
    to step 6 instead.</li>
@@ -532,10 +532,10 @@ Here is what I dug up so far:
    <ul><a href="http://source.winehq.org/source/dlls/x11drv/mouse.c#L191">
    http://source.winehq.org/source/dlls/x11drv/mouse.c#L191</a></ul>
    From looking at it I assume that all the HW mouse hooks should be
-   handled by HOOK_CallHooks function. This is because there are no code
+   handled by HOOK_CallHooks function. This is because there is no code
    related to hooks in send_message server call.</li>
 <li> First thing that HOOK_CallHooks does is calling HOOK_IsHooked with
-   checks only current thread for installed hooks. So this is first place
+   checks only current thread for installed hooks. So this is the first place
    that is wrong. Let's comment that check out for now. I think we need
    to move that check farther down, after the call to server.</li>
 <li> We call start_hook_chain 
@@ -547,7 +547,7 @@ Here is what I dug up so far:
    http://source.winehq.org/source/server/hook.c#L211</a>
    the hook callback thread being local (which is again not the case for global
    hooks). This is problem #2.</li>
-<li> Now we have post_win_event of but right before it we hitting an assert
+<li> Now we have post_win_event of but right before it we are hitting an assert
    so this is not the right way?</li>
 <li> Say we returned with success and back to HOOK_CallHooks that now tries
    to call MSG_SendInternalMessageTimeout. Which for some reason fails to
@@ -595,7 +595,7 @@ I'm working on a test to test hooks. Hopefully there will be a way to
 test it.
 </p><p>
 And it looks like we will have to rethink our DInput - the game still
-doesn't work. It seems that the thread which acquired mouse doesn't
+doesn't work. It seems that the thread which acquired the mouse doesn't
 have a message loop.
 </p></quote>
 
