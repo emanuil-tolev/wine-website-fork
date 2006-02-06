@@ -29,7 +29,7 @@
           <a href="{$root}/site/?issue=287#ALSA%20Hardware%20Acceleration%20Fix">#287</a></td>
       <td class="pct75">75% complete<br>(xx-)</br>
       </td>
-      <td>Jeremy White</td>
+      <td></td>
     </tr>
     <tr>
       <td>aRtS</td>
@@ -53,10 +53,19 @@
       <td>JACK</td>
       <td class="adequate"><a href="http://jackit.sourceforge.net/docs/">jack docs</a></td>
       <td><a href="{$root}/site/?issue=139#Jack%20Audio%20Driver">#139</a>,
-          <a href="{$root}/site/?issue=301#Feedback%20on%20aRTs,%20ESounD,%20and%20JACK%20Drivers">#301</a></td>
+          <a href="{$root}/site/?issue=301#Feedback%20on%20aRTs,%20ESounD,%20and%20JACK%20Drivers">#301</a>,
+          <a href="{$root}/site/??issue=304#JACK%20Audio%20Driver">#304</a></td>
       <td class="pct60">60% complete</a><br>(x--)</br>
       </td>
       <td>Chris Morgan</td>
+    </tr>
+    <tr>
+      <td>ESD</td>
+      <td class="adequate"><a href="http://www.tux.org/~ricdude/docs.html">EsounD - Documentation</td>
+      <td>None</td>
+      <td class="pct20">20% complete<br>(x--)</br>
+      </td>
+      <td></td>
     </tr>
     <tr>
       <td>NAS</td>
@@ -73,7 +82,7 @@
           <a href="{$root}/site/?issue=212#NetBSD%20Audio%20Driver">#212</a></td>
       <td class="pct95">95% complete<br>(xxx)</br>
       </td>
-      <td>Eric Pouech</td>
+      <td></td>
     </tr> 
     <td colspan="5"><strong>mappers</strong></td>
     <tr>
@@ -81,14 +90,14 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_audio.asp">Multimedia Audio</a></td>
       <td>None</td>
       <td class="pct80">80% complete<br>(uses MSACM for audio codecs)</td>
-      <td>Eric Pouech</td>
+      <td></td>
     </tr>
     <tr>
       <td>midi mapper (midimap)</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_audio.asp">Multimedia Audio</a></td>
       <td>None</td>
       <td class="pct80">80% complete</td>
-      <td>Eric Pouech</td>
+      <td></td>
     </tr>
     <td colspan="5"><strong>MCI drivers</strong></td>
     <tr>
@@ -96,7 +105,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_mci.asp">MCI</a></td>
       <td>None</td>
       <td class="pct100">100% complete</td>
-      <td>Eric Pouech</td>
+      <td></td>
     </tr>
     <tr>
       <td>Wave driver (mciwave)</td>
@@ -110,16 +119,24 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_mci.asp">MCI</a></td>
       <td>None</td>
       <td class="pct60">60% complete<br>( Problems with implementing mmtask.)</td>
-      <td>Eric Pouech</td>
+      <td></td>
     </tr>
     <tr>
       <td>Video driver (mcianim, mciavi)</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_mci.asp">MCI</a></td>
       <td>None</td>
       <td class="pct75">75% complete<br>( Problems with implementing mmtask.)</td>
-      <td>Eric Pouech,<br>Michael G&uuml;nnewig,<br>Dmitry Timoshkov</td>
+      <td>Dmitry Timoshkov</td>
     </tr>
     <td colspan="5"><strong>MSACM Codecs</strong></td>
+    <tr>
+    <tr>
+      <td>msacm.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_functions.asp">Multimedia Functions</a></a></td>
+      <td>None</td>
+      <td class="pct70">70% complete</td>
+      <td>Alex Villacís Lasso</td>
+    </tr>
     <tr>
       <td>ADPCM</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcedshow/html/_cxrefACMWrapperFilter.asp">ACM Wrapper Filter</a></td>
@@ -146,60 +163,59 @@
     <td>ICCVID</td>
       <td class="adequate"><a href="http://www.csse.monash.edu.au/~timf/videocodec/cinepak.txt">(CVID) stream format for AVI and QT</a></td>
       <td><a href="{$root}/site/?issue=205#Radius%20Cinepak%20Decoder%20and%20Directory%20Structure">#205</a></td>
-      <td class="pct50">50% complete<br> ( Only decoding is supported ) </td>
-      <td>Mike McCormack</td>
+      <td class="pct50">50% complete ( Only decoding is supported )</td>
+      <td>Dmitry Timoshkov</td>
     </tr>
     <tr>
       <td>MSRLE32</td>
       <td class="adequate"><a href="http://www.jmcgowan.com/avitech.html">Windows Multimedia System</a></td>
       <td>None</td>
-      <td class="pct50">50% complete ( Only decoding is supported ) </td>
-      <td>Michael G&uuml;nnewig</td>
+      <td class="pct50">50% complete</td>
+      <td>Dmitry Timoshkov</td>
     </tr>
     <tr>
     <td>MSVIDC32</td>
       <td class="adequate"><a href="http://www.multimedia.cx/video1.txt">MS Video-1 Decoding Algorithm</a></td>
       <td>None</td>
-      <td class="pct50">50% complete ( Only decoding is supported ) </td>
-      <td>Mike McCormack</td>
+      <td class="pct50">50% complete ( Only decoding is supported )</td>
+      <td>Dmitry Timoshkov</td>
     </tr>
     <td colspan="5"><strong>Multimedia DLLs</strong></td>
     <tr>
       <td>avicap32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_video_capture_reference.asp">Video Capture Reference</a></td>
       <td><a href="{$root}/site/?issue=267#Images%20from%20video4linux%20Devices">#267</a></td>
-      <td class="pct5">5% complete</td>
-      <td>Eric Pouech</td>
+      <td class="pct30">30% complete</td>
+      <td>Maarten Lankhorst</td>
     </tr>
     <tr>
       <td>avifil32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_functions.asp">Multimedia Functions</a></a></td>
       <td>None</td>
       <td class="pct70">70% complete</td>
-      <td>Michael G&uuml;nnewig</td>
+      <td></td>
     </tr>
     <tr>
       <td>msvideo.dll/msvfw32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_functions.asp">Multimedia Functions</a></td>
       <td>None</td>
       <td class="pct75"><a href="{$root}/site/status_todo#MULTIMEDIA">75% complete</td>
-      <td>Michael G&uuml;nnewig,<br>Dmitry Timoshkov</td>
+      <td>Dmitry Timoshkov</td>
     </tr>
     <tr>
       <td>winmm.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_functions.asp">Multimedia Functions</a></td>
       <td><a href="{$root}/site/?issue=244#WinMM%20Timer%20Events">#244</a></td>
       <td class="pct80">80% complete</td>
-      <td>Eric Pouech,<br>Filip Navara</td>
+      <td>Eric Pouech</td>
     </tr>
     <td colspan="5"><strong>Miscellaneous Multimedia Components</strong></td>
     <tr>
       <td>Multimedia joystick driver</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_joystick_functions.asp">Joystick Functions</a></td>
       <td><a href="{$root}/site/?issue=285#Force%20Feedback">#285</a></td>
-      <td class="pct80">80% complete<br>
-      Only implemented for Linux joystick API.</td>
-      <td>Eric Pouech</td>
+      <td class="pct80">80% complete<br> Only implemented for Linux joystick API.</td>
+      <td></td>
     </tr>
     <tr>
       <td>glu32.dll</td>
@@ -212,7 +228,7 @@
       <td class="adequate"><a href="http://www.opengl.org/documentation/specs/glut/spec3/spec3.html">GLUT Programming Interface API</a></td>
       <td>None</td>
       <td class="pct100">100% complete</td>
-      <td>Jacek Caban</td>
+      <td></td>
     </tr>
     <tr>
       <td>opengl32.dll</td>

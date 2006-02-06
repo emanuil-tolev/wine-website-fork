@@ -2,6 +2,55 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since February 6, 2006:</p>
+
+ <ul>
+ <li>ADD - msacm.dll section</li>
+ <li>ADD - ESD section</li>
+ <li>ADD - H.Verbeet as worker to d3d8.dll</li>
+ <li>ADD - H.Verbeet as worker to d3d9.dll</li>
+ <li>ADD - H.Verbeet as worker to wined3d.dll</li>
+ <li>ADD - Maarten Lankhorst as worker to avicap32.dll</li>
+ <li>ADD - Maarten Lankhorst as worker to riched20.dll</li>
+ <li>ADD - Dmitry Timoshkov as worker to ICCVID</li>
+ <li>ADD - Dmitry Timoshkov as worker to MSRLE32</li>
+ <li>ADD - Dmitry Timoshkov as worker to MSVIDC32</li>
+ <li>Remove - Robert Shearman, Christian Costa as workers on devenum.dll</li>
+ <li>Remove - Christian Costa as worker on quartz.dll</li>
+ <li>Remove - Christian Costa as worker on amstream.dll</li>
+ <li>Remove - Christian Costa as worker on d3d8.dll</li>
+ <li>Remove - Christian Costa as worker on ddraw.dll</li>
+ <li>Remove - Christian Costa as worker on dinput.dll</li>
+ <li>Remove - Christian Costa as worker on d3dxof.dll</li>
+ <li>Remove - Rok Mandeljc as worker on all dmusic dlls</li>
+ <li>Remove - Francois Gouget as worker on dsound.dll</li>
+ <li>Remove - Jason Edmeades as worker on d3d8.dll</li>
+ <li>Remove - Jason Edmeades as worker on d3d9.dll</li>
+ <li>Remove - Jason Edmeades as worker on wined3d.dll</li>
+ <li>Remove - Oliver Stieber as worker on d3d9.dll</li>
+ <li>Remove - Oliver Stieber as worker on wined3d.dll</li>
+ <li>Remove - Jeremy White as worker on ALSA</li>
+ <li>Remove - Eric Pouech as worker on OSS</li>
+ <li>Remove - Eric Pouech as worker on midi mapper</li>
+ <li>Remove - Eric Pouech as worker on CD audio driver</li>
+ <li>Remove - Eric Pouech as worker on Wave driver</li>
+ <li>Remove - Eric Pouech as worker on Midi driver</li>
+ <li>Remove - Eric Pouech, Michael G&uuml;nnewig as workers on mcianim, mciavi</li>
+ <li>Remove - Eric Pouech as worker on Multimedia joystick driver</li>
+ <li>Remove - Eric Pouech as worker on avicap32.dll</li>
+ <li>Remove - Mike McCormack as worker on ICCVID</li>
+ <li>Remove - Mike McCormack as worker on MSVIDC32</li>
+ <li>Remove - Michael G&uuml;nnewig as worker on MSRLE32</li>
+ <li>Remove - Michael G&uuml;nnewig as worker on avifil32.dll</li>
+ <li>Remove - Michael G&uuml;nnewig as worker on msvideo.dll/msvfw32.dll</li>
+ <li>Remove - Filip Navara as worker on winmm.dll</li>
+ <li>Remove - Jacek Caban as worker on glut32.dll</li>
+ <li>d3d9.dll 50% -&gt; 65%</li>
+ <li>wined3d.dll 50% -&gt; 65%</li>
+ <li>avicap32.dll 5% -&gt; 30%</li>
+ </ul>
+ <br>
+
 <p>Changes since January 26, 2006:</p>
 
  <ul>
