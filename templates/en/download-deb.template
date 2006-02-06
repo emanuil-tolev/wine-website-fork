@@ -1,18 +1,17 @@
 <!--TITLE:[Wine for Debian based distributions]-->
 
 <h1><a name="debian"></a><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0">
-Wine for Debian based distributions</h1>
+Wine for Ubuntu, Debian, and Debian-based distributions</h1>
 
-<p>Debian and Debian based distributions, such as Ubuntu, utilize a special tool
+<p>Debian and Debian-based distributions, such as Ubuntu, utilize a special tool
 for managing packages known as APT.  APT is able to automagically install all of
 the needed dependencies for a software package, as well as keep the package 
-up to date, by scanning what are known as APT repositories.  Debian based 
+up to date, by scanning what are known as APT repositories.  Debian-based 
 distributions have their own repositories of software, many of which include
 Wine, however we keep the latest available packages here for download.</p>
 
-<p>Packages here are designed to function on Debian unstable, and are meant to 
-replace the older Debian-provided ones.  Like most packages for Debian unstable, 
-these packages also work in Ubuntu Linux, where they are tested regularly. </p>
+<p>Packages here are designed to function on Debian unstable and the latest stable 
+Ubuntu, and they should replace the older Debian-provided ones.</p>
 
 <h2>Installing from the WineHQ APT Repository with Synaptic:</h2>
 
@@ -31,6 +30,8 @@ If you already have a 'wine' package installed, selecting mark all upgrades and
 opting for the "smart upgrade" option should update Wine to the newest version.
 </p>
 
+<h2>Getting source packages from the repository</h2>
+
 <p>Currently, we only have i386 binary packages available. If you do not use an 
 i386 architecture, or wish to compile the package in an optimized way, you can 
 build the wine package using the source repository instead. To do this, add a 
@@ -38,7 +39,8 @@ source repository with the the following:</p>
 
 <i><p>deb-src http://wine.sourceforge.net/apt/ source/</p></i>
 
-<p>Then, see the instructions below for building the package in the console.</p>
+<p>Then, see the instructions below for building the package in the console. 
+Most users, however, will neither need nor want to do this.</p>
 
 <img src="{$root}/images/distro/synaptic-repository-source2.png" alt="Synaptic Package Repository Screenshot" border="0">
 
@@ -83,3 +85,12 @@ compiling to finish.</p>
 <p>To install your newly created package (which should be in whatever directory
 you were in when you ran apt-get --build source), run '<b>dpkg -i wine*.deb</b>' 
 as root.</p>
+
+<h2>Older .deb packages</h2>
+
+<p>Since the APT repository can only hold the latest packages, older versions of 
+packages are available here: 
+<a href=http://sourceforge.net/project/showfiles.php?group_id=6241&package_id=174803>Ubuntu/Debian Unstable Packages</a></p>
+
+<p>If you wish to use these packages, you'll have to install them by hand
+using dpkg -i</p>
