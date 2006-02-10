@@ -337,7 +337,7 @@
       <td class="pct90">16-bit (3.x): 95% complete<br>
       32-bit (95/NT): 90% complete<br>
       The Unix/Linux kernel does not provide enough functionality for a perfect implementation.</td>
-      <td>Mike McCormack</td>
+      <td>Eric Pouech</td>
     </tr>
     <tr>
       <td>I/O port access</td>
@@ -362,7 +362,7 @@
       <td>Access Control & Authorization</td>
       <td class="good"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnanchor/html/securityanchor.asp">Good</a></td>
       <td>None</td>
-      <td class="pct10">10% complete</td>
+      <td class="pct20">20% complete</td>
       <td>Robert Shearman</td>
     </tr>
     <tr>
@@ -459,11 +459,18 @@
       <td></td>
     </tr>
     <tr>
+      <td>Wine File Manager (winefile)</td>
+      <td class="nonexistent">Nonexistent</td>
+      <td>None</td>
+      <td class="pct60">60% complete</td>
+      <td></td>
+    </tr>
+    <tr>
       <td>Wine Registry Editor (regedit)</td>
       <td class="nonexistent">Nonexistent</td>
       <td><a href="{$root}/site/?issue=173#ReactOS%20Regedit%20Merge">#173</a></td>
       <td class="pct80">80% complete</td>
-      <td><a href="http://www.reactos.com/">ReactOS,</a><br>Mike McCormack</td>
+      <td>Mike McCormack</td>
     </tr>
     <tr>
       <td>Wine Help Viewer (winhelp)</td>
@@ -508,7 +515,7 @@
           <a href="{$root}/site/?issue=257#Intro%20to%20Conformance%20Tests">#257</a>,
           <a href="{$root}/site/?issue=267#Finding%20Regressions">#267</a>,
           <a href="{$root}/site/??issue=270#Hexdump%20Function">#270</a></td>
-      <td class="pct100">100% complete</td>
+      <td class="pct90">90% complete</td>
       <td>Paul Millar,<br>Ferenc Wagner,<br>Jakob Eriksson,<br>Paul Vriens</td>
     </tr>
     <tr>
@@ -530,15 +537,15 @@
           <a href="{$root}/site/?issue=297#Winecfg%20Drive%20Config%20Problem">#297</a>,
           <a href="{$root}/site/?issue=303#Winecfg%20&%20Audio">#303</a>,
           <a href="{$root}/site/?issue=304#Overriding%20Executables%20With%20Winecfg">#304</a></td>
-      <td class="pct50">50% complete</td>
-      <td>Mike Hearn</td>
+      <td class="pct60">60% complete</td>
+      <td></td>
     </tr>
     <tr>
       <td>Wine IDL compiler (widl)</td>
       <td class="nonexistent">Nonexistent</td>
       <td><a href="{$root}/site/?issue=289#Sharing%20IDL%20Generated%20Headers">#289</a></td>
       <td class="pct70">70% complete</td>
-      <td>Huw D M Davies</td>
+      <td>Robert Shearman</td>
     </tr>
     <tr>
       <td>Wine DLL dump utility (winedump)</td>
@@ -559,14 +566,14 @@
       <td class="nonexistent">Nonexistent</td>
       <td><a href="{$root}/site/?issue=191#The%20Start%20Menu">#191</a>,
           <a href="{$root}/site/?issue=192#Integrating%20Start%20Menu%20Shortcuts">#192</a></td>
-      <td class="pct90">90% complete</td>
+      <td class="pct80">80% complete</td>
       <td>CodeWeavers</td>
     </tr>
     <tr>
       <td>wineshelllink</td>
       <td class="nonexistent">Nonexistent</td>
       <td>None</td>
-      <td class="pct10">10% complete</td>
+      <td class="pct20">20% complete</td>
       <td></td>
     </tr>
     <tr class="hdr">

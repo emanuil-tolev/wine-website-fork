@@ -21,7 +21,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/adsi/adsi/adsi_functions.asp">MSDN: ADSI Functions</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
-      <td>Detlef Riekenberg<br></td>
+      <td></td>
     </tr>
     <tr>
       <td>advapi32.dll</td>
@@ -34,8 +34,8 @@
       <td>advpack.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/workshop/delivery/download/overview/launchinfsectionex.asp">LaunchINFSectionEx Function </a></td>
       <td>None</td>
-      <td class="pct5">5% complete</td>
-      <td>CodeWeavers</td>
+      <td class="pct30">30% complete</td>
+      <td>James Hawkins</td>
     </tr>
     <tr>
       <td>atl.dll</td>
@@ -118,7 +118,7 @@
           <a href="{$root}/site/?issue=230#OpenSSL%20vs.%20NSS">#230</a>,
           <a href="{$root}/site/?issue=239#Transport%20Layer%20Security:%20SSL%20vs.%20GnuTLS">#239</a>,
           <a href="{$root}/site/?issue=273#Crypt(Un)ProtectData">#273</a></td>
-      <td class="pct5">5% complete</td>
+      <td class="pct20">20% complete</td>
       <td>Juan Lang</td>
     </tr>
     <tr>
@@ -139,7 +139,7 @@
       <td>dbghelp.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/debug/base/debug_help_library.asp">MSDN: Debug Help Library</a></td>
       <td>None</td>
-      <td class="pct50">50% complete</td>
+      <td class="pct60">60% complete</td>
       <td>Eric Pouech</td>
     </tr>
     <tr>
@@ -162,8 +162,8 @@
       <td class="adequate"><a href="http://www.helpware.net/htmlhelp/hh_info.htm">HTML Help overview</a></td>
       <td><a href="{$root}/site/?issue=284#HTML%20Help%20Status">#284</a>,
           <a href="{$root}/site/??issue=290#HTML%20Help">#290</a></td>
-      <td class="pct5">5% complete</td>
-      <td>Mike McCormack</td>
+      <td class="pct70">70% complete</td>
+      <td>James Hawkins</td>
     <tr>
       <td>icmp.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/iphlp/iphlp/retrieving_information_on_the_internet_protocol_and_the_internet_control_message_protocol.asp">MSDN: ICMP Functions</a></td>
@@ -175,7 +175,7 @@
       <td>imagehlp.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/debug/base/imagehlp_functions.asp">MSDN: ImageHlp Functions</a></td>
       <td><a href="{$root}/site/?issue=199#Implementing%20Imagehlp%20Functions">#199</a></td>
-      <td class="pct35">35% complete (debughlp imagehlp sibbling)</td>
+      <td class="pct35">35% complete<br>(debughlp imagehlp sibbling)</td>
       <td>Eric Pouech</td>
     </tr>
     <tr>
@@ -238,7 +238,7 @@
       <td>mscms.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/icm/icm_20kz.asp">MSDN: Image Color Management</a></td>
       <td>None</td>
-      <td class="pct25">25% complete</td>
+      <td class="pct50">50% complete</td>
       <td>Hans Leidekker</td>
     </tr>
     <tr>
@@ -251,7 +251,7 @@
           <a href="{$root}/site/?issue=281#Microsoft%20HTML%20Help">#281</a>,
           <a href="{$root}/site/?issue=285#MSHTML%20Update">#285</a>,
           <a href="{$root}/site/?issue=293#Summer%20of%20Code%20Update:%20MSHTML">#285</a></td>
-      <td class="pct15">15% complete</td>
+      <td class="pct40">40% complete</td>
       <td>Jacek Caban</td>
     </tr>
     <tr>
@@ -264,7 +264,7 @@
           <a href="{$root}/site/?issue=253#MSI%20Status%20Update">#253</a>,
           <a href="{$root}/site/?issue=276#MSI%20Dialogs">#276</a>,
           <a href="{$root}/site/?issue=290#Wine's%20MSI%20-%20Help%20Us%20Break%20It">#276</a></td>
-      <td class="pct50">50% complete</td>
+      <td class="pct60">60% complete</td>
       <td>Mike McCormack,<br>Aric Stewart</td>
     </tr>
     <tr>
@@ -302,14 +302,14 @@
       <td>msvcrt20.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_c_run.2d.time_libraries.asp">MSDN: C Run-Time Libraries</a></td>
       <td>None</td>
-      <td class="pct60">60% complete</td>
+      <td class="pct95">95% complete<br>(wrapper around msvcrtd.dll)</td>
       <td>Jon Griffiths</td>
     </tr>
     <tr>
       <td>msvcrt40.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_c_run.2d.time_libraries.asp">MSDN: C Run-Time Libraries</a></td>
       <td>None</td>
-      <td class="pct60">60% complete</td>
+      <td class="pct95">95% complete<br>(wrapper around msvcrtd.dll)</td>
       <td>Mike McCormack</td>
     </tr>
     <tr>
@@ -330,7 +330,7 @@
       <td>msxml3.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnanchor/html/anch_xmlprod.asp">MSDN: XML Products</a></td>
       <td>None</td>
-      <td class="pct5">5% complete</td>
+      <td class="pct15">15% complete</td>
       <td>Huw Davies</td>
     </tr>
     <tr>
@@ -353,7 +353,7 @@
       <td><a href="{$root}/site/?issue=151#Separating%20NTDLL%20and%20Kernel32">#151</a>, 
           <a href="{$root}/site/?issue=159#X11Drv%20/%20NTDll%20Separation">#159</a>,
           <a href="{$root}/site/?issue=189#Filesystem%20Roadmap">#189</a></td>
-      <td class="pct40">40% complete</td>
+      <td class="pct50">50% complete</td>
       <td>Alexandre Julliard,<br>Eric Pouech</td>
     </tr>
     <tr>
@@ -407,7 +407,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnacc/html/actvaccess.asp">MSDN: Active Accessibility</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
-      <td>Mike McCormack</td>
+      <td></td>
     </tr>
     <tr>
       <td>oleaut32.dll</td>
@@ -416,7 +416,7 @@
           <a href="{$root}/site/?issue=170#Separating%2016/32%20Bit%20OLE%20Functions">#170</a>,
           <a href="{$root}/site/?issue=299#VB%20Apps%20&%20OLEAUT32">#299</a></td>
       <td class="pct90">90% complete</td>
-      <td>Jon Griffiths,<br>CodeWeavers</td>
+      <td>Robert Shearman,<br>CodeWeavers</td>
     </tr>
     <tr>
       <td>olecli32.dll</td>
@@ -472,7 +472,7 @@
       <td>riched20.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/richedit/richeditcontrols.asp">MSDN: Rich Edit Controls</a></td>
       <td>None</td>
-      <td class="pct5">5% complete</td>
+      <td class="pct30">30% complete</td>
       <td>Krzysztof Foltman,<br>Phil Krylov,<br>Maarten Lankhorst</td>
     </tr>
     <tr>
@@ -487,7 +487,7 @@
           <a href="{$root}/site/?issue=260#RichEdit%20Control%20Code">#260</a>,
           <a href="{$root}/site/?issue=264#RichEdit%20Work">#264</a>,
           <a href="{$root}/site/?issue=266#RichEdit:%20RTF%20Writer">#266</a></td>
-      <td class="pct25">25% complete</td>
+      <td class="pct95">95% complete<br>(wrapper around riched20.dll)</td>
       <td>Krzysztof Foltman,<br>Phil Krylov</td>
     </tr>
     <tr>
@@ -502,8 +502,8 @@
           <a href="{$root}/site/?issue=200#RPC%20Info">#200</a>,
           <a href="{$root}/site/?issue=212#Implementing%20NdrClientCall/NdrClientCall2">#200</a>,
           <a href="{$root}/site/?issue=291#FreeDCE%20&%20Wine">#291</a></td>
-      <td class="pct40">40% complete</td>
-      <td>Mike Hearn,<br>Robert Shearman,<br>Filip Navara</td>
+      <td class="pct50">50% complete</td>
+      <td>Robert Shearman</td>
     </tr>
     <tr>
       <td>rsabase.dll</td>
@@ -527,14 +527,14 @@
       <td>secur32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/secauthn/security/authentication_functions.asp">MSDN: Authentication Functions</a></td>
       <td>None</td>
-      <td class="pct5">5% complete</td>
+      <td class="pct10">10% complete</td>
       <td></td>
     </tr>
      <tr>
       <td>security.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/secauthn/security/authentication_functions.asp">MSDN: Authentication Functions</a></td>
       <td>None</td>
-      <td class="pct5">5% complete</td>
+      <td class="pct100">100% complete</td>
       <td>Robert Shearman</td>
     </tr>
      <tr>
@@ -556,14 +556,14 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/install/hh/install/setup-ref_cbb06c1d-ca20-49bd-9896-742cf4e25481.xml.asp">MSDN: General Setup Functions</a></td>
       <td>None</td>
       <td class="pct60">60% complete</td>
-      <td>Eric Kohl</td>
+      <td></td>
     </tr>
     <tr>
       <td>shdocvw.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/htmlhelp/html/vsconovhtmlhelpapioverview.asp">MSDN: HTML Help API</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/workshop/browser/prog_browser_node_entry.asp">MSDN: Programming and Reusing the Browser</a></td>
       <td><a href="{$root}/site/?issue=211#Embedding%20Mozilla's%20ActiveX%20Control">#211</a></td>
       <td class="pct25">25% complete</td>
-      <td>Mike McCormack</td>
+      <td>Jacek Caban</td>
     </tr>
     <tr>
       <td>shell32.dll</td>
@@ -571,7 +571,7 @@
       <td><a href="{$root}/site/?issue=175#Displaying%20Icons%20for%20Executables">#175</a>,
           <a href="{$root}/site/?issue=205#Shell32%20Update%20&%20Patch%20Submission%20Process">#205</a></td>
       <td class="pct80">80% complete</td>
-      <td><a href="http://www.reactos.com/">ReactOS,</a><br>CodeWeavers</td>
+      <td>CodeWeavers</td>
     </tr>
     <tr>
       <td>shfolder.dll</td>
@@ -655,10 +655,10 @@
     </tr>
     <tr>
       <td>urlmon.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/workshop/security/szone/overview/overview.asp">MSDN: URL Security Zones</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/workshop/networking/networking_node_entry.asp">MSDN: Networking in Microsoft Internet Explorer</a></td>
       <td>None</td>
-      <td class="pct25">25% complete</td>
-      <td></td>
+      <td class="pct35">35% complete</td>
+      <td>Jacek Caban</td>
     </tr>
     <tr>
       <td>user32.dll</td>
@@ -713,11 +713,11 @@
       <td><a href="{$root}/site/?issue=123#SoundBlaster%20Emulation">#123</a>,
           <a href="{$root}/site/?issue=154#Executing%20Batch%20Files">#154</a></td>
       <td class="pct60">60% complete</a></td>
-      <td>Jukka Heinonen</td>
+      <td></td>
     </tr>
     <tr>
-      <td>wineps.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/prntspol_95id.asp">MSDN: Printing and Print Spooler Reference</a></td>
+      <td>wineps.drv</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/Print_d/hh/Print_d/drvarch_bca7b4b3-3144-4009-be77-2118e3331c1a.xml.asp">MSDN: Functions Defined by Printer Graphics DLLs</a></td>
       <td><a href="{$root}/site/?issue=82#PS%20printer%20driver%20and%20fonts">#82</a>,
           <a href="{$root}/site/?issue=277#Forking%20and%20Printing">#277</a></td>
       <td class="pct90">90% complete</a></td>
@@ -727,7 +727,7 @@
       <td>wininet.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wininet/wininet/wininet_functions.asp">MSDN: Wininet Functions</a></td>
       <td><a href="{$root}/site/?issue=173#WinINet%20Work">#173</a></td>
-      <td class="pct60">60% complete</a></td>
+      <td class="pct70">70% complete</a></td>
       <td>Mike McCormack</td>
     </tr>
     <tr>
@@ -750,11 +750,11 @@
       <td>Hans Leidekker</td>
     </tr>
     <tr>
-      <td>winspooldrv</td>
-      <td class="adequate"><a href="http://www.andreavb.com/API_WINSPOOL.html">winspool.drv API calls</a></td>
+      <td>winspool.drv</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/prntspol_7mgj.asp">MSDN: Printing and Print Spooler Functions</a></td>
       <td>None</td>
       <td class="pct80">80% complete</td>
-      <td>Huw D M Davies</td>
+      <td>Huw D M Davies,<br>Detlef Riekenberg</td>
     </tr>
     <tr>
       <td>wintab32.dll</td>
@@ -764,7 +764,7 @@
           <a href="{$root}/site/?issue=204#Updated%20Tablet%20Support">#204</a>,
           <a href="{$root}/site/?issue=261#Wintab%20Status">#261</a></td>
       <td class="pct60">60% complete</td>
-      <td>Aric Stewart,<br>Robert North</td>
+      <td>Aric Stewart</td>
     </tr>
     <tr>
       <td>wintrust.dll</td>
@@ -777,7 +777,7 @@
       <td>wldap32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/ldap/ldap/lightweight_directory_access_protocol_ldap_api.asp">MSDN: Lightweight Directory Access Protocol</a></td>
       <td><a href="{$root}/site/?issue=284#WLDAP32">#284</a></td>
-      <td class="pct5">5% complete</td>
+      <td class="pct90">90% complete</td>
       <td>Hans Leidekker</td>
     </tr>
     <tr>

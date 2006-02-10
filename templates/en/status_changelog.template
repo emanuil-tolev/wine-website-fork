@@ -2,6 +2,62 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since February 10, 2006:</p>
+
+ <ul>
+ <li>ADD - (winefile) section</li>
+ <li>ADD - Jacek Caban as worker to urlmon.dll</li>
+ <li>ADD - Jacek Caban as worker to shdocvw.dll</li>
+ <li>ADD - James Hawkins as worker to advpack.dll</li>
+ <li>ADD - James Hawkins as worker to hhctrl.ocx</li>
+ <li>ADD - Detlef Riekenberg as worker to winspool.drv</li>
+ <li>ADD - Robert Shearman as worker to oleaut32.dll</li>
+ <li>ADD - Robert Shearman as worker to (widl)</li>
+ <li>ADD - Eric Pouech as worker to Serial/parallel ports</li>
+ <li>Remove - CodeWeavers as worker on advpack.dll</li>
+ <li>Remove - Mike McCormack as worker on hhctrl.ocx</li>
+ <li>Remove - Mike McCormack as worker on shdocvw.dll</li>
+ <li>Remove - Mike McCormack as worker on Serial/parallel ports</li>
+ <li>Remove - Mike McCormack as worker on oleacc.dll</li>
+ <li>Remove - Jukka Heinonen as worker on winedos.dll</li>
+ <li>Remove - Detlef Riekenberg as worker on activeds.dll</li>
+ <li>Remove - Robert North as worker on wintab32.dll</li>
+ <li>Remove - ReactOS as worker on shell32.dll</li>
+ <li>Remove - ReactOS as worker on (regedit)</li>
+ <li>Remove - Jon Griffiths as worker on oleaut32.dll</li>
+ <li>Remove - Huw D M Davies as worker on (widl)</li>
+ <li>Remove - Mike Hearn as worker on (winecfg)</li>
+ <li>Remove - Mike Hearn as worker on rpcrt4.dll</li>
+ <li>Remove - Filip Navara as worker on rpcrt4.dll</li>
+ <li>Remove - Eric Kohl as worker on setupapi.dll</li>
+ <li>Wine Conformance Test Suite 100% -&gt; 90%</li>
+ <li>Access Control & Authorization 10% -&gt; 20%</li>
+ <li>crypt32.dll 5% -&gt; 20%</li>
+ <li>advpack.dll 5% -&gt; 30%</li>
+ <li>hhctrl.ocx 5% -&gt; 70%</li>
+ <li>mscms.dll 25% -&gt; 50%</li>
+ <li>wldap32.dll 5% -&gt; 90%</li>
+ <li>dbghelp.dll 50% -&gt; 60%</li>
+ <li>msi.dll 50% -&gt; 60%</li>
+ <li>ntdll.dll 40% -&gt; 50%</li>
+ <li>riched20.dll 5% -&gt; 30%</li>
+ <li>riched32.dll 25% -&gt; 95%</li>
+ <li>urlmon.dll 25% -&gt; 35%</li>
+ <li>mshtml.dll 15% -&gt; 40%</li>
+ <li>(winemenubuilder) 90% -&gt; 80%</li>
+ <li>(winecfg) 50% -&gt; 60%</li>
+ <li>msxml3.dll 5% -&gt; 15%</li>
+ <li>msvcrt20.dll 60% -&gt; 95%</li>
+ <li>msvcrt40.dll 60% -&gt; 95%</li>
+ <li>oleaut32.dll 90% -&gt; 80%</li>
+ <li>wineshelllink 10% -&gt; 20%</li>
+ <li>rpcrt4.dll 40% -&gt; 50%</li>
+ <li>security.dll 5% -&gt; 100%</li>
+ <li>wininet.dll 60% -&gt; 70%</li>
+ <li>secur32.dll 5% -&gt; 10%</li>
+ </ul>
+ <br>
+
 <p>Changes since February 6, 2006:</p>
 
  <ul>
@@ -20,7 +76,7 @@
  <li>Remove - Christian Costa as worker on dinput.dll</li>
  <li>Remove - Christian Costa as worker on d3dxof.dll</li>
  <li>Remove - Rok Mandeljc as worker on all dmusic dlls</li>
- <li>Remove - Francois Gouget as worker on dsound.dll</li>
+ <li>Remove - Fran&ccedil;ois Gouget as worker on dsound.dll</li>
  <li>Remove - Jason Edmeades as worker on d3d8.dll</li>
  <li>Remove - Jason Edmeades as worker on d3d9.dll</li>
  <li>Remove - Jason Edmeades as worker on wined3d.dll</li>
@@ -150,192 +206,5 @@
  </ul>
  <br>
 
-<p>Changes since February 10, 2005:</p>
-
- <ul>
- <li>ADD - wineshelllink section</li>
- <li>Remove - Eric Pouech as worker on Wine DLL dump utility (winedump)</li>
- <li>Wine Conformance Test Suite 70% -&gt; 100%</li>
- </ul>
- <br>
-
-<p>Changes since February 03, 2005:</p>
-
- <ul>
- <li>ADD - Fran&ccedil;ois Gouget as worker on (winemenubuilder)</li>
- <li>ADD - Fran&ccedil;ois Gouget  as worker on Wine API checker (winapi_check)</li>
- <li>ADD - Dmitry Timoshkov as worker on Dynamic Data Exchange (DDE)</li>
- <li>ADD - Dmitry Timoshkov as worker on Standard Windows Controls</li>
- <li>ADD - Multiple Document Interface (MDI) section</li>
- <li>ADD - Access Control & Authorization section</li>
- <li>ADD - Ferenc Wagner as worker on Wine Conformance Test Suite</li>
- <li>ADD - Paul Vriens as worker on Wine Conformance Test Suite</li>
- <li>Remove - Eric Pouech as worker on Dynamic Data Exchange (DDE)</li>
- <li>Remove - Mike McCormack as worker on (winemenubuilder)</li>
- <li>Remove - Marcus Meissner as worker on Wine Launcher</li>
- <li>Remove - Marcus Meissner as worker on ole32.dll</li>
- <li>Remove - Marcus Meissner as worker on oleaut32.dll</li>
- <li>Remove - Dimitrie O. Paun as worker on Wine Resource Compiler (wrc)</li>
- <li>Remove - Dimitrie O. Paun as worker on Wine Registry Editor (regedit)</li>
- <li>Remove - Dimitrie O. Paun as worker on Wine configuration tool (winecfg)</li>
- <li>Remove - Chris Morgan as worker on Wine configuration tool (winecfg)</li>
- <li>Remove - Chris Morgan as worker on Initial registry contents</li>
- <li>Remove - Chris Morgan as worker on Initial directory structure</li>
- <li>Remove - Chris Morgan as worker on Initial INI files</li>
- <li>Remove - Shachar Shemesh as worker on BiDi</li>
- <li>Remove - Shachar Shemesh as worker on Bootup/autostart management (wineboot)</li>
- <li>Remove - Shachar Shemesh as worker on National Language Support (NLS)</li>
- <li>Remove - Andreas Mohr as worker on Bootup/autostart management (wineboot)</li>
- <li>Remove - Andreas Mohr as worker on Wine Installer (wineinstall)</li>
- <li>Remove - Andriy Palamarchuk as worker on Wine Conformance Test Suite</li>
- <li>Remove - Fran&ccedil;ois Gouget as worker on Wine Conformance Test Suite</li>
- <li>Remove - CodeWeavers as worker on Wine Porting Tool (winemaker)</li>
- <li>Remove - Patrik Stridvall as worker on Wine API checker (winapi_check)</li>
- <li>Remove - Alexandre Julliard as worker on National Language Support (NLS)</li>
- <li>Fixed a couple bad links</li>
- <li>msi.dll 40% -&gt; 45%</li>
- <li>Window management 85% -&gt; 90%</li>
- <li>DLL separation 80% -&gt; 90%</li>
- <li>Wine IDL compiler (widl) 50% -&gt; 70%</li>
- <li>Wine Registry Editor (regedit) 60% -&gt; 80%</li>
- <li>Wine gcc wrapper(winegcc) 70% -&gt; 90%</li>
- </ul>
- <br>
-
-<p>Changes since January 29, 2005:</p>
-
- <ul>
- <li>ADD - sensapi.dll</li>
- <li>ADD - cryptdll.dll</li>
- <li>ADD - wtsapi32.dll</li>
- <li>ADD - stdole32.tlb</li>
- <li>ADD - Oliver Stieber as worker on d3d9.dll</li>
- <li>ADD - Oliver Stieber as worker on wined39.dll</li>
- <li>ADD - Rapha&euml;l Junqueira as worker on d3d9.dll</li>
- <li>ADD - Rapha&euml;l Junqueira as worker on wined39.dll</li>
- <li>Remove - d3ddevice from ddraw.dll section</li>
- <li>Remove - dclipper from ddraw.dll section</li>
- <li>Remove - dpalette from ddraw.dll section</li>
- <li>Remove - dsurface from ddraw.dll section</li>
- <li>ddraw.dll 85% -&gt; 90%</li>
- <li>ddraw.dll (direct3d)  50% -&gt; 85%</li>
- </ul>
- <br>
-
-<p>Changes since January 21, 2005:</p>
-
- <ul>
- <li>updates to the known todo's page</li>
- <li>Put winecfg in Native Programs</li>
- <li>Window management needs proper inter-process handling of activation, focus, repaint. has been completed</li>
- <li>Workaround for the "no keyboard without Desktop mode" problem. has been fixed</li>
- <li>Make sure ASCII functions call the Unicode one and not the other way around (a lot of work has been done on this)</li>
- <li>"Registry contents" is done as there is now a wine.inf script.</li>
- <li>Eric has been hard at work implementing two winedbg todos.</li>
- <li>We have now moved the file code into NTDLL and limited UNC support is available through manual mounting.</li>
- <li>Huw has implemented bitmap fonts.</li>
- <li>We have wineprefixcreate to automatically configure Wine.</li>
- <li>We have largely separated 16-bit and Win9x only code and Unixisms from anything that can be shared.</li>
- <li>Documentation fixes is too generic.</li>
- <li>Network neighbourhood doesn't belong in comdlg32.</li>
- <li>Audio and video renderers have been implemented by Christian.</li>
- <li>New - [D3D](ddraw) section</li>
- <li>Updated DirectX & Multimedia sections</li>
- </ul>
- <br>
-
-<p>Changes since January 20, 2005:</p>
-
- <ul>
- <li>ADD - advpack.dll</li>
- <li>ADD - cards.dll</li>
- <li>ADD - dciman32.dll</li>
- <li>ADD - hhctrl.ocx</li>
- <li>ADD - itss.dll</li>
- <li>ADD - mscms.dll</li>
- <li>ADD - rsaenh.dll</li>
- <li>ADD - secur32.dll</li>
- <li>ADD - vdmdbg.dll</li>
- <li>ADD - wow32.dll</li>
- <li>ADD - Desktop Integration section</li>
- <li>ADD - WWN links to Core Status and DLLs Status page's</li>
- <li>ADD - Alexandre Julliard as worker to Window management</li>
- <li>ADD - Huw D M Davies as worker to Wine IDL compiler (widl)</li>
- <li>Remove - Ove Kåven, Alexandre Julliard as workers on (widl)</li> 
- <li>Remove - Links to Known ToDo's page.</li>
- </ul>
- <br>
-
-<p>Changes since January 19, 2005:</p>
-
- <ul>
- <li>ADD - Christian Costa as worker to ddraw.dll, direct3D, dsurface & devenum.dll</li>
- <li>ADD - WWN links to DirectX and Multimedia page's</li>
- <li>Remove - Christian Costa as worker on dmusic dlls & d3dx8.dll</li>
- <li>Remove - Lindows.com as worker on aRtS</li>
- <li>Remove - Sylvain Petreolle as worker on ALSA</li> 
- <li>Remove - Huw D M Davies as worker on glu32.dll</li>
- <li>Remove - Ask WWN to write about a feature</li>
- <li>Split the quartz dll into 2 parts: framework and filters</li>
- <li>Group devenum.dll amstream.dll quartz.dll and qcap.dll together, in a Direct Show section</li>
- <li>quartz framework now -&gt; 30%</li>
- <li>quartz filters now -&gt; 10%</li>
- <li>dmime.dll 10% -&gt; 20%</li>
- <li>dmband.dll 25% -&gt; 30%</li>
- <li>dmstyle.dll 25% -&gt; 30%</li>
- <li>wined3d.dll 5% -&gt; 50%</li>
- <li>d3d9.dll 20% -&gt; 50%</li>
- <li>d3d8.dll 80% -&gt; 85%</li>
- </ul>
- <br>
-
-<p>Changes since August 19, 2004:</p>
-
- <ul>
- <li>All changes were made to UI Status</li>
- <li>ADD - Documentation link to Native Font</li>
- <li>ADD - Thomas Weidenmuller as worker to Progress Bar</li>
- <li>ADD - Thomas Weidenmuller as worker to SysLink</li>
- <li>ADD - Thomas Weidenmuller as worker to ToolTip</li>
- <li>ADD - Filip Navaraas as worker to Property Sheet</li>
- <li>ADD - Filip Navaraas as worker to Rebar</li>
- <li>ADD - That we need unicode notifications to List-View</li>
- <li>ADD - That we need wizard 97 handling to Property Sheet</li>
- <li>ADD - Documentation link to what has been done regarding Smooth Scroll</li>
- <li>ADD - Jon Griffiths as worker to Tab</li>
- <li>ADD - Mike McCormack as worker to Web Browser</li>
- <li>ADD - Implementation status and Workers under Common Dialogs</li>
- <li>ADD - Implementation status and Workers under Drivers</li>
- <li>Remove - Dimitrie O. Paun as worker on Progress Bar</li>
- <li>Remove - Mike McCormack as worker on Rebar</li>
- <li>Remove - Juan Lang as worker on Property Sheet</li>
- <li>Remove - Vitaliy Margolen as as worker on Tab</li>
- <li>Remove - Huw D M Davies as as worker on ToolTip</li>
- <li>SysLink 0% -&gt; 80%</li>
- <li>Web Browser  0% -&gt; 25%</li>
- </ul>
- <br>
-
-<p>Changes since August 12, 2004:</p>
-
- <ul>
- <li>ADD - atl.dll</li>
- <li>ADD - d3dxof.dll</li>
- <li>ADD - dbghelp.dll</li>
- <li>ADD - mlang.dll</li>
- <li>ADD - Mike McCormack  as worker to ole32.dll</li>
- <li>ADD - Francois Gouget as worker to dsound.dll</li>
- <li>ADD - Filip Navara,Thomas Weidenmüller,Maxime Bellengé as workers to comctl32.dll</li>
- <li>ADD - Mike Hearn,Robert Shearman,Filip Navara as workers on rpcrt4.dll</li>
- <li>Remove - TransGaming,Ove KÃ¥ven,Greg Turner as workers on rpcrt4.dll</li>
- <li>Remove - Rok Mandeljc as worker on dsound.dll</li>
- <li>Remove - Ulrich Czekalla as worker on msdmo.dll</li>
- <li>Remove - Dimitrie O. Paun,CodeWeavers as workers on comctl32.dll</li>
- <li>Remove - Winecheck from tools</li>
- <li>Remove - Winesetuptk from tools</li>
- <li>imagehlp.dll 20% -&gt; 35%</li>
- <li>msi.dll 10% -&gt; 40%</li>
- </ul>
- <br>
 
 <p>&nbsp;</p>
