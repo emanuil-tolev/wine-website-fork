@@ -133,7 +133,7 @@ on LinuxElectrons:</p>
 <quote who="LinuxElectrons"><p>
 "Businesses tell us they want to switch to the desktop Linux operating 
 system to reduce total cost of ownership or improve security, but it's the 
-thought of losing one or two software applications  like Quickbooks or 
+thought of losing one or two software applications  like QuickBooks or 
 Microsoft Project  that holds them back," said Kevin Carmony, CEO of Linspire, 
 Inc. "CrossOver Office is genius because it removes that hesitation from the 
 equation. Yes, you can still use Quicken or Microsoft software on your 
@@ -329,8 +329,8 @@ Michael Stefaniuc came up with a new, little Winelib app to do it: </p>
 
  winedump has a VC++ symbol demangling function but that is bitrotting as
  it is a copy of the msvcrt.__unDname . As i wanted to use the newer
- msvcrt.__unDname funtion i have written a quick and dirty program that
- is basicaly only a wrapper around UnDecorateSymbolName(). Most importent
+ msvcrt.__unDname function i have written a quick and dirty program that
+ is basically only a wrapper around UnDecorateSymbolName(). Most important
  feature is that it runs on the command line.
  I'm not expecting it to go into Wine but others might find it useful.
  After applying the patch configure needs to be regenerated.
@@ -355,7 +355,7 @@ instead of duplicating code?</quote></p>
 <quote who="Eric Pouech"><p>
 <ul>
 
-<li> because we don't want winedump to be winelib app</li>
+<li> because we don't want winedump to be a winelib app</li>
 <li> because winedump does a bit more than just demangling (like adding pmt 
 names) which requires an extra level of intelligence that doesn't exist 
 in msvcrt.__undname</li></ul></p></quote>
@@ -402,7 +402,7 @@ WTL on Windows gives me:
 </p><p>
 The goal is to combine WTL/ATL (no COM) with Winelib
 to create a Linux-application with the same look and
-feel and roughly the same qualities: no DLL's,
+feel and roughly the same qualities: no DLLs,
 shared libraries, C++ ABI hassles, etc.
 Just one binary linked to libc.
 
@@ -570,7 +570,7 @@ Winelib (if that's decided to be a supportworthy goal):
  in some natural order.
  The overall initialization function should be
  configurable so that programs that need only
- a few DLL's (user, gdi, crtdll, kernel, ntdll)
+ a few DLLs (user, gdi, crtdll, kernel, ntdll)
  don't need to link everything</li>
 
 <li> Infrastructure to allow faking registry calls
@@ -584,7 +584,7 @@ Winelib (if that's decided to be a supportworthy goal):
 What I specifically don't need/want through Winelib:
 <ul><li> networking</li>
 <li> filesystem access</li>
-<li> loading of external DLL's or other libraries</li>
+<li> loading of external DLLs or other libraries</li>
 <li> C++ runtime library support</li></ul></p><p>
 
 Also, if anyone is interested in hosting patches to ATL/WTL
@@ -611,10 +611,10 @@ just update the one dynamic library that has changed.
 If the startup speed isn't good enough for you, you can use oprofile (or
 some other profiling framework) to work out which functions are taking
 up time. We would welcome any fixes to improve the startup speed.
-Optionally, you could comment out functions do things that you don't need.
+Optionally, you could comment out functions that do things that you don't need.
 </p></quote>
 
-<p>Claus explained a bit more about the application and ho he'd like to 
+<p>Claus explained a bit more about the application and how he'd like to 
 deploy it:</p>
 <quote who="Claus Fischer"><p>
 
@@ -631,18 +631,18 @@ Mountain Rescue Service, has roughly 100.000 lines of code
 </p><p>
 When the first phase was finished, the program would still
 run under Windows 98 SE upwards. It now depends on the
-following DLL's:
+following DLLs:
 
-  VERSION,
-  WS2_32,
-  KERNEL32,
-  USER32,
-  GDI32,
-  COMDLG32,
-  ADVAPI32,
-  SHELL32,
-  OLE32,
-  WININET,
+  VERSION,<br/>
+  WS2_32,<br/>
+  KERNEL32,<br/>
+  USER32,<br/>
+  GDI32,<br/>
+  COMDLG32,<br/>
+  ADVAPI32,<br/>
+  SHELL32,<br/>
+  OLE32,<br/>
+  WININET,<br/>
   COMCTL32</p><p>
 
 On any reasonable PC with internet access (it's a networked
@@ -663,7 +663,7 @@ For this reason, having WTL+Winelib for Linux would have
 been just too nice to think of :-)</p></quote>
 
 <p>That prompted Dmitry Timoshkov to point out the underlying facilities
-to support those DLL's were non-trivial,
+to support those DLLs were non-trivial,
 <quote who="Dmitry Timoshkov">
 You seem to underestimate what the dependencies above mean for the
 running Windows system. You depend on the <i>whole</i> kernel + GUI
@@ -697,7 +697,7 @@ Your <i>actual</i> goal is described here - you want a program that is free of
 dependency hell. A noble goal indeed, but the right way to do this is to
 investigate things like autopackage, ELF statifier, and so on. And also to
 accept that a program with no dependencies is perhaps not so useful after
-all. For instance, you can probably find GTK+ 2.2 or higher on everybodies
+all. For instance, you can probably find GTK+ 2.2 or higher on everybody's
 system these days.</p></quote>
 
 </section></kc>

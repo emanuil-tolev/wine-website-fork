@@ -97,10 +97,10 @@ the development mailing list.
 </p><p>
 
 A huge project that began around the same time as address separation
-was DLL separation.  Wine's original DLL's weren't separated along the
-same lines as Windows.  Wine's DLL's should only call exported functions
-of other DLL's.  In other words, it should be possible to rip out one
-of Wine's builtin DLL's and drop in a native Windows one without any
+was DLL separation.  Wine's original DLLs weren't separated along the
+same lines as Windows.  Wine's DLLs should only call exported functions
+of other DLLs.  In other words, it should be possible to rip out one
+of Wine's builtin DLLs and drop in a native Windows one without any
 difference.
 <a href="http://www.winehq.org/?issue=5#Elfdlls%20are%20coming">If</a>
 <a href="http://www.winehq.org/?issue=7#ElfDLLs%20(cont'd)">you</a>
