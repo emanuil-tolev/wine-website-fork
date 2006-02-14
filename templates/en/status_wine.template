@@ -451,14 +451,6 @@
       <td>Fran&ccedil;ois Gouget</td>
     </tr>
     <tr>
-      <td>Wine Installer (wineinstall)</td>
-      <td class="poor">Poor</td>
-      <td><a href="{$root}/site/?issue=121#Bumps%20in%20Wineinstall">#121</a>,
-          <a href="{$root}/site/?issue=227#Nuking%20Wineinstall">#227</a</td>
-      <td class="pct90">90% complete</td>
-      <td></td>
-    </tr>
-    <tr>
       <td>Wine File Manager (winefile)</td>
       <td class="nonexistent">Nonexistent</td>
       <td>None</td>
@@ -470,7 +462,7 @@
       <td class="nonexistent">Nonexistent</td>
       <td><a href="{$root}/site/?issue=173#ReactOS%20Regedit%20Merge">#173</a></td>
       <td class="pct80">80% complete</td>
-      <td>Mike McCormack</td>
+      <td>Krzysztof Foltman</td>
     </tr>
     <tr>
       <td>Wine Help Viewer (winhelp)</td>
@@ -515,7 +507,7 @@
           <a href="{$root}/site/?issue=257#Intro%20to%20Conformance%20Tests">#257</a>,
           <a href="{$root}/site/?issue=267#Finding%20Regressions">#267</a>,
           <a href="{$root}/site/??issue=270#Hexdump%20Function">#270</a></td>
-      <td class="pct90">90% complete</td>
+      <td class="pct35">35% complete</td>
       <td>Paul Millar,<br>Ferenc Wagner,<br>Jakob Eriksson,<br>Paul Vriens</td>
     </tr>
     <tr>
@@ -550,12 +542,12 @@
     <tr>
       <td>Wine DLL dump utility (winedump)</td>
       <td class="good"><a href="http://cvs.winehq.org/cvsweb/wine/tools/winedump/README">Good</a></td>
-      <td>None</td>
+      <td><a href="{$root}/site/?issue=305#Demangling%20Symbols">#305</a></td>
       <td class="pct90">90% complete</td>
       <td></td>
     </tr>
     <tr>
-      <td>Wine API checker (winapi_check)</td>
+      <td>Wine API checker (winapi)</td>
       <td class="nonexistent">Nonexistent</td>
       <td>None</td>
       <td class="pct90">90% complete</td>

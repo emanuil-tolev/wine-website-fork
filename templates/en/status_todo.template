@@ -196,12 +196,6 @@ Regedit]
 <li>NTDLL still has lots of DOS emulation code.</li>
 </ul>
 
-<h3><a name="GDI"></a>GDI<br></h3>
-
-<ul>
-<li>Implement a DIB engine</li>
-</ul>
-
 <h3><a name="OLE"></a>OLE<br></h3>
 
 <ul>
@@ -216,98 +210,8 @@ Regedit]
 
 <h3><a name="DirectX"></a>DirectX<br></h3>
 
-<pre>
-[DirectShow]
+<p>The current <a href="http://wiki.winehq.org/DirectX-ToDo?action=show">DirectX</a> ToDo is located on the wiki.</p>
 
-    * finish graph control implementation (Run/Pause/Stop)
-    * extend graph building process by taken into account filters added manually to the filtergraph
-    * implement IReferenceClock in DSound renderer
-    * windowed mode support in video renderer
-    * generic splitter using libavformat (ffmpeg)
-    * generic audio & video decoders using libavcodec (ffmpeg)
-    * understand how plugin distributors work
-    * play by mixing builtin & native components
-    * capture stuff (CaptureGraphBuilder)
-    
-[DirectDraw]
-
-    * YUV overlays
-    * Support for FOURCC surface
-
-[D3D](ddraw)
-
-    * Migration of D3D1-7 (ddraw) code to use wined3d (d3d7)?
-
-[D3D](d3d8, d3dx8, d3d9, wined3d)
-
-    * Finish wined3d migration: sharing code between d3d8 and d3d9 (shaders and state blocks)
-    * Add support for new d3d9 functionality
-    * Review the code adding in FIXMEs for unsupported new values or parameters provided in d3d9 or not handled by the code yet.
-    * Add testcases!
-    * More Compressed texture support (more exotic formats)
-    * Improve Z Buffer support (mainly for ATI cards)
-    * Off screen rendering
-    * Proper color keying
-    * LOD support
-    * Multisampling (antialising) support
-    * Palette texturing fixes (not really tested)
-    * Better device management (mainly caps)
-    * Index/vertex buffer hardware support
-    * Surface->DC handling on wined3d (d3d9 needs)
-    * Real Preloading support (using a memory manager)
-    * UpdateTexture/UpdateSurface
-    * various optimisations
-    * Swapchain support
-    * Implentation of dxdiagn (need for d3d9 this is the new way to check direct3d/directx version)
-    * Profile the code and identify hotspots for optimization
-    * Get the 3dmark software to the point of producing valuable output
-
-[DirectSound]
-
-    * Hardware accelerated direct sound capture driver support using the Windows CE3 HAL API
-    * 3D buffer support in software is present but incomplete.
-    * 3D buffer hardware support
-    * Sound effects on buffers
-    * Capture effects
-    * Full duplex support is stubbed out but not functional.
-    * Fix stutter problems in 'Emulation' mode.
-    * Improve support for driver/soundcards that will only let us mmap the card's buffer at a fixed frequency.
-    * Automatically switch to 'Emulation' mode if the driver/soundcard does not support mmap-ing the card's buffer.
-    * DX9 support for new PCM formats (24/32 bit and float samples) and for more than 2 channels is not present.
-
-[DirectMusic] (dmime, dmband, dmsynth, dmloader, dmcompos, dmstyle)
-
-    * cleanup ParseDescriptor/Loading to have share code 
-    * use loaded datas (implementing Getters APIs and begin to play some sounds)
-    * load wave tracks (dswave)
-    * More tracks loading
-    * use play APIs in RT play thead (ProcessMsgThread in dmime/performance)
-    * implement dmusic32 APIs
-
-[DMScript]
-
-    * VB script execution support (actually only source is loaded). Maybe
-      using a generic Wine VB script kernel (as the vbscript.dll seems to
-      provide on windows) using ole32/com (most of the needs are already here)
-
-[DirectInput] 
-
-    * Improve DX8 support (especially joystick)
-
-[DirectPlay]
- 
-    * Real support for dx8 (for now dpnet APIs are mainly stubs)
-    * d3d9 support
-
-[MSDMO]
-
-    * Fix stubs left in msdmo.spec
-
-[DevEnum]
-
-    * Support the creation of special filters (Midi renderer, DSound renderer, WaveOut, WaveIn) 
-      and support the binding to these filters.
-</pre>
 
 <h3><a name="MULTIMEDIA"></a>Multimedia<br></h3>
 
@@ -379,8 +283,6 @@ avicap32: "Video Capture"
     * avi mux prop
     * avi mux prop1
 
-Opengl32:
-    * Support all WGL extensions which have GLX counterparts (like PBuffers or render to texture for example).
 </pre>
 
 <h3><a name="Low_priority_items_"></a>Low priority items<br></h3>

@@ -10,15 +10,22 @@
  <li>ADD - Jacek Caban as worker to shdocvw.dll</li>
  <li>ADD - James Hawkins as worker to advpack.dll</li>
  <li>ADD - James Hawkins as worker to hhctrl.ocx</li>
+ <li>ADD - James Hawkins as worker to setupapi.dll</li>
+ <li>ADD - James Hawkins as worker to cabinet.dll</li>
  <li>ADD - Detlef Riekenberg as worker to winspool.drv</li>
  <li>ADD - Robert Shearman as worker to oleaut32.dll</li>
  <li>ADD - Robert Shearman as worker to (widl)</li>
  <li>ADD - Eric Pouech as worker to Serial/parallel ports</li>
+ <li>ADD - Krzysztof Foltman as worker to regedit</li>
+ <li>ADD - Phil Krylov as worker to comctl32.dll</li>
+ <li>Rename - (winapi_check) to (winapi)</li>
  <li>Remove - CodeWeavers as worker on advpack.dll</li>
  <li>Remove - Mike McCormack as worker on hhctrl.ocx</li>
  <li>Remove - Mike McCormack as worker on shdocvw.dll</li>
  <li>Remove - Mike McCormack as worker on Serial/parallel ports</li>
  <li>Remove - Mike McCormack as worker on oleacc.dll</li>
+ <li>Remove - Mike McCormack as worker on rsabase.dll</li>
+ <li>Remove - Mike McCormack as worker on regedit</li>
  <li>Remove - Jukka Heinonen as worker on winedos.dll</li>
  <li>Remove - Detlef Riekenberg as worker on activeds.dll</li>
  <li>Remove - Robert North as worker on wintab32.dll</li>
@@ -30,7 +37,19 @@
  <li>Remove - Mike Hearn as worker on rpcrt4.dll</li>
  <li>Remove - Filip Navara as worker on rpcrt4.dll</li>
  <li>Remove - Eric Kohl as worker on setupapi.dll</li>
- <li>Wine Conformance Test Suite 100% -&gt; 90%</li>
+ <li>Remove - Gerold J. Wucherpfennig as worker on cabinet.dll</li>
+ <li>Remove - Sami Nopanen as worker on cards.dll</li>
+ <li>Remove - Sami Aario as worker on vdmdbg.dll</li>
+ <li>Remove - Filip Navara as worker on comctl32.dll</li>
+ <li>Remove - Maxime Bellengé as worker on comctl32.dll</li>
+ <li>Remove - Dimitrie O. Paun as worker on comdlg32.dll</li>
+ <li>Remove - Ulrich Czekalla as worker on cryptdll.dll</li>
+ <li>Remove - Aric Stewart as worker on imm32.dll</li>
+ <li>Remove - Steven Edwards as worker on sensapi.dll</li>
+ <li>Remove - (wineinstall) section</li>
+ <li>Remove - tty.drv section</li>
+ <li>Update - WWN links</li>
+ <li>Wine Conformance Test Suite 100% -&gt; 35%</li>
  <li>Access Control & Authorization 10% -&gt; 20%</li>
  <li>crypt32.dll 5% -&gt; 20%</li>
  <li>advpack.dll 5% -&gt; 30%</li>
@@ -54,7 +73,10 @@
  <li>rpcrt4.dll 40% -&gt; 50%</li>
  <li>security.dll 5% -&gt; 100%</li>
  <li>wininet.dll 60% -&gt; 70%</li>
- <li>secur32.dll 5% -&gt; 10%</li>
+ <li>secur32.dll 5% -&gt; 20%</li>
+ <li>netapi32.dll 5% -&gt; 15%</li>
+ <li>rsabase.dll 5% -&gt; 95%</li>
+ <li>tapi32.dll 5% -&gt; 15%</li>
  </ul>
  <br>
 

@@ -53,7 +53,7 @@
           <a href="{$root}/site/?issue=276#Cabinet.dll:%20File%20Creation%20Interfaces">#276</a>,
           <a href="{$root}/site/?issue=282#Compressor%20for%20Cabinet.DLL">#282</a></td>
       <td class="pct80">80% complete</td>
-      <td>Gerold J. Wucherpfennig</td>
+      <td>James Hawkins</td>
     </tr>
     <tr>
       <td>capi2032.dll</td>
@@ -67,7 +67,7 @@
       <td class="adequate"><a href="http://www.developer.com/net/vb/article.php/3303671">Cards Introduction</a></td>
       <td>None</td>
       <td class="pct85">85% complete</td>
-      <td>Sami Nopanen</td>
+      <td></td>
     </tr>
     <tr>
       <td>cfgmgr32.dll</td>
@@ -95,14 +95,14 @@
           <a href="{$root}/site/?issue=267#Theming%20Revisited">#267</a>,
           <a href="{$root}/site/?issue=288#Comctl32%20Fixes">#288</a></td>
       <td class="pct95">95% complete</td>
-      <td>Filip Navara,<br>Thomas Weidenmüller,<br>Maxime Bellengé</td>
+      <td>Thomas Weidenmüller,<br>Phil Krylov</td>
     </tr>
     <tr>
       <td>comdlg32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/userinput/commondialogboxlibrary.asp">MSDN: Common Dialogs</a></td>
       <td><a href="?issue=155#File%20Dialog%20Options">#155</a></td>
       <td class="pct75">75% complete</td>
-      <td>Dimitrie O. Paun</td>
+      <td></td>
     </tr>
     <tr>
       <td>crtdll.dll</td>
@@ -126,7 +126,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcesecurity5/html/wce50consecuritysupportproviderinterface.asp">MSDN: SSPI Architecture</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
-      <td>Ulrich Czekalla</td>
+      <td></td>
     </tr>
     <tr>
       <td>ctl3d.dll</td>
@@ -183,7 +183,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/intl/ime_038z.asp">MSDN: Input Method Editor Functions</a></td>
       <td>None</td>
       <td class="pct50">50% complete</td>
-      <td>CodeWeavers,<br> Aric Stewart</td>
+      <td>CodeWeavers</td>
     </tr>
     <tr>
       <td>iphlpapi.dll</td>
@@ -302,14 +302,14 @@
       <td>msvcrt20.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_c_run.2d.time_libraries.asp">MSDN: C Run-Time Libraries</a></td>
       <td>None</td>
-      <td class="pct95">95% complete<br>(wrapper around msvcrtd.dll)</td>
+      <td class="pct95">95% complete<br>(wrapper around msvcrt.dll)</td>
       <td>Jon Griffiths</td>
     </tr>
     <tr>
       <td>msvcrt40.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_c_run.2d.time_libraries.asp">MSDN: C Run-Time Libraries</a></td>
       <td>None</td>
-      <td class="pct95">95% complete<br>(wrapper around msvcrtd.dll)</td>
+      <td class="pct95">95% complete<br>(wrapper around msvcrt.dll)</td>
       <td>Mike McCormack</td>
     </tr>
     <tr>
@@ -337,7 +337,7 @@
       <td>netapi32.dll</td>
       <td class="adequate"><a href="http://www.andreavb.com/API_NETAPI32.html">netapi32 API calls</a></td>
       <td><a href="{$root}/site/?issue=198#NetBIOS%20Functionality">#198</a></td>
-      <td class="pct5">5% complete</td>
+      <td class="pct15">15% complete</td>
       <td>Juan Lang</td>
     </tr>
     <tr>
@@ -510,8 +510,8 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/seccrypto/security/microsoft_base_cryptographic_provider.asp">MSDN: Base Cryptographic Provider</a></td>
       <td><a href="{$root}/site/?issue=210#Crypto%20and%20RSABASE.DLL">#210</a>,
           <a href="{$root}/site/?issue=233#rsabase.dll%20Work">#233</a></td>
-      <td class="pct5">5% complete<br>
-      <td>Mike McCormack</td>
+      <td class="pct95">95% complete<br>(wrapper around rsaenh.dll)</td>
+      <td></td>
     </tr>
     <tr>
       <td>rsaenh.dll</td>
@@ -527,7 +527,7 @@
       <td>secur32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/secauthn/security/authentication_functions.asp">MSDN: Authentication Functions</a></td>
       <td>None</td>
-      <td class="pct10">10% complete</td>
+      <td class="pct20">20% complete</td>
       <td></td>
     </tr>
      <tr>
@@ -542,7 +542,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/syncmgr/syncmgr/sens_object.asp">MSDN: SENS Reference</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
-      <td>Steven Edwards</td>
+      <td></td>
     </tr>
     <tr>
       <td>serialui.dll</td>
@@ -556,7 +556,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/install/hh/install/setup-ref_cbb06c1d-ca20-49bd-9896-742cf4e25481.xml.asp">MSDN: General Setup Functions</a></td>
       <td>None</td>
       <td class="pct60">60% complete</td>
-      <td></td>
+      <td>James Hawkins</td>
     </tr>
     <tr>
       <td>shdocvw.dll</td>
@@ -621,15 +621,7 @@
       <td>tapi32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcetapi/html/cmconPhoneDeviceFunctions.asp">MSDN: TAPI Functions</a></td>
       <td>None</td>
-      <td class="pct5">5% complete</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>ttydrv</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/graphics/hh/graphics/splarch_db01a91d-067b-42d1-b951-6ee58fdc7df3.xml.asp">MSDN: Printer Drivers and Spooler Components</a></td>
-      <td><a href="{$root}/site/?issue=231#Using%20Multiple%20Graphics%20Drivers">#231</a>,
-          <a href="{$root}/site/?issue=299#Running%20Non-Graphical%20Programs">#299</a></td>
-      <td class="pct80">80% complete</td>
+      <td class="pct15">15% complete</td>
       <td></td>
     </tr>
     <tr>
@@ -691,7 +683,7 @@
       <td class="adequate"><a href="http://www.cs.uofs.edu/~beidler/Ada/win32/win32-vdmdbg.html">vdmdbg Documentation</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
-      <td>Sami Aario</td>
+      <td></td>
     </tr>
     <tr>
       <td>version.dll</td>
