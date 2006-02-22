@@ -129,7 +129,7 @@
       <td></td>
     </tr>
     <tr>
-      <td>ctl3d.dll</td>
+      <td>ctl3d32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vcmfc98/html/_mfcnotes_tn051.asp">MSDN: Using CTL3D</a></td>
       <td>None</td>
       <td class="pct20">20% complete</td>
@@ -559,6 +559,13 @@
       <td>James Hawkins</td>
     </tr>
     <tr>
+      <td>sfc.dll</td>
+      <td class="adequate"><a href="http://windowssdk.msdn.microsoft.com/library/default.asp?url=/library/en-us/wfp/setup/wfp_functions.asp">MSDN: WFP Functions</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Detlef Riekenberg</td>
+    </tr>
+    <tr>
       <td>shdocvw.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/workshop/browser/prog_browser_node_entry.asp">MSDN: Programming and Reusing the Browser</a></td>
       <td><a href="{$root}/site/?issue=211#Embedding%20Mozilla's%20ActiveX%20Control">#211</a></td>
@@ -629,7 +636,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/still/hh/still/WIA_drv_scan_4093579b-6122-4f3e-b811-2fbc797123c5.xml.asp">MSDN: TWAIN-Compatible Applications</a></td>
       <td><a href="{$root}/site/?issue=257#Setting%20Up%20a%20Scanner">#257</a></td>
       <td class="pct25">25% complete</td>
-      <td></td>
+      <td>Aric Stewart</td>
     </tr>
     <tr>
       <td>unicows.dll</td>
@@ -663,8 +670,8 @@
       <td>usp10.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/intl/uniscrib_35k5.asp">MSDN: Uniscribe</a></td>
       <td><a href="{$root}/site/?issue=292#Lotus%20Notes%20Breakage%20and%20Fix">#292</a></td>
-      <td class="pct5">5% complete</td>
-      <td>Hans Leidekker</td>
+      <td class="pct15">15% complete</td>
+      <td>Hans Leidekker,<br>Jeff Latimer</td>
     </tr>
     <tr>
       <td>uxtheme.dll</td>
