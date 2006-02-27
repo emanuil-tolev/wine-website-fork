@@ -116,7 +116,7 @@ last week that Google will be working with CodeWeavers to get Picasa working
 under Linux.  It was followed by reports in 
 <a href="http://www.pcmag.com/article2/0,1895,1926510,00.asp">PC Magazine</a>
 and <a href="http://www.techspot.com/news/20454-googles-picasa-under-linux-will-use-wine.html">TechSpot</a>, 
-though they simply the other article.  If you haven't used 
+though they simply copied the other article.  If you haven't used 
 <a href="http://picasa.google.com/">Picasa</a>, I'd recommend downloading
 it and trying it with Wine.  It actually works really well out of the box
 and it's a great little program.  Personally, I still prefer something like
@@ -174,7 +174,7 @@ where this is headed.</p>
 
 <p>Patch #1: WineD3D CopyRects</p>
 <quote who="Roderick Colenbrander"><p>
-This patch is based on Oliver Stieber his D3D8->WineD3D work and adds the 
+This patch is based on Oliver Stieber's D3D8->WineD3D work and adds the 
 CopyRects method required by D3D8 to WineD3D.
 </p></quote>
 
@@ -207,14 +207,14 @@ base type of which all other texture types are instances.
 <quote who="Roderick Colenbrander"><p>
 Both our d3d8 and wined3d dlls contain a routine which detects the 
 capabilities of the videocard as advertised by the OpenGL driver. Right now 
-varies parts of D3D8 have been moved over to WineD3D. Varies pieces of the 
+various parts of D3D8 have been moved over to WineD3D. Various pieces of the 
 code ported to WineD3D use these capabilites. Right now D3D8 contains a list 
 with capabilities but doesn't share it with WineD3D. Because of this some 
-pieces of code failed for instance wined3d's surface code for each I posted a 
+pieces of code failed, for instance wined3d's surface code for which I posted a 
 workaround last week.
 </p><p>
 This patch moves the capability detection code over to WineD3D and lets the 
-few existing parts which need the capabiliteis use the WineD3D capability 
+few existing parts which need the capabilities use the WineD3D capability 
 structure (gl_info). This info structure contains next to 'flags' inidicating 
 certain features also all GL/GLX functions pointers. Because D3D8 moves over 
 to the wined3d gl_info structure all the gl prototypes in d3dcore_gl.h were 
@@ -224,8 +224,8 @@ unneeded and removed.
 <p>Patch #5: Everything Else</p>
 <quote who="Roderick Colenbrander"><p>
 
-The past few weeks I have trying to split Oliver Stieber's d3d8 patches in 
-small pieces. The patches I sent so far me oved big parts of the surface, 
+The past few weeks I have been trying to split Oliver Stieber's d3d8 patches in 
+small pieces. The patches I sent so far moved big parts of the surface, 
 texture and capability detection code over to wined3d (roughly 1/3th of the 
 total patch) These parts could safely be moved as they didn't depend on much 
 other d3d8/wined3d functionality. The remaining texture, shader, primitive 
@@ -233,7 +233,7 @@ drawing code depends on stateblocks and swapchains which haven't been ported
 over yet. If I would move over for instance the remaining texture code the 
 stateblock/swapchain code needs to moved too. The current d3d8 shader code 
 would need to be made compatible with the wined3d stateblocks (which isn't 
-possible becaue various datatypes in the stateblock changed; the wined3d 
+possible because various datatypes in the stateblock changed; the wined3d 
 stateblock uses incompatible wined3d datatypes which the shader code doesn't 
 understand)
 </p><p>
