@@ -121,8 +121,8 @@ though they simply the other article.  If you haven't used
 it and trying it with Wine.  It actually works really well out of the box
 and it's a great little program.  Personally, I still prefer something like
 <a href="http://www.gnome.org/gnome-office/eog.shtml">EoG</a> for simple 
-image viewing but Picasa really has a lot more features.  I've used Picasa
-a lot with Wine, so it's not a stretch that CodeWeavers would consider
+image viewing but Picasa really has a lot more features.  Given how well it
+runs with Wine, it's not a stretch that CodeWeavers would consider
 working on it.</p><p>
 What's not clear is whether this is going to be a Winelib or Wine 
 application.  I suspect it's going to be a straight up Windows application
@@ -149,7 +149,7 @@ the following changes:</p>
 
 <p>Go forth and <a href="http://www.winehq.com/site/download">download</a>.</p>
 <p>Finally, I'd like to point out that Zack Brown's 
-<a href="http://www.kerneltraffic.org">">Kernel Traffic</a> site is on
+<a href="http://www.kerneltraffic.org">Kernel Traffic</a> site is on
 hiatus.  While Zack will continue to post these as I write them, there's
 always a chance his site will go offline.  If so, keep in mind that you
 can continue to find them on <a href="http://www.winehq.org">WineHQ</a>.</p>
@@ -275,7 +275,7 @@ Just wanted to report my wine experience with Lotus Notes 6.5.1:
 I've run Lotus Notes with wine for a long time. What I notice with wine-0.9.8 
 (though this was present in a few releases before but not in all releases):
 <ul>
-<li> Wine is noticalby faster than the snapshot 200412xx</li>
+<li> Wine is noticably faster than the snapshot 200412xx</li>
 <li> I need to select win98 to get the file select box working</li>
 <li> I need to set WINEDLLOVERRIDES="usp10=n"</li>
 <li> Cut and paste between X and wine applications works only when selecting the 
@@ -311,7 +311,7 @@ Rpaths is not useful  when WINE building for distribution.
 Will I add <tt>--disable-rpath</tt> of there is a better suggestion?
 </quote></p>
 
-<p>Alexandre wanted to know why it wouldn't be useful and Vitaly answer:</p>
+<p>Alexandre wanted to know why it wouldn't be useful and Vitaly answered:</p>
 <quote who="Vitaly Lipatov"><p>
 It is only useful when we run wine from the source tree.
 </p><p>
