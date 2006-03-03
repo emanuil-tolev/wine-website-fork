@@ -43,7 +43,14 @@ else if ($_POST['submit'])
             $fh = fopen($db_file, 'a');
             foreach ($fields as $field)
             {
-                fwrite($fh, preg_replace("/[\t\r\n]+/", " ", stripslashes($_POST['q'][$field])));
+                if (is_array($_POST['q'][$field]))
+                {
+                    fwrite($fh, preg_replace("/[\t\r\n]+/", " ", join(", ", $_POST['q'][$field])));
+                }
+                else
+                {
+                    fwrite($fh, preg_replace("/[\t\r\n]+/", " ", stripslashes($_POST['q'][$field])));
+                }
                 fwrite($fh, "\t");
             }
             fwrite($fh, "\n");
