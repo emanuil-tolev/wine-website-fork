@@ -25,4 +25,6 @@
 
 <p><input type="submit" name="submit" value=" Submit RSVP " class="button" /></p>
 
+<input type="hidden" name="fields" value="name|email|comment" />
+
 </form>
