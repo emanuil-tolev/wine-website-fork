@@ -21,6 +21,9 @@ if (isset($_GET['done']))
 }
 else if ($_POST['submit'])
 {
+    // fields
+    $fields = preg_split('/\|/', $_POST['fields']);
+
     // check vars
     if (!$_POST['q']['name'] or !$_POST['q']['email'] or !preg_match("/\@/", $_POST['q']['email']))
     {
@@ -38,11 +41,11 @@ else if ($_POST['submit'])
         if (file_exists($db_file))
         {
             $fh = fopen($db_file, 'a');
-            fwrite($fh, preg_replace("/[\t\r\n]+/", " ", stripslashes($_POST['q']['name'])));
-            fwrite($fh, "\t");
-            fwrite($fh, preg_replace("/[\t\r\n]+/", " ", stripslashes($_POST['q']['email'])));
-            fwrite($fh, "\t");
-            fwrite($fh, preg_replace("/[\t\r\n]+/", " ", stripslashes($_POST['q']['comment'])));
+            foreach ($fields as $field)
+            {
+                fwrite($fh, preg_replace("/[\t\r\n]+/", " ", stripslashes($_POST['q'][$field])));
+                fwrite($fh, "\t");
+            }
             fwrite($fh, "\n");
             fclose($fh);
             
