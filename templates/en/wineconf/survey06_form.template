@@ -1,0 +1,63 @@
+{$error}
+
+<p>We'd like your input as we plan Wineconf this year.</p>
+
+<p>Please only answer this if you are planning to come
+(or would come if the answers you give here are
+respected).</p>
+
+<form name="survey06" action="{$self}" method="post">
+
+<table cellpadding="5">
+
+<tr valign="top">
+  <th>Name:</th>
+  <td><input type="text" name="q[name]" size="40" value="{$name}" /></td>
+</tr>
+
+<tr valign="top">
+  <th>Email:</th>
+  <td><input type="text" name="q[email]" size="40" value="{$email}" /></td>
+</tr>
+
+<tr valign="top">
+  <th>Day of Week:</th>
+  <td>
+    <input type="radio" name="q[day]" value="weekdays" />Weekdays<br />
+    <input type="radio" name="q[day]" value="fri-sat" />Friday - Saturday<br />
+    <input type="radio" name="q[day]" value="sat-sun" />Saturday - Sunday<br />
+  </td>
+</tr>
+
+<tr valign="top">
+  <th>Date:</th>
+  <td>
+    <input type="checkbox" name="q[date][]" value="05-13-2006" />May 13th, 2006<br />
+    <input type="checkbox" name="q[date][]" value="07-29-2006" />July 29th, 2006<br />
+    <input type="checkbox" name="q[date][]" value="09-16-2006" />September 16th, 2006<br />
+    <span class="small">(check all dates you can make)</span>
+  </td>
+</tr>
+
+<tr valign="top">
+  <th>Location:</th>
+  <td>
+    <input type="radio" name="q[place]" value="UK" />United Kingdom<br />
+    <input type="radio" name="q[place]" value="DE" />Try to see if Stuttgart would have us again<br />
+    <input type="radio" name="q[place]" value="MN" />Go back to St. Paul when it's warm<br />
+    <input type="radio" name="q[place]" value="OTHER" /> Other (put in comments)
+  </td>
+</tr>
+
+<tr valign="top">
+  <th>Comments:</th>
+  <td><textarea name="q[comment]" rows="5" cols="40">{$comment}</textarea></td>
+</tr>
+
+</table>
+
+<p><input type="submit" name="submit" value=" Submit Survey " class="button" /></p>
+
+<input type="hidden" name="fields" value="name|email|day|date|place|comment" />
+
+</form>
