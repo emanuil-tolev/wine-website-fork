@@ -144,7 +144,7 @@ update a few weeks ago on that list where things stand:</p>
 </p><p> 
  Here's a list of (known) problems faced:
 <ol>
- <li> missing support for some ioctl's (HDMA, serial). Added to Valgrind (now 
+ <li> missing support for some ioctls (HDMA, serial). Added to Valgrind (now 
  in branch, at least of x86)</li>
 
  <li> missing support for tkill syscall. Added to Valgrind (now in branch), Wine
@@ -248,7 +248,7 @@ This week he announced the initial version:</p>
 I've brought my DirectDraw over WineD3D patch in a form where I want to show 
 it to the public for review. I've uploaded it to 
 <a href="http://stud4.tuwien.ac.at/~e0526822/">
-http://stud4.tuwien.ac.at/~e0526822/</a>, where it is described in detail(below 
+http://stud4.tuwien.ac.at/~e0526822/</a>, where it is described in detail (below 
 the game list).
 </p><p>
 If there are no fundamental objections against it, I'll start sending patches 
@@ -260,7 +260,7 @@ for WineD3D. The changes I'll make in small patches :) are:
 </p><p>
 When WineD3D is ready, I'll send a patch for dlls/ddraw to wine-devel and 
 wine-user for a broad regression testing, and when the regressions are out, 
-the ddraw can be replaced(From my POV, AJ has the last word of course ;) )
+the ddraw can be replaced (From my POV, AJ has the last word of course ;) )
 </p></quote>
 
 <p>DirectDraw sitting on top of WineD3D, the WineD3D layer can best decide
@@ -277,20 +277,20 @@ Basically all rendering and screen setup is done in WineD3D, and all DirectDraw 
 </p><p>
 There are a few changes to WineD3D:
 <ul>
-    <li> Initialization is split up in an OpenGL-free part and a 
+    <li> Initialization is split up in an OpenGL-free part and an 
 IWineD3DDevice::Init3D method which initializes the 3D functions. This split 
-is not yet complete, so a opengl lib must be installed and some ddraw 
+is not yet complete, so an opengl lib must be installed and some ddraw 
 games (nfs3) crash in opengl calls called during initialization. The 
 IWineD3DDevice::Relase code has been split up too. IWineD3DDevice has methods 
 to setup the screen without a Direct3D swapchain</li>
-    <li> An secound surface implementation was added, IWineX11Surface, which 
+    <li> An second surface implementation was added, IWineX11Surface, which 
 handles 2D only-operations with the old surface_dib code. It will be renamed 
 to WineGDISurface, and WineX11Surface will use Xrender, WineD3DSurface will 
 get the ability to do 2D rendering with OpenGL</li>
     <li> DirectDraw rendering methods such as IWineD3DSurface::Blt, 
 IWineD3DSurface::BltFast and IWineD3DSurface::Flip have been added, along with 
 related calls.</li>
-    <li> Some DirectDraw data types will be added to to 
+    <li> Some DirectDraw data types will be added to 
 include/wine/wined3d_types.h, and d3d9 types which are used by the wined3d 
 header and don't exist in d3d.h will be added to wined3d_types too. At the 
 moment, those definitions reside in dlls/ddraw/d3d_compat.h.</li></ul></p>
@@ -318,7 +318,7 @@ extensions in Wine, or even use the Linux plugin while using a browser?
 <p>Stefan D&#246;singer gave an example of it:</p>
 <quote who="Stefan Dosinger"><p>
 I have done this with Kmail and others. You have to add a few registry keys in 
-HKCL and HKLM. Basically, you can launch any Linux app from wine by it's full 
+HKCL and HKLM. Basically, you can launch any Linux app from wine by its full 
 path and pass command line arguments. There's of course the problem of 
 converting Windows paths to Unix paths.
 </p><p>
@@ -327,7 +327,7 @@ http://www.winehq.com/site/fun_projects</a> my Kmail registry entries are
 described. For examples how to use Open Office, you have to google.
 </p><p>
 I don't think that executing a Linux Plugin in a Win32 browser is possible, 
-but cossover allows you to do the reverse.
+but CrossOver allows you to do the reverse.
 </p></quote>
 
 </section>
