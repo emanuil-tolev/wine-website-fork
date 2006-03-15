@@ -187,7 +187,7 @@ back to Wine.)  Right now that appears to be a good thing - overlap
 with development being done behind closed doors can lead to wasteful 
 duplication.  </p><p>
 
-Even after the problem Jeremy mentioned are solved, there's likely to
+Even after the problems Jeremy mentioned are solved, there's likely to
 be some integration issues.  One problem that gets mentioned quite a
 bit concerns what kind of display driver to use.  OSX doesn't install X Windows
 by default, so it would be nice to have a native Quartz display driver.
