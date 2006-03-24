@@ -37,13 +37,12 @@ Its main goal is to become long overdue for a Spring cleaning. It also serves to
 <person posts="2" size="5" who="a_villacis at palosanto.com (=?ISO-8859-1?Q?Alex_Villac=ED=ADs_Lasso?=)" />
 <person posts="2" size="5" who="scott at open-vote.org (Scott Ritchie)" />
 <person posts="2" size="4" who="nunoplopes at gmail.com (Nuno Lopes)" />
-<person posts="2" size="3" who="meissner at suse.de (Marcus Meissner)" />
+<person posts="4" size="5" who="meissner at suse.de (Marcus Meissner)" />
 <person posts="2" size="2" who="jim at pagesmiths.com (Jim White)" />
 <person posts="2" size="2" who="wes.parish at paradise.net.nz (Wesley Parish)" />
 <person posts="2" size="2" who="Paul.Vriens at xs4all.nl (Paul Vriens)" />
 <person posts="2" size="2" who="eric.pouech at wanadoo.fr (Eric Pouech)" />
 <person posts="2" size="2" who="fgouget at free.fr (Francois Gouget)" />
-<person posts="2" size="2" who="marcus at jet.franken.de (Marcus Meissner)" />
 <person posts="2" size="2" who="jacek at codeweavers.com (Jacek Caban)" />
 <person posts="2" size="2" who="andi at rhlx01.fht-esslingen.de (Andreas Mohr)" />
 <person posts="2" size="1" who="jeffl at yless4u.com.au (Jeff Latimer)" />
@@ -93,7 +92,7 @@ Its main goal is to become long overdue for a Spring cleaning. It also serves to
 	posts="1"
 >
 <topic>News</topic>
-<p>On Wednesday, Alexandre released Wine 0.9.10.  It followed less than
+<p>Last Wednesday, Alexandre released Wine 0.9.10.  It followed less than
 2 weeks on the heels of 0.9.9.  He noted the following changes:</p>
 <quote who="Alexandre Julliard"><p>
 <ul>
@@ -156,7 +155,7 @@ And even a "yum install wine" should do it (as root of course :-)).
 
 <p>Well, that's pretty simple.  Andreas Bierfert noted that Wine made it
 into the x86_64 tree of Fedora Extras as well and a 
-<tt>yum install wine</tt> should work there as well.</p>
+<tt>yum install wine</tt> should work.</p>
 
 <p>Eddy Nigg of <a href="http://www.startcom.org">StartCom Linux</a>
 mentioned they had Wine in RPM packages that should be compatible:</p>
@@ -359,7 +358,7 @@ typesafe, it just looks like it is.</p></quote>
 within applications:</p>
 <quote who="Rauschi"><p>
 
-I think it would be very usefull to disallow an application started with wine i
+I think it would be very useful to disallow an application started with wine i
 to connect to the network/internet by an options flag.</p></quote>
 
 <p>That's a valid question - a lot of apps like to "phone home" and that's
