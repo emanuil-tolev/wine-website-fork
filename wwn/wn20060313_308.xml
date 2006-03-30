@@ -152,8 +152,8 @@ happen.  It's known that CodeWeavers is working on it, and even has
 a developer or two dedicated to it.  Over on the 
 <a href="http://darwine.opendarwin.org">Darwine</a> side, things have
 been really quiet.  So what exactly is going on?  Will Wine ever work with
-MacOS X?  Jeremy White sent an email to the Darwine mailing list with
-some details about what's going happening:</p>
+MacOS X?  Jeremy White sent an <a href="http://sourceforge.net/mailarchive/message.php?msg_id=14788998">email</a> to the Darwine mailing list with
+some details about what's happening:</p>
 <quote who="Jeremy White"><p>
 There are a range of issues with OS/X.  For one, Apple has demanded
 a 16 byte stack alignment on every call.  Modifying that is non trivial;
@@ -221,9 +221,9 @@ migrate ddraw to a new implementation
 rather than patch up the current code:</p>
 <quote who="Stefan Dosinger"><p>
 The ddraw implementation has some unloading bugs at the moment. Not restoring 
-the glx context(that's the problem you reported, right) is only one of them. 
+the glx context (that's the problem you reported, right) is only one of them. 
 Another is that the screen resolution isn't restored when the app doesn't 
-care for releasing it's object.
+care for releasing its object.
 </p><p>
 I have this problem in mind, and I'll check WineD3D for it, as it most likely 
 affects all D3D libs. Once it's fixed in wineD3D and ddraw uses wineD3D for 
@@ -231,14 +231,14 @@ rendering, this should be sorted out.
 </p><p>
 Sorry for not fixing this at once, but time is limited ;). If you want a 
 solution now, you're free to fix ddraw. But I registered that issue and it's 
-on my lenghty todo list.
+on my lengthy todo list.
 </p></quote>
 
 <p>In another thread, Adam Luchjenbroers began looking into a big chunk
 of code regarding surfaces:</p>
 <quote who="Adam Luchjenbroers"><p>
 I've been using and tracking Stefan D&#246;singer's work re: DDraw over WineD3D 
-and decided try and find out if IWineD3DSurface was far enough along to be 
+and decided to try and find out if IWineD3DSurface was far enough along to be 
 able to be used in place of IWineX11Surface for 2d applications (Hopefully to 
 eliminate depth conversion issues).
 </p><p>
@@ -272,13 +272,13 @@ So what's basically needed for DDraw over opengl:
 <li> Indexed colours</li>
 <li> Better UnlockRect code</li>
 <li> Handling for all Blit cases in BltOverride</li>
-<li> A opengl accellerated BltFast override</li></ul></p></quote>
+<li> A opengl accelerated BltFast override</li></ul></p></quote>
 
 <p>Finally, Stefan wondered about a refcounting problem and sent a
 long email describing what he ran into along with a possible workaround:</p>
 <quote who="Stefan Dosinger"><p>
 I have a a question regarding some code that might be rejected by Alexandre 
-when I submit it. The problem is that I have to do an refcount hack in my new 
+when I submit it. The problem is that I have to do a refcount hack in my new 
 ddraw code to destroy textures properly. I CC this mail to AJ because it's 
 him who has the last word ;)
 </p><p>
@@ -287,7 +287,7 @@ d3d7 they are complex surfaces - a bunch of surfaces with a root and
 sublevels. All surfaces in the compound have their own refcount, but they are 
 all destroyed when the root is destroyed. In WineD3D there's the texture as a 
 container, and the surfaces in the container have their refcount linked to 
-the container(See the patch H. Verbeet sent a few days ago).
+the container (See the patch H. Verbeet sent a few days ago).
 </p><p>
 In d3d7 the application destroys the first surface to release the whole 
 texture. My first idea was to Release the WineD3DTexture. It would then call 
@@ -310,22 +310,22 @@ with that is WineD3D can crash in some cases.  </p>
 
 </section>
 <section 
-	title="Winetools.. part II"
-	subject="May be a bad idea to have Winetools in the next SUSE release"
+	title="WineTools.. part II"
+	subject="May be a bad idea to have WineTools in the next SUSE release"
 	archive="http://www.winehq.com/pipermail/wine-devel/2006-March/045464.html"
 	posts="12"
 >
 <topic>Utilities</topic>
-<p>Winetools came up again this week.  For some background, you can
+<p>WineTools came up again this week.  For some background, you can
 check out WWN 
 <a href="http://www.winehq.com/?issue=304#WineTools%20&amp;%20Wine">#304</a>.
 Basically everyone falls into three camps:
-<ul><li>Those who think Winetools makes life easier to install programs and
+<ul><li>Those who think WineTools makes life easier to install programs and
 should therefore be an integral part of using Wine.</li>
-<li>Those who think Winetools should be eradicated because it covers up some 
+<li>Those who think WineTools should be eradicated because it covers up some 
 big problems and does it in a way that makes troubleshooting problems really 
 hard.</li>
-<li>Those who think Winetools provides a handy service in theory, but
+<li>Those who think WineTools provides a handy service in theory, but
 falls apart in implementation. </li></ul></p><p>
 
 Of those, there doesn't seem to be a lot of productive discussion between
@@ -336,26 +336,26 @@ summarized the current state of affairs and then brought up a new idea:</p>
 The reality that I have come up with is this:
 Even following the instructions provided in the appdb to install IE6 (which is 
 necessary for almost anything else to work properly) I can't seem to get it 
-to install properly.  When I run an install through Winetools, it works 
+to install properly.  When I run an install through WineTools, it works 
 flawlessly.  When I try to install TurboTax under "pure" Wine, it fails 
 miserably without having to do dll overrides and such.  When I install it 
-under Winetools, I have no problems getting it to run without having to tweak 
+under WineTools, I have no problems getting it to run without having to tweak 
 the hell out of it.
 </p><p>
 Please don't misunderstand me, I have a great deal of respect for what what 
 the Wine developers have accomplished so far; however, I feel that those that 
-have put the effort into Winetools have done so because they saw a need and 
+have put the effort into WineTools have done so because they saw a need and 
 filled it.  In the realm of ease of use and user-friendliness, Wine is 
-horribly lacking.  Yes, it is getting better, but I think that Winetools is 
+horribly lacking.  Yes, it is getting better, but I think that WineTools is 
 the closest thing I've seen that would make it so that an average user could 
-us it.
+use it.
 </p><p>
-IMHO, the Wine developers should spend less time b*tching about Winetools and 
+IMHO, the Wine developers should spend less time b*tching about WineTools and 
 more time figuring out how they can 1) build a front-end that is better than 
-Winetools, or 2) help improve Winetools so that it works more to their liking 
+WineTools, or 2) help improve WineTools so that it works more to their liking 
 but still offers an easy, user-friendly interface.
 </p><p>
-Personally, I would like to see an application (be it Winetools or something 
+Personally, I would like to see an application (be it WineTools or something 
 else, it doesn't really matter to me) that would interface with the appdb.  
 You could launch this front-end and it would pull up a list of all the 
 applications in the appdb that have special "config" files.  These files 
@@ -364,21 +364,21 @@ files to run, what needs to be installed beforehand, etc.  Then, if there is
 ever a change (due to Wine improving support for a particular dll so that an 
 override is no longer needed, for example) all that would have to be done is 
 to update the "config" file attached to the program in the appdb and *bingo*, 
-you've just "update" your front-end!
+you've just "updated" your front-end!
 </p><p>
 I say I would like to see it because I do not personally have the requisite 
 programming skill to accomplish such a task, but I'm convinced it could be 
 done and that there are programmers out there in the Wine community that 
 would easily be able to accomplish such a task.
 </p><p>
-This whole Wine/Winetools argument has been a thorn in my side for a while 
+This whole Wine/WineTools argument has been a thorn in my side for a while 
 because I see both sides of the argument and can understand both stances.  
 However, I'm also watching and not seeing any compromise being made.  It's 
 like both sides have formed ranks and dug in.
 </p><p>
 It's not my intention to just whine and cry about things, but I'm not in a 
 position to directly help.  What I can do is offer my ideas and opinions.  I 
-have I haven't pissed too many people off because that was not my intention.  
+hope I haven't pissed too many people off because that was not my intention.  
 </p><p>
 I do look forward to every new release of Wine that comes out, hoping that 
 it's that much closer to allowing me to leave Windows behind for good.
@@ -401,17 +401,17 @@ program fails[2]. Just creating an empty file with the appropriate name is often
 enough to get the program working. This is a class of bug that is sure to be 
 around for a while.
 </p><p>
-The last class of bugs are the ones that require native (windows) DLL's [3]. It 
+The last class of bugs are the ones that require native (windows) DLLs [3]. It 
 would be nice to be able to keep track of these somewhere so that developers 
 know which files need to be worked on
 </p><p>
 Most people are not programmers and even fewer are capable of being developers 
-but if we can find a way to make everyones life easier both developers and users 
+but if we can find a way to make everyone's life easier, both developers and users, 
 then we should do it.
 </p><p>
 In simple terms we get WineTools to query the AppDB with an application name (ie 
 somename.exe) and we return a list of applications for the user to choose from 
-and the after the user selects the program WineTools gets the appropriate 
+and then, after the user selects the program, WineTools gets the appropriate 
 overrides from the AppDB and sets them for the user.
 </p><p>
 I think that that this is do-able if we work together.</p></quote>
@@ -428,19 +428,19 @@ manage that information.</li>
 to change very rapidly, so it might overload the app maintainers if
 they had to track this for each version of wine.  What I think would
 make sense is to have regular snapshots (every 3 months?) and release
-a new version of "Winetools Plus" or whatever you want to call this
+a new version of "WineTools Plus" or whatever you want to call this
 thing a month later to give the maintainers time to update each of
 their apps based on the frozen version.</li>
 <li> Data needed: AppID, AppVersionID, WineVersionID, Window Version, DLL
-Overrides, Window settings (fullscreen/windowed - sometimes and
+Overrides, Window settings (fullscreen/windowed - sometimes an
 issue), Sound options, Video acceleration required, General notes or
-HOWTO's, etc.  You would need separate overrides/settings for
+HOWTOs, etc.  You would need separate overrides/settings for
 Installing vs. Running the app.</li>
-<li> AppDB could dump this information to an xml format which "Winetools
+<li> AppDB could dump this information to an xml format which "WineTools
 Plus" could be distributed with.  Maybe have an option to download the
 latest xml file directly from winehq.org.</li>
-<li> The 'Winetools Plus' front-end would just be a menu which would
-query all of the apps in the xml dump.  The user picks they app they
+<li> The 'WineTools Plus' front-end would just be a menu which would
+query all of the apps in the xml dump.  The user picks the app they
 want to install, and it reads the necessary information, verifies the
 source installation media, and goes at it.</li>
 <li> Applying patches to apps might get tricky (e.g., where wine only
@@ -453,7 +453,7 @@ in the AppDB reporting process as well as better organize how to just
 
 <p>Will the idea ever get off the ground?  Sadly, I don't think it will.
 It seems like the AppDB guys might be able to get the necessary additions
-made, but WineTools is another story.  There aren't very many Winetools
+made, but WineTools is another story.  There aren't very many WineTools
 developers (two?) and the changes needed seem pretty large.</p>
 </section>
 <section 
@@ -473,7 +473,7 @@ it's quite possible someone else is running into this:</p>
 I found out that the problem doesn't seem to be related DirectX nor
 x86_64 libs. My games were all installed on a FAT32 partition which is
 also available for my parallel installed Windows XP. But the programs
-that worked I had installed directely to drive C: (~/.wine/drive_c).
+that worked I had installed directly to drive C: (~/.wine/drive_c).
 </p><p>
 Now after I installed any of the games to the fake windows directory,
 they worked again! Renaming the installation directory and setting a
