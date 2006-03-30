@@ -346,7 +346,7 @@ he was having, <quote who="Josh Thielen">
  Finale expects mmsystem to be present without having to call LoadLibrary 
  on it. It does a GetModuleHandle on mmsystem.dll to find out if the mm 
  extensions are available. I checked out windows 95, and it has mmsystem 
- and winmm loaded when no apps are runing besides  the desktop / 
+ and winmm loaded when no apps are running besides the desktop / 
  explorer. This patch links wine with winmm and makes winmm load mmsystem 
  on init. Finale gets by this ok now. I don't know if this the correct 
  approach, though.  Could someone (Eric or Alexandre?) please take a look 

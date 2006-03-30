@@ -473,7 +473,7 @@ so by making it any easier.</quote></p>
 
 <p>Jon thought it was worth getting rid of heap.h though:</p>
 <quote who="Jon Griffiths"><p>
-winapi_check will allready tell us all cross-calls anyway, doesn't
+winapi_check will already tell us all cross-calls anyway, doesn't
 it?  It may be years before all the a to w conversions are done and we are
 100% internally unicode, why live with a non standard header that
 long?</p></quote>
