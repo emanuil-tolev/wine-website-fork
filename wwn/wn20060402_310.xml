@@ -285,7 +285,7 @@ wasn't much discussion other than a bunch of positive comments.</p>
 <topic>Integration</topic>
 <p>Some rumblings began a few weeks ago about work to support Photoshop
 plugins in Gimp using Wine.  Well, that's now a reality.  Dan Kegel
-forwarded a message to wine-devel wit a link to the PSPI project:</p>
+forwarded a message to wine-devel with a link to the PSPI project:</p>
 <quote who="Dan Kegel"><p>
 I've been hearing rumblings about people using Wine
 to run windows photoshop plugins on Linux Gimp,
@@ -310,7 +310,7 @@ Unlike GIMP plug-ins, 3rd-party Photoshop plug-ins don't use any common user
 interface library. (GIMP plug-ins use GTK+, obviously.) This is because 
 3rd-party Photoshop plug-ins are usually available both for the Windows and 
 Macintosh versions of Photoshop. Typically each company uses some homegrown 
-widget library, with a look and feel that is widely different than the normal 
+widget library, with a look and feel that is widely different from the normal 
 Windows common control look and feel, or the GTK+ look and feel. </p></quote>
 
 <p>Ironically, we covered this topic about 2 and a half years ago in
@@ -492,7 +492,7 @@ desktop mode:</p>
 
 <p>Tony Lambregts thought of some of the problems with it:</p>
 <quote who="Tony Lambregts"><p>
-So if I understand this correctly all programs will share the same 
+So if I understand this correctly, all programs will share the same 
 desktop. Is it also true that I cannot specify in winecfg that one 
 program can run full screen and another in a desktop window.
 </p><p>
@@ -501,17 +501,17 @@ If this is the case we will have a fair amount of crying over this one.
 
 <p>Vitaliy Margolen cited a specific example that could be a problem:</p>
 <quote who="Vitaliy Margolen"><p>
-Ok so now say with Steam and all of it's games - it will be almost 100%
-unusable! Because we still haven't fixes managed/unmamaged windows. And
+Ok so now say with Steam and all of its games - it will be almost 100%
+unusable! Because we still haven't fixed managed/unmamaged windows. And
 Steam itself would be on top of everything. So the way people were able
-to work-around this is by putting Steam into virtual desktop. Now that
+to work-around this is by putting Steam into a virtual desktop. Now that
 means their game will run in the same desktop as well.
 </p><p>
 We really really really have to fix managed/unmanaged mode then. I can't
 even imagine how many people will stay with current or older Wine because
 of this patch.
 </p><p>
-Also I remember some users were using other two parameters of the desktop
+Also I remember some users were using the other two parameters of the desktop
 (top left corner - changing manually in the registry). I didn't seen
 anything that indicates they are still supported with this patch.
 </p></quote>

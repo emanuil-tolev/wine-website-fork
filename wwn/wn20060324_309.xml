@@ -206,7 +206,7 @@ it won't for quite some time.  It will be quite a few years before
 software specifically targets Vista, although it's likely Microsoft
 Office will lead the way.  It's only been within the last year or so
 we've seen Windows 98 begin to be unsupported.  So it'll be a while before
-we have to worry Vista (especially now that the release has been pushed
+we have to worry about Vista (especially now that the release has been pushed
 out until 2007.)</p>
 
 <p>Mike Hearn shared some info this week about some of the API changes
@@ -217,7 +217,7 @@ Potentially this is old news, but via Raymond Chen we learn of this page:
  <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnlong/html/AppComp.asp">
  http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnlong/html/AppComp.asp</a></ul></p><p>
 
-Which talks about Vistas application compatibility. Interesting points
+Which talks about Vista's application compatibility. Interesting points
 that stand out:
 <ul>
 <li> They are dropping WinHelp and CHM support. You'll have to install it
@@ -232,7 +232,7 @@ that stand out:
  error is suppressed to stop installers tripping up).</li>
 
 <li> They dropped D3D RM. Not many apps use this but I think at least my
- fathers sailing game does.</li>
+ father's sailing game does.</li>
 </ul></p><p>
 So there we have it - this appears to be the first release in which they
 simply started dropping APIs.
@@ -282,10 +282,10 @@ It's actually defined as:
 
 <p>Not so pretty, eh?  It also generates GCC warnings due to the casts, which 
 is generally considered a bad thing.  Mike McCormack sent a series of patches 
-last week to replace code like that.  It sparked some controversy whether his 
+last week to replace code like that.  It sparked some controversy over whether his 
 patches were actually better or not.  Rob Shearman fired the first shot:</p>
 <quote who="Rob Shearman"><p>
-Why don't we fix the macros as suggested by Francois, rather than
+Why don't we fix the macros as suggested by Fran&ccedil;ois, rather than
 preventing its use? It seems like a big waste of time to have submitted
 all of the patches to the files using windowsx.h when fixing the macros
 is necessary for Winelib anyway.</p></quote>
@@ -296,15 +296,15 @@ No, it's not a waste of time.  Having warning free Wine source code is
 far more important than any warnings that might be in 3rd party winelib 
 code.
 </p><p>
-Francois' solution is still not perfect, as it requires use of a 
+Fran&ccedil;ois' solution is still not perfect, as it requires use of a 
 non-portable C construct.
 </p></quote>
-<p>Rob didn't think that was an issue and reminded everyone of Francois'
+<p>Rob didn't think that was an issue and reminded everyone of Fran&ccedil;ois'
 original idea:</p>
 <quote who="Rob Shearman"><p>
 We're trying to work around GCC warnings that probably aren't generated 
 using any other compiler so using non-portable C constructs is perfectly 
-fine. Here is Francois' solution again:
+fine. Here is Fran&ccedil;ois' solution again:
 <ul><code>
 #ifndef WINE_CAST<br />
 # if __GNUC__<br />
@@ -315,8 +315,7 @@ fine. Here is Francois' solution again:
 #endif<br /><br />
 
 #define Header_SetImageList(hwnd,himl) 
-  (HIMAGELIST)SNDMSGA((hwnd),HDM_SETIMAGELIST,0,(LPARAM)himl)
-    WINE_CAST(HIMAGELIST, SNDMSGA((hwnd),HDM_SETIMAGELIST,0,(LPARAM)himl))
+ &#160;  WINE_CAST(HIMAGELIST, SNDMSGA((hwnd),HDM_SETIMAGELIST,0,(LPARAM)himl))
 </code></ul></p><p>
 
 It seemed to be ignored by both you and Alexandre last time it was sent, 
@@ -358,7 +357,7 @@ typesafe, it just looks like it is.</p></quote>
 within applications:</p>
 <quote who="Rauschi"><p>
 
-I think it would be very useful to disallow an application started with wine i
+I think it would be very useful to disallow an application started with wine
 to connect to the network/internet by an options flag.</p></quote>
 
 <p>That's a valid question - a lot of apps like to "phone home" and that's
