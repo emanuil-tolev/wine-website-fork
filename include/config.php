@@ -35,19 +35,24 @@ class config
                 'Press'           => '{$root}/site/press',
                 'License'         => '{$root}/site/license'
             ),
+           'Download' => array(
+                'Get Wine Now'        => '{$root}/site/download'
+            ),
            'Support' => array(
                 'Support'         => '{$root}/site/support',
-                'Download'        => '{$root}/site/download',
-                'Documentation'   => '{$root}/site/documentation',
+                'Getting Help'    => '{$root}/site/getting_help',
                 'FAQ'             => '{$root}/site/docs/wine-faq/index',
-                'Wine Wiki'       => 'http://wiki.winehq.org',
+                'Documentation'   => '{$root}/site/documentation',
                 'HowTo'           => '{$root}/site/howto',
+                'Wine Wiki'       => 'http://wiki.winehq.org',
+                'Live Support Chat' => '{$root}/site/irc',
                 'Bug Tracking'    => 'http://bugs.winehq.org/',
-                'Applications Database'    => 'http://appdb.winehq.org',
-                'Mailing Lists'   => '{$root}/site/forums'
+                'Applications Database' => 'http://appdb.winehq.org',
+                'Paid Support'    => 'http://www.codeweavers.com/'
            ),
            'Development' => array(
                 'Development'     => '{$root}/site/development',
+                'Mailing Lists'   => '{$root}/site/forums',
                 'CVS'             => '{$root}/site/cvs',
                 'Sending Patches' => '{$root}/site/sending_patches',
                 'To Do Lists'     => 'http://wiki.winehq.org/TodoList',
