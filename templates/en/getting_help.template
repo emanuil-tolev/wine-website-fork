@@ -16,7 +16,8 @@
         <a href="{$root}/site/docs/wine-faq/index"><img src="{$root}/images/faq.png" /><br />FAQ</a>
     </td>
     <td valign="top">
-        Most questions can be quickly answered by browsing our <a href="{$root}/site/docs/wine-faq/index">FAQ</a>.
+        Most questions can be quickly answered by browsing our
+        <a href="{$root}/site/docs/wine-faq/index">FAQ</a>.
         This is the first place you should check to see if your question has been answered.
     </td>
   </tr>
@@ -26,8 +27,10 @@
         <a href="{$root}/site/docs"><img src="{$root}/images/docs.png" /><br />Docs</a>
     </td>
     <td valign="top">
-        We recommend that you read our online <a href="{$root}/site/docs">Documentation</a> to find the answer to your question.
-        Also of interest is our <a href="{$root}/site/howto">HowTo</a> which contains some useful information for the first time user.
+        We recommend that you read our online <a href="{$root}/site/docs">Documentation</a>
+        to find the answer to your question. Also of interest is our
+        <a href="{$root}/site/howto">HowTo</a> which contains some useful information for
+        the first time user.
     </td>
   </tr>
 
@@ -69,7 +72,8 @@
         <a href="http://appdb.winehq.org/"><img src="{$root}/images/appdb.png" /><br />AppDB</a>
     </td>
     <td valign="top">
-        If you want help with a single application our Application Database is a good place to look.
+        If you want help with a single application our <a href="http://appdb.winehq.org/">Application Database</a>
+        is a good place to look.
     </td>
   </tr>
   
@@ -78,10 +82,10 @@
         <a href="http://bugs.winehq.org/"><img src="{$root}/images/bugs.png" /><br />Bugzilla</a>
     </td>
     <td valign="top">
-        Our Bugzilla Bug Tracker contains all the issues we have worked on and are currently working on.
+        Our <a href="http://bugs.winehq.org/">Bugzilla Bug Tracker</a> contains all the issues we have
+        worked on and are currently working on.
     </td>
   </tr>
-
   
   <tr bgcolor="#ffffff">
     <td align="center" class="small">
