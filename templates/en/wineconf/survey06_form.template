@@ -1,10 +1,8 @@
 {$error}
 
-<p>We'd like your input as we plan Wineconf this year.</p>
+<p>Please use this form to let us know if you will be attending WineConf06.</p>
 
-<p>Please only answer this if you are planning to come
-(or would come if the answers you give here are
-respected).</p>
+<p>Please only answer this if you are planning to come.</p>
 
 <form name="survey06" action="{$self}" method="post">
 
@@ -21,31 +19,12 @@ respected).</p>
 </tr>
 
 <tr valign="top">
-  <th>Day of Week:</th>
+  <th>Room Preference:</th>
   <td>
-    <input type="radio" name="q[day]" value="weekdays" />Weekdays<br />
-    <input type="radio" name="q[day]" value="fri-sat" />Friday - Saturday<br />
-    <input type="radio" name="q[day]" value="sat-sun" />Saturday - Sunday<br />
-  </td>
-</tr>
-
-<tr valign="top">
-  <th>Date:</th>
-  <td>
-    <input type="checkbox" name="q[date][]" value="05-13-2006" />May 13th, 2006<br />
-    <input type="checkbox" name="q[date][]" value="07-29-2006" />July 29th, 2006<br />
-    <input type="checkbox" name="q[date][]" value="09-16-2006" />September 16th, 2006<br />
-    <span class="small">(check all dates you can make)</span>
-  </td>
-</tr>
-
-<tr valign="top">
-  <th>Location:</th>
-  <td>
-    <input type="radio" name="q[place]" value="UK" />United Kingdom<br />
-    <input type="radio" name="q[place]" value="DE" />Try to see if Stuttgart would have us again<br />
-    <input type="radio" name="q[place]" value="MN" />Go back to St. Paul when it's warm<br />
-    <input type="radio" name="q[place]" value="OTHER" /> Other (put in comments)
+    <input type="radio" name="q[room]" value="none" />I do not require a room.<br />
+    <input type="radio" name="q[room]" value="fri-sat" />I would like a room for Friday night and Saturday night.<br />
+    <input type="radio" name="q[room]" value="fri-sun" />I would like a room for Friday night through Sunday night.<br />
+    <input type="radio" name="q[room]" value="unsure" />I am not sure if I am coming, add 1/3 of a room for me.
   </td>
 </tr>
 
@@ -58,6 +37,6 @@ respected).</p>
 
 <p><input type="submit" name="submit" value=" Submit Survey " class="button" /></p>
 
-<input type="hidden" name="fields" value="name|email|day|date|place|comment" />
+<input type="hidden" name="fields" value="name|email|room|comment" />
 
 </form>
