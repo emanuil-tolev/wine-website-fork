@@ -1,48 +1,62 @@
 <!--TITLE:[Wine for Debian based distributions]-->
 
-<h1><a name="debian"></a><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0">
-Wine for Ubuntu, Debian, and Debian-based distributions</h1>
+<h1><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Linux" border="0">
+Wine for Ubuntu, Debian, and Debian-based distributions
+<img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></h1>
 
 <p>Debian and Debian-based distributions, such as Ubuntu, utilize a special tool
 for managing packages known as APT.  APT is able to automagically install all of
 the needed dependencies for a software package, as well as keep the package 
 up to date, by scanning what are known as APT repositories.  Debian-based 
 distributions have their own repositories of software, many of which include
-Wine, however we keep the latest available packages here for download.</p>
+Wine, however we keep our own repository of the latest available packages here 
+for download.</p>
 
-<p>Packages here are designed to function on Debian unstable and the latest stable 
-Ubuntu, and they should replace the older Debian-provided ones.</p>
+<p>Packages here are designed to function on Ubuntu Dapper (6.06) and Ubuntu 
+Breezy (5.10).  The Dapper packages may work on Debian unstable, however this is
+not supported.  None of these packages will work at this time for Debian stable 
+(sarge), however a backport could become available at a future date.</p>
+
 
 <h2>Installing from the WineHQ APT Repository with Synaptic:</h2>
 
 <p>To install Wine from the WineHQ APT repository, you need to configure APT to
 look in the right place for the Wine packages.  On Ubuntu systems, and those 
 using the Synaptic Package Manager, this can be done easily by opening up 
-Synaptic and selecting Settings->Repositories.  Then click add, select custom, 
-and enter the following:</p>
+Synaptic (System->Administration->Synaptic Package Manager) and selecting 
+Settings->Repositories.  Then click add, select custom, and enter one of the 
+following:</p>
 
-<i><p>deb http://wine.sourceforge.net/apt/ binary/</p></i>
+<p><b>For Ubuntu Dapper (6.06):</b><br>
+<i>deb http://wine.budgetdedicated.com/apt dapper main</i></p>
+<p><b>For Ubuntu Breezy (5.10):</b><br>
+<i>deb http://wine.budgetdedicated.com/apt breezy main</i></p>
 
-<img src="{$root}/images/distro/synaptic-repository-binary2.png" alt="Synaptic Package Repository Screenshot" border="0">
+<img src="{$root}/images/distro/synaptic-repository-binary3.png" alt="Synaptic Package Repository Screenshot" border="0">
 
 <p>Then, simply click reload and search for the package 'wine' for installation. 
-If you already have a 'wine' package installed, selecting mark all upgrades and
-opting for the "smart upgrade" option should update Wine to the newest version.
+If you already have a 'wine' package installed, selecting mark all upgrades 
+should update Wine to the newest version.
 </p>
+
 
 <h2>Getting source packages from the repository</h2>
 
 <p>Currently, we only have i386 binary packages available. If you do not use an 
-i386 architecture, or wish to compile the package in an optimized way, you can 
-build the wine package using the source repository instead. To do this, add a 
-source repository with the the following:</p>
+i386 architecture, or wish to compile the package in a special or optimized way,
+you can build the wine package using the source repository instead. To do this, 
+add a source repository with one of the following:</p>
 
-<i><p>deb-src http://wine.sourceforge.net/apt/ source/</p></i>
+<p><b>For Ubuntu Dapper (6.06):</b><br>
+<i>deb-src http://wine.budgetdedicated.com/apt dapper main</i></p>
+<p><b>For Ubuntu Breezy (5.10):</b><br>
+<i>deb-src http://wine.budgetdedicated.com/apt breezy main</i></p>
 
 <p>Then, see the instructions below for building the package in the console. 
 Most users, however, will neither need nor want to do this.</p>
 
-<img src="{$root}/images/distro/synaptic-repository-source2.png" alt="Synaptic Package Repository Screenshot" border="0">
+<img src="{$root}/images/distro/synaptic-repository-source3.png" alt="Synaptic Package Repository Screenshot" border="0">
+
 
 <h2>Installing from the WineHQ APT Repository with the console:</h2>
 
@@ -54,22 +68,24 @@ use your favorite text editor to open the file /etc/apt/sources.list or use the
 console editor by typing '<b>nano /etc/apt/sources.list</b>' and then add the 
 following lines to the end:</p>
 
-<i><p>deb http://wine.sourceforge.net/apt/ binary/<br>
-deb-src http://wine.sourceforge.net/apt/ source/</p></i>
+<p><b>For Ubuntu Dapper (6.06):</b><br>
+<i>deb http://wine.budgetdedicated.com/apt dapper main</i><br>
+<i>deb-src http://wine.budgetdedicated.com/apt dapper main</i></p>
+<p><b>For Ubuntu Breezy (5.10):</b><br>
+<i>deb http://wine.budgetdedicated.com/apt breezy main</i><br>
+<i>deb-src http://wine.budgetdedicated.com/apt breezy main</i></p>
 
 <p>Then, you can run '<b>apt-get update</b>' to update APT's package information. 
 Finally, to install Wine, do '<b>apt-get install wine</b>'.</p>
 
-<p>If you want to make sure that apt-get will install the WineHQ wine package
-instead of the Debian wine package (which usually has the same version),
-then add something like the following entry to /etc/apt/preferences:</p>
+<p>If you are using Debian and want to make sure that apt-get will install the 
+WineHQ Wine package instead of the Debian Wine package (which usually confuses 
+APT by having the same version number), then you will need to add something like
+the following entry to /etc/apt/preferences:</p>
 
 <i><p>Package: wine<br>
 Pin: release l=WineHQ APT Repository<br>
 Pin-Priority: 1000</p></i>
-
-<p>Or alternatively use a modified rule to adjust the installation relationship
-between WineHQ and Debian packages in a different way.</p>
 
 <h2>Building the Wine Package from Source using APT:</h2>
 
@@ -92,5 +108,6 @@ as root.</p>
 packages are available here: 
 <a href=http://sourceforge.net/project/showfiles.php?group_id=6241&package_id=174803>Ubuntu/Debian Unstable Packages</a></p>
 
-<p>If you wish to use these packages, you'll have to install them by hand
-using dpkg -i</p>
+<p>If you wish to use these packages, you'll have to install them by hand, 
+such as by using dpkg -i</p>
+
