@@ -50,16 +50,6 @@ To connect to the US server, run
  </td></tr>
  </table>
 
-To connect to the EU server, run
-
- <table width="500" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>
- export CVSROOT=:pserver:cvs@rhlx01.fht-esslingen.de:/home/wine<br>
- cvs login
- </span>
- </td></tr>
- </table>
-
 Use &quot;cvs&quot; as the password (without the quotes). Note that
 <code>/home/wine</code> is a path on the <b>server</b>, not on your machine.
 
