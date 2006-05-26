@@ -1,0 +1,18 @@
+<news>
+  <date>May 26, 2006</date>
+  <title>Picasa for Linux</title>
+  <body>
+<p>Google just released <a href="http://picasa.google.com/linux/">Picasa for 
+Linux</a>.  In case you haven't used it, Picasa is an advanced image archiving 
+tool that also includes some basic photo manipulation features.  Interestingly, 
+there's some technical details available about how the Linux version came to be.
+The port was done using Wine and in the process over 
+<a href="http://code.google.com/wine.html">200 patches</a> were contributed 
+back to the Wine project.  The final product ships with a self-contained 
+version of Wine and includes important features such as camera access using 
+gPhoto.  Dan Kegel sent an email to the wine-devel mailing list 
+<a href="http://www.winehq.com/pipermail/wine-devel/2006-May/047806.html">providing more details</a> of this unique port.  
+</p><p>Go forth and 
+<a href="http://picasa.google.com/linux/download.html">download</a>.</p>
+ </body>
+</news>
