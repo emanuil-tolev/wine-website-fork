@@ -89,7 +89,7 @@ Its main goal is to <a href="http://www.skithe14ers.com/">be inspired</a>. It al
 <section 
 	title="News: Picasa, Wine 0.9.14, LJ Article"
 	subject="News"
-	archive="http://www.winehq.org/?announce=1.118">
+	archive="http://www.winehq.org/?announce=1.118"
 	posts="3"
 >
 <topic>News</topic>
@@ -112,7 +112,7 @@ After that, work began to port Direct3D 8 to the new library, wined3d,
 used by D3D9.  Since then, work has branched out into many areas.  We've
 picked up some new developers along the way, which is great.  </p><p>
 
-I mentioned the following in wine-devel about a recent Linux Journal
+I mentioned the following on wine-devel about a recent Linux Journal
 article:</p>
 <quote who="Brian Vincent"><p>
 I just saw the May issue of Linux Journal and it has an article titled
@@ -143,7 +143,7 @@ tested with Wine 0.9.6 and then has a paragraph discussing
 <tt>~/.wine/config</tt>.  I think it's a remnant of an old installation.]
 </p></quote>
 <p>
-Uwe Bonnes, Stefan Maunz, and Marcus Meissner attended Linuxtag in 
+Finally, Uwe Bonnes, Stefan Maunz, and Marcus Meissner attended Linuxtag in 
 Wiesbaden a few weeks ago.  Marcus provided 
 <a href="http://gallery.kuschelt.net/main.php?g2_view=core.ShowItem&amp;g2_itemId=93395">a picture</a>
 showing Stefan on the left and Uwe next to him.  Check out the nice Wine
@@ -165,8 +165,9 @@ You might have missed some of this if you only read things like Slashdot or
 wine-devel.
 </p><p>
 First, one of the most interesting revelations came from Linux Today and
-<a href="http://www.linuxtoday.com/infrastructure/2006052601826NWSWRL">a
-description</a> of the port by Chris DiBona.  Chris revealed that Google
+Chris DiBona's
+<a href="http://www.linuxtoday.com/infrastructure/2006052601826NWSWRL">
+description</a> of the port.  Chris revealed that Google
 Earth is slated to be the next app ported.  From that report:</p>
 <quote who="Chris Dibona"><p>
 Picasa, founded in 2001, was purchased by Google in July of 2004, and the photo 
@@ -193,9 +194,12 @@ verson of Google Earth to see if it'll run.</p><p>
 
 Now, back in February I conjectured that Google would probably provide a copy
 of Wine to run Picasa with and that it would be a straight up Windows app rather
-than a traditional Winelib port.  Expect the same for Google Earth.  Even
+than a traditional Winelib port.  That proved to be the case and you can expect
+the same for Google Earth.  Even
 more important, Google Earth and Picasa will likely be able to share the same
-version of Wine libraries, so we may see a collection of desktop apps appearing.</p>
+version of Wine libraries, so we may see a collection of desktop apps appearing
+for Linux similar to the <a href="http://pack.google.com/">Google
+Pack</a> available for Windows.</p>
 <p>Okay, back to the news about Picasa.  If you're unfamiliar with this
 program it's an image archive/management tool.  Besides just storing 
 pictures and making them searchable, there's a lot of features like mail
@@ -217,7 +221,7 @@ an open line of communication from the beginning.  </p>
 <a href="http://picasa.google.com/linux/">Picasa on Linux</a> page describes
 some of the features of the port.  Slashdot 
 <a href="http://slashdot.org/article.pl?sid=06/05/26/0310229">covered</a> 
-the story with a post by Chris and some positive comments,
+the story with a post by Chris and included some positive comments,
 <quote who="Chris DiBona">
 Picasa for Linux uses Wine internally; this shows a bit in the interface, but 
 it works even better than we had hoped. ... 
@@ -515,7 +519,8 @@ wine's msi innerworkings.
 
 <ul>
 <li><a href="http://msdn.microsoft.com/library/en-us/msi/setup/ordering_file_sequence_numbers_in_a_cabinet_file_table_and_media_table.asp">
-http://msdn.microsoft.com/library/en-us/msi/setup/ordering_file_sequence_numbers_in_a_cabinet_file_table_and_media_table.asp</a>
+http://msdn.microsoft.com/library/en-us/msi/setup/
+ordering_file_sequence_numbers_in_a_cabinet_file_table_and_media_table.asp</a>
 </li>
 <li><a href="http://msdn.microsoft.com/library/en-us/msi/setup/file_table.asp?frame=true">
 http://msdn.microsoft.com/library/en-us/msi/setup/file_table.asp?frame=true</a>
