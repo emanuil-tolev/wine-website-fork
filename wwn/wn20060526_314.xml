@@ -209,12 +209,12 @@ designed interface. </p>
 <p>Dan Kegel broke the news on wine-devel about the port.  His email is 
 below.  Of note is that CodeWeavers contributed 
 <a href="http://code.google.com/wine.html">225 patches</a> back to Wine
-to get Picasa working.  Actually, the count of 225 dates to April 18th
+to get Picasa working.  Actually, the count of 225 dates to April 18th,
 and there's been more patches since then.  From the announcements made,
-it sounded like these patches were developed in the dark and were about
+it sounded like these patches were developed in the dark and we're about
 to be patch bombed into Wine.  That's not the case.  CodeWeavers employees
 openly contributed these patches as they were developed over the past few
-months.  That's the Right Way to do development and it's great there was
+months.  That's the Right Way to do development, and it's great there was
 an open line of communication from the beginning.  </p>
 
 <p>Google's 
@@ -229,12 +229,12 @@ Thanks to our pals at CodeWeavers who did much of the heavy lifting, and to
 Marcus Meissner, whose libgphoto support patch was a welcome 
 surprise."</quote></p>
 
-<p>Speaking of Marcus' patch, we covered that in two recent issues,
+<p>Speaking of Marcus' patch, we covered that in two recent issues:
 <a href="http://www.winehq.org/?issue=311#gPhoto%20&amp;%20TWAIN">#311</a>
 and <a href="http://www.winehq.org/?issue=313#GPhoto%20/%20TWAIN%20Integration">#313</a>.
 Apparently Google and CodeWeavers made an assumption up front that digital
 cameras all could be accessed like a typical USB storage device.  It seems
-that most can and as a result we have Alexandre's patches from a few weeks
+that most can, and as a result, we have Alexandre's patches from a few weeks
 ago to add HAL event support to Wine.  USB devices will be noticed
 and have drive letters assigned to them automatically.  Well, Marcus'
 patch utilizes the traditional TWAIN interfaces to link the TWAIN API's
@@ -579,5 +579,5 @@ there is no bitmap font that matches it can then look for scalable fonts in
 the cache.
 </p></quote>
 
-<p>Three hours later Huw Davies had a 5 line patch that fixed it.</p>
+<p>Three hours later, Huw Davies had a 5 line patch that fixed it.</p>
 </section></kc>
