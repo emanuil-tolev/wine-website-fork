@@ -25,6 +25,12 @@ class config
         
         // navigation
 	$this->nav = array(
+	    'WineHQ Menu' => array(
+                'WineHQ'          => '{$root}',
+                'AppDB'           => 'http://appdb.winehq.org',
+                'Bugzilla'        => 'http://bugs.winehq.org/',
+                'Wine Wiki'       => 'http://wiki.winehq.org',
+            ),
 	    'About' => array(
                 'About'           => '{$root}/site/about',
                 'Introduction'    => '{$root}/site/about',
@@ -44,10 +50,7 @@ class config
                 'FAQ'             => '{$root}/site/docs/wine-faq/index',
                 'Documentation'   => '{$root}/site/documentation',
                 'HowTo'           => '{$root}/site/howto',
-                'Wine Wiki'       => 'http://wiki.winehq.org',
                 'Live Support Chat' => '{$root}/site/irc',
-                'Bug Tracking'    => 'http://bugs.winehq.org/',
-                'Applications Database' => 'http://appdb.winehq.org',
                 'Paid Support'    => 'http://www.codeweavers.com/'
            ),
            'Development' => array(
