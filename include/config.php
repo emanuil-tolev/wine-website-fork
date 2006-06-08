@@ -52,6 +52,7 @@ class config
            ),
            'Development' => array(
                 'Development'     => '{$root}/site/development',
+                'Developers Guide' => '{$root}/site/docs/winedev-guide/index',
                 'Mailing Lists'   => '{$root}/site/forums',
                 'CVS'             => '{$root}/site/cvs',
                 'Sending Patches' => '{$root}/site/sending_patches',
