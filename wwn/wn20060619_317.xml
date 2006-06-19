@@ -179,7 +179,7 @@ currently have.</p></quote>
 <p>Apparently Vitaliy Margolen picked it up recently and announced some
 changes:</p>
 <quote who="Vitaliy Margolen"><p>
-Here is last instalment of safedisc support in Wine.
+Here is latest installment of safedisc support in Wine.
 </p><p>
 The major change from last version is the way user space talks to ntoskrnl. Now
 I'm passing the information through wineserver with a help of 4 server calls.
@@ -352,6 +352,7 @@ At the end of the serie, we should have:
 <li> line number information</li>
 
 What's not working yet:
+<ul>
 <li> some variables in functions (when using registers) -&lt; will require
   CFA parsing (and translation into FPO)</li>
 <li> single stepping through trampolines (cross-DLL calls). BUT, THIS
@@ -363,6 +364,6 @@ What's not working yet:
 <li> inlined functions are not fully handled (meaning that you won't
   be able to see the inlined function's argument - but this wasn't
   available in stabs debug info)</li>
-<li> nested types are not correctly handled</li></p></quote>
+<li> nested types are not correctly handled</li></ul></p></quote>
 
 </section></kc>
