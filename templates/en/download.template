@@ -24,9 +24,14 @@ for post-installation instructions.</b></p>
     <td align=center><a href="{$root}/site/download-rh">
 	  <img src="{$root}/images/distro/redhat.png" width="50" height="50" alt="RedHat Linux" border="0"></a>
     </td>
-    <td> <b><a href="{$root}/site/download-rh">Red Hat</a></b>
-         binary and source .rpms for RedHat 7.3, 8, 9, Fedora Core 1, 2, 3 and 4, White Box Enterprise Linux 3.0 (RHEL 3.0 compatible), CentOS 4 (RHEL 4.0 compatible)</td>
-    <td><a href="mailto:vberon@mecano.gme.usherb.ca">Vincent B&eacute;ron</a></td>
+    <td> <b><a href="http://download.fedora.redhat.com/pub/fedora/linux/extras/5/i386/repodata/repoview/W.group.html">Red Hat / Fedora</a></b>
+        binary and source .rpms for RedHat 8, 9, Fedora Core 3, 4, 5, White
+        Box Enterprise Linux 3.0 (RHEL 3.0 compatible), CentOS 4 (RHEL 4.0
+        compatible).  The wine meta package is available via <tt>yum</tt> 
+        through the Fedora Extras repository by running <tt>$ yum install
+        wine </tt>"
+         </td>
+    <td><a href="mailto:andreas.bierfert_at_lowlatency.de">Andreas Bierfert</a></td>
   </tr>
   
   <tr bgcolor="#ffffff">
