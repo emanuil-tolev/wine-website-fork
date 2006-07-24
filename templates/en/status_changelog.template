@@ -2,6 +2,33 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since July 17, 2006:</p>
+
+ <ul>
+ <li>ADD - Stefan D&#246;singer as worker to d3d8.dll </li>
+ <li>ADD - Stefan D&#246;singer as worker to d3d9.dll </li>
+ <li>ADD - Stefan D&#246;singer as worker to ddraw.dll</li>
+ <li>ADD - Stefan D&#246;singer as worker to wined3d.dll</li>
+ <li>ADD - Ivan Gyurdiev as worker to d3d8.dll </li>
+ <li>ADD - Ivan Gyurdiev as worker to d3d9.dll </li>
+ <li>ADD - Ivan Gyurdiev as worker to wined3d.dll</li>
+ <li>ADD - Jason Green as worker to d3d8.dll </li>
+ <li>ADD - Jason Green as worker to d3d9.dll </li>
+ <li>ADD - Jason Green as worker to wined3d.dll</li>
+ <li>ADD - Roderick Colenbrander as worker to d3d8.dll</li>
+ <li>ADD - Roderick Colenbrander as worker to d3d9.dll</li>
+ <li>ADD - Roderick Colenbrander as worker to wined3d.dll</li>
+ <li>ADD - Christoph Frick as worker to dinput.dll</li>
+ <li>Remove - Rapha&euml;l Junqueira as worker on d3d8.dll</li>
+ <li>Remove - Rapha&euml;l Junqueira as worker on d3d9.dll</li>
+ <li>Remove - Rapha&euml;l Junqueira as worker on wined3d.dll</li>
+ <li>Remove - Lionel Ulmer as worker on dinput.dll</li>
+ <li>ddraw.dll 80% -&gt; 85%</li>
+ <li>d3d9.dll 65% -&gt; 85%</li>
+ <li>wined3d.dll 65% -&gt; 85%</li>
+ </ul>
+ <br>
+
 <p>Changes since February 22, 2006:</p>
 
  <ul>
