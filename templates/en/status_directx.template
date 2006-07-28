@@ -94,15 +94,15 @@
           <a href="{$root}/site/?issue=311#DirectDraw%20Update">#311</a>,
           <a href="{$root}/site/?issue=314#DirectDraw%20Patch">#314</a></td>
       <td class="pct85">85% complete</a></td>
-      <td>Stefan D&#246;singer,<br>Lionel Ulmer</td>
+      <td>Stefan D&#246;singer,<br>R.Colenbrander,<br>Lionel Ulmer</td>
     </tr>
     <td colspan="5"><strong>DirectInput</strong></td>
     <tr>
     <td>dinput8.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/archive/default.asp?url=/archive/en-us/dx81_vb/directx_vb/Input/VB_Ref/Classes/DirectInput8/directinput8.asp">MSDN: DInput8</a></td>
       <td>None</td>
-      <td class="pct25">25% complete</td>
-      <td></td>
+      <td class="pct50">50% complete</td>
+      <td>R.Colenbrander</td>
     </tr>
     <tr>
     <td>dinput.dll</td>
@@ -110,7 +110,7 @@
       <td><a href="{$root}/site/?issue=116#DirectInput%20Key%20Mapping">#116</a>,
           <a href="{$root}/site/?issue=137#MS%20Write%20Support%20(con't)">#137</a></td>
       <td class="pct70">70% complete</a></td>
-      <td>Christoph Frick</td>
+      <td>Vitaliy Margolen,<br>Christoph Frick</td>
     </tr>
     <td colspan="5"><strong>DirectMusic</strong></td>
     <tr>
