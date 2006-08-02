@@ -1,123 +1,49 @@
-<!--TITLE:[WineConf 2005]-->
+<!--TITLE:[WineConf 2006]-->
 
-<table width="100%"><tr><td><img src="{$root}/images/wineconf/wc05_logo.jpg" width="300" height="152" alt="-LOGO-"></td>
-<td align="right"><center><FONT size="+2"><b>April 30 - May 1, 2005<br>
-Stuttgart, Germany</b></font></center></td></tr></table>
+<table width="100%">
+<tr>
+  <td><img src="{$root}/images/wineconf/wineconf_logo.jpg" width="295" height="108" alt="-LOGO-"></td>
+  <td align="right"><center><FONT size="+2"><b>September 16 - 17, 2006<br> Reading, UK</b></font></center></td>
+</tr>
+</table>
 
-<p>WineConf 2005 will be held in Stuttgart April 30th and May 1st, 2005.  
-You should plan on arriving on April 29th unless you can arrive very early
+<p>WineConf 2006 will be held in Reading September 16th and 17th, 2006.  
+You should plan on arriving on the 15th unless you can arrive very early
 on Saturday.  We'll probably organize an informal dinner on Friday night.
 At this point, much remains to be done and the number of people attending 
 will likely determine the agenda.</p>
 
-<p>You may also be interested in a Samba conference nearby following
-WineConf.   
-<a href="http://www.sambaxp.org/">SambaXP</a> will be held in G&ouml;ttingen,
-Germany on May 2-3.  </p>
+<hr>
 
-<hr />
-<h2>Wiki</h2>
-<p>To help organize travel, we've set up a wiki.  If you'd like to know
-when people are arriving, meeting up, and what's going on, check it out
-at: <a href="http://wineconf.itomig.de">http://wineconf.itomig.de</a>.</p>
-
-<hr />
-<h2>Location</h2>
-<table width="100%"><tr>
-<td> 
-	Institute of Communication Networks and Computer Engineering<br />
-	Stuttgart-Vaihingen Campus<br />
-	University of Stuttgart<br /><br />
-	Pfaffenwaldring 47<br />
-	70569 Stuttgart<br />
-	Germany<br /><br />
-	Lecture Halls V47.03, V47.04, and V47.05<br /><br />
-
-	<a href="{$root}/site/wineconf/travel">additional travel 
-        information, including hotel reservations</td>
-
-
-<td align="right"><img src="{$root}/images/wineconf/wc05-map-composite.jpg" width="282" height="193" alt="travel information"><br />&nbsp;
-</td></tr></table>
-
-<hr />
-<h2>RSVP</h2>
-<p>Use our <a href="{$root}/site/wineconf/rsvp">RSVP Form</a> to let us know you plan on attending this year.  Limited funds are available for those needing
- travel assistance.  Please make a note in the comment field of the form if
- you're interested.   Also, you'll need to RSVP separately for the hotel.
- See the <a href="{$root}/site/wineconf/travel">travel information</a>
- link above for hotel info. </p>
-
-<hr />
-<h2>Agenda</h2>
-<p>At this point the plan is to have a somewhat open schedule with time for 
- informal discussion.  We'll likely structure the conference similar to last 
- year's with a set of formal presentations with plenty of time at the end of 
- each for questions.  Last year we had about 10 presentations and that number
- will likely remain about the same.  As we get closer to the conference we'll 
- announce a formal agenda.</p>
-
-<p>Please note: WineConf is focused on developers and Wine's architecture.
- It is not oriented toward end users.  
-</p>
-
-
+<p>More details coming soon...</p>
 
 <hr>
-<h2>Remote Participation</h2>
-<p>After last year's failure to provide real time audio and video streaming, we will
-not be making that a priority this year.  We will have networking available within
-the conference room and many people will be on IRC.  </p>
 
+<h2>Will you attend?</h2>
 
+<p><a href="{$root}/site/wineconf/rsvp">RSVP</a>.</p>
 
 <hr>
-<h2>Discussion</h2>
-<p>We have established a 
-<a href=http://www.winehq.org/mailman/listinfo/wineconf>mailing list 
-specific to Wineconf</a>.  We recommend that anyone planning on attending
-subscribe, as this will be where we discuss and develop details on the program.
-This will also be a great place for people to connect to share rides and or
-coordinate travel schedules.</p>
 
+<h2>Travel Information</h2>
 
-
+<p><a href="{$root}/site/wineconf/travel">Travel Details</a>.</p>
 
 <hr>
-<h2>Special Thanks To</h2>
-A lot of people have stepped up to help put this all together.  We'd like
-to thank:
-<ul><li>Ulrich Gemkow and the University of Stuttgart's
-    <a href="http://www.ikr.uni-stuttgart.de/en/Welcome.html">Institute 
-        of Communication Networks and Computer Engineering</a>
-        for hosting this event.
-    <li> The University of Stuttgart's student association, Fachschaft 
-	Elektrotechnik und Informationstechnik for help to organize
-	the meeting area.  </li>
-    <li>Wirtschaftsf&ouml;rderung Region Stuttgart: the Stuttgart Region 
-        Economic Development Corporation and their 
-        <a href="http://opensource.region-stuttgart.de/">open source
-	initiative</a>
-    <li><a href="http://www.itomig.de">ITOMIG</a> and David G&uuml;mbel
-        have lent their expertise with the area and put in a lot of time.</li>
-    <li>Last, but certainly not least, Jeremy White of CodeWeavers and
-        Shachar Shemesh of LinGNU have invested the time and $$$ to get
-        this conference off the ground.</li>
-</ul>
 
-
-<hr>
 <h2>Help us Out!</h2>
-Donations are gratefully accepted.  Please use this form to send us funds:
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-	  <input type="hidden" name="cmd" value="_xclick">
 
-	  <input type="hidden" name="business" value="donate@winehq.com">
-	  <input type="hidden" name="item_name" value="Wine donation">
+<p>Donations are gratefully accepted.  Please use this form to send us funds:</p>
 
-	  <input type="image" src="{$root}/images/ppdonate.gif" name="submit"
-      alt="Donate to Wine with PayPal!">
-      </form>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_xclick">
+
+<input type="hidden" name="business" value="donate@winehq.com">
+<input type="hidden" name="item_name" value="Wine donation">
+
+<input type="image" src="{$root}/images/ppdonate.gif" name="submit"
+alt="Donate to Wine with PayPal!">
+</form>
 
 
 <p>&nbsp;</p>
