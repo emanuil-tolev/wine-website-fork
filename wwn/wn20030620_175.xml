@@ -302,7 +302,7 @@ What I found, and could fix:
 	Fixed by ensuring tablet driver was functional.
 	I don't know if the errors need to be caught, or
 	not, but I think they were causing crashes.
-	This is probably related to synchonous/asynchonous
+	This is probably related to synchronous/asynchronous
 	X modes.</li>
 
 	<li>In Photoshop, an infinite loop in method FindOpenContext
@@ -310,7 +310,7 @@ What I found, and could fix:
 
 	<li>In Painter, a number of methods didn't handle NULL prameters
 	properly, resulting in various crashes.
-	Wintab uses NULL paramters to signify a query for size of
+	Wintab uses NULL parameters to signify a query for size of
 	available data, or to signify a request to flush the Wintab
 	packet queue.</li>
 </ul></p><p>

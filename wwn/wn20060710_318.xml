@@ -172,8 +172,8 @@ He wrote in this week to let everyone know he'd made some changes to the
 way the packages are configured:</p>
 <quote who="Andreas Bierfert"><p>
 some of you might have noticed that building 0.9.16 for Fedora Extras took me
-more time then the releases before. This was because of the discussions from a
-couple of weeks ago on this list. As a result I did spent some time on the
+more time than the releases before. This was because of the discussions from a
+couple of weeks ago on this list. As a result I did spend some time on the
 mentioned issues and came across an easy solution:
 </p><p>
 If you install wine form the Fedora Extras repository via <tt>yum install 
@@ -186,7 +186,7 @@ to fewer 'false positives' on bug reports and for better user integration and
 satisfies some of the things you, the wine folks, brought up.
 </p><p>
 Thanks for the input on this matter. I hope that this is only the first step
-towards a good relation ship between wine and the fedora packages for wine and
+towards a good relationship between wine and the fedora packages for wine and
 that emails like the ones from a couple of weeks back won't happen again...
 </p><p>
 So for the announcement: 
@@ -216,7 +216,7 @@ suggested to post it here.
 </p><p>
 
 Currently I'm working on a scan-after-write functionality: Whenever a file was 
-changed the virusscanner checks the file.
+changed the virus scanner checks the file.
 </p><p>
 My plan is to hook in NtWriteFile() (dlls/ntdll/file.c), because whenever a 
 windows program writes to a file this function is called. Within this 
@@ -274,7 +274,7 @@ we can't provide such an API.</quote></p>
 ClamAV to take a file descriptor as input.  Kari Hurtta pointed
 out that ClamAV already can take a stream of data.  Kuba Ober
 was concerned that would kill performance, especially since
-there's a lot of case where scanning isn't completely necessary.  
+there's a lot of cases where scanning isn't completely necessary.  
 Chris decided to go back and take a closer look at the functionality
 already built into ClamAV.
 </p>
@@ -356,7 +356,7 @@ until someone teaches GCC the MSVC calling convention.
 To prevent confusion: the "normal" 32-bit Wine version runs fine on x86_64
 Linux. This is the version you'll want to use, it allows you to run 32-bit
 Windows stuff. The remarks above are about running 64-bit Windows
-executables which are virtually non-existant at the moment.
+executables which are virtually nonexistent at the moment.
 </p></quote>
 
 <p>Kuba Ober agreed to take a stab at looking into the GCC side of things
@@ -382,7 +382,7 @@ and about alternatives to -msvc.
 </p><p>
 I'd be submitting a patch to mingw32 people as soon as it's done, in addition
 to posting it here. Note that the only way for me to test it would be to
-inspect the assembly output, as I'm not running 64 bit environment here (even
+inspect the assembly output, as I'm not running a 64 bit environment here (even
 though I'm on a 64 bit AMD processor). So it'd need testing from 64 bit
 people here at least.
 </p></quote>
@@ -397,7 +397,7 @@ though) for about a year now, but it doesn't solve the problem. There
 is much more ABI differences including the exception handling (and yes,
 I mean exception handling in C, not only C++) where MSVC generates special
 unwinding information for the functions. I'm not sure if it would be
-even possible to mix the ABI this way, but I'm open to hear some suggestions.
+even possible to mix the ABI this way, but I'm open to some suggestions.
 </quote></p>
 
 <p>Kuba asked for any pointers regarding the MSVC x86 ABI.  Filip 
@@ -433,7 +433,7 @@ the DWARF2 debugging format to Wine (see WWN
 He followed that up with a request for testers:</p>
 <quote who="Eric Pouech"><p>
 As you may have seen, there's now some support for the dwarf2 debug 
-format (instead of stabs) in the Wine tree
+format (instead of stabs) in the Wine tree.
 I'd like to get some feedback on the overall feedback on how it behaves.
 To do so, you need to reconfigure Wine with something like
 CFLAGS="$CFLAGS -gdwarf-2" ./configure
@@ -510,9 +510,9 @@ different formatting:
 	posts="1"
 >
 <topic>Documentation</topic>
-<p>GUID's, Globally Unique Identifiers, on Windows are used for all
+<p>GUIDs, Globally Unique Identifiers, on Windows are used for all
 sort of things, including identifying various components.  Detlef
-Riekenberg provided a link to a site that catelogs a ton of them:</p>
+Riekenberg provided a link to a site that catalogs a ton of them:</p>
 <quote who="Detlef Riekenberg"><p>
 Found a big online GUID-List:
 <ul>

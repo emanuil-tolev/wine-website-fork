@@ -285,7 +285,7 @@ consumed a lot of the rest of the thread.  </p>
 
 <p>In the end, Dan <a href="http://wiki.winehq.org/DanKegel">provided</a>
 a list of things he'd like to see fixed.  It included getting Windows
-developers to take Wine seriously by getting IDE's and debuggers working well.
+developers to take Wine seriously by getting IDEs and debuggers working well.
 He also listed some broken installers that needed to get working.
 </p>
 
@@ -324,7 +324,7 @@ Questions to consider:
  <li> Are we turning away potential developers for any reason? Could we do
   more to attract new hackers?</li>
 
- <li> Are the projects fundamental processes serving us well?</li>
+ <li> Are the project's fundamental processes serving us well?</li>
 
  <li> Any other thoughts for improvement?</li></ul>
 </p><p>
@@ -340,14 +340,14 @@ app correctly as I was when I first came to the project, these days I
 nearly take it for granted. Though this may be due to having developed a
 feel for what will work and what won't :)
 </p><p>
-So clearly we're doing something right ... I also think we are doing OK
+So clearly we're doing something right... I also think we are doing OK
 with attracting and keeping new hackers. The influx of new Direct3D talent
 lately is fabulous for instance. The experiences of our SoC students will
 be useful in assessing how to improve the learning curve and we need to
 tap this resource better than we did last year.
 </p><p>
 In other words, I think we're doing pretty well. I feel more
-positive about the project that I have done for a long time. It seems like
+positive about the project than I have done for a long time. It seems like
 as Win32 stagnated and slowed down over the past 6 years we've been able
 to turn the tide and add our own code faster than Microsoft can, which is
 the tipping point.
@@ -355,7 +355,7 @@ the tipping point.
 So areas for improvement?
 <ul>
  <li> We seem to be doing very well in recruiting hackers who work on one
-  particular DLL or area and solidly improve that, but a less well
+  particular DLL or area and solidly improve that, but less well
   when it comes to 'general purpose' hackers who just take random apps
   and make them work.
  <br /><br />
@@ -364,7 +364,7 @@ So areas for improvement?
   XYZ app" followed by 6 patches to 6 different DLLs.
   </li>
 
- <li> No clear roadmap to 1.0 - for 0.9 we had Dimis TODO list and it was
+ <li> No clear roadmap to 1.0 - for 0.9 we had Dimi's TODO list and it was
   quite satisfying to see them go green as tasks were completed. I guess
   we have a 1.0 TODO list too but I never see any updates to it :(</li>
 
@@ -387,7 +387,7 @@ What do you guys think?
 about Wine 1.0.  Raphael Junqueira responded with some general comments
 about a few of those areas:</p>
 <quote who="Raphael Junqueira"><p>
-Well, winecfg need more improvements to be really usable (ie. understandable)
+Well, winecfg needs more improvements to be really usable (i.e. understandable)
 by a non-technical end user.
 We need to improve the Wine base installation: users should not have to
 always use winecfg to configure wine; many things must be detected at
@@ -398,7 +398,7 @@ We must work on (free/gnome/kde) desktop integration too.
 For developers, i think we miss (in wiki):
 <ul>
 <li> Wine developer beginning HowTo</li>
-<li> Wine committing process (explaining why AJ never respond when patches are
+<li> Wine committing process (explaining why AJ never responds when patches are
 refused :p )</li>
 <li> simili-doxygen APIs (to find what is implemented/how/where some docs, and
 status)</li></ul>
@@ -505,7 +505,7 @@ is pretty high, and you need a lot of frustration tolerance at first.
 I'm not sure if I would have stayed around if it wasn't for Summer of
 Code 2005. Once you get past this, and figured out how to write your
 code so Alexandre will commit it, development is quite fun. I also agree
-that the whole process improves code quality. It still is hard in to get
+that the whole process improves code quality. It still is hard to get
 started. Unfortunately I don't really know how this can be changed.
 </p><p>
 I think that the effort by some of the more experienced coders to
@@ -526,7 +526,7 @@ EnumMonitors (Test + Implementation) needed a long Time:
 <li> No commit, and no comments for my patch for almost two weeks</li>
 <li> I asked for comments and got one hint from one person.</li>
 <li> Updating, testing and resending the Patch</li>
-<li> next week waiting again without a reaction.</li>
+<li> Next week waiting again without a reaction.</li>
 <li> Asking for comments; one hint from a different person</li>
 <li> loop again &gt; 5 times</li>
 I was frustrated that it needed so many loops from the first patch for the
@@ -575,16 +575,16 @@ notice the instructions are a complete pain in the ass because they
 involve applying a custom patch to Wine.  Nick Law brought it up on 
 wine-devel last week:</p>
 <quote who="Nick Law"><p>
-Opening up the debate again on the World of Warcraft ( WoW ) memory patch.
+Opening up the debate again on the World of Warcraft (WoW) memory patch.
 </p><p>
 Some facts about WoW that may explain why the AppDB page is pretty 
 active and the wow patch for wine 0.9.12 was downloaded over 1000 times 
 from the Appdb page during a 4 week period.... Wow has approximately 6 
-million players that each pay about  $90/year for the priviledge of 
+million players that each pay about  $90/year for the privilege of 
 connecting to a WoW server (Realm). Assuming this figure is broadly 
 correct, Blizzard therefore receives $500,000,000/year just from this 
-game in subscriptions. ( This doesn't include the cost of buying the 
-game in the first place ). Perhaps Blizzard would like to employee a 
+game in subscriptions. (This doesn't include the cost of buying the 
+game in the first place). Perhaps Blizzard would like to employ a 
 programmer fulltime just to work on the wine project to help make Wow 
 run 100% ?.
 </p><p>
@@ -651,10 +651,10 @@ you can get Wine-0.9.10 by running yum install wine from Fedora Extras." Well,
 that is not totally correct. Usually about a week after Wine Project releases a 
 version, Fedora Extras updates to the newest version! Currently, it is at 
 Wine-0.9.13. I believe it will be a week before Fedora Extras releases 
-Wine-0.9.14 packages... I will reply when Wine packages are updated you that 
-an accurate guage is made of the lag...
+Wine-0.9.14 packages... I will reply when Wine packages are updated so that 
+an accurate gauge is made of the lag...
 </p><p>
-Note: For Wine-0.9.13, and it only took 3 days after Wine official 
+Note: For Wine-0.9.13, it only took 3 days after the Wine official 
 release to release it on Fedora Extras. It is a good idea to assume anywhere 
 from 3-5 days for Wine to be updated in Fedora Extras.
 </p><p>
@@ -719,11 +719,11 @@ be added). My implementation uses COM objects as it's standard dlls
 provides support for such tasks. Currently there is one interface
 (IWineShellIntegration) that acts as a factory for specialized objects.
 That could also be implemented using COM Aggregation - when we do that
-we could use QueryInterface instead of GetIntegrationObejct.
+we could use QueryInterface instead of GetIntegrationObject.
 </p><p>
  Some COM objects can run in the address space of the calling process -
 e.g. the trash can be implemented like that. For others it would be a
-waist of resources (e.g. there is no need for every process to watch is
+waste of resources (e.g. there is no need for every process to watch if
 the file associations have changed) - it's enough to load them only
 once. The explorer seems to be a good candidate to create such objects.
  In the attached patch there is one specialized interface - the
@@ -732,8 +732,8 @@ different icon if the file can be trashed (these are not the correct
 icons as wine's shell32 uses a message box instead of a special dialog)
 and calls the trash method then. Currently there is only one built-in
 trash that can't trash anything. (note that SHELL_DeleteFile is called
-in the folders that are decendents of My Computer. If choose delete on a
-file that is a decendent of the '/', it will be deleted without a warning).
+in the folders that are descendants of My Computer. If choose delete on a
+file that is a descendant of the '/', it will be deleted without warning).
 </p></quote>
 
 <p>Ulrich Czekalla replied first:</p>
@@ -753,11 +753,11 @@ cleaner to directly create an IWineTrash object.
 
 If we integrate more closely with the desktop environments we may need
 to have one central object that will know that e.g. KDE 3.4 uses the
-freedesktop.org Trash but KDE 3.3 has it's own Trash implementation. If
+freedesktop.org Trash but KDE 3.3 has its own Trash implementation. If
 we read the Trash CLSID from the registry such an implementation would
 require creating proxy classes or hacks in the class factory. Also by
 storing only one CLSID we don't have a problem which implementation to
-use if a new kind of objects is introduced.
+use if a new kind of object is introduced.
 </p><p>
 Of course when we use COM aggregation instead of a factory pattern we
 will have all the interfaces visible under one CLSID so we will be able
@@ -801,5 +801,5 @@ http://feed43.com/winehq.xml</a>
 individual <a href="http://cvs.winehq.com/cvsweb/lostwages/news/">news</a> files.
 It probably wouldn't be too difficult and Jeremy Newman probably
 wouldn't mind adding such a script to produce it to the webserver.  In
-the mean time, Dan's seems to be working pretty well.</p>
+the meantime, Dan's seems to be working pretty well.</p>
 </section></kc>

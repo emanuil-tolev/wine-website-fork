@@ -353,7 +353,7 @@ customizable (A lot of conditional compilation and hook-functions). Since we
 have fairly special requirements for rsaenh, I could cut down the source code 
 a lot. However, this would make it harder to incorporate code from a newer 
 version of libtomcrypt, once it becomes available. Which way is preferable? 
-Having less code or beeing easily upgradeable?</li></ol></p></quote>
+Having less code or being easily upgradeable?</li></ol></p></quote>
 
 <p>(On a side note, Michael's rsaenh.dll, covered last week in
 WWN issue 

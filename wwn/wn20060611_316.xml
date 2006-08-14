@@ -86,13 +86,13 @@ to complete rewrites of certain areas are in the works.  A lot of the
 discussion is going on in #winehackers, but some of it trickles to the
 mailing list for review.  This week we're going to take a look at shaders.</p>
 
-<p>Shaders are a graphics concept that allow for extremely complex scenes
+<p>Shaders are a graphics concept that allows for extremely complex scenes
 to be rendered very quickly.  They generally come in two flavors: pixel
 shaders and vertex shaders.  At the heart of shaders are complex math
 operations generally involving things like matrices.  Remember all that
-matrix math from calc III?  Me either.  On modern graphics cards these
+matrix math from calc III?  Me neither.  On modern graphics cards these
 math calculations can be performed directly in the specially designed
-GPU's of the graphics cards rather than using the CPU of the computer.
+GPUs of the graphics cards rather than using the CPU of the computer.
 In the end, you get fancy 3D graphics.  Shaders are responsible for 
 creating fog effects, creating lighting and shadowing, etc.  </p>
 
@@ -138,7 +138,7 @@ the patch (it's against the current git tree as of 2:00 AM EST, May
 30th).  Plus, you'll need a video card and driver capable of using
 GLSL (type 'glxinfo' and look for "GL_ARB_shading_language_100") .
 You'll also have to set a new registry key in your Wine installation
-(it is case sensitve):
+(it is case sensitive):
 
 <ul><tt>HKEY_CURRENT_USER\Software\Wine\Direct3D\UseGLSL = "enabled"</tt></ul>
 </p><p>
@@ -181,7 +181,7 @@ fast as ARB shaders for the ones that actually work correctly) and
 gotten a few other things to work correctly.  However, I'm still
 having issues with certain pixel/vertex shader combinations.  Ohsix
 caught on that it may have to do with sampler limits on graphics cards
-and how sampling/textures are handled different in GLSL that with ARB.
+and how sampling/textures are handled differently in GLSL than with ARB.
  I'm not sure at the moment and could use some help.
 <ul>
 <a href="http://cmhousing.net/wine/glsl_hack6.diff">
@@ -212,9 +212,9 @@ on the wiki. </p>
 	posts="15"
 >
 <topic>Multimedia</topic>
-<p>Wine's audio has scrutinized lately.  There's a lot of issues with
+<p>Wine's audio has been scrutinized lately.  There's a lot of issues with
 getting sound to Just Work with Wine, not the least of which is 
-communicating properly to the underlying hardware.  There's also some
+communicating properly with the underlying hardware.  There's also some
 fragmentation going on with Wine's audio.  Rather than having one audio
 driver that works properly, we have five drivers subtly (and even
 not so subtly) broken.  On top of that, other platforms require other
@@ -243,7 +243,7 @@ OpenAL seems to have enough functionality to do the job.
 </p><p>
 Are there any problems with using OpenAL for such a purpose?
 </p><p>
-The reason for using OpenAL is for platforms that dont have alsa/oss/esd/...
+The reason for using OpenAL is for platforms that don't have alsa/oss/esd/...
 support
 For one it gives a chance to test audio on windows for example -- and on mac
 osx (although the winecoreaudio driver is making great progress).
@@ -276,7 +276,7 @@ For recording (1.1 only): start capturing -- poll (get data -- if there)
 The dsound mapping stuff I want to understand better (are there any docs for
 this?) I am sure we can layer it on OpenAL (hopefully good.)
 </p><p>
-PortAudio looks like a good choice as well -- afaict -- but I dont have any
+PortAudio looks like a good choice as well -- afaict -- but I don't have any
 experience with it (not that I had any openal exp when i started that driver)
 </p></quote>
 
@@ -305,7 +305,7 @@ I would like any feedback ppl out there may have.
 tests worked when run in interactive mode.  Nick didn't know there was
 an interactive mode to the tests and after running them he reported,
 <quote who="Nick Burns">
-So I ran dsound_test and winmm_test (interactive mode?) on the command line
+So I ran dsound_test and winmm_test (interactive mode?) on the command line.
 There are some failures -- but no crashing
 Some games like Carmageddon2 are unhappy with openal atm.</quote></p>
 
@@ -357,8 +357,8 @@ Out of interest what are the 11 packages?
 Well from a wine perspective I see that this makes sense, but if you take a look
 at all the dependencies it is another story... installing wine is one thing...
 ending up with zillion dependencies is a whole different story for lots of
-people where e.g. bandwidth is still a problem or which rather want to have a
-slim system. I as a packager sit between the chairs and in this case I see why
+people where e.g. bandwidth is still a problem or who rather want to have a
+slim system. I, as a packager, sit between the chairs and in this case I see why
 splitting up wine made sense in debian and why it made sense for Fedora Extras
 as well. The question is what to split and what to leave in. The stuff that has
 been split from just having one 'wine' package is stuff that made sense and in
@@ -380,7 +380,7 @@ way it is done now made lots of people happy (and gave me positive feedback).
 <li>wine-twain</li></ul></p><p>
 
 These are the 10 packages which are relevant for a 'normal' user where wine and
-wine-tools are the major ones. They are build from the wine sources (without
+wine-tools are the major ones. They are built from the wine sources (without
 winemp3). Then there is:
 <ul>
 <li>wine-debuginfo</li>
@@ -421,7 +421,7 @@ Catching regressions early is critical to fixing them and the faster
 release cycle helps but only if the user upgrades in a timely fashion.
 </p><p>
 Some programs have been Rock Solid for years (eg: SimCity 3000) while
-others are are not. Myst worked for years and then fell victim the
+others are not. Myst worked for years and then fell victim the
 Windows Management rewrite and I have just recently been able to run it
 again but it is still very unstable.
 </p><p>
@@ -435,26 +435,26 @@ to 0.9.0 as I am sure most of you are aware:
 1174 in May 2006
 </ul></p><p>
  Some may call it a flood
-but over all I think this has been a good thing. The real downside to
+but overall I think this has been a good thing. The real downside to
 this is that it takes a lot more of my time to go through each email and
 see if I can assist and that the proper bug links are in place.
 </p><p>
-Going to winecfg has made the product more user friendly but we are
+Going to winecfg has made the product more user friendly but we
 still seem to be a long way away from "It Just Works" in a lot of cases.
 </p><p>
 In the interm I believe the AppDB has helped a lot. I think that the
 work that we have put into it has paid off fairly well to a point. So
 far we have added:
 <ul>
-<li> Applications Maintantainers that can modify application entries on an
+<li> Application Maintainers that can modify application entries on an
 App by App basis.</li>
 
 <li> Notification emails so that people (Administrators, Maintainers and
-Monitors) kept up to date on changes to applications.</li>
+Monitors) are kept up to date on changes to applications.</li>
 
 <li> Bug links to track bugs affecting an application.</li>
 
-<li> Test results to track how well an application runs on a Wine version.
+<li> Test results to track how well an application runs on a Wine version
 and help spot regressions</li>
 
 <li> Lots of small improvements.</li>
@@ -488,25 +488,25 @@ the need for it very well. (trying again)
 <li> More Maintainers:
 
 If you have an app that you run on a regular basis please consider
-becomeing a maintainer for that app.
+becoming a maintainer for that app.
 </li>
 <li> More Administrators:
 
 The Application Queue is not being processed in a timely fashion.
 <ul> </ul>
 For myself I am busy with my day job, working on upgrading bugzilla, and
-burnt out/frustrated trying to keep up with Application submitions (I am
-too soft hearted to reject some submittions that probably should be
+burnt out/frustrated trying to keep up with Application submissions (I am
+too soft hearted to reject some submissions that probably should be
 rejected). Keeping up with the Application Queue is a tough job (for me
 at least, at this time) and at this point just reviewing some of the
-submittions makes my head hurt.
+submissions makes my head hurt.
 <ul> </ul>
 Alexander Nicolaysen Sornes and KillerTux have picked up some of the
 slack but I think we could use some more help.
 <ul> </ul>
 This job is time consuming, tedious, thankless and does not come with a
 paycheck. It requires attention to detail and is a position of trust and
-responsability. On the plus side it does NOT require any programming
+responsibility. On the plus side it does NOT require any programming
 skills. So... if this sounds like something you would like to do please
 send an email to appdb@winehq.org explaining why you you think you would
 be a good AppDB Administrator. (The guys in the white coats will be
@@ -526,9 +526,9 @@ around ASAP)
 	posts="5"
 >
 <topic>Patches</topic>
-<p>This week a serious of patches appeared all at once from Anoni Moose.
+<p>This week a series of patches appeared all at once from Anoni Moose.
 That's quite interesting because it shows someone took a lot of time to
-work on Wine and then wait to submit all the work at once... under an
+work on Wine and then went to submit all the work at once... under an
 anonymous name.  Andi Mohr was thankful for the patches but asked:</p>
 <quote who="Andreas Mohr"><p>
 I can't help but say that your parents must have been giving you a
@@ -552,7 +552,7 @@ Me, I've been created as an IRC bot happily typing away for about a decade
 without anyone noticing...
 </p><p>
 Oh, that's not true in fact, people do know that I'm real, since someone
-has been showing up at Codeweavers and various wineconfs pretending to be me ;)
+has been showing up at CodeWeavers and various wineconfs pretending to be me ;)
 </p><p>
 So I guess it's fully a non-issue after all since the internet is a completely
 anonymous space anyway and patches can only be judged by their quality,

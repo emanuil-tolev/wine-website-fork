@@ -120,18 +120,18 @@ I just saw the May issue of Linux Journal and it has an article titled
 Phillips and it's pretty good.  Things seemed to work about as well as
 you'd expect, well, maybe even better than a lot of you would expect.
 Programs installed ok, audio configuration seemed pretty easy, etc.  I
-actually think it's a great that Wine isn't the focus of the article;
+actually think it's great that Wine isn't the focus of the article;
 he spends most of the time talking about applications.  I guess that
 means all the magic was successfully hidden.  I half expected the
 article to complain about broken things, but there was hardly a
 mention of it at all.  At the end he did list about 4 applications
-that issues, including one named "Finale" that didn't install.
+that have issues, including one named "Finale" that didn't install.
 </p><p>
 
 Dave did mention he'd like to see the JACK audio driver working:
 "Hopefully, Wine's JACK driver will work again by the time this
 article is printed.  JACK is the present and future of Linux audio,
-and it world be a definite Good Thing for the Wine Project.  A virtual
+and it would be a definite Good Thing for the Wine Project.  A virtual
 ASIO driver might be a helpful addition as well."
 </p><p>
 
@@ -172,7 +172,7 @@ Earth is slated to be the next app ported.  From that report:</p>
 <quote who="Chris Dibona"><p>
 Picasa, founded in 2001, was purchased by Google in July of 2004, and the photo 
 management tool has seen some extensive use, albeit from Windows users. DiBona 
-indicated that Google made a public committment to begin porting two 
+indicated that Google made a public commitment to begin porting two 
 applications to Linux about a year ago. The other application in this project 
 is Google Earth. Picasa for Linux was announced first simply because it was 
 finished first. </p><p>
@@ -190,7 +190,7 @@ from fixing that bug.  You might be able to get a sneak preview of Google
 Earth on Linux if you start tracking CVS.  This seems like the type of
 bug only Alexandre can fix, so if you see him mucking around with window
 management and/or OpenGL, you might want to try installing the Windows 
-verson of Google Earth to see if it'll run.</p><p>
+verson of Google Earth to see if it runs.</p><p>
 
 Now, back in February I conjectured that Google would probably provide a copy
 of Wine to run Picasa with and that it would be a straight up Windows app rather
@@ -237,9 +237,9 @@ cameras all could be accessed like a typical USB storage device.  It seems
 that most can, and as a result, we have Alexandre's patches from a few weeks
 ago to add HAL event support to Wine.  USB devices will be noticed
 and have drive letters assigned to them automatically.  Well, Marcus'
-patch utilizes the traditional TWAIN interfaces to link the TWAIN API's
+patch utilizes the traditional TWAIN interfaces to link the TWAIN APIs
 to libgphoto.  In turn, libghoto can access cameras.  This makes image
-acquisition a lot more like Windows but integrating with native Linux code.
+acquisition a lot more like Windows but integrated with native Linux code.
 Unbeknownst to Marcus, his code came at a critical time.</p>
 
 <p>Dan Kegel's mail to wine-devel provides an inside perspective on the
@@ -264,7 +264,7 @@ files are created), among others.   Fortunately, Wine was
 already halfway to having an implementation of IWebBrowser
 thanks to Jacek Caban's Summer of Code 2005 project.  And all
 that other stuff couldn't be *that* hard, right? :-)  So
-Google engaged Codeweavers to add those features and fix any
+Google engaged CodeWeavers to add those features and fix any
 other bugs.  This resulted in tons of improvements to Wine (see
 the list at 
 <a href="http://code.google.com/wine.html">code.google.com/wine.html</a>), 
@@ -346,14 +346,14 @@ new ddraw code. I have uploaded a new diff to
 <a href="http://stud4.tuwien.ac.at/~e0526822/">
 http://stud4.tuwien.ac.at/~e0526822/</a>, 
 with some updated screenshots. The diff 
-is against wine git from May, 26th, 12 am(yep, the site has an older date). 
+is against wine git from May, 26th, 12 am (yep, the site has an older date). 
 It should apply to much older versions too, but it won't work because a few 
 crucial patches were applied in the last 2 days. 2 games are missing in my 
 game list, Anarchy Online and Worms 2 are also known to work.
 </p><p>
 Ok, what to do now? The patch fixes quite a few games, but with all bigger 
 changes there are problems. I know some games which worked before that are 
-broken now(Tibia, Z-Ball, Battlezone 2 and Swat 3). Battlezone 2 and Swat 3 
+broken now (Tibia, Z-Ball, Battlezone 2 and Swat 3). Battlezone 2 and Swat 3 
 have fogging issues, I have to talk to Lionel Ulmer about that, and BZ2 also 
 needs tripple buffering. Tibia does some Blt Voodoo which doesn't work in 
 OpenGL yet, z-ball is similar. It's likely that there are other breakages 
@@ -366,7 +366,7 @@ So what can we do?
 <ul>
 <li> Wait with the merge until WineD3D does lazy linking to libGL</li>
 
-<li> Wait with the merge until all games that worked before work now(gonna take 
+<li> Wait with the merge until all games that worked before work now (gonna take 
 some time)</li>
 
 <li> Merge it now and fix the regressions as they occur. This would have the 
@@ -379,20 +379,20 @@ What is missing except of fixing regressions? Mostly performance improvements:
 <ol>
 <li> Make all ddraw games working with the OpenGL renderer</li>
 
-<li> More intelligent texture upload: I have some hacks in that in my tree(Swat 
+<li> More intelligent texture upload: I have some hacks for that in my tree (Swat 
 3!, Half-Life 2 maybe?)</li>
 
 <li> The same for render targets(System shock 2, swat 3, Prince of persia 3D)</li>
 
 <li> Try to write an OpenGL gdi driver which handles TextOut and friends 
-directly in OpenGL(Age of Empires, Settlers 3 combined with 1)</li>
+directly in OpenGL (Age of Empires, Settlers 3 combined with 1)</li>
 
-<li> Rendering fixes: Fog and color keying(Pop3D, Battlezone 2, Swat 3)</li>
+<li> Rendering fixes: Fog and color keying (Pop3D, Battlezone 2, Swat 3)</li>
 
 <li> Better OpenGL state management, this the lack of that takes performance 
 down.</li>
 
-<li> Multi-threaded D3D(Need for speed 3, Empire Earth, many others)</li></ol>
+<li> Multi-threaded D3D (Need for speed 3, Empire Earth, many others)</li></ol>
 </p><p>
 All this will happen in wined3d, and the improvements aren't limited to D3D7 
 games. They don't have to be done in that order.
@@ -462,7 +462,7 @@ that contain the ChangeLog entry make things easier for him.</p>
 >
 <topic>MSI</topic>
 <p>Mike McCormack and Aric Stewart have done most of the work in Wine
-to support the Microsoft Installer file format and API's.  The framework
+to support the Microsoft Installer file format and APIs.  The framework
 they've put in place works well, but there's a need for others to pick
 up where they've left off.  For example, MSI has a concept of 
 <i>actions</i>, which might consist of copying or deleting files.  
@@ -477,12 +477,12 @@ that's in need of some attention:</p>
 Currently the MSI Installer is working backwards, In the file files.c it 
 reads the files from the msi package and iterates through them and queries 
 the Media table in order by LastSequence. The sort order for the media table 
-should be DiskId according to MSDN. Just changing the sort order wont work 
+should be DiskId according to MSDN. Just changing the sort order won't work 
 unless the msi installer is revamped to work the right way. The code is 
-written wrong for this. Currently its using LIST_FOR_EACH_ENTRY in the 
+written wrong for this. Currently it's using LIST_FOR_EACH_ENTRY in the 
 Install Files function for the files and then trying to ready the media per 
 file using the sequence number of the file in the query on the media table 
-using the file sequence as last sequence and returning the results order by 
+using the file sequence as last sequence and returning the results ordered by 
 LastSequence.
 </p><p>
 It should first be reading the Media table first and  sorting by DiskId. The 
@@ -497,15 +497,15 @@ until it reaches the last sequence as indicated in the media table for the
 working DiskId, then it jumps to the next DiskId 2, 3, and so on. The 
 lastsequence of the working DiskId should always be greater than that of the 
 last sequence of the previous DiskId, if not the results should be skipped, 
-currently it is trying to read from DiskId's that have zero as the 
+currently it is trying to read from DiskIds that have zero as the 
 LastSequence but 22 as the DiskId. Zero indicates the first entry in the 
-media table(if your in DiskId 1). as you increment through the DiskId's the 
-LastSequence should increment as well, if it doesnt you skip that install 
+media table (if you're in DiskId 1). as you increment through the DiskId's the 
+LastSequence should increment as well, if it doesn't you skip that install 
 media.
 </p><p>
 This is what causes the cabinet bugs in bugs #4533 and #5139.
 </p><p>
-A quick fix , but not the solution would be to change the query so it 
+A quick fix, but not the solution would be to change the query so it 
 doesn't return the results from the media table if the LastSequence is 0 and 
 the DiskId is greater than 1.
 </p><p>
@@ -541,7 +541,7 @@ time to work on it.</p>
 	posts="6"
 >
 <topic>Fonts</topic>
-<p>On a different note, Troy Rollo found a problem Wine's font handling:</p>
+<p>On a different note, Troy Rollo found a problem in Wine's font handling:</p>
 <quote who="Troy Rollo"><p>
 The 
 <a href="http://www.winehq.org/pipermail/wine-devel/attachments/20060525/609ccda9/sysfont.c">attached</a> 
@@ -567,7 +567,7 @@ identifies the glyph as not having been uploaded (it has uploaded glyph 36
 before), and uploads it as glyph 38 based on its outline in Tahoma.
 </p><p>
 The problem gets worse later on because some glyphs in the glyphset have been 
-uploaded according to their "System" font positions (or in this case ,the 
+uploaded according to their "System" font positions (or in this case, the 
 same character has been uploaded in its position in both fonts). Rendering a 
 character that uses the other glyph code results in the wrong character. You 
 can get a mix of Tahoma and System characters appearing on the screen with 

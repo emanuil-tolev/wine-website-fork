@@ -96,8 +96,8 @@ Its main goal is to have a party. It also serves to inform you of what's going o
 <p>An article by Nathan Willis appeared on Linux.com last week titled,
 <a href="http://applications.linux.com/applications/06/06/07/1920213.shtml?tid=47"><i>Wine Doors opens Windows under Linux</i></a>.
 There's a lot of good information in there and it nicely summarizes some of
-things going on in Wine development.  It also discusses a new application
-being developed independent of Wine called 
+the things going on in Wine development.  It also discusses a new application
+being developed independently from Wine called 
 <a href="http://www.wine-doors.org"><i>Wine Doors</i></a>:</p>
 <quote who="Linux.com"><p>
 Like WineTools, Wine Doors is designed to user-friendlify your Wine 
@@ -179,7 +179,7 @@ currently have.</p></quote>
 <p>Apparently Vitaliy Margolen picked it up recently and announced some
 changes:</p>
 <quote who="Vitaliy Margolen"><p>
-Here is latest installment of safedisc support in Wine.
+Here is latest instalment of safedisc support in Wine.
 </p><p>
 The major change from last version is the way user space talks to ntoskrnl. Now
 I'm passing the information through wineserver with a help of 4 server calls.
@@ -229,7 +229,7 @@ loaded into a vbo.</li>
 
 <li> In Direct3D7 there is no way for the app to specify a range of vertices to
 be locked. Because of that DX7 apps are generally slower if they update the
-vertices regularily. To avoid that drawback there is no VBO created for DX7
+vertices regularly. To avoid that drawback there is no VBO created for DX7
 apps if they have vertex data that needs conversion. The geometry in DX7 apps
 is usually quite simple, so DrawStridedSlow isn't a big performance hit in
 those apps.</li></ul></p></quote>
@@ -239,10 +239,10 @@ those apps.</li></ul></p></quote>
 
 This is an updated version of the VBO patch. The main difference is the
 integration with IWineD3DDevice::ProcessVertices which gives a nice
-performance boost for Half-Life 1 and propably Anarchy Online(not tested
+performance boost for Half-Life 1 and propably Anarchy Online (not tested
 yet).
 </p><p>
-What is missing is work with vertex shaders(awaiting the download of the dx8
+What is missing is work with vertex shaders (awaiting the download of the dx8
 sdk for the dolphin demo) and an implementation of
 IDirect3DVertexbuffer7::ProcessVertices.
 </p></quote>
@@ -339,14 +339,14 @@ pass parser, hence a major rewrite of the code)</li>
 <li> a couple of bug fixes from current code</li></ul></p><p>
 
 I'd suggest hence not to apply this patch and to wait for the full solution
-(likely sometimes this weekend).</p></quote>
+(likely sometime this weekend).</p></quote>
 
 <p>He followed that up with 31 patches.  He gave a clearer description of the
 patches before posting them:</p>
 <quote who="Eric Pouech"><p>
-The following series implements a basic support for Dwarf2 debug information.
+The following series implements basic support for Dwarf2 debug information.
 Basically, it's a major rewrite/enhancement of the current code.
-At the end of the serie, we should have:
+At the end of the series, we should have:
 <li> type information (at least basic types, and struct unions)</li>
 <li> functions's parameter and variable handling (1)</li>
 <li> line number information</li>

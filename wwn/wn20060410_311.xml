@@ -100,12 +100,12 @@ at ZDNet <a href="http://blogs.zdnet.com/Apple/index.php?p=169">hopes
 a different solution</a> will be available:</p>
 <quote who="ZDNet"><p>
 I'd prefer to run  Darwine (a.k.a. Wine for OX) because it will allow me to run 
-just the Windows applications that I want without Windows, but in the mean time 
+just the Windows applications that I want without Windows, but in the meantime 
 Boot Camp will suit me just fine. Boot Camp will certainly be a boon for Intel 
 Mac customers and is sure to drive sales of Apple's newest iron.</p></quote>
 
 <p>Personally, I think OS X support is one of the biggest things that could
-help Wine.  For one, it doubles the potential numbers of users of both Wine 
+help Wine.  For one, it doubles the potential number of users of both Wine 
 and CrossOver Office.  While that might not necessarily translate into more
 developers, it seems to be.  Second, it also leads to advocacy, and that's
 certainly not a bad thing.  Even if that's just someone writing in a blog
@@ -142,7 +142,7 @@ a full list of poker clients and their status on Wine.</p>
 	posts="3"
 >
 <p>The Windows Genuine Advantage came up last year when it was discovered
-Wine was being searched for denied access.  See WWN issues
+Wine was being searched for and denied access.  See WWN issues
 <a href="http://www.winehq.com/?issue=263#News:%20WGA%20Articles,%20Misc%20Press">#263</a>
 and <a href="http://www.winehq.com/?issue=264#News:%20WGA%20Update">#264</a>
 for the background on that.  At the time there was a lot of speculation
@@ -206,7 +206,7 @@ Hearn posted a patch to get the sound in a game functioning and explained what
 it did:</p>
 <quote who="Mike Hearn"><p>
 This patch gives me rock solid audio in Imperium Galactica 2. No more 
-white noise, clicking or destabilising half way through.
+white noise, clicking or destabilising halfway through.
 </p><p>
 It exposes a race that I'll send a fix for later, for now I am hacking 
 around it with a sleep(1) at the end of RtlUserCreateThread. The race is 
@@ -216,7 +216,7 @@ that you can do this:
     SetThreadPriority(hthread ...);</code></ul>
 </p><p>
 and the set_thread_info server call will occur before the thread has 
-fully initialized, so, we don't know the UNIX tid and cannot set the 
+fully initialized, so we don't know the UNIX tid and cannot set the 
 priority. My current idea is to fix the race by forcing 
 RtlUserCreateThread to wait for the thread to sync with the server using 
 an event.
@@ -226,16 +226,16 @@ priorities at a finer level of granularity is still on the todo list.
 </p><p>
 Final thing - there has been on/off discussion about the security 
 implications of this in the past. But, this code needs to be implemented 
-anyway, regardless of outcome, and on SuSE at least I think AppArmor can 
+anyway, regardless of outcome, and, on SuSE at least, I think AppArmor can 
 be used to allow for thread prio raising without full root access. So 
 IMHO the permissions debate layers on top of this. Until an acceptable 
 solution is found some users may wish to just run Wine as root and play 
 their games, which they know are trustable.</p></quote>
 
 <p>Then in another patch he took into account whether the thread
-being access was time critical and if so it needed to use the SCHED_FIFO
+being accessed was time critical and if so it needed to use the SCHED_FIFO
 mechanism.  What is SCHED_FIFO you ask?  It's one of three different
-scheduling policies in the kernel, with the other being the default
+scheduling policies in the kernel, with the others being the default
 SCHED_OTHER (which Wine normally uses) and the round robin SCHED_RR.
 A process using SCHED_FIFO can be set up to always preempt a normal
 process using SCHED_OTHER.  So when that process needs to run, it does.
@@ -288,7 +288,7 @@ Just using the JACK audio driver won't ensure that we won't see
 stuttering sound.  If dsound is performing hardware emulation then it
 has its own internal thread that is performing mixing and other dsound
 events.  If this thread gets held off then you'll have no sound to
-give to the jack audio drive when it runs.
+give to the jack audio driver when it runs.
 </p><p>
 Increasing the size of this dsound buffer and ensuring that it runs
 seems like the easiest ways to fix issues with the dsound thread being
@@ -369,7 +369,7 @@ Wine is now being checked for bugs.  Some of you may have seen other
 news reports about Coverity and the ability to automatically uncover
 subtle bugs in large codebases.  Originally referred to as the "Stanford
 Checker", Coverity is best known for its original work scanning the
-Linux kernel.  Coverity's initial look of Wine
+Linux kernel.  Coverity's initial look at Wine
 uncovered 830 bugs.  In just a few days a bunch of patches have rolled
 in and that number is currently down to 749.  Ben Chelf from Coverity
 announced the news to the wine-devel list this week:</p>
@@ -459,14 +459,14 @@ of issues found and whether or not they were really bugs or just
 false positives triggered by the checker.  </p>
 </section>
 <section 
-	title="sft2ttf: Getting Rid of Fontforge"
+	title="sft2ttf: Getting Rid of FontForge"
 	subject="tasklet - sfd2ttf - eliminate dependency on FontForge (for anybody who's interested)"
 	archive="http://www.winehq.com/pipermail/wine-devel/2006-April/046345.html"
 	posts="1"
 >
 <topic>Fonts</topic>
 <topic>Build Process</topic>
-<p>Wine's requirement of Fontforge has been a problem lately.  Several
+<p>Wine's requirement of FontForge has been a problem lately.  Several
 "bug" reports have come in that have simply been caused by not having
 it installed when compiling.  The issue has come up more than once a
 week lately.  Mike McCormack asked for someone to step up and help remedy 
@@ -515,18 +515,18 @@ I have uploaded an updated patch against Wine from yesterday, 23:30 to my
 website 
 (<a href="http://stud4.tuwien.ac.at/~e0526822/">http://stud4.tuwien.ac.at/~e0526822/</a>). 
 It contains a few fixes,
-like yet another refcounting cleanup( Ihope that this works fine now :) ),
-and the performance issue on my radeon card, as well as the mipmap issues(all
+like yet another refcounting cleanup (I hope that this works fine now :) ),
+and the performance issue on my radeon card, as well as the mipmap issues (all
 cards) are fixed :)
 </p><p>
 What is next? I will send patches which create the new WineD3D methods needed
 for ddraw. These patches won't contain the implementation, but just the entry
 in the vtable and a stub function. So if someone disagrees with a method,
-then we don't have to discuss about the bare existance of a method and it's
+then we don't have to discuss about the bare existence of a method and its
 implementation at the same time :)
 </p><p>
 Additionally, I will now start writing a lot of test cases for all DirectX
-versions, with an eye for reference counting, in hope that we can fix the
+versions, with an eye for reference counting, in the hope that we can fix the
 refcounting crashes finally. I have a test for some unimplemented functions
 in my local tree too, like ProcessVertices.
 </p><p>
@@ -626,7 +626,7 @@ and friends.</p></quote>
 <p>That struck a chord with Stefan D&#246;singer and led him to ask:</p>
 <quote who="Stefan Dosinger"><p>
 
-That would be usefull too for multithreaded direct3d. Somehow we have to bring
+That would be useful too for multithreaded direct3d. Somehow we have to bring
 another thread to releasing the glxContext, so we can re-use it in a new
 thread.
 </p><p>
@@ -650,7 +650,7 @@ After we just have to rely that this is properly implemented at the GL
 driver level...
 </p><p>
 I once wanted to toy with this in the DDraw code base but well, seeing that
-it will phased out pretty soon I did not do any work on it. On the other
+it will be phased out pretty soon I did not do any work on it. On the other
 hand I could try for some specific games (like DungeonSiege) as an
 experiment to then port it over to WineD3D.</p></quote>
 
@@ -676,7 +676,7 @@ for Wine's TWAIN to access libghoto:</p>
 <quote who="Marcus Meissner"><p>
 I have started adding gphoto2 support to twain.dll.
 </p><p>
-My current work (before a otherwise busy week begins again),
+My current work (before an otherwise busy week begins again),
 is attached.
 </p><p>
 I started to break up the currently very sane centric view.

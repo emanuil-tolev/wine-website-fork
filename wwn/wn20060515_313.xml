@@ -127,10 +127,10 @@ Its main goal is to sit on a lake in Montana. It also serves to inform you of wh
 <p>The past few weeks have been a little slow in the world of Wine.
 Alexandre went on a 2 week vacation and no new patches were committed to
 the main git repository.
-Interestingly, in his abscence Mike McCormack began committing some of
+Interestingly, in his absence Mike McCormack began committing some of
 the patches from wine-patches to his git repository and updated 
 everyone on what it contained.  In this respect it allowed something
-we've never had in Alexandre's abscence - a maintained patchset others
+we've never had in Alexandre's absence - a maintained patchset others
 could access.  It seems to have paid off.  Upon Alexandre's return he
 began updating the main tree and quickly released Wine 0.9.13.  Noted
 additions included:</p>
@@ -208,12 +208,12 @@ Autodetection:
 <ul>
 <li> Autodetection has been moved from twain_32.dll to the drivers.
   <ul>
-  <li> twain_32.dll itself is no longer dependend on libsane and actually
+  <li> twain_32.dll itself is no longer dependent on libsane and actually
   has only minimal knowledge of sane and gphoto2 (the driver names ;)</li>
   </ul></li>
 <li> Detection of multiple devices is in the DG_CONTROL/DAT_IDENTITY/MSG_GET
   calls of sane.ds and gphoto2.ds. A little hidden channel detects multiple
-  scanners / cameras by calling above function multiple times.
+  scanners / cameras by calling the above function multiple times.
 </li></ul></p><p>
 The code is ready for WINE inclusion (tm).
 </p></quote>
@@ -265,7 +265,7 @@ report on it.  A long, long, long time ago the
 <a href="http://www.winehq.org/mailman/listinfo/wine-users">wine-users</a>
 mailing list was a gateway to the 
 <a href="http://groups.google.com/group/comp.emulators.ms-windows.wine">comp.emulators.ms-windows.wine</a> 
-newsgroup.  When we switched to using mailman for the mailing list things
+newsgroup.  When we switched to using mailman for the mailing list, things
 broke.  A lot of people were dismayed by that and both the mailing list
 and the newsgroup suffered as a result.</p>
 <p>Well, last month there was a <i>huge</i> discussion regarding adding
@@ -369,7 +369,7 @@ More details:
       all at the same pitch and duration.  If you hear any variation
       from that, make a note of it, so you can report it.
       It's important to listen the whole way through; a tad boring,
-      I know, but important; it'll shift to a virtual device half way
+      I know, but important; it'll shift to a virtual device halfway
       through and it's important to hear if it keeps on working or not.</li>
 </ul></li>
 <li>Report your results:
@@ -415,19 +415,19 @@ to Jeremy directly (Google should provide his email at CodeWeavers.)
 >
 <topic>Web/HTML</topic>
 
-<p>There's been a huge effort over the past year and half to write our
+<p>There's been a huge effort over the past year and a half to write our
 own version of Internet Explorer.  Now, IE itself is really just a wrapper
 around a couple of big libraries.  You might remember the big thing
 several years ago when Microsoft "integrated" the browser with its
 operating systems.  The value, they argued, is that other applications
-could just use those API's to become web enabled.  Well, it happened
+could just use those APIs to become web enabled.  Well, it happened
 and it has been a problem for programs running under Wine that need
-to access those API's.  It was somewhat stemmed by using the Mozilla
+to access those APIs.  It was somewhat stemmed by using the Mozilla
 ActiveX control.  However, it's really necessary to have our own since
 the ActiveX control has proven to be problematic.
 </p><p>
 Fortunately, there exists a wonderful HTML rendering engine in Mozilla.
-So Jacek Caban took to the task of building out those API's using that
+So Jacek Caban took to the task of building out those APIs using that
 as the backend.  The real switch will come when our MSHTML library
 switches over to the code he's been submitting.  That led Dimi Paun
 to ask if it will be better than the current method.  Jacek replied:</p>
@@ -466,7 +466,7 @@ stuff.</p>
 would be to flesh out our IE program that was recently committed.  Currently
 the iexplore.exe program is a simple window lacking the typical web 
 browser controls.  Fleshing out the program would involve implementing
-all the wonderful navigation features of a browser using the new API's.
+all the wonderful navigation features of a browser using the new APIs.
 </p>
 
 
@@ -551,7 +551,7 @@ is better done on wine-devel.
 accessing the serial port causing a high system load. As the application
 uses WaitCommEvent, I fear that my implementation of WaitCommEvent is
 inappropriate. In my last posting, I ask Dan to count the calls to
-WaitcommEvent by counting the number of lines containing WaitCommEvent in a
+WaitCommEvent by counting the number of lines containing WaitCommEvent in a
 relay log. His results are:
 <ul><i>
      I let the app run for about 2 minutes, at the standard priority -

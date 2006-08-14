@@ -74,7 +74,7 @@ Its main goal is to procrastinate on purchasing tickets to WineConf. It also ser
 
 </stats>
 <section 
-	title="News: .9.17, .9.18, CrossOver Mac"
+	title="News: 0.9.17, 0.9.18, CrossOver Mac"
 	subject="News"
 	archive="http://www.codeweavers.com/products/cxmac/"
 	posts="2"
@@ -90,7 +90,7 @@ I'm pretty sure we've seen more patches this summer than any other.
 We've also had patches rolling in from lots of new developers.  (By the
 way, welcome aboard!)</p>
 
-<p>Since the last issue we've had two beta release of Wine.  The first,
+<p>Since the last issue we've had two beta releases of Wine.  The first,
 0.9.17, noted the following changes:</p>
 <quote who="Alexandre Julliard"><p><ul>
 
@@ -203,7 +203,7 @@ the "Drink-making facilities on each corridor" really means, all
 for the low low price of about 40 pounds (okay, so the exchange
 rate sucks, and that's $75 US, but still...)
 </p><p>
-If you <i>don't</i> get me an room request in the next few days, then I'll
+If you <i>don't</i> get me a room request in the next few days, then I'll
 have to close down our room reservation, and you'll be stuck
 in some sleazy motel on the edge of town paying outrageous
 sums of of money.  (Okay, they actually all look like nice places
@@ -233,7 +233,7 @@ are known as virtual memory functions.  VirtualAllocEx can reserve as well
 as commit a series of memory pages within the virtual address space of another 
 process.  CreateRemoteThread can then start a new thread that begins execution 
 within that address space of the other process.  As Alexandre once said, 
-<quote who="Alexandre Julliard">it's fairly tricky to do correctly</quote>
+<quote who="Alexandre Julliard">it's fairly tricky to do correctly</quote>.
 </p>
 
 <p>Thomas Kho came up with an implementation of those functions for Wine.
@@ -248,7 +248,7 @@ VirtualAllocEx/NtAllocateVirtualMemory and VirtualQueryEx/NtQueryVirtualMemory.
 </p><p>
 APCs are queued per-thread, so I made minimal changes to add a per-process
 APC queue. Of course, this implementation suffers from the limitation that the
-remote process must go into an interuptible wait for the operation to succeed;
+remote process must go into an interruptible wait for the operation to succeed;
 an operation targeting a suspended process would block.
 </p><p>
 Stefan Siebert mentioned that VirtualQueryEx is necessary for Lotus Notes
@@ -258,7 +258,7 @@ simple program that prints a process' memory map:
 http://www.codecomments.com/archive371-2005-3-421246.html</a></ul></p><p>
 
 Lastly, I should mention that I have two pending patches to add conformance
-tests for remote processes operations:
+tests for remote process operations:
 <ul>
 <li><a href="http://www.winehq.org/pipermail/wine-patches/2006-July/029259.html">
 http://www.winehq.org/pipermail/wine-patches/2006-July/029259.html</a></li>
@@ -268,11 +268,11 @@ http://www.winehq.org/pipermail/wine-patches/2006-July/029260.html</a></li></ul>
 
 <p>Asynchronous procedure calls seem to be one way to go to attack the
 problem.  They sort of work like signals on Unix.  They can be used
-for timers, notifications, error reporting, and such. When it comes to APC's in
+for timers, notifications, error reporting, and such. When it comes to APCs in
 Windows, there's two kinds: kernel-mode and user-mode.  Guess which one has
 a more privileged level of operation?  (By the way, here's a 
 <a href="http://www.ddj.com/dept/windows/184416590">good</a> page describing
-APC's and some of the low-level stuff they do.) All that led Dan Kegel to 
+APCs and some of the low-level stuff they do.) All that led Dan Kegel to 
 comment:</p>
 <quote who="Dan Kegel"><p>
 Tommy's APC version of his VirtualAllocEx / CreateRemoteThread patch
@@ -292,7 +292,7 @@ but this means they would essentially never run. Like so much of the
 Windows API, APCs are a feature that could have been useful if it had
 been properly thought out...</quote></p>
 
-<p>So the issue here is that the kernel APC's could run at a point where
+<p>So the issue here is that the kernel APCs could run at a point where
 a thread is holding a lock.  It led Tommy to ask:</p>
 <quote who="Thomas Kho"><p>
 
@@ -383,7 +383,7 @@ working.  Vincent explained:</p>
 <quote who="Vincent Povirk"><p>
 Windows does not have a fullscreen mode. In Windows, windows that are
 Always on Top are on top of panels. Windows applications enter
-"fullscreen mode" by positioning themselves take up the whole screen
+"fullscreen mode" by positioning themselves to take up the whole screen
 and being always on top (actually, now I'm not so sure they have to be
 always on top; I'm only basing that on my experience as a Windows
 user).
@@ -477,7 +477,7 @@ Elijah explained the issue:</p>
 
 
 Actually, that's because Dmitry was using an older version.  The patch
-actually appiled to head would have also applied to 2.14.3.  :)
+actually applied to head would have also applied to 2.14.3.  :)
 Anyway, the returning from fullscreen mode bug makes perfect sense,
 and I'm pretty sure I know the cause: metacity tries to return the
 window to the size it was before it was fullscreened, and it sounds
@@ -509,7 +509,7 @@ fullscreening within Wine.</p>
 <quote who="Pavel Roskin"><p>
 
 Something strange to happened my Wine installation recently.  I'm
-getting following messages if I run any program from Wine:
+getting the following messages if I run any program from Wine:
 <ul><code>
 $ winemine<br />
 wine_main_preload_info not found<br />
@@ -572,7 +572,7 @@ EXTRA_BINARIES = wine-kthread wine-pthread wine-preloader</code></ul></p>
 <quote who="Pavel Roskin"><p>
 It is installed and it is run.  If I replace wine-preloader with a
 script that logs the arguments and runs the renamed wine-preloader, I
-see it being called twice when an exe file with run with Wine.   For
+see it being called twice when an exe file is run with Wine.   For
 example:
 <ul><code>
 $ wine FarManager170.exe<br />
@@ -663,9 +663,9 @@ be useful:</p>
 
 
 Good news.  One possible "market" for this is in the Debian world
-as currently the Linux Notes client will not install as it can not
+as currently the Linux Notes client will not install as it cannot
 work out what version of Mozilla is installed.  IBM have never really
-make any of their stuff easy to install on Debian.  Of course the
+made any of their stuff easy to install on Debian.  Of course the
 Debian sid wine will need to be brought up to date (currently .15) and
 will need the two patches mentioned above included.</p></quote>
 
@@ -687,7 +687,7 @@ for more information.
 <p>Winelib hasn't gotten much attention lately.  In fact, some of you
 reading this might not have any idea what Winelib even is.  Besides just
 letting you run Windows programs, Wine has <i>Winelib</i>, which lets you
-link your program against Wine's own DLL's.  That means anywhere you can
+link your program against Wine's own DLLs.  That means anywhere you can
 run Wine you could recompile your Windows program and it would run.  Of
 course, that's easier said than done and ports to platforms other than 
 x86 receive little attention.  </p>
@@ -703,7 +703,7 @@ so we'll go with a question/answer style format on this thread:</p>
 <i>Luc: is there a definitive list somewhere what API WinLib implements of 
 Win32, and what it doesn't?  I have had some difficulty finding this 
 information.</i></p>
-<p>Dan: Each of Wine's DLL's comes with a file which lists which APIs it
+<p>Dan: Each of Wine's DLLs comes with a file which lists which APIs it
 implements, e.g. 
 <a href="http://source.winehq.org/source/dlls/atl/atl.spec">atl.spec</a>
 The lines that say 'stub' are not really implemented.</p><p>
@@ -717,7 +717,7 @@ Does your app have a regression test or GUI test framework of any sort?
 If so, you can run that under Wine and compare results.
 </p>
 <p><i>Luc: one application we'd like to port uses active scripting (VBScript).  
-Basically we wrote some features in VBScript, which in turn automating our 
+Basically we wrote some features in VBScript, which in turn automate our 
 application (like macros in Photoshop CS).  What would be our options for this 
 if we were to use WinLib?  (MainWin ships with VBscript and JScript)
 </i></p>
@@ -735,7 +735,7 @@ Should be.
 control?
 </i></p>
 <p>Dan: That's supported now, though you may find that Wine's implementation
-has rough edges.  Nothing a little support contract with Codeweavers
+has rough edges.  Nothing a little support contract with CodeWeavers
 couldn't iron out.
 </p>
 

@@ -114,11 +114,11 @@ threads:</p>
 I've some major trouble with wine's thread implementation. We're porting a
 soundprocessing application to linux/wine. (It will run as Win32 app under
 wine in the first step). Sadly the wine thread implementation and/or the
-sheduler does not get the priorities right. The mission critical sound task
+scheduler does not get the priorities right. The mission critical sound task
 will not get as much attention as it needs.
 </p><p>
 We've tried some hacks to improve it (increasing linux kernel priorities
-using set_sheduler/set_priorities) but this doesn't really fix the problem.
+using set_scheduler/set_priorities) but this doesn't really fix the problem.
 Then we tried to make it even more ugly by creating a own thread using the
 clone() system call. This fixed the timeslice problem but opens up other
 strange problems. (Random crashes here and there). Most likely due to
@@ -127,7 +127,7 @@ missing lock issues or something like that.
 I would appreciate any hints which could make things run more smoothly!
 Basically 2 ways are left to go:
 <ul>
-<li> Fix the wine sheduler to obey priorities</li>
+<li> Fix the wine scheduler to obey priorities</li>
 <li> Fix the thread (locking?) issues</li>
 </ul></p><p>
 Thanks a lot for any information!
@@ -138,17 +138,17 @@ help with the problem.  Florian wrote back with more details:</p>
 <quote who="Florian Schirmer"><p>
 I've added some Enter/LeaveCriticalSections
 calls around the handler and it seems to make things much better (but still
-far from beeing perfect).
+far from being perfect).
 </p><p>
 
 What prevents wine from distributing timeslices correctly? Even if i
-renice/boost linux kernel sheduler of the whole wine process(es) things go
+renice/boost linux kernel scheduler of the whole wine process(es) things go
 wrong a lot. The processing thread gets way too little attention.
 </p><p>
 
 Do you have some hints on how to boost the processing thread a bit? I'm
 perfectly happy with an (even ugly) hack. I've tried to identify the wine
-sheduler, but was unsuccesful :( Maybe you can point me in to right
+scheduler, but was unsuccessful :( Maybe you can point me in to right
 direction (file, line #)?
 </p></quote>
 

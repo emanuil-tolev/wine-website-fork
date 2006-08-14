@@ -1016,7 +1016,7 @@ windows native program.</quote></p>
 
 <p>James replied,
 <quote who="James Liggett">
-I tried modifying the RTL_USER_PROCESS_PARAMATERS settings after
+I tried modifying the RTL_USER_PROCESS_PARAMETERS settings after
 creation in dlls/ntdll/thread.c (in thread_init, right after the
 structure is allocated,) but that didn't work. So I put the change in
 dlls/kernel/process.c, at the end of build_initial_environment, and that

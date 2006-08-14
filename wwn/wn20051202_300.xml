@@ -192,7 +192,7 @@ others so as not to waste (a lot!) of my time.</p></quote>
 <p>Oliver Stieber wrote back:</p>
 <quote who="Oliver Stieber"><p>
 If wine's WGL implementation is fully implemented then it may be a good idea 
-switching to wgl, a wgl implemenatation would also make debugging much easier 
+switching to wgl, a wgl implementation would also make debugging much easier 
 because wined3d can be run under windows to isolate problems.
 </p><p>
 Nick Burns also started work on a wgl version of wined3d that I haven't got 

@@ -396,7 +396,7 @@ in the changes Andi mentioned he found a solution:</p>
  relased information.
 </p><p>
  While the information in itself isn't very useful it
- is an offical header we should IMHO have in Wine.
+ is an official header we should IMHO have in Wine.
 </p><p>
  Unfortunetly it can't be included at the same time
  as ntdef.h and ntddk.h because it partly defines the
@@ -404,7 +404,7 @@ in the changes Andi mentioned he found a solution:</p>
 </p><p>
  Now, I have the full Microsoft SDK August 2002 contains
  over 1000 .h files!!! But ntdef.h and ntddk.h is not
- among them. They doesn't seem to be offical headers or
+ among them. They doesn't seem to be official headers or
  at least not any more.
 </p><p>
  So I'm a little unsure on how the headers should be organised.
@@ -413,9 +413,9 @@ in the changes Andi mentioned he found a solution:</p>
  is incomplete but the full enum exists in ntddk.h!!!
 </p><p>
  Futhermore some of the functions and data structures in ntddk.h
- is defined in no header in the offical Microsoft SDKs!!!
+ is defined in no header in the official Microsoft SDKs!!!
 </p><p>
- While we probably should include winternl.h because its an offical
+ While we probably should include winternl.h because its an official
  header I'm a little unsure on how or whether we should use it
  ourselves and what we should do with ntdef.h/ntddk.h. 
 </p><p>

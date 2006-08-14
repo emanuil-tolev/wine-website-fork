@@ -154,7 +154,7 @@ Its main goal is to attend weddings. It also serves to inform you of what's goin
 <topic>News</topic>
 
 <p>Wine's Ulrich Czekalla presented at the Toronto LinuxWorld Conference &amp;
-Expo this week.  Newsforge was on hand to cover the event and they have
+Expo this week.  NewsForge was on hand to cover the event and they have
 a <a href="http://business.newsforge.com/business/06/04/27/155209.shtml?tid=18&amp;tid=2">detailed report</a> 
 of it.  Ulrich outlined the current state of Wine and where development
 is headed:</p>
@@ -164,7 +164,7 @@ is its Component Object Model (COM) implementation. After years of work, it is
 still not done and is at least six months away from being able to talk to a 
 Microsoft Exchange server.
 </p><p>
-Right now about 70% of programs can install with Wine's implementation of the 
+Right now about 70% of the programs can install with Wine's implementation of the 
 Microsoft Installer (msi.dll) library. In another year, Czekalla expects that 
 number to be about 90%, though he pointed out that while most programs that 
 install will work after being installed, there is no guarantee. One problem 
@@ -182,7 +182,7 @@ has implemented DRM and will not work in Wine.
 </p></quote>
 
 <p>There was some interesting virus news last week of a new variant that
-could infect both Linux and Windows.  Newsforge did 
+could infect both Linux and Windows.  NewsForge did 
 <a href="http://os.newsforge.com/os/06/04/17/1752213.shtml?tid=2&amp;tid=78">some
 testing</a> of it and used Wine in the process. It's not the first time viral
 code has been run with Wine, though usually results are mixed.  One thing
@@ -304,8 +304,8 @@ another report from the conference.
 <p>A few days later he wrote in with more info:</p>
 <quote who="Kai Blin"><p>
 
-Now that SambaXP is officialy over, the samba team a couple of other
-people have retreated to a smaller room to discuss other things.
+Now that SambaXP is officially over, the samba team, and a couple of other
+people, have retreated to a smaller room to discuss other things.
 </p><p>
 Steve French had a talk about using CIFS on linux as a replacement to
 NFS which seems to be pretty cool. A couple of other talks were given,
@@ -318,7 +318,7 @@ cooperation with Wine as discussed on last year's wineconf.
 </p><p>
 Steve asked how exactly we wanted the named pipes exposed and if we
 could write up some testcases for that stuff. I think if anybody is
-interested in working on that is to email Steve directly.
+interested in working on that the best is to email Steve directly.
 </p><p>
 I got some more work on GENSEC done, but in order to really link this
 together, some more work is needed. I still have things blowing up on me
@@ -366,7 +366,7 @@ once again sponsoring students to work on open source projects this
 summer.  Wine will once again be one of the participating projects and
 various Wine developers will serve as mentors for participants.  Last year
 Google funded 400 students and they mentioned this year they'd like to fund
-even more.  Each student will get $4500 paid in three installments; the
+even more.  Each student will get $4500 paid in three instalments; the
 final portion paid when the project is completed.  Applications are due
 by May 8th, so it's about time to start putting it together.  Oh wait..
 I remember college.. never mind, you don't need to worry about it until
@@ -567,7 +567,7 @@ Main Objective:  Support for SafeDisc (basically ver 1 Support) Part 1
 </p><p>Requirements: Needs to have in depth knowledge of Win32 Internals as well as
 wine server internals.
 </p><p>Difficulty: Moderate to High
-</p><p>Mentors: Vitaly Margolen(vitamin) and Alexander Julliard
+</p><p>Mentors: Vitaly Margolen (vitamin) and Alexander Julliard
 </p><p>Details:
 To implement the SafeDisc Support.
 The progress and details can be found here
@@ -657,7 +657,7 @@ with Wine.
 I've tweaked it a bit (some patches still floating around), but:
 <ul>
 <li> that's not complete (some items still don't work)</li>
-<li> what's also completly missing is the support of native modules 
+<li> what's also completely missing is the support of native modules 
 (especially when generating backtraces)</li>
 <li> 16bit support (but we can safely leave it out for now)</li>
 <li> and testing (and fixing) most of the implementations we have</li>
@@ -669,7 +669,7 @@ I've updated the Wiki page accordingly.
 <quote who="Rob Shearman"><p>
 
 
-It would be really good for valgrind know about our heap implementation 
+It would be really good for valgrind to know about our heap implementation 
 so that it could report memory leaks. A solution I've done in the past 
 is to change all of the references to HeapAlloc/HeapReAlloc/HeapFree to 
 malloc/realloc/free so that it can report leaks, but that isn't very 
@@ -708,7 +708,7 @@ So I have a couple of questions.
 Should we consider using native fonts a "FIX" or is it just a
 workaround? Or in other words can we fix our built in fonts to fix this.
 </p><p>
-Should These bugs marked a duplicates?
+Should these bugs marked as duplicates?
 
 [1]
 <ul>
