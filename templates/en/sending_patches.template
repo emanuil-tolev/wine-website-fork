@@ -15,14 +15,14 @@ to make sure it's not spam before they can let it through.)</p>
 
 <p>When submitting patches, please:</p>
 <ul>
- <li>Include a ChangeLog entry with your name, email address and
+ <li>Include a ChangeLog entry with your <b>real</b> name, email address and
      a description of what your patch does.
 
  <li>Keep the patch small and the point of the change clear.
 
  <li>Submit one fix or group of related changes per patch.
 
- <li>Generate your patch against the latest version of Wine from the WineHQ CVS (see below).
+ <li>Generate your patch against the latest version of Wine from the WineHQ Git tree (see below).
 
  <li>Test your patch, and if possible write a test case demonstrating it is correct.
 
@@ -47,64 +47,43 @@ resubmitting it.</p>
 
 <hr>
 
-<h2>Generating a patch against the WineHQ CVS</h2>
-<p>It's best to send small patches against the current tree.
-The best way do to this is with CVS. First, you'll need to make sure your tree is up to date.
-To do this, just run</p>
+<h2>Generating a patch for WineHQ with Git</h2>
 
- <table width="300" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>
-  cvs update -PAd
- </span>
- </td></tr>
- </table>
+<p>It's best to send small patches against the current tree using Git.
+First, make sure your tree is up to date, as described on the
+<a href="{$root}/site/git">Git</a> page.
  
-<p>in the top-level Wine directory. Make sure that you've set up the proper options in your
-<code><a href="http://docs.freebsd.org/info/cvs/cvs.info.~_.cvsrc.html">.cvsrc</a></code>
-file.  Then, use</p>
+<p>Check in your patches to your Git tree using
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-commit.html">git commit</a>.</p>
 
- <table width="300" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>
-  cvs diff -u -p &gt; patch.diff
- </span>
- </td></tr>
- </table>
- 
-<p>to generate the patch from the top source directory and save the output to a file.
-<code>cvs diff</code> will always ignore newly added files, so you'll
-need to do something like:</p>
+<p>If you're going to use
+<a href="http://www.kernel.org/pub/software/scm/git/docs/git-imap-send.html">git imap-send</a>
+make sure that you've set up the proper options in your Git config file, then run:</p>
 
- <table width="300" border=0 cellpadding=10><tr><td class=black>
+ <table width="700" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
-  diff -u /dev/null newfile.c &gt;&gt; patch.diff
+  git format-patch --stdout --keep-subject --attach origin | git imap-send<br>
  </span>
  </td></tr>
  </table>
 
+<p>That should upload your patches into your IMAP drafts folder, and allow you to check and
+send them.  In Mozilla Thunderbird, that is as simple as clicking "Edit Draft..." then "Send"
+if you have setup the mail headers in the Git config file correctly.
 
-<p>to make a patch for newly added files. 
-Use <code>diff -Nu olddir/ newdir/</code> in case of multiple files to add.</p>
+<p>If you can't use IMAP, use the following command to generate patchs:</p>
 
-<p>If you can't use <code>cvs diff</code> for some reason (computer not connected to the net,
-modified a Wine snapshot release rather than CVS, etc.), or just prefer not to use it, you can also use the
-<code>diff</code> program as the output of both programs is compatible. You will need
-a copy of the original tree you used, excluding any modification you did (let's label it
-<code>oldwinedir/</code>), and a copy of your modified tree without all the build files
-(<code>*.o</code>, <code>*.so</code>, etc.): let's label it <code>newwinedir/</code>. You can obtain such a tree
-by copying the one you use for development to a new directory and issuing a <code>make distclean</code> in it.
-Then, using the following command-line:</p>
-
- <table width="300" border=0 cellpadding=10><tr><td class=black>
+ <table width="700" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
-  diff -urN oldwinedir/ newwinedir/ &gt; patch.diff
+  git format-patch --keep-subject origin<br>
  </span>
  </td></tr>
  </table>
 
-<p>will get you a patch almost ready to be sent to <a href="{$root}/site/forums">wine-patches</a>.</p>
+<p>That should generate a number of txt files, which you can send manually.</p>
 
 <p>There is no attempt to apply patches that appears in the newsgroup
-to the CVS tree. Please send patches to 
+to the Git tree. Please send patches to 
 <a href="mailto:wine-patches@winehq.org">wine-patches@winehq.org</a>.</p>
 
 <p>&nbsp;</p>

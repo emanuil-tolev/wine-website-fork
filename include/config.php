@@ -57,7 +57,7 @@ class config
                 'Development'     => '{$root}/site/development',
                 'Developers Guide' => '{$root}/site/docs/winedev-guide/index',
                 'Mailing Lists'   => '{$root}/site/forums',
-                'CVS'             => '{$root}/site/cvs',
+                'GIT'             => '{$root}/site/git',
                 'Sending Patches' => '{$root}/site/sending_patches',
                 'To Do Lists'     => 'http://wiki.winehq.org/TodoList',
                 'Fun Projects'    => '{$root}/site/fun_projects',
