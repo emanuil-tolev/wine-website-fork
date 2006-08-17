@@ -469,7 +469,7 @@ class wwn
                 $c++;
               }
               $this->body .= "</ol>\n";
-              $this->body .= "\n\n</tr></td>\n";
+              $this->body .= "\n\n</td></tr>\n";
               $this->body .= $html->frame_end("");
               break;
             case "QUOTE":
