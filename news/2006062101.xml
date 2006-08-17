@@ -4,14 +4,16 @@
   <body>
 <p>
 Wine 0.9.16 was released today.  It contains some noticeable improvements
-including:
+including:</p>
+
 <ul>
 <li> More work on Direct3D shaders.</li>
 <li> Major DirectDraw rewrite on top of Direct3D.</li>
 <li> Support for debug information in Dwarf format.</li>
 <li> Beginnings of an OleView Winelib application.</li>
 </ul>
-</p><p>
+
+<p>
   Binary packages are in the process of being built and it may take a few days
   for them to appear, but the source is
  <a href="http://prdownloads.sourceforge.net/wine/wine-0.9.16.tar.bz2">available
@@ -22,5 +24,6 @@ including:
   <a href="http://fedoraproject.org/extras/4/i386/repodata/repoview/W.group.html">Fedora Extras</a>
   repository by running <tt>yum install wine</tt> .
 </p>
+
  </body>
 </news>

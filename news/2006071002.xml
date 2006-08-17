@@ -4,14 +4,16 @@
   <body>
 <p>
 Wine 0.9.17 was tagged today.  Alexandre noted the following changes in this
-release:
+release:</p>
+
 <ul>
 <li> Still more work on Direct3D shaders.</li>
 <li> Now using the Gecko engine directly for MSHTML.</li>
 <li> Better support for apps switching to full screen mode.</li>
 <li> Support for multiple joysticks.</li>
 </ul>
-</p><p>
+
+<p>
   Binary packages are in the process of being built and it may take a few days
   for them to appear, but the source is
  <a href="http://prdownloads.sourceforge.net/wine/wine-0.9.17.tar.bz2">available
@@ -22,5 +24,6 @@ release:
   <a href="http://fedoraproject.org/extras/4/i386/repodata/repoview/W.group.html">Fedora Extras</a>
   repository by running <tt>yum install wine</tt> .
 </p>
+
  </body>
 </news>

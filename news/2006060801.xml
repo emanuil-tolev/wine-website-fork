@@ -4,14 +4,16 @@
   <body>
 <p>
 A new beta version of Wine is out, 0.9.15.  You might notice the following
-changes in it:
+changes in it:</p>
+
 <ul>
   <li> More MS/RPC improvements.</li>
   <li> Core Audio driver for Mac OS X.</li>
   <li> More complete DNSAPI dll.</li>
   <li> Improvements to Web browser support.</li>
 </ul>
-</p><p>
+
+<p>
   Binary packages are in the process of being built and it may take a few days
   for them to appear, but the source is
  <a href="http://prdownloads.sourceforge.net/wine/wine-0.9.15.tar.bz2">available
@@ -22,5 +24,6 @@ changes in it:
   repository by running <tt>yum install wine</tt> from
   <a href="http://fedoraproject.org/extras/4/i386/repodata/repoview/W.group.html">Fedora Extras</a>.
 </p>
+
  </body>
 </news>
