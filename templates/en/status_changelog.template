@@ -2,12 +2,19 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since August 21, 2006:</p>
+
+ <ul>
+ <li>Remove - Jason Green as worker on d3d8.dll,d3d9.dll,wined3d.dll</li>
+ </ul>
+ <br>
+
 <p>Changes since July 27, 2006:</p>
 
  <ul>
- <li>ADD - Roderick Colenbrander as worker to ddraw.dll </li>
- <li>ADD - Roderick Colenbrander as worker to dinput8.dll </li>
- <li>ADD - Vitaliy Margolen as worker to dinput.dll </li>
+ <li>ADD - Roderick Colenbrander as worker to ddraw.dll</li>
+ <li>ADD - Roderick Colenbrander as worker to dinput8.dll</li>
+ <li>ADD - Vitaliy Margolen as worker to dinput.dll</li>
  <li>dinput8.dll 25% -&gt; 50%</li>
  </ul>
  <br>
@@ -15,15 +22,15 @@
 <p>Changes since July 17, 2006:</p>
 
  <ul>
- <li>ADD - Stefan D&#246;singer as worker to d3d8.dll </li>
- <li>ADD - Stefan D&#246;singer as worker to d3d9.dll </li>
+ <li>ADD - Stefan D&#246;singer as worker to d3d8.dll</li>
+ <li>ADD - Stefan D&#246;singer as worker to d3d9.dll</li>
  <li>ADD - Stefan D&#246;singer as worker to ddraw.dll</li>
  <li>ADD - Stefan D&#246;singer as worker to wined3d.dll</li>
- <li>ADD - Ivan Gyurdiev as worker to d3d8.dll </li>
- <li>ADD - Ivan Gyurdiev as worker to d3d9.dll </li>
+ <li>ADD - Ivan Gyurdiev as worker to d3d8.dll</li>
+ <li>ADD - Ivan Gyurdiev as worker to d3d9.dll</li>
  <li>ADD - Ivan Gyurdiev as worker to wined3d.dll</li>
- <li>ADD - Jason Green as worker to d3d8.dll </li>
- <li>ADD - Jason Green as worker to d3d9.dll </li>
+ <li>ADD - Jason Green as worker to d3d8.dll</li>
+ <li>ADD - Jason Green as worker to d3d9.dll</li>
  <li>ADD - Jason Green as worker to wined3d.dll</li>
  <li>ADD - Roderick Colenbrander as worker to d3d8.dll</li>
  <li>ADD - Roderick Colenbrander as worker to d3d9.dll</li>
