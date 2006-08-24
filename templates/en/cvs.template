@@ -54,7 +54,6 @@ The WineHQ CVS server makes a couple of other things available as well.
 To get these, log in anonymously as above and do <code>cvs co <i>modulename</i></code> where 
 <code><i>modulename</i></code> is one of:</p>
 <ul>
-  <li><tt>c2man</tt>  -- automatic documentation system, specially modified for Wine</li>
   <li><tt>lostwages</tt> -- source for the WineHQ web site</li>
   <li><tt>tools</tt>  -- tools used on the WineHQ site</li>
   <li><tt>appdb</tt>  -- source for the application database web site</li>
@@ -71,7 +70,7 @@ To get these, log in anonymously as above and do <code>cvs co <i>modulename</i><
 To get the docs in a terminal run:</p>
  <table width="550" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
-  cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/wine co -P docs<br/>
+  cvs -z3 -d:pserver:anonymous@wine.cvs.sourceforge.net:/cvsroot/wine co -P docs<br/>
  </span>
  </td></tr>
  </table>
