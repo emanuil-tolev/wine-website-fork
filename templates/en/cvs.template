@@ -2,31 +2,14 @@
 
 <h1>The Wine CVS Tree</h1>
 
-<p>Wine uses an Open Source, open process development model. 
-Anyone may get the code, post opinions on what should be done, and contribute patches. You will need to know
-C and/or perl, and something about <a href="{$root}/site/resources">Unix and Windows</a>.</p>
-
-<p><a href="http://www.cvshome.org/" target="_blank">CVS</a> is the leading source code
-control system in the open source community. CVS features flexible
-branching, intelligent merging, high quality <a
-href="http://ximbiot.com/cvs/wiki/index.php">documentation</a>
-and client/server access with a wide choice of clients.
-Current Wine sources are available via anonymous client/server CVS.
-You will need CVS 1.9 or above. If you are coming from behind a firewall, you will either 
-need a hole in the firewall for the CVS port (2401) or use SOCKS.
-</p>
-
-<p>Wine's CVS tree is avalible on 2 servers, one in the United States, and one
-in the European Union, the US server hosts all available repositories, while the
-EU server only hosts the Wine source code.</p>
-
-<p>Read the sections below on how to use our CVS.</p>
+<p><b>Note: We are switching development from CVS to <a href="http://git.or.cz">Git</a>.<br>
+      Instructions for using the <a href="{$root}/site/git">Wine GIT tree</a> 
+      can be found on the <a href="http://wiki.winehq.org/GitWine">GitWine</a>
+      page on the <a href="http://wiki.winehq.org">Wine Wiki</a>.
+</b></p>
 
 <ol>
     <li><a href="#co">Getting a local copy of Wine</a>
-    <li><a href="#cvsservers">Wine CVS Servers</a>
-    <li><a href="#uptodate">Staying Up-To-Date</a>
-    <li><a href="#useful">Useful Options</a>
     <li><a href="#modules">Other modules available via CVS from WineHQ</a>
     <li><a href="#docs">Documentation module available via CVS from Sourceforge</a>
     <li><a href="#sourcetree">Source Tree Browsing via the Web</a>
@@ -34,13 +17,11 @@ EU server only hosts the Wine source code.</p>
 
 <p><img src="./images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
 
-<p>
 <a name="co" class="hidden"></a>
 
 <h1>Getting a local copy of Wine</h1>
 
-<p>
-To connect to the US server, run
+<p> To connect to the CVS server, run: </p>
 
  <table width="500" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
@@ -50,11 +31,10 @@ To connect to the US server, run
  </td></tr>
  </table>
 
-Use &quot;cvs&quot; as the password (without the quotes). Note that
-<code>/home/wine</code> is a path on the <b>server</b>, not on your machine.
+<p>Use &quot;cvs&quot; as the password (without the quotes). Note that
+<code>/home/wine</code> is a path on the <b>server</b>, not on your machine.</p>
 
-<p>
-To check out the entire Wine source tree (but read the next section before actually doing this!), do
+<p>To check out the entire Wine source tree run:</p>
 
  <table width="300" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
@@ -63,172 +43,7 @@ To check out the entire Wine source tree (but read the next section before actua
  </td></tr>
  </table>
 
-Make sure your cvs version is 1.11.5 or later if you use -z 3.
-
-<p>
-Or if you just want a subtree, or individual file, you can do that too:
-
- <table width="500" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>
- cvs -z 3 checkout wine/ANNOUNCE
- </span>
- </td></tr>
- </table>
-
-
-
-
 <p><img src="./images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
-
-<a name="cvsservers"></a>
-<h1>Wine CVS Servers</h1>
-
-<p>
-Just do a traceroute and a ping on all servers below to find out which are closest to you.
-<p>
-
-<div align=center><table border="0" cellpadding="0" cellspacing=0><tr><td bgcolor="#e0e0e0">
-<table border="0" cellpadding="8">
-	<tr bgcolor="#000000">
-		<td rowspan="2"><b><font color=white class=small>CVS Server</font></b></td>
-		<td rowspan="2"><b><font color=white class=small>Username</font></b></td>
-		<td rowspan="2"><b><font color=white class=small>Password</font></b></td>
-		<td colspan="6"><b><font color=white class=small>Repository</font></b></td>
-		<td rowspan="2"><b><font color=white class=small>Server root</font></b></td>
-	</tr>
-	<tr bgcolor="#888888">
-		<td><b><font color=white class=small>wine</font></b></td>
-		<td><b><font color=white class=small>lostwages</font></b></td>
-		<td><b><font color=white class=small>appdb</font></b></td>
-		<td><b><font color=white class=small>tools</font></b></td>
-		<td><b><font color=white class=small>c2man</font></b></td>
-		<td><b><font color=white class=small>bugzilla</font></b></td>
-	</tr>
-	<tr bgcolor="#ffffff">
-		<td align="left">cvs.winehq.org<br><br>Minnesota, USA (<a href="http://www.codeweavers.com/">CodeWeavers</a>)</td>
-		<td align="center">cvs</td>
-		<td align="center">cvs</td>
-		<td align="center">Yes</td>
-		<td align="center">Yes</td>
-		<td align="center">Yes</td>
-		<td align="center">Yes</td>
-		<td align="center">Yes</td>
-		<td align="center">Yes</td>
-		<td align="center">/home/wine</td>
-	</tr>
-        <!-- removed temporarily
-	<tr bgcolor="#ffffff">
-		<td align="left">rhlx01.fht-esslingen.de<br><br>Southern Germany (Esslingen, BaW&uuml;)</td>
-		<td align="center">cvs</td>
-		<td align="center">cvs</td>
-		<td align="center">Yes</td>
-		<td align="center">No</td>
-		<td align="center">No</td>
-		<td align="center">No</td>
-		<td align="center">No</td>
-		<td align="center">No</td>
-		<td align="center">/home/wine</td>
-	</tr>
- 	-->
-</table>
-</td></tr></table></div>
-
-
-<p>
-<b>Notes:</b>
-<ol>
-<li>If you change servers once in a while, then you <b>may need to use</b>
-CVS' command-line override "<code>-d</code>" to get the data from the
-specified server. Normally, <code>cvs</code> will prefer the server from which the initial
-checkout was performed (this can be found in the files "<code>.../CVS/Root</code>"
-on your local filesystem). Use "<code>cvs -d $CVSROOT ...</code>" to make sure that
-you get the data from the right server.
-<li>Changing to another (previously unused) server requires you to login once.
-The password will be cached in "<code>~/.cvspass</code>".
-</ol>
-<p>
-
-
-<p><img src="./images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
-
-<a name="uptodate" class="hidden"></a>
-
-<h1>Cleaning up your existing tree</h1>
-
-A quick way to clean up your tree after you've been modifying it and want a clean copy of Wine again is this:
- <table width="300" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>
-  cd wine<br>
-  cvs update -PAd<br>
-  cvs diff &gt; total-<i>x.x.x</i>.diff<br>
-  patch -p0 -R &lt; total-<i>x.x.x</i>.diff
- </span>
- </td></tr>
- </table>
-By using the current x.x.x tags, you can keep a history of changes that were in your Wine tree.
-<p>
-
-<h1>Staying Up-To-Date</h1>
-
-<p>
-Run
-
- <table width="300" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>
-  cvs update
- </span>
- </td></tr>
- </table>
-
-to merge changes from the tree with the current directory. (Local changes will
-not be lost.) Do this from the top Wine directory to update the entire tree. 
-When a new directory is added to Wine, you will need to do a
-
- <table width="300" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>
-  cvs update -PAd
- </span>
- </td></tr>
- </table>
-
-to get the new directory and delete any old ones. But
-read the next section and you won't have to worry about that.
-<p>
-
-<p><img src="./images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
-
-<a name="useful" class="hidden"></a>
-
-<h1>Useful Options</h1>
-
-<p>
-Some options are so useful you may want them in your <code>~/.cvsrc</code>
-
- <table width="300" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>
-  cvs -z 3<br>
-  update -PAd<br>
-  diff -u
- </span>
- </td></tr>
- </table>
-
-
-<code>-z</code> sets the compression level. 
-(Levels higher than 3 will probably not result in faster downloading
-unless you have a fast machine and a slow network connection.)
-<code>-Pd</code> will delete empty directories and create newly added ones.
-<code>-u</code> will create the easiest to read patches. Please do not submit patches with diff -w.
-
-Examples of other useful options (see the CVS documentation for details):
-<ul>
-  <li><code>cvs update -A</code> (update from the head of the tree, and ignore tags) 
-  <li><code>cvs -n update </code> (test only, don't make changes) 
-  <li><code>cvs update -r Wine-<i>x.x.x</i></code> (get the revision with the tag for a Wine snapshot)
-</ul>
-
-<p><img src="./images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
-</p>
 
 <a name="modules" class="hidden"></a>
 
@@ -237,7 +52,7 @@ Examples of other useful options (see the CVS documentation for details):
 <p>
 The WineHQ CVS server makes a couple of other things available as well. 
 To get these, log in anonymously as above and do <code>cvs co <i>modulename</i></code> where 
-<code><i>modulename</i></code> is one of:
+<code><i>modulename</i></code> is one of:</p>
 <ul>
   <li><tt>c2man</tt>  -- automatic documentation system, specially modified for Wine</li>
   <li><tt>lostwages</tt> -- source for the WineHQ web site</li>
@@ -247,37 +62,35 @@ To get these, log in anonymously as above and do <code>cvs co <i>modulename</i><
 </ul>
 
 <p><img src="./images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
-</p>
 
 <a name="docs" class="hidden"></a>
 
 <h1>Documentation module available via CVS from Sourceforge</h1>
 
-<p>
-The documentation lives in a separate CVS tree on Sourceforge.<br />
-To get the docs in a terminal run:
+<p> The documentation lives in a separate CVS tree on Sourceforge.<br/>
+To get the docs in a terminal run:</p>
  <table width="550" border=0 cellpadding=10><tr><td class=black>
  <span class=inverse>
-  cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/wine co -P docs<br />
+  cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/wine co -P docs<br/>
  </span>
  </td></tr>
  </table>
-When prompted for a password press the enter key. A subdirectory named docs will be created.
+<p>When prompted for a password press the enter key. A subdirectory named docs will be created.</p>
 
 <p><img src="./images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
-</p>
 
 <a name="sourcetree" class=hidden></a>
 <h1>Source Tree Browsing via the Web</h1>
-The source code of the entire Wine tree is (<a href="http://lxr.linux.no/">LXR</a>-based)
+
+<p>The source code of the entire Wine tree is (<a href="http://lxr.linux.no/">LXR</a>-based)
 cross-referenced and available for browsing, including a search engine.
-This cross-references source is based on the snapshot-releases and is made available at:
+This cross-references source is based on the snapshot-releases and is made available at:</p>
 <ul>
   <li><a href="http://source.winehq.org/">source.winehq.org</a>
 </ul>
 
-<p>
-Direct access from the web to the complete CVS tree is also possible, using <a href="http://www.freebsd.org/projects/cvsweb.html">cvsweb</a> package:
+<p>Direct access from the web to the complete CVS tree is also possible, using
+<a href="http://www.freebsd.org/projects/cvsweb.html">cvsweb</a> package:</p>
 <ul>
   <li><a href="http://cvs.winehq.org/cvsweb">cvs.winehq.org/cvsweb</a>, on the primary CVS repository
 </ul>
