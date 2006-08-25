@@ -23,6 +23,7 @@
       <td colspan="5"><strong>Fundamentals</strong></td>
     </tr>
 
+    <tr>
       <td><strong>Visible Region</strong></td>
 	<td></td>
 	<td></td>
@@ -30,7 +31,7 @@
 	<td class="pct100">100%: Complete</td>
     </tr>
 
-    </tr>
+    <tr>
 
       <td><strong>Window Management</strong></td>
 	<td></td>
@@ -39,7 +40,7 @@
 	<td class="pct90">90%: Optimization of repainting on window moves, port some hacks from CrossOver tree</td>
     </tr>
 
-    </tr>
+    <tr>
 
       <td><strong>MDI Support</strong></td>
 	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=blob;f=dlls/user/mdi.c">Git</a>
@@ -49,7 +50,7 @@
 	<td class="pct80">80%: Various problems still exist</td>
     </tr>
 
-    </tr>
+    <tr>
 
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/Windowing/WindowProcedures/WindowProcedureReference/WindowProcedureFunctions/DefWindowProc.asp?frame=true"><strong>DefWndProc</strong></a></td>
 	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=blob;f=dlls/user/defwnd.c">Git</a>
@@ -59,7 +60,7 @@
 	<td class="pct100">100%: Complete</td>
     </tr>
 
-    </tr>
+    <tr>
 
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/Windowing/DialogBoxes/DialogBoxReference/DialogBoxFunctions/DefDlgProc.asp"><strong>DefDlgProc</strong></a></td>
 	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=blob;f=dlls/user/defdlg.c">Git</a>
@@ -235,7 +236,7 @@
     </tr>
 
     <tr>
-      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/faq/localization.asp"<strong>Native Font</strong></td>
+      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/faq/localization.asp"><strong>Native Font</strong></a></td>
 	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=blob;f=dlls/comctl32/nativefont.c">Git</a>
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/nativefont.c">LXR</a></td>
 	<td></td>
@@ -367,7 +368,7 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/mciwnd_5uer.asp"><strong>MCIWnd</strong></a></td>
-	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=blob;f=dlls/msvideo/mciwnd.c">Git</a>
+	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=blob;f=dlls/msvfw32/mciwnd.c">Git</a>
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/msvideo/mciwnd.c">LXR</a></td>
 	<td></td>
 	<td></td>
@@ -376,7 +377,7 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/richedit/richeditcontrols.asp"><strong>Rich Edit</strong></a></td>
-	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=tree;f=dlls/richedit">Git</a>
+	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=tree;f=dlls/riched20">Git</a>
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/richedit/">LXR</a></td>
 	<td></td>
 	<td></td>
@@ -399,8 +400,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/userinput/commondialogboxlibrary/colordialogbox.asp"><strong>Color</strong></a></td>
-	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=blob;f=dlls/commdlg/colordlg.c">Git</a>
-	    <a class="srclink" href="http://source.winehq.org/source/dlls/commdlg/colordlg.c">LXR</a></td>
+	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=blob;f=dlls/comdlg32/colordlg.c">Git</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comdlg32/colordlg.c">LXR</a></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct95">95%: Refresh bugs</td>
@@ -408,8 +409,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/FindandReplaceDialogBoxes.asp"><strong>Find/Replace</strong></a></td>
-	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=blob;f=dlls/commdlg/finddlg.c">Git</a>
-	    <a class="srclink" href="http://source.winehq.org/source/dlls/commdlg/finddlg.c">LXR</a></td>
+	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=blob;f=dlls/comdlg32/finddlg.c">Git</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comdlg32/finddlg.c">LXR</a></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct90">90%: missing help and context menu handling</td>
@@ -417,8 +418,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/FontDialogBox.asp"><strong>Font</strong></a></td>
-	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=blob;f=dlls/commdlg/fontdlg.c">Git</a>
-	    <a class="srclink" href="http://source.winehq.org/source/dlls/commdlg/fontdlg.c">LXR</a></td>
+	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=blob;f=dlls/comdlg32/fontdlg.c">Git</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comdlg32/fontdlg.c">LXR</a></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct90">90%:  missing script selection</td>
@@ -426,8 +427,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/OpenandSaveAsDialogBoxes.asp"><strong>Open/Save As</strong></a></td>
-	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=blob;f=dlls/commdlg/filedlg.c">Git</a>
-	    <a class="srclink" href="http://source.winehq.org/source/dlls/commdlg/filedlg.c">LXR</a></td>
+	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=blob;f=dlls/comdlg32/filedlg.c">Git</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comdlg32/filedlg.c">LXR</a></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct60">60%:  Unicode handling, hook messages, various styles not implemented</td>
@@ -443,8 +444,8 @@
 
     <tr>
       <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/PrintDialogBox.asp"><strong>Print</strong></a></td>
-	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=blob;f=dlls/commdlg/printdlg.c">Git</a>
-	    <a class="srclink" href="http://source.winehq.org/source/dlls/commdlg/printdlg.c">LXR</a></td>
+	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=blob;f=dlls/comdlg32/printdlg.c">Git</a>
+	    <a class="srclink" href="http://source.winehq.org/source/dlls/comdlg32/printdlg.c">LXR</a></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
 	<td class="pct60">60%: verify how windows handles printer stats, implement printer help</td>
@@ -471,7 +472,7 @@
     </tr>
 
     <tr>
-      <td><a href="http://source.winehq.org/git/?p=wine.git;a=tree;f=dlls/winex11drv"><strong>winex11drv</strong></td>
+      <td><a href="http://source.winehq.org/git/?p=wine.git;a=tree;f=dlls/winex11drv"><strong>winex11drv</strong></a></td>
 	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=tree;f=dlls/winex11.drv">Git</a>
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/x11drv/">LXR</a></td>
 	<td></td>
