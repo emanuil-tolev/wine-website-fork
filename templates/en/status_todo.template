@@ -129,6 +129,7 @@ Regedit]
 
 <ul>
 <li>Implement security APIs and make them use native OS security facilities.</li>
+<li>Implement the undocumented "NT Ports" API (aka "LPC") used by NT's rpcrt4</li>
 </ul>
 
 <h3><a name="KERNEL32"></a>Kernel32<br></h3>
@@ -167,16 +168,12 @@ Regedit]
 
 <h3><a name="rpcrt4"></a>RPCRT4<br></h3>
 
-<pre>
-    * Implement the undocumented "NT Ports" API (aka "LPC") used by native NT
-    * Fill out the matrix of per-type /Oi marshalling API's.
-    * Some real RPC tests,although there are some tests of some peripheral rpcrt4 API's -- no actual RPC's are tested.
-    * Implement /Oicf "stubless" marshalling
-    * Implement full stub/proxy support for widl
-    * Get Wine's DCOM to use Wine's RPC as appropriate.
-    * Fix the wire protocol
-     - Implement the OXID resolver and other ORPC peccadilloes
-</pre>
+<ul>
+<li>Fill out the matrix of per-type /Oi marshalling API's.</li>
+<li>Some real RPC tests,although there are some tests of some peripheral rpcrt4 API's -- no actual RPC's are tested.</li>
+<li>Implement full stub/proxy support for widl</li>
+<li>Implement the OXID resolver and other ORPC peccadilloes</li>
+</ul>
 
 <h3><a name="DOS"></a>DOS<br></h3>
 
@@ -199,13 +196,9 @@ Regedit]
 <h3><a name="OLE"></a>OLE<br></h3>
 
 <ul>
-<li>Handle apartments properly in CoCreateInstance, etc.</li>
-<li>Type library handling (parsing them is not yet complete and saving them is not implemented at all)</li>
-<li>Implement ICreateTypeLib support</li>
-<li>Implement Var* (e.g. VarMod) and variant conversion routines</li>
+<li>Integrate ICreateTypeLib support with ITypeLib support</li>
 <li>User defined types (e.g. IRecordInfo)</li>
 <li>Custom marshalling functions for various data types</li>
-<li>Implement missing features in OLE*.</li>
 </ul>
 
 <h3><a name="DirectX"></a>DirectX<br></h3>
