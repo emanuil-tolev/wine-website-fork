@@ -2,6 +2,26 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since September 6, 2006:</p>
+
+ <ul>
+ <li>ADD - Phil Costin as worker to wined3d.dll</li>
+ <li>ADD - R.Colenbrander as worker to opengl32.dll</li>
+ <li>ADD - R.Colenbrander as worker to x11drv</li>
+ <li>ADD - winecoreaudio section</li>
+ <li>ADD - compstui.dll section</li>
+ <li>ADD - hid.dll section</li>
+ <li>ADD - hlink.dll section</li>
+ <li>ADD - infosoft.dll section</li>
+ <li>ADD - mprapi.dll section</li>
+ <li>ADD - msftedit.dll section</li>
+ <li>ADD - ntdsapi.dll section</li>
+ <li>ADD - query.dll section</li>
+ <li>ADD - spoolss.dll section</li>
+ <li>Update - WWN links (Multimedia page)</li>
+ </ul>
+ <br>
+
 <p>Changes since August 21, 2006:</p>
 
  <ul>
@@ -196,92 +216,6 @@
  </ul>
  <br>
 
-<p>Changes since August 16, 2005:</p>
-
- <ul>
- <li>ADD - Frank Richter as worker to uxtheme.dll</li>
- <li>uxtheme.dll 60% -&gt; 80%</li>
- </ul>
- <br>
-
-<p>Changes since June 30, 2005:</p>
-
- <ul>
- <li>ADD - Felix Nawothnig as worker to psapi.dll</li>
- <li>ADD - Gerold J. Wucherpfennig as worker to cabinet.dll</li>
- <li>ADD - Jacek Caban as worker to mshtml.dll</li>
- <li>ADD - Jacek Caban as worker to Web Browser</li>
- <li>ADD - Rapha&euml;l Junqueira as worker to opengl32.dll</li>
- <li>ADD - Jeremy White as worker to ALSA</li>
- <li>ADD - Juan Lang as worker to crypt32.dll</li>
- <li>ADD - Krzysztof Foltman, Phil Krylov as workers to riched32.dll</li>
- <li>ADD - Lionel Ulmer as worker to dinput.dll</li>
- <li>ADD - Maarten Lankhorst as worker to qcap.dll </li>
- <li>ADD - activeds.dll section</li>
- <li>ADD - d3drm.dll section</li>
- <li>ADD - dpnet.dll section</li>
- <li>ADD - powrprof.dll section</li>
- <li>Remove - Eric Pouech as worker on psapi.dll</li>
- <li>Remove - Mike McCormack as worker on Web Browser</li>
- <li>Remove - Christian Costa as worker on ALSA</li>
- <li>Remove - Mike McCormack as worker on crypt32.dll</li>
- <li>Remove - ddraw.dll (direct3d) section</li>
- <li>Update - link to Oliver's D3D9 site</li>
- <li>Update - documentation links</li> 
- <li>Update - WWN links</li>
- <li>atl.dll 5% -&gt; 15%</li>
- <li>mshtml.dll 5% -&gt; 15%</li>
- <li>riched32.dll 20% -&gt; 25%</li>
- <li>Web Browser 100% -&gt; 70%</li>
- <li>gdi32.dll 60% -&gt; 75%</li>
- <li>stdole32.tlb 5% -&gt; 100%</li>
- <li>qcap.dll 5% -&gt; 40%</li>
- <li>ddraw.dll 90% -&gt; 80%</li>
- <li>itss.dll 5% -&gt; 30%</li>
- <li>ole32.dll 60% -&gt; 80%</li>
- <li>oleaut32.dll 80% -&gt; 90%</li>
- <li>rpcrt4.dll 30% -&gt; 40%</li>
- </ul>
- <br>
-
-<p>Changes since February 23, 2005:</p>
-
- <ul>
- <li>ADD - CodeWeavers as worker on (winemenubuilder)</li>
- <li>ADD - Robert North as worker on wintab32.dll</li>
- <li>ADD - James Hawkins as worker on advapi32.dll</li>
- <li>ADD - Alex Villacís Lasso as worker on odbc32.dll</li>
- <li>ADD - Robert Shearman as worker on ole32.dll</li>
- <li>ADD - Jon Griffiths as worker on mapi32.dll</li>
- <li>ADD - Eric Kohl as worker on setupapi.dll</li>
- <li>ADD - Hans Leidekker as worker on unicows.dll</li>
- <li>ADD - Mike McCormack as worker on atl.dll</li>
- <li>ADD - CodeWeavers as worker on advpack.dll</li>
- <li>ADD - Hans Leidekker as worker on winsock.dll</li>
- <li>ADD - Hans Leidekker as worker on winsock32.dll</li>
- <li>ADD - Dmitry Timoshkov as worker on user32.dll</li>
- <li>ADD - A link to Olivers DirectX page</li>
- <li>ADD - A link to MSDN OpenGL Documentation (opengl32.dll)</li>
- <li>ADD - A link to Process/Address Space model Documentation</li> 
- <li>Remove - Fran&ccedil;ois Gouget as worker on (winemenubuilder)</li>
- <li>Remove - Dmitry Timoshkov as worker on ttydrv</li>
- <li>Remove - Michael Jung as worker on secure32.dll</li>
- <li>Remove - Shachar Shemesh as worker on unicows.dll</li>
- <li>Remove - Greg Turner as worker on cabinet.dll</li>
- <li>Remove - Aric Stewart as worker on atl.dll</li>
- <li>Remove - Huw D M Davies as worker on advpack.dll</li>
- <li>Remove - Martin Wilck as worker on winsock.dll</li>
- <li>Remove - Juan Lang as worker on winsock.dll</li>
- <li>Remove - Juan Lang as worker on winsock32.dll</li>
- <li>wintab32.dll 80% -&gt; 60%</li>
- <li>advapi32.dll 60% -&gt; 75%</li>
- <li>msi.dll 45% -&gt; 50%</li>
- <li>cards.dll 5% -&gt; 85%</li>
- <li>rsaenh.dll 5% -&gt; 70%</li>
- <li>mscms.dll 20% -&gt; 25%</li>
- <li>x11drv 80% -&gt; 90%</li>
- </ul>
- <br>
 
 
 <p>&nbsp;</p>

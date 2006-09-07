@@ -105,6 +105,13 @@
       <td></td>
     </tr>
     <tr>
+      <td>compstui.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/Print_r/hh/Print_r/cpsuifnc_0fa648d6-e62d-4d04-9393-33e6924c6d2e.xml.asp">MSDN: CPSUI Functions and Structures</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Detlef Riekenberg</td>
+    </tr> 
+    <tr>
       <td>crtdll.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_c_run.2d.time_libraries.asp">MSDN: C Run-Time Libraries</a></td>
       <td><a href="{$root}/site/?issue=4#Crtdll%20Implementation">#4</a></td>
@@ -164,6 +171,21 @@
           <a href="{$root}/site/??issue=290#HTML%20Help">#290</a></td>
       <td class="pct70">70% complete</td>
       <td>James Hawkins</td>
+    </tr>
+    <tr>
+      <td>hid.dll</td>
+      <td class="adequate"><a href="http://www.usb.org/developers/hidpage/">HID Specifications</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Kevin Koltzau</td>
+    </tr>
+    <tr>
+      <td>hlink.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/workshop/misc/hlink/hlink.asp">MSDN: Hyperlinks</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Jacek Caban</td>
+    </tr>
     <tr>
       <td>icmp.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/iphlp/iphlp/retrieving_information_on_the_internet_protocol_and_the_internet_control_message_protocol.asp">MSDN: ICMP Functions</a></td>
@@ -184,6 +206,13 @@
       <td>None</td>
       <td class="pct50">50% complete</td>
       <td>CodeWeavers</td>
+    </tr>
+    <tr>
+      <td>infosoft.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/indexsrv/html/wbrscenario_7far.asp">MSDN: Language Resource Samples</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Mike McCormack</td>
     </tr>
     <tr>
       <td>iphlpapi.dll</td>
@@ -229,10 +258,17 @@
     </tr>
     <tr>
       <td>mpr.dll</td>
-      <td class="adequate"><a href="http://www.andreavb.com/API_MPR.html">mpr API calls</a></td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/rras/rras/router_management_reference.asp">MSDN: Router Management Functions</a></td>
       <td>None</td>
       <td class="pct20">20% complete</td>
       <td></td>
+    </tr>
+    <tr>
+      <td>mprapi.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/rras/rras/router_administration_functions.asp">MSDN: Router Administration Functions</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Dmitry Timoshkov</td>
     </tr>
     <tr>
       <td>mscms.dll</td>
@@ -240,6 +276,13 @@
       <td>None</td>
       <td class="pct50">50% complete</td>
       <td>Hans Leidekker</td>
+    </tr>
+    <tr>
+      <td>msftedit.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/richedit/richeditcontrols.asp">MSDN: Rich Edit Controls</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Stefan Leichter</td>
     </tr>
     <tr>
       <td>mshtml.dll</td>
@@ -357,6 +400,13 @@
       <td>Alexandre Julliard,<br>Eric Pouech</td>
     </tr>
     <tr>
+      <td>ntdsapi.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dsportal/dsportal/directory_services_portal.asp">MSDN: Directory Services</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Dmitry Timoshkov</td>
+    </tr>
+    <tr>
       <td>objsel.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/ad/ad/directory_object_picker.asp">MSDN: Directory Object Picker</a></td>
       <td>None</td>
@@ -459,6 +509,13 @@
       <td>None</td>
       <td class="pct60">60% complete</td>
       <td>Felix Nawothnig</td>
+    </tr>
+    <tr>
+      <td>query.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/indexsrv/html/ixarch_9sdw.asp">MSDN: Querying Component</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Mike McCormack</td>
     </tr>
     <tr>
       <td>rasapi32.dll</td>
@@ -600,6 +657,13 @@
       <td>None</td>
       <td class="pct5">5% complete</td>
       <td></td>
+    </tr>
+    <tr>
+      <td>spoolss.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/Print_r/hh/Print_r/spoolfnc_ebab7bb2-0a2a-4b70-b23e-5228a82597f9.xml.asp">MSDN: Spooler Functions</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Detlef Riekenberg</td>
     </tr>
     <tr>
       <td>stdole2.tlb</td>
@@ -816,7 +880,7 @@
           <a href="{$root}/site/?issue=215#Creating%20the%20Registry%20Without%20x11drv">#215</a>,
           <a href="{$root}/site/?issue=227#Mouse%20Handling">#227</a></td>
       <td class="pct90">90% complete</a></td>
-      <td>Dmitry Timoshkov</td>
+      <td>Dmitry Timoshkov,<br>R.Colenbrander</td>
     </tr>
   </table>
 </td>

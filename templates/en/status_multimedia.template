@@ -26,7 +26,8 @@
 	  <a href="{$root}/site/?issue=200#Updated%20ALSA%20Support">#200</a>,
           <a href="{$root}/site/?issue=243#Audio%20Driver%20Auto%20Detection">#243</a>,
           <a href="{$root}/site/?issue=280#ALSA%20Initialization%20Changes">#280</a>,
-          <a href="{$root}/site/?issue=287#ALSA%20Hardware%20Acceleration%20Fix">#287</a></td>
+          <a href="{$root}/site/?issue=287#ALSA%20Hardware%20Acceleration%20Fix">#287</a>,
+          <a href="{$root}/site/?issue=311#Audio%20Latency%20Issues">#311</a></td>
       <td class="pct75">75% complete<br>(xx-)</br>
       </td>
       <td></td>
@@ -83,6 +84,13 @@
       <td class="pct95">95% complete<br>(xxx)</br>
       </td>
       <td></td>
+    <tr>
+      <td>winecoreaudio</td>
+      <td class="adequate"><a href="http://jackit.sourceforge.net/docs/">docs</a></td>
+      <td><a href="{$root}/site/?issue=315#MacOS%20X%20Audio%20&%20Video%20Drivers">#315</a></td>
+      <td class="pct50">50% complete<br>(x--)</br>
+      </td>
+      <td>Emmanuel Maillard,<br>Ken Thomases</td>
     </tr> 
     <td colspan="5"><strong>mappers</strong></td>
     <tr>
@@ -204,7 +212,8 @@
     <tr>
       <td>winmm.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/multimed/htm/_win32_multimedia_functions.asp">Multimedia Functions</a></td>
-      <td><a href="{$root}/site/?issue=244#WinMM%20Timer%20Events">#244</a></td>
+      <td><a href="{$root}/site/?issue=244#WinMM%20Timer%20Events">#244</a>,
+          <a href="{$root}/site/?issue=313#Testing%20Wine's%20Audio">#313</a></td>
       <td class="pct80">80% complete</td>
       <td>Eric Pouech</td>
     </tr>
@@ -243,7 +252,7 @@
           <a href="{$root}/site/?issue=295#OpenGL%20&%20Child%20Window%20Breakage">#295</a>,
           <a href="{$root}/site/?issue=300#Linking%20libGL.so">#300</a></td>
       <td class="pct90">90% complete</td>
-      <td>Lionel Ulmer<br>Rapha&euml;l Junqueira</td>
+      <td>Lionel Ulmer,<br>R.Colenbrander,<br>Rapha&euml;l Junqueira</td>
     </tr>
   </table>
 </td>
