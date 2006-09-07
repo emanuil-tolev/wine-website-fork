@@ -64,7 +64,8 @@ class config
                 'Janitorial'      => 'http://wiki.winehq.org/JanitorialProjects',
                 'Winelib'         => '{$root}/site/winelib',
                 'Status'          => '{$root}/site/status',
-                'Resources'       => '{$root}/site/resources'
+                'Resources'       => '{$root}/site/resources',
+                'WineConf'        => '{$root}/site/wineconf'
            )
        );
 
