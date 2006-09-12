@@ -1,4 +1,4 @@
-<!--TITLE:[Wine Status DLLs]-->
+<!--TITLE:[Wine Status Core DLLs]-->
 
 <h1>Wine Status - Core DLLs</h1>
 
@@ -33,7 +33,7 @@
     <tr>
       <td>advpack.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/workshop/delivery/download/overview/launchinfsectionex.asp">LaunchINFSectionEx Function </a></td>
-      <td>None</td>
+      <td><a href="{$root}/site/?issue=310#Finishing%20advpack.dll">#310</a></td>
       <td class="pct30">30% complete</td>
       <td>James Hawkins</td>
     </tr>
@@ -127,6 +127,13 @@
           <a href="{$root}/site/?issue=273#Crypt(Un)ProtectData">#273</a></td>
       <td class="pct20">20% complete</td>
       <td>Juan Lang</td>
+    </tr>
+    <tr>
+      <td>cryptnet.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/xpehelp/html/xetbsnetworksecuritycomponents.asp">MSDN: Network Security Components</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Maarten Lankhorst</td>
     </tr>
     <tr>
       <td>cryptdll.dll</td>
@@ -293,7 +300,8 @@
           <a href="{$root}/site/?issue=276#MSHTML%20&%20Mozilla%20&%20XEmbed">#276</a>,
           <a href="{$root}/site/?issue=281#Microsoft%20HTML%20Help">#281</a>,
           <a href="{$root}/site/?issue=285#MSHTML%20Update">#285</a>,
-          <a href="{$root}/site/?issue=293#Summer%20of%20Code%20Update:%20MSHTML">#285</a></td>
+          <a href="{$root}/site/?issue=293#Summer%20of%20Code%20Update:%20MSHTML">#285</a>,
+          <a href="{$root}/site/?issue=313#Rendering%20HTML">#313</a></td>
       <td class="pct40">40% complete</td>
       <td>Jacek Caban</td>
     </tr>
@@ -306,7 +314,8 @@
           <a href="{$root}/site/?issue=232#MSIExec.exe%20Replacement">#232</a>,
           <a href="{$root}/site/?issue=253#MSI%20Status%20Update">#253</a>,
           <a href="{$root}/site/?issue=276#MSI%20Dialogs">#276</a>,
-          <a href="{$root}/site/?issue=290#Wine's%20MSI%20-%20Help%20Us%20Break%20It">#276</a></td>
+          <a href="{$root}/site/?issue=290#Wine's%20MSI%20-%20Help%20Us%20Break%20It">#276</a>,
+          <a href="{$root}/site/?issue=314#MSI%20Problem">#314</a></td>
       <td class="pct60">60% complete</td>
       <td>Mike McCormack,<br>Aric Stewart</td>
     </tr>
@@ -448,7 +457,8 @@
           <a href="{$root}/site/?issue=262#COM%20&%20InstallShield">#262</a>,
           <a href="{$root}/site/?issue=263#OLE%20Status">#263</a>,
           <a href="{$root}/site/?issue=268#InstallShield%20Breakage">#268</a>,
-          <a href="{$root}/site/?issue=284#Installer%20Challenge%20&%20DCOM">#284</a></td>
+          <a href="{$root}/site/?issue=284#Installer%20Challenge%20&%20DCOM">#284</a>,
+          <a href="{$root}/site/?issue=313#ITypeInfo_fnInvoke">#313</a></td>
       <td class="pct80">80% complete</td>
       <td>Robert Shearman,<br>CodeWeavers</td>
     </tr>
@@ -625,7 +635,8 @@
     <tr>
       <td>shdocvw.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/workshop/browser/prog_browser_node_entry.asp">MSDN: Programming and Reusing the Browser</a></td>
-      <td><a href="{$root}/site/?issue=211#Embedding%20Mozilla's%20ActiveX%20Control">#211</a></td>
+      <td><a href="{$root}/site/?issue=211#Embedding%20Mozilla's%20ActiveX%20Control">#211</a>,
+          <a href="{$root}/site/?issue=313#Rendering%20HTML">#313</a></td>
       <td class="pct25">25% complete</td>
       <td>Jacek Caban</td>
     </tr>
@@ -689,6 +700,13 @@
       <td></td>
     </tr>
     <tr>
+      <td>svrapi.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/netmgmt/netmgmt/network_management_functions.asp">MSDN: Network Management Functions</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Konstantin Petrov</td>
+    </tr>
+    <tr>
       <td>tapi32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcetapi/html/cmconPhoneDeviceFunctions.asp">MSDN: TAPI Functions</a></td>
       <td>None</td>
@@ -698,7 +716,9 @@
     <tr>
       <td>twain32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/still/hh/still/WIA_drv_scan_4093579b-6122-4f3e-b811-2fbc797123c5.xml.asp">MSDN: TWAIN-Compatible Applications</a></td>
-      <td><a href="{$root}/site/?issue=257#Setting%20Up%20a%20Scanner">#257</a></td>
+      <td><a href="{$root}/site/?issue=257#Setting%20Up%20a%20Scanner">#257</a>,
+          <a href="{$root}/site/?issue=311#gPhoto%20&%20TWAIN">#311</a>,
+          <a href="{$root}/site/?issue=313#GPhoto%20/%20TWAIN%20Integration">#313</a></td>
       <td class="pct25">25% complete</td>
       <td>Aric Stewart</td>
     </tr>
@@ -729,6 +749,13 @@
       <td><a href="{$root}/site/?issue=243#Button%20Code%20Audit">#243</a></td>
       <td class="pct95">95% complete</td>
       <td>Alexandre Julliard,<br>Dmitry Timoshkov</td>
+    </tr>
+    <tr>
+      <td>userenv.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/policy/policy/user_profiles_functions.asp">MSDN: User Profiles Functions</a></td>
+      <td>None</td>
+      <td class="pct5">5% complete</td>
+      <td>Mike McCormack</td>
     </tr>
     <tr>
       <td>usp10.dll</td>
@@ -787,6 +814,21 @@
       <td>Huw D M Davies</td>
     </tr>
     <tr>
+      <td>winex11.drv</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wceddk5/html/wce50conDisplayDrivers.asp">MSDN: Display Drivers</a></td>
+      <td><a href="{$root}/site/?issue=47#Feature:%20The%20X11%20driver%20by%20Ove%20K%E5ven">#47</a>,
+          <a href="{$root}/site/?issue=175#Workaround%20for%20Xvidmode%20Graphic%20Corruption">#175</a>,
+          <a href="{$root}/site/?issue=183#Configuring%20Keyboard%20Layouts">#183</a>,
+          <a href="{$root}/site/?issue=187#Input%20Events%20and%20DGA%20Problems">#187</a>,
+          <a href="{$root}/site/?issue=192#Support%20For%20XRandR">#192</a>,
+          <a href="{$root}/site/?issue=194#Keyboard%20Detection">#194</a>,
+          <a href="{$root}/site/?issue=215#Creating%20the%20Registry%20Without%20x11drv">#215</a>,
+          <a href="{$root}/site/?issue=227#Mouse%20Handling">#227</a>,
+          <a href="{$root}/site/?issue=310#Major%20Changes%20to%20Desktop%20Mode">#310</a></td>
+      <td class="pct90">90% complete</a></td>
+      <td>Dmitry Timoshkov,<br>R.Colenbrander</td>
+    </tr>
+    <tr>
       <td>wininet.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wininet/wininet/wininet_functions.asp">MSDN: Wininet Functions</a></td>
       <td><a href="{$root}/site/?issue=173#WinINet%20Work">#173</a></td>
@@ -799,18 +841,6 @@
       <td>None</td>
       <td class="pct5">5% complete</td>
       <td></td>
-    </tr>
-    <tr>
-      <td>winsock.dll</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winsock/winsock/winsock_functions.asp">MSDN: Winsock Functions</a></td>
-      <td><a href="{$root}/site/?issue=8#Winsock%20&%2032%20bit">#8</a>,
-          <a href="{$root}/site/?issue=9#Winsock%20(cont'd)">#9</a>,
-          <a href="{$root}/site/?issue=53#Winsock%20status">#53</a>,
-          <a href="{$root}/site/?issue=195#IPX%20Improvements">#195</a>,
-          <a href="{$root}/site/?issue=219#Converting%20Wininet%20to%20Windows%20Sockets">#219</a></td>
-      <td class="pct95">95% complete</a><br>
-      </td>
-      <td>Hans Leidekker</td>
     </tr>
     <tr>
       <td>winspool.drv</td>
@@ -851,6 +881,17 @@
       <td></td>
     </tr>
     <tr>
+      <td>ws2_32.dll</td>
+      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winsock/winsock/winsock_functions.asp">MSDN: Winsock Functions</a></td>
+      <td><a href="{$root}/site/?issue=8#Winsock%20&%2032%20bit">#8</a>,
+          <a href="{$root}/site/?issue=9#Winsock%20(cont'd)">#9</a>,
+          <a href="{$root}/site/?issue=53#Winsock%20status">#53</a>,
+          <a href="{$root}/site/?issue=195#IPX%20Improvements">#195</a>,
+          <a href="{$root}/site/?issue=219#Converting%20Wininet%20to%20Windows%20Sockets">#219</a></td>
+      <td class="pct95">95% complete</td>
+      <td></td>
+    </tr>
+    <tr>
       <td>wsock32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winsock/winsock/winsock_reference.asp">MSDN: Winsock 2 Functions</a></td>
       <td><a href="{$root}/site/?issue=108#Winsock2">#108 (1)</a>,
@@ -859,7 +900,7 @@
           <a href="{$root}/site/?issue=161#Need%20New%20Winsock%20Maintainer">#161</a>,
           <a href="{$root}/site/?issue=203#Bein'%20A%20Playa%20In%20Da%20Hood">#203</a></td>
       <td class="pct80">80% complete</td>
-      <td>Hans Leidekker</td>
+      <td>Andrew Ziem</td>
     </tr>
     <tr>
       <td>wtsapi32.dll</td>
@@ -867,20 +908,6 @@
       <td>None</td>
       <td class="pct5">5% complete</td>
       <td>Ulrich Czekalla</td>
-    </tr>
-    <tr>
-      <td>x11drv</td>
-      <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wceddk5/html/wce50conDisplayDrivers.asp">MSDN: Display Drivers</a></td>
-      <td><a href="{$root}/site/?issue=47#Feature:%20The%20X11%20driver%20by%20Ove%20K%E5ven">#47</a>,
-          <a href="{$root}/site/?issue=175#Workaround%20for%20Xvidmode%20Graphic%20Corruption">#175</a>,
-          <a href="{$root}/site/?issue=183#Configuring%20Keyboard%20Layouts">#183</a>,
-          <a href="{$root}/site/?issue=187#Input%20Events%20and%20DGA%20Problems">#187</a>,
-          <a href="{$root}/site/?issue=192#Support%20For%20XRandR">#192</a>,
-          <a href="{$root}/site/?issue=194#Keyboard%20Detection">#194</a>,
-          <a href="{$root}/site/?issue=215#Creating%20the%20Registry%20Without%20x11drv">#215</a>,
-          <a href="{$root}/site/?issue=227#Mouse%20Handling">#227</a></td>
-      <td class="pct90">90% complete</a></td>
-      <td>Dmitry Timoshkov,<br>R.Colenbrander</td>
     </tr>
   </table>
 </td>

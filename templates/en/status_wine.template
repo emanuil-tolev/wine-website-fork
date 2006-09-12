@@ -1,4 +1,4 @@
-<!--TITLE:[Wine Status]-->
+<!--TITLE:[Wine Status Core]-->
 
 <!-- Please remember to close your <td> and <tr> tags -->
 <h1>Wine Status - Core</h1>
@@ -27,7 +27,8 @@
           <a href="{$root}/site/?issue=184#Environment%20Variable%20Handling%20in%20Wine's%20Config">#184</a>,
           <a href="{$root}/site/?issue=229#Making%20Wine%20Upgradable">#229</a>,
           <a href="{$root}/site/?issue=286#PeekMessage%20and%20Performance">#286</a>,
-          <a href="{$root}/site/?issue=290#Device%20Drivers%20Still%20Suck">#290</a></td>
+          <a href="{$root}/site/?issue=290#Device%20Drivers%20Still%20Suck">#290</a>,
+          <a href="{$root}/site/?issue=311#Cross%20Process%20Calls">#311</a></td>
       <td class="pct85">85% complete</td>
       <td>Alexandre Julliard</td>
     </tr>
@@ -88,7 +89,8 @@
       <td class="nonexistent">Nonexistent</td>
       <td><a href="{$root}/site/?issue=20#Improving%20Wine's%20loader">#20</a>,
           <a href="{$root}/site/?issue=25#Improving%20PE%20loader">#25</a>,
-          <a href="{$root}/site/?issue=118#BSD%20PE%20Loader">#118</a></td>
+          <a href="{$root}/site/?issue=118#BSD%20PE%20Loader">#118</a>,
+          <a href="{$root}/site/?issue=319#Preloader%20Problem%20on%20x86_64">#319</a></td>
       <td class="pct100">100% complete</td>
       <td>Alexandre Julliard</td>
     </tr>
@@ -111,7 +113,9 @@
           <a href="{$root}/site/?issue=276#Unaligned%20mmap()">#276</a>,
           <a href="{$root}/site/?issue=281#World%20of%20Warcraft%20Broken">#281</a>,
           <a href="{$root}/site/?issue=288#Heap%20Corruption">#288</a>,
-          <a href="{$root}/site/?issue=291#Finding%20Memory%20Leaks">#291</a></td>
+          <a href="{$root}/site/?issue=291#Finding%20Memory%20Leaks">#291</a>,
+          <a href="{$root}/site/?issue=306#Fixing%20Memory%20Layout%20Issues">#306</a>,
+          <a href="{$root}/site/?issue=319#CreateRemoteThread%20&%20VirtualAllocEx">#319</a></td>
       <td class="pct90">90% complete<br>
       Wine's memory manager is known to be slow.</td>
       <td>Alexandre Julliard</td>
@@ -168,7 +172,9 @@
           <a href="{$root}/site/?issue=252#Window%20Region%20Handling">#252</a>,
           <a href="{$root}/site/?issue=260#Window%20Management%20Rewrite%20Details">#260</a>,
           <a href="{$root}/site/?issue=262#Window%20Management%20Problems">#262</a>,
-          <a href="{$root}/site/?issue=275#Windows%20Problems">#275</a></td>
+          <a href="{$root}/site/?issue=275#Windows%20Problems">#275</a>,
+          <a href="{$root}/site/?issue=310#Major%20Changes%20to%20Desktop%20Mode">#310</a>,
+          <a href="{$root}/site/?issue=319#Metacity%20Fullscreen%20Issues">#319</a></td>
       <td class="pct90">90% complete</td>
       <td>Alexandre Julliard</td>
     </tr>
@@ -186,14 +192,16 @@
           <a href="{$root}/site/?issue=221#More%20Filesystem%20Work">#221</a>,
           <a href="{$root}/site/?issue=254#File%20Optimization">#254</a>,
           <a href="{$root}/site/?issue=283#File%20Locking">#283</a>,
-          <a href="{$root}/site/?issue=287#Ejecting%20CD's">#287</a></td>
+          <a href="{$root}/site/?issue=287#Ejecting%20CD's">#287</a>,
+          <a href="{$root}/site/?issue=313#WaitCommEvent%20Deadlock">#313</a></td>
       <td class="pct100">100% complete</td>
       <td>Mike McCormack</td>
     </tr>
     <tr>
       <td>Disk drive emulation</td>
       <td class="adequate">Adequate</td>
-      <td><a href="{$root}/site/?issue=71#Direct%20drive%20access">#71</a></td>
+      <td><a href="{$root}/site/?issue=71#Direct%20drive%20access">#71</a>,
+          <a href="{$root}/site/?issue=313#Dynamic%20Drive%20Configuration">#313</a></td>
       <td class="pct100">100% complete</td>
       <td></td>
     </tr>
@@ -224,7 +232,9 @@
           <a href="{$root}/site/?issue=187#Locating%20Font%20Paths">#187</a>,
           <a href="{$root}/site/?issue=280#Finding%20and%20Using%20Fonts">#280</a>,
           <a href="{$root}/site/?issue=286#Turning%20off%20Anti-Aliasing">#286</a>,
-          <a href="{$root}/site/?issue=293#Font%20Issue%20(Fixed)">#293</a></td>
+          <a href="{$root}/site/?issue=293#Font%20Issue%20(Fixed)">#293</a>,
+          <a href="{$root}/site/?issue=311#sft2ttf:%20Getting%20Rid%20of%20FontForge">#311</a>,
+          <a href="{$root}/site/?issue=314#Font%20Issue">#314</a></td>
       <td class="pct90">90% complete</td>
       <td>Huw D M Davies</td>
     </tr>
@@ -238,7 +248,8 @@
           <a href="{$root}/site/?issue=222#Marlett%20Font%20Replacement">#222</a>,
           <a href="{$root}/site/?issue=240#New%20Fonts">#240</a>, 
           <a href="{$root}/site/?issue=241#Fonts%20Status">#241</a>,
-          <a href="{$root}/site/?issue=261#Configuring%20TrueType%20Fonts">#261</a></td>
+          <a href="{$root}/site/?issue=261#Configuring%20TrueType%20Fonts">#261</a>,
+          <a href="{$root}/site/?issue=312#Font%20and%20Edit%20Control%20Issue">#312</a></td>
       <td class="pct80">80% complete</td>
       <td>Huw D M Davies</td>
     </tr>
@@ -389,7 +400,8 @@
           <a href="{$root}/site/?issue=252#Systray%20Support%20Revisited">#252</a>,
           <a href="{$root}/site/?issue=261#Recycle%20Bin%20Needs%20Implementing">#261</a>,
           <a href="{$root}/site/?issue=270#Taking%20Out%20the%20Trash">#270</a>,
-          <a href="{$root}/site/?issue=279#Windows%20Icons%20in%20KDE">#279</a></td>
+          <a href="{$root}/site/?issue=279#Windows%20Icons%20in%20KDE">#279</a>,
+          <a href="{$root}/site/?issue=315#Shell%20Integration">#315</a></td>
       <td class="pct5">5% complete</td>
       <td></td>
     </tr>
@@ -436,7 +448,10 @@
           <a href="{$root}/site/?issue=288#Exluding%20Call%20in%20Relay%20Traces">#288</a>,
           <a href="{$root}/site/?issue=292#Finding%20Stack%20Corruption">#292</a>,
           <a href="{$root}/site/?issue=293#Test%20Harness%20for%20winedbg">#293</a>,
-          <a href="{$root}/site/?issue=301#Relay%20Segfaults">#301</a></td>
+          <a href="{$root}/site/?issue=301#Relay%20Segfaults">#301</a>,
+          <a href="{$root}/site/?issue=317#DWARF2%20Debugging">#317</a>,
+          <a href="{$root}/site/?issue=318#DWARF2%20Testing%20Needed">#318</a>,
+          <a href="{$root}/site/?issue=318#Indenting%20Traces">#318#2</a></td>
       <td class="pct85">85% complete</td>
       <td>Eric Pouech</td>
     </tr>

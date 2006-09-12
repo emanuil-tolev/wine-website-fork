@@ -118,7 +118,7 @@ Regedit]
 <li>Remove/rewrite wineisms from code</li>
 </ul>
 
-<h3><a name="x11drv"></a>X11drv<br></h3>
+<h3><a name="winex11.drv"></a>winex11.drv<br></h3>
 
 <ul>
 <li>Add support for keyboard layout APIs.</li>
@@ -148,7 +148,7 @@ Regedit]
 <li>Netbios support for IPX</li>
 </ul>
 
-<h3><a name="Winsock"></a>Winsock<br></h3>
+<h3><a name="ws2_32.dll"></a>ws2_32.dll<br></h3>
 
 <ul>
 <li>SIO_GET_INTERFACE_LIST support for IPX</li>
@@ -285,10 +285,6 @@ avicap32: "Video Capture"
 </ul>
 <br>
 
- For the full 0.9 Bug List, please see <span class="menuTitle"></span><a
- href="http://bugs.winehq.com/buglist.cgi?keywords=tasklet">Tasklets<br>
- </a>For
- the full 1.0 Bug List, please see <a
- href="http://bugs.winehq.com/buglist.cgi?keywords=tasklist">Tasklist</a>
+For the full 1.0 Bug List, please see <a href="http://bugs.winehq.com/buglist.cgi?keywords=tasklist">Tasklist</a>
 
 <p>&nbsp;</p>

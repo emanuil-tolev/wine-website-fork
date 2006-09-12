@@ -2,6 +2,20 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since September 9, 2006:</p>
+
+ <ul>
+ <li>ADD - svrapi.dll section</li>
+ <li>ADD - cryptnet.dll section</li>
+ <li>ADD - userenv.dll section</li>
+ <li>ADD - Andrew Ziem as worker to ws2_32.dll</li>
+ <li>Remove - Hans Leidekker as worker on ws2_32.dll</li>
+ <li>Rename - winsock.dll to ws2_32.dll</li>
+ <li>Rename - x11drv to winex11.drv</li>
+ <li>Update - WWN links Core and DLL pages</li>
+ </ul>
+ <br>
+
 <p>Changes since September 6, 2006:</p>
 
  <ul>
