@@ -156,10 +156,10 @@ of DirectX folks in attendance with some really high-powered laptops that could
 show off the games.  It's quite impressive to see the latest and greatest games
 running on Linux.  Jon Parshall extensively, um, "tested" World of Warcraft
 throughout the conference (did you finally make it level 48, Jon?)  Tom
-Wickline had 3DMark2003 running most demos.  There are still quite a few
-artifacts in a lot of the rendering, but the DirectX guys usually knew what was
-to blame for it.  Stefan showed off the Microsoft DirectX logo "proving"
-DirectX is properly detected.  </p><p>
+Wickline had 3DMark2000, 3DMark2001SE and 3DMark2003 running all of there test.  
+There is still some artifacts in the rendering of a couple of the test, but the 
+DirectX guys knew what was to blame for it. Stefan showed off the 
+Microsoft DirectX logo "proving" DirectX is being properly detected.  </p><p>
 
 Much of the current work surrounds context and state management.  It's known
 that better state management would improve performance and Wine is taking the
@@ -199,7 +199,7 @@ with them and that's a problem.  Another big issue is copy protection; but as
 we noted above there's work being done on that area.  </p><p>
 
 Phil Costin brought up another topic that needs to be addressed: figuring out
-how much video memory cards have.  Currently Wine just reports 16MB available,
+how much video memory cards have.  Currently Wine just reports 64MB available,
 however games really need to know the true amount so they know how many
 textures can be uploaded.  One idea was to just stuff textures into memory
 until no more fit, however there's never a point with OpenGL where no more fit.
