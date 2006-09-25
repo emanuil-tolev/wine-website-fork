@@ -2,6 +2,56 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since September 25, 2006:</p>
+
+ <ul>
+ <li>ADD - Dan Hipschman as worker to Wine IDL compiler (widl)</li>
+ <li>ADD - James Hawkins as worker to msi.dll</li>
+ <li>ADD - Dmitry Timoshkov as worker to mlang.dll</li>
+ <li>ADD - Dmitry Timoshkov as worker to TrueType support</li>
+ <li>ADD - Kai Blin as worker to secur32.dll</li>
+ <li>ADD - Aric Stewart as worker to imm32.dll</li>
+ <li>Remove - CodeWeavers as worker on mlang.dll</li>
+ <li>Remove - CodeWeavers as worker on imm32.dll</li>
+ <li>Remove - Aric Stewart as worker on msi.dll</li>
+ <li>Remove - Jon Griffiths as worker on crtdll.dll</li>
+ <li>Remove - Jon Griffiths as worker on mapi32.dll</li>
+ <li>Remove - Jon Griffiths as worker on msvcrt.dll</li>
+ <li>Remove - Jon Griffiths as worker on msvcrt20.dll</li>
+ <li>Remove - Jon Griffiths as worker on msvcrtd.dll</li>
+ <li>Remove - Jon Griffiths as worker on shlwapi.dll</li>
+ <li>Access Control & Authorization 20% -&gt; 40%</li>
+ <li>advpack.dll 30% -&gt; 70%</li>
+ <li>crypt32.dll 20% -&gt; 40%</li>
+ <li>dbghelp.dll 60% -&gt; 75%</li>
+ <li>Desktop Integration 5% -&gt; 40%</li>
+ <li>DLL separation 90% -&gt; 95%</li>
+ <li>hlink.dll 5% -&gt; 50%</li>
+ <li>Wave driver (mciwave) 60% -&gt; 65%</li>
+ <li>Initial registry contents 80% -&gt; 85%</li>
+ <li>Initial directory structure 90% -&gt; 95%</li>
+ <li>mshtml.dll 40% -&gt; 50%</li>
+ <li>msi.dll 60% -&gt; 70%</li>
+ <li>msvcrt.dll 60% -&gt; 80%</li>
+ <li>msxml3.dll 15% -&gt; 20%</li>
+ <li>riched20.dll 30% -&gt; 50%</li>
+ <li>secur32.dll 20% -&gt; 35%</li>
+ <li>shdocvw.dll 25% -&gt; 50%</li>
+ <li>stdole2.tlb 100% -&gt; 95%</li>
+ <li>TrueType support 80% -&gt; 90%</li>
+ <li>urlmon.dll 35% -&gt; 45%</li>
+ <li>usp10.dll 15% -&gt; 50%</li>
+ <li>winspool.drv 80% -&gt; 60%</li>
+ <li>Wine configuration tool (winecfg) 60% -&gt; 70%</li>
+ <li>Wine Debugger (winedbg) 85% -&gt; 90%</li>
+ <li>Wine gcc wrapper(winegcc) 90% -&gt; 95%</li>
+ <li>Wine Resource Compiler (wrc) 90% -&gt; 95%</li>
+ <li>Wine Message Compiler (wmc) 75% -&gt; 95%</li>
+ <li>Wine Registry Editor (regedit) 80% -&gt; 85%</li>
+ <li>wineshelllink 20% -&gt; 25%</li>
+ </ul>
+ <br>
+
 <p>Changes since September 9, 2006:</p>
 
  <ul>

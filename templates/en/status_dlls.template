@@ -34,7 +34,7 @@
       <td>advpack.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/workshop/delivery/download/overview/launchinfsectionex.asp">LaunchINFSectionEx Function </a></td>
       <td><a href="{$root}/site/?issue=310#Finishing%20advpack.dll">#310</a></td>
-      <td class="pct30">30% complete</td>
+      <td class="pct70">70% complete</td>
       <td>James Hawkins</td>
     </tr>
     <tr>
@@ -116,7 +116,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_c_run.2d.time_libraries.asp">MSDN: C Run-Time Libraries</a></td>
       <td><a href="{$root}/site/?issue=4#Crtdll%20Implementation">#4</a></td>
       <td class="pct100">100% complete</td>
-      <td>Jon Griffiths</td>
+      <td></td>
     </tr> 
     <tr>
       <td>crypt32.dll</td>
@@ -125,7 +125,7 @@
           <a href="{$root}/site/?issue=230#OpenSSL%20vs.%20NSS">#230</a>,
           <a href="{$root}/site/?issue=239#Transport%20Layer%20Security:%20SSL%20vs.%20GnuTLS">#239</a>,
           <a href="{$root}/site/?issue=273#Crypt(Un)ProtectData">#273</a></td>
-      <td class="pct20">20% complete</td>
+      <td class="pct40">40% complete</td>
       <td>Juan Lang</td>
     </tr>
     <tr>
@@ -153,7 +153,7 @@
       <td>dbghelp.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/debug/base/debug_help_library.asp">MSDN: Debug Help Library</a></td>
       <td>None</td>
-      <td class="pct60">60% complete</td>
+      <td class="pct75">75% complete</td>
       <td>Eric Pouech</td>
     </tr>
     <tr>
@@ -190,7 +190,7 @@
       <td>hlink.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/workshop/misc/hlink/hlink.asp">MSDN: Hyperlinks</a></td>
       <td>None</td>
-      <td class="pct5">5% complete</td>
+      <td class="pct50">50% complete</td>
       <td>Jacek Caban</td>
     </tr>
     <tr>
@@ -212,7 +212,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/intl/ime_038z.asp">MSDN: Input Method Editor Functions</a></td>
       <td>None</td>
       <td class="pct50">50% complete</td>
-      <td>CodeWeavers</td>
+      <td>Aric Stewart</td>
     </tr>
     <tr>
       <td>infosoft.dll</td>
@@ -254,14 +254,14 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/mapi/html/42a10169-99a3-4e30-a511-4854174d196f.asp">MSDN: MAPI Architecture</a></td>
       <td>None</td>
       <td class="pct5">5% complete</td>
-      <td>Jon Griffiths</td>
+      <td></td>
     </tr>
     <tr>
       <td>mlang.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/workshop/misc/mlang/reference/functions/functions.asp">MSDN: MLang Functions</a></td>
       <td>None</td>
       <td class="pct40">40% complete</td>
-      <td>CodeWeavers</td>
+      <td>Dmitry Timoshkov</td>
     </tr>
     <tr>
       <td>mpr.dll</td>
@@ -302,7 +302,7 @@
           <a href="{$root}/site/?issue=285#MSHTML%20Update">#285</a>,
           <a href="{$root}/site/?issue=293#Summer%20of%20Code%20Update:%20MSHTML">#285</a>,
           <a href="{$root}/site/?issue=313#Rendering%20HTML">#313</a></td>
-      <td class="pct40">40% complete</td>
+      <td class="pct50">50% complete</td>
       <td>Jacek Caban</td>
     </tr>
     <tr>
@@ -316,8 +316,8 @@
           <a href="{$root}/site/?issue=276#MSI%20Dialogs">#276</a>,
           <a href="{$root}/site/?issue=290#Wine's%20MSI%20-%20Help%20Us%20Break%20It">#276</a>,
           <a href="{$root}/site/?issue=314#MSI%20Problem">#314</a></td>
-      <td class="pct60">60% complete</td>
-      <td>Mike McCormack,<br>Aric Stewart</td>
+      <td class="pct70">70% complete</td>
+      <td>Mike McCormack,<br>James Hawkins</td>
     </tr>
     <tr>
       <td>msimg32.dll</td>
@@ -347,15 +347,15 @@
           <a href="{$root}/site/?issue=225#MSVCRT%20Headers">#225</a>,
           <a href="{$root}/site/?issue=228#Remove%20the%20MSVCRT()%20Macro">#228</a>,
           <a href="{$root}/site/?issue=300#MSVCRT%20Clashes%20With%20LibC">#300</a></td>
-      <td class="pct60">60% complete</td>
-      <td>Jon Griffiths</td>
+      <td class="pct80">80% complete</td>
+      <td></td>
     </tr>
     <tr>
       <td>msvcrt20.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_c_run.2d.time_libraries.asp">MSDN: C Run-Time Libraries</a></td>
       <td>None</td>
       <td class="pct95">95% complete<br>(wrapper around msvcrt.dll)</td>
-      <td>Jon Griffiths</td>
+      <td></td>
     </tr>
     <tr>
       <td>msvcrt40.dll</td>
@@ -369,7 +369,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_c_run.2d.time_libraries.asp">MSDN: C Run-Time Libraries</a></td>
       <td>None</td>
       <td class="pct60">60% complete</td>
-      <td>Jon Griffiths</td>
+      <td></td>
     </tr>
     <tr>
       <td>mswsock.dll</td>
@@ -382,7 +382,7 @@
       <td>msxml3.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnanchor/html/anch_xmlprod.asp">MSDN: XML Products</a></td>
       <td>None</td>
-      <td class="pct15">15% complete</td>
+      <td class="pct20">20% complete</td>
       <td>Huw Davies</td>
     </tr>
     <tr>
@@ -539,7 +539,7 @@
       <td>riched20.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/richedit/richeditcontrols.asp">MSDN: Rich Edit Controls</a></td>
       <td>None</td>
-      <td class="pct30">30% complete</td>
+      <td class="pct50">50% complete</td>
       <td>Krzysztof Foltman,<br>Phil Krylov,<br>Maarten Lankhorst</td>
     </tr>
     <tr>
@@ -594,8 +594,8 @@
       <td>secur32.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/secauthn/security/authentication_functions.asp">MSDN: Authentication Functions</a></td>
       <td>None</td>
-      <td class="pct20">20% complete</td>
-      <td></td>
+      <td class="pct35">35% complete</td>
+      <td>Kai Blin</td>
     </tr>
      <tr>
       <td>security.dll</td>
@@ -637,7 +637,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/workshop/browser/prog_browser_node_entry.asp">MSDN: Programming and Reusing the Browser</a></td>
       <td><a href="{$root}/site/?issue=211#Embedding%20Mozilla's%20ActiveX%20Control">#211</a>,
           <a href="{$root}/site/?issue=313#Rendering%20HTML">#313</a></td>
-      <td class="pct25">25% complete</td>
+      <td class="pct50">50% complete</td>
       <td>Jacek Caban</td>
     </tr>
     <tr>
@@ -660,7 +660,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/shell/reference/shlwapi/shlwapi.asp">MSDN: Shlwapi Functions</a></td>
       <td>None</td>
       <td class="pct80">80% complete</td>
-      <td>Jon Griffiths</td>
+      <td></td>
     </tr>
     <tr>
       <td>snmpapi.dll</td>
@@ -681,7 +681,7 @@
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/automat/html/aad137b1-b747-4d74-8d6c-5ec9b6e6983d.asp">MSDN: Type Building Interfaces</a></td>
       <td><a href="{$root}/site/?issue=154#InstallShield%206%20Insight">#154</a>,
           <a href="{$root}/site/?issue=284#stdole2.tlb">#284</a></td>
-      <td class="pct100">100% complete</td>
+      <td class="pct95">95% complete</td>
       <td>Huw D M Davies</td>
     </tr>
     <tr>
@@ -740,7 +740,7 @@
       <td>urlmon.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/workshop/networking/networking_node_entry.asp">MSDN: Networking in Microsoft Internet Explorer</a></td>
       <td>None</td>
-      <td class="pct35">35% complete</td>
+      <td class="pct45">45% complete</td>
       <td>Jacek Caban</td>
     </tr>
     <tr>
@@ -761,7 +761,7 @@
       <td>usp10.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/intl/uniscrib_35k5.asp">MSDN: Uniscribe</a></td>
       <td><a href="{$root}/site/?issue=292#Lotus%20Notes%20Breakage%20and%20Fix">#292</a></td>
-      <td class="pct15">15% complete</td>
+      <td class="pct50">50% complete</td>
       <td>Hans Leidekker,<br>Jeff Latimer</td>
     </tr>
     <tr>
@@ -846,7 +846,7 @@
       <td>winspool.drv</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/prntspol_7mgj.asp">MSDN: Printing and Print Spooler Functions</a></td>
       <td>None</td>
-      <td class="pct80">80% complete</td>
+      <td class="pct60">60% complete</td>
       <td>Huw D M Davies,<br>Detlef Riekenberg</td>
     </tr>
     <tr>
