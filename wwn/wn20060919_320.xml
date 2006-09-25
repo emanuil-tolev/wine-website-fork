@@ -36,18 +36,18 @@ University of Reading.  We were fortunate this year to receive two large
 donations that paid for the event.  Lars Mathiassen and the <a
 href="http://www.tightpoker.com">Party Poker Strategy Guide</a> guys contributed
 to Wine and paid for the rental of the facilities and the lunch catering.  All
-in all, it was came together really well and the entire Wine team was quite
+in all, it came together really well and the entire Wine team was quite
 thankful.  
 </p><p>
 
 While the event officially started on Saturday morning, many people arrived on
-Friday and gathered at a local pub, Queen's Head.  We wandered off to an Indian
+Friday and gathered at a local pub, the Queen's Head.  We wandered off to an Indian
 restaurant for dinner shortly thereafter and then back to the pub.  It was good
-to catch up with everyone and meet some new developers.  Click on the link
-above to see everyone in attendance.  Not pictured were Oliver Stieber and Hans
+to catch up with everyone and meet some of the new developers.  Click on the link
+above to see everyone in attendance.  Not pictured here were Oliver Stieber and Hans
 Leidekker.  </p><p>
 
-As usual, the highlight of Saturday morning was Alexandre's key note to kick
+As usual, the highlight of Saturday morning was Alexandre's keynote to kick
 off the conference.  There's been a decent amount of changes since the last
 time we got together, although these days there are a lot less architectural
 changes.  One of the highlights since the last conference was the beta release,
@@ -82,7 +82,7 @@ Wine can act as a non-profit organization.  </p><p>
 Delving into technical details, Alexandre began discussing the MacOS port.
 It's an area he's been involved in a lot over the past year and for the most
 part it works pretty well now.  With only a single vendor to deal with it's led
-to fewer compatibility headaches but Alexandre noted that Wine (Codeweavers)
+to fewer compatibility headaches but Alexandre noted that Wine (CodeWeavers)
 "gets a lot of help from Apple, they listen to us, but we don't get a lot of
 fixes".  Their kernel is pretty buggy but perhaps part of that is because,
 "Wine is exercising parts of the code no one else is". Performance sucks and
@@ -101,7 +101,7 @@ pretty good.  Several things have stabilized, such as the build system and
 libwine.  The last change with regard to libwine was the merge of Unicode
 support directly into it.  The wineserver protocol has mostly stabilized, but
 Alexandre doesn't feel it's as necessary as he once thought to have that set in
-stone.  Only a few core DLL's need it.  Speaking of core DLL's, Alexandre
+stone.  Only a few core DLLs need it.  Speaking of core DLLs, Alexandre
 mentioned he was going to put together a graph showing the decrease in changes
 to things like kernel32, ntdll, and user32, but the graphs didn't exactly show
 the number decreasing.  A small part of that has to do with some of the
@@ -134,7 +134,7 @@ White jokingly suggested "Wine 2007" for the release instead of 1.0.  </p><p>
 
 Overall, I'd say the tone was quite positive this year.  After WineConf 2004 in
 St. Paul there was a general feeling Wine had <i>a lot</i> to get done, even
-more than most people though.  After Stuttgart in 2005 everyone was excited
+more than most people thought.  After Stuttgart in 2005 everyone was excited
 because a beta release release seemed to be around the corner.  Now it seems
 like 1.0 will be following along shortly.  That's not to say Wine works
 flawlessly, but the architectural elements are all in place and no one seems to
@@ -147,15 +147,15 @@ lies, and future improvements.  </p><p>
 
 Currently the rendering code is now shared between all versions of Direct3D
 from version 1 through version 9.  There's been a huge improvement in shader
-code with shaders implemented in with GLSL and the GL_ARB_*_program extensions.
+code with shaders implemented with GLSL and the GL_ARB_*_program extensions.
 There's support for up to shader model 3.0.  </p><p>
 
 But what would a Direct3D presentation be without some eye candy?  Stefan
-showed off some screenshots of some games.  There was also a small contingent
+showed off screenshots of some games.  There was also a small contingent
 of DirectX folks in attendance with some really high-powered laptops that could
 show off the games.  It's quite impressive to see the latest and greatest games
 running on Linux.  Jon Parshall extensively, um, "tested" World of Warcraft
-throughout the conference (did you finally make it level 48, Jon?)  Tom
+throughout the conference (did you finally make it to level 48, Jon?)  Tom
 Wickline had 3DMark2000, 3DMark2001SE and 3DMark2003 running all of there test.  
 There is still some artifacts in the rendering of a couple of the test, but the 
 DirectX guys knew what was to blame for it. Stefan showed off the 
@@ -164,10 +164,10 @@ Microsoft DirectX logo "proving" DirectX is being properly detected.  </p><p>
 Much of the current work surrounds context and state management.  It's known
 that better state management would improve performance and Wine is taking the
 dumb approach right now.  Other things on the to-do list include better
-offscreen rendering with FBO's and pbuffers and multithreading support.  In the
+offscreen rendering with FBOs and pbuffers and multithreading support.  In the
 OpenGL world, it seems the decision has been made to move Direct3D to the WGL
 framework.  This will also allow Wine's Direct3D code to run on Windows as
-well.  Talking with Stefan later, it doesn't sound like there will be much of
+well.  Talking with Stefan later, it doesn't sound like there will be much of a
 performance penalty by going through that layer since the OpenGL calls will
 mostly get passed straight through.  </p><p>
 
@@ -226,7 +226,7 @@ Future work involves a lot of bug testing.  More tests are needed to exercise
 the code since currently only about 50% of it is covered with tests.  Other
 hurdles include needing to implement MkParseDisplayName, message filters (the
 fact we don't have them could be obscuring other problems right now), and
-making the running object table accessible across process.  The hackish way to
+making the running object table accessible across process boundaries.  The hackish way to
 do the latter would be with shared memory, but since that approach won't be
 accepted by Alexandre it'll probably be necessary to create an rpcss.exe that
 acts as a controlling process for passing the RPC calls between processes.
@@ -284,7 +284,7 @@ most likely via RPC, and that will require quite a bit of interface design.
 
 We all headed off to a pub for dinner and drinks.  CodeWeavers picked up the
 tab and thanked everyone for their efforts.  During dinner Jeremy White pulled
-out a donation he'd received several years ago from Tom Wickline as bounty for
+out a donation he'd received several years ago from Tom Wickline as a bounty for
 getting DirectX working.  With the past year worth of efforts, Jeremy felt it
 was time to cash in on it.  </p><p>
 
@@ -345,7 +345,7 @@ SHA1 signatures to manage a changed file or files.  </p><p>
 
 Wine's git tree takes up only 90MB of disk space, compared to over 200 for the
 old CVS tree.  That includes ancient versions of Wine that were added to git
-that never existed in CVS.  All in all, there's almost 13 years worth of meta
+and never existed in CVS.  All in all, there's almost 13 years worth of meta
 data and files.  </p><p>
 
 As far as working with git, the general idea seems to be to branch and commit
@@ -373,7 +373,7 @@ could be doing to take the load off him.                  </p><p>
 
 We discussed moving code review practices outward a bit so Alexandre doesn't
 have to do as much.  Right now a lot of new developers get discouraged because
-patches just into the void (as a reminder, just keep bugging Alexandre if that
+patches just fall into the void (as a reminder, just keep bugging Alexandre if that
 happens to find out why.)  Ideally a patch for, say MSI, would get reviewed by
 someone knowledgeable in that area, such as Mike McCormack.  In the end we
 decided we probably already do that as good as we can and we sort of have de
@@ -409,7 +409,7 @@ pulled from there if needed.  </p><p>
 
 Quite a few people were interested in the MacOS work and up to that point it
 really hadn't been shown off.  Andrew Bogott went to the podium with his Mac
-loaded with the CrossOver beta product and it was quite impressive.  The
+loaded with the CrossOver Mac beta and it was quite impressive.  The
 interface with OS X was quite smooth and exactly like what you'd expect.  I had
 a new copy of MS Office 2003 lying around and Andrew popped it in and installed
 it.  Within a few minutes it was running and completely usable.  The
