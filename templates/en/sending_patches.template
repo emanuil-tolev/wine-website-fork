@@ -38,12 +38,28 @@ to make sure it's not spam before they can let it through.)</p>
 </ul>
 
 <p>Accepted patches will appear in the <a href="{$root}/site/forums">wine-cvs</a> mailing list. 
-If your patch is not applied, review it carefully and check it against the above points.</p>
-<p>Rejected patches might receive a note in the <a href="{$root}/site/forums">wine-devel</a>
-mailing list, however they also may be silently dropped.  If you receive no
-response to your patch don't give up! Try checking it against the above
-points, asking for guidance on wine-devel if you find no obvious issue, and
-resubmitting it.</p>
+
+<p>Patches with obvious problems may receive a response on wine-devel.
+
+<p>Some patches may not receive any response.  In this case, your patch
+   maybe considered <i>Not Obviously Correct</i>, and you can:
+
+<ul>
+ <li> Check the patch over yourself, and think about what can be done to
+      clarify the patch (hints in the list above).
+
+ <li> Write a mail to wine-devel, explain your patch and request it be
+      reviewed by anybody that cares to review it.
+
+ <li> Unless one already exists, open a bug in bugzilla describing the
+      problem you are trying to solve (eg. ./configure fails on Solaris,
+      etc) and attach your patch.
+
+ <li> Ask for advice about your patch on #winehackers.
+</ul>
+
+<p> You may find it difficult to solicit feedback,
+    so think carefully about the comments you receive. 
 
 <hr>
 
