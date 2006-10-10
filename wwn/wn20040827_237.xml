@@ -367,7 +367,7 @@ of place.  Currently Wine supports two main display drivers - one
 is for graphical apps using X (x11drv) and the other is for commandline
 apps (ttydrv.)  There have been efforts in the past to add others,
 such as the SDL driver (see WWN issue
-<a href="http://www.winehq.com/?issue=114#New%20SDL%20Driver">#114</a>), 
+<a href="{$root}/site/?issue=114#New%20SDL%20Driver">#114</a>), 
 but there hasn't been much of a reason.  Rib explained that there's still much 
 work to do in order for the driver to be functional:</p>
 <quote who="Rib Rdb"><p>
