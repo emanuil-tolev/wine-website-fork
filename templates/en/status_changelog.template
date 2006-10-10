@@ -2,6 +2,18 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
+<p>Changes since October 1, 2006:</p>
+
+ <ul>
+ <li>ADD - Paul Vriens as worker to wintrust.dll</li>
+ <li>ADD - Miko&#322;aj Zalewski as worker to comctl32.dll</li>
+ <li>Remove - Thomas Weidenmüller as worker on comctl32.dll</li>
+ <li>Remove - Phil Krylov as worker on comctl32.dll</li>
+ <li>version.dll 85% -&gt; 95%</li>
+ <li>wintrust.dll 5% -&gt; 10%</li>
+ </ul>
+ <br>
+
 <p>Changes since September 25, 2006:</p>
 
  <ul>

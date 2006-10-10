@@ -187,7 +187,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/header.c">LXR</a></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
-	<td class="pct60">60%: Unicodification, drag &amp; drop, new messages, notifications, bugs.</td>
+	<td class="pct95">95%: filters support</td>
     </tr>
 
     <tr>
@@ -205,7 +205,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/imagelist.c">LXR</a></td>
 	<td>Sep 12, 2002</td>
 	<td>Comctl32.dll 6.0</td>
-	<td class="pct85">85%: Fix hotspot handling, implement the ILD_*, and ILS_* styles</td> 
+	<td class="pct85">85%: implement the ILD_*, and ILS_* styles</td> 
     </tr>
 
     <tr>

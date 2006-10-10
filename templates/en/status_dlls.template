@@ -95,7 +95,7 @@
           <a href="{$root}/site/?issue=267#Theming%20Revisited">#267</a>,
           <a href="{$root}/site/?issue=288#Comctl32%20Fixes">#288</a></td>
       <td class="pct95">95% complete</td>
-      <td>Thomas Weidenmüller,<br>Phil Krylov</td>
+      <td>Miko&#322;aj Zalewski</td>
     </tr>
     <tr>
       <td>comdlg32.dll</td>
@@ -787,7 +787,7 @@
       <td>version.dll</td>
       <td class="adequate"><a href="http://www.andreavb.com/API_VERSION.html">version API calls</a></td>
       <td>None</td>
-      <td class="pct85">85% complete</td>
+      <td class="pct95">95% complete</td>
       <td></td>
     </tr>
     <tr>
@@ -863,8 +863,8 @@
       <td>wintrust.dll</td>
       <td class="adequate"><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/security/security/cryptography_functions.asp">MSDN: Cryptography Functions</a></td>
       <td>None</td>
-      <td class="pct5">5% complete</td>
-      <td></td>
+      <td class="pct10">10% complete</td>
+      <td>Paul Vriens</td>
     </tr>
     <tr>
       <td>wldap32.dll</td>
