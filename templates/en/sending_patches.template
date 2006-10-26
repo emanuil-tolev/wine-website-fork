@@ -11,7 +11,10 @@ chapter in our online documentation.</p>
 <a href="mailto:wine-patches@winehq.org">wine-patches@winehq.org</a>.
 (Note that if you're not <a href="{$root}/site/forums">subscribed</a> to the mailing
 list, the mailing list administrators must first check your submission
-to make sure it's not spam before they can let it through.)</p>
+to make sure it's not spam before they can let it through.
+There is no attempt to apply patches that appear in the newsgroup
+or anywhere else to the Git tree.)
+</p>
 
 <p>When submitting patches, please:</p>
 <ul>
@@ -51,15 +54,22 @@ to make sure it's not spam before they can let it through.)</p>
  <li> Write a mail to wine-devel, explain your patch and request it be
       reviewed by anybody that cares to review it.
 
+ <li> Ask for advice about your patch on #winehackers.
+
  <li> Unless one already exists, open a bug in bugzilla describing the
       problem you are trying to solve (eg. ./configure fails on Solaris,
       etc) and attach your patch.
-
- <li> Ask for advice about your patch on #winehackers.
 </ul>
 
-<p> You may find it difficult to solicit feedback,
-    so think carefully about the comments you receive. 
+<p>
+    If your patch didn't receive a response for 3 days of WineHQ Git commits
+    your patch has a high chance of being in this category.
+    <br/>
+    You may find it difficult to solicit feedback,
+    so think carefully about the comments you receive.
+    <br/>
+    Just do not give up!
+</p>
 
 <hr>
 
@@ -97,9 +107,5 @@ if you have setup the mail headers in the Git config file correctly.
  </table>
 
 <p>That should generate a number of txt files, which you can send manually.</p>
-
-<p>There is no attempt to apply patches that appears in the newsgroup
-to the Git tree. Please send patches to 
-<a href="mailto:wine-patches@winehq.org">wine-patches@winehq.org</a>.</p>
 
 <p>&nbsp;</p>
