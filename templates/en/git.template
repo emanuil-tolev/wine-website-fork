@@ -7,7 +7,7 @@ Anyone may get the code, post opinions on what should be done,
 and contribute patches. You will need to know C and/or perl, and something
 about <a href="{$root}/site/resources">Unix and Windows</a>.</p>
 
-<p><a href="http://git.or.cz/" target="_blank">git</a> is a fast directory
+<p><a href="http://git.or.cz/" target="_blank">Git</a> is a fast directory
 content manager, originally written for use with large repositories,
 such as the Linux Kernel source. </p>
 
@@ -20,6 +20,8 @@ such as the Linux Kernel source. </p>
     <li><a href="#clone">Getting a local copy of Wine</a>
     <li><a href="#uptodate">Staying Up-To-Date</a>
     <li><a href="#sourcetree">Source Tree Browsing via the Web</a>
+    <li><a href="#modules">Other modules available from WineHQ</a>
+    <li><a href="#docs">Documentation module available from Sourceforge</a>
 </ol>
 
 <p><img src="{$root}/images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
@@ -71,6 +73,8 @@ you can use the following more dangerous command:</p>
 
 <p>This will wipe out any local changes you have made, so use it with caution.</p>
 
+<p><img src="{$root}/images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
+
 <h1>Staying Up-To-Date</h1>
 
 <p> First, make sure to clean your tree as described above, then
@@ -84,8 +88,12 @@ run the following commands from the top level wine directory:</p>
  </td></tr>
  </table>
 
+<p><img src="{$root}/images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
+
 <a name="sourcetree" class=hidden></a>
+
 <h1>Source Tree Browsing via the Web</h1>
+
 <p>The source code of the entire Wine tree is (<a href="http://lxr.linux.no/">LXR</a>-based)
 cross-referenced and available for browsing, including a search engine.
 This cross-references source is based on the snapshot-releases and is made available at: </p>
@@ -98,5 +106,66 @@ This cross-references source is based on the snapshot-releases and is made avail
 <ul>
   <li><a href="http://source.winehq.org/git">source.winehq.org/git</a>, on the primary Git repository
 </ul>
+
+<p><img src="{$root}/images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
+
+<a name="modules" class=hidden></a>
+
+<h1>Other modules available from WineHQ</h1>
+
+<p>The WineHQ CVS server makes a couple of other things available.</p>
+
+<ul>
+  <li><tt>lostwages</tt> -- source for the WineHQ web site</li>
+  <li><tt>tools</tt>  -- tools used on the WineHQ site</li>
+  <li><tt>appdb</tt>  -- source for the application database web site</li>
+  <li><tt>bugzilla</tt>  -- source for the bugzilla version used on the WineHQ site</li>
+</ul>
+
+<p>To login to the CVS server, run in a terminal:</p>
+
+<table width="500" border=0 cellpadding=10>
+  <tr><td class=black>
+    <span class=inverse>
+      CVSROOT=:pserver:cvs@cvs.winehq.org:/home/wine cvs login
+    </span>
+  </td></tr>
+</table>
+
+<p>Use &quot;cvs&quot; as the password (without the quotes).</p>
+
+<p>To get a git repository of one of the modules listed above
+create a new directory and in a terminal run in that directory:</p>
+
+<table width="550" border=0 cellpadding=10>
+  <tr><td class=black>
+    <span class=inverse>
+      git cvsimport -v -k -d :pserver:cvs@cvs.winehq.org:/home/wine MODULE<br/>
+    </span>
+  </td></tr>
+</table>
+
+<p>Replace MODULE with one of the module names listed above.<br/>
+But be aware that this can take quite some time.</p>
+
+<p><img src="{$root}/images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
+
+<a name="docs" class=hidden></a>
+
+<h1>Documentation module available from Sourceforge</h1>
+
+<p>The documentation lives in a separate CVS tree on Sourceforge.<br/>
+To get a git repository of the documentation create a new directory and
+in a terminal run in that directory:</p>
+<table width="550" border=0 cellpadding=10>
+  <tr><td class=black>
+    <span class=inverse>
+      git cvsimport -v -k -d :pserver:anonymous@wine.cvs.sourceforge.net:/cvsroot/wine docs<br/>
+    </span>
+  </td></tr>
+</table>
+
+<p>But be aware that this can take quite some time.</p>
+
 
 <p>&nbsp;</p>
