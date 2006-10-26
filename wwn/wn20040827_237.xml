@@ -302,7 +302,7 @@ wrappers to deal with the namespace problem.  I believe we can solve
 that with a suitable naming convention as we began to do with the 
 winegcc patch.
 </p><p>
-Alternatively we could go with with dynamic binding as proposed by 
+Alternatively we could go with dynamic binding as proposed by 
 Alexandre and have a syscall (or emulation escape) to call PPC code. 
 This is probably the easiest to implement but leaves us with extra call 
 overhead (although apparently this is something that is currently done 

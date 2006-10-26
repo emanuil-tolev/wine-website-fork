@@ -172,8 +172,8 @@ The core interfaces are:
 There are predefined interfaces from Microsoft which have a well defined
 API, or you can have other interfaces of your own with their own IIDs.
 </p><p>
-As for interface access this is was always on compile time. As for object
-creation and interface access was possible for runtime.
+As for interface access, this was always at compile time. As for object
+creation and interface, access was possible for runtime.
 </p><p>
 This was all in-process up to then.
 </p><p>
@@ -216,7 +216,7 @@ of Windows, which is, well, not really documented and rather complicated.</p></a
   done?</p></question>
 
 <answer><p><i>Marcus:</i>
- At the time I did it it was 99% repetition.</p></answer>
+ At the time I did it, it was 99% repetition.</p></answer>
 
 <question><p><i>BV:</i>
  How is their implementation different?

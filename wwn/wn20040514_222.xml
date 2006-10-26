@@ -508,7 +508,7 @@ allows free usage for non-comercial works so I figured I would check
 and see if changing compilers would yield better performance. According
 to Intel's site it is supposed to give a 15 to 30% speed boost in
 applications. I was able to compile WINE with only about a 10 line
-patch. Somehow some of of the inline asm is already getting defined by
+patch. Somehow some of the inline asm is already getting defined by
 icc. I am having some problems running graphical applications and maybe
 it is related to the code I had to disable. If anyone else wants to
 test I figure this might be a good tool to have if you are porting a

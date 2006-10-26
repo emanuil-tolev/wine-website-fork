@@ -145,7 +145,7 @@ changes:</p>
 <p>Patrik wondered, <quote who="Patrik Stridvall">
 
 		You want all 16-bit exported function prototypes moved from the .h
-		files to the implementing .c file in all cases that is is possible (ie Wine
+		files to the implementing .c file in all cases that is possible (ie Wine
 		compiles without errors or warnings)?</quote>
 
 Alexandre said that was exactly what he wanted, <quote who="Alexandre Julliard">

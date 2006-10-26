@@ -369,7 +369,7 @@ least enumerate. Talking to the devices then is another big step. Not many
 windows programs will talk to the devices by using something like libusb. So
 either something like ndiswrapper for USB would be needed in the kernel to
 load windows drivers, with infrastructure in wine to to talk to the driver,
-or the windows driver need to be be reengineered to expose an API to the
+or the windows driver need to be reengineered to expose an API to the
 user program like with windows driver, but internally use Linux means
 (libusb, etc).
 </p><p>

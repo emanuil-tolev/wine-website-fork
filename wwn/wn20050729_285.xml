@@ -352,7 +352,7 @@ cd /usr/src/wine<br />
 </code></ul></p><p>
 Note there is no support for arm in Wineserver, kernel32 or ntdll so winelib 
 won't run yet. Most everything else should compile as Winelib works on i386, 
-PPC and SPARC. You might be able to get by by stubbing the set_thread_context 
+PPC and SPARC. You might be able to get by, by stubbing the set_thread_context 
 stuff out for simple apps.</p></quote>
 
 <p>We sort of touched on this subject last winter in WWN

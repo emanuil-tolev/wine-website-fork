@@ -277,7 +277,7 @@ So what's basically needed for DDraw over opengl:
 <p>Finally, Stefan wondered about a refcounting problem and sent a
 long email describing what he ran into along with a possible workaround:</p>
 <quote who="Stefan Dosinger"><p>
-I have a a question regarding some code that might be rejected by Alexandre 
+I have a question regarding some code that might be rejected by Alexandre 
 when I submit it. The problem is that I have to do a refcount hack in my new 
 ddraw code to destroy textures properly. I CC this mail to AJ because it's 
 him who has the last word ;)

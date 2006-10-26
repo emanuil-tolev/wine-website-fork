@@ -780,7 +780,7 @@ class html
     {
         global $config;
            
-        // orginal in (avoid duplicate replacements)
+        // original in (avoid duplicate replacements)
         $orig = $in;
                 
         // default vars

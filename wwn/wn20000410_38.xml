@@ -87,11 +87,11 @@ Dave Pickles a very long ago reported some problems while Wine was
 saving the registry. No one really took care at that time. Two weeks
 ago, Uwe Bonnes experienced the same kind of problems and decided to
 take a look at it. After some tests, he reported some strange
-behavior. G&#233;rard Patel also looked at it and found was was going
+behavior. G&#233;rard Patel also looked at it and found what was going
 wrong: at some point the code sets a request buffer for the server,
 and fills it with different values. Setting up a request buffer
 require to get a buffer (there is one buffer per thread), and then
-write some values in it. The found bug by G&#233;rard lied in the fact that 
+write some values in it. The bug found by G&#233;rard lied in the fact that 
 part of the code writing the values was calling another function,
 which, in turn, was also making a call to the server. This second call 
 was trashing the values already written in the buffer (as there's a

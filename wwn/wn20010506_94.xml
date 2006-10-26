@@ -100,7 +100,7 @@ following dilemna:</p>
 
 <quote who="Ian Pilcher"><p>
    In order to Unicode-enable the PostScript driver, it needs information
-   about about font encodings that isn't present in Adobe's AFM file
+   about font encodings that isn't present in Adobe's AFM file
    format (glyph names for character encodings greater than 256).  For
    Type 1 fonts with a standard encoding, the driver can use the encoding
    in the Adobe Glyph List.  (There's no other choice.)</p>

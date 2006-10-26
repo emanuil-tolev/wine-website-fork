@@ -407,7 +407,7 @@ applys to both the Mingw on Cygwin and Mingw for ReactOS ports.
 This document assumes you are using cygwin to configure and build WINE for 
 a Mingw Target. Cygwin is environment used due to a set of bugs within the 
 Mingw Unix Environment MSYS. Msys may work however it, the ReactOS build 
-system and and any other configurations are not supported by the WINE project.
+system and any other configurations are not supported by the WINE project.
 <ol>
  <li> Make sure you have the latest cygwin with win32api package.</li>
  <li> Be sure you are using mingw-extra-2.95.3.tar.gz with cygwin. (Fix for some libiberty.a issues) 

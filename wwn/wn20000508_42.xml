@@ -61,7 +61,7 @@ with the content of the library to load.
 
 The old IsBadReadPtr() code returned true in this situation, while the 
 new code returns false (the addresses and the relay output is identical 
-up to this point). Most intersting is the fact, that the
+up to this point). Most interesting is the fact, that the
 VirtualAlloc() call in PE_LoadImage() fails, _if_ IsBadReadPtr() has
 been called before. As a result, COMCTL32 will be relocated to another 
 address and not shared, when it is loaded a second time later by the

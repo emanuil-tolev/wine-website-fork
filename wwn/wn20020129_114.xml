@@ -238,7 +238,7 @@ patch to improve Office functionality.  He didn't have time to break it up into 
 asked for volunteers.  Duane Clark, Huw Davies, and Dimitrie Paun responded and broke it
 up into 30+ patches.  Alexandre also committed a patch from Huw Davies that uses the 
 Xrender extension to support client side font rendering - thereby providing anti-aliased 
-text.  Mike McCormack also came up with a patch that to remove X borders and and title
+text.  Mike McCormack also came up with a patch that to remove X borders and title
 bars on managed windows, so the Windows are still managed and they look like a normal 
 Windows window.</p>
 
