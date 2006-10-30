@@ -126,9 +126,9 @@ function view_announce ($ver)
     global $file_root, $config, $html;
     
     if ($ver == "latest")
-        $announce = "http://cvs.winehq.org/cvsweb/~checkout~/wine/ANNOUNCE";
+        $announce = "http://source.winehq.org/git/wine.git/master:ANNOUNCE";
     else
-        $announce = "http://cvs.winehq.org/cvsweb/~checkout~/wine/ANNOUNCE?rev=".$ver;
+        $announce = "http://source.winehq.org/git/wine.git/tags/wine-".$ver.":ANNOUNCE";
         
     if ($announce = @join("",file($announce)))
     {
