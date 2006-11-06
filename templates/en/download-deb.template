@@ -12,10 +12,10 @@ distributions have their own repositories of software, many of which include
 Wine, however we keep our own repository of the latest available packages here 
 for download.</p>
 
-<p>Packages here are designed to function on Ubuntu Dapper (6.06) and Ubuntu 
-Breezy (5.10).  The Dapper packages may work on Debian unstable, however this is
-not supported.  None of these packages will work at this time for Debian stable 
-(sarge), however a backport could become available at a future date.</p>
+<p>Packages here are designed to function on Ubuntu Edgy (6.10), Dapper (6.06), and 
+Breezy (5.10).  Packages here used to also work for Debian unstable, however due 
+to changes in Debian this no longer works and our Ubuntu maintainer is unable to support them.
+If you can help provide up-to-date Debian packages, please contact <a href=mailto:scott@open-vote.org>Scott Ritchie</a>.</p>
 
 
 <h2>Installing from the WineHQ APT Repository with Synaptic:</h2>
@@ -27,6 +27,8 @@ Synaptic (System->Administration->Synaptic Package Manager) and selecting
 Settings->Repositories.  Then click add, select custom, and enter one of the 
 following:</p>
 
+<p><b>For Ubuntu Edgy (6.10):</b><br>
+<i>deb http://wine.budgetdedicated.com/apt edgy main</i></p>
 <p><b>For Ubuntu Dapper (6.06):</b><br>
 <i>deb http://wine.budgetdedicated.com/apt dapper main</i></p>
 <p><b>For Ubuntu Breezy (5.10):</b><br>
@@ -47,6 +49,8 @@ i386 architecture, or wish to compile the package in a special or optimized way,
 you can build the wine package using the source repository instead. To do this, 
 add a source repository with one of the following:</p>
 
+<p><b>For Ubuntu Edgy (6.10):</b><br>
+<i>deb-src http://wine.budgetdedicated.com/apt edgy main</i></p>
 <p><b>For Ubuntu Dapper (6.06):</b><br>
 <i>deb-src http://wine.budgetdedicated.com/apt dapper main</i></p>
 <p><b>For Ubuntu Breezy (5.10):</b><br>
