@@ -563,7 +563,7 @@ done it, but it hadn't been included in the kernel,
 <quote who="Con Kolivas">
 
  I had proposed a fixed priority scheduling class on the linux kernel 
- mailing list for just such an occasion. However noone noticed or seemed 
+ mailing list for just such an occasion. However no one noticed or seemed 
  interested. The patch is in the lkml archives and would be trivial to 
  re-implement. Would this be helpful? I know Ingo Molnar certainly saw a 
  need for such a patch after I described a different issue that could be 

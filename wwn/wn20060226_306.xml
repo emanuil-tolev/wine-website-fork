@@ -189,7 +189,7 @@ It moves the d3d8 surface
 structure over to wined3d. As moving all code over in one step to wined3d is 
 not a good idea the old d3d8 code had to be made compatible with the new 
 structure. This change required me to import some structures from the 
-wined3d_private.h header untill the move is over (the wined3d header can't be 
+wined3d_private.h header until the move is over (the wined3d header can't be 
 included by d3d8 as it conflicts with d3d8_private.h). Further some pieces of 
 surface code were moved over to wined3d.
 </p></quote>
@@ -275,7 +275,7 @@ Just wanted to report my wine experience with Lotus Notes 6.5.1:
 I've run Lotus Notes with wine for a long time. What I notice with wine-0.9.8 
 (though this was present in a few releases before but not in all releases):
 <ul>
-<li> Wine is noticably faster than the snapshot 200412xx</li>
+<li> Wine is noticeably faster than the snapshot 200412xx</li>
 <li> I need to select win98 to get the file select box working</li>
 <li> I need to set WINEDLLOVERRIDES="usp10=n"</li>
 <li> Cut and paste between X and wine applications works only when selecting the 

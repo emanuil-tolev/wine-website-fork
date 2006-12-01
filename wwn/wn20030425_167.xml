@@ -302,7 +302,7 @@ or for which I don't have anything to test.
 <ol>
 <li> Look at z-order issues for wintab contexts.
 	Wintab contexts have a z-order that appears to
-	be independant of window z-order.
+	be independent of window z-order.
 	This will need further investigation, to find out
 	how to map to XInput concepts.</li>
 

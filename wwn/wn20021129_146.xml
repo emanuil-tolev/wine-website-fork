@@ -508,7 +508,7 @@ registers. Does anyone have any idea what the best way to write a
 replacement for cygwin would be? Maybe I need to ask the cygwin list.
 </p><p>
 My plan is to go through each one that doesn't link, look at all the 
-errors, and  categorize them (many are the same problem spread accross 
+errors, and  categorize them (many are the same problem spread across 
 various dlls), so that we can tackle the more widespread problems
 first... Any help with this appreciated :-)
 </p></quote>

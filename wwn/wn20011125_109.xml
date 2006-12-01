@@ -267,7 +267,7 @@ settings.  Francois Gouget explained in more detail:</p>
  </p><p>
    I don't see why we should prevent Windows applications from doing so.
  Similarly, <code>SPI_GETSCREENSAVERRUNNING</code> could be used by an application to
- stop its slide-show since noone will be able to see it. But actually, it
+ stop its slide-show since no one will be able to see it. But actually, it
  now occurs to me that it may also be used by distributed-computing
  applications to know when to start their computations (for those that
  are not screen-savers).

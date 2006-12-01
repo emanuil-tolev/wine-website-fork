@@ -304,7 +304,7 @@ havn't written an ActiveX control for it yet).
 </p><p>
 Currently the HTML Help viewer requires an IWebBrowser interface, and only
 really works with an Internet Explorer installation - so I don't believe
-it should be commited into WINE proper yet. We don't want applications in
+it should be committed into WINE proper yet. We don't want applications in
 our own CVS that require native dlls :)
 </p><p>
 That brings me to my other WIP, de-QT'ing KHTML and turning it into a

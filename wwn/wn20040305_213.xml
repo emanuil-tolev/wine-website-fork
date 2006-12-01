@@ -135,7 +135,7 @@ their .Net implementation.  The idea here is that Wine is capable
 of doing all the complex windowing required of .NET's System.Windows.Forms
 classes.  So it makes sense to bolt Wine's Win32 to C#.   Unfortunately,
 Mono required a forked version of Wine in order to load things the way
-they want.  This doesn't help anyone and the maintainance work is a pain.
+they want.  This doesn't help anyone and the maintenance work is a pain.
 (For more info, see some of the earlier threads in issues
 <a href="http://www.winehq.org/site/?issue=162#.NET%20Success">#162</a> and
 <a href="http://www.winehq.org/?issue=171#Making%20Mono's%20Winforms%20Work">

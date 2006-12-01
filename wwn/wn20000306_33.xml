@@ -277,7 +277,7 @@ the binary RPMs I had used before managed this quite well.
 <p />
 
 On my system, the latest Wine release was completely unable to find its
-shared library files.  After kludgeing a fix using soft links, Wine was
+shared library files.  After kludging a fix using soft links, Wine was
 then unable to find wine.conf.  So I moved wine.conf.  Then Wine
 generated errors about being unable to bind to many functions within
 mscrt32.dll (using "deadbeef" instead), then crashing when a "deadbeef"

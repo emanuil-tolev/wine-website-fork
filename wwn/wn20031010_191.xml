@@ -244,7 +244,7 @@ Full blown theming in windows uses a combination of .theme files and .msstyles
 files.
 </p><p>
 .theme files I believe existed before XP and do not use uxtheme.dll. They 
-primarilly just define system metrics and colors (along with icons for things 
+primarily just define system metrics and colors (along with icons for things 
 like My Computer, etc and mouse cursors).
 </p><p>
 .msstyles files are the basis of uxtheme.dll, and allow much broader theming 
@@ -264,7 +264,7 @@ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ThemeManager
 </p><p>
 The configuration seems to be split between those two locations, with a couple 
 options in both. HKCU primarily contains configuration related to XP's 
-msstyles method of theming, HKLM looks to primarilly define theming 
+msstyles method of theming, HKLM looks to primarily define theming 
 with .theme files (although there is some slight crossover between the two).
 </p></quote>
 
@@ -465,7 +465,7 @@ of .lnk files available at
 the project you may want to check out the <a href="http://www.reactos.com">
 ReactOS website</a>.  Their Win32 subsystem relies on Wine and
 a lot of Wine portability and janitorial work has come out of
-it.  Steven Edwards is their Wine liason and has contributed a
+it.  Steven Edwards is their Wine liaison and has contributed a
 lot of valuable work to both projects.  [<i>note to self.. 
 interview Steven</i>]  Increasing contributions are becoming
 apparent as their lower level work matures.  This week Steven

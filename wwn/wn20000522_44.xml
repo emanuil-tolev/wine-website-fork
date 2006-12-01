@@ -79,7 +79,7 @@ regarding thread safety (some locks must be set before entering the
 OpenGL functions), reentrancy (can an OpenGl function be called - thru 
 this thunking mechanism - while already executing the call to another
 OpenGL function), PIC (since the generated code can be put in a .so
-file, it needs to be Position Independant Code - all references are
+file, it needs to be Position Independent Code - all references are
 relative).
 
 <p />

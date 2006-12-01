@@ -364,7 +364,7 @@ since there must be some Windows programs depending on that export.
 <quote who="Mike McCormack"><p>
 GradientFill is pretty slow, as it fills the rectangle line by line. 
 I'm not sure how much this is going to slow down a normal application. 
-It used to draw pixel by pixel, and that was a very noticable 
+It used to draw pixel by pixel, and that was a very noticeable 
 slowdown... line by line is much faster than that, but it still may 
 cause a slowdown in some circumstances.
 </p><p>

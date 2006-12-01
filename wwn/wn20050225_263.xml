@@ -226,7 +226,7 @@ of OpenGL and can be used to do off-screen rendering.  Generally
 the reason you want to render off-screen is for performance.  First,
 you set up a nice image buffer and you do all your rendering into it.  
 The processing to make a complete scene can be extensive and doing it
-in real-time can incur a noticable performance hit.  After you've 
+in real-time can incur a noticeable performance hit.  After you've 
 rendered your scene into a buffer, it simply gets copied onto the
 screen.  Needing PBuffer support led Lionel Ulmer to remark:</p>
 <quote who="Lionel Ulmer"><p>

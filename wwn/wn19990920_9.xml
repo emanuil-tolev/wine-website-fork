@@ -287,7 +287,7 @@ application. The makefile builds a target called "wineclipsrv". wineclipsrv
 takes one command line argument which is a bit mask of the selection types
 to be acquired. Currently we just support two selections PRIMARY (internal
 mask value 1) and CLIPBOARD (internal mask value 2). If no argument is
-supplied the server aquires all selections. (mask value 3)
+supplied the server acquires all selections. (mask value 3)
 
 <p />
 

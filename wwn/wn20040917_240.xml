@@ -204,7 +204,7 @@ came up involved creating a new library that could be shared
 between related parts of DirectX, in particular Direct3D.  
 Jason Edmeades resurrected the topic this week:</p>
 <quote who="Jason Edmeades"><p>
-I've spoken with the wine-d3d people and noone is currently doing anything
+I've spoken with the wine-d3d people and no one is currently doing anything
 on directx9 support. Originally Raphael was trying to merge things into a
 new library, wined3d, using an interface which ddraw could also use. This
 has not happened, and as we stand there is no progress being made.

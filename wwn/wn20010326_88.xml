@@ -178,7 +178,7 @@ up to date.
 </p><p>
 Currently, we're undertaking a rearchitecture of the Direct3D work, along the
 lines of the DDraw HAL work we've been contributing to the WineHQ tree.  Basically,
-we're separating the glX code into the x11drv for device independance.  We're also
+we're separating the glX code into the x11drv for device independence.  We're also
 redoing the front end interfaces to start supporting D3D APIs both older and newer
 than D3D 7.  
 </p><p>

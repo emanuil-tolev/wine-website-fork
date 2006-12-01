@@ -492,7 +492,7 @@
 	 before any other .h files.  I did this using the '-include' directive in gcc, 
 	 but it requires knowledge of the absolute path to the windows.h file.  This 
 	 means I need to specify the path in the Makefile, which is completely 
-	 non-portable (especialy with mingw which doesn't really have a default setup 
+	 non-portable (especially with mingw which doesn't really have a default setup 
 	 like cygwin does).
 	<ol><li /> So it seems I have three options.  I can append '#include &lt;windows.h&gt;' to 
 	each .c file (either wrapped in #define, or through the perl script)

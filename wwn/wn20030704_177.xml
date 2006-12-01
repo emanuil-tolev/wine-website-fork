@@ -372,7 +372,7 @@ Actually Alexandre didn't like that patch, and I reworked it and sent to
 wine-patches as "Add support for CP_UNIXCP". If you could try it and
 report whether it allows you to type with UTF-8 locale, it would be nice.
 </p><p>
-Once this patch is commited, all the base for keyboard layout support
+Once this patch is committed, all the base for keyboard layout support
 should be in place, and implementing kbd layout APIs should be a
 straightforward enough task.
 </p><p>
@@ -393,7 +393,7 @@ What exactly part of it you see could be simplified, and how?
 <quote who="Shachar Shemesh"><p>
 I was aiming for the following path:
 <ol>
-   <li> Detect current keymap. Try to do that independantly for each
+   <li> Detect current keymap. Try to do that independently for each
       keymap group (i.e. - have an array - group0 - US, group1 - IL,
       group2 - RU).
       The keys will be stored inside the keyboard map in Unicode. I'm
