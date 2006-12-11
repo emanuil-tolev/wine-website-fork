@@ -39,7 +39,9 @@ for post-installation instructions.</b></p>
 	  <img src="{$root}/images/distro/suse.png" width="50" height="50" alt="SUSE Linux" border="0"></a>
     </td>
     <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=79444">SUSE</a></b>
-         binary and source .rpms for SUSE 9.1, 9.2, 9.3, 10.0, and 10.1</td>
+         binary and source .rpms for SUSE 9.3, 10.0, 10.1, and 10.2.<br/>
+	 Release and daily snapshots are also available via the <a href="http://en.opensuse.org/Wine">openSUSE buildservice</a>, as YUM and YAST package repositories.
+	 </td>
     <td><a href="mailto:meissner@suse.de">Marcus Meissner</a></td>
   </tr>
   
