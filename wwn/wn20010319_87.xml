@@ -125,9 +125,9 @@ However, no cooperation has been set up so far.
 
 <p />
 
-Gérard Patel wrote a patch to help debugging some parts of Wine.
+G&eacute;rard Patel wrote a patch to help debugging some parts of Wine.
 <ul>
-	<li><quote who="Gérard Patel">This implements a way to not output the
+	<li><quote who="G&eacute;rard Patel">This implements a way to not output the
 debug trace to disk until the user hits Alt + F12. The goal is to
 avoid too big trace files.</quote> This behavior would be triggered by
 using the -dt command line switch.</li>
@@ -145,14 +145,14 @@ key that some apps may need.</quote>
 
 <p />
 
-Gérard didn't agree either. He tested, from a speed perspective, the
+G&eacute;rard didn't agree either. He tested, from a speed perspective, the
 two options (turning off the output inside Wine <i>versus</i> using an 
 external program), and found the former being twice as fast as the
 later on his machine.
 
 <p />
 
-Rob Farnum explained he also tried to achieve what Gérard did using a
+Rob Farnum explained he also tried to achieve what G&eacute;rard did using a
 more generic approach:
 <quote who="Rob Farnum">
 my modification allowed an external application to drive the debugging
@@ -191,8 +191,8 @@ process.</quote>
 
 <p />
 
-However, all of these large evolutions didn't solve Gérard's first
-needs:<quote who="Gérard Patel">What I wanted is something short and simple, so
+However, all of these large evolutions didn't solve G&eacute;rard's first
+needs:<quote who="G&eacute;rard Patel">What I wanted is something short and simple, so
 I could help people on the news group. The use of my patch could be
 explained in <b>one</b> line and it would have worked with Wine right 'out
 of the box' :-)... something the internal debugger does not do anymore
