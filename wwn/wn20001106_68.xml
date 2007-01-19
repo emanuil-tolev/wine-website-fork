@@ -692,7 +692,7 @@ is a must have.
 
 <section 
   title="Mac OS X"
-  subject="Issues regarding porting WineLib to MacOS X"
+  subject="Issues regarding porting WineLib to Mac OS X"
   archive="http://www.integrita.com/cgi-local/lwgate.pl/WINE-DEVEL/archives/2000-11/Subject/article-5.html"
   posts="7"
   startdate="01 Nov 2000 00:00:00 -0800"
@@ -701,16 +701,16 @@ is a must have.
 
 <p />
 
-James Hatheway, while thinking to port Wine to MacOS X, tried to
+James Hatheway, while thinking to port Wine to Mac OS X, tried to
 summarize the known issues he may encounter, if starting such an
 adventure.
 
 <p />
 
 Gavriel State reported some previous actions he had on this matter:
-<quote who="Gavriel State">I briefly started on a MacOS X port at MacHack, but
+<quote who="Gavriel State">I briefly started on a Mac OS X port at MacHack, but
 stopped after being annoyed at how many header files for important
-stuff MacOS X seemed to be missing.
+stuff Mac OS X seemed to be missing.
 
 <p />
 
@@ -754,7 +754,7 @@ Patrik Stridval also had a look after the unsuccessful BeOS port try
 (which got stalled because of missing OS level functionalities like
 file descriptor passing in sendmsg/recvmsg or the handling of sockets
 as file descriptors), but thought that this could be way easier to do
-the MacOS port than the BeOS one.
+the Mac OS port than the BeOS one.
 
 <p />
 

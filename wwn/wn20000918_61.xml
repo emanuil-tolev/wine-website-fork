@@ -75,15 +75,15 @@ Wine is to make this easy.
 
 <p />
 
-For non Unix and/or non X Windows systems (such as BeOS and MacOS), it
+For non Unix and/or non X Windows systems (such as BeOS and Mac OS), it
 gets a little bit harder. BeOS seems to be much harder because it is
 missing many systems calls that Wine relies upon (Patrik is the expert
 on Be, and I believe there is a web page dedicated to Wine on
-BeOS). MacOS &lt;= 9 is similarly hard.
+BeOS). Mac OS &lt;= 9 is similarly hard.
 
 <p />
 
-MacOS X, however, is another story. If you get an X server on MacOS X,
+Mac OS X, however, is another story. If you get an X server on Mac OS X,
 it should be pretty easy. If you want to do it the right way, you'd
 need to develop a Carbon driver to parallel the Wine x11 driver. That,
 while conceptually straightforward, will be a lot of work.

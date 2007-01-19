@@ -659,7 +659,7 @@ yes. Hetz Ben Hamo asked, via IRC and Andreas Mohr,  why LindowsOS logs the
 user in as root. Michael responded by saying that for ease of use, it's
 important. He said that his mother won't understand that she has to enter a
 password every time she wants to change the time. Also, he compared
-LindowsOS to MacOS, where the user is also a superuser. He says that
+LindowsOS to Mac OS, where the user is also a superuser. He says that
 Lindows.com is focusing on locking the doors to the outside world, but
 leaving the doors inside the house unlocked. Dan Kegel said that he thinks
 that "security issues will convince you to change."
@@ -1148,7 +1148,7 @@ this portably on all systems.  In wine, I can't gaurantee
 that the test directory (which I could probably write to) 
 is mapped to a Windows drive.  On all platformes, I don't 
 see how I can write to an arbitrary location on C:, since 
-it may  be unwriteable, and even if it's not, people 
+it may  be unwritable, and even if it's not, people 
 probably don't want extraneous wine stuff littered around 
 their drive when something goes wrong.
 <p />

@@ -205,14 +205,14 @@ since a post on LWN.net alluded to the fact that it may not be Wine based.
 
 </section>
 <section 
-	title="MacOS X Audio &amp; Video Drivers"
+	title="Mac OS X Audio &amp; Video Drivers"
 	subject="Mac OS X Audio driver"
 	archive="http://www.winehq.com/pipermail/wine-patches/2006-May/026857.html"
 	posts="8"
 >
 <topic>Multimedia</topic>
 <p>Over the past week there's been some exciting developments for
-Wine on MacOS.  First, a new audio driver was committed based on
+Wine on Mac OS.  First, a new audio driver was committed based on
 work by Emmanuel Maillard and Ken Thomases.  The new CoreAudio
 code lives in dlls/winmm/winecoreaudio and seems based on the JACK
 audio driver.  The 
@@ -222,9 +222,9 @@ different chunks.  Shortly after that was done the code was committed.</p>
 
 <p>Then a few days ago Emmanuel mentioned he had taken up
 work on the Quartz display driver for Wine.  We've discussed that topic
-in the past.  It seems X apps on MacOS X aren't integrated very well
+in the past.  It seems X apps on Mac OS X aren't integrated very well
 into the desktop and a native Quartz driver would be much better suited
-for using Wine on MacOS.  Emmanuel wrote:</p>
+for using Wine on Mac OS.  Emmanuel wrote:</p>
 <quote who="Emmanuel Maillard"><p>
 Quartz driver is up to date on Darwine CVS.
 </p><p>
@@ -713,7 +713,7 @@ shows how I want to add it. I'd like to know if this is a good design?
  The main idea is not to hard-code one implementation of things like
 the Trash into shell32 - not everything is standardized by the
 freedesktop and even if it would this might not work on other systems
-like MacOS X. We should allow for many implementations. The correct one
+like Mac OS X. We should allow for many implementations. The correct one
 is loaded depending on a registry settings (so that a winecfg entry can
 be added). My implementation uses COM objects as it's standard dlls
 provides support for such tasks. Currently there is one interface

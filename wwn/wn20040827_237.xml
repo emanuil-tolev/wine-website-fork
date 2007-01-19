@@ -110,7 +110,7 @@ on the project (see WWN issue
 <a href="http://www.winehq.com/?issue=207#Darwine%20Update">#207</a> for
 the last one.)  There's definitely a lot of exciting stuff going on in
 that area and it seems like preliminary support for running i386 Windows
-binaries on MacOS X is in place.  A slew of emails hit wine-devel this
+binaries on Mac OS X is in place.  A slew of emails hit wine-devel this
 week, the first of which was Sanjay Connare's announcement:</p>
 <quote who="Sanjay Connare"><p>
  	I am proud and happy to announce the release of a new binary labeled Darwine 20040820 DP.  This binary is based upon the 20040813 wine release.  The majority of changes for this release can be viewed:
@@ -128,7 +128,7 @@ http://cvs.winehq.org/cvsweb/wine/ChangeLog</a></ul></p><p>
 	 Please report bugs to the darwine SourceForge Bug Tracking System, and to the darwine-devel mailing-list.  Also any comments, questions or concerns can also be posted to the darwine-devel mailing-list.  Enjoy this new release.
 	</p></quote>
 
-<p>It looks like the port has really begun to integrate like native MacOS X apps and seems to be getting some userland attention.  It's also great to see they were able to release a new binary based on the most recent vintage of Wine.  
+<p>It looks like the port has really begun to integrate like native Mac OS X apps and seems to be getting some userland attention.  It's also great to see they were able to release a new binary based on the most recent vintage of Wine.  
 Jim White followed up on Sanjay's announcement to point out a few other things; not the least of which was a change in the <a href="http://darwine.opendarwin.org/">Darwine website</a> from SourceForge to 
 <a href="http://www.opendarwin.org/">OpenDarwin.org</a>.  Jim also provided a link to a recent interview:</p>
 <quote who="Jim White"><p>
@@ -203,7 +203,7 @@ But with Darwine, down the road... since we know things like, 'what are code blo
 >
 <topic>Ports</topic>
 <p>Guess this must be the week of Darwine news.. another thread popped up
-up about using Wine + QEMU on MacOS X.  Now, normally a lot of discussion
+up about using Wine + QEMU on Mac OS X.  Now, normally a lot of discussion
 like this takes place over on the Darwine mailing lists.  Mike Hearn made
 a comment that prompted Jim White to explain rude comments were exactly
 the reason discussion of Darwine was not done on Wine mailing lists.  
@@ -223,7 +223,7 @@ ideas off other developers,
 very often on the list.  In this case it centered around getting Wine to
 use QEMU as a CPU-level emulator, but without running a separate operating
 system on top of it.  Now, in the interview above Jim alludes to running
-Linux on QEMU running on MacOS X.  Within that sandbox he could also run
+Linux on QEMU running on Mac OS X.  Within that sandbox he could also run
 Wine.  The "holy grail" seems to be bypassing the need for an operating
 system altogether and plugging Wine directly into QEMU.  However, that's
 a lot easier said than done; I already have a headache just trying to wrap
@@ -358,8 +358,8 @@ that.</p>
         enddate="08/23/2004"
 >
 <topic>Ports</topic>
-<p>And finally in Darwine/MacOS X news, Rib Rdb announced a new Wine display
-driver to work with Quartz.  On MacOS X, Quartz is the low-level 2D
+<p>And finally in Darwine/Mac OS X news, Rib Rdb announced a new Wine display
+driver to work with Quartz.  On Mac OS X, Quartz is the low-level 2D
 graphics rendering library upon which the Aqua desktop is built and
 apps integrating with it provide a common look and feel.  Apps that
 don't integrate with it, such as native X applications, seem out
@@ -417,7 +417,7 @@ complete it means we can make a real Windows box display via X11 which
 is Just Plain Cool :)
 </p><p>
 It also allows for portability to operating systems that don't have X11. 
-MacOS X <i>does</i> have X, in fact it's a modified XFree but with some 
+Mac OS X <i>does</i> have X, in fact it's a modified XFree but with some 
 proprietary bits added. So I'm thinking the added effort is not worth 
 the gain. I'm not a Mac user though so who knows, maybe the extra 
 native-ness is worth all the pain </p></quote>

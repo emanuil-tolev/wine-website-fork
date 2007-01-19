@@ -229,7 +229,7 @@ was a bit of skepticism regarding the patch.  On the one hand, it's great
 to see people jumping into Wine development and as such there was a fair
 amount of feedback and tips given regarding the patch.  On the other hand,
 it adds one more driver to a framework badly needing attention in other
-areas.  Nick seems to be aiming for support of MacOS X since another patch
+areas.  Nick seems to be aiming for support of Mac OS X since another patch
 touched on that area.  In that regard, it's nice to see even more work
 being done for that platform.</p>
 
@@ -288,7 +288,7 @@ now I wait and only use a few buffers.
 </p><p>
 It seemed to work well for GTA3, Tribes2 and FlatOut (requires a binary patch
 to run) (dsound) -- and for SndRec32 (win/wout)
-Games and ...App... tested under Mac OSX x86 -- Mac Book Pro.
+Games and ...App... tested under Mac OS X x86 -- Mac Book Pro.
 </p><p>
 Remove the disable 'OPENAL_DISABLE_IN' to test wavein. (Forced off due to
 some issues of my OpenAL framework (I could only record at 44k -- could not

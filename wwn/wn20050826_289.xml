@@ -285,7 +285,7 @@ while the stack pointer is bad in windows, the debugger will trap it
 and let you examine the situation.  Right now Wine crashes.
 </p><p>
 Moving the calling of the debugger into the signal handler takes away
-the dependance on a correct signal stack.  It lets us:
+the dependence on a correct signal stack.  It lets us:
 <ol>
 
 <li> Debug a program without having to modify its memory to call the

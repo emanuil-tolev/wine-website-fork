@@ -83,7 +83,7 @@ run x86 binaries on them most of the efforts have dissolved.  The last item
 on Patrik's original list, separating out graphics drivers, has been 
 successful.  At the moment there's primarily one driver that gets used,
 <a href="http://www.winehq.org/?issue=47#Feature:%20The%20X11%20driver%20by%20Ove%20K%E5ven">winex11.drv</a>, 
-but it's possible to write a custom driver for something like MacOS X and, in 
+but it's possible to write a custom driver for something like Mac OS X and, in 
 fact, work has been done in that area.
 
 </p><p>
@@ -374,7 +374,7 @@ to
 <a href="http://www.winehq.org/?issue=290#Safedisc%20Begins%20to%20Work">improve</a>
 copy protection support.  On the tools side of things, the new
 <a href="http://wiki.winehq.org">Wine Wiki</a> has proven to be quite
-successful.  In the more distant future, MacOS X on Intel presents an 
+successful.  In the more distant future, Mac OS X on Intel presents an 
 interesting opportunity and could very well lead to very successful port.
 And, as always, at any time a major patch could arrive from out of the blue 
 that makes Wine do something new.  All this work, along with lots of 

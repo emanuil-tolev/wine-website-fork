@@ -92,7 +92,7 @@ on WineHQ.</p>
 convert</a>.  It briefly mentions Wine as a way to run Kazaalite.
 </p>
 </section><section 
-	title="MacOS X Success" 
+	title="Mac OS X Success" 
 	subject="Good News : WineMine Works on Mac OS X :)"
 	archive="http://www.winehq.org/hypermail/wine-devel/2003/07/0326.html" 
 	posts="2"
@@ -101,7 +101,7 @@ convert</a>.  It briefly mentions Wine as a way to run Kazaalite.
 >
 <topic>Ports</topic>
 <p>Pierre d'Herbemont has spent a lot of time getting Wine
-to run on MacOS X.  Along the way he's gotten his hands wet
+to run on Mac OS X.  Along the way he's gotten his hands wet
 in assembly language and had to rework a bunch of patches.
 It seems his work has paid off:</p>
 <quote who="Pierre d'Herbemont"><p>
@@ -127,7 +127,7 @@ Others have worked on Linux ported to other architectures.  Now we have
 it running on a non-x86 processor on a non-Linux platform.  Not just 
 any platform, but one that has widespread adoption.  It seems a lot of
 work remains to be done, but in theory a lot of Windows-specific programs
-could be recompiled with Winelib to run on MacOS X.</p>
+could be recompiled with Winelib to run on Mac OS X.</p>
 
 <p>Yes Pierre, winemine is that ugly.</p>
 </section><section 
