@@ -12,78 +12,35 @@ distributions have their own repositories of software, many of which include
 Wine, however we keep our own repository of the latest available packages here 
 for download.</p>
 
-<p>Packages here are designed to function on Ubuntu Edgy (6.10), Dapper (6.06), and 
-Breezy (5.10).  Packages here used to also work for Debian unstable, however due 
-to changes in Debian this no longer works and our Ubuntu maintainer is unable to support them.
-If you can help provide up-to-date Debian packages, please contact <a href=mailto:scott@open-vote.org>Scott Ritchie</a>.</p>
+<p>Packages here are designed to function on Ubuntu Edgy (6.10) and Dapper (6.06). 
+Packages here used to also work for Debian unstable, however due to changes in 
+Debian this no longer works and our Ubuntu maintainer is unable to support them. 
+If you can help provide up-to-date Debian packages, please contact 
+<a href=mailto:scott@open-vote.org>Scott Ritchie</a>.</p>
 
+<h2>Adding the WineHQ APT Repository:</h2>
 
-<h2>Installing from the WineHQ APT Repository with Synaptic:</h2>
+<p>First, open a terminal window.  Then add the repository's key to your system's
+list of trusted APT keys by copy and pasting the following:</p>
 
-<p>To install Wine from the WineHQ APT repository, you need to configure APT to
-look in the right place for the Wine packages.  On Ubuntu systems, and those 
-using the Synaptic Package Manager, this can be done easily by opening up 
-Synaptic (System->Administration->Synaptic Package Manager) and selecting 
-Settings->Repositories.  Then click add, select custom, and enter one of the 
-following:</p>
+<p><i>wget -q http://wine.budgetdedicated.com/apt/387EE263.gpg -O- | sudo apt-key add -</i></p>
 
-<p><b>For Ubuntu Edgy (6.10):</b><br>
-<i>deb http://wine.budgetdedicated.com/apt edgy main</i></p>
-<p><b>For Ubuntu Dapper (6.06):</b><br>
-<i>deb http://wine.budgetdedicated.com/apt dapper main</i></p>
-<p><b>For Ubuntu Breezy (5.10):</b><br>
-<i>deb http://wine.budgetdedicated.com/apt breezy main</i></p>
-
-<img src="{$root}/images/distro/synaptic-repository-binary3.png" alt="Synaptic Package Repository Screenshot" border="0">
-
-<p>Then, simply click reload and search for the package 'wine' for installation. 
-If you already have a 'wine' package installed, selecting mark all upgrades 
-should update Wine to the newest version.
-</p>
-
-
-<h2>Getting source packages from the repository</h2>
-
-<p>Currently, we only have i386 binary packages available. If you do not use an 
-i386 architecture, or wish to compile the package in a special or optimized way,
-you can build the wine package using the source repository instead. To do this, 
-add a source repository with one of the following:</p>
+<p>Next, add the repository to your system's list of APT sources:</p>
 
 <p><b>For Ubuntu Edgy (6.10):</b><br>
-<i>deb-src http://wine.budgetdedicated.com/apt edgy main</i></p>
+<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/edgy.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 <p><b>For Ubuntu Dapper (6.06):</b><br>
-<i>deb-src http://wine.budgetdedicated.com/apt dapper main</i></p>
-<p><b>For Ubuntu Breezy (5.10):</b><br>
-<i>deb-src http://wine.budgetdedicated.com/apt breezy main</i></p>
+<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/dapper.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 
-<p>Then, see the instructions below for building the package in the console. 
-Most users, however, will neither need nor want to do this.</p>
+<p>Then, you can install Wine from WineHQ like it were any other package, such as by 
+using the Synaptic Package Manager under System->Administration.  Alternatively, you 
+can install from the terminal by running '<b>apt-get update</b>' to update APT's 
+package information and then '<b>apt-get install wine</b>'.</p>
 
-<img src="{$root}/images/distro/synaptic-repository-source3.png" alt="Synaptic Package Repository Screenshot" border="0">
-
-
-<h2>Installing from the WineHQ APT Repository with the console:</h2>
-
-<p>If your system doesn't use a graphical package manager like Synaptic, you 
-will need to edit APT's configuration file by hand. You will need root access to
-do this and run the commands below. Switch to root by typing '<b>su</b>'. If you 
-are an Ubuntu user, you can instead precede each command with '<b>sudo</b>'. Now, 
-use your favorite text editor to open the file /etc/apt/sources.list or use the 
-console editor by typing '<b>nano /etc/apt/sources.list</b>' and then add the 
-following lines to the end:</p>
-
-<p><b>For Ubuntu Dapper (6.06):</b><br>
-<i>deb http://wine.budgetdedicated.com/apt dapper main</i><br>
-<i>deb-src http://wine.budgetdedicated.com/apt dapper main</i></p>
-<p><b>For Ubuntu Breezy (5.10):</b><br>
-<i>deb http://wine.budgetdedicated.com/apt breezy main</i><br>
-<i>deb-src http://wine.budgetdedicated.com/apt breezy main</i></p>
-
-<p>Then, you can run '<b>apt-get update</b>' to update APT's package information. 
-Finally, to install Wine, do '<b>apt-get install wine</b>'.</p>
+<h2>Debian Users:</h2>
 
 <p>If you are using Debian and want to make sure that apt-get will install the 
-WineHQ Wine package instead of the Debian Wine package (which usually confuses 
+WineHQ Wine package instead of the Debian Wine package (which sometimes confuses 
 APT by having the same version number), then you will need to add something like
 the following entry to /etc/apt/preferences:</p>
 
