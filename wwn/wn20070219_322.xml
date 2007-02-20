@@ -408,7 +408,7 @@ freedesktop.org specs:</p>
  related to this in the bugzilla :(
 </p></quote>
 
-<p>Mike HEarn briefly described what to do:</p>
+<p>Mike Hearn briefly described what to do:</p>
 <quote who="Mike Hearn"><p>
 Sounds great! To submit those files, you need to make a patch ... git
 can do this but I don't remember the exact command to use (depends on
@@ -418,8 +418,13 @@ directly. Feel free to ask if you'd like more guidance with this.
 Once you have a patch, email it to wine-patches at winehq.org so
 Alexandre and the others can review it, suggest improvements etc. Good
 luck!
-</p></quote>
+</p>
+</quote>
 
+<p>This work builds on the 
+<a href="http://www.winehq.com/pipermail/wine-cvs/2006-November/028090.html">foundation</a> 
+laid by Vitaliy Margolen in November for using the Freedesktop standard to 
+create Wine's menu structure.</p>
 
 </section>
 <section 
