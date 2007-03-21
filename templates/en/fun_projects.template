@@ -21,7 +21,7 @@
    point of view. If you feel like working on any of these, please
    let me know.
   
-  <h2>Desktop Integration</h2>
+  <a name="desktop_integration"></a><h2>Desktop Integration</h2>
   Some of these range from fairly easy to somewhat difficult.  The payoff 
   on these is high - how users interact with the desktop are some of the most 
   visible parts of Wine.  Mike Hearn, who suggested most of these ideas, 
@@ -30,7 +30,7 @@
   guarantees these patches would be accepted, that's Alexandre's call. 
   But they probably would be, and you'll learn something while doing them!"</i>
 
-  <h4 class=done>Create <i>My Documents</i></h4>
+  <a name="my_documents"></a><h4 class=done>Create <i>My Documents</i></h4>
   <p> Map CSIDL_PERSONAL (My Documents) to the $HOME directory if mapped. 
    See the _SHGetDefaultValue function in dlls/shell32/shellpath.c for an 
    explanation of how to do this.  It would probably be ok to grab $HOME 
@@ -44,7 +44,7 @@
   </ul>
  
   
-  <h4 class=done>Map <i>Desktop</i> Directory</h4>
+  <a name="desktop_directory"></a><h4 class=done>Map <i>Desktop</i> Directory</h4>
   <p>This is similar to above but with some extra work. Map the contents of 
    the ~/Desktop directory to the Windows virtual Desktop folder. In file 
    pickers and Explorer, the filesystem root is represented by a magic Desktop 
@@ -72,7 +72,7 @@
   </ul>
  
   
-  <h4 class=todo>Use Icon Themes</h4>
+  <a name="icon_themes"></a><h4 class=todo>Use Icon Themes</h4>
   <p> The freedesktop.org icon theme specification shows us how to find icons
    for many different types of things. Implement support for loading and
    using the following icons from the icon theme (it should be OK to use
@@ -107,7 +107,7 @@
   </ul>
  
   
-  <h4 class=todo>XDG Menu Support</h4>
+  <a name="xdg_menu"></a><h4 class=todo>XDG Menu Support</h4>
   <p>Try updating the menu mapping code to support the new XDG menu
    specification. Don't bother trying to make this work everywhere, it's a
    total nightmare. Just try supporting the new standards. Be warned: not
@@ -121,7 +121,7 @@
   </ul>
  
   
-  <h4 class=todo>Improve winebrowser Script</h4>
+  <a name="winebrowser"></a><h4 class=todo>Improve winebrowser Script</h4>
   <p>Try improving the winebrowser script to take into account the user's
    preferred applications. At the moment it just tries every browser it
    knows about in a hard coded order. Hint: in modern GNOME desktops you can
@@ -135,7 +135,7 @@
   </ul>
  
   
-  <h4 class=todo>Integrate Windows Screensavers</h4>
+  <a name="screensavers"></a><h4 class=todo>Integrate Windows Screensavers</h4>
   <p>Integrate Wine with XScreensaver, so installing Win32 screensavers makes
    them automatically appear in the list. You may need to write patches for
    xscreensaver to make this really slick.
@@ -149,7 +149,7 @@
   </ul>
  
   
-  <h4 class=todo>Take Out the Trash</h4>
+  <a name="trash"></a><h4 class=todo>Take Out the Trash</h4>
   <p> Steven Edwards suggested, <i>"add support to use the draft FreeDesktop 
    trashcan spec."</i>
   <ul>
@@ -159,7 +159,7 @@
   </ul>
  
   
-  <h4 class=todo>Integrate the Registry With Native Configurations</h4>
+  <a name="native_configurations"></a><h4 class=todo>Integrate the Registry With Native Configurations</h4>
   <p> Implement a bridge between the Windows registry and the GNOME/KDE
    configuration systems. If you set the wallpaper in a Windows app
    it should reflect on your real desktop. This is useful for programs
@@ -173,7 +173,7 @@
   </ul>
  
   
-  <h4 class=todo>Configure Some Default Registry Entries</h4>
+  <a name="default_registry"></a><h4 class=todo>Configure Some Default Registry Entries</h4>
   <p>Stephan D&#246;singer suggested, "probably a bigger task: Look for common 
    native applications and write entries for them into the registry. For 
    example, I manually added an entry for KMail in \\Machine\\software\\clients 
@@ -209,7 +209,7 @@
   </ul>
  
   
-  <h2>Virtualization Projects</h2>
+  <a name="virtualization"></a><h2>Virtualization Projects</h2>
   Virtualization environments tend to stress the host considerably,
   due to the inherent impedance mismatch between the two. As such,
   they provide very good (and tough) test cases. Having such
@@ -226,7 +226,7 @@
   <p>NB: having them both work would allow us to nest them arbitrarily,
 	 which would be <em>uber</em>cool.
 
-  <h4 class=inprogress>Cygwin under Wine in Linux</h4>
+  <a name="cygwin_under_wine"></a><h4 class=inprogress>Cygwin under Wine in Linux</h4>
   This provides an a good test case for Wine. It is tough, but we do have
   the Cygwin source code, and we have a good chance to understand why it
   does not work. 
@@ -237,7 +237,7 @@
     <li>updated: Oct 5, 2003
   </ul>
  
-  <h4 class=inprogress>Wine under Cygwin in Windows</h4>
+  <a name="wine_under_cygwin"></a><h4 class=inprogress>Wine under Cygwin in Windows</h4>
   This will provide a good test case for Cygwin, but will help Wine's 
   portability. Moreover, the ability to run Wine code under Windows
   without a reboot, can help with testing sometimes.
@@ -249,7 +249,7 @@
   </ul>
 
 
-  <h2>Runtimes</h2>
+  <a name="runtimes"></a><h2>Runtimes</h2>
   Over the past 10 years, a number of portable runtimes have been created.
   Why not use them in a way they weren't meant to be used? That is, compile
   and run their Windows port on Linux under Wine. For this to happen, they
@@ -304,7 +304,7 @@
   <a href="http://uucode.com/texts/python-mingw/python-mingw.html">article</a>
   containing a log of successful compilation of Python 2.2 using MinGW.
 
-  <h2>Toolkits</h2>
+  <a name="toolkits"></a><h2>Toolkits</h2>
   While some have focused on portable runtimes (see above), others tried
   to create portable UI toolkits. Due to the large UI component of the
   Win32 API, these are a perfect test for Wine.
@@ -371,7 +371,7 @@
   <h2><a name="source"></a>Source portability</h2>
   We should be able to compile Wine with various C compilers.
 
-  <h3 class=inprogress>Microsoft's Visual C</h3>
+  <a name="msvc"></a><h3 class=inprogress>Microsoft's Visual C</h3>
   The most popular compiler in the Windows Universe. Also known as Visual C++,
   Visual Studio, or MSVC. You can download a free version of the command line
   compilers from <a href="http://msdn.microsoft.com/visualc/vctoolkit2003/">msdn.microsoft.com/visualc/vctoolkit2003</a>.
@@ -385,7 +385,7 @@
     <li>updated: Nov 29, 2002
   </ul>
 
-  <h3 class=todo>Borland's bcc</h3>
+  <a name="bcc"></a><h3 class=todo>Borland's bcc</h3>
   Borland has released it's C++ Compiler 5.5 as freeware. The compiler is the core of 
   C++Builder, and is capable of creating fully functional C++ applications from the command line.
   <ul>
@@ -395,7 +395,7 @@
     <li>homepage: <a href="http://www.borland.com/bcppbuilder/freecompiler/">www.borland.com/bcppbuilder/freecompiler</a>
   </ul>
 
-  <h3 class=todo>Watcom's cc</h3>
+  <a name="wcc"></a><h3 class=todo>Watcom's cc</h3>
   Sybase acquired the compiler from Watcom, and released it as Open Source software.
   Currently it is being ported to FreeBSD and Linux, and a Windows version is readily
   available.
@@ -413,9 +413,9 @@
     <li>updated: Dec 1, 2002
   </ul>
 
-  <h2>Others</h2>
+  <a name="others"></a><h2>Others</h2>
 
-  <h4 class=todo>Make a ghostscript driver that uses Wine to print</h4>
+  <a name="printer_driver"></a><h4 class=todo>Make a ghostscript driver that uses Wine to print</h4>
   When we are going to support native Windows printer
   drivers, this is going to allow ghostscript to use
   any of the existing gazillion printer drivers out there.
@@ -423,12 +423,12 @@
   subsystem level. The complementary project (use ghostscript
   to print from Wine) has been implemented, and working just fine.
 
-  <h4 class=todo>A Wine based GIMP plugin for using  Photoshop plugins</h4>
+  <a name="gimp"></a><h4 class=todo>A Wine based GIMP plugin for using  Photoshop plugins</h4>
   Suggested by <a href="mailto:meissner@suse.de">Marcus Meissner</a>:
   Investigate if we could make a WINE based GIMP plugin which can handle
   Photoshop plugins.
 
- <h3 class=inprogress>wined3d use wgl</h3>
+  <a name="wgl"></a><h3 class=inprogress>wined3d use wgl</h3>
   Make wined3d (or d3d8) use wgl (windows opengl) instead of glx. (just search for glx commands and
   replace then with the wgl equivalents) Doing so would enable wine's d3d to run on windows in place of
   the windows driver and without the rest of WINE which would greatly help in debugging. It would also 
@@ -439,7 +439,7 @@
     <li>updated: Jan 12, 2006
   </ul>
 
-  <h2>Miscellaneous Projects</h2>
+  <a name="misc"></a><h2>Miscellaneous Projects</h2>
   This is a catch-all category for all sort of strange (and sometimes cute) ideas.
 
 
@@ -481,7 +481,7 @@
     <li>updated: Apr 11, 2003
   </ul>
 
-  <h3 class=todo>Mono GDI+ Wrapper</h3>
+  <a name="gdiplus"></a><h3 class=todo>Mono GDI+ Wrapper</h3>
   <p>Microsoft GDIplus currently works on Wine already, however it might be faster if we can take advantage of the 
      Mono project's <a href="http://svn.myrealbox.com/viewcvs/trunk/libgdiplus/">libgdiplus</a> implementation as 
      it can use the Cairo vector graphics library or OpenGL as a backend. There are 4 efforts underway at this time 
@@ -494,7 +494,7 @@
     <li>updated: June 26, 2005
   </ul>
 
-  <h3 class=todo>GDI Engine</h3>
+  <a name="dib"></a><h3 class=todo>GDI DIB Engine</h3>
   <p>Integrate the GDI engine <a href="http://www.winehq.org/hypermail/wine-patches/2002/09/0250.html">contributed</a> by the 
   <a href="http://www.transgaming.com">TransGaming</a> folks.
   <ul>
@@ -510,7 +510,7 @@
   tracked also in Bugzilla, as 
   <a href="http://bugs.winehq.org/show_bug.cgi?id=1304">Bug #1304</a>.
 
-  <h3 class=inprogress>Wine Explorer</h3>
+  <a name="explorer"></a><h3 class=inprogress>Wine Explorer</h3>
   <p>A Windows Explorer replacement. People migrating from Windows would love it,
   and it would provide a great testbed for our <tt>shell32</tt> DLL, as well as
   some key controls such as the List-View Common Control.
@@ -521,7 +521,7 @@
   </ul>
   
 
-  <h3 class=done>Winetest Shell</h3>
+  <a name="winetest"></a><h3 class=done>Winetest Shell</h3>
   <p>Would be nice to have a shell exe (sort of like the one provided by JUnit), 
   that contains the little exes, extracts them in a temp dir one by one, 
   runs them, and displays a nice progress bar, together with a list with messages. 
@@ -532,7 +532,7 @@
     <li>updated: Dec 5, 2003
   </ul>
 
-  <h3 class=todo>Compressed or Modified Executables</h3>
+  <a name="compressed"></a><h3 class=todo>Compressed or Modified Executables</h3>
   <p>Many applications are compressed with EXE packers or use other tricks to 
   thwart those who would try to look inside them.  These applications typically 
   crash or refuse to run if they think a debugger is being used.  The tests 
@@ -550,7 +550,7 @@
     <li>updated: Oct 22, 2003
   </ul>
 
-  <h3 class=todo>JScript engine</h3>
+  <a name="jscript"></a><h3 class=todo>JScript engine</h3>
   <p>Implement jscript.dll.  Use Mozilla's 
   <a href="http://www.mozilla.org/js/spidermonkey">SpiderMonkey</a>
   to implement the 
@@ -564,7 +564,7 @@
     <li>updated: Mar 15, 2004
   </ul>
 
-  <h3 class=inprogress>Colour Management </h3>
+  <a name="colour"></a><h3 class=inprogress>Colour Management </h3>
   <p>Implement mscms.dll, for 
   <a href="http://msdn.microsoft.com/library/en-us/icm/icmstart_5i91.asp">Image Colour Management</a>,
   using <a href="http://www.littlecms.com">Little CMS</a>.
