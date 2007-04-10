@@ -428,15 +428,15 @@ winmm and dsound failing.</quote>
 
 </section>
 <section 
-	title=""
-	subject=""
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-February/.html"
-	posts=""
+	title="Nautilus File Management"
+	subject="Wine desktop integration: current directory of app launched with doubleclick?"
+	archive="http://www.winehq.com/pipermail/wine-devel/2007-April/055728.html"
+	posts="2"
 >
-<topic></topic>
+<topic>Integration</topic>
 <p>Dan Kegel reported a recent experience using Debian/Ubuntu:</p>
 <quote who="Dan Kegel"><p>
-I *almost* have a great success story to report; the only thing
+I <i>almost</i> have a great success story to report; the only thing
 keeping it from being a success story is the current directory
 chosen by Nautilus when double-clicking on .exe files.
 </p><p>
