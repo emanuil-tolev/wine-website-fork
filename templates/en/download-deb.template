@@ -12,12 +12,6 @@ distributions have their own repositories of software, many of which include
 Wine, however we keep our own repository of the latest available packages here 
 for download.</p>
 
-<p>Packages here are designed to function on Ubuntu Edgy (6.10) and Dapper (6.06). 
-Packages here used to also work for Debian unstable, however due to changes in 
-Debian this no longer works and our Ubuntu maintainer is unable to support them. 
-If you can help provide up-to-date Debian packages, please contact 
-<a href=mailto:scott@open-vote.org>Scott Ritchie</a>.</p>
-
 <h2>Adding the WineHQ APT Repository:</h2>
 
 <p>First, open a terminal window.  Then add the repository's key to your system's
@@ -27,6 +21,8 @@ list of trusted APT keys by copy and pasting the following:</p>
 
 <p>Next, add the repository to your system's list of APT sources:</p>
 
+<p><b>For Ubuntu Feisty (7.04):</b><br>
+<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/feisty.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 <p><b>For Ubuntu Edgy (6.10):</b><br>
 <i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/edgy.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 <p><b>For Ubuntu Dapper (6.06):</b><br>
@@ -48,32 +44,6 @@ of Ubuntu, there is an easy hack that can be used to install the 32-bit package
 into the 64-bit distribution and have it function normally.  See 
 <a href="http://wiki.winehq.org/UbuntuAMD64">this page on the Wine wiki</a> 
 for more details.</p>
-
-<h2>Debian Users:</h2>
-
-<p>If you are using Debian and want to make sure that apt-get will install the 
-WineHQ Wine package instead of the Debian Wine package (which sometimes confuses 
-APT by having the same version number), then after following the instructions above
-you will also need to add something like the following entry to /etc/apt/preferences:</p>
-
-<i><p>Package: wine<br>
-Pin: release l=WineHQ APT Repository<br>
-Pin-Priority: 1000</p></i>
-
-<h2>Building the Wine Package from Source using APT:</h2>
-
-<p>APT also allows easy compilation from source of a package.  This is useful if
-there is no binary package available for your architecture, or if you wish to 
-create a fresh .deb file from scratch.  To do this, first follow the 
-instructions for installing from the console above, except instead of running
-apt-get install wine run '<b>apt-get build-dep wine</b>'.  This will download the 
-needed development packages for your system to make the wine package.  Then, 
-run '<b>apt-get --build source wine</b>', have a snack, and wait for the 
-compiling to finish.</p>
-
-<p>To install your newly created package (which should be in whatever directory
-you were in when you ran apt-get --build source), run '<b>dpkg -i wine*.deb</b>' 
-as root.</p>
 
 <h2>Older .deb packages</h2>
 
