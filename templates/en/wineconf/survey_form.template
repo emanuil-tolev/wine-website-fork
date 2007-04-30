@@ -1,0 +1,57 @@
+{$error}
+
+<p></p>
+
+<form name="survey" action="{$self}" method="post">
+
+<p>We have had 3 generous offers to host Wineconf 2007.
+However, we don't have a clear consenus of which of these three offers
+to proceed with.</p>
+
+<p>So, we're going to go with a vote.  Please only vote if you seriously
+intend to attend Wineconf this year.</p>
+
+<p>The three choices we have are as follows:</p>
+
+<ol>
+  <li>
+      <input type="radio" name="q[where]" value="Zurich" checked="checked" />
+      Zurich, Switzerland, hosted by Mike Hearn, with the possibility 
+      of a satellite site near Los Angeles.
+  </li>
+
+  <li>
+      <input type="radio" name="q[where]" value="Amsterdam" />
+      Amsterdam or Utrech, Netherlands, hosted by Hans Leidekker.
+  </li>
+
+  <li>
+      <input type="radio" name="q[where]" value="Bratislava" />
+      Bratislava, Slovakia, hosted by Martin Pilka.
+  </li>
+</ol>
+
+<table>
+
+<tr>
+  <th>Name:</th>
+  <td><input type="text" name="q[name]" size="40" value="{$name}" /></td>
+</tr>
+
+<tr>
+  <th>Email:</th>
+  <td><input type="text" name="q[email]" size="40" value="{$email}" /></td>
+</tr>
+
+<tr>
+  <th>Comments:</th>
+  <td><textarea name="q[comment]" rows="5" cols="40">{$comment}</textarea></td>
+</tr>
+
+</table>
+
+<p><input type="submit" name="submit" value=" Submit Survey " class="button" /></p>
+
+<input type="hidden" name="fields" value="where|name|email|comment" />
+
+</form>
