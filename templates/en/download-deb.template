@@ -12,6 +12,10 @@ distributions have their own repositories of software, many of which include
 Wine, however we keep our own repository of the latest available packages here 
 for download.</p>
 
+<p>There used to be graphical instructions here, however we have found that the terminal commands are actually simpler to
+describe and quicker for the user to input.  Because the commands below use sudo, you may have to enter your user
+password after hitting enter.</p>
+
 <h2>Adding the WineHQ APT Repository:</h2>
 
 <p>First, open a terminal window.  Then add the repository's key to your system's
@@ -27,6 +31,8 @@ list of trusted APT keys by copy and pasting the following:</p>
 <i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/edgy.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 <p><b>For Ubuntu Dapper (6.06):</b><br>
 <i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/dapper.list -O /etc/apt/sources.list.d/winehq.list</i></p>
+<p><b>For Debian Etch (4.0):</b><br>
+<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/etch.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 
 <p>Then, you can install Wine from WineHQ like it were any other package, such as by 
 using the Synaptic Package Manager under System->Administration.  Alternatively, you 
