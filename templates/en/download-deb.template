@@ -41,12 +41,13 @@ package information and then '<b>sudo apt-get install wine</b>'.</p>
 
 <h2>64-bit Users:</h2>
 
-<p>Note that, at this time, the entries above are for <i>i386 users only</i>.  Attempting to
-use these repositories with a different architecture (eg amd64), will result in 404 errors
-as APT will be looking for files not in the repository.</p>
+<p>Packages for the 64 bit version of Ubuntu Feisty (7.04) are now available, however 
+for users of Debian and older Ubuntus the entries above are for i386 users only. 
+Attempting to use these repositories with a different architecture (eg amd64), will result 
+in 404 errors as APT will be looking for files not in the repository.</p>
 
-<p>While there is currently no Wine package explicitly designed for the 64-bit version 
-of Ubuntu, there is an easy hack that can be used to install the 32-bit package
+<p>If you are using an older 64 bit distribution and would still like a working Wine package,
+there is a relatively easy hack that can be used to install the 32-bit package
 into the 64-bit distribution and have it function normally.  See 
 <a href="http://wiki.winehq.org/UbuntuAMD64">this page on the Wine wiki</a> 
 for more details.</p>
@@ -57,8 +58,7 @@ for more details.</p>
 the packages are available at 
 <a href=http://wine.budgetdedicated.com/archive/index.html>the WineHQ .deb packages archive</a>.</p>
 
-<p>If you wish to use these packages, you'll have to install them by hand, 
-such as by using dpkg -i</p>
+<p>If you wish to use these packages, you'll have to install them by hand, such as by double clicking them or using dpkg -i</p>
 
 <br>
 <p><i>Very fast and reliable webhosting for the APT repository is graciously provided by <a href="http://www.budgetdedicated.com/">budgetdedicated.com</a>.</i></p>
