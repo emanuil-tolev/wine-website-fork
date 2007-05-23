@@ -24,7 +24,7 @@ such as the Linux Kernel source. </p>
     <li><a href="#docs">Documentation module available from Sourceforge</a>
 </ol>
 
-<p><img src="{$root}/images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
+<hr />
 
 <a name="clone" class="hidden"></a>
 
@@ -32,14 +32,11 @@ such as the Linux Kernel source. </p>
 
 <p>To check out the entire Wine source tree, do:</p>
 
- <table width="500" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>
- git clone git://source.winehq.org/git/wine.git wine<br>
- </span>
- </td></tr>
- </table>
+<div class="inverse commandWidth">
+  <p>git clone git://source.winehq.org/git/wine.git wine</p>
+</div>
 
-<p><img src="{$root}/images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
+<hr />
 
 <a name="uptodate" class="hidden"></a>
 
@@ -48,15 +45,12 @@ such as the Linux Kernel source. </p>
 <p>A quick way to clean up your tree after you've been modifying
    it and want to remove changes you haven't checked in is this: </p>
 
- <table width="500" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>
-  cd wine<br>
-  git diff-index -p HEAD &gt; total-<i>x.x.x</i>.diff<br>
-  patch -p1 -R &lt; total-<i>x.x.x</i>.diff<br>
-  git reset<br>
- </span>
- </td></tr>
- </table>
+<div class="inverse commandWidth">
+  <p>cd wine<br />
+  git diff-index -p HEAD &gt; total-<i>x.x.x</i>.diff<br />
+  patch -p1 -R &lt; total-<i>x.x.x</i>.diff<br />
+  git reset</p>
+</div>
 
 <p>Using the current x.x.x tags, you can keep a history of changes
 that were in your Wine tree.</p>
@@ -64,31 +58,25 @@ that were in your Wine tree.</p>
 <p>If you have made commits to the tree, and want to remove them all,
 you can use the following more dangerous command:</p>
 
- <table width="500" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>
-  git reset --hard origin<br>
- </span>
- </td></tr>
- </table>
+<div class="inverse commandWidth">
+  <p>git reset --hard origin</p>
+</div>
 
 <p>This will wipe out any local changes you have made, so use it with caution.</p>
 
-<p><img src="{$root}/images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
+<hr />
 
 <h1>Staying Up-To-Date</h1>
 
 <p> First, make sure to clean your tree as described above, then
 run the following commands from the top level wine directory:</p>
 
- <table width="500" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>
-  git fetch<br>
-  git rebase origin<br>
- </span>
- </td></tr>
- </table>
+<div class="inverse commandWidth">
+  <p>git fetch<br />
+  git rebase origin</p>
+</div>
 
-<p><img src="{$root}/images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
+<hr />
 
 <a name="sourcetree" class=hidden></a>
 
@@ -107,7 +95,7 @@ This cross-references source is based on the snapshot-releases and is made avail
   <li><a href="http://source.winehq.org/git">source.winehq.org/git</a>, on the primary Git repository
 </ul>
 
-<p><img src="{$root}/images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
+<hr />
 
 <a name="modules" class=hidden></a>
 
@@ -124,48 +112,36 @@ This cross-references source is based on the snapshot-releases and is made avail
 
 <p>To login to the CVS server, run in a terminal:</p>
 
-<table width="500" border=0 cellpadding=10>
-  <tr><td class=black>
-    <span class=inverse>
-      CVSROOT=:pserver:cvs@cvs.winehq.org:/home/wine cvs login
-    </span>
-  </td></tr>
-</table>
+<div class="inverse commandWidth">
+  <p>CVSROOT=:pserver:cvs@cvs.winehq.org:/home/wine cvs login</p>
+</div>
 
 <p>Use &quot;cvs&quot; as the password (without the quotes).</p>
 
 <p>To get a git repository of one of the modules listed above
 create a new directory and in a terminal run in that directory:</p>
 
-<table width="550" border=0 cellpadding=10>
-  <tr><td class=black>
-    <span class=inverse>
-      git cvsimport -v -k -d :pserver:cvs@cvs.winehq.org:/home/wine MODULE<br/>
-    </span>
-  </td></tr>
-</table>
+<div class="inverse commandWidth">
+  <p>git cvsimport -v -k -d :pserver:cvs@cvs.winehq.org:/home/wine MODULE</p>
+</div>
 
 <p>Replace MODULE with one of the module names listed above.<br/>
 But be aware that this can take quite some time.</p>
 
-<p><img src="{$root}/images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
+<hr />
 
 <a name="docs" class=hidden></a>
 
 <h1>Documentation module available from Sourceforge</h1>
 
-<p>The documentation lives in a separate CVS tree on Sourceforge.<br/>
+<p>The documentation lives in a separate CVS tree on Sourceforge.<br />
 To get a git repository of the documentation create a new directory and
 in a terminal run in that directory:</p>
-<table width="550" border=0 cellpadding=10>
-  <tr><td class=black>
-    <span class=inverse>
-      git cvsimport -v -k -d :pserver:anonymous@wine.cvs.sourceforge.net:/cvsroot/wine docs<br/>
-    </span>
-  </td></tr>
-</table>
+
+<div class="inverse commandWidth">
+  <p>git cvsimport -v -k -d :pserver:anonymous@wine.cvs.sourceforge.net:/cvsroot/wine docs</p>
+</div>
 
 <p>But be aware that this can take quite some time.</p>
-
 
 <p>&nbsp;</p>

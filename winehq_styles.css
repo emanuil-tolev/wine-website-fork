@@ -44,7 +44,7 @@ p.indent            { padding-left: 1em; padding-right: 1em;}
 .blueish            { background-color: #bed5f7; }
 
 /* text colors */
-.inverse            { color: #FFFFFF; }
+.inverse            { color: #FFFFFF; background: #000000; }
 .disabled           { color: #999999; }
 .normal             { color: #000000; }
 .error              { color: #ff0000; }
@@ -74,6 +74,7 @@ p.indent            { padding-left: 1em; padding-right: 1em;}
 .small              { font-size: 10px; }
 .big                { font-size: 14px; }
 .rowtitle           { background-color: black; color: white; font-weight: bold; }
+.commandWidth       { width: 500px; }
 
 /* Generic Buttons */
 .button             { background-color: #A50D0D; color: #ffffff; font-family: Sans-Serif; font-size: 12px; padding: 0; }
