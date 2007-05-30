@@ -14,67 +14,54 @@ Wine over the years and for that we'd like to say <i>thank you</i>.</p>
 commercial development. A lot of companies have paid developers to 
 spend time working on Wine and they've graciously given that work
 back to the community.  Not very many free software projects are fortunate
-enough to have paid staff tackling tough problems.. we are.  </p>
+enough to have paid staff tackling tough problems.. we are.</p>
 
-<p><b><a href="http://www.codeweavers.com"><u>CodeWeavers</u></a></b>
-<ul>
-CodeWeavers' mission is to make Linux a 
-Windows<sup class="small">&reg;</sup>-compatible operating system.  To
-that end, they've hired some of the best talent in the Wine community.
-In fact, many of the large projects recently undertaken by Wine have started as 
-initiatives by CodeWeavers.  Some of the different areas they've worked 
-on include TrueType fonts support, internationalization and Unicode, 
-Microsoft Installer support, DCOM support, DLL separation, and 
-gazillions of bug fixes. In 2004 CodeWeavers hosted WineConf 2004 at their 
-offices in St. Paul, Minnesota.</ul></p>
+<dl>
+  <dt class="bold underline"><a href="http://www.codeweavers.com">CodeWeavers</a></dt>
+  <dd>CodeWeavers' mission is to make Linux a Windows<sup class="small">&reg;</sup>
+    -compatible operating system.  To that end, they've hired some of the best
+    talent in the Wine community. In fact, many of the large projects recently 
+    undertaken by Wine have started as initiatives by CodeWeavers.  Some of the
+    different areas they've worked on include TrueType fonts support,
+    internationalization and Unicode, Microsoft Installer support, DCOM support,
+    DLL separation, and gazillions of bug fixes. In 2004 CodeWeavers hosted WineConf
+    2004 at their offices in St. Paul, Minnesota.</dd>
+  <dt class="bold underline"><a href="http://www.corel.com">Corel</a></dt>
+  <dd>Corel dedicated a team of paid engineers to the Wine project in 1999. They
+    focused on adding functionality to Wine that let Corel applications, such as 
+    WordPerfect, CorelDRAW, and Quattro Pro run on Linux and be ported as 
+    native Linux applications. In the past, Corel had relied on conventional 
+    porting techniques to move some of its applications (Corel WordPerfect 8) 
+    to Linux. This provided a fast way to get these applications to Linux, but 
+    meant that porting had to be repeated with each new version.  Improving 
+    Wine and compiling with Winelib allowed them to consolidate codebases.
+    While Corel ultimately moved on to other projects, they definitely had
+    a positive effect on Wine.</dd>
+  <dt class="bold underline"><a href="http://www.macadamian.com">Macadamian</a></dt>
+  <dd>Macadamian was subcontracted by Corel to improve several areas of Wine.
+    For two years engineers spent time improving Wine's windowing, controls
+    and dialogs.</dd>
+  <dt class="bold underline"><a href="http://www.reactos.org">ReactOS</a></dt>
+  <dd>Wine is at the heart of ReactOS' Win32 support.  Initial work
+    improved Wine's portability by cleaning things up so MinGW could 
+    compile it.  From there, a considerable amount of effort was spent 
+    improving Wine's shell32 infrastructure and various controls.  
+    The ReactOS team is also responsible for the regedit and task manager 
+    utilities.</dd>
+  <dt class="bold underline"><a href="http://www.transgaming.com">TransGaming</a></dt>
+  <dd>Development efforts at TransGaming, mostly in 2002, improved several
+    critical areas of Wine.  Changes to DCOM, DirectDraw and 2D graphics support 
+    helped new types of programs to install.  Later, the widl utility was
+    donated to act as a MIDL replacement.</dd>
+  <dt class="bold underline">...And a cast of hundreds</dt>
+  <dd>If you haven't seen the <a href="http://www.winehq.org/site/who">Who's
+    Who</a> list, check that out for a list of major contributors.  In
+    addition, the following individuals have spent a considerable amount
+    of time and effort improving Wine.  Also note, contributions to "misc"
+    shouldn't be taken lightly.  In most cases those folks have submitted
+    enough patches that you can't nail down any particular area of focus.</dd>
+</dl>
 
-<p><b><a href="http://www.corel.com"><u>Corel</u></a></b>
-<ul>
-Corel dedicated a team of paid engineers to the Wine project in 1999. They
-focused on adding functionality to Wine that let Corel applications, such as 
-WordPerfect, CorelDRAW, and Quattro Pro run on Linux and be ported as 
-native Linux applications. In the past, Corel had relied on conventional 
-porting techniques to move some of its applications (Corel WordPerfect 8) 
-to Linux. This provided a fast way to get these applications to Linux, but 
-meant that porting had to be repeated with each new version.  Improving 
-Wine and compiling with Winelib allowed them to consolidate codebases.
-While Corel ultimately moved on to other projects, they definitely had
-a positive effect on Wine.</ul></p>
-
-<p><b><u><a href="http://www.macadamian.com">Macadamian</a></u></b>
-<ul>
-Macadamian was subcontracted by Corel to improve several areas of Wine.
-For two years engineers spent time improving Wine's windowing, controls
-and dialogs.  </ul></p>
-
-<p><b><u><a href="http://www.reactos.org">ReactOS</a></u></b>
-<ul>Wine is at the heart of ReactOS' Win32 support.  Initial work
-improved Wine's portability by cleaning things up so MinGW could 
-compile it.  From there, a considerable amount of effort was spent 
-improving Wine's shell32 infrastructure and various controls.  
-The ReactOS team is also responsible for the regedit and task manager 
-utilities.  
-</ul></p>
-
-<p><b><a href="http://www.transgaming.com"><u>TransGaming</u></a></b>
-<ul>Development efforts at TransGaming, mostly in 2002, improved several
-critical areas of Wine.  Changes to DCOM, DirectDraw and 2D graphics support 
-helped new types of programs to install.  Later, the widl utility was
-donated to act as a MIDL replacement.  
-</ul></p>
-
-
-<p><b><u>..And a cast of hundreds</u></b>
-
-<ul>
-If you haven't seen the 
-<a href="http://www.winehq.org/site/who">Who's Who</a> list, check
-that out for a list of major contributors.  In addition, the following
-individuals have spent a considerable amount of time and effort improving
-Wine.  Also note, contributions to "misc" shouldn't be taken lightly. 
-In most cases those folks have submitted enough patches that you can't
-nail down any particular area of focus.
-</ul></p>
 <table align=center>
 <tr><td>James	Abbatiello</td>	<td>misc</td>	<td>1999-2001</td></tr>
 <tr><td>Guy L.	Albertelli</td>	<td>controls</td>	<td>1999-2002</td></tr>
@@ -217,19 +204,10 @@ nail down any particular area of focus.
 </table>
 <p>A complete list of
 <a href="http://source.winehq.org/git/?p=wine.git;a=blob_plain;f=AUTHORS">authors</a> can be
-found in the source code repository. </p>
-<hr>
+found in the source code repository.</p>
+<hr />
 
-<hr>
-<table width="100%" border=0 cellpadding=0 cellspacing=0>
-<tr valign=top>
-  <td width="50%" align=left>
-    <a href="{$root}/site/wine_features">Previous</a>: Wine's Features
-  </td>
-  <td width="50%" align=right>
-    About Wine :<a href="{$root}/site/about">Next</a>
-  </td>
-</tr>
-</table>
-
-<p>&nbsp;</p>
+<div class="link-container">
+  <p class="left-link">About Wine: <a href="{$root}/site/about">Next</a></p>
+  <p class="right-link"><a href="{$root}/site/wine_features">Previous</a>: Wine's Features</p>
+</div>

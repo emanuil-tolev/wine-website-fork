@@ -32,10 +32,10 @@ implementation progress.</p>
 website can be emailed to <a
 href="mailto:web-admin_at_winehq.org">web-admin_at_winehq.org</a>. Alexandre
 Julliard leads the Wine project, and may be reached by email at
-<a href="mailto:julliard_at_winehq.org">julliard_at_winehq.org</a>. </p>
+<a href="mailto:julliard_at_winehq.org">julliard_at_winehq.org</a>.</p>
 
 <p>We've also assembled a short list of resources to help you understand
-the project:
+the project:</p>
 <ul>
 	<li><a href="{$root}/site/history">Wine's History</a></li>
 	<li><a href="{$root}/site/who">Wine's Who's Who</a></li>
@@ -46,13 +46,7 @@ the project:
 	<li><a href="{$root}/site/acknowledgement">Acknowledgements</a></li>
 </ul>
 
-
-<hr>
-<table width="100%" border=0 cellpadding=0 cellspacing=0>
-<tr valign=top>
-  <td width="50%" align=right>
-    Wine's History :<a href="{$root}/site/history">Next</a>
-  </td>
-</tr>
-</table>
-<p>&nbsp;</p>
+<hr />
+<div class="link-container">
+  <p class="right-link">Wine's History: <a href="{$root}/site/history">Next</a></p>
+</div>
