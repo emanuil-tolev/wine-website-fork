@@ -7,50 +7,43 @@ Anyone may get the code, post opinions on what should be done,
 and contribute patches. You will need to know C and/or perl, and something
 about <a href="{$root}/site/resources">Unix and Windows</a>.</p>
 
-<p><a href="http://git.or.cz/" target="_blank">Git</a> is a fast directory
+<p><a href="http://git.or.cz/">Git</a> is a fast directory
 content manager, originally written for use with large repositories,
-such as the Linux Kernel source. </p>
+such as the Linux Kernel source.</p>
 
-<p>You will need Git 1.3.1 or above. </p>
+<p>You will need Git 1.3.1 or above.</p>
 
 <p>Read the sections below on how to use our Git tree or check the
 <a href="http://wiki.winehq.org/GitWine">GitWine</a> guide on the Wine Wiki.</p>
 
 <ol>
-    <li><a href="#clone">Getting a local copy of Wine</a>
-    <li><a href="#uptodate">Staying Up-To-Date</a>
-    <li><a href="#sourcetree">Source Tree Browsing via the Web</a>
-    <li><a href="#modules">Other modules available from WineHQ</a>
-    <li><a href="#docs">Documentation module available from Sourceforge</a>
+    <li><a href="#clone">Getting a local copy of Wine</a></li>
+    <li><a href="#uptodate">Staying Up-To-Date</a></li>
+    <li><a href="#sourcetree">Source Tree Browsing via the Web</a></li>
+    <li><a href="#modules">Other modules available from WineHQ</a></li>
+    <li><a href="#docs">Documentation module available from Sourceforge</a></li>
 </ol>
 
 <hr />
 
-<a name="clone" class="hidden"></a>
-
-<h1>Getting a local copy of Wine</h1>
+<h1 id="clone">Getting a local copy of Wine</h1>
 
 <p>To check out the entire Wine source tree, do:</p>
 
-<div class="inverse commandWidth">
-  <p>git clone git://source.winehq.org/git/wine.git wine</p>
-</div>
+<p><code>git clone git://source.winehq.org/git/wine.git wine</code></p>
 
 <hr />
 
-<a name="uptodate" class="hidden"></a>
-
-<h1>Cleaning up your existing tree</h1>
+<h1 id="uptodate">Cleaning up your existing tree</h1>
 
 <p>A quick way to clean up your tree after you've been modifying
-   it and want to remove changes you haven't checked in is this: </p>
+it and want to remove changes you haven't checked in is this: </p>
 
-<div class="inverse commandWidth">
-  <p>cd wine<br />
-  git diff-index -p HEAD &gt; total-<i>x.x.x</i>.diff<br />
-  patch -p1 -R &lt; total-<i>x.x.x</i>.diff<br />
-  git reset</p>
-</div>
+<p><code>cd wine
+git diff-index -p HEAD &gt; total-<i>x.x.x</i>.diff
+patch -p1 -R &lt; total-<i>x.x.x</i>.diff
+git reset
+</code></p>
 
 <p>Using the current x.x.x tags, you can keep a history of changes
 that were in your Wine tree.</p>
@@ -58,9 +51,8 @@ that were in your Wine tree.</p>
 <p>If you have made commits to the tree, and want to remove them all,
 you can use the following more dangerous command:</p>
 
-<div class="inverse commandWidth">
-  <p>git reset --hard origin</p>
-</div>
+<p><code>git reset --hard origin</code></p>
+
 
 <p>This will wipe out any local changes you have made, so use it with caution.</p>
 
@@ -71,35 +63,31 @@ you can use the following more dangerous command:</p>
 <p> First, make sure to clean your tree as described above, then
 run the following commands from the top level wine directory:</p>
 
-<div class="inverse commandWidth">
-  <p>git fetch<br />
-  git rebase origin</p>
-</div>
+<p><code>git fetch
+git rebase origin
+</code></p>
 
 <hr />
 
-<a name="sourcetree" class=hidden></a>
-
-<h1>Source Tree Browsing via the Web</h1>
+<h1 id="sourcetree">Source Tree Browsing via the Web</h1>
 
 <p>The source code of the entire Wine tree is (<a href="http://lxr.linux.no/">LXR</a>-based)
-cross-referenced and available for browsing, including a search engine.
-This cross-references source is based on the snapshot-releases and is made available at: </p>
+  cross-referenced and available for browsing, including a search engine.
+  This cross-references source is based on the snapshot-releases and is made available at: </p>
 <ul>
-  <li><a href="http://source.winehq.org/">source.winehq.org</a>
+  <li><a href="http://source.winehq.org/">source.winehq.org</a></li>
 </ul>
 
 <p> Direct access from the web to the complete Git tree is also possible, using
 <a href="http://www.kernel.org/pub/software/scm/gitweb/">gitweb</a> package:</p>
 <ul>
-  <li><a href="http://source.winehq.org/git">source.winehq.org/git</a>, on the primary Git repository
+  <li><a href="http://source.winehq.org/git">source.winehq.org/git</a>,
+  on the primary Git repository</li>
 </ul>
 
 <hr />
 
-<a name="modules" class=hidden></a>
-
-<h1>Other modules available from WineHQ</h1>
+<h1 id="modules">Other modules available from WineHQ</h1>
 
 <p>The WineHQ CVS server makes a couple of other things available.</p>
 
@@ -112,36 +100,26 @@ This cross-references source is based on the snapshot-releases and is made avail
 
 <p>To login to the CVS server, run in a terminal:</p>
 
-<div class="inverse commandWidth">
-  <p>CVSROOT=:pserver:cvs@cvs.winehq.org:/home/wine cvs login</p>
-</div>
+<p><code>CVSROOT=:pserver:cvs@cvs.winehq.org:/home/wine cvs login</code></p>
 
 <p>Use &quot;cvs&quot; as the password (without the quotes).</p>
 
 <p>To get a git repository of one of the modules listed above
 create a new directory and in a terminal run in that directory:</p>
 
-<div class="inverse commandWidth">
-  <p>git cvsimport -v -k -d :pserver:cvs@cvs.winehq.org:/home/wine MODULE</p>
-</div>
+<p><code>git cvsimport -v -k -d :pserver:cvs@cvs.winehq.org:/home/wine MODULE</code></p>
 
 <p>Replace MODULE with one of the module names listed above.<br/>
 But be aware that this can take quite some time.</p>
 
 <hr />
 
-<a name="docs" class=hidden></a>
-
-<h1>Documentation module available from Sourceforge</h1>
+<h1 id="docs">Documentation module available from Sourceforge</h1>
 
 <p>The documentation lives in a separate CVS tree on Sourceforge.<br />
 To get a git repository of the documentation create a new directory and
 in a terminal run in that directory:</p>
 
-<div class="inverse commandWidth">
-  <p>git cvsimport -v -k -d :pserver:anonymous@wine.cvs.sourceforge.net:/cvsroot/wine docs</p>
-</div>
+<p><code>git cvsimport -v -k -d :pserver:anonymous@wine.cvs.sourceforge.net:/cvsroot/wine docs</code></p>
 
 <p>But be aware that this can take quite some time.</p>
-
-<p>&nbsp;</p>
