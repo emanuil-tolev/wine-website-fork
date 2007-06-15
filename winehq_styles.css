@@ -9,6 +9,12 @@ BODY                {
 
 img                 { border: 0; }
 dt                  { margin: 10px 0; }
+code                { border: 1px solid #D1D7DC;
+                      display: block;
+                      margin: 0 1em;
+                      padding: .5em;
+                      white-space: pre;
+                    }
 
 /* Link Colors */
 A                   { color: #A50D0D; }
