@@ -15,6 +15,7 @@ code                { border: 1px solid #D1D7DC;
                       padding: .5em;
                       white-space: pre;
                     }
+address             { white-space: pre; }
 
 /* Link Colors */
 A                   { color: #A50D0D; }
