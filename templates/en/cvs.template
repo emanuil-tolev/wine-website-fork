@@ -2,57 +2,45 @@
 
 <h1>The Wine CVS Tree</h1>
 
-<p><b>Note: We are switching development from CVS to <a href="http://git.or.cz">Git</a>.<br>
-      Instructions for using the <a href="{$root}/site/git">Wine GIT tree</a> 
-      can be found on the <a href="http://wiki.winehq.org/GitWine">GitWine</a>
-      page on the <a href="http://wiki.winehq.org">Wine Wiki</a>.
-</b></p>
+<p><strong>Note: We are switching development from CVS to <a href="http://git.or.cz">Git</a>.
+  Instructions for using the <a href="{$root}/site/git">Wine GIT tree</a> 
+  can be found on the <a href="http://wiki.winehq.org/GitWine">GitWine</a>
+  page on the <a href="http://wiki.winehq.org">Wine Wiki</a>.</strong></p>
 
 <ol>
-    <li><a href="#co">Getting a local copy of Wine</a>
-    <li><a href="#modules">Other modules available via CVS from WineHQ</a>
-    <li><a href="#docs">Documentation module available via CVS from Sourceforge</a>
-    <li><a href="#sourcetree">Source Tree Browsing via the Web</a>
+  <li><a href="#co">Getting a local copy of Wine</a></li>
+  <li><a href="#modules">Other modules available via CVS from WineHQ</a></li>
+  <li><a href="#docs">Documentation module available via CVS from Sourceforge</a></li>
+  <li><a href="#sourcetree">Source Tree Browsing via the Web</a></li>
 </ol>
 
-<p><img src="./images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
+<hr />
 
-<a name="co" class="hidden"></a>
+<h1 id="co">Getting a local copy of Wine</h1>
 
-<h1>Getting a local copy of Wine</h1>
+<p>To connect to the CVS server, run:</p>
 
-<p> To connect to the CVS server, run: </p>
-
- <table width="500" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>
- export CVSROOT=:pserver:cvs@cvs.winehq.org:/home/wine<br>
- cvs login
- </span>
- </td></tr>
- </table>
+<p><code>export CVSROOT=:pserver:cvs@cvs.winehq.org:/home/wine
+cvs login
+</code></p>
 
 <p>Use &quot;cvs&quot; as the password (without the quotes). Note that
-<code>/home/wine</code> is a path on the <b>server</b>, not on your machine.</p>
+<code>/home/wine</code> is a path on the <strong>server</strong>, not on your machine.</p>
 
 <p>To check out the entire Wine source tree run:</p>
 
- <table width="300" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>
- cvs -z 3 checkout wine
- </span>
- </td></tr>
- </table>
+<p><code>cvs -z 3 checkout wine</code></p>
 
-<p><img src="./images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
+<hr />
 
-<a name="modules" class="hidden"></a>
+<h1 id="modules">Other modules available via CVS from WineHQ</h1>
 
-<h1>Other modules available via CVS from WineHQ</h1>
-
-<p>
-The WineHQ CVS server makes a couple of other things available as well. 
-To get these, log in anonymously as above and do <code>cvs co <i>modulename</i></code> where 
-<code><i>modulename</i></code> is one of:</p>
+<p>The WineHQ CVS server makes a couple of other things available as well. 
+  To get these, log in anonymously as above and do
+  <code>cvs co <em>modulename</em></code>
+  where 
+  <code><em>modulename</em></code>
+  is one of:</p>
 <ul>
   <li><tt>lostwages</tt> -- source for the WineHQ web site</li>
   <li><tt>tools</tt>  -- tools used on the WineHQ site</li>
@@ -60,38 +48,30 @@ To get these, log in anonymously as above and do <code>cvs co <i>modulename</i><
   <li><tt>bugzilla</tt>  -- source for the bugzilla version used on the WineHQ site</li>
 </ul>
 
-<p><img src="./images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
+<hr />
 
-<a name="docs" class="hidden"></a>
+<h1 id="docs">Documentation module available via CVS from Sourceforge</h1>
 
-<h1>Documentation module available via CVS from Sourceforge</h1>
+<p>The documentation lives in a separate CVS tree on Sourceforge.  To get the docs in
+  a terminal run:</p>
+<p><code>cvs -z3 -d:pserver:anonymous@wine.cvs.sourceforge.net:/cvsroot/wine co -P docs</code></p>
 
-<p> The documentation lives in a separate CVS tree on Sourceforge.<br/>
-To get the docs in a terminal run:</p>
- <table width="550" border=0 cellpadding=10><tr><td class=black>
- <span class=inverse>
-  cvs -z3 -d:pserver:anonymous@wine.cvs.sourceforge.net:/cvsroot/wine co -P docs<br/>
- </span>
- </td></tr>
- </table>
 <p>When prompted for a password press the enter key. A subdirectory named docs will be created.</p>
 
-<p><img src="./images/grey_pixel.gif" width="100%" height=1 border=0 alt="-"></p>
+<hr />
 
-<a name="sourcetree" class=hidden></a>
-<h1>Source Tree Browsing via the Web</h1>
+<h1 id="sourcetree">Source Tree Browsing via the Web</h1>
 
 <p>The source code of the entire Wine tree is (<a href="http://lxr.linux.no/">LXR</a>-based)
-cross-referenced and available for browsing, including a search engine.
-This cross-references source is based on the snapshot-releases and is made available at:</p>
+  cross-referenced and available for browsing, including a search engine.
+  This cross-references source is based on the snapshot-releases and is made available at:</p>
 <ul>
-  <li><a href="http://source.winehq.org/">source.winehq.org</a>
+  <li><a href="http://source.winehq.org/">source.winehq.org</a></li>
 </ul>
 
 <p>Direct access from the web to the complete CVS tree is also possible, using
-<a href="http://www.freebsd.org/projects/cvsweb.html">cvsweb</a> package:</p>
+  <a href="http://www.freebsd.org/projects/cvsweb.html">cvsweb</a> package:</p>
 <ul>
-  <li><a href="http://cvs.winehq.org/cvsweb">cvs.winehq.org/cvsweb</a>, on the primary CVS repository
+  <li><a href="http://cvs.winehq.org/cvsweb">cvs.winehq.org/cvsweb</a>, on the
+    primary CVS repository.</li>
 </ul>
-
-<p>&nbsp;</p>
