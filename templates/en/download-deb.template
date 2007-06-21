@@ -27,11 +27,11 @@ list of trusted APT keys by copy and pasting the following:</p>
 
 <p><b>For Ubuntu Feisty (7.04):</b><br>
 <i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/feisty.list -O /etc/apt/sources.list.d/winehq.list</i></p>
-<p><b>For Ubuntu Edgy (6.10):</b><br>
+<p><b>For Ubuntu Edgy (6.10):</b> <i>*64-bit packages not available*</i><br>
 <i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/edgy.list -O /etc/apt/sources.list.d/winehq.list</i></p>
-<p><b>For Ubuntu Dapper (6.06):</b><br>
+<p><b>For Ubuntu Dapper (6.06):</b> <i>*64-bit packages not available*</i><br>
 <i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/dapper.list -O /etc/apt/sources.list.d/winehq.list</i></p>
-<p><b>For Debian Etch (4.0):</b><br>
+<p><b>For Debian Etch (4.0):</b> <i>*64-bit packages not available*</i><br>
 <i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/etch.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 
 <p>Then, you can install Wine from WineHQ like it were any other package, such as by 
@@ -43,7 +43,7 @@ package information and then '<b>sudo apt-get install wine</b>'.</p>
 
 <p>Packages for the 64 bit version of Ubuntu Feisty (7.04) are now available, however 
 for users of Debian and older Ubuntus the entries above are for i386 users only. 
-Attempting to use these repositories with a different architecture (eg amd64), will result 
+Attempting to use these repositories with a different architecture will result 
 in 404 errors as APT will be looking for files not in the repository.</p>
 
 <p>If you are using an older 64 bit distribution and would still like a working Wine package,
