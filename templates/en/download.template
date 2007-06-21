@@ -121,40 +121,7 @@ for post-installation instructions.</b></p>
 
 <h1><a name="binary"></a>3rd Party Tools</h1>
 
-<table width="95%" border=0 cellpadding=5 cellspacing=1 bgcolor="#EFEFEF">
-
-  <tr>
-    <td align=center bgcolor=black><b><font color=white class=small>Product</font></b></td>
-    <td align=center bgcolor=black><b><font color=white class=small>Description</font></b></td>
-
-  </tr>
-
-  <tr>
-    <td align=center bgcolor="#ffffff">
-      <a href="http://www.von-thadden.de/Joachim/WineTools/">
-        <img src="../images/distro/winetools.png" 
-         width="50" height="50" alt="WineTools" border="0">
-      </a>
-    </td>
-    <td align=left bgcolor="#ffffff">
-      <b><a href="http://www.von-thadden.de/Joachim/WineTools/">WineTools</a></b> - 
-      WineTools  is a menu driven installer for installing Windows programs.
-      This software lets you install the following Windows software: DCOM98, 
-      IE6, Windows Core Fonts, Windows System Software, Office &amp; Office Viewer, 
-      Adobe Photoshop 7, Illustrator 9 and many other programs.<br />
-      By <a href="http://www.von-thadden.de/Joachim/WineTools/">Joachim von
-      Thadden</a>.<br />
-      <div style="margin: 10px; padding: 5px; border: 1px solid #C0C0C0; background-color: #F0F0F0;">
-        <b>Note:</b> WineTools only recommended if installation or operability of
-        Windows software failed on pure Wine. Since WineTools radically alters your
-        Wine configuration please do not report bugs in programs with WineTools 
-        installed. Instead contact the author of WineTools 
-        <a href="mailto:thadden@web.de">Joachim von Thadden</a>.
-      </div>
-    </td>
-  </tr>
-</table>
-
+<p>Sometimes a customization of Wine can cause an application to work, but this change cannot be incorporated into Wine for some reason.  To help overcome current deficiencies in Wine, various third party applications for end users have been made over the years.  These applications are entirely unsupported by the Wine developers, however you may find them useful.  For more information, see <a href="http://wiki.winehq.org/ThirdPartyApplications">our wiki page</a> on third party applications.</p>
 
 <h1><a name="commercial"></a>Commercial Wine Versions</h1>
 
