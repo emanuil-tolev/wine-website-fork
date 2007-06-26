@@ -47,7 +47,7 @@ class config
            'Support' => array(
                 'Support'         => '{$root}/site/support',
                 'Getting Help'    => '{$root}/site/getting_help',
-                'FAQ'             => '{$root}/site/docs/wine-faq/index',
+                'FAQ'             => 'http://wiki.winehq.org/FAQ',
                 'Documentation'   => '{$root}/site/documentation',
                 'HowTo'           => '{$root}/site/howto',
                 'Live Support Chat' => '{$root}/site/irc',
