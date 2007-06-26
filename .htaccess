@@ -43,8 +43,8 @@ RedirectPermanent /support.shtml                http://www.winehq.org/site/docum
 RedirectPermanent /News/status.html             http://www.winehq.org/site/status
 RedirectPermanent /status                       http://www.winehq.org/site/status
 RedirectPermanent /status/                      http://www.winehq.org/site/status
-RedirectPermanent /faq/                         http://www.winehq.org/site/docs/wine-faq/index
-RedirectPermanent /faq                          http://www.winehq.org/site/docs/wine-faq/index
+RedirectPermanent /faq/                         http://wiki.winehq.org/FAQ
+RedirectPermanent /faq                          http://wiki.winehq.org/FAQ
 RedirectPermanent /screenshots/                 http://www.winehq.org/site/screenshots
 RedirectPermanent /screenshots                  http://www.winehq.org/site/screenshots
 RedirectPermanent /news/                        http://www.winehq.org/site?news=archive
@@ -73,12 +73,12 @@ RedirectMatch ^/(APPS|Apps|apps)/$              http://appdb.winehq.org/
 RedirectMatch ^/(APPS|Apps|apps)$               http://appdb.winehq.org/
 RedirectMatch ^/(APPS|Apps|apps)/query\.cgi$    http://appdb.winehq.org/
 RedirectMatch ^/apps\.cgi$                      http://appdb.winehq.org/
-RedirectMatch ^/(FAQ|Faq)/$                     http://www.winehq.org/site/docs/wine-faq/index
-RedirectMatch ^/(FAQ|Faq)$                      http://www.winehq.org/site/docs/wine-faq/index
+RedirectMatch ^/(FAQ|Faq)/$                     http://wiki.winehq.org/FAQ
+RedirectMatch ^/(FAQ|Faq)$                      http://wiki.winehq.org/FAQ
 RedirectMatch ^/(BUGS|Bugs|bugs)/$              http://bugs.winehq.org/
 RedirectMatch ^/(BUGS|Bugs|bugs)$               http://bugs.winehq.org/
-RedirectMatch ^/(TROUBLE|Trouble|trouble)/$     http://www.winehq.org/site/docs/wine-faq/index
-RedirectMatch ^/(TROUBLE|Trouble|trouble)$      http://www.winehq.org/site/docs/wine-faq/index
+RedirectMatch ^/(TROUBLE|Trouble|trouble)/$     http://wiki.winehq.org/FAQ
+RedirectMatch ^/(TROUBLE|Trouble|trouble)$      http://wiki.winehq.org/FAQ
 
 # redirect soure website
 RedirectMatch /WineAPI(.*)$                     http://source.winehq.org/WineAPI$1
