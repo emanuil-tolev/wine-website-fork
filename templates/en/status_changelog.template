@@ -2,295 +2,43 @@
 
 <h1>Wine Status - ChangeLog</h1>
 
-<p>Changes since October 1, 2006:</p>
+<p>Changes since July 10, 2007:</p>
 
  <ul>
- <li>ADD - Paul Vriens as worker to wintrust.dll</li>
- <li>ADD - Miko&#322;aj Zalewski as worker to comctl32.dll</li>
- <li>Remove - Thomas Weidenm&uuml;ller as worker on comctl32.dll</li>
- <li>Remove - Phil Krylov as worker on comctl32.dll</li>
- <li>version.dll 85% -&gt; 95%</li>
- <li>wintrust.dll 5% -&gt; 10%</li>
+ <li>ADD - d3d10.dll section</li>
+ <li>ADD - dpnaddr.dll section</li>
+ <li>ADD - David Adam as worker to d3drm.dll</li>
+ <li>ADD - Chris Robinson as worker to quartz.dll</li>
+ <li>ADD - Chris Robinson as worker to winemp3.acm</li>
+ <li>ADD - Maarten Lankhorst as worker to ALSA</li>
+ <li>ADD - Maarten Lankhorst as worker to dsound.dll</li>
+ <li>Remove - Christoph Frick as worker on dinput.dll</li>
+ <li>Remove - R.Colenbrander as worker on dinput8.dll</li>
+ <li>Remove - Rapha&euml;l Junqueira as worker on DirectMusic</li>
+ <li>Remove - Rapha&euml;l Junqueira as worker on dxdiagn.dll</li>
+ <li>Remove - Rapha&euml;l Junqueira as worker on opengl32.dll</li>
+ <li>Remove - Lionel Ulmer as worker on ddraw.dll</li>
+ <li>Remove - Lionel Ulmer as worker on opengl32.dll</li>
+ <li>Remove - Chris Morgan as worker on JACK driver</li>
+ <li>Remove - Multimedia arts driver </li>
+ <li>Remove - Robert Lunnon as worker on AudioIO driver</li>
+ <li>Update - Updated the WWN links on DirectX and Multimedia pages</li>
+ <li>d3d8.dll 85% -&gt; 95%</li>
+ <li>d3d9.dll 85% -&gt; 95%</li>
+ <li>wined3d.dll 85% -&gt; 95%</li>
+ <li>ddraw.dll 85% -&gt; 95%</li>
+ <li>dinput.dll 70% -&gt; 75%</li>
+ <li>dxdiagn.dll 5% -&gt; 10%</li>
+ <li>dsound.dll 90% -&gt; 85%</li>
+ <li>d3drm.dll 5% -&gt; 15%</li>
+ <li>quartz.dll (framework) 30% -&gt; 40%</li>
+ <li>quartz.dll (filters) 10% -&gt; 30%</li>
+ <li>ALSA driver  75% -&gt; 90%</li>
+ <li>winecoreaudio  50% -&gt; 75%</li>
  </ul>
  <br>
 
-<p>Changes since September 25, 2006:</p>
 
- <ul>
- <li>ADD - Dan Hipschman as worker to Wine IDL compiler (widl)</li>
- <li>ADD - James Hawkins as worker to msi.dll</li>
- <li>ADD - Dmitry Timoshkov as worker to mlang.dll</li>
- <li>ADD - Dmitry Timoshkov as worker to TrueType support</li>
- <li>ADD - Kai Blin as worker to secur32.dll</li>
- <li>ADD - Aric Stewart as worker to imm32.dll</li>
- <li>Remove - CodeWeavers as worker on mlang.dll</li>
- <li>Remove - CodeWeavers as worker on imm32.dll</li>
- <li>Remove - Aric Stewart as worker on msi.dll</li>
- <li>Remove - Jon Griffiths as worker on crtdll.dll</li>
- <li>Remove - Jon Griffiths as worker on mapi32.dll</li>
- <li>Remove - Jon Griffiths as worker on msvcrt.dll</li>
- <li>Remove - Jon Griffiths as worker on msvcrt20.dll</li>
- <li>Remove - Jon Griffiths as worker on msvcrtd.dll</li>
- <li>Remove - Jon Griffiths as worker on shlwapi.dll</li>
- <li>Access Control & Authorization 20% -&gt; 40%</li>
- <li>advpack.dll 30% -&gt; 70%</li>
- <li>crypt32.dll 20% -&gt; 40%</li>
- <li>dbghelp.dll 60% -&gt; 75%</li>
- <li>Desktop Integration 5% -&gt; 40%</li>
- <li>DLL separation 90% -&gt; 95%</li>
- <li>hlink.dll 5% -&gt; 50%</li>
- <li>Wave driver (mciwave) 60% -&gt; 65%</li>
- <li>Initial registry contents 80% -&gt; 85%</li>
- <li>Initial directory structure 90% -&gt; 95%</li>
- <li>mshtml.dll 40% -&gt; 50%</li>
- <li>msi.dll 60% -&gt; 70%</li>
- <li>msvcrt.dll 60% -&gt; 80%</li>
- <li>msxml3.dll 15% -&gt; 20%</li>
- <li>riched20.dll 30% -&gt; 50%</li>
- <li>secur32.dll 20% -&gt; 35%</li>
- <li>shdocvw.dll 25% -&gt; 50%</li>
- <li>stdole2.tlb 100% -&gt; 95%</li>
- <li>TrueType support 80% -&gt; 90%</li>
- <li>urlmon.dll 35% -&gt; 45%</li>
- <li>usp10.dll 15% -&gt; 50%</li>
- <li>winspool.drv 80% -&gt; 60%</li>
- <li>Wine configuration tool (winecfg) 60% -&gt; 70%</li>
- <li>Wine Debugger (winedbg) 85% -&gt; 90%</li>
- <li>Wine gcc wrapper(winegcc) 90% -&gt; 95%</li>
- <li>Wine Resource Compiler (wrc) 90% -&gt; 95%</li>
- <li>Wine Message Compiler (wmc) 75% -&gt; 95%</li>
- <li>Wine Registry Editor (regedit) 80% -&gt; 85%</li>
- <li>wineshelllink 20% -&gt; 25%</li>
- </ul>
- <br>
-
-<p>Changes since September 9, 2006:</p>
-
- <ul>
- <li>ADD - svrapi.dll section</li>
- <li>ADD - cryptnet.dll section</li>
- <li>ADD - userenv.dll section</li>
- <li>ADD - Andrew Ziem as worker to ws2_32.dll</li>
- <li>Remove - Hans Leidekker as worker on ws2_32.dll</li>
- <li>Rename - winsock.dll to ws2_32.dll</li>
- <li>Rename - x11drv to winex11.drv</li>
- <li>Update - WWN links Core and DLL pages</li>
- </ul>
- <br>
-
-<p>Changes since September 6, 2006:</p>
-
- <ul>
- <li>ADD - Phil Costin as worker to wined3d.dll</li>
- <li>ADD - R.Colenbrander as worker to opengl32.dll</li>
- <li>ADD - R.Colenbrander as worker to x11drv</li>
- <li>ADD - winecoreaudio section</li>
- <li>ADD - compstui.dll section</li>
- <li>ADD - hid.dll section</li>
- <li>ADD - hlink.dll section</li>
- <li>ADD - infosoft.dll section</li>
- <li>ADD - mprapi.dll section</li>
- <li>ADD - msftedit.dll section</li>
- <li>ADD - ntdsapi.dll section</li>
- <li>ADD - query.dll section</li>
- <li>ADD - spoolss.dll section</li>
- <li>Update - WWN links (Multimedia page)</li>
- </ul>
- <br>
-
-<p>Changes since August 21, 2006:</p>
-
- <ul>
- <li>Remove - Jason Green as worker on d3d8.dll,d3d9.dll,wined3d.dll</li>
- </ul>
- <br>
-
-<p>Changes since July 27, 2006:</p>
-
- <ul>
- <li>ADD - Roderick Colenbrander as worker to ddraw.dll</li>
- <li>ADD - Roderick Colenbrander as worker to dinput8.dll</li>
- <li>ADD - Vitaliy Margolen as worker to dinput.dll</li>
- <li>dinput8.dll 25% -&gt; 50%</li>
- </ul>
- <br>
-
-<p>Changes since July 17, 2006:</p>
-
- <ul>
- <li>ADD - Stefan D&#246;singer as worker to d3d8.dll</li>
- <li>ADD - Stefan D&#246;singer as worker to d3d9.dll</li>
- <li>ADD - Stefan D&#246;singer as worker to ddraw.dll</li>
- <li>ADD - Stefan D&#246;singer as worker to wined3d.dll</li>
- <li>ADD - Ivan Gyurdiev as worker to d3d8.dll</li>
- <li>ADD - Ivan Gyurdiev as worker to d3d9.dll</li>
- <li>ADD - Ivan Gyurdiev as worker to wined3d.dll</li>
- <li>ADD - Jason Green as worker to d3d8.dll</li>
- <li>ADD - Jason Green as worker to d3d9.dll</li>
- <li>ADD - Jason Green as worker to wined3d.dll</li>
- <li>ADD - Roderick Colenbrander as worker to d3d8.dll</li>
- <li>ADD - Roderick Colenbrander as worker to d3d9.dll</li>
- <li>ADD - Roderick Colenbrander as worker to wined3d.dll</li>
- <li>ADD - Christoph Frick as worker to dinput.dll</li>
- <li>Remove - Rapha&euml;l Junqueira as worker on d3d8.dll</li>
- <li>Remove - Rapha&euml;l Junqueira as worker on d3d9.dll</li>
- <li>Remove - Rapha&euml;l Junqueira as worker on wined3d.dll</li>
- <li>Remove - Lionel Ulmer as worker on dinput.dll</li>
- <li>ddraw.dll 80% -&gt; 85%</li>
- <li>d3d9.dll 65% -&gt; 85%</li>
- <li>wined3d.dll 65% -&gt; 85%</li>
- </ul>
- <br>
-
-<p>Changes since February 22, 2006:</p>
-
- <ul>
- <li>ADD - sfc.dll section</li>
- <li>ADD - Aric Stewart as worker to twain32.dll</li>
- <li>ADD - Jeff Latimer as worker to usp10.dll</li>
- <li>Rename - ctl3d.dll directory to ctl3d32.dll</li>
- <li>usp10.dll 5% -&gt; 15%</li>
- </ul>
- <br>
-
-<p>Changes since February 10, 2006:</p>
-
- <ul>
- <li>ADD - (winefile) section</li>
- <li>ADD - Jacek Caban as worker to urlmon.dll</li>
- <li>ADD - Jacek Caban as worker to shdocvw.dll</li>
- <li>ADD - James Hawkins as worker to advpack.dll</li>
- <li>ADD - James Hawkins as worker to hhctrl.ocx</li>
- <li>ADD - James Hawkins as worker to setupapi.dll</li>
- <li>ADD - James Hawkins as worker to cabinet.dll</li>
- <li>ADD - Detlef Riekenberg as worker to winspool.drv</li>
- <li>ADD - Robert Shearman as worker to oleaut32.dll</li>
- <li>ADD - Robert Shearman as worker to (widl)</li>
- <li>ADD - Eric Pouech as worker to Serial/parallel ports</li>
- <li>ADD - Krzysztof Foltman as worker to regedit</li>
- <li>ADD - Phil Krylov as worker to comctl32.dll</li>
- <li>Rename - (winapi_check) to (winapi)</li>
- <li>Remove - CodeWeavers as worker on advpack.dll</li>
- <li>Remove - Mike McCormack as worker on hhctrl.ocx</li>
- <li>Remove - Mike McCormack as worker on shdocvw.dll</li>
- <li>Remove - Mike McCormack as worker on Serial/parallel ports</li>
- <li>Remove - Mike McCormack as worker on oleacc.dll</li>
- <li>Remove - Mike McCormack as worker on rsabase.dll</li>
- <li>Remove - Mike McCormack as worker on regedit</li>
- <li>Remove - Jukka Heinonen as worker on winedos.dll</li>
- <li>Remove - Detlef Riekenberg as worker on activeds.dll</li>
- <li>Remove - Robert North as worker on wintab32.dll</li>
- <li>Remove - ReactOS as worker on shell32.dll</li>
- <li>Remove - ReactOS as worker on (regedit)</li>
- <li>Remove - Jon Griffiths as worker on oleaut32.dll</li>
- <li>Remove - Huw D M Davies as worker on (widl)</li>
- <li>Remove - Mike Hearn as worker on (winecfg)</li>
- <li>Remove - Mike Hearn as worker on rpcrt4.dll</li>
- <li>Remove - Filip Navara as worker on rpcrt4.dll</li>
- <li>Remove - Eric Kohl as worker on setupapi.dll</li>
- <li>Remove - Gerold J. Wucherpfennig as worker on cabinet.dll</li>
- <li>Remove - Sami Nopanen as worker on cards.dll</li>
- <li>Remove - Sami Aario as worker on vdmdbg.dll</li>
- <li>Remove - Filip Navara as worker on comctl32.dll</li>
- <li>Remove - Maxime Belleng&eacute; as worker on comctl32.dll</li>
- <li>Remove - Dimitrie O. Paun as worker on comdlg32.dll</li>
- <li>Remove - Ulrich Czekalla as worker on cryptdll.dll</li>
- <li>Remove - Aric Stewart as worker on imm32.dll</li>
- <li>Remove - Steven Edwards as worker on sensapi.dll</li>
- <li>Remove - (wineinstall) section</li>
- <li>Remove - tty.drv section</li>
- <li>Update - WWN links</li>
- <li>Wine Conformance Test Suite 100% -&gt; 35%</li>
- <li>Access Control & Authorization 10% -&gt; 20%</li>
- <li>crypt32.dll 5% -&gt; 20%</li>
- <li>advpack.dll 5% -&gt; 30%</li>
- <li>hhctrl.ocx 5% -&gt; 70%</li>
- <li>mscms.dll 25% -&gt; 50%</li>
- <li>wldap32.dll 5% -&gt; 90%</li>
- <li>dbghelp.dll 50% -&gt; 60%</li>
- <li>msi.dll 50% -&gt; 60%</li>
- <li>ntdll.dll 40% -&gt; 50%</li>
- <li>riched20.dll 5% -&gt; 30%</li>
- <li>riched32.dll 25% -&gt; 95%</li>
- <li>urlmon.dll 25% -&gt; 35%</li>
- <li>mshtml.dll 15% -&gt; 40%</li>
- <li>(winemenubuilder) 90% -&gt; 80%</li>
- <li>(winecfg) 50% -&gt; 60%</li>
- <li>msxml3.dll 5% -&gt; 15%</li>
- <li>msvcrt20.dll 60% -&gt; 95%</li>
- <li>msvcrt40.dll 60% -&gt; 95%</li>
- <li>oleaut32.dll 90% -&gt; 80%</li>
- <li>wineshelllink 10% -&gt; 20%</li>
- <li>rpcrt4.dll 40% -&gt; 50%</li>
- <li>security.dll 5% -&gt; 100%</li>
- <li>wininet.dll 60% -&gt; 70%</li>
- <li>secur32.dll 5% -&gt; 20%</li>
- <li>netapi32.dll 5% -&gt; 15%</li>
- <li>rsabase.dll 5% -&gt; 95%</li>
- <li>tapi32.dll 5% -&gt; 15%</li>
- </ul>
- <br>
-
-<p>Changes since February 6, 2006:</p>
-
- <ul>
- <li>ADD - msacm.dll section</li>
- <li>ADD - ESD section</li>
- <li>ADD - H.Verbeet as worker to d3d8.dll</li>
- <li>ADD - H.Verbeet as worker to d3d9.dll</li>
- <li>ADD - H.Verbeet as worker to wined3d.dll</li>
- <li>ADD - Maarten Lankhorst as worker to avicap32.dll</li>
- <li>ADD - Maarten Lankhorst as worker to riched20.dll</li>
- <li>Remove - Robert Shearman, Christian Costa as workers on devenum.dll</li>
- <li>Remove - Christian Costa as worker on quartz.dll</li>
- <li>Remove - Christian Costa as worker on amstream.dll</li>
- <li>Remove - Christian Costa as worker on d3d8.dll</li>
- <li>Remove - Christian Costa as worker on ddraw.dll</li>
- <li>Remove - Christian Costa as worker on dinput.dll</li>
- <li>Remove - Christian Costa as worker on d3dxof.dll</li>
- <li>Remove - Rok Mandeljc as worker on all dmusic dlls</li>
- <li>Remove - Fran&ccedil;ois Gouget as worker on dsound.dll</li>
- <li>Remove - Jason Edmeades as worker on d3d8.dll</li>
- <li>Remove - Jason Edmeades as worker on d3d9.dll</li>
- <li>Remove - Jason Edmeades as worker on wined3d.dll</li>
- <li>Remove - Oliver Stieber as worker on d3d9.dll</li>
- <li>Remove - Oliver Stieber as worker on wined3d.dll</li>
- <li>Remove - Jeremy White as worker on ALSA</li>
- <li>Remove - Eric Pouech as worker on OSS</li>
- <li>Remove - Eric Pouech as worker on midi mapper</li>
- <li>Remove - Eric Pouech as worker on CD audio driver</li>
- <li>Remove - Eric Pouech as worker on Wave driver</li>
- <li>Remove - Eric Pouech as worker on Midi driver</li>
- <li>Remove - Eric Pouech, Michael G&uuml;nnewig as workers on mcianim, mciavi</li>
- <li>Remove - Eric Pouech as worker on Multimedia joystick driver</li>
- <li>Remove - Eric Pouech as worker on avicap32.dll</li>
- <li>Remove - Mike McCormack as worker on ICCVID</li>
- <li>Remove - Mike McCormack as worker on MSVIDC32</li>
- <li>Remove - Michael G&uuml;nnewig as worker on MSRLE32</li>
- <li>Remove - Michael G&uuml;nnewig as worker on avifil32.dll</li>
- <li>Remove - Michael G&uuml;nnewig as worker on msvideo.dll/msvfw32.dll</li>
- <li>Remove - Filip Navara as worker on winmm.dll</li>
- <li>Remove - Jacek Caban as worker on glut32.dll</li>
- <li>d3d9.dll 50% -&gt; 65%</li>
- <li>wined3d.dll 50% -&gt; 65%</li>
- <li>avicap32.dll 5% -&gt; 30%</li>
- </ul>
- <br>
-
-<p>Changes since January 26, 2006:</p>
-
- <ul>
- <li>ADD - dxdiagn.dll section</li>
- <li>ADD - mswsock.dll section</li>
- <li>ADD - objsel.dll section</li>
- <li>ADD - odbccp32.dll section</li>
- <li>ADD - riched20.dll section</li>
- <li>ADD - security.dll section</li>
- <li>ADD - usp10.dll section</li>
- <li>ADD - wldap32.dll section</li>
- <li>Update - WWN links</li>
- </ul>
- <br>
 
 
 

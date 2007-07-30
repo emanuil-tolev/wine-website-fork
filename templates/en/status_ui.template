@@ -28,7 +28,7 @@
 	<td></td>
 	<td></td>
 	<td></td>
-	<td class="pct100">100%: Complete</td>
+	<td class="pct90">90%: Complete</td>
     </tr>
 
     <tr>
@@ -57,7 +57,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/user/defwnd.c">LXR</a></td>
 	<td></td>
 	<td></td>
-	<td class="pct100">100%: Complete</td>
+	<td class="pct90">90%: Complete</td>
     </tr>
 
     <tr>
@@ -67,7 +67,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/user/defdlg.c">LXR</a></td>
 	<td></td>
 	<td></td>
-	<td class="pct100">100%: Complete</td>
+	<td class="pct90">90%: Complete</td>
     </tr>
 
     <tr class="hdr">
@@ -116,7 +116,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/user/scroll.c">LXR</a></td>
 	<td>Mar 10, 2005</td>
 	<td>Comctl32.dll 6.0</td>
-	<td class="pct100">100%: Complete</td>
+	<td class="pct90">90%: Complete</td>
     </tr>
 
     <tr>
@@ -147,7 +147,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/comboex.c">LXR</a></td>
 	<td>Sep 9, 2002</td>
 	<td>Comctl32.dll 6.0</td>
-	<td class="pct100">100%: Complete</td>
+	<td class="pct90">90%: Complete</td>
     </tr>
 
     <tr>
@@ -167,7 +167,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/draglist.c">LXR</a></td>
 	<td>Mar 10, 2004</td>
 	<td>Comctl32.dll 6.0</td>
-	<td class="pct100">100%: Complete</td>
+	<td class="pct90">90%: Complete</td>
     </tr>
 
     <tr>
@@ -196,7 +196,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/hotkey.c">LXR</a></td>
 	<td>Sep 21, 2004</td>
 	<td>Comctl32.dll 6.0</td>
-	<td class="pct100">100%: Complete</td>
+	<td class="pct90">90%: Complete</td>
     </tr>
 
     <tr>
@@ -214,7 +214,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/ipaddress.c">LXR</a></td>
 	<td>Sep 9, 2002</td>
 	<td>Comctl32.dll 6.0</td>
-	<td class="pct100">100%: Complete</td>
+	<td class="pct90">90%: Complete</td>
     </tr>
 
     <tr>
@@ -260,7 +260,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/progress.c">LXR</a></td>
 	<td>Aug 6, 2004</td>
 	<td>Comctl32.dll 6.0</td>
-	<td class="pct100">100%: Complete</td>
+	<td class="pct90">90%: Complete</td>
     </tr>
 
     <tr>
@@ -341,7 +341,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/trackbar.c">LXR</a></td>
 	<td>Sep 12, 2002</td>
 	<td>Comctl32.dll 6.0</td>
-	<td class="pct100">100%: Complete</td>
+	<td class="pct90">90%: Complete</td>
     </tr>
 
     <tr>
@@ -359,7 +359,7 @@
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/comctl32/updown.c">LXR</a></td>
 	<td>Sep 9, 2002</td>
 	<td>Comctl32.dll 6.0</td>
-	<td class="pct100">100%: Complete</td>
+	<td class="pct90">90%: Complete</td>
     </tr>
 
     <tr class="hdr">
@@ -435,15 +435,16 @@
     </tr>
 
     <tr>
-      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/PageSetupDialogBox.asp"><strong>Page Setup</strong></a></td>
+      <td><a href="http://msdn2.microsoft.com/en-us/library/ms646962.aspx"><strong>Page Setup</strong></a></td>
 	<td></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
-	<td class="pct0">0%: nothing done</td>
+	<td class="pct50">50%: (We have no UNICODE-Version)
+</td>
     </tr>
 
     <tr>
-      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/PrintDialogBox.asp"><strong>Print</strong></a></td>
+      <td><a href="http://msdn2.microsoft.com/en-us/library/ms646964.aspx"><strong>Print</strong></a></td>
 	<td><a class="srclink" href="http://source.winehq.org/git/?p=wine.git;a=blob;f=dlls/comdlg32/printdlg.c">Git</a>
 	    <a class="srclink" href="http://source.winehq.org/source/dlls/comdlg32/printdlg.c">LXR</a></td>
 	<td class="needed"></td>
@@ -460,7 +461,7 @@
     </tr>
 
     <tr>
-      <td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/WinUI/WindowsUserInterface/UserInput/CommonDialogBoxLibrary/AboutCommonDialogBoxes/PrintPropertySheet.asp"><strong>Print Property Sheet</strong></a></td>
+      <td><a href="http://msdn2.microsoft.com/en-us/library/ms646966.aspx"><strong>Print Property Sheet (PrintDlgEx)</strong></a></td>
 	<td></td>
 	<td class="needed"></td>
 	<td class="needed"></td>
