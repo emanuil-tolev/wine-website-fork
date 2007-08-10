@@ -81,7 +81,7 @@ git rebase origin
 <p> Direct access from the web to the complete Git tree is also possible, using
 <a href="http://www.kernel.org/pub/software/scm/gitweb/">gitweb</a> package:</p>
 <ul>
-  <li><a href="http://source.winehq.org/git">source.winehq.org/git</a>,
+  <li><a href="http://source.winehq.org/git/wine.git">source.winehq.org/git/wine.git</a>,
   on the primary Git repository</li>
 </ul>
 
@@ -89,13 +89,20 @@ git rebase origin
 
 <h1 id="modules">Other modules available from WineHQ</h1>
 
-<p>The WineHQ CVS server makes a couple of other things available.</p>
+<p>In addition to the main source tree, the WineHQ Git server also
+exports the following modules:</p>
+
+<ul>
+  <li><a href="http://source.winehq.org/git/bugzilla.git">bugzilla.git</a>  -- source for the bugzilla version used on the WineHQ site</li>
+  <li><a href="http://source.winehq.org/git/tools.git">tools.git</a>  -- tools used on the WineHQ site</li>
+</ul>
+
+<p>The WineHQ CVS server exports the following modules:</p>
 
 <ul>
   <li><tt>lostwages</tt> -- source for the WineHQ web site</li>
   <li><tt>tools</tt>  -- tools used on the WineHQ site</li>
   <li><tt>appdb</tt>  -- source for the application database web site</li>
-  <li><tt>bugzilla</tt>  -- source for the bugzilla version used on the WineHQ site</li>
 </ul>
 
 <p>To login to the CVS server, run in a terminal:</p>
