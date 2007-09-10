@@ -577,50 +577,50 @@ The following applications where mentioned in these notification emails:
 </p><p>
 On IRC from the #winehq channel:
 <code>
-Mai 23 05:27:14 --&gt;     noerrorsfound_ (n=nicholas at h10.66.119.64.ip.alltel.net) has joined #winehq<br />
-[unrelated stuff deleted]<br />
-Mai 23 06:21:37 ---     noerrorsfound_ is now known as molle-molle-moll<br />
-Mai 23 06:21:41 &lt;molle-molle-moll&gt;      molle molle molle<br />
+Mai 23 05:27:14 --&gt;     noerrorsfound_ (n=nicholas at h10.66.119.64.ip.alltel.net) has joined #winehq
+[unrelated stuff deleted]
+Mai 23 06:21:37 ---     noerrorsfound_ is now known as molle-molle-moll
+Mai 23 06:21:41 &lt;molle-molle-moll&gt;      molle molle molle
 Mai 23 06:22:18 &lt;--     Amorphous has kicked molle-molle-moll from #winehq (Amorphous)</code></p><p>
 
 /whois output:
 <code>
-[06:22:38] --- [molle-molle-moll] (n=nicholas at h10.66.119.64.ip.alltel.net) : Nicholas<br />
-[06:22:38] --- [whoismolle-molle-moll] irc.freenode.net :http://freenode.net/<br />
+[06:22:38] --- [molle-molle-moll] (n=nicholas at h10.66.119.64.ip.alltel.net) : Nicholas
+[06:22:38] --- [whoismolle-molle-moll] irc.freenode.net :http://freenode.net/
 [06:22:38] --- [molle-molle-moll] End of WHOIS list.</code></p><p>
 
 <code>
-2007-05-23T06:50:15+0200 $ whois 64.119.66.10<br />
-OrgName:    Windstream Communications Inc<br />
-OrgID:      WINDS-6<br />
-Address:    4001 Rodney Parham Rd<br />
-City:       Little Rock<br />
-StateProv:  AR<br />
-PostalCode: 72212<br />
-Country:    US<br />
-<br />
-NetRange:   64.119.64.0 - 64.119.79.255<br />
-CIDR:       64.119.64.0/20<br />
-NetName:    WINDSTREAM-COMMUNICATIONS<br />
-NetHandle:  NET-64-119-64-0-1<br />
-Parent:     NET-64-0-0-0-0<br />
-NetType:    Direct Allocation<br />
-NameServer: NS1-AUTH.WINDSTREAM.NET<br />
-NameServer: NS2-AUTH.WINDSTREAM.NET<br />
-NameServer: NS3-AUTH.WINDSTREAM.NET<br />
-NameServer: NS4-AUTH.WINDSTREAM.NET<br />
-Comment:    ADDRESSES WITHIN THIS BLOCK ARE NON-PORTABLE<br />
-RegDate:    2001-08-24<br />
-Updated:    2007-02-26<br />
-<br />
-OrgAbuseHandle: WINDS1-ARIN<br />
-OrgAbuseName:   Windstream Abuse<br />
-OrgAbusePhone:  +1-888-292-3827<br />
-OrgAbuseEmail:  abuse at windstream.net<br />
-<br />
-OrgTechHandle: WINDS-ARIN<br />
-OrgTechName:   Windstream Communications Inc<br />
-OrgTechPhone:  +1-800-990-4449<br />
+2007-05-23T06:50:15+0200 $ whois 64.119.66.10
+OrgName:    Windstream Communications Inc
+OrgID:      WINDS-6
+Address:    4001 Rodney Parham Rd
+City:       Little Rock
+StateProv:  AR
+PostalCode: 72212
+Country:    US
+
+NetRange:   64.119.64.0 - 64.119.79.255
+CIDR:       64.119.64.0/20
+NetName:    WINDSTREAM-COMMUNICATIONS
+NetHandle:  NET-64-119-64-0-1
+Parent:     NET-64-0-0-0-0
+NetType:    Direct Allocation
+NameServer: NS1-AUTH.WINDSTREAM.NET
+NameServer: NS2-AUTH.WINDSTREAM.NET
+NameServer: NS3-AUTH.WINDSTREAM.NET
+NameServer: NS4-AUTH.WINDSTREAM.NET
+Comment:    ADDRESSES WITHIN THIS BLOCK ARE NON-PORTABLE
+RegDate:    2001-08-24
+Updated:    2007-02-26
+
+OrgAbuseHandle: WINDS1-ARIN
+OrgAbuseName:   Windstream Abuse
+OrgAbusePhone:  +1-888-292-3827
+OrgAbuseEmail:  abuse at windstream.net
+
+OrgTechHandle: WINDS-ARIN
+OrgTechName:   Windstream Communications Inc
+OrgTechPhone:  +1-800-990-4449
 OrgTechEmail:  ipadmin at windstream.net</code></p></quote>
 
 <p>Chris Morgan gave an update after things were restored:</p>
