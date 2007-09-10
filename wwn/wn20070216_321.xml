@@ -76,7 +76,7 @@ still need some assistance with some issues with these patches:
 <ol>
 <li> I need people to test this on any window manager they can to see if
 the results that I get can be reproduced, especially on older GNOME
-versions (I tested on GNOME 2.14) I was able to run a small test app
+versions (I tested on GNOME 2.14). I was able to run a small test app
 that I made over 120 times, and each time it docked perfectly, no zombie
 systray adapter windows like before.</li>
 
@@ -197,7 +197,7 @@ reports again.
 </p></quote>
 
 <p>[<i>Feb. 16 2007, ed. note: scans of the Wine codebase have been
-occuring regularly and work has been done to fix the bugs</i>]</p>
+occurring regularly and work has been done to fix the bugs</i>]</p>
 
 </section>
 <section
@@ -345,7 +345,7 @@ separately, which we should do to keep patches small.</p><p>
 Let me illustrate my idea:
 <ul>
 <li> Move out the GL calls from Set*State. Set*State writes the values to the 
-update stateblock and updates the refcounts(maybe we should kick internal 
+update stateblock and updates the refcounts (maybe we should kick internal 
 refcounting from wined3d altogether)</li>
 
 <li> Keep the stateblock and update stateblock structure as they are now. I think 
@@ -391,12 +391,12 @@ Thanks for all your work on audio!!
 
 <p>Eric Pouech thought there might be a problem with an ASIO driver:</p>
 <quote who="Eric Pouech"><p>
-I'm afraid submission (or integration in the Wine tree) will be problematic
-ASIO interface is copyrighted, and you need to sign an agreement to 
+I'm afraid submission (or integration in the Wine tree) will be problematic.
+The ASIO interface is copyrighted, and you need to sign an agreement to 
 Steinberg for using the API.
 IANAL, but including derivative work of a copyrighted API will not be 
 possible.
-But, this doesn't prevent from creating a standalone audio driver.
+But, this doesn't prevent you from creating a standalone audio driver.
 </p></quote>
 </section>
 <section
@@ -490,10 +490,10 @@ the .desktop files in ~/.wine). If anyone would test it I would be glad
 to know how it works.</p><p>
   There is a small problem that KDE scans the ~/.kde/applnk directory 
 (unlike Gnome that scans only the global directories /usr/share/applnk 
-and /etc/X11/applnk and that why the menu is not visible) and after this 
+and /etc/X11/applnk and that's why the menu is not visible) and after this 
 change will display the menu items twice. This can be fixed by creating 
 the ".desktop" in legacy directories with "OnlyShowIn=Old;".
-</p><p>  If this sound good I can send patches to winecreateprefix and 
+</p><p>  If this sounds good I can send patches to winecreateprefix and 
 wineshelllink with these fixes.
 </p></quote>
 
@@ -510,7 +510,7 @@ created there will be automatically removed.</p></quote>
 When the $WINEPREFIX/menu directory is present a desktop item is created 
 there. The desktop item in legacy directories are created with 
 "ShowOnlyIn=Old;" so there will be no duplication of icons. If 
-$WINEPREFIX/menu is not present (i.e. a wineprefix create with an old 
+$WINEPREFIX/menu is not present (i.e. a wineprefix created with an old 
 wineprefixcreate) the files are created as they used to be (without 
 "ShowOnlyIn=Old;").</p></quote>
 
@@ -583,8 +583,8 @@ For this reason, using HeapAlloc(GetProcessHeap(), ...) and Friends from
 kernel32.dll is a possible way to go for "localspl.dll".
 
 </li><li>
-To let printing in Wine work as similar as possible as printing is done
-in Windows, (but without RPC and without the spooler service) we can
+To let printing in Wine work as similarly as possible as printing is done
+in Windows (but without RPC and without the spooler service), we can
 change the code path to 
 "winspool.drv -&gt; spoolss.dll -&gt; localspl.dll -&gt; CUPS/LPR"
 and use the exports from spoolss.dll.
@@ -620,14 +620,14 @@ usually garners some comments as well.)</p>
 <p>We used to have pretty good notes on regression testing, but
 things have changed now that we have git.  The general idea remains
 the same, but the mechanics are a bit different.  If you find a 
-regressions between releases, just bisect the release and see
+regression between releases, just bisect the release and see
 if the regression exists there, bisect that, and so on till you
 find the issue.  Of course, you can usually do a better job than
 that if you're tracking changes specific to a DLL.  Anyway, 
 Kapila De Silva asked:</p>
 <quote who="Kapila De Silva"><p>
-Im trying to track down an issue that occurred between 0.9.19 and
-0.9.20, and am using git bisect to track the issue. In the process of
+I'm trying to track down an issue that occurred between 0.9.19 and
+0.9.20, and I am using git bisect to track the issue. In the process of
 trying to identify the cause of the issue, I would like to be able to
 get the code up till a certain patch, and then apply patches one by one
 as well. 
@@ -641,7 +641,7 @@ searches and man pages. Can anyone give me any pointers to this please?
 What I do is to follow along with things on the shortlog:
 <ul><a href="http://source.winehq.org/git/?p=wine.git;a=shortlog">http://source.winehq.org/git/?p=wine.git;a=shortlog</a></ul>
 </p><p>
-Lets say you want to move your current branch to my recent patch
+Let's say you want to move your current branch to my recent patch
 "riched20: Rewrite of scrolling and some redrawing code." - you'd
 click the link "commit" to the right of it. In the page that you'll be
 taken to, you'll see a line like this:
@@ -652,10 +652,10 @@ you can then do a:
 </p><p>
 and your git will be moved to the point in time right after that
 commit. If you then want to manually apply a patch, click "commitdiff"
-to the right of it's entry in the shortlog, followed by "plain" on the
+to the right of its entry in the shortlog, followed by "plain" on the
 top - this will take you to a plaintext diff of the patch, which you
 could save to a file and apply with the patch command. ("patch -p1 &lt;
-thepatch.diff" usualy works well for me)</p></quote>
+thepatch.diff" usually works well for me)</p></quote>
 
 <p>Mike McCormack followed up on the last paragraph to mention two different
 ways that could be managed with git:</p>
@@ -710,7 +710,7 @@ My one win app that makes me a devotee of WINE is TablEdit
 <a href="http://www.tabledit.com/download/tabled32.exe">www.tabledit.com/download/tabled32.exe</a>)
 has a custom font , tef260.ttf, that has failed to display since
 somewhere after ver 9.6. The program installs the font into 
-c:\windows\font, but can not display it within the program, instead
+c:\windows\font, but cannot display it within the program, instead
 displaying for the most part, empty squares. 
 </p><p>
 I tried putting/removing tef260.ttf into /usr/local/share/wine/fonts,
