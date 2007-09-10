@@ -215,7 +215,7 @@ of CrossOver, including the beginnings of support for games.  As usual,
 Jeremy White's announcement to the mailing list was more interesting than
 the <a href="http://www.codeweavers.com/about/general/press/?id=20070109a">press
 release</a>.  From that announcement:</p>
-<quote who="Codeweavers"><p>
+<quote who="CodeWeavers"><p>
 Users of Intel based Mac systems can now seamlessly run many
 Windows applications on their Mac without needing a Windows license.
 Supported applications include Outlook, Visio, Project, Quicken, Steam based 
@@ -232,7 +232,7 @@ We are looking forward to 2007, as we plan to release
 a range of improvements to CrossOver, particularly as we get
 our Mac 'sea legs' underneath ourselves.  This will include refinements
 to many of our supported applications, and will also hopefully
-included expanded support for many other applications, notably games.
+include expanded support for many other applications, notably games.
 </p></quote>
 
 <p>As far as Wine development goes, we'll probably start seeing some
@@ -258,7 +258,7 @@ the DIB engine would address doesn't seem to exist.  Yet, most people
 agree that a DIB engine would bring large performance benefits.  We've
 covered this topic in depth many times and you can see the wiki page
 for <a href="http://wiki.winehq.org/DIBEngine">a description</a> of 
-exactly what what the issue is.  The short version: we need to be able to
+exactly what the issue is.  The short version: we need to be able to
 draw things within Wine that we're currently relying on the X server to
 do.  Besides just writing the code, there's a huge concern about how to
 integrate such a beast into Wine without hell breaking loose.  </p>
@@ -270,7 +270,7 @@ This is getting a bit long so if you do not have time, then skip this.
 </p><p>
 I've looked a little more at the issue of a DIB Engine and tried to use the
 feedback
-so far to get an idea what the possible architecture could be.
+so far to get an idea of what the possible architecture could be.
 </p><p>
 First I took a look at how Windows seems to do it currently (excluding
 Vista). There
@@ -307,14 +307,14 @@ simulated by the GDI
 engine by calling other driver functions and if the driver didn't hook the
 function or didn't
 succeed and it is for a DIB surface then the GDI engine itself will call the
-according Eng...
-function. GDI32 exports most of those Eng... functions too but that are
+corresponding Eng...
+function. GDI32 exports most of those Eng... functions too but they are
 simply user space
 wrappers around the win32k.sys entry points for those functions.
 </p><p>
 From a design view it might be interesting to separate the actual GDI engine
 into a subpart
-that corresponds with the NtGdi... functions in win32k.sys eventhough they
+that corresponds with the NtGdi... functions in win32k.sys even though they
 might stay inside
 GDI32 for the time being. The actual Eng... functions would be also placed
 inside that GDI
@@ -326,7 +326,7 @@ mirror of the
 GDI API. There are lists of what APIs win32k.sys does export and how many
 parameters each
 of these functions takes, extracted from the actual win32k.sys file.
-Eventhough Windows
+Even though Windows
 keeps them in the win32k.sys kernel I think it would be a good idea to keep
 them all in
 GDI32 for the time being. If that API is at some time mostly complete and
@@ -365,7 +365,7 @@ Wine is any closer to a DIB engine, at least ideas are floating around.</p>
 a little earlier so there's some time to come up to speed with regards
 to each project.  Tom Wickline announced it on wine-devel:</p>
 <quote who="Tom Wickline"><p>
-I see Google is going to do there summer of code again this year :-)
+I see Google is going to do their summer of code again this year :-)
 They plan to start accepting applications in March, so now would be
 the time for us to propose new projects and review the ones we have
 already listed on the Wiki for interested applicants? As well as line
@@ -377,7 +377,7 @@ up mentors for the accepted applicants?
 </p></quote>
 
 <p>Many of the projects on the wiki are still available to be worked on.
-There's also about a bizillion other things you could take a stab at.</p>
+There's also about a bazillion other things you could take a stab at.</p>
 
 </section>
 <section 
@@ -401,10 +401,10 @@ freedesktop.org specs:</p>
  <li> add a global menu item for winecfg in System -> Preferences
     (seen by all users)</li></ul></p><p>
 
- I also have what should be add to installation so .exe files
+ I also have what should be added to installation so .exe files
  are executed with wine when double-clicked (tested in ubuntu)
 </p><p>
- How could i submit those files ?? I cannot din anything
+ How could i submit those files ?? I cannot find anything
  related to this in the bugzilla :(
 </p></quote>
 
@@ -439,16 +439,16 @@ be an understatement.  Stefan D&#246;singer and others have been pouring
 patches in by the truckload.  After another round of patches, someone
 commented:</p>
 <quote who="Mirek"><p>
-Wow, great work!!!!! 3DMark 2006 with fbo looks realy coool!! And some 
-Nvidia SDK demos are completly fixed!</p></quote>
+Wow, great work!!!!! 3DMark 2006 with fbo looks really coool!! And some 
+Nvidia SDK demos are completely fixed!</p></quote>
 
 <p>Following up on that, there were some screenshots posted:</p>
 <quote who="Mirek"><p>
-Yes, but after accept this error message i can select some test and run 
+Yes, but after accepting this error message i can select some test and run the
 benchmark, i have full version v102. I can't run any PS3 HDR test, GT1 
 and GT2 tests are almost perfect, but very slow (fbo is slower than 
 backbuffer, so I am not using it in other applications), you should also 
-disable post procesing (very very slow) in 3DMark. Here are some 
+disable post processing (very very slow) in 3DMark. Here are some 
 screenshots with latest wine and latest Stefan patches: 
 <ul><a href="http://62.240.181.87/Mirek/3DMark2006/">
 http://62.240.181.87/Mirek/3DMark2006/</a></ul></p></quote>
@@ -487,7 +487,7 @@ Date:   Mon Feb 12 16:47:56 2007 +0800<br /><br />
 
 :040000 040000 7a8b282d58c6a6111ad0995eb8d47cbfbc8cadb0 afca21972669e3d013eef8de59556675a0bc798b M      dlls</code></ul></p><p>
 
-causes that IDA Pro shows black squares instead of its toolbar icons.
+causes IDA Pro to show black squares instead of its toolbar icons.
 </p></quote>
 
 <p>Apparently this regression is causing problems in other programs too.
@@ -508,15 +508,15 @@ Scott Ritchie, Gerald Pfeifer, Kris Moore, and Robert Lunnon, Wine
 has excellent coverage with up to date packages.  Bill Medland still
 had a question though:</p>
 <quote who="Bill Medland"><p>
-I'm looking to see if there are rpms being built for Red Hate Enterprise
+I'm looking to see if there are rpms being built for Red Hat Enterprise
 Linux 3 these days.
 I see that the Red Hat rpms nowadays are for fc.  but they aren't
 suitable for RHEL3
-The download page says that the RedHat/Fedora area is for RedAht 8,9 and
-fedora, but I don't see any RedHat 8 or 9 there.  Are they not there or
+The download page says that the RedHat/Fedora area is for RedHat 8,9 and
+Fedora, but I don't see any RedHat 8 or 9 there.  Are they not there or
 am I looking in the wrong place?</p></quote>
 
-<p>Lei Zhang then spoke up and mentioned that although the RPM's aren't
+<p>Lei Zhang then spoke up and mentioned that although the RPMs aren't
 listed on Wine's 
 <a href="http://www.winehq.com/site/download">Download</a> page, he maintains 
 them:</p>
@@ -540,7 +540,7 @@ working with Wine:</p>
 <quote who="Darryl Dixon"><p>
 
 Just a brief to let you know that it looks like Microsoft is finally
-taking compatability seriously ;)  - the new Beta 3 version of the IE
+taking compatibility seriously ;)  - the new Beta 3 version of the IE
 Developers Toolbar
 (<a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=e59c3964-672d-4511-bb3e-2d5e1db91038&amp;displaylang=en">link</a>) 
 improves on the previous Beta release by installing and working correctly with 
