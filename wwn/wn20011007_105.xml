@@ -200,7 +200,7 @@ some debugging info and explained:</p>
 	resolve the function pointer as an ordinal in PE_fixup_imports.
 	</p><p>
 	What is the right solution? Only treat the value as an ordinal if it is
-	smaller then 0x10000( I suspect that a dll may only have 0xffff entries or
+	smaller than 0x10000 (I suspect that a dll may only have 0xffff entries or
 	the IMAGE_SNAP_BY_ORDINAL wouldn't work)? Or is it an error that we call
 	PE_fixup_imports for the second time at all for an already resolved dll?
 	</p></quote>

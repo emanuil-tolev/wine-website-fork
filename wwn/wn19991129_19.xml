@@ -380,7 +380,7 @@ the FreeBSD kernel in order to have the better support:
 <quote who="J&#252;rgend Lock"><p />
 Similarly if you are on FreeBSD you may want to apply an LDT sharing
 patch too (unfortunately this one still isn't in the tree, neither
--current nor -stable), and there also is a small sigtrap fix thats
+-current nor -stable), and there also is a small sigtrap fix that's
 needed for wine's debugger. (Actually now that its using ptrace() by
 default it may no longer make a difference but it still doesn't
 hurt...)

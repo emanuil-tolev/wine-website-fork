@@ -522,7 +522,7 @@ Changes:
     <li> GetCharacterPlacementW - This is certanly one of the more
       overloaded functions in the Win32 set (Select object comes to mind
       as a competitor, and this one has way more execution flows
-      throught it). So far, as far as I could tell, only the flow that
+      through it). So far, as far as I could tell, only the flow that
       matched Latin fonts was implemented. I have added some (very
       basic) reordering. I would like to hear your comments about the
       following points:

@@ -247,13 +247,13 @@ help. (think it would only be useful for GetDC/ReleaseDC games)</p>
 <p>Pretty much everyone was in favor of any patch that would improve
 performance.  This method won't ever be as fast as using DGA, but it
 certainly seemed to be better than what we have.
-Then the question came up about how this related to Stephan D&#246;singer's
+Then the question came up about how this related to Stefan D&#246;singer's
 work moving Direct3D 7 over to using the WineD3D library.  Lionel Ulmer
 suggested:</p>
 <quote who="Lionel Ulmer"><p>
 
 
-I think that to merge Roderick's and your (<i>ed note:</i> Stephan's) patch, 
+I think that to merge Roderick's and your (<i>ed note:</i> Stefan's) patch, 
 the best would be to directly hook WineD3D even at the 2D level and not have 
 DDraw hook DDraw's D3D which then goes into WineD3D.
 </p><p>
@@ -262,8 +262,8 @@ This way we would have a unified DDraw.
 Of course, then the problem remains of what to do with older cards :-)
 </p></quote>
 
-<p>Stephan replied:</p>
-<quote who="Stephan Dosinger"><p>
+<p>Stefan replied:</p>
+<quote who="Stefan Dosinger"><p>
 I thought of the same thing, as DDraw -&gt; D3D7 -&gt; WineD3D -&gt; OpenGL is 
 a quite long chain. I abandoned it as too much work at first, but it's surely 
 worth considering.

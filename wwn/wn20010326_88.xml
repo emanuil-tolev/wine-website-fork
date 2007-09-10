@@ -127,7 +127,7 @@ apply in all cases.
 </p><p>
 For another instance of the same issue, see the discussion about the
 deferred debug trace a couple of weeks ago: we need the Wine libraries
-to provide the *mechanism* to display tracing and other informations,
+to provide the *mechanism* to display tracing and other information,
 but the *policy* of when and how to switch tracing on or off must be
 moved to higher layers (like the debugger) instead of hardcoding a
 magic key sequence in user32.</p></quote> <p>(see 

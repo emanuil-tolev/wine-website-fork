@@ -311,7 +311,7 @@ ones dramatically faster:</p>
 <quote who="Michael Stefaniuc"><p>
 On a athlon 900 with 512 MB RAM it takes about 30 minutes for a full
 build, but only for the first run. On the second run it takes about 3-4
-minutes :). Ok, i'm using ccache and it realy paid out during my
+minutes :). Ok, i'm using ccache and it really paid out during my
 -DSTRICT work. The cache hit rate had varied between 30% and 80%,
 depending what i've done. You get 30% - 40% hitrate for normal updates
 from cvs without doing a "make clean".</p></quote>

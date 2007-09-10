@@ -196,7 +196,7 @@ Specifically, it exports X11DRV_get_client_window from X11DRV as a means of
 getting the X window from the HWND, which is not clean. It does not use a
 HAL (which is where the current ddraw code was starting to head), it calls
 all the opengl calls inline. I have only tested on one machine with one
-level of mesa (tough! thats all I have). It also has all the c parts in the
+level of mesa (tough! that's all I have). It also has all the c parts in the
 d3d8 directory, completely separate (and in some cases duplicating code from
 the ddraw code), which may or may not be desired. I also don't have a clue
 about the configure tests and makefile.in, so I have just a basic structure
@@ -424,10 +424,10 @@ in the changes Andi mentioned he found a solution:</p>
 
 <p>Someone replied to Patrik with their thoughts,
 <quote who="Unknown">
- For me this header looks like they copyed some informations 
+ For me this header looks like they copied some information 
  from the ntddk in hurry into one file to release it. It's definitely
  not covering a complete api.
- We should leave this informations in ntddk.h and replace 
+ We should leave this information in ntddk.h and replace 
  the winternl.h with a file containing only #include "ntddk.h"
  if there is some additional information in wintenl.h it shouldn't
  hurt to merge it into the aprobiate headers.</quote>  But

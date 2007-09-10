@@ -144,7 +144,7 @@ The function is called like this:<br />
 <ul><code>
 0806c1c8:Call GDI.38: ESCAPE(0x0000,0x000d,0x0000,0x00000000,0657:e8f4) ret=0ff7:4428 ds=1207
 </code></ul><br />                                             
-The in_data pointer is null but the code assigns to it, thats why it
+The in_data pointer is null but the code assigns to it, that's why it
 crashes. I think that the result should be assigned to the output parameter.</p>
 </quote>
 

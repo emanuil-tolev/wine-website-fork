@@ -114,7 +114,7 @@ itself. Check some usage count? But it should probably be thread
 specific too. Or carefully check the code that after some
 initialization no other server call is done? But both latter solutions 
 will give many wrong alarms as we might request the buffer much
-earlier then we initializes the values.
+earlier than we initializes the values.
 </quote>
 
 

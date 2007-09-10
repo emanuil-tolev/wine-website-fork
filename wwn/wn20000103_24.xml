@@ -164,7 +164,7 @@ in DeleteObject().
 
 J&#252;rgen Schmied reported some more issues regarding the TEB layout. The
 TEB (Thread Environment Block) is the internal Windows structure where
-all the informations related to a thread are stored. Win 9X and
+all the information related to a thread is stored. Win 9X and
 Windows NT have different layout for this structure. Microsoft also
 decided to have this structure live in user space (???), so some
 applications (especially the ones from MS, or MS DLLs) directly access

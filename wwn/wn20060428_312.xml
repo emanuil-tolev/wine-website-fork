@@ -758,7 +758,7 @@ Now your problem could simply be that you don't have the font that the
 app wants to use in this edit control.  It'll create the edit control
 with a size that would work with that font under Windows (and probably
 also under Wine), however if you don't have that font and Wine picks
-one which ends up being slightly larger then you've got a problem.
+one which ends up being slightly larger, then you've got a problem.
 It's difficult to know how to fix this.  The other possibility is that
 you have the correct font but the '**' algorithm is slightly wrong (it
 is) and that you're right on the edge of it kicking in.

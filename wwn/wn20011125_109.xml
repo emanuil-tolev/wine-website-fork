@@ -283,7 +283,7 @@ settings.  Francois Gouget explained in more detail:</p>
  Linux. It's about integrating Windows and Linux applications and thus
  they should be able to manipulate these kind of settings. Otherwise Wine
  would only support the 'desktop mode' or it would not exist at all and
- everyone would be happy with running Windows in a sand-box ala VMWare. 
+ everyone would be happy with running Windows in a sand-box ala VMware. 
  </p><p>
    So it may make sense to maintain some parameters separately from the
  X settings (especially when there is no corresponding X setting), but I

@@ -85,7 +85,7 @@ Simeon started by fixing the bindery stuff (by rewriting some DLLs),
 but ran into issues with file permissions:
 
 <quote who="Simeon Pilgrim">
-It's the file create/read/write thats not working. I put a bit of code
+It's the file create/read/write that's not working. I put a bit of code
 into file.c:CreateFileA so the UNC files that are on our server get
 remaped to <code>w:/</code> files ( where <code>w:/</code> is a
 ncpmounted novell directory on my linux box ) so that the normal dos

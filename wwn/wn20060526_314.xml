@@ -485,7 +485,7 @@ file using the sequence number of the file in the query on the media table
 using the file sequence as last sequence and returning the results ordered by 
 LastSequence.
 </p><p>
-It should first be reading the Media table first and  sorting by DiskId. The 
+It should first be reading the Media table and sorting by DiskId. The 
 installer then iterates through each row returned by the query from the 
 media table  and then for each file in the file table that falls within that 
 disk id it should ready the media. Currently wine is doing it backwards 

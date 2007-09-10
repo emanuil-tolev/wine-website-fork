@@ -289,10 +289,10 @@ Wine and Safedisc will begin loading it's special copy protection driver.
 <p>Followers of WWN will remember the threads we've covered about the
 new WineD3D library that was implemented for Direct3D 9.  The eventual
 goal is to shift Direct3D 7 and 8 over to it as well.  Currently that
-process seems to be divvied up between Stephan D&#246;singer and 
-Oliver Stieber.  Stephan is working on D3D7 and Oliver on D3D8.  Stephan
+process seems to be divvied up between Stefan D&#246;singer and 
+Oliver Stieber.  Stefan is working on D3D7 and Oliver on D3D8.  Stefan
 reported success this week in getting things to render:</p>
-<quote who="Stephan Dosinger"><p>
+<quote who="Stefan Dosinger"><p>
 
 Today I have finally managed to get some useable graphics with D3D7 and
 WineD3D. The Tomb Raider 3 Demo is running. :)
@@ -308,7 +308,7 @@ can mail the current code too).
 
 <p>He must have kept plugging away at it, because 4 hours later he replied to
 himself:</p>
-<quote who="Stephan Dosinger"><p>
+<quote who="Stefan Dosinger"><p>
 
 I have sorted out that texture problem out now(Incorrect Loading and the
 TEXTUREHANDLE render state was missing), and to my eyes Tomb Raider 3 runs
