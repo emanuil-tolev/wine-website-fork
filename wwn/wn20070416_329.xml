@@ -252,7 +252,7 @@ gave an excellent description of the challenges behind the problem:</p>
 This is an updated version of the child window patch from Chris Robinson. I 
 have added some fixes to it which were found by testing it with lots of 
 programs.  
-
+</p>
 <p><u>Windowed OpenGL</u></p><p>
 Several options have been discussed over the years for solving the windowed 
 OpenGL issues. The lazy option was to use pixmaps but you would lose hardware 
@@ -273,7 +273,7 @@ implementations as it doesn't require special extensions. Further it doesn't
 require the patching of OpenGL calls.
 </p>
 <p><u>OpenGL pixelformats</u></p>
-Next to the windowed OpenGL issues, there's the pixelformat limitation in Wine. 
+<p>Next to the windowed OpenGL issues, there's the pixelformat limitation in Wine. 
 Right now only one pixelformat can be used. Most programs use ChoosePixelFormat 
 using which you can request a pixelformat but the call isn't guaranteed to give 
 you back what you want. For this reason most programs aren't very critical.
