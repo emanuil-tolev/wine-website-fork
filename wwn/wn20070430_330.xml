@@ -165,7 +165,7 @@ driver. I have played around with it before, but as far as I can tell a lot of
 things need to be changed in the dsound and winealsa code:
 <ul>
 <li> DirectSound doesn't have proper support for secondary buffers at driver 
-level None of the Wine drivers needed it before, but the directsound software 
+level. None of the Wine drivers needed it before, but the directsound software 
 mixer works horrible, I'll try to get that working as well as fallback, but the 
 mixing should really be done in alsa code if possible.
 </li>
@@ -184,7 +184,7 @@ This is needed to manipulate the mixer the same way as it's manipulated under
 windows and Wine, I don't think it's hard to accomplish but it's worth it for 
 applications that play around with volume controls.
 </li>
-<li> Remove the seperate thread used in winealsa, rework the code so it's not 
+<li> Remove the separate thread used in winealsa, rework the code so it's not 
 needed any more.  The current thread only causes stuttering of audio, it's 
 better to remove it entirely by using alsa lock and unlock calls, which notify 
 that there is some sound that can be played. Alsa then takes care of the 
@@ -200,14 +200,14 @@ driver any more.   No explanation needed.  If this is true, ALSA can become
 the standard driver in Wine (instead of OSS)
 </li></ul></p>
 <p><u>Why?</u></p><p>
-The direct3d code in Wine is getting better and better each release, games 
+The direct3d code in Wine is getting better and better with each release, games 
 work better and better, but for sound in those games people still use OSS or 
-a badly working ALSA driver, I want to game on my Linux system and not have to 
+a badly working ALSA driver. I want to play games on my Linux system and not have to 
 close all other applications to get proper sound, since OSS wants to have 
 exclusive access to sound.
 </p></quote>
 
-<p>This is sorely needed area of attention.  There's a lot of reasons
+<p>This is an area in sore need of attention.  There's a lot of reasons
 why it gets complicated, but the biggest is probably that sound is so
 sensitive to delay.  If your display doesn't quite refresh for a second
 most people barely notice.  If sound blips out for a second 
@@ -222,13 +222,13 @@ this week:
 <li>Implement GetLineControls in mixer</li>
 <li>Implement Get/SetControlDetails in mixer</li>
 </ul>
-</p></quote>`
+</p></quote>
 
 <p>How substantial is all that?  Well, all total it's 1,533 lines of code. 
 From the sounds of it, we're just seeing the tip of the iceberg.</p>
 
 <p>In other sound news, Emmanuel Maillard dropped a 400 line patch that
-implements initial MIDI support on MacOS X.</p>
+implements initial MIDI support on Mac OS X.</p>
 </section>
 <section 
 	title="Winscard Support"
@@ -245,7 +245,7 @@ We have noticed that wine doesn't have the winscard dll responsible for the
 support of smart cards under windows. For the need of one of our projects, we
 are currently developing this dll for wine under Linux based on the pcsc-lite
 library. Once done, we'll share it with the community. However, we would like
-to known the reason behind the lack of winscard support. Is it simply because
+to know the reason behind the lack of winscard support. Is it simply because
 no one needed it before or maybe there is an issue with the pcsc-lite license?
 Thanks in advance for your information.
 </p></quote>
@@ -256,7 +256,7 @@ along in writing it.  Some folks would have rather seen a release early/release
 often approach, but it didn't appear that was going to be the case.  Mounir
 replied a few days later with a 2800 line patch:</p>
 <quote who="Mounir Idrassi"><p>
-We have managed to integrate our winscard source code into the wine source tree, including the configure.ac and Makefine.in files.
+We have managed to integrate our winscard source code into the wine source tree, including the configure.ac and Makefile.in files.
 As described in the developer's guide, I am attaching with this email the output of the command "git format-patch origin".
 Can someone please check if I have done it the right way? If this is ok, should I post it also to the patches mailing list.
 For your information, our implementation uses pcsc-lite through wine_dlopen and wine_dlsym, so pcsc-lite is not required at compile time.
@@ -300,7 +300,7 @@ must be)</li></ul></li>
 <li> you still use C++ comments, whereas Wine only allows C comments</li>
 </ul>
 </p><p>
-from the inclusion into Wine, it's already way to big to be included in
+from the inclusion into Wine, it's already way too big to be included in
 a single operation. So, you should split up your work in smaller pieces.
 For example:
 <ul>
@@ -368,7 +368,7 @@ into writing some example code for Steve to test and then we'll look into
 kicking that off.
 </p><p>
 That's it for the monday writeup, I expect that today will give more 
-intersting things to write about.
+interesting things to write about.
 
 </p><p><u>Day 2</u>
 </p><p>
@@ -446,9 +446,9 @@ audience. While OpenChange still has a bumpy road ahead, I'm pretty sure they
 will manage. OpenChange is the Samba of groupware, definetely a project to 
 watch.
 </p><p>
-The most exiting talk of the day, at least in my personal biased opinion, was 
+The most exciting talk of the day, at least in my personal biased opinion, was 
 in the case study track. But my perspective on that might be a little off, as 
-that was the talk I was giving. I think it was recieved well by the audience.
+that was the talk I was giving. I think it was received well by the audience.
 It probably won't be too interesting for you folks as you already know what 
 Wine is all about. ;)
 </p><p>
@@ -470,9 +470,9 @@ from a Wine perspective will certainly follow.</p></quote>
 	posts="4"
 >
 <topic>Packaging</topic>
-<p>Marco Meijer announced he had created some Mandriva RPM's:</p>
+<p>Marco Meijer announced he had created some Mandriva RPMs:</p>
 <quote who="Marco Meijer"><p>
-Ivan Leo Puoti  has not much time lately to make the rpms for mandriva.
+Ivan Leo Puoti  has not had much time lately to make the rpms for mandriva.
 So I volunteered  to make them.
 </p><p>
 So I made a rpm from the latest rpm.
@@ -520,7 +520,7 @@ debugging reports:</p>
  when wine crashes (especially wine-preloader)
 </p></quote>
 
-<p>Stephan provided i
+<p>Stephan provided
 <a href="https://bugs.launchpad.net/ubuntu/+source/wine/+bug/90957">an example</a>
 of the debugging info currently generated.  Marcus Meissner thought that 
 information was pretty useless.  He suggested setting Wine up to automatically
@@ -544,7 +544,7 @@ for generating the backtrace. (Just replace it as traced binary.)
 
 In general the most useful pieces of information are ... complete
 terminal output, $PWD and the command used to start an application. Also
-the exact Wine version $(wine --version), and where did it came from
+the exact Wine version $(wine --version), and where did it come from
 (self-compiled or binary). All of them are absent from the report.
 </p></quote>
 
@@ -560,7 +560,7 @@ the exact Wine version $(wine --version), and where did it came from
 Berlin on May 30th - June 2nd:
 </p><quote who="Stefan Munz"><p>
 Finally we got a Wine booth at Linuxtag 2007 in Berlin. Everybody who wants to 
-participate is welcome. I have to order exhibitor passes, so anyone you wants 
+participate is welcome. I have to order exhibitor passes, so if anyone you wants 
 to help out please contact me :-)
 </p></quote>
 
@@ -578,7 +578,7 @@ to help out please contact me :-)
 this post by Jeremy White:</p>
 <quote who="Jeremy White"><p>
 Well, I was hoping that out of the chatter following my last email,
-we'd have consenus about the location.
+we'd have consensus about the location.
 </p><p>
 However, the overwhelming silence didn't really help :-/.  So, to try to
 help get some forward momentum, I thought we should turn to a survey
@@ -595,7 +595,7 @@ At this point the choice for WineConf 2007 definitely seemed
 narrowed down to Zurich (with a possible satellite conference in LA),
 Amsterdam (or Utrecht), or Bratislava Slovakia.   
 If you have any comments, say you only would vote for Zurich if LA was 
-truely going to work as a remote location, then you should add them in the
+truly going to work as a remote location, then you should add them in the
 comment field.  The extremely tentative dates are probably in late September
 or early October.  The dates are dependent on the location.</p>
 </section></kc>
