@@ -98,17 +98,17 @@ Its main goal is to buy a house. It also serves to inform you of what's going on
 	posts="11"
 >
 <topic>Utilities</topic>
-<p>In the course of a different discussion, there was mention of a new
+<p>In the course of a different discussion, there was a mention of a new
 wrapper around Wine to automate some installation tasks.  Vit Hrachovy 
 let everyone know about Winebot:</p>
 <quote who="Vit Hrachovy"><p>
 
 WineBot (<a href="http://winebot.sandbox.cz">http://winebot.sandbox.cz</a>) 
 is a sort of lightweight
-implementation of some core thoughts, but with command line based
+implementation of some core thoughts, but with ca ommand line based
 interface and less dependencies. Both projects share some core ideas and
-data file formats.  WineBot goals are much smaller in scope than
-Wine-Doors ones, going in smaller steps.
+data file formats.  The WineBot goals are much smaller in scope than
+the Wine-Doors ones, going in smaller steps.
 </p><p>
 The main goal is to replace obsolete and almost unmaintainable winetools
 project.
@@ -152,7 +152,7 @@ projects haven't been updated as Wine has improved.  Others make some
 serious configuration changes to Wine that make troubleshooting next
 to impossible from a developer standpoint.  Finally, the biggest problem
 comes from the fact that the quick and simple method for getting programs
-to work with Wine is to dump a ton of native Microsoft DLL's into the mix.
+to work with Wine is to dump a ton of native Microsoft DLLs into the mix.
 The fact that CodeWeavers have done all of those things in their commercial
 CrossOver product is proof that such hacks are necessary to run a lot of
 applications with Wine.  </p><p>
@@ -180,9 +180,9 @@ I'll first summarize some points extracted from the previous discussion:
 
 <li> If you are making it extremely easy for users to run with native dlls and hacky workarounds, then you are hurting Wine.  Wine is still beta, and we need as much testing and bug reporting as possible.  In short, you leech off the hard work of all the Wine developers and give nothing back in return (quite the opposite in fact).</li></ul>
 </p><p>
-Each Winebot package shall have a maintainer responsible for package quality and for interfacing with WINE project(AppDb, Bugzilla, Testing, Fixing).
+Each Winebot package shall have a maintainer responsible for package quality and for interfacing with the WINE project (AppDb, Bugzilla, Testing, Fixing).
 </p><p>
-Every official Winebot maintainer will be bound by sort of Winebot manifest stating the Winebot project's attitude to WINE project.
+Every official Winebot maintainer will be bound by a sort of Winebot manifest stating the Winebot project's attitude towards the WINE project.
 </p><p>
 I'll write the manifest (a),(c) and post it onto Winebot Wiki.
 To create (b) I gladly accept any input to create a regression test repository, would You be so kind and point me to some list of programs / test miniprograms to make a reference implementation?
@@ -190,9 +190,9 @@ To create (b) I gladly accept any input to create a regression test repository, 
 <ul>
 <li> My goal _is_ to help Wine succeed. Hours I'm investing in Winebot are hours I'm spending on learning Wine. Recent discussion about missing reg.exe implementation originated from work on Winebot. I'm application maintainer on AppDb. I'm testing application compatibility on WINE versions back to 0.9.9. I've written Winebot especially to make the testing easier. I often install and uninstall Windows programs from WINE bottles, I'm used to bottles (WINEPREFIX) system, too. Having the installation of programs (and their dependencies) scripted is the first step for making automated testing.
 </li>
-<li> All Winebot packages should install only minimum neccessary dependencies and their install scripts should be ideally only using normal application Windows installer. Any hacks above will be reported (in case they weren't reported already) to WINE bugzilla.
+<li> All Winebot packages should install only the minimum necessary dependencies and their install scripts should be ideally only using normal application Windows installer. Any hacks above will be reported (in case they weren't reported already) to the WINE bugzilla.
 </li>
-<li> That's a relict from winetools project. 'bottle initialization' will be removed soon as unnecessary. Working package dependencies allow to reconstruct every step of setup and every 'hack' in used packages.
+<li> That's a relic from winetools project. 'bottle initialization' will be removed soon as unnecessary. Working package dependencies allow to reconstruct every step of setup and every 'hack' in used packages.
 </li>
 <li> Yes, I'm planning to set up a regression tests repository for WINE (and for Winebot too). As Winebot is using AutoHotKey system for installer automation, it can also run programs, check window properties and contents, click on specified button or areas, etc. For more information, see 
 <a href="http://www.autohotkey.com">
@@ -247,7 +247,7 @@ twice.
 <quote who="John Smith"><p>
 I was able to reproduce the badpixmap bug on peachtree 2006 right after
 picking a company from the "open company" dialog.  This patch seemed to fix
-this (or atleast hide it from being as reproducible as it was).  I had some
+this (or at least hide it from being as reproducible as it was).  I had some
 trouble applying it to current gitwine, but I typed it in manually and it
 worked fine.</p></quote>
 
@@ -358,7 +358,7 @@ http://repo.or.cz/w/wine/hacks.git?a=commit;h=a3840322693b5630bf8ffd7f85e9287a1e
 control the relay channel.  It also doesn't help with processes not
 listening for events from the keyboard.  </p>
 
-<p>At any rate, Eric Pouech replied with a patch that taskmgr:</p>
+<p>At any rate, Eric Pouech replied with a patch for taskmgr:</p>
 <quote who="Eric Pouech"><p>
 
 I've just sent a fix for this one.  
@@ -376,10 +376,10 @@ new debug channels on the fly, even if it would be doable)
 <topic>Multimedia</topic>
 <p>Sound has been a problem with Wine for a while.  There's rumors some
 work on it this summer will fix things up, but we'll have to see.  In
-the mean time, Steven Edwards put together a little test and tossed it
+the meantime, Steven Edwards put together a little test and tossed it
 out there to see what everyone thought:</p>
 <quote who="Steven Edwards"><p>
-Well it more of a request for adoption than an RFC.....
+Well it is more of a request for adoption than an RFC.....
 </p><p>
 If someone else wants to pick this up feel free. I am kind of blocked
 on time. Over the course of the past year the discussion about need
@@ -391,10 +391,10 @@ wine bottle being popped or wine being poured but Alexandre said he
 would rather have a simple test so I elected to rip Francois winmm
 audio test as a base.
 </p><p>
-As for where to take it from here I am kind of at a loss. The more and
-more I think about it there could be even better ways to test audio by
-using DirectSound to generate a set of tones if thats even possible.
-It would be cool if it was because then we could do a series of tests
+As for where to take it from here I am kind of at a loss. The more 
+I think about it there could be even better ways to test audio by
+using DirectSound to generate a set of tones if that's even possible.
+It would be cool if it was, because then we could do a series of tests
 like a short tone testing WinMM then another short tone testing
 DirectSound. This might help users that have choppy sound or missing
 sound in games but not in other apps. Also how to handle the case
@@ -403,21 +403,21 @@ messagebox does nothing, but if we implement the help system Jacek
 suggested we could provide information on how to debug sound problems
 linked from the dialog. Last but not least this sound is kind of
 boring so someone else that understands this code better can add some
-sort of modulation to the tone to make it more appeling. If it was
-writting in Qbasic I could have pulled it off but as it stands this is
-the best your going to get from me. I learned a good bit over the 8 or
-10 hours it took me to strip it down so its not a total loss even if
-its rejected.
+sort of modulation to the tone to make it more appealing. If I was
+writing in Qbasic I could have pulled it off but as it stands this is
+the best you're going to get from me. I learned a good bit over the 8 or
+10 hours it took me to strip it down so it's not a total loss even if
+it's rejected.
 </p><p>
 If no one else wants to work on this and Alexandre does not hate it
-then I will submit to wine-patches on Monday sans DEBUGING enabled in
+then I will submit it to wine-patches on Monday sans DEBUGGING enabled in
 a proper git diff.
 </p></quote>
 
 <p>Jan Zerebecki looked it over briefly and commented on specific aspects
 of it.  He added,
 <quote who="Jan Zerebecki">
-Problems with dsound are usually bugs in Wines dsound code, so a
+Problems with dsound are usually bugs in Wine's dsound code, so a
 button for users IMHO doesn't help. Maarten Lankhorst is
 currently working on extending the dsound wine test cases with
 something to reproduce some of these bugs and also on fixing
@@ -440,7 +440,7 @@ I <i>almost</i> have a great success story to report; the only thing
 keeping it from being a success story is the current directory
 chosen by Nautilus when double-clicking on .exe files.
 </p><p>
-My wife hurt a finger trying to impersonate a Sampsonite Luggage gorilla,
+My wife hurt a finger trying to impersonate a Samsonite Luggage gorilla,
 and had to go to a hand doctor.  Along the way her hand got x-rayed,
 and the doctor handed her a cd-rom with the x-ray pictures on it.
 The disc has an autorun.inf on it that should start ViewSel.exe.
