@@ -1,0 +1,117 @@
+Index: wwn/wn20070319_326.xml
+===================================================================
+RCS file: /home/wine/lostwages/wwn/wn20070319_326.xml,v
+retrieving revision 1.1
+diff -u -p -r1.1 wn20070319_326.xml
+--- wwn/wn20070319_326.xml	20 Mar 2007 01:39:24 -0000	1.1
++++ wwn/wn20070319_326.xml	11 Sep 2007 14:13:00 -0000
+@@ -6,7 +6,7 @@
+ <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
+ <issue num="326" date="03/19/2007" />
+ <intro> <p>This is the 326th issue of the Wine Weekly News publication.
+-Its main goal is to buy hamburgers buns. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
++Its main goal is to buy hamburger buns. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+ <stats posts="193" size="346" contrib="68" multiples="35" lastweek="41">
+ 
+ <person posts="12" size="12" who="hverbeet at gmail.com (H. Verbeet)" />
+@@ -127,7 +127,7 @@ needs some attention.  Maarten already h
+ which is even better.  He wrote:</p>
+ <quote who="Maarten Lankhorst"><p>
+ For the summer of code I'm planning to improve the dsound code and alsa
+-code, to make alsa finally better then OSS, in a way that has a will get
++code, to make alsa finally better than OSS, in a way that will get
+ accepted into the wine tree, for that I'm thinking of improving on the
+ following fronts:
+ </p><p>
+@@ -140,7 +140,7 @@ code, to allow creation of multiple dmix
+ the alsa problem that only up to a certain amount can be allocated for
+ buffers, certain programs (for example winamp) may require more.</li>
+ <li> Remove the queuing thread and use Lock() and Unlock() instead.</li>
+-<li> Make it run so well, people wouldn't want to use OSS any more.</li>
++<li> Make it run so well, people wouldn't want to use OSS anymore.</li>
+ </ul>
+ </p><p>
+ Both dsound/winealsa:<ul>
+@@ -210,22 +210,22 @@ more work.
+ <p>Stefan D&#246;singer disagreed a bit and thought there might be a place
+ for some options:</p>
+ <quote who="Stefan Dosinger"><p>
+-GLSL is OK IMO, because some drivers(*cough* macos *cough*) have serious 
++GLSL is OK IMO, because some drivers (*cough* macos *cough*) have serious
+ problems with glsl. It could be included into the shader dropdown box. The 
+ issue that needs to be dealt with is that we can't combine arb vertex shaders 
+ and glsl pixel shaders or vice versa.
+ </p><p>
+ Video memory size maybe too. There are vendor dependent ways to read it, but 
+ implementing them is pretty nasty (requires some private  to winex11.drv). 
+-Altough we had that discussion a number of times already and we only agreed 
++Although we had that discussion a number of times already and we only agreed
+ on a registry key so far.
+ </p><p>
+ Offscreen rendering should have fbos fixed and made default, otherwise use 
+-backbuffer(not pbuffer because backbuffer with aux buffers is cheaper). I 
++backbuffer (not pbuffer because backbuffer with aux buffers is cheaper). I
+ don't think it is a good idea to add it to winecfg	
+ </p><p>
+-I don't think render target locking should be configureable as is. That 
+-rendering should be fixed to catch NOP locks some games do(which does the 
++I don't think render target locking should be configurable as is. That
++rendering should be fixed to catch NOP locks some games do (which does the
+ same as glFinish() on windows).
+ </p><p>
+ What I have considered is some performance vs correctness slider. With 
+@@ -234,9 +234,9 @@ are disabled. If the correctness is decr
+ implemented, but known to be expensive settings could be deactivated, like 
+ smooth shading, per pixel fog (ok. not sure if that is expensive). Windows 
+ drivers have such a setting, so why shouldn't we :-) . This slider could also 
+-cover some software emulated features like vertex blending(if we ever get 
++cover some software emulated features like vertex blending (if we ever get 
+ that).
+-Of course we shouldn't pollute the wined3d code with if(someSetting) 
++Of course we shouldn't pollute the wined3d code with if (someSetting) 
+ statements either.
+ </p></quote>
+ 
+@@ -275,23 +275,23 @@ tests were run separately on Linux or to
+ tests separately on Windows didn't produce a different result.</p>
+ </section>
+ <section 
+-	title="Status of MacOS X Port"
++	title="Status of Mac OS X Port"
+ 	subject="Status of Wine &amp; Mac OS X"
+ 	archive="http://www.winehq.com/pipermail/wine-devel/2007-March/055019.html"
+ 	posts="4"
+ >
+ <topic>Ports</topic>
+-<p>Rafa Campos wanted to know how the port of Wine to MacOS X was
++<p>Rafa Campos wanted to know how the port of Wine to Mac OS X was
+ progressing:
+ </p><quote who="Rafa Campos"><p>
+ 
+-I was looking thorugh the mailing list archives about the status of wine 
++I was looking through the mailing list archives about the status of wine 
+ working in Intel-Macs.
+ I'd like to start helping the wine project making some effort in 
+ Macintel computer, and i like to reach some 3D approach that works in Mac.
+ </p></quote>
+ 
+-<p>  Well, it just so happens that MacOS X is now a first
++<p>  Well, it just so happens that Mac OS X is now a first
+ class citizen when it comes to running Wine.  Alexandre replied first,
+ <quote who="Alexandre Julliard">
+ It should work pretty much the same as on Linux. You do need an X11
+@@ -309,8 +309,8 @@ but there are maybe others.
+ </p><p>
+ What needs work for getting 3D stuff working better is the quartz backend. I 
+ haven't done any comparison benchmarks yet, but I think we're loosing a bit 
+-of performance due to the X server(But not as much as many mac users think), 
+-and there are some window setup issues because of the X server and quartz-wm
++of performance due to the X server (But not as much as many mac users think), 
++and there are some window setup issues because of the X server and quartz-wm.
+ </p></quote>
+ 
+ 
+
+
+
+
