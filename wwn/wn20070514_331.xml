@@ -170,7 +170,7 @@ more apps.</p>
 0.9.37 had reached a milestone:</p>
 <quote who="Stefan Dosinger"><p>
 
-With Wine 0.9.37 we've archieved something that I allow myself to call a small 
+With Wine 0.9.37 we've achieved something that I allow myself to call a small 
 milestone - All Direct3D7 Immediate mode SDK demos successfully perform their 
 intended rendering. I have some screenshots on my university junk server:
 <ul>
@@ -179,14 +179,14 @@ http://stud4.tuwien.ac.at/~e0526822/sdkdemos1.png</a></li>
 <li><a href="http://stud4.tuwien.ac.at/~e0526822/sdkdemos2.png">
 http://stud4.tuwien.ac.at/~e0526822/sdkdemos2.png</a></li></ul>
 </p><p>
-Two major problems are left though, namely windowed opengl rendering(see the 
-junk where a menu bar should be) and GetDC(there should be a little bit of 
+Two major problems are left though, namely windowed opengl rendering (see the 
+junk where a menu bar should be) and GetDC (there should be a little bit of 
 text rendered, I disabled render target locking to get proper performance).
 </p><p>
 Some demos have a few smaller problems too. The bump earth and bump waves need 
-vendor specific extensions(GL_NV_texture_shader2 / GL_ATI_envmap_bumpmap) and 
+vendor specific extensions (GL_NV_texture_shader2 / GL_ATI_envmap_bumpmap) and 
 the bend demo needs GL_ARB_vertex_blend which nvidia does not support. So I 
-took that screenshot on my mac running linux(ati radeon X1600. The mipmap 
+took that screenshot on my mac running linux (ati radeon X1600). The mipmap 
 demo renders the mipmaped texture garbled, although this works on nvidia 
 cards. The Z buffer demo says w buffers aren't supported, but the normal z 
 buffer does what the w buffer is supposed to do.
@@ -202,12 +202,12 @@ regressions I can get hold of, and I am trying to make D3D thread safe
 finally. From the application point of view my focus will stay on fixing 
 older apps first, which somewhat includes getting thread safety, render 
 target locking and GetDC working properly. My hope is also to fix the other 
-related DX7 sdk demos, like the DDraw demos(except overlays, they are highly 
+related DX7 sdk demos, like the DDraw demos (except overlays, they are highly 
 tricky with the current wined3d-x11drv integration) and getting native 
 d3drm.dll working.
 </p><p>
 I also want to say thanks to all the small and big helpers who help with 
-technical advise, debugging and regression testing. Special thanks goes to 
+technical advice, debugging and regression testing. Special thanks goes to 
 Henri without whom I'd be totally lost and who has to be credited for a huge 
 majority of the shader work in the last half year, and a lot of other things 
 too.
@@ -221,7 +221,7 @@ attachments, not even as jpgs.</p></quote>
 <p>Henri Verbeet then suggested D3D8 be the next target, although a lot of
 it is implemented.  Stefan explained a little more about future DirectX work:
 </p><quote who="Stefan Dosinger"><p>
-Yeah, thats the other thing of course :-) But as I said even d3d7 and ddraw
+Yeah, that's the other thing of course :-) But as I said even d3d7 and ddraw
 had a few biggies I want to fix. Of course I may grab some low hanging fruits
 like kicking out the fvf code from d3d8 and wined3d :-) Or get the sdk demos
 going, they should all work now by looking at their names.
@@ -245,11 +245,11 @@ working with regard to Direct3D.</p>
 <p>A largish patch arrived this week and before we get into it, we'll step 
 back and give a little introduction.</p>
 
-<p>Some new features added to Windows in the past few years requires some
-new terminolgy to learn.  Some of this functionality is used by .NET, though
+<p>Some new features added to Windows in the past few years require learning
+some new terminolgy.  Some of this functionality is used by .NET, though
 it's not strictly a .NET technology.
 So let's say you've got an <i>assembly</i>, a collection of PE files like
-DLL's, and you want to describe how they all interelate and what version of
+DLLs, and you want to describe how they all interelate and what version of
 DLL you want to use.  What 
 you'd do is create a <i>manifest</i> composed of an XML structure that defines 
 how the different classes are bound together, dependencies, versioning info, 
@@ -283,14 +283,14 @@ so far:</p>
 The following series provides a first real implementation of activation 
 contexts. It has been written by Jacek Caban and myself. Even if individual 
 patches show only one of the two names (for ease of packaging), reality is 
-different. In many cases, ideas, implementation, bug fix(es), improvement have 
+different. In many cases, ideas, implementation, bug fix(es), improvements have 
 been done by both of us.
 </p><p>
 Basically, this first series of patches implements:
 <ul>
 <li> searching and building the hierarchy of manifests needed by an application</li>
 <li> parsing of such manifests</li>
-<li> implementation of the Query function on this hierarchy of manifest</li>
+<li> implementation of the Query function on this hierarchy of manifests</li>
 <li> core activation context manipulation APIs (add/release ref, stacking...)</li>
 </ul></p><p>
 This doesn't allow yet to let an application with manifest being successfully 
@@ -375,14 +375,14 @@ USB interfaces that Windows has.
 </p><p>
 <u>CONNECTING WINE TO USB: A HOW-TO GUIDE</u>
 </p><p>
-There is 4 ways to do it:
+There are 4 ways to do it:
 <ol>
 <li> Make a kernel module in your OS (eg. a Linux kernel module) that
 exports the same interface that the software expects and works the
 same way as the Windows driver. Using USBSCAN.SYS as an example,
 reading does a USB bulk read, writing does a USB bulk write, and 13 or
 so i/o control codes do various other things, among them USB control
-and interrupt tranfers. Change kernel32's CreateFileW() to open the
+and interrupt transfers. Change kernel32's CreateFileW() to open the
 /dev device node used by the kernel module and send it to the wine
 server using wine_server_fd_to_handle(), then reading and writing will
 go to your kernel module, where you can implement them by doing USB
@@ -391,7 +391,7 @@ capture i/o control codes used by your device, call
 wine_server_handle_to_fd(), and do an ioctl() on that fd to send that
 i/o control call to the kernel module, which then reacts
 appropriately. This way has been tested by me, it works and it's fast,
-but it's non-portable (eg. Linux-only, and Linux's USB interface keep
+but it's non-portable (eg. Linux-only, and Linux's USB interface keeps
 changing so an out-of-tree module will only work on some versions, the
 usual problems...), difficult (kernel-mode code is hard to write), and
 generally a royal PITA.
@@ -442,7 +442,7 @@ allow device drivers to be written to a standard framework.</p>
 	posts="1"
 >
 <topic>Packaging</topic>
-<p>Marco Meijer packaged updated Mandriva RPM's and announced them:</p>
+<p>Marco Meijer packaged updated Mandriva RPMs and announced them:</p>
 <quote who="Marco Meijer"><p>
 As I have still no way to upload the mandriva wine rpm to the
 official winehq download server, I put it on my own website.
@@ -461,7 +461,7 @@ http://www.xs4all.nl/~meijer2/wine/</a>
 >
 <topic>Debugging</topic>
 <p>Markus Amsler felt the time it took to load debug symbols was way too
-slow.  For example, in World of Warcraft it's 100 seconds or so.  He
+long.  For example, in World of Warcraft it's 100 seconds or so.  He
 came up with a patch to use Wine's Heap memory functions directly and it
 reduced the load time to 18 seconds.  There was some back and forth
 discussion with Eric Pouech, the resident dbghelp.dll guru, and some
@@ -479,7 +479,7 @@ with bigger files. insert_first, process_heap are out.</li>
  <li> big pools have more memory overhead than big heaps.</li>
  <li> big pools are a lot slower than big heaps.</li>
 </ul></p><p>
-IMO the best results would give removing the pools (like in 
+IMO the best results would be removing the pools (like in 
 process_heap) and freeing unused memory manually, the other way round it 
 was allocated. But at a first glance it looks like quite a bit of work, 
 which I'm not sure is worth the result. I think the best approach would 
@@ -500,7 +500,7 @@ the pool. I even implemented a simple radix tree for the bucket storage.
 The initial bucket size has no measurable effect, so I left it at 1 to 
 save some bytes.
 </p><p>
-Here the stats for this series:
+Here are the stats for this series:
 </p><p>
 <table>
 <tr><td>&#120; </td><td>Memory after startup(kB)</td><td>  Memory normal 
