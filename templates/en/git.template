@@ -93,6 +93,7 @@ git rebase origin
 exports the following modules:</p>
 
 <ul>
+  <li><a href="http://source.winehq.org/git/website.git">website.git</a>  -- source for the WineHQ.org website</li>
   <li><a href="http://source.winehq.org/git/bugzilla.git">bugzilla.git</a>  -- source for the bugzilla version used on the WineHQ site</li>
   <li><a href="http://source.winehq.org/git/tools.git">tools.git</a>  -- tools used on the WineHQ site</li>
 </ul>
@@ -100,7 +101,6 @@ exports the following modules:</p>
 <p>The WineHQ CVS server exports the following modules:</p>
 
 <ul>
-  <li><tt>lostwages</tt> -- source for the WineHQ web site</li>
   <li><tt>tools</tt>  -- tools used on the WineHQ site</li>
   <li><tt>appdb</tt>  -- source for the application database web site</li>
 </ul>
