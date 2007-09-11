@@ -128,12 +128,12 @@ software delivery service for desktop Linux applications, libraries and
 packages, and CodeWeavers, Inc., the leading Windows-to-Linux software 
 developer, today announced the release and support of CrossOver Linux 6.0 for 
 CNR. This marks the latest CodeWeavers upgrade for the market leading product 
-that allows the running of native Windows application within a desktop Linux 
+that allows the running of native Windows applications within a desktop Linux 
 operating system. Incorporating substantially improved support for many popular 
 games, including World of Warcraft, Half-Life 2 and Counterstrike, CrossOver 
 Linux 6.0 now offers CNR users more flexibility than ever to run the Windows 
 applications they need. CrossOver Linux 6.0 is immediately available via 
-digital download using CNR one-click download and installation software 
+digital download using the CNR one-click download and installation software 
 delivery system at: 
 <a href="http://www.linspire.com/crossoveroffice">
 http://www.linspire.com/crossoveroffice</a></p></quote>
@@ -159,7 +159,7 @@ archive="http://www.winehq.com/pipermail/wine-devel/2007-March/055147.html"
 posts="34"
 >
 <topic>Project Management</topic>
-<p>Wine 1.0.. oh yes.. some day it will happen.  The bold even go so far as to
+<p>Wine 1.0... oh yes... some day it will happen.  The bold even go so far as to
 <a href="http://www.winehq.com/?issue=296#Beta:%20How%20We%20Got%20Here">make 
 predictions</a> of when it will happen.  Discussion of criteria for 1.0
 came up this week, which is usually the sure sign there's a jinx that will
@@ -170,7 +170,7 @@ learning.  Through this process, I've come to wonder about the
 following question -- what should be the goal for Wine 1.0?  I know a
 lot of development is focused around getting one particular
 application or another to work, especially from the folks over at
-Code Weavers, but with version numbers approaching 1.0, should there
+CodeWeavers, but with version numbers approaching 1.0, should there
 not be a set goal of functionality?  My personal thought is that Wine
 should head in the direction of 100% compatibility with a particular
 version of Windows.  Anything that ran on that version should run on
@@ -182,7 +182,7 @@ however specific applications could be targeted.  That led Dan Kegel to
 comment:</p>
 <quote who="Dan Kegel"><p>
 
-Yes indeedy.  And the only reason I haven't jumped up
+Yes indeed.  And the only reason I haven't jumped up
 and posted a proposed list of applications to support
 for 1.0 is that real app testing is gobs of work, more
 than we have resources for.
@@ -197,7 +197,7 @@ No promises, though.</p></quote>
 <p>Tom Wickline summarized some discussion we had last fall at WineConf:</p>
 <quote who="Tom Wickline"><p>
 I see Wine 1.0 as a set of features that AJ has decided upon, once the
-feature set is in the tree then a feature freeze will go onto effect..
+feature set is in the tree then a feature freeze will go onto effect...
 Then one to six months of only bug fixes. Then ouila! 1.0 is born.
 
 At the last Conf if memory serves me correctly there was mention of a
@@ -251,10 +251,10 @@ flux, so it's something to think about.  Stefan started the conversation
 with a to-do list of sorts:</p>
 <quote who="Stefan D&#246;singer"><p>
 In another thread Alexandre has mentioned to wait for game stuff to stabilize
-before the 1.0 freeze. I think its time for another brainstorm of what
+before the 1.0 freeze. I think it's time for another brainstorm of what
 features are still missing which we want in 1.0. The DirectX Todo has a long
 list but it tends to be useless to me. And I see that it can use some more
-cleanup( /me blames Tom-W for not nagging me enough :-) ) It also sounds like
+cleanup ( /me blames Tom-W for not nagging me enough :-) ) It also sounds like
 AJ takes games as an excuse to delay the freeze for the display driver
 cleanup, and I was tempted to take the display driver cleanup as an excuse to
 get more dx stuff in.
@@ -265,12 +265,12 @@ Direct3D:<ul>
 <li> Some SM 3.0 features are still missing. Instancing is now in, vertex
 textures and some other stuff still missing. Not widely used among games yet.</li>
 
-<li> Multithreading. OpenGL part done(except of 3 patches which I'll NOT send for
-now (see note below ), but needs synchronisation. Will take a lot of time.</li>
+<li> Multithreading. OpenGL part done (except of 3 patches which I'll NOT send for
+now (see note below), but needs synchronisation. Will take a lot of time.</li>
 
 <li> OpenGL ddraw. Render target locking improvements, multithreading.</li>
 
-<li> Many games to not run yet, problems on MacOS drivers and fglrx. For the D3D
+<li> Many games do not run yet, problems on Mac OS X drivers and fglrx. For the D3D
 part I see that as bugfixes which can happen after the freeze as far as I
 understand things.</li>
 
@@ -283,7 +283,7 @@ of missing synchronisation.
 </p><p>
 DirectSound: Maarten plans to work on that for SoC I think. Freezing now would
 make that difficult. Would mean to delay the freeze until September / October
-most at least. I'd personally really apprechiate dsound and alsa working
+most at least. I'd personally really appreciate dsound and alsa working
 better in 1.0.
 </p><p>
 OpenGL: I don't really know of the windowed opengl state, and the wined3d ->
@@ -317,7 +317,7 @@ not.
 mention of moving WineD3D to WGL:</p>
 <quote who="Roderick Colenbrander"><p>
 
-OpenGL needs to get proper windowed opengl rendering support. The best route to that seems to be by using opengl child windows. There's a patch for it but it needs cleanups and then AJ needs to accept it ..
+OpenGL needs to get proper windowed opengl rendering support. The best route to that seems to be by using opengl child windows. There's a patch for it but it needs cleanups and then AJ needs to accept it ...
 </p><p>
 After that the rest of OpenGL can be cleaned up. For instance the pixelformat limitation can be lifted and because of that various things can be done in a proper way. Second multisampling will be possible as well.
 </p><p>
@@ -340,27 +340,27 @@ questions.  Tom's post:</p>
 
 
 I have the 0.9.33 page done, and you may notice that Wine regressed in
-a couple of the test. When looking at these scores you will need to
+a couple of the tests. When looking at these scores you will need to
 take into account the actual visual quality . The scores were somewhat
-high in past test because everything wasn't being rendered, while that
+high in past tests because everything wasn't being rendered, while that
 makes for a nice score the visual wasn't on par with that of Windows.
 </p><p>
 As of 0.9.33 the visual quality is very close to that of Windows, so
-in test like 3DMark2001SE we not only got drastically improved visual
+in a test like 3DMark2001SE we not only got drastically improved visual
 quality, we also have a 50% improvement in performance! And 3DMark 03
 has a nice showing out of the gate as well.
 </p><p>
 Why no OpenGL test?
 </p><p>
 I plan to wait for a resolution to a couple outstanding OpenGL bugs,
-and then run the test again. I also plan to dramatically increase the
+and then run the tests again. I also plan to dramatically increase the
 screen resolution in the next update, GL-Excess in the past was run at
-only 640x480x16 in the future all test will be run at a resolution of
+only 640x480x16; in the future all tests will be run at a resolution of
 1024x768x32 or greater.
 </p><p>
-If all goes well In a couple months there should be another update
-with OpenGL test and 3DMark 05/06 results. If 3DMark 2000, 2001SE or
-2003 should drastically change ill also update them as well at that
+If all goes well in a couple months there should be another update
+with OpenGL tests and 3DMark 05/06 results. If 3DMark 2000, 2001SE or
+2003 should drastically change i'll also update them as well at that
 time.
 </p><p>
 I also updated the CAPS page with 0.9.33 and 1.0.9755.
@@ -378,7 +378,7 @@ CAPS results:
 http://wiki.winehq.org/DirectX-Caps</a></ul>
 </p><p>
 Some screen shots of past test results.... You may want to look at
-them ASAP if your interested in them, I plan to ask Dimi to rm -rf the
+them ASAP if you are interested in them, I plan to ask Dimi to rm -rf the
 page in a couple weeks to save the HD space on the wiki server, this
 way I can start a new "In Progress" page and not feel guilty about
 uploading all the shots :D
@@ -391,7 +391,7 @@ http://wiki.winehq.org/BenchMark-0.9.6</a></ul>
 performance.  Since Wine sits on top of the Linux kernel and uses
 the underlying device drivers and such, there's an opportunity for
 better performance than Windows itself in some areas.  For example,
-disk reads/write and memory access usually perform well with Wine.
+disk reads/writes and memory access usually perform well with Wine.
 In reality, there's still a lot of areas of Wine that could use
 a lot of optimization and things don't always work as well.  Yet
 these tests prove the potential is there.</p>
@@ -428,7 +428,7 @@ action for tests:</p>
 
 So if we only have crashes on win9x we don't care. If we can avoid 
 crashes/failures on win9x (by skip or other means) we don't run them on win9x. 
-And if they crash on something higher then win9x we disable them totally.
+And if they crash on something higher than win9x we disable them totally.
 </p></quote>
 
 <p>Alexandre thought that was fine but explained why explicit version
@@ -461,7 +461,7 @@ I know that in the past some of us dealt with Coverity already. I had a look at
 the new website and apparently things changed with respect to creating (and
 approving) new accounts. (Before the new website came alive I think just sending
 an email got you an account). I must say it's not clear to me how the process
-currently work but sending an email to scan-admin@coverity.com should do the
+currently works but sending an email to scan-admin@coverity.com should do the
 trick. The approval then has to be done by the main contact(s).
 </p><p>
 The next step will be that the main contact(s) will have some kind of
