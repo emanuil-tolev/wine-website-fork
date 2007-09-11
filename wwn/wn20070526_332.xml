@@ -99,7 +99,7 @@ Its main goal is to play NTN. It also serves to inform you of what's going on ar
 <topic>News</topic>
 
 <p>More than a few people have been angered by Novell's patent 
-indemnification agreement with Microsoft.  If you're looking a bunch of
+indemnification agreement with Microsoft.  If you're looking for a bunch of
 really exciting fun, you can find a redacted version of the entire 
 <a href="http://www.sec.gov/Archives/edgar/data/758004/000095013407012375/f26782exv10w35.htm">agreement</a> 
 filed with the SEC.  There's two nice bits in there about Wine.  The first
@@ -128,7 +128,7 @@ except for Foundry Products, Clone Products and Other Excluded Products
 <p>Alright, so you can't be sued if you're using Covered Products, but
 that means you better not be using a Clone Product.  What's a that?  Well,
 the definition gets a little long, but it basically says an existing product
-that implements a bunch of API's among other things isn't a clone product 
+that implements a bunch of APIs among other things isn't a clone product 
 <i>except for Wine</i> and few others:
 </p><quote who="SEC"><p>
      1.7 "Clone Product" means a product (or major component thereof) of a 
@@ -139,7 +139,7 @@ interface, or (b) implements all or substantially all of the Application
 Programming Interfaces of the Prior Product. Those portions of a product that 
 are otherwise licensed to one Party from the other Party, or that are compliant 
 with a specification of a standards organization as to which the other Party 
-has consented to the use of its Patents therefor, shall not be considered in 
+has consented to the use of its Patents therefore, shall not be considered in 
 determining whether the product is a Clone Product.
 </p><p>
      (i) The Parties agree that products sold, licensed, supplied, distributed 
@@ -185,7 +185,7 @@ indirectly. </p></quote>
 <a href="http://www.linuxgames.com/?dataloc=articles/icculus/">interview with 
 Ryan Gordon</a> about the state of Linux gaming and what technologies on the 
 horizon will be important.  Ryan has been doing ports of programs to Linux and 
-MacOS X for over a decade now.  Going all the way back to the games ported by 
+Mac OS X for over a decade now.  Going all the way back to the games ported by 
 Loki, Ryan has probably been responsible for more commercial applications being
 ported to Linux than anyone else.  Asked to rate technologies on a scale
 of 1-10, with 10 being the highest, this is what Ryan had to say about Wine:</p>
@@ -221,7 +221,7 @@ don't see that happening.
 <p>There's been some interesting projects being worked on within Wine.
 This week the series of changes that got the most attention was Alexandre's
 work on ntoskrnl.exe.  What is that exactly?  In short, it's the actual
-NT kernel that all of the major DLL's dispatch calls into.  From there,
+NT kernel that all of the major DLLs dispatch calls into.  From there,
 ntoskrnl takes care of dispatching the calls to things like the actual
 hardware.  In short, it's what gets you to the metal.  
 </p><p>
@@ -232,8 +232,8 @@ version specific to Wine back in 2005.   That work proved that it was
 possible to get the Safedisc copy protection kernel driver to work with Wine.
 At the time, some infrastructure didn't exist within Wine to make the design
 clean enough for Alexandre to accept the patch.  It looks like that's changed
-though and Alexandre is implementing ntoskrnl.exe himself.  Here's the
-commit logs logs that came through this week regarding it:</p>
+though and Alexandre is implementing ntoskrnl.exe himself.  Here are the
+commit logs that came through this week regarding it:</p>
 <quote who="Alexandre Julliard"><p>
 <ul>
 <li>ntoskrnl.exe: Initial stub version with forwards to existing functions</li>
@@ -264,7 +264,7 @@ that would add USB infrastructure to ntoskrnl and potentially forward the
 calls to libusb.  All in all, we're a lot closer than we were simply because
 finding a framework acceptable by Alexandre is often the hurdle in a lot of
 areas affecting core architecture.  However, there's still a large amount of 
-work to be done for that to work to even get Safedisc copy protections working,
+work to be done for that to work to even get Safedisc copy protection working,
 which seems to be the point of this patch.  However, Safedisc support
 is huge and will allow a lot more programs to work out of the box.
 </p>
@@ -312,7 +312,7 @@ http://gerwazy.lo3.wroc.pl/~jcaban/wine/wine_gecko.tar.bz2</a></ul>
 <ol>
 <li> if you already have installed Gecko, simply extract the package and
 replace c:\windows\wine_gecko with it.</li>
-<li> otherwise extract the package and set GeckoPath variable of
+<li> otherwise extract the package and set the GeckoPath variable in the
 HKCU\Software\Winde\MSHTML registry key to its location.</li>
 </ol></p><p>
 Then run an app and check if it still works.
@@ -326,15 +326,15 @@ Expected visible difference should be:
 app sets it to not be, but it's better than before - I will work on it
 later)</li>
 <li> Pages that require plugins will render like there was no plugin
-instead of offering downloading one (that doesn't work anyway)</li>
+instead of offering to download one (that doesn't work anyway)</li>
 </ul></p><p>
-From technical point of view this version differs much from previous
-one. Previous version was just a SeaMonkey with manually removed and
-changed some files. This one is my built from source (I will create a
+From a technical point of view this version differs much from the previous
+one. The previous version was just a SeaMonkey with manually removed and
+changed some files. This one is my build from source (I will create a
 page on wiki about how to do so). It's based on XUL Runner 1.8.1.3,
 which has the same source as Firefox 2.0.0.3.
 </p><p>
-After testing it, I will change Gecko installer a bit to be able to deal
+After testing it, I will change the Gecko installer a bit to be able to deal
 with different Gecko versions for different Wine version and upload it
 to SourceForge.
 </p></quote>
@@ -363,18 +363,18 @@ my thread safety patches for ddraw. I want to show them for some ideas /
 comments before sending them in.
 </p><p>
 Basically windows ddraw seems to hold a DLL global lock whenever some code of 
-the DLL is executed even in functions that wouldn't need it(like AddRef, can 
-use interlocked addref), unrelated calls(2 different ddraw objects or 
-surfaces) or before checking errornous params.
+the DLL is executed even in functions that wouldn't need it (like AddRef, can 
+use interlocked addref), unrelated calls (2 different ddraw objects or 
+surfaces) or before checking erroneous params.
 </p><p>
 As per Alexandre's comments, we don't want to copy all this insane locking 
-exactly(until we find an app that really needs this. Basically my 2 patches 
-handle it like this(for the ddraw object only - all others will follow):
+exactly (until we find an app that really needs this. Basically my 2 patches 
+handle it like this (for the ddraw object only - all others will follow):
 <ul>
-<li> When a method needs locking, the lock is aquired after printing the trace, 
-but before checking error conditions(like windows).</li>
-<li> If a method doesn't need locking(e.g. unimplemented, or just a getter for 
-static info(GetCaps), or QI / AddRef / Release), then the lock is not held</li>
+<li> When a method needs locking, the lock is acquired after printing the trace, 
+but before checking error conditions (like windows).</li>
+<li> If a method doesn't need locking (e.g. unimplemented, or just a getter for 
+static info (GetCaps), or QI / AddRef / Release), then the lock is not held</li>
 </ul>
 </p><p>
 Since ddraw, d3d8 and d3d9 need their own locking anyway, my plan is to 
@@ -382,7 +382,7 @@ implement locking in them and assume synchronised calls in wined3d - ie no
 wined3d locking. No 2 threads may call wined3d at the same time, and 
 ddraw/d3d8/d3d9 have to take care of that. That keeps the code simpler.
 </p><p>
-Attached is my test(threading.c), the locking for main and ddraw(merged it 
+Attached is my test (threading.c), the locking for main and ddraw (merged it 
 accidentally - need to split it up again. The plan is to continue like that 
 for the rest of ddraw and d3d8/9
 </p></quote>
@@ -415,7 +415,7 @@ about adding a new package for them.</p></quote>
 <quote who="Mark Cox"><p>
 
 Scott, That wasn't what i was thinking when i suggested it to Dan. If users 
-tests the fonts with wine, which they can now do using winetricks, i was hoping
+test the fonts with wine, which they can now do using winetricks, i was hoping
 that the font names could be remapped/hacked so that the names of the 
 mscorefonts map to the redhat fonts. If that is successful, the fonts could be 
 included in wine and we wouldn't need mscorefonts anymore.</p></quote>
@@ -507,32 +507,32 @@ Now patched keyboard driver allows user to:
 <li> detect and use XKB overlays to put 2 or 3 close layouts (e.g. Russian,
 Ukrainian and Belarusian) into one XKB group;</li>
 <li> freely combine available XKB layouts in any order, e.g. "en,ru,fr";</li>
-<li> list all layouts available at the system, and implement
+<li> list all layouts available to the system, and implement
 ActivateKeyboardLayout();</li>
 <li> notify an application (e.g. MS Word) about change of layout, and make
 GetKeyboardLayout() work really, not just return LCID for current locale
 of Unix box;</li>
 <li> input characters that do not fit into current Unix locale, e.g. German and
-French accented letters at a system with Cyrillic (not UTF) locale;</li>
-<li> override any of detected layouts via registry, if user is not satisfied
-with Wine driver choice.</li></ol>
+French accented letters on a system with Cyrillic (not UTF) locale;</li>
+<li> override any of the detected layouts via registry, if the user is not satisfied
+with the Wine driver choice.</li></ol>
 </p><p>
 In fact I made cosmetic changes to 3 files in winex11.drv directory: x11drv.h,
 x11drv_main.c, event.c, but the fourth file keyboard.c was changed much more.
-About half of functions in it were rewritten, and it now easier to read new
+About half of the functions in it were rewritten, and it now it is easier to read new
 keyboard.c than diff output to understand the changes. 
 </p><p>
-I got very reasonable advice from L.Rahyen to broke the patch into smaller
+I got very reasonable advice from L.Rahyen to break the patch into smaller
 parts. The problem is that I preserved the driver logic, but changed
-data structures, so any such patch (even very small one) will touch hundreds if
+data structures, so any such patch (even a very small one) will touch hundreds of
 lines across the whole file, probably introducing new bugs and being difficult
-to read and understand. Also, there is no reason to change code by a patch
-if we can benefit of it only after next patch.
+to read and understand. Also, there is no reason to change code in a patch
+if we can benefit of it only after the next patch.
 </p><p>
-Now I will be grateful to any help. How can such big changes be introduced in
-Wine tree? I also attach a patch against wine-0.9.37 and copies of original and
+Now I will be grateful for any help. How can such big changes be introduced in
+the Wine tree? I also attached a patch against wine-0.9.37 and copies of original and
 changed files. Perhaps somebody, who is interested in multilingual keyboard 
-input, can test it and write me about results.
+input, can test it and write me about the results.
 </p></quote>
 
 <p>Vitaliy Margolen suggested some changes to make and thanked Oleh for the
@@ -561,9 +561,9 @@ Bestefich" to vandalize the Appdb. He was also seen on IRC and on
 the wiki. His IP was identified on all three, logs are available.
 See towards the end of this mail for IRC log snippet and whois on
 his IP. Please contact me first if you intend to contact abuse or
-police personal regarding this, so we don't cause headaches or
+police personnel regarding this, so we don't cause headaches or
 duplicate work. We do not yet know how this person got access to
-Molle Bestefich his account.
+Molle Bestefich's account.
 </p><p>
 I received 4454 emails about deletes or other actions by the
 account "Molle Bestefich". Send between "Date: Tue, 22 May 2007
@@ -633,7 +633,7 @@ that we had no backup of.
 I've also added a comment to the appdb main page to explain the
 downtime and what we plan to do to improve things. Anyone interested
 in hacking in php on the appdb is welcome to get in touch with me,
-there is plenth to hack on ;-)
+there is plenty to hack on ;-)
 </p><p>
 Also, I'll be updating the cron script so we can remove the screenshot
 entries that have no corresponding screenshot file.
