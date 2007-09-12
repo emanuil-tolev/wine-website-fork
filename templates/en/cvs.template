@@ -9,7 +9,6 @@
 
 <ol>
   <li><a href="#co">Getting a local copy of Wine</a></li>
-  <li><a href="#modules">Other modules available via CVS from WineHQ</a></li>
   <li><a href="#docs">Documentation module available via CVS from Sourceforge</a></li>
   <li><a href="#sourcetree">Source Tree Browsing via the Web</a></li>
 </ol>
@@ -30,22 +29,6 @@ cvs login
 <p>To check out the entire Wine source tree run:</p>
 
 <p><code>cvs -z 3 checkout wine</code></p>
-
-<hr />
-
-<h1 id="modules">Other modules available via CVS from WineHQ</h1>
-
-<p>The WineHQ CVS server makes a couple of other things available as well. 
-  To get these, log in anonymously as above and do
-  <code>cvs co <em>modulename</em></code>
-  where 
-  <code><em>modulename</em></code>
-  is one of:</p>
-<ul>
-  <li><tt>lostwages</tt> -- source for the WineHQ web site</li>
-  <li><tt>tools</tt>  -- tools used on the WineHQ site</li>
-  <li><tt>appdb</tt>  -- source for the application database web site</li>
-</ul>
 
 <hr />
 

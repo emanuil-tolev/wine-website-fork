@@ -18,9 +18,11 @@ such as the Linux Kernel source.</p>
 
 <ol>
     <li><a href="#clone">Getting a local copy of Wine</a></li>
+    <li><a href="#cleaning">Cleaning up your existing tree</a></li>
     <li><a href="#uptodate">Staying Up-To-Date</a></li>
     <li><a href="#sourcetree">Source Tree Browsing via the Web</a></li>
     <li><a href="#modules">Other modules available from WineHQ</a></li>
+    <li><a href="#clonecvs">Getting a local copy of Wine with CVS</a></li>
     <li><a href="#docs">Documentation module available from Sourceforge</a></li>
 </ol>
 
@@ -34,7 +36,7 @@ such as the Linux Kernel source.</p>
 
 <hr />
 
-<h1 id="uptodate">Cleaning up your existing tree</h1>
+<h1 id="cleaning">Cleaning up your existing tree</h1>
 
 <p>A quick way to clean up your tree after you've been modifying
 it and want to remove changes you haven't checked in is this: </p>
@@ -58,7 +60,7 @@ you can use the following more dangerous command:</p>
 
 <hr />
 
-<h1>Staying Up-To-Date</h1>
+<h1 id="uptodate">Staying Up-To-Date</h1>
 
 <p> First, make sure to clean your tree as described above, then
 run the following commands from the top level wine directory:</p>
@@ -95,29 +97,26 @@ exports the following modules:</p>
 <ul>
   <li><a href="http://source.winehq.org/git/website.git">website.git</a>  -- source for the WineHQ.org website</li>
   <li><a href="http://source.winehq.org/git/bugzilla.git">bugzilla.git</a>  -- source for the bugzilla version used on the WineHQ site</li>
+  <li><a href="http://source.winehq.org/git/appdb.git">appdb.git</a>  -- source for the application database web site</li>
   <li><a href="http://source.winehq.org/git/tools.git">tools.git</a>  -- tools used on the WineHQ site</li>
 </ul>
 
-<p>The WineHQ CVS server exports the following modules:</p>
+<hr />
 
-<ul>
-  <li><tt>tools</tt>  -- tools used on the WineHQ site</li>
-  <li><tt>appdb</tt>  -- source for the application database web site</li>
-</ul>
+<h1 id="clonecvs">Getting a local copy of Wine with CVS</h1>
+
+<p>If you cannot use Git for some reason, the main source tree is
+  also available through CVS.</p>
 
 <p>To login to the CVS server, run in a terminal:</p>
 
-<p><code>CVSROOT=:pserver:cvs@cvs.winehq.org:/home/wine cvs login</code></p>
+<p><code>cvs -d :pserver:cvs@cvs.winehq.org:/home/wine login</code></p>
 
 <p>Use &quot;cvs&quot; as the password (without the quotes).</p>
 
-<p>To get a git repository of one of the modules listed above
-create a new directory and in a terminal run in that directory:</p>
+<p>To check out the Wine source tree run:</p>
 
-<p><code>git cvsimport -v -k -d :pserver:cvs@cvs.winehq.org:/home/wine MODULE</code></p>
-
-<p>Replace MODULE with one of the module names listed above.<br/>
-But be aware that this can take quite some time.</p>
+<p><code>cvs -z 3 -d :pserver:cvs@cvs.winehq.org:/home/wine checkout wine</code></p>
 
 <hr />
 
