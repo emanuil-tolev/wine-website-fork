@@ -22,7 +22,7 @@ for post-installation instructions.</b></p>
 
   <tr bgcolor="#ffffff">
     <td align=center><a href="{$root}/site/download-rh">
-	  <img src="{$root}/images/distro/redhat.png" width="50" height="50" alt="RedHat Linux" border="0"></a>
+      <img src="{$root}/images/distro/redhat.png" width="50" height="50" alt="RedHat Linux" border="0"></a>
     </td>
     <td> <b><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">Red Hat / CentOS / Fedora</a></b>
         binary and source .rpms for Red Hat Enterprise Linux 4, 5; CentOS 4, 5; Fedora Core 5, 6; Fedora Linux 7 and
@@ -36,27 +36,27 @@ for post-installation instructions.</b></p>
   
   <tr bgcolor="#ffffff">
     <td align=center><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=79444">
-	  <img src="{$root}/images/distro/suse.png" width="50" height="50" alt="SUSE Linux" border="0"></a>
+      <img src="{$root}/images/distro/suse.png" width="50" height="50" alt="SUSE Linux" border="0"></a>
     </td>
     <td> <b><a href="http://en.opensuse.org/Wine#Repositories">SUSE</a></b>
          release binary and source .rpms and daily snapshot RPMs for SUSE Linux 9.3, 10.0, 10.1, and openSUSE 10.2.<br/>
-	 </td>
+     </td>
     <td><a href="mailto:meissner@suse.de">Marcus Meissner</a></td>
   </tr>
   
   <tr bgcolor="#ffffff">
     <td align=center><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=80066">
-	  <img src="{$root}/images/distro/mandriva.png" width="50" height="50" alt="Mandriva Linux" border="0"></a>
+      <img src="{$root}/images/distro/mandriva.png" width="50" height="50" alt="Mandriva Linux" border="0"></a>
     </td>
     <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=80066">Mandriva</a></b> 
          binary .rpms for Mandriva Linux 2006 and 2007. Download the 2007.1 package if your Mandriva is a 2007.1
-	 release, eg. 2007 Spring. Download the 2007.0 package if your Mandriva is the first 2007 release.</td>
+     release, eg. 2007 Spring. Download the 2007.0 package if your Mandriva is the first 2007 release.</td>
     <td><a href="mailto:marco@mandrivaclub.nl">Marco Meijer</a></td>
   </tr>
   
   <tr bgcolor="#ffffff">
     <td align=center><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">
-	  <img src="{$root}/images/distro/slackware.png" width="50" height="50" alt="Slackware linux" border="0"></a>
+      <img src="{$root}/images/distro/slackware.png" width="50" height="50" alt="Slackware linux" border="0"></a>
     </td>
     <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">Slackware</a></b>
          binary .tgz for Slackware 10.2</td>
@@ -65,25 +65,25 @@ for post-installation instructions.</b></p>
   
   <tr bgcolor="#ffffff">
     <td align=center><a href="{$root}/site/download-deb">
-	  <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu linux" border="0"></a>
+      <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu linux" border="0"></a>
     </td>
     <td> <b><a href="{$root}/site/download-deb">Ubuntu</a></b> 
-	 binary and source .debs for Ubuntu Feisty (7.04), Edgy (6.10), and Dapper (6.06)</td>
+     binary and source .debs for Ubuntu Gutsy (7.10), Feisty (7.04), Edgy (6.10), and Dapper (6.06)
     <td><a href="mailto:scott@open-vote.org">Scott Ritchie</a></td>
   </tr>
 
   <tr bgcolor="#ffffff">
     <td align=center><a href="{$root}/site/download-deb">
-	  <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian linux" border="0"></a>
+      <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian linux" border="0"></a>
     </td>
     <td> <b><a href="{$root}/site/download-deb">Debian</a></b> 
-	 binary and source .debs for Debian Etch (4.0)</td>
+     binary and source .debs for Debian Etch (4.0)</td>
     <td><a href="mailto:scott@open-vote.org">Scott Ritchie</a></td>
   </tr>
 
   <tr bgcolor="#ffffff">
     <td align=center><a href="http://www.freshports.org/emulators/wine/">
-	  <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
+      <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
     </td>
     <td> <b><a href="http://www.freshports.org/emulators/wine/">FreeBSD</a></b> 
          source for FreeBSD 5.3 or later</td>
@@ -92,7 +92,7 @@ for post-installation instructions.</b></p>
 
   <tr bgcolor="#ffffff">
     <td align=center><a href="http://www.pbidir.com/search.php?str=wine">
-	  <img src="{$root}/images/distro/pcbsd.png" width="50" height="50" alt="FreeBSD" border="0"></a>
+      <img src="{$root}/images/distro/pcbsd.png" width="50" height="50" alt="FreeBSD" border="0"></a>
     </td>
     <td> <b><a href="http://www.pbidir.com/search.php?str=wine">PC-BSD</a></b> 
          binary packages .pbi for PC-BSD (FreeBSD based OS)</td>
@@ -101,7 +101,7 @@ for post-installation instructions.</b></p>
 
   <tr bgcolor="#ffffff">
     <td align=center><a href="http://www.blastwave.org/wine/">
-	  <img src="{$root}/images/distro/sun.png" width="50" height="50" alt="Sun Solaris" border="0"></a>
+      <img src="{$root}/images/distro/sun.png" width="50" height="50" alt="Sun Solaris" border="0"></a>
     </td>
     <td> <b><a href="http://www.blastwave.org/wine/">Solaris</a></b>
          binary and source for Solaris 9 and 10</td>

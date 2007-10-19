@@ -25,6 +25,8 @@ list of trusted APT keys by copy and pasting the following:</p>
 
 <p>Next, add the repository to your system's list of APT sources:</p>
 
+<p><b>For Ubuntu Gutsy (7.10):</b><br>
+<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/gutsy.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 <p><b>For Ubuntu Feisty (7.04):</b><br>
 <i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/feisty.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 <p><b>For Ubuntu Edgy (6.10):</b> <i>*64-bit packages not available*</i><br>
@@ -39,18 +41,18 @@ using the Synaptic Package Manager under System->Administration.  Alternatively,
 can install from the terminal by running '<b>sudo apt-get update</b>' to update APT's 
 package information and then '<b>sudo apt-get install wine</b>'.</p>
 
+<h2>Upgrading to a new version of Ubuntu</h2>
+
+<p>If you are upgrading the entire system, such as going from Ubuntu 7.04 to 7.10, you will need to 
+come back to this page and enter the command for the new version above.  The built in update manager 
+will not switch the Wine repository automatically.</p>
+
 <h2>64-bit Users:</h2>
 
-<p>Packages for the 64 bit version of Ubuntu Feisty (7.04) are now available, however 
-for users of Debian and older Ubuntus the entries above are for i386 users only. 
-Attempting to use these repositories with a different architecture will result 
-in 404 errors as APT will be looking for files not in the repository.</p>
-
-<p>If you are using an older 64 bit distribution and would still like a working Wine package,
-there is a relatively easy hack that can be used to install the 32-bit package
-into the 64-bit distribution and have it function normally.  See 
-<a href="http://wiki.winehq.org/UbuntuAMD64">this page on the Wine wiki</a> 
-for more details.</p>
+<p>If you are using a very old version of Ubuntu where 64 bit packages are not available 
+and would still like a working Wine package, there is a relatively easy hack that can be 
+used to install the 32-bit package and have it function normally.  See 
+<a href="http://wiki.winehq.org/UbuntuAMD64">this page on the Wine wiki</a> for more details.</p>
 
 <h2>Older .deb packages</h2>
 
@@ -58,7 +60,7 @@ for more details.</p>
 the packages are available at 
 <a href=http://wine.budgetdedicated.com/archive/index.html>the WineHQ .deb packages archive</a>.</p>
 
-<p>If you wish to use these packages, you'll have to install them by hand, such as by double clicking them or using dpkg -i</p>
+<p>You can install the packages by double-clicking on them.</p>
 
 <br>
 <p><i>Very fast and reliable webhosting for the APT repository is graciously provided by <a href="http://www.budgetdedicated.com/">budgetdedicated.com</a>.</i></p>
