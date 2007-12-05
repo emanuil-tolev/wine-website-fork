@@ -11,6 +11,7 @@ class wwn
     var $who;
     var $author;
     var $email;
+    var $contact;
     var $body;
     var $summary;
     var $person;
@@ -242,6 +243,7 @@ class wwn
                           'summary' => $summary_box,
                           'xml'     => $wwn{$cur},
                           'author'  => $this->author,
+                          'contact' => $this->contact,
                           'body'    => $this->body,
                          );
         $wwn_body = $html->template("base", "wwn", $wwn_vars);
@@ -349,6 +351,7 @@ class wwn
               break;
             case "AUTHOR":
               $this->email = $attrs{'EMAIL'};
+              $this->contact = $attrs{'CONTACT'};
               break;
             case "INTRO":
               $this->body .= "<a name=\"Intro\"></a>\n";
