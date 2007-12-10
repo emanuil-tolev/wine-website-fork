@@ -20,7 +20,12 @@ switch (true)
   case ($page):
     $text .= view_page($page);
     break;
-  
+
+  // rss news
+  case ($_REQUEST['rss']):
+    $text .= view_rss();
+    break;
+    
   // view news archvie
   case ($_REQUEST['news']):
     $text .= $html->theme_box($config->theme, "box_title", 'News Archives', "100%", view_news($_REQUEST['news']), '10', 'white', 'topMenu');
@@ -80,7 +85,10 @@ function view_page ($view)
 function home_page ()
 {
     global $file_root, $config, $html;
-	
+
+    // load rss link
+    $html->rss_link = "{$config->base_url}/?rss=1";
+
     // screenshot for homepage (random)
     $shots = get_files($file_root."/images/shots","png");
     $c = intval(rand(1,count($shots) - 1));
@@ -211,6 +219,67 @@ function view_news ($where)
     
     // return the finished body
     return $news_body;
+}
+
+// display the news in RSS form
+function view_rss ()
+{
+    global $config, $html;
+     
+    // get list of news items
+    $news = get_files($config->news_xml_path, "xml");
+    $news = array_reverse ($news);
+
+    // clear cache and output the rss file
+    header('Pragma: public');
+    header('Expires: 0');
+    header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+    header('Content-Type: application/xml');
+    header('Content-Disposition: inline; filename="winehq_news.xml";');   
+    $rss_rows = "";
+    $c = 0;
+    foreach ($news as $key => $item)
+    {
+        $c++;
+        
+        // limit to 10 most recent articles
+        if ($c > 10)
+            continue;
+        
+        // get data from XML file
+        $vars = array();
+        list($date, $title, $body) = get_xml_tags($config->news_xml_path.'/'.$item, array('date', 'title', 'body'));
+        
+        // fix filename for urls
+        $item = str_replace(".xml", "", $item);
+        
+        // fix relative URLs
+        $body = str_replace("<a href=\"?", "<a href=\"{$config->base_url}/?", $body);
+        $body = str_replace("<a href=\"/site", "<a href=\"{$config->base_url}/site", $body);
+        
+        // display row
+        $rss_row = array(
+                            'item_title' => strip_tags($title),
+                            'item_desc'  => htmlentities($body),
+                            'item_link'  => $config->base_url.'?news='.$item,
+                            'item_guid'  => $config->base_url.'?news='.$item,
+                            'item_date'  => date("r", strtotime($date))
+                        );
+        $rss_rows .= $html->template('base', 'global/xml/rss_row', $rss_row, 1);
+    }
+    unset($c);
+    $rss = array(
+                    'rss_date'  => date("r", $top_date),
+                    'rss_title' => $config->site_name.' News',
+                    'rss_link'  => "{$config->base_url}/?rss=1",
+                    'rss_img'   => "{$config->base_url}/images/classic_top_logo.png",
+                    'rss_desc'  => 'News and information about Wine',
+                    'rss_crt'   => '(C) '.$config->site_name.' '.date("Y", time()),
+                    'rss_rows' => $rss_rows
+                );
+    echo $html->template('base', 'global/xml/rss', $rss);
+    exit();
+
 }
 
 // load the announce file for latest version of Wine

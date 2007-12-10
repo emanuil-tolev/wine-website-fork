@@ -13,9 +13,11 @@ class html
     var $_indent_level;
     var $_trcolor;
     var $_file_root;
+    var $_view_mode = "default";
     var $page;
     var $template_title;
     var $in404;
+    var $rss_link;
 
     // HTML init object
     function html ($root)
@@ -66,28 +68,53 @@ class html
             $body .= $this->frame_end("");
         }
         $search = $this->template("base", "search");
-        // display the html
+        
+        // rss link
+        if ($this->rss_link)
+            $rss_link = '<link rel="alternate" title="'.$title.' RSS" href="'.$this->rss_link.'" type="application/xml">';
+
+        // 404 not found
         if ($this->in404)
-        {
-            // 404 not found
             header("HTTP/1.1 404 Not Found");
-        }
-        else
+
+        // display page based on view mode
+        switch ($this->_view_mode)
         {
-            // normal HTTP Headers
-            $this->http_header();
+            // plain text view
+            case "text":
+                $this->http_header("text/plain");
+                echo $body;
+                break;
+        
+            // print view
+            case "print":
+                $this->http_header("text/html");
+                echo $this->template(
+                                     $theme,
+                                     "content_print",
+                                     array(
+                                           'page_title'     => $title,
+                                           'page_body'      => $body
+                                          )
+                                    );
+                break;
+
+            // regular view
+            default:
+                $this->http_header("text/html");
+                echo $this->template(
+                                     $theme,
+                                     "content",
+                                     array(
+                                           'page_title'    => $title,
+                                           'page_body'     => $body,
+                                           'rss_link'      => $rss_link,
+                                           'page_sidebar'  => $menu,
+                                           'page_search'   => $search
+                                          )
+                                    );
         }
-        echo 
-        $this->template(
-                        $theme,
-                        "content",
-                        array(
-                              'page_title'    => $title,
-                              'page_body'     => $body,
-                              'page_sidebar'  => $menu,
-                              'page_search'   => $search
-                             )
-                );
+
     }
 
     function error_page ($message = null)
@@ -844,21 +871,28 @@ class html
             }
             unset($match, $i);
         }
-        
+
+        // override the page view mode (print, text)
+        if (preg_match('/<!--VIEW:\[([\w]+)\]-->/', $orig, $arr))
+        {
+            $this->_view_mode = strtolower($arr[1]);
+            $in = preg_replace('/<!--VIEW:\[([\w]+)\]-->\n/', '', $in);  
+        }
+
         // return finished page
         unset($orig);
         return $in;
     }
 
     // HTTP HEADER (better header)
-    function http_header ($title = "")
+    function http_header ($type = "text/html")
     {
-        header("Content-type: text/html; charset=UTF-8"); 
-	    header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
-	    header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT"); 
-	    header("Cache-Control: no-store, no-cache, must-revalidate");
-	    header("Cache-Control: post-check=0, pre-check=0", false);
-	    header("Pragma: no-cache"); 
+        header("Content-type: ".$type."; charset=UTF-8"); 
+        header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+        header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT"); 
+        header("Cache-Control: no-store, no-cache, must-revalidate");
+        header("Cache-Control: post-check=0, pre-check=0", false);
+        header("Pragma: no-cache");
     }
 
     // REDIRECT (simple httpd header redirect) 
