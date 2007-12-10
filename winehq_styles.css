@@ -90,6 +90,22 @@ p.indent            { padding-left: 1em; padding-right: 1em;}
 .rowtitle           { background-color: black; color: white; font-weight: bold; }
 .commandWidth       { width: 500px; padding: 5px; }
 
+/* RSS Feed Links */
+ul.rss {
+  list-style: none;
+  padding: 0 0 0 2px;
+  margin: 0;
+}
+ul.rss li {
+  background: url("./images/feed.gif") no-repeat 0 1px;
+  padding: 0px 0 0px 0px;
+  height: 18px;
+}
+ul.rss li a {
+  font-size: 10px;
+  padding: 0 0 0 18px;
+}
+
 /* Generic Buttons */
 .button             { background-color: #A50D0D; color: #ffffff; font-family: Sans-Serif; font-size: 12px; padding: 0; }
 .searchInput        { background-color: #FFFFFF; color: #000000; font-family: Sans-Serif; font-size: 12px; padding: 0; }
