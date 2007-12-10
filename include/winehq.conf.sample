@@ -1,0 +1,29 @@
+# Website Configuration File
+
+# turns debug mode on/off
+debug:          0
+web_debug:      0
+
+# title of this site
+site_name:      Wine HQ
+
+# default theme
+theme:          winehq
+
+# default language
+lang:           en
+
+# available themes
+@themes:        winehq
+
+# available languages
+@languages:     en
+
+# base URL for website
+base_url:		http://www.winehq.org
+
+# Path to WWN XML files
+news_xml_path:   news
+
+# Path to WWN XML files
+wwn_xml_path:   wwn

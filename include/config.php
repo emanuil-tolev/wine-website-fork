@@ -11,17 +11,24 @@
  
 class config 
 { 
-    function config ($path = "")
+    function config ()
     {
-        // exit if config not found
-        if (!file_exists($path))
+        // get files passed
+        $files = func_get_args();
+    
+        // loop and parse files
+        foreach ($files as $path)
         {
-            echo 'config file not found!';
-            exit();
-        }
+            // exit if config not found
+            if (!file_exists($path))
+            {
+                echo 'config file not found!';
+                exit();
+            }
         
-        // read global config file
-        $this->readConfig($path);
+            // read global config file
+            $this->readConfig($path);
+        }
         
         // navigation
 	$this->nav = array(

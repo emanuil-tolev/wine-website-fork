@@ -14,7 +14,7 @@
 require($file_root."/include/"."config.php");
 
 // create config object
-$config = new config($file_root."/include/"."winehq.conf");
+$config = new config($file_root."/include/"."winehq.conf", $file_root."/include/"."globals.conf");
 
 // load global libs
 require($file_root."/include/"."html.php");
