@@ -160,7 +160,9 @@ function view_news ($where)
     $amax = 25;
     
     // where are we in news list
-    $x = $_GET['x'];
+    $x = 0;
+    if ($_GET['x'])
+        $x = $_GET['x'];
     
     // get list of news items
     $news = get_files($config->news_xml_path, "xml");
@@ -201,20 +203,24 @@ function view_news ($where)
     // prev/next links
     if ($where == 'archive')
     {
+        $pages = floor(($total / $amax));
+        $prev_link = "";
+        $next_link = "";
+        // add back to first page link when not first page
+        if ($x != 0)
+            $prev_link .=  $html->ahref("[First Page]","?news=archive;x=0", 'class="menuItem"')." ";
         // display prev link
         if ($x > 0)
-        {
-            $prev = ($total) - $c;
-            $prev_link = $html->ahref("&lt;&lt; Previous News","?news=archive;x=".$prev,"class=menuItem");
-        }
+            $prev_link .= $html->ahref("&lt;&lt; Previous Page","?news=archive;x=".($x - $amax), 'class="menuItem"');
         // display next link
         if (($x + $amax) < $total)
         {
-            $next = $x + $amax;
-            $next_link .= $html->ahref("More News &gt;&gt;","?news=archive;x=".$next,"class=menuItem");
-        }    
+            $next_link .= $html->ahref("Next Page &gt;&gt;","?news=archive;x=".($x + $amax) , 'class="menuItem"');
+            // add jump to last page link
+            $next_link .= " ".$html->ahref("[Last Page]","?news=archive;x=".($pages * $amax) , 'class="menuItem"');
+        }
         // add prev/next links
-        $news_body .= $html->p($html->div($prev_link.' &nbsp; '.$next_link, 'align=center'));
+        $news_body .= $html->p($html->div($prev_link.' &nbsp; '.$next_link, 'align="center"'));
     }
     
     // return the finished body
