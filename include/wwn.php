@@ -30,6 +30,7 @@ class wwn
                                  "center"       => "center",
                                  "code"         => "code",
                                  "div"          => "div",
+                                 "font"          => "font",
                                  "i"	        => "i",
                                  "img"          => "img",
                                  "li"	        => "li",
