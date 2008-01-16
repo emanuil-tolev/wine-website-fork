@@ -284,7 +284,7 @@ a separate source file(s) that compiles against the system headers,
 wrap the Unix calls in functions exported by these files, and then
 "simply" link the winelibwise and unixwise parts of your application.
 </p><p> 
-Dividing the the two worlds over source files should  have other
+Dividing the two worlds over source files should have other
 benefits as well, softwaredesignwise :-)
 </p></quote>
 
@@ -304,7 +304,7 @@ benefits as well, softwaredesignwise :-)
 <p>Steven Edwards requested comments about closing out
 <a href="http://bugs.winehq.org/show_bug.cgi?id=529">bug 529.</a>  
 It seems through private 
-correspondance it was decided to just close it out
+correspondence it was decided to just close it out
 and not deal with the perl framework any more.  Steven's
 explanation was:</p>
 <quote who="Steven Edwards"><p>

@@ -148,7 +148,7 @@ whole scheme:</p>
  by the Linux kernel distributed with Fedora Core and other distros.
 </p><p>
  To do this, we implement our own shared object loader that reserves memory
-  that is important to Wine, and then loads the the standard shared object
+  that is important to Wine, and then loads the standard shared object
   loader (ELF interpreter), usually ld-linux.so.2
 </p><p>
  As Wine is i386 specific, we are not too worried about portability issues,

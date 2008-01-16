@@ -209,7 +209,7 @@ about the functions implemented in the various DLLs, and get a rough
 idea of what still needs to be done:
 <quote who="Francois Gouget">
 I analyzed the functions exported by each Windows Dll for Win95, Win98
-and Win2000 and compared them with what is found the the spec
+and Win2000 and compared them with what is found in the spec
 files. Here's the executive summary: 
 
 <p />
@@ -286,7 +286,7 @@ directly linked to your code). When your new module is loaded into
 memory before being executed, the dependencies will be resolved and
 the other libraries loaded (or almost, see below about delay
 loading).</li> 
-<li>by hand: in the code of your program, you need to explicitely load 
+<li>by hand: in the code of your program, you need to explicitly load 
 DL library <code>foo</code>, and then get the address of function
 <code>bar</code>. Using that function pointer, you can then invoke the
 function. This second method requires to write more code, but is
@@ -403,7 +403,7 @@ multiple names? Wine  simply creates for all DLLs embedded inside a
 requests one DLL to be the owner of the .so file. The resulting .so
 file is then named after the owner DLL's name (in our example
 <code>libshell32.so</code>). The build mechanism is now clear:
-generate the .so file from all the code (its name is derivated from
+generate the .so file from all the code (its name is derived from
 the owner name): for all the other DLLs (not the owner) in the .so
 file, creates a symbolic link from <code>lib<i>not_owner</i>.so</code>
 to <code>lib<i>owner</i>.so</code> (in our example, a symbolic link

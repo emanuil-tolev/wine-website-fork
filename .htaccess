@@ -10,7 +10,7 @@ ErrorDocument 404 http://www.winehq.org/site/404
 # Tell PHP how we want to handle global vars
 php_value register_globals 0
 
-# We want to use ";" as variable seperator (more XML compliant)
+# We want to use ";" as variable separator (more XML compliant)
 php_value arg_separator.output ";"
 php_value arg_separator.input ";&"
 

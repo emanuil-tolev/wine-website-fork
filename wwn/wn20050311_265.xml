@@ -164,7 +164,7 @@ of physics, check out Cornell's
 >
 <topic>Configuration</topic>
 <p>The winecfg tool (that someday will be used, we promise) needs
-a way to access the the complete underlying Unix filesystem.  It's a
+a way to access the complete underlying Unix filesystem.  It's a
 Winelib app, so there's multiple ways of doing this.  Michael Jung 
 put together a patch last week, but it wasn't committed.  He asked
 what was wrong with it:</p>

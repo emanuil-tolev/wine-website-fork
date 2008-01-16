@@ -398,7 +398,7 @@ Well, seeing this description, I could say only one thing : DRIVER PROBLEM
 </p><p>
 You description seems to imply that the glReadPixels call returns a
 completely black frame buffer (whereas the drawing seems to work well as
-shown when you remove the surface locking stuf). To be 100 % sure, you could
+shown when you remove the surface locking stuff). To be 100 % sure, you could
 enable the debug code in the Lock / Unlock case to have nice screenshots (if
 they are all black, that would show that :-) ).
 </p><p>

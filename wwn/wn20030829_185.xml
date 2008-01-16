@@ -420,7 +420,7 @@ looked useful,
 Oh well, they added some DDK docs in the MSDN (which were not really there
 last time I looked)...
 </p><p>
-But it's as we feared : they explicitely tells us that this interface may
+But it's as we feared : they explicitly tell us that this interface may
 change on each DirectX revision (which is normal as the driver interface
 need to change to accommodate more advanced graphic options). So we may have
 to rewrite 'old' DirectX code each time a new revision of the DDK comes out.

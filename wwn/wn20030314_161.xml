@@ -346,7 +346,7 @@ debugging process to get to the real source of the problems:
 <quote who="Mike Hearn">
  To be honest, debugging is something best done by somebody familiar with
  the app, and who actually has a copy. I don't know how much experience
- with coding you have, but I'd suggest you read the the wine users guide
+ with coding you have, but I'd suggest you read the wine user's guide
  and developers guide, those give an intro to debugging and sit down and
  work through the problems. For crashes, try using winedbg to get a
  backtrace, if you can get a good backtrace that can help with crashes.

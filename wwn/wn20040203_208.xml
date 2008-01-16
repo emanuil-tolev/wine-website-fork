@@ -56,7 +56,7 @@ Everyone gathered at CodeWeavers' office the next day at 8:30.
 Jeremy Newman, Jeremy White, and Joe Baker worked on getting the network and
 video stream set up.  The video needed to be streamed through
 CodeWeavers' ISP located five miles across town.  Newman and
-Jeremy ifdown'ed the the network interface to reset it but
+Jeremy ifdown'ed the network interface to reset it but
 realized after the fact they had effectively killed the network
 connection (kind of hard to ifup an interface on a server you can't
 talk to).  Hence, no

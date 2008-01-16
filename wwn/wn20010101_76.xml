@@ -166,7 +166,7 @@ quick access to hardware T&amp;L.
 
 <p />
 
-On the DirectDraw side, we've unified the code in the the x11 and DGA
+On the DirectDraw side, we've unified the code in the x11 and DGA
 drivers into a new more OO design, separating direct use of xlib from
 the core code. We've added an 'update thread' which should make
 non-DGA use almost as good as DGA, especially when combined with some

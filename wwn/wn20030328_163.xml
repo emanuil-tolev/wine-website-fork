@@ -451,7 +451,7 @@ user.  I could concoct tons of similar examples.  But I'll spare you the bandwid
 </p><p>
 In short: wine has relied on unix security historically, and it's been good 
 enough, because wine security / permissions implementations have been
-nonexistant or exceedingly simple.  Once we start getting more sophisticated
+nonexistent or exceedingly simple.  Once we start getting more sophisticated
 about W32 security (and it seems to me, based on recent discussion, that this
 time is coming sooner than later), it's going to be inappropriate to continue
 with this approach, because we don't want to encourage users to do wine

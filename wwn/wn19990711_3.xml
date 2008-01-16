@@ -357,7 +357,7 @@ So, unfortunately, there is no rule-of-thumb which load-order to use; you'll
 have to have a certain knowledge of what the DLL in question does, which
 other DLLs/features it requires etc. to make a case-by-case decision. For
 most users, it will probably be best to simply stay with the load-order
-settings laid out the the default wine.ini file. This default setting is
+settings laid out the default wine.ini file. This default setting is
 determined as follows: for all DLLs where there is a proper Wine
 implementation at all (i.e. not just stubs), or where the native DLL is
 known *not* to work, use built-in first. All others, use native.

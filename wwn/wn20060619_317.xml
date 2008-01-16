@@ -239,7 +239,7 @@ those apps.</li></ul></p></quote>
 
 This is an updated version of the VBO patch. The main difference is the
 integration with IWineD3DDevice::ProcessVertices which gives a nice
-performance boost for Half-Life 1 and propably Anarchy Online (not tested
+performance boost for Half-Life 1 and probably Anarchy Online (not tested
 yet).
 </p><p>
 What is missing is work with vertex shaders (awaiting the download of the dx8

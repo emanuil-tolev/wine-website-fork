@@ -194,7 +194,7 @@ After exchanging some mail, Patrik asked,
    errors, he told me about an idea of his : using exceptions to handle X
    errors.</p>
    <p>
-   This way, when we have to explicitely handle X errors (as we will need to do
+   This way, when we have to explicitly handle X errors (as we will need to do
    for XVidmode and XDGA2 due to some (stupidly done IMHO :-) ) security fixes
    in XFree 4.x), we could do that using exceptions.</p></quote>
 
