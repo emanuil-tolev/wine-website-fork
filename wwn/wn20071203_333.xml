@@ -6,7 +6,14 @@
 <author contact="http://www.bluesata.com">Zachary Goldberg</author>
 <issue num="333" date="12/2/2007" />
 <intro> <p>This is the 333rd issue of the Wine Weekly News publication.
-Its main goal is to bring back the WWN!  It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to bring back the WWN!
+It also serves to inform you of what's going on around Wine.
+Wine is an open source implementation of the Windows API on top of X and Unix.
+Think of it as a Windows compatibility layer.  Wine does not require Microsoft
+Windows, as it is a completely alternative implementation consisting of 100%
+Microsoft-free code, but it can optionally use native system DLLs if they are
+available.   You can find more info at
+<a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="607" size="878" contrib="128" multiples="72" lastweek="0">
 
 <person posts="57" size="63" who="julliard at winehq.org (Alexandre Julliard)" />
@@ -143,10 +150,21 @@ Its main goal is to bring back the WWN!  It also serves to inform you of what's 
 	posts="0"
 >
 <topic>Wine Weekly Newsletter</topic>
-<p>Hello world!  Okay sorry, I had to say it.  As you may be aware your loyal WWN author Brian Vincent has been unable to write the WWN for some time now.  I approached him a few weeks ago and offered my services to begin the weekly publications again.  He graciously agreed and sent me lots of resources etc. to begin.  And so, here I am. 
+<p>Hello world!  Okay sorry, I had to say it.  As you may be aware your loyal
+WWN author Brian Vincent has been unable to write the WWN for some time now.
+I approached him a few weeks ago and offered my services to begin the weekly
+publications again.  He graciously agreed and sent me lots of resources etc.
+to begin.  And so, here I am.
 </p>
 <p>
-A bit of shameless self promotion before I dedicate the rest of my life to providing you with quality Wine news.  I'm Zach Goldberg.  I work on a machine called <a href="http://www.bluesata.com">BlueSata</a> which is also my website and web server.  I am a computer science student at the University of Pennsylvania.  I have written some code for the <a href="http://enlightenment.org/">Enlightenment</a> (E17) project, and may perhaps in the future also send in some patches for wine.  So enough about me, I'm boring.  On with the wine!
+A bit of shameless self promotion before I dedicate the rest of my life to
+providing you with quality Wine news.  I'm Zach Goldberg.  I work on a
+machine called <a href="http://www.bluesata.com">BlueSata</a> which is also
+my website and web server.  I am a computer science student at the University
+of Pennsylvania.  I have written some code for the
+<a href="http://enlightenment.org/">Enlightenment</a> (E17) project, and may
+perhaps in the future also send in some patches for wine.  So enough about
+me, I'm boring.  On with the wine!
 </p>
 
 
@@ -162,13 +180,23 @@ A bit of shameless self promotion before I dedicate the rest of my life to provi
 >
 <topic>DirectX</topic>
 <p><quote who="Roderick Colenbrander">
-wined3d: Use native shader limits instead of the maximum the driver can handle in software.
-This should prevent software fallbacks and and second it will allow for ps2.0/ps3.0 detection.
+wined3d: Use native shader limits instead of the maximum the driver can handle
+in software. This should prevent software fallbacks and and second it will
+allow for ps2.0/ps3.0 detection.
 
-wined3d: Default to GLSL. This is safe because we now have proper ps2.0/vs2.0 detection.
+wined3d: Default to GLSL. This is safe because we now have proper ps2.0/vs2.0
+detection.
 </quote></p>
 <p>
-Its rare for the WWN to highlight individual commits however this one by Roderick Colenbrander actually could likely have an impact on the average (gaming) wine user.  This patch allows for natural detection and in combination with the  <a href="http://source.winehq.org/git/wine.git/?a=commit;h=59eba5cb41d165734468dcab0b38b56ff6c40ef0">following commit:</a> we now have the registry key "useGLSL" set to "enabled" by default.  This should mean that for many of us playing games such as <a href='http://appdb.winehq.org/objectManager.php?sClass=application&amp;iId=3150'>Elder Scrolls IV: Oblivion</a> may no longer have to set that key explicitly!  
+Its rare for the WWN to highlight individual commits however this one by
+Roderick Colenbrander actually could likely have an impact on the average
+(gaming) wine user.  This patch allows for natural detection and in
+combination with the
+<a href="http://source.winehq.org/git/wine.git/?a=commit;h=59eba5cb41d165734468dcab0b38b56ff6c40ef0">following
+commit:</a> we now have the registry key "useGLSL" set to "enabled" by
+default.  This should mean that for many of us playing games such as
+<a href='http://appdb.winehq.org/objectManager.php?sClass=application&amp;iId=3150'>Elder
+Scrolls IV: Oblivion</a> may no longer have to set that key explicitly!
 </p>
 
 
@@ -188,7 +216,12 @@ Its rare for the WWN to highlight individual commits however this one by Roderic
 	posts="7"
 >
 <topic>Applications</topic>
-<p>We all know that of the many uses for wine gaming is one of the more popular ones.  But just how many actual gamers are there using wine to play their favorite games?  Well, lucky for us Valve has begun to conduct surveys of the hardware and software configurations of people using their Steam system.  They've even been kind enough to respond to emails and give us some data.</p>
+<p>We all know that of the many uses for wine gaming is one of the more
+popular ones.  But just how many actual gamers are there using wine to play
+their favorite games?  Well, lucky for us Valve has begun to conduct surveys
+of the hardware and software configurations of people using their Steam
+system.  They've even been kind enough to respond to emails and give us some
+data.</p>
 <p><quote who="Scott Ritchie">
 Valve regularly runs surveys of steam users, where they profile many
 different things about the hardware.  They're nice enough to publish the
@@ -212,12 +245,14 @@ like the Wine one.  If even only a quarter of these "others" are using
 Wine, that still gives us 1% of the entire 10 million+ Steam user base,
 translating into hundreds of thousands of users.
 </p></quote></p><p>
-As you can see, its actually non-trivial to determine who uses wine simply from the drivers and such reported by the Steam survey.  However we seem to have caught a lucky break with the sound driver:</p>
+As you can see, its actually non-trivial to determine who uses wine simply
+from the drivers and such reported by the Steam survey.  However we seem to
+have caught a lucky break with the sound driver:</p>
 <p><quote who="Stefan Dosinger"><pre>
 More interesting is the "Video Card Driver Name":
 Video Card Driver Name
 
-nv4_disp.dll  10,269  
+nv4_disp.dll  10,269
 53.43 %#####################################################
   ati2dvag.dll  5,060  26.33 %##########################
   nvd3dum.dll  2,698  14.04 %##############
@@ -225,11 +260,11 @@ nv4_disp.dll  10,269
   ialmrnt5.dll  302  1.57 %##
   Other  319  1.66 %##
 
-This identifies the DLL, and wine has none of them. So we'd show up in the 
-Other section here. Possible others in Windows space are matrox, sis and 
+This identifies the DLL, and wine has none of them. So we'd show up in the
+Other section here. Possible others in Windows space are matrox, sis and
 other chips, as well as the generic vesa driver.
 
-The best identification is the sound card name, or if Wine's display driver 
+The best identification is the sound card name, or if Wine's display driver
 shows up as winex11.drv
 </pre>
 </quote></p>
@@ -255,7 +290,10 @@ The numbers are now 0.13% of total reports coming from Wine users.
 	posts="1"
 >
 <topic>Wine</topic>
-<p>Some of you may be very upset at the lack of a wine 0.9.50 last week.  Unfortunately many of the dev's were out stuffing themselves with turkey and hence a release last week made no sense.  However, this week has come and we have 0.9.50:</p>
+<p>Some of you may be very upset at the lack of a wine 0.9.50 last week.
+Unfortunately many of the dev's were out stuffing themselves with turkey and
+hence a release last week made no sense.  However, this week has come and we
+have 0.9.50:</p>
 <p><quote who="Alexander Juillard"><pre>
     Wine 0.9.50 was released today, with the following main changes:
 
@@ -264,7 +302,10 @@ The numbers are now 0.13% of total reports coming from Wine users.
         * More Valgrinding.
         * Lots of bug fixes.
 
-    Binary packages are in the process of being built and it may take a few days for them to appear, but the source is available now. You can find out more about this release in the announcement. Check out our download page for packages for your distribution.
+    Binary packages are in the process of being built and it may take a few
+days for them to appear, but the source is available now. You can find out
+more about this release in the announcement. Check out our download page for
+packages for your distribution.
 </pre></quote></p>
 
 
@@ -282,7 +323,10 @@ The numbers are now 0.13% of total reports coming from Wine users.
 	posts="9"
 >
 <topic>Code</topic>
-<p>Kai Blin brings up the topic of planning out this summer's Google Summer of Code projects.  The problem, he explains, is that projects were not extremly well defined and communication was not as good as it could have been.  All easily solvable.</p>
+<p>Kai Blin brings up the topic of planning out this summer's Google Summer
+of Code projects.  The problem, he explains, is that projects were not
+extremly well defined and communication was not as good as it could have
+been.  All easily solvable.</p>
 <p><quote who="Kai Blin">
 Hi folks,<br />
 <p>
@@ -329,7 +373,9 @@ Comments?
 Kai
 </p></quote></p>
 <p>
-General response is that 'organization sounds like a good idea'.  Maarten Lankhorst recommended that instead of a quiz to screen students, there be a requirement that they submit small patches.
+General response is that 'organization sounds like a good idea'.  Maarten
+Lankhorst recommended that instead of a quiz to screen students, there be a
+requirement that they submit small patches.
 </p>
 <p><quote who="Maarten Lankhorst">
 I don't like the idea of a quiz as well, what would be a better test is
@@ -338,7 +384,10 @@ component they want to work on. It shouldn't be big, but it proves they
 can get code into wine.
 </quote></p>
 
-Jesse Allen then wrote in to discuss his experience working as a student in GSoC 2006.  In general he explains that if some of the discussed features were implemented (public blogs, public git repositories etc.) they most certainly would have been used and been a great resource.
+Jesse Allen then wrote in to discuss his experience working as a student in
+GSoC 2006.  In general he explains that if some of the discussed features
+were implemented (public blogs, public git repositories etc.) they most
+certainly would have been used and been a great resource.
 
 
 
@@ -356,21 +405,23 @@ Jesse Allen then wrote in to discuss his experience working as a student in GSoC
 	posts="4"
 >
 <topic>Code</topic>
-<p>Gavriel State of Transgaming has been hanging around on one of wine's IRC Channels (#winehackers) and in a conversation with Kai Blin actually offered code for something Transgaming has already begun to implement:
+<p>Gavriel State of Transgaming has been hanging around on one of wine's IRC
+Channels (#winehackers) and in a conversation with Kai Blin actually offered
+code for something Transgaming has already begun to implement:
 </p>
 <p><quote author="Gavrial State">
 Hi all,<br />
 <br />
 <p>
-On #winehackers the other day, kblin asked about whether TransGaming had 
-a Direct Play implementation.  The answer is that we have something that 
-was worked on for a while but never completed.  We have had some partial 
-success with it in the initial connection stages, but never pushed it 
+On #winehackers the other day, kblin asked about whether TransGaming had
+a Direct Play implementation.  The answer is that we have something that
+was worked on for a while but never completed.  We have had some partial
+success with it in the initial connection stages, but never pushed it
 much beyond that.
 </p><p>
-Enclosed here is a patch to today's WineHQ git tree with our dpnet 
-implementation in the hopes that someone finds it useful.  Beyond 
-ensuring that it compiles and links, it has not been tested at all with 
+Enclosed here is a patch to today's WineHQ git tree with our dpnet
+implementation in the hopes that someone finds it useful.  Beyond
+ensuring that it compiles and links, it has not been tested at all with
 WineHQ.
 </p><p>
 Take care,<br />
@@ -380,16 +431,18 @@ Kai is of course quiet happy:
 <p><quote who="Kai Blin">
 Hi Gav,<br />
 <br />
-Thanks for getting back with that one faster than I managed to remind you 
-about it.  I hope to get around playing with it later this week, I'm currently somewhat 
-busy writing code I'm getting paid for. :)
+Thanks for getting back with that one faster than I managed to remind you
+about it.  I hope to get around playing with it later this week, I'm
+currently somewhat busy writing code I'm getting paid for. :)
 </quote></p>
 
-Later though, in Kai's attempts to apply the patch there were some small issues.  However, he made Gavriel aware of them and within a day or 2 Gavriel responded with the following:
+Later though, in Kai's attempts to apply the patch there were some small
+issues.  However, he made Gavriel aware of them and within a day or 2 Gavriel
+responded with the following:
 <p><quote who="Gavriel State">
 Hi Kai,
 
-Sorry about that - looks like I hadn't in fact updated my git tree quite 
+Sorry about that - looks like I hadn't in fact updated my git tree quite
 properly.  Also, I left out a header file I think. Try this patch instead.
 
 Take care,
@@ -443,7 +496,9 @@ http://wiki.winehq.org/WineReleaseCriteria
 has a handy link to a bugzilla query that shows the list of 1.0 bugs.
 </quote></p>
 
-Wine 1.0 is a topic that seems to crop up now and then; hopefully in the near future we'll see that list of ~80 bugs dwindle into the single digits and we'll have a big release (and a party, of course)!
+Wine 1.0 is a topic that seems to crop up now and then; hopefully in the near
+future we'll see that list of ~80 bugs dwindle into the single digits and
+we'll have a big release (and a party, of course)!
 
 
 
@@ -461,7 +516,13 @@ Wine 1.0 is a topic that seems to crop up now and then; hopefully in the near fu
 	posts="1"
 >
 <topic>Wine</topic>
-<p>Courtesy of some very complicated patches introduced recently (for SecureROM) Wine will no longer build properly using GCC 4.0.X.  Even as somebody who studies computer science the actual thread discussing the details of these patches and why they break compilation in certain versions of GCC is extremely complicated.  However, if you dare, <a href="http://bugs.winehq.org/show_bug.cgi?id=10273"> this is the link </a> with all the juicy details.
+<p>Courtesy of some very complicated patches introduced recently (for
+SecureROM) Wine will no longer build properly using GCC 4.0.X.  Even as
+somebody who studies computer science the actual thread discussing the
+details of these patches and why they break compilation in certain versions
+of GCC is extremely complicated.  However, if you dare,
+<a href="http://bugs.winehq.org/show_bug.cgi?id=10273"> this is the link </a>
+with all the juicy details.
 </p>
 <p><quote who="Dan Kegel"><pre>
 Attention packagers: the default version of gcc on
