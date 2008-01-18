@@ -6,7 +6,14 @@
 <author contact="http://www.bluesata.com">Zachary Goldberg</author>
 <issue num="334" date="12/10/2007" />
 <intro> <p>This is the 334 issue of the Wine Weekly News publication.
-Its main goal is to introduce the new AppDB Status changer It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to introduce the new AppDB Status changer
+It also serves to inform you of what's going on around Wine.
+Wine is an open source implementation of the Windows API on top of X and Unix.
+Think of it as a Windows compatibility layer.  Wine does not require Microsoft
+Windows, as it is a completely alternative implementation consisting of 100%
+Microsoft-free code, but it can optionally use native system DLLs if they are
+available.   You can find more info at
+<a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="140" size="227" contrib="63" multiples="26" lastweek="0">
 
 <person posts="12" size="13" who="julliard at winehq.org (Alexandre Julliard)" />
@@ -82,11 +89,23 @@ Its main goal is to introduce the new AppDB Status changer It also serves to inf
 >
 <topic>Wine on Linux</topic>
 <p>
-As you may have read the <a href="http://www.desktoplinux.com/news/NS8454912761.html">Annual Linux Desktop Survey Results</a> are in for the year.  Theres the usual bit about what browser people use and their favorite distribution.  However, the folk over at <a href="http://linuxdesktop.com">linuxdesktop.com</a> have also included some interesting information on how people run windows applications on Linux.  Their results can be summed up with the following text and chart:
+As you may have read the <a href="http://www.desktoplinux.com/news/NS8454912761.html">Annual
+Linux Desktop Survey Results</a> are in for the year.  Theres the usual bit
+about what browser people use and their favorite distribution.  However, the
+folk over at <a href="http://linuxdesktop.com">linuxdesktop.com</a> have also
+included some interesting information on how people run windows applications
+on Linux.  Their results can be summed up with the following text and chart:
 <quote><p>
-Of those that do, many turn to Wine (Wine Is Not an Emulator ), which runs the Windows API (application program interface) on top of Linux. More than 44 percent use Wine for their Windows applications needs.
+Of those that do, many turn to Wine (Wine Is Not an Emulator ), which runs the
+Windows API (application program interface) on top of Linux. More than 44
+percent use Wine for their Windows applications needs.
 
-I suspect that many Wine users actually use Wine with the help of programs that makes deploying Windows applications on Linux easier. However, of the two most important of these programs, Cedega, which specializes in running Windows games on Linux, and CrossOver, which focuses on Windows business and productivity applications, only 6 percent of our survey respondents said they used Cedega, while even less, 5 percent, said they used CrossOver.
+I suspect that many Wine users actually use Wine with the help of programs
+that makes deploying Windows applications on Linux easier. However, of the two
+most important of these programs, Cedega, which specializes in running Windows
+games on Linux, and CrossOver, which focuses on Windows business and
+productivity applications, only 6 percent of our survey respondents said they
+used Cedega, while even less, 5 percent, said they used CrossOver.
 
 <div align="center">
 <a href="http://www.desktoplinux.com/news/NS9488592005.html"><img border="0" src="http://desktoplinux.com/files/misc/2007-windowsappsonlinux.jpg" /></a>
@@ -94,11 +113,23 @@ I suspect that many Wine users actually use Wine with the help of programs that 
 </p>
 </quote>
 <p>
-Desktoplinux's Steven Vaughan-Nichols writes in a <a href="http://www.desktoplinux.com/news/NS9488592005.html"> separate  article</a> also highlights how linux users feel about applications:
+Desktoplinux's Steven Vaughan-Nichols writes in a
+<a href="http://www.desktoplinux.com/news/NS9488592005.html">separate
+article</a> also highlights how linux users feel about applications:
 <quote><p>
-Given a choice of applications to run on their Linux desktops, most users would prefer to run a native Linux application rather than a Windows application. In particular -- Adobe take note -- Linux users continue to really want Linux versions of Adobe's Photoshop and Dreamweaver. These were numbers one and three on the Linux users' Windows application migration wish list. Autodesk's AutoCAD was number two.
+Given a choice of applications to run on their Linux desktops, most users
+would prefer to run a native Linux application rather than a Windows
+application. In particular -- Adobe take note -- Linux users continue to
+really want Linux versions of Adobe's Photoshop and Dreamweaver. These were
+numbers one and three on the Linux users' Windows application migration wish
+list. Autodesk's AutoCAD was number two.
 
-If Linux users can't run a particular application on Linux, and there's no native program that gives them similar functionality, they're almost perfectly divided between three different methods to get them their required program. These are using WINE, or a software built on WINE, such as Crossover Linux, to run the Windows application in Linux; virtualization; and switching to a browser-based application, such as Google Docs.
+If Linux users can't run a particular application on Linux, and there's no
+native program that gives them similar functionality, they're almost perfectly
+divided between three different methods to get them their required program.
+These are using WINE, or a software built on WINE, such as Crossover Linux, to
+run the Windows application in Linux; virtualization; and switching to a
+browser-based application, such as Google Docs.
 </p></quote></p>
 </p>
 </section>
@@ -109,7 +140,10 @@ If Linux users can't run a particular application on Linux, and there's no nativ
 	posts="0"
 >
 <topic>WineReview</topic>
-<p><a href="http://wiki.winehq.org/TomWickline">Tom Wickline</a> has begun a <a href="http://wine-review.blogspot.com/">"Wine-Review" blog</a>.  He writes about his experiences trying every windows application he can find on as many different platforms he can find. </p>
+<p><a href="http://wiki.winehq.org/TomWickline">Tom Wickline</a> has begun a
+<a href="http://wine-review.blogspot.com/">"Wine-Review" blog</a>.  He writes
+about his experiences trying every windows application he can find on as many
+different platforms he can find.</p>
 <quote><p>
 <p>
 The goal of the blog is to post about Wine (and to help people) on any
@@ -122,7 +156,8 @@ there favorite applications and games. And to be a source for help and
 suggestions.
 </p></p></quote>
 <p>
-Tom's blog has done very well thus far; hes quoted to me that he estimates nearly 100,000 hits per month.  He is also seeking contributors to his blog.
+Tom's blog has done very well thus far; hes quoted to me that he estimates
+nearly 100,000 hits per month.  He is also seeking contributors to his blog.
 </p>
 <quote><p>
 I plan to seek other contributors to the blog as well..... I cant own
@@ -145,13 +180,24 @@ about Wine on that platform.
 >
 <topic>DiB Engine</topic>
 <p>
-<p>The DiB (Device Independent Bitmap) engine is one of the few remaining "large" issues that in general the community believes needs to be implemented.  The only issue with that is that implementing the DiB is actually very difficult.  At present WINE gets around having a DiB engine by translating the calls into something X can handle, lets X do the legwork and then translates the results back.  This is for the most part an effective solution, however its known to be inefficient and not without its problems.  Alex Juillard has expressed opinion that implementing a proper DiB engine will likely be done post 1.0.  See <a href="http://wiki.winehq.org/DIBEngine">the wiki page</a> on DiB for more information.</p>
+<p>The DiB (Device Independent Bitmap) engine is one of the few remaining
+"large" issues that in general the community believes needs to be implemented.
+The only issue with that is that implementing the DiB is actually very
+difficult.  At present WINE gets around having a DiB engine by translating the
+calls into something X can handle, lets X do the legwork and then translates
+the results back.  This is for the most part an effective solution, however
+its known to be inefficient and not without its problems.  Alex Juillard has
+expressed opinion that implementing a proper DiB engine will likely be done
+post 1.0.  See <a href="http://wiki.winehq.org/DIBEngine">the wiki page</a> on
+DiB for more information.</p>
 <p>
-In light of all this, Piotr Maceluch writes in to find out the current status of the DiB Engine.
+In light of all this, Piotr Maceluch writes in to find out the current status
+of the DiB Engine.
 </p>
 <p><quote who="Piotr Maceluch">
 <p>Hi,</p>
-<p>what's the status of DIB engine (or where can one read about it)? Are the up-to-date sources still available? What kind of help would be needed?</p>
+<p>what's the status of DIB engine (or where can one read about it)? Are the
+up-to-date sources still available? What kind of help would be needed?</p>
 <p>
 Thanks<br />
   Peter Maceluch
@@ -193,7 +239,10 @@ Jesse
 <topic>Licensing</topic>
 <p>
 <p>
-Alexander S generated a bit of discussion a couple weeks ago when he introduced a change in the AppDB's license to the AGPL.  Of course a change of license like this requires the approval of all authors involved and so the list asked all authors for consent; it appears all confirm.
+Alexander S generated a bit of discussion a couple weeks ago when he
+introduced a change in the AppDB's license to the AGPL.  Of course a change of
+license like this requires the approval of all authors involved and so the
+list asked all authors for consent; it appears all confirm.
 <br /><br />
 <p>
 Trent Waddington kicks it off recognizing that all authors need to approve:
@@ -245,9 +294,19 @@ Yup, I'm ok with that change.
 </p>
 
 <p>
-For those of you who appreciate such a thing, the following is the key difference between the GPL and AGPL (from <a href="http://www.affero.org/oagf.html">affero.org</a>)
+For those of you who appreciate such a thing, the following is the key
+difference between the GPL and AGPL (from
+<a href="http://www.affero.org/oagf.html">affero.org</a>)
 <quote><p>
-Section 2(d) reads as follows: " If the Program as you received it is intended to interact with users through a computer network and if, in the version you received, any user interacting with the Program was given the opportunity to request transmission to that user of the Program's complete source code, you must not remove that facility from your modified version of the Program or work based on the Program, and must offer an equivalent opportunity for all users interacting with your Program through a computer network to request immediate transmission by HTTP of the complete source code of your modified version or other derivative work."
+Section 2(d) reads as follows: " If the Program as you received it is intended
+to interact with users through a computer network and if, in the version you
+received, any user interacting with the Program was given the opportunity to
+request transmission to that user of the Program's complete source code, you
+must not remove that facility from your modified version of the Program or
+work based on the Program, and must offer an equivalent opportunity for all
+users interacting with your Program through a computer network to request
+immediate transmission by HTTP of the complete source code of your modified
+version or other derivative work."
 </p></quote></p>
 </p>
 
@@ -260,7 +319,11 @@ Section 2(d) reads as follows: " If the Program as you received it is intended t
 >
 <topic>Valgrind</topic>
 <p>
-Getting sick of having to run reports by hand, Dan Kegel writes in with information about his new <a href="http://valgrind.org/">valgrind</a> script.  Valgrind is a profiling tool used to help track memory leaks.  Wine developers regularly check for leaks and make all possible efforts to keep them to a minimum.
+Getting sick of having to run reports by hand, Dan Kegel writes in with
+information about his new <a href="http://valgrind.org/">valgrind</a> script.
+Valgrind is a profiling tool used to help track memory leaks.  Wine developers
+regularly check for leaks and make all possible efforts to keep them to a
+minimum.
 </p>
 <quote who="Dan Kegel">
 <p>
@@ -302,7 +365,8 @@ That means the hlink test has one fewer error.  Yay!
 </p>
 </quote>
 <p>
-Of course, while the new script is nice, its also git its kinks and things Dan would like to see improved/changed.
+Of course, while the new script is nice, its also git its kinks and things Dan
+would like to see improved/changed.
 </p>
 <quote><p>
 I'll try to keep running this script daily, but it'd be nice if
@@ -325,12 +389,15 @@ but hey, what's life without challenges.
 >
 <topic>shdocvw.dll</topic>
 <p>
-On a bit of a lighter note there was some discussion on what WINE should set as its default homepage in IE.  It all began with the a patch from Jacek Caban which sets the default homepage to winehq.com  However, Aric Stewart was quick to point out the problem with the patch.
+On a bit of a lighter note there was some discussion on what WINE should set
+as its default homepage in IE.  It all began with the a patch from Jacek Caban
+which sets the default homepage to winehq.com  However, Aric Stewart was quick
+to point out the problem with the patch.
 </p>
 <quote who="Aric Stewart"><p>
-I see that the native shdocvw sets neither the Start page nor the Search 
-page when registered. This patch forces the users home page to initially 
-be www.winehq.com which can be confusing to IE users who are expecting 
+I see that the native shdocvw sets neither the Start page nor the Search
+page when registered. This patch forces the users home page to initially
+be www.winehq.com which can be confusing to IE users who are expecting
 the normal default of msn.com
 </p><p>
 While amusing I do not think this is correct.<br />
@@ -351,7 +418,8 @@ Steven Edwards<br />
 </p>
 </quote>
 <p>
-Jacek Caban tries to clarify the issue with his reasoning behind the patch in the first place.
+Jacek Caban tries to clarify the issue with his reasoning behind the patch in
+the first place.
 </p>
 <quote><p>
 Native shdocvw.dll doesn't support self registration at all and its
@@ -391,7 +459,13 @@ typelib, nothing else like coclasses. I will do more testing later today.
 >
 <topic>Wine</topic>
 <p>
-In addition to the monumental task of implementing and replicating native behavior of the Windows API WINE has to also manage to do it with near-native speeds.  Phoronix has recently <a href="http://www.phoronix.com/scan.php?page=article&amp;item=938&amp;num=1">Benchmarked</a> a series of different wine versions.  Their results are indeed interesting and highlight the importance of remembering both of the goals WINE strives to achieve, compatibility and efficiency.
+In addition to the monumental task of implementing and replicating native
+behavior of the Windows API WINE has to also manage to do it with near-native
+speeds.  Phoronix has recently
+<a href="http://www.phoronix.com/scan.php?page=article&amp;item=938&amp;num=1">Benchmarked</a>
+a series of different wine versions.  Their results are indeed interesting and
+highlight the importance of remembering both of the goals WINE strives to
+achieve, compatibility and efficiency.
 </p>
 <p>Jonathan Ernst writes in to link wine-devel to the article</p>
 <p><quote who="Jonathan Ernst"><p>
@@ -427,10 +501,17 @@ might be wrong.
 Bryan Haskins think's its an 8-Series:
 </p>
 <quote><p>
-Phoronix often uses the 8 series cards when not testing things like driver versions, we can probably assume they did use an 8 series.
+Phoronix often uses the 8 series cards when not testing things like driver
+versions, we can probably assume they did use an 8 series.
 </p></quote>
 <p>
-So the issue of why Phoronix obtained such odd results in .49 and .50 remains.  This is a good time however to discuss the <a href="http://www.phoronix.com/vr.php?view=11539">bug</a> mentioned originally by Jonathan Ernst.   Indeed, this bug, related to a patch by Stefan Dosinger, seems to have stirred the hornet's nest of late.  The patch fixes some graphical glitches but introduced a couple cases in which performance was severely crippled.  Stefan however is working hard to fix these cases.
+So the issue of why Phoronix obtained such odd results in .49 and .50 remains.
+This is a good time however to discuss the
+<a href="http://www.phoronix.com/vr.php?view=11539">bug</a> mentioned
+originally by Jonathan Ernst.   Indeed, this bug, related to a patch by Stefan
+Dosinger, seems to have stirred the hornet's nest of late.  The patch fixes
+some graphical glitches but introduced a couple cases in which performance was
+severely crippled.  Stefan however is working hard to fix these cases.
 </p>
 <p>
 In reference to the same patch, Stefan <a href="http://www.winehq.org/pipermail/wine-devel/2007-December/061026.html">writes</a>:
@@ -449,10 +530,12 @@ situation left where shaders recompile all over.
 	posts="0"
 >
 <topic>AppDB</topic>
-<p><i>*Disclaimer: This list of changes is automatically  generated by information entered into the AppDB.
-These results are subject to the opinions of the users submitting application reviews.  
-The WINE community does not guarantee that even though an application may be upgraded to 'Gold' or 'Platinum' in this list that you
-will have the same experience and would provide a similar rating</i></p>
+<p><i>*Disclaimer: This list of changes is automatically  generated by
+information entered into the AppDB. These results are subject to the opinions
+of the users submitting application reviews. The WINE community does not
+guarantee that even though an application may be upgraded to 'Gold' or
+'Platinum' in this list that you will have the same experience and would
+provide a similar rating</i></p>
 <div align="center">
    <b><u>Updates by App Maintainers</u></b><br /><br />
     <table width="80%" border="1" bordercolor="#222222" cellspacing="0" cellpadding="3">
