@@ -6,7 +6,14 @@
 <author contact="http://www.bluesata.com">Zachary Goldberg</author>
 <issue num="336" date="12/24/2007" />
 <intro> <p>This is the 336 issue of the Wine Weekly News publication.
-Its main goal is to highlight how well wine works. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to highlight how well wine works.
+It also serves to inform you of what's going on around Wine.
+Wine is an open source implementation of the Windows API on top of X and Unix.
+Think of it as a Windows compatibility layer.  Wine does not require Microsoft
+Windows, as it is a completely alternative implementation consisting of 100%
+Microsoft-free code, but it can optionally use native system DLLs if they are
+available.   You can find more info at
+<a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="143" size="216" contrib="53" multiples="28" lastweek="28">
 
 <person posts="11" size="12" who="julliard at winehq.org (Alexandre Julliard)" />
@@ -72,18 +79,33 @@ Its main goal is to highlight how well wine works. It also serves to inform you 
 >
 <topic>News</topic>
 <p>
-Picasa, Google's now famous iPhoto-style application now has a <a href="http://picasa.google.com/linux/download.html">new version</a> for Linux.  Picasa is notable because it runs on some native code, but mostly on windows binaries running with WINE.  From what i've read, its gotten some nice new features and is overall "<a href="http://blog.wired.com/monkeybites/2007/12/picasa-new-linu.html">snappy</a> " (from wired):
+Picasa, Google's now famous iPhoto-style application now has a
+<a href="http://picasa.google.com/linux/download.html">new version</a> for
+Linux.  Picasa is notable because it runs on some native code, but mostly on
+windows binaries running with WINE.  From what i've read, its gotten some
+nice new features and is overall
+"<a href="http://blog.wired.com/monkeybites/2007/12/picasa-new-linu.html">snappy</a>
+(from wired):
 <quote><p>
-Google has released a beta preview of Picasa 2.7 for Linux adding web album integration, more editing features and better RAW support. The new beta still isn't a native app (much of its code comes from the Windows version and runs via the included Wine components), but it does run considerably faster and the web album features will be welcome news for Picasa Web users.
+Google has released a beta preview of Picasa 2.7 for Linux adding web album
+integration, more editing features and better RAW support. The new beta still
+isn't a native app (much of its code comes from the Windows version and runs
+via the included Wine components), but it does run considerably faster and
+the web album features will be welcome news for Picasa Web users.
 </p><p>
-[...] Picasa's RAW support "just works" much better than any of the other options I've tried, and it remains (even as a beta) quite snappy and stable.</p>
+[...] Picasa's RAW support "just works" much better than any of the other
+options I've tried, and it remains (even as a beta) quite snappy and
+stable.</p>
 </quote>
 </p>
 <br /><br />
 <br />
 <br />
 <p>
-So it has come to my attention that there have been several typos of the names of several prominent Winesman.  I'de like to apologize to Mr. Julliard in particular :).  Will make my best effort to not mess that up.  If you notice any such errors please do bring them to my attention.  </p></section>
+So it has come to my attention that there have been several typos of the
+names of several prominent Winesman.  I'de like to apologize to Mr. Julliard
+in particular :).  Will make my best effort to not mess that up.  If you
+notice any such errors please do bring them to my attention.</p></section>
 <section 
 	title="Linux Journal: Selling WINE Compatibility"
 	subject="Wine in the Market"
@@ -92,14 +114,24 @@ So it has come to my attention that there have been several typos of the names o
 >
 <topic>Wine in the Market</topic>
 <p>
-I've started to hear and read things sounding something like "Runs <font style="text-decoration: line-through;">On Windows</font> with WINE".  Catchy, ain't it?  This was prompted by an <a href="http://www.linuxjournal.com/node/1005911">article</a> in the <a href="http://www.linuxjournal.com">Linux Journal</a> recently.
+I've started to hear and read things sounding something like "Runs
+<font style="text-decoration: line-through;">On Windows</font> with WINE".
+Catchy, ain't it?  This was prompted by an
+<a href="http://www.linuxjournal.com/node/1005911">article</a> in the
+<a href="http://www.linuxjournal.com">Linux Journal</a> recently.
 
 
 
 </p>
 <quote>
 <p>
-As more musicians migrate from Windows to Linux we can expect greater demand for those users' Olde Favorites to run under Linux, either natively or in some other environment (emulation, virtualization). Though that migration is now only a mere trickle, it's been growing and will continue to grow. Some Windows-based audio software developers have already extended their marketing by positioning their programs as viable under <a href="http://www.winehq.com">Wine</a>.
+As more musicians migrate from Windows to Linux we can expect greater demand
+for those users' Olde Favorites to run under Linux, either natively or in
+some other environment (emulation, virtualization). Though that migration is
+now only a mere trickle, it's been growing and will continue to grow. Some
+Windows-based audio software developers have already extended their marketing
+by positioning their programs as viable under
+<a href="http://www.winehq.com">Wine</a>.
 </p>
 
 <p></p><center><img src="http://linux-sound.org/images/blog/full-size/3-reaper.png" width="500"/></center>
@@ -113,7 +145,9 @@ As more musicians migrate from Windows to Linux we can expect greater demand for
 >
 <topic>AppDB</topic>
 <p>
-Alexander Nicolaysen Sørnes has been rather diligent recently with a handful of user-visible AppDB Changes/Updates.  Some of which may be useful to some WWN readers:</p>
+Alexander Nicolaysen Sørnes has been rather diligent recently with a handful
+of user-visible AppDB Changes/Updates.  Some of which may be useful to some
+WWN readers:</p>
 <quote><p>
 [AppDB] Display a note when viewing old test results<br />
 [AppDB] Allow users to delete/modify their queued apps<br />
@@ -131,15 +165,28 @@ Alexander Nicolaysen Sørnes has been rather diligent recently with a handful of
 <topic>State of WINE</topic>
 <p>
 
-(Thanks Dan Kegel for the link).  The beloved leader of WINE, <a href="http://en.wikipedia.org/wiki/Alexandre_Julliard">Alexandre Julliard</a>, was recently spotted in a <a href="http://www.lugradio.org/episodes/90">radio interview</a> with <a href="http://www.lugradio.org/">LugRadio</a>.  Its a 9 minute interview (starting from 2:02) which is fairly entertaining.  I'll be reading AJ's postes from now on with his accent in my head!  He talks a bit about Wine 1.0 (1 dot 0 as AJ says it), the state of WINE and its progress towards supporting new applications like Office 12 etc.  He also talks, in a very comical portion of the interview, about the quality of the Windows API:
+(Thanks Dan Kegel for the link).  The beloved leader of WINE,
+<a href="http://en.wikipedia.org/wiki/Alexandre_Julliard">Alexandre Julliard</a>,
+was recently spotted in a <a href="http://www.lugradio.org/episodes/90">radio
+interview</a> with <a href="http://www.lugradio.org/">LugRadio</a>.  Its a 9
+minute interview (starting from 2:02) which is fairly entertaining.  I'll be
+reading AJ's postes from now on with his accent in my head!  He talks a bit
+about Wine 1.0 (1 dot 0 as AJ says it), the state of WINE and its progress
+towards supporting new applications like Office 12 etc.  He also talks, in a
+very comical portion of the interview, about the quality of the Windows API:
 </p>
 
 <quote><p>
 <table><tr><td width="100" valign="top">
-Lug Host:</td><td>Given that you have never seen the windows source code but that you've uh... reimplemented a lot of it; do you think Microsoft did a good job designing Windows?</td></tr><tr><td valign="top">
-AJ:</td><td> Oh No Definitely not.  Its a huge piece of crap and we find more crap every day</td></tr>
-<tr><td valign="top">Lug Host:</td><td> Congrats on having spent 15 years re-implementing crap</td></tr>
-<tr><td valign="top" >AJ:</td><td> that's the beauty of it, we try and make something nice from crap</td></tr>
+Lug Host:</td><td>Given that you have never seen the windows source code but
+that you've uh... reimplemented a lot of it; do you think Microsoft did a
+good job designing Windows?</td></tr><tr><td valign="top">
+AJ:</td><td> Oh No Definitely not.  Its a huge piece of crap and we find more
+crap every day</td></tr>
+<tr><td valign="top">Lug Host:</td><td> Congrats on having spent 15 years
+re-implementing crap</td></tr>
+<tr><td valign="top" >AJ:</td><td> that's the beauty of it, we try and make
+something nice from crap</td></tr>
 <tr><td valign="top" >Lug Host:</td><td> well good work</td></tr></table>
 </p></quote></section>
 <section 
@@ -150,7 +197,8 @@ AJ:</td><td> Oh No Definitely not.  Its a huge piece of crap and we find more cr
 >
 <topic>History</topic>
 <p>
-Dan Kegel has done some research to find the early beginnings of WINE; to find where it all began.
+Dan Kegel has done some research to find the early beginnings of WINE; to
+find where it all began.
 </p>
 <quote><p>
 winehq.org doesn't seem to have a link to the message
@@ -188,7 +236,8 @@ volunteers the next day:<br />
 
 </p></quote>
 <p>
-Of course this thread wouldn't be complete without  Alexandre Julliard also reliving old memories:
+Of course this thread wouldn't be complete without  Alexandre Julliard also
+reliving old memories:
 </p>
 <quote><p>
 The 0.0.2 release was on June 29, and 0.0.1 was about a week before
@@ -285,9 +334,12 @@ Wine 1.0 Release Manager
 	posts="0"
 >
 <topic>AppDB</topic>
-<p><i>*Disclaimer: This list of changes is automatically  generated by information entered into the AppDB.
-These results are subject to the opinions of the users submitting application reviews.  
-The WINE community does not guarantee that even though an application may be upgraded to 'Gold' or 'Platinum' in this list, that you
+<p><i>*Disclaimer: This list of changes is automatically  generated by
+information entered into the AppDB.
+These results are subject to the opinions of the users submitting application
+reviews.
+The WINE community does not guarantee that even though an application may be
+upgraded to 'Gold' or 'Platinum' in this list, that you
 will have the same experience and would provide a similar rating.</i></p>
 <div align="center">
    <b><u>Updates by App Maintainers</u></b><br /><br />
