@@ -6,7 +6,14 @@
 <author contact="http://www.bluesata.com">Zachary Goldberg</author>
 <issue num="335" date="12/17/2007" />
 <intro> <p>This is the 335 issue of the Wine Weekly News publication.
-Its main goal is to  celebrate wine 0.9.51. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to  celebrate wine 0.9.51.
+It also serves to inform you of what's going on around Wine.
+Wine is an open source implementation of the Windows API on top of X and Unix.
+Think of it as a Windows compatibility layer.  Wine does not require Microsoft
+Windows, as it is a completely alternative implementation consisting of 100%
+Microsoft-free code, but it can optionally use native system DLLs if they are
+available.   You can find more info at
+<a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="251" size="361" contrib="78" multiples="36" lastweek="37">
 
 <person posts="22" size="21" who="julliard at winehq.org (Alexandre Julliard)" />
@@ -96,7 +103,10 @@ Its main goal is to  celebrate wine 0.9.51. It also serves to inform you of what
 	posts="1"
 >
 <topic>Release</topic>
-<p><b>*Editor's Note</b>: I apologize for the (somewhat) tardyness and brevity of this issue.  It was finals week here.  Fun fun.  Also, I'm still looking for suggestions/opinions on how to make the weekly 'AppDB Status Changes' section more meaningful/accurate/easier to look at.</p>
+<p><b>*Editor's Note</b>: I apologize for the (somewhat) tardyness and
+brevity of this issue.  It was finals week here.  Fun fun.  Also, I'm still
+looking for suggestions/opinions on how to make the weekly 'AppDB Status
+Changes' section more meaningful/accurate/easier to look at.</p>
 <br />
 A new wine was released this week:
 <quote><p>
@@ -135,20 +145,42 @@ You will find documentation on
 	posts="9"
 >
 <topic>DirectX</topic>
-<p>So, this may be a different type of post for the WWN; I'm going to go for some educational content related to Wine.  I was reading the devel the other day when I stumbled upon <a href="http://www.winehq.org/pipermail/wine-devel/2007-December/061061.html">this thread</a>.  It seemed really interesting, DX10 stuff, shaders; all really cool.  But what the heck is HLSL and GLSL?  I could only half make sense of the actual conversation!</p>
+<p>So, this may be a different type of post for the WWN; I'm going to go for
+some educational content related to Wine.  I was reading the devel the other
+day when I stumbled upon
+<a href="http://www.winehq.org/pipermail/wine-devel/2007-December/061061.html">this
+thread</a>.  It seemed really interesting, DX10 stuff, shaders; all really
+cool.  But what the heck is HLSL and GLSL?  I could only half make sense of
+the actual conversation!</p>
 <p>
-So, a bit of background on these funky acronyms before we dive into the thread itself (Most of the info from <a href="http://wikipedia.org">wikipedia</a></p>
+So, a bit of background on these funky acronyms before we dive into the
+thread itself (Most of the info from
+<a href="http://wikipedia.org">wikipedia</a></p>
 <quote><p>
-<a href="http://en.wikipedia.org/wiki/GLSL">GLSL</a> (Open<b>GL</b> <b>S</b>hading <b>L</b>anguage): also known as GLslang, is a high level shading language based on the C programming language. It was created by the OpenGL ARB to give developers more direct control of the graphics pipeline without having to use assembly language or hardware-specific languages.
+<a href="http://en.wikipedia.org/wiki/GLSL">GLSL</a> (Open<b>GL</b>
+<b>S</b>hading <b>L</b>anguage): also known as GLslang, is a high level
+shading language based on the C programming language. It was created by the
+OpenGL ARB to give developers more direct control of the graphics pipeline
+without having to use assembly language or hardware-specific languages.
 </p></quote>
 <p>
-Essentially, when programmers want a certain effect on some pixels they can write small little programs that run on the GPU (shaders) which take a group of pixels, or a region of the screen and run some code on it. 
+Essentially, when programmers want a certain effect on some pixels they can
+write small little programs that run on the GPU (shaders) which take a group
+of pixels, or a region of the screen and run some code on it.
 </p>
 <quote><p>
-Shaders are used to allow a 3D application designer to program the GPU (Graphics Processing Unit) "programmable pipeline", which has mostly superseded the older "fixed-function pipeline", allowing more flexibility in making use of advanced GPU programmability features.
+Shaders are used to allow a 3D application designer to program the GPU
+(Graphics Processing Unit) "programmable pipeline", which has mostly
+superseded the older "fixed-function pipeline", allowing more flexibility
+in making use of advanced GPU programmability features.
 </p></quote>
 <p>
-The issue is that writing shaders can often be complicated and difficult.  So GLSL was born, a higher level shading language to hopeuflly make programming these things easier.  HLSL is another lanuage, similar to GLSL, from Microsoft; and the translation of HLSL to something workable with Linux/BSD etc. will be necessary to continue WineD3D.  How this will happen is the subject of this wine devel discussion:
+The issue is that writing shaders can often be complicated and difficult.
+So GLSL was born, a higher level shading language to hopeuflly make
+programming these things easier.  HLSL is another lanuage, similar to GLSL,
+from Microsoft; and the translation of HLSL to something workable with
+Linux/BSD etc. will be necessary to continue WineD3D.  How this will happen
+is the subject of this wine devel discussion:
 </p>
 <quote>
 <p>
@@ -218,7 +250,9 @@ elsewhere.
 >
 <topic>Process List</topic>
 <p>
-Gonzalo Martinez writes in with an interesting query about whether or not wine can change its name in the process list (ps).  This seems like a great idea, and immediatly caught my attention:
+Gonzalo Martinez writes in with an interesting query about whether or not
+wine can change its name in the process list (ps).  This seems like a great
+idea, and immediatly caught my attention:
 </p>
 <quote>
 <p>
@@ -246,7 +280,9 @@ outdated version of wine.
 </quote>
 </p>
 <p>
-Apparently, this already existed!  Alright, so whats the deal?  Apparently it only works on linux!  Poor Gonzalo is on FreeBSD.  Stefan writes in with the unfortunate news:
+Apparently, this already existed!  Alright, so whats the deal?  Apparently
+it only works on linux!  Poor Gonzalo is on FreeBSD.  Stefan writes in with
+the unfortunate news:
 </p>
 <quote><p>
 Ow, ah, this is a different business. I think we use some Linux-only feature
@@ -255,18 +291,23 @@ have no idea if there is a way to change the process name under BSD. If there
 is, feel free to implement it and send a patch
 </p></quote>
 <p>
-There are of course ways to do this on FreeBSD, Alex Juillard lets us know that it may be possible:
+There are of course ways to do this on FreeBSD, Alex Juillard lets us know
+that it may be possible:
 </p>
 <quote><p>
-I wouldn't [accept a hack which involves copying the process to /tmp], but on FreeBSD you can use setproctitle() for this.
+I wouldn't [accept a hack which involves copying the process to /tmp], but
+on FreeBSD you can use setproctitle() for this.
 </p></quote>
 <p>
-Another important point brought up later in this thread, is that its not wise to killall wineserver or killall explorer.exe.  Its much smarter to "wineserver -k".  L Rahyen writes:
+Another important point brought up later in this thread, is that its not wise
+to killall wineserver or killall explorer.exe.  Its much smarter to
+"wineserver -k".  L Rahyen writes:
 </p>
 <quote><p>
 wineserver -k
 <br /><br />
-       This kills all processes which belongs to current WINE prefix (as specified
+       This kills all processes which belongs to current WINE prefix (as
+specified
 in WINEPREFIX environment variable or ~/.wine otherwise). For me this works
 in 100% of cases so I see no problem here.
 </p></quote>
@@ -279,7 +320,9 @@ in 100% of cases so I see no problem here.
 >
 <topic>AppDB</topic>
 <p>
-There was some discussion this week as to why some applications seem to get removed from the AppDB after they get 'stale'.  Richard S wrote in with some concern:
+There was some discussion this week as to why some applications seem to get
+removed from the AppDB after they get 'stale'.  Richard S wrote in with some
+concern:
 </p>
 <quote><p>
 Hi
@@ -306,7 +349,8 @@ IF this is true, WHY?
 <br /><br />
 Rich
 </p></quote>
-<p>This indeed doesn't seem to make sense; alas we recieve the voice of reason and policy.  Bryan Haskins writes:</p>
+<p>This indeed doesn't seem to make sense; alas we recieve the voice of
+reason and policy.  Bryan Haskins writes:</p>
 <quote><p>
 It really depends on the case, if a program is entirely superseded by
 another version, ie you can't use the old version at all anymore, totally.
@@ -315,7 +359,8 @@ reason too, I would personally not delete it. However it really is up to the
 management of the maintainers, and how they want to handle things.
 </p></quote>
 <p>
-Hm, this makes sense.  However, it still appears the iTunes removal was unnecessary.  Alex Sornes explains:
+Hm, this makes sense.  However, it still appears the iTunes removal was
+unnecessary.  Alex Sornes explains:
 </p>
 <quote><p>
 That's correct.  If a version is not usable anymore (because it connects to a 
@@ -334,9 +379,12 @@ Alexander N. Sornes
 	posts="0"
 >
 <topic>AppDB</topic>
-<p><i>*Disclaimer: This list of changes is automatically  generated by information entered into the AppDB.
-These results are subject to the opinions of the users submitting application reviews.  
-The WINE community does not guarantee that even though an application may be upgraded to 'Gold' or 'Platinum' in this list that you
+<p><i>*Disclaimer: This list of changes is automatically  generated by
+information entered into the AppDB.
+These results are subject to the opinions of the users submitting application
+reviews.
+The WINE community does not guarantee that even though an application may be
+upgraded to 'Gold' or 'Platinum' in this list that you
 will have the same experience and would provide a similar rating</i></p>
 <div align="center">
    <b><u>Updates by App Maintainers</u></b><br /><br />
