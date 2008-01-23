@@ -300,7 +300,7 @@ interested.
 I currently have a working HTML Help viewer, which seems to work pretty
 well on everything I've tested so far. It does however need some more work
 to conform to the way the real HTML Help system works in Windows (eg, I
-havn't written an ActiveX control for it yet).
+haven't written an ActiveX control for it yet).
 </p><p>
 Currently the HTML Help viewer requires an IWebBrowser interface, and only
 really works with an Internet Explorer installation - so I don't believe

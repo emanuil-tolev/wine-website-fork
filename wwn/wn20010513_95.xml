@@ -145,7 +145,7 @@ between the wineserver and the application with various kernel patches.
 I was reading "Unix Network Programming, volume 2 - IPC" and ran over
 a "doors" IPC api that is implemented on Solaris and has the lowest latency.
 According to the book it is ~3 times faster than pipe.
-Actual values for Solaris 2.6 in the book are: (in miliseconds)</p>
+Actual values for Solaris 2.6 in the book are: (in milliseconds)</p>
 <p><ul><code>
 doors:      121<br />
 sysv msgq:  260<br />

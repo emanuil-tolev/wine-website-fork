@@ -134,7 +134,7 @@ instead of kernel32</li>
 <li> file IO management can be cleanly separated between kernel32 and ntdll (1)</li>
 <li> files/ directory could be removed (not done in the patch (also nuked 
 include/drive.h and include/file.h)</li>
-<li> homogenous drive &amp; device handling (we no longer store those objects 
+<li> homogeneous drive &amp; device handling (we no longer store those objects
 in the server). Drive and device are now standard file handles (from a 
 Windows point of view).</li>
 <li> a few current Wine bugs have been fixed (see the todo_wine removed in 

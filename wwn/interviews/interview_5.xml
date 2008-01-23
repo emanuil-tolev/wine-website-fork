@@ -119,7 +119,7 @@ Since many years, Wine had an internal debugger. At the times when Wine
 was a monolithic application (no separated DLLs, all Windows processes 
 running in the same Unix-address space), the internal debugger had a 
 direct access to all the memory (Wine internals, Windows-process 
-memory). When Wine started to be splitted (wineserver to allow 
+memory). When Wine started to be split (wineserver to allow
 interprocess exchange, each (32bit) Windows-process having its own 
 unix-address space), debugger needed some heavy rewriting. Alexandre 
 Julliard wrote most of the Win32 debugging API (generation of debug 

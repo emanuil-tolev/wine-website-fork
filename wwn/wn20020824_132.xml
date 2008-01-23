@@ -263,7 +263,7 @@ say which is the right way is to get something working.
  mandatory BiDi support in Wine, as this means (among mere applying the 
  BiDi algorithm) translating each string printed to UTF-32 and back 
  (unless we can say for sure that no BiDi is going to be required - 
- havn't found a really good algorithm for that yet, but I'm working on 
+ haven't found a really good algorithm for that yet, but I'm working on
  it). Not having the proper library on your machine is a pretty good way 
  of indicating that BiDi is not interesting to you (and is, more or less, 
  the way MS tackled the exact same dillema).</quote></p>
