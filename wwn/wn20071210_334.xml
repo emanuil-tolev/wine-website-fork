@@ -6,7 +6,7 @@
 <author contact="http://www.bluesata.com">Zachary Goldberg</author>
 <issue num="334" date="12/10/2007" />
 <intro> <p>This is the 334 issue of the Wine Weekly News publication.
-Its main goal is to introduce the new AppDB Status changer
+Its main goal is to introduce the new AppDB Status changer.
 It also serves to inform you of what's going on around Wine.
 Wine is an open source implementation of the Windows API on top of X and Unix.
 Think of it as a Windows compatibility layer.  Wine does not require Microsoft
@@ -90,7 +90,7 @@ available.   You can find more info at
 <topic>Wine on Linux</topic>
 <p>
 As you may have read the <a href="http://www.desktoplinux.com/news/NS8454912761.html">Annual
-Linux Desktop Survey Results</a> are in for the year.  Theres the usual bit
+Linux Desktop Survey Results</a> are in for the year.  There's the usual bit
 about what browser people use and their favorite distribution.  However, the
 folk over at <a href="http://linuxdesktop.com">linuxdesktop.com</a> have also
 included some interesting information on how people run windows applications
@@ -113,9 +113,9 @@ used Cedega, while even less, 5 percent, said they used CrossOver.
 </p>
 </quote>
 <p>
-Desktoplinux's Steven Vaughan-Nichols writes in a
-<a href="http://www.desktoplinux.com/news/NS9488592005.html">separate
-article</a> also highlights how linux users feel about applications:
+In a <a href="http://www.desktoplinux.com/news/NS9488592005.html">separate
+article</a>, desktoplinux's Steven Vaughan-Nichols also highlights how Linux
+users feel about applications:
 <quote><p>
 Given a choice of applications to run on their Linux desktops, most users
 would prefer to run a native Linux application rather than a Windows
@@ -127,7 +127,7 @@ list. Autodesk's AutoCAD was number two.
 If Linux users can't run a particular application on Linux, and there's no
 native program that gives them similar functionality, they're almost perfectly
 divided between three different methods to get them their required program.
-These are using WINE, or a software built on WINE, such as Crossover Linux, to
+These are using WINE, or a software built on WINE, such as CrossOver Linux, to
 run the Windows application in Linux; virtualization; and switching to a
 browser-based application, such as Google Docs.
 </p></quote></p>
@@ -150,21 +150,21 @@ The goal of the blog is to post about Wine (and to help people) on any
 x86 operating system that Wine will run on e.g
 Linux, BSD, X86 Mac, and even Solaris ...
 </p><p>
-The goal of the Forum is to to provide a place for people who are
+The goal of the Forum is to provide a place for people who are
 interested in Wine to meet and collaborate about
-there favorite applications and games. And to be a source for help and
+their favorite applications and games. And to be a source for help and
 suggestions.
 </p></p></quote>
 <p>
-Tom's blog has done very well thus far; hes quoted to me that he estimates
+Tom's blog has done very well thus far; he's quoted to me that he estimates
 nearly 100,000 hits per month.  He is also seeking contributors to his blog.
 </p>
 <quote><p>
-I plan to seek other contributors to the blog as well..... I cant own
+I plan to seek other contributors to the blog as well..... I can't own
 every Office app or Game out there
-and I currently don't own a Intel Mac. And whats surprising to me is i
+and I currently don't own an Intel Mac. And what's surprising to me is I
 received well over 2500 hits from
-people who run Intel Mac's last month, even tho I don't currently post
+people who run Intel Macs last month, even tho I don't currently post
 about Wine on that platform.
 </p></quote>
 <p><div align="center">
@@ -173,26 +173,26 @@ about Wine on that platform.
 
 </section>
 <section 
-	title="DiB Engine Status"
+	title="DIB Engine Status"
 	subject="Code"
 	archive="http://www.winehq.org/pipermail/wine-devel/2007-December/060934.html"
 	posts="2"
 >
-<topic>DiB Engine</topic>
+<topic>DIB Engine</topic>
 <p>
-<p>The DiB (Device Independent Bitmap) engine is one of the few remaining
+<p>The DIB (Device Independent Bitmap) engine is one of the few remaining
 "large" issues that in general the community believes needs to be implemented.
-The only issue with that is that implementing the DiB is actually very
-difficult.  At present WINE gets around having a DiB engine by translating the
+The only issue with that is that implementing the DIB is actually very
+difficult.  At present WINE gets around having a DIB engine by translating the
 calls into something X can handle, lets X do the legwork and then translates
 the results back.  This is for the most part an effective solution, however
-its known to be inefficient and not without its problems.  Alex Juillard has
-expressed opinion that implementing a proper DiB engine will likely be done
+it's known to be inefficient and not without its problems.  Alexandre Julliard has
+expressed the opinion that implementing a proper DIB engine will likely be done
 post 1.0.  See <a href="http://wiki.winehq.org/DIBEngine">the wiki page</a> on
-DiB for more information.</p>
+DIB for more information.</p>
 <p>
 In light of all this, Piotr Maceluch writes in to find out the current status
-of the DiB Engine.
+of the DIB Engine.
 </p>
 <p><quote who="Piotr Maceluch">
 <p>Hi,</p>
@@ -365,7 +365,7 @@ That means the hlink test has one fewer error.  Yay!
 </p>
 </quote>
 <p>
-Of course, while the new script is nice, its also git its kinks and things Dan
+Of course, while the new script is nice, it also has its kinks and there are things Dan
 would like to see improved/changed.
 </p>
 <quote><p>
@@ -408,8 +408,8 @@ While amusing I do not think this is correct.<br />
 Steve Edwards writes in to second that opinion.
 </p>
 <quote><p>
-Plenty of OEM's change the default IE home page, and we should make it
-easy to do so in Wine. I think a edit box in winecfg is the best route
+Plenty of OEMs change the default IE home page, and we should make it
+easy to do so in Wine. I think an edit box in winecfg is the best route
 to go with the default option being about:blank or www.winehq.org
 </p><p>
 Thanks<br />
@@ -428,7 +428,7 @@ with native, we'd have to move everything from shdocvw.inf to wine.inf
 (and that's not the way to go IMO). I've added these registries because
 an app I've been working on expected default search page to be present.
 Also we should use it in our InternetExplorer and WebBrowser
-implementation. We may consider to handle these keys like we do with IE
+implementation. We may consider handling these keys like we do with the IE
 version key. That is, they may be added on iexplore.exe registration. If
 one wants to install native IE, he has to unregister iexplore.exe first,
 removing the homepage. Then IE installer will probably set its default
@@ -436,11 +436,11 @@ homepage.
 </p></quote>
 <p>Aric refutes:</p>
 <quote><p>
-Humm, maybe i am confused but (at least the win98 version of )
+Humm, maybe I am confused but (at least the win98 version of)
 shdocvw.dll implements DllRegisterServer which seems to do a lot of
 stuff.  But Setting the Start Page is not one of them.  In my experience
 installing IE does not actually set a Start Page by default, but instead
-the browser seem to handle not having a Start Page by pulling up a
+the browser seems to handle not having a Start Page by pulling up a
 default one.
 </p></quote>
 <p>
@@ -460,7 +460,7 @@ typelib, nothing else like coclasses. I will do more testing later today.
 <topic>Wine</topic>
 <p>
 In addition to the monumental task of implementing and replicating native
-behavior of the Windows API WINE has to also manage to do it with near-native
+behavior of the Windows API, WINE has to also do it with near-native
 speeds.  Phoronix has recently
 <a href="http://www.phoronix.com/scan.php?page=article&amp;item=938&amp;num=1">Benchmarked</a>
 a series of different wine versions.  Their results are indeed interesting and
@@ -494,11 +494,11 @@ They are hit by the stencil test slowness in 3dmark2k3 though, which we
 resolved as a driver bug on geforce 8 cards, since we couldn't reproduce it
 elsewhere.<br />
 <br />
-I didn't find any info what card they used, so it is a bit hard to say what
+I didn't find any info on the card they used, so it is a bit hard to say what
 might be wrong.
 </p></quote>
 <p>
-Bryan Haskins think's its an 8-Series:
+Bryan Haskins thinks it's an 8-Series:
 </p>
 <quote><p>
 Phoronix often uses the 8 series cards when not testing things like driver
