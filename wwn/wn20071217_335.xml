@@ -155,7 +155,7 @@ the actual conversation!</p>
 <p>
 So, a bit of background on these funky acronyms before we dive into the
 thread itself (Most of the info from
-<a href="http://wikipedia.org">wikipedia</a></p>
+<a href="http://wikipedia.org">wikipedia</a>):</p>
 <quote><p>
 <a href="http://en.wikipedia.org/wiki/GLSL">GLSL</a> (Open<b>GL</b>
 <b>S</b>hading <b>L</b>anguage): also known as GLslang, is a high level
@@ -176,15 +176,15 @@ in making use of advanced GPU programmability features.
 </p></quote>
 <p>
 The issue is that writing shaders can often be complicated and difficult.
-So GLSL was born, a higher level shading language to hopeuflly make
-programming these things easier.  HLSL is another lanuage, similar to GLSL,
+So GLSL was born, a higher level shading language to hopefully make
+programming these things easier.  HLSL is another language, similar to GLSL,
 from Microsoft; and the translation of HLSL to something workable with
 Linux/BSD etc. will be necessary to continue WineD3D.  How this will happen
 is the subject of this wine devel discussion:
 </p>
 <quote>
 <p>
-hlsl2glsl is the good solution for implementing shaders on directX 10.
+hlsl2glsl is the right solution for implementing shaders on directX 10.
 Nevertheless, the hlsl compilation to tokens has to be done for d3d9. On
 the other hand, if we implement d3dx9_xx, it is likely that the
 application will be using the compile D3DX9CompileShader to get the
@@ -221,7 +221,7 @@ and the most feasible way to implement it I've heard so far would be
 to embed GLSL code a comment section inside the shader byte code,
 which would be rather ugly.<br /><br />
 <br /><br />
-And finally, the actual hardware has it's own hardware specific
+And finally, the actual hardware has its own hardware specific
 language for shaders. HLSL or D3D bytecode isn't really any closer to
 the actual hardware language than GLSL or ARB asm, so it isn't even
 guaranteed to gain us much.
@@ -231,7 +231,7 @@ guaranteed to gain us much.
 
 Keep in mind that getting shaders translated into GLSL, which we can then send
 to the card, is only a small part of the whole dx10 topic. We will need our
-own codepath anyway(HLSL -> d3d asm -> GLSL). We have to investigate wether a
+own codepath anyway(HLSL -> d3d asm -> GLSL). We have to investigate whether a
 direct HLSL -> GLSL path will gain us any performance. We can optimize the
 HLSL -> d3d asm ourselves, and the d3d asm->GLSL->card native code is
 lossless in theory. If the GLSL compiler is good, then it will recognise the
@@ -258,20 +258,20 @@ idea, and immediatly caught my attention:
 <p>
 Hello to all.<br />
 <br />
-I have something in mind that I would like to ask to Wine developers.
+I have something in mind that I would like to ask Wine developers.
 Is it possible using a hack/trick or a hidden option to change the  
-name of wine in the proccess lists?
-I mean, Is it possible to list 'wine' proccess as, for example  
+name of wine in the process lists?
+I mean, is it possible to list 'wine' process as, for example
 'iexplorer' when I use Internet Explorer under Wine?
 <br />
-Thanks a lot for your work, hope my question find the answer here.
+Thanks a lot for your work, hope my question finds the answer here.
 </p>
 </quote>
 <p>
-Apparently this had been thought up of before:  Stefan Dosinger writes in:
+Apparently this had been thought of before:  Stefan Dosinger writes in:
 </p>
 <p><quote>
-This is done since quite some time. apps are usually called "iexplore.exe", or 
+This is done since quite some time. Apps are usually called "iexplore.exe", or
 they have the name of the file that was passed to wine, like C:\Program 
 Files\Internet Explorer\iexplore.exe
 
@@ -280,7 +280,7 @@ outdated version of wine.
 </quote>
 </p>
 <p>
-Apparently, this already existed!  Alright, so whats the deal?  Apparently
+Apparently, this already existed!  Alright, so what's the deal?  Apparently
 it only works on linux!  Poor Gonzalo is on FreeBSD.  Stefan writes in with
 the unfortunate news:
 </p>
@@ -288,10 +288,10 @@ the unfortunate news:
 Ow, ah, this is a different business. I think we use some Linux-only feature
 to set the name, and Alexandre told me that at least MacOS doesn't have it. I
 have no idea if there is a way to change the process name under BSD. If there
-is, feel free to implement it and send a patch
+is, feel free to implement it and send a patch.
 </p></quote>
 <p>
-There are of course ways to do this on FreeBSD, Alex Juillard lets us know
+There are of course ways to do this on FreeBSD, Alexandre Julliard lets us know
 that it may be possible:
 </p>
 <quote><p>
@@ -299,14 +299,14 @@ I wouldn't [accept a hack which involves copying the process to /tmp], but
 on FreeBSD you can use setproctitle() for this.
 </p></quote>
 <p>
-Another important point brought up later in this thread, is that its not wise
-to killall wineserver or killall explorer.exe.  Its much smarter to
+Another important point brought up later in this thread, is that it is not wise
+to killall wineserver or killall explorer.exe.  It's much smarter to
 "wineserver -k".  L Rahyen writes:
 </p>
 <quote><p>
 wineserver -k
 <br /><br />
-       This kills all processes which belongs to current WINE prefix (as
+       This kills all processes which belong to current WINE prefix (as
 specified
 in WINEPREFIX environment variable or ~/.wine otherwise). For me this works
 in 100% of cases so I see no problem here.
@@ -349,7 +349,7 @@ IF this is true, WHY?
 <br /><br />
 Rich
 </p></quote>
-<p>This indeed doesn't seem to make sense; alas we recieve the voice of
+<p>This indeed doesn't seem to make sense; alas we receive the voice of
 reason and policy.  Bryan Haskins writes:</p>
 <quote><p>
 It really depends on the case, if a program is entirely superseded by
