@@ -6,7 +6,14 @@
 <author contact="http://www.bluesata.com">Zachary Goldberg</author>
 <issue num="338" date="1/6/2008" />
 <intro> <p>This is the 338 issue of the Wine Weekly News publication.
-Its main goal is to provide big bugzilla updates. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to provide big bugzilla updates.
+It also serves to inform you of what's going on around Wine.
+Wine is an open source implementation of the Windows API on top of X and Unix.
+Think of it as a Windows compatibility layer.  Wine does not require Microsoft
+Windows, as it is a completely alternative implementation consisting of 100%
+Microsoft-free code, but it can optionally use native system DLLs if they are
+available.   You can find more info at
+<a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="117" size="183" contrib="51" multiples="23" lastweek="21">
 
 <person posts="9" size="8" who="julliard at winehq.org (Alexandre Julliard)" />
@@ -70,27 +77,46 @@ Its main goal is to provide big bugzilla updates. It also serves to inform you o
 >
 <topic>Wine</topic>
 <p>
-Tom Wickline over at Wine Review has been busy lately working on showing Microsoft Office <a href="http://wine-review.blogspot.com/2008/01/running-ms-office-2003-under-linux-with.html">2003</a> and even <a href="http://wine-review.blogspot.com/2007/12/microsoft-office-2007-on-linux-with.html">Office 2007</a> running under wine.  
+Tom Wickline over at Wine Review has been busy lately working on showing
+Microsoft Office <a href="http://wine-review.blogspot.com/2008/01/running-ms-office-2003-under-linux-with.html">2003</a>
+and even <a href="http://wine-review.blogspot.com/2007/12/microsoft-office-2007-on-linux-with.html">Office 2007</a>
+running under wine.
 </p>
 <p>
-Tom provides a full install guide for Office 2003; which from my first read through looks pretty darn simple and straight-forward.  Office 2007 on the other hand provides a pretty good challenge to get working, Tom writes:
+Tom provides a full install guide for Office 2003; which from my first read
+through looks pretty darn simple and straight-forward.  Office 2007 on the
+other hand provides a pretty good challenge to get working, Tom writes:
 </p>
 <quote>
 <p>
-I installed Microsoft Office 2007 on a computer with Windows XP and then moved everything over to this box that has Linux on it. After moving Office 2007 over to the Linux box I had the joys of importing the registry settings from the XP install into Wine. After a week of working on this and tweaking Wine with dll overrides and registry settings I finally got most of Office 2007 to run in Wine.
+I installed Microsoft Office 2007 on a computer with Windows XP and then moved
+everything over to this box that has Linux on it. After moving Office 2007
+over to the Linux box I had the joys of importing the registry settings from
+the XP install into Wine. After a week of working on this and tweaking Wine
+with dll overrides and registry settings I finally got most of Office 2007 to
+run in Wine.
 </p>
 </quote>
 <p>
-Tom also highlights a new bit of wine software, <a href="http://wine-review.blogspot.com/2008/01/bordeaux-wine-configuration-manager.html">Bordeaux</a>.  Bordeaux is a new wine-package manager (for apps running under wine).  I havn't yet had a chance to use it, however many of the wwn's readers may find this interesting and useful.
+Tom also highlights a new bit of wine software,
+<a href="http://wine-review.blogspot.com/2008/01/bordeaux-wine-configuration-manager.html">Bordeaux</a>.
+Bordeaux is a new wine-package manager (for apps running under wine).
+I havn't yet had a chance to use it, however many of the wwn's readers may
+find this interesting and useful.
 </p>
 <quote>
 <p>
-Someone sent me a small Wine Configuration Manager that has a GUI for native Wine applications. This is a 0.1 release so it's still a work in progress, proof of concept. I ask if I could post it here and they said sure... So here it is!
+Someone sent me a small Wine Configuration Manager that has a GUI for native
+Wine applications. This is a 0.1 release so it's still a work in progress,
+proof of concept. I ask if I could post it here and they said sure... So here
+it is!
 <br /><br />
 The app is built with GTK and should run on any system that has GTK
 installed.
 <br /><br />
-Quit has not been implemented yet so you will have to X to quit the program. I placed it in my home directory and executed it from there, the features that are currently implemented seem to work fine.
+Quit has not been implemented yet so you will have to X to quit the program.
+I placed it in my home directory and executed it from there, the features that
+are currently implemented seem to work fine.
 </p>
 </quote></section>
 <section 
@@ -101,7 +127,8 @@ Quit has not been implemented yet so you will have to X to quit the program. I p
 >
 <topic></topic>
 <p>
-Hans Leidekker has found an interesting way of keeping track of the rate of progress of wine; tallying the number of commits per year:
+Hans Leidekker has found an interesting way of keeping track of the rate of
+progress of wine; tallying the number of commits per year:
 </p>
 <quote>
 <p>
@@ -129,7 +156,9 @@ Number of commits in 2007: 9513
 >
 <topic>BugZilla</topic>
 <p>
-There have been a couple threads in recent weeks regarding changing of some categories within bugzilla.  Vitaliy Margolen has been on the ball pushing for these changes.
+There have been a couple threads in recent weeks regarding changing of some
+categories within bugzilla.  Vitaliy Margolen has been on the ball pushing for
+these changes.
 </p>
 <quote>
 <p><pre>
@@ -191,7 +220,8 @@ Wine-Rebar
 </p>
 </quote>
 <p>
-Jan Zerebecki, a bugzilla admin, writes in confirming that these changes look good and they will go through soon.
+Jan Zerebecki, a bugzilla admin, writes in confirming that these changes look
+good and they will go through soon.
 </p>
 
 
@@ -213,7 +243,8 @@ one case, but that can be fixed in another step.
 </quote>
 
 
-<p>In other bugzilla news: Dan Kegel points out that bugzilla is capable of creating some pretty cool graphs</p>
+<p>In other bugzilla news: Dan Kegel points out that bugzilla is capable of
+creating some pretty cool graphs</p>
 <p>
 <center><a href="http://bugs.winehq.org/reports.cgi?product=Wine&amp;datasets=NEW%3A&amp;datasets=UNCONFIRMED%3A&amp;datasets=CLOSED%3A&amp;datasets=FIXED%3A"><img border="0" src="http://bugs.winehq.org/graphs/Wine_NEW_UNCONFIRMED_CLOSED_FIXED.png" /></a></center>
 </p></section>
@@ -225,7 +256,9 @@ one case, but that can be fixed in another step.
 >
 <topic>Wineconf</topic>
 <p>
-Six videos from wineconf have finally made it from the editing studio the realm of the internet (youtube).  Thanks to Lei Zhang for putting these videos together and making them available on the web.  The six videos:
+Six videos from wineconf have finally made it from the editing studio the
+realm of the internet (youtube).  Thanks to Lei Zhang for putting these videos
+together and making them available on the web.  The six videos:
 </p>
 <quote>
 <p><pre>
@@ -251,7 +284,9 @@ Stefan D&#246;singer - Wine and Direct3D
 </pre></p>
 </quote>
 <p>
-Most of the videos are actually quite long and worth watching.  I watched most of them, but only took notes on the keynote.  Here is my summary of the keynote:
+Most of the videos are actually quite long and worth watching.  I watched most
+of them, but only took notes on the keynote.  Here is my summary of the
+keynote:
 </p>
 <p>
 <pre>
@@ -297,7 +332,10 @@ Post 1.0 List
 >
 <topic>Wine</topic>
 <p>
-Robert Millan expressed some interesting in writing an application to automatically set the windows version for certain applications which are known to require such a change.  However, in the interest of not duplicating information or code he wanted to move some functions:
+Robert Millan expressed some interesting in writing an application to
+automatically set the windows version for certain applications which are
+known to require such a change.  However, in the interest of not duplicating
+information or code he wanted to move some functions:
 </p>
 <quote>
 <p>
@@ -344,7 +382,8 @@ it to appdb if its an application listed there.
 </p>
 </quote>
 <p>
-Alexandre Julliard thinks that this can all be done with regedit.exe and such changes are not necessary:
+Alexandre Julliard thinks that this can all be done with regedit.exe and
+such changes are not necessary:
 </p>
 
 <quote>
@@ -384,7 +423,10 @@ Roderick Colenbrander writes with an alternative to MD5
 </p>
 <quote>
 <p>
-The system on windows doesn't use the md5sum (I think it has one) but it looks for the product ID which is burried into most executables first. It also checks for other things but in a hackier way. As there are a lot of different versions of a program but which all need the same override.
+The system on windows doesn't use the md5sum (I think it has one) but it
+looks for the product ID which is burried into most executables first. It
+also checks for other things but in a hackier way. As there are a lot of
+different versions of a program but which all need the same override.
 <br /><br />
 Roderick
 </p>
@@ -406,7 +448,8 @@ I think it's a bad idea to do that:
 </p>
 </quote>
 <p>
-Unfortunatly, before Robert could find a decisive "correct" way to proceed, the conversation finished with Steven's last comment:
+Unfortunatly, before Robert could find a decisive "correct" way to proceed,
+the conversation finished with Steven's last comment:
 </p>
 <quote>
 <p>
@@ -540,9 +583,12 @@ when the application name conflicts.
 <br />
 <br />
 <center><b>AppDB Application Status Changes</b></center>
-<p><i>*Disclaimer: These lists of changes are automatically  generated by information entered into the AppDB.
-These results are subject to the opinions of the users submitting application reviews.  
-The WINE community does not guarantee that even though an application may be upgraded to 'Gold' or 'Platinum' in this list, that you
+<p><i>*Disclaimer: These lists of changes are automatically  generated by
+information entered into the AppDB.
+These results are subject to the opinions of the users submitting application
+reviews.
+The WINE community does not guarantee that even though an application may be
+upgraded to 'Gold' or 'Platinum' in this list, that you
 will have the same experience and would provide a similar rating.</i></p>
 <div align="center">
    <b><u>Updates by App Maintainers</u></b><br /><br />
