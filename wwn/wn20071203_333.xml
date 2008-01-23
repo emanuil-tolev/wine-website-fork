@@ -181,19 +181,19 @@ me, I'm boring.  On with the wine!
 <topic>DirectX</topic>
 <p><quote who="Roderick Colenbrander">
 wined3d: Use native shader limits instead of the maximum the driver can handle
-in software. This should prevent software fallbacks and and second it will
-allow for ps2.0/ps3.0 detection.
+in software. This should prevent software fallbacks and it will
+allow for ps2.0/ps3.0 detection.<br/>
 
 wined3d: Default to GLSL. This is safe because we now have proper ps2.0/vs2.0
 detection.
 </quote></p>
 <p>
-Its rare for the WWN to highlight individual commits however this one by
+It's rare for the WWN to highlight individual commits however this one by
 Roderick Colenbrander actually could likely have an impact on the average
-(gaming) wine user.  This patch allows for natural detection and in
+(gaming) wine user.  This patch allows for natural detection of GLSL and in
 combination with the
 <a href="http://source.winehq.org/git/wine.git/?a=commit;h=59eba5cb41d165734468dcab0b38b56ff6c40ef0">following
-commit:</a> we now have the registry key "useGLSL" set to "enabled" by
+commit</a>, we now have the registry key "useGLSL" set to "enabled" by
 default.  This should mean that for many of us playing games such as
 <a href='http://appdb.winehq.org/objectManager.php?sClass=application&amp;iId=3150'>Elder
 Scrolls IV: Oblivion</a> may no longer have to set that key explicitly!
@@ -216,7 +216,7 @@ Scrolls IV: Oblivion</a> may no longer have to set that key explicitly!
 	posts="7"
 >
 <topic>Applications</topic>
-<p>We all know that of the many uses for wine gaming is one of the more
+<p>We all know that of the many uses for wine, gaming is one of the more
 popular ones.  But just how many actual gamers are there using wine to play
 their favorite games?  Well, lucky for us Valve has begun to conduct surveys
 of the hardware and software configurations of people using their Steam
@@ -245,7 +245,7 @@ like the Wine one.  If even only a quarter of these "others" are using
 Wine, that still gives us 1% of the entire 10 million+ Steam user base,
 translating into hundreds of thousands of users.
 </p></quote></p><p>
-As you can see, its actually non-trivial to determine who uses wine simply
+As you can see, it's actually non-trivial to determine who uses wine simply
 from the drivers and such reported by the Steam survey.  However we seem to
 have caught a lucky break with the sound driver:</p>
 <p><quote who="Stefan Dosinger"><pre>
@@ -294,7 +294,7 @@ The numbers are now 0.13% of total reports coming from Wine users.
 Unfortunately many of the dev's were out stuffing themselves with turkey and
 hence a release last week made no sense.  However, this week has come and we
 have 0.9.50:</p>
-<p><quote who="Alexander Juillard"><pre>
+<p><quote who="Alexandre Julliard"><pre>
     Wine 0.9.50 was released today, with the following main changes:
 
         * Completed I/O completion.
@@ -325,7 +325,7 @@ packages for your distribution.
 <topic>Code</topic>
 <p>Kai Blin brings up the topic of planning out this summer's Google Summer
 of Code projects.  The problem, he explains, is that projects were not
-extremly well defined and communication was not as good as it could have
+extremely well defined and communication was not as good as it could have
 been.  All easily solvable.</p>
 <p><quote who="Kai Blin">
 Hi folks,<br />
@@ -399,15 +399,15 @@ certainly would have been used and been a great resource.
 </section>
 
 <section 
-	title="Transgaming giving back to WINE"
-	subject="Transgaming"
+	title="TransGaming giving back to WINE"
+	subject="TransGaming"
 	archive="http://www.winehq.org/pipermail/wine-devel/2007-November/060705.html"
 	posts="4"
 >
 <topic>Code</topic>
-<p>Gavriel State of Transgaming has been hanging around on one of wine's IRC
+<p>Gavriel State of TransGaming has been hanging around on one of wine's IRC
 Channels (#winehackers) and in a conversation with Kai Blin actually offered
-code for something Transgaming has already begun to implement:
+code for something TransGaming has already begun to implement:
 </p>
 <p><quote author="Gavrial State">
 Hi all,<br />
