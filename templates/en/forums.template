@@ -1,25 +1,30 @@
 <!--TITLE:[Mailing Lists]-->
 
-<h1>Key Mailing Lists</h1>
+<h1>Key Mailing Lists / Forums</h1>
 
-<p>Wine has a lot of different mailing lists for many purposes.
-However, most users will likely be most interested in two:</p>
+<p>Wine has many mailing lists and forums.
+Here are the most useful ones for users:</p>
 
 <ul>
-    <li><a href="http://www.winehq.org/mailman/listinfo/wine-users">Wine-Users</a>.
-    The Wine-Users mailing list is intended for general
-    users of Wine and people that volunteer to help them.  This list
-    started as the Usenet group comp.emulators.ms-windows.wine and 
-    <a href="http://groups.google.com/group/comp.emulators.ms-windows.wine">the Google Groups page</a>
-    is a good place to browse and search this list.</li><br />
-    
-    <li><a href="http://www.winehq.org/mailman/listinfo/wine-announce">Wine-Announce</a>.  You should
-    subscribe to this mailing list if you want to get notified about new Wine releases.</li>
+    <li>The <a href="http://www.winehq.org/mailman/listinfo/wine-users">Wine-Users Mailing List</a> (and [<a href="http://www.winehq.org/pipermail/wine-users/">web archive</a>) - best place for Wine user support
+    </li><br />
+
+    <li>Ubuntu users may also want to visit the <a href="http://ubuntuforums.org/forumdisplay.php?f=313">Wine area at Ubuntu Forums</a>
+
+    <li>Users might also want to visit the <a href="http://www.linuxforums.org/forum/wine/">Wine area at Linux Forums</a>
+
+    <li>If you want to be notified about new releases, subscribe to the <a href="http://www.winehq.org/mailman/listinfo/wine-announce">Wine-Announce mailing list</a></li>
 
 </ul>
+Please don't create another English language Wine forum (except perhaps 
+a Wine area in a popular distro's main forum).
+<p>
+If you know of another active Wine forum - especially a non-english one
+- please let us know so we can add it to the list.  
+(Email to dank@kegel.com would do.)
 
 
-<h1>All Mailing Lists</h1>
+<h1>All WineHQ Mailing Lists</h1>
 
 <p>WineHQ has mailing lists for submitting patches, tracking Git
 commits, and discussing Wine. They feature a very customizable user
