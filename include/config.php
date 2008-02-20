@@ -63,7 +63,7 @@ class config
            'Development' => array(
                 'Development'     => '{$root}/site/development',
                 'Developers Guide' => '{$root}/site/docs/winedev-guide/index',
-                'Mailing Lists'   => '{$root}/site/forums',
+                'Mailing Lists/Forums'   => '{$root}/site/forums',
                 'GIT'             => '{$root}/site/git',
                 'Sending Patches' => '{$root}/site/sending_patches',
                 'To Do Lists'     => 'http://wiki.winehq.org/TodoList',
