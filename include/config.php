@@ -37,6 +37,7 @@ class config
                 'AppDB'           => 'http://appdb.winehq.org',
                 'Bugzilla'        => 'http://bugs.winehq.org/',
                 'Wine Wiki'       => 'http://wiki.winehq.org',
+                'Wine Forums'     => 'http://forum.winehq.org/'
             ),
 	    'About' => array(
                 'About'           => '{$root}/site/about',
@@ -63,7 +64,7 @@ class config
            'Development' => array(
                 'Development'     => '{$root}/site/development',
                 'Developers Guide' => '{$root}/site/docs/winedev-guide/index',
-                'Mailing Lists/Forums'   => '{$root}/site/forums',
+                'Mailing Lists'   => '{$root}/site/forums',
                 'GIT'             => '{$root}/site/git',
                 'Sending Patches' => '{$root}/site/sending_patches',
                 'To Do Lists'     => 'http://wiki.winehq.org/TodoList',
