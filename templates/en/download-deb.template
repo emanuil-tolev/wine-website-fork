@@ -4,55 +4,44 @@
 Wine for Ubuntu, Debian, and Debian-based distributions
 <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></h1>
 
-<p>Debian and Debian-based distributions, such as Ubuntu, utilize a special tool
+<p>Debian and Debian-based distributions such as Ubuntu utilize a special tool
 for managing packages known as APT.  APT is able to automagically install all of
 the needed dependencies for a software package, as well as keep the package 
 up to date, by scanning what are known as APT repositories.  Debian-based 
-distributions have their own repositories of software, many of which include
-Wine, however we keep our own repository of the latest available packages here 
-for download.</p>
+distributions have their own repositories of software that include Wine, 
+however we keep our own repository of the latest available packages here for 
+download.</p>
 
-<p>There used to be graphical instructions here, however we have found that the terminal commands are actually simpler to
-describe and quicker for the user to input.  Because the commands below use sudo, you may have to enter your user
+<p>There used to be graphical instructions here, however we have found that the 
+terminal commands are actually simpler to describe and quicker for the user to 
+input.  Because the commands below use sudo, you may have to enter your user
 password after hitting enter.</p>
 
 <h2>Adding the WineHQ APT Repository:</h2>
 
-<p>First, open a terminal window.  Then add the repository's key to your system's
-list of trusted APT keys by copy and pasting the following:</p>
+<p>First, open a terminal window (Applications->Accessories->Terminal).  Then 
+add the repository's key to your system's list of trusted APT keys by copy and 
+pasting the following:</p>
 
 <p><i>wget -q http://wine.budgetdedicated.com/apt/387EE263.gpg -O- | sudo apt-key add -</i></p>
 
 <p>Next, add the repository to your system's list of APT sources:</p>
 
-<p><b>For Ubuntu Gutsy (7.10):</b><br>
-<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/gutsy.list -O /etc/apt/sources.list.d/winehq.list</i></p>
-<p><b>For Ubuntu Feisty (7.04):</b><br>
-<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/feisty.list -O /etc/apt/sources.list.d/winehq.list</i></p>
-<p><b>For Ubuntu Edgy (6.10):</b> <i>*64-bit packages not available*</i><br>
-<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/edgy.list -O /etc/apt/sources.list.d/winehq.list</i></p>
-<p><b>For Ubuntu Dapper (6.06):</b> <i>*64-bit packages not available*</i><br>
-<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/dapper.list -O /etc/apt/sources.list.d/winehq.list</i></p>
+<p><b>For Ubuntu Hardy (8.04):</b><br>
+<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/hardy.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 <p><b>For Debian Etch (4.0):</b><br>
 <i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/etch.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 
-<p>Then, you can install Wine from WineHQ like it were any other package, such as by 
-using the Synaptic Package Manager under System->Administration.  Alternatively, you 
-can install from the terminal by running '<b>sudo apt-get update</b>' to update APT's 
-package information and then '<b>sudo apt-get install wine</b>'.</p>
+<p>Then, you can install Wine by <a href="apt://wine">clicking this link</a>. 
+Alternatively, you can install by going to Applications->Add/Remove and 
+searching for Wine.</p>
 
 <h2>Upgrading to a new version of Ubuntu</h2>
 
-<p>If you are upgrading the entire system, such as going from Ubuntu 7.04 to 7.10, you will need to 
-come back to this page and enter the command for the new version above.  The built in update manager 
-will not switch the Wine repository automatically.</p>
-
-<h2>64-bit Users:</h2>
-
-<p>If you are using a very old version of Ubuntu where 64 bit packages are not available 
-and would still like a working Wine package, there is a relatively easy hack that can be 
-used to install the 32-bit package and have it function normally.  See 
-<a href="http://wiki.winehq.org/UbuntuAMD64">this page on the Wine wiki</a> for more details.</p>
+<p>If you are upgrading the entire system, such as going from Ubuntu 7.10 to 
+8.04, you will need to come back to this page and enter the command for the new 
+version above.  The built in update manager will not switch the Wine repository 
+automatically.</p>
 
 <h2>Older .deb packages</h2>
 
