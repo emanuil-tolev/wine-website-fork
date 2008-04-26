@@ -32,7 +32,9 @@ pasting the following:</p>
 <p><b>For Debian Etch (4.0):</b><br>
 <i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/etch.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 
-<p>Then, you can install Wine by <a href="apt://wine">clicking this link</a>. 
+<p>Then update APT's package information by running '<b>sudo apt-get update</b>'.
+
+<p>Now you can install Wine by <a href="apt://wine">clicking this link</a>. 
 Alternatively, you can install by going to Applications->Add/Remove and 
 searching for Wine.</p>
 
