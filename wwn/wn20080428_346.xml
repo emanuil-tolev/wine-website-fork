@@ -374,7 +374,7 @@ Linux [or OS X], what would it be?
 <quote who="DanKegel">
 <p>
 I'd improve disk storage.  For instance, I'd make LVM snapshots more
-space-efficient.  (Actually, I *am* doing that; see <a href="http://zumastor.org.)">http://zumastor.org</a>.)
+space-efficient.  (Actually, I *am* doing that; see <a href="http://zumastor.org">http://zumastor.org</a>.)
 Also, right now, if you put your whole system on an LVM volume,
 it's hard to read your disks without actually booting the system
 from them; I'd fix that.  (Maybe Dan Phillips will fix that, it's certainly
