@@ -300,6 +300,12 @@ The big ones I can think of are the DIB Engine (an idea which has been
 percolating for ages) and .net support.  Oh, and the Javascript support
 needed to install Photoshop CS3.  Longer term, I'd like to see the
 user-mode WDM driver framework supported.
+<br><br>
+Long term, we'll probably find that we have to follow
+Windows' example and implement application-specific behavior
+to get key apps working perfectly without breaking other apps.
+Ugly, but true.
+
 </p>
 </quote>
 <p>
@@ -312,12 +318,6 @@ the port to OS X has really opened the door on portability, is there
 anything like that on the horizon?  Do you ever think someone will have
 ntoskrnl loading Windows drivers or hooking into the kernel or something
 like that?
-<br />
-<br />
-Long term, we'll probably find that we have to follow
-Windows' example and implement application-specific behavior
-to get key apps working perfectly without breaking other apps.
-Ugly, but true.
 </p>
 <quote who="DanKegel">
 <p>
