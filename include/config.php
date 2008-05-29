@@ -30,16 +30,19 @@ class config
             $this->readConfig($path);
         }
         
+        // define avialable languages
+        $this->langs_avail = array('en', 'es');
+        
         // navigation
-	$this->nav = array(
-	    'WineHQ Menu' => array(
+        $this->nav = array(
+            'WineHQ Menu' => array(
                 'WineHQ'          => '{$root}',
                 'AppDB'           => 'http://appdb.winehq.org',
                 'Bugzilla'        => 'http://bugs.winehq.org/',
                 'Wine Wiki'       => 'http://wiki.winehq.org',
                 'Wine Forums'     => 'http://forum.winehq.org/'
             ),
-	    'About' => array(
+        'About' => array(
                 'About'           => '{$root}/site/about',
                 'Introduction'    => '{$root}/site/about',
                 'Features'        => '{$root}/site/wine_features',

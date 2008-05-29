@@ -108,7 +108,7 @@ function home_page ()
 
 	// get wwn news
     $wwn = new wwn();
-	$issues = $wwn->get_list($config->wwn_xml_path);
+	$issues = $wwn->get_list();
 	$wwn_box = $html->theme_box($config->theme, "box_title", "Weekly Newsletters", "97%", $wwn->issues_list($issues[0], $issues[1], 3), '10', 'white', 'topMenu');
 	
     // sponsor box
@@ -187,7 +187,7 @@ function view_news ($where)
         $x = $_GET['x'];
     
     // get list of news items
-    $news = get_files($config->news_xml_path, "xml");
+    $news = get_files($config->news_xml_path."/".$config->lang, "xml");
     $news = array_reverse ($news);
     $total = count($news);
     
@@ -204,7 +204,10 @@ function view_news ($where)
 
         // get data from XML file
         $vars = array();
-        list($vars['date'], $vars['title'], $vars['body']) = get_xml_tags($config->news_xml_path.'/'.$item, array('date', 'title', 'body'));
+        if (file_exists($config->news_xml_path.'/'.$html->lang.'/'.$item))
+            list($vars['date'], $vars['title'], $vars['body']) = get_xml_tags($config->news_xml_path.'/'.$html->lang.'/'.$item, array('date', 'title', 'body'));
+        else
+            list($vars['date'], $vars['title'], $vars['body']) = get_xml_tags($config->news_xml_path.'/'.$config->lang.'/'.$item, array('date', 'title', 'body'));
 
         // add to news body
         $news_body .= $html->template('base', 'news_row', $vars);
@@ -255,7 +258,7 @@ function view_rss ()
     global $config, $html;
      
     // get list of news items
-    $news = get_files($config->news_xml_path, "xml");
+    $news = get_files($config->news_xml_path."/".$config->lang, "xml");
     $news = array_reverse ($news);
 
     // clear cache and output the rss file
@@ -275,8 +278,10 @@ function view_rss ()
             continue;
         
         // get data from XML file
-        $vars = array();
-        list($date, $title, $body) = get_xml_tags($config->news_xml_path.'/'.$item, array('date', 'title', 'body'));
+        if (file_exists($config->news_xml_path.'/'.$html->lang.'/'.$item))
+            list($date, $title, $body) = get_xml_tags($config->news_xml_path.'/'.$html->lang.'/'.$item, array('date', 'title', 'body'));
+        else
+            list($date, $title, $body) = get_xml_tags($config->news_xml_path.'/'.$config->lang.'/'.$item, array('date', 'title', 'body'));
         
         // fix filename for urls
         $item = str_replace(".xml", "", $item);
@@ -293,7 +298,7 @@ function view_rss ()
                             'item_guid'  => $config->base_url.'?news='.$item,
                             'item_date'  => date("r", strtotime($date))
                         );
-        $rss_rows .= $html->template('base', 'global/xml/rss_row', $rss_row, 1);
+        $rss_rows .= $html->template('global', 'xml/rss_row', $rss_row, 1);
     }
     unset($c);
     $rss = array(
@@ -305,7 +310,7 @@ function view_rss ()
                     'rss_crt'   => '(C) '.$config->site_name.' '.date("Y", time()),
                     'rss_rows' => $rss_rows
                 );
-    echo $html->template('base', 'global/xml/rss', $rss);
+    echo $html->template('global', 'xml/rss', $rss);
     exit();
 
 }

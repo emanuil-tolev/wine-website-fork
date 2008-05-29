@@ -49,34 +49,27 @@ class wwn
     }
     
     // read dir and get issues
-    function get_list ($path)
+    function get_list ($path = "")
     {
+        global $config;
         $wwn = array();
-        $dir = opendir($path);
+        if ($path)
+            $dir = opendir($config->wwn_xml_path."/".$config->lang."/".$path);
+        else
+            $dir = opendir($config->wwn_xml_path."/".$config->lang);
         while($file = readdir($dir))
         {
             if ($file == "." or $file == ".." or $file == "CVS" or $file == "interviews")
               continue;
-            $issue = ereg_replace("wn[0-9]+_([0-9]+)\.xml", "\\1", $file);
-            if ($issue > $old)
-                $cur = $issue;
-            $old = $issue;
-            $wwn[$issue] = $file;
-        }
-        closedir($dir);
-        return array($wwn, $cur);
-    }
-
-    // read dir and get interviews
-    function get_interviews ($path)
-    {
-        $wwn = array();
-        $dir = opendir($path);
-        while($file = readdir($dir))
-        {
-            if ($file == "." or $file == ".." or $file == "CVS")
-              continue;
-            $issue = ereg_replace("interview_([0-9]+)\.xml", "\\1", $file);
+            switch ($path)
+            {
+                case "interviews":
+                    $issue = ereg_replace("interview_([0-9]+)\.xml", "\\1", $file);
+                    break;
+                
+                default:
+                    $issue = ereg_replace("wn[0-9]+_([0-9]+)\.xml", "\\1", $file);
+            }
             if ($issue > $old)
                 $cur = $issue;
             $old = $issue;
@@ -119,7 +112,7 @@ class wwn
             }
     
             // display summary
-            $this->wwn_xml_parse($config->wwn_xml_path."/".$file);
+            $this->wwn_xml_parse($file);
             $summary_box = $this->format_summary($issue, $this->issue);
             
             if ($limit == 0)
@@ -215,7 +208,7 @@ class wwn
         global $config, $html, $cur;
     
         // read dir and get issues
-        list($wwn, $cur) = $this->get_list($config->wwn_xml_path);
+        list($wwn, $cur) = $this->get_list();
     
         // view back issues
         if ($view == 'back')
@@ -229,8 +222,8 @@ class wwn
           $cur = $view;
 
         // get issue
-        $this->wwn_xml_parse($config->wwn_xml_path."/".$wwn[$cur]);
-                
+        $this->wwn_xml_parse($wwn[$cur]);
+        
         // get summary
         $summary_box = $this->format_summary($cur);
         
@@ -261,14 +254,14 @@ class wwn
         global $config, $html;
     
         // read dir and get issues
-        list($wwn, $cur) = $this->get_interviews($config->wwn_xml_path."/interviews/");
+        list($wwn, $cur) = $this->get_list("interviews");
 
         // no interview found, show a 404
         if (!$interview or !$wwn[$interview])
             return $html->theme_box($config->theme, "box_title", "404 Not Found", "100%", $html->template("base", "404"), '10', 'white', 'topMenu');
         
         // get issue
-        $this->wwn_xml_parse($config->wwn_xml_path."/interviews/".$wwn[$interview]);
+        $this->wwn_xml_parse("interviews/".$wwn[$interview]);
         
         // title for page
         $html->template_title = $this->who.' Interview';
@@ -290,7 +283,15 @@ class wwn
     
     // read the xml file and parse it
     function wwn_xml_parse ($file)
-    {    
+    {
+        global $config, $html;
+        
+        // load file from language
+        if (file_exists($config->wwn_xml_path."/".$html->lang."/".$file))
+            $file = $config->wwn_xml_path."/".$html->lang."/".$file;
+        else
+            $file = $config->wwn_xml_path."/".$config->lang."/".$file;
+        
         $this->issue = "";
         $this->body = "";
         $this->who = "";

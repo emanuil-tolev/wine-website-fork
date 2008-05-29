@@ -18,14 +18,58 @@ class html
     var $template_title;
     var $in404;
     var $rss_link;
+    var $lang = "en";
 
     // HTML init object
     function html ($root)
     {
         // set the file root
         $this->_file_root = $root;
+        
         // start body object
         $this->page = "";
+        
+        $this->lang = $this->get_lang();
+    }
+
+    // GET LANG (get the language used for this session)
+    function get_lang ()
+    {
+        // set the default language from users web browser
+        $lang = $GLOBALS['config']->lang;
+        if (isset($_GET['lang']) or isset($_COOKIE['lang']))
+        {
+            // load language from URL or cookie
+            if (isset($_GET['lang']) and in_array($_GET['lang'], $GLOBALS['config']->langs_avail))
+            {
+                // load from URL
+                $lang = $_GET['lang'];
+            }
+            else if (isset($_COOKIE['lang']) and in_array($_COOKIE['lang'], $GLOBALS['config']->langs_avail))
+            {
+                // load from COOKIE
+                $lang = $_COOKIE['lang'];
+            }
+            // save the language in a cookie (1 month)
+            setcookie('lang', $lang, time()+(24*60*60*31), '/', $_SERVER['HTTP_HOST']);
+        }
+        else if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]))
+        {
+            // load from web browser environment
+            $avail = get_files($this->_file_root."/templates", "DIR");
+            $lang = split(',', array_shift(split(";", $_SERVER["HTTP_ACCEPT_LANGUAGE"])));
+            if (isset($lang[0]))
+            {
+                // if first language is a variation, use the parent language
+                if (strlen($lang[0]) > 2)
+                    $lang[0] = substr($lang[0], 0, 2);
+                // check to make sure lang is defined in our config
+                if (in_array($lang[0], $GLOBALS['config']->langs_avail))
+                    $lang = $lang[0];
+            }
+        }
+        // return language
+        return $lang;
     }
 
     // FIND ROOT (based on path info, get the web root)
@@ -762,23 +806,30 @@ class html
         else
         {
             switch ($theme)
-            {    
+            {
+                // load from global templates
+                case "global":
+                    if (file_exists($this->_file_root."/templates/global/".$template.".template"))
+                        $in = join("",file($this->_file_root."/templates/global/".$template.".template"));
+                
                 // load from local template repository
-                case "local":          
+                case "local":
         			if (file_exists($template.".template"))
                     	$in = join("",file($template.".template"));
                     break;
     
-                // load base template
+                // load base template (use users language first, fall back to site default)
                 case "base":
-        			if (file_exists($this->_file_root."/templates/".$config->lang."/".$template.".template"))
-                    	$in = join("",file($this->_file_root."/templates/".$config->lang."/".$template.".template"));
+                    if (file_exists($this->_file_root."/templates/".$this->lang."/".$template.".template"))
+                        $in = join("",file($this->_file_root."/templates/".$this->lang."/".$template.".template"));
+                    else if (file_exists($this->_file_root."/templates/".$config->lang."/".$template.".template"))
+                        $in = join("",file($this->_file_root."/templates/".$config->lang."/".$template.".template"));
                     break;
      
                 // load template from theme
                 default:
                     if (file_exists($this->_file_root."/include/themes/".$theme."/".$template.".template"))
-                        $in = join("",file($this->_file_root."/include/themes/".$theme."/".$template.".template"));                
+                        $in = join("",file($this->_file_root."/include/themes/".$theme."/".$template.".template"));
             }
         }
 
@@ -789,7 +840,12 @@ class html
             $in = '';
             if ($config->web_debug)
                 $in = $this->p($theme."|".$template);
-			$in .= join("",file($this->_file_root."/templates/404.template"));
+            if (file_exists($this->_file_root."/templates/".$this->lang."/404.template"))
+                $in = join("",file($this->_file_root."/templates/".$this->lang."/404.template"));
+            else if (file_exists($this->_file_root."/templates/".$config->lang."/404.template"))
+                $in = join("",file($this->_file_root."/templates/".$config->lang."/404.template"));
+            else
+                $in = $this->h(1, "404 - Page Not Found!");
         }
         
         // cache this template to save on i/o
