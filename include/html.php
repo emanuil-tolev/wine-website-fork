@@ -57,16 +57,17 @@ class html
         else if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]))
         {
             // load from web browser environment
-            $lang = split(',', array_shift(split(";", $_SERVER["HTTP_ACCEPT_LANGUAGE"])));
-            if (isset($lang[0]))
+            $avail = split(',', array_shift(split(";", $_SERVER["HTTP_ACCEPT_LANGUAGE"])));
+            if (isset($avail[0]))
             {
                 // if first language is a variation, use the parent language
-                if (strlen($lang[0]) > 2)
-                    $lang[0] = substr($lang[0], 0, 2);
+                if (strlen($avail[0]) > 2)
+                    $avail[0] = substr($avail[0], 0, 2);
                 // check to make sure lang is defined in our config
-                if (in_array($lang[0], $GLOBALS['config']->languages))
-                    $lang = $lang[0];
+                if (in_array($avail[0], $GLOBALS['config']->languages))
+                    $lang = $avail[0];
             }
+            unset($avail);
         }
         // return language
         return $lang;
