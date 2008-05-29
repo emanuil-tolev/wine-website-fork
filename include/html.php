@@ -29,6 +29,7 @@ class html
         // start body object
         $this->page = "";
         
+        // get the language to be displayed in templates
         $this->lang = $this->get_lang();
     }
 
