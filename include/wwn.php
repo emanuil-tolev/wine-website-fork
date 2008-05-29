@@ -235,7 +235,7 @@ class wwn
                           'issue'   => $cur,
                           'date'    => $this->issue,
                           'summary' => $summary_box,
-                          'xml'     => $wwn{$cur},
+                          'xml'     => (file_exists($config->wwn_xml_path."/".$html->lang."/".$wwn{$cur}) ? $html->lang."/".$wwn{$cur} : $config->lang."/".$wwn{$cur}),
                           'author'  => $this->author,
                           'contact' => $this->contact,
                           'body'    => $this->body,
