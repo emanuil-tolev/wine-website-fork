@@ -30,9 +30,6 @@ class config
             $this->readConfig($path);
         }
         
-        // define avialable languages
-        $this->langs_avail = array('en', 'es');
-        
         // navigation
         $this->nav = array(
             'WineHQ Menu' => array(

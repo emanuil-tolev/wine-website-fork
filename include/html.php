@@ -40,12 +40,12 @@ class html
         if (isset($_GET['lang']) or isset($_COOKIE['lang']))
         {
             // load language from URL or cookie
-            if (isset($_GET['lang']) and in_array($_GET['lang'], $GLOBALS['config']->langs_avail))
+            if (isset($_GET['lang']) and in_array($_GET['lang'], $GLOBALS['config']->languages))
             {
                 // load from URL
                 $lang = $_GET['lang'];
             }
-            else if (isset($_COOKIE['lang']) and in_array($_COOKIE['lang'], $GLOBALS['config']->langs_avail))
+            else if (isset($_COOKIE['lang']) and in_array($_COOKIE['lang'], $GLOBALS['config']->languages))
             {
                 // load from COOKIE
                 $lang = $_COOKIE['lang'];
@@ -56,7 +56,6 @@ class html
         else if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]))
         {
             // load from web browser environment
-            $avail = get_files($this->_file_root."/templates", "DIR");
             $lang = split(',', array_shift(split(";", $_SERVER["HTTP_ACCEPT_LANGUAGE"])));
             if (isset($lang[0]))
             {
@@ -64,7 +63,7 @@ class html
                 if (strlen($lang[0]) > 2)
                     $lang[0] = substr($lang[0], 0, 2);
                 // check to make sure lang is defined in our config
-                if (in_array($lang[0], $GLOBALS['config']->langs_avail))
+                if (in_array($lang[0], $GLOBALS['config']->languages))
                     $lang = $lang[0];
             }
         }
