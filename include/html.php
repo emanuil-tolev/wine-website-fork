@@ -192,28 +192,28 @@ class html
     // DO INDENT (internal indent)
     function do_indent ($str, $v = 0)
     {
-	    if($v < 0)
-		    $this->_indent_level += $v;
+        if($v < 0)
+            $this->_indent_level += $v;
 
-	    if($this->_indent_level > 0)
-	        $str =  str_repeat("  ", $this->_indent_level) . $str;
+        if($this->_indent_level > 0)
+            $str =  str_repeat("  ", $this->_indent_level) . $str;
 
-	    if($v > 0)
-		    $this->_indent_level += $v;
+        if($v > 0)
+            $this->_indent_level += $v;
 
-	    return $str . "\n";
+        return $str . "\n";
     }
 
     // HTML BR
     function br ($count = 1)
     {
-	    return $this->do_indent(str_repeat("<br />", $count));
+        return $this->do_indent(str_repeat("<br />", $count));
     }
     
     // HTML IMG Tag
     function img ($src, $align = "", $alt = "-", $width = null, $height = null)
     {
-     	if ($align) $doAlign = ' align="'.$align.'"';
+         if ($align) $doAlign = ' align="'.$align.'"';
         if ($alt) $doAlt = ' alt="'.$alt.'"';
         if ($src and file_exists($this->_file_root."/images/".$src))
         {
@@ -233,62 +233,62 @@ class html
     // HTML A HREF
     function ahref ($label, $url = "", $extra = "")
     {
-	    $label = stripslashes($label);
-	    if (!$label and $url)
-	    {	
-		    if (ereg("@",$url))
-		    {
-			    return $this->do_indent(" <a href=\"mailto:$url\" $extra>$url</a> ");
-		    }
-		    else
-		    {
-			    return $this->do_indent(" <a href=\"$url\" $extra>$url</a> ");
-		    }
-	    }
-	    else if (!$label)
-	    {
-		    return $this->do_indent(" &nbsp; ");
-	    }
-	    else
-	    {
-		    return $this->do_indent(" <a href=\"$url\" $extra>$label</a> ");
-	    }
+        $label = stripslashes($label);
+        if (!$label and $url)
+        {    
+            if (ereg("@",$url))
+            {
+                return $this->do_indent(" <a href=\"mailto:$url\" $extra>$url</a> ");
+            }
+            else
+            {
+                return $this->do_indent(" <a href=\"$url\" $extra>$url</a> ");
+            }
+        }
+        else if (!$label)
+        {
+            return $this->do_indent(" &nbsp; ");
+        }
+        else
+        {
+            return $this->do_indent(" <a href=\"$url\" $extra>$label</a> ");
+        }
     }
 
     // HTML B (bold)
     function b ($str)
     {
-	    return $this->do_indent("<b>$str</b>");
+        return $this->do_indent("<b>$str</b>");
     }
 
     // HTML SMALL (small text)
     function small ($str)
     {
-	    return $this->do_indent("<small>$str</small>");
+        return $this->do_indent("<small>$str</small>");
     }
 
     // HTML P
     function p ($str = "&nbsp;", $extra = null)
     {
-	    return $this->do_indent("<p $extra>$str</p>");
+        return $this->do_indent("<p $extra>$str</p>");
     }
 
     // HTML DIV
     function div ($str = "&nbsp;", $extra = null)
     {
-	    return $this->do_indent("<div $extra>$str</div>");
+        return $this->do_indent("<div $extra>$str</div>");
     }
     
     // HTML SPAN
     function span ($str = "&nbsp;", $extra = null)
     {
-	    return $this->do_indent("<span $extra>$str</span>");
+        return $this->do_indent("<span $extra>$str</span>");
     }
     
     // HTML PRE
     function pre ($str = "&nbsp;", $extra = null)
     {
-	    return "<pre $extra>$str</pre>";
+        return "<pre $extra>$str</pre>";
     }
 
     // LINE
@@ -315,13 +315,13 @@ class html
         $str .= '<table '.$width.' border=0 cellpadding=0 cellspacing=0>'."\n";
         if($title)
         {
-    	    $str .= '<tr><td class="'.$class.'">'."\n";
+            $str .= '<tr><td class="'.$class.'">'."\n";
             $str .= '    <table width="100%" border=0 cellpadding=0 cellspacing=0><tr>'."\n";
-    	    $str .= '        <td width="100%" align=center><span class=menuTitle> '.$title.' </span></td>'."\n";
+            $str .= '        <td width="100%" align=center><span class=menuTitle> '.$title.' </span></td>'."\n";
             $str .= '    </tr></table>'."\n";
-    	    $str .= '</td></tr>'."\n";
+            $str .= '</td></tr>'."\n";
         }
-        $str .= '<tr><td class="'.$class.'">'."\n";	
+        $str .= '<tr><td class="'.$class.'">'."\n";    
         $str .= '<table width="100%" border=0 cellpadding='.$innerPad.' cellspacing=1 '.$extra.'>'."\n";
         return $str;
     }
@@ -332,9 +332,9 @@ class html
         $str .= '</table></td></tr>'."\n";
         if ($text)
         {
-    	    $str .= '<tr><td class=topMenu>'."\n";
+            $str .= '<tr><td class=topMenu>'."\n";
             $str .= '    <table width="100%" border=0 cellpadding=0 cellspacing=0><tr>'."\n";
-    	    $str .= '        <td width="100%" align=center><span class=menuTitle> '.$text.' </span></td>'."\n";
+            $str .= '        <td width="100%" align=center><span class=menuTitle> '.$text.' </span></td>'."\n";
             $str .= '    </tr></table>'."\n";
             $str .= '</td></tr>'."\n";
         }
@@ -403,14 +403,14 @@ class html
     // FORM START
     function form_start ($script, $name, $method = "get")
     {
-	    $str = '<form name="'.$name.'" action="'.$script.'" method="'.$method.'">'."\n";
-	    return $str;
+        $str = '<form name="'.$name.'" action="'.$script.'" method="'.$method.'">'."\n";
+        return $str;
     }
 
     // FORM END
     function form_end ()
     {
-	    return '</form>'."\n";
+        return '</form>'."\n";
     }
 
     // FORM INPUT TEXT
@@ -418,29 +418,29 @@ class html
     {
         if ($max)
             $maxlengh = ' maxlength="'.$max.'"';
-	    $str = '<input type=text name="'.$name.'" size="'.$size.'" value="'.$value.'"'.$maxlengh.'>'."\n";
-	    return $str;
+        $str = '<input type=text name="'.$name.'" size="'.$size.'" value="'.$value.'"'.$maxlengh.'>'."\n";
+        return $str;
     }
 
     // FORM INPUT PASSWORD
     function form_input_password ($name, $size = 20, $value = "")
     {
-	    $str = '<input type=password name="'.$name.'" size="'.$size.'" value="'.$value.'">'."\n";
-	    return $str;
+        $str = '<input type=password name="'.$name.'" size="'.$size.'" value="'.$value.'">'."\n";
+        return $str;
     }
 
     // FORM INPUT HIDDEN FIELD
     function form_input_hidden ($name, $value = "")
     {
-	    $str = '<input type=hidden name="'.$name.'" value="'.$value.'">'."\n";
-	    return $str;
+        $str = '<input type=hidden name="'.$name.'" value="'.$value.'">'."\n";
+        return $str;
     }
 
     // FORM INPUT TEXT AREA
     function form_input_textarea ($name, $cols = 20, $rows = 5, $value = "")
     {
-	    $str = '<textarea name="'.$name.'" cols="'.$cols.'" rows="'.$rows.'" wrap="soft">'.$value.'</textarea>'."\n";
-	    return $str;
+        $str = '<textarea name="'.$name.'" cols="'.$cols.'" rows="'.$rows.'" wrap="soft">'.$value.'</textarea>'."\n";
+        return $str;
     }
 
     // FORM INPUT SELECT (drop down)
@@ -448,20 +448,20 @@ class html
     {
         if ($multi)
             $multi = " multiple";
-	    $str = '<select name="'.$name.'" size="'.$size.'"'.$multi.'>'."\n";
-	    while (list($key, $val) = each($options))
-	    {	
-		    if ($key == $selected)
-		    {
-			    $str .= '<option value="'.$key.'" selected>'.$val.'</option>'."\n";
-		    }
+        $str = '<select name="'.$name.'" size="'.$size.'"'.$multi.'>'."\n";
+        while (list($key, $val) = each($options))
+        {    
+            if ($key == $selected)
+            {
+                $str .= '<option value="'.$key.'" selected>'.$val.'</option>'."\n";
+            }
             else
             {
-			    $str .= '<option value="'.$key.'">'.$val.'</option>'."\n";		
-		    }
-	    }
-	    $str .= '</select>'."\n";
-	    return $str;
+                $str .= '<option value="'.$key.'">'.$val.'</option>'."\n";        
+            }
+        }
+        $str .= '</select>'."\n";
+        return $str;
     }
 
     // FORM INPUT TIMESTAMP (make an input field for timestamp)
@@ -585,48 +585,48 @@ class html
     // FORM INPUT CHECKBOX
     function form_input_checkbox ($name, $value = 1, $checked = 0)
     {
-	    if ($checked == 1)
-		    $str = '<input type="checkbox" name="'.$name.'" value="'.$value.'" checked>'."\n";
-	    else
-		    $str = '<input type="checkbox" name="'.$name.'" value="'.$value.'">'."\n";
-	    return $str;	
+        if ($checked == 1)
+            $str = '<input type="checkbox" name="'.$name.'" value="'.$value.'" checked>'."\n";
+        else
+            $str = '<input type="checkbox" name="'.$name.'" value="'.$value.'">'."\n";
+        return $str;    
     }
 
     // FORM INPUT RADIO
     function form_input_radio ($name, $value = 1, $checked = 0)
     {
-	    if ($checked == 1)
-		    $str = '<input type="radio" name="'.$name.'" value="'.$value.'" checked>'."\n";
-	    else
-		    $str = '<input type="radio" name="'.$name.'" value="'.$value.'">'."\n";
-	    return $str;	
+        if ($checked == 1)
+            $str = '<input type="radio" name="'.$name.'" value="'.$value.'" checked>'."\n";
+        else
+            $str = '<input type="radio" name="'.$name.'" value="'.$value.'">'."\n";
+        return $str;    
     }
 
     // FORM SUBMIT
     function form_submit ($value = "", $name = "submit", $extra = null)
     {
-	    $str = '<input type="submit" class="button" name="'.$name.'" value="'.$value.'" '.$extra.'>'."\n";
-	    return $str;
+        $str = '<input type="submit" class="button" name="'.$name.'" value="'.$value.'" '.$extra.'>'."\n";
+        return $str;
     }
 
     // FORM BUTTON
     function form_button ($value = "", $name = "submit", $extra = null)
     {
-	    $str = '<input type="button" class="button" name="'.$name.'" value="'.$value.'" '.$extra.'>'."\n";
-	    return $str;
+        $str = '<input type="button" class="button" name="'.$name.'" value="'.$value.'" '.$extra.'>'."\n";
+        return $str;
     }
 
     // FORM JS BUTTON (button using javascript)
     function form_js_button ($url = null, $vars = null, $skip = "")
     {
-	    global $PHP_SELF;
-	    if (!$url)
-	        $url = $PHP_SELF;
-	    if ($vars)
-	        $url .= "?".$this->build_urlarg($vars,$skip);
-	    $str = '<input type=button class="button" value=" &lt;&lt; Back " name="jsback" '.
-	    $str .= 'onClick="javascript:self.location=\''.$url.'\';">'."\n";
-	    return $str;
+        global $PHP_SELF;
+        if (!$url)
+            $url = $PHP_SELF;
+        if ($vars)
+            $url .= "?".$this->build_urlarg($vars,$skip);
+        $str = '<input type=button class="button" value=" &lt;&lt; Back " name="jsback" '.
+        $str .= 'onClick="javascript:self.location=\''.$url.'\';">'."\n";
+        return $str;
     }
 
     // BACK LINK (simple back url)
@@ -640,33 +640,33 @@ class html
     // ADD BR (replace \n with <br>)
     function add_br ($text = "")
     {
-	    $text = ereg_replace("\n","<br>\n",$text);
-	    return $text;
+        $text = ereg_replace("\n","<br>\n",$text);
+        return $text;
     }
 
     // FORMAT MSG (make an email, web readable, etc.)
     function format_msg ($text = "")
     {
         global $config;
-	    $arr = explode("\n",$text);
-	    while (list($c,$val) = each($arr))
-	    {
+        $arr = explode("\n",$text);
+        while (list($c,$val) = each($arr))
+        {
             // line break at 80 chars
             if (strlen($arr[$c]) > 80)
                 $arr[$c] = wordwrap($arr[$c], 80);        
-		    // add urls
-		    $arr[$c] = $this->urlify($arr[$c]);
+            // add urls
+            $arr[$c] = $this->urlify($arr[$c]);
             // add emoticons
-		    $arr[$c] = $this->emoticon($arr[$c]);
-		    // quote message text
-		    if (ereg("^&gt; &gt; &gt; &gt;",$arr[$c]) or ereg("^&gt;&gt;&gt;&gt;",$arr[$c]))
-			    $arr[$c] = "<font color=#000099>".$arr[$c]."</font>";            
-		    else if (ereg("^&gt; &gt; &gt;",$arr[$c]) or ereg("^&gt;&gt;&gt;",$arr[$c]))
-			    $arr[$c] = "<font color=#990000>".$arr[$c]."</font>";
-		    else if (ereg("^&gt; &gt;",$arr[$c]) or ereg("^&gt;&gt;",$arr[$c]))
-			    $arr[$c] = "<font color=#007777>".$arr[$c]."</font>";
-		    else if (ereg("^&gt;",$arr[$c]))
-			    $arr[$c] = "<font color=#660066>".$arr[$c]."</font>";
+            $arr[$c] = $this->emoticon($arr[$c]);
+            // quote message text
+            if (ereg("^&gt; &gt; &gt; &gt;",$arr[$c]) or ereg("^&gt;&gt;&gt;&gt;",$arr[$c]))
+                $arr[$c] = "<font color=#000099>".$arr[$c]."</font>";            
+            else if (ereg("^&gt; &gt; &gt;",$arr[$c]) or ereg("^&gt;&gt;&gt;",$arr[$c]))
+                $arr[$c] = "<font color=#990000>".$arr[$c]."</font>";
+            else if (ereg("^&gt; &gt;",$arr[$c]) or ereg("^&gt;&gt;",$arr[$c]))
+                $arr[$c] = "<font color=#007777>".$arr[$c]."</font>";
+            else if (ereg("^&gt;",$arr[$c]))
+                $arr[$c] = "<font color=#660066>".$arr[$c]."</font>";
             // add bug urls
             if (eregi("bug( | #)[0-9]+", $arr[$c]))
             {
@@ -681,9 +681,9 @@ class html
                                         "<a href=\"".$config->base_url."viewticket.php?ticket_id=\\2\">ticket \\2</a>",
                                         $arr[$c]);
             }                   
-	    }
-	    $text = implode("\n",$arr);
-	    return $this->pre($text);
+        }
+        $text = implode("\n",$arr);
+        return $this->pre($text);
     }
 
     // URLIFY (search text and make urls linkable)
@@ -706,15 +706,15 @@ class html
         $emreg = "(.*) &lt;([a-zA-Z0-9_\.\+\/-]+)@([a-zA-Z0-9_\.-]+\.[a-zA-Z0-9]+)&gt;(.*)";
         if (ereg($emreg,$text))
         {    
-    	    $text = ereg_replace($emreg, "<a href='mailto:\\2@\\3'>\\1</a>", $text);
+            $text = ereg_replace($emreg, "<a href='mailto:\\2@\\3'>\\1</a>", $text);
         }
         else
         {
-	        $emailreg = "([a-zA-Z0-9_\.\+\/-]+)@([a-zA-Z0-9_\.-]+\.[a-zA-Z0-9]+)";
-	        if (ereg($emailreg,$text))
-	        {
-    			    $text = ereg_replace($emailreg, "<a href='mailto:\\1@\\2'>\\1@\\2</a>", $text);
-	        }
+            $emailreg = "([a-zA-Z0-9_\.\+\/-]+)@([a-zA-Z0-9_\.-]+\.[a-zA-Z0-9]+)";
+            if (ereg($emailreg,$text))
+            {
+                    $text = ereg_replace($emailreg, "<a href='mailto:\\1@\\2'>\\1@\\2</a>", $text);
+            }
         }
         return $text;
     }
@@ -724,15 +724,15 @@ class html
     {
         $smiles = array(
                         "/:-\)/" => "smile.gif",
-		                "/:-\(/" => "sad.gif",
-		                "/B-\)/" => "cool.gif",
-		                "/:-p/" => "razz.gif",
-		                "/;-\)/" => "wink.gif"
-		               );
+                        "/:-\(/" => "sad.gif",
+                        "/B-\)/" => "cool.gif",
+                        "/:-p/" => "razz.gif",
+                        "/;-\)/" => "wink.gif"
+                       );
         while (list($smile,$img) = each($smiles))
         {
-    	    $path = $this->img("emoticon/".$img, "", $img);
-    	    $text = preg_replace($smile,$path,$text);
+            $path = $this->img("emoticon/".$img, "", $img);
+            $text = preg_replace($smile,$path,$text);
         }
         return $text;
     }
@@ -740,13 +740,13 @@ class html
     // SHORTEN (take a string, and limit its length)
     function shorten ($str = "", $max = 40)
     {
-	    $str = ereg_replace("\n","", $str);
-	    if (strlen($str) > $max)
-	    {
-		    $str = substr($str,0,$max);
-		    $str .= "...";
-	    }
-	    return $str;
+        $str = ereg_replace("\n","", $str);
+        if (strlen($str) > $max)
+        {
+            $str = substr($str,0,$max);
+            $str .= "...";
+        }
+        return $str;
     }
 
     // BUILD URLARG (build a valid URL from a list of name/values)
@@ -815,8 +815,8 @@ class html
                 
                 // load from local template repository
                 case "local":
-        			if (file_exists($template.".template"))
-                    	$in = join("",file($template.".template"));
+                    if (file_exists($template.".template"))
+                        $in = join("",file($template.".template"));
                     break;
     
                 // load base template (use users language first, fall back to site default)
@@ -835,7 +835,7 @@ class html
         }
 
         // oops not found, load 404 template
-		if (!$in)
+        if (!$in)
         {
             $this->in404 = 1;
             $in = '';
@@ -856,7 +856,7 @@ class html
         }
         
         // return the text with the vars replaced
-		return $this->template_replace($in, $vars, $noremovetags);
+        return $this->template_replace($in, $vars, $noremovetags);
     }
     
     // TEMPLATE_REPLACE (does the substitution for TEMPLATE)
@@ -868,7 +868,7 @@ class html
         $orig = $in;
                 
         // default vars
-		$vars['root'] =& $this->find_root();
+        $vars['root'] =& $this->find_root();
         $vars['self'] =& $_SERVER['PHP_SELF'];
         $vars['request_uri'] =& $_SERVER['REQUEST_URI'];
         $vars['base_url'] =& $GLOBALS['config']->base_url;
@@ -877,8 +877,8 @@ class html
 
         // replace vars in template
         // NOTE: using preg_replace() breaks as it wants to interpret '$1' in $val
-	    while (list($key,$val) = each($vars))
-	    {
+        while (list($key,$val) = each($vars))
+        {
             if (preg_match('/\{\$'.$key.'\}/', $orig))
             {
                 $in = str_replace('{$'.$key.'}', $val, $in);
@@ -887,7 +887,7 @@ class html
             {
                 $in = str_replace('{lc($'.$key.')}', ereg_replace(' ','_',strtolower($val)), $in);
             }
-	    }
+        }
         unset($key, $val);
         
         // remove all the unset vars
@@ -955,7 +955,7 @@ class html
     // REDIRECT (simple httpd header redirect) 
     function redirect ($url = ".")
     {
-	    header("Location: ".$url);
+        header("Location: ".$url);
     }
 // end html class
 }

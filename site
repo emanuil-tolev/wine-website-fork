@@ -57,7 +57,7 @@ switch (true)
   default:
     $show_nav = 1;
     $text .= home_page();
-	break;
+    break;
 }
 
 // display the page
@@ -94,38 +94,38 @@ function home_page ()
     $c = intval(rand(1,count($shots) - 1));
     $vars['screenshot'] = $html->ahref($html->img('shots/wine_'.$c.'.png','right','Screenshot'), $file_root.'/images/shots/full/wine_'.$c.'.png');
     
-	// get aboout box
-	$about_box = $html->theme_box($config->theme, "box_title", "About Wine", "99%", $html->template("base", 'home_about', $vars), '10', 'white', 'topMenu');
+    // get aboout box
+    $about_box = $html->theme_box($config->theme, "box_title", "About Wine", "99%", $html->template("base", 'home_about', $vars), '10', 'white', 'topMenu');
     
-	// get link to latest release
-	$latest_box = $html->theme_box($config->theme, "box_title", "Latest Release", "97%", $html->template("base", 'wine_release'), '10', 'white', 'topMenu');
-	
+    // get link to latest release
+    $latest_box = $html->theme_box($config->theme, "box_title", "Latest Release", "97%", $html->template("base", 'wine_release'), '10', 'white', 'topMenu');
+    
     // get regular news
     $news_box = $html->theme_box($config->theme, "box_title", "Latest News", "99%",  view_news('home'), '10', 'white', 'topMenu');
 
     // get random quote
     $quote_box = $html->theme_box($config->theme, "box_title", "Quote", "99%",  view_quote(), '10', 'white', 'topMenu');
 
-	// get wwn news
+    // get wwn news
     $wwn = new wwn();
-	$issues = $wwn->get_list();
-	$wwn_box = $html->theme_box($config->theme, "box_title", "Weekly Newsletters", "97%", $wwn->issues_list($issues[0], $issues[1], 3), '10', 'white', 'topMenu');
-	
+    $issues = $wwn->get_list();
+    $wwn_box = $html->theme_box($config->theme, "box_title", "Weekly Newsletters", "97%", $wwn->issues_list($issues[0], $issues[1], 3), '10', 'white', 'topMenu');
+    
     // sponsor box
     $sponsor_box = $html->template("base", 'sponsor');
     
-	// load the template for home page and fill in
-	$vars = array(
-	              'about_box'   => $about_box,
+    // load the template for home page and fill in
+    $vars = array(
+                  'about_box'   => $about_box,
                   'news_box'    => $news_box,
-			      'latest_box'  => $latest_box,
+                  'latest_box'  => $latest_box,
                   'quote_box'   => $quote_box,
-			      'wwn_box'     => $wwn_box,
+                  'wwn_box'     => $wwn_box,
                   'sponsor_box' => $sponsor_box
-			     );
-	$text = $html->template($config->theme, 'home_page', $vars);	 
-	
-	return $text;
+                 );
+    $text = $html->template($config->theme, 'home_page', $vars);     
+    
+    return $text;
 }
 
 // load the announce file for latest version of Wine
@@ -198,9 +198,9 @@ function view_news ($where)
         // counter
         $c++;
 
-		// do not show images less than current pos
-		if ($x != 1 and $x >= $c)
-		  continue;
+        // do not show images less than current pos
+        if ($x != 1 and $x >= $c)
+          continue;
 
         // get data from XML file
         $vars = array();
@@ -320,54 +320,54 @@ function view_screenshots ($x)
 {
     global $file_root, $config, $html;
         
-	// Grab list of images from screenshot dir
-	$shots = get_files($file_root."/images/shots","png");
+    // Grab list of images from screenshot dir
+    $shots = get_files($file_root."/images/shots","png");
 
-	// setup vars
-	$total = count($shots) + 1;
-	$num = 0;
-	$where = 0;
+    // setup vars
+    $total = count($shots) + 1;
+    $num = 0;
+    $where = 0;
     $vars = array();
-	$vars['next'] = "&nbsp;";
-	$vars['prev'] = "&nbsp;";
+    $vars['next'] = "&nbsp;";
+    $vars['prev'] = "&nbsp;";
 
-	// loop and display images
-	for ($c = 1; $c < $total; $c++)
-	{
-		// do not show images less than current pos
-		if ($x != 1 and $x >= $c)
-		  continue;
+    // loop and display images
+    for ($c = 1; $c < $total; $c++)
+    {
+        // do not show images less than current pos
+        if ($x != 1 and $x >= $c)
+          continue;
 
-		// display image
-		$vars['im_'.$num] = $html->ahref($html->img($file_root.'/images/shots/wine_'.$c.'.png'), $file_root.'/images/shots/full/wine_'.$c.'.png');
+        // display image
+        $vars['im_'.$num] = $html->ahref($html->img($file_root.'/images/shots/wine_'.$c.'.png'), $file_root.'/images/shots/full/wine_'.$c.'.png');
         
         // add description
         list($vars['ds_'.$num]) = get_xml_tags($file_root.'/images/shots/desc/wine_'.$c.'.xml',array('description'));
         
-		// end at 9
-		if ($num == 9 or $num == $total)
-		{
-			$where = $c;
-			break;
-		}
+        // end at 9
+        if ($num == 9 or $num == $total)
+        {
+            $where = $c;
+            break;
+        }
         
         // count number of images displayed.
-		$num++;
-	}
+        $num++;
+    }
     
-	// display prev link
-	if ($x > 1)
-	{
-		$prev = $total + 1 - $c;
-		$vars['prev'] = $html->ahref("&lt;&lt; Previous Screenshots","?ss=".$prev,"class=menuItem");
-	}
+    // display prev link
+    if ($x > 1)
+    {
+        $prev = $total + 1 - $c;
+        $vars['prev'] = $html->ahref("&lt;&lt; Previous Screenshots","?ss=".$prev,"class=menuItem");
+    }
 
-	// display next link
-	if (($x + 9) < $total)
-	{
-		$next = $where;
-		$vars['next'] = $html->ahref("More Screenshots &gt;&gt;","?ss=".$next,"class=menuItem");
-	}
+    // display next link
+    if (($x + 9) < $total)
+    {
+        $next = $where;
+        $vars['next'] = $html->ahref("More Screenshots &gt;&gt;","?ss=".$next,"class=menuItem");
+    }
 
     // load into template
     $template = $html->template('base', 'screenshots', $vars);
@@ -380,7 +380,7 @@ function view_screenshots ($x)
 function view_quote ()
 {
     $quotes = split("\n",$GLOBALS[html]->template('base','quotes'));
-    return $quotes[rand(0,(count($quotes)-2))]; 
+    return $quotes[rand(0,(count($quotes)-2))];
 }
 
 // end of file
