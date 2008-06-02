@@ -1,0 +1,33 @@
+{$screenshot}
+
+<p>Wine es una implementación de códido abierto de la API de <a 
+href="http://www.microsoft.com/windows/">Windows</a> API en la parte superior 
+de las<a href="http://www.x.org">X</a>, <a href="http://www.opengl.org">OpenGL
+</a>, y Unix.</p>
+
+<p>Piense de Wine como una capa de compatibilidad para ejecutar programas de
+Windows. Wine no requiere Microsoft Windows, ya que es una alternativa 
+totalmente gratuita de la implementación de la API de Windows que consta de 
+código 100% no-Microsoft, sin embargo, Wine opcionalmente puede usar DLLS 
+nativas de Windows si están disponibles. Wine proporciona un conjunto de 
+herramientas de desarrollo para portar código fuente de Windows para Unix así 
+como un cargador de programa, lo que permite a muchos programas sin modificar 
+de Windows ejecutarse en x86 basado en Unix, incluyendo
+<a href="http://www.linux.org/">Linux</a>,
+<a href="http://www.freebsd.org/">FreeBSD</a>,
+<a href="http://www.apple.com/macosx/">Mac OS X</a> y
+<a href="http://wwws.sun.com/software/solaris/">Solaris</a>.</p>
+
+<p>Más información puede leerse en los artículos <a href="{$root}/site/why">
+¿Por qué Wine es tan importante?</a> y <a href="{$root}/site/myths">
+desacreditando mitos de Wine</a>. Si se está preguntando como de bien funciona 
+una aplicación en Wine, por favor examine la <a href="http://appdb.winehq.org/">
+base de datos de aplicaciones</ a>. Para las instrucciones de instalación paso 
+a paso con ayuda de la ejecución Wine, eche un vistazo a la 
+<a href="{$root}/site/docs/wineusr-guide/index">Guía del usuario</a>.
+</p>
+
+<p>Wine es software libre. Los <a href="http://www.winehq.org/site/license">
+términos de licencia</a> son los de 
+<a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">la Licencia 
+Pública General GNU Lesser version 2.1</a>.</p>
