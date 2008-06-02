@@ -379,8 +379,8 @@ function view_screenshots ($x)
 // random quote
 function view_quote ()
 {
-    $quotes = split("\n",$GLOBALS[html]->template('base','quotes'));
-    return $quotes[rand(0,(count($quotes)-2))];
+    $quotes = explode("\n",trim($GLOBALS[html]->template('base','quotes')));
+    return $quotes[array_rand($quotes)];
 }
 
 // end of file
