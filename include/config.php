@@ -22,7 +22,7 @@ class config
             // exit if config not found
             if (!file_exists($path))
             {
-                echo 'config file not found!';
+                echo "config file {$path} not found!";
                 exit();
             }
         
