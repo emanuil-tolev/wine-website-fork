@@ -9,7 +9,6 @@
 
 <ol>
   <li><a href="#co">Getting a local copy of Wine</a></li>
-  <li><a href="#docs">Documentation module available via CVS from Sourceforge</a></li>
   <li><a href="#sourcetree">Source Tree Browsing via the Web</a></li>
 </ol>
 
@@ -29,22 +28,6 @@ cvs login
 <p>To check out the entire Wine source tree run:</p>
 
 <p><code>cvs -z 3 checkout wine</code></p>
-
-<hr />
-
-<h1 id="docs">Documentation module available via CVS from Sourceforge</h1>
-
-<p>The documentation lives in a separate CVS tree on Sourceforge.  To get the docs in
-  a terminal run:</p>
-<p><code>cvs -z3 -d:pserver:anonymous@wine.cvs.sourceforge.net:/cvsroot/wine co -P docs</code></p>
-
-<p>When prompted for a password press the enter key. A subdirectory named docs will be created.</p>
-
-<p>You can also Browse
-<a href="http://wine.cvs.sourceforge.net/wine/">the Wine Documentation
-module</a>. Here is more information on
-<a href="http://www.winehq.org/site/contributing#doc">documentation
-writing</a>.</p>
 
 <hr />
 

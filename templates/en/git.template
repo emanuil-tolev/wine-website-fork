@@ -23,7 +23,6 @@ such as the Linux Kernel source.</p>
     <li><a href="#sourcetree">Source Tree Browsing via the Web</a></li>
     <li><a href="#modules">Other modules available from WineHQ</a></li>
     <li><a href="#clonecvs">Getting a local copy of Wine with CVS</a></li>
-    <li><a href="#docs">Documentation module available from Sourceforge</a></li>
 </ol>
 
 <hr />
@@ -98,6 +97,7 @@ exports the following modules:</p>
   <li><a href="http://source.winehq.org/git/website.git">website.git</a>  -- source for the WineHQ.org website</li>
   <li><a href="http://source.winehq.org/git/bugzilla.git">bugzilla.git</a>  -- source for the bugzilla version used on the WineHQ site</li>
   <li><a href="http://source.winehq.org/git/appdb.git">appdb.git</a>  -- source for the application database web site</li>
+  <li><a href="http://source.winehq.org/git/docs.git">docs.git</a>  -- source for the Wine documentation</li>
   <li><a href="http://source.winehq.org/git/tools.git">tools.git</a>  -- tools used on the WineHQ site</li>
 </ul>
 
@@ -117,15 +117,3 @@ exports the following modules:</p>
 <p>To check out the Wine source tree run:</p>
 
 <p><code>cvs -z 3 -d :pserver:cvs@cvs.winehq.org:/home/wine checkout wine</code></p>
-
-<hr />
-
-<h1 id="docs">Documentation module available from Sourceforge</h1>
-
-<p>The documentation lives in a separate CVS tree on Sourceforge.<br />
-To get a git repository of the documentation create a new directory and
-in a terminal run in that directory:</p>
-
-<p><code>git cvsimport -v -k -d :pserver:anonymous@wine.cvs.sourceforge.net:/cvsroot/wine docs</code></p>
-
-<p>But be aware that this can take quite some time.</p>
