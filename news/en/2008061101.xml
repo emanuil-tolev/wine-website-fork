@@ -26,6 +26,7 @@ There are no open 1.0 bugs.
 1.0 bugs fixed since May 27th:
 <ul>
 <li><a href="http://bugs.winehq.org/show_bug.cgi?id=11509">11509</a> Wordviewer 2003 is unable to open documents encrypted with AES
+<li><a href="http://bugs.winehq.org/show_bug.cgi?id=12097">12097</a> Wine 1.0 should not ship out-of-sync resource translations
 <li><a href="http://bugs.winehq.org/show_bug.cgi?id=12246">12246</a> "make test" gives different results with and without warn+heap
 <li><a href="http://bugs.winehq.org/show_bug.cgi?id=13139">13139</a> Office 2003 install aborts in RC1
 <li><a href="http://bugs.winehq.org/show_bug.cgi?id=13277">13277</a> Return to Mysterious Island crashes
@@ -35,7 +36,6 @@ There are no open 1.0 bugs.
 1.0 bugs deferred to 1.0.1 since May 27th:
 <ul>
 <li><a href="http://bugs.winehq.org/show_bug.cgi?id=11584">11584</a> Multiple games crash with stack overflow error
-<li><a href="http://bugs.winehq.org/show_bug.cgi?id=12097">12097</a> Wine 1.0 should not ship out-of-sync resource translations
 <li><a href="http://bugs.winehq.org/show_bug.cgi?id=12307">12307</a> firefox 3 crash on some web pages [dogfood]
 <li><a href="http://bugs.winehq.org/show_bug.cgi?id=13143">13143</a> XIM patch prevents wine-0.9.60 and later to run
 <li><a href="http://bugs.winehq.org/show_bug.cgi?id=13740">13740</a> winebrowser gets wrong URL, problem with unicode
