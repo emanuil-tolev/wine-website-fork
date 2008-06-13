@@ -18,10 +18,11 @@ $config = new config($file_root."/include/"."winehq.conf", $file_root."/include/
 
 // load global libs
 require($file_root."/include/"."html.php");
-require($file_root."/include/"."sidebar.php");
+require($file_root."/include/"."menu.php");
 require($file_root."/include/"."plugin.php");
 require($file_root."/include/"."wwn.php");
 require($file_root."/include/"."utils.php");
+require($file_root."/include/"."XMLToArray.php");
 
 // create html object
 $html = new html($file_root);

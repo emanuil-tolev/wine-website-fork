@@ -81,7 +81,8 @@ p.indent            { padding-left: 1em; padding-right: 1em;}
 
 .topMenu            { background-color: #601919; }
 .sideMenu           { background-color: #FFFFFF; }
-.border             { background-color: #601919; }
+.sideBorder         { border-right: 1px solid #601919; background-color: #FFFFFF; }
+.bottomBorder       { border-top: 1px solid #601919; }
 
 /* Misc */
 .tiny               { font-size: 8px; }

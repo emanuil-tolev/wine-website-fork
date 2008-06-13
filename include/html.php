@@ -98,21 +98,25 @@ class html
     function showpage ($theme, $title)
     {
         global $config, $page, $view;
+        
+        // load sidebar - only show sidebar in non-error modes
         if (!$this->_error_mode)
         {
-            // only show nav bar in non-error modes
-            $sidebar = new sidebar($config->theme, $config->nav, $this->find_root());
-            $menu = $sidebar->menu();
+            $sidebar = new menu($this, $theme, $this->lang);
+            $menu = $sidebar->load('menu', $page);
         }
+        
+        // build body
         $body = $this->status_message;
         $body .= $this->page;
+        
+        // add debug log
         if ($config->web_debug and $this->errorlog)
         {
             $body .= $this->br().$this->frame_start("Debug Log", "95%");
             $body .= $this->frame_tr($this->frame_td($this->span($this->errorlog,"class=tiny"),"class=ltgrey"));
             $body .= $this->frame_end("");
         }
-        $search = $this->template("base", "search");
         
         // rss link
         if ($this->rss_link)
@@ -154,8 +158,7 @@ class html
                                            'page_title'    => $title,
                                            'page_body'     => $body,
                                            'rss_link'      => $rss_link,
-                                           'page_sidebar'  => $menu,
-                                           'page_search'   => $search
+                                           'page_sidebar'  => $menu
                                           )
                                     );
         }

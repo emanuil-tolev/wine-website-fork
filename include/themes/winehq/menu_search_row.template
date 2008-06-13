@@ -1,0 +1,19 @@
+<tr>
+<td>
+    <table width="145" class="sideBorder" style="padding-bottom: 2px; padding-top: 2px;">
+    <tr><td align="center">
+    <!-- SiteSearch Google -->
+    <FORM method=GET action="http://www.google.com/search" style="margin: 0px;">
+    <input type="text" name="q" value="{$name}"
+       onBlur="if (value == '') {value = '{$name}'}" 
+       onFocus="if (value == '{$name}') {value =''}"
+       size=12 maxlength=80 class="searchInput">
+    <input type=hidden name=domains value="www.winehq.org">
+    <input type=hidden name=sitesearch value="www.winehq.org">
+    </FORM>
+    <!-- SiteSearch Google -->
+    </td></tr>
+    </table>
+</td>
+<td><img src="{$root}/images/blank.gif" width="5" height="1" alt=""></td>
+</tr>

@@ -29,54 +29,6 @@ class config
             // read global config file
             $this->readConfig($path);
         }
-        
-        // navigation
-        $this->nav = array(
-            'WineHQ Menu' => array(
-                'WineHQ'          => '{$root}',
-                'AppDB'           => 'http://appdb.winehq.org',
-                'Bugzilla'        => 'http://bugs.winehq.org/',
-                'Wine Wiki'       => 'http://wiki.winehq.org',
-                'Wine Forums'     => 'http://forum.winehq.org/'
-            ),
-        'About' => array(
-                'About'           => '{$root}/site/about',
-                'Introduction'    => '{$root}/site/about',
-                'Features'        => '{$root}/site/wine_features',
-                'Screenshots'     => '{$root}/site?ss=1',
-                'Contributing'    => '{$root}/site/contributing',
-                'News'            => '{$root}/site?news=archive',
-                'Press'           => '{$root}/site/press',
-                'License'         => '{$root}/site/license'
-            ),
-           'Download' => array(
-                'Get Wine Now'        => '{$root}/site/download'
-            ),
-           'Support' => array(
-                'Support'         => '{$root}/site/support',
-                'Getting Help'    => '{$root}/site/getting_help',
-                'FAQ'             => 'http://wiki.winehq.org/FAQ',
-                'Documentation'   => '{$root}/site/documentation',
-                'HowTo'           => '{$root}/site/howto',
-                'Live Support Chat' => '{$root}/site/irc',
-                'Paid Support'    => 'http://www.codeweavers.com/'
-           ),
-           'Development' => array(
-                'Development'     => '{$root}/site/development',
-                'Developers Guide' => '{$root}/site/docs/winedev-guide/index',
-                'Mailing Lists'   => '{$root}/site/forums',
-                'GIT'             => '{$root}/site/git',
-                'Sending Patches' => '{$root}/site/sending_patches',
-                'To Do Lists'     => 'http://wiki.winehq.org/TodoList',
-                'Fun Projects'    => '{$root}/site/fun_projects',
-                'Janitorial'      => 'http://wiki.winehq.org/JanitorialProjects',
-                'Winelib'         => '{$root}/site/winelib',
-                'Status'          => '{$root}/site/status',
-                'Resources'       => '{$root}/site/resources',
-                'WineConf'        => '{$root}/site/wineconf'
-           )
-       );
-
     // end of config()
     }
     
