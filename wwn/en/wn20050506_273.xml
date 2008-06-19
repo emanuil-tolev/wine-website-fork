@@ -354,14 +354,14 @@ window initialization code, etc that goes on inside DialogBoxParam, and
 I'd need to handle all of that, I think.  There even appears to be 
 issues with 16 vs 32 bit handler addresses, etc.  Looks really ugly.
 </p><p>
-Is there a simpler way to programatically click "Ok" on a dialog box?  
+Is there a simpler way to programmatically click "Ok" on a dialog box?
 (The dialog box coming from code that I don't have source for...)
 </p></quote>
 
 <p>Shachar Shemesh suggested:</p>
 <quote who="Shachar Shemesh"><p>
 For simple things, merely sending the dialog a WM_COMMAND with the right 
-parameters will do it for you. You can programatically find the dialog 
+parameters will do it for you. You can programmatically find the dialog
 using "FindWindow".
 </p><p>
 I've done such things before. For simple things, this works very well. 

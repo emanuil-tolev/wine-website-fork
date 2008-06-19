@@ -322,7 +322,7 @@ for the new framework with some actual tests.</p>
 <topic>Internationalization</topic>
 <p>Steve Lustbader posted a patch to implement 
 <code>GetUserDefaultUILanguage</code> and 
-<code>GetSytemDefaultUILanguage</code> but wasn't
+<code>GetSystemDefaultUILanguage</code> but wasn't
 sure of the details of using them:</p>
 <quote who="Steve Lustbader"><p>
  I implemented these functions in codepage.c since similar functions
