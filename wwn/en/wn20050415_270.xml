@@ -257,7 +257,7 @@ ControlCode is ef002407, OutputBufferLength is 610, InputBufferLength is 514<br 
 trace:ntoskrnl:driver_control InputBuffer[0xc] is 3c, InputBuffer[410] is 0
 fixme:ntoskrnl:IofCompleteRequest stub!<br />
 trace:ntoskrnl:driver_control IRP_MJ_DEVICE_CONTROL returned 0, IoStatus 
-it c0000001, Infomation is 0<br />
+it c0000001, Information is 0<br />
 trace:ntoskrnl:driver_control Irp.UserBuffer[0x410] is 0, 
 Irp.UserBuffer[0x40c] is 0</code></ul></p><p>
 

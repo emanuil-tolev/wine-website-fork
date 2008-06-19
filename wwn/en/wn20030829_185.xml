@@ -381,7 +381,7 @@ sound hardware.
 Well, if you look at TransGaming DDraw code in Wine, you will see that they
 mimic the way DirectX is doing this (ie by somehow using an Escape in the
 GDI which returns a structure filled with function pointers and private
-datas).
+data).
 </p><p>
 Now this is a debate we had in the current WineHQ D3D development team :
 should we base our DirectX implementation on how Windows does the separation
@@ -493,7 +493,7 @@ ignorance, rather than a deliberate design decision. As such, it is
 highly NOT recommended for cases where hostile code of unknown qualities 
 is tested.
 </p><p>
-For all you know, sobig may be checking whether it is runnning on wine, 
+For all you know, sobig may be checking whether it is running on wine,
 and then issuing the correct interrupts (static linking dlopen) and 
 infecting your Unix system.
 </p></quote>

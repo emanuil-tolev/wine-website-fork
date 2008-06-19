@@ -342,7 +342,7 @@ After exchanging some mail, Patrik asked,
  <li>and if i need to know syncs how do I find them?</li>
 </p>
 <p> Another question I have is about pixel depth.  From what I understand, it is
- imposible to change the pixel format of the screen while X is running. 
+ impossible to change the pixel format of the screen while X is running.
  However, it is possible to start more than one X server with different configs
  (and depth) which we could use if we have to but probably not a good idea.  Of
  course another posibility is to emulate the pixel depth, but that would

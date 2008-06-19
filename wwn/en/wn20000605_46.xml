@@ -364,7 +364,7 @@ seamlessly with native DLLs yet, certain DLL dependencies may be problematic, bu
 Wine for many popular DLL configurations. Also see WWN's <a href="status.html">Status Page</a> to figure
 out how well your favorite DLL is implemented in Wine.
 <p />
-It is of course also possible to override these settings by explictly using Wine's --dll command-line
+It is of course also possible to override these settings by explicitly using Wine's --dll command-line
 option (see the man page for details).
 <p />
 Some hints for choosing your optimal configuration (listed by 16/32-bit DLL pair):

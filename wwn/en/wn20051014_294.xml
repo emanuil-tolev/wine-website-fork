@@ -155,7 +155,7 @@ WineD3D, and it's not Released on WineD3DSurface_Release</li>
 RenderTarget, the DepthStencilBuffer, BackBuffer and FrontBuffer, because 
 ddraw.dll needs its surfaces. Instead, release the WineD3DSurfaces only.
 </li></ul></p><p>
-The whole thing is far from being useable, if anyone is interested in the 
+The whole thing is far from being usable, if anyone is interested in the
 code, I can send it, but be warned, it's quite a mess at the moment. My plan 
 is to get some games running, and then I'll send small and clean patches for 
 CVS commit and upload a big patch somewhere for prior testing.

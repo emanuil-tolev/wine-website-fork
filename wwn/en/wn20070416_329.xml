@@ -304,7 +304,7 @@ window doesn't have to use the same pixelformat as its parent.
 
 </p><p><u>Patch</u></p><p>
 As mentioned before the patch was mainly made by Chris Robinson and I have 
-added a few fixes to it to make it more compatible. Bascially a child window is 
+added a few fixes to it to make it more compatible. Basically a child window is
 allocated for a hdc during SetPixelFormat which needs to be called on every hdc 
 before it can be used with OpenGL. That's basically the biggest change to the 
 OpenGL code. For the rest some x11drv calls like SetWindowPos had to be 

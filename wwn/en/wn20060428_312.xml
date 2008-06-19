@@ -287,8 +287,8 @@ will be interesting, too.
 </p><p>
 On the SSPI/GENSEC side, I've talked to Andrew Bartlett and Jelmer
 Vernooij about isolating GENSEC from the Samba code a bit more so it's
-useable without pulling in too much of the other Samba code (which is
-also GPL and not useable). They don't seem too happy about releasing
+usable without pulling in too much of the other Samba code (which is
+also GPL and not usable). They don't seem too happy about releasing
 GENSEC under the LGPL either, but seem to prefer that to other, less
 elegant solutions like a wrapper library or a stdio interface.
 </p><p>

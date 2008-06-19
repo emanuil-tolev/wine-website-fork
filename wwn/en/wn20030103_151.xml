@@ -437,7 +437,7 @@ http://www.winehq.org/site/docs/winelib-guide/winelib-toolkit#WINEMAKER</a>
  )
 </p><p>
 The process generates a Makefile that is supposed to complie a
-ressource file e.g. winemine.rc with the wrc compiler, but 
+resource file e.g. winemine.rc with the wrc compiler, but
 winemaker adds a '-L' option to the wrc compilwr that is does 
 not recognize.
 </p><p>
@@ -521,7 +521,7 @@ if we need to fix wrc? Tnx.
 Mehmet Yasar said it should work,
 <quote who="Mehmet Yasar">
 I'm developing a small app with MS tools and I know that MS accepts '-' 
-and '!' for ressources (icon, bitmap, accels, menus ...).</quote>
+and '!' for resources (icon, bitmap, accels, menus ...).</quote>
 Dimi wanted to know if that meant the special characters could
 appear anywhere in the name, including the beginning.  Mehmet
 checked and found:<quote who="Mehmet Yasar">
@@ -529,7 +529,7 @@ checked and found:<quote who="Mehmet Yasar">
 
 I knew that strings like "x-x!xx" were accepted.
 </p><p>
-I just tested icon ressource beginning with weird characters like 
+I just tested icon resource beginning with weird characters like
 "!icon" or "-icon" and that works (tested under VC++/sp5).
 </p></quote>
 

@@ -321,7 +321,7 @@ for transparent realtime performance to be attainable for an ordinary desktop
 user without their knowledge or previous setup. The reason is that the
 current system for giving realtime privileges to ordinary users is
 complicated and not set up properly by hardly any distributions. This is the
-real time rlimits capabilites which is already in the kernel.
+real time rlimits capabilities which is already in the kernel.
 </p><p>
 I do not believe you are going to need real time scheduling to get audio to
 work properly. This really is overkill in my opinion. However if you really

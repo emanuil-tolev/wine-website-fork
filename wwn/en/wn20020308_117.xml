@@ -720,7 +720,7 @@ I hope this will help finding a fix.
  I created the problematic change in question.
 </p><p>
  Without the change, when StgOpenStorage is called with an existing
- zero length file as the filename, it fails because it suceeded in
+ zero length file as the filename, it fails because it succeeded in
  opening the file but expects it to have valid content...
 </p><p>
  Unfortunately, the change was merged incorrectly from the big CW

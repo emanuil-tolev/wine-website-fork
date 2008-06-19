@@ -165,7 +165,7 @@ currently stubbed out items).</li>
 are merged.</li>
 <li>write a clone of fontview.exe (windows font sample viewer). This is 
 probably not useful for WINE but might be useful for ReactOS, plus it 
-would be a good excercise in windows GDI programming.</li>
+would be a good exercise in windows GDI programming.</li>
 <li>write clones of guidgen.exe and/or uuidgen.exe, 2 different windows SDK 
 tools for generating GUIDs/UUIDs. (if we are providing an IDL compiler and 
 other such OLE-esque things, having a GUID/UUID generator is probably a 

@@ -474,7 +474,7 @@ In order to make this happen, Patrick Stridvall provided a TODO list:
     some day.
 
 <li />If we really really want a low memory footprint, all dependencies
-    between GDI/USER and the KERNEL, that is not absolutly needed, must be
+    between GDI/USER and the KERNEL, that is not absolutely needed, must be
     eliminated and/or #ifdef:ed. I am not sure Alexandre will like that, I
     am not even sure if I like it.
 
@@ -497,7 +497,7 @@ understanding of the situation:
 
 <p />
 
-<quote who="Patrick Stridvall">I think your orignal suggestion making Wine
+<quote who="Patrick Stridvall">I think your original suggestion making Wine
 run on top off Micro-Windows driver is better.
 
 <p />

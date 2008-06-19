@@ -208,7 +208,7 @@ base type of which all other texture types are instances.
 Both our d3d8 and wined3d dlls contain a routine which detects the 
 capabilities of the videocard as advertised by the OpenGL driver. Right now 
 various parts of D3D8 have been moved over to WineD3D. Various pieces of the 
-code ported to WineD3D use these capabilites. Right now D3D8 contains a list 
+code ported to WineD3D use these capabilities. Right now D3D8 contains a list
 with capabilities but doesn't share it with WineD3D. Because of this some 
 pieces of code failed, for instance wined3d's surface code for which I posted a 
 workaround last week.

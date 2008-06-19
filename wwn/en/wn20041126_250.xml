@@ -337,7 +337,7 @@ as the program tested is copy protected, and as it seems that the copy
 protection is what causes the harm, it can be interesting to know that the 
 programe seems to set the TF flag (some copy protection schemes directly do an 
 "int 1", but given the exception code we get, this isn't the case).
-- in Windows trap handling, the TF is explictly reset before calling the windows 
+- in Windows trap handling, the TF is explicitly reset before calling the windows
 exception handler (which is what Wine does, before calling the window exception 
 handler). Of course the handler can set it back if it wants to continue single 
 stepping.</p></quote>

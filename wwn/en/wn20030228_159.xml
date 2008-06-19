@@ -566,7 +566,7 @@ Running wine_locks.pl requires this patch
 <a href="http://people.redhat.com/mstefani/wine/smatch/smatch.pm.diff">
 http://people.redhat.com/mstefani/wine/smatch/smatch.pm.diff</a>
 for smatch.pm because it treats every ARGV entry as filename (i'll
-contact the smatch author to find a solution that dosn't require this
+contact the smatch author to find a solution that doesn't require this
 hack).
 </p><p>
 Besides some NOTABUG's in the CriticalSection locking i found only this:

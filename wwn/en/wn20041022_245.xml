@@ -162,9 +162,9 @@ us.  This worked very well for us.  I suspect there are a few things that
 this would have broken, like calling GetProcAddress on one of our C++
 symbols, but that isn't a feature we ever used.
 </p><p>
-We got a rude suprise when we tried to update to a current version of wine a
+We got a rude surprise when we tried to update to a current version of wine a
 month or two ago.  The DLL loading mechanism had changed during that span,
-and hack we were using would no longer work.  It looks like the current
+and the hack we were using would no longer work.  It looks like the current
 version of wine won't allow you to link to a wine DLL with the native
 linker.  It expects all linking between wine DLLs to be done through
 winebuild, and it gets confused when a DLL gets loaded (by the shared
