@@ -1,5 +1,11 @@
-<b><a href="?announce={$snapshot_date}">Wine {$snapshot_date}</a></b>
-
+<table class="releases" cellspacing=5>
+<tr><td>Stable:</td>
+<td><b><a href="?announce={$stable_release}">Wine&nbsp;{$stable_release}</a></b>
 <span class="small">
-  (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$snapshot_date}">shortlog</a>)  
-</span>
+  (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$stable_release}">shortlog</a>)  
+</span></td></tr>
+<tr><td>Development:</td>
+<td><b><a href="?announce={$master_release}">Wine&nbsp;{$master_release}</a></b>
+<span class="small">
+  (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$master_release}">shortlog</a>)  
+</span></td></tr></table>
