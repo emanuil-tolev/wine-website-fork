@@ -10,7 +10,8 @@ Updated with each release.</p>
 <a href="{$root}/site/howto">installation and configuration how-to</a> 
 for post-installation instructions.</b></p>
 
-<p>Snapshot Date: {$snapshot_date}</p>
+<p><table><tr><td>Latest stable release:</td><td>Wine&nbsp;{$stable_release}</td></tr>
+<tr><td>Latest development release:</td><td>Wine&nbsp;{$master_release}</td></tr></table></p>
 
 <table width="95%" border=0 cellpadding=5 cellspacing=1 bgcolor="#EFEFEF">
 

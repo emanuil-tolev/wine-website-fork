@@ -875,8 +875,8 @@ class html
         $vars['self'] =& $_SERVER['PHP_SELF'];
         $vars['request_uri'] =& $_SERVER['REQUEST_URI'];
         $vars['base_url'] =& $GLOBALS['config']->base_url;
-        $vars['snapshot_date'] = $config->snapshot_date;
-        $vars['snapshot_date_rh'] = $config->snapshot_date_rh;
+        $vars['stable_release'] = $config->stable_release;
+        $vars['master_release'] = $config->master_release;
 
         // replace vars in template
         // NOTE: using preg_replace() breaks as it wants to interpret '$1' in $val
