@@ -23,7 +23,6 @@
         <sect name="spacer" template="spacer"/>
     </sect>
     <sect name="support" desc="Support" unfold="1" template="top">
-        <sect name="support" desc="Support" link="{$root}/site/support" />
         <sect name="getting_help" desc="Getting Help" link="{$root}/site/getting_help" />
         <sect name="faq" desc="FAQ" link="http://wiki.winehq.org/FAQ" />
         <sect name="documentation" desc="Documentation" link="{$root}/site/documentation" />
@@ -33,7 +32,6 @@
         <sect name="spacer" template="spacer"/>
     </sect>
     <sect name="development" desc="Development" unfold="1" template="top">
-        <sect name="development" desc="Development" link="{$root}/site/development" />
         <sect name="devel_guide" desc="Developers Guide" link="{$root}/site/docs/winedev-guide/index" />
         <sect name="forums" desc="Mailing Lists" link="{$root}/site/forums" />
         <sect name="git" desc="GIT" link="{$root}/site/git" />
