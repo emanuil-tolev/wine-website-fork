@@ -2,16 +2,18 @@
 <td>
     <table width="145" class="sideBorder" style="padding-bottom: 2px; padding-top: 2px;">
     <tr><td align="center">
-    <!-- SiteSearch Google -->
-    <FORM method=GET action="http://www.google.com/search" style="margin: 0px;">
-    <input type="text" name="q" value="{$name}"
-       onBlur="if (value == '') {value = '{$name}'}" 
-       onFocus="if (value == '{$name}') {value =''}"
-       size=12 maxlength=80 class="searchInput">
-    <input type=hidden name=domains value="www.winehq.org">
-    <input type=hidden name=sitesearch value="www.winehq.org">
-    </FORM>
-    <!-- SiteSearch Google -->
+
+<form action="http://www.winehq.org/site/search" id="cse-search-box" style="margin: 0; padding: 0;">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-0971840239976722:w9sqbcsxtyf" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="14" />
+    <!-- <input type="submit" name="sa" value="Search" /> -->
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
     </td></tr>
     </table>
 </td>

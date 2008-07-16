@@ -106,6 +106,9 @@ function home_page ()
     // get random quote
     $quote_box = $html->theme_box($config->theme, "box_title", "Quote", "99%",  view_quote(), '10', 'white', 'topMenu');
 
+    // get google ad
+    $ad_box = $html->theme_box($config->theme, "box_title", "Ads by Google", "99%",  $html->template("base", 'ads'), '10', 'white', 'topMenu');
+
     // get wwn news
     $wwn = new wwn();
     $issues = $wwn->get_list();
@@ -120,6 +123,7 @@ function home_page ()
                   'news_box'    => $news_box,
                   'latest_box'  => $latest_box,
                   'quote_box'   => $quote_box,
+                  'ad_box'      => $ad_box,
                   'wwn_box'     => $wwn_box,
                   'sponsor_box' => $sponsor_box
                  );
