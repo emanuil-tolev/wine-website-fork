@@ -172,7 +172,7 @@ about in bug 1358
 subtitled "GraphicsDriver" = "none" wanted.
 </p><p>
 On the off chance that a "none" driver had been implemented, I tried it.
-And suprisingly, something sensible happened:
+And surprisingly, something sensible happened:
 <ul><code>
 dank_at_dank:~$ wine /dos/d/vss/win32/ss.exe help<br />
 Could not load graphics driver 'none'<br />

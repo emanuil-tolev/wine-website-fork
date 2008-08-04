@@ -26,7 +26,7 @@ switch (true)
     $text .= view_rss();
     break;
     
-  // view news archvie
+  // view news archive
   case ($_REQUEST['news']):
     $text .= $html->theme_box($config->theme, "box_title", 'News Archives', "100%", view_news($_REQUEST['news']), '10', 'white', 'topMenu');
     break;

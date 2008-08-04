@@ -76,7 +76,7 @@ class XMLToArray {
         $node = array_pop($this->node_stack);
         $node["_DATA"] = trim($node["_DATA"]);
 
-        // and add it an an element of the last node in the stack...
+        // and add it as an element of the last node in the stack...
         $lastnode = count($this->node_stack);
         array_push($this->node_stack[$lastnode-1]["_ELEMENTS"], $node);
     }
