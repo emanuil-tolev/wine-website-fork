@@ -13,7 +13,8 @@
         <sect name="wine_features" desc="Features" link="{$root}/site/wine_features" />
         <sect name="screenshots" desc="Screenshots" link="{$root}/site?ss=1" />
         <sect name="contributing" desc="Contributing" link="{$root}/site/contributing" />
-        <sect name="news" desc="News" link="{$root}/site?news=archive" />
+        <sect name="news" desc="News Blog" link="{$root}/site?news=archive" />
+        <sect name="wwn" desc="World Wine News" link="{$root}/site?issue=back" />
         <sect name="press" desc="Press" link="{$root}/site/press" />
         <sect name="license" desc="License" link="{$root}/site/license" />
         <sect name="spacer" template="spacer"/>

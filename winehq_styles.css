@@ -67,8 +67,12 @@ p.indent            { padding-left: 1em; padding-right: 1em;}
 /* text styles */
 .strike             { text-decoration: line-through; }
 .bold               { font-weight: bold; }
-.newstitle          { font-size: 14px; font-weight: bold; color: #000000; }
 .underline          { text-decoration: underline; }
+
+/* newstitle links */
+.newstitle          { font-size: 14px; font-weight: bold; color: #000000; text-decoration: none; }
+.newstitle:visited  { color: #000000; font-weight: bold; text-decoration: none; }
+.newstitle:hover    { color: #ff0000; font-weight: bold; text-decoration: none; }
 
 /* Menu Config */
 .menuTitle	        { font-size: 12px; color: #ffffff; font-weight: bold; text-decoration: none; }

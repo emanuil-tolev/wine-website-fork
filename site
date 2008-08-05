@@ -86,9 +86,6 @@ function home_page ()
 {
     global $file_root, $config, $html;
 
-    // load rss link
-    $html->rss_link = "{$config->base_url}/?rss=1";
-
     // screenshot for homepage (random)
     $shots = get_files($file_root."/images/shots","png");
     $c = intval(rand(1,count($shots) - 1));
@@ -112,7 +109,7 @@ function home_page ()
     // get wwn news
     $wwn = new wwn();
     $issues = $wwn->get_list();
-    $wwn_box = $html->theme_box($config->theme, "box_title", "Weekly Newsletters", "97%", $wwn->issues_list($issues[0], $issues[1], 3), '10', 'white', 'topMenu');
+    $wwn_box = $html->theme_box($config->theme, "box_title", "World Wine News Issues", "97%", $wwn->issues_list($issues[0], $issues[1], 3), '10', 'white', 'topMenu');
     
     // sponsor box
     $sponsor_box = $html->template("base", 'sponsor');
@@ -178,7 +175,10 @@ function view_announce ($ver)
 function view_news ($where)
 {
     global $config, $html;
-    
+
+    // load rss link
+    $html->rss_link = "{$config->base_url}/?rss=1";
+
     // max count for home page
     $hmax = 10;
     
@@ -209,11 +209,13 @@ function view_news ($where)
         // get data from XML file
         $vars = array();
         if (file_exists($config->news_xml_path.'/'.$html->lang.'/'.$item))
-            list($vars['date'], $vars['title'], $vars['link'], $vars['body']) = get_xml_tags($config->news_xml_path.'/'.$html->lang.'/'.$item, array('date', 'title', 'link', 'body'));
+            $vars = get_xml_tags($config->news_xml_path.'/'.$html->lang.'/'.$item, array('date', 'title', 'link', 'body'));
         else
-            list($vars['date'], $vars['title'], $vars['link'], $vars['body']) = get_xml_tags($config->news_xml_path.'/'.$config->lang.'/'.$item, array('date', 'title', 'link', 'body'));
-        if ($vars['link'] != '')
-            $vars['title'] = '<a href="'.$vars['link'].'">'.$vars['title'].'</a>';
+            $vars = get_xml_tags($config->news_xml_path.'/'.$config->lang.'/'.$item, array('date', 'title', 'link', 'body'));
+        
+        // if link defined, use it in title
+        if ($vars['link'])
+            $vars['title'] = '<a href="'.$vars['link'].'" class="newstitle">'.$vars['title'].'</a>';
 
         // add to news body
         $news_body .= $html->template('base', 'news_row', $vars);
@@ -229,7 +231,8 @@ function view_news ($where)
         {
             break;
         }
-    } // end of news loop
+    }
+    // end of news loop
     
     // prev/next links
     if ($where == 'archive')
@@ -285,28 +288,35 @@ function view_rss ()
         
         // get data from XML file
         if (file_exists($config->news_xml_path.'/'.$html->lang.'/'.$item))
-            list($date, $title, $link, $body) = get_xml_tags($config->news_xml_path.'/'.$html->lang.'/'.$item, array('date', 'title', 'link', 'body'));
+            $vars = get_xml_tags($config->news_xml_path.'/'.$html->lang.'/'.$item, array('date', 'title', 'link', 'body'));
         else
-            list($date, $title, $link, $body) = get_xml_tags($config->news_xml_path.'/'.$config->lang.'/'.$item, array('date', 'title', 'link', 'body'));
+            $vars = get_xml_tags($config->news_xml_path.'/'.$config->lang.'/'.$item, array('date', 'title', 'link', 'body'));
 
         // fix filename for urls
         $item = str_replace(".xml", "", $item);
 
         // compute where to link to if unspecified
-        if ($link == '')
-            $link = $config->base_url.'?news='.$item;
+        if ($vars['link'])
+        {
+            $vars['link'] = preg_replace("/^\?/", "{$config->base_url}/site?", $vars['link']);
+            $vars['link'] = preg_replace("/\/^site/", "{$config->base_url}/site", $vars['link']);
+        }
+        else
+        {
+            $vars['link'] = $config->base_url.'?news='.$item;
+        }
 
         // fix relative URLs
-        $body = str_replace("<a href=\"?", "<a href=\"{$config->base_url}/?", $body);
-        $body = str_replace("<a href=\"/site", "<a href=\"{$config->base_url}/site", $body);
-        
+        $vars['body'] = str_replace("<a href=\"?", "<a href=\"{$config->base_url}/site?", $vars['body']);
+        $vars['body'] = str_replace("<a href=\"/site", "<a href=\"{$config->base_url}/site", $vars['body']);
+
         // display row
         $rss_row = array(
-                            'item_title' => strip_tags($title),
-                            'item_desc'  => htmlentities($body),
-                            'item_link'  => $link,
+                            'item_title' => strip_tags($vars['title']),
+                            'item_desc'  => htmlentities($vars['body']),
+                            'item_link'  => $vars['link'],
                             'item_guid'  => $config->base_url.'?news='.$item,
-                            'item_date'  => date("r", strtotime($date))
+                            'item_date'  => date("r", strtotime($vars['date']))
                         );
         $rss_rows .= $html->template('global', 'xml/rss_row', $rss_row, 1);
     }
@@ -352,7 +362,9 @@ function view_screenshots ($x)
         $vars['im_'.$num] = $html->ahref($html->img($file_root.'/images/shots/wine_'.$c.'.png'), $file_root.'/images/shots/full/wine_'.$c.'.png');
         
         // add description
-        list($vars['ds_'.$num]) = get_xml_tags($file_root.'/images/shots/desc/wine_'.$c.'.xml',array('description'));
+        $in = get_xml_tags($file_root.'/images/shots/desc/wine_'.$c.'.xml', array('description'));
+        $vars['ds_'.$num] = $in['description'];
+        unset($in);
         
         // end at 9
         if ($num == 9 or $num == $total)
