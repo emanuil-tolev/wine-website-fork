@@ -105,7 +105,7 @@ class menu
             {
                 // add item with template
                 $template = isset($nav['template']) ? $nav['template'] : 'item';
-                $this->add($template, $nav['desc'], $link, $level, $sel);
+                $this->add($template, $nav['name'], $nav['desc'], $link, $level, $sel);
                 
                 // go into this item and get subitems if selected
                 if ($sel or $nav['unfold'])
@@ -157,7 +157,7 @@ class menu
     }
 
     // add a menu link
-    function add ($template, $name, $url = null, $level = 0, $selected = 0)
+    function add ($template, $item, $name, $url = null, $level = 0, $selected = 0)
     {
         // bold select items
         if ($selected)
@@ -169,6 +169,7 @@ class menu
         // vars for template
         $vars = array(
                       'pad'  => "$pad",
+                      'item' => "$item",
                       'name' => "$name",
                       'url'  => "$url",
                      );
