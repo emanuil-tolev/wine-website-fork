@@ -46,6 +46,11 @@
         <sect name="wineconf" desc="WineConf" link="{$root}/site/wineconf" />
         <sect name="spacer" template="spacer"/>
     </sect>
+    <sect name="search" desc="Languages" unfold="1" template="top">
+        <sect name="en" desc="English" template="lang" link="{$root}/site/?lang=en" />
+        <sect name="es" desc="Español" template="lang" link="{$root}/site/?lang=es" />
+        <sect name="spacer" template="spacer"/>
+    </sect>
     <sect name="search" desc="Search WineHQ" unfold="1" template="top">
         <sect name="search" desc="Enter Search!" template="search" />
         <sect name="spacer" template="spacer"/>
