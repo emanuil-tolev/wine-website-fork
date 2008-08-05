@@ -46,7 +46,7 @@ function get_xml_tags ($file, $tags = null)
         {
             if (eregi("<" . $tag . ">(.*)</" . $tag . ">", $data, $out))
             {
-                array_push($content, $out[1]);
+                $content[$tag] = $out[1];
             }
         }
         return $content;
