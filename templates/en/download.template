@@ -13,16 +13,16 @@ for post-installation instructions.</b></p>
 <p><table><tr><td>Latest stable release:</td><td>Wine&nbsp;{$stable_release}</td></tr>
 <tr><td>Latest development release:</td><td>Wine&nbsp;{$master_release}</td></tr></table></p>
 
-<table width="95%" border=0 cellpadding=5 cellspacing=1 bgcolor="#EFEFEF">
+<table width="95%" border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
 
   <tr>
-    <td align=center bgcolor=black><b><font color=white class=small>System</font></b></td>
-    <td align=center bgcolor=black><b><font color=white class=small>Notes</font></b></td>
-    <td align=center bgcolor=black><b><font color=white class=small>Maintainer</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">System</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Notes</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Maintainer</font></b></td>
   </tr>
 
   <tr bgcolor="#ffffff">
-    <td align=center><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">
+    <td align="center"><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">
       <img src="{$root}/images/distro/redhat.png" width="50" height="50" alt="RedHat Linux" border="0"></a>
     </td>
     <td> <b><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">Red Hat / CentOS / Fedora</a></b>
@@ -36,7 +36,7 @@ for post-installation instructions.</b></p>
   </tr>
   
   <tr bgcolor="#ffffff">
-    <td align=center><a href="http://en.opensuse.org/Wine#Repositories">
+    <td align="center"><a href="http://en.opensuse.org/Wine#Repositories">
       <img src="{$root}/images/distro/suse.png" width="50" height="50" alt="SUSE Linux" border="0"></a>
     </td>
     <td> <b><a href="http://en.opensuse.org/Wine#Repositories">SUSE</a></b>
@@ -47,7 +47,7 @@ for post-installation instructions.</b></p>
   </tr>
   
   <tr bgcolor="#ffffff">
-    <td align=center><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=80066">
+    <td align="center"><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=80066">
       <img src="{$root}/images/distro/mandriva.png" width="50" height="50" alt="Mandriva Linux" border="0"></a>
     </td>
     <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=80066">Mandriva</a></b> 
@@ -57,7 +57,7 @@ for post-installation instructions.</b></p>
   </tr>
   
   <tr bgcolor="#ffffff">
-    <td align=center><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">
+    <td align="center"><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">
       <img src="{$root}/images/distro/slackware.png" width="50" height="50" alt="Slackware linux" border="0"></a>
     </td>
     <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">Slackware</a></b>
@@ -66,7 +66,7 @@ for post-installation instructions.</b></p>
   </tr>
   
   <tr bgcolor="#ffffff">
-    <td align=center><a href="{$root}/site/download-deb">
+    <td align="center"><a href="{$root}/site/download-deb">
       <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu linux" border="0"></a>
     </td>
     <td> <b><a href="{$root}/site/download-deb">Ubuntu</a></b> 
@@ -75,7 +75,7 @@ for post-installation instructions.</b></p>
   </tr>
 
   <tr bgcolor="#ffffff">
-    <td align=center><a href="{$root}/site/download-deb">
+    <td align="center"><a href="{$root}/site/download-deb">
       <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian linux" border="0"></a>
     </td>
     <td> <b><a href="{$root}/site/download-deb">Debian</a></b> 
@@ -84,7 +84,7 @@ for post-installation instructions.</b></p>
   </tr>
 
   <tr bgcolor="#ffffff">
-    <td align=center><a href="http://www.freshports.org/emulators/wine/">
+    <td align="center"><a href="http://www.freshports.org/emulators/wine/">
       <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
     </td>
     <td> <b><a href="http://www.freshports.org/emulators/wine/">FreeBSD</a></b> 
@@ -93,7 +93,7 @@ for post-installation instructions.</b></p>
   </tr>
 
   <tr bgcolor="#ffffff">
-    <td align=center><a href="http://www.pbidir.com/bt/search/?str=wine&search=Search">
+    <td align="center"><a href="http://www.pbidir.com/bt/search/?str=wine&search=Search">
       <img src="{$root}/images/distro/pcbsd.png" width="50" height="50" alt="FreeBSD" border="0"></a>
     </td>
     <td> <b><a href="http://www.pbidir.com/bt/search/?str=wine&search=Search">PC-BSD</a></b> 
@@ -102,7 +102,7 @@ for post-installation instructions.</b></p>
   </tr>
 
   <tr bgcolor="#ffffff">
-    <td align=center><a href="http://ocean1.ee.duth.gr/SolarisX/">
+    <td align="center"><a href="http://ocean1.ee.duth.gr/SolarisX/">
       <img src="{$root}/images/distro/sun.png" width="50" height="50" alt="Sun Solaris" border="0"></a>
     </td>
     <td> <b><a href="http://ocean1.ee.duth.gr/SolarisX/">Solaris</a></b>
@@ -112,7 +112,7 @@ for post-installation instructions.</b></p>
 
 
   <tr bgcolor="#ffffff">
-    <td align=center><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=112520">
+    <td align="center"><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=112520">
 	  <img src="{$root}/images/distro/windows.png" width="50" height="54" alt="Windows" border="0"></a>
     </td>
     <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=112520">Windows</a></b> binary .zips</td>
@@ -128,21 +128,21 @@ for post-installation instructions.</b></p>
 
 <h1><a name="commercial"></a>Commercial Wine Versions</h1>
 
-<table width="95%" border=0 cellpadding=5 cellspacing=1 bgcolor="#EFEFEF">
+<table width="95%" border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
 
   <tr>
-    <td align=center bgcolor=black><b><font color=white class=small>Product</font></b></td>
-    <td align=center bgcolor=black><b><font color=white class=small>Description</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Product</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Description</font></b></td>
   </tr>
 
   <tr>
-    <td align=center bgcolor="#ffffff">
+    <td align="center" bgcolor="#ffffff">
       <a href="http://www.codeweavers.com/products/">
         <img src="{$root}/images/distro/crossover.png" 
          width="50" height="50" alt="CrossOver Office" border="0">
       </a>
     </td>
-    <td align=left bgcolor="#ffffff">
+    <td align="left" bgcolor="#ffffff">
       <b><a href="http://www.codeweavers.com/products/">CrossOver</a></b> - 
       Award winning highly customized versions for
       <a href="http://www.codeweavers.com/products/cxmac/"><b>Mac OS</b></a> and
@@ -160,11 +160,11 @@ for post-installation instructions.</b></p>
 
 <h1><a name="source"></a>Wine Source Downloads</h1>
 
-<table width="95%" border=0 cellpadding=5 cellspacing=1 bgcolor="#EFEFEF">
+<table width="95%" border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
 
   <tr>
-    <td align=center bgcolor=black><b><font color=white class=small>Location</font></b></td>
-    <td align=center bgcolor=black><b><font color=white class=small>Description</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Location</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Description</font></b></td>
   </tr>
 
   <tr bgcolor="#ffffff">
@@ -191,7 +191,7 @@ for post-installation instructions.</b></p>
 
 <p>
   <a href="http://www.winehq.org/site/download" target="_blank"><img
-  src="{$root}/images/download_wine.png" border=1 width=88 height=31 vspace=0 hspace=5 align=left
+  src="{$root}/images/download_wine.png" border="1" width="88" height="31" vspace="0" hspace="5" align="left"
   alt="Download Wine"></a>
   Use this image if you want to link to our download page.
 </p>
