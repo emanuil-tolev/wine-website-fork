@@ -4,53 +4,63 @@
 Wine for Ubuntu, Debian, and Debian-based distributions
 <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></h1>
 
-<p>Debian and Debian-based distributions such as Ubuntu utilize a special tool
-for managing packages known as APT.  APT is able to automagically install all of
-the needed dependencies for a software package, as well as keep the package 
-up to date, by scanning what are known as APT repositories.  Debian-based 
+<p>Ubuntu and other Debian-based distributions utilize a special tool for 
+managing packages known as APT.  APT is able to automagically install all of 
+the needed dependencies for a software package, as well as keep the package up 
+to date, by scanning what are known as APT repositories.  Debian-based 
 distributions have their own repositories of software that include Wine, 
-however we keep our own repository of the latest available beta packages here for 
-download.</p>
+however we keep our own repository of the latest available beta packages here 
+for download.</p>
 
-<p>There used to be graphical instructions here, however we have found that the 
-terminal commands are actually simpler to describe and quicker for the user to 
-input.  Because the commands below use sudo, you may have to enter your user
-password after hitting enter.</p>
+<h2>Warning: These are beta packages</h2>
 
-<h2>Warning: These are development packages</h2>
-
-<p><i>The packages here are development packages.  This means they will 
-periodically suffer from <a href="http://wiki.winehq.org/Regression">regressions</a>, and as a result an update may break functionality in Wine.  If the latest
-stable release of Wine (currently Wine 1.0) works for you, then you may not want
-to use the development packages.</i></p>
+<p><i>The packages here are beta packages.  This means they will 
+periodically suffer from 
+<a href="http://wiki.winehq.org/Regression">regressions</a>, and as a result an 
+update may break functionality in Wine.  If the latest stable release of Wine 
+(currently Wine 1.0.1) works for you, then you may not want to use these 
+beta packages.</i></p>
 
 <h2>Adding the WineHQ APT Repository:</h2>
 
-<p>First, open a terminal window (Applications->Accessories->Terminal).  On 
-Debian, you will need to open a root terminal.  Then add the repository's key 
-to your system's list of trusted APT keys by copy and pasting the following:</p>
+<p>Open the Software Sources menu by going to 
+<b>System->Administration->Software Sources</b>.  Then select the <b>Third 
+Party Software</b> tab and click <b>Add</b>.</p>
 
-<p><i>wget -q http://wine.budgetdedicated.com/apt/387EE263.gpg -O- | sudo apt-key add -</i></p>
+<img src="{$root}/images/distro/ubuntu-softwaresources1.png" width="531" height="509" alt="System->Administration->Software Sources->Third Party Software" border="0">
 
-<p>Next, add the repository to your system's list of APT sources:</p>
+<p>Then, <b>copy and paste one of the lines below</b> depending on which 
+version you are running.</p>
 
-<p><b>For Ubuntu Hardy (8.04):</b><br>
-<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/hardy.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 <p><b>For Ubuntu Intrepid (8.10):</b><br>
-<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/intrepid.list -O /etc/apt/sources.list.d/winehq.list</i></p>
+<i>deb http://wine.budgetdedicated.com/apt intrepid main #WineHQ - Ubuntu 8.10 "Intrepid Ibex"</i></p>
+<p><b>For Ubuntu Hardy (8.04):</b><br>
+<i>deb http://wine.budgetdedicated.com/apt hardy main #WineHQ - Ubuntu 8.04 "Hardy Heron"</i></p>
 <p><b>For Debian Lenny (5.0):</b><br>
-<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/lenny.list -O /etc/apt/sources.list.d/winehq.list</i></p>
+<i>deb http://wine.budgetdedicated.com/apt lenny main #WineHQ - Debian 5.0 "Lenny"</i></p>
 
-<p>Then update APT's package information by running '<b>sudo apt-get update</b>'.
+<h2>Trusting the WineHQ APT Repository and installing Wine:</h2>
 
-<p>If you are using Ubuntu, you can now install Wine by <a href="apt://wine">
-clicking this link</a>. Alternatively, you can install by going to 
-Applications->Add/Remove and searching for Wine.</p>
+<p>After adding the repository, you also need to add the key for the repository 
+to your system's list of trusted keys.</p>
+
+<p><b><a href="http://wine.budgetdedicated.com/apt/Scott%20Ritchie.gpg">Download
+and save Scott Ritchie's key</a></b> to your desktop.  Then open the 
+<b>Authentication</b> tab, click <b>import key file</b>, and select the key 
+file you just saved (Scott Ritchie.gpg).  It is safe to delete this file after 
+doing this step.</p>
+
+<img src="{$root}/images/distro/ubuntu-softwaresources2.png" width="531" height="509" alt="System->Administration->Software Sources->Authentication" border="0">
+
+<p>Click close to finish, and then <b>reload the package information</b>. If 
+you have Wine installed, the system's update manager will now inform you of the 
+latest Wine beta release and prompt you to upgrade. If you haven't installed 
+Wine yet, go to Applications->Add/Remove and search for Wine.</p>
 
 <h2>Upgrading to a new version of Ubuntu</h2>
 
 <p>If you are upgrading the entire system, such as going from Ubuntu 8.04 to 
-8.10, you will need to come back to this page and enter the command for the new 
+8.10, you will need to come back to this page and add the repository for the new
 version above.  The built in update manager will not switch the Wine repository 
 automatically.</p>
 
