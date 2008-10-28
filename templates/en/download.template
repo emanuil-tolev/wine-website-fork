@@ -20,6 +20,33 @@ for post-installation instructions.</b></p>
     <td align="center" bgcolor="black"><b><font color="white" class="small">Notes</font></b></td>
     <td align="center" bgcolor="black"><b><font color="white" class="small">Maintainer</font></b></td>
   </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="{$root}/site/download-deb">
+      <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu linux" border="0"></a>
+    </td>
+    <td> <b><a href="{$root}/site/download-deb">Ubuntu</a></b> 
+     binary and source .debs for Ubuntu Hardy (8.04) and Intrepid (8.10)
+    <td><a href="mailto:scott@open-vote.org">Scott Ritchie</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="{$root}/site/download-deb">
+      <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian linux" border="0"></a>
+    </td>
+    <td> <b><a href="{$root}/site/download-deb">Debian</a></b> 
+     binary and source .debs for Debian Etch (4.0)</td>
+    <td><a href="mailto:scott@open-vote.org">Scott Ritchie</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://www.freshports.org/emulators/wine/">
+      <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
+    </td>
+    <td> <b><a href="http://www.freshports.org/emulators/wine/">FreeBSD</a></b> 
+         source for FreeBSD 5.3 or later</td>
+    <td><a href="mailto:gerald@pfeifer.com">Gerald Pfeifer</a></td>
+  </tr>
 
   <tr bgcolor="#ffffff">
     <td align="center"><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">
@@ -63,33 +90,6 @@ for post-installation instructions.</b></p>
     <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">Slackware</a></b>
          binary .tgz for Slackware 10.2</td>
     <td><a href="mailto:sadam@clemson.edu">Adam Schreiber</a></td>
-  </tr>
-  
-  <tr bgcolor="#ffffff">
-    <td align="center"><a href="{$root}/site/download-deb">
-      <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu linux" border="0"></a>
-    </td>
-    <td> <b><a href="{$root}/site/download-deb">Ubuntu</a></b> 
-     binary and source .debs for Ubuntu Hardy (8.04)
-    <td><a href="mailto:scott@open-vote.org">Scott Ritchie</a></td>
-  </tr>
-
-  <tr bgcolor="#ffffff">
-    <td align="center"><a href="{$root}/site/download-deb">
-      <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian linux" border="0"></a>
-    </td>
-    <td> <b><a href="{$root}/site/download-deb">Debian</a></b> 
-     binary and source .debs for Debian Etch (4.0)</td>
-    <td><a href="mailto:scott@open-vote.org">Scott Ritchie</a></td>
-  </tr>
-
-  <tr bgcolor="#ffffff">
-    <td align="center"><a href="http://www.freshports.org/emulators/wine/">
-      <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
-    </td>
-    <td> <b><a href="http://www.freshports.org/emulators/wine/">FreeBSD</a></b> 
-         source for FreeBSD 5.3 or later</td>
-    <td><a href="mailto:gerald@pfeifer.com">Gerald Pfeifer</a></td>
   </tr>
 
   <tr bgcolor="#ffffff">
