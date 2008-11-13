@@ -57,6 +57,31 @@ you have Wine installed, the system's update manager will now inform you of the
 latest Wine beta release and prompt you to upgrade. If you haven't installed 
 Wine yet, go to Applications->Add/Remove and search for Wine.</p>
 
+<h2>Command Line Instructions for Installing Wine:</h2>
+
+<p>An alternate method for adding the Wine repositories and installing Wine is through the command line, as follows:</p>
+
+<p>First, open a terminal window (Applications->Accessories->Terminal).  On 
+Debian, you will need to open a root terminal.  Then add the repository's key 
+to your system's list of trusted APT keys by copy and pasting the following into your terminal:</p>
+
+<p><i>wget -q http://wine.budgetdedicated.com/apt/387EE263.gpg -O- | sudo apt-key add -</i></p>
+
+<p>Next, add the repository to your system's list of APT sources:</p>
+
+<p><b>For Ubuntu Intrepid (8.10):</b><br>
+<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/intrepid.list -O /etc/apt/sources.list.d/winehq.list</i></p>
+<p><b>For Ubuntu Hardy (8.04):</b><br>
+<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/hardy.list -O /etc/apt/sources.list.d/winehq.list</i></p>
+<p><b>For Debian Etch (4.0):</b><br>
+<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/etch.list -O /etc/apt/sources.list.d/winehq.list</i></p>
+
+<p>Then update APT's package information by running '<b>sudo apt-get update</b>'.
+
+<p>If you are using Ubuntu, you can now install Wine by <a href="apt://wine">
+clicking this link</a>. Alternatively, you can install by going to 
+Applications->Add/Remove and searching for Wine.</p>
+
 <h2>Upgrading to a new version of Ubuntu</h2>
 
 <p>If you are upgrading the entire system, such as going from Ubuntu 8.04 to 
