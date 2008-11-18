@@ -1,8 +1,8 @@
 <!--TITLE:[Wine for Debian based distributions]-->
 
-<h1><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Linux" border="0">
-Wine for Ubuntu, Debian, and Debian-based distributions
-<img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></h1>
+<h1><a href="http://www.ubuntu.com/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Linux" border="0"></a>
+Wine for Ubuntu, Debian Etch, and Debian-based distributions
+<a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a></h1>
 
 <p>Ubuntu and other Debian-based distributions utilize a special tool for 
 managing packages known as APT.  APT is able to automagically install all of 
@@ -36,8 +36,8 @@ version you are running.</p>
 <i>deb http://wine.budgetdedicated.com/apt intrepid main #WineHQ - Ubuntu 8.10 "Intrepid Ibex"</i></p>
 <p><b>For Ubuntu Hardy (8.04):</b><br>
 <i>deb http://wine.budgetdedicated.com/apt hardy main #WineHQ - Ubuntu 8.04 "Hardy Heron"</i></p>
-<p><b>For Debian Lenny (5.0):</b><br>
-<i>deb http://wine.budgetdedicated.com/apt lenny main #WineHQ - Debian 5.0 "Lenny"</i></p>
+<p><b>For Debian Etch (4.0):</b><br>
+<i>deb http://wine.budgetdedicated.com/apt etch main #WineHQ - Debian 4.0 "Etch"</i></p>
 
 <h2>Trusting the WineHQ APT Repository and installing Wine:</h2>
 
