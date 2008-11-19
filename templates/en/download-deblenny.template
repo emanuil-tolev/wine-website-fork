@@ -9,7 +9,7 @@ Wine for Debian Lenny
 <p><b>Warning: These are beta packages</b><br>
 <i>This means they will periodically suffer from <a href="http://wiki.winehq.org/Regression">regressions</a>, and as a result an update may break functionality in Wine.  If the latest stable release of Wine (currently Wine 1.0.1) works for you, then you may not want to use these beta packages.</i></p>
 
-<p><b>WARNING:</b> for now there are only packages for i386 users, packages for AMD64 will be added as soon as possible.</p>
+<p>This repository contains packages for i386 and amd64 architecture.</p>
 
 <p>To install wine packages you can use two methods: add the repository or download a .deb package and manually install it, but first of all you have to remove older wine version. If you use the first method you'll have wine automatically upgraded by apt, otherwise you'll need to manually download and install every new version.</p>
 
@@ -30,7 +30,7 @@ Wine for Debian Lenny
 <div style="position:relative;left:20px">Open a terminal</div>
 <div style="position:relative;left:20px"><i>cd ~</i> <font color="gray">#to go to your home directory</font></div>
 <div style="position:relative;left:20px"><i>su</i> <font color="gray">#to log as root</font></div>
-<div style="position:relative;left:20px"><i>dpkg -i wine_1.1.x_i386.deb</i> <font color="gray">#change x with your chosen version, this will install wine</font></div>
+<div style="position:relative;left:20px"><i>dpkg -i wine_1.1.x_i386.deb</i> <font color="gray">#change xxx with your chosen package, this will install wine</font></div>
 
 <br><br><p style="font-size:12px;text-align:left;font-style: italic;">Manteiner: <a href="http://www.lamalennyrepo.altervista.org" target="_new">homepage</a>, <a href="mailto:lamalennyrepo@altervista.org">email</a></p>
 
