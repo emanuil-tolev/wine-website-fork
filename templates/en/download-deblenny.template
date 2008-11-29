@@ -21,7 +21,8 @@ Wine for Debian Lenny
 <div style="position:relative;left:20px">Open a terminal</div>
 <div style="position:relative;left:20px"><i>su</i> <font color="gray">#to log as root</font></div>
 <div style="position:relative;left:20px"><i>gedit /etc/apt/sources.list</i> <font color="gray">#to open repository file with a text editor (you can use gedit or another)</font></div>
-<div style="position:relative;left:20px">Add this line: <i>deb http://lamalennyrepo.altervista.org/apt lenny main</i></div>
+<div style="position:relative;left:20px">Add this line: <i>deb http://www.lamaresh.net/apt lenny main</i></div>
+<div style="position:relative;left:20px">Add this line if you want also sources repository: <i>deb-src http://www.lamaresh.net/apt lenny main</i></div>
 <div style="position:relative;left:20px">Save and close sources.list</div>
 <div style="position:relative;left:20px"><i>apt-get update</i> <font color="gray">#to update package list</font></div>
 <div style="position:relative;left:20px"><i>apt-get install wine</i> <font color="gray">#to install latest wine version</font></div><p></p>
@@ -32,6 +33,6 @@ Wine for Debian Lenny
 <div style="position:relative;left:20px"><i>su</i> <font color="gray">#to log as root</font></div>
 <div style="position:relative;left:20px"><i>dpkg -i wine_1.1.x_i386.deb</i> <font color="gray">#change xxx with your chosen package, this will install wine</font></div>
 
-<br><br><p style="font-size:12px;text-align:left;font-style: italic;">Manteiner: <a href="http://www.lamalennyrepo.altervista.org" target="_new">homepage</a>, <a href="mailto:lamalennyrepo@altervista.org">email</a></p>
+<br><br><p style="font-size:12px;text-align:left;font-style: italic;">Manteiner: <a href="http://www.lamaresh.net" target="_blank">homepage</a>, <a href="mailto:lamalennyrepo@altervista.org">email</a></p>
 
 
