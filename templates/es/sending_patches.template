@@ -1,4 +1,4 @@
-<!--TITLE:[Enviando parches]-->
+g<!--TITLE:[Enviando parches]-->
 
 <h1>Generando y enviando parches</h1>
 
@@ -82,7 +82,7 @@ o en cualquier otro lugar que no sea el árbol Git)
 
 <p> Es mejor enviar pequeños parches contra el actual árbol utilizando Git.
 En primer lugar, asegúrese de que su árbol es hasta la fecha, tal y como 
-se describe en la página <a href="{$root}/site/git">Git</a>.
+se describe en la página <a href="http://wiki.winehq.org/GitWine">Git</a>.
  
 <p>Compruebe sus parches en su árbol Git utilizando 
 <a href="http://www.kernel.org/pub/software/scm/git/docs/git-commit.html">git commit</a>.</p>

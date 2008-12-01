@@ -35,7 +35,7 @@
     <sect name="development" desc="Development" unfold="1" template="top">
         <sect name="devel_guide" desc="Developers Guide" link="{$root}/site/docs/winedev-guide/index" />
         <sect name="forums" desc="Mailing Lists" link="{$root}/site/forums" />
-        <sect name="git" desc="GIT" link="{$root}/site/git" />
+        <sect name="git" desc="GIT" link="http://wiki.winehq.org/GitWine" />
         <sect name="sending_patches" desc="Sending Patches" link="{$root}/site/sending_patches" />
         <sect name="todo" desc="To Do Lists" link="http://wiki.winehq.org/TodoList" />
         <sect name="fun_projects" desc="Fun Projects" link="{$root}/site/fun_projects" />
