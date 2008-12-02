@@ -61,6 +61,14 @@ RedirectPermanent /cvs/                         http://www.winehq.org/site/cvs
 RedirectPermanent /cvs                          http://www.winehq.org/site/cvs
 RedirectPermanent /forums/                      http://www.winehq.org/site/forums
 RedirectPermanent /forums                       http://www.winehq.org/site/forums
+RedirectPermanent /site/docs/wine-faq/          http://wiki.winehq.org/FAQ
+RedirectPermanent /site/docs/wine-faq           http://wiki.winehq.org/FAQ
+RedirectPermanent /site/docs/wine-faq/index/    http://wiki.winehq.org/FAQ
+RedirectPermanent /site/docs/wine-faq/index     http://wiki.winehq.org/FAQ
+RedirectPermanent /site/faq/                    http://wiki.winehq.org/FAQ
+RedirectPermanent /site/faq                     http://wiki.winehq.org/FAQ
+RedirectPermanent /site/FAQ/                    http://wiki.winehq.org/FAQ
+RedirectPermanent /site/FAQ                     http://wiki.winehq.org/FAQ
 
 # fix documentation links
 RedirectMatch ^/(Docs|Docs/)$                   http://www.winehq.org/site/documentation
