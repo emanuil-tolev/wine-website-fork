@@ -1,8 +1,9 @@
 <!--TITLE:[Fun Projects]-->
+<!--BLURB:[Please do these projects because they are fun.]-->
 
-  <h1>Fun Projects</h1>
+  <h1 class="title">Fun Projects</h1>
 
-   <table align=right class=black>
+   <table align=right class=black style="margin: 20px; border: 1px solid black;">
    <tr class=black><td>
        <p><b class=inverse>Color Key</b></p>
    </td></tr>
@@ -15,22 +16,24 @@
    </td></tr>
    </table>
 
-   This page is a collection of Wine related projects that come with
+   <p>This page is a collection of Wine related projects that come with
    a big <strong>Cool!</strong> factor. I will be tracking their status
    on this page, as they are also quite important from a practical
    point of view. If you feel like working on any of these, please
-   let me know.
+   let me know.</p>
   
   <a name="desktop_integration"></a><h2>Desktop Integration</h2>
-  Some of these range from fairly easy to somewhat difficult.  The payoff 
+  
+  <p>Some of these range from fairly easy to somewhat difficult.  The payoff 
   on these is high - how users interact with the desktop are some of the most 
   visible parts of Wine.  Mike Hearn, who suggested most of these ideas, 
   explained, these <i>"provide a good intro to Wine development for anybody 
   who has been lurking on the sidelines and wants to get involved.  As usual no 
   guarantees these patches would be accepted, that's Alexandre's call. 
-  But they probably would be, and you'll learn something while doing them!"</i>
+  But they probably would be, and you'll learn something while doing them!"</i></p>
 
   <a name="my_documents"></a><h4 class=done>Create <i>My Documents</i></h4>
+  
   <p> Map CSIDL_PERSONAL (My Documents) to the $HOME directory if mapped. 
    See the _SHGetDefaultValue function in dlls/shell32/shellpath.c for an 
    explanation of how to do this.  It would probably be ok to grab $HOME 

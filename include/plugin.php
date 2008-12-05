@@ -1,10 +1,12 @@
 <?php
 /*
-  simple plugin loader    
+  WineHQ
+  Website Plugin Loading Class
   by Jeremy Newman <jnewman@codeweavers.com>
-*/  
+*/
 
 /*
+    requires plugin_path be set in the config object
     called from html object during template construction.
     to use in template:
         add: <!--EXEC:[module?foo=bar;baz=taz]-->
@@ -15,14 +17,12 @@
 class plugin
 {
     var $module;
-    var $root;
     var $params = array();
     
     // constructor
-    function plugin ($module, $root)
+    function plugin ($module)
     {
         $this->module = $module;
-        $this->root = $root;
     }
     
     // exec the plugin and get the contents
@@ -32,20 +32,22 @@ class plugin
         $this->get_params();
             
         // build path
-        $path = $this->root.'/include/plugins/'.$this->module.'.php';
+        $path = $GLOBALS['config']->base_path.'include/plugins/'.$this->module.'.php';
     
         // load module if file exists
         if (file_exists($path))
         {
             // output buffer to this object
+            debug("plugin", "loading plugin: [".$this->module."]");
             ob_start();
             include($path);
             $output = ob_get_contents();
             ob_end_clean();
             return $output;
         }
+        
         // not found, return error message
-        return '<span style="font-size: 24pt; color: red;">500</span> <b>'.$this->module.'</b> plugin not found!';
+        return '<span style="font-size: xx-large; color: red;">500</span> <b>'.$this->module.'</b> not found!';
     }
     
     // split the params off the module name (private)

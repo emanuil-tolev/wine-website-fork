@@ -11,56 +11,22 @@
  */
 
 // load config class
-require($file_root."/include/"."config.php");
+require("{$file_root}/include/config.php");
 
 // create config object
 $config = new config($file_root."/include/"."winehq.conf", $file_root."/include/"."globals.conf");
 
-// load global libs
-require($file_root."/include/"."html.php");
-require($file_root."/include/"."menu.php");
-require($file_root."/include/"."plugin.php");
-require($file_root."/include/"."wwn.php");
-require($file_root."/include/"."utils.php");
-require($file_root."/include/"."XMLToArray.php");
+// load global functions lib
+require_once("{$file_root}/include/utils.php");
+
+// load data lib
+check_and_require("data");
+$data = new data();
+
+// load html lib
+check_and_require("html");
 
 // create html object
 $html = new html($file_root);
-
-// load the theme from the session
-if (isset($_COOKIE['winehq']) and in_array($_COOKIE['winehq'], $config->themes))
-{
-    $config->theme = $_COOKIE['winehq'];
-}
-
-// set the theme from get url
-if (isset($_GET['theme']) and in_array($_GET['theme'], $config->themes))
-{
-    setcookie("winehq", $_GET['theme'], time()+((3600*12)*365), "/");
-    $config->theme = $_GET['theme'];
-}
-
-// load the path for the page
-if ($_SERVER['PATH_INFO'])
-{
-    $dirs = split('/',$_SERVER['PATH_INFO']);
-    $ignore = array_shift($dirs);
-    if (count($dirs > 1))
-    {
-        $good_dirs = array();
-        foreach ($dirs as $dir)
-        {
-            if (preg_match('/^\./', $dir))
-                continue;
-            array_push($good_dirs, $dir); 
-        }
-        $page = join('/',$good_dirs);
-    }
-    else
-    {
-        $page = $dirs[0];
-    }
-    unset($dirs, $good_dirs);
-}
 
 ?>

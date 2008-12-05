@@ -1,8 +1,7 @@
 <!--TITLE:[About Wine]-->
+<!--BLURB:[What is Wine, and what does it do exactly?]-->
 
-<img src="{$root}/images/glass.png" width=248 height=399 border=0 align=right alt="Wine Logo">
-
-<h1>About Wine</h1>
+<h1 class="title">About Wine</h1>
 
 <p>Wine is a translation layer (a program loader) capable of running
 Windows applications on Linux and other POSIX compatible operating
@@ -24,11 +23,11 @@ a growing number of Windows programs. Please see the
 for success and failure reports for hundreds of Windows 
 programs, as well as the <a href="http://bugs.winehq.org/">Bug
 Tracking Database</a> for a list of known issues, and the
-<a href="{$root}/site/status">Status</a> page for a global view on Wine's 
+<a href="{$root}/status">Status</a> page for a global view on Wine's 
 implementation progress.</p>
 
 <p>A broad spectrum of Wine developers can be reached in the 
-<a href="{$root}/site/forums">Wine forums</a>. Comments about the winehq.org
+<a href="{$root}/forums">Wine forums</a>. Comments about the winehq.org
 website can be emailed to <a
 href="mailto:web-admin_at_winehq.org">web-admin_at_winehq.org</a>. Alexandre
 Julliard leads the Wine project, and may be reached by email at
@@ -37,16 +36,16 @@ Julliard leads the Wine project, and may be reached by email at
 <p>We've also assembled a short list of resources to help you understand
 the project:</p>
 <ul>
-	<li><a href="{$root}/site/history">Wine's History</a></li>
-	<li><a href="{$root}/site/who">Wine's Who's Who</a></li>
-	<li><a href="{$root}/site/why">Why Wine is so important</a></li>
-	<li><a href="{$root}/site/myths">Debunking Wine Myths</a></li>
-	<li><a href="{$root}/site?ss=1">Wine's Screenshot Gallery</a></li>
-	<li><a href="{$root}/site/wine_features">Wine's Features</a></li>
-	<li><a href="{$root}/site/acknowledgement">Acknowledgements</a></li>
+    <li><a href="{$root}/history">Wine's History</a></li>
+    <li><a href="{$root}/why">Why Wine is so important</a></li>
+    <li><a href="{$root}/myths">Debunking Wine Myths</a></li>
+    <li><a href="{$root}/wine_features">Wine's Features</a></li>
+    <li><a href="{$root}/acknowledgement">Acknowledgements</a></li>
+    <li><a href="{$root}/wwn">World Wine News</a></li>
+    <li><a href="{$root}/interview">Interviews</a></li>
 </ul>
 
 <hr />
 <div class="link-container">
-  <p class="right-link">Wine's History: <a href="{$root}/site/history">Next</a></p>
+  <p class="right-link">Wine's History: <a href="{$root}/history">Next</a></p>
 </div>

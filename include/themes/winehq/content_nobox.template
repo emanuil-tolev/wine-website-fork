@@ -22,7 +22,7 @@
 <body>
 
 
-<div id="logo_glass"><a href="{$root}/"><img src="{$root}/images/winehq_logo_glass_sm.png" alt=""></a></div>
+<div id="logo_glass_big"><a href="{$root}/"><img src="{$root}/images/winehq_logo_glass.png" alt=""></a></div>
 <div id="logo_text"><a href="{$root}/"><img src="{$root}/images/winehq_logo_text.png" alt="WineHQ" title="WineHQ"></a></div>
 
 
@@ -30,7 +30,7 @@
 
 
 <div id="search_box">
-  <form action="{$root}/search/" id="cse-search-box" style="margin: 0; padding: 0;">
+  <form action="{$root}/search" id="cse-search-box" style="margin: 0; padding: 0;">
     <input type="hidden" name="cx" value="partner-pub-0971840239976722:w9sqbcsxtyf">
     <input type="hidden" name="cof" value="FORID:10">
     <input type="hidden" name="ie" value="UTF-8">
@@ -51,19 +51,11 @@
 </div>
 
 <div id="main_content">
-  <div class="rbox">
-  <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
-    <div class="content" style="padding: 35px 20px 10px 80px">
-    <!-- Start Content -->
 
-
+<!-- BODY -->
 {$page_body}
+<!-- END BODY -->
 
-
-    <!-- End Content -->
-    </div>
-  <b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
-  </div>
 </div>
 
 <div id="footer">

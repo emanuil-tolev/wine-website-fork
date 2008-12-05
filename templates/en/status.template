@@ -1,16 +1,17 @@
 <!--TITLE:[Wine Status]-->
+<!--BLURB:[Current Status of the Wine Project]-->
 
 <!-- Please remember to close your <td> and <tr> tags -->
+
+<h1 class="title">Wine Status</h1>
 
 <table width="100%" border=0 cellpadding=0 cellspacing=0>
 <tr valign=top>
 <td width="100%">
 
-    <h1>Wine Status</h1>
-
     <p>Last update: July 11, 2007.</p>
     
-    <div align=center>
+    <div align="center">
     <table width="90%" border="0" cellspacing="0" cellpadding="2">
     <tr>
       <td bgcolor="#efefef"><strong>Disclaimer</strong>
@@ -28,58 +29,58 @@
 </td>
 <td>
 
-   <table width="300" border=0 class=black>
-   <tr class=black><td>
-       <p class=small><b class=inverse>Wine Status Menu</b></p>
+   <table style="width: 300px; background-color: black; margin-top: 10px;">
+   <tr><td>
+       <p class="small"><b style="color: white;">Wine Status Menu</b></p>
    </td></tr>
-   <tr class=white><td>
+   <tr><td style="background-color: white;">
         <dl>
-            <dt><a href="{$root}/site/winapi_stats"><b>API Status</b></a></dt>
+            <dt><a href="{$root}/winapi_stats"><b>API Status</b></a></dt>
             <dd>
                Status of APIs Implemented.
             </dd>
 
-            <dt><a href="{$root}/site/status_wine"><b>Core Status</b></a></dt>
+            <dt><a href="{$root}/status/wine"><b>Core Status</b></a></dt>
             <dd>
                Status of core Wine components, tools, and misc.
             </dd>
 
-            <dt><a href="{$root}/site/status_dlls"><b>DLLs Status</b></a></dt>
+            <dt><a href="{$root}/status/dlls"><b>DLLs Status</b></a></dt>
             <dd>
                Status of Windows DLL clones.
             </dd>
 
-            <dt><a href="{$root}/site/status_directx"><b>DirectX Status</b></a></dt>
+            <dt><a href="{$root}/status/directx"><b>DirectX Status</b></a></dt>
             <dd>
                Status of DirectX DLL clones.
             </dd>
 
-            <dt><a href="{$root}/site/status_multimedia"><b>Multimedia Status</b></a></dt>
+            <dt><a href="{$root}/status/multimedia"><b>Multimedia Status</b></a></dt>
             <dd>
                Status of multimedia elements.
             </dd>
 
-            <dt><a href="{$root}/site/status_ui"><b>UI Status</b></a></dt>
+            <dt><a href="{$root}/status/ui"><b>UI Status</b></a></dt>
             <dd>
                Status of user interface elements.
             </dd>
 
-            <dt><a href="{$root}/site/status_options"><b>Options Status</b></a></dt>
+            <dt><a href="{$root}/status/options"><b>Options Status</b></a></dt>
             <dd>
                Status of the various Wine options.
             </dd>
 
-            <dt><a href="{$root}/site/status_porting"><b>Porting Status</b></a></dt>
+            <dt><a href="{$root}/status/porting"><b>Porting Status</b></a></dt>
             <dd>
                Status of porting Wine to various compilers, OSes, architectures.
             </dd>
 
-            <dt><a href="{$root}/site/status_todo"><b>Known To Do's</b></a></dt>
+            <dt><a href="{$root}/status/todo"><b>Known To Do's</b></a></dt>
             <dd>
                List of known issues.
             </dd>
 
-            <dt><a href="{$root}/site/status_changelog"><b>ChangeLog</b></a></dt>
+            <dt><a href="{$root}/status/changelog"><b>ChangeLog</b></a></dt>
             <dd>
                Have a look here to get a feeling about development progress.
             </dd>

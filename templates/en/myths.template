@@ -1,6 +1,7 @@
 <!--TITLE:[Debunking Wine Myths]-->
+<!--BLURB:[Debunking Wine Myths]-->
 
-<h1>Debunking Wine Myths</h1>
+<h1 class="title">Debunking Wine Myths</h1>
 
 <p>
 Here are some common Wine &quot;myths&quot; that are either completely wrong or not very correct:
@@ -259,10 +260,10 @@ like Safedisc. Once ntoskrnl.exe is implemented Wine will have full support for 
 <table width="100%" border=0 cellpadding=0 cellspacing=0>
 <tr valign=top>
   <td width="50%" align=left>
-    <a href="{$root}/site/why">Previous</a>: Why Wine is so important 
+    <a href="{$root}/why">Previous</a>: Why Wine is so important 
   </td>
   <td width="50%" align=right>
-    Wine's Screenshot Gallery :<a href="{$root}/site?ss=1">Next</a>
+    Wine's Features :<a href="{$root}/wine_features">Next</a>
   </td>
 </tr>
 </table>

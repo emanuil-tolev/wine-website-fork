@@ -2,57 +2,251 @@
 
 /*
   WineHQ
+  HTML class
   by Jeremy Newman <jnewman@codeweavers.com>
-*/  
-
-/*
-    HTML class
 */
+
 class html 
 {
-    var $_indent_level;
-    var $_trcolor;
     var $_file_root;
-    var $_view_mode = "default";
-    var $page;
-    var $template_title;
-    var $in404;
+    var $_web_root;
+    var $page = "";
+    var $page_title;
+    var $page_blurb;
+    var $page_theme;
+    var $page_style;
+    var $meta_keywords;
+    var $meta_description;
     var $rss_link;
+    var $nav_add;
+    var $_error_mode = 0;
+    var $_view_mode = "default";
+    var $relative = 1;
+    var $in404 = 0;
+    var $template_cache = array();
     var $lang = "en";
+    var $languages = array();
 
     // HTML init object
-    function html ($root)
+    function html ($file_root = '.')
     {
         // set the file root
-        $this->_file_root = $root;
-        
-        // start body object
-        $this->page = "";
-        
+        $this->_file_root =& $file_root;
+        $this->_web_root =& $GLOBALS['config']->base_root;
+
+        // set HTML document defaults
+        $this->page_title = $GLOBALS['config']->site_name;
+        $this->page_blurb = $GLOBALS['config']->site_name;
+        $this->page_theme = $GLOBALS['config']->theme;
+        $this->page_style = "content";
+
         // get the language to be displayed in templates
         $this->lang = $this->get_lang();
+
+        // start body object
+        $this->page = "";
+    }
+
+    // SHOWPAGE (display the current page)
+    function showpage ()
+    {
+        global $config;
+
+        // debugging output
+        $debug_log = "";
+        if ($config->web_debug)
+            $debug_log = $this->pre($GLOBALS['debug_log'], 'id="debug_log"');
+
+        // 404 not found header
+        if ($this->in404)
+            header("HTTP/1.1 404 Not Found");
+        
+        // set meta tags
+        $meta_keywords = "";
+        $meta_description = "";
+        if ($this->meta_keywords)
+            $meta_keywords = $this->meta("keywords", $this->meta_keywords);
+        if ($this->meta_description)
+            $meta_description = $this->meta("description", $this->meta_description);
+        
+        // rss link
+        if ($this->rss_link)
+            $rss_link = '<link rel="alternate" title="'.$title.' RSS" href="'.$this->rss_link.'" type="application/xml">';
+        
+        // display page based on view mode
+        switch ($this->_view_mode)
+        {
+            // plain text view
+            case "text":
+                $this->http_header("text/plain");
+                echo $this->page;
+                break;
+        
+            // print view
+            case "print":
+                $this->http_header("text/html");
+                echo $this->template(
+                                     $this->page_theme,
+                                     "{$this->page_style}_print",
+                                     array(
+                                           'page_title'     => $this->page_title,
+                                           'page_body'      => $this->page
+                                          ),
+                                     1
+                                    );
+                break;
+            
+            // regular view
+            default:
+                $this->http_header("text/html");
+                echo $this->template(
+                                     $this->page_theme,
+                                     $this->page_style,
+                                     array(
+                                           'page_title'       => $this->page_title,
+                                           'page_blurb'       => $this->page_blurb,
+                                           'meta_keywords'    => $meta_keywords,
+                                           'meta_description' => $meta_description,
+                                           'rss_link'         => $rss_link,
+                                           'page_body'        => $this->page,
+                                           'copyright_year'   => date("Y", time()),
+                                           'debug_log'        => $debug_log
+                                          ),
+                                     1
+                                    );
+        }
+        
+        // cleanup
+        unset($debug_log);
+    }
+
+    // ERROR_PAGE
+    function error_page ($message = null)
+    {
+        global $config;
+        // set error mode
+        $this->_error_mode = 1;
+        // create error page (overwrites the current page in progress)
+        $this->page = $message;
+        // show page
+        $this->showpage($config->theme, $config->title." - Internal Error");
+        exit();
+    }
+
+    // ERROR_HANDLER
+    function error_handler ($errno, $errstr, $errfile, $errline, $errcontext)
+    {
+        global $config, $data;
+        
+        // don't exit on a notice
+        if ($errno == E_NOTICE or $errno == E_WARNING)
+            return;
+
+        // write to the error log (move above the above return to get NOTICE and WARNING messages)
+        if (isset($config->error_log) and file_exists($config->error_log))
+        {
+            error_log(
+                      "[".date("D M j G:i:s Y",time())."] [".$data->err[$errno]."] ".$errfile.":".$errline." - ".$errstr."\n",
+                      3,
+                      $config->error_log
+                     );
+        }
+
+        // show additional debug output
+        if ($config->web_debug and function_exists('debug_backtrace'))
+        {
+            // build context
+            $ctx = '';
+            foreach ($errcontext as $key => $value)
+            {
+                switch (gettype($value))
+                {
+                    case "string":
+                        $ctx .= "[$key] => $value\n";
+                        break;
+                    default:
+                        $ctx .= "[$key] => ".gettype($value)."\n";
+                }
+            }
+            
+            // build backtrace
+            $backtrace = debug_backtrace();
+            foreach ($backtrace as $bt)
+            {
+               $args = '';
+               if (isset($bt['args']))
+               {
+                   foreach ($bt['args'] as $a)
+                   {
+                       if (!empty($args))
+                           $args .= ', ';
+                       switch (gettype($a))
+                       {
+                           case 'integer':
+                           case 'double':
+                               $args .= $a;
+                               break;
+                           case 'string':
+                               $a = htmlspecialchars(substr($a, 0, 64)).((strlen($a) > 64) ? '...' : '');
+                               $args .= "\"$a\"";
+                               break;
+                           case 'array':
+                               $args .= 'Array('.count($a).')';
+                               break;
+                           case 'object':
+                               $args .= 'Object('.get_class($a).')';
+                               break;
+                           case 'resource':
+                               $args .= 'Resource('.strstr($a, '#').')';
+                               break;
+                           case 'boolean':
+                               $args .= $a ? 'True' : 'False';
+                               break;
+                           case 'NULL':
+                               $args .= 'Null';
+                               break;
+                           default:
+                               $args .= 'Unknown';
+                       }
+                   }
+               }
+               $output .= "\n";
+               $output .= "file: {$bt['file']}\n";
+               $output .= "line: {$bt['line']}\n";
+               $output .= "call: {$bt['class']}{$bt['type']}{$bt['function']}($args)\n";
+            }
+            
+            $debug = "Context: \n".$ctx."\n\n";
+            $debug .= "Backtrace: \n".$output."\n";
+        }
+        else
+        {
+            // cleanup path for non debug mode
+            $errfile = basename($errfile);
+        }
+        
+        // load into template and display error page
+        $vars = array(
+                      'errno'      => $data->err[$errno],
+                      'errstr'     => $errstr,
+                      'errfile'    => $errfile,
+                      'errline'    => $errline,
+                      'debug'      => $debug
+                     );
+        $this->error_page($this->template('local', 'global/fatal_error', $vars));
     }
 
     // GET LANG (get the language used for this session)
     function get_lang ()
     {
-        // set the default language from users web browser
+        // default from config
         $lang = $GLOBALS['config']->lang;
-        if (isset($_GET['lang']) or isset($_COOKIE['lang']))
+        
+        // get lang
+        if (isset($_COOKIE['lang']) and in_array($_COOKIE['lang'], $GLOBALS['config']->languages))
         {
             // load language from URL or cookie
-            if (isset($_GET['lang']) and in_array($_GET['lang'], $GLOBALS['config']->languages))
-            {
-                // load from URL
-                $lang = $_GET['lang'];
-            }
-            else if (isset($_COOKIE['lang']) and in_array($_COOKIE['lang'], $GLOBALS['config']->languages))
-            {
-                // load from COOKIE
-                $lang = $_COOKIE['lang'];
-            }
-            // save the language in a cookie (1 month)
-            setcookie('lang', $lang, time()+(24*60*60*31), '/', $_SERVER['HTTP_HOST']);
+            $lang = $_COOKIE['lang'];
         }
         else if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]))
         {
@@ -69,344 +263,202 @@ class html
             }
             unset($avail);
         }
+        
         // return language
         return $lang;
     }
 
-    // FIND ROOT (based on path info, get the web root)
-    function find_root ()
+
+    // GET ROOT - get the root of the website
+    function get_root ()
     {
-        $d = $_SERVER['PATH_INFO'];
-        if ($d)
-        {
-            $dirs = split('/',$d);
-            for ($c=0;$c<(count($dirs)-1);$c++)
-            {
-                if ($n)
-                    $n .= '/';
-                $n .= '..';
-            }
-            return $n;
-        }
-        else
-        {
-            return $this->_file_root;
-        }
-    }
-
-    // SHOWPAGE (display the current page)
-    function showpage ($theme, $title)
-    {
-        global $config, $page, $view;
-        
-        // load sidebar - only show sidebar in non-error modes
-        if (!$this->_error_mode)
-        {
-            $sidebar = new menu($this, $theme, $this->lang);
-            $menu = $sidebar->load('menu', $page);
-        }
-        
-        // build body
-        $body = $this->status_message;
-        $body .= $this->page;
-        
-        // add debug log
-        if ($config->web_debug and $this->errorlog)
-        {
-            $body .= $this->br().$this->frame_start("Debug Log", "95%");
-            $body .= $this->frame_tr($this->frame_td($this->span($this->errorlog,"class=tiny"),"class=ltgrey"));
-            $body .= $this->frame_end("");
-        }
-        
-        // rss link
-        if ($this->rss_link)
-            $rss_link = '<link rel="alternate" title="'.$title.' RSS" href="'.$this->rss_link.'" type="application/xml">';
-
-        // 404 not found
-        if ($this->in404)
-            header("HTTP/1.1 404 Not Found");
-
-        // display page based on view mode
-        switch ($this->_view_mode)
-        {
-            // plain text view
-            case "text":
-                $this->http_header("text/plain");
-                echo $body;
-                break;
-        
-            // print view
-            case "print":
-                $this->http_header("text/html");
-                echo $this->template(
-                                     $theme,
-                                     "content_print",
-                                     array(
-                                           'page_title'     => $title,
-                                           'page_body'      => $body
-                                          )
-                                    );
-                break;
-
-            // regular view
-            default:
-                $this->http_header("text/html");
-                echo $this->template(
-                                     $theme,
-                                     "content",
-                                     array(
-                                           'page_title'    => $title,
-                                           'page_body'     => $body,
-                                           'rss_link'      => $rss_link,
-                                           'page_sidebar'  => $menu
-                                          )
-                                    );
-        }
-
-    }
-
-    function error_page ($message = null)
-    {
-        global $config;
-        // set error mode
-        $this->_error_mode = 1;
-        // clear the current page in progress
-        $this->page = "";
-        // create error page
-        $this->page .= $this->br(2);
-        $this->page .= $this->frame_start("", "50%");
-        $this->page .= $this->frame_tr(
-                                       $this->frame_td(
-                                                       $this->p("<big><b><font color=red>Error</font></b></big>").
-                                                       $this->line().$this->p($message).$this->line().        
-                                                       $this->p("Please contact the ".
-                                                       $this->ahref("webmaster","mailto:".$config->site_admin).
-                                                       " about this error.")                                       
-                                                      ),
-                                       "white",
-                                       "align=center"
-                                      ); 
-        $this->page .= $this->frame_end("");
-        // show page
-        $this->showpage($config->theme, $config->title." - Internal Error");
-        exit();
-    }
-
-    // DO INDENT (internal indent)
-    function do_indent ($str, $v = 0)
-    {
-        if($v < 0)
-            $this->_indent_level += $v;
-
-        if($this->_indent_level > 0)
-            $str =  str_repeat("  ", $this->_indent_level) . $str;
-
-        if($v > 0)
-            $this->_indent_level += $v;
-
-        return $str . "\n";
+        return ($this->relative ? $this->_web_root : preg_replace("/\/$/", "", $GLOBALS['config']->base_url));
     }
 
     // HTML BR
     function br ($count = 1)
     {
-        return $this->do_indent(str_repeat("<br />", $count));
+        return str_repeat("<br />", $count);
     }
     
     // HTML IMG Tag
-    function img ($src, $align = "", $alt = "-", $width = null, $height = null)
+    function img ($src, $align = "", $alt = " ", $width = null, $height = null, $extra = null)
     {
-         if ($align) $doAlign = ' align="'.$align.'"';
-        if ($alt) $doAlt = ' alt="'.$alt.'"';
-        if ($src and file_exists($this->_file_root."/images/".$src))
+        if ($align) $align = ' align="'.$align.'"';
+        if ($alt) $alt = ' alt="'.$alt.'"';
+        if ($extra) $extra = ' '.$extra;
+        if ($src and is_file($this->_file_root."/images/".$src))
         {
             // load image from images dir
             $size = getimagesize($this->_file_root."/images/".$src);
-            return '<img src="'.$this->find_root()."/images/".$src.'" border="0" '."{$size[3]}".$doAlign.$doAlt.' />';
+            if ($size[3])
+                $size = ' '.$size[3];
+            return '<img src="'.$this->get_root()."/images/".$src.'"'.$size.$align.$extra.$alt.' />';
         }
         else if ($src)
         {
             // load other image
             if ($width) $width = ' width="'.$width.'"';
             if ($height) $height = ' height="'.$height.'"';
-            return '<img src="'.$src.'" border="0"'.$width.$height.$doAlign.$doAlt.' />';
+            return '<img src="'.$src.'"'.$width.$height.$align.$extra.$alt.' />';
         }
     }
     
     // HTML A HREF
     function ahref ($label, $url = "", $extra = "")
     {
-        $label = stripslashes($label);
-        if (!$label and $url)
-        {    
-            if (ereg("@",$url))
+        if ($extra)
+            $extra = " $extra";
+        if (!eregi(".",$label) and $url)
+        {
+            if (ereg("@", $url))
             {
-                return $this->do_indent(" <a href=\"mailto:$url\" $extra>$url</a> ");
+                return '<a href="mailto:'.$url.'"'.$extra.'>'.$url.'</a>';
             }
             else
             {
-                return $this->do_indent(" <a href=\"$url\" $extra>$url</a> ");
+                return '<a href="'.$url.'"'.$extra.'>'.$this->shorten($url, 20).'</a>';
             }
         }
-        else if (!$label)
+        else if (!eregi(".", $label))
         {
-            return $this->do_indent(" &nbsp; ");
+            return ' &nbsp; ';
         }
         else
         {
-            return $this->do_indent(" <a href=\"$url\" $extra>$label</a> ");
+            return '<a href="'.$url.'"'.$extra.'>'.$label.'</a>';
         }
     }
 
     // HTML B (bold)
-    function b ($str)
+    function b ($str, $extra = null)
     {
-        return $this->do_indent("<b>$str</b>");
+        if ($extra) { $extra = " ".$extra; }
+        return "<b".$extra.">".$str."</b>";
+    }
+
+    // HTML I (italics)
+    function i ($str, $extra = null)
+    {
+        if ($extra) { $extra = " ".$extra; }
+        return "<i".$extra.">".$str."</i>";
+    }
+
+    // HTML Hn (header text)
+    function h ($n, $str, $extra = null)
+    {
+        if ($extra) { $extra = " ".$extra; }
+        return "<H$n".$extra.">".$str."</H$n>";
+    }
+
+    // HTML BLOCKQOUTE (indent)
+    function blockquote ($str, $extra = null)
+    {
+        if ($extra) { $extra = " ".$extra; }
+        return "<blockquote".$extra.">".$str."</blockquote>";
     }
 
     // HTML SMALL (small text)
-    function small ($str)
+    function small ($str, $extra = null)
     {
-        return $this->do_indent("<small>$str</small>");
+        if ($extra) { $extra = " ".$extra; }
+        return "<small".$extra.">".$str."</small>";
     }
 
     // HTML P
     function p ($str = "&nbsp;", $extra = null)
     {
-        return $this->do_indent("<p $extra>$str</p>");
+        if ($extra) { $extra = " ".$extra; }
+        return "<p".$extra.">".$str."</p>";
     }
 
     // HTML DIV
     function div ($str = "&nbsp;", $extra = null)
     {
-        return $this->do_indent("<div $extra>$str</div>");
+        if ($extra) { $extra = " ".$extra; }
+        return "<div".$extra.">$str</div>";
     }
     
     // HTML SPAN
     function span ($str = "&nbsp;", $extra = null)
     {
-        return $this->do_indent("<span $extra>$str</span>");
+        if ($extra) { $extra = " ".$extra; }
+        return "<span".$extra.">".$str."</span>";
     }
-    
+
+    // HTML SUP
+    function sup ($str = "", $extra = null)
+    {
+        if ($extra) { $extra = " ".$extra; }
+        return "<sup".$extra.">".$str."</sup>";
+    }
+
     // HTML PRE
     function pre ($str = "&nbsp;", $extra = null)
     {
-        return "<pre $extra>$str</pre>";
+        if ($extra) { $extra = " ".$extra; }
+        return "<pre".$extra.">".$str."</pre>";
     }
 
-    // LINE
-    function line ($width = "100%", $height = 1, $color = "grey")
+    // HTML META
+    function meta ($name = "", $content = "")
     {
-        return '<img src="'.$this->_file_root.'/images/'.$color.'_pixel.gif" height="'.$height.'" width="'.$width.'" alt="-">';
+        if ($name)
+            return '<meta name="'.$name.'" content="'.$content.'">';
+        return "";
     }
 
-    // TABLE
-    function frame_table ($body = "", $width = "", $innerPad = 5, $extra = "")
+    // HTML UL
+    function ul ($str = "", $extra = null)
     {
-        if ($width) { $width = 'width="'.$width.'"'; }
-        $str .= '<div align=center><table '.$width.' border="0" cellpadding="'.$pad.'" cellspacing="0" '.$extra.'>'."\n";
-        $str .= $body;
-        $str .= '</table></div>'."\n";
+        if (is_array($str))
+            $str = join("", array_map(array($this, "li"), $str));
+        if ($extra) $extra = " {$extra}";
+        return "<ul{$extra}>{$str}</ul>";
+    }
+
+    // HTML OL
+    function ol ($str = "", $extra = null)
+    {
+        if (is_array($str))
+            $str = join("", array_map(array($this, "li"), $str));
+        if ($extra) $extra = " {$extra}";
+        return "<ol{$extra}>{$str}</ol>";
+    }
+
+    // HTML LI
+    function li ($str = "", $extra = null)
+    {
+        if ($extra) $extra = " {$extra}";
+        return "<li{$extra}>{$str}</li>";
+    }
+
+    // encode text for use in a form field. Removes HTML reserved characters. (same as htmlspecialchars())
+    function encode ($str)
+    {
+        $str = str_replace('&', '&amp;', $str);
+        $str = str_replace('\'', '&#039;', $str);
+        $str = str_replace('"', '&quot;', $str);
+        $str = str_replace('<', '&lt;', $str);
+        $str = str_replace('>', '&gt;', $str);
         return $str;
     }
 
-    // COOL FRAME START
-    function frame_start ($title = "", $width = "", $extra = "", $innerPad = 5, $class = "topMenu")
+    // decode text encoded with the encode() function
+    function decode ($str)
     {
-        if ($width) { $width = 'width="'.$width.'"'; }
-        $str = '<div align=center>'."\n";
-        $str .= '<table '.$width.' border=0 cellpadding=0 cellspacing=0>'."\n";
-        if($title)
-        {
-            $str .= '<tr><td class="'.$class.'">'."\n";
-            $str .= '    <table width="100%" border=0 cellpadding=0 cellspacing=0><tr>'."\n";
-            $str .= '        <td width="100%" align=center><span class=menuTitle> '.$title.' </span></td>'."\n";
-            $str .= '    </tr></table>'."\n";
-            $str .= '</td></tr>'."\n";
-        }
-        $str .= '<tr><td class="'.$class.'">'."\n";    
-        $str .= '<table width="100%" border=0 cellpadding='.$innerPad.' cellspacing=1 '.$extra.'>'."\n";
+        $str = str_replace('&gt;', '>', $str);
+        $str = str_replace('&lt;', '<', $str);
+        $str = str_replace('&quot;', '\"', $str);
+        $str = str_replace('&#039;', '\'', $str);
+        $str = str_replace('&amp;', '&', $str);
         return $str;
     }
-
-    // COOL FRAME END
-    function frame_end ($text = "")
-    {
-        $str .= '</table></td></tr>'."\n";
-        if ($text)
-        {
-            $str .= '<tr><td class=topMenu>'."\n";
-            $str .= '    <table width="100%" border=0 cellpadding=0 cellspacing=0><tr>'."\n";
-            $str .= '        <td width="100%" align=center><span class=menuTitle> '.$text.' </span></td>'."\n";
-            $str .= '    </tr></table>'."\n";
-            $str .= '</td></tr>'."\n";
-        }
-        $str .= "</table></div><br>\n";
-        $this->_trcolor = 0;
-        return $str;
-    }
-
-    // fill a theme based box with content
-    function theme_box ($theme, $template, $title = "", $width = "100%", $body = "", $pad = "10", $fill = "white", $border = "topMenu")
-    {
-        $vars = array(
-                      'width' => $width,
-                      'title' => $title,
-                      'body' => $body,
-                      'pad' => $pad,
-                      'fill' => $fill,
-                      'border' => $border
-                     );
-        return $this->template($theme, $template, $vars);             
-    }
-
-    // COOL FRAME ROW START
-    function frame_row_start ($color = "white", $extra = null)
-    {
-        $str = '<tr class="'.$color.'" '.$extra.'><td>'."\n";
-        return $str;
-    }
-
-    // COOL FRAME ROW END
-    function frame_row_end ()
-    {
-        return '</td></tr>'."\n";
-    }
-
-    // COOL FRAME TR
-    function frame_tr ($td = "<td>&nbsp;</td>", $color = "", $extra = null)
-    {
-        if ($color) $color = 'class="'.$color.'"';
-        $str = '<tr valign="top"'.$color.' '.$extra.'>'."\n".$td.'</tr>'."\n";
-        return $str;
-    }
-
-    // COOL FRAME TD
-    function frame_td ($txt = "&nbsp;", $extra = null)
-    {
-        $str = '<td '.$extra.'>'.$txt.'</td>'."\n";
-        return $str;
-    }
-
-    // COOL FRAME ROW FOR FORM USAGE
-    function frame_row_form ($name = "&nbsp;", $field = "&nbsp;")
-    {
-        $str  = '    <tr valign=top><td class="ltgrey" width="200"><b class="small">'.$name.'</b></td>'."\n";
-        $str .= '    <td class="white" width="100%">'.$field.'</td></tr>'."\n";
-        return $str;
-    }
-
-    // COOL FRAME ROW TITLE FOR FORMS
-    function frame_row_form_title ($name = "&nbsp;", $extra = null)
-    {
-        $str  = '    <tr valign=top><td class="white" colspan=2 '.$extra.'>'.$name.'</td></tr>'."\n";
-        return $str;
-    }
-
+    
     // FORM START
-    function form_start ($script, $name, $method = "get")
+    function form_start ($script, $name, $method = "get", $extra = null)
     {
-        $str = '<form name="'.$name.'" action="'.$script.'" method="'.$method.'">'."\n";
+        $str = '<form name="'.$name.'" action="'.$script.'" method="'.strtolower($method).'" '.$extra.'>'."\n";
         return $str;
     }
 
@@ -417,140 +469,196 @@ class html
     }
 
     // FORM INPUT TEXT
-    function form_input_text ($name, $size = 20, $value = "", $max = 0)
+    function form_input_text ($name, $size = 20, $value = "", $max = 0, $extra = null)
     {
+        if ($extra)
+            $extra = $extra.' ';
         if ($max)
-            $maxlengh = ' maxlength="'.$max.'"';
-        $str = '<input type=text name="'.$name.'" size="'.$size.'" value="'.$value.'"'.$maxlengh.'>'."\n";
+            $extra .= 'maxlength="'.$max.'" ';
+        if ($size >= 100)
+            $size = 'style="width:100%;" ';
+        else
+            $size = 'size="'.$size.'" ';
+        $value = ereg_replace('\{\$root\}', '&#123;&#036;root&#125;', $value);            
+        $str = '<input type="text" name="'.$name.'" '.$size.'value="'.$value.'" '.$extra.'/>'."\n";
         return $str;
     }
 
     // FORM INPUT PASSWORD
-    function form_input_password ($name, $size = 20, $value = "")
+    function form_input_password ($name, $size = 20, $value = "", $max = 0, $extra = null)
     {
-        $str = '<input type=password name="'.$name.'" size="'.$size.'" value="'.$value.'">'."\n";
+        if ($max)
+            $maxlengh = ' maxlength="'.$max.'"';
+        if ($extra)
+            $extra = ' '.$extra;
+        $str = '<input type="password" name="'.$name.'" size="'.$size.'" value="'.$value.'"'.$maxlengh.$extra.' />'."\n";
         return $str;
     }
 
     // FORM INPUT HIDDEN FIELD
     function form_input_hidden ($name, $value = "")
     {
-        $str = '<input type=hidden name="'.$name.'" value="'.$value.'">'."\n";
+        $str = '<input type="hidden" name="'.$name.'" value="'.$value.'" />'."\n";
         return $str;
     }
 
     // FORM INPUT TEXT AREA
     function form_input_textarea ($name, $cols = 20, $rows = 5, $value = "")
     {
-        $str = '<textarea name="'.$name.'" cols="'.$cols.'" rows="'.$rows.'" wrap="soft">'.$value.'</textarea>'."\n";
+        $value = ereg_replace('\{\$root\}', '&#123;&#036;root&#125;', $value);
+        if ($cols >= 100)
+            $cols = 'style="width:100%;" cols="72" ';
+        else
+            $cols = 'cols="'.$cols.'" ';
+        $str = '<textarea name="'.$name.'" rows="'.$rows.'" '.$cols.'wrap="soft">'.$value.'</textarea>'."\n";
         return $str;
     }
 
     // FORM INPUT SELECT (drop down)
-    function form_input_select ($name, $options, $selected = "", $size = 1, $multi = null)
+    function form_input_select ($name, $options, $selected = "", $size = 1, $multi = null, $extra = "", $width = 72)
     {
         if ($multi)
             $multi = " multiple";
-        $str = '<select name="'.$name.'" size="'.$size.'"'.$multi.'>'."\n";
+        if ($extra)
+            $extra = " ".$extra;
+        if (!$width)
+            $width = 72;
+        if (!is_array($options))
+            return "";
+        $str = '<select name="'.$name.'" size="'.$size.'"'.$multi.$extra.'>'."\n";
         while (list($key, $val) = each($options))
-        {    
-            if ($key == $selected)
-            {
-                $str .= '<option value="'.$key.'" selected>'.$val.'</option>'."\n";
-            }
+        {
+            $val = $this->shorten($val, $width);
+            if (is_array($selected) and in_array($key, $selected))
+                $str .= '<option value="'.$key.'" selected="selected">'.$val.'</option>'."\n";
+            else if ("$key" == "$selected")
+                $str .= '<option value="'.$key.'" selected="selected">'.$val.'</option>'."\n";
             else
-            {
-                $str .= '<option value="'.$key.'">'.$val.'</option>'."\n";        
-            }
+                $str .= '<option value="'.$key.'">'.$val.'</option>'."\n";		
         }
         $str .= '</select>'."\n";
         return $str;
     }
 
     // FORM INPUT TIMESTAMP (make an input field for timestamp)
-    function form_input_timestamp ($fn, $timestamp)
+    function form_input_timestamp ($fn, $timestamp, $nohourmin = 0, $allow_null = 0)
     {
         $months = array(1 => 'January', 'February', 'March', 'April', 'May',
                       'June', 'July', 'August', 'September', 'October',
                       'November', 'December');          
         // month
         $ascvar = $fn . "[1]";
-        $ret.="  <select name=\"$ascvar\">\n";
+        $ret.='  <select name="'.$ascvar.'">'."\n";
+        if ($allow_null)
+            $ret.='    <option value=""></option>'."\n";
         $cur = 1;
         while ($cur <= 12)
         {
-            if (date("n",$timestamp) == $cur) { $selected = " SELECTED"; }
-            $ret.="    <option value=$cur$selected>$months[$cur]</option>\n";
+            if ($timestamp and date("n",$timestamp) == $cur) { $selected = ' selected="selected"'; }
+            $ret.='    <option value="'.$cur.'"'.$selected.'>'.$months[$cur].'</option>'."\n";
             $cur++;
             $selected = "";
         }
-        $ret.="  </select>\n";
+        $ret.='  </select>'."\n";
         
         // day
         $ascvar = $fn . "[2]";
-        $ret.="  <select name=\"$ascvar\">\n";
+        $ret.='  <select name="'.$ascvar.'">'."\n";
+        if ($allow_null)
+            $ret.='    <option value=""></option>'."\n";
         $cur = 1;
         while ($cur <= 31)
         {
-            if (date("j",$timestamp) == $cur) { $selected = " SELECTED"; }
-            $ret.="    <option value=$cur$selected>$cur</option>\n";
+            if ($timestamp and date("j",$timestamp) == $cur) { $selected = ' selected="selected"'; }
+            $ret.='    <option value="'.$cur.'"'.$selected.'>'.$cur.'</option>'."\n";
             $cur++;
             $selected = "";
         }
-        $ret.="  </select>\n";
+        $ret.='  </select>'."\n";
         
         // year
         $ascvar = $fn . "[0]";
-        $ret.="  <select name=\"$ascvar\">\n";
-        $cur = "1969";
+        $ret.='  <select name="'.$ascvar.'">'."\n";
+        if ($allow_null)
+            $ret.='    <option value=""></option>'."\n";
+        $cur = "1998";
         while ($cur <= (date("Y")+5))
         {
-            if (date("Y",$timestamp) == $cur) { $selected = " SELECTED"; }
-            $ret.="    <option value=$cur$selected>$cur</option>\n";
+            if ($timestamp and date("Y",$timestamp) == $cur) { $selected = ' selected="selected"'; }
+            $ret.='    <option value="'.$cur.'"'.$selected.'>'.$cur.'</option>'."\n";
             $cur++;
             $selected = "";
         }
-        $ret.="  </select>";
+        $ret.='  </select>'."\n";
         
-        // hour
-        $ascvar = $fn . "[3]";
-        $ret.="  <select name=\"$ascvar\">\n";
-        $cur = "1";
-        while ($cur <= "24")
+        // toggle hour minute display
+        if ($nohourmin == 0)
         {
-            if (date("G",$timestamp) == $cur) { $selected = " SELECTED"; }
-            $ret.="    <option value=$cur$selected>$cur</option>\n";
-            $cur++;
-            $selected = "";
+            // hour
+            $ascvar = $fn . "[3]";
+            $ret.='  <select name="'.$ascvar.'">'."\n";
+            if ($allow_null)
+                $ret.='    <option value=""></option>'."\n";
+            $cur = "0";
+            while ($cur <= "23")
+            {
+                if ($timestamp and date("G",$timestamp) == $cur) { $selected = ' selected="selected"'; }
+                $ret.='    <option value="'.$cur.'"'.$selected.'>'.$cur.'</option>'."\n";
+                $cur++;
+                $selected = "";
+            }
+            $ret.='  </select>'."\n";
+            
+            // min
+            $ascvar = $fn . "[4]";
+            $ret.='  <select name="'.$ascvar.'">'."\n";
+            if ($allow_null)
+                $ret.='    <option value=""></option>'."\n";
+            $cur = "0";
+            while ($cur <= "59")
+            {
+                if ($cur < "10") { $cur = "0".$cur; }
+                if ($timestamp and date("i",$timestamp) == $cur) { $selected = ' selected="selected"'; }
+                $ret.='    <option value="'.$cur.'"'.$selected.'>'.$cur.'</option>'."\n";
+                $cur++;
+                $selected = "";
+            }
+            $ret.='  </select>'."\n";
         }
-        $ret.="  </select>";
-        
-        // min
-        $ascvar = $fn . "[4]";
-        $ret.=":<select name=\"$ascvar\">\n";
-        $cur = "0";
-        while ($cur <= "59")
+        else if ($timestamp)
         {
-            if ($cur < "10") { $cur = "0".$cur; }
-            if (date("i",$timestamp) == $cur) { $selected = " SELECTED"; }
-            $ret.="    <option value=$cur$selected>$cur</option>\n";
-            $cur++;
-            $selected = "";
+            // default to midnight
+            $ret .= '<input type="hidden" name="'.$fn.'[3]" value="'.date("G",$timestamp).'" />'."\n";
+            $ret .= '<input type="hidden" name="'.$fn.'[4]" value="'.date("i",$timestamp).'" />'."\n";
         }
-        $ret.="  </select>";
         
         return $ret;
     }
- 
+
     // PROC INPUT TIMESTAMP (process timestamp field)
-    function proc_input_timestamp ($fn)
+    function proc_input_timestamp ($fn, $mode = 'unix')
     {
-        $lfn = $GLOBALS["$fn"];
-        $strdate = $lfn[0]."-".$lfn[1]."-".$lfn[2]." ".$lfn[3].":".$lfn[4];
+        if (is_array($fn))
+            $lfn =& $fn;
+        else
+            $lfn =& $_REQUEST["$fn"];
+        $strdate = $lfn[0]."-".$lfn[1]."-".$lfn[2];
+        if ($lfn[3] and $lfn[4])
+            $strdate .= " ".$lfn[3].":".$lfn[4];
         if ($strdate != "--")
         {
             $timestamp = strtotime($strdate);
-            return $timestamp;
+            switch ($mode)
+            {
+                // return sql timestamp
+                case "sql":
+                    return date("YmdHis",$timestamp);
+                    break;
+                    
+                // return unix timestamp
+                default:
+                    return $timestamp;
+            }
         }
         else
         {
@@ -558,77 +666,99 @@ class html
         }
     }
 
-    // FORM INPUT CREDIT CARD EXPIRE
-    function form_input_ccexpire ($fn)
-    {
-        // month
-        $ret = '<select name="'.$fn.'[0]">'."\n";
-        for ($i = 1; $i <= 12; $i++)
-        {
-            $ret .= '<option value="'.sprintf("%02d", $i).'">'.sprintf("%02d", $i).'</option>'."\n";
-        }
-        $ret .= '</select>'."\n";
-        // year
-        $ret .= '<select name="'.$fn.'[1]">'."\n";
-        for($i = (strftime("%Y")); $i <= (strftime("%Y") + 10); $i++)
-        {
-            $ret .= '<option value="'.substr(sprintf("%04d", $i),2,2).'">'.$i.'</option>'."\n";
-        }
-        $ret .= '</select>'."\n";
-        return $ret;
-    }
-
-    // PROC INPUT CREDIT CARD EXPIRE
-    function proc_input_ccexpire ($fn)
-    {
-        $lfn = $GLOBALS["$fn"];
-        return $lfn[0].$lfn[1];
-    }
-
     // FORM INPUT CHECKBOX
-    function form_input_checkbox ($name, $value = 1, $checked = 0)
+    function form_input_checkbox ($name, $value = 1, $checked = 0, $extra = null)
     {
+        if (!$extra)
+            $extra = 'class="checkbox"';
+        $extra = " $extra";
         if ($checked == 1)
-            $str = '<input type="checkbox" name="'.$name.'" value="'.$value.'" checked>'."\n";
+            $str = '<input type="checkbox" name="'.$name.'" value="'.$value.'" checked="checked"'.$extra.' />'."\n";
         else
-            $str = '<input type="checkbox" name="'.$name.'" value="'.$value.'">'."\n";
-        return $str;    
+            $str = '<input type="checkbox" name="'.$name.'" value="'.$value.'"'.$extra.' />'."\n";
+        return $str;
     }
 
     // FORM INPUT RADIO
-    function form_input_radio ($name, $value = 1, $checked = 0)
+    function form_input_radio ($name, $value = 1, $checked = 0, $extra = null)
     {
+        if (!$extra)
+            $extra = 'class="radio"';
+        if ($extra)
+            $extra = " $extra";
         if ($checked == 1)
-            $str = '<input type="radio" name="'.$name.'" value="'.$value.'" checked>'."\n";
+            $str = '<input type="radio" name="'.$name.'" value="'.$value.'" checked="checked"'.$extra.' />'."\n";
         else
-            $str = '<input type="radio" name="'.$name.'" value="'.$value.'">'."\n";
-        return $str;    
+            $str = '<input type="radio" name="'.$name.'" value="'.$value.'"'.$extra.' />'."\n";
+        return $str;
+    }
+
+    // FORM MULTI CHECKBOX (multi select using checkboxes [tableEditor set field]) 
+    function form_multi_checkbox ($name, $options, $selected = "")
+    {
+        if (!is_array($options))
+            return "";
+        while (list($key, $val) = each($options))
+        {
+            if (is_array($selected) and in_array($key, $selected))
+                $str .= $this->form_input_checkbox($name, $key, 1)." ".$val.$this->br();
+            else if ($key == $selected)
+                $str .= $this->form_input_checkbox($name, $key, 1)." ".$val.$this->br();
+            else
+                $str .= $this->form_input_checkbox($name, $key)." ".$val.$this->br();
+        }
+        return $str;
+    }
+
+    // FORM INPUT MULTI RADIO (multi select using radio [tableEditor enum field]) 
+    function form_multi_radio ($name, $options, $selected = "")
+    {
+        if (!is_array($options))
+            return "";
+        while (list($key, $val) = each($options))
+        {
+            if ($key == $selected)
+                $str .= $this->form_input_radio($name, $key, 1)." ".$val.$this->br();
+            else
+                $str .= $this->form_input_radio($name, $key)." ".$val.$this->br();
+        }
+        return $str;
+    }
+
+    // FORM FILE BUTTON (needs enctype set on form)
+    function form_input_file ($name, $value = "")
+    {
+        return '<input type="file" name="'.$name.'" value="'.$value.'" />'."\n";
     }
 
     // FORM SUBMIT
-    function form_submit ($value = "", $name = "submit", $extra = null)
+    function form_submit ($value = "", $name = "", $extra = null)
     {
-        $str = '<input type="submit" class="button" name="'.$name.'" value="'.$value.'" '.$extra.'>'."\n";
+        if ($name)
+            $name = ' name="'.$name.'"';
+        $str = '<input type="submit"'.$name.' value="'.$value.'" class="button" '.$extra.' />'."\n";
         return $str;
     }
 
     // FORM BUTTON
-    function form_button ($value = "", $name = "submit", $extra = null)
+    function form_button ($value = "", $name = "", $extra = null)
     {
-        $str = '<input type="button" class="button" name="'.$name.'" value="'.$value.'" '.$extra.'>'."\n";
-        return $str;
+        if ($name)
+            $name = ' name="'.$name.'"';
+        if ($extra)
+            $extra .= " ";
+        return "<input type=\"button\" class=\"button\"{$name} value=\"{$value}\" {$extra}/>\n";
     }
 
     // FORM JS BUTTON (button using javascript)
-    function form_js_button ($url = null, $vars = null, $skip = "")
+    function form_js_button ($url = null, $name = "&lt;&lt; Back", $extra = "")
     {
-        global $PHP_SELF;
         if (!$url)
-            $url = $PHP_SELF;
-        if ($vars)
-            $url .= "?".$this->build_urlarg($vars,$skip);
-        $str = '<input type=button class="button" value=" &lt;&lt; Back " name="jsback" '.
-        $str .= 'onClick="javascript:self.location=\''.$url.'\';">'."\n";
+            $url = $_SERVER['HTTP_REFERER'];
+        if ($extra)
+            $extra .= " ";
+        return "<input type=\"button\" class=\"button\" value=\"{$name}\" ".
+               "onClick=\"javascript:self.location='$url';\" {$extra}/>\n";
         return $str;
     }
 
@@ -643,80 +773,212 @@ class html
     // ADD BR (replace \n with <br>)
     function add_br ($text = "")
     {
-        $text = ereg_replace("\n","<br>\n",$text);
+        $text = ereg_replace("\n","<br />\n",$text);
+        return $text;
+    }
+    
+    // HTML2TXT (convert HTML to text format)
+    function html2txt ($str)
+    {
+        // remove HEADER junk, CSS, JS, and CDATA
+        $str = preg_replace("'<head[^>]*>.*</head>'siU", '', $str);
+        $str = preg_replace("'<style[^>]*>.*</style>'siU", '', $str);
+        $str = preg_replace("'<script[^>]*>.*</script>'siU", '', $str);
+        $str = preg_replace('@<![\s\S]*?--[ \t\n\r]*>@', '', $str);
+        // P with closing tags replacement
+        $str = preg_replace("'<p[^>]*>(.*)</p>'siU", "\\1\n\n", $str);
+        // replace BR and single P tags
+        $str = preg_replace('/<br\s*\/?>/i', "\n", $str);
+        $str = preg_replace('/<p\s*\/?>/i', "\n\n", $str);
+        // strip all other tags
+        $str = preg_replace('@<[\/\!]*?[^<>]*?>@si', '', $str);
+        // convert entities
+        $str = preg_replace("/&nbsp;/", " ", $str);
+        $str = html_entity_decode($str, null, "UTF-8");
+        // remove extra whitespace
+        $str = preg_replace("/\t/", "    ", $str);
+        $str = preg_replace("/\r/", "", $str);
+        $str = preg_replace("/ {1,}\n/sU", "\n", $str);
+        $str = preg_replace("/\n{3,}/sU", "\n\n", $str);
+        $str = preg_replace("/\n{4,}/sU", "", $str);
+        // return text
+        return $str;
+    }
+    
+    // FORMAT MSG (make an email, web readable, etc.)
+    function format_msg ($text = "", $class = "", $pre = 0)
+    {
+        $arr = explode("\n", $text);
+        while (list($c,$val) = each($arr))
+        {
+            // remove any existing carrige returns
+            $arr[$c] = preg_replace("/[\n\r]/", "", $arr[$c]);
+            // line break at 80 chars (only for pre)
+            if ($pre and strlen($arr[$c]) > 80)
+            {
+                $arr[$c] = wordwrap($arr[$c], 80, "\n", 1);
+            }
+            else if (!$pre)
+            {
+                // if a single word is longer than 72 chars, add spaces to it (for non-pre)
+                $arr[$c] = $this->wraplongwords($arr[$c]);
+            }
+            // remove any remaining special characters
+            $arr[$c] = $this->encode($arr[$c]);
+            // add urls
+            $arr[$c] = $this->urlify($arr[$c]);
+            // add emails
+            $arr[$c] = $this->emailify($arr[$c]);
+            // add emoticons
+            $arr[$c] = $this->emoticon($arr[$c]);
+            // strip slashes (causes crash if not here)
+            $arr[$c] = preg_replace('/\\\/', '&#092;', $arr[$c]);
+            // quote message text
+            if ($class)
+            {
+                if (ereg("^&gt; &gt; &gt; &gt;",$arr[$c]) or ereg("^&gt;&gt;&gt;&gt;",$arr[$c]))
+                    $arr[$c] = $this->span($arr[$c], 'class="'.$class.'d"');
+                else if (ereg("^&gt; &gt; &gt;",$arr[$c]) or ereg("^&gt;&gt;&gt;",$arr[$c]))
+                    $arr[$c] = $this->span($arr[$c], 'class="'.$class.'c"');
+                else if (ereg("^&gt; &gt;",$arr[$c]) or ereg("^&gt;&gt;",$arr[$c]))
+                    $arr[$c] = $this->span($arr[$c], 'class="'.$class.'b"');
+                else if (ereg("^&gt;", $arr[$c]))
+                    $arr[$c] = $this->span($arr[$c], 'class="'.$class.'a"');
+            }
+        }
+        $text = implode("\n", $arr);
+        
+        if ($pre)
+            if ($class)
+                return $this->pre($text, 'class="'.$class.'"');
+            else
+                return $this->pre($text);
+        else
+            if ($class)
+                return $this->span(nl2br($text), 'class="'.$class.'"');
+            else
+                return nl2br($text);
+    }
+
+    // WRAPLONGWORDS (fix text that would be too long for web viewing)
+    function wraplongwords ($text, $len = 72, $skip_pre = false)
+    {
+        $skip_wrap = 0;
+        $lines = preg_split('/\n/', $text);
+        for ($l = 0; $l < count($lines); $l++)
+        {
+            $words = preg_split('/\s/', $lines[$l]);
+            for ($x = 0; $x < count($words); $x++)
+            {
+                if ($skip_pre)
+                {
+                    switch (true)
+                    {
+                        case preg_match("/\<pre\>/", $words[$x]):
+                            $skip_wrap = 1;
+                            break;
+                        case preg_match("/\<\/pre\>/", $words[$x]):
+                            $skip_wrap = 0;
+                            break;
+                    }
+                }
+                if (strlen($words[$x]) >= $len and !preg_match("%(http://|https://|ftp://)%", $words[$x]) and !$skip_wrap)
+                {
+                    $arr = preg_split('//', $words[$x], -1, PREG_SPLIT_NO_EMPTY);
+                    for ($c = 0; $c < count($arr); $c = $c + $len)
+                    {
+                        array_splice($arr, $c, 0, 0);
+                        $arr[$c] = " ";
+                    }
+                    $words[$x] = join("", $arr);
+                    unset($arr);
+                }
+            }
+            $lines[$l] = join(" ", $words);
+        }
+        return join("\n", $lines);
+    }
+
+    // JSENCODE (convert a string for use in a JavaScript function)
+    function jsencode ($str)
+    {
+        $str = preg_replace('/\r/', '', $str);
+        $str = preg_replace('/\n/', '\\n', $str);
+        $str = preg_replace('/\'/', '\\\'', $str);
+        return $str;
+    }
+
+    // URLIFY (search text and make urls linkable, also wrap URL at 100 chars)
+    function urlify ($text)
+    {
+        // only use if text has links in it
+        if (preg_match('%(http|https|ftp|rss)(://)([-\w\.]+)%', $text))
+        {
+            // extract existing HTML so it is left unprocessed (for example, bbcode is pre-converted)
+            $html_matches = array();
+            preg_match_all("/(<a href=.*>.*<\/a>)/Us", $text, $matches, PREG_PATTERN_ORDER);
+            foreach ($matches[0] as $c => $match)
+            {
+                $html_matches[$c] = $matches[1][$c];
+                $text = str_replace("$match", "__HTMLMATCH_{$c}__", $text);
+            }
+            
+            // fix URL converted vars temporarily
+            $text = preg_replace('/&gt;/', '<-RPLME->', $text);
+            $text = preg_replace('/&quot;/', '"-RPLME-"', $text);
+            
+            // add a space to the beginning text so regex will work
+            $text = " $text";
+            
+            // perform regular expression
+            $text = preg_replace(
+                                 '%((http|https|ftp|rss)(://)([-\w\.]+)(:\d+)?(/)?([\w/_\-\.\*\~]+)?(\?)?([\w_\-\.\;\&\=\%]+)?(\#)?([-\w\.]+)?)%e',
+                                 "'<a href=\"\\1\">'.wordwrap('\\1', 100, '\n', 1).'</a>'",
+                                 $text
+                                );
+                                
+            // remove our temp conversion
+            $text = preg_replace('/<-RPLME->/', '&gt;', $text);
+            $text = preg_replace('/"-RPLME-"/', '&quot;', $text);
+            
+            // remove our temp space
+            $text = preg_replace('%^ %', '', $text);
+            
+            // re-insert HTML
+            preg_match_all("/(__HTMLMATCH_(\d+)__)/", $text, $matches, PREG_PATTERN_ORDER);
+            foreach ($matches[0] as $c => $match)
+            {
+                $text = str_replace("$match", $html_matches[$c], $text);
+            }
+        }
+        // return linkify'd text
         return $text;
     }
 
-    // FORMAT MSG (make an email, web readable, etc.)
-    function format_msg ($text = "")
+    // EMAILIFY (convert email addresses to links)
+    function emailify ($text, $convert = 0)
     {
-        global $config;
-        $arr = explode("\n",$text);
-        while (list($c,$val) = each($arr))
+        // fix quoted printable
+        if (ereg("^=", $text))
         {
-            // line break at 80 chars
-            if (strlen($arr[$c]) > 80)
-                $arr[$c] = wordwrap($arr[$c], 80);        
-            // add urls
-            $arr[$c] = $this->urlify($arr[$c]);
-            // add emoticons
-            $arr[$c] = $this->emoticon($arr[$c]);
-            // quote message text
-            if (ereg("^&gt; &gt; &gt; &gt;",$arr[$c]) or ereg("^&gt;&gt;&gt;&gt;",$arr[$c]))
-                $arr[$c] = "<font color=#000099>".$arr[$c]."</font>";            
-            else if (ereg("^&gt; &gt; &gt;",$arr[$c]) or ereg("^&gt;&gt;&gt;",$arr[$c]))
-                $arr[$c] = "<font color=#990000>".$arr[$c]."</font>";
-            else if (ereg("^&gt; &gt;",$arr[$c]) or ereg("^&gt;&gt;",$arr[$c]))
-                $arr[$c] = "<font color=#007777>".$arr[$c]."</font>";
-            else if (ereg("^&gt;",$arr[$c]))
-                $arr[$c] = "<font color=#660066>".$arr[$c]."</font>";
-            // add bug urls
-            if (eregi("bug( | #)[0-9]+", $arr[$c]))
-            {
-                $arr[$c] = eregi_replace("bug( | #)([0-9]+)",
-                                        "<a href=\"".$config->bug_system."\\2\">bug \\2</a>",
-                                        $arr[$c]);
-            }
-            // add ticket urls
-            if (eregi("ticket( | #)[0-9]+", $arr[$c]))
-            {
-                $arr[$c] = eregi_replace("ticket( | #)([0-9]+)",
-                                        "<a href=\"".$config->base_url."viewticket.php?ticket_id=\\2\">ticket \\2</a>",
-                                        $arr[$c]);
-            }                   
+            $text = quoted_printable_decode($text);
+            $text = mb_convert_encoding($text, 'UTF-8');
+            $text = eregi_replace("^\=\?[a-z0-9\-]+\?Q\?(.*)\?\=", "\\1", $text);
         }
-        $text = implode("\n",$arr);
-        return $this->pre($text);
-    }
-
-    // URLIFY (search text and make urls linkable)
-    function urlify ($text)
-    {
-        $text = htmlspecialchars($text);
-        // web address
-        $urlreg = "(([a-zA-Z]+://)([^\t\r\n ]+))";
-        if (ereg($urlreg,$text))
+        $emreg = "(.*) (<|&lt;)([a-zA-Z0-9_\.\+\/-]+)@([a-zA-Z0-9_\.-]+\.[a-zA-Z0-9]+)(>|&gt;)(.*)";
+        if ($convert and ereg($emreg, $text))
         {
-            $text = ereg_replace($urlreg, "<a href=\"\\1\">\\2\\3</a>", $text);
-        }
-        // fix mime email address ie =?ISO-8859-1?Q?John_Doe=E8?=
-        $mimereg = "=\?([^?]+)\?(.)\?([^?]*)\?=";
-        if (ereg($mimereg,$text))
-        {
-            $text = ereg_replace($mimereg, "\\3", $text);
-        }
-        // email address
-        $emreg = "(.*) &lt;([a-zA-Z0-9_\.\+\/-]+)@([a-zA-Z0-9_\.-]+\.[a-zA-Z0-9]+)&gt;(.*)";
-        if (ereg($emreg,$text))
-        {    
-            $text = ereg_replace($emreg, "<a href='mailto:\\2@\\3'>\\1</a>", $text);
+            // long format puts the name in and hides the email in the href
+            //$text = ereg_replace($emreg, "<a href=\"mailto:\\3@\\4\">\\1</a>", $text);
+            $text = preg_replace("/".$emreg."/e", "'<a href=\"mailto:\\3@\\4\">'.wordwrap('\\1', 25, ' ', 1).'</a>'", $text);
         }
         else
         {
+            // regular emails
             $emailreg = "([a-zA-Z0-9_\.\+\/-]+)@([a-zA-Z0-9_\.-]+\.[a-zA-Z0-9]+)";
             if (ereg($emailreg,$text))
             {
-                    $text = ereg_replace($emailreg, "<a href='mailto:\\1@\\2'>\\1@\\2</a>", $text);
+                    $text = ereg_replace($emailreg, "<a href=\"mailto:\\1@\\2\">\\1@\\2</a>", $text);
             }
         }
         return $text;
@@ -726,16 +988,18 @@ class html
     function emoticon ($text)
     {
         $smiles = array(
-                        "/:-\)/" => "smile.gif",
-                        "/:-\(/" => "sad.gif",
-                        "/B-\)/" => "cool.gif",
-                        "/:-p/" => "razz.gif",
-                        "/;-\)/" => "wink.gif"
+                        ":-)" => "smile.gif",
+                        ":-(" => "sad.gif",
+                        "B-)" => "cool.gif",
+                        ":-p" => "razz.gif",
+                        ";-)" => "wink.gif",
+                        ":-D" => "biggrin.gif",
+                        "X-(" => "mad.gif"
                        );
         while (list($smile,$img) = each($smiles))
         {
-            $path = $this->img("emoticon/".$img, "", $img);
-            $text = preg_replace($smile,$path,$text);
+            $path = $this->img("emoticon/".$img);
+            $text = str_replace($smile, $path, $text);
         }
         return $text;
     }
@@ -753,35 +1017,81 @@ class html
     }
 
     // BUILD URLARG (build a valid URL from a list of name/values)
-    function build_urlarg ($vars, $skip = null)
+    function build_urlarg ($vars, $skip = null, $array = null)
     {
+        // if not a list, try converting it into a list
+        if (!is_array($vars))
+        {
+            list($url,$params) = split('\?', $vars, 2);
+            if (ereg(';', $params))
+            {
+                $urls = split(';',$params);
+                $vars = array();
+                foreach ($urls as $pair)
+                {
+                    list($key,$value) = split('=',$pair);
+                    $vars[$key] = $value;
+                }
+            }
+            else
+            {
+                // return nothing, as there is no vars
+                return;
+            }
+        }
+        
+        // loop through vars and remove any we do not want, then build url
         $arr = array();
         while(list($key, $val) = each($vars))
         {
-                if ($skip and gettype($skip) == "array")
-                {
-                    if (in_array($key, $skip))
-                        continue;
-                }
-                else if ($skip and $key == $skip)
-                {
+            // skip COOKIE vars
+            if (isset($_COOKIE[$key]))
+               continue;
+            
+            if ($skip and gettype($skip) == "array")
+            {
+                // simple in array check for strings
+                if (in_array($key, $skip))
                     continue;
-                }
-    
-                if(is_array($val))
+                // support for nested array keys
+                foreach ($skip as $skip_ar)
                 {
-                        while(list($idx, $value) = each($val))
+                    // if skip is an array and the array is the correct key check values of skip_ar
+                    if (is_array($skip_ar) and isset($skip_ar[$key]))
+                    {
+                        $val_keys = array_keys($val);
+                        $skip_in = array_values($skip_ar);
+                        if (in_array($skip_in[0], $val_keys))
                         {
-                                //echo "Encoding $key / $value<br>";
-                                $arr[] = rawurlencode($key."[]")."=".rawurlencode($value);
+                            continue 2;
                         }
+                    }
                 }
-                else
-                {
-                    $arr[] = $key."=".rawurlencode($val);
-                }
+                
+            }
+            else if ($skip and $key == $skip)
+            {
+                // non arrays, just match key to skip value
+                continue;
+            }
+            
+            if ($array)
+                $key = $array."[".$key."]";
+            
+            if(is_array($val))
+            {
+                    while(list($idx, $value) = each($val))
+                    {
+                            //echo "Encoding $key / $value<br>";
+                            $arr[] = rawurlencode($key."[".$idx."]")."=".rawurlencode($value);
+                    }
+            }
+            else
+            {
+                $arr[] = $key."=".rawurlencode($val);
+            }
         }
-        return implode("&", $arr);
+        return implode(";", $arr);
     }
 
     // GEN PASSWD (generate a password for user form, etc)
@@ -792,71 +1102,83 @@ class html
         while (strlen($nps)<$pass_len)
         {
             $c = chr(mt_rand (0,255));
+            if (in_array(strtolower($c), array('0', 'o' ,'i', 'l')))
+                continue;
             if (eregi("[a-z0-9]", $c)) $nps = $nps.$c;
         }
         return ($nps);
     }
 
+    // PERM LINK
+    function gen_perm_link ($str)
+    {
+        $str = preg_replace('/\s/', '12WSPC21', $str);
+        $str = preg_replace('/\W/', '12WSPC21', $str);
+        $str = preg_replace('/12WSPC21/', '-', $str);
+        $str = preg_replace('/-{2,}/', '-', $str);
+        $str = strtolower($str);
+        return $str;
+    }
+
     // TEMPLATE (read a template file and fill in the variables)
-    function template ($theme, $template, $vars = null, $noremovetags = 0, $cache = 0)
+    function template ($theme = null, $template, $vars = null, $noremovetags = 0)
     {
         global $config;
         
+        // if no theme, use default theme from config
+        if (!$theme)
+            $theme = $config->theme;
+        
+        // debug
+        debug("template", "loading template: theme:[".$theme."] lang: [".$this->lang."] template:[".$template."]");
+        
         // load from cache if we have already loaded before
-        if ($cache and isset($this->template_cache[$template]))
+        if (isset($this->template_cache[$template]))
         {
             $in = $this->template_cache[$template];
         }
         else
         {
+            // theme determines where template is loaded from
             switch ($theme)
             {
-                // load from global templates
+                // load from local template repository
+                case "base":
+                case "local":
+                    if (file_exists($this->_file_root."/templates/".$this->lang."/".$template.".template"))
+                        $in = join("",file($this->_file_root."/templates/".$this->lang."/".$template.".template"));
+                    else if (($config->lang != $this->lang) and file_exists($this->_file_root."/templates/".$config->lang."/".$template.".template"))
+                        $in = join("",file($this->_file_root."/templates/".$config->lang."/".$template.".template"));
+                    break;
+                
+                // load from global
                 case "global":
                     if (file_exists($this->_file_root."/templates/global/".$template.".template"))
                         $in = join("",file($this->_file_root."/templates/global/".$template.".template"));
-                
-                // load from local template repository
-                case "local":
-                    if (file_exists($template.".template"))
-                        $in = join("",file($template.".template"));
                     break;
-    
-                // load base template (use users language first, fall back to site default)
-                case "base":
-                    if (file_exists($this->_file_root."/templates/".$this->lang."/".$template.".template"))
-                        $in = join("",file($this->_file_root."/templates/".$this->lang."/".$template.".template"));
-                    else if (file_exists($this->_file_root."/templates/".$config->lang."/".$template.".template"))
-                        $in = join("",file($this->_file_root."/templates/".$config->lang."/".$template.".template"));
-                    break;
-     
+
                 // load template from theme
                 default:
                     if (file_exists($this->_file_root."/include/themes/".$theme."/".$template.".template"))
-                        $in = join("",file($this->_file_root."/include/themes/".$theme."/".$template.".template"));
+                        $in = join("",file($this->_file_root."/include/themes/".$theme."/".$template.".template"));                
             }
         }
 
         // oops not found, load 404 template
         if (!$in)
         {
-            $this->in404 = 1;
             $in = '';
-            if ($config->web_debug)
-                $in = $this->p($theme."|".$template);
-            if (file_exists($this->_file_root."/templates/".$this->lang."/404.template"))
-                $in = join("",file($this->_file_root."/templates/".$this->lang."/404.template"));
-            else if (file_exists($this->_file_root."/templates/".$config->lang."/404.template"))
-                $in = join("",file($this->_file_root."/templates/".$config->lang."/404.template"));
+            $this->in404 = 1;
+            if (file_exists($this->_file_root."/templates/".$this->lang."/global/404.template"))
+                $in .= join("",file($this->_file_root."/templates/".$this->lang."/global/404.template"));
+            else if (file_exists($this->_file_root."/templates/".$config->lang."/global/404.template"))
+                $in .= join("",file($this->_file_root."/templates/".$config->lang."/global/404.template"));
             else
-                $in = $this->h(1, "404 - Page Not Found!");
+                $in .= $this->h1("404 Not Found!");
         }
-        
+
         // cache this template to save on i/o
-        if ($cache)
-        {
-            $this->template_cache[$template] = $in;
-        }
+        $this->template_cache[$template] = $in;
         
         // return the text with the vars replaced
         return $this->template_replace($in, $vars, $noremovetags);
@@ -865,19 +1187,25 @@ class html
     // TEMPLATE_REPLACE (does the substitution for TEMPLATE)
     function template_replace ($in = "", $vars = array(), $noremovetags = 0)
     {
-        global $config;
-           
         // original in (avoid duplicate replacements)
         $orig = $in;
-                
-        // default vars
-        $vars['root'] =& $this->find_root();
+        
+        // default path var
+        $vars['root'] =& $this->_web_root;
         $vars['self'] =& $_SERVER['PHP_SELF'];
+        $vars['file_root'] = "file://{$this->_file_root}";
         $vars['request_uri'] =& $_SERVER['REQUEST_URI'];
+        $vars['request_delim'] = ($_GET ? ';' : '?');
+        $vars['server_name'] =& $_SERVER['SERVER_NAME'];
         $vars['base_url'] =& $GLOBALS['config']->base_url;
-        $vars['stable_release'] = $config->stable_release;
-        $vars['master_release'] = $config->master_release;
-
+        
+        // add config vars
+        while (list($key, $val) = each($GLOBALS['config']))
+        {
+            if (is_string($val))
+                $vars["config_{$key}"] = $val;
+        }
+        
         // replace vars in template
         // NOTE: using preg_replace() breaks as it wants to interpret '$1' in $val
         while (list($key,$val) = each($vars))
@@ -890,42 +1218,104 @@ class html
             {
                 $in = str_replace('{lc($'.$key.')}', ereg_replace(' ','_',strtolower($val)), $in);
             }
+            if (preg_match('/\{htmlspecialchars\(\$'.$key.'\\)}/', $orig))
+            {
+                $in = str_replace('{htmlspecialchars($'.$key.')}', htmlspecialchars($val), $in);
+            }
         }
         unset($key, $val);
         
-        // remove all the unset vars
-        if ($noremovetags == 0)
-            $in = preg_replace('/\{\$[a-z0-9_]+\}/', '', $in);        
+        // resave the new orig with the template vars inserted (this allows EXEC other statements to include vars)
+        $orig = $in;
         
-        // get page name from template
-        if (preg_match('/<!--TITLE:\[([\w\s\-\&\'\;]+)\]-->/', $orig, $arr))
+        // allow the insertion of GET FORM vars
+        if (preg_match('/\{\$_GET\[[a-z0-9_]+\]\}/', $orig))
         {
-            $in = preg_replace('/<!--TITLE:\[([\w\s\-\&\'\;]+)\]-->/', '', $in);
-            $this->template_title = $arr[1];
-            unset($arr);
+            preg_match_all('/\{\$_GET\[([a-z0-9_]+)\]\}/', $orig, $match);
+            for ($i = 0; $i < count($match[0]); $i++)
+            {
+                if (isset($_GET[$match[1][$i]]))
+                    $in = str_replace('{$_GET['.$match[1][$i].']}', htmlspecialchars($_GET[$match[1][$i]]), $in);
+                else
+                    $in = str_replace('{$_GET['.$match[1][$i].']}', "", $in);
+            }
+            unset($match, $i);
         }
         
-        // load nested templates the template
-        if (preg_match('/<!--INCLUDE:\[[a-z_\/]+\]-->/', $orig))
+        // remove all the unset vars
+        if ($noremovetags == 0)
+            $in = preg_replace('/\{\$[a-z0-9_\-]+\}/', '', $in);        
+        
+        // get page name from template
+        if (preg_match('/<!--TITLE:\[([\w\s\-\&\'\;\,\.\?]+)\]-->/', $orig, $arr))
         {
-            preg_match_all('/<!--INCLUDE:\[([a-z_\/]+)\]-->/', $orig, $match);
+            $in = preg_replace('/<!--TITLE:\[([\w\s\-\&\'\;\,\.\?]+)\]-->\n/', '', $in);
+            $this->page_title = $arr[1];
+            unset($arr);
+        }
+
+        // override the page theme
+        if (preg_match('/<!--THEME:\[([\w]+)\]-->/', $orig, $arr))
+        {
+            $in = preg_replace('/<!--THEME:\[([\w]+)\]-->\n/', '', $in);
+            $this->page_theme = $arr[1];
+            unset($arr);
+        }
+
+        // override the page style
+        if (preg_match('/<!--STYLE:\[([\w]+)\]-->/', $orig, $arr))
+        {
+            $in = preg_replace('/<!--STYLE:\[([\w]+)\]-->\n/', '', $in);
+            $this->page_style = $arr[1];
+            unset($arr);
+        }
+
+        // get page blurb template
+        if (preg_match('/<!--BLURB:\[([\w\s\-\&\'\;\,\.\?]+)\]-->/', $orig, $arr))
+        {
+            $in = preg_replace('/<!--BLURB:\[([\w\s\-\&\'\;\,\.\?]+)\]-->\n/', '', $in);
+            $this->page_blurb = $arr[1];
+            unset($arr);
+        }
+
+        // set the meta keywords used for a page
+        if (preg_match('/<!--META_KEYWORDS:\[([\w\s\-\&\'\;\,]+)\]-->/', $orig, $arr))
+        {
+            $in = preg_replace('/<!--META_KEYWORDS:\[([\w\s\-\&\'\;\,]+)\]-->\n/', '', $in);
+            $this->meta_keywords = $arr[1];
+            unset($arr);
+        }
+
+        // set the meta description uses for a page
+        if (preg_match('/<!--META_DESCRIPTION:\[([\w\s\-\&\'\;\,\.\?]+)\]-->/', $orig, $arr))
+        {
+            $in = preg_replace('/<!--META_DESCRIPTION:\[([\w\s\-\&\'\;\,\.\?]+)\]-->\n/', '', $in);
+            $this->meta_description = $arr[1];
+            unset($arr);
+        }
+
+
+        // load nested templates the template
+        if (preg_match('/<!--INCLUDE:\[[a-z0-9_\-\/]+\]-->/', $orig))
+        {
+            preg_match_all('/<!--INCLUDE:\[([a-z0-9_\-\/]+)\]-->/', $orig, $match);
             for ($i = 0; $i < count($match[0]); $i++)
             {
                 $tmpl = $this->template("local", $match[1][$i]);
-                $match[1][$i] = preg_replace('/\//', '\\/', $match[1][$i]);
                 $in = str_replace('<!--INCLUDE:['.$match[1][$i].']-->', "$tmpl", $in);
                 unset($tmpl);
             }
             unset($match, $i);
         }
-        
+
         // load and exec plugins in the template
-        if (preg_match('/<!--EXEC:\[[0-9a-z\._=;@\-\?\/\|]+\]-->/', $orig))
+        if (preg_match('/<!--EXEC:\[[0-9a-zA-Z\._=;@\-\?\/\|]+\]-->/', $orig))
         {
-            preg_match_all('/<!--EXEC:\[([0-9a-z\._=;@\-\?\/\|]+)\]-->/', $orig, $match);
+            preg_match_all('/<!--EXEC:\[([0-9a-zA-Z\._=;@\-\?\/\|]+)\]-->/', $orig, $match);
             for ($i = 0; $i < count($match[0]); $i++)
             {
-                $plugin = new plugin($match[1][$i], $this->_file_root);
+                check_and_require("plugin");
+                $plugin = new plugin($match[1][$i]);
                 $in = str_replace('<!--EXEC:['.$match[1][$i].']-->', $plugin->get(), $in);
                 unset($plugin);
             }
@@ -943,7 +1333,7 @@ class html
         unset($orig);
         return $in;
     }
-
+    
     // HTTP HEADER (better header)
     function http_header ($type = "text/html")
     {
@@ -956,10 +1346,47 @@ class html
     }
 
     // REDIRECT (simple httpd header redirect) 
-    function redirect ($url = ".")
+    function redirect ($url = "")
     {
-        header("Location: ".$url);
+        // clear page output buffer
+        $this->clear_buffer();
+        
+        // if no URL default to website root
+        if (!$url and $GLOBALS['config']->base_url)
+        {
+            $url = $GLOBALS['config']->base_url;
+        }
+        
+        // redirect
+        if ($url)
+        {
+            header("Location: ".$url);
+            return;
+        }
+        
+        // if still no URL then trigger error page
+        trigger_error('Redirect URL not found!', E_USER_ERROR);    
     }
+
+    // VERIFY_REFERER (checks to see if the referer is set to the website url)
+    function verify_referer ()
+    {
+        if (eregi($GLOBALS['config']->base_url, $_SERVER['HTTP_REFERER']) or eregi($GLOBALS['config']->base_url_secure, $_SERVER['HTTP_REFERER']))
+            return 1;
+        else
+            return 0;
+    }
+
+    // CLEAR BUFFER
+    function clear_buffer ()
+    {
+        $status = ob_get_status();
+        for ($c = 0; $c < ($status['level'] + 1); $c++)
+        {
+            ob_end_clean();
+        }
+    }
+
 // end html class
 }
 

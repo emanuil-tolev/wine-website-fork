@@ -1,17 +1,51 @@
 <!--TITLE:[Wine Binary Downloads]-->
+<!--BLURB:[Download Wine for your favorite OS here.]-->
 
-<h1><a name="binary"></a>Wine Binary Downloads</h1>
+<h1 class="title">Wine Downloads</h1>
+
+<h2><a name="crossover"></a>Supported Wine</h2>
+
+<table width="95%" border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Product</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Description</font></b></td>
+  </tr>
+
+  <tr>
+    <td align="center" bgcolor="#ffffff">
+      <a href="http://www.codeweavers.com/products/download_trial/">
+        <img src="{$root}/images/distro/crossover.png" 
+         width="50" height="50" alt="CrossOver Linux or Mac" border="0">
+      </a>
+    </td>
+    <td align="left" bgcolor="#ffffff">
+      <b><a href="http://www.codeweavers.com/products/">CrossOver</a></b>
+      is a polished version of Wine provided by <b><a href="http://www.codeweavers.com">CodeWeavers</a></b>.
+      CrossOver makes it easier to use Wine and CodeWeavers provides excellent technical support to its users.
+      All purchases of CrossOver are used to directly fund the developers working on Wine. So CrossOver is both a great way to get
+      support in using Wine and to support the Wine Project.  CodeWeavers provides fully functional
+      <b><a href="http://www.codeweavers.com/products/download_trial/">trial versions of CrossOver</a></b>.
+    </td>
+  </tr>
+</table>
+
+<p class="small" align="center">This endorsement is the primary recognition that CodeWeavers has
+requested in exchange for hosting the Wine web site.</p>
+  
+
+<h2><a name="binary"></a>Wine Binary Downloads</h2>
 
 <p>Official WineHQ builds for Linux Red Hat, Mandriva, SUSE, Slackware and FreeBSD,
 hosted by <a href="http://sourceforge.net/project/showfiles.php?group_id=6241">SourceForge.net</a>.
 Updated with each release.</p>
 
 <p><b>See the 
-<a href="{$root}/site/howto">installation and configuration how-to</a> 
+<a href="http://wiki.winehq.org/HowTo">installation and configuration how-to</a> 
 for post-installation instructions.</b></p>
 
-<p><table><tr><td>Latest stable release:</td><td>Wine&nbsp;{$stable_release}</td></tr>
-<tr><td>Latest development release:</td><td>Wine&nbsp;{$master_release}</td></tr></table></p>
+<p><table><tr><td>Latest stable release:</td><td>Wine&nbsp;{$config_stable_release}</td></tr>
+<tr><td>Latest development release:</td><td>Wine&nbsp;{$config_master_release}</td></tr></table></p>
 
 <table width="95%" border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
 
@@ -22,28 +56,28 @@ for post-installation instructions.</b></p>
   </tr>
   
   <tr bgcolor="#ffffff">
-    <td align="center"><a href="{$root}/site/download-deb">
+    <td align="center"><a href="{$root}/download/deb">
       <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu linux" border="0"></a>
     </td>
-    <td> <b><a href="{$root}/site/download-deb">Ubuntu</a></b> 
+    <td> <b><a href="{$root}/download/deb">Ubuntu</a></b> 
      binary and source .debs for Ubuntu Hardy (8.04) and Intrepid (8.10)
     <td><a href="mailto:scott@open-vote.org">Scott Ritchie</a></td>
   </tr>
 
   <tr bgcolor="#ffffff">
-    <td align="center"><a href="{$root}/site/download-deb">
+    <td align="center"><a href="{$root}/download/deb">
       <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian linux" border="0"></a>
     </td>
-    <td> <b><a href="{$root}/site/download-deb">Debian</a></b> 
+    <td> <b><a href="{$root}/download/deb">Debian</a></b> 
      binary and source .debs for Debian Etch (4.0)</td>
     <td><a href="mailto:scott@open-vote.org">Scott Ritchie</a></td>
   </tr>
 
    <tr bgcolor="#ffffff">
-    <td align=center><a href="{$root}/site/download-deblenny">
+    <td align=center><a href="{$root}/download/deblenny">
       <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
     </td>
-    <td> <b><a href="{$root}/site/download-deblenny">Debian</a></b> 
+    <td> <b><a href="{$root}/download/deblenny">Debian</a></b> 
      binary .debs for Debian Lenny (5.0)</td>
     <td><a href="mailto:lamalennyreport@altervista.org">Maurilio Genovese</a></td>
   </tr>
@@ -131,43 +165,11 @@ for post-installation instructions.</b></p>
 </table>
 
 
-<h1><a name="binary"></a>3rd Party Tools</h1>
+<h2><a name="binary"></a>3rd Party Tools</h2>
 
 <p>Sometimes a customization of Wine can cause an application to work, but this change cannot be incorporated into Wine for some reason.  To help overcome current deficiencies in Wine, various third party applications for end users have been made over the years.  These applications are entirely unsupported by the Wine developers, however you may find them useful.  For more information, see <a href="http://wiki.winehq.org/ThirdPartyApplications">our wiki page</a> on third party applications.</p>
 
-<h1><a name="commercial"></a>Commercial Wine Versions</h1>
-
-<table width="95%" border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
-
-  <tr>
-    <td align="center" bgcolor="black"><b><font color="white" class="small">Product</font></b></td>
-    <td align="center" bgcolor="black"><b><font color="white" class="small">Description</font></b></td>
-  </tr>
-
-  <tr>
-    <td align="center" bgcolor="#ffffff">
-      <a href="http://www.codeweavers.com/products/">
-        <img src="{$root}/images/distro/crossover.png" 
-         width="50" height="50" alt="CrossOver Office" border="0">
-      </a>
-    </td>
-    <td align="left" bgcolor="#ffffff">
-      <b><a href="http://www.codeweavers.com/products/">CrossOver</a></b> - 
-      Award winning highly customized versions for
-      <a href="http://www.codeweavers.com/products/cxmac/"><b>Mac OS</b></a> and
-      <a href="http://www.codeweavers.com/products/cxoffice/"><b>Linux</b></a>.
-      Easy to use GUI tools to configure to work with
-      supported applications such as Microsoft<sup>&reg;</sup> Office, Adobe<sup>&reg;</sup> Photoshop, Lotus Notes<sup>&reg;</sup>,
-      and DirectX/OpenGL games. Email support available after purchase. Multi-user server version also available.
-      <a href="http://www.codeweavers.com/products/download_trial/">Evaluation versions available</a>.
-      By <a href="http://www.codeweavers.com/">CodeWeavers</a>.
-    </td>
-  </tr>
-  
-</table>
-
-
-<h1><a name="source"></a>Wine Source Downloads</h1>
+<h2><a name="source"></a>Wine Source Downloads</h2>
 
 <table width="95%" border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
 
@@ -196,14 +198,12 @@ for post-installation instructions.</b></p>
 <div style="margin: 10px; padding: 5px; border: 1px solid #C0C0C0; background-color: #F0F0F0;"><b>Note:</b> See the <a href="http://wiki.winehq.org/Recommended_Packages">recommended packages</a> for help on configuring and building Wine.</div>
 
 
-<h1><a name="link2us"></a>Link to Us</h1>
+<h2><a name="link2us"></a>Link to Us</h2>
 
 <p>
-  <a href="http://www.winehq.org/site/download" target="_blank"><img
+  <a href="http://www.winehq.org/download" target="_blank"><img
   src="{$root}/images/download_wine.png" border="1" width="88" height="31" vspace="0" hspace="5" align="left"
   alt="Download Wine"></a>
   Use this image if you want to link to our download page.
 </p>
 
-
-<p>&nbsp;</p>

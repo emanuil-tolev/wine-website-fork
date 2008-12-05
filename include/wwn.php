@@ -1,8 +1,10 @@
 <?
 
 /*
-  Wine Development HQ - WWN Utils
-*/  
+  WineHQ
+  WWN (World Wine News) issue class
+  by Jeremy Newman <jnewman@codeweavers.com>
+*/
 
 class wwn 
 {
@@ -17,6 +19,7 @@ class wwn
     var $person;
     var $map_array;
     var $inquote = 0;
+    var $mode = 'wwn';
     
     // init wwn object
     function wwn ()
@@ -49,19 +52,23 @@ class wwn
     }
     
     // read dir and get issues
-    function get_list ($path = "")
+    function get_list ()
     {
         global $config;
         $wwn = array();
-        if ($path)
-            $dir = opendir($config->wwn_xml_path."/".$config->lang."/".$path);
-        else
-            $dir = opendir($config->wwn_xml_path."/".$config->lang);
+        switch ($this->mode)
+        {
+            case "interviews":
+                $dir = opendir($config->wwn_xml_path."/".$config->lang."/interviews/".$path);
+                break;
+            default:
+                $dir = opendir($config->wwn_xml_path."/".$config->lang);
+        }
         while($file = readdir($dir))
         {
             if ($file == "." or $file == ".." or $file == "CVS" or $file == "interviews")
               continue;
-            switch ($path)
+            switch ($this->mode)
             {
                 case "interviews":
                     $issue = ereg_replace("interview_([0-9]+)\.xml", "\\1", $file);
@@ -76,6 +83,8 @@ class wwn
             $wwn[$issue] = $file;
         }
         closedir($dir);
+        natsort($wwn);
+        $wwn = array_reverse($wwn, true);
         return array($wwn, $cur);
     }
 
@@ -83,12 +92,22 @@ class wwn
     function issues_list ($issues, $cur, $limit = 0, $pos = 0)
     {
         global $file_root, $config, $html;
-        arsort($issues);
     
-        $perpage = 12;
+        // number of issues to show per page
+        switch ($this->mode)
+        {
+            case "interviews":
+                $perpage = 50;
+                break;
+            default:
+                $perpage = 12;
+        }
+        
+        // total issues
         $total = count($issues);
+        
+        // couters
         $where = 0;
-    
         $c = 0;
         $num = -1;
         
@@ -96,7 +115,7 @@ class wwn
           $back = '<div align=center><table cellpadding=0 cellspacing=20 width="100%"><tr valign=top>'."\n";	
         
         while(list($issue,$file) = each($issues))
-        {	
+        {
             // inner counter
             $num++;
     
@@ -142,7 +161,7 @@ class wwn
         
         if ($limit != 0)
         {
-            $back .= "<p><a href=\"".$PHP_SELF."?issue=back"."\" class=small>More Issues...</a></p>";
+            $back .= "<p class=\"small\"><a href=\"".$html->_web_root."/".PAGE."/"."\">More Issues...</a></p>";
         }
         else if ($total > $perpage)
         {
@@ -153,32 +172,29 @@ class wwn
             if ($pos >= $perpage)
             {
                 $prev = $pos - $perpage;
-                $prevLink = $html->ahref("&lt;&lt; Prev $perpage Issues",$PHP_SELF."?issue=back;pos=".$prev,"class=menuItem");
+                $prevLink = $html->ahref("&lt;&lt; Prev $perpage Issues", $html->_web_root."/".PAGE."/?pos=".$prev);
             }
             else
             {
-                $prevLink = "<font color=grey class=small>&lt;&lt; Prev $perpage Issues</font>";
+                $prevLink = "<span class=\"disabled\">&lt;&lt; Prev $perpage Issues</span>";
             }
     
             // display next link
             if (($pos + $perpage) < $total)
             {
                 $next = $where + 1;
-                $nextLink = $html->ahref("Next $perpage Issues &gt;&gt;",$PHP_SELF."?issue=back;pos=".$next,"class=menuItem");
+                $nextLink = $html->ahref("Next $perpage Issues &gt;&gt;",$html->_web_root."/".PAGE."/?pos=".$next);
             }
             else
             {
-                $nextLink = "<font color=grey class=small>Next $perpage Issues &gt;&gt;</font>";
+                $nextLink = "<span class=\"disabled\">Next $perpage Issues &gt;&gt;</span>";
             }
             
         
-            $back .= '<div align=center><table width="50%">'."\n";
-            $back .= $html->frame_tr(
-                        $html->frame_td("&nbsp; ".$prevLink,"align=left").
-                        $html->frame_td($nextLink." &nbsp;","align=right"),
-                        "color4"
-                      );
-            $back .= '</table></div>'."\n";
+            $back .= "<div align=\"center\"><table width=\"50%\"><tr>\n".
+                     "<td align=\"left\">&nbsp; $prevLink</td>".
+                     "<td align=\"right\">&nbsp; $nextLink</td>".
+                     "</tr></table></div>\n";
         }
             
         return $back;
@@ -187,15 +203,24 @@ class wwn
     // format the summary box
     function format_summary ($cur, $date = null)
     {
-        global $PHP_SELF;
+        global $html;
         
-        $summary_box = '<a href="'.$PHP_SELF."?issue=".$cur.'"><b>Issue: '.$cur.'</b></a>'.
-                       '<br><span class=small>'.$date.'</span><ul type="circle">'."\n";
+        switch ($this->mode)
+        {
+            case "interviews":
+                $summary_box = '<a href="'.$html->_web_root."/".PAGE."/".$cur.'"><b>'.$this->who.'</b></a>'.
+                               '<br><span class=small>'.$date.'</span><ul type="circle">'."\n";
+                break;
+            
+            default:
+                $summary_box = '<a href="'.$html->_web_root."/".PAGE."/".$cur.'"><b>Issue: '.$cur.'</b></a>'.
+                               '<br><span class=small>'.$date.'</span><ul type="circle">'."\n";
+        }
         
         $c = 0;
         while(list($id,$sum) = each($this->summary))
         {
-            $summary_box .= '<li><a href="'.$PHP_SELF."?issue=".$cur."#".$sum.'" class="small">'.$sum.'</a></li>'."\n";
+            $summary_box .= '<li><a href="'.$html->_web_root."/".PAGE."/".$cur."#".$sum.'" class="small">'.$sum.'</a></li>'."\n";
             $c++;
         }
         $summary_box .= "</ul>";
@@ -214,7 +239,7 @@ class wwn
         if ($view == 'back')
         {
             $html->template_title = 'WWN Back Issues';
-            return $html->theme_box($config->theme, "box_title", 'WWN Back Issues', "100%", $this->issues_list($wwn, $cur, 0, $_REQUEST['pos']), '10', 'white', 'topMenu');
+            return $this->issues_list($wwn, $cur, 0, $_REQUEST['pos']);
         }
         
         // show selected issue, or current
@@ -235,17 +260,13 @@ class wwn
                           'issue'   => $cur,
                           'date'    => $this->issue,
                           'summary' => $summary_box,
-                          'xml'     => (file_exists($config->wwn_xml_path."/".$html->lang."/".$wwn{$cur}) ? $html->lang."/".$wwn{$cur} : $config->lang."/".$wwn{$cur}),
+                          'xml'     => basename($wwn[$cur], '.xml'),
                           'author'  => $this->author,
                           'contact' => $this->contact,
                           'body'    => $this->body,
                          );
-        $wwn_body = $html->template("base", "wwn", $wwn_vars);
-    
-        // load into page and return
-        $text = $html->theme_box($config->theme, "box_title", $html->template_title, "100%", $wwn_body, '10', 'white', 'topMenu');
-    
-        return $text;
+
+        return $html->template("base", "wwn_content", $wwn_vars);;
     }
     
     // display a single wwn issue
@@ -258,10 +279,13 @@ class wwn
 
         // no interview found, show a 404
         if (!$interview or !$wwn[$interview])
-            return $html->theme_box($config->theme, "box_title", "404 Not Found", "100%", $html->template("base", "404"), '10', 'white', 'topMenu');
+        {
+            $html->in404 = 1;
+            return $html->template("base", "404");
+        }
         
         // get issue
-        $this->wwn_xml_parse("interviews/".$wwn[$interview]);
+        $this->wwn_xml_parse($wwn[$interview]);
         
         // title for page
         $html->template_title = $this->who.' Interview';
@@ -273,12 +297,8 @@ class wwn
                           'author' => $html->ahref($this->author, 'mailto:'.$this->email),
                           'body'   => $this->body,
                          );
-        $wwn_body = $html->template("base", "wwn_interview", $wwn_vars);
-    
-        // load into page and return
-        $text = $html->theme_box($config->theme, "box_title", $html->template_title, "100%", $wwn_body, '10', 'white', 'topMenu');
-    
-        return $text;
+        
+        return $html->template("base", "wwn_interview", $wwn_vars);
     }
     
     // read the xml file and parse it
@@ -287,10 +307,23 @@ class wwn
         global $config, $html;
         
         // load file from language
-        if (file_exists($config->wwn_xml_path."/".$html->lang."/".$file))
-            $file = $config->wwn_xml_path."/".$html->lang."/".$file;
-        else
-            $file = $config->wwn_xml_path."/".$config->lang."/".$file;
+        switch ($this->mode)
+        {
+            // interviews mode
+            case "interviews":
+                if (file_exists($config->wwn_xml_path."/".$html->lang."/interviews/".$file))
+                    $file = $config->wwn_xml_path."/".$html->lang."/interviews/".$file;
+                else
+                    $file = $config->wwn_xml_path."/".$config->lang."/interviews/".$file;
+                break;
+            
+            // wwn mode
+            default:
+                if (file_exists($config->wwn_xml_path."/".$html->lang."/".$file))
+                    $file = $config->wwn_xml_path."/".$html->lang."/".$file;
+                else
+                    $file = $config->wwn_xml_path."/".$config->lang."/".$file;
+        }
         
         $this->issue = "";
         $this->body = "";
@@ -362,25 +395,25 @@ class wwn
               array_push($this->summary, $attrs{'TITLE'});
               $this->body .= $html->br();
               $this->body .= "<a name=\"".$attrs{'TITLE'}."\"></a>\n";
-              $this->body .= $html->frame_start("","100%","align=center", 0, "white");
-              $this->body .= "<tr class=color0 bgcolor=\"#E0E0E0\">\n\n";
-              $this->body .= "<td>".$attrs{'STARTDATE'}."</td>\n";
-              $this->body .= "<td align=center width=\"100%\"><b>".$attrs{'TITLE'}."</b></td>\n";
-              $this->body .= "<td align=right><a href=\"".$attrs{'ARCHIVE'}."\">Archive</a></td>\n";
+              $this->body .= "<table>\n";
+              $this->body .= "<tr>\n";
+              $this->body .= "<th width=\"100%\">".$attrs{'TITLE'}."</th>\n";
+              $this->body .= "<th>".$attrs{'STARTDATE'}."</td>\n";
+              $this->body .= "<th><a href=\"".$attrs{'ARCHIVE'}."\">Archive</a></th>\n";
               $this->body .= "</tr>\n";
-              $this->body .= "<tr class=frameBody bgcolor=\"#FFFFFF\"><td colspan=3>\n\n";
+              $this->body .= "<tr><td colspan=\"3\">\n";
               break;
             case "STATS":
               $pctMTO = intval(($attrs{'MULTIPLES'} / $attrs{'CONTRIB'}) * 100);
               $pctLWK = intval(($attrs{'LASTWEEK'} / $attrs{'CONTRIB'}) * 100);
               $this->body .= $html->br();
-              $this->body .= $html->frame_start("","","align=center", 0, "white");
-              $this->body .= "<tr class=frameBody><td colspan=3 bgcolor=\"#FFFFFF\">\n\n";
+              $this->body .= "<table>\n";
+              $this->body .= "<tr><td colspan=\"3\">\n";
               $this->body .= "<p> This week, ".$attrs{'POSTS'}." posts consumed ".$attrs{'SIZE'}." K. ".
                       "There were ".$attrs{'CONTRIB'}." different contributors. ".
                   $attrs{'MULTIPLES'}." (".$pctMTO."%) posted more than once. ".
-                  $attrs{'LASTWEEK'}." (".$pctLWK."%) posted last week too.</p>".
-                  "<p>The top 5 posters of the week were:</p>";
+                  $attrs{'LASTWEEK'}." (".$pctLWK."%) posted last week too.</p>\n".
+                  "<p>The top 5 posters of the week were:</p>\n";
               break;
             case "PERSON":
               array_push(
@@ -457,7 +490,7 @@ class wwn
               break;	
             case "SECTION":
               $this->body .= "\n\n</td></tr>\n";
-              $this->body .= $html->frame_end("");
+              $this->body .= "</table>";
               break;
             case "STATS":
               $this->body .= "<ol>\n";
@@ -475,7 +508,7 @@ class wwn
               }
               $this->body .= "</ol>\n";
               $this->body .= "\n\n</td></tr>\n";
-              $this->body .= $html->frame_end("");
+              $this->body .= "</table>";
               break;
             case "QUOTE":
               $this->body .= "</span>";

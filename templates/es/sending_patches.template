@@ -1,18 +1,19 @@
-g<!--TITLE:[Enviando parches]-->
+<!--TITLE:[Enviando parches]-->
+<!--BLURB:[Generando y enviando parches]-->
 
 <h1>Generando y enviando parches</h1>
 
 <p><b>Nota</b>: esto es una referencia rápida sobre como enviarnos 
 parches. Para obtener instrucciones detalladas por favor vea el 
 capítulo 
-<a href="{$root}/site/docs/winedev-guide/codingpractice">Práctica de 
+<a href="{$root}/docs/winedev-guide/codingpractice">Práctica de 
 codificación</a> en nuestra documentación en linea.
 </p>
 
 <p> Por favor envie los parches a la lista de correo de parches de 
 Wine, <a href="mailto:wine-patches@winehq.org"> 
 wine-patches@winehq.org </a>.
-(Tenga en cuenta que si usted no está <a href="{$root}/site/forums">suscrito</a>
+(Tenga en cuenta que si usted no está <a href="{$root}/forums">suscrito</a>
 a la lista de correo, los administradores de la lista de correo 
 deben comprobar primero su envío para asegurarse de que no se trata de spam 
 antes de que se pueda aceptar el parche.
@@ -45,7 +46,7 @@ o en cualquier otro lugar que no sea el árbol Git)
   <li>Lea el diff y asegúrese de que contenga sólo lo que quiere en él.
 </ul>
 
-<p>Los parches aceptados se publicarán en la lista de correo <a href="{$root}/site/forums">wine-cvs </a>.
+<p>Los parches aceptados se publicarán en la lista de correo <a href="{$root}/forums">wine-cvs </a>.
 
 <p>Los parches con problemas evidentes pueden recibir una respuesta en wine-devel.
 

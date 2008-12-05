@@ -5,405 +5,81 @@
   by Jeremy Newman <jnewman@codeweavers.com>
 */
 
-// load libs
-$file_root = ".";
-require($file_root."/include/"."incl.php");
+// load modules and defines
+$file_root = realpath(dirname(__FILE__));
+require("{$file_root}/include/incl.php");
 
-// set default page
-if (!$page)
-    $page = $_REQUEST['page'];
+// Fix the PHP_SELF global var
+$_SERVER['PHP_SELF'] = preg_replace('/(site\/|site$)/', '', $_SERVER['PHP_SELF'], 1);
+if (!preg_match('/\/$/', $_SERVER['PHP_SELF']))
+    $_SERVER['PHP_SELF'] = $_SERVER['PHP_SELF']."/";
 
-// choose the mode
-switch (true)
+// load the path for the page
+if (isset($_SERVER['PATH_INFO']))
 {
-  // view page
-  case ($page):
-    $text .= view_page($page);
-    break;
-
-  // rss news
-  case ($_REQUEST['rss']):
-    $text .= view_rss();
-    break;
-    
-  // view news archive
-  case ($_REQUEST['news']):
-    $text .= $html->theme_box($config->theme, "box_title", 'News Archives', "100%", view_news($_REQUEST['news']), '10', 'white', 'topMenu');
-    break;
-  
-  // view wwn issue
-  case ($_REQUEST['issue']):
-    $wwn = new wwn();
-    $text .= $wwn->view_issue($_REQUEST['issue']);
-    break;
-
-  // view interviews
-  case ($_REQUEST['interview']):
-    $wwn = new wwn();
-    $text .= $wwn->view_interview($_REQUEST['interview']);
-    break;
-  
-  // view latest announce
-  case ($_REQUEST['announce']):
-    $text .= view_announce($_REQUEST['announce']);
-    break;
-
-  // display screen shots
-  case ($_REQUEST['ss']):
-    $text .= view_screenshots($_REQUEST['ss']);
-    break;
-
-  // default mode (Home Page)
-  default:
-    $show_nav = 1;
-    $text .= home_page();
-    break;
-}
-
-// display the page
-$page_title = $config->site_name;
-if ($html->template_title)
-    $page_title = $page_title." - ".$html->template_title;
-$html->page = $html->frame_table(
-                                 $html->frame_tr($html->frame_td($text)),
-                                 "99%", 0, ""
-                                );
-$html->showpage($config->theme, $page_title);
-
-//done
-exit();
-
-// load and display a template page
-function view_page ($view)
-{
-    global $config, $html;
-    $template = $html->template("base", $view);
-    return $html->theme_box($config->theme, "box_title", $html->template_title, "100%", $template, '10', 'white', 'topMenu');
-}
-
-// load the home page
-function home_page ()
-{
-    global $file_root, $config, $html;
-
-    // screenshot for homepage (random)
-    $shots = get_files($file_root."/images/shots","png");
-    $c = intval(rand(1,count($shots) - 1));
-    $vars['screenshot'] = $html->ahref($html->img('shots/wine_'.$c.'.png','right','Screenshot'), $file_root.'/images/shots/full/wine_'.$c.'.png');
-    
-    // get aboout box
-    $about_box = $html->theme_box($config->theme, "box_title", "About Wine", "99%", $html->template("base", 'home_about', $vars), '10', 'white', 'topMenu');
-    
-    // get link to latest release
-    $latest_box = $html->theme_box($config->theme, "box_title", "Latest Release", "97%", $html->template("base", 'wine_release'), '10', 'white', 'topMenu');
-    
-    // get regular news
-    $news_box = $html->theme_box($config->theme, "box_title", "Latest News", "99%",  view_news('home'), '10', 'white', 'topMenu');
-
-    // get random quote
-    $quote_box = $html->theme_box($config->theme, "box_title", "Quote", "99%",  view_quote(), '10', 'white', 'topMenu');
-
-    // get google ad
-    //$ad_box = $html->theme_box($config->theme, "box_title", "Ads by Google", "99%",  $html->template("base", 'ads'), '10', 'white', 'topMenu');
-
-    // get wwn news
-    $wwn = new wwn();
-    $issues = $wwn->get_list();
-    $wwn_box = $html->theme_box($config->theme, "box_title", "World Wine News Issues", "97%", $wwn->issues_list($issues[0], $issues[1], 3), '10', 'white', 'topMenu');
-    
-    // sponsor box
-    $sponsor_box = $html->template("base", 'sponsor');
-    
-    // load the template for home page and fill in
-    $vars = array(
-                  'about_box'   => $about_box,
-                  'news_box'    => $news_box,
-                  'latest_box'  => $latest_box,
-                  'quote_box'   => $quote_box,
-                  'ad_box'      => $ad_box,
-                  'wwn_box'     => $wwn_box,
-                  'sponsor_box' => $sponsor_box
-                 );
-    $text = $html->template($config->theme, 'home_page', $vars);     
-    
-    return $text;
-}
-
-// load the announce file for latest version of Wine
-function view_announce ($ver)
-{
-    global $file_root, $config, $html;
-    
-    $tag = ($ver == "latest") ? "master" : "tags/wine-" . $ver;
-    $announce = $config->git_tree . "/wine.git/" . $tag . ":ANNOUNCE";
-        
-    if ($arr = file($announce))
+    // set the Current Page
+    $dirs = split('/', $_SERVER['PATH_INFO']);
+    array_shift($dirs);
+    if (count($dirs) > 1)
     {
-        $in_header = 1;
-        while (list($c,$val) = each($arr))
+        $good_dirs = array();
+        foreach ($dirs as $dir)
         {
-            $arr[$c] = $html->urlify($arr[$c]);
-
-            if (ereg("^--------------------", $arr[$c])) $in_header = 0;
-            else if (ereg("^Bugs fixed", $arr[$c])) $in_bugs = 1;
-            else if (ereg("^Changes since", $arr[$c])) $in_bugs = 0;
-
-            if ($in_header)
+            // if page starts with a dot, it is a hidden file continue
+            if (preg_match('/^\./', $dir))
+                continue;
+            
+            // current page as string
+            $temp_page = join('/', $good_dirs);
+            
+            // if this page is defined as a stop page, anything after it is not a template but params
+            if (in_array($temp_page, $data->stop_page))
             {
-                $arr[$c] = ereg_replace("AUTHORS",
-                                        "<a href=\"".$config->git_tree."/wine.git/".$tag.":\\0\">\\0</a>",
-                                        $arr[$c]);
-            }           
-            else if ($in_bugs)
-            {
-                $arr[$c] = ereg_replace("^( +)([0-9]+)",
-                                        "\\1<a href=\"".$config->bug_system."\\2\">\\2</a>",
-                                        $arr[$c]);
+                // get the params from the path
+                $page_params = str_replace($temp_page, '', $_SERVER['PATH_INFO']);
+                
+                // cleanup the page params
+                $page_params = preg_replace('/(^\/\/|^\/|\/$)/', '', $page_params);
+                if ($page_params)
+                    define("PAGE_PARAMS", $page_params);
+                    
+                // cleanup the PHP_SELF var
+                $_SERVER['PHP_SELF'] = str_replace($page_params, '', $_SERVER['PHP_SELF']);
+                $_SERVER['PHP_SELF'] = preg_replace('/\/\/$/', '/', $_SERVER['PHP_SELF']);
+                
+                // don't contine the loop, this is the end page
+                unset($page_params);
+                break;
             }
+            
+            // store the page
+            array_push($good_dirs, $dir);
+            unset($temp_page);
         }
-        $announce = join("",$arr);
-
-        // display page
-        $html->template_title = 'Announce';
-        return $html->theme_box($config->theme, "box_title", 'Announce', "100%", $html->pre($announce), '10', 'white', 'topMenu');
+        
+        // cleanup and define page
+        $page = join('/',$good_dirs);
+        if (ereg('/$', $page))
+            $page = ereg_replace('/$', '', $page);
+        unset($c);
     }
-    
-    $html->redirect($file_root);
+    else
+    {
+        $page = $dirs[0];
+    }
+    define("PAGE", $page);
+    unset($page, $dirs, $good_dirs);
 }
-
-// get front page news listing
-function view_news ($where)
+else
 {
-    global $config, $html;
-
-    // load rss link
-    $html->rss_link = "{$config->base_url}/?rss=1";
-
-    // max count for home page
-    $hmax = 10;
-    
-    // max count for archive
-    $amax = 25;
-    
-    // where are we in news list
-    $x = 0;
-    if ($_GET['x'])
-        $x = $_GET['x'];
-    
-    // get list of news items
-    $news = get_files($config->news_xml_path."/".$config->lang, "xml");
-    $news = array_reverse ($news);
-    $total = count($news);
-    
-    // loop and display news
-    $c = 0;
-    foreach ($news as $key => $item)
-    {
-        // counter
-        $c++;
-
-        // do not show images less than current pos
-        if ($x != 1 and $x >= $c)
-          continue;
-
-        // get data from XML file
-        $vars = array();
-        if (file_exists($config->news_xml_path.'/'.$html->lang.'/'.$item))
-            $vars = get_xml_tags($config->news_xml_path.'/'.$html->lang.'/'.$item, array('date', 'title', 'link', 'body'));
-        else
-            $vars = get_xml_tags($config->news_xml_path.'/'.$config->lang.'/'.$item, array('date', 'title', 'link', 'body'));
-        
-        // if link defined, use it in title
-        if ($vars['link'])
-            $vars['title'] = '<a href="'.$vars['link'].'" class="newstitle">'.$vars['title'].'</a>';
-
-        // add to news body
-        $news_body .= $html->template('base', 'news_row', $vars);
-        
-        // only show $max records on home page
-        if ($where == 'home' and $c == $hmax)
-        {
-            $news_body .= $html->p($html->ahref('More News...', '?news=archive'));
-            break;
-        }
-        // show only $max records on any other page
-        else if ($c == $amax)
-        {
-            break;
-        }
-    }
-    // end of news loop
-    
-    // prev/next links
-    if ($where == 'archive')
-    {
-        $pages = floor(($total / $amax));
-        $prev_link = "";
-        $next_link = "";
-        // add back to first page link when not first page
-        if ($x != 0)
-            $prev_link .=  $html->ahref("[First Page]","?news=archive;x=0", 'class="menuItem"')." ";
-        // display prev link
-        if ($x > 0)
-            $prev_link .= $html->ahref("&lt;&lt; Previous Page","?news=archive;x=".($x - $amax), 'class="menuItem"');
-        // display next link
-        if (($x + $amax) < $total)
-        {
-            $next_link .= $html->ahref("Next Page &gt;&gt;","?news=archive;x=".($x + $amax) , 'class="menuItem"');
-            // add jump to last page link
-            $next_link .= " ".$html->ahref("[Last Page]","?news=archive;x=".($pages * $amax) , 'class="menuItem"');
-        }
-        // add prev/next links
-        $news_body .= $html->p($html->div($prev_link.' &nbsp; '.$next_link, 'align="center"'));
-    }
-    
-    // return the finished body
-    return $news_body;
+    define("PAGE", 'home');
 }
 
-// display the news in RSS form
-function view_rss ()
-{
-    global $config, $html;
-     
-    // get list of news items
-    $news = get_files($config->news_xml_path."/".$config->lang, "xml");
-    $news = array_reverse ($news);
+// loag page content
+$html->page = $html->template("local", PAGE);
 
-    // clear cache and output the rss file
-    header('Pragma: public');
-    header('Expires: 0');
-    header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
-    header('Content-Type: application/xml');
-    header('Content-Disposition: inline; filename="winehq_news.xml";');   
-    $rss_rows = "";
-    $c = 0;
-    foreach ($news as $key => $item)
-    {
-        $c++;
-        
-        // limit to 10 most recent articles
-        if ($c > 10)
-            continue;
-        
-        // get data from XML file
-        if (file_exists($config->news_xml_path.'/'.$html->lang.'/'.$item))
-            $vars = get_xml_tags($config->news_xml_path.'/'.$html->lang.'/'.$item, array('date', 'title', 'link', 'body'));
-        else
-            $vars = get_xml_tags($config->news_xml_path.'/'.$config->lang.'/'.$item, array('date', 'title', 'link', 'body'));
+// display page
+$html->showpage();
 
-        // fix filename for urls
-        $item = str_replace(".xml", "", $item);
-
-        // compute where to link to if unspecified
-        if ($vars['link'])
-        {
-            $vars['link'] = preg_replace("/^\?/", "{$config->base_url}/site?", $vars['link']);
-            $vars['link'] = preg_replace("/\/^site/", "{$config->base_url}/site", $vars['link']);
-        }
-        else
-        {
-            $vars['link'] = $config->base_url.'?news='.$item;
-        }
-
-        // fix relative URLs
-        $vars['body'] = str_replace("<a href=\"?", "<a href=\"{$config->base_url}/site?", $vars['body']);
-        $vars['body'] = str_replace("<a href=\"/site", "<a href=\"{$config->base_url}/site", $vars['body']);
-
-        // display row
-        $rss_row = array(
-                            'item_title' => strip_tags($vars['title']),
-                            'item_desc'  => htmlentities($vars['body']),
-                            'item_link'  => $vars['link'],
-                            'item_guid'  => $config->base_url.'?news='.$item,
-                            'item_date'  => date("r", strtotime($vars['date']))
-                        );
-        $rss_rows .= $html->template('global', 'xml/rss_row', $rss_row, 1);
-    }
-    unset($c);
-    $rss = array(
-                    'rss_date'  => date("r", $top_date),
-                    'rss_title' => $config->site_name.' News',
-                    'rss_link'  => "{$config->base_url}/?rss=1",
-                    'rss_img'   => "{$config->base_url}/images/classic_top_logo.png",
-                    'rss_desc'  => 'News and information about Wine',
-                    'rss_crt'   => '(C) '.$config->site_name.' '.date("Y", time()),
-                    'rss_rows' => $rss_rows
-                );
-    echo $html->template('global', 'xml/rss', $rss);
-    exit();
-
-}
-
-// load the announce file for latest version of Wine
-function view_screenshots ($x)
-{
-    global $file_root, $config, $html;
-        
-    // Grab list of images from screenshot dir
-    $shots = get_files($file_root."/images/shots","png");
-
-    // setup vars
-    $total = count($shots) + 1;
-    $num = 0;
-    $where = 0;
-    $vars = array();
-    $vars['next'] = "&nbsp;";
-    $vars['prev'] = "&nbsp;";
-
-    // loop and display images
-    for ($c = 1; $c < $total; $c++)
-    {
-        // do not show images less than current pos
-        if ($x != 1 and $x >= $c)
-          continue;
-
-        // display image
-        $vars['im_'.$num] = $html->ahref($html->img($file_root.'/images/shots/wine_'.$c.'.png'), $file_root.'/images/shots/full/wine_'.$c.'.png');
-        
-        // add description
-        $in = get_xml_tags($file_root.'/images/shots/desc/wine_'.$c.'.xml', array('description'));
-        $vars['ds_'.$num] = $in['description'];
-        unset($in);
-        
-        // end at 9
-        if ($num == 9 or $num == $total)
-        {
-            $where = $c;
-            break;
-        }
-        
-        // count number of images displayed.
-        $num++;
-    }
-    
-    // display prev link
-    if ($x > 1)
-    {
-        $prev = $total + 1 - $c;
-        $vars['prev'] = $html->ahref("&lt;&lt; Previous Screenshots","?ss=".$prev,"class=menuItem");
-    }
-
-    // display next link
-    if (($x + 9) < $total)
-    {
-        $next = $where;
-        $vars['next'] = $html->ahref("More Screenshots &gt;&gt;","?ss=".$next,"class=menuItem");
-    }
-
-    // load into template
-    $template = $html->template('base', 'screenshots', $vars);
-    
-    // return the text
-    return $html->theme_box($config->theme, "box_title", 'Screen Shots', "100%", $template, '10', 'white', 'topMenu');
-}
-
-// random quote
-function view_quote ()
-{
-    $quotes = explode("\n",trim($GLOBALS[html]->template('base','quotes')));
-    return $quotes[array_rand($quotes)];
-}
-
-// end of file
+// done
 ?>

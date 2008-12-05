@@ -1,10 +1,11 @@
 <!--TITLE:[Wine Features]-->
+<!--BLURB:[Wine Features]-->
 
 <a href="{$root}/images/shots/full/wine_1.png"><img src="{$root}/images/shots/wine_1.png"
 width=200 height=150 hspace=20 vspace=20 border=0 align=right
 alt="Wine in action"></a>
 
-<h1>Wine Features</h1>
+<h1 class="title">Wine Features</h1>
 
 <h3> Binary Compatibility </h3>
 <ul>
@@ -56,10 +57,10 @@ alt="Wine in action"></a>
 <table width="100%" border=0 cellpadding=0 cellspacing=0>
 <tr valign=top>
   <td width="50%" align=left>
-    <a href="{$root}/site?ss=1">Previous</a>: Wine's Screenshot Gallery 
+    <a href="{$root}/wine_features">Previous</a>: Wine Features
   </td>
   <td width="50%" align=right>
-    Acknowledgements :<a href="{$root}/site/acknowledgement">Next</a>
+    Acknowledgements :<a href="{$root}/acknowledgement">Next</a>
   </td>
 </tr>
 </table>
