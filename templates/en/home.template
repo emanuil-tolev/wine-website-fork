@@ -1,0 +1,95 @@
+<!--TITLE:[WineHQ]-->
+<!--BLURB:[Runs Windows applications on Linux, BSD and Mac OS X.]-->
+<!--STYLE:[content_nobox]-->
+
+<div id="main_left">
+
+  <div class="rbox">
+  <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+    <div class="content" style="padding: 25px 10px 10px 60px; height: 445px; overflow: auto;">
+        <ul class="winehq_menu">
+        
+            <li class="info" onClick="document.location='{$root}/about/';">
+            <a href="{$root}/about/">
+            <span class="title">Information</span></a><br>
+            <span class="subtitle">Overview of Wine features.</span>
+            </li>
+
+            <li class="dl" onClick="document.location='{$root}/download/';">
+            <a href="{$root}/download/">
+            <span class="title">Download</span></a><br>
+            <span class="subtitle">Get Wine now!</span>
+            </li>
+
+            <li class="help" onClick="document.location='{$root}/help/';">
+            <a href="{$root}/help/">
+            <span class="title">Help!</span></a><br>
+            <span class="subtitle">Documentation, Support, and Wiki.</span>
+            </li>
+
+            <li class="devel" onClick="document.location='{$root}/devel/';">
+            <a href="{$root}/devel/">
+            <span class="title">Development</span></a><br>
+            <span class="subtitle">Wine source, Bug Tracking, etc.</span>
+            </li>
+
+            <li class="donate" onClick="document.donateForm.submit();">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="donateForm" style="margin: 0; padding: 0;">
+            <a href="javascript:document.donateForm.submit();">
+            <span class="title">Donate</span></a>
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="donate@winehq.org">
+            <input type="hidden" name="item_name" value="Wine donation">
+            </form>
+            <span class="subtitle">Dontate to Wine.</span>
+            </li>
+
+        </ul>
+    </div>
+  <b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+  </div>
+
+
+</div>
+<div id="main_right">
+
+  <div class="rbox">
+  <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+    <div class="content" style="padding: 10px; height: 75px; overflow: auto;">
+
+        <h3 class="title">Latest Releases</h3>
+
+            <table class="releases" cellspacing="5">
+            <tr><td>Stable:</td>
+            <td><b><a href="{$root}/announce/{$config_stable_release}">Wine&nbsp;{$config_stable_release}</a></b>
+
+            <span class="small">
+              (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_stable_release}">shortlog</a>)
+            </span></td></tr>
+            <tr><td>Development:</td>
+            <td><b><a href="{$root}/announce/{$config_master_release}">Wine&nbsp;{$config_master_release}</a></b>
+            <span class="small">
+              (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_master_release}">shortlog</a>)
+            </span></td></tr>
+            </table>
+
+    </div>
+  <b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+  </div>
+
+  <div class="rbox" style="margin-top: 15px;">
+  <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+    <div class="content" style="padding: 10px; height: 340px; overflow: auto;">
+
+        <h3 class="title">News</h3>
+        <div style="text-align: right; margin: 0;"><a href="{$root}/news/" class="small">more news...</a></div>
+
+        <!--EXEC:[news?n=10]-->
+
+        <div style="text-align: right; margin: 0;"><a href="{$root}/news/" class="small">more news...</a></div>
+    </div>
+  <b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+  </div>
+
+</div>
+

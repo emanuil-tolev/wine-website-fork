@@ -1,0 +1,19 @@
+<!--TITLE:[WineHQ - Pick your Language]-->
+<!--BLURB:[WineHQ is a multi-lingual website]-->
+
+<h1 class="title">Pick Your Language</h1>
+
+<!--EXEC:[language]-->
+
+<blockquote>
+
+    <p>
+        <a href="{$root}/lang/en"><img src="{$root}/images/lang/en.png" alt="English" /> English</a>
+    </p>
+
+    <p>
+        <a href="{$root}/lang/es"><img src="{$root}/images/lang/es.png" alt="Español" /> Español</a>
+    </p>
+
+</blockquote>
+
