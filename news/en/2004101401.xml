@@ -4,11 +4,11 @@
   <body>
 <p>
  The following updates came in this week:
- <ul><li>Dimi Paun updated the <a href="/site/todo_lists">To-Do List</a> and
+ <ul><li>Dimi Paun updated the <a href="{$root}/todo_lists">To-Do List</a> and
  moved various items closer to completion.</li>
 
  <li>The 
- <a href="/site/status_ui">UI Status</a> page was updated to reflect
+ <a href="{$root}/status_ui">UI Status</a> page was updated to reflect
  recent audits performed.</li> 
 
  <li>Tony Lambregts worked on the 

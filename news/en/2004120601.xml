@@ -3,7 +3,7 @@
   <title>Acknowledgement Page and Other Updates</title>
   <body>
   <p> We added 
-  <a href="http://www.winehq.org/site/acknowledgement">an acknowledgement	
+  <a href="http://www.winehq.org{$root}/acknowledgement">an acknowledgement	
   page</a> last week to WineHQ.  We'd like to thank everyone over the years 
   who have made significant contributions to Wine.
 
@@ -13,7 +13,7 @@
   yet to be an application maintainer?  </p>
 
   <p>Finally, Vincent B&#233;ron created a new 
-  <a href="http://www.winehq.com/site/download-rh">download page for Red 
+  <a href="http://www.winehq.com{$root}/download-rh">download page for Red 
   Hat based distros.</a> Hopefully that will sort out some of the confusion 
   concerning the sheer number of packages available. 
   </p>

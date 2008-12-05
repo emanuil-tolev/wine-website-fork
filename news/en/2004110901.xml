@@ -4,9 +4,9 @@
   <body>
     <p>
      If you've ever aspired to become a Wine hacker, you'll appreciate a 
-     <a href="/site/developer-cheatsheet">quick introduction</a> written by 
+     <a href="{$root}/developer-cheatsheet">quick introduction</a> written by 
      Mike Hearn.  It's not a replacement for the 
-     <a href="/site/docs/winedev-guide/index">Wine Developer Guide</a>, but it
+     <a href="{$root}/docs/winedev-guide/index">Wine Developer Guide</a>, but it
      does serve as an excellent starting point for working on Wine.
     </p><p>
      Also this week, Chris Morgan and Tony Lambregts modified the 

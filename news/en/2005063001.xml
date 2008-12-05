@@ -4,9 +4,9 @@
   <body>
 <p>
 	Tom Wickline has updated Wine's 
-	<a href="/site/status">status pages</a>.  For a quick snapshot
+	<a href="{$root}/status">status pages</a>.  For a quick snapshot
 	of what's been updated over the past month, see the status pages'
-	<a href="/site/status_changelog">changelog</a>.
+	<a href="{$root}/status_changelog">changelog</a>.
 </p>
   </body>
 </news>

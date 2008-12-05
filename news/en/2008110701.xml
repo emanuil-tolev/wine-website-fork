@@ -3,7 +3,7 @@
 <title>Wine 1.1.8 Released</title>
 <body>
 <p> The Wine development release 1.1.8 is now available.</p>
-<p> <a href="?announce=1.1.8">What's new</a> in this release:
+<p> <a href="{$root}/announce/1.1.8">What's new</a> in this release:
 <ul>
   <li>Substantial parts of inetcomm implemented (for Outlook).</li>
   <li>Still better crypt32 support.</li>
@@ -12,5 +12,5 @@
   <li>Various bug fixes.</li>
 </ul></p>
 <p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.1.8.tar.bz2">available now</a>.
-Binary packages are in the process of being built, and will appear soon at their respective <a href="/site/download">download locations</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
 </p></body></news>
