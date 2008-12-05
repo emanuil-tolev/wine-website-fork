@@ -65,7 +65,7 @@ Its main goal is to assemble desks. It also serves to inform you of what's going
 <section 
 	title="News: Wine-20040716, ELX BizDesk 4.0" 
 	subject="News"
-	archive="http://www.winehq.com/?announce=20040716"
+	archive="http://www.winehq.com/announce/20040716"
 	posts="1"
 	startdate="07/17/2004"
 	enddate="07/23/2004"
@@ -86,10 +86,10 @@ Its main goal is to assemble desks. It also serves to inform you of what's going
 <p>
   As always, you can find links to the source and binary distributions at
   the 
-  <a href="http://www.winehq.com/site/download">WineHQ download page.</a>
+  <a href="http://www.winehq.com/download">WineHQ download page.</a>
   Of course, since it came out almost a week ago it's already out of date
   compared to CVS.  To stay on the bleeding edge try downloading it
-  <a href="http://www.winehq.com/site/cvs">from CVS</a> (or keep reading   
+  <a href="http://www.winehq.com/cvs">from CVS</a> (or keep reading   
   for a thread on where to find CVS snapshots.)
 </p>
 
@@ -117,7 +117,7 @@ large patches do generate discussion on wine-devel, so I do
 cover them in the context of the discussion.  Last week I 
 included Mike McCormack's status update on Microsoft Installer
 work (issue 
-<a href="http://www.winehq.com/?issue=231#Status%20of%20MSI">#231</a>)
+<a href="http://www.winehq.com/wwn/231#Status%20of%20MSI">#231</a>)
 and he mentioned there was no actual implementation of msiexec.exe
 to go along with it.  Lest anyone out there is actually working 
 on it you should note that Vincent B&#233;ron came up
@@ -308,7 +308,7 @@ include files may not always be included from where you expect, etc.
 >
 <topic>Testing</topic>
 <p>We asked folks if they could help run Wine's
-<a href="http://www.winehq.com/?issue=224#Testing%20-%20Volunteers%20Needed">
+<a href="http://www.winehq.com/wwn/224#Testing%20-%20Volunteers%20Needed">
 automated test suite</a>.  This week Mike Hearn wondered how to go about
 contacting some testers,
 <quote who="Mike Hearn">

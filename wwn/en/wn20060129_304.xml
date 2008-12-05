@@ -88,7 +88,7 @@ Its main goal is to carpet. It also serves to inform you of what's going on arou
 <p>Debate has been raging for weeks over whether the 
 <a href="http://www.von-thadden.de/Joachim/WineTools/">WineTools</a> 
 project should be listed on Wine's 
-<a href="http://www.winehq.org/site/download">download</a> page.  
+<a href="http://www.winehq.org/download">download</a> page.  
 </p><p>
 On the one hand, WineTools is used by <i>a lot</i> of people to get common
 programs to install.  It'll automatically install Internet Explorer
@@ -228,7 +228,7 @@ How often do you guys check if a piece of software can be installed on
 Wine as-is? Without any additional configuration or native components?
 The point and click user have to know what they are clicking on, or not
 be presented with the bad choices. With the way it is _ALL_ new times
-visiting http://www.winehq.org/site/download have an impressions that
+visiting http://www.winehq.org/download have an impressions that
 winetools are the absolute requirement and download and install them.
 </p><p>
 I can't tell how many times I had to tell the user to vipe their ~/.wine
@@ -294,7 +294,7 @@ default.  This could even cause problems, e.g. I don't believe any native
 version of netapi32.dll will work on Wine, yet you don't specify to use
 the builtin version.
 </p><p>
-Also, you direct users to http://winehq.org/site/forums.  That's fine
+Also, you direct users to http://winehq.org/forums.  That's fine
 since this is community support anyway, and it is often the case that
 winetools knowledgeable people are around (like you guys.)  But it would
 be nicer if you could be clearer about it.  Like, that we developers had

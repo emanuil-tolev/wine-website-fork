@@ -195,8 +195,8 @@ sed -e 's/&lt;[^&lt;&gt;]*&gt;//g' -e 's/&lt;/&lt;/g' -e 's/&gt;/&gt;/g' $1 |les
 <p>Jeremy Newman suggested a different, low-tech, approach and the rationale for it:</p>
 <quote who="Jeremy Newman"><p>
 The EASIEST would be to download the PDF versions at:
-<a href="http://www.winehq.org/site/documentation">
- http://www.winehq.org/site/documentation</a>
+<a href="http://www.winehq.org/documentation">
+ http://www.winehq.org/documentation</a>
 </p><p>
 This would give you the best output. Printing the HTML would not look
 nearly as nice.

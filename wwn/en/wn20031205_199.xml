@@ -225,8 +225,8 @@ DirectShow = Quartz.dll
 And DirectShow is listed under the DirectX section of the status page
 as Quartz.dll is a part of DirectX.<ul>
 
-<a href="http://www.winehq.org/site/status_dlls">
-http://www.winehq.org/site/status_dlls</a></ul></p><p>
+<a href="http://www.winehq.org/status_dlls">
+http://www.winehq.org/status_dlls</a></ul></p><p>
 
 But have no fear, I plan to expand the DirectX section next
 and list msdmo, devenum, d3d9 and so on. :-)
@@ -303,13 +303,13 @@ Alexandre of one.</p>
 >
 <topic>Testing</topic>
 <p>Winetest is a new utility we've discussed in past issues.  In 
-<a href="http://www.winehq.org/?issue=186#Collecting%20Test%20Statistics">issue
+<a href="http://www.winehq.org/wwn/186#Collecting%20Test%20Statistics">issue
 #186</a> we covered Jakob Eriksson's initial work of getting Wine's
 test suite to compile and run on Windows.  That was back in August, since
 then more work has been done (see issues 
-<a href="http://www.winehq.org/?issue=189#New%20Tests%20For%20Windows">#189</a>
+<a href="http://www.winehq.org/wwn/189#New%20Tests%20For%20Windows">#189</a>
 and
-<a href="http://www.winehq.org/?issue=194#Updated%20Winetests">#194</a>).  
+<a href="http://www.winehq.org/wwn/194#Updated%20Winetests">#194</a>).  
 Dimi Paun decided that the few remaining issues preventing it from being
 integrated into CVS needed to be taken care.  After a little discussion and
 some minor patches, Alexandre committed it.  </p>
@@ -617,7 +617,7 @@ time on this, I can provide what I have.</quote></p>
 available in Wine.  Debug channels let you see messages
 pertaining to a certain subsystem of Wine and can be turned
 on and off.  For more information, see the
-<a href="http://www.winehq.org/site/docs/winedev-guide/debugging">debugging</a>
+<a href="http://www.winehq.org/docs/winedev-guide/debugging">debugging</a>
 section of the Wine Developer's Guide.  It's quite probable
 some of these channels aren't useful for anything any more:</p>
 <quote who="Mike Hearn"><p>

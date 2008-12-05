@@ -111,7 +111,7 @@ it</a> and submit patches for <i>all</i> of the bugs you find.</p>
 vendors port applications to Linux.  Jeremy White also started a thread
 about part of this on wine-devel, I'll cover that next (which will clear
 up some details concerning it.)  CodeWeavers' 
-<a href="http://www.codeweavers.com/site/about/general/press/?id=20040120">announced
+<a href="http://www.codeweavers.com/about/general/press/?id=20040120">announced
 the CodeWeavers Desktop Linux Certification Program</a> on Tuesday.  From
 the press release:</p>
 <quote who="CodeWeavers"><p>
@@ -225,7 +225,7 @@ interview with CodeWeavers' Jeremy White</a> on SearchEnterpriseLinux.com.</p>
 >
 <topic>Project Management</topic>
 <p>The news blurb above alluded to the 
-<a href="http://www.codeweavers.com/site/compatibility/">CodeWeavers
+<a href="http://www.codeweavers.com/compatibility/">CodeWeavers
 CrossOver Compatibility Center</a>, or C4.  Jeremy White provided 
 more details in an email to wine-devel:</p>
 <quote who="Jeremy White"><p>
@@ -233,8 +233,8 @@ We've just launched a major new initiative, the
 CodeWeavers CrossOver Compatibility Center.
 </p><p>
 You can check it out at
-  <ul><a href="http://www.codeweavers.com/site/compatibility/">
-  http://www.codeweavers.com/site/compatibility/</a></ul>
+  <ul><a href="http://www.codeweavers.com/compatibility/">
+  http://www.codeweavers.com/compatibility/</a></ul>
 but I think it's fair to describe it as the appdb
 on steroids.
 </p><p>
@@ -565,9 +565,9 @@ to see the trend.  </p>
 <p>We've sort of discussed this before.. the elusive IWebBrowser
 control.  It's used by AOL, Quicken, Outlook, and lots of other
 apps.  For more info, see the discussion last year in issues
-<a href="http://www.winehq.org/?issue=141#Web%20Browser%20Integration%20Needed">#141</a>,
-<a href="http://www.winehq.org/?issue=147#IWebBrowser%20Status">#147</a>, and
-<a href="http://www.winehq.org/?issue=153#IWebBrowser%20Status%20/%20More%20Ideas">#153</a>.
+<a href="http://www.winehq.org/wwn/141#Web%20Browser%20Integration%20Needed">#141</a>,
+<a href="http://www.winehq.org/wwn/147#IWebBrowser%20Status">#147</a>, and
+<a href="http://www.winehq.org/wwn/153#IWebBrowser%20Status%20/%20More%20Ideas">#153</a>.
 Along similar lines, Mike McCormack posted a patch to
 begin using the Mozilla ActiveX control in place of Microsoft's
 parsing engine (MSHTML):</p>
@@ -651,7 +651,7 @@ I've copied this one to wine-devel as well so Kevin can see the crash.
 <p>The work Mike refers to are some large patches from Kevin Koltzau
 that implement Windows' theming (i.e. uxtheme.dll).   We covered some
 discussion of uxtheme.dll back in
-<a href="http://www.winehq.org/?issue=191#Theming%20&amp;%20UXTheme.DLL">issue# 191</a>.
+<a href="http://www.winehq.org/wwn/191#Theming%20&amp;%20UXTheme.DLL">issue# 191</a>.
 Kevin followed through with that work and now we're beginning to see
 the foundation of it appear.  As Kevin stated in one of the patches,
 <quote who="Kevin Koltzau">
@@ -673,7 +673,7 @@ noticed a problem with whatever recently changed..
 <p>Both of these apps see widespread use under Wine and there will likely
 be fixes to them soon.  If you have a problem with Wine-20040121 you
 may want to consider building Wine from 
-<a href="http://www.winehq.org/site/cvs">the latest CVS</a>.  It's
+<a href="http://www.winehq.org/cvs">the latest CVS</a>.  It's
 not that hard to do and may fix your problems.</p>
 
 </section>

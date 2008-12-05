@@ -122,10 +122,10 @@ mailing list concerning this.  All in all this is pretty exciting and it
 offers a lot of interesting possibilities for Wine and CodeWeavers.</p>
 
 <p>Tom Wickline has gone through and updated Wine's 
-<a href="http://www.winehq.com/site/status">status pages</a> to reflect 
+<a href="http://www.winehq.com/status">status pages</a> to reflect 
 work that's been done over the past six months.  As usual, these are rough
 estimates of how well things are implemented.  If you look at the 
-status page <a href="http://www.winehq.com/site/status_changelog">changelog</a>
+status page <a href="http://www.winehq.com/status_changelog">changelog</a>
 to get a feel for what's been worked on.  Wine development is steamrolling
 ahead with 10MB of patches hitting the mailing list in June alone.  
 Historically Wine, and most open source projects, usually experiences a lull 
@@ -142,7 +142,7 @@ this year.
 	startdate="06/28/2005"
 >
 <topic>Configuration</topic>
-<p>At <a href="?issue=272">WineConf '05</a> Alexandre set a deadline for
+<p>At <a href="wwn/272">WineConf '05</a> Alexandre set a deadline for
 removing the config file: June 30th, 2005.  The changes to start that 
 process began in earnest about three weeks ago.  This week the config
 file died a quiet death in time for the CVS drop of wine-20050628:</p>

@@ -356,7 +356,7 @@ PPC and SPARC. You might be able to get by, by stubbing the set_thread_context
 stuff out for simple apps.</p></quote>
 
 <p>We sort of touched on this subject last winter in WWN
-<a href="http://www.winehq.com/?issue=263#Compiling%20for%20Windows%20and%20Cross-Compiling">#263</a>.
+<a href="http://www.winehq.com/wwn/263#Compiling%20for%20Windows%20and%20Cross-Compiling">#263</a>.
 The steps Steven covered were roughly the same as what Hans Leidekker 
 described, namely building the tools and using the <tt>--with-wine-tools</tt> 
 option.  Ports to other architectures come up once in while, but it's 

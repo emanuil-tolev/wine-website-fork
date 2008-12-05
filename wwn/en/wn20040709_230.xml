@@ -65,10 +65,10 @@ Its main goal is to experience a slow harddrive failure. It also serves to infor
 <p>We've talked a few times about Mono using Wine for
  it's System.Windows.Forms implementation.  For the timeline
  of events, see issues
- <a href="{$root}/site/?issue=162#.NET%20Success">#162</a>,
- <a href="{$root}/site/?issue=171#Making%20Mono's%20Winforms%20Work">#171</a>,
- <a href="{$root}/site/?issue=213#Wine%20As%20A%20Shared%20Library%20&amp;%20Mono">#213</a> and 
- <a href="{$root}/site/?issue=214#Wine%20As%20A%20Shared%20Library%20&amp;%20Mono%20(con't)">#214</a>.
+ <a href="{$root}/wwn/162#.NET%20Success">#162</a>,
+ <a href="{$root}/wwn/171#Making%20Mono's%20Winforms%20Work">#171</a>,
+ <a href="{$root}/wwn/213#Wine%20As%20A%20Shared%20Library%20&amp;%20Mono">#213</a> and 
+ <a href="{$root}/wwn/214#Wine%20As%20A%20Shared%20Library%20&amp;%20Mono%20(con't)">#214</a>.
  Last week Miguel de Icaza announced on the 
  <a href="http://lists.ximian.com/archives/public/mono-devel-list/">Mono development list</a>
  plans to abandon using Wine on the backend:</p>

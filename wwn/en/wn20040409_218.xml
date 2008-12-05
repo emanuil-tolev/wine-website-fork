@@ -81,7 +81,7 @@ WHAT'S NEW with Wine-20040408: (see
 is the result of the new filesystem changes.  There's definitely
 some interesting stuff in there.  It might take a few
 days for all the builds to be available, but you can grab them from
-<a href="http://www.winehq.org/site/download">our download page.</a></p>
+<a href="http://www.winehq.org/download">our download page.</a></p>
 
 <p>IBM's developerWorks put together an article titled 
 "<i><a href="http://www-106.ibm.com/developerworks/linux/library/l-wine/?ca=dgr-lnxw04FineWine">A
@@ -336,7 +336,7 @@ wouldn't need to do any asn.1 decoding, at least not
 from the get-go.</quote></p>
 
 <p>Mike McCormack actually added an item to the 
-<a href="http://www.winehq.org/site/fun_projects">Fun
+<a href="http://www.winehq.org/fun_projects">Fun
 Projects</a> page a few weeks ago and thought 
 it could be implementing using
 <a href="http://www.openssl.org">OpenSSL's</a>
@@ -354,7 +354,7 @@ libcrypto.so.</p>
 >
 <topic>Architecture</topic>
 <p>Peter Riocreux brought up execshield/prelinking again this
-week (see <a href="http://www.winehq.org/?issue=217">last week's</a>
+week (see <a href="http://www.winehq.org/wwn/217">last week's</a>
 issue for more about that.)   This time it involved Fedora Core 1:
 </p><quote who="Peter Riocreux"><p>
 I am intermittently trying to get Wine to play nicely with a big EDA
@@ -547,7 +547,7 @@ implementation</a> in the archives.</p>
 >
 <topic>Project Management</topic>
 <p>Not sure if anyone out there is using the arch 
-gateway (see <a href="http://www.winehq.com/?issue=217">issue #217</a>
+gateway (see <a href="http://www.winehq.com/wwn/217">issue #217</a>
 for more details), but Mike Hearn added a new tool this week:</p>
 <quote who="Mike Hearn"><p>
 At Dimi's request, I've added a new script to the root of the gateway tree.

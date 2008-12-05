@@ -96,9 +96,9 @@ the latest development versions of the Linux kernel.  For the most
 part everything runs, but some specific stuff used by nasty things
 like copy protection schemes seem to mysteriously fail.  We first 
 covered this in 
-<a href="http://www.winehq.com/?issue=249#Kernel%20Integration%20Problems">issue #249</a>,
+<a href="http://www.winehq.com/wwn/249#Kernel%20Integration%20Problems">issue #249</a>,
 but you can find a detailed description in 
-<a href="http://www.winehq.com/?issue=250#Kernel%20Issue%20(con't)">issue #250</a>.
+<a href="http://www.winehq.com/wwn/250#Kernel%20Issue%20(con't)">issue #250</a>.
 At the time, Linus came up with some patches that fixed some problems
 he uncovered but it didn't appear to fix the original problem reported
 by Jesse Allen.  This week Thomas Sailer raised the issue again with

@@ -260,8 +260,8 @@ theirs, hence possibly blocking execution.
 Sorry, forgot to come back to say how testing went.
 </p><p>
 The best workaround I found (from
-<a href="http://www.codeweavers.com/site/support/tickets/browse/?ticket_id=34072">
-http://www.codeweavers.com/site/support/tickets/browse/?ticket_id=34072</a>)
+<a href="http://www.codeweavers.com/support/tickets/browse/?ticket_id=34072">
+http://www.codeweavers.com/support/tickets/browse/?ticket_id=34072</a>)
 is to change the default prelinking options, so that the required
 address is still free for Win32 apps.
 </p><p>

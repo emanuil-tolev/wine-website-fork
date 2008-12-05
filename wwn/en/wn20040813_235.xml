@@ -217,7 +217,7 @@ Uwe described are an integral part of the game.
 <topic>Architecture</topic>
 <p>To followup on the USB support mentioned above
 (and discussed last week in 
-<a href="http://www.winehq.com/?issue=234#USB%20Support..%20or%20Lack%20Thereof">WWN 
+<a href="http://www.winehq.com/wwn/234#USB%20Support..%20or%20Lack%20Thereof">WWN 
 #234</a>), Aric Stewart came
 back this week with a description of the work he's doing:</p>
 <quote who="Aric Stewart"><p>
@@ -322,7 +322,7 @@ This is with a 32k buffer and a 1k chunk size.
 <topic>Configuration</topic>
 <p>Last week we described a problem where people couldn't access 
 a fake windows drive (WWN issue 
-<a href="http://www.winehq.com/?issue=234#c:\\windows%20is%20not%20accessible%20Error">#234</a>).  This week Henning Gerhardt wrote in with a pretty clear
+<a href="http://www.winehq.com/wwn/234#c:\\windows%20is%20not%20accessible%20Error">#234</a>).  This week Henning Gerhardt wrote in with a pretty clear
 example of it occurring:</p>
 <quote who="Henning Gerhardt"><p>
 a friend of me would update the wine package (20030813) from his SuSE 9.0 

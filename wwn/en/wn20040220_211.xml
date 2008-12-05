@@ -77,21 +77,21 @@ Its main goal is to slouch. It also serves to inform you of what's going on arou
 >
 <topic>News</topic>
 <p>WineHQ saw quite a few site updates this week.  A
-<a href="http://www.winehq.com/site/history">history of Wine</a>
+<a href="http://www.winehq.com/history">history of Wine</a>
 has been added.  For the most part it's the same as what appeared
-in <a href="http://www.winehq.org/?issue=183">WWN #183</a>. The
-<a href="http://www.winehq.org/site/status">status pages</a>
+in <a href="http://www.winehq.org/wwn/183">WWN #183</a>. The
+<a href="http://www.winehq.org/status">status pages</a>
 were updated, including two new pages for 
-<a href="http://www.winehq.com/site/status_porting">porting status</a> and
-<a href="http://www.winehq.com/site/status_options">Winecfg options</a>.
-The <a href="http://www.winehq.com/site/about">introduction page</a>
+<a href="http://www.winehq.com/status_porting">porting status</a> and
+<a href="http://www.winehq.com/status_options">Winecfg options</a>.
+The <a href="http://www.winehq.com/about">introduction page</a>
 now has a short index of resources that were previously buried a
 few links deep.  Lastly, the 
-<a href="http://www.winehq.com/site/who">Who's Who</a> page has been
+<a href="http://www.winehq.com/who">Who's Who</a> page has been
 completely rewritten and includes new bios of Wine developers.</p>
 
 <p>All of those items are on the
-<a href="http://www.winehq.com/site/todo_lists">To Do</a> list.  It
+<a href="http://www.winehq.com/todo_lists">To Do</a> list.  It
 was updated to reflect the changes.  I guess now is as good of a
 time as any to start keeping track of how progress is going on
 the To Do items:
@@ -212,7 +212,7 @@ it into Winecfg rather than leave it as a standalone program.</p>
 <topic>Integration</topic>
 <p>A few weeks ago we mentioned Mike McCormack had gotten Mozilla
 Active X embedding to work 
-(<a href="http://www.winehq.org/?issue=206#MSHTML%20Changes">issue #206</a>).
+(<a href="http://www.winehq.org/wwn/206#MSHTML%20Changes">issue #206</a>).
 Well, that attempt went awry and Mike went back and worked on it 
 some more.  This week he announced:</p>
 <quote who="Mike McCormack"><p>

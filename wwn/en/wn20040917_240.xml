@@ -92,7 +92,7 @@ Its main goal is to jog. It also serves to inform you of what's going on around 
 <section 
 	title="News: Wine-20040914" 
 	subject="News"
-	archive="http://www.winehq.com/?announce=20040914" 
+	archive="http://www.winehq.com/announce/20040914" 
 	posts="1"
 	startdate="09/11/2004"
 	enddate="09/17/2004"
@@ -117,7 +117,7 @@ The following was in the announcement:</p>
 
 <p>
   Binary and source packages are available from our
-  <a href="http://www.winehq.org/site/download">download page.</a>
+  <a href="http://www.winehq.org/download">download page.</a>
 </p>
 
 
@@ -186,7 +186,7 @@ for download.</quote></p>
 this will become more of a packaging issue.
 Anyone out there got a nice collection of fonts you made and
 want to donate to Wine?  If so, 
-<a href="http://www.winehq.com/site/forums">let us know</a>.</p>
+<a href="http://www.winehq.com/forums">let us know</a>.</p>
 
 </section>
 <section 
@@ -289,7 +289,7 @@ between different versions.  </p>
 >
 <topic>Ports</topic>
 <p>Last week we mentioned building on FreeBSD was broken 
-(WWN <a href="http://www.winehq.com/?issue=239#FreeBSD%20Breakage%20-%20IPX%20Packets">#239</a>)
+(WWN <a href="http://www.winehq.com/wwn/239#FreeBSD%20Breakage%20-%20IPX%20Packets">#239</a>)
 because of a patch that that changed IPX networking in a way that was specific
 to Linux.  Gerald Pfeifer was working with Roderick Colenbrander on a fix but
 the thread hadn't wrapped up by the end of the week.  Roderick then dug into

@@ -81,7 +81,7 @@ Its main goal is to pretend summer isn't over. It also serves to inform you of w
 <topic>News</topic>
 <p>
 When we last looked at the Wine 
-<a href="http://www.winehq.org/site/todo_lists">To Do List</a> it was back in May.  
+<a href="http://www.winehq.org/todo_lists">To Do List</a> it was back in May.  
 Things have progressed nicely since then.  At the time we had green
 beating red, 24 to 15 with yellow coming in at 30.  Since then quite
 a few items have been completed and even more are in progress.  
@@ -184,7 +184,7 @@ him directly.  (Click on the link above for his address.)
 <topic>DirectX</topic>
 <p>We discussed Jason Edmeades plans to work on 
 Direct3D 9 a few weeks ago (see WWN issue 
-<a href="http://www.winehq.com/?issue=240#DirectX%209%20Roadmap">#240</a>).
+<a href="http://www.winehq.com/wwn/240#DirectX%209%20Roadmap">#240</a>).
 The consensus seemed to be to create a shared library between
 Direct3D 8 and Direct3D 9 code given how similar they are.
 The other alternative is to copy all the D3D8 code and then

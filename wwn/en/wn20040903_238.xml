@@ -170,7 +170,7 @@ seen the discussions over the past year concerning schedulers.
 There's been a lot of work done in this area, but it's a very
 tricky problem to make every process run exactly the way it 
 was intended without interfering with other ones.  A few weeks
-ago (WWN <a href="http://www.winehq.com/?issue=236#Threading%20Issues?">issue #236</a>)
+ago (WWN <a href="http://www.winehq.com/wwn/236#Threading%20Issues?">issue #236</a>)
 Andi Mohr forwarded a message from a kernel development list
 that described a problem with Wine's interaction with the Linux
 scheduler.  More discussion occurred this week after Mike Hearn
@@ -350,8 +350,8 @@ but that is very difficult if not impossible to achieve)
 <topic>Architecture</topic>
 <p>Shachar Shemesh submitted a patch to implement epoll() functionality,
 for background on this see the past two issues, 
-<a href="http://www.winehq.com/?issue=236#poll%20vs.%20epoll">#236</a> and
-<a href="http://www.winehq.com/?issue=237#poll%20vs.%20epoll%20(con't)">#237</a>:</p>
+<a href="http://www.winehq.com/wwn/236#poll%20vs.%20epoll">#236</a> and
+<a href="http://www.winehq.com/wwn/237#poll%20vs.%20epoll%20(con't)">#237</a>:</p>
 <quote who="Shachar Shemesh"><p>
 After much talk, the patch seems ready for commit. Since there are many
 systems with slightly older glibc that have the header but do not have
@@ -465,7 +465,7 @@ let me know.
 >
 <topic>Status Updates</topic>
 <p>Last week (issue 
-<a href="http://www.winehq.com/?issue=237#Quartz%20Display%20Driver">#237</a>)
+<a href="http://www.winehq.com/wwn/237#Quartz%20Display%20Driver">#237</a>)
 we discussed a new Quartz display driver, or at least the beginnings of one.
 Well, it seems perhaps that development might be scrapped in favor of a 
 different plan.  Pierre d'Herbemont outlined the direction but went on to

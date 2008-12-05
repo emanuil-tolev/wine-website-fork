@@ -155,10 +155,10 @@ So any time I hear Wine and Cedega in the same sentence I kind of cringe.
 They're really two different codebases at this point.  Why is that?  Well,
 it all goes back to Wine changing its licensing from X11 (BSD-style)  to
 the LGPL about 5 years ago.  See WWN issues
-<a href="http://www.winehq.com/?issue=115#Wine%20License%20Change,%20Round%202">#115</a>,
-<a href="http://www.winehq.com/?issue=116#Wine%20Licensing%20(con't)">#116</a>,
+<a href="http://www.winehq.com/wwn/115#Wine%20License%20Change,%20Round%202">#115</a>,
+<a href="http://www.winehq.com/wwn/116#Wine%20Licensing%20(con't)">#116</a>,
 and 
-<a href="http://www.winehq.com/?issue=117#Wine%20Licensing%20(con't)">#117</a> 
+<a href="http://www.winehq.com/wwn/117#Wine%20Licensing%20(con't)">#117</a> 
 for more info.  So Wine switched its license, TransGaming kept using the old
 codebase, and now the two have diverged.  Except.. TransGaming has realized
 that some of the stuff created by Wine is necessary and they've imported

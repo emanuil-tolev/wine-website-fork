@@ -82,7 +82,7 @@ Its main goal is to write. It also serves to inform you of what's going on aroun
 <section 
 	title="News: Wine-20050111" 
 	subject="News"
-	archive="http://www.winehq.com/?announce=20050111"
+	archive="http://www.winehq.com/announce/20050111"
 	posts="1"
 	startdate="01/08/2005"
 	enddate="01/14/2005"
@@ -105,9 +105,9 @@ WHAT'S NEW with Wine-20050111: (see
 
 <p>In the days since then, there's been a lot of commits to CVS,
 more so than usual.  You might want to 
-<a href="http://www.winehq.com/site/cvs">use CVS</a> to stay up to date.
+<a href="http://www.winehq.com/cvs">use CVS</a> to stay up to date.
 If you'd like to 
-<a href="http://www.winehq.com/site/download">download a binary</a> though,
+<a href="http://www.winehq.com/download">download a binary</a> though,
 you can find them for most popular distributions.  
 </p>
 </section>
@@ -764,8 +764,8 @@ I hope this is correct, I wrote it down from memory.</p></quote>
 some info regarding USB configuration and iTunes:</p>
 <quote who="Jeremy White"><p>
 Your best resource may be:
-<ul><a href="http://www.codeweavers.com/site/support/docs/crossover-pro/troubleshooting#ITUNES-IPOD">
-   http://www.codeweavers.com/site/support/docs/crossover-pro/troubleshooting#ITUNES-IPOD</a></ul>
+<ul><a href="http://www.codeweavers.com/support/docs/crossover-pro/troubleshooting#ITUNES-IPOD">
+   http://www.codeweavers.com/support/docs/crossover-pro/troubleshooting#ITUNES-IPOD</a></ul>
 </p><p>
 I think it explains the steps pretty clearly, and would be pretty useful
 even to non CrossOver Wine users (don't worry about not having cxipod,

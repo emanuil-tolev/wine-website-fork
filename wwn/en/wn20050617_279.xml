@@ -228,7 +228,7 @@ deleted can be done easily. And that would be the important trigger for
 someone to go in and update the documentation.
 </p><p>
 Remember that I've tried already to document all the options (we even
-have a web page for it at http://winehq.org/site/status_options) but it
+have a web page for it at http://winehq.org/status_options) but it
 was close to impossible to keep it up-to-date. Just knowing if anything
 changed would really be invaluable.
 </p><p>
@@ -260,7 +260,7 @@ the user-facing information on configuration options.</p>
 <topic>WineHQ</topic>
 <p>Last week we posted a to-do list for the 
 <a href="http://appdb.winehq.org">AppDB</a> (see WWN
-<a href="http://www.winehq.com/?issue=278">#278</a>).  The to-do list
+<a href="http://www.winehq.com/wwn/278">#278</a>).  The to-do list
 was out of date about as soon as we published it.  The AppDB guys
 got together and put together a really nice list with a lot of 
 projects people could tackle.  One of the topics that came up was
@@ -292,7 +292,7 @@ wiki and look at
 	enddate="06/15/2005"
 >
 <topic>DirectX</topic>
-<p>Last week (WWN issue <a href="http://www.winehq.com/?issue=278">#278</a>)
+<p>Last week (WWN issue <a href="http://www.winehq.com/wwn/278">#278</a>)
 we mentioned a patch submitted by Christian Costa that statically links
 <a href="http://ffmpeg.sourceforge.net/index.php">FFMpeg</a>.  No one really 
 liked the fact it has to be statically linked, but apparently the ffmpeg
@@ -361,9 +361,9 @@ library.</p></quote>
 <topic>Multimedia</topic>
 <p>Maarten Lankhorst has been hard at work getting MSN Messenger to run.
 For more details on that effort, see WWN issues
-<a href="http://www.winehq.com/?issue=274#Video%20Capture%20in%20Windows">#274</a>, 
-<a href="http://www.winehq.com/?issue=275#Webcams%20&amp;%20MSN%20Messenger">#275</a>, and 
-<a href="http://www.winehq.com/?issue=276#Video%20Driver%20Infrastructure">#276</a>.
+<a href="http://www.winehq.com/wwn/274#Video%20Capture%20in%20Windows">#274</a>, 
+<a href="http://www.winehq.com/wwn/275#Webcams%20&amp;%20MSN%20Messenger">#275</a>, and 
+<a href="http://www.winehq.com/wwn/276#Video%20Driver%20Infrastructure">#276</a>.
 He posted another patch this week that implemented more functionality.  
 Messenger 6.2 is now closer to working with builtin DLLs.  Maarten
 described how to get it running, but it doesn't sound like it's for the

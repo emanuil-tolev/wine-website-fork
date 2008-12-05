@@ -102,7 +102,7 @@ recent configuration changes. Would anybody be interested in helping
 with that?</p></quote>
 
 <p>A quick look at 
-<a href="http://www.winehq.com/site/documentation">Wine's docs</a> shows the 
+<a href="http://www.winehq.com/documentation">Wine's docs</a> shows the 
 three guides to be in varying condition.  The Developers Guide actually
 isn't too bad.  The User Guide needs some attention.  The Winelib Guide,
 well, it might even be doing more harm than good.  </p>
@@ -124,8 +124,8 @@ A subdirectory named docs will be created. and you can edit to your
 hearts content. ;)
 </p><p>
 Make sure you read over:
-<a href="http://www.winehq.org/site/sending_patches">
-http://www.winehq.org/site/sending_patches</a></p><p>
+<a href="http://www.winehq.org/sending_patches">
+http://www.winehq.org/sending_patches</a></p><p>
 
   I put DOCS: at the beginning of the subject when sending this way Dimi
   can easily pick it out.</p></quote>
@@ -202,7 +202,7 @@ wine-devel for several months.  Luke has tried to persuade Wine's developers
 to use the <a href="http://sourceforge.net/projects/freedce">FreeDCE</a> code 
 for RPC.  We actually covered this in the past and there's pretty
 good explanation of the whole process in WWN
-<a href="http://www.winehq.org/?issue=258#FreeDCE%20&amp;%20Wine%20&amp;%20DCOM">#258</a>.
+<a href="http://www.winehq.org/wwn/258#FreeDCE%20&amp;%20Wine%20&amp;%20DCOM">#258</a>.
 Now, as you read the threads on wine-devel you'd probably be tempted to
 take Luke's view that Wine is insane for duplicating all this work.  Well,
 read Mike McCormack's response in that WWN issue - we're really not

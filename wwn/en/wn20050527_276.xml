@@ -91,8 +91,8 @@ Its main goal is to miss deadlines. It also serves to inform you of what's going
 
 <p>As we mentioned last month
 (see WWN 
-<a href="http://www.winehq.com/?issue=268#MSHTML%20Work">#268</a> and
-<a href="http://www.winehq.com/?issue=271#MSHTML%20&amp;%20Gecko">#271</a>), 
+<a href="http://www.winehq.com/wwn/268#MSHTML%20Work">#268</a> and
+<a href="http://www.winehq.com/wwn/271#MSHTML%20&amp;%20Gecko">#271</a>), 
 Jacek Caban has been busy implementing MSHTML on top of Mozilla.  
 MSHTML.DLL is a massive chunk of Internet Explorer; it's responsible
 for parsing and rendering HTML.  His first round worked with the 
@@ -161,8 +161,8 @@ I implemented a driver model in qcap now, but avicap32 still uses my old
 writing capcreatecapturewindow, I think we should move out the drivers 
 from qcap to our own vfwwine dll/driver, windows uses a similar model 
 for it, as Rolf Kalbermatter pointed out in 
-<a href="http://www.winehq.com/?issue=274#Video%20Capture%20in%20Windows">
-http://www.winehq.com/?issue=274#Video%20Capture%20in%20Windows</a>
+<a href="http://www.winehq.com/wwn/274#Video%20Capture%20in%20Windows">
+http://www.winehq.com/wwn/274#Video%20Capture%20in%20Windows</a>
 </p><p>
 For the qcap drivers, I used some kind of COM model
 <ul><code>
@@ -352,8 +352,8 @@ submitted:</p>
 Hi!  My crypt32 protectdata tests were just added to CVS (thanks!) but
 they were added without the <tt>#ifndef STANDALONE</tt> stuff that exists in the
 recommended example from the lzexpand test code.  The steps here:
-<ul><a href="http://www.winehq.com/site/docs/winedev-guide/testing-windows">
-http://www.winehq.com/site/docs/winedev-guide/testing-windows</a></ul>
+<ul><a href="http://www.winehq.com/docs/winedev-guide/testing-windows">
+http://www.winehq.com/docs/winedev-guide/testing-windows</a></ul>
 don't have a method for doing the build with the free-of-charge windows
 CLI compiler (which the "STANDALONE" stuff works fine with).
 </p><p>

@@ -112,7 +112,7 @@ into thinking they are running inside of Windows and not Linux. </quote></p>
 >
 <topic>Architecture</topic>
 <p>Last week (issue 
-<a href="http://www.winehq.com/?issue=218#Execshield/Prelinking%20(con't)">#218</a>)
+<a href="http://www.winehq.com/wwn/218#Execshield/Prelinking%20(con't)">#218</a>)
 we mentioned Mike McCormack had begun working on problems caused by execshield
 enabled kernels.  Basically the problem Wine runs into is it requires certain
 memory locations to be available and with execshield there's no way to 
@@ -309,9 +309,9 @@ build with Winelib.</p>
 <p>Last month there was quite a bit of discussion about
 using Wine as a regular shared library.  We covered that
 topic pretty well in issues
-<a href="http://www.winehq.org/?issue=213#Wine%20As%20A%20Shared%20Library%20&amp;%20Mono">#213</a>
+<a href="http://www.winehq.org/wwn/213#Wine%20As%20A%20Shared%20Library%20&amp;%20Mono">#213</a>
 and
-<a href="http://www.winehq.org/?issue=214#Wine%20As%20A%20Shared%20Library%20&amp;%20Mono%20(con't)">#214</a>.
+<a href="http://www.winehq.org/wwn/214#Wine%20As%20A%20Shared%20Library%20&amp;%20Mono%20(con't)">#214</a>.
 The problem is, Windows libraries and executables require a 
 a different environment to run in than Linux ones.  Things
 like threading are done differently enough that the recommended

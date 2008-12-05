@@ -85,11 +85,11 @@ WHAT'S NEW with Wine-20040615: (see
 </p></quote>
 
 <p>As always, head over to 
-  <a href="http://www.winehq.com/site/download">Wine's download page</a>
+  <a href="http://www.winehq.com/download">Wine's download page</a>
   to snag a copy.  </p>
 
 <p>We published an 
-<a href="http://www.winehq.com/?interview=15">interview
+<a href="http://www.winehq.com/interview/15">interview
 with Lionel Ulmer</a> this week.  Lionel is one of Wine's DirectX gurus
 and has been involved with Wine for almost six years.</p>
 
@@ -105,7 +105,7 @@ in his announcement that this is just a minor release,
 
 <p>CodeWeavers and Lycoris have 
 <a 
-href="http://www.codeweavers.com/site/about/general/press/?id=20040616">teamed
+href="http://www.codeweavers.com/about/general/press/?id=20040616">teamed
 up</a> to offer a product that bundles CrossOver Office with the Lycoris 
 Desktop/LX distribution. <quote who="CodeWeavers">
 Lycoris will also begin selling CrossOver Office as a standalone product to 
@@ -242,8 +242,8 @@ was all about:</p>
 I bugged Newman yesterday and because he's a total rockstar he fixed the
 bug in the doc generation script, so the latest developer guide is now on
 the net:
-  <ul><a href="http://winehq.com/site/docs/winedev-guide/threading">
-  http://winehq.com/site/docs/winedev-guide/threading</a></ul>
+  <ul><a href="http://winehq.com/docs/winedev-guide/threading">
+  http://winehq.com/docs/winedev-guide/threading</a></ul>
 </p><p>
 explains the Wine multi-threading in more detail than you probably want,
 however if you read the first section it may help. Basically a critical

@@ -124,7 +124,7 @@ environments often rely more heavily on Wine to transition their desktops to
 Linux than do individual home users.</p></quote>
 
 <p>We briefly touched on the original idea of Wine Doors a few months ago in WWN
-<a href="http://www.winehq.com/?issue=308#WineTools..%20part%20II">#308</a>,
+<a href="http://www.winehq.com/wwn/308#WineTools..%20part%20II">#308</a>,
 but the thread continued on after that.  It looks as though things are
 going well for the project.</p>
 
@@ -155,9 +155,9 @@ It seems copy protection methods need to do things like load special
 drivers and that in turn requires ntoskrnl.exe to have some basic 
 functionality.  So, last year work was done to create
 a basic version of it (see WWN
-<a href="http://www.winehq.com/?issue=270#Safedisk%20Help%20Needed">#270</a>,
-<a href="http://www.winehq.com/?issue=289#Safedisc%20Update">#289</a>, and
-<a href="http://www.winehq.com/?issue=290#Safedisc%20Begins%20to%20Work">#290</a> 
+<a href="http://www.winehq.com/wwn/270#Safedisk%20Help%20Needed">#270</a>,
+<a href="http://www.winehq.com/wwn/289#Safedisc%20Update">#289</a>, and
+<a href="http://www.winehq.com/wwn/290#Safedisc%20Begins%20to%20Work">#290</a> 
 for more details.)  
 </p><p>In the end, the mechanism that was developed was sufficient for
 copy protection.  There was one little problem though: Alexandre didn't

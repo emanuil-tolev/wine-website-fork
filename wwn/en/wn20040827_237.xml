@@ -107,7 +107,7 @@ href="http://news.independent.co.uk/world/science_technology/story.jsp?story=554
 <p>The Darwine folks popped up this week to let us know what they're
 working on.  It's been quite a few months since we've given an update
 on the project (see WWN issue
-<a href="http://www.winehq.com/?issue=207#Darwine%20Update">#207</a> for
+<a href="http://www.winehq.com/wwn/207#Darwine%20Update">#207</a> for
 the last one.)  There's definitely a lot of exciting stuff going on in
 that area and it seems like preliminary support for running i386 Windows
 binaries on Mac OS X is in place.  A slew of emails hit wine-devel this
@@ -367,7 +367,7 @@ of place.  Currently Wine supports two main display drivers - one
 is for graphical apps using X (x11drv) and the other is for commandline
 apps (ttydrv.)  There have been efforts in the past to add others,
 such as the SDL driver (see WWN issue
-<a href="{$root}/site/?issue=114#New%20SDL%20Driver">#114</a>), 
+<a href="{$root}/wwn/114#New%20SDL%20Driver">#114</a>), 
 but there hasn't been much of a reason.  Rib explained that there's still much 
 work to do in order for the driver to be functional:</p>
 <quote who="Rib Rdb"><p>
@@ -436,8 +436,8 @@ native-ness is worth all the pain </p></quote>
 >
 <topic>Internationalization</topic>
 <p>From time to time we point to the
-<a href="http://www.winehq.com/site/janitorial">Wine Janitorial page</a> and 
-<a href="http://www.winehq.com/site/fun_projects">Fun Projects list</a> 
+<a href="http://www.winehq.com/janitorial">Wine Janitorial page</a> and 
+<a href="http://www.winehq.com/fun_projects">Fun Projects list</a> 
 as a good way for aspiring developers to get involved. <i>hint, hint</i>
 One of those janitorial tasks is to prevent Unicode functions from 
 using ASCII functions to do their dirty work.. and in the process perform a 
@@ -520,7 +520,7 @@ not the only one in the whole tree.
 <topic>Architecture</topic>
 <p>Last week we covered Shachar Shemesh's inquiry into using epoll() instead
 of poll() (see WWN 
-<a href="http://www.winehq.com/?issue=236#poll%20vs.%20epoll">#236</a>.)
+<a href="http://www.winehq.com/wwn/236#poll%20vs.%20epoll">#236</a>.)
 Well, Shachar took a stab at the idea presented and returned this week
 with a patch:</p>
 <quote who="Shachar Shemesh"><p>

@@ -75,7 +75,7 @@ Its main goal is to configure a new laptop. It also serves to inform you of what
 <section
         title="News: Wine-20041201"
         subject="News"
-        archive="http://www.winehq.com/?announce=20041201"
+        archive="http://www.winehq.com/announce/20041201"
         posts="1"
         startdate="11/27/2004"
 	enddate="12/03/2004"
@@ -350,7 +350,7 @@ There were more suggestions and James summarized them,
 to attract developers in both the US and Europe.  During the course
 of discussion, James confirmed that #winehackers on IRC would be used
 to get everyone together (see WineHQ for details on 
-<a href="http://www.winehq.org/site/forums#irc">Wine's IRC channels</a>.)
+<a href="http://www.winehq.org/forums#irc">Wine's IRC channels</a>.)
 Finally, after more discussion, it was decided that the first Bug
 Buster session would be held on Sunday, Dec 5th, at 7pm GMT (2pm EST).  
 </p>
@@ -363,7 +363,7 @@ Buster session would be held on Sunday, Dec 5th, at 7pm GMT (2pm EST).
 	startdate="11/27/2004"
 >
 <topic>Controls</topic>
-<p>Last week (<a href="http://www.winehq.com/?issue=250">WWN #250</a>) 
+<p>Last week (<a href="http://www.winehq.com/wwn/250">WWN #250</a>) 
 some discussion about the RichEdit control outlined the amount of work
 that needed to be done to support the latest incarnation of it.  Mike
 McCormack said there was just a lot to do and work hadn't even started.
@@ -460,7 +460,7 @@ on this :)
         enddate="11/29/2004"
 >
 <topic>Fixes</topic>
-<p>Last week (WWN <a href="http://www.winehq.org/?issue=250">#250</a>) 
+<p>Last week (WWN <a href="http://www.winehq.org/wwn/250">#250</a>) 
 I mentioned Hajime Segawa came up with a new installer script for
 Internet Explorer.  I also mentioned that he "cheated" by making
 it depend on native DCOM.  This week Segawa changed the script and

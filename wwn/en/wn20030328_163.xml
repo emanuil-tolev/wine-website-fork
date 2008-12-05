@@ -248,8 +248,8 @@ For now things are pretty clear:
 <p>There's been some threads on wine-devel and IRC about making
 Wine work with the new kernels and glibc found in the latest
 Linux distributions.  This has been covered in past issues
-(notably <a href="http://www.winehq.org/index.php?issue=155#Threading%20Problems%20with%20glibc%202.3">#155</a> 
-and <a href="http://www.winehq.org/index.php?issue=156#Threading%20Problems%20with%20glibc%202.3%20(cont'd)">#156</a>)
+(notably <a href="http://www.winehq.org/index.phpwwn/155#Threading%20Problems%20with%20glibc%202.3">#155</a> 
+and <a href="http://www.winehq.org/index.phpwwn/156#Threading%20Problems%20with%20glibc%202.3%20(cont'd)">#156</a>)
 , and
 so has the solution, however it wasn't that obvious.  Hopefully by
 posting this again it'll prevent people from mailbombing the list as

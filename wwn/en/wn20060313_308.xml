@@ -217,7 +217,7 @@ First, Tomas Carnecky was concerned because the World of Warcraft
 right not that isn't possible in Wine.  Stefan D&#246;singer elaborated
 on what the problem was and explained the correct solution is to 
 migrate ddraw to a new implementation 
-(see WWN <a href="http://www.winehq.com/?issue=307#DirectDraw%20via%20WineD3D">#307</a>) 
+(see WWN <a href="http://www.winehq.com/wwn/307#DirectDraw%20via%20WineD3D">#307</a>) 
 rather than patch up the current code:</p>
 <quote who="Stefan Dosinger"><p>
 The ddraw implementation has some unloading bugs at the moment. Not restoring 
@@ -318,7 +318,7 @@ with that is WineD3D can crash in some cases.  </p>
 <topic>Utilities</topic>
 <p>WineTools came up again this week.  For some background, you can
 check out WWN 
-<a href="http://www.winehq.com/?issue=304#WineTools%20&amp;%20Wine">#304</a>.
+<a href="http://www.winehq.com/wwn/304#WineTools%20&amp;%20Wine">#304</a>.
 Basically everyone falls into three camps:
 <ul><li>Those who think WineTools makes life easier to install programs and
 should therefore be an integral part of using Wine.</li>

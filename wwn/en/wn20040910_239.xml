@@ -636,13 +636,13 @@ tripped you up. Please do try again!
 >
 <topic>Integration</topic>
 <p>We sort of discussed this topic back in July (WWN issue
-<a href="http://www.winehq.com/?issue=230#OpenSSL%20vs.%20NSS">#230</a>),
+<a href="http://www.winehq.com/wwn/230#OpenSSL%20vs.%20NSS">#230</a>),
 but Mike Hearn brought it up again.  It seems OpenSSL using OpenSSL in
 Wine's crypto code leaves something to be desired.   If you follow the
 link above, Steven Edwards raises some points about licensing.  This
 week Mike Hearn brought up some technical problems and thought it might
 be something to add to the 
-<a href="http://www.winehq.com/site/fun_projects">Fun Projects</a> list:</p>
+<a href="http://www.winehq.com/fun_projects">Fun Projects</a> list:</p>
 
 <quote who="Mike Hearn"><p>
 The OpenSSL library we use in wininet/netconnection.c is a very unstable

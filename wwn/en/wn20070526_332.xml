@@ -259,7 +259,7 @@ driver with ways for them to talk to hardware.  In reality, that's pretty
 tough because at some point you need to translate the Windows calls down
 through the Linux kernel.  Last week a generic method was discussed for
 USB devices (see WWN 
-<a href="http://www.winehq.org/?issue=331#USB%20Support%20in%20Wine">#331</a>)
+<a href="http://www.winehq.org/wwn/331#USB%20Support%20in%20Wine">#331</a>)
 that would add USB infrastructure to ntoskrnl and potentially forward the
 calls to libusb.  All in all, we're a lot closer than we were simply because
 finding a framework acceptable by Alexandre is often the hurdle in a lot of

@@ -154,13 +154,13 @@ it appears one has gone MIA.  So that leaves us with five:
 <li>Jacek Caban has been working on implementing MSHTML using a
 Gecko rendering engine.  We've covered this quite a bit over the past
 few months, including a status update two weeks ago in 
-<a href="http://www.winehq.com/?issue=285#MSHTML%20Update">WWN #285</a>.
+<a href="http://www.winehq.com/wwn/285#MSHTML%20Update">WWN #285</a>.
 The <a href="http://wiki.winehq.org/MozillaIntegration">MozillaIntegration</a>
 page has more info.  Mike McCormack is mentoring this project.
 </li>
 <li>Theming support being tacked by Frank Richter, alluded to in Alexandre's 
 last CVS drop and also covered in 
-<a href="http://www.winehq.com/?issue=285#Theming%20Work">WWN 
+<a href="http://www.winehq.com/wwn/285#Theming%20Work">WWN 
 #285</a>, has also been progressing.  The work centers on hooking
 theming into Wine's controls and making them paint the current theme.  
 This past week saw a lot of patches hit wine-patches and were
@@ -168,7 +168,7 @@ subsequently committed by Alexandre.  Kevin Koltzau is mentoring this one.</li>
 <li>Daniel Remenak has been working on improving DirectInput
 support in Wine.  A few weeks ago we talked about the
 addition of force feedback code that was just starting to appear 
-(<a href="http://www.winehq.com/?issue=285#Force%20Feedback">WWN #285</a>).
+(<a href="http://www.winehq.com/wwn/285#Force%20Feedback">WWN #285</a>).
 Daniel is behind that work and there's even more stuff to come. 
 Lionel Ulmer is mentoring this project. </li>
 
@@ -202,8 +202,8 @@ involving Active Server Pages support.</p>
 <p>Apparently the community loves the story about Microsoft
 discriminating against Wine users.  If you remember back in late 
 February and early March (WWN 
-<a href="http://www.winehq.com/?issue=263#News:%20WGA%20Articles,%20Misc%20Press">#263</a>
-and <a href="http://www.winehq.com/?issue=264#News:%20WGA%20Update">#264</a>)
+<a href="http://www.winehq.com/wwn/263#News:%20WGA%20Articles,%20Misc%20Press">#263</a>
+and <a href="http://www.winehq.com/wwn/264#News:%20WGA%20Update">#264</a>)
 there was a bunch of news items about Microsoft building a check
 for Wine into their Windows Genuine Advantage program.  Before
 downloading things from Microsoft, this check must be made to

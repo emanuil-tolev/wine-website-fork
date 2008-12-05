@@ -96,7 +96,7 @@ their own codebase and that such modifications would be easier for them.
 This may also be an opportunity to fix problems with their software.  
 Either way, it would be really nice if they could contribute something
 back.  (Here's a hint, knock-off an item on our
-<a href="http://www.winehq.com/site/todo_lists">ToDo list</a>.  Extra
+<a href="http://www.winehq.com/todo_lists">ToDo list</a>.  Extra
 credit will be given for taking over anything currently assigned to 
 Alexandre.)  Thanks to Stefan Leichter for the link and Phil Krylov for
 commenting on it.
@@ -137,8 +137,8 @@ classes.  So it makes sense to bolt Wine's Win32 to C#.   Unfortunately,
 Mono required a forked version of Wine in order to load things the way
 they want.  This doesn't help anyone and the maintenance work is a pain.
 (For more info, see some of the earlier threads in issues
-<a href="http://www.winehq.org/site/?issue=162#.NET%20Success">#162</a> and
-<a href="http://www.winehq.org/?issue=171#Making%20Mono's%20Winforms%20Work">
+<a href="http://www.winehq.org/wwn/162#.NET%20Success">#162</a> and
+<a href="http://www.winehq.org/wwn/171#Making%20Mono's%20Winforms%20Work">
 #171</a>.)
 Peter Bartok posted <a href="http://www.winehq.com/hypermail/wine-patches/2004/03/0038.html">a
 small patch</a> this week and explained a new process:</p>

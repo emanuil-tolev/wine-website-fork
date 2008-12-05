@@ -72,14 +72,14 @@ Its main goal is to not puke when watching network television. It also serves to
 <section 
 	title="News: Wine 0.9.9"
 	subject="News"
-	archive="http://www.winehq.com/?announce=0.9.9"
+	archive="http://www.winehq.com/announce/0.9.9"
 	posts="1"
 >
 <topic>News</topic>
 <p>Wine 0.9.9 came out this past week.  There seems to be a lot more
 user-facing additions in this release compared to some of the other
 recent releases.  Alexandre 
-<a href="http://www.winehq.com/?announce=0.9.9">noted</a> the following 
+<a href="http://www.winehq.com/announce/0.9.9">noted</a> the following 
 changes:</p>
 <quote who="Alexandre Julliard"><p>
 <ul>
@@ -93,7 +93,7 @@ changes:</p>
 </ul></p></quote>
 
 <p>Grab the binary off the 
-<a href="http://www.winehq.org/site/download">download page</a> or
+<a href="http://www.winehq.org/download">download page</a> or
 <a href="http://wiki.winehq.org/GitWine">git</a> it.
 </p>
 </section>
@@ -242,7 +242,7 @@ Valgrind.</li></ul></p></quote>
 <p>Wine's DirectDraw implementation is getting stale around the edges.  
 It's gotten us a long way, but Stefan D&#246;singer announced plans a
 while ago to begin transitioning it toward more modern interfaces
-(see WWN <a href="http://www.winehq.com/?issue=301#Accelerating%20DirectDraw">#301</a> for more details.)
+(see WWN <a href="http://www.winehq.com/wwn/301#Accelerating%20DirectDraw">#301</a> for more details.)
 This week he announced the initial version:</p>
 <quote who="Stefan Dosinger"><p>
 I've brought my DirectDraw over WineD3D patch in a form where I want to show 
@@ -322,8 +322,8 @@ HKCL and HKLM. Basically, you can launch any Linux app from wine by its full
 path and pass command line arguments. There's of course the problem of 
 converting Windows paths to Unix paths.
 </p><p>
-At <a href="http://www.winehq.com/site/fun_projects">
-http://www.winehq.com/site/fun_projects</a> my Kmail registry entries are 
+At <a href="http://www.winehq.com/fun_projects">
+http://www.winehq.com/fun_projects</a> my Kmail registry entries are 
 described. For examples how to use Open Office, you have to google.
 </p><p>
 I don't think that executing a Linux Plugin in a Win32 browser is possible, 
@@ -370,8 +370,8 @@ twice the cost in June than in May.
 So what I'd like to ask is that people that are interested
 in coming to Wineconf give us a bit of feedback:
 <ul>
-  <a href="http://www.winehq.org/site/wineconf/survey06">
-  http://www.winehq.org/site/wineconf/survey06</a></ul>
+  <a href="http://www.winehq.org/wineconf/survey06">
+  http://www.winehq.org/wineconf/survey06</a></ul>
 </p><p>
 Also, I'd like to request that follow ups to this shift over
 to the Wineconf mailing list:

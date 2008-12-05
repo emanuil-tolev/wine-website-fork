@@ -163,7 +163,7 @@ flag anyway.</quote></p>
 
 <p>So take it all with a grain of salt - most of the heavy lifting seems 
 done, but it might not work for you.  Refer to 
-<a href="http://www.winehq.org/index.php?issue=163#Making%20Wine%20Run%20With%20glibc%202.3">issue
+<a href="http://www.winehq.org/index.phpwwn/163#Making%20Wine%20Run%20With%20glibc%202.3">issue
 #163</a> for the appropriate workaround.  Or dig through the 
 <a href="http://www.winehq.org/hypermail/wine-devel/">wine-devel archives</a>.
 </p>
@@ -193,7 +193,7 @@ version of RedHat</quote></p>
 to mention that it should work just fine.  The C++ ABI incompatibilities
 were a known problem, but it shouldn't have any effect on Wine.  The
 last time gcc 2.96 was mentioned was back 
-<a href="http://www.winehq.org/index.php?issue=92#RH%207.1%20gcc%20fixes%20compiler%20bug">in issue #92</a>
+<a href="http://www.winehq.org/index.phpwwn/92#RH%207.1%20gcc%20fixes%20compiler%20bug">in issue #92</a>
 when James Juran suggested ditching the gcc 2.96-69 packages that shipped with RH 7.0 in favor of
 the gcc-2.96-81 packages that came with RH 7.1.  </p>
 

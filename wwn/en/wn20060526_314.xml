@@ -89,7 +89,7 @@ Its main goal is to <a href="http://www.skithe14ers.com/">be inspired</a>. It al
 <section 
 	title="News: Picasa, Wine 0.9.14, LJ Article"
 	subject="News"
-	archive="http://www.winehq.org/?announce=0.9.14"
+	archive="http://www.winehq.org/announce/0.9.14"
 	posts="3"
 >
 <topic>News</topic>
@@ -158,7 +158,7 @@ poster on the wall behind them.</p>
 <topic>Ports</topic>
 <p>Several months ago we reported that CodeWeavers was contracted to port
 some Google apps to Linux (see WWN
-<a href="http://www.winehq.com/?issue=306#News:%20Google%20&amp;%20Wine,%20v0.9.8">#306</a> for details.)
+<a href="http://www.winehq.com/wwn/306#News:%20Google%20&amp;%20Wine,%20v0.9.8">#306</a> for details.)
 That news came out the last week in February.  Here we are less than 3 months
 later and Picasa is running.  So let's take a look at some of the details.
 You might have missed some of this if you only read things like Slashdot or
@@ -230,8 +230,8 @@ Marcus Meissner, whose libgphoto support patch was a welcome
 surprise."</quote></p>
 
 <p>Speaking of Marcus' patch, we covered that in two recent issues:
-<a href="http://www.winehq.org/?issue=311#gPhoto%20&amp;%20TWAIN">#311</a>
-and <a href="http://www.winehq.org/?issue=313#GPhoto%20/%20TWAIN%20Integration">#313</a>.
+<a href="http://www.winehq.org/wwn/311#gPhoto%20&amp;%20TWAIN">#311</a>
+and <a href="http://www.winehq.org/wwn/313#GPhoto%20/%20TWAIN%20Integration">#313</a>.
 Apparently Google and CodeWeavers made an assumption up front that digital
 cameras all could be accessed like a typical USB storage device.  It seems
 that most can, and as a result, we have Alexandre's patches from a few weeks

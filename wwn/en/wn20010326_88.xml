@@ -131,12 +131,12 @@ to provide the *mechanism* to display tracing and other information,
 but the *policy* of when and how to switch tracing on or off must be
 moved to higher layers (like the debugger) instead of hardcoding a
 magic key sequence in user32.</p></quote> <p>(see 
-<a href="?issue=87">issue #87</a> for the details.)
+<a href="wwn/87">issue #87</a> for the details.)
 </p><p>
 Alexandre explained also that another patch would allow those 
 options to be changed (like <tt>--managed</tt>, <tt>--desktop</tt>...) 
 in the config file, and also on a per application basis 
-(see <a href="?issue=83">issue #83</a> 
+(see <a href="wwn/83">issue #83</a> 
 for more details).</p><p>
 
 Lots of developpers felt unconfortable with the trends taken by this

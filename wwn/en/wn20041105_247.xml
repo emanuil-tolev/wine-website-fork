@@ -208,7 +208,7 @@ actually work :(</p></quote>
 <topic>Architecture</topic>
 <p>A few weeks ago Mike Hearn analyzed a debugging trace
 (see WWN issue
-<a href="http://www.winehq.com/?issue=242#Analyzing%20Debug%20Traces">#242</a>).
+<a href="http://www.winehq.com/wwn/242#Analyzing%20Debug%20Traces">#242</a>).
 He came to the conclusion there was a problem resuming a suspended thread.
 After some work this week, he came up with a patch to fix it, but mentioned,
 <quote who="Mike Hearn">
@@ -357,7 +357,7 @@ Having less code or being easily upgradable?</li></ol></p></quote>
 
 <p>(On a side note, Michael's rsaenh.dll, covered last week in
 WWN issue 
-<a href="http://www.winehq.com/?issue=246#MS%20Enhanced%20Provider%20Library">#246</a>
+<a href="http://www.winehq.com/wwn/246#MS%20Enhanced%20Provider%20Library">#246</a>
 was committed to CVS shortly after he sent
 that email.)</p>
 
@@ -400,9 +400,9 @@ argument usually sounded something like, <i>"Windows
 is evil therefore Wine is evil"</i>.  Hearing
 that gets boring pretty quick and a few years
 ago we put together two articles about
-<a href="http://www.winehq.com/site/why">why Wine
+<a href="http://www.winehq.com/why">why Wine
 is important</a> and 
-<a href="http://www.winehq.com/site/myths">debunking
+<a href="http://www.winehq.com/myths">debunking
 Wine myths</a>.  Dan Kegel decided to put together
 something similar:</p>
 <quote who="Dan Kegel"><p>
