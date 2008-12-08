@@ -1258,14 +1258,16 @@ class html
         // get page name from template
         if (preg_match('/<!--TITLE:\[([\w\s\-\&\'\;\,\.\?]+)\]-->/', $orig, $arr))
         {
+            debug("global", "adding to title: {$arr[1]}");
             $in = preg_replace('/<!--TITLE:\[([\w\s\-\&\'\;\,\.\?]+)\]-->\n/', '', $in);
-            $this->page_title = $arr[1];
+            $this->page_title .= " - {$arr[1]}";
             unset($arr);
         }
 
         // override the page theme
         if (preg_match('/<!--THEME:\[([\w]+)\]-->/', $orig, $arr))
         {
+            debug("global", "changing theme: {$arr[1]}");
             $in = preg_replace('/<!--THEME:\[([\w]+)\]-->\n/', '', $in);
             $this->page_theme = $arr[1];
             unset($arr);
@@ -1274,6 +1276,7 @@ class html
         // override the page style
         if (preg_match('/<!--STYLE:\[([\w]+)\]-->/', $orig, $arr))
         {
+            debug("global", "changing page style: {$arr[1]}");
             $in = preg_replace('/<!--STYLE:\[([\w]+)\]-->\n/', '', $in);
             $this->page_style = $arr[1];
             unset($arr);
@@ -1282,6 +1285,7 @@ class html
         // get page blurb template
         if (preg_match('/<!--BLURB:\[([\w\s\-\&\'\;\,\.\?]+)\]-->/', $orig, $arr))
         {
+            debug("global", "setting page blurb: {$arr[1]}");
             $in = preg_replace('/<!--BLURB:\[([\w\s\-\&\'\;\,\.\?]+)\]-->\n/', '', $in);
             $this->page_blurb = $arr[1];
             unset($arr);
