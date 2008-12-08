@@ -154,6 +154,17 @@ BODY                {
                      display: inline;
                     }
 
+/* Language Select */
+#langsel            {
+                     clear: both;
+                     color: #ffffff;
+                     text-align: left;
+                     margin: 0 0 0 110px;
+                     font-size: xx-small;
+                    }
+#langsel A          { color: #ffffff; text-decoration: none; }
+#langsel A:hover    { color: red; text-decoration: underline; }
+
 /* footer */
 #footer             {
                      clear: both;

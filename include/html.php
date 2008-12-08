@@ -265,6 +265,7 @@ class html
         }
         
         // return language
+        debug("global", "lang: {$lang}");
         return $lang;
     }
 
@@ -1198,6 +1199,14 @@ class html
         $vars['request_delim'] = ($_GET ? ';' : '?');
         $vars['server_name'] =& $_SERVER['SERVER_NAME'];
         $vars['base_url'] =& $GLOBALS['config']->base_url;
+        
+        // language vars
+        if (defined("PAGE") and (PAGE == "home" or PAGE == "lang"))
+        {
+            $vars['langCode'] =& $this->lang;
+            $vars['langCur'] =& $GLOBALS['data']->languages[$this->lang]['name'];
+            $vars['langChange'] =& $GLOBALS['data']->languages[$this->lang]['change'];
+        }
         
         // add config vars
         while (list($key, $val) = each($GLOBALS['config']))

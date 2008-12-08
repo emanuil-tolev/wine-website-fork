@@ -43,6 +43,18 @@ class data
                                  'wwn'
                                 );
 
+        // available languages
+        $this->languages = array(
+                                 'en' => array(
+                                               'name'   => 'English',
+                                               'change' => 'Change Language'
+                                              ),
+                                 'es' => array(
+                                               'name'   => 'Español',
+                                               'change' => 'Cambiar la Lengua'
+                                              )
+                                );
+
         return;
     }
 }

@@ -1,9 +1,11 @@
 <!--TITLE:[WineHQ - Pick your Language]-->
 <!--BLURB:[WineHQ is a multi-lingual website]-->
 
-<h1 class="title">Pick Your Language</h1>
+<h1 class="title">{$langChange}</h1>
 
 <!--EXEC:[language]-->
+
+<p><b>Current Langage: </b> {$langCur}</p>
 
 <blockquote>
 

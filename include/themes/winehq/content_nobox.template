@@ -58,6 +58,10 @@
 
 </div>
 
+<div id="langsel">
+    {$langCur} (<a href="{$root}/lang">{$langChange}</a>)
+</div>
+
 <div id="footer">
     Hosted By
     <a href="http://www.codeweavers.com/"><img src="{$root}/images/cw_logo_sm.png" alt="CodeWeavers"
