@@ -55,24 +55,27 @@
 
   <div class="rbox">
   <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
-    <div class="content" style="padding: 10px; height: 75px; overflow: auto;">
+    <div class="content" style="padding: 5px 10px 5px 10px; height: 85px; overflow: auto;">
 
-        <h3 class="title">Latest Releases</h3>
-
-            <table class="releases" cellspacing="5">
+        <h3 class="title" style="margin: 0;">Latest Releases</h3>
+        <div align="center" style="margin: 0; padding: 0;">
+            <table style="margin: 7px 0 0 0; border-spacing: 0; border: 0;">
             <tr><td>Stable:</td>
-            <td><b><a href="{$root}/announce/{$config_stable_release}">Wine&nbsp;{$config_stable_release}</a></b>
-
-            <span class="small">
-              (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_stable_release}">shortlog</a>)
-            </span></td></tr>
+            <td style="padding-left: 15px;">
+                <b><a href="{$root}/announce/{$config_stable_release}">Wine&nbsp;{$config_stable_release}</a></b>
+                <span class="small">
+                  (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_stable_release}">shortlog</a>)
+                </span>
+            </td></tr>
             <tr><td>Development:</td>
-            <td><b><a href="{$root}/announce/{$config_master_release}">Wine&nbsp;{$config_master_release}</a></b>
-            <span class="small">
-              (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_master_release}">shortlog</a>)
-            </span></td></tr>
+            <td style="padding-left: 15px;">
+                <b><a href="{$root}/announce/{$config_master_release}">Wine&nbsp;{$config_master_release}</a></b>
+                <span class="small">
+                  (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_master_release}">shortlog</a>)
+                </span>
+            </td></tr>
             </table>
-
+        </div>
     </div>
   <b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
   </div>
