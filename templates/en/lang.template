@@ -7,15 +7,15 @@
 
 <p><b>Current Langage: </b> {$langCur}</p>
 
-<blockquote>
-
-    <p>
-        <a href="{$root}/lang/en"><img src="{$root}/images/lang/en.png" alt="English" /> English</a>
-    </p>
-
-    <p>
-        <a href="{$root}/lang/es"><img src="{$root}/images/lang/es.png" alt="Español" /> Español</a>
-    </p>
-
-</blockquote>
+<ul style="list-style: none; margin-left: 20px; padding: 0;">
+    
+    <li style="background-image: url('{$root}/images/lang/en.png'); background-repeat: no-repeat; padding: 0 0 10px 40px;">
+        <a href="{$root}/lang/en" title="English">English</a>
+    </li></a>
+    
+    <li style="background-image: url('{$root}/images/lang/es.png'); background-repeat: no-repeat; padding: 0 0 10px 40px;">
+        <a href="{$root}/lang/es" title="Español">Español</a>
+    </li>
+    
+</ul>
 
