@@ -75,6 +75,24 @@ else
     define("PAGE", 'home');
 }
 
+// homepage old URL redirects
+if (defined("PAGE") and PAGE == "home")
+{
+    // fix old WWN issue URLS
+    if (isset($_GET['issue']) and intval($_GET['issue']) > 0)
+    {
+        $html->redirect("{$config->base_url}wwn/{$_GET['issue']}");
+        exit();
+    }
+
+    // fix old interview URLS
+    if (isset($_GET['interview']) and intval($_GET['interview']) > 0)
+    {
+        $html->redirect("{$config->base_url}interview/{$_GET['interview']}");
+        exit();
+    }
+}
+
 // loag page content
 $html->page = $html->template("local", PAGE);
 
