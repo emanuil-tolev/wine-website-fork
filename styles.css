@@ -220,10 +220,10 @@ ul.winehq_menu li.devel            { background-image: url('images/main_devel.pn
 ul.winehq_menu li.devel:hover      { background-image: url('images/main_devel_s.png'); background-repeat: no-repeat }
 ul.winehq_menu li.donate           { background-image: url('images/main_donate.png'); background-repeat: no-repeat }
 ul.winehq_menu li.donate:hover     { background-image: url('images/main_donate_s.png'); background-repeat: no-repeat }
-ul.winehq_menu li a                { text-decoration: none; }
-ul.winehq_menu li a:hover .title   { text-decoration: underline; color: red; }
-ul.winehq_menu span.title          { font-size: 24px; color:  maroon; padding-left: 20px; margin-top: 10px; }
-ul.winehq_menu span.subtitle       { font-size: 14px; color: #4e4e4e; padding-left: 35px; }
+ul.winehq_menu li a                { text-decoration: none; color:  maroon; }
+ul.winehq_menu li a:hover          { text-decoration: underline; color: red; }
+ul.winehq_menu div.title           { font-size: 24px; padding: 0; margin: 5px 0 0 20px; }
+ul.winehq_menu div.subtitle        { font-size: 14px; color: #4e4e4e; padding: 0; margin: 0 0 0 35px; }
 
 /* stuff */
 img                 { border: 0; }

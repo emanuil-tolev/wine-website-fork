@@ -10,38 +10,33 @@
         <ul class="winehq_menu">
         
             <li class="info" onClick="document.location='{$root}/about/';">
-            <a href="{$root}/about/">
-            <span class="title">Information</span></a><br>
-            <span class="subtitle">Overview of Wine features.</span>
+            <div class="title"><a href="{$root}/about/">Information</a></div>
+            <div class="subtitle">Overview of Wine features.</div>
             </li>
 
             <li class="dl" onClick="document.location='{$root}/download/';">
-            <a href="{$root}/download/">
-            <span class="title">Download</span></a><br>
-            <span class="subtitle">Get Wine now!</span>
+            <div class="title"><a href="{$root}/download/">Download</a></div>
+            <div class="subtitle">Get Wine now!</div>
             </li>
 
             <li class="help" onClick="document.location='{$root}/help/';">
-            <a href="{$root}/help/">
-            <span class="title">Help!</span></a><br>
-            <span class="subtitle">Documentation, Support, and Wiki.</span>
+            <div class="title"><a href="{$root}/help/">Help!</a></div>
+            <div class="subtitle">Documentation, Support, and Wiki.</div>
             </li>
 
             <li class="devel" onClick="document.location='{$root}/devel/';">
-            <a href="{$root}/devel/">
-            <span class="title">Development</span></a><br>
-            <span class="subtitle">Wine source, Bug Tracking, etc.</span>
+            <div class="title"><a href="{$root}/devel/">Development</a></div>
+            <div class="subtitle">Wine source, Bug Tracking, etc.</div>
             </li>
 
             <li class="donate" onClick="document.donateForm.submit();">
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="donateForm" style="margin: 0; padding: 0;">
-            <a href="javascript:document.donateForm.submit();">
-            <span class="title">Donate</span></a>
+            <div class="title"><a href="javascript:document.donateForm.submit();">Donate</a></div>
             <input type="hidden" name="cmd" value="_xclick">
             <input type="hidden" name="business" value="donate@winehq.org">
             <input type="hidden" name="item_name" value="Wine donation">
             </form>
-            <span class="subtitle">Donate to Wine.</span>
+            <div class="subtitle">Donate to Wine.</div>
             </li>
 
         </ul>
