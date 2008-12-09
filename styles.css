@@ -192,15 +192,23 @@ BODY                {
 
 /* header text */
 H1.title            { color: #A50D0D; border-bottom: 1px solid #A50D0D; margin: 0px; }
+H1.title A          { color: #A50D0D; text-decoration: none; }
+H1.title A:hover    { color: red; }
 H3.title            { color: #A50D0D; border-bottom: 1px solid #A50D0D; margin: 0px; }
-P.newsdate          { color: #4e4e4e; font-size: 10pt; text-align: right; margin: 0 5px 10px 0;}
+H3.title A          { color: #A50D0D; text-decoration: none; }
+H3.title A:hover    { color: red; }
+P.newsdate          { color: #4e4e4e; font-size: 8pt; margin: 0 5px 10px 10px;}
 P.newstitle         { color: #4e4e4e; font-size: 12pt; font-weight: bold; border-bottom: 1px solid #C0C0C0; margin-bottom: 5px; }
 P.newstitle A       { color: #4e4e4e; text-decoration: none; }
 P.newstitle A:hover { color: #FF6666; text-decoration: none; }
 DIV.newsblock       { margin: 0 5px 25px 10px; padding: 0; }
 
 /* winehq main page menu */
-ul.winehq_menu                     { list-style-type: none; margin: 20px 0px 0px 0px; }
+ul.winehq_menu                     {
+                                    list-style-type: none;
+                                    margin: 20px 0px 0px 0px;
+                                    margin-left: expression("30px"); /* for IE */
+                                   }
 ul.winehq_menu li                  { height: 50px; margin: 0px 0px 25px 0px; padding: 5px 0 0 45px; cursor: pointer; }
 ul.winehq_menu li.info             { background-image: url('images/main_info.png'); background-repeat: no-repeat }
 ul.winehq_menu li.info:hover       { background-image: url('images/main_info_s.png'); background-repeat: no-repeat }
