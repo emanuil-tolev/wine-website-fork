@@ -92,53 +92,6 @@ BODY                {
                      font-size: 16px; color: white; text-decoration: none;
                     }
 
-/* sidebar navigation */
-#sidebar            {
-                     position: absolute;
-                     z-index: 6;
-                     top: 200px;
-                     left: 0px;
-                     margin: 0px;
-                     padding: 0px;
-                     width: 156px;
-                    }
-#sidebar UL         {
-                     list-style: none;
-                     width: 156px;
-                     padding: 0;
-                     margin: 0 0 10px 0;
-                    }
-#sidebar LI         {
-                     width: 156px;
-                     height: 20px;
-                     margin: 0;
-                     padding: 5px 0 0 0;
-                     background-image: url('images/side_menu_bg.png');
-                     background-repeat: repeat-y;
-                     font-size: 10px;
-                     color: white;
-                    }
-#sidebar LI P       { margin: 0; padding: 0 0 0 15px; }
-#sidebar LI.top     {
-                     height: 33px;
-                     margin: 0;
-                     padding: 0;
-                     background-image: url('images/side_menu_top.png');
-                     background-repeat: no-repeat;
-                     font-weight: bold;
-                     font-size: 10px;
-                    }
-#sidebar LI.top P   { margin: 0; padding: 10px 0 0 5px; }
-#sidebar LI.bot     {
-                     height: 16px;
-                     margin: 0;
-                     padding: 0;
-                     background-image: url('images/side_menu_bot.png');
-                     background-repeat: no-repeat;
-                    }
-#sidebar A          { font-size: 10px; color: white; text-decoration: none; }
-#sidebar A:hover    { font-size: 10px; color: #ffcfcf; text-decoration: underline; font-weight: bold; }
-
 /* main content well */
 #main_content       {
                      padding: 85px 10px 10px 100px;
