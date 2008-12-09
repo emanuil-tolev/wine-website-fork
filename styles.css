@@ -76,7 +76,7 @@ BODY                {
                      width: 112px;
                      height: 28px;
                      margin: 0px 2px 0px 2px;
-                     padding: 2px 0px 0px 0px;
+                     padding: 0px;
                      text-align: center;
                      background-image: url('images/tab_u.png');
                      background-repeat: no-repeat;
@@ -84,7 +84,13 @@ BODY                {
 #tabs LI.s          { background-image: url('images/tab_s.png'); }
 #tabs LI.s A        { font-weight: bold; }
 #tabs LI:hover      { background-image: url('images/tab_h.png'); }
-#tabs A             { font-size: 16px; color: white; text-decoration: none; }
+#tabs A             {
+                     display: block;
+                     width: 108px;
+                     height: 23px;
+                     padding-top: 3px;
+                     font-size: 16px; color: white; text-decoration: none;
+                    }
 
 /* sidebar navigation */
 #sidebar            {
