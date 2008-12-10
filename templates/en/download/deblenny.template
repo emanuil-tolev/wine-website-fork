@@ -28,12 +28,12 @@ Wine for Debian Lenny
 <div style="position:relative;left:20px"><i>apt-get update</i> <font color="gray">#to update package list</font></div>
 <div style="position:relative;left:20px"><i>apt-get install wine</i> <font color="gray">#to install latest wine version</font></div><p></p>
 <h2>Method 2: Download .deb and manually install it</h2>
-<div style="position:relative;left:20px">Chose a .deb package from <a href="http://www.lamalennyrepo.altervista.org/binary.php" target="_new">binary list</a> and save it in your home directory</div>
+<div style="position:relative;left:20px">Chose a .deb package from <a href="http://www.lamaresh.net/binary.php" target="_blank">binary list</a> and save it in your home directory</div>
 <div style="position:relative;left:20px">Open a terminal</div>
 <div style="position:relative;left:20px"><i>cd ~</i> <font color="gray">#to go to your home directory</font></div>
 <div style="position:relative;left:20px"><i>su</i> <font color="gray">#to log as root</font></div>
-<div style="position:relative;left:20px"><i>dpkg -i wine_1.1.x_i386.deb</i> <font color="gray">#change xxx with your chosen package, this will install wine</font></div>
+<div style="position:relative;left:20px"><i>dpkg -i wine_1.1.xxx.deb</i> <font color="gray">#change xxx with your chosen package, this will install wine</font></div>
 
-<br><br><p style="font-size:12px;text-align:left;font-style: italic;">Manteiner: <a href="http://www.lamaresh.net" target="_blank">homepage</a>, <a href="mailto:lamalennyrepo@altervista.org">email</a></p>
+<br><br><p style="font-size:12px;text-align:left;font-style: italic;">Maintainer: <a href="http://www.lamaresh.net" target="_blank">homepage</a>, <a href="mailto:repository@lamaresh.net">email</a></p>
 
 
