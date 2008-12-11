@@ -49,6 +49,10 @@ class data
                                                'name'   => 'English',
                                                'change' => 'Change Language'
                                               ),
+                                 'de' => array(
+                                               'name'   => 'Deutsch',
+                                               'change' => 'Ändern Sie Sprache'
+                                              ),
                                  'es' => array(
                                                'name'   => 'Español',
                                                'change' => 'Cambiar la Lengua'
