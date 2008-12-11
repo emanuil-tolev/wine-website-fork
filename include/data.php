@@ -51,7 +51,7 @@ class data
                                               ),
                                  'de' => array(
                                                'name'   => 'Deutsch',
-                                               'change' => 'Ändern Sie Sprache'
+                                               'change' => 'Sprache ändern'
                                               ),
                                  'es' => array(
                                                'name'   => 'Español',
