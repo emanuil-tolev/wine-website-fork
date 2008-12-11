@@ -246,6 +246,7 @@ class html
         if (isset($_COOKIE['lang']) and in_array($_COOKIE['lang'], $GLOBALS['config']->languages))
         {
             // load language from URL or cookie
+            debug("global", "lang from cookie: {$_COOKIE['lang']}");
             $lang = $_COOKIE['lang'];
         }
         else if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]))
@@ -259,7 +260,10 @@ class html
                     $avail[0] = substr($avail[0], 0, 2);
                 // check to make sure lang is defined in our config
                 if (in_array($avail[0], $GLOBALS['config']->languages))
+                {
+                    debug("global", "lang from browser: {$avail[0]}");
                     $lang = $avail[0];
+                }
             }
             unset($avail);
         }
