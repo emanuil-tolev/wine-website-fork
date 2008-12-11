@@ -12,9 +12,13 @@
     <li style="background-image: url('{$root}/images/lang/en.png'); background-repeat: no-repeat; padding: 0 0 10px 40px;">
         <a href="{$root}/lang/en" title="English">English</a>
     </li></a>
-    
+
+    <li style="background-image: url('{$root}/images/lang/de.png'); background-repeat: no-repeat; padding: 0 0 10px 40px;">
+        <a href="{$root}/lang/de" title="Deutsch">Deutsch</a> <small>(German)</small>
+    </li></a>
+
     <li style="background-image: url('{$root}/images/lang/es.png'); background-repeat: no-repeat; padding: 0 0 10px 40px;">
-        <a href="{$root}/lang/es" title="Español">Español</a>
+        <a href="{$root}/lang/es" title="Español">Español</a> <small>(Spanish)</small>
     </li>
     
 </ul>
