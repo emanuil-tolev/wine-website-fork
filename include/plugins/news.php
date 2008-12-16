@@ -108,7 +108,7 @@ switch (true)
     // default view
     default:
         // load rss link
-        $html->rss_link = "{$config->base_url}/news_rss/";
+        $html->rss_link = "{$config->base_url}/news/rss/";
 
         // max count for posts per page
         $amax = (PAGE == "home" ? 10 : 25);
