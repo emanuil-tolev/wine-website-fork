@@ -1260,10 +1260,10 @@ class html
             $in = preg_replace('/\{\$[a-z0-9_\-]+\}/', '', $in);        
         
         // get page name from template
-        if (preg_match('/<!--TITLE:\[([\w\s\-\&\'\;\,\.\?]+)\]-->/', $orig, $arr))
+        if (preg_match('/<!--TITLE:\[(.+)\]-->/', $orig, $arr))
         {
             debug("global", "adding to title: {$arr[1]}");
-            $in = preg_replace('/<!--TITLE:\[([\w\s\-\&\'\;\,\.\?]+)\]-->\n/', '', $in);
+            $in = preg_replace('/<!--TITLE:\[(.+)\]-->\n/', '', $in);
             $this->page_title .= " - {$arr[1]}";
             unset($arr);
         }
@@ -1287,10 +1287,10 @@ class html
         }
 
         // get page blurb template
-        if (preg_match('/<!--BLURB:\[([\w\s\-\&\'\;\,\.\?]+)\]-->/', $orig, $arr))
+        if (preg_match('/<!--BLURB:\[(.+)\]-->/', $orig, $arr))
         {
             debug("global", "setting page blurb: {$arr[1]}");
-            $in = preg_replace('/<!--BLURB:\[([\w\s\-\&\'\;\,\.\?]+)\]-->\n/', '', $in);
+            $in = preg_replace('/<!--BLURB:\[(.+)\]-->\n/', '', $in);
             $this->page_blurb = $arr[1];
             unset($arr);
         }
