@@ -20,6 +20,10 @@
     <li style="background-image: url('{$root}/images/lang/es.png'); background-repeat: no-repeat; padding: 0 0 10px 40px;">
         <a href="{$root}/lang/es" title="Español">Español</a> <small>(Spanish)</small>
     </li>
-    
+
+    <li style="background-image: url('{$root}/images/lang/fr.png'); background-repeat: no-repeat; padding: 0 0 10px 40px;">
+        <a href="{$root}/lang/fr" title="Español">Français</a> <small>(French)</small>
+    </li>
+
 </ul>
 
