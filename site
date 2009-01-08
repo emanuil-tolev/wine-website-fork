@@ -91,6 +91,13 @@ if (defined("PAGE") and PAGE == "home")
         $html->redirect("{$config->base_url}interview/{$_GET['interview']}");
         exit();
     }
+
+    // fix old announce URLS
+    if (isset($_GET['announce']) and (intval($_GET['announce']) > 0 or $_GET['announce'] == 'latest'))
+    {
+        $html->redirect("{$config->base_url}announce/{$_GET['announce']}");
+        exit();
+    }
 }
 
 // loag page content
