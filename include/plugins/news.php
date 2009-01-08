@@ -13,7 +13,7 @@ global $html, $config;
 switch (true)
 {
     // single issue view
-    case (defined('PAGE_PARAMS') and preg_match("/[0-9]+/", PAGE_PARAMS)):
+    case (defined('PAGE_PARAMS') and preg_match("/[0-9]{10}/", PAGE_PARAMS)):
         // get data from XML file
         $item = PAGE_PARAMS . '.xml';
         $vars = array();
