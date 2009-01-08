@@ -1,17 +1,16 @@
 <!--TITLE:[Wine for Debian based distributions]-->
 <!--BLURB:[Wine for Debian based distributions]-->
 
-<h1 class="title"><a href="http://www.ubuntu.com/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Linux" border="0"></a>
-Wine for Ubuntu, Debian Etch, and Debian-based distributions
-<a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a></h1>
+<h1 class="title"><a href="http://www.ubuntu.com/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Logo" border="0"></a>
+Wine for Ubuntu and Ubuntu derivatives
+<a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Logo" border="0"></a></h1>
 
 <p>Ubuntu and other Debian-based distributions utilize a special tool for 
 managing packages known as APT.  APT is able to automagically install all of 
 the needed dependencies for a software package, as well as keep the package up 
-to date, by scanning what are known as APT repositories.  Debian-based 
-distributions have their own repositories of software that include Wine, 
-however we keep our own repository of the latest available beta packages here 
-for download.</p>
+to date, by scanning what are known as APT repositories.  Ubuntu has its own
+repository of software that includes Wine, however we keep our own repository 
+of the latest available beta packages here for download.</p>
 
 <h2>Warning: These are beta packages</h2>
 
@@ -37,8 +36,6 @@ version you are running.</p>
 <i>deb http://wine.budgetdedicated.com/apt intrepid main #WineHQ - Ubuntu 8.10 "Intrepid Ibex"</i></p>
 <p><b>For Ubuntu Hardy (8.04):</b><br>
 <i>deb http://wine.budgetdedicated.com/apt hardy main #WineHQ - Ubuntu 8.04 "Hardy Heron"</i></p>
-<p><b>For Debian Etch (4.0):</b><br>
-<i>deb http://wine.budgetdedicated.com/apt etch main #WineHQ - Debian 4.0 "Etch"</i></p>
 
 <h2>Trusting the WineHQ APT Repository and installing Wine:</h2>
 
@@ -48,40 +45,16 @@ to your system's list of trusted keys.</p>
 <p><b><a href="http://wine.budgetdedicated.com/apt/Scott%20Ritchie.gpg">Download
 and save Scott Ritchie's key</a></b> to your desktop.  Then open the 
 <b>Authentication</b> tab, click <b>import key file</b>, and select the key 
-file you just saved (Scott Ritchie.gpg).  It is safe to delete this file after 
-doing this step.</p>
+file you just saved (<i>Scott Ritchie.gpg</i>).  It is safe to delete this file 
+after doing this step.</p>
 
 <img src="{$root}/images/distro/ubuntu-softwaresources2.png" width="531" height="509" alt="System->Administration->Software Sources->Authentication" border="0">
 
-<p>Click close to finish, and then <b>reload the package information</b>. If 
-you have Wine installed, the system's update manager will now inform you of the 
-latest Wine beta release and prompt you to upgrade. If you haven't installed 
-Wine yet, go to Applications->Add/Remove and search for Wine.</p>
-
-<h2>Command Line Instructions for Installing Wine:</h2>
-
-<p>An alternate method for adding the Wine repositories and installing Wine is through the command line, as follows:</p>
-
-<p>First, open a terminal window (Applications->Accessories->Terminal).  On 
-Debian, you will need to open a root terminal.  Then add the repository's key 
-to your system's list of trusted APT keys by copy and pasting the following into your terminal:</p>
-
-<p><i>wget -q http://wine.budgetdedicated.com/apt/387EE263.gpg -O- | sudo apt-key add -</i></p>
-
-<p>Next, add the repository to your system's list of APT sources:</p>
-
-<p><b>For Ubuntu Intrepid (8.10):</b><br>
-<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/intrepid.list -O /etc/apt/sources.list.d/winehq.list</i></p>
-<p><b>For Ubuntu Hardy (8.04):</b><br>
-<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/hardy.list -O /etc/apt/sources.list.d/winehq.list</i></p>
-<p><b>For Debian Etch (4.0):</b><br>
-<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/etch.list -O /etc/apt/sources.list.d/winehq.list</i></p>
-
-<p>Then update APT's package information by running '<b>sudo apt-get update</b>'.
-
-<p>If you are using Ubuntu, you can now install Wine by <a href="apt://wine">
-clicking this link</a>. Alternatively, you can install by going to 
-Applications->Add/Remove and searching for Wine.</p>
+<p>Click close to finish, and then <b>reload the package information</b> when 
+prompted. If you have Wine installed, the system's update manager will now 
+inform you of the latest Wine beta release and prompt you to upgrade. If you 
+haven't installed Wine yet, go to Applications->Add/Remove and search for 
+Wine or just <a href="apt://wine">click this link</a>.</p>
 
 <h2>Upgrading to a new version of Ubuntu</h2>
 
@@ -97,6 +70,29 @@ the packages are available at
 <a href="http://wine.budgetdedicated.com/archive/index.html">the WineHQ .deb packages archive</a>.</p>
 
 <p>You can install downloaded packages by double-clicking on them.</p>
+
+<h2>Alternative command Line Instructions for Installing Wine:</h2>
+
+<p>It is also possible to add the Wine repositories and install via the command 
+line, as follows. These may be useful on Kubuntu, Xubuntu, and other Ubuntu 
+derivatives.</p>
+
+<p>First, open a terminal window (Applications->Accessories->Terminal). Then 
+add the repository's key to your system's list of trusted APT keys by copy 
+and pasting the following into your terminal:</p>
+
+<p><i>wget -q http://wine.budgetdedicated.com/apt/387EE263.gpg -O- | sudo apt-key add -</i></p>
+
+<p>Next, add the repository to your system's list of APT sources:</p>
+
+<p><b>For Ubuntu Intrepid (8.10):</b><br>
+<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/intrepid.list -O /etc/apt/sources.list.d/winehq.list</i></p>
+<p><b>For Ubuntu Hardy (8.04):</b><br>
+<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/hardy.list -O /etc/apt/sources.list.d/winehq.list</i></p>
+
+<p>Then update APT's package information by running '<b>sudo apt-get 
+update</b>'. You can now install Wine normally or by typing '<b>sudo apt-get 
+install wine</b>' into the terminal.</p>
 
 <br>
 <p><i>Very fast and reliable webhosting for the APT repository is graciously provided by <a href="http://www.budgetdedicated.com/">budgetdedicated.com</a>.</i></p>
