@@ -98,6 +98,13 @@ if (defined("PAGE") and PAGE == "home")
         $html->redirect("{$config->base_url}announce/{$_GET['announce']}");
         exit();
     }
+
+    // fix old news URLS
+    if (isset($_GET['news']) and (intval($_GET['news']) > 0))
+    {
+        $html->redirect("{$config->base_url}news/{$_GET['news']}");
+        exit();
+    }
 }
 
 // loag page content
