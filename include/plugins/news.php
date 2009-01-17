@@ -94,8 +94,8 @@ switch (true)
         $rss = array(
                         'rss_date'  => date("r", $top_date),
                         'rss_title' => $config->site_name.' News',
-                        'rss_link'  => "{$config->base_url}/news/rss",
-                        'rss_img'   => "{$config->base_url}/images/classic_top_logo.png",
+                        'rss_link'  => "{$config->base_url}news/rss",
+                        'rss_img'   => "{$config->base_url}images/classic_top_logo.png",
                         'rss_desc'  => 'News and information about Wine',
                         'rss_crt'   => '(C) '.$config->site_name.' '.date("Y", time()),
                         'rss_rows' => $rss_rows
@@ -108,7 +108,7 @@ switch (true)
     // default view
     default:
         // load rss link
-        $html->rss_link = "{$config->base_url}/news/rss/";
+        $html->rss_link = "{$config->base_url}news/rss/";
 
         // max count for posts per page
         $amax = (PAGE == "home" ? 10 : 25);
