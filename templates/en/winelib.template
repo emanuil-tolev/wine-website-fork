@@ -10,7 +10,7 @@
   Theoretically, any Win32 app should be compilable out of the box under Wine.
   This, of course, is not the case. We have incompatible headers, and a bunch
   of other problems described in 
-  <a href="http://www.winehq.org/site/docs/winelib-guide/">Winelib User's Guide</a>.
+  <a href="http://www.winehq.org/site/docs/winelib-guide/index">Winelib User's Guide</a>.
   A good way to fix these is to try to compile applications for which we
   have the source under Winelib. 
 
@@ -19,7 +19,7 @@
   <ul>
     <li>Document our experience on porting these applications to Winelib
     <li>Improve Winelib based on the above such that the porting process becomes very simple
-    <li>Update the <a href="http://www.winehq.org/site/docs/winelib-guide/">Winelib User's Guide</a>
+    <li>Update the <a href="http://www.winehq.org/site/docs/winelib-guide/index">Winelib User's Guide</a>
         to the latest porting process
     <li>Fixing header &amp; library problems in the process.
   </ul>
