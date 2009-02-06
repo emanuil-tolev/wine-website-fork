@@ -206,7 +206,7 @@ Ge van Geldorp writes in with links to the tests Paul mentions:
 Actually, that was not the first time. On 20 Jan an XP machine passed:
  <a href="http://test.winehq.org/data/e9d8c9f572998054b1f9c386ea81a3570c65f2d2/#group_">http://test.winehq.org/data/e9d8c9f572998054b1f9c386ea81a3570c65f2d2/#group_</a>
 XP<br />
-And on 27 Jan a 2009 machine:
+And on 27 Jan a 2003 machine:
  <a href="http://test.winehq.org/data/8f829034f3fe4da3e7adce2f4685e10ba2e2fe82/#group_2003">http://test.winehq.org/data/8f829034f3fe4da3e7adce2f4685e10ba2e2fe82/#group_2003</a>
 </p>
 </quote>
@@ -247,7 +247,7 @@ Francois Gouget has been doing some work with some static analysis of the code b
 <p>
 I have attached a script that identifies functions that should be made
 static (among other things). There are approximately 450 of them, there
-should be pretty efw false positives, and I will look into them
+should be pretty few false positives, and I will look into them
 eventually. But if someone beats me to it I sure won't complain *g*.
 </p>
 <p>
