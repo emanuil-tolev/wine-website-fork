@@ -3,7 +3,7 @@
 
 <h1 class="title">Wine Downloads</h1>
 
-<h2><a name="crossover"></a>Supported Wine</h2>
+<h2 style="margin-bottom: 10px;"><a name="crossover"></a>Supported Wine</h2>
 
 <table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
 
@@ -34,13 +34,19 @@
 requested in exchange for hosting the Wine web site.</p>
   
 
-<h2><a name="binary"></a>Wine Binary Downloads</h2>
+<h2 style="margin-bottom: 5px;"><a name="binary"></a>Wine Binary Downloads</h2>
 
-<p><table><tr><td>Latest stable release:</td><td>Wine&nbsp;{$config_stable_release}</td>
-<td rowspan="2"><b>See the 
-<a href="http://wiki.winehq.org/HowTo">installation and configuration how-to</a> 
-for post-installation instructions.</b></td></tr>
-<tr><td>Latest development release:</td><td>Wine&nbsp;{$config_master_release}</td></tr></table></p>
+<table style="margin: 0 0 15px 0;" width="100%">
+<tr>
+  <td width="200">Latest stable release:</td><td>Wine&nbsp;{$config_stable_release}</td>
+  <td rowspan="2" valign="top" style="padding-left: 20px; text-align: center;"><b>See the 
+  <a href="http://wiki.winehq.org/HowTo">installation and configuration how-to</a> 
+  for post-installation instructions.</b></td>
+</tr>
+<tr>
+  <td>Latest development release:</td><td>Wine&nbsp;{$config_master_release}</td>
+</tr>
+</table>
 
 <table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
 
@@ -133,7 +139,7 @@ for post-installation instructions.</b></td></tr>
 </table>
 
 
-<h2><a name="binary"></a>3rd Party Tools</h2>
+<h2 style="margin-bottom: 10px;"><a name="binary"></a>3rd Party Tools</h2>
 
 <p>Sometimes a customization of Wine can cause an application to work, but this change cannot be incorporated into Wine for some reason.  To help overcome current deficiencies in Wine, various third party applications for end users have been made over the years.  These applications are entirely unsupported by the Wine developers, however you may find them useful.  For more information, see <a href="http://wiki.winehq.org/ThirdPartyApplications">our wiki page</a> on third party applications.</p>
 
