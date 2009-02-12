@@ -36,15 +36,10 @@ requested in exchange for hosting the Wine web site.</p>
 
 <h2><a name="binary"></a>Wine Binary Downloads</h2>
 
-<p>Official WineHQ builds for Linux Red Hat, Mandriva, SUSE, Slackware and FreeBSD,
-hosted by <a href="http://sourceforge.net/project/showfiles.php?group_id=6241">SourceForge.net</a>.
-Updated with each release.</p>
-
-<p><b>See the 
+<p><table><tr><td>Latest stable release:</td><td>Wine&nbsp;{$config_stable_release}</td>
+<td rowspan="2"><b>See the 
 <a href="http://wiki.winehq.org/HowTo">installation and configuration how-to</a> 
-for post-installation instructions.</b></p>
-
-<p><table><tr><td>Latest stable release:</td><td>Wine&nbsp;{$config_stable_release}</td></tr>
+for post-installation instructions.</b></td></tr>
 <tr><td>Latest development release:</td><td>Wine&nbsp;{$config_master_release}</td></tr></table></p>
 
 <table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
@@ -71,15 +66,6 @@ for post-installation instructions.</b></p>
     <td> <b><a href="{$root}/download/deblenny">Debian</a></b> 
      binary .debs for Debian Lenny (5.0)</td>
     <td><a href="mailto:repository@lamaresh.net">Maurilio Genovese</a></td>
-  </tr>
-
-  <tr bgcolor="#ffffff">
-    <td align="center"><a href="http://www.freshports.org/emulators/wine/">
-      <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
-    </td>
-    <td> <b><a href="http://www.freshports.org/emulators/wine/">FreeBSD</a></b> 
-         source for FreeBSD 5.3 or later</td>
-    <td><a href="mailto:gerald@pfeifer.com">Gerald Pfeifer</a></td>
   </tr>
 
   <tr bgcolor="#ffffff">
@@ -124,6 +110,15 @@ for post-installation instructions.</b></p>
     <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">Slackware</a></b>
          binary .tgz for Slackware 10.2</td>
     <td><a href="mailto:sadam@clemson.edu">Adam Schreiber</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://www.freshports.org/emulators/wine/">
+      <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
+    </td>
+    <td> <b><a href="http://www.freshports.org/emulators/wine/">FreeBSD</a></b> 
+         source for FreeBSD 5.3 or later</td>
+    <td><a href="mailto:gerald@pfeifer.com">Gerald Pfeifer</a></td>
   </tr>
 
   <tr bgcolor="#ffffff">
