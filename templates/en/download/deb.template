@@ -43,10 +43,10 @@ version you are running.</p>
 to your system's list of trusted keys.</p>
 
 <p><b><a href="http://wine.budgetdedicated.com/apt/Scott%20Ritchie.gpg">Download
-and save Scott Ritchie's key</a></b> to your desktop.  Then open the 
-<b>Authentication</b> tab, click <b>import key file</b>, and select the key 
-file you just saved (<i>Scott Ritchie.gpg</i>).  It is safe to delete this file 
-after doing this step.</p>
+and save Scott Ritchie's key</a></b> (right click -> save as) to your desktop. 
+Then open the <b>Authentication</b> tab, click <b>import key file</b>, and 
+select the key file you just saved (<i>Scott Ritchie.gpg</i>).  It is safe to 
+delete this file after doing this step.</p>
 
 <img src="{$root}/images/distro/ubuntu-softwaresources2.png" width="531" height="509" alt="System->Administration->Software Sources->Authentication" border="0">
 
