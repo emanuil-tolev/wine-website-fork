@@ -37,15 +37,12 @@ erbeten hat, dass sie die Wine-Website hosten.</p>
 
 <h2><a name="binary"></a>Wine Bin&auml;r-Downloads</h2>
 
-<p>Offizielle WineHQ Builds f&uuml;r Linux Red Hat, Mandriva, SUSE, Slackware und FreeBSD,
-auf <a href="http://sourceforge.net/project/showfiles.php?group_id=6241">SourceForge.net</a> gehostet.
-F&uuml;r jede neue Version aktualisiert.</p>
-
-<p><b>Lies das 
+<p><table><tr><td>Aktuellste stabile Version:</td><td>Wine&nbsp;{$config_stable_release}</td>
+<td rowspan="2"><b>Lies das
 <a href="http://wiki.winehq.org/HowTo">Installations- und Konfigurations-How-to (en)</a> 
-f&uuml;r Informationen zu den Schritten, die nach der Installation auszuf&uuml;hren sind.</b></p>
+f&uuml;r Informationen zu den Schritten, die nach der Installation auszuf&uuml;hren sind.</b></td></tr>
 
-<p><table><tr><td>Aktuellste stabile Version:</td><td>Wine&nbsp;{$config_stable_release}</td></tr>
+
 <tr><td>Aktuellste Entwicklerversion:</td><td>Wine&nbsp;{$config_master_release}</td></tr></table></p>
 
 <table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
@@ -81,15 +78,6 @@ f&uuml;r Informationen zu den Schritten, die nach der Installation auszuf&uuml;h
     <td> <b><a href="{$root}/download/deblenny">Debian</a></b> 
      bin&auml;r .debs f&uuml;r Debian Lenny (5.0)</td>
     <td><a href="mailto:repository@lamaresh.net">Maurilio Genovese</a></td>
-  </tr>
-
-  <tr bgcolor="#ffffff">
-    <td align="center"><a href="http://www.freshports.org/emulators/wine/">
-      <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
-    </td>
-    <td> <b><a href="http://www.freshports.org/emulators/wine/">FreeBSD</a></b> 
-         Quellcode f&uuml;r FreeBSD 5.3 und sp&auml;tere Versionen</td>
-    <td><a href="mailto:gerald@pfeifer.com">Gerald Pfeifer</a></td>
   </tr>
 
   <tr bgcolor="#ffffff">
@@ -137,6 +125,15 @@ f&uuml;r Informationen zu den Schritten, die nach der Installation auszuf&uuml;h
     <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">Slackware</a></b>
          bin&auml;r .tgz f&uuml;r Slackware 10.2</td>
     <td><a href="mailto:sadam@clemson.edu">Adam Schreiber</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://www.freshports.org/emulators/wine/">
+      <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
+    </td>
+    <td> <b><a href="http://www.freshports.org/emulators/wine/">FreeBSD</a></b> 
+         Quellcode f&uuml;r FreeBSD 5.3 und sp&auml;tere Versionen</td>
+    <td><a href="mailto:gerald@pfeifer.com">Gerald Pfeifer</a></td>
   </tr>
 
   <tr bgcolor="#ffffff">
