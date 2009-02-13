@@ -3,7 +3,7 @@
 
 <h1 class="title">Wine Downloads</h1>
 
-<h2><a name="crossover"></a>Wine mit Support</h2>
+<h2 style="margin-bottom: 10px;"><a name="crossover"></a>Wine mit Support</h2>
 
 <table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
 
@@ -35,15 +35,19 @@
 erbeten hat, dass sie die Wine-Website hosten.</p>
   
 
-<h2><a name="binary"></a>Wine Bin&auml;r-Downloads</h2>
+<h2 style="margin-bottom: 5px;"><a name="binary"></a>Wine Bin&auml;r-Downloads</h2>
 
-<p><table><tr><td>Aktuellste stabile Version:</td><td>Wine&nbsp;{$config_stable_release}</td>
-<td rowspan="2"><b>Lies das
-<a href="http://wiki.winehq.org/HowTo">Installations- und Konfigurations-How-to (en)</a> 
-f&uuml;r Informationen zu den Schritten, die nach der Installation auszuf&uuml;hren sind.</b></td></tr>
-
-
-<tr><td>Aktuellste Entwicklerversion:</td><td>Wine&nbsp;{$config_master_release}</td></tr></table></p>
+<table style="margin: 0 0 15px 0;" width="100%">
+<tr>
+  <td width="200">Aktuellste stabile Version:</td><td>Wine&nbsp;{$config_stable_release}</td>
+  <td rowspan="2" valign="top" style="padding-left: 20px; text-align: center;"><b>Lies das
+  <a href="http://wiki.winehq.org/HowTo">Installations- und Konfigurations-How-to (en)</a> 
+  f&uuml;r Informationen zu den Schritten, die nach der Installation auszuf&uuml;hren sind.</b></td>
+</tr>
+<tr>
+  <td>Aktuellste Entwicklerversion:</td><td>Wine&nbsp;{$config_master_release}</td>
+</tr>
+</table>
 
 <table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
 
@@ -166,7 +170,7 @@ f&uuml;r Informationen zu den Schritten, die nach der Installation auszuf&uuml;h
 </table>
 
 
-<h2><a name="binary"></a>Tools von Drittanbietern</h2>
+<h2 style="margin-bottom: 10px;"><a name="binary"></a>Tools von Drittanbietern</h2>
 
 <p>Manchmal kann eine &Auml;nderung an Wine daf&uuml;r sorgen, dass eine bestimmte Anwendung besser l&auml;uft, aber aus irgendeinem
   Grund kann die &Auml;nderung nicht in Wine &uuml;bernommen werden. Um bestimmte Defizite von Wine auszubessern, sind diverse
