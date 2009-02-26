@@ -26,6 +26,7 @@ Wine for Debian Etch, Lenny and Sid
 <div style="position:relative;left:20px">Add this line for Lenny: <i>deb http://www.lamaresh.net/apt lenny main</i></div>
 <div style="position:relative;left:20px">Add this line for Sid: <i>deb http://www.lamaresh.net/apt sid main</i></div>
 <div style="position:relative;left:20px">Save and close sources.list</div>
+<div style="position:relative;left:20px"><i>wget -O - http://www.lamaresh.net/apt/key.gpg | apt-key add</i> <font color="gray">#to add gpg key</font></div>
 <div style="position:relative;left:20px"><i>apt-get update</i> <font color="gray">#to update package list</font></div>
 <div style="position:relative;left:20px"><i>apt-get install wine</i> <font color="gray">#to install latest wine version</font></div><p></p>
 <h2>Method 2: Download .deb and manually install it</h2>
