@@ -2,7 +2,7 @@
 <!--BLURB:[Wine f&uuml;r Debian Lenny]-->
 
 <h1 class="title"><a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
-Wine f&uuml;r Debian Lenny
+Wine f&uuml;r Debian Etch, Lenny und Sid
 <a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a></h1>
 
 <p>Ubuntu und andere Debian-basierte Distributionen nutzen ein spezielles Tool, bekannt
@@ -32,8 +32,9 @@ wahrscheinlich nicht benutzen.</i></p>
 <div style="position:relative;left:20px">&Ouml;ffne ein Terminal</div>
 <div style="position:relative;left:20px"><i>su</i> <font color="gray">#als root einloggen</font></div>
 <div style="position:relative;left:20px"><i>gedit /etc/apt/sources.list</i> <font color="gray">#um die Repositorydatei mit einem Texteditor zu &ouml;ffnen (Du kannst gedit benutzen oder einen anderen)</font></div>
-<div style="position:relative;left:20px">F&uuml;ge diese Zeile hinzu: <i>deb http://www.lamaresh.net/apt lenny main</i></div>
-<div style="position:relative;left:20px">F&uuml;ge diese Zeile hinzu, wenn du auch das Sourcesrepository willst: <i>deb-src http://www.lamaresh.net/apt lenny main</i></div>
+<div style="position:relative;left:20px">F&uuml;ge diese Zeile f&uuml;r Etch hinzu:  <i>deb http://www.lamaresh.net/apt etch main</i></div>
+<div style="position:relative;left:20px">F&uuml;ge diese Zeile f&uuml;r Lenny hinzu: <i>deb http://www.lamaresh.net/apt lenny main</i></div>
+<div style="position:relative;left:20px">F&uuml;ge diese Zeile f&uuml;r Sid hinzu: <i>deb http://www.lamaresh.net/apt sid main</i></div>
 <div style="position:relative;left:20px">Speichere und schlie&szlig;e sources.list</div>
 <div style="position:relative;left:20px"><i>apt-get update</i> <font color="gray">#um die Paketliste zu aktualisieren</font></div>
 <div style="position:relative;left:20px"><i>apt-get install wine</i> <font color="gray">#um die aktuelle Wineversion zu installieren</font></div><p></p>
@@ -44,6 +45,10 @@ wahrscheinlich nicht benutzen.</i></p>
 <div style="position:relative;left:20px"><i>su</i> <font color="gray">#als root einloggen</font></div>
 <div style="position:relative;left:20px"><i>dpkg -i wine_1.1.xxx.deb</i> <font color="gray">#&Auml;ndere xxx zu deinem gew&auml;hlten Paket, dadurch wird Wine installiert</font></div>
 
-<br><br><p style="font-size:12px;text-align:left;font-style: italic;">Betreuer: <a href="http://www.lamaresh.net" target="_blank">Homepage</a>, <a href="mailto:repository@lamaresh.net">eMail</a></p>
 
+<br><br><p style="font-size:12px;text-align:left;font-style: italic;">
+Homepage: <a href="http://www.lamaresh.net" target="_blank">http://www.lamaresh.net/</a><br>
+Paketquellenbetreuer:  <a href="mailto:repository@lamaresh.net">Maurilio Genovese</a><br>
+Paketbauer:  <a href="mailto:ben.klein@lamaresh.net">Ben Klein</a>
+</p>
 
