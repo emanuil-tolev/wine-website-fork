@@ -2,7 +2,7 @@
 <!--BLURB:[Wine f&uuml;r Debian Lenny]-->
 
 <h1 class="title"><a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
-Wine f&uuml;r Debian Etch, Lenny und Sid
+Wine f&uuml;r Debian Lenny, Squeeze und Sid
 <a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a></h1>
 
 <p>Ubuntu und andere Debian-basierte Distributionen nutzen ein spezielles Tool, bekannt
@@ -32,11 +32,11 @@ wahrscheinlich nicht benutzen.</i></p>
 <div style="position:relative;left:20px">&Ouml;ffne ein Terminal</div>
 <div style="position:relative;left:20px"><i>su</i> <font color="gray">#als root einloggen</font></div>
 <div style="position:relative;left:20px"><i>gedit /etc/apt/sources.list</i> <font color="gray">#um die Repositorydatei mit einem Texteditor zu &ouml;ffnen (Du kannst gedit benutzen oder einen anderen)</font></div>
-<div style="position:relative;left:20px">F&uuml;ge diese Zeile f&uuml;r Etch hinzu:  <i>deb http://www.lamaresh.net/apt etch main</i></div>
 <div style="position:relative;left:20px">F&uuml;ge diese Zeile f&uuml;r Lenny hinzu: <i>deb http://www.lamaresh.net/apt lenny main</i></div>
+<div style="position:relative;left:20px">F&uuml;ge diese Zeile f&uuml;r Squeeze hinzu: <i>deb http://www.lamaresh.net/apt squeeze main</i></div>
 <div style="position:relative;left:20px">F&uuml;ge diese Zeile f&uuml;r Sid hinzu: <i>deb http://www.lamaresh.net/apt sid main</i></div>
 <div style="position:relative;left:20px">Speichere und schlie&szlig;e sources.list</div>
-<div style="position:relative;left:20px"><i>wget -O - http://www.lamaresh.net/apt/key.gpg | apt-key add</i> <font color="gray">#um den GPG-Key hinzuzuf&uuml;gen</font></div>
+<div style="position:relative;left:20px"><i>wget -O - http://www.lamaresh.net/apt/key.gpg | apt-key add - </i> <font color="gray">#um den GPG-Key hinzuzuf&uuml;gen</font></div>
 <div style="position:relative;left:20px"><i>apt-get update</i> <font color="gray">#um die Paketliste zu aktualisieren</font></div>
 <div style="position:relative;left:20px"><i>apt-get install wine</i> <font color="gray">#um die aktuelle Wineversion zu installieren</font></div><p></p>
 <h2>Methode 2: Lade .deb und installiere es manuell</h2>
