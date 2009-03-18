@@ -13,7 +13,7 @@ global $html, $config;
 $ver = PAGE_PARAMS;
 
 // build tag and announce URL
-$tag = ($ver == "latest") ? "master" : "tags/wine-" . $ver;
+$tag = ($ver == "latest") ? "master" : "tags/wine-" . urlencode($ver);
 $announce = $config->git_tree . "/wine.git/" . $tag . ":ANNOUNCE";
 
 // load announce
