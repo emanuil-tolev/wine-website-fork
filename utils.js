@@ -8,7 +8,7 @@ function include_dom (script_filename) {
     var js = document.createElement('script');
     js.setAttribute('language', 'javascript');
     js.setAttribute('type', 'text/javascript');
-    js.setAttribute('src', script_filename);
+    js.setAttribute('src', web_root + "/" + script_filename);
     html_doc.appendChild(js);
     return false;
 }
