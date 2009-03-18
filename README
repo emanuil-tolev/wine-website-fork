@@ -16,10 +16,8 @@ Setting Up.
     iow, if you have the site as http://www.example.com/winehq_org/
     then Rewritebase /winehq_org/
     otherwise if this site is the root, leave Rewritebase /
-3. change last rule RewriteRule ^(.+) /site/$1 to have same path as above, leaving in /site/.
-    i.e. RewriteRule ^(.+) /winehq_org/site/$1 if using subdir
-4. cp include/winehq.conf.sample include/winehq.conf
-5. edit include/winehq.conf
+3. cp include/winehq.conf.sample include/winehq.conf
+4. edit include/winehq.conf
 
 Templates.
 --------------

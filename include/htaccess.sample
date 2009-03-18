@@ -107,7 +107,6 @@ RedirectMatch ^/wineconf/$                      http://wiki.winehq.org/
 # Enable re-writing of URLs to hide the main script
 RewriteEngine on
 Rewritebase /
-RewriteRule ^site - [L]
-RewriteRule ^bin - [L]
-RewriteRule \.(html|jpg|gif|png|css|js|xml|swf|flv)$ - [L]
-RewriteRule ^(.+) /site/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+) site/$1 [L]
+
