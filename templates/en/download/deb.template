@@ -32,6 +32,8 @@ Party Software</b> tab and click <b>Add</b>.</p>
 <p>Then, <b>copy and paste one of the lines below</b> depending on which 
 version you are running.</p>
 
+<p><b>For Ubuntu Jaunty (9.04):</b><br>
+<i>deb http://wine.budgetdedicated.com/apt jaunty main #WineHQ - Ubuntu 9.04 "Jaunty Jackalope"</i></p>
 <p><b>For Ubuntu Intrepid (8.10):</b><br>
 <i>deb http://wine.budgetdedicated.com/apt intrepid main #WineHQ - Ubuntu 8.10 "Intrepid Ibex"</i></p>
 <p><b>For Ubuntu Hardy (8.04):</b><br>
@@ -85,6 +87,8 @@ and pasting the following into your terminal:</p>
 
 <p>Next, add the repository to your system's list of APT sources:</p>
 
+<p><b>For Ubuntu Jaunty (9.04):</b><br>
+<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/jaunty.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 <p><b>For Ubuntu Intrepid (8.10):</b><br>
 <i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/intrepid.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 <p><b>For Ubuntu Hardy (8.04):</b><br>
