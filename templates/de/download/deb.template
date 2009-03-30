@@ -32,6 +32,8 @@ von Drittanbietern</b>-Reiter und klicke auf <b>Hinzuf&uuml;gen</b>.</p>
 <p>Dann, <b>copy-paste eine der unteren Zeilen</b> in Abh&auml;ngigkeit welche
 Version du benutzt.</p>
 
+<p><b>F&uuml;r Ubuntu Jaunty (9.04):</b><br>
+<i>deb http://wine.budgetdedicated.com/apt jaunty main #WineHQ - Ubuntu 9.04 "Jaunty Jackalope"</i></p>
 <p><b>F&uuml;r Ubuntu Intrepid (8.10):</b><br>
 <i>deb http://wine.budgetdedicated.com/apt intrepid main #WineHQ - Ubuntu 8.10 "Intrepid Ibex"</i></p>
 <p><b>F&uuml;r Ubuntu Hardy (8.04):</b><br>
@@ -88,6 +90,8 @@ in das Terminal copy-pastest.:</p>
 
 <p>Danach, f&uuml;ge das Repository zu den APT-Quellen Deines Systems hinzu:</p>
 
+<p><b>F&uuml;r Ubuntu Jaunty (9.04):</b><br>
+<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/jaunty.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 <p><b>F&uuml;r Ubuntu Intrepid (8.10):</b><br>
 <i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/intrepid.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 <p><b>F&uuml;r Ubuntu Hardy (8.04):</b><br>
