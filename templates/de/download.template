@@ -117,7 +117,7 @@ erbeten hat, dass sie die Wine-Website hosten.</p>
     </td>
     <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=80066">Mandriva</a></b> 
          bin&auml;r .rpms f&uuml;r Mandriva Linux 2006, 2007 und 2008. Lade das 2008.1 Package herunter, falls Du eine
-         2008.1 Version von Mandriva nutzt, z.B. 2008 Spring. Lade das 2008.0 Package herunter, falls du die erste
+         2008.1 Version von Mandriva nutzt, z.B. 2008 Spring. Lade das 2008.0 Package herunter, falls Du die erste
          Mandriva Version aus 2008 nutzt.</td>
     <td><a href="mailto:marco@mandrivaclub.nl">Marco Meijer</a></td>
   </tr>
@@ -150,14 +150,22 @@ erbeten hat, dass sie die Wine-Website hosten.</p>
   </tr>
 
   <tr bgcolor="#ffffff">
-    <td align="center"><a href="http://ocean1.ee.duth.gr/SolarisX/">
-      <img src="{$root}/images/distro/sun.png" width="50" height="50" alt="Sun Solaris" border="0"></a>
+    <td align="center"><a href="http://www.sunfreepacks.com/listing/?limit=1000&offset=0">
+      <img src="{$root}/images/distro/solaris.png" width="50" height="50" alt="Solaris 10" border="0"></a>
     </td>
-    <td> <b><a href="http://ocean1.ee.duth.gr/SolarisX/">Solaris</a></b>
-         bin&auml;r und Quellcode f&uuml;r Solaris 10 und 11</td>
+    <td> <b><a href="http://www.sunfreepacks.com/listing/?limit=1000&offset=0">Solaris 10, SXCE</a></b> 
+        ASwine, ASwine-SXCE bin&auml;r .pkg f&uuml;r Solaris 10 und SXCE x86</td>
     <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
   </tr>
 
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://pkg.opensolaris.org/contrib/en/catalog.shtml">
+      <img src="{$root}/images/distro/opensolaris.png" width="50" height="50" alt="OpenSolaris" border="0"></a>
+    </td>
+    <td> <b><a href="http://pkg.opensolaris.org/contrib/en/catalog.shtml">OpenSolaris</a></b> 
+        bin&auml;r .pkg f&uuml;r OpenSolaris x86</td>
+    <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
+  </tr>
 
   <tr bgcolor="#ffffff">
     <td align="center"><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=112520">
