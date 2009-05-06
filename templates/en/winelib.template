@@ -67,6 +67,8 @@
   If you know of applications that should be listed here, please send your suggestions
   to <a href="mailto:dpaun@rogers.com">Dimi</a>. Currently, we have:
   <ul>
+    <li><a href="#winvi">WinVi</a>
+    <li><a href="#upp">Ultimate++</a>
     <li><a href="#abiword">AbiWord</a>
     <li><a href="#winamp">WinAMP</a>
     <li><a href="#openoffice">OpenOffice</a>
@@ -94,7 +96,16 @@
     <li> <span class=done>DONE</span>: the Winelib platform has been included in the official application build system
     <li> <span class=abandoned>ABANDONED</span>: the application has been deem unsuitable for porting using Winelib
   </ul>
-  
+
+  <a name="winvi"></a><h3 class=works>WinVi</h3>
+  <ul>
+    <li>worker: <a href="http://wiki.winehq.org/AndreHentschel">André Hentschel</a>
+    <li>status: Some GUI-specific differences to the original
+    <li>updated: May 02, 2009
+    <li>homepage: <a href="http://www.winvi.de">www.winvi.de</a>
+  </ul>
+  Beside the 32-Bit winelib port it is the first application ported to 64-Bit winelib and still runs.  
+
   <a name="upp"></a><h3 class=todo>Ultimate++</h3>
   <i>It seems to have a MinGW build system since Nov 2004.</i>
   <ul>
