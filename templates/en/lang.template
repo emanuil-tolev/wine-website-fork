@@ -25,6 +25,10 @@
         <a href="{$root}/lang/fr" title="Français">Français</a> <small>(French)</small>
     </li>
 
+    <li style="background-image: url('{$root}/images/lang/pl.png'); background-repeat: no-repeat; padding: 0 0 10px 40px;">
+        <a href="{$root}/lang/pl" title="Português">Polski</a> <small>(Polish)</small>
+    </li>
+
     <li style="background-image: url('{$root}/images/lang/pt.png'); background-repeat: no-repeat; padding: 0 0 10px 40px;">
         <a href="{$root}/lang/pt" title="Português">Português</a> <small>(Portuguese)</small>
     </li>
