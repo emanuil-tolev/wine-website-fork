@@ -61,6 +61,10 @@ class data
                                                'name'   => 'Français',
                                                'change' => 'Changez la langue'
                                               ),
+                                 'pl' => array(
+                                               'name'   => 'Polski',
+                                               'change' => 'Zmień język'
+                                              ),
                                  'pt' => array(
                                                'name'   => 'Português',
                                                'change' => 'Mudar a língua'
