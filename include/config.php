@@ -72,7 +72,7 @@ class config
         }
         else
         {
-            trigger_error(E_USER_ERROR, "Unable to read config!");
+            trigger_error("Unable to read config: ".$file);
         }
     // end of readConfig
     }
