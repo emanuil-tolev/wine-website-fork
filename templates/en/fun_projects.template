@@ -426,11 +426,6 @@
   subsystem level. The complementary project (use ghostscript
   to print from Wine) has been implemented, and working just fine.
 
-  <a name="gimp"></a><h4 class=todo>A Wine based GIMP plugin for using  Photoshop plugins</h4>
-  Suggested by <a href="mailto:meissner@suse.de">Marcus Meissner</a>:
-  Investigate if we could make a WINE based GIMP plugin which can handle
-  Photoshop plugins.
-
   <a name="wgl"></a><h3 class=inprogress>wined3d use wgl</h3>
   Make wined3d (or d3d8) use wgl (windows opengl) instead of glx. (just search for glx commands and
   replace then with the wgl equivalents) Doing so would enable wine's d3d to run on windows in place of
