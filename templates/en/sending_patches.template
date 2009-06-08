@@ -38,6 +38,8 @@ or anywhere else to the Git tree.)
  <li>Use standard C, avoid C++ comments and inline variable declarations.
 
  <li>Read the diff and make sure it contains only what you want in it.
+
+ <li>Register an account on the Wine bugzilla with the email address you use to send patches.
 </ul>
 
 <p>Accepted patches will appear in the <a href="{$root}/site/forums">wine-cvs</a> mailing list. 
