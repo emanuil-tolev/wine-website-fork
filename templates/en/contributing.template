@@ -145,14 +145,6 @@
     Some tasks also draw on non-Wine specific knowledge. For instance
     a task may require being knowledgeable in Lex/Yacc so if you have
     an expertise in a given domain you may want to scan it.</li>
-  <li id="FIXMEs"><a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;keywords=FIXME&amp;keywords_type=anywords">FIXMEs</a>: 
-    This list contains tasks that are intermediate between those found
-    in the Task list and the Task lets. Issues found in this list are
-    well diagnosed, that is, we know which function or functionality is
-    missing / buggy. And while the fix may not be very easy to 
-    implement, it normally is not thought to require extensive 
-    knowledge of multiple areas of Wine, or extensive reorganization 
-    of the Wine code.</li>
   <li id="tasklist"><a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;keywords=tasklist&amp;keywords_type=anywords">Tasklist</a>: 
     The major development tasks are listed there. This is the place to
     check out if you want to get involved in one of the larger / 
