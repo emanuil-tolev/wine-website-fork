@@ -1203,6 +1203,7 @@ class html
         $vars['request_delim'] = ($_GET ? ';' : '?');
         $vars['server_name'] =& $_SERVER['SERVER_NAME'];
         $vars['base_url'] =& $GLOBALS['config']->base_url;
+        $vars['curtime_year'] = date('Y', time());
         
         // language vars
         if (defined("PAGE") and (PAGE == "home" or PAGE == "lang"))
