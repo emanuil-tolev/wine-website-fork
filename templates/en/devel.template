@@ -13,25 +13,33 @@ various resources available for our developers.</p>
     <td bgcolor="black"><b style="color: #FFFFFF">About this Option</b></td>
   </tr>
 
-
   <tr bgcolor="#ffffff">
     <td>
         <a href="http://wiki.winehq.org/Developers">Wine Wiki Developer Documentation</a>
     </td>
     <td valign="top">
-        The Wine Wiki Developer pages usually have more current information than this page.
-        A great volunteer job - still available! - would be trimming this page and mostly pointing
-        it to the Wiki pages.
+        The <a href="http://wiki.winehq.org//Developers">Wine Wiki Developer</a> pages will have more current
+        information than this page. It should be the first place for new developers to look.
     </td>
   </tr>
 
+  <tr bgcolor="#ffffff">
+    <td>
+        <a href="http://www.codeweavers.com/about/general/jobs/interns/">Internships</a>
+    </td>
+    <td valign="top">
+        Beginning in Fall 2009, CodeWeavers will be filling 1-2 Wine Development Internship slots every quarter for
+        qualified undergraduate and graduate-level students. We are accepting applications for these positions on
+        an ongoing basis. Students from both the United States and overseas are equally welcome.
+    </td>
+  </tr>
 
   <tr bgcolor="#ffffff">
     <td>
         <a href="{$root}/contributing">Contributing to Wine</a>
     </td>
     <td valign="top">
-        Information for 1st time contributers.
+        Information for 1st time contributors.
     </td>
   </tr>
 
