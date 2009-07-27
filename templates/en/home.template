@@ -10,23 +10,23 @@
         <ul class="winehq_menu">
         
             <li class="info" onClick="document.location='{$root}/about/';">
-            <div class="title"><a href="{$root}/about/">Information</a></div>
-            <div class="subtitle">Overview of Wine features.</div>
+            <div class="title"><a href="{$root}/about/">About</a></div>
+            <div class="subtitle">Learn about the Wine project.</div>
             </li>
 
             <li class="dl" onClick="document.location='{$root}/download/';">
             <div class="title"><a href="{$root}/download/">Download</a></div>
-            <div class="subtitle">Get Wine now!</div>
+            <div class="subtitle">Install the latest Wine.</div>
             </li>
 
             <li class="help" onClick="document.location='{$root}/help/';">
-            <div class="title"><a href="{$root}/help/">Help!</a></div>
-            <div class="subtitle">Documentation, Support, and Wiki.</div>
+            <div class="title"><a href="{$root}/help/">Support</a></div>
+            <div class="subtitle">Get help using Wine.</div>
             </li>
 
             <li class="devel" onClick="document.location='{$root}/devel/';">
             <div class="title"><a href="{$root}/devel/">Development</a></div>
-            <div class="subtitle">Wine source, Bug Tracking, etc.</div>
+            <div class="subtitle">Become a Wine developer.</div>
             </li>
 
             <li class="donate" onClick="document.donateForm.submit();">
@@ -36,7 +36,7 @@
             <input type="hidden" name="business" value="donate@winehq.org">
             <input type="hidden" name="item_name" value="Wine donation">
             </form>
-            <div class="subtitle">Donate to Wine.</div>
+            <div class="subtitle">Donate to the Wine project.</div>
             </li>
 
         </ul>
