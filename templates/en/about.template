@@ -3,38 +3,17 @@
 
 <h1 class="title">About Wine</h1>
 
-<p>Wine is a translation layer (a program loader) capable of running
-Windows applications on Linux and other POSIX compatible operating
-systems.  Windows programs running in Wine act as native programs would,
-running without the performance or memory usage penalties of an emulator,
-with a similar look and feel to other applications on your desktop.</p>
+<p>Wine lets you run Windows software on other operating systems.  With Wine, you can install and run these applications just like you would in Windows.</p>
 
-<p>The Wine project started in 1993 as a way to support running 
-Windows 3.1 programs on Linux. Bob Amstadt was the original 
-coordinator, but turned it over fairly early on to Alexandre 
-Julliard, who has run it ever since. Over the years, ports 
-for other Unixes have been added, along with support for Win32
-as Win32 applications became popular.</p>
+<p>Wine is still under active development.  Not every program works yet, however there are already <a href="http://wiki.winehq.org/UsageStatistics" title="Wine Usage Statistics">several million people</a> using Wine to run their software.</p>
 
-<p>Wine is still under development, and it is not yet suitable for 
-general use. Nevertheless, many people find it useful in running
-a growing number of Windows programs. Please see the
-<a href="http://appdb.winehq.org/">Application Database</a>
-for success and failure reports for hundreds of Windows 
-programs, as well as the <a href="http://bugs.winehq.org/">Bug
-Tracking Database</a> for a list of known issues, and the
-<a href="{$root}/status">Status</a> page for a global view on Wine's 
-implementation progress.</p>
+<h2>Open Source and User Driven</h2>
 
-<p>A broad spectrum of Wine developers can be reached in the 
-<a href="{$root}/forums">Wine forums</a>. Comments about the winehq.org
-website can be emailed to <a
-href="mailto:web-admin_at_winehq.org">web-admin_at_winehq.org</a>. Alexandre
-Julliard leads the Wine project, and may be reached by email at
-<a href="mailto:julliard_at_winehq.org">julliard_at_winehq.org</a>.</p>
+<p>Wine will always be <a href="" title="Wine licensing">free software</a>.  Approximately half of Wine's source code is written by volunteers.  The rest is sponsored by commercial interests, especially <a href="http://www.codeweavers.com/products/" title="Codeweavers Crossover Office">Codeweavers</a> who sell a supported version of Wine.</p>
 
-<p>We've also assembled a short list of resources to help you understand
-the project:</p>
+<p>Wine is heavily reliant on its user community.  User tests fill our <a href="http://appdb.winehq.org/" title="Wine Application Database">Application Database</a> to track how well programs work, and all the answers in the <a href="http://forums.winehq.org/" title="WineHQ Forums">forums</a> come from volunteers.</p>
+
+<h2>Learn more:</h2>
 <ul>
     <li><a href="{$root}/history">Wine's History</a></li>
     <li><a href="{$root}/why">Why Wine is so important</a></li>
