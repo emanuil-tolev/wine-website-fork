@@ -3,7 +3,7 @@
 <title>Wydano Wine 1.1.24</title>
 <body>
 <p> Wydanie rozwojowe Wine 1.1.24 jest już dostępne.</p>
-<p> <a href="{$root}/announce/1.1.24">Co nowego</a> w tym wydaniu:
+<p> <a href="{$root}/announce/1.1.24">Co nowego</a> w tym wydaniu: </p>
 <ul>
   <li>Wsparcie dla skojarzeń plików freedesktop.</li>
   <li>Wsparcie dla obsługi wyjątków na 64-bit.</li>
@@ -11,7 +11,7 @@
   <li>Poprawki dla trybu FBO.</li>
   <li>Wile ulepszeń listview.</li>
   <li>Rozmaite poprawki błędów.</li>
-</ul></p>
+</ul>
 <p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.1.24.tar.bz2">już dostępne</a>.
 Paczki binarne są w trakcie budowy i ukażą się wkróce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
 </p></body></news>
