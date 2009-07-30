@@ -316,13 +316,13 @@
 
 <p>Also, we need to have localized versions of the Wine Guides and man
   pages. For this to work, we'll need many people willing to translate
-  changes to the main English docu into foreign languages. If you're
+  changes to the main English documentation into foreign languages. If you're
   willing to register for work on a certain language, then please sign up
   with us!</p>
 <p>At this time we are looking for people who can translate.</p>
 <ul>
   <li>The README and maintain the translation.</li>
-  <li>the Wine resources and messages it issues (but not the debug message of course)</li>
+  <li>The Wine resources and messages it issues (but not the debug messages of course). You can check the <a href="http://source.winehq.org/transl/">Wine translation statistics</a> for your language to see how much there is to do.</li>
 </ul>
 <p>We also need a 'QuickStart/Howto' document that would describe the basic instructions
   for installing and configuring Wine in a bit more details than the README while being much
