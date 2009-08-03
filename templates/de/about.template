@@ -1,52 +1,24 @@
 <!--TITLE:[&Uuml;ber Wine]-->
-<!--BLURB:[Was ist Wine, und was genau macht es?]-->
+<!--BLURB:[Erkl&auml;rungen zum Wine-Projekt]-->
 
 <h1 class="title">&Uuml;ber Wine</h1>
 
-<p>Wine ist eine &Uuml;bersetzungsschicht (ein Programm Loader), die in
-der Lage ist, Windows-Anwendungen unter Linux und anderen POSIX-kompatiblen
-Betriebssystemen laufen zu lassen. Windows-Anwendungen verhalten sich unter
-Wine so wie native Programme: ohne die Geschwindigkeitseinbu&szlig;en oder
-erh&ouml;hten Speicheranforderungen eines Emulators und mit einem Look & Feel,
-das mit anderen Anwendungen auf Deinem Desktop vergleichbar ist.</p>
+<p>Wine erm&ouml;glicht es, Windows-Programme unter anderen Betriebssystemen laufen lassen. Mit Wine kannst Du diese Programme genauso installieren und laufen lassen, wie unter Windows.</p>
 
-<p>Das Wine-Projekt wurde 1993 mit dem Ziel, Windows 3.1 Anwendungen unter
-Linux laufen zu lassen, begonnen. Bob Amstadt war der urspr&uuml;ngliche
-Koordinator. Er &uuml;bergab das Projekt jedoch recht fr&uuml;h an Alexandre
-Julliard, der es seitdem f&uuml;hrt. Im Laufe der Jahre wurden Umsetzungen
-f&uuml;r andere Unix-Varianten hinzugef&uuml;gt; dar&uuml;berhinaus
-Unterst&uuml;tzung f&uuml;r Win32 als Win32-Anwendungen popul&auml;r wurden.
-</p>
+<p>Wine wird aktiv weiterentwickelt. Noch l&auml;uft nicht jedes Programm, aber <a href="http://wiki.winehq.org/UsageStatistics" title="Statistik zur Wine-Benutzung">mehrere Millionen Anwender</a> nutzen Wine, um ihre Programme zu verwenden.</p>
 
-<p>Wine ist immernoch in Entwicklung und ist noch nicht f&uuml;r den
-generellen Gebrauch geeignet. Unabh&auml;ngig davon finden es viele Leute
-n&uuml;tzlich um eine steigende Zahl von Windows-Programmen zu verwenden.
-In der <a href="http://appdb.winehq.org/">AppDB (en)</a>
-findest Du Erfolgs- und Misserfolgsmeldungen f&uuml;r hunderte von
-Windows-Anwendungen, in <a href="http://bugs.winhq.org/">Bugzilla
-(en)</a> eine Liste der bekannten Probleme und auf der <a
-href="{$root}/status">Status</a>-Seite einen &Uuml;berblick &uuml;ber den
-Entwicklungsfortschritt von Wine.</p>
+<h2>Open Source und benutzergetrieben</h2>
 
-<p>Eine gro&szlig;e Gruppe von Wine-Entwicklern kannst Du in den <a
-href="{$root}/forums">Wine-Foren</a> erreichen. Kommentare zur winehq.org
-Website k&ouml;nnen an <a
-href="mailto:web-admin_at_winehq.org">web-admin_at_winehq.org</a> gemailt
-werden. Alexandre Julliard ist der Leiter des Wine-Projekts und kann per
-E-Mail unter <a
-href="mailto:julliard_at_winehq.org">julliard_at_winehq.org</a>
-erreicht werden.</p>
+<p>Wine wird immer <a href="" title="Wine-Lizensierung">Freie Software</a> sein. Ungef&auml;hr die H&auml;lfte des Quellcodes von Wine wird von Freiwilligen geschrieben. Der Rest wird von Firmen gesponsort, insbesondere <a href="http://www.codeweavers.com/products/" title="Codeweavers Crossover Office">Codeweavers</a>, die eine eigene Version von Wine mit Unterst&uuml;tzung verkaufen.</p>
 
-<p>Wir haben au&szlig;erdem eine kurze &Uuml;bersicht zusammengestellt,
-die Dir hilft, das Projekt besser zu verstehen:</p>
+<p>Wine ist stark von seinen Anwendern abh&auml;ngig. Tests von Anwendern bev&ouml;lkern unsere <a href="http://appdb.winehq.org/" title="Wine Anwendungsdatenbank">Anwendungsdatenbank (en)</a> zur Dokumentation davon, wie gut einzelne Programme funktionieren, und s&auml;mtliche Antworten in den <a href="http://forums.winehq.org/" title="WineHQ Foren">Foren</a> kommen von Freiwilligen.</p>
+
+<h2>Erfahre mehr:</h2>
 <ul>
-    <li><a href="{$root}/history">Die Geschichte von Wine</a></li>
-    <li><a href="{$root}/why">Warum Wine so wichtig ist</a></li>
-    <li><a href="{$root}/myths">Wine-Mythen entlarvt</a></li>
-    <li><a href="{$root}/wine_features">Wines Features</a></li>
-    <li><a href="{$root}/acknowledgement">Danksagungen</a></li>
-    <li><a href="{$root}/wwn">World Wine News (en)</a></li>
-    <li><a href="{$root}/interview">Interviews</a></li>
+    <li><a href="http://wiki.winehq.org/ImportanceOfWine">Warum Wine so wichtig ist (en)</a></li>
+    <li><a href="http://wiki.winehq.org/Debunking_Wine_Myths">Wine-Mythen entlarvt (en)</a></li>
+    <li><a href="http://wiki.winehq.org/WineHistory">Geschichte des Wine-Projekts (en)</a></li>
+    <li><a href="http://wiki.winehq.org/ProjectOrganization">Organisation und Leitung (en)</a></li>
 </ul>
 
 <hr />

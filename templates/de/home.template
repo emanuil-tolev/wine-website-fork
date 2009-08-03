@@ -10,23 +10,23 @@
         <ul class="winehq_menu">
         
             <li class="info" onClick="document.location='{$root}/about/';">
-            <div class="title"><a href="{$root}/about/">Information</a></div>
-            <div class="subtitle">&Uuml;berblick &uuml;ber Wines Features.</div>
+            <div class="title"><a href="{$root}/about/">&Uuml;ber</a></div>
+            <div class="subtitle">Erfahre mehr &uuml;ber das Wine-Projekt.</div>
             </li>
 
             <li class="dl" onClick="document.location='{$root}/download/';">
-            <div class="title"><a href="{$root}/download/">Download</a></div>
-            <div class="subtitle">Hol Dir Wine!</div>
+            <div class="title"><a href="{$root}/download/">Hol Dir Wine</a></div>
+            <div class="subtitle">Installiere  die aktuellste Wine-Version.</div>
             </li>
 
             <li class="help" onClick="document.location='{$root}/help/';">
-            <div class="title"><a href="{$root}/help/">Hilfe!</a></div>
-            <div class="subtitle">Dokumentation, Unterst&uuml;tzung und Wiki.</div>
+            <div class="title"><a href="{$root}/help/">Unterst&uuml;tzung</a></div>
+            <div class="subtitle">Hol Dir Hilfe zum Benutzen von Wine.</div>
             </li>
 
             <li class="devel" onClick="document.location='{$root}/devel/';">
             <div class="title"><a href="{$root}/devel/">Entwicklung</a></div>
-            <div class="subtitle">Wine Quellcode, Bug Tracking, usw.</div>
+            <div class="subtitle">Werde ein Wine-Entwickler.</div>
             </li>
 
             <li class="donate" onClick="document.donateForm.submit();">
@@ -36,7 +36,7 @@
             <input type="hidden" name="business" value="donate@winehq.org">
             <input type="hidden" name="item_name" value="Wine donation">
             </form>
-            <div class="subtitle">Spende f&uuml;r Wine.</div>
+            <div class="subtitle">Spende dem Wine-Projekt.</div>
             </li>
 
         </ul>
