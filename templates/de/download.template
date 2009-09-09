@@ -104,7 +104,7 @@ erbeten hat, dass sie die Wine-Website hosten.</p>
     </td>
     <td> <b><a href="http://en.opensuse.org/Wine#Repositories">SUSE</a></b>
          stellt bin&auml;r und Quellcode .rpms und t&auml;gliche snapshot RPMs f&uuml;r openSUSE 10.3, 11.0,
-         11.1 und SLES 9 und SLES 10 bereit.<br/>
+         11.1 und SLES 9 und SLES 10 bereit.<br>
          Alte Versionen sind auf <a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=79444">SourceForge</a>
          verf&uuml;gbar.
      </td>
@@ -141,19 +141,19 @@ erbeten hat, dass sie die Wine-Website hosten.</p>
   </tr>
 
   <tr bgcolor="#ffffff">
-    <td align="center"><a href="http://www.pbidir.com/bt/search/?str=wine&search=Search">
+    <td align="center"><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">
       <img src="{$root}/images/distro/pcbsd.png" width="50" height="50" alt="FreeBSD" border="0"></a>
     </td>
-    <td> <b><a href="http://www.pbidir.com/bt/search/?str=wine&search=Search">PC-BSD</a></b> 
+    <td> <b><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">PC-BSD</a></b> 
          bin&auml;r .pbi f&uuml;r PC-BSD (FreeBSD-basiertes Betriebssystem)</td>
     <td><a href="mailto:kris@pcbsd.com">Kris Moore</a></td>
   </tr>
 
   <tr bgcolor="#ffffff">
-    <td align="center"><a href="http://www.sunfreepacks.com/listing/?limit=1000&offset=0">
+    <td align="center"><a href="http://www.sunfreepacks.com/listing/?limit=1000&amp;offset=0">
       <img src="{$root}/images/distro/solaris.png" width="50" height="50" alt="Solaris 10" border="0"></a>
     </td>
-    <td> <b><a href="http://www.sunfreepacks.com/listing/?limit=1000&offset=0">Solaris 10, SXCE</a></b> 
+    <td> <b><a href="http://www.sunfreepacks.com/listing/?limit=1000&amp;offset=0">Solaris 10, SXCE</a></b> 
         ASwine, ASwine-SXCE bin&auml;r .pkg f&uuml;r Solaris 10 und SXCE x86</td>
     <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
   </tr>

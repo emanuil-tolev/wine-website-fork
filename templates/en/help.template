@@ -14,7 +14,7 @@
 
   <tr bgcolor="#ffffff">
     <td align="center" class="small">
-        <a href="http://www.codeweavers.com"><img src="{$root}/images/paid.png" /><br />Paid</a>
+        <a href="http://www.codeweavers.com"><img src="{$root}/images/paid.png"><br>Paid</a>
     </td>
     <td valign="top">
         <a href="http://www.codeweavers.com">CodeWeavers</a> offers paid support for Wine.
@@ -23,7 +23,7 @@
 
   <tr bgcolor="#ffffff">
     <td align="center" class="small">
-        <a href="http://wiki.winehq.org/FAQ"><img src="{$root}/images/faq.png" /><br />FAQ</a>
+        <a href="http://wiki.winehq.org/FAQ"><img src="{$root}/images/faq.png"><br>FAQ</a>
     </td>
     <td valign="top">
         Most questions can be quickly answered by browsing our
@@ -34,7 +34,7 @@
 
   <tr bgcolor="#ffffff">
     <td align="center" class="small">
-        <a href="{$root}/documentation"><img src="{$root}/images/docs.png" /><br />Docs</a>
+        <a href="{$root}/documentation"><img src="{$root}/images/docs.png"><br>Docs</a>
     </td>
     <td valign="top">
         We recommend that you read our online <a href="{$root}/site/documentation">Documentation</a>
@@ -46,7 +46,7 @@
 
   <tr bgcolor="#ffffff">
     <td align="center" class="small">
-        <a href="http://wiki.winehq.org/"><img src="{$root}/images/moinmoin.png" /><br />Wiki</a>
+        <a href="http://wiki.winehq.org/"><img src="{$root}/images/moinmoin.png"><br>Wiki</a>
     </td>
     <td valign="top">
         You can also see our <a href="http://wiki.winehq.org/">Wiki</a> to
@@ -56,7 +56,7 @@
   
 <tr bgcolor="#ffffff">
     <td align="center" class="small">
-        <a href="http://forums.winehq.org/"><img src="{$root}/images/forum.png" /><br />Forum</a>
+        <a href="http://forums.winehq.org/"><img src="{$root}/images/forum.png"><br>Forum</a>
     </td>
     <td valign="top">
         We have a <a href="http://forums.winehq.org/">web</a>/<a href="{$root}/site/forums">email</a> based community for
@@ -70,7 +70,7 @@
 
   <tr bgcolor="#ffffff">
     <td align="center" class="small">
-        <a href="{$root}/irc"><img src="{$root}/images/irc.png" /><br />IRC</a>
+        <a href="{$root}/irc"><img src="{$root}/images/irc.png"><br>IRC</a>
     </td>
     <td valign="top">
         You can connect with the Wine community via live chat
@@ -80,7 +80,7 @@
   
   <tr bgcolor="#ffffff">
     <td align="center" class="small">
-        <a href="http://appdb.winehq.org/"><img src="{$root}/images/appdb.png" /><br />AppDB</a>
+        <a href="http://appdb.winehq.org/"><img src="{$root}/images/appdb.png"><br>AppDB</a>
     </td>
     <td valign="top">
         If you want help with a single application our <a href="http://appdb.winehq.org/">Application Database</a>
@@ -90,7 +90,7 @@
   
   <tr bgcolor="#ffffff">
     <td align="center" class="small">
-        <a href="http://bugs.winehq.org/"><img src="{$root}/images/bugs.png" /><br />Bugzilla</a>
+        <a href="http://bugs.winehq.org/"><img src="{$root}/images/bugs.png"><br>Bugzilla</a>
     </td>
     <td valign="top">
         Our <a href="http://bugs.winehq.org/">Bugzilla Bug Tracker</a> contains all the issues we have

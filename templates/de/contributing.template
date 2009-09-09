@@ -415,11 +415,11 @@
 <p><strong>M&ouml;glichkeiten zu spenden:</strong></p>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <div>
-  <input type="hidden" name="cmd" value="_xclick" />
-  <input type="hidden" name="business" value="donate@winehq.org" />
-  <input type="hidden" name="item_name" value="Wine donation" />
+  <input type="hidden" name="cmd" value="_xclick">
+  <input type="hidden" name="business" value="donate@winehq.org">
+  <input type="hidden" name="item_name" value="Wine donation">
   <input type="image" src="{$root}/images/ppdonate.png" name="submit"
-    align="absmiddle" alt="Spende an Wine &uuml;ber PayPal!" /> Unser PayPal Konto
+    align="absmiddle" alt="Spende an Wine &uuml;ber PayPal!"> Unser PayPal Konto
 </div>
 </form>
 
