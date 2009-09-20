@@ -96,17 +96,17 @@ Keep it up!
 </p>
 </quote>
 <p>
-Several Wine releases have occured since the last WWN.  Below is a list of some of the many improvements in Wine lately:
+Several Wine releases have occurred since the last WWN.  Below is a list of some of the many improvements in Wine lately:
 </p>
 <quote>
 <p>
 <ul>
-<li>Updated version of Gechko</li>
+<li>Updated version of Gecko</li>
 <li>Significant Wine64 improvements</li>
 <li>Many new codecs, protocols and formats supported</li>
-<li>Provied XShm and bitmap stretching performance. </li>
+<li>Provide XShm and bitmap stretching performance. </li>
 <li>Improved Memory Management</li>
-<li>FBO becomming the default for D3D</li>
+<li>FBO becoming the default for D3D</li>
 </ul>
 </p>
 </quote></section>
@@ -173,7 +173,7 @@ fixed, so if you're a developer and would rather work on patches then by
 all means do that instead.
 </p>
 <p>I've created a wiki page for the event here: <a href="http://wiki.winehq.org/BugDay">http://wiki.winehq.org/BugDay</a>
-When we're done I'll poke bugzilla for some stats and we can see how
+When we're done I'll poke BugZilla for some stats and we can see how
 much of a success the event was.
 </p>
 <p>
@@ -182,10 +182,10 @@ Scott Ritchie
 </p>
 </quote>
 <p>
-By all counts the first BugDay was a big success.  An August BugDay also occured, and with any luck there will also be a September Bug Day.
+By all counts the first BugDay was a big success.  An August BugDay also occurred, and with any luck there will also be a September Bug Day.
 </p></section>
 <section
-	title="Wine and the Ubuntu Summut"
+	title="Wine and the Ubuntu Summit"
 	subject="Desktop Integration"
 	archive="http://www.winehq.org/pipermail/wine-devel/2009-June/076102.html"
 	posts="5"
@@ -210,7 +210,7 @@ need our ALSA stack to use the Pulseaudio safe subset:
  <a href="http://0pointer.de/blog/projects/guide-to-sound-apis.html.">http://0pointer.de/blog/projects/guide-to-sound-apis.html.</a> I've filed a
 metabug tracking this here:
  <a href="http://bugs.winehq.org/show_bug.cgi?id=18740.">http://bugs.winehq.org/show_bug.cgi?id=18740.</a>  Use of this unsafe subset
-can cause most problems with stuttering or even complete dropoff.
+can cause most problems with stuttering or even complete drop off.
 </p><p>
 I'm not completely familiar with how sound works in Wine, but in the
 past I remember that one complaint about PulseAudio over ALSA was
