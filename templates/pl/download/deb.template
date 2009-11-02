@@ -32,6 +32,8 @@ działa, to nie musisz używać paczek beta.</i></p>
 
 <p>Następnie, <b>wklej jedną z poniższych linijek</b> zależnie od wersji twojego systemu.</p>
 
+<p><b>Dla Ubuntu Karmic (9.10):</b><br>
+<i>ppa:ubuntu-wine/ppa</i></p>
 <p><b>Dla Ubuntu Jaunty (9.04):</b><br>
 <i>deb http://wine.budgetdedicated.com/apt jaunty main #WineHQ - Ubuntu 9.04 "Jaunty Jackalope"</i></p>
 <p><b>Dla Ubuntu Intrepid (8.10):</b><br>
@@ -44,11 +46,14 @@ działa, to nie musisz używać paczek beta.</i></p>
 <p>Po dodaniu repozytorium, potrzebujesz również dodać
 klucz do tego repozytorium do twojej systemowej listy zaufanych kluczy.</p>
 
-<p><b><a href="http://wine.budgetdedicated.com/apt/Scott%20Ritchie.gpg">Pobierz
+<p>Dla Ubuntu 9.04 i wcześniejszych, 
+<b><a href="http://wine.budgetdedicated.com/apt/Scott%20Ritchie.gpg">Pobierz
 i zapisz klucz Scotta Ritchiego</a></b> (prawy przycisk myszy -> zapisz jako) na pulpicie. Następnie przejdź na
 zakładkę <b>Uwierzytelnianie</b> , kliknij <b>Zaimportuj plik klucza...</b>, i wybierz plik klucza, którego właśnie zapisałeś (<i>Scott Ritchie.gpg</i>). Możesz usunąć ten plik po wykonaniu tego kroku.</p>
 
 <img src="{$root}/images/distro/ubuntu-softwaresources2.png" width="531" height="509" alt="System->Administration->Software Sources->Authentication" border="0">
+
+<h2>Instalowanie Wine:</h2>
 
 <p>Kliknij zamknij, aby zakończyć, a potem <b>uaktualnij dane o paczkach</b> w
 momencie pytania. Jeżeli masz zainstalowane Wine to systemowy
