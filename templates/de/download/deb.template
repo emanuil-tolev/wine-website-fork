@@ -32,6 +32,8 @@ von Drittanbietern</b>-Reiter und klicke auf <b>Hinzuf&uuml;gen</b>.</p>
 <p>Dann, <b>copy-paste eine der unteren Zeilen</b> in Abh&auml;ngigkeit welche
 Version du benutzt.</p>
 
+<p><b>F&uuml;r Ubuntu Karmic (9.10):</b><br>
+<i>ppa:ubuntu-wine/ppa</i></p>
 <p><b>F&uuml;r Ubuntu Jaunty (9.04):</b><br>
 <i>deb http://wine.budgetdedicated.com/apt jaunty main #WineHQ - Ubuntu 9.04 "Jaunty Jackalope"</i></p>
 <p><b>F&uuml;r Ubuntu Intrepid (8.10):</b><br>
@@ -39,12 +41,13 @@ Version du benutzt.</p>
 <p><b>F&uuml;r Ubuntu Hardy (8.04):</b><br>
 <i>deb http://wine.budgetdedicated.com/apt hardy main #WineHQ - Ubuntu 8.04 "Hardy Heron"</i></p>
 
-<h2>Vertrauen des WineHQ APT Repositorys und Installation von Wine:</h2>
+<h2>Vertrauen des WineHQ APT Repositorys:</h2>
 
-<p>Nach dem Hinzuf&uuml;gen des Repository, musst du auch noch den Schl&uuml;ssel f&uuml;r das Repository 
+<p>Nach dem Hinzuf&uuml;gen des Repository musst du auch noch den Schl&uuml;ssel f&uuml;r das Repository 
 zu der Liste der vertrauensw&uuml;rdigen Schl&uuml;ssel deines Systems hinzuf&uuml;gen.</p>
+<p>Ubuntu Karmic User k&ouml;nnen diesen Schritt &uuml;berspringen.</p>
 
-<p><b><a href="http://wine.budgetdedicated.com/apt/Scott%20Ritchie.gpg">Lade
+<p>F&uuml;r Ubuntu 9.04 und &auml;ltere: <b><a href="http://wine.budgetdedicated.com/apt/Scott%20Ritchie.gpg">Lade
 und speichere Scott Ritchie's Schl&uuml;ssel</a></b> (Rechtsklick -> Speichern unter...)
 auf deinen Desktop.  &Ouml;ffne dann den <b>Authentifizierung</b>-Reiter,
 klicke<b>Schl&uuml;sseldatei importieren</b> und w&auml;hle die Schl&uuml;sseldatei,
@@ -52,6 +55,8 @@ die du gerade gespeichert hast (<i>Scott Ritchie.gpg</i>).  Es ist sicher, diese
 diesem Schritt zu l&ouml;schen.</p>
 
 <img src="{$root}/images/distro/de_ubuntu-softwaresources2.png" width="686" height="514" alt="System->Systemverwaltung->Software-Paketquellen" border="0">
+
+<h2>Installieren von Wine:</h2>
 
 <p>Klick auf Schlie&szlig;en zum Beenden, anschlie&szlig;end <b>lade die Paketinformationen neu</b>, wenn
 Du dazu aufgefordert wirst. Wenn Du Wine installiert hast, wird die Aktualisierungsverwaltung
@@ -90,6 +95,8 @@ in das Terminal copy-pastest.:</p>
 
 <p>Danach, f&uuml;ge das Repository zu den APT-Quellen Deines Systems hinzu:</p>
 
+<p><b>F&uuml;r Ubuntu Karmic (9.10):</b><br>
+<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/karmic.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 <p><b>F&uuml;r Ubuntu Jaunty (9.04):</b><br>
 <i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/jaunty.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 <p><b>F&uuml;r Ubuntu Intrepid (8.10):</b><br>
