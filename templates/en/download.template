@@ -60,8 +60,8 @@ requested in exchange for hosting the Wine web site.</p>
     <td align="center"><a href="{$root}/download/deb">
       <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu linux" border="0"></a>
     </td>
-    <td> <b><a href="{$root}/download/deb">Ubuntu</a></b> 
-     binary and source .debs for Ubuntu Karmic (9.10), Jaunty (9.04), Intrepid (8.10), and Hardy (8.04)
+    <td> <b><a href="{$root}/download/deb">Download Ubuntu packages</a></b> 
+     - binary and source .debs for Ubuntu Karmic (9.10), Jaunty (9.04), Intrepid (8.10), and Hardy (8.04)
     <td><a href="mailto:scott@open-vote.org">Scott Ritchie</a></td>
   </tr>
 
@@ -69,8 +69,8 @@ requested in exchange for hosting the Wine web site.</p>
     <td align=center><a href="{$root}/download/deblenny">
       <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
     </td>
-    <td> <b><a href="{$root}/download/deblenny">Debian</a></b> 
-     binary .debs for Debian Lenny, Squeeze and Sid</td>
+    <td> <b><a href="{$root}/download/deblenny">Download Debian packages</a></b> 
+     - binary .debs for Debian Lenny, Squeeze and Sid</td>
     <td><a href="mailto:repository@lamaresh.net">Maurilio Genovese</a><br><a href="mailto:ben.klein@lamaresh.net">Ben Klein</a></td>
   </tr>
 
@@ -78,8 +78,8 @@ requested in exchange for hosting the Wine web site.</p>
     <td align="center"><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">
       <img src="{$root}/images/distro/redhat.png" width="50" height="50" alt="RedHat Linux" border="0"></a>
     </td>
-    <td> <b><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">Red Hat / CentOS / Fedora</a></b>
-        binary and source .rpms for Red Hat Enterprise Linux 4, 5; CentOS 4, 5; Fedora Core 5, 6; Fedora Linux 7 and
+    <td> <b><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">Download Red Hat / CentOS / Fedora packages</a></b>
+        - binary and source .rpms for Red Hat Enterprise Linux 4, 5; CentOS 4, 5; Fedora Core 5, 6; Fedora Linux 7 and
         compatible distributions.
         The wine meta package is available via <tt>yum</tt> 
         through the EPEL / Fedora Extras / Fedora repository by running <tt>$ yum install
@@ -92,8 +92,8 @@ requested in exchange for hosting the Wine web site.</p>
     <td align="center"><a href="http://en.opensuse.org/Wine#Repositories">
       <img src="{$root}/images/distro/suse.png" width="50" height="50" alt="SUSE Linux" border="0"></a>
     </td>
-    <td> <b><a href="http://en.opensuse.org/Wine#Repositories">SUSE</a></b>
-         release binary and source .rpms and daily snapshot RPMs for openSUSE 11.0, 11.1, 11.2 and SLES 9, SLE 10 and SLE 11.<br>
+    <td> <b><a href="http://en.opensuse.org/Wine#Repositories">Download SUSE packages</a></b>
+         - release binary and source .rpms and daily snapshot RPMs for openSUSE 11.0, 11.1, 11.2 and SLES 9, SLE 10 and SLE 11.<br>
          Old package versions available on <a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=79444">SourceForge</a>
      </td>
     <td><a href="mailto:meissner@suse.de">Marcus Meissner</a></td>
@@ -103,8 +103,8 @@ requested in exchange for hosting the Wine web site.</p>
     <td align="center"><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=80066">
       <img src="{$root}/images/distro/mandriva.png" width="50" height="50" alt="Mandriva Linux" border="0"></a>
     </td>
-    <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=80066">Mandriva</a></b> 
-         binary .rpms for Mandriva Linux 2006, 2007, and 2008. Download the 2008.1 package if your Mandriva is a 2008.1
+    <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=80066">Download Mandriva packages</a></b> 
+         - binary .rpms for Mandriva Linux 2006, 2007, and 2008. Download the 2008.1 package if your Mandriva is a 2008.1
      release, eg. 2008 Spring. Download the 2008.0 package if your Mandriva is the first 2008 release.</td>
     <td><a href="mailto:marco@mandrivaclub.nl">Marco Meijer</a></td>
   </tr>
@@ -113,8 +113,8 @@ requested in exchange for hosting the Wine web site.</p>
     <td align="center"><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">
       <img src="{$root}/images/distro/slackware.png" width="50" height="50" alt="Slackware linux" border="0"></a>
     </td>
-    <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">Slackware</a></b>
-         binary .tgz for Slackware 10.2</td>
+    <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">Download Slackware packages</a></b>
+         - binary .tgz for Slackware 10.2</td>
     <td><a href="mailto:sadam@clemson.edu">Adam Schreiber</a></td>
   </tr>
 
@@ -122,8 +122,8 @@ requested in exchange for hosting the Wine web site.</p>
     <td align="center"><a href="http://www.freshports.org/emulators/wine/">
       <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
     </td>
-    <td> <b><a href="http://www.freshports.org/emulators/wine/">FreeBSD</a></b> 
-         source for FreeBSD 5.3 or later</td>
+    <td> <b><a href="http://www.freshports.org/emulators/wine/">Download FreeBSD packages</a></b> 
+         - source for FreeBSD 5.3 or later</td>
     <td><a href="mailto:gerald@pfeifer.com">Gerald Pfeifer</a></td>
   </tr>
 
@@ -131,8 +131,8 @@ requested in exchange for hosting the Wine web site.</p>
     <td align="center"><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">
       <img src="{$root}/images/distro/pcbsd.png" width="50" height="50" alt="FreeBSD" border="0"></a>
     </td>
-    <td> <b><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">PC-BSD</a></b> 
-         binary packages .pbi for PC-BSD (FreeBSD based OS)</td>
+    <td> <b><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">Download PC-BSD packages</a></b> 
+         - binary packages .pbi for PC-BSD (FreeBSD based OS)</td>
     <td><a href="mailto:kris@pcbsd.com">Kris Moore</a></td>
   </tr>
 
@@ -140,8 +140,8 @@ requested in exchange for hosting the Wine web site.</p>
     <td align="center"><a href="http://www.sunfreepacks.com/listing/?limit=1000&amp;offset=0">
       <img src="{$root}/images/distro/solaris.png" width="50" height="50" alt="Solaris 10" border="0"></a>
     </td>
-    <td> <b><a href="http://www.sunfreepacks.com/listing/?limit=1000&amp;offset=0">Solaris 10, SXCE</a></b> 
-        ASwine, ASwine-SXCE binary package .pkg for Solaris 10 and SXCE x86</td>
+    <td> <b><a href="http://www.sunfreepacks.com/listing/?limit=1000&amp;offset=0">Download Solaris 10, SXCE packages</a></b> 
+        - ASwine, ASwine-SXCE binary package .pkg for Solaris 10 and SXCE x86</td>
     <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
   </tr>
 
@@ -149,8 +149,8 @@ requested in exchange for hosting the Wine web site.</p>
     <td align="center"><a href="http://pkg.opensolaris.org/contrib/en/catalog.shtml">
       <img src="{$root}/images/distro/opensolaris.png" width="50" height="50" alt="OpenSolaris" border="0"></a>
     </td>
-    <td> <b><a href="http://pkg.opensolaris.org/contrib/en/catalog.shtml">OpenSolaris</a></b> 
-        binary package .pkg for OpenSolaris x86</td>
+    <td> <b><a href="http://pkg.opensolaris.org/contrib/en/catalog.shtml">Download OpenSolaris packages</a></b> 
+        - binary package .pkg for OpenSolaris x86</td>
     <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
   </tr>
 
