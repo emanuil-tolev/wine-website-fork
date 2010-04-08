@@ -9,6 +9,10 @@
 // import globals
 global $html, $config;
 
+// language override
+if ($_GET['lang'] and in_array($_GET['lang'], $config->languages))
+    $html->lang = $_GET['lang'];
+
 // display news based on page params
 switch (true)
 {
