@@ -32,6 +32,8 @@ Party Software</b> tab and click <b>Add</b>.</p>
 <p>Then, <b>copy and paste one of the lines below</b> depending on which 
 version you are running.</p>
 
+<p><b>For Ubuntu Lucid (10.04):</b><br>
+<i>ppa:ubuntu-wine/ppa</i></p>
 <p><b>For Ubuntu Karmic (9.10):</b><br>
 <i>ppa:ubuntu-wine/ppa</i></p>
 <p><b>For Ubuntu Jaunty (9.04):</b><br>
@@ -84,7 +86,7 @@ the packages are available at
 line, as follows. These may be useful on Kubuntu, Xubuntu, and other Ubuntu 
 derivatives.  You will need to run these in a terminal window.</p>
 
-<h3>For 9.10 (Karmic):</h3>
+<h3>For 10.04 (Lucid) and 9.10 (Karmic):</h3>
 
 <p><i>sudo add-apt-repository ppa:ubuntu-wine/ppa</i></p>
 
