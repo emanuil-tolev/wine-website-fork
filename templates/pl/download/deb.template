@@ -3,7 +3,7 @@
 
 <h1 class="title"><a href="http://www.ubuntu.com/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Logo" border="0"></a>
 Wine dla Ubuntu i pochodnych Ubuntu
-<a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Logo" border="0"></a></h1>
+<a href="http://www.ubuntu.com/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Logo" border="0"></a></h1>
 
 <p>Ubuntu i inne dystrybucje bazujące na Debianie
 używają specjalnego narzędzia zwanego APT do zarządzania
@@ -28,10 +28,12 @@ działa, to nie musisz używać paczek beta.</i></p>
 <p>Otwórz źródła oprogramowania z menu 
 <b>System->Administracja->źródła oprogramowania</b>.  Następnie przejdź na zakładkę <b>Oprogramowanie osób trzecich</b> i kliknij <b>Dodaj...</b></p>
 
-<img src="{$root}/images/distro/ubuntu-softwaresources1.png" width="531" height="509" alt="System->Administration->Software Sources->Third Party Software" border="0">
+<img src="{$root}/images/distro/ubuntu-ppa.png" width="531" height="509" alt="System->Administration->Software Sources->Third Party Software" border="0">
 
 <p>Następnie, <b>wklej jedną z poniższych linijek</b> zależnie od wersji twojego systemu.</p>
 
+<p><b>Dla Ubuntu Lucid (10.04):</b><br>
+<i>ppa:ubuntu-wine/ppa</i></p>
 <p><b>Dla Ubuntu Karmic (9.10):</b><br>
 <i>ppa:ubuntu-wine/ppa</i></p>
 <p><b>Dla Ubuntu Jaunty (9.04):</b><br>
@@ -41,15 +43,16 @@ działa, to nie musisz używać paczek beta.</i></p>
 <p><b>Dla Ubuntu Hardy (8.04):</b><br>
 <i>deb http://wine.budgetdedicated.com/apt hardy main #WineHQ - Ubuntu 8.04 "Hardy Heron"</i></p>
 
-<h2>Przyznanie zaufania repozytorium APT WineHQ i instalowanie Wine:</h2>
+<h2>Przyznanie zaufania repozytorium APT WineHQ (tylko dla Ubuntu 9.04 i wcześniejszych):</h2>
 
-<p>Po dodaniu repozytorium, potrzebujesz również dodać
-klucz do tego repozytorium do twojej systemowej listy zaufanych kluczy.</p>
+<p>Po dodaniu repozytorium, musisz również dodać klucz do tego 
+repozytorium do swojej systemowej listy zaufanych kluczy.</p>
 
 <p>Dla Ubuntu 9.04 i wcześniejszych, 
 <b><a href="http://wine.budgetdedicated.com/apt/Scott%20Ritchie.gpg">Pobierz
-i zapisz klucz Scotta Ritchiego</a></b> (prawy przycisk myszy -> zapisz jako) na pulpicie. Następnie przejdź na
-zakładkę <b>Uwierzytelnianie</b> , kliknij <b>Zaimportuj plik klucza...</b>, i wybierz plik klucza, którego właśnie zapisałeś (<i>Scott Ritchie.gpg</i>). Możesz usunąć ten plik po wykonaniu tego kroku.</p>
+i zapisz klucz Scotta Ritchiego</a></b> (prawy przycisk myszy -> zapisz jako) na pulpicie.
+Następnie przejdź na zakładkę <b>Uwierzytelnianie</b> , kliknij <b>Zaimportuj plik klucza...</b>, i wybierz plik klucza,
+którego właśnie zapisałeś (<i>Scott Ritchie.gpg</i>). Możesz usunąć ten plik po wykonaniu tego kroku.</p>
 
 <img src="{$root}/images/distro/ubuntu-softwaresources2.png" width="531" height="509" alt="System->Administration->Software Sources->Authentication" border="0">
 
@@ -80,13 +83,17 @@ dostępne w
 
 <h2>Alternatywne komendy wiersza poleceń do zainstalowania Wine:</h2>
 
-<p>Możliwe jest także dodanie repozytoriów Wine i
-zainstalowanie go z wiersza poleceń. Jest to użyteczne w przypadku
-Kubuntu, Xubuntu, i innych pochodnych Ubuntu.</p>
+<p>Możliwe jest także dodanie repozytoriów Wine i zainstalowanie go z wiersza poleceń. 
+Jest to użyteczne w przypadku Kubuntu, Xubuntu, i innych pochodnych Ubuntu.
+Aby to zrobić będziesz musiał wpisać poniższe linijki w terminalowym wierszu poleceń</p>
 
-<p>Najpierw otwórz okno terminalu <b>Aplikacje->Akcesoria->Terminal</b> . Następnie dodaj klucz
-repozytorium do systemowej listy zaufanych kluczy APT przez wklejenie
-następującej linijki do twojego terminalu:</p>
+<h3>Dla Ubuntu 10.04 (Lucid) i 9.10 (Karmic):</h3>
+
+<p><i>sudo add-apt-repository ppa:ubuntu-wine/ppa</i></p>
+
+<h3>Dla Ubuntu 9.04 i wcześniejszych:</h3>
+<p>Dodaj klucz repozytorium do swojej systemowej listy zaufanych kluczy poprzez
+kopiuj/wklej następujących linijek w terminalu:</p>
 
 <p><i>wget -q http://wine.budgetdedicated.com/apt/387EE263.gpg -O- | sudo apt-key add -</i></p>
 
@@ -104,4 +111,4 @@ update</b>'. . Teraz możesz zainstalować Wine zwyczajnie lub wpisując '<b>sud
 install wine</b>' w terminalu.</p>
 
 <br>
-<p><i>Bardzo szybki i niezawodny webhosting dla repozytoriów APT jest łaskawie dostarczany przez <a href="http://www.budgetdedicated.com/">budgetdedicated.com</a>.</i></p>
+<p><i>Bardzo szybki i niezawodny webhosting dla repozytoriów APT uprzejmie dostarcza <a href="http://www.budgetdedicated.com/">budgetdedicated.com</a>.</i></p>
