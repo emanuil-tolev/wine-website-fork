@@ -32,6 +32,8 @@ von Drittanbietern</b>-Reiter und klicke auf <b>Hinzuf&uuml;gen</b>.</p>
 <p>Dann, <b>copy-paste eine der unteren Zeilen</b> in Abh&auml;ngigkeit welche
 Version du benutzt.</p>
 
+<p><b>F&uuml;r Ubuntu Lucid (10.04):</b><br>
+<i>ppa:ubuntu-wine/ppa</i></p>
 <p><b>F&uuml;r Ubuntu Karmic (9.10):</b><br>
 <i>ppa:ubuntu-wine/ppa</i></p>
 <p><b>F&uuml;r Ubuntu Jaunty (9.04):</b><br>
@@ -84,10 +86,14 @@ Pakete verf&uuml;gbar unter
 <p>Es ist auch m&ouml;glich, das Hinzuf&uuml;gen der Wine Repositories und die Installation
 mit der Kommandozeile durchzuf&uuml;hren, wie folgt.
 Die Instruktionen sind n&uuml;tzlich f&uuml;r Kubuntu, Xubuntu und andere Ubuntu 
-Derivate.</p>
+Derivate. Zuerst &ouml;ffne ein Terminalfenster (Anwendungen->Zubeh&ouml;r->Terminal).</p>
 
-<p>Zuerst &ouml;ffne ein Terminalfenster (Anwendungen->Zubeh&ouml;r->Terminal). F&uuml;ge dann 
-den Schl&uuml;ssel des Repositorys zu der Liste f&uuml;r vertrauensw&uuml;rdige
+<h3>F&uuml;r 10.04 (Lucid) und 9.10 (Karmic):</h3>
+
+<p><i>sudo add-apt-repository ppa:ubuntu-wine/ppa</i></p>
+
+<h3>F&uuml;r 9.04 und vorherige:</h3>
+<p>F&uuml;ge Schl&uuml;ssel des Repositorys zu der Liste f&uuml;r vertrauensw&uuml;rdige
 APT-Schl&uuml;ssel Deines Systems hinzu, indem Du folgendes 
 in das Terminal copy-pastest.:</p>
 
@@ -95,8 +101,6 @@ in das Terminal copy-pastest.:</p>
 
 <p>Danach, f&uuml;ge das Repository zu den APT-Quellen Deines Systems hinzu:</p>
 
-<p><b>F&uuml;r Ubuntu Karmic (9.10):</b><br>
-<i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/karmic.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 <p><b>F&uuml;r Ubuntu Jaunty (9.04):</b><br>
 <i>sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/jaunty.list -O /etc/apt/sources.list.d/winehq.list</i></p>
 <p><b>F&uuml;r Ubuntu Intrepid (8.10):</b><br>
