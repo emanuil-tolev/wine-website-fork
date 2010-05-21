@@ -1,0 +1,20 @@
+<news>
+<date>May 21, 2010</date>
+<title>Wine 1.2-rc1 Released</title>
+<body>
+<p> The Wine development release 1.2-rc1 is now available.</p>
+<p> This is the first release candidate for Wine 1.2. It marks the beginning of the code freeze period. Please give this release a good testing to help us make 1.2 as good as possible.</p>
+<p> <a href="{$root}/announce/1.2-rc1">What's new</a> in this release:
+<ul>
+  <li>Many new toolbar icons.</li>
+  <li>Support for alpha blending in image lists.</li>
+  <li>Much more complete shader assembler.</li>
+  <li>Support for Arabic font shaping and joining.</li>
+  <li>A number of fixes for video rendering.</li>
+  <li>Font antialiasing configuration through fontconfig.</li>
+  <li>Improved handling of desktop link files.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.2-rc1.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
