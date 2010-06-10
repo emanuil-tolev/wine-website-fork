@@ -131,64 +131,6 @@
 
 <p>The overall implementation status of Wine can be checked on the
   <a href="{$root}/site/status">Wine Status page</a>.</p>
-<p>See the following task lists to find a development task:</p>
-<ul>
-  <li id="tasklets"><a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;keywords=tasklet&amp;keywords_type=anywords">Tasklets</a>: 
-    This list regroups tasks that have a well-defined and limited
-    scope. If you are new to Wine or only have a limited amount of time, 
-    this list is meant for you. Tasks on this list typically 
-    involve fixing bugs that only touch on a couple of functions,
-    implementing a couple new reasonably simple APIs or simple
-    extensions to an existing API. Some may have a wider scope but
-    would then be composed of smaller chunks so that you can tackle
-    only one chunk and still have something that can be submitted. 
-    Some tasks also draw on non-Wine specific knowledge. For instance
-    a task may require being knowledgeable in Lex/Yacc so if you have
-    an expertise in a given domain you may want to scan it.</li>
-  <li id="tasklist"><a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;keywords=tasklist&amp;keywords_type=anywords">Tasklist</a>: 
-    The major development tasks are listed there. This is the place to
-    check out if you want to get involved in one of the larger / 
-    longer-term projects. Bugs placed in this list have the following
-    characteristics:
-    <ul>
-      <li>they concern new development (e.g. new functionality, significant
-        restructuring of existing functionality or new drivers for 
-        sound/video/etc.) rather than simply bug fixes of the types
-        found in the previous lists</li>
-      <li>they are reasonably well-defined, at least in the
-        functionality to be provided if not in the implementation details</li>
-      <li>normally include a rational for why such development is desirable</li>
-    </ul>
-  </li>
-<!-- the following two sections are obsolete
-  <li id="wine_1_x"><a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;target_milestone=1.0.0&amp;order=bugs.bug_severity">Wine 1.x</a> task overviews: 
-    Regroups the issues that need to be resolved before Wine 1.0 can
-    be released. One word about Wine 1.0: Wine 1.0 does not mean that
-    Wine will run all Windows applications. It means that:
-    <ul>
-      <li>Wine is ready for use by the general public for selected
-        applications (that set will be determined by what Wine supports,
-        not the other way around)</li>
-      <li>Applications based on an old version of Wine/Wine lib will
-        work with a new version of the Wine server</li>
-      <li>The stable branches of Wine should not suffer major
-        regressions. An application that works in 1.0.x should work in
-        1.0.y if y&gt;x.</li>
-    </ul>
-  </li>
-  <li>Wine 0.9.0 is the first step towards these goals:
-    <ul>
-      <li>When the items in this list have been completed, we release
-        0.9.0</li>
-      <li>at this point we should be ready to have increased user
-        participation for using, testing and documenting Wine</li>
-      <li>During 0.9.1, 0.9.2, etc. we do a progressive code freeze</li>
-      <li>Then when everything is frozen we release 1.0</li>
-      <li>After 1.0.0 we will have stable and unstable branches</li>
-    </ul>
-  </li>
--->
-</ul>
 
 <h3 id="conf_tests">Conformance tests</h3>
 

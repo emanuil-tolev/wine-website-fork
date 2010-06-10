@@ -138,34 +138,6 @@
 
 <p>O estado geral da implementação do Wine pode ser verificado na página
   <a href="{$root}/site/status">Wine Status</a>.</p>
-<p>Veja a seguinte lista de tarefas para encontrar uma tarefa de desenvolvimento:</p>
-<ul>
-  <li id="tasklets"><a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;keywords=tasklet&amp;keywords_type=anywords">Tasklets</a>: 
-    Esta lista agrupa tarefas que têm um âmbito bem definido e limitado.
-    Se você é novo no Wine ou apenas tem algum tempo livre, esta lista é a indicada
-    para si. Tarefas nesta lista envolvem tipicamente corrigir bugs que tocam
-    apenas num par de funções, implementar umas poucas APIs simples ou extensões
-    simples a uma API existente. Algumas podem abranger um pouco mais mas podem
-    ser decompostas em bocados mais pequenos para que se possa abordar apenas
-    um bocado e mesmo assim obter algo que pode ser submetido. Algumas tarefas
-    também se focam em conhecimento não específico do Wine. Por exemplo uma
-    tarefa pode necessitar que seja um conhecedor de Lex/Yacc, portanto se você
-    tem vasta experiência num certo domínio pode querer procurar por ele.</li>
-  <li id="tasklist"><a href="http://bugs.winehq.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;keywords=tasklist&amp;keywords_type=anywords">Tasklist</a>: 
-    As maiores tarefas de desenvolvimento estão listadas aqui. Este é o lugar a
-    visitar se se quer envolver num dos projectos maiores, a longo prazo. Bugs
-    desta lista têm as seguintes características:
-    <ul>
-      <li>Eles necessitam de novo desenvolvimento (e.g. nova funcionalidade,
-        reestruturação significativa de funcionalidade existente ou novos
-        drivers para som, video, etc.) ao invés de simples arranjos dos encontrados
-        nas listas anteriores.</li>
-      <li>Estão razoavelmente bem definidos, pelo menos na funcionalidade a ser
-        fornecida se não nos detalhes da implementação</li>
-      <li>Normalmente incluem um raciocínio para tal desenvolvimento ser desejável</li>
-    </ul>
-  </li>
-</ul>
 
 <h3 id="conf_tests">Testes de Conformidade</h3>
 
