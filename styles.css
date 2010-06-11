@@ -163,26 +163,25 @@ P.newstitle A:hover { color: #FF6666; text-decoration: none; }
 DIV.newsblock       { margin: 0 5px 25px 10px; padding: 0; }
 
 /* winehq main page menu */
-ul.winehq_menu                     {
-                                    list-style-type: none;
-                                    margin: 20px 0px 0px 0px;
-                                    margin-left: expression("30px"); /* for IE */
-                                   }
-ul.winehq_menu li                  { height: 50px; margin: 0px 0px 25px 0px; padding: 5px 0 0 45px; cursor: pointer; }
-ul.winehq_menu li.info             { background-image: url('images/main_info.png'); background-repeat: no-repeat }
-ul.winehq_menu li.info:hover       { background-image: url('images/main_info_s.png'); background-repeat: no-repeat }
-ul.winehq_menu li.dl               { background-image: url('images/main_dl.png'); background-repeat: no-repeat }
-ul.winehq_menu li.dl:hover         { background-image: url('images/main_dl_s.png'); background-repeat: no-repeat }
-ul.winehq_menu li.help             { background-image: url('images/main_help.png'); background-repeat: no-repeat }
-ul.winehq_menu li.help:hover       { background-image: url('images/main_help_s.png'); background-repeat: no-repeat }
-ul.winehq_menu li.devel            { background-image: url('images/main_devel.png'); background-repeat: no-repeat }
-ul.winehq_menu li.devel:hover      { background-image: url('images/main_devel_s.png'); background-repeat: no-repeat }
-ul.winehq_menu li.donate           { background-image: url('images/main_donate.png'); background-repeat: no-repeat }
-ul.winehq_menu li.donate:hover     { background-image: url('images/main_donate_s.png'); background-repeat: no-repeat }
-ul.winehq_menu li a                { text-decoration: none; color:  maroon; }
-ul.winehq_menu li a:hover          { text-decoration: underline; color: red; }
-ul.winehq_menu div.title           { font-size: 24px; padding: 0; margin: 5px 0 0 20px; }
-ul.winehq_menu div.subtitle        { font-size: 14px; color: #4e4e4e; padding: 0; margin: 0 0 0 35px; }
+.winehq_menu                          { margin: 20px 0px 0px 40px; }
+.winehq_menu>div                      { padding: 0; margin: 0px 0px 30px 0px; cursor: pointer; }
+.winehq_menu>div>.text                { padding: 10px 0 0 15px; margin: 0 0 24px 0; float:left; clear:right; }
+.winehq_menu>div>.text>.title         { font-size: 24px; padding: 0; margin: 0; }
+.winehq_menu>div>.text>.title>a       { text-decoration: none; color: maroon; }
+.winehq_menu>div>.text>.title>a:hover { text-decoration: underline; color: red; }
+.winehq_menu>div>.text>.subtitle      { font-size: 14px; color: #4e4e4e; padding: 0; margin: 0 0 0 15px; }
+/* icons for the main page menu elements */
+.winehq_menu>div>.icon                { background: url('images/home_icons.png') no-repeat; width:50px; height:50px; display:inline-block; float:left; clear:left; margin: 0; padding: 0; }
+.winehq_menu>.info>.icon              { background-position: 0 0 }
+.winehq_menu>.info:hover>.icon        { background-position: 0 -50px }
+.winehq_menu>.dl>.icon                { background-position: -50px 0 }
+.winehq_menu>.dl:hover>.icon          { background-position: -50px -50px }
+.winehq_menu>.help>.icon              { background-position: -100px 0 }
+.winehq_menu>.help:hover>.icon        { background-position: -100px -50px }
+.winehq_menu>.devel>.icon             { background-position: -150px 0 }
+.winehq_menu>.devel:hover>.icon       { background-position: -150px -50px }
+.winehq_menu>.donate>.icon            { background-position: -200px 0 }
+.winehq_menu>.donate:hover>.icon      { background-position: -200px -50px }
 
 /* stuff */
 img                 { border: 0; }
