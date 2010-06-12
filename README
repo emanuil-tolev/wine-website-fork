@@ -18,6 +18,8 @@ Setting Up.
     otherwise if this site is the root, leave Rewritebase /
 3. cp include/winehq.conf.sample include/winehq.conf
 4. edit include/winehq.conf
+5. cp include/globals.conf.sample include/globals.conf
+6. edit include/globals.conf
 
 Templates.
 --------------
