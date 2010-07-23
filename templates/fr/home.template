@@ -42,7 +42,7 @@
             </div>
 
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="donateForm" style="margin: 0; padding: 0;">
-            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="cmd" value="_donations">
             <input type="hidden" name="business" value="donate@winehq.org">
             <input type="hidden" name="item_name" value="Wine donation">
             </form>
