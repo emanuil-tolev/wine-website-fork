@@ -12,8 +12,8 @@
             <div class="info" onClick="document.location='{$root}/about/';">
               <div class="icon"></div>
               <div class="text">
-                <div class="title"><a href="{$root}/about/">Informations</a></div>
-                <div class="subtitle">Aperçu des fonctionnalités de Wine.</div>
+                <div class="title"><a href="{$root}/about/">À propos</a></div>
+                <div class="subtitle">Apprenez-en plus sur le projet Wine.</div>
               </div>
             </div>
 
@@ -21,15 +21,15 @@
               <div class="icon"></div>
               <div class="text">
                 <div class="title"><a href="{$root}/download/">Téléchargement</a></div>
-                <div class="subtitle">Recevez Wine maintenant !</div>
+                <div class="subtitle">Installez la dernière version de Wine.</div>
               </div>
             </div>
 
             <div class="help" onClick="document.location='{$root}/help/';">
               <div class="icon"></div>
               <div class="text">
-                <div class="title"><a href="{$root}/help/">Aide</a></div>
-                <div class="subtitle">Documentation, support et Wiki.</div>
+                <div class="title"><a href="{$root}/help/">Support</a></div>
+                <div class="subtitle">Obtenez de l'aide sur Wine.</div>
               </div>
             </div>
 
@@ -37,7 +37,7 @@
               <div class="icon"></div>
               <div class="text">
                 <div class="title"><a href="{$root}/devel/">Développement</a></div>
-                <div class="subtitle">Sources de Wine, suivi des anomalies, etc.</div>
+                <div class="subtitle">Devenez un développeur Wine.</div>
               </div>
             </div>
 
@@ -50,7 +50,7 @@
               <div class="icon"></div>
               <div class="text">
                 <div class="title"><a href="javascript:document.donateForm.submit();">Dons</a></div>
-                <div class="subtitle">Faire un don à Wine.</div>
+                <div class="subtitle">Faites un don au projet Wine.</div>
               </div>
             </div>
 
