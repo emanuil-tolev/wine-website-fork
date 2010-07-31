@@ -1,0 +1,21 @@
+<news>
+<date>30 juillet 2010</date>
+<title>Sortie de Wine 1.3.0</title>
+<body>
+<p> La version de développement 1.3.0 de Wine est à présent disponible.</p>
+<p> <a href="{$root}/announce/1.3.0">Nouveautés</a> de cette version :
+<ul>
+  <li>Interface utilisateur préliminaire pour l'Internet Explorer intégré.</li>
+  <li>Prise en charge du glisser-déposer OLE multi-processus.</li>
+  <li>Nouveau programme wscript.exe intégré (Windows Script Host).</li>
+  <li>Les boîtes de dialogue ouvrir/enregistrer se rappellent du dernier
+répertoire utilisé.</li>
+  <li>Mises à jours de traductions.</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a
+href="http://prdownloads.sourceforge.net/wine/wine-1.3.0.tar.bz2">code
+source</a> est disponible dès à présent.
+Les paquets binaires sont en cours de construction, et apparaîtront sous peu
+sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
