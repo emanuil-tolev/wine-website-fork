@@ -11,12 +11,12 @@ repository includes Wine, however if you want to stay up to date with the
 latest Wine beta package you can use WineHQ's by following these instructions.
 </p>
 
-<h2>Warning: These are beta packages for Ubuntu 9.10 or later</h2>
+<h2>Warning: These are beta packages for Ubuntu 10.04 or later</h2>
 
 <p><i>The packages here are beta packages.  This means they will 
 periodically suffer from 
 <a href="http://wiki.winehq.org/Regression">regressions</a>, and as a result an 
-update may break functionality in Wine.  If the Wine version provided with Ubuntu
+update may break functionality in Wine. If the Wine version provided with Ubuntu
 works for you, then you may not want to use these beta packages.</i></p>
 
 <h2>Adding the WineHQ Repository:</h2>
@@ -34,37 +34,25 @@ Party Software</b> tab and click <b>Add</b>.</p>
 <h2>Installing Wine:</h2>
 
 <p>Click close to finish, and then <b>reload the package information</b> when 
-prompted. If you have Wine installed, the system's update manager will now 
-inform you of the latest Wine beta release and prompt you to upgrade. If you 
-haven't installed Wine yet, go to Applications->Add/Remove and search for 
-Wine or just <a href="apt://wine">click this link</a>.</p>
+prompted. If you have Wine installed already, update manager will offer to
+upgrade you to the stable Wine 1.2.  To get the most recent Wine 1.3 beta, you 
+must install the <i>wine1.3 package</i> or <a href="apt://wine1.3">click this 
+link</a>.</p>
 
 <h2>Upgrading to a new version of Ubuntu</h2>
 
-<p>If you are upgrading the entire system, such as going from Ubuntu 9.10 to 
-10.04, you will need to come back to this page and add the repository again. 
+<p>If you are upgrading the entire system, such as going from Ubuntu 10.04 to 
+10.10, you will need to come back to this page and add the repository again. 
 The built in update manager will not switch the Wine repository automatically.
 </p>
 
-<h2>Older .deb packages</h2>
+<h2>Alternative Command Line Instructions for Installing Wine:</h2>
 
-<p>Since the APT repository can only hold the latest packages, older versions of 
-the packages are available at 
-<a href="http://wine.budgetdedicated.com/archive/index.html">the WineHQ .deb packages archive</a>.</p>
-
-<p>You can install downloaded packages by double-clicking on them.</p>
-
-<h2>Alternative command Line Instructions for Installing Wine:</h2>
-
-<p>It is also possible to add the Wine repositories and install via the command 
-line, as follows. These may be useful on Kubuntu, Xubuntu, and other Ubuntu 
-derivatives.  You will need to run these in a terminal window.</p>
+<p>It is also possible to add the Wine PPA and install via the terminal. This
+may be useful on Kubuntu, Xubuntu, and other Ubuntu derivatives.</p>
 
 <p><i>sudo add-apt-repository ppa:ubuntu-wine/ppa</i></p>
 
 <p>Then update APT's package information by running '<b>sudo apt-get 
-update</b>'. You can now install Wine normally or by typing '<b>sudo apt-get 
-install wine</b>' into the terminal.</p>
-
-<br>
-<p><i>Very fast and reliable webhosting for the APT repository is graciously provided by <a href="http://www.budgetdedicated.com/">budgetdedicated.com</a>.</i></p>
+update</b>'. You can now install Wine by typing '<b>sudo apt-get 
+install wine1.3</b>'.</p>
