@@ -8,7 +8,7 @@ Wine for Debian Lenny, Squeeze and Sid
 <p>Debian-based distributions utilize a special tool for managing packages known as APT.  APT is able to automagically install all of the needed dependencies for a software package, as well as keep the package up to date, by scanning what are known as APT repositories. Debian-based distributions have their own repositories of software that include Wine, however we keep our own repository of the latest available beta packages here for download.</p>
 
 <p><b>Warning: These are beta packages</b><br>
-<i>This means they will periodically suffer from <a href="http://wiki.winehq.org/Regression">regressions</a>, and as a result an update may break functionality in Wine.  If the latest stable release of Wine (currently Wine 1.0.1) works for you, then you may not want to use these beta packages.</i></p>
+<i>This means they will periodically suffer from <a href="http://wiki.winehq.org/Regression">regressions</a>, and as a result an update may break functionality in Wine.  If the latest stable release of Wine (currently Wine 1.2) works for you, then you may not want to use these beta packages.</i></p>
 
 <p>This repository contains packages for i386 and amd64 architecture.</p>
 
