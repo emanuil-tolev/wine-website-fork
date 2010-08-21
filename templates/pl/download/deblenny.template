@@ -8,7 +8,7 @@ Wine dla Debian Lenny, Squeeze i Sid
 <p>Dystrybucje bazujące na Debianie używają specjalnego narzędzia zwanego APT do zarządzania paczkami. APT jest zdolne automagicznie zainstalować wszystkie potrzebne zależności dla paczki z programem, jak również utrzymywać zawsze najnowsze wersje paczki, poprzez przeszukiwanie czegoś, co jest znane pod nazwą repozytoria APT. Dystrybucje bazujące na Debianie mają swoje własne repozytoria programów, które zawiera w sobie Wine, jednakże my utrzymujemy nasze własne repozytorium najnowszych dostępnych paczek beta, które można tutaj pobrać.</p>
 
 <p><b>Uwaga: To są paczki beta</b><br>
-<i>Te paczki są paczkami beta. Oznacza to, że okresowo mogą cierpieć z powodu <a href="http://wiki.winehq.org/Regression">regresji</a>, a aktualizacja do nich może popsuć funkcjonalność Wine. Jeżeli w twoim przypadku ostatnie stabilne wydanie Wine (aktualnie Wine 1.0.1)
+<i>Te paczki są paczkami beta. Oznacza to, że okresowo mogą cierpieć z powodu <a href="http://wiki.winehq.org/Regression">regresji</a>, a aktualizacja do nich może popsuć funkcjonalność Wine. Jeżeli w twoim przypadku ostatnie stabilne wydanie Wine (aktualnie Wine 1.2)
 działa, to nie musisz używać paczek beta.</i></p>
 
 <p>To repozytorium zawiera paczki dla procesora o architekturze i386 i amd64.</p>
