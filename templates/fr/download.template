@@ -1,0 +1,211 @@
+<!--TITLE:[Téléchargements binaires de Wine]-->
+<!--BLURB:[Téléchargez Wine pour votre système d'exploitation favori.]-->
+
+<h1 class="title">Télécharger Wine</h1>
+
+<h2 style="margin-bottom: 10px;"><a name="crossover"></a>Wine avec support</h2>
+
+<table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Produit</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Description</font></b></td>
+  </tr>
+
+  <tr>
+    <td align="center" bgcolor="#ffffff">
+      <a href="http://www.codeweavers.com/products/download_trial/">
+        <img src="{$root}/images/distro/crossover.png" 
+         width="50" height="50" alt="CrossOver Linux ou Mac" border="0">
+      </a>
+    </td>
+    <td align="left" bgcolor="#ffffff">
+      <b><a href="http://www.codeweavers.com/products/">CrossOver</a></b>
+ est une version affinée de Wine fournie par <b><a href="http://www.codeweavers.com">CodeWeavers</a></b>.
+CrossOver facilite l'utilisation de Wine et fournit un excellent support
+technique à ses utilisateurs.
+Tous les achats de CrossOver sont utilisés pour financer directement les
+développeurs travaillant sur Wine. Ainsi, CrossOver constitue à la fois un
+excellent moyen d'obtenir du support lors de l'utilisation de Wine, et un
+soutien au projet Wine. CodeWeavers fournit des 
+      <b><a href="http://www.codeweavers.com/products/download_trial/">versions
+d'évaluation de CrossOver</a></b> entièrement fonctionnelles.
+    </td>
+  </tr>
+</table>
+
+<p class="small" align="center">Cet endossement est la principale exigence de
+CodeWeavers en échange de l'hébergement du site web de Wine.</p>
+  
+
+<h2 style="margin-bottom: 5px;"><a name="binary"></a>Téléchargements binaires de Wine</h2>
+
+<table style="margin: 0 0 15px 0;" width="100%">
+<tr>
+  <td width="200">Dernière version stable :</td><td>Wine&nbsp;{$config_stable_release}</td>
+  <td rowspan="2" valign="top" style="padding-left: 20px; text-align:
+center;"><b>Voyez la 
+  <a href="http://wiki.winehq.org/HowTo">procédure d'installation et de configuration</a> 
+  pour les instructions de post-installation.</b></td>
+</tr>
+<tr>
+  <td>Dernière version de développement :</td><td>Wine&nbsp;{$config_master_release}</td>
+</tr>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Système</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Notes</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Maintenanceur</font></b></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="{$root}/download/deb">
+      <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Linux" border="0"></a>
+    </td>
+    <td> <b><a href="{$root}/download/deb">Paquets Ubuntu</a></b> 
+     - .deb binaires et sources pour Ubuntu Lucid (10.04 LTS)
+    <td><a href="mailto:scott@open-vote.org">Scott Ritchie</a></td>
+  </tr>
+
+   <tr bgcolor="#ffffff">
+    <td align=center><a href="{$root}/download/deblenny">
+      <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
+    </td>
+    <td> <b><a href="{$root}/download/deblenny">paquets Debian</a></b> 
+     - .deb binaires pour Debian Lenny, Squeeze et Sid</td>
+    <td><a href="mailto:repository@lamaresh.net">Maurilio Genovese</a><br><a href="mailto:ben.klein@lamaresh.net">Ben Klein</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">
+      <img src="{$root}/images/distro/redhat.png" width="50" height="50" alt="RedHat Linux" border="0"></a>
+    </td>
+    <td> <b><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">Paquets Red Hat / CentOS / Fedora</a></b>
+        - .rpm binaires et sources pour Red Hat Enterprise Linux 4 et 5, CentOS
+          4 et 5, Fedora Core 5 et 6, Fedora Linux 7 et distributions compatibles.
+        Le méta-paquet wine est disponible via <tt>yum</tt> au travers du
+        dépôt EPEL / Fedora Extras / Fedora en exécutant
+        <tt>$ yum install wine </tt>"
+         </td>
+    <td><a href="mailto:andreas.bierfert_at_lowlatency.de">Andreas Bierfert</a></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://en.opensuse.org/Wine#Repositories">
+      <img src="{$root}/images/distro/suse.png" width="50" height="50" alt="SUSE Linux" border="0"></a>
+    </td>
+    <td> <b><a href="http://en.opensuse.org/Wine#Repositories">Paquets SUSE</a></b>
+         - .rpm binaires et sources et instantanés quotidiens pour openSUSE
+           11.1, 11.2, 11.3 ainsi que SUSE Linux Enterprise 10 et 11.<br>
+         Les anciens paquets sont disponibles sur <a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=79444">SourceForge</a>
+     </td>
+    <td><a href="mailto:meissner@suse.de">Marcus Meissner</a></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=80066">
+      <img src="{$root}/images/distro/mandriva.png" width="50" height="50" alt="Mandriva Linux" border="0"></a>
+    </td>
+    <td> <b><a
+href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=80066">Paquets Mandriva</a></b>
+         - .rpm binaires pour Mandriva Linux 2008, 2009 et 2010. Téléchargez les
+           paquets 2010.1 si votre Mandriva est une version 2010.1, p.ex. 2010
+Spring. Téléchargez les paquets 2010.0 si votre Mandriva est la première version 2010.</td>
+    <td><a href="mailto:marco@mandrivaclub.nl">Marco Meijer</a></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">
+      <img src="{$root}/images/distro/slackware.png" width="50" height="50" alt="Slackware Linux" border="0"></a>
+    </td>
+    <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">Paquets Slackware</a></b>
+         - .txz binaires (Slackware 13.1) ou .tgz (pour les versions antérieures)</td>
+    <td><a href="mailto:studiosg@giustetti.net">Simone Giustetti</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://www.freshports.org/emulators/wine/">
+      <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
+    </td>
+    <td> <b><a href="http://www.freshports.org/emulators/wine/">Paquets FreeBSD</a></b> 
+         - code source pour FreeBSD 5.3 ou ultérieur</td>
+    <td><a href="mailto:gerald@pfeifer.com">Gerald Pfeifer</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">
+      <img src="{$root}/images/distro/pcbsd.png" width="50" height="50" alt="FreeBSD" border="0"></a>
+    </td>
+    <td> <b><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">Paquets PC-BSD</a></b> 
+         - .pbi binaires pour PC-BSD (système d'exploitation basé sur FreeBSD)</td>
+    <td><a href="mailto:kris@pcbsd.com">Kris Moore</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://www.sunfreepacks.com/listing/?limit=1000&amp;offset=0">
+      <img src="{$root}/images/distro/solaris.png" width="50" height="50" alt="Solaris 10" border="0"></a>
+    </td>
+    <td> <b><a href="http://www.sunfreepacks.com/listing/?limit=1000&amp;offset=0">Paquets Solaris 10, SXCE</a></b> 
+        - .pkg binaire ASwine, ASwine-SXCE pour Solaris 10 et SXCE x86</td>
+    <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://pkg.opensolaris.org/contrib/en/catalog.shtml">
+      <img src="{$root}/images/distro/opensolaris.png" width="50" height="50" alt="OpenSolaris" border="0"></a>
+    </td>
+    <td> <b><a href="http://pkg.opensolaris.org/contrib/en/catalog.shtml">Paquets OpenSolaris</a></b> 
+        - .pkg binaire pour OpenSolaris x86</td>
+    <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
+  </tr>
+
+
+</table>
+
+
+<h2 style="margin-bottom: 10px;"><a name="binary"></a>Outils tiers</h2>
+
+<p>Parfois, il arrive qu'une adaptation de Wine permette à une application de
+fonctionner correctement, mais qu'elle ne puisse être incorporée à Wine pour une
+raison quelconque. Pour pallier des imperfections actuelles de Wine, diverses
+applications tierces pour utilisateurs finaux ont été conçues au cours des
+années. Les développeurs Wine ne supportent en aucun cas ces applications, mais
+il se peut que vous les trouviez utiles. Pour plus d'informations, voyez notre page
+wiki sur les <a
+href="http://wiki.winehq.org/ThirdPartyApplications">applications tierces</a>.</p>
+
+<h2><a name="source"></a>Téléchargement des sources de Wine</h2>
+
+<table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Emplacement</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Description</font></b></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td> <a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=77449" target="_blank">sourceforge.net</a></td>
+    <td> Site officiel de téléchargement. </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td> <a href="http://wiki.winehq.org/GitWine">source.winehq.org/git</a> </td>
+    <td> Pour la version de développement la plus récente. </td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td><a href="http://ibiblio.org/pub/linux/system/emulators/wine/">ibiblio.org</a></td>
+    <td> Site de téléchargement alternatif pour les tarballs officiels de
+sources et de documentation.</td>
+  </tr>
+  
+</table>
+
+<div style="margin: 10px; padding: 5px; border: 1px solid #C0C0C0;
+background-color: #F0F0F0;"><b>Note:</b> Voyez les <a
+href="http://wiki.winehq.org/Recommended_Packages">paquets recommandés</a> pour
+de l'aide sur la configuration et la construction de Wine.</div>
+
