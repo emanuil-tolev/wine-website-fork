@@ -1,0 +1,64 @@
+<!--TITLE:[Installer la dernière version de Wine sur Ubuntu]-->
+<!--BLURB:[Installer la dernière version de Wine sur Ubuntu]-->
+
+<h1 class="title"><a href="http://www.ubuntu.com/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Logo Ubuntu" border="0"></a>
+Wine pour Ubuntu et distributions dérivées
+<a href="http://www.ubuntu.com/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Logo Ubuntu" border="0"></a></h1>
+
+<p>Ubuntu et les distributions dérivées (comme Kubuntu) fournissent des
+logiciels sous forme de <i>paquets</i> qui sont stockés dans des
+<i>dépôts</i>. Le dépôt par défaut d'Ubuntu inclut Wine. Néanmoins, si vous
+voulez rester à jour avec le dernier paquet bêta de Wine, vous pouvez
+utiliser le dépôt WineHQ en suivant les instructions ci-dessous.
+</p>
+
+<h2>Avertissement : ce sont des paquets bêta pour Ubuntu 10.04 ou ultérieur</h2>
+
+<p><i>Les paquets mentionnés sont des paquets bêta, c.-à-d. qu'ils
+peuvent à l'occasion souffrir de
+<a href="http://wiki.winehq.org/Regression">régressions</a>. Par conséquent, une
+mise à jour peut casser une fonctionnalité dans Wine. Si la version de Wine
+fournie par votre distribution fonctionne dans votre cas, vous ne devriez pas
+utiliser de paquets bêta.</i></p>
+
+<h2>Ajout du dépôt WineHQ</h2>
+
+<p>Ouvrez le menu Sources de logiciels en allant sur
+<b>Système->Administration->Sources de logiciels</b>. Sélectionnez ensuite
+l'onglet <b>Autres logiciels</b> et cliquez sur <b>Ajouter une source de mise à
+jour</b>.</p>
+
+<img src="{$root}/images/distro/fr_ubuntu-ppa.png" width="702" height="467"
+alt="Système->Administration->Sources de logiciels->Autres logiciels" border="0">
+
+<p>Ensuite, <b>entrez la ligne suivante</b> :</p>
+
+<i>ppa:ubuntu-wine/ppa</i></p>
+
+<h2>Installation de Wine</h2>
+
+<p>Cliquez sur <b>Fermer</b> pour terminer, et ensuite sur <b>Actualiser</b>
+quand on vous le demande. Si Wine est déjà installé, le gestionnaire de mises
+à jour vous proposera une mise à jour vers la version stable Wine 1.2. Pour
+obtenir la version bêta 1.3 la plus récente de Wine, vous devez installer le
+paquet <i>wine1.3</i> ou <a href="apt://wine1.3">cliquer sur ce lien</a>.</p>
+
+<h2>Mise à niveau vers une nouvelle version d'Ubuntu</h2>
+
+<p>Si vous mettez à niveau le système entier, par exemple en passant d'Ubuntu
+10.04 à 10.10, vous devrez revenir sur cette page et ré-ajouter le dépôt. Le
+gestionnaire de mises à jour intégré n'utilisera <i>pas</i> automatiquement le
+dépôt Wine.
+</p>
+
+<h2>Installation alternative de Wine via la ligne de commande</h2>
+
+<p>Il est également possible d'ajouter le PPA Wine et de procéder à
+l'installation en utilisant uniquement le terminal. Cela peut être utile sous
+Kubuntu, Xubuntu ou d'autres distributions dérivées.</p>
+
+<p><i>sudo add-apt-repository ppa:ubuntu-wine/ppa</i></p>
+
+<p>Mettez ensuite à jour les informations sur les paquets d'APT en exécutant
+ '<b>sudo apt-get update</b>'. Vous pouvez dès lors installer Wine en tapant
+ '<b>sudo apt-get install wine1.3</b>'.</p>
