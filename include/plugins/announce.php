@@ -4,6 +4,7 @@
     WineHQ Website
     Announce plugin (grabs latest announce from git)
     by Jeremy Newman <jnewman@codeweavers.com>
+       Vince C. <v_cadet@yahoo.fr> (back-reference in 'changes' section)
 */
 
 // import global objects
@@ -26,7 +27,12 @@ if ($arr = file($announce))
 
         if (ereg("^--------------------", $arr[$c])) $in_header = 0;
         else if (ereg("^Bugs fixed", $arr[$c])) $in_bugs = 1;
-        else if (ereg("^Changes since", $arr[$c])) $in_bugs = 0;
+        else if (ereg("^Changes since", $arr[$c]))
+        {
+            // Link to previous versions in changes
+            $in_bugs = 0;
+            $arr[$c] = ereg_replace( '[[:digit:].]+', '<a title="Changes since \\0" href="./\\0">\\0</a>', $arr[$c] );
+        }
 
         if ($in_header)
         {
