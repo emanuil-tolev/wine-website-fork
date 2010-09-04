@@ -4,11 +4,9 @@
 
 <h2>Media</h2>
 
-<script type="text/javascript" src="http://www.codeweavers.com/js/swfobject.js"></script>
+<script type="text/javascript" src="{$root}/swfobject.js"></script>
 <script type="text/javascript">
     var flashvars = {};
-    flashvars.width = "720";
-    flashvars.height = "480";
     flashvars.file = "http://media.codeweavers.com/pub/other/wineconf2008.flv";
     flashvars.backcolor = "0xEFEFEF";
     var params = {};
@@ -17,7 +15,7 @@
     var attributes = {};
     attributes.id = "mediaplayer";
     attributes.name = "mediaplayer";
-    swfobject.embedSWF("http://www.codeweavers.com/images/swf/mediaplayer.swf", "winehqvid", "720", "480", "8.0.0", null, flashvars, params, attributes);
+    swfobject.embedSWF("{$root}/player.swf", "winehqvid", "720", "480", "10.0.0", null, flashvars, params, attributes);
 </script>
 
 <p>The following is the keynote address from Alexandre Julliard given during WineConf 2008. To view the video you will need
@@ -27,7 +25,7 @@ flash video file, <a href="http://media.codeweavers.com/pub/other/wineconf2008.f
 <div style="margin-left: 25px;">
     <div id="winehqvid">
         <b class="error">Flash Player Not Found!</b><br />
-        <a href="http://www.macromedia.com/go/getflashplayer">Get the Flash Player</a> to see our videos.
+        <a href="http://get.adobe.com/flashplayer/">Get the Flash Player</a> to see our videos.
     </div>
 </div>
 
