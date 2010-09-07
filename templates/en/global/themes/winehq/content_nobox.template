@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 <head>
     <title>{$page_title}</title>
@@ -9,7 +9,6 @@
     <meta name="keywords" content="windows, linux, macintosh, solaris, freebsd">
     <meta name="robots" content="index, follow">
     <meta name="copyright" content="Copyright {$curtime_year}. WineHQ.org All Rights Reserved.">
-    <meta name="author" content="Jeremy Newman">
     <meta name="language" content="English">
     <meta name="revisit-after" content="1">
     <link rel="stylesheet" href="{$root}/styles.css" type="text/css" media="screen">
@@ -25,7 +24,7 @@
 <body>
 
 
-<div id="logo_glass"><a href="{$root}/"><img src="{$root}/images/winehq_logo_glass_sm.png" alt=""></a></div>
+<div id="logo_glass_big"><a href="{$root}/"><img src="{$root}/images/winehq_logo_glass.png" alt=""></a></div>
 <div id="logo_text"><a href="{$root}/"><img src="{$root}/images/winehq_logo_text.png" alt="WineHQ" title="WineHQ"></a></div>
 
 
@@ -39,14 +38,14 @@
     <input type="hidden" name="ie" value="UTF-8">
     <span style="color: #ffffff;">Search:</span> <input type="text" name="q" size="20">
   </form>
-  <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+  <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang={$langCode}"></script>
 </div>
 
 
 <div id="tabs">
     <ul>
         <li class="s"><a href="{$base_url}">WineHQ</a></li>
-        <li><a href="http://wiki.winehq.org/">Wiki</a></li>
+        <li><a href="http://wiki.winehq.org">Wiki</a></li>
         <li><a href="http://appdb.winehq.org/">AppDB</a></li>
         <li><a href="http://bugs.winehq.org/">Bugzilla</a></li>
         <li><a href="http://forums.winehq.org/">Forums</a></li>
@@ -54,19 +53,15 @@
 </div>
 
 <div id="main_content">
-  <div class="rbox">
-  <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
-    <div class="content" style="padding: 35px 20px 10px 80px">
-    <!-- Start Content -->
 
-
+<!-- BODY -->
 {$page_body}
+<!-- END BODY -->
 
+</div>
 
-    <!-- End Content -->
-    </div>
-  <b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
-  </div>
+<div id="langsel">
+    {$langCur} (<a href="{$root}/lang">{$langChange}</a>)
 </div>
 
 <div id="footer">

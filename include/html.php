@@ -1135,7 +1135,7 @@ class html
             $theme = $config->theme;
         
         // debug
-        debug("template", "loading template: theme:[".$theme."] lang: [".$this->lang."] template:[".$template."]");
+        debug("template", "loading template: theme:[{$theme}] lang: [{$this->lang}] template:[{$template}]");
         
         // load from cache if we have already loaded before
         if (isset($this->template_cache[$template]))
@@ -1150,22 +1150,24 @@ class html
                 // load from local template repository
                 case "base":
                 case "local":
-                    if (file_exists($this->_file_root."/templates/".$this->lang."/".$template.".template"))
-                        $in = join("",file($this->_file_root."/templates/".$this->lang."/".$template.".template"));
-                    else if (($config->lang != $this->lang) and file_exists($this->_file_root."/templates/".$config->lang."/".$template.".template"))
-                        $in = join("",file($this->_file_root."/templates/".$config->lang."/".$template.".template"));
+                    if (file_exists("{$this->_file_root}/templates/{$this->lang}/{$template}.template"))
+                        $in = join("",file("{$this->_file_root}/templates/{$this->lang}/{$template}.template"));
+                    else if (($config->lang != $this->lang) and file_exists("{$this->_file_root}/templates/{$config->lang}/{$template}.template"))
+                        $in = join("",file("{$this->_file_root}/templates/{$config->lang}/{$template}.template"));
                     break;
                 
                 // load from global
                 case "global":
-                    if (file_exists($this->_file_root."/templates/global/".$template.".template"))
-                        $in = join("",file($this->_file_root."/templates/global/".$template.".template"));
+                    if (file_exists("{$this->_file_root}/templates/global/{$template}.template"))
+                        $in = join("",file("{$this->_file_root}/templates/global/{$template}.template"));
                     break;
 
                 // load template from theme
                 default:
-                    if (file_exists($this->_file_root."/include/themes/".$theme."/".$template.".template"))
-                        $in = join("",file($this->_file_root."/include/themes/".$theme."/".$template.".template"));                
+                    if (file_exists("{$this->_file_root}/templates/{$this->lang}/global/themes/{$theme}/{$template}.template"))
+                        $in = join("",file("{$this->_file_root}/templates/{$this->lang}/global/themes/{$theme}/{$template}.template"));
+                    else if (($config->lang != $this->lang) and file_exists("{$this->_file_root}/templates/{$config->lang}/global/themes/{$theme}/{$template}.template"))
+                        $in = join("",file("{$this->_file_root}/templates/{$config->lang}/global/themes/{$theme}/{$template}.template"));              
             }
         }
 
@@ -1174,10 +1176,10 @@ class html
         {
             $in = '';
             $this->in404 = 1;
-            if (file_exists($this->_file_root."/templates/".$this->lang."/global/404.template"))
-                $in .= join("",file($this->_file_root."/templates/".$this->lang."/global/404.template"));
-            else if (file_exists($this->_file_root."/templates/".$config->lang."/global/404.template"))
-                $in .= join("",file($this->_file_root."/templates/".$config->lang."/global/404.template"));
+            if (file_exists("{$this->_file_root}/templates/{$this->lang}/global/404.template"))
+                $in .= join("",file("{$this->_file_root}/templates/{$this->lang}/global/404.template"));
+            else if (file_exists("{$this->_file_root}/templates/{$config->lang}/global/404.template"))
+                $in .= join("",file("{$this->_file_root}/templates/{$config->lang}/global/404.template"));
             else
                 $in .= $this->h1("404 Not Found!");
         }
@@ -1206,11 +1208,14 @@ class html
         $vars['curtime_year'] = date('Y', time());
         
         // language vars
-        if (defined("PAGE") and (PAGE == "home" or PAGE == "lang"))
+        if (defined("PAGE"))
         {
             $vars['langCode'] =& $this->lang;
-            $vars['langCur'] =& $GLOBALS['data']->languages[$this->lang]['name'];
-            $vars['langChange'] =& $GLOBALS['data']->languages[$this->lang]['change'];
+            if (PAGE == "home" or PAGE == "lang")
+            {
+                $vars['langCur'] =& $GLOBALS['data']->languages[$this->lang]['name'];
+                $vars['langChange'] =& $GLOBALS['data']->languages[$this->lang]['change'];
+            }
         }
         
         // add config vars
