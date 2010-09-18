@@ -1,0 +1,19 @@
+<news>
+<date>September 18, 2010</date>
+<title>Wine 1.3.3 Released</title>
+<body>
+<p> The Wine development release 1.3.3 is now available.</p>
+<p> <a href="{$root}/announce/1.3.3">What's new</a> in this release:
+<ul>
+  <li>Improved support for right-to-left text.</li>
+  <li>Support for CMYK JPEG images.</li>
+  <li>Beginnings of a Game Explorer implementation.</li>
+  <li>Improved 64-bit support in MSI.</li>
+  <li>Stub inetcpl control panel applet.</li>
+  <li>A number of fixes to crypto support.</li>
+  <li>Translation updates.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.3.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
