@@ -1,0 +1,19 @@
+<news>
+<date>18. September 2010</date>
+<title>Wine 1.3.3 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.3.3 von Wine ist jetzt verf&uuml;gbar.</p>
+<p> <a href="{$root}/announce/1.3.3">Neuerungen (en)</a> in dieser Version:
+<ul>
+  <li>Verbesserte Unterst&uuml;tzung f&uuml;r von rechts nach links geschriebenen Text.</li>
+  <li>Unterst&uuml;tzung f&uuml;r CMYK JPEG Bilder.</li>
+  <li>Anf&auml;nge einer Game Explorer Implementierung.</li>
+  <li>Verbesserte 64-Bit Unterst&uuml;tzung in MSI.</li>
+  <li>Stub inetcpl Systemsteuerungs Applet.</li>
+  <li>Einige Fehlerbehebungen f&uuml;r crypto Unterst&uuml;tzung.</li>
+  <li>Updates in den &Uuml;bersetzungen.</li>
+  <li>Verschiedenste Fehlerbehebungen.</li>
+</ul></p>
+<p><p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.3.tar.bz2">verf&uuml;gbar</a>.
+Bin&auml;r-Downloads werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Download-Seiten</a> zur Verf&uuml;gung.
+</p></body></news>
