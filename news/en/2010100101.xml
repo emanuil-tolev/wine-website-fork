@@ -1,0 +1,19 @@
+<news>
+<date>October  1, 2010</date>
+<title>Wine 1.3.4 Released</title>
+<body>
+<p> The Wine development release 1.3.4 is now available.</p>
+<p> <a href="{$root}/announce/1.3.4">What's new</a> in this release:
+<ul>
+  <li>Support for right-to-left mirrored windows.</li>
+  <li>Winelib now supports the ARM platform.</li>
+  <li>New taskkill.exe built-in application.</li>
+  <li>Inetcpl control panel fleshed out.</li>
+  <li>AcceptEx is implemented now.</li>
+  <li>Improved security checks for SSL connections.</li>
+  <li>Translation updates.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.4.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
