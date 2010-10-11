@@ -1,0 +1,132 @@
+<!--TITLE:[מצב Wine]-->
+<!--BLURB:[המצב הנוכחי של מיזם Wine]-->
+
+<!-- Please remember to close your <td> and <tr> tags -->
+
+<h1 class="title">מצב Wine</h1>
+
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="100%">
+
+    <p>העדכון האחרון: 11 ביולי, 2007.</p>
+    
+    <div align="center">
+    <table width="90%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+      <td bgcolor="#efefef"><strong>כתב הסרת אחריות</strong>
+    <br>
+      האחוזים המוצגים אינם מייצגים את המדידה המדויקת של המצב הנוכחי של רכיב כלשהו,
+      זוהי רק הערכה המבוססת על החדשות השבועיות של Wine. רכיב המסומן ב־"100% הושלם"
+      אין משמעות הדבר כי הרכיב הנתון הוא מושלם ונקי מבאגים, רק שאין לצפות להמשך פיתוח
+      לרכיב זה.
+      </td>
+    </tr>
+    </table>
+    </div>
+
+</td>
+<td>
+
+   <table style="width: 300px; background-color: black; margin-top: 10px;">
+   <tr><td>
+       <p class="small"><b style="color: white;">תפריט המצב של Wine</b></p>
+   </td></tr>
+   <tr><td style="background-color: white;">
+        <dl>
+            <dt><a href="{$root}/winapi_stats"><b>מצב ה־API</b></a></dt>
+            <dd>
+               מצב פונקציות ה־ APIשהוטמעו.
+            </dd>
+
+            <dt><a href="{$root}/status/wine"><b>מצב הליבה</b></a></dt>
+            <dd>
+               מצב רכיבי הליבה, הכלים ועוד של Wine.
+            </dd>
+
+            <dt><a href="{$root}/status/dlls"><b>מצב ה־DLLים</b></a></dt>
+            <dd>
+               מצב כפילי ה־DLL של Windows.
+            </dd>
+
+            <dt><a href="{$root}/status/directx"><b>מצב DirectX</b></a></dt>
+            <dd>
+               מצב כפילי ה־DLL של DirectX.
+            </dd>
+
+            <dt><a href="{$root}/status/multimedia"><b>מצב המולטימדיה</b></a></dt>
+            <dd>
+               מצב רכיבי המולטימדיה.
+            </dd>
+
+            <dt><a href="{$root}/status/ui"><b>מצב מנשק המשתמש</b></a></dt>
+            <dd>
+               מצב רכיבי מנשק המשתמש.
+            </dd>
+
+            <dt><a href="{$root}/status/porting"><b>מצב ההסבה</b></a></dt>
+            <dd>
+               מצב הסבת Wine למגוון של מהדרים, מערכות הפעלה, ארכיטקטורות.
+            </dd>
+
+            <dt><a href="{$root}/status/todo"><b>נושאים לטיפול</b></a></dt>
+            <dd>
+               רשימה של נושאים לטיפול.
+            </dd>
+
+            <dt><a href="{$root}/status/changelog"><b>יומן שינויים</b></a></dt>
+            <dd>
+               ניתן להביט להלן כדי לקבל תחושה על התקדמות הפיתוח.
+            </dd>
+        </dl>
+   </td></tr>
+   </table>
+
+</td>
+</tr>
+</table>
+
+<p>&nbsp;</p>
+
+<div align=center>
+<table border="0" width="95%" cellpadding="5" cellspacing="0">
+  <tr class="hdr">
+<th colspan="21">מקרא צבעי המצב של ההטמעות</th>
+  </tr>
+  <tr>
+<td class="pct0">0%</td>
+<td class="pct5">5%</td>
+<td class="pct10">10%</td>
+<td class="pct15">15%</td>
+<td class="pct20">20%</td>
+<td class="pct25">25%</td>
+<td class="pct30">30%</td>
+<td class="pct35">35%</td>
+<td class="pct40">40%</td>
+<td class="pct45">45%</td>
+<td class="pct50">50%</td>
+<td class="pct55">55%</td>
+<td class="pct60">60%</td>
+<td class="pct65">65%</td>
+<td class="pct70">70%</td>
+<td class="pct75">75%</td>
+<td class="pct80">80%</td>
+<td class="pct85">85%</td>
+<td class="pct90">90%</td>
+<td class="pct95">95%</td>
+<td class="pct100">100%</td>
+  </tr>
+  <tr class="hdr">
+<th colspan="21">מקרא צבעי המצב של התיעוד</th>
+  </tr>
+  <tr>
+<td class="nonexistent" colspan="4">לא קיים</td>
+<td class="poor" colspan="4">רע ביותר</td>
+<td class="outdated" colspan="5">לא מעודכן</td>
+<td class="adequate" colspan="4">סביר</td>
+<td class="good" colspan="4">טוב</td>
+  </tr>
+ </table>
+</div>
+
+<p>&nbsp;</p>

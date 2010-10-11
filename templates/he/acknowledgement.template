@@ -1,0 +1,195 @@
+<!--TITLE:[יקירי Wine]-->
+<!--BLURB:[הוקרה לתורמים ל־Wine]-->
+
+<h1 class="title">יקירי Wine</h1>
+
+<p>Wine היא תוצר של אלפי שעות עבודה שנתרמו על ידי מאות אנשים מוגשים. הפיתוח לא נפסק
+מזה 15 שנים וכבר ראינו מספר דמויות עוזבות וחוזרות. אנשים רבים משאירים את חותמם
+על wine במשך השנים ועל זאת רצינו רק לומר <b>תודה רבה</b>.</p>
+
+<p>ההצלחה של Wine קשורה במעורבות ההדדית בפיתוח מסחרי. חברות רבות שילמו
+למתכנתים כדי שישקיעו את זמנם בעבודה על Wine ובחסדיהם תרמו את עבודתם בחזרה
+לקהילה.  לרבים ממיזמי הקוד הפתוח אינם ברי מזל עד כדי כך שיושב צוות שכיר
+שפותר בעיות מסובכות.. לנו יש.</p>
+
+<dl>
+  <dt class="bold underline"><a href="http://www.codeweavers.com">CodeWeavers</a></dt>
+  <dd>מטרתה של CodeWeavers היא להפוך את לינוקס למערכת הפעלה תומכת Windows<sup class="small">&reg;</sup>.
+    עד כה שכרה החברה כמה מהכשרונות המובילים בקהילה Wine. למעשה, רבות מהיזמות
+    הגדולות שאומצו על ידי Wine החלו כיזמות של CodeWeavers.  חלק מהתחומים עליהם
+    עבדו שכירי החברה כוללים תמיכה בגופני TrueType, בינאום ויוניקוד, תמיכה בתכניות
+    ההתקנה של Microsoft&rlm; (msi), תמיכה ב־DCOM, הפרדת ספריות DLL ומספר
+    בלתי נתפס של תיקוני באגים. בשנת 2004 אירחה CodeWeavers את באי WineConf
+(הוועידה השנתית של Wine) במשרדיה שבסאן פול, מינסוטה.</dd>
+  <dt class="bold underline"><a href="http://www.corel.com">Corel</a></dt>
+  <dd>Corel הקצתה צוות של מהנדסים שכירים למיזם Wine בשנת 1999. המהנדסים התמקדו בהוספת
+   תכונות ל־Wine שיאפשרו ליישומים של Corel, כגון WordPerfect, CorelDRAW ו־Quattro Pro לפעול
+   על לינוקס ולהסב אותם ליישומי לינוקס לחלוטין. בעבר, Corel הסתמכו על טכניקות הסבה מוסכמות
+   כדי להעביר כמה מהיישומים שלה (Corel WordPerfect 8) ללינוקס. טכניקות אלו אפשרו להסב
+   יישומים ללינוקס במהירות, אך משמעות הדבר היא שיש לחזור על תהליך הסבה זה בכל גרסה מחדש.
+   שיפור Wine והידור באמצעות Winelib אפשר להם לאחד את בסיסי הקוד. על אף ש־Corel פנו
+   למיזמים אחרים, השפעתם על Wine הייתה חיובית ללא ספק.</dd>
+  <dt class="bold underline"><a href="http://www.macadamian.com">Macadamian</a></dt>
+  <dd>Macadamian נשכרה על ידי Corel כדי לשפר מגוון תחומים ב־Wine.
+    למשך שנתיים השקיעו מהנדסים את זמנם בשיפור הטיפול בחלונות, בפקדים ובתיבות
+    הדו־שיח של Wine.</dd>
+  <dt class="bold underline"><a href="http://www.reactos.org">ReactOS</a></dt>
+  <dd>Wine נמצאת בלבה של התמיכה של ReactOS ב־Win32. העבודה הראשונית שיפרה
+   שיפרה את הניידות של Wine על ידי ניקוי קוד כדי שניתן יהיה להדר אותו באמצעות MinGW. משם
+   מאמצים אדירים הושקעו בשיפור תשתית ה־shell32 ומגוון פקדים של Wine. צוות ReactOS
+   אחראי גם על עורך רישומי המערכת (Regedit) ומנהל המשימות (Taskmgr).</dd>
+  <dt class="bold underline"><a href="http://www.transgaming.com">TransGaming</a></dt>
+  <dd>מאמצי הפיתוח ב־TransGaming, במיוחד בשנת 2002, שיפרו מספר אזורים משמעותיים ל־Wine.
+   במיוחד ב־DCOM, ל־DirectDraw ותמיכה בגרפיקה דו ממדית שסייעו ביצירת סוגים חדשים של תכניות
+   להתקנה. מאוחר יותר הכלי widl תרם רבות כחלופה ל־MIDL.</dd>
+  <dt class="bold underline">...ואלפים נוספים</dt>
+  <dd>אם טרם ראית את רשימת <a href="http://wiki.winehq.org/WhosWho">מי ומי</a>, ניתן לעיין ברשימה זו כדי לצפות ברשימת
+   התורמים המשמעותיים, החברים הבאים השקיעו כמויות נכבדות של זמן ומאמצים כדי לשפר את Wine.
+   כמו כן, ראוי לציין שהתורמים לתחום ה"שונות" השקיעו לא פחות מהשאר. ברוב המקרים החבר׳ה
+   האלה השקיעו יותר מדי טלאים מכדי לסווג אותם לתחום התמקדות יחיד.</dd>
+</dl>
+
+<table align=center>
+<tr><td>James	Abbatiello</td>	<td>שונות</td>	<td>1999-2001</td></tr>
+<tr><td>Guy L.	Albertelli</td>	<td>פקדים</td>	<td>1999-2002</td></tr>
+<tr><td>Bob	Amstadt</td>	<td>יזם Wine</td>	<td>1993-1994</td></tr>
+<tr><td>Jim	Aston</td>	<td>שונות</td>	<td>1999-2000</td></tr>
+<tr><td>Warren	Baird</td>	<td>ניידות/Sparc</td>	<td>2002-2003</td></tr>
+<tr><td>Francis	Beaudet</td>	<td>פקדים</td>	<td>1998-2000</td></tr>
+<tr><td>Dave	Belanger</td>	<td>גופנים</td>	<td>2003-2004</td></tr>
+<tr><td>Maxime	Bellang&#233;</td>	<td>פקדים</td>	<td>2003-2006</td></tr>
+<tr><td>Francois	Boisvert</td>	<td>פקדים</td>	<td>1998-2000</td></tr>
+<tr><td>Vincent	B&#233;ron</td>	<td>שונות</td>	<td>2002-2006</td></tr>
+<tr><td>Uwe	Bonnes</td>	<td>שונות</td>	<td>1995-2006</td></tr>
+<tr><td>Noel	Borthwick</td>	<td>לוח גזירים</td>	<td>1999</td></tr>
+<tr><td>Alastair	Bridgewater</td>	<td>COM/OLE</td>	<td>2004</td></tr>
+<tr><td>Jacek	Caban</td>	<td>שונות</td>	<td>2003-2006</td></tr>
+<tr><td>Duane	Clark</td>	<td>שונות</td>	<td>2001-2006</td></tr>
+<tr><td>Richard	Cohen</td>	<td>תכניות</td>	<td>1999-2006</td></tr>
+<tr><td>Christian	Costa</td>	<td>DirectX</td>	<td>2002-2006</td></tr>
+<tr><td>Ulrich	Czekalla</td>	<td>שונות</td>	<td>1999-2006</td></tr>
+<tr><td>Pierre	d'Herbemont</td>	<td>ניידות/Darwine</td>	<td>2003-2006</td></tr>
+<tr><td>Huw	Davies</td>	<td>גופנים</td>	<td>1996-2006</td></tr>
+<tr><td>Marcelo	Duarte</td>	<td>תרגומים</td>	<td>2003-2006</td></tr>
+<tr><td>Jason	Edmeades</td>	<td>DirectX</td>	<td>2000-2006</td></tr>
+<tr><td>Steven	Edwards</td>	<td>ניידות/ReactOS</td>	<td>2002-2006</td></tr>
+<tr><td>Jakob	Eriksson</td>	<td>תשתית לבדיקות ולניפוי שגיאות</td>	<td>2002-2006</td></tr>
+<tr><td>Jonathan	Ernst</td>	<td>AppDB/שונות</td>	<td>2004-2006</td></tr>
+<tr><td>Susan	Farley</td>	<td>פקדים</td>	<td>2000-2001</td></tr>
+<tr><td>Krzysztof	Foltman</td>	<td>שונות</td>	<td>2004-2006</td></tr>
+<tr><td>Martin	Fuchs</td>	<td>פקדים</td>	<td>2000-2006</td></tr>
+<tr><td>Peter	Ganten</td>	<td>שונות</td>	<td>1999-2001</td></tr>
+<tr><td>Abey	George</td>	<td>COM/OLE וטיפול בחלונות</td>	<td>1999-2000</td></tr>
+<tr><td>Francois	Gouget</td>	<td>שונות</td>	<td>1998-2006</td></tr>
+<tr><td>Jon	Griffiths</td>	<td>שונות</td>	<td>2000-2006</td></tr>
+<tr><td>Adam	Gundy</td>	<td>שונות</td>	<td>2003</td></tr>
+<tr><td>Michael	G&#252;nnewig</td>	<td>מולטימדיה</td>	<td>2002-2003</td></tr>
+<tr><td>Noomen	Hamza</td>	<td>טיפול בחלונות</td>	<td>1999-2000</td></tr>
+<tr><td>James	Hatheway</td>	<td>שונות</td>	<td>2000-2001</td></tr>
+<tr><td>Dave	Hawkes</td>	<td>שונות</td>	<td>2000-2002</td></tr>
+<tr><td>James	Hawkins</td>	<td>תצורה</td>	<td>2004-2006</td></tr>
+<tr><td>Mike 	Hearn</td>	<td>שונות</td>	<td>2002-2006</td></tr>
+<tr><td>Jukka	Heinonen</td>	<td>winedos</td>	<td>2001-2004</td></tr>
+<tr><td>John	Hohm</td>	<td>רישום עצמי של קובצי DLL</td>	<td>2002-2003</td></tr>
+<tr><td>Peter	Hunnisett</td>	<td>שונות</td>	<td>1998-2003</td></tr>
+<tr><td>Serge	Ivanov</td>	<td>פקדים</td>	<td>1999-2000</td></tr>
+<tr><td>Gy&#246;rgy	Jeney</td>	<td>שונות</td>	<td>2001-2003</td></tr>
+<tr><td>Alexandre	Julliard</td>	<td>הכול</td>	<td>1993-2006</td></tr>
+<tr><td>Bang	Jun-Young</td>	<td>ניידות/NetBSD</td>	<td>1997-2002</td></tr>
+<tr><td>Michael	Jung</td>	<td>advapi32/crypt.c</td>	<td>2004-2006</td></tr>
+<tr><td>Rapha&#235;l	Junqueira</td>	<td>DirectX</td>	<td>2002-2006</td></tr>
+<tr><td>James	Juran</td>	<td>שונות</td>	<td>1998-2002</td></tr>
+<tr><td>Rolf	Kalbermatter</td>	<td>shell32</td>	<td>2002-2006</td></tr>
+<tr><td>Ove	K&#229;ven</td>	<td>שונות</td>	<td>1997-2004</td></tr>
+<tr><td>Dan	Kegel</td>	<td>שונות</td>	<td>1999-2006</td></tr>
+<tr><td>Rein	Klazes</td>	<td>kernel32</td>	<td>1998-2006</td></tr>
+<tr><td>Eric	Kohl</td>	<td>שונות</td>	<td>1998-2006</td></tr>
+<tr><td>Kevin	Koltzau</td>	<td>שילוב שולחן העבודה/ערכות נושא</td> <td>2003-2006</td></tr>
+<tr><td>Phil	Krylov</td>	<td>שונות</td>	<td>2003-2006</td></tr>
+<tr><td>Tony	Lambregts</td>	<td>שונות</td>	<td>2002-2006</td></tr>
+<tr><td>Juan	Lang</td>	<td>שונות</td>	<td>2003-2006</td></tr>
+<tr><td>Stefan	Leichter</td>	<td>crypt32 ו־hlwapi</td>	<td>1998-2006</td></tr>
+<tr><td>Hans	Leidekker</td>	<td>שונות</td>	<td>2003-2006</td></tr>
+<tr><td>Karl	Lessard</td>	<td>מנהל התקן X11</td>	<td>1999-2000</td></tr>
+<tr><td>Pascal	Lessard</td>	<td>פקדים</td>	<td>1999,2000</td></tr>
+<tr><td>Andrew	Lewycky</td>	<td>DirectX</td>	<td>1996-2002</td></tr>
+<tr><td>Juergen	Lock</td>	<td>ניידות/FreeBSD</td>	<td>1999-2000</td></tr>
+<tr><td>Robert	Lunnon</td>	<td>ניידות/Solaris</td>	<td>2002-2006</td></tr>
+<tr><td>Stephane	Lussier</td>	<td>פקדים וטיפול בחלונות</td>	<td>1999-2000</td></tr>
+<tr><td>Pierre	Mageau</td>	<td>פקדים</td>	<td>1999-2000</td></tr>
+<tr><td>Rok	Mandeljc</td>	<td>DirectX</td>	<td>2002-2004</td></tr>
+<tr><td>Vitaliy	Margolen</td>	<td>פקדים</td>	<td>2003-2006</td></tr>
+<tr><td>Alberto	Massari</td>	<td>Wininet</td>	<td>2002-2003</td></tr>
+<tr><td>Gregg	Mattinson</td>	<td>ניידות/Sparc</td>	<td>2002</td></tr>
+<tr><td>J&#246;rg	Mayer</td>	<td>תיקוני בנייה</td>	<td>1999-2001</td></tr>
+<tr><td>Mike	McCormack</td>	<td>שונות</td>	<td>1999-2006</td></tr>
+<tr><td>Bill	Medland</td>	<td>שונות</td>	<td>2001-2006</td></tr>
+<tr><td>Marcus	Meissner</td>	<td>שונות</td>	<td>1995-2006</td></tr>
+<tr><td>Thomas	Mertes</td>	<td>שונות</td>	<td>2003</td></tr>
+<tr><td>Paul	Millar</td>	<td>תשתית בדיקות וינפוי שגיאות</td>	<td>1999-2006</td></tr>
+<tr><td>Andi	Mohr</td>	<td>שונות</td>	<td>1997-2006</td></tr>
+<tr><td>Chris	Morgan</td>	<td>מסד נתוני היישומים/שונות</td>	<td>1999-2006</td></tr>
+<tr><td>Filip	Navara</td>	<td>פיקוד</td>	<td>2003-2006</td></tr>
+<tr><td>Dustin	Navea</td>	<td>תיעוד</td>	<td>2002</td></tr>
+<tr><td>Felix	Nawothnig</td>	<td>שונות</td>	<td>2003-2006</td></tr>
+<tr><td>Jeremy	Newman</td>	<td>מנהל האתר</td>	<td>2000-2006</td></tr>
+<tr><td>Thuy	Nguyen</td>	<td>פקדים</td>	<td>1998-2000</td></tr>
+<tr><td>Andriy	Palamarchuk</td>	<td>שונות</td>	<td>2001-2002</td></tr>
+<tr><td>Alex	Pasadyn</td>	<td>מנהל התקן X11</td>	<td>2002-2004</td></tr>
+<tr><td>Dimi	Paun</td>	<td>שונות</td>	<td>1997-2006</td></tr>
+<tr><td>Gerard	Patel</td>	<td>פקדים</td>	<td>1998-2002</td></tr>
+<tr><td>Sylvain	Petreolle</td>	<td>NLS</td>	<td>2002-2006</td></tr>
+<tr><td>Gerald	Pfeifer</td>	<td>ניידות/FreeBSD</td>	<td>1999-2006</td></tr>
+<tr><td>Dave	Pickles</td>	<td>wcmd.exe</td>	<td>1998-2001</td></tr>
+<tr><td>Ian	Pilcher</td>	<td>מנהל התקן PostScript</td>	<td>2000-2001</td></tr>
+<tr><td>Eric	Pouech</td>	<td>שונות</td>	<td>1998-2006</td></tr>
+<tr><td>Joseph	Pranevich</td>	<td>תמיכה ב־DOS</td>	<td>1998-1999</td></tr>
+<tr><td>Alex	Priem</td>	<td>פקדים</td>	<td>1998-2000</td></tr>
+<tr><td>Ivan	Leo Puoti</td>	<td>שונות</td>	<td>2003-2006</td></tr>
+<tr><td>Paul	Quinn</td>	<td>COM/OLE</td>	<td>1998-1999</td></tr>
+<tr><td>Robert	Reif</td>	<td>מולטימדיה ו־DirectX</td>	<td>2003-2006</td></tr>
+<tr><td>Douglas	Ridgway</td>	<td>יוצר האתר המקורי</td>	<td>1997-2000</td></tr>
+<tr><td>Robert	Riggs</td>	<td>DirectX</td>	<td>1998-1999</td></tr>
+<tr><td>Troy	Rollo</td>	<td>שונות</td>	<td>2003-2006</td></tr>
+<tr><td>Pavel	Roskin</td>	<td>שונות</td>	<td>1998-2006</td></tr>
+<tr><td>Paul	Rupe</td>	<td>פקדים</td>	<td>2001-2003</td></tr>
+<tr><td>Sylvain	St. Germain</td>	<td>פקדים</td>	<td>1998-1999</td></tr>
+<tr><td>Ian	Schmidt</td>	<td>שונות</td>	<td>1998-2000</td></tr>
+<tr><td>Juergen	Schmied</td>	<td>שונות</td>	<td>1998-2003</td></tr>
+<tr><td>Rob	Shearman</td>	<td>שונות</td>	<td>2002-2006</td></tr>
+<tr><td>John	Sheets</td>	<td>תיעוד</td>	<td>2000-2001</td></tr>
+<tr><td>Shachar	Shemesh</td>	<td>בינאום</td>	<td>2002-2004</td></tr>
+<tr><td>Jeff	Smith</td>	<td>תיקונים ל־winemaker</td>	<td>2002</td></tr>
+<tr><td>Gavriel	State</td>	<td>DirectX ומנהל התקן X11</td>	<td>1998-2002</td></tr>
+<tr><td>Michael	Stefaniuc</td>	<td>שונות</td>	<td>2001-2006</td></tr>
+<tr><td>Norman	Stevens </td>	<td>טיפול בחלונות</td>	<td>1998-1999</td></tr>
+<tr><td>Aric	Stewart</td>	<td>שונות</td>	<td>2000-2006</td></tr>
+<tr><td>Oliver	Stieber</td>	<td>DirectX</td>	<td>2004-2006</td></tr>
+<tr><td>Patrik	Stridvall</td>	<td>כלים</td>	<td>1998-2005</td></tr>
+<tr><td>Bertho	Stultiens</td>	<td>מהדר המשאבים של Wine</td>	<td>1997-2000</td></tr>
+<tr><td>Hidenori	Takeshima</td>	<td>DirectShow</td>	<td>2000-2002</td></tr>
+<tr><td>Joshua	Thielen</td>	<td>winemine</td>	<td>1999-2003</td></tr>
+<tr><td>Adrian	Thurston</td>	<td>שונות</td>	<td>1999</td></tr>
+<tr><td>Dmitry	Timoshkov</td>	<td>בינאום</td>	<td>1999-2006</td></tr>
+<tr><td>Luc	Tourangeau</td>	<td>פקדים</td>	<td>1999-2000</td></tr>
+<tr><td>Sergei	Turchanov</td>	<td>שונות</td>	<td>1998-2003</td></tr>
+<tr><td>Greg	Turner</td>	<td>שונות</td>	<td>2002-2004</td></tr>
+<tr><td>Lionel	Ulmer</td>	<td>DirectX</td>	<td>1998-2006</td></tr>
+<tr><td>Ge	van Geldorp</td>	<td>פקדים</td>	<td>2003-2006</td></tr>
+<tr><td>Klaas	van Gend</td>	<td>דו־שיח ההדפסה</td>	<td>1999</td></tr>
+<tr><td>Michael	Veksler</td>	<td>טיפולים בהליכי בנייה</td>	<td>1995-2000</td></tr>
+<tr><td>Brian	Vincent</td>	<td>החדשות השבועיות של Wine</td>	<td>2001-2006</td></tr>
+<tr><td>Paul	Vriens</td>	<td>שונות</td>	<td>2004-2006</td></tr>
+<tr><td>Ferenc	Wagner</td>	<td>תשתית בדיקות וניפוי שגיאות</td>	<td>2003-2006</td></tr>
+<tr><td>Thomas	Weidenmueller</td>	<td>שונות</td>	<td>2004-2006</td></tr>
+<tr><td>Ulrich	Weigand</td>	<td>תשתית בדיקות וניפוי שגיאות</td>	<td>1998-2001</td></tr>
+<tr><td>Jeremy	White</td>	<td>מנכ״ל CodeWeavers</td>	<td>1997-2006</td></tr>
+<tr><td>Lawson	Whitney</td>	<td>שונות</td>	<td>1997-2003</td></tr>
+<tr><td>Thomas	Wickline</td>	<td>תיעוד</td>	<td>2002-2006</td></tr>
+<tr><td>Martin	Wilck</td>	<td>Winsock</td>	<td>2002-2003</td></tr>
+<tr><td>Alexander	Yaworsky</td>	<td>advapi32</td>	<td>2004-2006</td></tr>
+</table>
+<p>ניתן למצוא את רשימת ה
+<a href="http://source.winehq.org/git/?p=wine.git;a=blob_plain;f=AUTHORS">תורמים</a> המלאה במאגר קוד המקור.</p>
+
+

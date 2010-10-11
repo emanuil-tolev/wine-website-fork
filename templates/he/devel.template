@@ -1,0 +1,163 @@
+<!--TITLE:[קישורים בנושאי תכנות]-->
+<!--BLURB:[לכל הצרכים לתכנות Wine.]-->
+
+<h1 class="title">קישורים בנושאי תכנות</h1>
+
+<p>ברוך בואך לתכנות Wine. בעמוד זה תמצא קישורים למגוון
+המשאבים הזמינים למתכנתים שלנו.</p>
+
+<table border="0" cellpadding="10" cellspacing="1" bgcolor="#EFEFEF" style="margin-left: 20px;">
+
+  <tr>
+    <td bgcolor="black"><b style="color: #FFFFFF">אפשרויות</b></td>
+    <td bgcolor="black"><b style="color: #FFFFFF">על אודות אפשרות זו</b></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td>
+        <a href="http://wiki.winehq.org/Developers">ויקי תיעוד המתכנתים של Wine</a>
+    </td>
+    <td valign="top">
+        בעמודי ה<a href="http://wiki.winehq.org//Developers">וויקי למתכנתים של Wine</a> יופיע מידע עדכני
+        יותר מאשר דף זה. זהו המקום הראשון שבו צריכים להסתכל מתכנתים חדשים.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td>
+        <a href="http://www.codeweavers.com/about/general/jobs/interns/">התלמדות</a>
+    </td>
+    <td valign="top">
+        החל מסתיו 2009, CodeWeavers תמלא 1-2 מקומות להתלמדות  על Wine בכול רבעון בסטודנטים לתואר ראשון ומעלה.
+        אנו מקבלים מועמדויות למשרות אלו על בסיס קבוע. סטודנטים מארצות הברית וממדינות אחרות יתקבלו בברכה באופן שווה.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td>
+        <a href="{$root}/contributing">תרומה ל־Wine</a>
+    </td>
+    <td valign="top">
+        מידע לתורמים בפעם הראשונה.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td>
+        <a href="{$root}/developer-cheatsheet">שליף למתכנתים</a>
+    </td>
+    <td valign="top">
+        הקדמה של 5 דקות לתכנות Wine.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td>
+        <a href="{$root}/docs/winedev-guide/index">מדריך למתכנתים</a>
+    </td>
+    <td valign="top">
+        משאבים מקוונים לתכנות באמצעות Wine.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td>
+        <a href="{$root}/forums">רשימות דיוור</a>
+    </td>
+    <td valign="top">
+        רוב המתכנתים שלנו יוצרים קשר זה עם זה דרך מגוון של רשימות דיוור.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td>
+        <a href="http://wiki.winehq.org/GitWine">Git</a>
+    </td>
+    <td valign="top">
+        אנו משתמשים במערכת ניהול הגרסאות Git. ניתן למצוא מידע נוסף על אופן השימוש בה בקישור הנ״ל.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td>
+        <a href="http://wiki.winehq.org/SubmittingPatches">שליחת טלאים</a>
+    </td>
+    <td valign="top">
+        הסברים כיצד לארגן ולשלוח את הטלאים שלך.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td>
+        <a href="http://wiki.winehq.org/TodoList">רשימות מטלות</a>
+    </td>
+    <td valign="top">
+        מה יש לעשות. מקום טוב לפתוח בו בחיפוש אחר מיזמים שיש להשלים.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td>
+        <a href="http://wiki.winehq.org/Fun_Projects">מיזמים כיפיים</a>
+    </td>
+    <td valign="top">
+        אזור נוסף של מטלות. ישנן מטלות בעלות עדיפות נמוכה שיש לבצע אותם כמיזמים צדדיים.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td>
+        <a href="http://wiki.winehq.org/JanitorialProjects">מיזמי תחזוקה</a>
+    </td>
+    <td valign="top">
+        מיזמים של ניקיון וארגון קודים.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td>
+        <a href="{$root}/winelib">Winelib</a>
+    </td>
+    <td valign="top">
+        תיעוד על פיתוח באמצעות Winelib, כלי הסבת היישומים שלנו.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td>
+        <a href="{$root}/status">מצב</a>
+    </td>
+    <td valign="top">
+        מצבו של מיזם Wine.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td>
+        <a href="{$root}/license">רישיון Wine</a>
+    </td>
+    <td valign="top">
+        Wine משתמשת ברישיון הציבורי הפחות כללי של GNU גרסה 2.1
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td>
+        <a href="{$root}/resources">משאבים</a>
+    </td>
+    <td valign="top">
+        משאבי תכנות נוספים.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td>
+        <a href="http://wiki.winehq.org/WineConf">ועידת WineConf</a>
+    </td>
+    <td valign="top">
+        אנו מארחים ועידה שנתית. ניתן למצוא מידע כל המיקום והתאריך בקישור הנ״ל.
+    </td>
+  </tr>
+  
+</table>
+

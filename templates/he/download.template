@@ -1,0 +1,192 @@
+<!--TITLE:[הורדת קבצים בינריים של Wine]-->
+<!--BLURB:[הורדת Wine למערכת ההפעלה המועדפת עליך.]-->
+
+<h1 class="title">הורדות Wine</h1>
+
+<h2 style="margin-bottom: 10px;"><a name="crossover"></a>גרסת ה־Wine הנתמכת</h2>
+
+<table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">מוצר</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">תיאור</font></b></td>
+  </tr>
+
+  <tr>
+    <td align="center" bgcolor="#ffffff">
+      <a href="http://www.codeweavers.com/products/download_trial/">
+        <img src="{$root}/images/distro/crossover.png" 
+         width="50" height="50" alt="CrossOver לינוקס או Mac" border="0">
+      </a>
+    </td>
+    <td align="left" bgcolor="#ffffff">
+      <b><a href="http://www.codeweavers.com/products/">CrossOver</a></b>
+      הנה גרסה ממורקת של Wine שמסופקת על ידי <b><a href="http://www.codeweavers.com">CodeWeavers</a></b>.
+      CrossOver מקלה על השימוש ב־ Wine ו־CodeWeavers מספקת תמיכה טכנית מצוינת למשתמשיה.
+      כל הרכישות של CrossOver משמשות ישירות למימון המתכנתים העובדים על Wine. לכן CrossOver הנה גם דרך טובה לקבלת
+      All purchases of CrossOver are used to directly fund the developers working on Wine. So CrossOver is both a great way to get
+      תמיכה בשימוש ב־ Wine וגם דרך לתמוך במיזם Wine.  CodeWeavers מספקת
+      <b><a href="http://www.codeweavers.com/products/download_trial/">גרסאות ניסיוניות עובדות לחלוטין של CrossOver</a></b>.
+    </td>
+  </tr>
+</table>
+
+<p class="small" align="center">פתיח זו מהווה את ההכרה הרשמית שביקשו CodeWeavers
+בתמורה לאחסון האתר של Wine.</p>
+  
+
+<h2 style="margin-bottom: 5px;"><a name="binary"></a>הורדות בינריות של Wine</h2>
+
+<table style="margin: 0 0 15px 0;" width="100%">
+<tr>
+  <td width="200">Latest stable release:</td><td>Wine&nbsp;{$config_stable_release}</td>
+  <td rowspan="2" valign="top" style="padding-left: 20px; text-align: center;"><b>ניתן לעיין
+  ב<a href="http://wiki.winehq.org/HowTo">מדריך ההתקנה וההגדרה</a> 
+  לקבל הנחיות תפעול לאחר ההתקנה.</b></td>
+</tr>
+<tr>
+  <td>מהדורת הפיתוח האחרונה:</td><td>Wine&nbsp;{$config_master_release}</td>
+</tr>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">מערכת</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">הערות</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">מתחזק</font></b></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="{$root}/download/deb">
+      <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu linux" border="0"></a>
+    </td>
+    <td> <b><a href="{$root}/download/deb">הורדת חבילות לאובונטו</a></b> 
+     - קובצי  .deb להתקנה בינרית ולהתקנה עם קוד המקור לאובונטו Lucid&rlm; (10.04 LTS)
+    <td><a href="mailto:scott@open-vote.org">Scott Ritchie</a></td>
+  </tr>
+
+   <tr bgcolor="#ffffff">
+    <td align=center><a href="{$root}/download/deblenny">
+      <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
+    </td>
+    <td> <b><a href="{$root}/download/deblenny">הורדת חבילות לדביאן</a></b> 
+     - קובצי .debבינריים לדביאן Lenny,&rlm; Squeeze ו־Sid</td>
+    <td><a href="mailto:repository@lamaresh.net">Maurilio Genovese</a><br><a href="mailto:ben.klein@lamaresh.net">Ben Klein</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">
+      <img src="{$root}/images/distro/redhat.png" width="50" height="50" alt="RedHat Linux" border="0"></a>
+    </td>
+    <td> <b><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">הורדת חבילות ל־Red Hat / CentOS / Fedora</a></b>
+        - קובצי .rpm בינריים ולמקור להפצות תומכות Red Hat Enterprise Linux 4, 5; CentOS 4, 5; Fedora Core 5, 6; Fedora Linux 7
+        חבילת העל של wine זמינה דרך <tt>yum</tt>.
+        באמצעות מאגר EPEL / Fedora Extras / Fedora על ידי הפעלת הפקודה <tt>$ yum install
+        wine </tt>"
+         </td>
+    <td><a href="mailto:andreas.bierfert_at_lowlatency.de">Andreas Bierfert</a></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://en.opensuse.org/Wine#Repositories">
+      <img src="{$root}/images/distro/suse.png" width="50" height="50" alt="SUSE Linux" border="0"></a>
+    </td>
+    <td> <b><a href="http://en.opensuse.org/Wine#Repositories">הורדת חבילות SUSE</a></b>
+         - release binary and source .rpms and daily snapshot RPMs for openSUSE 11.1, 11.2, 11.3 and SUSE Linux Enterprise 10 and 11.<br>
+         Old package versions available on <a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=79444">SourceForge</a>
+     </td>
+    <td><a href="mailto:meissner@suse.de">Marcus Meissner</a></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=80066">
+      <img src="{$root}/images/distro/mandriva.png" width="50" height="50" alt="Mandriva Linux" border="0"></a>
+    </td>
+    <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=80066">הורדת חבילות ל־Mandriva</a></b> 
+         - קובצי  .rpmבינריים ל־Mandriva Linux 2008, 2009 ו־2010. יש להוריד את החבילה 2010.1 אם גרסת ה־היא Mandriva שלך היא
+     2010.1, לדוגמה ל־2010 Spring. יש להוריד את חבילת 2010.0 אם הפצת ה־Mandriva שלך היא ההפצה הראשונה לשנת 2010.</td>
+    <td><a href="mailto:marco@mandrivaclub.nl">Marco Meijer</a></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">
+      <img src="{$root}/images/distro/slackware.png" width="50" height="50" alt="Slackware linux" border="0"></a>
+    </td>
+    <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">הורדת חבילות ל־Slackware</a></b>
+         - txz בינרי (ל־Slackware 13.1) ו־tgz (לגרסאות ישנות יותר)</td>
+    <td><a href="mailto:studiosg@giustetti.net">Simone Giustetti</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://www.freshports.org/emulators/wine/">
+      <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
+    </td>
+    <td> <b><a href="http://www.freshports.org/emulators/wine/">הורדת חבילות ל־FreeBSD</a></b> 
+         - מקור ל־FreeBSD 5.3 ומעלה</td>
+    <td><a href="mailto:gerald@pfeifer.com">Gerald Pfeifer</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">
+      <img src="{$root}/images/distro/pcbsd.png" width="50" height="50" alt="FreeBSD" border="0"></a>
+    </td>
+    <td> <b><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">הורדת חבילות ל־PC-BSD</a></b> 
+         - חבילות בינריות .pbi ל־PC-BSD (מערכת הפעלה מבוססת FreeBSD)</td>
+    <td><a href="mailto:kris@pcbsd.com">Kris Moore</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://www.sunfreepacks.com/listing/?limit=1000&amp;offset=0">
+      <img src="{$root}/images/distro/solaris.png" width="50" height="50" alt="Solaris 10" border="0"></a>
+    </td>
+    <td> <b><a href="http://www.sunfreepacks.com/listing/?limit=1000&amp;offset=0">הורדת חבילות ל־Solaris 10, SXCE</a></b> 
+        - ASwine, החבילה הבינרית ASwine-SXCE בקובץ .pkg ל־Solaris 10 ול־SXCE x86</td>
+    <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://pkg.opensolaris.org/contrib/en/catalog.shtml">
+      <img src="{$root}/images/distro/opensolaris.png" width="50" height="50" alt="OpenSolaris" border="0"></a>
+    </td>
+    <td> <b><a href="http://pkg.opensolaris.org/contrib/en/catalog.shtml">הורדת החבילות ל־OpenSolaris</a></b> 
+        - חבילה בינרית .pkg ל־OpenSolaris x86</td>
+    <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
+  </tr>
+
+
+</table>
+
+
+<h2 style="margin-bottom: 10px;"><a name="binary"></a>כלי צד־שלישי</h2>
+
+<p>לעתים ההתאמות ל־Wine יכולות לגרום לכך שיישום יעבוד, אך לא ניתן להטמיע שינויים אלה לתוך Wine מכמה סיבות.  כדי לעזור להתגבר על החסרונות הנוכחיים ב־Wine, מספר יישומי צד שלישי למשתמש קצה נוצרו במהלך השנים.  יישומים אלה אינם נתמכים על ידי מתכנתי Wine, עם זאת יתכן שיביאו תועלת לא קטנה. למידע נוסף, ניתן לעיין ב<a href="http://wiki.winehq.org/ThirdPartyApplications">עמוד הוויקי שלנו</a> על יישומי צד שלישי.</p>
+
+<h2><a name="source"></a>הורדת המקור של Wine</h2>
+
+<table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">מיקום</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">תיאור</font></b></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td> <a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=77449" target="_blank">sourceforge.net</a></td>
+    <td> אתר הפצת קוד המקור הרשמי שלנו. </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td> <a href="http://wiki.winehq.org/GitWine">source.winehq.org/git</a> </td>
+    <td> להורדת גרסת הפיתוח האחרונה. </td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td><a href="http://ibiblio.org/pub/linux/system/emulators/wine/">ibiblio.org</a></td>
+    <td> אתר הורדה חלופי לקוד המקור הרשמי וקובצי ה־tarball של התיעוד. </td>
+  </tr>
+  
+</table>
+
+<div style="margin: 10px; padding: 5px; border: 1px solid #C0C0C0; background-color: #F0F0F0;"><b>לתשומת לבך:</b> ניתן לעיין ב<a href="http://wiki.winehq.org/Recommended_Packages">חבילות המומלצות</a> לקבל עזרה בהגדרת ובבניית Wine.</div>
+

@@ -1,0 +1,84 @@
+<!--TITLE:[תיעוד]-->
+<!--BLURB:[תיעוד]-->
+
+<h1 class="title">תיעוד</h1>
+
+ <h2>מדריכים</h2>
+ <ul>
+   <li>
+     <a href="{$root}/docs/wineusr-guide/index">המדריך למשתמשי Wine</a><br>
+     כיצד להשתמש ולהגדיר את Wine להרצת יישומים של Windows.<br>
+     <span class=small>&nbsp;&nbsp;&nbsp;<b>זמין בתור:</b>
+     <a href="{$root}/docs/wineusr-guide/index">באתר</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/wineusr-guide.html">HTML</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/wineusr-guide.pdf">PDF</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/wineusr-guide.ps">PostScript</a>
+     </span>
+   </li><br>
+
+   <li>
+     <a href="{$root}/docs/winelib-guide/index">המדריך למשתמש ב־Winelib</a><br>
+     כיצד להשתמש ב־Wine כדי להסב יישומי Windows ללינוקס.<br>
+     <span class=small>&nbsp;&nbsp;&nbsp;<b>זמין בתור:</b>
+     <a href="{$root}/docs/winelib-guide/index">באתר</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winelib-guide.html">HTML</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winelib-guide.pdf">PDF</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winelib-guide.ps">PostScript</a>
+     </span>
+   </li><br>
+     
+   <li>
+     <a href="{$root}/docs/winedev-guide/index">המדריך למתכנתי Wine</a><br>
+     כיצד לשפצר את Wine.<br>
+     <span class=small>&nbsp;&nbsp;&nbsp;<b>זמין בתור:</b>
+     <a href="{$root}/docs/winedev-guide/index">באתר</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winedev-guide.html">HTML</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winedev-guide.pdf">PDF</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winedev-guide.ps">PostScript</a>
+     </span>
+   </li><br>
+
+   <li>
+     <a href="{$root}/howto">כיצד לסייע בהסבת יישומים
+     כדי שיעבדו ב־Wine</a><br>
+     מדריך קצר לאלו המעוניינים לסייע לנו כדי שהדברים יעבדו.<br>
+   </li><br>
+
+   <li>
+     <a href="{$root}/developer-cheatsheet">כיצדל התחיל בתכנות Wine</a><br>
+     קורס מהיר לתכנות וניפוי שגיאות ב־Wine. <br>
+   </li>
+
+ </ul>
+
+ <h2>עמודי Man (מדריכי שימוש)</h2>
+ <ul>
+     <li><a href="{$root}/docs/wine">עמוד ה־man של wine</a>
+     <br>אפשרויות שורת הפקודה עבור התכנית wine.</li><br>
+
+     <li><a href="{$root}/docs/wineserver">עמוד ה־man של wineserver</a>
+     <br>אפשרויות שורת הפקודה עבור התכנית wineserver.</li><br>
+
+     <li><a href="{$root}/docs/winebuild">עמוד ה־man של winebuild</a>
+     <br>אפשרויות שורת הפקודה עבור התכנית winebuild.</li><br>
+
+     <li><a href="{$root}/docs/winedump">עמוד ה־man של winedump</a>
+     <br>אפשרויות שורת הפקודה עבור התכנית winedump.</li><br>
+
+     <li><a href="{$root}/docs/winemaker"עמוד ה־man של >winemaker</a>
+     <br>אפשרויות שורת הפקודה עבור  הסקריפט winemaker.</li><br>
+
+     <li><a href="{$root}/docs/widl">עמוד ה־man של widl</a>
+     <br>אפשרויות שורת הפקודה עבור מהדר ה־IDL.</li><br>
+
+     <li><a href="{$root}/docs/wmc">עמוד ה־man של wmc</a>
+     <br>אפשרויות שורת הפקודה עבור מהדר ההודעות.</li><br>
+
+     <li><a href="{$root}/docs/wrc">עמוד ה־man של wrc</a>
+     <br>אפשרויות שורת הפקודה עבור מהדר המשאבים.</li><br>
+
+     <li><a href="{$root}/docs/winegcc">עמוד ה־man של winegcc</a>
+     <br>אפשרויות שורת הפקודה עבור מהדר ה־winegcc.</li><br>
+ </ul>
+
+<p>&nbsp;</p>

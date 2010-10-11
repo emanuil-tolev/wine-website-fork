@@ -1,0 +1,104 @@
+<!--TITLE:[קבלת עזרה]-->
+<!--BLURB:[כל שאלותיך בנוגע ל־Wine מקבלות מענה.]-->
+
+<h1 class="title">קבלת עזרה</h1>
+
+<p>ישנן מספר דרכים לקבל עזרה בשימוש ב־Wine.</p>
+
+<table border="0" cellpadding="10" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">אפשרויות</b></td>
+    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">על אפשרות זו לעזרה</b></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://www.codeweavers.com"><img src="{$root}/images/paid.png"><br>בתשלום</a>
+    </td>
+    <td valign="top">
+        <a href="http://www.codeweavers.com">CodeWeavers</a> מציעה עזרה בתשלום ל־Wine.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://wiki.winehq.org/FAQ"><img src="{$root}/images/faq.png"><br>שאלות נפוצות</a>
+    </td>
+    <td valign="top">
+        לרוב השאלות ניתן למצוא תשובות בקלות במאגר
+        <a href="http://wiki.winehq.org/FAQ">השאלות הנפוצות</a>.
+        זהו המקום הראשון בו כדאי לבדוק אם השאלה שלך כבר נענתה בעבר.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="{$root}/documentation"><img src="{$root}/images/docs.png"><br>מסמכים</a>
+    </td>
+    <td valign="top">
+        אנו ממליצים לקרוא את ה<a href="{$root}/site/documentation">תיעוד</a> המקוון שלנו
+        כדי למצוא תשובות לשאלותיך. מה שעוד יכול לעניין אותך הוא
+        <a href="http://wiki.winehq.org/HowTo">מדריכי כיצד לבצע</a> המילים מידע שימושי למשתמשים חדשים.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://wiki.winehq.org/"><img src="{$root}/images/moinmoin.png"><br>ויקי</a>
+    </td>
+    <td valign="top">
+        ניתן גם לבקר ב<a href="http://wiki.winehq.org/">וויקי</a> שלנו כדי
+        למצוא תשובות לשאלותיך.
+    </td>
+  </tr>
+  
+<tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://forums.winehq.org/"><img src="{$root}/images/forum.png"><br>פורום</a>
+    </td>
+    <td valign="top">
+        יש לנו קהילה מבוססת <a href="http://forums.winehq.org/">פורומים</a>/<a href="{$root}/site/forums">דוא״ל</a>
+        למשתמשי Wine, המהווים מקום שבו יכולים לבקר משתמשים, לשאול שאלות וליצור קשר זה עם זה. ניתן להצטרף לקהילה
+        זו במגוון דרכים. הדרך החלופית לגשת לפורומים שלך היא דרך העמוד בקבוצות של 
+        Google <a href="http://groups.google.com/group/comp.emulators.ms-windows.wine">comp.emulators.ms-windows.wine</a>.
+        יתכן שיהיה ברצונך לעיין ב<a href="{$root}/site/forums">רשימות התפוצה</a>
+        המהוות קהילות בפני עצמן.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="{$root}/irc"><img src="{$root}/images/irc.png"><br>IRC</a>
+    </td>
+    <td valign="top">
+        ניתן להתחבר לקהילת Wine באמצעות צ׳אט בזמן אמת
+        דרך <a href="{$root}/irc">ערוץ ה־IRC</a> שלנו.
+    </td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://appdb.winehq.org/"><img src="{$root}/images/appdb.png"><br>AppDB</a>
+    </td>
+    <td valign="top">
+        אם ברצונך לקבל עזרה עבור יישום בודד <a href="http://appdb.winehq.org/">מסד נתוני היישומים</a> שלנו
+        הוא מקום טוב להתחיל בו.
+    </td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://bugs.winehq.org/"><img src="{$root}/images/bugs.png"><br>באגזילה</a>
+    </td>
+    <td valign="top">
+        <a href="http://bugs.winehq.org/">עוקב הבאגים שלנו באגזילה</a> מכיל את כל הבעיות שעבדנו עליהן
+        וגם כאלה שאנחנו עדיין עובדים עליהן.
+    </td>
+  </tr>
+  
+</table>
+
+<p>בעיות באתר או טעויות הקלדה? ניתן ליצור קשר עם <a href="mailto:web-admin@winehq.org">צוות האתר</a> שלנו.</p>
+
+<p>&nbsp;</p>
