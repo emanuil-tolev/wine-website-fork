@@ -61,6 +61,10 @@ class data
                                                'name'   => 'Français',
                                                'change' => 'Changez la langue'
                                               ),
+                                 'he' => array(
+                                               'name'   => 'עברית',
+                                               'change' => 'שנה שפה'
+                                              ),
                                  'pl' => array(
                                                'name'   => 'Polski',
                                                'change' => 'Zmień język'
