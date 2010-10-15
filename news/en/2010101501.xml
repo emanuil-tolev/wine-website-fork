@@ -1,0 +1,19 @@
+<news>
+<date>October 15, 2010</date>
+<title>Wine 1.3.5 Released</title>
+<body>
+<p> The Wine development release 1.3.5 is now available.</p>
+<p> <a href="{$root}/announce/1.3.5">What's new</a> in this release:
+<ul>
+  <li>Support for animated cursors.</li>
+  <li>Printing directly through CUPS instead of lpr.</li>
+  <li>Installer fixes for Office 2010.</li>
+  <li>Many MSXML3 improvements.</li>
+  <li>Improved Shader Model 4 support.</li>
+  <li>Proper icons in built-in Internet Explorer.</li>
+  <li>Translation updates.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.5.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
