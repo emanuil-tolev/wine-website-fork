@@ -1,129 +1,128 @@
-<!--TITLE:[Resources]-->
-<!--BLURB:[Resources for Wine Developers]-->
+<!--TITLE:[משאבים]-->
+<!--BLURB:[משאבים למתכנתי Wine]-->
 
-<h1 class="title">Resources</h1>
+<h1 class="title">משאבים</h1>
 
 <p>
        <big> Wine </big>
        <ul>
-         <li><a href="http://source.winehq.org/">source.winehq.org</a> Cross-referenced marked up source
-         <li><a href="http://source.winehq.org/git">source.winehq.org/git</a> GitWeb interface to the Wine source
-         <li><a href="http://source.winehq.org/WineAPI/">Wine API</a> Automatically generated Wine API documentation
-         <li><a href="http://24.229.94.2/">API db</a> Cross-reference of Wine APIs with many Windows versions
+         <li><a href="http://source.winehq.org/">source.winehq.org</a> קוד מקור מסומן ומקושר
+         <li><a href="http://source.winehq.org/git">source.winehq.org/git</a> מנשק GitWeb לקוד המקור של Wine
+         <li><a href="http://source.winehq.org/WineAPI/">Wine API</a> תיעוד שנוצר אוטומטית ל־API של Wine
+         <li><a href="http://24.229.94.2/">API db</a> קישורים צולבים לפונקציות ה־API של Wine בין הגרסאות השונות של Windows
        </ul>
 
        <a name="win32" class="hidden"><big>Win32</big></a> 
        <ul>
-         <li><a href="http://www.winprog.org/tutorial/">Win32 API Tutorial</a> If you know nothing about Windows, you can't do worse than
-          start here.
-         <li><a href="http://msdn.microsoft.com/developercenters/">MSDN Online</a> Microsoft's new site.
-         <li><a href="http://www.microsoft.com/windows/directx/default.aspx">DirectX</a> Multimedia API for games, etc.
-         <li>The Open32 API is the subset of Win32 implemented by IBM's OS/2 Merlin. Open32 provides source code
-         compatibility, which the <a href="http://odin.netlabs.org">Odin</a> project (formerly Win32-OS/2)
-         plans on extending to full binary compatibility.
-	     <li><a href="http://www.geocities.com/SiliconValley/4942/index.html">Undocumented Windows 95</a>
+         <li><a href="http://www.winprog.org/tutorial/">מדריך השימוש ב־API ל־Win32</a> אם אין לך מושג ב־ Windows, עדיף לך
+          שלא להתחיל מכאן.
+         <li><a href="http://msdn.microsoft.com/developercenters/">MSDN Online</a> האתר החדש של Microsoft.
+         <li><a href="http://www.microsoft.com/windows/directx/default.aspx">DirectX</a> API מולטימדיה למשחקים וכו׳.
+         <li>ה־API Open32 הנו תת־ערכה של Win32 שיושם ב־OS/2 Merlin מבית IBM. Open32 מספק תמיכה בקוד מקור,
+         שמיזם <a href="http://odin.netlabs.org">Odin</a> (לשעבר Win32-OS/2)
+         מתכנן להרחיב לתאימות בינרית מלאה.
+	     <li><a href="http://www.geocities.com/SiliconValley/4942/index.html">Windows 95 לא מתועד</a>
          <li><a href="http://www.sysinternals.com">System Internals</a>
-	         Utilities and information related to low-level hacking of NT and 95. Once was called NT Internals.
-	     <li><a href="http://www.wotsit.org/">Wotsit's Format</a> Website devoted to file formats
+	         כלים ומידע בנוגע לפריצה ברמה נמוכה של NT ושל 95. לשעבר NT Internals.
+	     <li><a href="http://www.wotsit.org/">Wotsit's Format</a> אתר המוקדש לסוגי קבצים
        </ul>
 
        <big> Windows 3.x </big>
        <ul>
          <li><a href="http://www.ecma-international.org/publications/standards/ECMA-234.HTM">ECMA-234</a>
-         The official <a href="http://www.ecma-international.org/">European Computer Manufacturer's Association</a> specification of the Windows API. Known as APIW while it was in
-         draft.
-         <li><a href="ftp://ftp.cs.cmu.edu/afs/cs.cmu.edu/user/ralf/pub/WWW/files.html">DOS Interrupts</a> Ralf Brown's exhaustive and famous Interrupt List 
-	     <li><a href="http://garbo.uwasa.fi/pc/">Garbo</a> DOS archives
+         המפרט הרשמי מבית l <a href="http://www.ecma-international.org/">European Computer Manufacturer's Association</a> של ה־API של Windows. נודע גם בשם APIW כשעוד הוצע כטיוטה.
+         <li><a href="ftp://ftp.cs.cmu.edu/afs/cs.cmu.edu/user/ralf/pub/WWW/files.html">פסיקות ב־DOS</a> רשימת הפסיקות המקיפה והמפורסמת של Ralf Brown 
+	     <li><a href="http://garbo.uwasa.fi/pc/">Garbo</a> ארכיוני DOS
        </ul>
 
        <big> Unix </big>
        <ul>
-         <li>Version <a href="http://www.unix-systems.org/version3/">3</a> of the single Unix Specification.
-         <li><a href="http://en.tldp.org/">LDP</a> Linux documentation project. Vast resource.
-         <li><a href="http://www.freebsd.org/cgi/man.cgi">FreeBSD man pages</a> 
+         <li>גרסה <a href="http://www.unix-systems.org/version3/">3</a> של המפרט האחיד של Unix.
+         <li><a href="http://en.tldp.org/">LDP</a> מיזם התיעוד של לינוקס. משאב עצום.
+         <li><a href="http://www.freebsd.org/cgi/man.cgi">דפי ה־man של FreeBSD</a> 
          <li><a href="http://pauillac.inria.fr/~xleroy/linuxthreads/">LinuxThreads</a>
-         <li><a href="http://linas.org/linux/threads-faq.html">Linux Threads FAQ</a>
+         <li><a href="http://linas.org/linux/threads-faq.html">השו״ת של Linux Threads</a>
        </ul>
 
        <big> X </big>
        <ul>
-         <li><a href="http://www.rahul.net/kenton/xsites.html">X Sites</a> Ken Lee's list of all things X related
-     	 <li><a href="http://www.motifzone.net/index.php?module=pagemaster&amp;PAGE_user_op=view_page&amp;PAGE_id=35&amp;cont=xresources.html">X resource pages</a> courtesy of The Motif Zone
-	     <li><a href="http://www.motifzone.net/">The Motif Zone</a> Lots of solid X information, in addition to information about toolkits like Motif.
-         <li><a href="http://tronche.com/gui/x/icccm/">ICCCM</a> How X programs are
-              supposed to talk to each other
-         <li><a href="http://x.org/X11R6.8.1/">X specs</a> The definition of X. Covers X11R6.8.1
-         <li>Jim Breen's <a href="http://www.dgs.monash.edu.au:80/~jwb/japanese.html">japanese</a> page has lots of good internationalization links
+         <li><a href="http://www.rahul.net/kenton/xsites.html">אתרי X</a> הרשימה של Ken Lee של כל הדברים שקשורים ב־X
+     	 <li><a href="http://www.motifzone.net/index.php?module=pagemaster&amp;PAGE_user_op=view_page&amp;PAGE_id=35&amp;cont=xresources.html">עמודי משאבי X</a> באדיבות Motif Zone
+	     <li><a href="http://www.motifzone.net/">The Motif Zone</a> הרבה מידע מוצק על X, בנוסף על מידע על ערכות כלים כמו Motif.
+         <li><a href="http://tronche.com/gui/x/icccm/">ICCCM</a> כיצד אמורות תכניות X לדבר זו
+              עם זו
+         <li><a href="http://x.org/X11R6.8.1/">מפרט X</a> הגדרת X. מכסה את X11R6.8.1
+         <li>בעמוד ה<a href="http://www.dgs.monash.edu.au:80/~jwb/japanese.html">יפנית</a> של Jim Breen יש הרבה קישורי בינאום יעילים
        </ul>
 
-       <a name="fonts" class="hidden"><big> Fonts </big></a>
+       <a name="fonts" class="hidden"><big> גופנים </big></a>
        <ul>
-         <li><a href="http://www.tldp.org/HOWTO/Font-HOWTO/">TTF on Linux HOWTO</a>
-         <li><a href="http://www.microsoft.com/typography/unicode/cs.htm">Charset info</a> From Microsoft.
-         <li>comp.fonts<a href="http://nwalsh.com/comp.fonts/FAQ/index.html">FAQ</a>
-         <li><a href="http://www.w3.org/Fonts/Panose/pan2.html">Panose 2.0</a> Font spec
-         <li><a href="ftp://ftp.x.org/R5contrib/hp_xlfd_enhancements/hp_xlfd_enhancements">X11R6 Fonts</a> X is more typographically capable than it appears, as is made clear in this paper by Nathan Meyers.
-         <li><a href="http://www.freetype.org/">FreeType</a> Free TrueType font engine
-	     <li><a href="http://www.linuxberg.com/preview/9995.html">t1lib</a> PostScript T1 font engine, extracted and improved
-	          from X11 sources.
-         <li><a href="http://ftp.giga.or.at/pub/nih/ttftot42">TTFtoT42</a> Use TTF with Postscript rasterizers
-    	 <li><a href="http://www.truedoc.com/webpages/samples/samples_l4.html">TrueDoc sample</a> Antialiasing and subpixel positioning sales pitch
-	     <li><a href="http://czyborra.com/">Unicode Info</a> From Roman Czybora.
+         <li><a href="http://www.tldp.org/HOWTO/Font-HOWTO/">הסבר על TTF בלינוקס</a>
+         <li><a href="http://www.microsoft.com/typography/unicode/cs.htm">פרטים על פריסות תווים</a> מ־Microsoft.
+         <li>comp.fonts<a href="http://nwalsh.com/comp.fonts/FAQ/index.html">שו״ת</a>
+         <li><a href="http://www.w3.org/Fonts/Panose/pan2.html">Panose 2.0</a> מפרט לגופנים
+         <li><a href="ftp://ftp.x.org/R5contrib/hp_xlfd_enhancements/hp_xlfd_enhancements">גופנים ל־X11R6</a> ל־X יש יותר יכולות טיפוגרפיות מכפי שנראה, כפי שמוסבר במסמך זה מאת Nathan Meyers.
+         <li><a href="http://www.freetype.org/">FreeType</a> מגנון גופני TrueType חופשי
+	     <li><a href="http://www.linuxberg.com/preview/9995.html">t1lib</a> מנוע הגופנים PostScript T1 שחולץ ושופר
+	          מהמקור שב־X11.
+         <li><a href="http://ftp.giga.or.at/pub/nih/ttftot42">TTFtoT42</a> שימוש ב־TTF עם מעבדי Postscript
+    	 <li><a href="http://www.truedoc.com/webpages/samples/samples_l4.html">דוגמה ל־TrueDoc</a> החלקה ומיקום תת־פיקסלים בשיטת sales pitch
+	     <li><a href="http://czyborra.com/">מידע על Unicode</a> מאת Roman Czybora.
          <li>Charles Bigelow, <i>Scientific American</i>, 1983.
-         <li><a href="http://grc.com/cleartype.htm">Subpixel antialiasing</a> Everything old is new again
+         <li><a href="http://grc.com/cleartype.htm">החלקת תת־פיקסלים</a> כל מה שישן חוזר ומתחדש
        </ul>
 
        <big> C </big>
        <ul>
-	    <li><a href="http://www.accu.org/resources/public/terse/cpp.htm">C/C++ Resources</a> From the Association of C & C++ Users.
-        <li><a href="http://www.lysator.liu.se/c/">Programming in C</a> Standards, suggestions, and trivia.
-             If you're curious about Unicode and <tt>&lt;wctype.h&gt;</tt>,
-             see <a href="http://www.lysator.liu.se/c/na1.html">Normative Addendum 1</a>.
+	    <li><a href="http://www.accu.org/resources/public/terse/cpp.htm">משאבי C/C++‎</a> מאיגוד משתמשי C ו־ C++‎.
+        <li><a href="http://www.lysator.liu.se/c/">תכנות ב־C</a> תקנים, הצעות וחידוני טריוויה.
+             אם גילית סקרנות בנוגע ליוניקוד ול־<tt>&lt;wctype.h&gt;</tt>,
+             כדאי לעיין ב־<a href="http://www.lysator.liu.se/c/na1.html">Normative Addendum 1</a>.
        </ul>
        
-       <big> x86 Assembly </big>
+       <big> אסמבלי x86 </big>
        <ul>
-         <li><a href="http://www.sandpile.org/">Sandpile.org</a> Another one.
-         <li><a href="http://www.x86.org/">Intel Secrets</a> What Intel doesn't want you to know
-         <li><a href="http://www.intel.com/technology/itj/archive.htm">Intel Documentation</a> What Intel does want you to know -- how to write code for their chips.
-         <li>A link to the <a href="http://developer.intel.com/software/products/perflib/index.htm">Intel performance libraries</a>
+         <li><a href="http://www.sandpile.org/">Sandpile.org</a> עוד מדריך.
+         <li><a href="http://www.x86.org/">סודות אינטל</a> מה שאינטל מנסה להסתיר ממך
+         <li><a href="http://www.intel.com/technology/itj/archive.htm">התיעוד של אינטל</a> מה שאינטל מעוניינת לספר לך -- כיצד לכתוב קוד למעבדים שלהם.
+         <li>קישור <a href="http://developer.intel.com/software/products/perflib/index.htm">ספריות הביצועים של אינטל</a>
        </ul>
 
-       <big> Books </big>
-       Book links are courtesy of <a href="http://www.amazon.com/exec/obidos/redirect-home/winehq">Amazon.com</a>.
+       <big> ספרים </big>
+       הקישורים לספרים באדיבות <a href="http://www.amazon.com/exec/obidos/redirect-home/winehq">Amazon.com</a>.
        <ul>
          <li><a name="w95secrets"
          href="http://www.amazon.com/exec/obidos/ASIN/1568843186/winehq">Windows
          95 System Programming Secrets</a> by <a href="http://www.wheaty.net/">Matt Pietrek</a>, IDG Books,
-         1995. A solid reference on selected aspects of the
-         implementation of Windows 95. Out of print, but available as of
-       	 98-07-31 at <a href="http://www.barnesandnoble.com/">Barnes &amp; Noble</a> for 15 USD. 
+         1995. מדריך בעל ידע מוצק על היבטים נבחרים ביישום של
+         Windows 95. לא מודפס עוד, אך זמין נכון לתאריך
+       	 98-07-31 אצל <a href="http://www.barnesandnoble.com/">Barnes &amp; Noble</a> בעלות של  15 דולר אמריקאים. 
          <li><a href="http://www.amazon.com/exec/obidos/ASIN/0201622173/winehq">Windows
          Internals: The Implementation of the Windows Operating System</a>, Matt Pietrek, Addison-Wesley, 1993.
-         <li><a href="http://www.amazon.com/exec/obidos/ASIN/1568841698/winehq">Unauthorized Windows 95</a> by <a href="http://www.sonic.net/~undoc/">Andrew Schulman</a>. Out of print.
-         <li><a href="http://www.amazon.com/exec/obidos/ASIN/0201608340/winehq">Undocumented Windows</a> by <a href="http://www.sonic.net/~undoc/">Andrew Schulman</a>, Maxey, and Pietrek.
+         <li><a href="http://www.amazon.com/exec/obidos/ASIN/1568841698/winehq">Unauthorized Windows 95</a> מאת <a href="http://www.sonic.net/~undoc/">Andrew Schulman</a>. לא מודפס עוד.
+         <li><a href="http://www.amazon.com/exec/obidos/ASIN/0201608340/winehq">Undocumented Windows</a> מאת <a href="http://www.sonic.net/~undoc/">Andrew Schulman</a>, Maxey, and Pietrek.
          <li><a href="http://www.amazon.com/exec/obidos/ASIN/087930474X/winehq">Windows
          Assembly Language & Systems Programming: 16- and 32-bit
          Low-Level Programming for the PC and Windows</a> Berry Kauler, Miller Freeman, 1997.
          <li><a href="http://www.amazon.com/exec/obidos/ASIN/1571690093/winehq">Windows 95 Win 32 Programming API Bible</a>
-             One of several Win32 API references.
+             אחד מתוך כמה מדריכי קישור ל־API של Win32.
          <li><a href="http://www.amazon.com/exec/obidos/ASIN/1572316772/winehq">Inside Windows NT</a>
-             Second Edition. David Solomon, Microsoft Press, 1998. Many changes from Helen Custer's First Edition.
+             מהדורה שנייה. David Solomon, הוצאת Microsoft, 1998. מכיל שינויים רבים מאז המהדורה הראשונה של Helen Custer.
          <li><a href="http://www.amazon.com/exec/obidos/ASIN/0201570645/winehq">Undocumented DOS: a programmer's guide to reserved MS-DOS functions and
          data structures</a> Andrew Schulman, et. al. Addison-Wesley, 1990.
          <li><a href="http://www.amazon.com/exec/obidos/ASIN/0879304367/winehq">The
-       	  FreeDOS Kernel</a> An MS-DOS emulator for platform independence and
-       	 embedded systems development
+          FreeDOS Kernel</a> תכנית הדמיה ל־MS-DOS לאי תלות במערכות הפעלה ולפיתוח
+       	 מערכות משובצות
        </ul>
 
 
        <big> Usenet </big>
        <ul>
          <li><a href="news:comp.emulators.ms-windows.wine">comp.emulators.ms-windows.wine</a>
-         <li><a href="http://groups.google.com/groups?group=comp.emulators.ms-windows.wine">Archive</a>, courtesy of <a href="http://groups.google.com">Google Groups</a>
-         <li><a href="http://www.ifi.uio.no/~dash/wine/cemw-index.html">Backfiles, 1994-1996</a> On Dag's site
-         <li><a	href="http://groups.google.com/groups?q=wine+group%3Acomp.*+-group%3Acomp.emulators.ms-windows.wine+-group%3Aalt.food.wine+-group%3Arec.crafts.winemaking">Google Groups</a>
-         Search Google Groups for Wine references <i>not</i> in <a href="news:comp.emulators.ms-windows.wine">c.e.m.w.</a>
+         <li><a href="http://groups.google.com/groups?group=comp.emulators.ms-windows.wine">ארכיון</a>, באדיבות <a href="http://groups.google.com">קבוצות גוגל</a>
+         <li><a href="http://www.ifi.uio.no/~dash/wine/cemw-index.html">Backfiles, 1994-1996</a> באתר של Dag
+         <li><a	href="http://groups.google.com/groups?q=wine+group%3Acomp.*+-group%3Acomp.emulators.ms-windows.wine+-group%3Aalt.food.wine+-group%3Arec.crafts.winemaking">קבוצות גוגל</a>
+         יש לחפש בקבוצות גוגל אזכורים ל־ Wine אך <b>לא</b> תחת <a href="news:comp.emulators.ms-windows.wine">c.e.m.w.</a>
        </ul>
 
 
