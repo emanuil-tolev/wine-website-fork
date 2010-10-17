@@ -1,0 +1,114 @@
+@import ("styles.css"); 
+/* Body Document Defaults */
+BODY                {
+                     direction: rtl;
+                     background-image: url('images/bg_rtl.jpg');
+                     background-position: right top;
+                    }
+
+/* wine logo image */
+#logo_glass_big     {
+                     right: 0px;
+                    }
+#logo_glass         {
+                     right: 50px;
+                    }
+#logo_text          {
+                     right: 110px;
+                    }
+#logo_blurb         {
+                     right: 130px;
+                    }
+
+/* search box */
+#search_box         {
+                     text-align: left;
+                    }
+
+/* top tabs */
+#tabs               {
+                     left: 10px;
+                    }
+#tabs LI            {
+                     float: right;
+                    }
+
+/* main content well */
+#main_content       {
+                     padding: 85px 100px 10px 10px;
+                    }
+
+/* main content well front page left column */
+#main_left          {
+                     margin: 0 0 0 10px;
+                     float: right;
+                    }
+
+/* main content well front page right column */
+#main_right         {
+                     float: left;
+                     display: inline;
+                    }
+
+/* Language Select */
+#langsel            {
+                     text-align: right;
+                     margin: 0 110px 0 0;
+                    }
+
+/* footer */
+#footer             {
+                     text-align: left;
+                     padding-left: 20px;
+                    }
+
+/* debug log */
+#debug_log
+{
+    direction: rtl;
+}
+
+/* header text */
+
+P.newsdate          { direction: ltr; margin: 0 10px 10px 5px;}
+P.newstitle         { direction: ltr; }
+P.newstitle A       { direction: ltr; }
+P.newstitle A:hover { direction: ltr; }
+DIV.newsblock       { direction: ltr; margin: 0 10px 25px 5px; }
+
+/* winehq main page menu */
+.winehq_menu                          { margin: 20px 40px 0px 0px; }
+.winehq_menu>div>.text                { padding: 10px 15px 0 0; float:right; clear:left; }
+.winehq_menu>div>.text>.subtitle      { margin: 0 15px 0 0; }
+/* icons for the main page menu elements */
+.winehq_menu>div>.icon                { float:right; clear:right; }
+.winehq_menu>.info>.icon              { background-position: 0 0 }
+.winehq_menu>.info:hover>.icon        { background-position: 0 -50px }
+.winehq_menu>.dl>.icon                { background-position: -50px 0 }
+.winehq_menu>.dl:hover>.icon          { background-position: -50px -50px }
+.winehq_menu>.help>.icon              { background-position: -100px 0 }
+.winehq_menu>.help:hover>.icon        { background-position: -100px -50px }
+.winehq_menu>.devel>.icon             { background-position: -150px 0 }
+.winehq_menu>.devel:hover>.icon       { background-position: -150px -50px }
+.winehq_menu>.donate>.icon            { background-position: -200px 0 }
+.winehq_menu>.donate:hover>.icon      { background-position: -200px -50px }
+
+/* HR */
+hr
+{
+    text-align: right;
+}
+
+/* RSS Feed Links */
+ul.rss {
+  padding: 0 2px 0 0;
+}
+ul.rss li a {
+  padding: 0 18px 0 0;
+}
+
+/* template navigation links */
+.left-link          { right: 0; }
+.right-link         { left: 0; text-align: left; }
+
+
