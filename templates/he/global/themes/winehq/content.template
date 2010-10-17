@@ -5,13 +5,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta HTTP-EQUIV="Expires" CONTENT="Mon, 06 Jan 1990 00:00:01 GMT">
     <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
-    <meta name="description" content="Open Source Software for running Windows applications on other operating systems.">
+    <meta name="description" content="תכנה בקוד פתוח להפעלת יישומי Windows על מערכות הפעלה אחרות.">
     <meta name="keywords" content="windows, linux, macintosh, solaris, freebsd">
     <meta name="robots" content="index, follow">
-    <meta name="copyright" content="Copyright {$curtime_year}. WineHQ.org All Rights Reserved.">
-    <meta name="language" content="English">
+    <meta name="copyright" content="זכויות יוצרים {$curtime_year}. WineHQ.org כל הזכויות שמורות.">
+    <meta name="language" content="Hebrew">
     <meta name="revisit-after" content="1">
-    <link rel="stylesheet" href="{$root}/styles.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="{$root}/styles-rtl.css" type="text/css" media="screen">
     <script language="JavaScript" type="text/javascript">
         var web_root="{$root}";
     </script>
@@ -24,7 +24,7 @@
 <body>
 
 
-<div id="logo_glass"><a href="{$root}/"><img src="{$root}/images/winehq_logo_glass_sm.png" alt=""></a></div>
+<div id="logo_glass"><a href="{$root}/"><img src="{$root}/images/winehq_logo_glass_sm_rtl.png" alt=""></a></div>
 <div id="logo_text"><a href="{$root}/"><img src="{$root}/images/winehq_logo_text.png" alt="WineHQ" title="WineHQ"></a></div>
 
 
@@ -36,7 +36,7 @@
     <input type="hidden" name="cx" value="partner-pub-0971840239976722:w9sqbcsxtyf">
     <input type="hidden" name="cof" value="FORID:10">
     <input type="hidden" name="ie" value="UTF-8">
-    <span style="color: #ffffff;">Search:</span> <input type="text" name="q" size="20">
+    <span style="color: #ffffff;">חיפוש:</span> <input type="text" name="q" size="20">
   </form>
   <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang={$langCode}"></script>
 </div>
@@ -45,17 +45,17 @@
 <div id="tabs">
     <ul>
         <li class="s"><a href="{$base_url}">WineHQ</a></li>
-        <li><a href="http://wiki.winehq.org/">Wiki</a></li>
+        <li><a href="http://wiki.winehq.org/">ויקי</a></li>
         <li><a href="http://appdb.winehq.org/">AppDB</a></li>
-        <li><a href="http://bugs.winehq.org/">Bugzilla</a></li>
-        <li><a href="http://forums.winehq.org/">Forums</a></li>
+        <li><a href="http://bugs.winehq.org/">באגזילה</a></li>
+        <li><a href="http://forums.winehq.org/">פורומים</a></li>
     </ul>
 </div>
 
 <div id="main_content">
   <div class="rbox">
   <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
-    <div class="content" style="padding: 35px 20px 10px 80px">
+    <div class="content" style="padding: 35px 80px 10px 20px">
     <!-- Start Content -->
 
 
@@ -69,9 +69,9 @@
 </div>
 
 <div id="footer">
-    Hosted By
+    האירוח בחסות
     <a href="http://www.codeweavers.com/"><img src="{$root}/images/cw_logo_sm.png" alt="CodeWeavers"
-    title="CodeWeavers - Run Windows applications and games on Mac and Linux"></a>
+    title="CodeWeavers - הרצת יישומים ומשחקים המיועדים ל־Windows על גבי Mac ו־Linux"></a>
 </div>
 
 <!-- DEBUG -->
