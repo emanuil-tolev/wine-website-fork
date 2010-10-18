@@ -14,26 +14,29 @@ BODY                {
                      position: absolute;
                      z-index: 2;
                      top: 0px;
-                     left: 0px;
                      width: 200px;
                      height: 313px;
                     }
+#logo_glass_big.pos { left: 0px; }
+
 #logo_glass         {
                      position: absolute;
                      z-index: 2;
                      top: 20px;
-                     left: 50px;
                      width: 100px;
                      height: 157px;
                     }
+#logo_glass.pos     { left: 50px; }
+
 #logo_text          {
                      position: absolute;
                      z-index: 3;
                      top: 40px;
-                     left: 110px;
                      width: 186px;
                      height: 58px;
                     }
+#logo_text.pos      { left: 110px; }
+
 #logo_blurb         {
                      position: absolute;
                      z-index: 4;
@@ -62,10 +65,10 @@ BODY                {
                      position: absolute;
                      z-index: 6;
                      top: 0px;
-                     right: 10px;
                      margin: 0px;
                      padding: 0px;
                     }
+#tabs.pos           { right: 10px; }
 #tabs UL            {
                      list-style: none;
                      padding: 0;

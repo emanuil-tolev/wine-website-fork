@@ -24,8 +24,8 @@
 <body>
 
 
-<div id="logo_glass"><a href="{$root}/"><img src="{$root}/images/winehq_logo_glass_sm.png" alt=""></a></div>
-<div id="logo_text"><a href="{$root}/"><img src="{$root}/images/winehq_logo_text.png" alt="WineHQ" title="WineHQ"></a></div>
+<div id="logo_glass" class="pos"><a href="{$root}/"><img src="{$root}/images/winehq_logo_glass_sm.png" alt=""></a></div>
+<div id="logo_text" class="pos"><a href="{$root}/"><img src="{$root}/images/winehq_logo_text.png" alt="WineHQ" title="WineHQ"></a></div>
 
 
 <div id="logo_blurb">{$page_blurb}</div>
@@ -42,7 +42,7 @@
 </div>
 
 
-<div id="tabs">
+<div id="tabs" class="pos">
     <ul>
         <li class="s"><a href="{$base_url}">WineHQ</a></li>
         <li><a href="http://wiki.winehq.org/">Wiki</a></li>
