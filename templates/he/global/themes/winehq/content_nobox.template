@@ -11,6 +11,7 @@
     <meta name="copyright" content="זכויות יוצרים {$curtime_year}. WineHQ.org כל הזכויות שמורות.">
     <meta name="language" content="Hebrew">
     <meta name="revisit-after" content="1">
+    <link rel="stylesheet" href="{$root}/styles.css" type="text/css" media="screen">
     <link rel="stylesheet" href="{$root}/styles-rtl.css" type="text/css" media="screen">
     <script language="JavaScript" type="text/javascript">
         var web_root="{$root}";
@@ -24,8 +25,8 @@
 <body>
 
 
-<div id="logo_glass_big"><a href="{$root}/"><img src="{$root}/images/winehq_logo_glass_rtl.png" alt=""></a></div>
-<div id="logo_text"><a href="{$root}/"><img src="{$root}/images/winehq_logo_text.png" alt="WineHQ" title="WineHQ"></a></div>
+<div id="logo_glass_big" class="pos_rtl"><a href="{$root}/"><img src="{$root}/images/winehq_logo_glass_rtl.png" alt=""></a></div>
+<div id="logo_text" class="pos_rtl"><a href="{$root}/"><img src="{$root}/images/winehq_logo_text.png" alt="WineHQ" title="WineHQ"></a></div>
 
 
 <div id="logo_blurb">{$page_blurb}</div>
@@ -42,10 +43,10 @@
 </div>
 
 
-<div id="tabs">
+<div id="tabs" class="pos_rtl">
     <ul>
         <li class="s"><a href="{$base_url}">WineHQ</a></li>
-        <li><a href="http://wiki.winehq.org">ויקי</a></li>
+        <li><a href="http://wiki.winehq.org/">ויקי</a></li>
         <li><a href="http://appdb.winehq.org/">AppDB</a></li>
         <li><a href="http://bugs.winehq.org/">באגזילה</a></li>
         <li><a href="http://forums.winehq.org/">פורומים</a></li>

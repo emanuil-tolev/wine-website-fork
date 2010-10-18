@@ -1,4 +1,3 @@
-@import ("styles.css"); 
 /* Body Document Defaults */
 BODY                {
                      direction: rtl;
@@ -7,15 +6,10 @@ BODY                {
                     }
 
 /* wine logo image */
-#logo_glass_big     {
-                     right: 0px;
-                    }
-#logo_glass         {
-                     right: 50px;
-                    }
-#logo_text          {
-                     right: 110px;
-                    }
+#logo_glass_big.pos_rtl { right: 0px; }
+#logo_glass.pos_rtl     { right: 50px; }
+#logo_text.pos_rtl      { right: 110px; }
+
 #logo_blurb         {
                      right: 130px;
                     }
@@ -23,12 +17,11 @@ BODY                {
 /* search box */
 #search_box         {
                      text-align: left;
+                     left: 20px;
                     }
 
 /* top tabs */
-#tabs               {
-                     left: 10px;
-                    }
+#tabs.pos_rtl      { left: 10px; }
 #tabs LI            {
                      float: right;
                     }
