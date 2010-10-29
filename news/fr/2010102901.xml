@@ -1,0 +1,21 @@
+<news>
+<date>29 octobre 2010</date>
+<title>Sortie de Wine 1.3.6</title>
+<body>
+<p> La version de développement 1.3.6 de Wine est à présent disponible.</p>
+<p> <a href="{$root}/announce/1.3.6">Nouveautés</a> de cette version :
+<ul>
+  <li>Support des filtres GStreamer.</li>
+  <li>Curseurs standards associés aux curseurs natifs du bureau.</li>
+  <li>Meilleure prise en charge des programmes d'installations utilisant des services.</li>
+  <li>Diverses améliorations MSXML.</li>
+  <li>Décodeur pour les images au format TGA.</li>
+  <li>Mises à jour de traductions.</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a
+href="http://prdownloads.sourceforge.net/wine/wine-1.3.6.tar.bz2">code
+source</a> est disponible dès à présent.
+Les paquets binaires sont en cours de construction, et apparaîtront sous peu
+sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
