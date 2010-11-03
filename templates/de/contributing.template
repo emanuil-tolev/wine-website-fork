@@ -265,8 +265,7 @@
 <p>Wine hat einen st&auml;ndigen Bedarf an Aktualisierungen der Dokumentation. Wine
   hat seine "<a href="{$root}/site/documentation">Anleitungen (en)</a>", wie den Wine User
   Guide etc. Die SGML-Quellen der Anleitungen befinden sich in einem
-  <a href="http://www.winehq.org/site/cvs#docs">separatem CVS Zweig auf
-  Sourceforge</a>.</p>
+  <a href="http://source.winehq.org/git/docs.git/">separate Git Zweig</a>.</p>
 <p>Weitere wichtige Dokumentationen sind die README Datei und die man pages und
   anderen Dateien im documentation Verzeichnis.</p>
 <p>Deine Aufgabe w&auml;re es sicherzustellen, dass jeder Patch, der von einem
@@ -276,7 +275,7 @@
   Entwickler fragen, was ihr Patch im Einzelnen macht (und vergiss nicht, den
   Entwicklern einen zu verpassen, die die Arbeitsweise ihres Patches &uuml;berhaupt
   nicht dokumentiert haben!).</p>
-<p>Die Aktualisierung der Dokumentation findet statt, in dem Du "CVS Diffs" der
+<p>Die Aktualisierung der Dokumentation findet statt, in dem Du "Git Diffs" der
   entsprechenden Dateien an wine-patches schickst.</p>
 
 <p>Ben&ouml;tigte Fertigkeiten/Kenntnisse:</p>

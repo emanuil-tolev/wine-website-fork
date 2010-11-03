@@ -245,7 +245,7 @@
   functionality and optionally asking developers about what their patch truly
   does (and of course don't forget to beat up developers that don't document
   the workings of their patch at all!).</p>
-<p>The documentation updates would be done by sending "cvs diff"s of the
+<p>The documentation updates would be done by sending "git diff"s of the
   relevant files to wine-patches.</p>
 <p>Requirements:</p>
 <ul>

@@ -255,7 +255,7 @@
 <p>O Wine está constantemente a necessitar de actualizações à documentação.
   O Wine tem os seus "<a href="{$root}/site/documentation">Guias</a>" tais como
   o Wine User Guide etc. O código fonte SGML pode ser encontrado numa
-  <a href="http://www.winehq.org/site/cvs#docs">árvore CVS à parte na Sourceforge</a>.</p>
+  <a href="http://source.winehq.org/git/docs.git/">árvore Git à parte</a>.</p>
 <p>Outros items de documentação importantes são o ficheiro README, as páginas
   man e outros ficheiros no directório de documentação.</p>
 <p>O seu trabalho seria certificar-se de que a cada correcção que um programador
@@ -264,7 +264,7 @@
   a nova funcionalidade e opcionalmente perguntando ao programador o que é que o
   seu patch faz realmente (e claro não se esqueça de bater em programadores que
   não documentam nada do funcionamento dos seus patchs!).</p>
-<p>As actualizações à documentação seriam efectuadas enviando "diffs cvs" dos
+<p>As actualizações à documentação seriam efectuadas enviando "diffs git" dos
   ficheiros relevantes para o wine-patches.</p>
 <p>Requisitos:</p>
 <ul>
