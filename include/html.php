@@ -71,8 +71,7 @@ class html
         
         // rss link
         if ($this->rss_link)
-            $rss_link = '<link rel="alternate" title="'.$title.' RSS" href="'.$this->rss_link.'" type="application/xml">';
-        
+            $rss_link = '<link rel="alternate" title="'.$title.'RSS" href="'.$this->rss_link.'" type="application/rss+xml">';
         // display page based on view mode
         switch ($this->_view_mode)
         {
