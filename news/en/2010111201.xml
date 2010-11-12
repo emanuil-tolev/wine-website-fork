@@ -1,0 +1,18 @@
+<news>
+<date>November 12, 2010</date>
+<title>Wine 1.3.7 Released</title>
+<body>
+<p> The Wine development release 1.3.7 is now available.</p>
+<p> <a href="{$root}/announce/1.3.7">What's new</a> in this release:
+<ul>
+  <li>Improved system tray support.</li>
+  <li>Better support for installers with assemblies.</li>
+  <li>Many of the msvcrt "secure" functions implemented.</li>
+  <li>A lot of fixes to the GStreamer support.</li>
+  <li>Many MSXML improvements.</li>
+  <li>Translation updates.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.7.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
