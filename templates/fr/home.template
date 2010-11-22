@@ -41,14 +41,7 @@
               </div>
             </div>
 
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="donateForm" style="margin: 0; padding: 0;">
-            <input type="hidden" name="cmd" value="_donations">
-            <input type="hidden" name="business" value="donate@winehq.org">
-            <input type="hidden" name="item_name" value="Donation pour Wine">
-            <input type="hidden" name="lc" value="FR">
-            <input type="hidden" name="currency_code" value="EUR">
-            </form>
-            <div class="donate" onClick="document.donateForm.submit();">
+            <div class="donate" onClick="document.location='{$root}/donate/';">
               <div class="icon"></div>
               <div class="text">
                 <div class="title"><a href="javascript:document.donateForm.submit();">Dons</a></div>
