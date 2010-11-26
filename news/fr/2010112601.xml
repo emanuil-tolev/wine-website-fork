@@ -1,0 +1,20 @@
+<news>
+<date>26 novembre 2010</date>
+<title>Sortie de Wine 1.3.8</title>
+<body>
+<p> La version de développement 1.3.8 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.3.8">Nouveautés</a> de cette version :
+<ul>
+  <li>Icônes dans les menus "ouvrir avec".</li>
+  <li>Pages de manuel pour tous les binaires installés.</li>
+  <li>Prise en charge des schémas dans MSXML.</li>
+  <li>Un tas de corrections pour les programmes d'installation.</li>
+  <li>Mises à jour de traductions.</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a
+href="http://prdownloads.sourceforge.net/wine/wine-1.3.8.tar.bz2">code
+source</a> est disponible dès à présent.
+Les paquets binaires sont en cours de construction, et apparaîtront sous peu
+sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
