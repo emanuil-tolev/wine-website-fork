@@ -44,7 +44,7 @@
             <div class="donate" onClick="document.location='{$root}/donate/';">
               <div class="icon"></div>
               <div class="text">
-                <div class="title"><a href="javascript:document.donateForm.submit();">Donate</a></div>
+                <div class="title"><a href="{$root}/donate/">Donate</a></div>
                 <div class="subtitle">Donate to the Wine project.</div>
               </div>
             </div>
