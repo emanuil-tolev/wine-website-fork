@@ -63,7 +63,7 @@ class data
                                               ),
                                  'he' => array(
                                                'name'   => 'עברית',
-                                               'change' => 'שינוי השפה'
+                                               'change' => 'החלפת השפה'
                                               ),
                                  'pl' => array(
                                                'name'   => 'Polski',
