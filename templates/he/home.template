@@ -71,7 +71,7 @@
                   (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_stable_release}">יומן מקוצר</a>)
                 </span>
             </td></tr>
-            <tr><td>בפיתוח:</td>
+            <tr><td>פיתוח:</td>
             <td style="padding-left: 15px;">
                 <b><a href="{$root}/announce/{$config_master_release}">Wine&nbsp;{$config_master_release}</a></b>
                 <span class="small">
