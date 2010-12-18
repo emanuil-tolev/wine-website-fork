@@ -1,0 +1,12 @@
+<!--TITLE:[WineHQ - Wybierz swój język]-->
+<!--BLURB:[WineHQ jest wielojęzykową stroną]-->
+
+<!--EXEC:[language]-->
+
+<h1 class="title">{$langChange}</h1>
+
+<p><b>Obecnie wybrany język: </b> {$langCur}</p>
+
+<ul style="list-style: none; margin-left: 20px; padding: 0;">
+<!--EXEC:[language?cmd=list]-->
+</ul>
