@@ -1,0 +1,77 @@
+<!--TITLE:[Darowizny dla projektu Wine.]-->
+<!--BLURB:[Pomóż nam się zebrać razem.]-->
+
+<h1 class="title">Podaruj pieniądze projektowi Wine</h1>
+
+<p>Jest kilka sposobów na podarowanie pieniędzy projektowi Wine.</p>
+
+<table border="0" cellpadding="10" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">Opcja</b></td>
+    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">O tej opcji darowizny</b></td>
+  </tr>
+
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="donateForm" style="margin: 0; padding: 0;">
+  <input type="hidden" name="cmd" value="_donations">
+  <input type="hidden" name="business" value="donate@winehq.org">
+  <input type="hidden" name="item_name" value="Wine donation">
+  </form>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="javascript:document.donateForm.submit();">Paypal</a>
+    </td>
+    <td valign="top">
+        Z <a href="javascript:document.donateForm.submit();">Paypalem</a> możesz przekazać datki przez kartę kredytową lub przez konto Paypal.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://www.freewear.org/?org=Wine">FreeWear</a>
+    </td>
+    <td valign="top">
+        Możesz kupić ubrania Wine pod adresem <a href="http://www.freewear.org/?org=Wine">FreeWear.org</a>.
+        Za każde kupione ubranie firma przekazuje część swoich zysków dla Wine.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://www.winehq.org/contributing#wpf">Mail</a>
+    </td>
+    <td valign="top">
+        Możesz także przesłać nam pieniądze, czek lub międzynarodowy nakaz przelewu w kapitale Stanów Zjednoczonych.
+        Kliknij na <a href="http://www.winehq.org/contributing#wpf">ten link</a> po więcej informacji.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://www.amazon.com/exec/obidos/redirect-home/winehq">Amazon</a>
+    </td>
+    <td valign="top">
+        Kupuj na <a href="http://www.amazon.com/exec/obidos/redirect-home/winehq">Amazon.com</a> przez ten konkretny link.
+    </td>
+  </tr>
+  
+<tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://www.cdnow.com/from=sr-1093221">CDnow</a>
+    </td>
+    <td valign="top">
+        Kupuj na <a href="http://www.cdnow.com/from=sr-1093221">CDnow</a> przez ten konkretny link.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://sourceforge.net/donate/index.php?group_id=6241">SourceForge</a>
+    </td>
+    <td valign="top">
+        Posiadamy także konto <a href="http://sourceforge.net/donate/index.php?group_id=6241">SourceForge.net</a>na PayPalu.
+    </td>
+  </tr>
+
+</table>
