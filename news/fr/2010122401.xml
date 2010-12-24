@@ -1,0 +1,21 @@
+<news>
+<date></date>
+<title>Sortie de Wine 1.3.10</title>
+<body>
+<p> La version de développement 1.3.10 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.3.10">Nouveautés</a> de cette version :
+<ul>
+  <li>Prise en charge des bulles de notification dans la zone de notification système.</li>
+  <li>Pilote son obsolète AudioIO supprimé.</li>
+  <li>Poursuite du travail sur la prise en charge d'ActiveX.</li>
+  <li>Divers correctifs MSI.</li>
+  <li>Préchargeur à présent également utilisé en mode 64 bits. </li>
+  <li>Mises à jour de traductions.</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a
+href="http://prdownloads.sourceforge.net/wine/wine-1.3.10.tar.bz2">code
+source</a> est disponible dès à présent.
+Les paquets binaires sont en cours de construction, et apparaîtront sous peu
+sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
