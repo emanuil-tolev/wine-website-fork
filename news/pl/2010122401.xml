@@ -1,0 +1,18 @@
+<news>
+<date>Grudzień 24, 2010</date>
+<title>Wydano Wine 1.3.10/title>
+<body>
+<p> Wydanie rozwojowe Wine 1.3.10 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.3.10">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Wsparcie dla dymków powiadomień w tacce systemowej.</li>
+  <li>Usunięto przestarzały sterownik dźwięku AudioIO.</li>
+  <li>Więcej pracy włożonej we wsparcie ActiveX.</li>
+  <li>Rozmaite poprawki do MSI.</li>
+  <li>Teraz preloader jest używany także dla 64-bitów. </li>
+  <li>Aktualizacje tłumaczeń.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.10.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkróce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
