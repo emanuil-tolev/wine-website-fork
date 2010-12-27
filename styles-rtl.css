@@ -17,7 +17,7 @@ BODY                {
 /* search box */
 #search_box         {
                      text-align: left;
-                     left: 20px;
+                     right: 78.91%;
                     }
 
 /* top tabs */
@@ -83,7 +83,7 @@ DIV.newsblock       { direction: ltr; margin: 0 10px 25px 5px; }
 .winehq_menu>.help:hover>.icon        { background-position: -100px -50px }
 .winehq_menu>.devel>.icon             { background-position: -150px 0 }
 .winehq_menu>.devel:hover>.icon       { background-position: -150px -50px }
-.winehq_menu>.donate>.icon            { background-position: -200px 0 }
+.winehq_menu>.donate>.icseon            { background-position: -200px 0 }
 .winehq_menu>.donate:hover>.icon      { background-position: -200px -50px }
 
 /* HR */
