@@ -2,60 +2,62 @@
 <!--BLURB:[Neuestes Wine auf Ubuntu installieren]-->
 
 <h1 class="title"><a href="http://www.ubuntu.com/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Logo" border="0"></a>
-Wine f&uuml;r Ubuntu und Ubuntu Derivate
+Wine für Ubuntu und Ubuntu Derivate
 <a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Logo" border="0"></a></h1>
 
 <p>Ubuntu und Ubuntu derivate (wie Kubuntu) bekommen ihre Software 
 als <i>Pakete</i> die in <i>Repositories</i> untergebracht sind. Ubuntu's
-Standard Repository enth&auml;lt Wine, wenn du allerdings mit der
-neuesten Wine Beta auf dem Laufenden bleiben willst nutze das von
-WineHQ mit der folgenden Anleitung.
+Standard Repository enthält Wine, wenn du allerdings mit dem
+neuesten Wine auf dem Laufenden bleiben willst nutze das von
+WineHQ mit folgenden Anleitung.
 </p>
 
-<h2>Warnung: Diese Pakete sind Betapakete f&uuml;r Ubuntu 10.04 und neuere.</h2>
+<h2>Hinzufügen des WineHQ Repository:</h2>
 
-<p><i>Die Pakete hier sind Betapakete.  Das bedeutet, dass sie 
-in regelm&auml;&szlig;igen Abst&auml;nden 
-<a href="http://wiki.winehq.org/Regression">Regressions</a> erleiden, wodurch 
-eine Aktualisierung die Wine-Funktionalit&auml;t beeintr&auml;chtigen kann. Wenn die Version
-von Ubuntu bei dir funktioniert, willst du diese Betapakete wahrscheinlich nicht benutzen.</i></p>
-
-<h2>Hinzuf&uuml;gen des WineHQ Repository:</h2>
-
-<p>&Ouml;ffne das Software-Paketquellenmen&uuml; durch 
-<b>System->Systemverwaltung->Software-Paketquellen</b>.  W&auml;hle dann den <b>Software 
-von Drittanbietern</b>-Reiter und klicke auf <b>Hinzuf&uuml;gen</b>.</p>
+<p>Öffne das Software-Paketquellenmenü durch
+<b>Anwendungen->Software-Center</b>, dann<b>Bearbeiten->Software-Paketquellen...</b>.
+Wähle dann den <b>Software von Drittanbietern</b>-Reiter und klicke auf <b>Hinzufügen</b>.</p>
 
 <img src="{$root}/images/distro/de_ubuntu-softwaresources1.png" width="686" height="516" alt="System->Systemverwaltung->Software-Paketquellen" border="0">
 
-<p>Dann, <b>copy-paste die untere Zeile</b>.</p>
+<p>Dann, <b>kopiere die untere Zeile</b> dort hinein.</p>
 
 <i>ppa:ubuntu-wine/ppa</i></p>
 
+<h2>Warnung: Betapakete</h2>
+
+<p><i>Die 1.3 Pakete hier sind Betapakete.  Das bedeutet, dass sie
+in regelmäßigen Abständen
+<a href="http://wiki.winehq.org/Regression">Regressions</a> erleiden, wodurch
+eine Aktualisierung die Wine-Funktionalität beeinträchtigen kann. Wenn die stabile Version
+Wine 1.2 bei dir funktioniert, willst du diese Betapakete wahrscheinlich nicht benutzen.</i></p>
+
 <h2>Installieren von Wine:</h2>
 
-<p>Klick auf Schlie&szlig;en zum Beenden, anschlie&szlig;end <b>lade die Paketinformationen neu</b>, wenn
-Du dazu aufgefordert wirst. Wenn Du Wine schon installiert hast, wird die Aktualisierungsverwaltung
-Dir nun ein Upgrade auf die stabile Wine 1.2 Version anbieten. Um das neueste Wine 1.3 Betarelease zu
-bekommen musst du das <i>wine1.3 Paket</i> installieren, oder <a href="apt://wine1.3">diesen Link klicken</a>.</p>
+<p>Sobald du das WineHQ PPA Repository hinzugefügt hast, kannst du es installieren.</p>
+
+<p><i>Für die aktuellste Wine 1.3 Beta,
+<a href="apt://wine1.3">klicke diesen Link um das wine1.3 Paket zu installieren</a>.</i></p>
+<p><i>Für die ältere, stabile Wine 1.2 Version, 
+<a href="apt://wine1.3">klicke diesen Link um das wine1.2 Paket zu installieren</a>.</i></p>
 
 <h2>Aktualisierung auf eine neue Ubuntuversion</h2>
 
-<p>Wenn Du dein gesamtes System aktualisierst, zum Beispiel von Ubuntu 10.04 auf 
-10.10, musst Du zu dieser Seite zur&uuml;ckkehren und das Repository nochmal hinzuf&uuml;gen. 
+<p>Wenn Du dein gesamtes System aktualisierst, zum Beispiel von Ubuntu 10.04 auf
+10.10, musst Du zu dieser Seite zurückkehren und das Repository nochmal hinzufügen.
 Die eingebaute Aktualisierungsverwaltung wird das Wine repository nicht automatisch umschalten.</p>
 
-<h2>Alternative Kommandozeileninstruktionen f&uuml;r die Wine-Installation:</h2>
+<h2>Alternative Kommandozeileninstruktionen für die Wine-Installation:</h2>
 
-<p>Es ist auch m&ouml;glich, das Hinzuf&uuml;gen des Wine PPA und die Installation
-wie folgt mit der Kommandozeile durchzuf&uuml;hren.
-Die Instruktionen sind n&uuml;tzlich f&uuml;r Kubuntu, Xubuntu und andere Ubuntu 
-Derivate. Zuerst &ouml;ffne ein Terminalfenster (Anwendungen->Zubeh&ouml;r->Terminal).</p>
+<p>Es ist auch möglich, das Hinzufügen des Wine PPA und die Installation
+wie folgt mit der Kommandozeile durchzuführen.
+Die Instruktionen sind nützlich für Kubuntu, Xubuntu und andere Ubuntu
+Derivate. Zuerst öffne ein Terminalfenster (Anwendungen->Zubehör->Terminal).</p>
 
 <p><i>sudo add-apt-repository ppa:ubuntu-wine/ppa</i></p>
 
-<p>Aktualisiere dann die APT-Paketinformationen durch Ausf&uuml;hren von '<b>sudo apt-get 
-update</b>'. Du kannst nun Wine durch Ausf&uuml;hren von '<b>sudo apt-get 
+<p>Aktualisiere dann die APT-Paketinformationen durch Ausführen von '<b>sudo apt-get
+update</b>'. Du kannst nun Wine durch Ausführen von '<b>sudo apt-get
 install wine1.3</b>' im Terminal installieren.</p>
 
 <p>Wenn du das PPA durchsuchen willst, kannst du es <a href="https://launchpad.net/~ubuntu-wine/+archive/ppa">bei Launchpad anschauen</a>.</p>
