@@ -9,13 +9,13 @@ Wine für Ubuntu und Ubuntu Derivate
 als <i>Pakete</i> die in <i>Repositories</i> untergebracht sind. Ubuntu's
 Standard Repository enthält Wine, wenn du allerdings mit dem
 neuesten Wine auf dem Laufenden bleiben willst nutze das von
-WineHQ mit folgenden Anleitung.
+WineHQ mit folgender Anleitung.
 </p>
 
 <h2>Hinzufügen des WineHQ Repository:</h2>
 
 <p>Öffne das Software-Paketquellenmenü durch
-<b>Anwendungen->Software-Center</b>, dann<b>Bearbeiten->Software-Paketquellen...</b>.
+<b>Anwendungen->Software-Center</b>, dann <b>Bearbeiten->Software-Paketquellen...</b>
 Wähle dann den <b>Software von Drittanbietern</b>-Reiter und klicke auf <b>Hinzufügen</b>.</p>
 
 <img src="{$root}/images/distro/de_ubuntu-softwaresources1.png" width="686" height="516" alt="System->Systemverwaltung->Software-Paketquellen" border="0">
@@ -28,7 +28,7 @@ Wähle dann den <b>Software von Drittanbietern</b>-Reiter und klicke auf <b>Hinz
 
 <p><i>Die 1.3 Pakete hier sind Betapakete.  Das bedeutet, dass sie
 in regelmäßigen Abständen
-<a href="http://wiki.winehq.org/Regression">Regressions</a> erleiden, wodurch
+<a href="http://wiki.winehq.org/Regression">Regressionen</a> erleiden, wodurch
 eine Aktualisierung die Wine-Funktionalität beeinträchtigen kann. Wenn die stabile Version
 Wine 1.2 bei dir funktioniert, willst du diese Betapakete wahrscheinlich nicht benutzen.</i></p>
 
