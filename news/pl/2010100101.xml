@@ -1,0 +1,19 @@
+<news>
+<date>Październik  1, 2010</date>
+<title>Wydano Wine 1.3.4</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.3.4 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.3.4">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Wsparcie dla lustrzanych okien od-prawej-do-lewej.</li>
+  <li>Od teraz Winelib wspiera platformę ARM.</li>
+  <li>Nowa wbudowana aplikacja o nazwie taskkill.exe.</li>
+  <li>Opracowano panel kontrolny Inetcpl.</li>
+  <li>AcceptEx jest od teraz zaimplementowany.</li>
+  <li>Ulepszone sprawdzanie bezpieczeństwa dla połączeń SSL.</li>
+  <li>Aktualizacje tłumaczeń.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.4.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
