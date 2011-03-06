@@ -1,0 +1,15 @@
+<news>
+<date>Wrzesień  3, 2010</date>
+<title>Wydano Wine 1.3.2</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.3.2 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.3.2">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Aktualizacja silnika Gecko, teraz zawiera również wersję 64-bitową.</li>
+  <li>Nowa implementacja konsoli na terminalach Uniksowych.</li>
+  <li>Wiele nowych funkcji w bibliotekach uruchomieniowych dll napisanych w C.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.2.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>

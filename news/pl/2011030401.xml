@@ -1,0 +1,16 @@
+<news>
+<date>Marzec  4, 2011</date>
+<title>Wydano Wine 1.3.15</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.3.15 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.3.15">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Wsparcie dla zmiany haseł sieciowych.</li>
+  <li>Wsparcie dla mechanizmu refleksji w kompilatorze cieniowania.</li>
+  <li>Testy już nie uwzględniają zachowania Win9x.</li>
+  <li>Kilka ulepszeń w MSHTML i MSXML.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.15.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
