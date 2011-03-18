@@ -1,0 +1,19 @@
+<news>
+<date>March 18, 2011</date>
+<title>Wine 1.3.16 Released</title>
+<body>
+<p> The Wine development release 1.3.16 is now available.</p>
+<p> <a href="{$root}/announce/1.3.16">What's new</a> in this release:
+<ul>
+  <li>New version of the Gecko engine, based on Firefox 4.</li>
+  <li>Better support for Dwarf debugging information.</li>
+  <li>Improved handling of animated cursors.</li>
+  <li>GnuTLS no longer required on Mac OS X.</li>
+  <li>Improvements to the GDI driver infrastructure.</li>
+  <li>A number of MSI fixes for the .NET installers.</li>
+  <li>Several GdiPlus improvements.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.16.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
