@@ -1,0 +1,22 @@
+<!--TITLE:[Wine for Debian Sid]-->
+<!--BLURB:[Wine for Debian Sid]-->
+
+<h1 class="title"><a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
+Wine for Debian Sid
+<a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a></h1>
+
+<p>Debian-based distributions utilize a special tool for managing packages known as APT.  APT is able to automagically install all of the needed dependencies for a software package, as well as keep the package up to date, by scanning what are known as APT repositories. Debian-based distributions have their own repositories of software that include Wine, however we keep our own repository of the latest available beta packages here for download.</p>
+
+<p><b>Warning: These are beta packages</b><br>
+<i>This means they will periodically suffer from <a href="http://wiki.winehq.org/Regression">regressions</a>, and as a result an update may break functionality in Wine.  If the latest stable release of Wine (currently Wine 1.2.3) works for you, then you may not want to use these beta packages.</i></p>
+
+<p>This website has packages for i386 and amd64 architecture.</p>
+
+<p>To install wine packages you must download the .deb files and manually install them. See the page for more details.</p>
+
+<br><br><p style="font-size:12px;text-align:left;font-style: italic;">
+Homepage: <a href="http://dev.carbon-project.org/debian/wine-unstable/" target="_blank">http://dev.carbon-project.org/debian/wine-unstable/</a><br>
+Package builder:  <a href="mailto:curan@debian.org">Kai Wasserbäch</a>
+</p>
+
+
