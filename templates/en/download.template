@@ -57,19 +57,19 @@ requested in exchange for hosting the Wine web site.</p>
   </tr>
   
   <tr bgcolor="#ffffff">
-    <td align="center"><a href="{$root}/download/deb">
+    <td align="center"><a href="{$root}/download/ubuntu">
       <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu linux" border="0"></a>
     </td>
-    <td> <b><a href="{$root}/download/deb">Download Ubuntu packages</a></b> 
+    <td> <b><a href="{$root}/download/ubuntu">Download Ubuntu packages</a></b> 
      - binary and source .debs for Ubuntu Karmic (9.10), Lucid (10.04 LTS), Maverick (10.10), and Natty (11.04)
     <td><a href="mailto:scott@open-vote.org">Scott Ritchie</a></td>
   </tr>
 
    <tr bgcolor="#ffffff">
-    <td align=center><a href="{$root}/download/deblenny">
+    <td align=center><a href="{$root}/download/debian">
       <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
     </td>
-    <td> <b><a href="{$root}/download/deblenny">Download Debian packages</a></b> 
+    <td> <b><a href="{$root}/download/debian">Download Debian packages</a></b> 
      - binary .debs for Debian Lenny, Squeeze and Sid</td>
     <td><a href="mailto:repository@lamaresh.net">Maurilio Genovese</a><br><a href="mailto:ben.klein@lamaresh.net">Ben Klein</a></td>
   </tr>
