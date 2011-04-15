@@ -1,0 +1,18 @@
+<news>
+<date>Kwiecień 15, 2011</date>
+<title>Wydano Wine 1.3.18</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.3.18 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.3.18">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Wsparcie dla obcinania wskaźnika myszki.</li>
+  <li>Wsparcie dla 'surowych' zdarzeń myszki przy użyciu XInput2.</li>
+  <li>Pierwsze kroki w implementacji silnika DIB.</li>
+  <li>Wsparcie dla większej liczby właściwości w DXDiag.</li>
+  <li>Nowa zakładka 'bezpieczeństwo' w ustawieniach internetu w panelu sterowania.</li>
+  <li>Ulepszone odtwarzanie materiałów wideo na Mac OS X.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.18.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
