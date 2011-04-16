@@ -1,0 +1,18 @@
+<news>
+<date>15. April 2011</date>
+<title>Wine 1.3.18 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.3.18 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.3.18">Neuerungen (en)</a> in dieser Version:
+<ul>
+  <li>Unterstützung für das Einfangen des Mauszeigers.</li>
+  <li>Unverarbeitete Maus Ereignisse werden durch XInput2 unterstützt.</li>
+  <li>Erste Schritte einer DIB-Engine Implementation.</li>
+  <li>Unterstützung für mehr Eigenschaften in DXDiag.</li>
+  <li>Neuer Sicherheitstab in der Internet Systemsteuerung.</li>
+  <li>Verbessertes Video Playback unter Mac OS X.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul></p>
+<p><p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.18.tar.bz2">verfügbar</a>.
+Binär-Downloads werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Download-Seiten</a> zur Verfügung.
+</p></body></news>
