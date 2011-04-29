@@ -3,13 +3,13 @@
 
 <h1 class="title">Uzyskiwanie pomocy</h1>
 
-<p>Jest wiele dróg uzyskiwania pomocy w używaniu Wine.</p>
+<p>Poniżej zebraliśmy możliwości rozwiązywania problemów dotyczących obsługą Wine.</p>
 
 <table border="0" cellpadding="10" cellspacing="1" bgcolor="#EFEFEF">
 
   <tr>
     <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">Opcja</b></td>
-    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">Więcej o opcji pomocy</b></td>
+    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">Szczegóły o opcji pomocy</b></td>
   </tr>
 
   <tr bgcolor="#ffffff">
@@ -26,9 +26,9 @@
         <a href="http://wiki.winehq.org/FAQ"><img src="{$root}/images/faq.png"><br>FAQ</a>
     </td>
     <td valign="top">
-        Na większość pytań można łatwo znaleźć odpowiedź przeglądając nasze
-        <a href="http://wiki.winehq.org/FAQ">FAQ</a>.
-        Tutaj powinieneś w pierwszej kolejności szukać odpowiedzi na twoje pytania.
+        Na większość Twoich pytań łatwo znajdziesz odpowiedź przeglądając nasze
+        <a href="http://wiki.winehq.org/FAQ_PL">FAQ</a>.
+        Jeżeli jesteś w potrzebie zajrzyj tam w pierwszej kolejności.
     </td>
   </tr>
 
@@ -37,9 +37,9 @@
         <a href="{$root}/documentation"><img src="{$root}/images/docs.png"><br>Dokumentacja</a>
     </td>
     <td valign="top">
-        Zalecamy ci przeczytanie naszej <a href="{$root}/site/documentation">dokumentacji</a> w trybie online
-        , aby znaleźć odpowiedzi na twoje pytania. W twoim interesie leży również
-        <a href="http://wiki.winehq.org/HowTo">HowTo</a> które zawiera kilka użytecznych informacji dla
+        Jeżeli szukasz odpowiedzi na Twoje pytanie, zachęcamy Cię do przeczytania naszej 
+        <a href="{$root}/site/documentation">dokumentacji</a> w trybie online. Możesz być również zainteresowany naszym
+        <a href="http://wiki.winehq.org/HowTo">HowTo</a>, bo zawiera garść informacji użytecznych dla
         nowego użytkownika.
     </td>
   </tr>
@@ -49,8 +49,7 @@
         <a href="http://wiki.winehq.org/"><img src="{$root}/images/moinmoin.png"><br>Wiki</a>
     </td>
     <td valign="top">
-        Możesz również odwiedzić naszą <a href="http://wiki.winehq.org/">Wiki</a> aby tam poszukać
-        odpowiedzi na twoje pytania.
+        Szukaj odpowiedzi na swoje pytania na naszej <a href="http://wiki.winehq.org/Polish">Wiki</a>.
     </td>
   </tr>
   
@@ -59,10 +58,10 @@
         <a href="http://forums.winehq.org/"><img src="{$root}/images/forum.png"><br>Forum</a>
     </td>
     <td valign="top">
-        Mamy <a href="http://forums.winehq.org/">webowo</a>/<a href="{$root}/site/forums">emailową</a> społeczność dla
-        użytkowników Wine, która jest miejscem gdzie użytkownicy Wine mogą pytać i łączyć się z innymi.
-        Masz również możliwość przeglądania <a href="{$root}/site/forums">listy mailingowej</a>
-        , która także tworzy społeczność.
+        Dla użytkowników Wine stworzyliśmy <a href="http://forums.winehq.org/">webowo</a>/<a href="{$root}/site/forums">emailową</a>
+        społeczność. To miejsce gdzie możesz zadawać pytania i łączyć się z innymi.
+        Umożliwiamy Ci również przeglądanie <a href="{$root}/site/forums">listy mailingowej</a>
+        także tworzonej przez społeczność.
     </td>
   </tr>
 
@@ -71,7 +70,7 @@
         <a href="{$root}/irc"><img src="{$root}/images/irc.png"><br>IRC</a>
     </td>
     <td valign="top">
-        Możesz łączyć się ze społecznością Wine przez czat na żywo
+        Rozmawiaj na żywo ze społecznością Wine przy użyciu czatu
          na naszym <a href="{$root}/irc">kanale IRC</a>.
     </td>
   </tr>
