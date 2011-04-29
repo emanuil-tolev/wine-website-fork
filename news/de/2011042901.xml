@@ -1,0 +1,17 @@
+<news>
+<date>29. April 2011</date>
+<title>Wine 1.3.19 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.3.19 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.3.19">Neuerungen (en)</a> in dieser Version:
+<ul>
+  <li>Neue Soundtreiber Architektur für MMDevAPI.</li>
+  <li>Bessere Unterstützung für relative Maus Ereignisse in DInput.</li>
+  <li>Debugger Unterstützung für die ARM Plattform.</li>
+  <li>Verschiedene Verbesserungen in D3DX9.</li>
+  <li>Mehr MSVC Runtime Funktionen.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul></p>
+<p><p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.19.tar.bz2">verfügbar</a>.
+Binär-Downloads werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Download-Seiten</a> zur Verfügung.
+</p></body></news>
