@@ -26,7 +26,7 @@ CrossOver facilite l'utilisation de Wine et fournit un excellent support
 technique à ses utilisateurs.
 Tous les achats de CrossOver sont utilisés pour financer directement les
 développeurs travaillant sur Wine. Ainsi, CrossOver constitue à la fois un
-excellent moyen d'obtenir du support lors de l'utilisation de Wine, et un
+excellent moyen d'obtenir du support lors de l'utilisation de Wine et un
 soutien au projet Wine.<br>CodeWeavers fournit des
       <b><a href="http://www.codeweavers.com/products/download_trial/">versions
 d'évaluation de CrossOver</a></b> entièrement fonctionnelles.
@@ -62,19 +62,19 @@ center;"><b>Voyez la
   </tr>
   
   <tr bgcolor="#ffffff">
-    <td align="center"><a href="{$root}/download/deb">
+    <td align="center"><a href="{$root}/download/ubuntu">
       <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Linux" border="0"></a>
     </td>
-    <td> <b><a href="{$root}/download/deb">Paquets Ubuntu</a></b> 
-     - .deb binaires et sources pour Ubuntu Lucid (10.04 LTS)
+    <td> <b><a href="{$root}/download/ubuntu">Paquets Ubuntu</a></b>
+     - .deb binaires et sources pour Ubuntu Karmic (9.10), Lucid (10.04 LTS), Maverick (10.10) et Natty (11.04)
     <td><a href="mailto:scott@open-vote.org">Scott Ritchie</a></td>
   </tr>
 
    <tr bgcolor="#ffffff">
-    <td align=center><a href="{$root}/download/deblenny">
+    <td align=center><a href="{$root}/download/debian">
       <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
     </td>
-    <td> <b><a href="{$root}/download/deblenny">Paquets Debian</a></b>
+    <td> <b><a href="{$root}/download/debian">Paquets Debian</a></b>
      - .deb binaires pour Debian Lenny, Squeeze et Sid</td>
     <td><a href="mailto:repository@lamaresh.net">Maurilio Genovese</a><br><a href="mailto:ben.klein@lamaresh.net">Ben Klein</a></td>
   </tr>
@@ -171,7 +171,7 @@ Spring. Téléchargez les paquets 2010.0 si votre Mandriva est la première vers
 <p>Parfois, il arrive qu'une adaptation de Wine permette à une application de
 fonctionner correctement, mais qu'elle ne puisse être incorporée à Wine pour une
 raison quelconque. Pour pallier des imperfections actuelles de Wine, diverses
-applications tierces pour utilisateurs finals ont été conçues au cours des
+applications tierces pour utilisateurs finaux ont été conçues au cours des
 années. Les développeurs Wine ne supportent en aucun cas ces applications, mais
 il se peut que vous les trouviez utiles. Pour plus d'informations, voyez notre page
 wiki sur les <a
