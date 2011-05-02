@@ -1,0 +1,33 @@
+<!--TITLE:[Wine pour Debian Sid]-->
+<!--BLURB:[Wine pour Debian Sid]-->
+
+<h1 class="title"><a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
+Wine pour Debian Sid
+<a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a></h1>
+
+<p>Les distributions basées sur Debian utilisent un outil spécial de gestion des
+paquets appelé APT, qui est capable d'installer automagiquement toutes les
+dépendances requises pour un paquet logiciel donné, ainsi que de garder le
+paquet à jour, en inventoriant ce que l'on connaît sous le nom de «&nbsp;dépôts
+APT&nbsp;».<br>Elles proposent leurs propres dépôts de logiciels qui incluent
+Wine, mais nous gérons néanmoins notre propre dépôt offrant les paquets bêta
+les plus récents en téléchargement.</p>
+
+<p><b>Avertissement&nbsp;: ce sont des paquets bêta</b><br>
+<i>Cela signifie qu'ils peuvent à l'occasion souffrir de
+<a href="http://wiki.winehq.org/Regression">régressions</a>. Par conséquent, une
+mise à jour peut casser une fonctionnalité dans Wine. Si la dernière version
+stable de Wine (actuellement {$config_stable_release}) fonctionne dans votre
+cas, vous ne devriez pas utiliser ces paquets bêta.</i></p>
+
+<p>Ce site web propose des paquets pour les architectures i386 et amd64.</p>
+
+<p>Pour installer Wine, il faut télécharger les fichiers .deb et les installer
+manuellement. Voyez la page web pour plus de détails.</p>
+
+<br><br><p style="font-size:12px;text-align:left;font-style: italic;">
+Homepage: <a href="http://dev.carbon-project.org/debian/wine-unstable/" target="_blank">http://dev.carbon-project.org/debian/wine-unstable/</a><br>
+Package builder:  <a href="mailto:curan@debian.org">Kai Wasserbäch</a>
+</p>
+
+
