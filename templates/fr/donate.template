@@ -1,0 +1,56 @@
+<!--TITLE:[Faites un don au projet Wine.]-->
+<!--BLURB:[Aidez-nous à avancer.]-->
+
+<h1 class="title">Faites un don au projet Wine</h1>
+
+<p>Il y a différentes façons de donner au projet Wine.</p>
+
+<table border="0" cellpadding="10" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">Alternative</b></td>
+    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">À propos de cette alternative</b></td>
+  </tr>
+
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="donateForm" style="margin: 0; padding: 0;">
+  <input type="hidden" name="cmd" value="_donations">
+  <input type="hidden" name="business" value="donate@winehq.org">
+  <input type="hidden" name="item_name" value="Don au projet Wine">
+  <input type="hidden" name="lc" value="FR">
+  <input type="hidden" name="currency_code" value="EUR">
+  </form>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="javascript:document.donateForm.submit();">Paypal</a>
+    </td>
+    <td valign="top">
+        Avec <a href="javascript:document.donateForm.submit();">Paypal</a>, vous
+pouvez effectuer un don par carte de crédit ou via votre compte Paypal.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://www.freewear.org/?org=Wine">FreeWear</a>
+    </td>
+    <td valign="top">
+        Vous pouvez acheter des vêtements Wine spécifiques sur <a
+href="http://www.freewear.org/?org=Wine">FreeWear.org</a>. Pour chaque article
+acheté, une partie du bénéfice est versée à Wine.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://www.winehq.org/contributing#wpf">Courrier</a>
+    </td>
+    <td valign="top">
+        Vous pouvez également nous envoyer du cash, un chèque ou des mandats
+internationaux libellés en dollars US.
+        Voyez <a href="http://www.winehq.org/contributing#wpf">ce lien</a> pour
+plus d'informations.
+    </td>
+  </tr>
+
+</table>
