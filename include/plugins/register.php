@@ -5,13 +5,11 @@
   by Jeremy Newman <jnewman@codeweavers.com>
 */
 
-global $config, $html;
-
 // form var
-$form =& $this->params['form'];
+$form =& $_PLUGIN['form'];
 
 // dbfile
-$db_file = $html->_file_root.'/data/'.$this->params['db'].'.txt';
+$db_file = "{$html->_file_root}/data/{$_PLUGIN['db']}.txt";
 
 // main
 if (isset($_GET['done']))

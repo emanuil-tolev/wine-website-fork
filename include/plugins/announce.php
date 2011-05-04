@@ -7,9 +7,6 @@
        Vince C. <v_cadet@yahoo.fr> (back-reference in 'changes' section)
 */
 
-// import global objects
-global $html, $config;
-
 // ver from URL
 $ver = PAGE_PARAMS;
 

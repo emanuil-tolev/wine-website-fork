@@ -6,9 +6,7 @@
     by Jeremy Newman <jnewman@codeweavers.com>
 */
 
-global $html, $config, $data;
-
-switch ($this->params['cmd'])
+switch ($_PLUGIN['cmd'])
 {
     // list languages
     case "list":

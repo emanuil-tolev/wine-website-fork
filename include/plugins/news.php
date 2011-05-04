@@ -6,9 +6,6 @@
     by Jeremy Newman <jnewman@codeweavers.com>
 */
 
-// import globals
-global $html, $config;
-
 // language override
 if ($_GET['lang'] and in_array($_GET['lang'], $config->languages))
     $html->lang = $_GET['lang'];

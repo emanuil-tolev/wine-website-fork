@@ -6,15 +6,12 @@
     by Jeremy Newman <jnewman@codeweavers.com>
 */
 
-// import globals
-global $html, $config;
-
 // load wwn object
 check_and_require("wwn");
 $wwn = new wwn();
 
 // change display mased on mode
-switch ($this->params['mode'])
+switch ($_PLUGIN['mode'])
 {
     // interviews
     case "interviews":
