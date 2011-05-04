@@ -23,6 +23,37 @@ function check_and_require ($path)
     trigger_error("Unable to load library: {$path}", E_USER_ERROR);
 }
 
+// load and execute a website plugin, globals are automatically imported
+//   $__module: plugin module to be loaded
+//   $__plugin: array of params to be used by the plugin (available in plugin as global $_PLUGIN)
+function include_plugin ($__module, $__plugin = array())
+{
+    // sanitize module name
+    $__module = preg_replace('/[\.\/\\\]*/', '', $__module);
+    
+    // extract globals into the current namespace
+    extract($GLOBALS, EXTR_REFS);
+    
+    // global plugin vars array
+    global $_PLUGIN;
+    $_PLUGIN = $__plugin;
+    unset($__plugin);
+    
+    // load module if file exists
+    if ($__module and file_exists("{$config->base_path}include/plugins/{$__module}.php"))
+    {
+        debug("plugin", "loading plugin: [{$__module}]");
+        ob_start();
+        include("{$config->base_path}include/plugins/{$__module}.php");
+        $out = ob_get_contents();
+        ob_end_clean();
+        return $out;
+    }
+        
+    // no plugin found
+    return false;
+}
+
 // append to the debug log (only if web_debug is on)
 function debug ($channel, $msg)
 {
