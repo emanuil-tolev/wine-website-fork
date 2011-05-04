@@ -2,7 +2,9 @@
   Misc JavaScipt for WineHQ
 */
 
-// global document operations
+/*
+ * global document operations
+ */
 $(document).ready(function()
 {
     // fix PNG images for IE6
