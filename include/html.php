@@ -1419,11 +1419,11 @@ class html
                 {
                     // in ajax mode, add the js link inline
                     $js = "";
-                    $js_file = "{$this->_file_root}/js/{$match[1][$i]}.js";
+                    $js_file = "{$this->_file_root}/{$match[1][$i]}.js";
                     if (file_exists($js_file))
                     {
                         $mtime = filemtime($js_file);
-                        $js = "<script src=\"{$this->_web_root}/js/{$match[1][$i]}.js?v={$mtime}\" type=\"text/javascript\"></script>\n";
+                        $js = "<script src=\"{$this->_web_root}/{$match[1][$i]}.js?v={$mtime}\" type=\"text/javascript\"></script>\n";
                         unset($mtime);
                     }
                     $in = str_replace('<!--JS:['.$match[1][$i].']-->', $js, $in);
