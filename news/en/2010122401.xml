@@ -3,7 +3,7 @@
 <title>Wine 1.3.10 Released</title>
 <body>
 <p> The Wine development release 1.3.10 is now available.</p>
-<p> <a href="{$root}/announce/1.3.10">What's new</a> in this release:
+<p> <a href="{$root}/announce/1.3.10">What's new</a> in this release:</p>
 <ul>
   <li>Support for notification balloons in system tray.</li>
   <li>Obsolete AudioIO sound driver removed.</li>
@@ -12,7 +12,7 @@
   <li>Preloader now used for 64-bit too. </li>
   <li>Translation updates.</li>
   <li>Various bug fixes.</li>
-</ul></p>
-<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.10.tar.bz2">available now</a>.
+</ul>
+<p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.10.tar.bz2">available now</a>.
 Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
 </p></body></news>
