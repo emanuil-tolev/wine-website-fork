@@ -58,28 +58,19 @@ erbeten hat, dass sie die Wine-Website hosten.</p>
   </tr>
   
   <tr bgcolor="#ffffff">
-    <td align="center"><a href="{$root}/download/deb">
+    <td align="center"><a href="{$root}/download/ubuntu">
       <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu linux" border="0"></a>
     </td>
-    <td> <b><a href="{$root}/download/deb">Ubuntu</a></b> 
+    <td> <b><a href="{$root}/download/ubuntu">Ubuntu</a></b>
      bin&auml;r und Quellcode .debs f&uuml;r Ubuntu Karmic (9.10), Lucid (10.04 LTS), Maverick (10.10), und Natty (11.04)
     <td><a href="mailto:scott@open-vote.org">Scott Ritchie</a></td>
   </tr>
 
-  <tr bgcolor="#ffffff">
-    <td align="center"><a href="{$root}/download/deb">
-      <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian linux" border="0"></a>
-    </td>
-    <td> <b><a href="{$root}/download/deb">Debian</a></b> 
-     bin&auml;r und Quellcode .debs f&uuml;r Debian Etch (4.0)</td>
-    <td><a href="mailto:scott@open-vote.org">Scott Ritchie</a></td>
-  </tr>
-
    <tr bgcolor="#ffffff">
-    <td align=center><a href="{$root}/download/deblenny">
+    <td align=center><a href="{$root}/download/debian">
       <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
     </td>
-    <td> <b><a href="{$root}/download/deblenny">Debian</a></b> 
+    <td> <b><a href="{$root}/download/debian">Debian</a></b>
      bin&auml;r .debs f&uuml;r Debian Lenny, Squeeze und Sid</td>
     <td><a href="mailto:repository@lamaresh.net">Maurilio Genovese</a><br><a href="mailto:ben.klein@lamaresh.net">Ben Klein</a></td>
   </tr>

@@ -1,0 +1,30 @@
+<!--TITLE:[Wine für Debian Lenny]-->
+<!--BLURB:[Wine für Debian Lenny]-->
+
+<h1 class="title"><a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
+Wine für Debian Sid
+<a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a></h1>
+
+<p>Debian-basierte Distributionen nutzen ein spezielles Tool, bekannt
+als APT, um Pakete zur verwalten. APT ist in der Lage automatisch alle benötigten
+Abhängigkeiten für ein Softwarepaket zu installieren, als auch das Paket zu
+aktualisieren, indem sogenannte APT-Repositories durchsucht werden. Debian-basierte
+Distributionen haben ihr eigenes Repository an Software, welches Wine enthält, allerdings
+betreiben wir hier unser eigenes Repository für Downloads der aktuell verfügbaren Betapakete.</p>
+
+<p><b>Warnung: Diese Pakete sind Betapakete.</b><br>
+<i>Das bedeutet, dass sie in regelmäßigen Abständen
+<a href="http://wiki.winehq.org/Regression">Regressions</a> erleiden, wodurch eine Aktualisierung
+die Wine-Funktionalität beeinträchtigen kann.  Wenn das aktuell stabile Release von Wine
+(zur Zeit Wine {$config_stable_release}) bei dir funktioniert, möchtest du diese Betapakete
+wahrscheinlich nicht benutzen.</i></p>
+
+<p>Dieses Repository enthält Pakete für die i386 und amd64 Architektur.</p>
+
+<p>Um wine Pakete zu installieren, musst du die .deb Dateien manuell herunterladen und
+installieren. Auf der Seite findest du mehr Informationen</p>
+
+<br><br><p style="font-size:12px;text-align:left;font-style: italic;">
+Homepage: <a href="http://dev.carbon-project.org/debian/wine-unstable/" target="_blank">http://dev.carbon-project.org/debian/wine-unstable/ (en)</a><br>
+Paket Ersteller: <a href="mailto:curan@debian.org">Kai Wasserbäch</a>
+</p>
