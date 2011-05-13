@@ -1,0 +1,21 @@
+<news>
+<date>13 mai 2011</date>
+<title>Sortie de Wine 1.3.20</title>
+<body>
+<p> La version de développement 1.3.20 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.3.20">Nouveautés</a> de cette version :
+<ul>
+  <li>Possibilité de la capture de la souris dans les fenêtres plein écran.</li>
+  <li>Prise en charge des connexions HTTP persistantes.</li>
+  <li>Implémentation initiale du rédacteur XML.</li>
+  <li>Prise en charge du dessin de rectangles dans le moteur DIB.</li>
+  <li>Contrôle de volume dans MMDevAPI.</li>
+  <li>Plus de fonctions du moteur d'exécution MSVC.</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a
+href="http://prdownloads.sourceforge.net/wine/wine-1.3.20.tar.bz2">code
+source</a> est disponible dès à présent.
+Les paquets binaires sont en cours de construction, et apparaîtront sous peu
+sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
