@@ -1,0 +1,18 @@
+<news>
+<date>27. Mai 2011</date>
+<title>Wine 1.3.21 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.3.21 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.3.21">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Unterstützung für Installations Rollbacks in MSI.</li>
+  <li>8- und 16-Bit Bitmap Formate in der DIB Engine.</li>
+  <li>Fehlerbehebungen an der XInput2 Mausunterstützung.</li>
+  <li>Bessere Unterstützung für Textgestaltung in Uniscribe.</li>
+  <li>Verbesserungen am Item Common Dialog.</li>
+  <li>Mehr MSVC Runtime Funktionen.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.21.tar.bz2">verfügbar</a>.
+Binär-Downloads werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Download-Seiten</a> zur Verfügung.
+</p></body></news>
