@@ -1,0 +1,18 @@
+<news>
+<date>Maj 27, 2011</date>
+<title>Wydano Wine 1.3.21</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.3.21 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.3.21">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Wsparcie dla wycofania instalacji w MSI.</li>
+  <li>8- i 16-bitowe formaty bitmap w silniku DIB.</li>
+  <li>Poprawki we wsparciu myszki przez XInput2.</li>
+  <li>Lepsze wsparcie dla kształtowania tekstu w Uniscribe.</li>
+  <li>Ulepszenia w oknie dialogowym wspólnych elementów.</li>
+  <li>Więcej funkcji w bibliotece uruchomieniowej MSVC.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.21.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
