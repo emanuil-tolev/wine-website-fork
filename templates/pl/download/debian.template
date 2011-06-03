@@ -1,0 +1,27 @@
+<!--TITLE:[Wine for Debian Sid]-->
+<!--BLURB:[Wine dla Debian Sid]-->
+
+<h1 class="title"><a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
+Wine for Debian Sid
+<a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a></h1>
+
+<p>Dystrybucje bazujące na Debianie do zarządzania paczkami korzystają ze specjalnego narzędzia zwanego APT. APT jest zdolne automagicznie zainstalować wszystkie potrzebne zależności wymagane przez paczkę z programem, jak również aktualizować do najnowszej wersji paczki, poprzez przeszukiwanie czegoś, co jest znane pod nazwą repozytoria APT. Dystrybucje bazujące na Debianie mają swoje własne repozytoria programów, które zawierają w sobie Wine, jednakże my utrzymujemy nasze własne repozytorium z najnowszymi paczkami beta, które udostępniamy do pobrania.</p>
+
+<h2>Uwaga: paczki beta</h2>
+
+<p><i>Te paczki są paczkami beta.  Oznacza to, że będą
+okresowo cierpieć z powodu  
+<a href="http://wiki.winehq.org/Regression">regresji</a>, a aktualizacja do nich
+może popsuć funkcjonalność Wine. Jeżeli wersja stabilna {$config_stable_release} działa bez problemu
+to instalowanie tych paczek może nie być konieczne.</i></p>
+
+<p>Ta strona zawiera paczki dla procesora o architekturze i386 i amd64.</p>
+
+<p>Aby zainstalować paczkę wine musisz najpierw pobrać plik .deb i ręcznie go zainstalować. Zaglądnij na stronę po więcej szczegółów.</p>
+
+<br><br><p style="font-size:12px;text-align:left;font-style: italic;">
+Strona domowa: <a href="http://dev.carbon-project.org/debian/wine-unstable/" target="_blank">http://dev.carbon-project.org/debian/wine-unstable/</a><br>
+Twórca paczek:  <a href="mailto:curan@debian.org">Kai Wasserbäch</a>
+</p>
+
+
