@@ -1,5 +1,5 @@
 <!--TITLE:[Pobieralnia binariów Wine]-->
-<!--BLURB:[Pobierz tutaj Wine dla twojego systemu operacyjnego.]-->
+<!--BLURB:[Tutaj pobierzesz Wine dla twojego systemu operacyjnego.]-->
 
 <h1 class="title">Pobieralnia Wine</h1>
 
@@ -51,8 +51,8 @@
 
   <tr>
     <td align="center" bgcolor="black"><b><font color="white" class="small">System</font></b></td>
-    <td align="center" bgcolor="black"><b><font color="white" class="small">Notes</font></b></td>
-    <td align="center" bgcolor="black"><b><font color="white" class="small">Maintainer</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Uwagi</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Opiekun</font></b></td>
   </tr>
   
   <tr bgcolor="#ffffff">
@@ -60,7 +60,7 @@
       <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu linux" border="0"></a>
     </td>
     <td> <b><a href="{$root}/download/deb">Pobierz paczki dla Ubuntu</a></b> 
-     - binarne i źródłowe paczki .deb dla Ubuntu Lucid (10.04 LTS)
+     - binarne i źródłowe paczki .deb dla Ubuntu Karmic (9.10), Lucid (10.04 LTS), Maverick (10.10), i Natty (11.04) 
     <td><a href="mailto:scott@open-vote.org">Scott Ritchie</a></td>
   </tr>
 
