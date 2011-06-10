@@ -1,0 +1,20 @@
+<news>
+<date>10 juin 2011</date>
+<title>Sortie de Wine 1.3.22</title>
+<body>
+<p> La version de développement 1.3.22 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.3.22">Nouveautés</a> de cette version :
+<ul>
+  <li>Prise en charge du façonnage de texte brahmique.</li>
+  <li>Génération de code sans stub dans le compilateur IDL.</li>
+  <li>Prise en charge des fichiers X dans D3DX.</li>
+  <li>Formats bitmap 4 et 24 bits dans le moteur DIB.</li>
+  <li>Amélioration des performances des éléments Listview.</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a
+href="http://prdownloads.sourceforge.net/wine/wine-1.3.22.tar.bz2">code
+source</a> est disponible dès à présent.
+Les paquets binaires sont en cours de construction, et apparaîtront sous peu
+sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
