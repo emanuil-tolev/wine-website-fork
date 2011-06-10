@@ -1,0 +1,17 @@
+<news>
+<date>10. Juni 2011</date>
+<title>Wine 1.3.22 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.3.22 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.3.22">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Unterstützung für indische Textgestaltung.</li>
+  <li>Erzeugen von stubless Code im IDL Compiler.</li>
+  <li>Unterstützung für X-Dateien in D3DX.</li>
+  <li>4- und 24-Bit Bitmap Formate in der DIB Engine.</li>
+  <li>Listview Performance Verbesserungen.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.22.tar.bz2">verfügbar</a>.
+Binär-Downloads werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Download-Seiten</a> zur Verfügung.
+</p></body></news>
