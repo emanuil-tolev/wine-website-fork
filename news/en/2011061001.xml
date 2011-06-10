@@ -1,0 +1,17 @@
+<news>
+<date>June 10, 2011</date>
+<title>Wine 1.3.22 Released</title>
+<body>
+<p> The Wine development release 1.3.22 is now available.</p>
+<p> <a href="{$root}/announce/1.3.22">What's new</a> in this release:
+<ul>
+  <li>Support for Indic text shaping.</li>
+  <li>Generation of stubless code in the IDL compiler.</li>
+  <li>Support for X files in D3DX.</li>
+  <li>4- and 24-bit bitmap formats in the DIB engine.</li>
+  <li>Listview performance improvements.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.22.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
