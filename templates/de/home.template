@@ -22,8 +22,8 @@
             <div class="dl" onClick="document.location='{$root}/download/';">
               <div class="icon"></div>
               <div class="text">
-                <div class="title"><a href="{$root}/download/">Hol Dir Wine</a></div>
-                <div class="subtitle">Installiere  die aktuellste Wine-Version.</div>
+                <div class="title"><a href="{$root}/download/">Download</a></div>
+                <div class="subtitle">Installiere die aktuellste Wine-Version.</div>
               </div>
             </div>
 
@@ -31,7 +31,7 @@
               <div class="icon"></div>
               <div class="text">
                 <div class="title"><a href="{$root}/help/">Unterst&uuml;tzung</a></div>
-                <div class="subtitle">Hol Dir Hilfe zum Benutzen von Wine.</div>
+                <div class="subtitle">Bekomme Hilfe zum Benutzen von Wine.</div>
               </div>
             </div>
 
