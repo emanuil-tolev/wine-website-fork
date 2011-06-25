@@ -1,0 +1,18 @@
+<news>
+<date>25. Juni 2011</date>
+<title>Wine 1.3.23 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.3.23 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.3.23">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Unterstützung für stublose COM Proxies unter x86-64.</li>
+  <li>Eigenes dxdiag gibt nun echte Informationen aus.</li>
+  <li>Monochrome Bitmap Format in der DIB Engine.</li>
+  <li>Anfänge eines echten eigenen Shell Explorers.</li>
+  <li>Einige neue D3DX9 Funktionen.</li>
+  <li>Bessere Unterstützung für indische Textgestaltung.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.23.tar.bz2">verfügbar</a>.
+Binär-Downloads werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Download-Seiten</a> zur Verfügung.
+</p></body></news>
