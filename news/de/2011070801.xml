@@ -1,0 +1,17 @@
+<news>
+<date>8. Juli 2011</date>
+<title>Wine 1.3.24 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.3.24 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.3.24">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Verschiedene DirectInput Verbesserungen.</li>
+  <li>Unterstützung für Zeilenumbruch in Uniscribe.</li>
+  <li>Mehr UI Elemente im eigenen Shell Explorer.</li>
+  <li>Ein paar neue D3DX9 Funktionen.</li>
+  <li>Verbesserte Unterstützung für Shell Known Folders.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.24.tar.bz2">verfügbar</a>.
+Binär-Downloads werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Download-Seiten</a> zur Verfügung.
+</p></body></news>
