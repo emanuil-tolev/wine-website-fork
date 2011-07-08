@@ -1,0 +1,17 @@
+<news>
+<date>July  8, 2011</date>
+<title>Wine 1.3.24 Released</title>
+<body>
+<p> The Wine development release 1.3.24 is now available.</p>
+<p> <a href="{$root}/announce/1.3.24">What's new</a> in this release:
+<ul>
+  <li>Various DirectInput improvements.</li>
+  <li>Support for line breaking in Uniscribe.</li>
+  <li>More UI elements in builtin Shell Explorer.</li>
+  <li>Some more D3DX9 functions.</li>
+  <li>Improved support for shell known folders.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.24.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
