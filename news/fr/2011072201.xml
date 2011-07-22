@@ -1,0 +1,21 @@
+<news>
+<date>22 juillet 2011</date>
+<title>Sortie de Wine 1.3.25</title>
+<body>
+<p> La version de développement 1.3.25 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.3.25">Nouveautés</a> de cette version :
+<ul>
+  <li>Réécriture du support audio, en utilisant l'architecture Win7.</li>
+  <li>Suppression des pilotes son "ancien style" Jack, NAS et ESD.</li>
+  <li>Modifications architecturale du pilote graphique pour le moteur DIB.</li>
+  <li>Gestion améliorée de la corbeille.</li>
+  <li>Meilleure prise en charge des joysticks dans DirectInput.</li>
+  <li>Première ébauche de prise en charge de VBScript.</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a
+href="http://prdownloads.sourceforge.net/wine/wine-1.3.25.tar.bz2">code
+source</a> est disponible dès à présent.
+Les paquets binaires sont en cours de construction, et apparaîtront sous peu
+sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
