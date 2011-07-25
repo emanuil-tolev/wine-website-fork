@@ -1,0 +1,18 @@
+<news>
+<date>Lipiec 22, 2011</date>
+<title>Wydano Wine 1.3.25</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.3.25 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.3.25">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Przepisana obsługa dźwięku, przy wykorzystaniu architektury Win7.</li>
+  <li>Stare sterowniki dźwięku dla Jack, NAS oraz ESD zostały usunięte.</li>
+  <li>Zmiany architektury sterownika grafiki dla silnika DIB.</li>
+  <li>Ulepszona obsługa kosza w powłoce.</li>
+  <li>Lepsze wsparcie dżojstika w DirectInput.</li>
+  <li>Wstępny zalążek wsparcia dla VBScript.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.25.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
