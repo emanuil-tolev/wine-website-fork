@@ -1,0 +1,18 @@
+<news>
+<date>5. August 2011</date>
+<title>Wine 1.3.26 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.3.26 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.3.26">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Verschiedene Verbesserungen am eigenen Internet Explorer.</li>
+  <li>Unterstützung für Get/SetDIBits in der DIB Engine.</li>
+  <li>Unterstützung für Enhanced Metafiles im View Tool.</li>
+  <li>Viele Verbesserungen in WinHTTP.</li>
+  <li>Mehrere Fehlerbehebungen am COM Stubless Marshaller.</li>
+  <li>Verbesserter Mechanismus für DLL Registrierungen.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.26.tar.bz2">verfügbar</a>.
+Binär-Downloads werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Download-Seiten</a> zur Verfügung.
+</p></body></news>
