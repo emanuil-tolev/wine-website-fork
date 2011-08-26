@@ -1,0 +1,20 @@
+<news>
+<date>26 août 2011</date>
+<title>Sortie de Wine 1.3.27</title>
+<body>
+<p> La version de développement 1.3.27 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.3.27">Nouveautés</a> de cette version :
+<ul>
+  <li>Prise en charge du multisampling dans Direct3D.</li>
+  <li>Nouvelle version du moteur Gecko.</li>
+  <li>Amélioration de la gestion des proxys réseau.</li>
+  <li>Meilleure prise en charge de l'écriture dans MSXML.</li>
+  <li>Fichiers manifestes côte à côte pour les bibliothèques intégrées</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a
+href="http://prdownloads.sourceforge.net/wine/wine-1.3.27.tar.bz2">code
+source</a> est disponible dès à présent.
+Les paquets binaires sont en cours de construction, et apparaîtront sous peu
+sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
