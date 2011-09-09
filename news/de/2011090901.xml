@@ -1,0 +1,19 @@
+<news>
+<date>9. September 2011</date>
+<title>Wine 1.3.28 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.3.28 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.3.28">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Anfangsversion eines VBScript Parsers.</li>
+  <li>Automagische Audio Treiber Wahl.</li>
+  <li>Unterstützung für die Datenträgerinformationen bei UDF Dateisystemen.</li>
+  <li>Der OpenGL Renderer ist jetzt Standard für DirectDraw.</li>
+  <li>Geräte-Konfigurationsdialog in DirectInput.</li>
+  <li>SetDIBitsToDevice Unterstützung in der DIB Engine.</li>
+  <li>Einige Verbesserungen am cmd Parser.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.28.tar.bz2">verfügbar</a>.
+Binär-Downloads werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Download-Seiten</a> zur Verfügung.
+</p></body></news>
