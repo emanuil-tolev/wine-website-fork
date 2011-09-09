@@ -1,0 +1,22 @@
+<news>
+<date>9 septembre 2011</date>
+<title>Sortie de Wine 1.3.28</title>
+<body>
+<p> La version de développement 1.3.28 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.3.28">Nouveautés</a> de cette version :
+<ul>
+  <li>Version initiale de l'analyseur syntaxique VBScript.</li>
+  <li>Sélection de pilote audio automagique.</li>
+  <li>Prise en charge des informations de volume sur les systèmes de fichiers UDF.</li>
+  <li>Le moteur de rendu OpenGL est désormais utilisé par défaut dans DirectDraw.</li>
+  <li>Boîte de dialogue de configuration de périphérique dans DirectInput.</li>
+  <li>Prise en charge de SetDIBitsToDevice dans le moteur DIB.</li>
+  <li>Plusieurs améliorations dans l'analyseur syntaxique cmd.</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a
+href="http://prdownloads.sourceforge.net/wine/wine-1.3.28.tar.bz2">code
+source</a> est disponible dès à présent.
+Les paquets binaires sont en cours de construction, et apparaîtront sous peu
+sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
