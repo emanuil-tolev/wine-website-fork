@@ -1,0 +1,18 @@
+<news>
+<date>September 23, 2011</date>
+<title>Wine 1.3.29 Released</title>
+<body>
+<p> The Wine development release 1.3.29 is now available.</p>
+<p> <a href="{$root}/announce/1.3.29">What's new</a> in this release:
+<ul>
+  <li>Extensive support for VBScript.</li>
+  <li>Various improvements to the calendar common control.</li>
+  <li>A number of XRender fixes and optimizations.</li>
+  <li>Several new functions in the MSVCP runtime.</li>
+  <li>A number of audio fixes.</li>
+  <li>DirectDraw cleanups.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.29.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
