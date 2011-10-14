@@ -1,0 +1,17 @@
+<news>
+<date>Październik 10, 2011</date>
+<title>Wydano Wine 1.3.30</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.3.30 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.3.30">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>DirectSound ponownie zaimplementowane w oparciu o MMDevAPI.</li>
+  <li>Wsparcie dla StretchBlt w silniku DIB.</li>
+  <li>Ulepszenia interfejsu użytkownika w pomocy HTML.</li>
+  <li>Pewne poprawki w MSXML.</li>
+  <li>Ulepszenia wydajności w cmd.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.30.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
