@@ -1,0 +1,16 @@
+<news>
+<date>21. Oktober 2011</date>
+<title>Wine 1.3.31 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.3.31 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.3.31">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>BiDi Textunterstützung im einzeiligen Edit Control.</li>
+  <li>Unterstützung für StretchDIBits und AlphaBlend in der DIB Engine.</li>
+  <li>Ein paar Audio Fehlerbehebungen.</li>
+  <li>VBScript Verbesserungen.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.31.tar.bz2">verfügbar</a>.
+Binär-Downloads werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Download-Seiten</a> zur Verfügung.
+</p></body></news>
