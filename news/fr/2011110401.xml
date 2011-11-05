@@ -1,0 +1,19 @@
+<news>
+<date>4 novembre 2011</date>
+<title>Sortie de Wine 1.3.32</title>
+<body>
+<p> La version de développement 1.3.32 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.3.32">Nouveautés</a> de cette version :
+<ul>
+  <li>Prise en charge de texte BiDi dans le contrôle d'édition multiligne.</li>
+  <li>Prise en charge des brosses modèles dans le moteur DIB.</li>
+  <li>Quelques correctifs MSXML.</li>
+  <li>Pilote PostScript amélioré.</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a
+href="http://prdownloads.sourceforge.net/wine/wine-1.3.32.tar.bz2">code
+source</a> est disponible dès à présent.
+Les paquets binaires sont en cours de construction, et apparaîtront sous peu
+sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
