@@ -1,0 +1,20 @@
+<news>
+<date>16 décembre 2011</date>
+<title>Sortie de Wine 1.3.35</title>
+<body>
+<p> La version de développement 1.3.35 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.3.35">Nouveautés</a> de cette version :
+<ul>
+  <li>Prise en charge des dégradés triangulaires et des crayons cosmétiques larges dans le moteur DIB.</li>
+  <li>Toutes les boîtes de dialogue de Wine peuvent à présent être traduites au travers de fichiers po.</li>
+  <li>Nombreux scripts additionnels dans UniScribe.</li>
+  <li>JScript utilise à présent continûment du bytecode.</li>
+  <li>Plusieurs améliorations MSXML.</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a
+href="http://prdownloads.sourceforge.net/wine/wine-3.3.35.tar.bz2">code
+source</a> est disponible dès à présent.
+Les paquets binaires sont en cours de construction, et apparaîtront sous peu
+sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
