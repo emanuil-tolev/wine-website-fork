@@ -1,0 +1,18 @@
+<news>
+<date>Grudzień 30, 2011</date>
+<title>Wydano Wine 1.3.36</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.3.36 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.3.36">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Silnik UDisks dla dynamiczneo obsługi urządzeń.</li>
+  <li>Zaimplementowanie poligonów i piór geometryczny w silniku DIB.</li>
+  <li>JScript teraz kompiluje całe funkcje.</li>
+  <li>Ulepszona obsługa pionowych czcionek.</li>
+  <li>Kilka skryptów więcej w UniScribe.</li>
+  <li>Zaimplementowano garść funkcji ctype w MSVCP.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.36.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
