@@ -1,0 +1,17 @@
+<news>
+<date>13. Januar 2012</date>
+<title>Wine 1.3.37 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.3.37 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.3.37">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Fertigstellung der DIB Engine.</li>
+  <li>Verbesserungen an der C++ Runtime.</li>
+  <li>Einige Fehlerbehebungen an den Audio Treibern.</li>
+  <li>Unnötige Direct3D Optionen in WineCfg wurden entfernt.</li>
+  <li>Einige Fehlerbehebungen am eigenen Internet Explorer.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.3.36.tar.bz2">verfügbar</a>.
+Binär-Downloads werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Download-Seiten</a> zur Verfügung.
+</p></body></news>
