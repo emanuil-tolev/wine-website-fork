@@ -1,0 +1,18 @@
+<news>
+<date>Styczeń 27, 2012</date>
+<title>Wydano Wine 1.4-rc1</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.4-rc1 jest już dostępne.</p>
+<p> To pierwszy kandydat do wydania na Wine 1.4. Rozpoczyna on okres zamrożenia kodu. Proszę o porządne przetestowanie tego wydania, tak abyśmy mogli stworzyć wersję 1.4 tak dobrą jak to tylko możliwe.</p>
+<p> <a href="{$root}/announce/1.4-rc1">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Ulepszone okno dialogowe awarii z obsługą zapisu śladu awarii.</li>
+  <li>Wsparcie dla przycisku 'Wstecz' we wbudowanym Internet Explorer.</li>
+  <li>Skróty klawiaturowe mogą teraz być tłumaczone przez pliki po.</li>
+  <li>Kilka poprawek do instalatorów.</li>
+  <li>Wiele uaktualnień tłumaczeń i nowych ustawień.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.4-rc1.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
