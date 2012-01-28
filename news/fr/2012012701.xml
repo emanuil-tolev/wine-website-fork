@@ -1,0 +1,24 @@
+<news>
+<date>27 janvier 2012</date>
+<title>Sortie de Wine 1.4-rc1</title>
+<body>
+<p> La version de développement 1.4-rc1 de Wine est disponible.</p>
+<p> C'est la première version candidate du prochain Wine 1.4. Elle marque le début de la période de
+gel du code. Merci de tester adéquatement cette version afin que la version 1.4 soit la meilleure
+possible.</p>
+<p> <a href="{$root}/announce/1.4-rc1">Nouveautés</a> de cette version :
+<ul>
+  <li>Boîte de dialogue de plantage améliorée avec possibilité d'enregistrement de la pile
+d'appels.</li>
+  <li>Prise en charge du bouton Précédent dans l'Internet Explorer intégré.</li>
+  <li>Raccourcis clavier traduisibles au travers des fichiers po.</li>
+  <li>Plusieurs correctifs pour les programmes d'installation.</li>
+  <li>Moult mises à jour et ajustements de traduction.</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a
+href="http://prdownloads.sourceforge.net/wine/wine-1.4-rc1.tar.bz2">code
+source</a> est disponible dès à présent.
+Les paquets binaires sont en cours de construction, et apparaîtront sous peu
+sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
