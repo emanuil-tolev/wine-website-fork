@@ -1,0 +1,18 @@
+<news>
+<date>27. Januar 2012</date>
+<title>Wine 1.4-rc1 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.4-rc1 von Wine ist jetzt verfügbar.</p>
+<p> Das ist der erste Release Candidate für Wine 1.4. Es läutet den Anfang des Code-Freeze ein. Bitte testet das Release gut durch um uns zu helfen 1.4 so gut wie möglich zu machen.</p>
+<p> <a href="{$root}/announce/1.4-rc1">Neuerungen (en)</a> in dieser Version:
+<ul>
+  <li>Verbesserter Crash Dialog mit der Möglichkeit den Backtrace zu speichern.</li>
+  <li>Unterstützung für den Zurück-Knopf im eigenen Internet Explorer.</li>
+  <li>Tastenkombination können nun mit po-Dateien übersetzt werden.</li>
+  <li>Einige Installer Fehlerbehebungen.</li>
+  <li>Viele Überstetzungsupdates und -Optimierungen.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.4-rc1.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Download-Seiten</a> zur Verfügung.
+</p></body></news>
