@@ -28,7 +28,7 @@ if ($arr = file($announce))
         {
             // Link to previous versions in changes
             $in_bugs = 0;
-            $arr[$c] = ereg_replace( '[[:digit:].]+', '<a title="Changes since \\0" href="./\\0">\\0</a>', $arr[$c] );
+            $arr[$c] = ereg_replace( '[[:digit:].]+(-rc[[:digit:]]+)?', '<a title="Changes since \\0" href="./\\0">\\0</a>', $arr[$c] );
         }
 
         if ($in_header)
