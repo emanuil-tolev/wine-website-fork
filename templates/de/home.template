@@ -73,7 +73,7 @@
                   (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_stable_release}">&Auml;nderungen (en)</a>)
                 </span>
             </td></tr>
-            <tr><td>In Entwicklung:</td>
+            <tr><td>Entwicklungsversion:</td>
             <td style="padding-left: 15px;">
                 <b><a href="{$root}/announce/{$config_master_release}">Wine&nbsp;{$config_master_release}</a></b>
                 <span class="small">
