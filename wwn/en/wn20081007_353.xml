@@ -99,7 +99,7 @@ And of course now we need some sort of measurement for inclusion in the crap lis
 Kidding and games aside, WineConf was a huge success.  This edition of the WWN will attempt to cover some of the major happenings and discussions which took place.  But first, a brief summary of each of the participants.  (This list is from a bunch of scribbled notes as we went around the room introducing ourselves)
 </p>
 <ul>
-  <li>Jeremy White - Founder and CEO of Codeweavers. His daily job is paying Alexandre to reject his patches</li>
+  <li>Jeremy White - Founder and CEO of CodeWeavers. His daily job is paying Alexandre to reject his patches</li>
   <li>James Ramey - VP of Sales for CodeWeavers. Does a
 fantastic job.</li>
   <li>Roderick Colenbrander - D3D Guru #1 OpenGL and stuff. Currently in University.</li>
@@ -107,7 +107,7 @@ fantastic job.</li>
 crash your machine.</li>
   <li>Henri Verbeet - D3D Guru #3. Works on general Stuff and
 gaming </li>
-  <li>Alexandre Julliard - CTO of Codeweavers and WineHQ commit
+  <li>Alexandre Julliard - CTO of CodeWeavers and WineHQ commit
 overlord. Enjoys rejecting / dropping patches.
 Famous line: "that doesn't do what you think it does".
 In general enjoys low level stuff (kernel, wineserver)</li>
@@ -125,7 +125,7 @@ taskmaster and 1.0 manager.</li>
   <li>Huw Davies - A total "Wine Hacker" - 2D graphics, fonts
 printing. Now works with JWhite, Outlook 2k3 and 2k7 and a
 "DIB Engine".</li>
-  <li>Jeremy Newman - Networking guy at Codeweavers.  Keeps duct tape on servers.</li>
+  <li>Jeremy Newman - Networking guy at CodeWeavers.  Keeps duct tape on servers.</li>
   <li>Rob Shearman - OLE32, DCOM, working for fun but not for CW
 anymore. Enjoys RPC. Working on getting
 Wine to compile with VC9 for prefast.</li>
@@ -140,12 +140,12 @@ on other platforms, monitors Bugzilla/AppDB (working with office 2k7).</li>
 playback). Was former SoC student. Was 2008 SoC
 organizer. Also responsible for a lot of Wine's alsa driver.</li>
   <li>Caron Jenson - Pink support ninja - assigns bugs to
-Codeweaver devs.</li>
-  <li>Aric Stewart - Codeweaver dev. - now Jeremy's go-to-dev.
+CodeWeaver devs.</li>
+  <li>Aric Stewart - CodeWeaver dev. - now Jeremy's go-to-dev.
 Worked on early MSI stuff - likes doing foreign input, IME
 stuff. Multibyte language support (mlang, fonts).
 </li>
-  <li>Ken Thomases - work for Codeweavers on Mac tools.
+  <li>Ken Thomases - work for CodeWeavers on Mac tools.
 "Quartz driver" Coreaudio driver (working on real
 directsound) Integrating Wine with Mac OSX developer tools.</li>
   <li>Jacek Caban - Internet Explorer (HTML Engine) url monitor,
@@ -161,16 +161,16 @@ at WineConf. </li>
   <li>Dylan Smith - SoC student - richedit controls (tables
 support).  Fixing distracting bugs is
 fun.    Wants to fix google Talk.   (Com interface)</li>
-  <li>Francois Gouget - Works for Codeweavers - Wine Desktop
+  <li>Francois Gouget - Works for CodeWeavers - Wine Desktop
 integration work.  Interest is in tests, make sure regression
 testing is effective.    </li>
   <li>Paul Vriens - fixing tests, services, setup api, event
 related work.</li>
-  <li>Andrew Balfour - Codeweavers tech support, destroys his
+  <li>Andrew Balfour - CodeWeavers tech support, destroys his
 own computer with tests</li>
-  <li>Andrew Bogott - Codeweavers tech - work on crossover wrapper
+  <li>Andrew Bogott - CodeWeavers tech - work on crossover wrapper
 bits</li>
-  <li>Vincent Povirk - Codeweavers dev.  One of the few
+  <li>Vincent Povirk - CodeWeavers dev.  One of the few
 to actually move to Minnessota!  Pet project
 is "Sugared Wine" - Wine with a mini Windows bar thing.</li>
   <li>Hans Leiddeker - winhttp, inet support.  Got gmail
@@ -292,7 +292,7 @@ The website also has four major sections with three different login systems.  Th
 A major discussion at WineConf took place about running Wine on other platforms.  Most poignantly: BSD, Solaris and Mac OS X.  The consensus was that Wine devs *DO* care about platforms other than Linux.   Other platforms so far should kinda work.  Wine is actually in BSD's ports system already.
 </p>
 <p>
-The biggest issue in this area is demand.   There were specific BSD builds of crossover posted sometime back after much demand and Codeweavers saw very very little response.  As a result not much effort has been put into the area.  In short: if you're a user of Wine on BSD, Solaris or OS X and want more support speak up! The other major hindrance is very few Wine devs run Wine on non-Linux systems.  This could change though if there was motivation.</p></section>
+The biggest issue in this area is demand.   There were specific BSD builds of crossover posted sometime back after much demand and CodeWeavers saw very very little response.  As a result not much effort has been put into the area.  In short: if you're a user of Wine on BSD, Solaris or OS X and want more support speak up! The other major hindrance is very few Wine devs run Wine on non-Linux systems.  This could change though if there was motivation.</p></section>
 <section
 	title="Wine 1.2 Timeline"
 	subject="Wine 1.2"

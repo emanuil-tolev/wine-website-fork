@@ -191,14 +191,14 @@ In addition WineConf traditionally has a mini hackathon -- in past years its bee
 Look forward to reading more (and lots of photos and stories) from this weekend in the next WWN!
 </p></section>
 <section
-	title="Codeweavers Chromium"
+	title="CodeWeavers Chromium"
 	subject="Chromium"
 	archive="#"
 	posts="2"
 >
 <topic>Chromium</topic>
 <p>
-Jeremy White from Codeweavers wrote an interesting <a href="http://www.codeweavers.com/about/people/blogs/jwhite/2008/9/15/fire-drills-and-proving-a-point">blog post</a> and email to Wine-devel about Codeweaver's story of getting chromium to work in Wine.  From the blog post first:</p>
+Jeremy White from CodeWeavers wrote an interesting <a href="http://www.codeweavers.com/about/people/blogs/jwhite/2008/9/15/fire-drills-and-proving-a-point">blog post</a> and email to Wine-devel about CodeWeavers' story of getting chromium to work in Wine.  From the blog post first:</p>
 <quote>
 <p>
 (...) So today I am pleased to announce that we have shipped freely available versions of Chromium for both the Mac and Linux.  Not only does this give Mac and Linux users a chance to see what all the hype is about, it also lets the world see just how far Wine has come and how powerful it truly can be.  In just 11 days, we were able to bring a modern Windows application across to Mac and Linux. (...)
@@ -244,10 +244,10 @@ Jeremy
 </p></quote>
 <p>
 A bit of an editorial:<br />
-So I actually went and downloaded <a href="http://www.codeweavers.com/services/ports/chromium/">crossover chromium edition</a> and played with it for a bit.  I first tried GMail, no issues.  I said to myself alright, that is pretty impressive.  How about a real test: will flash work?  I went to youtube.com and sure enough I got the error "Flash isn't installed."  Aww poop.  Well, lets try installing it.  Clicked the "go to Adobe to get Flash" link, downloaded the executable which ran a really fast installer.  I went back to youtube.com and..... no luck.  At this point I had lost a bit of hope.  But then an idea struck me!  I closed the browser and re-opened it.  Off to youtube.com and... voila!  Working flash video!  I watched a rather cute video of a cat smacking a printer with its paw.  After about 45 seconds of this the cat hit it hard enough that the paper tray came lose and the cat went flying.  Perfect.
+So I actually went and downloaded <a href="http://www.codeweavers.com/services/ports/chromium/">CrossOver Chromium Edition</a> and played with it for a bit.  I first tried GMail, no issues.  I said to myself alright, that is pretty impressive.  How about a real test: will flash work?  I went to youtube.com and sure enough I got the error "Flash isn't installed."  Aww poop.  Well, lets try installing it.  Clicked the "go to Adobe to get Flash" link, downloaded the executable which ran a really fast installer.  I went back to youtube.com and..... no luck.  At this point I had lost a bit of hope.  But then an idea struck me!  I closed the browser and re-opened it.  Off to youtube.com and... voila!  Working flash video!  I watched a rather cute video of a cat smacking a printer with its paw.  After about 45 seconds of this the cat hit it hard enough that the paper tray came lose and the cat went flying.  Perfect.
 </p>
 <p>
-As a Wine user of many years there are these occasional moments in using Wine when, after getting something seemingly outrageously complex to work, you sit back and go wow: that's really a miracle.  This was one of them for me, hats off to the entire Wine and Codeweavers team.
+As a Wine user of many years there are these occasional moments in using Wine when, after getting something seemingly outrageously complex to work, you sit back and go wow: that's really a miracle.  This was one of them for me, hats off to the entire Wine and CodeWeavers team.
 </p></section>
 <section
 	title="Coverity Run"

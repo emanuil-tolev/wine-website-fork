@@ -5,7 +5,7 @@
 
 <h1 class="title">{$langChange}</h1>
 
-<p><b>Current Langage: </b> {$langCur}</p>
+<p><b>Current Language: </b> {$langCur}</p>
 
 <ul style="list-style: none; margin-left: 20px; padding: 0;">
 <!--EXEC:[language?cmd=list]-->

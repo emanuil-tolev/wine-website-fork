@@ -104,7 +104,7 @@
 						setDOMElementWidth(el);
 						el.css("backgroundImage", "none");
 						
-						// Restrict scaling methods to valid MSDN defintions (or one custom)
+						// Restrict scaling methods to valid MSDN definitions (or one custom)
 						var sc = "crop";
 						if(settings.sizingMethod) {
 							sc = settings.sizingMethod;
