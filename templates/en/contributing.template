@@ -254,16 +254,24 @@
 
 <h3 id="localized">Localization work</h3>
 
-<p>Also, we need to have localized versions of the Wine Guides and man
+<p>We need help translating Wine's resources into foreign languages. What this
+  covers is common dialogs such as the 'File Open' or 'Print' dialogs,
+  informational messages such as the crash dialog, some standard error
+  messages, but also the builtin tools such as Wine's notepad. When not
+  translated these can really impair Wine's usability for non-English
+  speakers.</p>
+<p>Luckily these are now all translated through standard PO files which makes
+  this task relatively easy. For detailed instructions on how to help, see our
+  <a href="http://wiki.winehq.org/Translating">Translating</a> guide.</p>
+
+<p>We also need to have localized versions of the Wine Guides, README and man
   pages. For this to work, we'll need many people willing to translate
   changes to the main English documentation into foreign languages. If you're
   willing to register for work on a certain language, then please sign up
   with us!</p>
-<p>At this time we are looking for people who can translate.</p>
-<ul>
-  <li>The README and maintain the translation.</li>
-  <li>The Wine resources and messages it issues (but not the debug messages of course). You can check the <a href="http://source.winehq.org/transl/">Wine translation statistics</a> for your language to see how much there is to do.</li>
-</ul>
+<p>While being a relatively small part of the documentation, the README and
+  man pages are probably its most important components. So if you can help
+  with these we would really be grateful.</p>
 <p>We also need a 'QuickStart/Howto' document that would describe the basic instructions
   for installing and configuring Wine in a bit more details than the README while being much
   smaller than the Wine User Guide (it could actually be a chapter of that guide). Then that
