@@ -1,0 +1,12 @@
+<!--TITLE:[WineHQ - Pick your Language]-->
+<!--BLURB:[WineHQ is a multi-lingual website]-->
+
+<!--EXEC:[language]-->
+
+<h1 class="title">{$langChange}</h1>
+
+<p><b>Mevcut Lisan: </b> {$langCur}</p>
+
+<ul style="list-style: none; margin-left: 20px; padding: 0;">
+<!--EXEC:[language?cmd=list]-->
+</ul>

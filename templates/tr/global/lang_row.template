@@ -1,0 +1,3 @@
+    <li style="background-image: url('{$root}/images/lang/{$lang}.png'); background-repeat: no-repeat; padding: 0 0 10px 40px;">
+        <a href="{$root}/lang/{$lang}">{$langFull}</a> &middot; {$langHelp}
+    </li>

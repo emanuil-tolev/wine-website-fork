@@ -56,6 +56,10 @@ class data
                                                'name'   => 'Português',
                                                'change' => 'Mudar a língua'
                                               )
+                                 'pt' => array(
+                                               'name'   => 'Türkçe',
+                                               'change' => 'Lisan Değiştir'
+                                              )
                                 );
 
         return;
