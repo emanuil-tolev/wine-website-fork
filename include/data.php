@@ -55,8 +55,8 @@ class data
                                  'pt' => array(
                                                'name'   => 'Português',
                                                'change' => 'Mudar a língua'
-                                              )
-                                 'pt' => array(
+                                              ),
+                                 'tr' => array(
                                                'name'   => 'Türkçe',
                                                'change' => 'Lisan Değiştir'
                                               )
