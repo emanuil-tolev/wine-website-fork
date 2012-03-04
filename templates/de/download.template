@@ -105,10 +105,10 @@ erbeten hat, dass sie die Wine-Website hosten.</p>
     <td align="center"><a href="http://sourceforge.net/projects/wine/files/Mandriva%20Packages/">
       <img src="{$root}/images/distro/mandriva.png" width="50" height="50" alt="Mandriva Linux" border="0"></a>
     </td>
-    <td> <b><a href="http://sourceforge.net/projects/wine/files/Mandriva%20Packages/">Mandriva</a></b> 
-         bin&auml;r .rpms f&uuml;r Mandriva Linux 2008, 2009 und 2010. Lade das 20010.2 Package herunter, falls Du eine
-         2010.2 Version von Mandriva nutzt, z.B. 20010 Spring. Lade das 20010.0 Package herunter, falls Du die erste
-         Mandriva Version aus 20010 nutzt.</td>
+    <td> <b><a href="http://sourceforge.net/projects/wine/files/Mandriva%20Packages/">Mandriva</a></b>
+         bin&auml;r .rpms f&uuml;r Mandriva Linux 2008, 2009 und 2010. Lade das 2010.2 Package herunter, falls Du eine
+         2010.2 Version von Mandriva nutzt, z.B. 2010 Spring. Lade das 2010.0 Package herunter, falls Du die erste
+         Mandriva Version aus 2010 nutzt.</td>
     <td><a href="mailto:marco@mandrivaclub.nl">Marco Meijer</a></td>
   </tr>
   
@@ -125,7 +125,7 @@ erbeten hat, dass sie die Wine-Website hosten.</p>
     <td align="center"><a href="http://www.freshports.org/emulators/wine/">
       <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
     </td>
-    <td> <b><a href="http://www.freshports.org/emulators/wine/">FreeBSD</a></b> 
+    <td> <b><a href="http://www.freshports.org/emulators/wine/">FreeBSD</a></b>
          Quellcode f&uuml;r FreeBSD 5.3 und sp&auml;tere Versionen</td>
     <td><a href="mailto:gerald@pfeifer.com">Gerald Pfeifer</a></td>
   </tr>
@@ -134,37 +134,39 @@ erbeten hat, dass sie die Wine-Website hosten.</p>
     <td align="center"><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">
       <img src="{$root}/images/distro/pcbsd.png" width="50" height="50" alt="FreeBSD" border="0"></a>
     </td>
-    <td> <b><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">PC-BSD</a></b> 
+    <td> <b><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">PC-BSD</a></b>
          bin&auml;r .pbi f&uuml;r PC-BSD (FreeBSD-basiertes Betriebssystem)</td>
     <td><a href="mailto:kris@pcbsd.com">Kris Moore</a></td>
   </tr>
 
   <tr bgcolor="#ffffff">
-    <td align="center"><a href="http://www.sunfreepacks.com/listing/?limit=1000&amp;offset=0">
+    <td align="center"><a href="http://www.sunfreepacks.com/">
       <img src="{$root}/images/distro/solaris.png" width="50" height="50" alt="Solaris 10" border="0"></a>
     </td>
-    <td> <b><a href="http://www.sunfreepacks.com/listing/?limit=1000&amp;offset=0">Solaris 10, SXCE</a></b> 
+    <td> <b><a href="http://www.sunfreepacks.com/">Solaris 10, SXCE</a></b>
         ASwine, ASwine-SXCE bin&auml;r .pkg f&uuml;r Solaris 10 und SXCE x86</td>
     <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
   </tr>
 
   <tr bgcolor="#ffffff">
-    <td align="center"><a href="http://pkg.opensolaris.org/contrib/en/catalog.shtml">
+    <td align="center"><a href="http://hub.opensolaris.org/bin/view/Community+Group+desktop/wine">
       <img src="{$root}/images/distro/opensolaris.png" width="50" height="50" alt="OpenSolaris" border="0"></a>
     </td>
-    <td> <b><a href="http://pkg.opensolaris.org/contrib/en/catalog.shtml">OpenSolaris</a></b> 
+    <td> <b><a href="http://hub.opensolaris.org/bin/view/Community+Group+desktop/wine">OpenSolaris</a></b>
         bin&auml;r .pkg f&uuml;r OpenSolaris x86</td>
     <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
   </tr>
 
   <tr bgcolor="#ffffff">
-    <td align="center"><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=112520">
-	  <img src="{$root}/images/distro/windows.png" width="50" height="54" alt="Windows" border="0"></a>
+    <td align="center"><a href="http://maemo.org/packages/view/wine/">
+      <img src="{$root}/images/distro/maemo.png" width="50" height="50" alt="Maemo" border="0"></a>
     </td>
-    <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=112520">Windows</a></b> bin&auml;r .zips</td>
-    <td><a href="mailto:ivanleo@gmail.com">Ivan Leo Puoti</a></td>
+    <td> <b><a href="http://maemo.org/packages/view/wine/">Maemo</a></b>
+        binär .deb für Maemo x86 und Maemo ARM</td>
+    <td><a href="http://maemo.org/profile/view/onion/">Kaj-Michael Lang</a></td>
   </tr>
-  
+
+
 </table>
 
 
