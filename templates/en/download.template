@@ -103,7 +103,7 @@ requested in exchange for hosting the Wine web site.</p>
     <td align="center"><a href="http://sourceforge.net/projects/wine/files/Mandriva%20Packages/">
       <img src="{$root}/images/distro/mandriva.png" width="50" height="50" alt="Mandriva Linux" border="0"></a>
     </td>
-    <td> <b><a href="http://sourceforge.net/projects/wine/files/Mandriva%20Packages/">Download Mandriva packages</a></b> 
+    <td> <b><a href="http://sourceforge.net/projects/wine/files/Mandriva%20Packages/">Download Mandriva packages</a></b>
          - binary .rpms for Mandriva Linux 2008, 2009, and 2010. Download the 2010.2 package if your Mandriva is a 2010.2
      release, eg. 2010 Spring. Download the 2010.0 package if your Mandriva is the first 2010 release.</td>
     <td><a href="mailto:marco@mandrivaclub.nl">Marco Meijer</a></td>
@@ -122,7 +122,7 @@ requested in exchange for hosting the Wine web site.</p>
     <td align="center"><a href="http://www.freshports.org/emulators/wine/">
       <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
     </td>
-    <td> <b><a href="http://www.freshports.org/emulators/wine/">Download FreeBSD packages</a></b> 
+    <td> <b><a href="http://www.freshports.org/emulators/wine/">Download FreeBSD packages</a></b>
          - source for FreeBSD 5.3 or later</td>
     <td><a href="mailto:gerald@pfeifer.com">Gerald Pfeifer</a></td>
   </tr>
@@ -131,27 +131,36 @@ requested in exchange for hosting the Wine web site.</p>
     <td align="center"><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">
       <img src="{$root}/images/distro/pcbsd.png" width="50" height="50" alt="FreeBSD" border="0"></a>
     </td>
-    <td> <b><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">Download PC-BSD packages</a></b> 
+    <td> <b><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">Download PC-BSD packages</a></b>
          - binary packages .pbi for PC-BSD (FreeBSD based OS)</td>
     <td><a href="mailto:kris@pcbsd.com">Kris Moore</a></td>
   </tr>
 
   <tr bgcolor="#ffffff">
-    <td align="center"><a href="http://www.sunfreepacks.com/listing/?limit=1000&amp;offset=0">
+    <td align="center"><a href="http://www.sunfreepacks.com/">
       <img src="{$root}/images/distro/solaris.png" width="50" height="50" alt="Solaris 10" border="0"></a>
     </td>
-    <td> <b><a href="http://www.sunfreepacks.com/listing/?limit=1000&amp;offset=0">Download Solaris 10, SXCE packages</a></b> 
+    <td> <b><a href="http://www.sunfreepacks.com/">Download Solaris 10, SXCE packages</a></b>
         - ASwine, ASwine-SXCE binary package .pkg for Solaris 10 and SXCE x86</td>
     <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
   </tr>
 
   <tr bgcolor="#ffffff">
-    <td align="center"><a href="http://pkg.opensolaris.org/contrib/en/catalog.shtml">
+    <td align="center"><a href="http://hub.opensolaris.org/bin/view/Community+Group+desktop/wine">
       <img src="{$root}/images/distro/opensolaris.png" width="50" height="50" alt="OpenSolaris" border="0"></a>
     </td>
-    <td> <b><a href="http://pkg.opensolaris.org/contrib/en/catalog.shtml">Download OpenSolaris packages</a></b> 
+    <td> <b><a href="http://hub.opensolaris.org/bin/view/Community+Group+desktop/wine">Download OpenSolaris packages</a></b>
         - binary package .pkg for OpenSolaris x86</td>
     <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://maemo.org/packages/view/wine/">
+      <img src="{$root}/images/distro/maemo.png" width="50" height="50" alt="Maemo" border="0"></a>
+    </td>
+    <td> <b><a href="http://maemo.org/packages/view/wine/">Download Maemo packages</a></b>
+        - binary package .deb for Maemo x86 and Maemo ARM</td>
+    <td><a href="http://maemo.org/profile/view/onion/">Kaj-Michael Lang</a></td>
   </tr>
 
 
