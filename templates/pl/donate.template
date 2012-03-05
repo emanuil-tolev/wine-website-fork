@@ -12,18 +12,12 @@
     <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">O tej opcji darowizny</b></td>
   </tr>
 
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="donateForm" style="margin: 0; padding: 0;">
-  <input type="hidden" name="cmd" value="_donations">
-  <input type="hidden" name="business" value="donate@winehq.org">
-  <input type="hidden" name="item_name" value="Wine donation">
-  </form>
-
   <tr bgcolor="#ffffff">
     <td align="center" class="small">
-        <a href="javascript:document.donateForm.submit();">Paypal</a>
+        <a href="javascript:document.PPdonateForm.submit();">Paypal</a>
     </td>
     <td valign="top">
-        Z <a href="javascript:document.donateForm.submit();">Paypalem</a> możesz przekazać datki przez kartę kredytową lub przez konto Paypal.
+        Z <a href="javascript:document.PPdonateForm.submit();">Paypalem</a> możesz przekazać datki przez kartę kredytową lub przez konto Paypal.
     </td>
   </tr>
 
@@ -48,3 +42,8 @@
   </tr>
 
 </table>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="PPdonateForm" style="margin: 0; padding: 0;">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="G9BDG2ABR7PYA">
+</form>

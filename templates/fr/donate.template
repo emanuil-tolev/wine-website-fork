@@ -12,20 +12,12 @@
     <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">À propos de cette alternative</b></td>
   </tr>
 
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="donateForm" style="margin: 0; padding: 0;">
-  <input type="hidden" name="cmd" value="_donations">
-  <input type="hidden" name="business" value="donate@winehq.org">
-  <input type="hidden" name="item_name" value="Don au projet Wine">
-  <input type="hidden" name="lc" value="FR">
-  <input type="hidden" name="currency_code" value="EUR">
-  </form>
-
   <tr bgcolor="#ffffff">
     <td align="center" class="small">
-        <a href="javascript:document.donateForm.submit();">Paypal</a>
+        <a href="javascript:document.PPdonateForm.submit();">Paypal</a>
     </td>
     <td valign="top">
-        Avec <a href="javascript:document.donateForm.submit();">Paypal</a>, vous
+        Avec <a href="javascript:document.PPdonateForm.submit();">Paypal</a>, vous
 pouvez effectuer un don par carte de crédit ou via votre compte Paypal.
     </td>
   </tr>
@@ -54,3 +46,10 @@ plus d'informations.
   </tr>
 
 </table>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="PPdonateForm" style="margin: 0; padding: 0;">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="G9BDG2ABR7PYA">
+    <input type="hidden" name="lc" value="FR">
+    <input type="hidden" name="currency_code" value="EUR">
+</form>
