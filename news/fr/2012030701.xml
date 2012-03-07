@@ -1,0 +1,23 @@
+<news>
+<date>7 mars 2012</date>
+<title>Sortie de Wine 1.4</title>
+<body>
+<p> L'équipe de Wine est fière d'annoncer la disponibilité de la version stable 1.4 de Wine.</p>
+<p> Cette version représente 20 mois d'efforts de développement et plus de 16 000 changements
+individuels. Les points forts principaux sont le nouveau moteur graphique DIB, une pile audio
+reconçue et la prise en charge complète du texte bidirectionnel ainsi que du façonnage de
+caractères.</p>
+<p> Elle comprend également quantité d'améliorations dans tous les domaines, ainsi que la prise en
+charge de nombreuses nouvelles applications, notamment Microsoft Office 2010. Voyez les <a
+href="{$root}/announce/1.4">notes de version</a> pour un résumé des changements principaux.</p>
+<p> Cette version est dédiée à la mémoire de Gé (Greg) van Geldorp, qui nous a quittés en mai 2011.
+Greg a de lui-même conçu, construit et maintenu le robot de test (Testbot) Wine, qui est devenu la
+pierre angulaire de notre processus de développement. La grande qualité de cette version doit
+beaucoup à son travail. Il nous manquera énormément.</p>
+<p></p>
+<p><p>Le <a
+href="http://prdownloads.sourceforge.net/wine/wine-1.4.tar.bz2">code
+source</a> est disponible dès à présent.
+Les paquets binaires sont en cours de construction, et apparaîtront sous peu
+sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
