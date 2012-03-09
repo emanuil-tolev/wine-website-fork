@@ -38,7 +38,7 @@ class data
                                               ),
                                  'es' => array(
                                                'name'   => 'Español',
-                                               'change' => 'Cambiar la Lengua'
+                                               'change' => 'Cambiar Idioma'
                                               ),
                                  'fr' => array(
                                                'name'   => 'Français',
