@@ -14,7 +14,7 @@
 
   <tr bgcolor="#ffffff">
     <td align="center">
-        <script type="text/javascript">
+        <script type="text/javascript"> 
         function validateAmount(amount){
             if(amount.value.match( /^[0-9]+(\.([0-9]+))?$/)){
                 return true;
@@ -29,13 +29,13 @@
             <input name="item_name_1" type="hidden" value="Directed Donation to the Wine Project via Software Freedom Conservancy"/>
             <input name="item_description_1" type="hidden" value="A directed donation for the Wine project via the Software Freedom Conservancy"/>
             <input name="item_quantity_1" type="hidden" value="1"/>
-            <input name="item_currency_1" type="hidden" value="EUR"/>
+            <input name="item_currency_1" type="hidden" value="USD"/>
             <input name="item_is_modifiable_1" type="hidden" value="true"/>
             <input name="item_min_price_1" type="hidden" value="10.0"/>
             <input name="item_max_price_1" type="hidden" value="25000.0"/>
             <input name="_charset_" type="hidden" value="utf-8"/>
             &#x24; <input id="item_price_1" name="item_price_1" onfocus="this.style.color='black'; this.value='';" size="11" style="color:grey;" type="text" value="Enter Amount"/><br />
-            <input alt="Donate" src="https://checkout.google.com/buttons/donateNow.gif?merchant_id=622836985124940&amp;w=115&amp;h=50&amp;style=white&amp;variant=text&amp;loc=de_DE" type="image"/>
+            <input alt="Donate" src="https://checkout.google.com/buttons/donateNow.gif?merchant_id=622836985124940&amp;w=115&amp;h=50&amp;style=white&amp;variant=text&amp;loc=en_US" type="image"/>
         </form>
     </td>
     <td valign="top">
