@@ -1,0 +1,27 @@
+<!--TITLE:[Acerca de Wine]-->
+<!--BLURB:[Explicando el proyecto Wine]-->
+
+<h1 class="title">Acerca de Wine</h1>
+
+<p>Wine te permite correr software de Windows en otros sistemas operativos. Con Wine, puede instalar y correr estas aplicaciones igual que lo haría en Windows.</p>
+
+<p>Wine se encuentra todavía en desarrollo. No todos los programas funcionan aun, sin embargo hay <a href="http://wiki.winehq.org/UsageStatistics" title="Wine Usage Statistics">varios millones de personas</a> usando Wine para ejecutar sus programas.</p>
+
+<h3>Código Abierto y Guiado por el Usuario</h3>
+
+<p>Wine siempre será <a href="http://wiki.winehq.org/Licensing" title="Wine licensing">software libre</a>.  Aproximadamente la mitad del código fuente de Wine es escrito por voluntarios. El resto es patrocinado por intereses comerciales, especialmente de <a href="http://www.codeweavers.com/products/" title="CodeWeavers CrossOver Office">CodeWeavers</a> quienes venden una versión de Wine con soporte.</p>
+
+<p>Wine depende altamente en su comunidad de usuarios. Sus pruebas llenan nuestra <a href="http://appdb.winehq.org/" title="Wine Application Database">Base de datos de Aplicaciones</a> para seguir que tan bien funcionan los programas, y todas las respuestas en los <a href="http://forums.winehq.org/" title="WineHQ Forums">foros</a> vienen de voluntarios.</p>
+
+<h3>Aprenda mas:</h3>
+<ul>
+    <li><a href="http://wiki.winehq.org/ImportanceOfWine">¿Por que es tan Importante Wine?</a></li>
+    <li><a href="http://wiki.winehq.org/Debunking_Wine_Myths">Mitos Comunes sobre Wine</a></li>
+    <li><a href="http://wiki.winehq.org/WineHistory">Historia del Proyecto Wine</a></li>
+    <li><a href="http://wiki.winehq.org/ProjectOrganization">Organización y Liderazgo</a></li>
+</ul>
+
+<hr>
+<div class="link-container">
+  <p class="right-link">Wine's History: <a href="{$root}/history">Siguiente</a></p>
+</div>
