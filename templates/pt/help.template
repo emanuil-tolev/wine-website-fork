@@ -1,0 +1,102 @@
+<!--TITLE:[Obtendo ajuda]-->
+<!--BLURB:[Todas suas perguntas sobre o Wine, respondidas]-->
+
+<h1 class="title">Obtendo ajuda</h1>
+
+<p>Existem várias maneiras de obter ajuda ao utilizar o Wine.</p>
+
+<table border="0" cellpadding="10" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">Opções</b></td>
+    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">Sobre este tipo de ajuda</b></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://www.codeweavers.com"><img src="{$root}/images/paid.png"><br>Paga</a>
+    </td>
+    <td valign="top">
+        <a href="http://www.codeweavers.com">CodeWeavers</a> oferece suporte pago ao Wine.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://wiki.winehq.org/FAQ"><img src="{$root}/images/faq.png"><br>FAQ</a>
+    </td>
+    <td valign="top">
+        A maioria das perguntas pode ser rapidamente respondida pelo
+        <a href="http://wiki.winehq.org/FAQ">FAQ</a>.
+        Este é o primeiro lugar que você deve procurar quando tiver alguma dúvida.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="{$root}/documentation"><img src="{$root}/images/docs.png"><br>Documentação</a>
+    </td>
+    <td valign="top">
+        Recomendamos que você leia a <a href="{$root}/site/documentation">Documentation</a> online
+        para encontrar a resposta para sua pergunta. Outra página interessante é o nosso
+        <a href="http://wiki.winehq.org/HowTo">Guia</a> que contém informações úteis para novos
+        usuários.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://wiki.winehq.org/"><img src="{$root}/images/moinmoin.png"><br>Wiki</a>
+    </td>
+    <td valign="top">
+        Você também pode ler a nossa <a href="http://wiki.winehq.org/">Wiki</a> para tentar
+        encontrar a resposta para sua pergunta.
+    </td>
+  </tr>
+  
+<tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://forums.winehq.org/"><img src="{$root}/images/forum.png"><br>Fórum</a>
+    </td>
+    <td valign="top">
+        Nós temos uma comunidade baseada em <a href="http://forums.winehq.org/">web</a>/<a href="{$root}/site/forums">email</a>
+        para usuários do Wine. Um lugar que usuários do Wine podem visitar para fazer perguntas e interagirem um com o outro.
+        Você pode também explorar as <a href="{$root}/site/forums">listas de email</a>
+        que formam a comunidade.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="{$root}/irc"><img src="{$root}/images/irc.png"><br>IRC</a>
+    </td>
+    <td valign="top">
+        Você pode conversar com a comunidade do Wine no nosso <a href="{$root}/irc">canal IRC</a>.
+    </td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://appdb.winehq.org/"><img src="{$root}/images/appdb.png"><br>AppDB</a>
+    </td>
+    <td valign="top">
+        Caso você deseje obter ajuda com um aplicativo específico o nosso <a href="http://appdb.winehq.org/">Banco de Aplicações</a>
+        é um bom lugar para começar.
+    </td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://bugs.winehq.org/"><img src="{$root}/images/bugs.png"><br>Bugzilla</a>
+    </td>
+    <td valign="top">
+        O  nosso<a href="http://bugs.winehq.org/">Bug Tracker Bugzilla</a> contém todos os problemas que nós
+        já resolvemos e todos em que estamos trabalhando no momento.
+    </td>
+  </tr>
+  
+</table>
+
+<p>Sítio com problemas ou com erros gramaticais? <a href="mailto:web-admin@winehq.org">Contate-nos</a>.</p>
+
+<p>&nbsp;</p>
