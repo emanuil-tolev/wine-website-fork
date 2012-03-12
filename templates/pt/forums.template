@@ -1,0 +1,118 @@
+<!--TITLE:[Listas de Email / Fórums]-->
+<!--BLURB:[O que nós não queremos é falta de comunicação.]-->
+
+<h1 class="title">Principais listas de Email / Fórums</h1>
+
+<p>O Wine tem várias listas de email e fórums.
+Aqui estão as mais úteis para os usuários:</p>
+
+<ul>
+    <li>A <a href="http://www.winehq.org/mailman/listinfo/wine-users">Lista de Email dos usuários do Wine</a>
+    (<a href="http://www.winehq.org/pipermail/wine-users/">arquivo de emails</a>) - o melhor lugar para o suporte a usuários do Wine</li>
+
+    <li>Os <a href="http://forum.winehq.org">Fórums do WineHQ</a> - para aqueles que preferem uma interface de
+    fórum ao invés de uma lista de email. As listas de email e os fóruns estão interligados. Mensagens mandadas para um lugar são automaticamente propagados para o outro.</li>
+
+    <li>Usuários do Ubuntu talvez queiram visitar a <a href="http://ubuntuforums.org/forumdisplay.php?f=313">sessão do Wine nos Fóruns do Ubuntu</a>
+
+    <li>Usuários talvez também queiram visitar a <a href="http://www.linuxforums.org/forum/wine/">sessão do Wine nos Fóruns de Linux</a>
+
+    <li>Caso você queira ser notificado dos novos lançamentos, inscreva-se na <a href="http://www.winehq.org/mailman/listinfo/wine-announce">Lista de anúncias do Wine</a></li>
+
+</ul>
+Por favor não crie outro fórum em língua inglesa do Wine (exceto talvez uma sessão do Wine no fórum de alguma
+distribuição de Linux).
+<p>
+Se você conhece algum outro fórum do Wine ativo - especialmente um de idioma diferente do inglês
+- por favor nos avise na lista.
+(Um email para dank at kegel dot com é suficiente.)
+
+
+<h2>Todas listas de Email do WineHQ</h2>
+
+<p>O WineHQ tem listas de email para submeter patches, acompanhamento de commits no Git,
+e discussões sobre o Wine. Eles possuem opções de inscrição bastante customizáveis e podem ser assinadas <a href="http://www.winehq.org/mailman/listinfo">via
+WWW</a> ou mandando um email para <i>nomedalista</i>-request@winehq.org com o título de
+"subscribe". Para se desinscrever, use o título "unsubscribe <i>senha</i>" usando a senha que você recebeu
+quando primeiro assinou a lista, ou apenas use <a href="http://www.winehq.org/mailman/listinfo">a interface web</a>.</p>
+
+<p><b>Nota:</b> Você precisa estar inscrito nas listas antes de postar nelas,
+do contrário o seu email será tratado como um possível spam pelo software da lista de emails.
+</p>
+
+<ul>
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-announce">(Des-)Inscrever</a>] 
+    [<a href="http://www.winehq.org/pipermail/wine-announce/">Arquivo 1</a>] 
+    [<a href="http://news.gmane.org/gmane.comp.emulators.wine.announce">Arquivo 2</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.announce">via newsreader</a>]
+    <a href="mailto:wine-announce@winehq.org">wine-announce@winehq.org</a><br>
+    Uma lista de baixo tráfego (2/mês) de somente leitura para anunciar lançamentos
+    e outras notícias importantes do Wine e WineHQ.<br><br>
+
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-users">(Des-)Inscrever</a>]
+    [<a href="http://www.winehq.org/pipermail/wine-users/">Arquivo 1</a>]  
+    [<a href="http://news.gmane.org/gmane.comp.emulators.wine.user">Arquivo 2</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.user">via newsreader</a>]
+    [<a href="http://forum.winehq.org">via fórums</a>]
+    <a href="mailto:wine-users@winehq.org">wine-users@winehq.org</a><br>
+    Uma lista aberta de tráfego médio (50/dia) para discussões entre usuários finais.<br><br>
+
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-devel">(Des-)Inscrever</a>]
+    [<a href="http://www.winehq.org/pipermail/wine-devel/">Arquivo 1</a>]
+    [<a href="http://news.gmane.org/gmane.comp.emulators.wine.devel">Arquivo 2</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.devel">via newsreader</a>]
+    <a href="mailto:wine-devel@winehq.org">wine-devel@winehq.org</a> <br>
+    Uma lista aberta de tráfego médio (25/dia) para discutir desenvolvimento do Wine,
+    WineHQ, patches e qualquer outra coisa de interesse a desenvolvedores do Wine.<br><br>
+
+  <li>
+   [<a href="http://www.winehq.org/mailman/listinfo/wine-patches">(Des-)Inscrever</a>]
+   [<a href="http://www.winehq.org/pipermail/wine-patches/">Arquivo 1</a>]
+   [<a href="http://news.gmane.org/gmane.comp.emulators.wine.patches">Arquivo 2</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.patches">via newsreader</a>]
+   <a href="mailto:wine-patches@winehq.org">wine-patches@winehq.org</a><br>
+   Uma lista aberta de tráfego médio (45/dia) para submeter patches apenas.<br><br>
+
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-cvs">(Des-)Inscrever</a>]
+    [<a href="http://www.winehq.org/pipermail/wine-cvs/">Arquivo 1</a>]
+    [<a href="http://news.gmane.org/gmane.comp.emulators.wine.cvs">Arquivo 2</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.cvs">via newsreader</a>]
+    <a href="mailto:wine-cvs@winehq.org">wine-cvs@winehq.org</a><br>
+    Uma lista aberta de tráfego médio (35/day) de somente leitura que lista os commits feitas
+    na árvore Git.<br><br>
+
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-releases">(Des-)Inscrever</a>]
+    [<a href="http://www.winehq.org/pipermail/wine-releases/">Arquivo 1</a>]
+    <a href="mailto:wine-releases@winehq.org">wine-releases@winehq.org</a> <br>
+    Uma lista de baixo tráfego (2/mês) de somente leitura para receber um grande arquivo diff para cada
+    novo lançamento do Wine.<br><br>
+
+  <li>
+    [<a href="http://news.gmane.org/gmane.comp.emulators.wine.license">Arquivo 1</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.license">via newsreader</a>]
+    <br>
+    Lista fechada para discutir questões legais relacionadas ao Wine,
+    incluíndo questões de licensa. (Fechada em 16-12-2004)<br><br>
+
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-bugs">(Des-)Inscrever</a>]
+    [<a href="http://www.winehq.org/pipermail/wine-bugs/">Arquivo 1</a>]
+    [<a href="http://news.gmane.org/gmane.comp.emulators.wine.bugs">Arquivo 2</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.bugs">via newsreader</a>]
+    <a href="mailto:wine-bugs@winehq.org">wine-bugs@winehq.org</a><br>
+    Uma lista de alto tráfego (150/dia) de somente leitura para monitorar a atividade na
+    <a href="http://bugs.winehq.org/">Banco de Dados de Bugs</a>.<br><br>
+
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-tests-results">(Des-)Inscrever</a>]
+    [<a href="http://www.winehq.org/pipermail/wine-tests-results/">Arquivo</a>]
+    <a href="mailto:wine-tests-results@winehq.org">wine-tests-results@winehq.org</a><br>
+    Uma lista aberta de tráfego médio (10/day) para submeter resultados de testes.
+</ul>
+
+<p>&nbsp;</p>
