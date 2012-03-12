@@ -1,0 +1,102 @@
+<!--TITLE:[Execute aplicativos Windows no Linux, BSD, Solaris e Mac OS X]-->
+<!--BLURB:[Execute aplicativos Windows no Linux, BSD, Solaris e Mac OS X]-->
+<!--META_KEYWORDS:[windows, linux, macintosh, solaris, freebsd]-->
+<!--META_DESCRIPTION:[Software livre para executar aplicativos Windows em outros sistemas operacionais.]-->
+<!--STYLE:[content_nobox]-->
+
+<div id="main_left">
+
+  <div class="rbox">
+  <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+    <div class="content" style="padding: 15px 10px 20px 60px; height: 445px; overflow: auto;">
+        <div class="winehq_menu">
+
+            <div class="info" onClick="document.location='{$root}/about/';">
+              <div class="icon"></div>
+              <div class="text">
+                <div class="title"><a href="{$root}/about/">Sobre</a></div>
+                <div class="subtitle">Aprenda sobre o Projeto Wine.</div>
+              </div>
+            </div>
+
+            <div class="dl" onClick="document.location='{$root}/download/';">
+              <div class="icon"></div>
+              <div class="text">
+                <div class="title"><a href="{$root}/download/">Download</a></div>
+                <div class="subtitle">Instale a última versão do Wine.</div>
+              </div>
+            </div>
+
+            <div class="help" onClick="document.location='{$root}/help/';">
+              <div class="icon"></div>
+              <div class="text">
+                <div class="title"><a href="{$root}/help/">Suporte</a></div>
+                <div class="subtitle">Obtenha ajuda ao utilizar o Wine.</div>
+              </div>
+            </div>
+
+            <div class="devel" onClick="document.location='{$root}/devel/';">
+              <div class="icon"></div>
+              <div class="text">
+                <div class="title"><a href="{$root}/devel/">Desenvolvimento</a></div>
+                <div class="subtitle">Torne-se um desenvolvedor do Wine.</div>
+              </div>
+            </div>
+
+            <div class="donate" onClick="document.location='{$root}/donate/';">
+              <div class="icon"></div>
+              <div class="text">
+                <div class="title"><a href="{$root}/donate/">Doações</a></div>
+                <div class="subtitle">Doe para o Projeto Wine.</div>
+              </div>
+            </div>
+
+        </div>
+    </div>
+  <b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+  </div>
+
+
+</div>
+<div id="main_right">
+
+  <div class="rbox">
+  <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+    <div class="content" style="padding: 5px 10px 5px 10px; height: 85px; overflow: auto;">
+
+        <h3 class="title" style="margin: 0;">Últimos lançamentos</h3>
+            <table style="margin: 7px 0 0 15px; border-spacing: 0; border: 0;">
+            <tr><td>Estável:</td>
+            <td style="padding-left: 15px; padding-bottom: 2px;">
+                <b><a href="{$root}/announce/{$config_stable_release}">Wine&nbsp;{$config_stable_release}</a></b>
+                <span class="small">
+                  (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_stable_release}">mudanças</a>)
+                </span>
+            </td></tr>
+            <tr><td>Desenvolvimento:</td>
+            <td style="padding-left: 15px;">
+                <b><a href="{$root}/announce/{$config_master_release}">Wine&nbsp;{$config_master_release}</a></b>
+                <span class="small">
+                  (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_master_release}">mudanças</a>)
+                </span>
+            </td></tr>
+            </table>
+    </div>
+  <b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+  </div>
+
+  <div class="rbox" style="margin-top: 15px;">
+  <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+    <div class="content" style="padding: 10px; height: 340px; overflow: auto;">
+
+        <h3 class="title"><a href="{$root}/news/">Notícias</a></h3>
+
+        <!--EXEC:[news?n=10]-->
+
+        <p><a href="{$root}/news/">mais notícias...</a></p>
+    </div>
+  <b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+  </div>
+
+</div>
+
