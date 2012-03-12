@@ -1,0 +1,197 @@
+<!--TITLE:[Downloads Binários do Wine]-->
+<!--BLURB:[Faça o download do Wine para seu sistema operacional favorito.]-->
+
+<h1 class="title">Downloads do Wine</h1>
+
+<h2 style="margin-bottom: 10px;"><a name="crossover"></a>Wine com Suporte</h2>
+
+<table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Produto</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Descrição</font></b></td>
+  </tr>
+
+  <tr>
+    <td align="center" bgcolor="#ffffff">
+      <a href="http://www.codeweavers.com/products/download_trial/">
+        <img src="{$root}/images/distro/crossover.png" width="50" height="50" alt="CrossOver Linux ou Mac" border="0">
+      </a>
+    </td>
+    <td align="left" bgcolor="#ffffff">
+      <b>O <a href="http://www.codeweavers.com/products/">CrossOver</a></b>
+      é uma versão mais polida do Wine, produzida pela <b><a href="http://www.codeweavers.com">CodeWeavers</a></b>.
+      O CrossOver torna o Wine mais fácil de ser usado e a CodeWeavers oferece um execelente suporte técnico para ajudar os seus usuários.
+      Todas as compras do Crossover são usadas para financiar diretamente os desenvolvedores trabalhando com o Wine.
+      Logo o CrossOver é uma ótima maneira de conseguir ajuda para usar o Wine e ao mesmo tempo apoiar o projeto. A CodeWeavers  oferece
+      <b><a href="http://www.codeweavers.com/products/download_trial/">versões de demonstração do CrossOver</a></b> totalmente funcionais.
+    </td>
+  </tr>
+</table>
+
+<p class="small" align="center">Este endosso é o reconhecimento que a CodeWeavers solicitou em troca da hospedagem do site do Wine.</p>
+
+
+<h2 style="margin-bottom: 5px;"><a name="binary"></a>Downloads Binários do Wine</h2>
+
+<table style="margin: 0 0 15px 0;" width="100%">
+<tr>
+  <td width="200">Última versão estável:</td><td>Wine&nbsp;{$config_stable_release}</td>
+  <td rowspan="2" valign="top" style="padding-left: 20px; text-align: center;"><b>Siga o
+  <a href="http://wiki.winehq.org/HowTo">guia de instalação e configuração</a>
+  para receber instruções pós-instalação.</b></td>
+</tr>
+<tr>
+  <td>Última versão de desenvolvimento:</td><td>Wine&nbsp;{$config_master_release}</td>
+</tr>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Sistema</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Notas</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Mantenedor</font></b></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="{$root}/download/ubuntu">
+      <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu linux" border="0"></a>
+    </td>
+    <td> <b><a href="{$root}/download/ubuntu">Descarregar pacotes para Ubuntu</a></b>
+     - .debs binários e do código fonte para Ubuntu Karmic (9.10), Lucid (10.04 LTS), Maverick (10.10), e Natty (11.04)
+    <td><a href="mailto:scott@open-vote.org">Scott Ritchie</a></td>
+  </tr>
+
+   <tr bgcolor="#ffffff">
+    <td align=center><a href="{$root}/download/debian">
+      <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
+    </td>
+    <td> <b><a href="{$root}/download/debian">Descarregar pacotes para Debian</a></b>
+     - .debs binários para Debian Sid</td>
+    <td><a href="mailto:curan@debian.org">Kai Wasserbäch</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">
+      <img src="{$root}/images/distro/redhat.png" width="50" height="50" alt="Red Hat Linux" border="0"></a>
+    </td>
+    <td> <b><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">Descarregar pacotes para Red Hat / CentOS / Fedora</a></b>
+        - .rpms binários e do código fonte para Red Hat Enterprise Linux 4, 5; CentOS 4, 5; Fedora Core 5, 6; Fedora Linux 7 e distribuições compatíveis.
+        O meta pacote do Wine está disponível via <tt>yum</tt>
+        nos repositórios EPEL / Fedora Extras / Fedora executando o comando <tt>$ yum install
+        wine </tt>"
+         </td>
+    <td><a href="mailto:andreas.bierfert_at_lowlatency.de">Andreas Bierfert</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://en.opensuse.org/Wine#Repositories">
+      <img src="{$root}/images/distro/suse.png" width="50" height="50" alt="SUSE Linux" border="0"></a>
+    </td>
+    <td> <b><a href="http://en.opensuse.org/Wine#Repositories">Descarregar pacotes para SUSE</a></b>
+         - .rpms binários e do código fonte e RPMs com snapshots diários para openSUSE 11.1, 11.2, 11.3, 11.4 e SUSE Linux Enterprise 10 e 11.<br>
+         Versões antigas dos pacotes disponíveis em <a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=79444">SourceForge</a>
+     </td>
+    <td><a href="mailto:meissner@suse.de">Marcus Meissner</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://sourceforge.net/projects/wine/files/Mandriva%20Packages/">
+      <img src="{$root}/images/distro/mandriva.png" width="50" height="50" alt="Mandriva Linux" border="0"></a>
+    </td>
+    <td> <b><a href="http://sourceforge.net/projects/wine/files/Mandriva%20Packages/">Download Mandriva packages</a></b>
+         - .rpms binários para Mandriva Linux 2008, 2009, e 2010. Use o pacote 2010.2 se o seu Mandriva for um lançamento 2010.2, por exemplo para a versão 2010 Spring. Use o pacote 2010.0 se o seu Mandriva for o primeiro lançamento de 2010.</td>
+    <td><a href="mailto:marco@mandrivaclub.nl">Marco Meijer</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">
+      <img src="{$root}/images/distro/slackware.png" width="50" height="50" alt="Slackware linux" border="0"></a>
+    </td>
+    <td> <b><a href="http://sourceforge.net/projects/wine/files/Slackware Packages/">Descarregar pacotes para Slackware</a></b>
+         - binários txz (Slackware 13.37), e tgz (para versões antigas)</td>
+    <td><a href="mailto:studiosg@giustetti.net">Simone Giustetti</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://www.freshports.org/emulators/wine/">
+      <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
+    </td>
+    <td> <b><a href="http://www.freshports.org/emulators/wine/">Descarregar pacotes FreeBSD</a></b>
+         - código fonte para FreeBSD 5.3 ou mais novo</td>
+    <td><a href="mailto:gerald@pfeifer.com">Gerald Pfeifer</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">
+      <img src="{$root}/images/distro/pcbsd.png" width="50" height="50" alt="FreeBSD" border="0"></a>
+    </td>
+    <td> <b><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">Descarregar pacotes para PC-BSD</a></b>
+         - .pbi binários para para PC-BSD (sistema baseado em FreeBSD)</td>
+    <td><a href="mailto:kris@pcbsd.com">Kris Moore</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://www.sunfreepacks.com/">
+      <img src="{$root}/images/distro/solaris.png" width="50" height="50" alt="Solaris 10" border="0"></a>
+    </td>
+    <td> <b><a href="http://www.sunfreepacks.com/">Descarregar pacotes para Solaris 10, SXCE</a></b>
+        -  pacotes binários ASwine, ASwine-SXCE .pkg para Solaris 10 e SXCE x86</td>
+    <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://hub.opensolaris.org/bin/view/Community+Group+desktop/wine">
+      <img src="{$root}/images/distro/opensolaris.png" width="50" height="50" alt="OpenSolaris" border="0"></a>
+    </td>
+    <td> <b><a href="http://hub.opensolaris.org/bin/view/Community+Group+desktop/wine">Descarregar pacotes para OpenSolaris</a></b>
+        - .pkg binários para OpenSolaris x86</td>
+    <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://maemo.org/packages/view/wine/">
+      <img src="{$root}/images/distro/maemo.png" width="50" height="50" alt="Maemo" border="0"></a>
+    </td>
+    <td> <b><a href="http://maemo.org/packages/view/wine/">Descarregar pacotes para Maemo</a></b>
+        - deb binários para Maemo x86 e Maemo ARM</td>
+    <td><a href="http://maemo.org/profile/view/onion/">Kaj-Michael Lang</a></td>
+  </tr>
+
+
+</table>
+
+<h2 style="margin-bottom: 10px;"><a name="binary"></a>Ferramentas de Terceiros</h2>
+
+<p>Por vezes uma customização do Wine ajuda certas aplicações a funcionarem, mas esta mudança não pode ser incorporada no Wine por alguma razão. Para ajudar a superar as atuais deficiências no Wine, diversas aplicações de terceiros foram criados para atender aos usuários finais. Estas aplicações não tem suporte por parte dos desenvolvedores do Wine, mas pode ser que você ache-as úteis. Para mais informações leia <a href="http://wiki.winehq.org/ThirdPartyApplications">a página de nossa wiki</a> sobre ferramentas
+de terceiros.
+
+<h2><a name="source"></a>Downloads de Código Fonte do Wine</h2>
+
+<table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Localização</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Descrição</font></b></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td> <a href="http://sourceforge.net/projects/wine/files/Source/" target="_blank">sourceforge.net</a></td>
+    <td> Nosso sítio oficial para lançamentos. </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td> <a href="http://wiki.winehq.org/GitWine">source.winehq.org/git</a> </td>
+    <td> Para acessar a última versão de desenvolvimento. </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td><a href="http://ibiblio.org/pub/linux/system/emulators/wine/">ibiblio.org</a></td>
+    <td> Sítio alternativo para o descarregamento dos tarballs com código fonte e documentação oficiais. </td>
+  </tr>
+
+</table>
+
+<div style="margin: 10px; padding: 5px; border: 1px solid #C0C0C0; background-color: #F0F0F0;"><b>Nota:</b> Consulte <a href="http://wiki.winehq.org/Recommended_Packages">pacotes recomendados</a> para ajuda com a compilação e configuração do Wine.</div>
+
