@@ -1,0 +1,17 @@
+<news>
+<date>16 Mart 2012</date>
+<title>Wine 1.5.0 Yayınlandı</title>
+<body>
+<p> Wine 1.5.0 geliştirme sürümü şimdi kullanılabilir.</p>
+<p> Bu sürümdeki <a href="{$root}/announce/1.5.0">yenilikler</a> :
+<ul>
+  <li>Gecko motoru yeni versiyonu.</li>
+  <li>Mac OS X Çöp kullanmak için kısmi destek.</li>
+  <li>GdiPlus değişken yol için destek.</li>
+  <li>Çeşitli MSXML gelişmeleri.</li>
+  <li>64-bit işleme için düzeltmeler.</li>
+  <li>Çeşitli hata düzeltmeleri.</li>
+</ul></p>
+<p><p>Kaynağı <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.0.tar.bz2">artık kullanımda</a>.
+İnşa sürecindeki ikili paketler kısa zaman içinde <a href="{$root}/download">indirme</a> konumunda yerini alacaktır.
+</p></body></news>

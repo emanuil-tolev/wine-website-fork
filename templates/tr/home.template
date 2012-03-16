@@ -1,7 +1,7 @@
-<!--TITLE:[Run Windows applications on Linux, BSD, Solaris and Mac OS X]-->
-<!--BLURB:[Run Windows applications on Linux, BSD, Solaris and Mac OS X.]-->
+<!--TITLE:[Linux, BSD, Solaris ve Mac OS X üzerinde Windows uygulamaları çalıştır]-->
+<!--BLURB:[Linux, BSD, Solaris ve Mac OS X üzerinde Windows uygulamaları çalıştır.]-->
 <!--META_KEYWORDS:[windows, linux, macintosh, solaris, freebsd]-->
-<!--META_DESCRIPTION:[Open Source Software for running Windows applications on other operating systems.]-->
+<!--META_DESCRIPTION:[Diğer işletim sistemleri üzerinde Windows uygulamalarını çalıştırmak için Açık Kaynaklı Yazılım.]-->
 <!--STYLE:[content_nobox]-->
 
 <div id="main_left">
@@ -70,14 +70,14 @@
             <td style="padding-left: 15px; padding-bottom: 2px;">
                 <b><a href="{$root}/announce/{$config_stable_release}">Wine&nbsp;{$config_stable_release}</a></b>
                 <span class="small">
-                  (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_stable_release}">shortlog</a>)
+                  (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_stable_release}">değişiklikler</a>)
                 </span>
             </td></tr>
             <tr><td>Geliştirme:</td>
             <td style="padding-left: 15px;">
                 <b><a href="{$root}/announce/{$config_master_release}">Wine&nbsp;{$config_master_release}</a></b>
                 <span class="small">
-                  (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_master_release}">shortlog</a>)
+                  (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_master_release}">değişiklikler</a>)
                 </span>
             </td></tr>
             </table>
