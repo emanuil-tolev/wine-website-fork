@@ -1,0 +1,17 @@
+<news>
+<date>Marzec 16, 2012</date>
+<title>Wydano Wine 1.5.0</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.5.0 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.5.0">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Nowa wersja silnika Gecko.</li>
+  <li>Częściowa obsługa kosza dla Mac OS X.</li>
+  <li>Obsługa ścieżek gradientów w GdiPlus.</li>
+  <li>Rozmaite ulepszenia dla MSXML.</li>
+  <li>Poprawki do obsługi wyjątków w 64-bitach.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.0.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
