@@ -122,7 +122,7 @@ Spring. Téléchargez les paquets 2010.0 si votre Mandriva est la première vers
       <img src="{$root}/images/distro/slackware.png" width="50" height="50" alt="Slackware Linux" border="0"></a>
     </td>
     <td> <b><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">Paquets Slackware</a></b>
-         - .txz binaires (Slackware 13.1) ou .tgz (pour les versions antérieures)</td>
+         - .txz binaires (Slackware 13.37) ou .tgz (pour les versions antérieures)</td>
     <td><a href="mailto:studiosg@giustetti.net">Simone Giustetti</a></td>
   </tr>
 
@@ -162,6 +162,14 @@ Spring. Téléchargez les paquets 2010.0 si votre Mandriva est la première vers
     <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
   </tr>
 
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://maemo.org/packages/view/wine/">
+      <img src="{$root}/images/distro/maemo.png" width="50" height="50" alt="Maemo" border="0"></a>
+    </td>
+    <td> <b><a href="http://maemo.org/packages/view/wine/">Paquets Maemo</a></b>
+        - .deb binaire pour Maemo x86 et Maemo ARM</td>
+    <td><a href="http://maemo.org/profile/view/onion/">Kaj-Michael Lang</a></td>
+  </tr>
 
 </table>
 
@@ -170,9 +178,9 @@ Spring. Téléchargez les paquets 2010.0 si votre Mandriva est la première vers
 
 <p>Parfois, il arrive qu'une adaptation de Wine permette à une application de
 fonctionner correctement, mais qu'elle ne puisse être incorporée à Wine pour une
-raison quelconque. Pour pallier des imperfections actuelles de Wine, diverses
-applications tierces pour utilisateurs finaux ont été conçues au cours des
-années. Les développeurs Wine ne supportent en aucun cas ces applications, mais
+raison quelconque. Pour pallier aux imperfections actuelles de Wine, diverses
+applications tierces pour utilisateurs finaux ont été conçues au fil des ans.
+Les développeurs Wine ne supportent en aucun cas ces applications, mais
 il se peut que vous les trouviez utiles. Pour plus d'informations, voyez notre page
 wiki sur les <a
 href="http://wiki.winehq.org/ThirdPartyApplications">applications tierces</a>.</p>
