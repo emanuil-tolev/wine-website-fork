@@ -92,7 +92,7 @@
   many bug reports that need to be diagnosed and then many bugs to fix.</p>
 <p>Thus bug diagnosis and support are two closely related activities that are 
   very important to Wine. So we need people willing to answer the questions 
-  and issues that pop up on the newsgroup, wine-users and Bugzilla; and then 
+  and issues that pop up on the newsgroup, wine-users and Bugzilla, and then
   to triage them:</p>
 <ul>
   <li>General Wine issues can usually be answered directly</li>
@@ -105,12 +105,13 @@
     (requires getting enough of an idea of where the problem comes from to 
     determine which debug options to use). Once this is done, it will be
     much easier for Wine developers to find the exact source of the bug and
-    to come up with a fix.If the problem is not quickly resolved on the newsgroup
-    or wine-users then starting a bug report in bugzilla. Search through the 
+    to come up with a fix. If the problem is not quickly resolved on the newsgroup
+    or wine-users then start a bug report in bugzilla. Search through the
     unconfirmed and new bug reports and get them in proper shape for developers.
     Subscribe to to wine bugs (<a href="mailto:wine-bugs@winehq.org">wine-bugs@winehq.org</a>) 
-    This read-only list has all entries for unassigned bugs sent to it.Confirming unconfirmed bugs and 
-    suggesting debug channels to try are just some of the tasks that need to be done.</li>
+    This read-only list has all entries for unassigned bugs sent to it.
+    Confirming unconfirmed bugs and suggesting debug channels to try are just
+    some of the tasks that need to be done.</li>
 </ul>
 <p>See also Dan Kegel's <a href="http://kegel.com/wine/qa/">Wine QA Project</a> page for
   a step-by-step introduction for new Wine QA volunteers.</p>
@@ -121,9 +122,9 @@
     disable FreeType support, etc.</li>
   <li>General knowledge of Wine issues, mostly gleaned by following the 
      mailing lists and newsgroup.</li>
-  <li>Knowing how to switch from native to built-in libraries and vice-versa.</li>
+  <li>Knowing how to switch from native to built-in libraries and vice versa.</li>
   <li>Being able to analyze a log to determine which libraries to switch
-    from built-in to native and vice-versa would be a plus.</li>
+    from built-in to native and vice versa would be a plus.</li>
 </ul>
 
 <h2 id="devel">Development</h2>
@@ -134,8 +135,8 @@
 
 <p>The goal of Wine's conformance testing is to make sure that the behavior 
   of Wine's APIs conforms to that of the corresponding Windows API. As there are many versions
-  Window's from 95 to XP we need people to write the test as well as volunteers to run
-  the test on Windows. The test suite is far from complete but every little bit helps.</p>
+  of Windows from 95 to 7 we need people to write tests as well as volunteers to run
+  them on Windows. The test suite is far from complete but every little bit helps.</p>
 <ul>
   <li>Because they can be run in an automated way and on a regular basis, 
     the tests help detect regressions in Wine.</li>
@@ -143,7 +144,7 @@
     features and then help the Wine implementer make sure his implementation
     is correct</li>
   <li>Tests can even be written on Windows by non Wine developers</li>
-  <li>Test can be performed by non programers</li>
+  <li>Test can be performed by non programmers</li>
 </ul>
 <p>Required skills:</p>
 <ul>
@@ -151,7 +152,7 @@
   <li>Knowledge of the APIs being tested</li>
   <li>Using Linux/Unix is <strong>not necessary</strong>; conformance tests can be
     written on Windows.</li>
-  <li>A Windows install for testing... 95, 98, 98SE, ME, NT, 2000, XP, Vista</li>
+  <li>A Windows install for testing... 95, 98, 98SE, ME, NT, 2000, XP, Vista, 7</li>
   <li>Coding skills are <strong>not necessary</strong> for running the tests.</li>
 </ul>
 
@@ -276,7 +277,7 @@
   for installing and configuring Wine in a bit more details than the README while being much
   smaller than the Wine User Guide (it could actually be a chapter of that guide). Then that
   document could be translated in multiple languages which would at least make it easier for
-  non-english speaking people to set up and install Wine.</p>
+  non-English speaking people to set up and install Wine.</p>
 <p>Requirements:</p>
 <ul>
   <li>Relatively good understanding of programming and Wine preferred</li>
@@ -290,7 +291,7 @@
 <p>Currently we almost have no Public Relationship management at all.
   This should change for the better.</p>
 <p>Currently almost the only form of PR is "preaching to the choir",
-  since we're having articles on online IT sites (by far most are Linux only !).
+  since we're having articles on online IT sites (by far most are Linux only!).
   We should have much more coverage on traditional Window'ish sites and,
   most importantly, in dead-tree newspapers, to enlighten the general public
   also known as The Great Unwashed Masses!</p>
