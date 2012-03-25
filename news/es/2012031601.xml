@@ -1,0 +1,17 @@
+<news>
+<date>Marzo 16, 2012</date>
+<title>Wine 1.5.0 Liberado</title>
+<body>
+<p> La versión de desarrollo Wine 1.5.0 se encuentra ahora disponible.</p>
+<p> <a href="{$root}/announce/1.5.0">Novedades</a> en esta versión:
+<ul>
+  <li>Nueva versión del motor Gecko.</li>
+  <li>Soporte parcial para el uso de la Papelera en Mac OS X.</li>
+  <li>Soporte para rutas de gradientes en GdiPlus.</li>
+  <li>Varias mejoras MSXML.</li>
+  <li>Correcciones en el manejo de excepciones de 64-bit.</li>
+  <li>Correción de errores varios.</li>
+</ul></p>
+<p><p>El código fuente <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.0.tar.bz2">ya está disponible</a>.
+Los paquetes binarios están en proceso de construcción, y pronto aparecerán en sus respectivos <a href="{$root}/download">lugares de descarga</a>.
+</p></body></news>
