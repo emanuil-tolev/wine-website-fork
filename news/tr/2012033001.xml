@@ -1,0 +1,16 @@
+<news>
+<date>30 Mart 2012</date>
+<title>Wine 1.5.1 Yayınlandı</title>
+<body>
+<p> Wine 1.5.1 geliştirme sürümü şimdi kullanılabilir.</p>
+<p> Bu sürümdeki <a href="{$root}/announce/1.5.1">yenilikler</a> :
+<ul>
+  <li>Gecko şimdi çoğu durumda tercih edilen yerleşik JavaScript.</li>
+  <li>Ölçeklenebilir yazı tipi kaynakları için destek.</li>
+  <li>Ses ve video oynatma için düzeltmeler.</li>
+  <li>JScript komut dosyası kod çözme desteği.</li>
+  <li>Çeşitli hata düzeltmeleri.</li>
+</ul></p>
+<p><p>Kaynağı <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.1.tar.bz2">artık kullanımda</a>.
+İnşa sürecindeki ikili paketler kısa zaman içinde <a href="{$root}/download">indirme</a> konumunda yerini alacaktır.
+</p></body></news>
