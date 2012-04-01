@@ -1,0 +1,16 @@
+<news>
+<date>Marzo 30, 2012</date>
+<title>Wine 1.5.1 Liberado</title>
+<body>
+<p> La versión de desarrollo Wine 1.5.1 se encuentra ahora disponible.</p>
+<p> <a href="{$root}/announce/1.5.1">Novedades</a> en esta versión:
+<ul>
+  <li>El soporte integrado de JavaScript es ahora preferido a Gecko.</li>
+  <li>Soporte para fuentes escalables.</li>
+  <li>Mejoras en la reproducción de audio y vídeo.</li>
+  <li>Soporte para la decodificación de scripts en JScript.</li>
+  <li>Corrección de errores varios.</li>
+</ul></p>
+<p><p>El <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.1.tar.bz2">código fuente</a> ya está disponible.
+Los paquetes binarios están en proceso de construcción, y pronto aparecerán en sus respectivos <a href="{$root}/download">lugares de descarga</a>.
+</p></body></news>
