@@ -12,9 +12,13 @@
 
 class data
 {
-    // create shopping cart object
-    function data ()
-    {        
+    // defines
+    public $stop_page;
+    public $languages;
+
+    // constuctor
+    public function __construct ()
+    {
         // plugin stop pages
         // add the template path here to make anything after the path in the URL
         // be stored in the static PAGE_PARAMS
@@ -61,8 +65,6 @@ class data
                                                'change' => 'Lisan Değiştir'
                                               )
                                 );
-
-        return;
     }
 }
 ?>
