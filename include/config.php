@@ -6,9 +6,10 @@
   by Jeremy Newman <jnewman@codeweavers.com>
 */
 
-class config 
-{ 
-    function config ()
+class config
+{
+    // constructor
+    public function __construct ()
     {
         // get files passed
         $files = func_get_args();
@@ -19,31 +20,30 @@ class config
             // read global config file
             $this->readConfig($path);
         }
-    // end of config()
     }
-    
+
     // reads config from text file
-    function readConfig ($file)
+    private function readConfig ($file)
     {
         if (file_exists($file))
         {
             $fd = fopen ($file, "r");
             while (!feof ($fd)) {
                 $buffer = trim(fgets($fd, 4096));
-                if (ereg('^\#', $buffer)) continue;
+                if (preg_match('/^\#/', $buffer)) continue;
                 if ($buffer == "") continue;
                 $arr = preg_split('/:\s+/',$buffer,2);
                 $arr[1] = preg_replace("/<br>/","\n",$arr[1]);
-                if (ereg('^\@', $arr[0]))
+                if (preg_match('/^\@/', $arr[0]))
                 {
                     // array
-                    $arr[0] = ereg_replace('\@', '', $arr[0]); 
+                    $arr[0] = preg_replace('/\@/', '', $arr[0]); 
                     $this->$arr[0] = preg_split('/,\s+/', $arr[1]);
                 }
-                else if (ereg('^\%', $arr[0]))
+                else if (preg_match('/^\%/', $arr[0]))
                 {
                     // assoc array
-                    $arr[0] = ereg_replace('\%', '', $arr[0]);
+                    $arr[0] = preg_replace('/\%/', '', $arr[0]);
                     $this->$arr[0] = array();
                     $params = preg_split('/,\s+/', $arr[1]);
                     while (list($n, $m) = each($params))
@@ -59,7 +59,7 @@ class config
                     {
                         // load other vars into existing var
                         $arr[1] = preg_replace('/(.*)\{\$([a-z0-9_]+)\}(.*)/', "\\1,\\2,\\3", $arr[1]);
-                        list($a,$b,$c) = split(",", $arr[1], 3);
+                        list($a,$b,$c) = preg_split("/\,/", $arr[1], 3);
                         if ($b and isset($this->$b))
                             $arr[1] = $a.$this->$b.$c;
                         else
@@ -72,7 +72,8 @@ class config
         }
         else
         {
-            trigger_error("Unable to read config: ".$file);
+            trigger_error("ERROR: Unable to read config!", E_USER_ERROR);
+            exit();
         }
     // end of readConfig
     }
