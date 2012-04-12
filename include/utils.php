@@ -101,16 +101,28 @@ function get_files ($dir, $filter = null)
 {
     // read dir
     $files = array();
-        
     $d = opendir($dir);
     while($entry = readdir($d))
     {
-    	if ($filter)
-	    {
-	        if(!eregi("(.+)\\.".$filter, $entry))
-	            continue;
-	    }
-    	array_push($files, $entry);
+        if (is_dir($dir.$entry))
+            continue;
+        if (is_array($filter))
+        {
+            $in = 0;
+            foreach ($filter as $f)
+            {
+                if (preg_match('/(.+)\\.'.$f.'/', $entry))
+                    $in = 1;
+            }
+            if (!$in)
+                continue;
+        }
+        else if ($filter)
+        {
+            if (!preg_match('/(.+)\\.'.$filter.'/', $entry))
+                continue;
+        }
+        array_push($files, $entry);
     }
     closedir($d);
     
@@ -127,11 +139,11 @@ function get_xml_tags ($file, $tags = null)
     {
         $content = array();
         $fp = @fopen($file, "r");
-	    $data = fread($fp, filesize($file));
-	    @fclose($fp);
+        $data = fread($fp, filesize($file));
+        @fclose($fp);
         foreach ($tags as $tag)
         {
-            if (eregi("<" . $tag . ">(.*)</" . $tag . ">", $data, $out))
+            if (preg_match("/\<{$tag}\>(.*)\<\/{$tag}\>/Us", $data, $out))
             {
                 $content[$tag] = $out[1];
             }
