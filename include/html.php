@@ -176,12 +176,26 @@ class html
         // create error page (overwrites the current page in progress)
         $this->page = $message;
         // show page
-        $this->showpage($config->theme, $config->title." - Internal Error");
+        $this->clear_buffer();
+        $this->showpage($config->theme, "{$config->title} - Internal Error");
         exit();
     }
 
+    // SHUTDOWN HANDLER (FATAL PHP errors)
+    public function error_shutdown ()
+    {
+        // get information about last error
+        $error = error_get_last();
+        // handle error if defined
+        if (!empty($error))
+        {
+            // output error
+            $this->error_handler($error['type'], $error['message'], $error['file'], $error['line']);
+        }
+    }
+
     // ERROR_HANDLER
-    public function error_handler ($errno, $errstr, $errfile, $errline, $errcontext)
+    public function error_handler ($errno, $errstr, $errfile, $errline, $errcontext = null)
     {
         global $config;
         
@@ -219,7 +233,7 @@ class html
         }
 
         // show additional debug output
-        if ($config->web_debug and function_exists('debug_backtrace'))
+        if ($config->web_debug and function_exists('debug_backtrace') and !empty($errcontext))
         {
             // build context
             $ctx = '';
@@ -318,7 +332,7 @@ class html
         else if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]))
         {
             // load from web browser environment
-            $avail = split(',', array_shift(split(";", $_SERVER["HTTP_ACCEPT_LANGUAGE"])));
+            $avail = preg_split('/,/', array_shift(preg_split('/;/', $_SERVER["HTTP_ACCEPT_LANGUAGE"])));
             if (isset($avail[0]))
             {
                 // if first language is a variation, use the parent language
@@ -378,26 +392,24 @@ class html
     // HTML A HREF
     public function ahref ($label, $url = "", $extra = "")
     {
+        if (!$label and !$url)
+            return " &nbsp; ";
         if ($extra)
-            $extra = " $extra";
-        if (!eregi(".",$label) and $url)
+            $extra = " {$extra}";
+        if (!$label and $url)
         {
-            if (ereg("@", $url))
+            if (preg_match('/\@/', $url))
             {
-                return '<a href="mailto:'.$url.'"'.$extra.'>'.$url.'</a>';
+                return "<a href=\"mailto:{$url}\"{$extra}>{$url}</a>";
             }
             else
             {
-                return '<a href="'.$url.'"'.$extra.'>'.$this->shorten($url, 20).'</a>';
+                return "<a href=\"{$url}\"{$extra}>".$this->shorten($url, 40)."</a>";
             }
-        }
-        else if (!eregi(".", $label))
-        {
-            return ' &nbsp; ';
         }
         else
         {
-            return '<a href="'.$url.'"'.$extra.'>'.$label.'</a>';
+            return "<a href=\"{$url}\"{$extra}>{$label}</a>";
         }
     }
 
@@ -550,7 +562,7 @@ class html
             $size = 'style="width:100%;" ';
         else
             $size = 'size="'.$size.'" ';
-        $value = ereg_replace('\{\$root\}', '&#123;&#036;root&#125;', $value);            
+        $value = preg_replace('/\{\$root\}/', '&#123;&#036;root&#125;', $value);
         $str = '<input type="text" name="'.$name.'" '.$size.'value="'.$value.'" '.$extra.'/>'."\n";
         return $str;
     }
@@ -576,7 +588,7 @@ class html
     // FORM INPUT TEXT AREA
     public function form_input_textarea ($name, $cols = 20, $rows = 5, $value = "")
     {
-        $value = ereg_replace('\{\$root\}', '&#123;&#036;root&#125;', $value);
+        $value = preg_replace('/\{\$root\}/', '&#123;&#036;root&#125;', $value);
         if ($cols >= 100)
             $cols = 'style="width:100%;" cols="72" ';
         else
@@ -842,9 +854,9 @@ class html
     }
 
     // ADD BR (replace \n with <br>)
-    public function add_br ($text = "")
+    public static function add_br ($text = "")
     {
-        $text = ereg_replace("\n","<br />\n",$text);
+        $text = preg_replace("/\n/", "<br>\n", $text);
         return $text;
     }
     
@@ -907,14 +919,14 @@ class html
             // quote message text
             if ($class)
             {
-                if (ereg("^&gt; &gt; &gt; &gt;",$arr[$c]) or ereg("^&gt;&gt;&gt;&gt;",$arr[$c]))
-                    $arr[$c] = $this->span($arr[$c], 'class="'.$class.'d"');
-                else if (ereg("^&gt; &gt; &gt;",$arr[$c]) or ereg("^&gt;&gt;&gt;",$arr[$c]))
-                    $arr[$c] = $this->span($arr[$c], 'class="'.$class.'c"');
-                else if (ereg("^&gt; &gt;",$arr[$c]) or ereg("^&gt;&gt;",$arr[$c]))
-                    $arr[$c] = $this->span($arr[$c], 'class="'.$class.'b"');
-                else if (ereg("^&gt;", $arr[$c]))
-                    $arr[$c] = $this->span($arr[$c], 'class="'.$class.'a"');
+                if (preg_match('/^&gt;\s?&gt;\s?&gt;\s?&gt;/', $arr[$c]))
+                    $arr[$c] = $this->span($arr[$c], "class=\"{$class}d\"");
+                else if (preg_match('/^&gt;\s?&gt;\s?&gt;/', $arr[$c]))
+                    $arr[$c] = $this->span($arr[$c], "class=\"{$class}c\"");
+                else if (preg_match('/^&gt;\s?&gt;/', $arr[$c]))
+                    $arr[$c] = $this->span($arr[$c], "class=\"{$class}b\"");
+                else if (preg_match('/^&gt;/', $arr[$c]))
+                    $arr[$c] = $this->span($arr[$c], "class=\"{$class}a\"");
             }
         }
         $text = implode("\n", $arr);
@@ -1030,26 +1042,25 @@ class html
     public function emailify ($text, $convert = 0)
     {
         // fix quoted printable
-        if (ereg("^=", $text))
+        if (preg_match('/^\=/', $text))
         {
             $text = quoted_printable_decode($text);
             $text = mb_convert_encoding($text, 'UTF-8');
-            $text = eregi_replace("^\=\?[a-z0-9\-]+\?Q\?(.*)\?\=", "\\1", $text);
+            $text = preg_replace('/^\=\?[a-z0-9\-]+\?Q\?(.*)\?\=/', "\\1", $text);
         }
-        $emreg = "(.*) (<|&lt;)([a-zA-Z0-9_\.\+\/-]+)@([a-zA-Z0-9_\.-]+\.[a-zA-Z0-9]+)(>|&gt;)(.*)";
-        if ($convert and ereg($emreg, $text))
+        $emreg = '/(.*) (\<|\&lt\;)([a-zA-Z0-9_\.\+\/-]+)@([a-zA-Z0-9_\.-]+\.[a-zA-Z0-9]+)(\>|\&gt\;)(.*)/';
+        if ($convert and preg_match($emreg, $text))
         {
             // long format puts the name in and hides the email in the href
-            //$text = ereg_replace($emreg, "<a href=\"mailto:\\3@\\4\">\\1</a>", $text);
-            $text = preg_replace("/".$emreg."/e", "'<a href=\"mailto:\\3@\\4\">'.wordwrap('\\1', 25, ' ', 1).'</a>'", $text);
+            $text = preg_replace($emreg."e", "'<a href=\"mailto:\\3@\\4\">'.wordwrap('\\1', 25, ' ', 1).'</a>'", $text);
         }
         else
         {
             // regular emails
-            $emailreg = "([a-zA-Z0-9_\.\+\/-]+)@([a-zA-Z0-9_\.-]+\.[a-zA-Z0-9]+)";
-            if (ereg($emailreg,$text))
+            $emailreg = '/([a-zA-Z0-9_\.\+\/-]+)@([a-zA-Z0-9_\.-]+\.[a-zA-Z0-9]+)/';
+            if (preg_match($emailreg, $text))
             {
-                    $text = ereg_replace($emailreg, "<a href=\"mailto:\\1@\\2\">\\1@\\2</a>", $text);
+                    $text = preg_replace($emailreg, "<a href=\"mailto:\\1@\\2\">\\1@\\2</a>", $text);
             }
         }
         return $text;
@@ -1075,13 +1086,13 @@ class html
         return $text;
     }
 
-    // SHORTEN (take a string, and limit its length)
-    public function shorten ($str = "", $max = 40)
+    // SHORTEN (take a string, and limit its length [multibyte compatible])
+    public static function shorten ($str = "", $max = 40)
     {
-        $str = ereg_replace("\n","", $str);
-        if (strlen($str) > $max)
+        $str = preg_replace('/\n/', "", $str);
+        if (mb_strlen($str) > $max)
         {
-            $str = substr($str,0,$max);
+            $str = mb_substr($str, 0, $max);
             $str .= "...";
         }
         return $str;
@@ -1093,14 +1104,14 @@ class html
         // if not a list, try converting it into a list
         if (!is_array($vars))
         {
-            list($url,$params) = split('\?', $vars, 2);
-            if (ereg(';', $params))
+            list($url,$params) = preg_split('/\?/', $vars, 2);
+            if (preg_match('/;/', $params))
             {
-                $urls = split(';',$params);
+                $urls = preg_split('/;/',$params);
                 $vars = array();
                 foreach ($urls as $pair)
                 {
-                    list($key,$value) = split('=',$pair);
+                    list($key,$value) = preg_split('/=/',$pair);
                     $vars[$key] = $value;
                 }
             }
@@ -1175,7 +1186,7 @@ class html
             $c = chr(mt_rand (0,255));
             if (in_array(strtolower($c), array('0', 'o' ,'i', 'l')))
                 continue;
-            if (eregi("[a-z0-9]", $c)) $nps = $nps.$c;
+            if (preg_match("/[a-z0-9]/i", $c)) $nps = $nps.$c;
         }
         return ($nps);
     }
@@ -1301,7 +1312,7 @@ class html
             }
             if (preg_match('/\{lc\(\$'.$key.'\\)}/', $orig))
             {
-                $in = str_replace('{lc($'.$key.')}', ereg_replace(' ','_',strtolower($val)), $in);
+                $in = str_replace('{lc($'.$key.')}', preg_replace('/ /','_',strtolower($val)), $in);
             }
             if (preg_match('/\{htmlspecialchars\(\$'.$key.'\\)}/', $orig))
             {
@@ -1519,13 +1530,13 @@ class html
         trigger_error('Redirect URL not found!', E_USER_ERROR);    
     }
 
-    // VERIFY_REFERER (checks to see if the referer is set to the website url)
-    public function verify_referer ()
+    // VERIFY_REFERER (checks to see if the referrer is set to the website url)
+    public static function verify_referer ()
     {
-        if (eregi($GLOBALS['config']->base_url, $_SERVER['HTTP_REFERER']) or eregi($GLOBALS['config']->base_url_secure, $_SERVER['HTTP_REFERER']))
-            return 1;
+        if (strpos($_SERVER['HTTP_REFERER'], $_SERVER['HTTP_HOST']))
+            return true;
         else
-            return 0;
+            return false;
     }
 
     // CLEAR BUFFER
