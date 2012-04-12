@@ -18,7 +18,7 @@ if (!preg_match('/\/$/', $_SERVER['PHP_SELF']))
 if (isset($_SERVER['PATH_INFO']))
 {
     // set the Current Page
-    $dirs = split('/', $_SERVER['PATH_INFO']);
+    $dirs = preg_split('/\//', $_SERVER['PATH_INFO']);
     array_shift($dirs);
     if (count($dirs) > 1)
     {
@@ -59,8 +59,8 @@ if (isset($_SERVER['PATH_INFO']))
         
         // cleanup and define page
         $page = join('/',$good_dirs);
-        if (ereg('/$', $page))
-            $page = ereg_replace('/$', '', $page);
+        if (preg_match('/\/$/', $page))
+            $page = preg_replace('/\/$/', '', $page);
         unset($c);
     }
     else
