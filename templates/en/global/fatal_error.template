@@ -1,0 +1,26 @@
+
+<style>
+#fatal_error {
+    width: 400px; margin: 10px 0 0 180px; padding: 100px;
+    font-family: courier;
+    background-color: blue; color: white;
+}
+#fatal_error h1  { margin: 0 100px 1em 100px; font-size: 14px; background-color: white; color: blue; text-align: center; }
+#fatal_error pre { font-family: courier; }
+</style>
+
+<div id="fatal_error" class="cornerround dropshadow">
+<h1>Fatal Error</h1>
+<p><b>Sorry</b>, there has been an internal error in our system. Your request
+could not be processed at this time.</p>
+<pre width="72" style="white-space: pre-wrap;">
+<b>Error:</b>  {$errstr}
+<b>No:</b>     {$errno}
+<b>Line:</b>   {$errline}
+<b>File:</b>   {$errfile}
+
+{$debug}
+</pre>
+<p class="center">Contact the <a href="mailto:web-admin@winehq.org">webmaster</a> if this error persists.</p>
+</div>
+
