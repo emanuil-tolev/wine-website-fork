@@ -7,7 +7,6 @@
 */
 
 // load wwn object
-check_and_require("wwn");
 $wwn = new wwn();
 
 // change display mased on mode
