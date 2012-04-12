@@ -332,7 +332,8 @@ class html
         else if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]))
         {
             // load from web browser environment
-            $avail = preg_split('/,/', array_shift(preg_split('/;/', $_SERVER["HTTP_ACCEPT_LANGUAGE"])));
+            $hal = preg_split("/\;/", $_SERVER["HTTP_ACCEPT_LANGUAGE"]);
+            $avail = preg_split('/\,/', array_shift($hal));
             if (isset($avail[0]))
             {
                 // if first language is a variation, use the parent language
@@ -345,7 +346,7 @@ class html
                     $lang = $avail[0];
                 }
             }
-            unset($avail);
+            unset($hal, $avail);
         }
         
         // return language
