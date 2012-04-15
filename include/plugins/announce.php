@@ -39,7 +39,7 @@ if ($arr = file($announce))
         }           
         else if ($in_bugs)
         {
-            $arr[$c] = preg_replace("^/( +)([0-9]+)/",
+            $arr[$c] = preg_replace("/^( +)([0-9]+)/",
                                     "\\1<a href=\"".$config->bug_system."\\2\">\\2</a>",
                                     $arr[$c]);
         }
