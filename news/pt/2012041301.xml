@@ -1,0 +1,17 @@
+<news>
+<date>13 de Abril de 2012</date>
+<title>Wine 1.5.2 Lançado</title>
+<body>
+<p> A versão de desenvolvimento 1.5.2 já está disponível.</p>
+<p> <a href="{$root}/announce/1.5.2">Novidades</a> desta versão:
+<ul>
+  <li>Melhoria no sistema de nomeação de dispositivos de áudio.</li>
+  <li>Melhor suporte a encontrar fontes de sistema no Mac OS X.</li>
+  <li>Suporte inicial à codificação JPEG.</li>
+  <li>Várias correções na impressão.</li>
+  <li>Melhorias na cache URL.</li>
+  <li>Várias correções de bugs.</li>
+</ul></p>
+<p><p>O código fonte está <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.2.tar.bz2">disponível agora</a>.
+Pacotes binários estão em processo de construção e em breve estarão em suas respectivas <a href="{$root}/download">sessões da área de downloads</a>.
+</p></body></news>
