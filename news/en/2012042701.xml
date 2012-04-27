@@ -1,0 +1,17 @@
+<news>
+<date>April 27, 2012</date>
+<title>Wine 1.5.3 Released</title>
+<body>
+<p> The Wine development release 1.5.3 is now available.</p>
+<p> <a href="{$root}/announce/1.5.3">What's new</a> in this release:
+<ul>
+  <li>Support for graphics bounds tracking.</li>
+  <li>A number of fixes to the builtin Internet Explorer.</li>
+  <li>Support for displaying ARM code in the Wine debugger.</li>
+  <li>Various DirectMusic improvements.</li>
+  <li>Better namespace support in MSXML.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.3.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
