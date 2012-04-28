@@ -1,0 +1,17 @@
+<news>
+<date>Abril 27, 2012</date>
+<title>Wine 1.5.3 Liberado</title>
+<body>
+<p> La versión de desarrollo Wine 1.5.3 se encuentra ahora disponible.</p>
+<p> <a href="{$root}/announce/1.5.3">Novedades</a> en esta versión:
+<ul>
+  <li>Soporte para la monitorización de límites de gráficos.</li>
+  <li>Varias correcciones en el Internet Explorer integrado.</li>
+  <li>Soporte para visualizar código ARM en el depurador de código de Wine.</li>
+  <li>Varias mejoras para DirectMusic.</li>
+  <li>Soporte mejorado para espacios de nombres en MSXML.</li>
+  <li>Corrección de errores varios.</li>
+</ul></p>
+<p><p>El <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.3.tar.bz2">código fuente</a> ya está disponible.
+Los paquetes binarios están en proceso de construcción, y pronto aparecerán en sus respectivos <a href="{$root}/download">lugares de descarga</a>.
+</p></body></news>
