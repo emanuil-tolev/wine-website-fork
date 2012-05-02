@@ -6,7 +6,7 @@
 <p>It's easy to be a bit overwhelmed when you're new to Wine. Yes there may be a lot of things to 
   do but where should you start? Is there anything simple that can get you started? Is there 
   anything you can do that does not require an intimate knowledge of the Windows API and of 
-  Wine's internals? What if you don't know C? Or if you're not a programmer in the first place?</p>
+  Wine internals? What if you don't know C? Or if you're not a programmer in the first place?</p>
 <p>So here are a few projects that might provide you with a starting point. Note that this list 
   is not an official statement of what should be done on Wine or anything. It's just a list of 
   things that are important and useful. In any case we welcome your feedback. Similarly, if you 
@@ -65,7 +65,7 @@
   application (they cannot buy all the applications out there) or do not know
   it well enough to test it properly.</p>
 <p>You can help even further by becoming an 'application maintainer', that is by 
-  maintaining that application's entry in the <a href="http://appdb.winehq.org/">Application Database</a>. Many 
+  maintaining that application entry in the <a href="http://appdb.winehq.org/">Application Database</a>. Many
   applications can be made to run (or run better) by using just the right mix
   of native (Windows) and built-in (Wine) libraries. By testing the application 
   with various library mix and then documenting your results in the
@@ -80,7 +80,7 @@
     regularly than ten applications once a year.</li>
   <li>Report all regressions to wine-devel, and cooperate with the developers 
     to diagnose the issue.</li>
-  <li>Create and maintain an HOWTO Note on the application page summarizing 
+  <li>Create and maintain a HOWTO note on the application page summarizing 
     all actions required to get the application to run properly, e.g. 
     collected from the comments of visitors on the application/versions pages.</li>
   <li>Coding skills are <strong>not necessary</strong>.</li>
@@ -92,23 +92,23 @@
   many bug reports that need to be diagnosed and then many bugs to fix.</p>
 <p>Thus bug diagnosis and support are two closely related activities that are 
   very important to Wine. So we need people willing to answer the questions 
-  and issues that pop up on the newsgroup, wine-users and Bugzilla, and then
+  and issues that pop up on wine-users and Bugzilla, and then
   to triage them:</p>
 <ul>
   <li>General Wine issues can usually be answered directly</li>
   <li>For application-specific issues one may want to check with the
     application owner (if any) to see if this is a known issue (ideally such
-    issues should be listed in that application's entry)</li>
+    issues should be listed in that application entry)</li>
   <li>Other issues require more work to determine whether the problem is
     reproducible, specific to some environments, and to obtain logs that Wine
     developers can use to determine where the problem comes from
     (requires getting enough of an idea of where the problem comes from to 
     determine which debug options to use). Once this is done, it will be
     much easier for Wine developers to find the exact source of the bug and
-    to come up with a fix. If the problem is not quickly resolved on the newsgroup
-    or wine-users then start a bug report in bugzilla. Search through the
+    to come up with a fix. If the problem is not quickly resolved on
+    wine-users then start a bug report in bugzilla. Search through the
     unconfirmed and new bug reports and get them in proper shape for developers.
-    Subscribe to to wine bugs (<a href="mailto:wine-bugs@winehq.org">wine-bugs@winehq.org</a>) 
+    Subscribe to <a href="http://www.winehq.org/mailman/listinfo/wine-bugs">wine-bugs</a>.
     This read-only list has all entries for unassigned bugs sent to it.
     Confirming unconfirmed bugs and suggesting debug channels to try are just
     some of the tasks that need to be done.</li>
@@ -121,12 +121,12 @@
     users how to switch from managed to unmanaged window management, how to 
     disable FreeType support, etc.</li>
   <li>General knowledge of Wine issues, mostly gleaned by following the 
-     mailing lists and newsgroup.</li>
+     mailing lists.</li>
   <li>Knowing how to switch from native to built-in libraries and vice versa.</li>
   <li>Being able to analyze a log to determine which libraries to switch
     from built-in to native and vice versa would be a plus.</li>
 </ul>
-<p>For more information, see our <a href="http://wiki.winehq.org/BugzillaTriage">bug triage page</a>.</p>
+<p>For more information, see our <a href="http://wiki.winehq.org/BugzillaTriage">bugs triage page</a>.</p>
 
 <h2 id="devel">Development</h2>
 
@@ -134,8 +134,8 @@
 
 <h3 id="conf_tests">Conformance tests</h3>
 
-<p>The goal of Wine's conformance testing is to make sure that the behavior 
-  of Wine's APIs conforms to that of the corresponding Windows API. As there are many versions
+<p>The goal of Wine conformance testing is to make sure that the behavior
+  of Wine APIs conforms to that of the corresponding Windows APIs. As there are many versions
   of Windows from 95 to 7 we need people to write tests as well as volunteers to run
   them on Windows. The test suite is far from complete but every little bit helps.</p>
 <ul>
@@ -186,7 +186,7 @@
   from both sides: put traces in your application and in Wine. All this combined together
   and makes it much easier to detect where Wine is doing something wrong, what and why.  
   Then, since you already know what Wine is supposed to do, you're also in a better position
-  to provide a fix.  You can also test a programming book's examples in Wine. A kit to get
+  to provide a fix.  You can also test the examples of a programming book in Wine. A kit to get
   started and create Web pages showing the results is available
   <a href="http://fgouget.free.fr/wine/booktesting-en.shtml">here</a>.</p>
 <p>Required skills:</p>
@@ -194,7 +194,7 @@
   <li>Testing</li>
   <li>Writing bug reports</li>
   <li>Debugging to fix them if possible</li>
-  <li>Programming in C/C++ if you want to try compiling the programs with Wine lib</li>
+  <li>Programming in C/C++ if you want to try compiling the programs with Winelib</li>
 </ul>
 
 <h3 id ="code_review">Perform a focused code review</h3>
@@ -208,7 +208,7 @@
   This can take some time so one cannot always do it (drop me a line if you think of some
   specific bug to look for but you don't have time). But it's a nice way to get acquainted 
   with the code and you can actually find bugs without needing months of experience on
-  Wine's code.</p>
+  Wine code.</p>
 <p>But be warned though that since your changes will be scattered throughout Wine they
   will be scrutinized by many developers. Furthermore since your changes probably will
   not be direct obvious bug fixes, there may be (founded) resistance. Make sure your
@@ -234,7 +234,7 @@
 <h3 id="doc">Documentation writing</h3>
 
 <p>Wine is in constant need of documentation updates.  Wine has its
-  "<a href="{$root}/site/documentation">Guides</a>," like the Wine User Guide etc.
+  "<a href="{$root}/site/documentation">Guides</a>", like the Wine User Guide etc.
   The SGML source of the Guides can be found in a <a href="http://source.winehq.org/git/docs.git">
   separate Git tree</a>.</p>
 <p>Other important documentation items are the README file
@@ -256,11 +256,11 @@
 
 <h3 id="localized">Localization work</h3>
 
-<p>We need help translating Wine's resources into foreign languages. What this
+<p>We need help translating Wine resources into foreign languages. What this
   covers is common dialogs such as the 'File Open' or 'Print' dialogs,
   informational messages such as the crash dialog, some standard error
-  messages, but also the builtin tools such as Wine's notepad. When not
-  translated these can really impair Wine's usability for non-English
+  messages, but also the builtin tools such as Wine notepad. When not
+  translated these can really impair Wine usability for non-English
   speakers.</p>
 <p>Luckily these are now all translated through standard PO files which makes
   this task relatively easy. For detailed instructions on how to help, see our
