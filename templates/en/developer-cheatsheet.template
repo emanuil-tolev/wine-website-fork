@@ -38,12 +38,12 @@
 
     <ul>
       <li><u>+seh</u> : Structured Exception Handling is invoked either when
-        an application performs an illegal operation (ie crashes) or
+        an application performs an illegal operation (i.e. crashes) or
         occasionally a program will throw their own exceptions. UNIX
         signals are converted into SEH exceptions by Wine and you can
         watch their propagation using this channel. It's handy because
         often applications will trap their own crash to, for instance,
-        peform an emergency save. The most common exception to watch
+        perform an emergency save. The most common exception to watch
         for is STATUS_ACCESS_VIOLATION or <b>0xC0000005</b> which is
         the closest equivalent in Win32 to a segfault. You may also
         see codes which don't appear in the headers, these are
@@ -206,7 +206,7 @@
       </li>
 
       <li>
-        If you have a Windows license (ie, if you ever bought a
+        If you have a Windows license (i.e. if you ever bought a
         PC from a high street store) you can go grab native DLLs from
         <a href="http://www.dll-files.com/">dll-files.com</a>. This
         can also be handy if you're missing various runtime DLLs
@@ -238,7 +238,7 @@
           map between them. Because Windows uses UCS-2 (16 bits per
           character) for its Unicode strings, the functions which accept
           unicode end with a W (for wide) and the ones that take
-          non-unicode (ie strings encoded in whatever the current
+          non-unicode (i.e. strings encoded in whatever the current
           codepage is) end in A for ANSI. In Windows the compiler can
           produce unicode constant strings but unfortunately on Linux we
           can't rely on gccs equivalent support, as it doesn't produce
@@ -278,7 +278,7 @@
         <p>
           Because each character now takes 2 bytes instead of 1, you
           also have to use the wide equivalents of every string
-          function, eg strlenW rather than strlen. Any function which
+          function, e.g. strlenW rather than strlen. Any function which
           expects a null terminated string requires a wide
           equivalent, as it's expected that wide strings will have null
           bytes in them.
@@ -358,7 +358,7 @@
       won't be helpful but it can prove handy when using native
       DLLs. To get a backtrace use the <b>bt</b> command, to get a
       backtrace of a particular thread postfix it with the thread id
-      in hex, eg <b>bt 0x9</b>. You can also specify "all" instead of
+      in hex, e.g. <b>bt 0x9</b>. You can also specify "all" instead of
       a thread id. </p>
 
     <p> It supports a subset of the gdb commands. The most common
@@ -414,7 +414,7 @@
         %ecx. If you get a crash dereferencing the value of %ecx in a
         C++ program, you might be seeing a null pointer dereference on
         an object instance. This is especially likely if the offset is
-        quite large, ie a crash accessing 0x36 is a pretty good
+        quite large, i.e. a crash accessing 0x36 is a pretty good
         indication that it's a C++ object and not just a very large C
         struct. <p> </li>
 
@@ -493,7 +493,7 @@
           NTDLL. In Windows 9x, most of the code in NTDLL is
           here. The thinking behind this split was that NT would be
           able to support multiple modules for different operating
-          system APIs, ie there could be a POSIX module, an OS/2
+          system APIs, i.e. there could be a POSIX module, an OS/2
           module, and kernel32 would be the Win32 module. In practice
           Microsoft wiped out the competition so effectively that
           this abstraction was never really needed or used, so today

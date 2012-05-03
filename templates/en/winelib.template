@@ -144,7 +144,7 @@ make ABI_OPT_WINELIB=1<br>
 
   <a name="openoffice"></a><h3 class=todo>OpenOffice</h3>
   <p>Suggested by <a href="mailto:steven_ed4153@yahoo.com">Steven Edwards</a>: 
-  <i>I have just compleated a full install of OO 1.1 under WINE. No outsite
+  <i>I have just completed a full install of OO 1.1 under WINE. No outside
      packages are required to install and configure OpenOffice for Win32
      under Wine. There are a few minor bugs with some of the strings in
      menus but I would rate it at 99%. If anyone is interested in a good
@@ -351,7 +351,7 @@ make<br>
   <ul>
     <li> I had to uncomment <tt>PSH_WIZARD97</tt> in <tt>/wine/prsht.h</tt> (fixed by Francois)
     <li> The packing pragmas looks handled by gcc-3.2.1, so we may remove all modifications made by winemaker
-    <li> I had to force winnt.h to use nameless struct and unions (fixed by Dimi)
+    <li> I had to force winnt.h to use nameless structs and unions (fixed by Dimi)
     <li> I added <tt>#define EDEADLOCK EDEADLK</tt> in <tt>/wine/msvcrt/errno.h</tt> (fixed by Francois)
     <li> I linked _alloca() to alloca() function (fixed by Alexandre)
     <li> There was a conflict on HKEY type between  <tt>afxres.h</tt> and <tt>wine/windef.h</tt>
@@ -359,7 +359,7 @@ make<br>
   </ul>
 
   <a name="gimp"></a><h3 class=todo>Gimp</h3>
-  <p>This one's a very strange case. <a href="http://www.gimp.org/">The Gimp</a> is a native
+  <p>This one is a very strange case. <a href="http://www.gimp.org/">The Gimp</a> is a native
      Linux application built around the <a href="http://www.gtk.org/">GTK+</a> toolkit.
      It became a native Windows application by porting over the entire GTK+ toolkit, and
      other supporting libraries. It would thus be quite interesting to see how it can be
