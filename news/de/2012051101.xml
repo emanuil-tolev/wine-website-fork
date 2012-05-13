@@ -1,0 +1,17 @@
+<news>
+<date>11. Mai 2012</date>
+<title>Wine 1.5.4 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.5.4 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.5.4">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Ein neuer DirectSound Resampler.</li>
+  <li>Ein Negotiate Authentifizierungsprovider.</li>
+  <li>OpenGL Unterstützung in der DIB Engine.</li>
+  <li>Anfängliche Unterstützung für .NET Mixed Assemblies.</li>
+  <li>Unterstützende Routinen für Internationalisierte Domainnamen.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.4.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
