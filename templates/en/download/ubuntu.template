@@ -13,11 +13,11 @@ latest Wine package you can use WineHQ's by following these instructions.
 
 <h2>Adding the WineHQ PPA Repository:</h2>
 
-<p>Open the Software Sources menu by going to <b>Applications->Ubuntu Software 
-Center</b>, then selecting <b>Edit->Software Sources</b>. Choose the <b>Other 
+<p>Open the Software Sources menu by launching the <b>Ubuntu Software 
+Center</b> and selecting <b>Edit->Software Sources</b>. Choose the <b>Other 
 Software</b> tab and click <b>Add</b>.</p>
 
-<img src="{$root}/images/distro/ubuntu-ppa.png" width="531" height="509" alt="System->Administration->Software Sources->Other Software" border="0">
+<img src="{$root}/images/distro/ubuntu-ppa.png" width="531" height="509" alt="Software Center->Edit->Software Sources->Other Software" border="0">
 
 <p>Then, <b>copy and paste the line below</b>.</p>
 
@@ -25,25 +25,25 @@ Software</b> tab and click <b>Add</b>.</p>
 
 <h2>Warning: Beta packages</h2>
 
-<p><i>The 1.3 packages here are beta packages.  This means they will 
+<p><i>The 1.5 packages here are beta packages.  This means they will 
 periodically suffer from 
 <a href="http://wiki.winehq.org/Regression">regressions</a>, and as a result an 
-update may break functionality in Wine. If the stable 1.2 Wine version works 
+update may break functionality in Wine. If the stable 1.4 Wine version works 
 for you, then you may not want to use these beta packages.</i></p>
 
 <h2>Installing Wine:</h2>
 
 <p>Once you have added the WineHQ PPA Repository, you are ready to install.</p>
 
-<p><i>To get the most recent Wine 1.3 beta, 
-<a href="apt://wine1.3">click this link to install the wine1.3 package</a>.</i></p>
-<p><i>To install the older, stable Wine 1.2 version, 
-<a href="apt://wine1.2">click this link to install the wine1.2 package</a>.</i></p>
+<p><i>To get the most recent Wine 1.5 beta, 
+<a href="apt://wine1.5">click this link to install the wine1.5 package</a>.</i></p>
+<p><i>To install the older, stable Wine 1.4 version, 
+<a href="apt://wine1.4">click this link to install the wine1.4 package</a>.</i></p>
 
 <h2>Upgrading to a new version of Ubuntu</h2>
 
-<p>If you are upgrading the entire system, such as going from Ubuntu 10.04 to 
-10.10, you will need to come back to this page and add the repository again. 
+<p>If you are upgrading the entire system, such as going from Ubuntu 11.10 to 
+12.04, you will need to come back to this page and add the repository again. 
 The built in update manager will not switch the Wine repository automatically.
 </p>
 
@@ -56,6 +56,6 @@ may be useful on Kubuntu, Xubuntu, and other Ubuntu derivatives.</p>
 
 <p>Then update APT package information by running '<b>sudo apt-get 
 update</b>'. You can now install Wine by typing '<b>sudo apt-get 
-install wine1.3</b>'.</p>
+install wine1.5</b>'.</p>
 
 <p>If you'd like to browse the PPA manually, you can <a href="https://launchpad.net/~ubuntu-wine/+archive/ppa">visit its Launchpad page</a>.</p>

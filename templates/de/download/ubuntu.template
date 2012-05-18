@@ -26,20 +26,20 @@ Wähle dann den <b>Software von Drittanbietern</b>-Reiter und klicke auf <b>Hinz
 
 <h2>Warnung: Betapakete</h2>
 
-<p><i>Die 1.3 Pakete hier sind Betapakete. Das bedeutet, dass sie
+<p><i>Die 1.5 Pakete hier sind Betapakete. Das bedeutet, dass sie
 in regelmäßigen Abständen
 <a href="http://wiki.winehq.org/Regression">Regressionen</a> erleiden, wodurch
 eine Aktualisierung die Wine-Funktionalität beeinträchtigen kann. Wenn die stabile Version
-Wine 1.2 bei dir funktioniert, willst du diese Betapakete wahrscheinlich nicht benutzen.</i></p>
+Wine 1.4 bei dir funktioniert, willst du diese Betapakete wahrscheinlich nicht benutzen.</i></p>
 
 <h2>Installieren von Wine:</h2>
 
 <p>Sobald du das WineHQ PPA Repository hinzugefügt hast, kannst du es installieren.</p>
 
-<p><i>Für die aktuellste Wine 1.3 Beta,
-<a href="apt://wine1.3">klicke diesen Link um das wine1.3 Paket zu installieren</a>.</i></p>
-<p><i>Für die ältere, stabile Wine 1.2 Version,
-<a href="apt://wine1.3">klicke diesen Link um das wine1.2 Paket zu installieren</a>.</i></p>
+<p><i>Für die aktuellste Wine 1.5 Beta,
+<a href="apt://wine1.5">klicke diesen Link um das wine1.5 Paket zu installieren</a>.</i></p>
+<p><i>Für die ältere, stabile Wine 1.4 Version,
+<a href="apt://wine1.5">klicke diesen Link um das wine1.4 Paket zu installieren</a>.</i></p>
 
 <h2>Aktualisierung auf eine neue Ubuntuversion</h2>
 
@@ -58,6 +58,6 @@ Derivate. Zuerst öffne ein Terminalfenster (Anwendungen->Zubehör->Terminal).</
 
 <p>Aktualisiere dann die APT-Paketinformationen durch Ausführen von '<b>sudo apt-get
 update</b>'. Du kannst nun Wine durch Ausführen von '<b>sudo apt-get
-install wine1.3</b>' im Terminal installieren.</p>
+install wine1.5</b>' im Terminal installieren.</p>
 
 <p>Wenn du das PPA durchsuchen willst, kannst du es <a href="https://launchpad.net/~ubuntu-wine/+archive/ppa">bei Launchpad anschauen</a>.</p>
