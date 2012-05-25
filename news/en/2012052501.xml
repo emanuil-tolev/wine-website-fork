@@ -1,0 +1,16 @@
+<news>
+<date>May 25, 2012</date>
+<title>Wine 1.5.5 Released</title>
+<body>
+<p> The Wine development release 1.5.5 is now available.</p>
+<p> <a href="{$root}/announce/1.5.5">What's new</a> in this release:
+<ul>
+  <li>Support for installing Mono as a Wine add-on package.</li>
+  <li>Dithering of pattern brushes in the DIB engine.</li>
+  <li>Support for installing the .NET 4.0 runtime.</li>
+  <li>DDS files supported in D3DX9.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.5.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
