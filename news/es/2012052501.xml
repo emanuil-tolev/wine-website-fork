@@ -1,0 +1,16 @@
+<news>
+<date>Mayo 25, 2012</date>
+<title>Wine 1.5.5 Liberado</title>
+<body>
+<p> La versión de desarrollo Wine 1.5.5 se encuentra ahora disponible.</p>
+<p> <a href="{$root}/announce/1.5.5">Novedades</a> en esta versión:
+<ul>
+  <li>Soporte para la instalación de Mono como un paquete add-on de Wine.</li>
+  <li>Tramado para pinceles de patrón en el motor DIB.</li>
+  <li>Soporte para la instalación del ejecutable .NET 4.0.</li>
+  <li>Soporte para archivos DDS en D3DX9.</li>
+  <li>Corrección de errores varios.</li>
+</ul></p>
+<p><p>El <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.5.tar.bz2">código fuente</a> ya está disponible.
+Los paquetes binarios están en proceso de construcción, y pronto aparecerán en sus respectivos <a href="{$root}/download">lugares de descarga</a>.
+</p></body></news>
