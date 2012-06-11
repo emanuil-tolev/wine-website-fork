@@ -1,0 +1,18 @@
+<news>
+<date>8 de Junho de 2012</date>
+<title>Wine 1.5.6 lançado</title>
+<body>
+<p> A versão de desenvolvimento 1.5.6 já está disponível.</p>
+<p> <a href="{$root}/announce/1.5.6">Novidades</a> desta versão:
+<ul>
+  <li>Instalação automática do pacote adicional Mono.</li>
+  <li>Applet do painel de controle para configuração de joysticks.</li>
+  <li>Renderização de bitmaps em dispostivos agora feita através da engine DIB.</li>
+  <li>Suporte a renderização de video através do DirectX (VMR-9).</li>
+  <li>Primeiros passos na direção de um compilador de shaders D3D.</li>
+  <li>Correções no build para DragonFly BSD.</li>
+  <li>Várias correções de bugs.</li>
+</ul></p>
+<p><p>O código fonte está <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.6.tar.bz2">disponível agora</a>.
+Pacotes binários estão em processo de construção e em breve estarão em suas respectivas  <a href="{$root}/download">sessões da área de downloads.</a>.
+</p></body></news>
