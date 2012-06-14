@@ -1,0 +1,17 @@
+<news>
+<date>8 juin 2012</date>
+<title>Sortie de Wine 1.5.6</title>
+<body>
+<p> La version de développement 1.5.6 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.5.6">Nouveautés</a> de cette version :
+<ul>
+  <li>Installation automatique du module externe Mono.</li>
+  <li>Applet pour les joysticks dans le panneau de configuration.</li>
+  <li>Rendu des images matricielles indépendantes du périphérique à présent effectué par le moteur DIB.</li>
+  <li>Prise en charge du rendu vidéo via DirectX (VMR-9).</li>
+  <li>Premiers pas en vue d'un compilateur de shaders D3D.</li>
+  <li>Correctifs pour la compilation sous DragonFly BSD.</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.6.tar.bz2">code source</a> est disponible dès à présent. Les paquets binaires sont en cours de construction, et apparaîtront sous peu sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
