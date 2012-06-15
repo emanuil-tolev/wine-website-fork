@@ -1,7 +1,7 @@
-<!--TITLE:[F&uuml;hrt Windows-Anwendungen unter Linux, BSD, Solaris und Mac OS X aus]-->
-<!--BLURB:[F&uuml;hrt Windows-Anwendungen unter Linux, BSD, Solaris und Mac OS X aus]-->
+<!--TITLE:[Führt Windows-Anwendungen unter Linux, BSD, Solaris und Mac OS X aus]-->
+<!--BLURB:[Führt Windows-Anwendungen unter Linux, BSD, Solaris und Mac OS X aus]-->
 <!--META_KEYWORDS:[windows, linux, macintosh, solaris, freebsd]-->
-<!--META_DESCRIPTION:[Open Source Software zum ausführen von Windows-Anwendungen unter anderen Betriebssystemen.]-->
+<!--META_DESCRIPTION:[Open Source Software zum Ausführen von Windows-Anwendungen unter anderen Betriebssystemen.]-->
 <!--STYLE:[content_nobox]-->
 
 <div id="main_left">
@@ -14,8 +14,8 @@
             <div class="info" onClick="document.location='{$root}/about/';">
               <div class="icon"></div>
               <div class="text">
-                <div class="title"><a href="{$root}/about/">&Uuml;ber</a></div>
-                <div class="subtitle">Erfahre mehr &uuml;ber das Wine-Projekt.</div>
+                <div class="title"><a href="{$root}/about/">Über</a></div>
+                <div class="subtitle">Erfahre mehr über das Wine-Projekt.</div>
               </div>
             </div>
 
@@ -30,8 +30,8 @@
             <div class="help" onClick="document.location='{$root}/help/';">
               <div class="icon"></div>
               <div class="text">
-                <div class="title"><a href="{$root}/help/">Unterst&uuml;tzung</a></div>
-                <div class="subtitle">Bekomme Hilfe zum Benutzen von Wine.</div>
+                <div class="title"><a href="{$root}/help/">Unterstützung</a></div>
+                <div class="subtitle">Hilfe zur Verwendung von Wine erhalten.</div>
               </div>
             </div>
 
@@ -70,14 +70,14 @@
             <td style="padding-left: 15px; padding-bottom: 2px;">
                 <b><a href="{$root}/announce/{$config_stable_release}">Wine&nbsp;{$config_stable_release}</a></b>
                 <span class="small">
-                  (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_stable_release}">&Auml;nderungen (en)</a>)
+                  (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_stable_release}">Neuerungen (en)</a>)
                 </span>
             </td></tr>
             <tr><td>Entwicklungsversion:</td>
             <td style="padding-left: 15px;">
                 <b><a href="{$root}/announce/{$config_master_release}">Wine&nbsp;{$config_master_release}</a></b>
                 <span class="small">
-                  (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_master_release}">&Auml;nderungen (en)</a>)
+                  (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_master_release}">Neuerungen (en)</a>)
                 </span>
             </td></tr>
             </table>
