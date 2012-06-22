@@ -1,0 +1,18 @@
+<news>
+<date>June 22, 2012</date>
+<title>Wine 1.5.7 Released</title>
+<body>
+<p> The Wine development release 1.5.7 is now available.</p>
+<p> <a href="{$root}/announce/1.5.7">What's new</a> in this release:
+<ul>
+  <li>New version of the Gecko engine based on Firefox 13.</li>
+  <li>Dynamic device support with UDisks2.</li>
+  <li>More stream classes implemented in the C++ runtime.</li>
+  <li>Support for metadata in TIFF files.</li>
+  <li>Fleshed out WBEM implementation.</li>
+  <li>Improved support for printer paper sizes.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.7.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
