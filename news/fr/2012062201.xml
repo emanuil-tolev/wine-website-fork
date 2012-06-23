@@ -1,0 +1,17 @@
+<news>
+<date>22 juin 2012</date>
+<title>Sortie de Wine 1.5.7</title>
+<body>
+<p> La version de développement 1.5.7 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.5.7">Nouveautés</a> de cette version :
+<ul>
+  <li>Nouvelle version du moteur Gecko basée sur Firefox 13.</li>
+  <li>Prise en charge des périphériques dynamiques avec UDisks2.</li>
+  <li>Classes de flux additionnelles implémentées dans le moteur d'exécution C++.</li>
+  <li>Support des métadonnées dans les fichiers TIFF.</li>
+  <li>Implémentation améliorée de WBEM.</li>
+  <li>Prise en charge améliorée des formats de papier d'imprimante.</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.7.tar.bz2">code source</a> est disponible dès à présent. Les paquets binaires sont en cours de construction, et apparaîtront sous peu sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
