@@ -1,0 +1,20 @@
+<news>
+<date>Czerwiec 22, 2012</date>
+<title>Wydano Wine 1.5.7</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.5.7 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.5.7">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Nowa wersja silnika Gecko oparta o Firefox
+13.</li>
+  <li>Dynamiczna obsługa urządzeń z UDisks2.</li>
+  <li>Zaimplementowano więcej klas strumieniowych w bibliotekach
+uruchomieniowych C++.</li>
+  <li>Wsparcie dla metadanych w plikach TIFF.</li>
+  <li>Opracowano implementację WBEM.</li>
+  <li>Ulepszone obsługa rozmiarów papierów przy drukowaniu.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.7.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
