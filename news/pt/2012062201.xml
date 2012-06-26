@@ -1,0 +1,18 @@
+<news>
+<date>22 de Junho de 2012</date>
+<title>Wine 1.5.7 lançado</title>
+<body>
+<p> A versão de desenvolvimento 1.5.7 já está disponível.</p>
+<p> <a href="{$root}/announce/1.5.7">Novidades</a> desta versão:
+<ul>
+  <li>Nova versão da engine Gecko baseada no Firefox 13.</li>
+  <li>Suporte dinâmico a dispositivos com UDisks2.</li>
+  <li>Mais classes de streaming implementadas no runtime C++.</li>
+  <li>Suporte a metadados em arquivos TIFF.</li>
+  <li>Concretização da implementação de WBEM.</li>
+  <li>Melhor suporte a tamanho de papéis de impressora.</li>
+  <li>Várias correções de bugs.</li>
+</ul></p>
+<p><p>O código fonte está <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.7.tar.bz2">disponível agora</a>.
+Pacotes binários estão em processo de construção e em breve estarão em suas respectivas <a href="{$root}/download">sessões da área de downloads</a>.
+</p></body></news>
