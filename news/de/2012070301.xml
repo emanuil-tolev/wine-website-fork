@@ -1,0 +1,17 @@
+<news>
+<date>3. Juli 2012</date>
+<title>Wine 1.5.8 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.5.8 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.5.8">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Mehr Stream Funktionalität in der C++ Runtime.</li>
+  <li>Zahlreiche Windows Codecs Verbesserungen.</li>
+  <li>Mehr WBEM Klassen und Eigenschaften.</li>
+  <li>Einige Fehlerbehebungen für die HTML Hilfe.</li>
+  <li>Unterstützung für das Drucken von gefakten Kursivschriften.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.8.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
