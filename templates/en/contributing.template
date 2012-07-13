@@ -19,7 +19,7 @@
   <li><a href="#web_site">General maintenance</a>
     <ol>
       <li><a href="http://wiki.winehq.org/CreateFonts">Creating fonts</a></li>
-      <li><a href="#draw">Draw icons for Wine</a></li>
+      <li><a href="http://wiki.winehq.org/CreateIcons">Drawing icons</a></li>
       <li><a href="#app_owners">Application owners</a></li>
       <li><a href="#support">Bug hunting and support</a></li>
     </ol>
@@ -42,17 +42,6 @@
     </ol>
   </li>
 </ol>
-
-<h3 id="draw">Draw icons for Wine</h3>
-
-<p>Wine cannot reuse the Windows icons verbatim because of copyright issues. So we have to redraw 
-  them, keeping a similar design so that users are not completely lost, all while making them 
-  different enough (and possibly nicer). You'll see this if you open a file selection dialog.</p>
-<p>Required skills:</p>
-<ul>
-  <li>Drawing skills</li>
-  <li>Vector graphic skills</li>
-</ul>
 
 <h3 id="app_owners">Application database: application maintainers</h3>
 
