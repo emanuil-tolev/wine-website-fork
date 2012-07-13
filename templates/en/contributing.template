@@ -20,7 +20,7 @@
     <ol>
       <li><a href="http://wiki.winehq.org/CreateFonts">Creating fonts</a></li>
       <li><a href="http://wiki.winehq.org/CreateIcons">Drawing icons</a></li>
-      <li><a href="#app_owners">Application owners</a></li>
+      <li><a href="http://wiki.winehq.org/AppDB_Maintainers">Maintaining applications</a></li>
       <li><a href="#support">Bug hunting and support</a></li>
     </ol>
   </li>
@@ -42,38 +42,6 @@
     </ol>
   </li>
 </ol>
-
-<h3 id="app_owners">Application database: application maintainers</h3>
-
-<p>Another very important aspect of Wine testing is to use or test real
-  applications regularly and report regressions as soon as possible to the Wine 
-  developers. This way regressions are caught early, while the set of changes
-  to search through is still small and the Wine developer who made the change
-  still around. Another reason why <b>your</b> contribution is especially
-  valuable is that Wine developers probably do not have access to the
-  application (they cannot buy all the applications out there) or do not know
-  it well enough to test it properly.</p>
-<p>You can help even further by becoming an 'application maintainer', that is by 
-  maintaining that application entry in the <a href="http://appdb.winehq.org/">Application Database</a>. Many
-  applications can be made to run (or run better) by using just the right mix
-  of native (Windows) and built-in (Wine) libraries. By testing the application 
-  with various library mix and then documenting your results in the
-  corresponding Application Database entry, you will help other Wine users be
-  productive with that application, thus making Wine useful to a greater number
-  of people.</p>
-<p>Required skills:</p>
-<ul>
-  <li>Good knowledge of a particular application</li>
-  <li>Being dedicated to using / testing this application with each new Wine
-    release or more often. It is more important to test one application
-    regularly than ten applications once a year.</li>
-  <li>Report all regressions to wine-devel, and cooperate with the developers 
-    to diagnose the issue.</li>
-  <li>Create and maintain a HOWTO note on the application page summarizing 
-    all actions required to get the application to run properly, e.g. 
-    collected from the comments of visitors on the application/versions pages.</li>
-  <li>Coding skills are <strong>not necessary</strong>.</li>
-</ul>
 
 <h3 id="support">Bug hunting and support</h3>
 <p>Because there are so many Windows applications out there, and because 
