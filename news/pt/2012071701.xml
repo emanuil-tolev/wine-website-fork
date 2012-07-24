@@ -1,0 +1,17 @@
+<news>
+<date>17 de Julho de 2012</date>
+<title>Wine 1.5.9 lançado</title>
+<body>
+<p> A versão de desenvolvmento 1.5.9 já está disponível.</p>
+<p> <a href="{$root}/announce/1.5.9">Novidades</a> nesta versão:
+<ul>
+  <li>Suporte a tabelas GPOS de fontes no Uniscribe.</li>
+  <li>Suporte ao XRandr 1.2 e 1.3.</li>
+  <li>Melhoras no parser do compilador HLSL.</li>
+  <li>Mais algoritmos de troca de chaves suportados no Mac OS.</li>
+  <li>Relay tracing na arquitetura ARM.</li>
+  <li>Várias correções de bugs.</li>
+</ul></p>
+<p><p>O código fonte está <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.9.tar.bz2">disponível agora</a>.
+Pacotes binários estão em processo de construção e em breve estarão em suas respectivas <a href="{$root}/download">sessões da área de downloads</a>.
+</p></body></news>
