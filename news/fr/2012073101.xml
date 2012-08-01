@@ -1,0 +1,15 @@
+<news>
+<date>31 juillet 2012</date>
+<title>Sortie de Wine 1.5.10</title>
+<body>
+<p> La version de développement 1.5.10 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.5.10">Nouveautés</a> de cette version :
+<ul>
+  <li>Nouvelle version du moteur Gecko basée sur Firefox 14.</li>
+  <li>Prise en charge d'OpenGL dans le moteur DIB via libOSMesa.</li>
+  <li>Rendu hors écran à présent utilisé par défaut dans Direct3D.</li>
+  <li>Infrastructure WMI améliorée.</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.10.tar.bz2">code source</a> est disponible dès à présent. Les paquets binaires sont en cours de construction, et apparaîtront sous peu sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
