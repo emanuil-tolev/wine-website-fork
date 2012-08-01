@@ -1,0 +1,16 @@
+<news>
+<date>Lipiec 31, 2012</date>
+<title>Wydano Wine 1.5.10</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.5.10 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.5.10">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Nowa wersja silnika Gecko oparta o Firefox 14.</li>
+  <li>Wsparcie dla OpenGL w silniku DIB przy użyciu libOSMesa.</li>
+  <li>Renderowanie poza ekranem jest teraz domyślnie włączone w Direct3D.</li>
+  <li>Trochę więcej infrastruktury WMI.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.10.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
