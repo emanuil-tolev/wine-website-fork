@@ -1,0 +1,16 @@
+<news>
+<date>31 de Julho de 2012</date>
+<title>Wine 1.5.10 lançado</title>
+<body>
+<p> A versão de desenvolvmento 1.5.10 já está disponível.</p>
+<p> <a href="{$root}/announce/1.5.10">Novidades nesta</a> versão:
+<ul>
+  <li>Nova versão da engine Gecko baseada no Firefox 14.</li>
+  <li>Suporte a OpenGL na engine DIB usando a libOSMesa.</li>
+  <li>Off-screen rendering agora é a opção padrão do Direct3D.</li>
+  <li>Um pouco mais de infra-estrutura WMI.</li>
+  <li>Várias correções de bugs.</li>
+</ul></p>
+<p><p>O código fonte está <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.10.tar.bz2">disponível agora</a>.
+Pacotes binários estão em processo de construção e em breve estarão em suas respectivas <a href="{$root}/download">sessões da área de downloads</a>.
+</p></body></news>
