@@ -1,0 +1,16 @@
+<news>
+<date>17. August 2012</date>
+<title>Wine 1.5.11 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.5.11 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.5.11">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Mehrkanal Unterstützung im ALSA Treiber.</li>
+  <li>Der große X11 Lock wurde entfernt.</li>
+  <li>Unterstützung für paarweise Positionierung in Uniscribe.</li>
+  <li>Mehr I/O Stream Implementierungen in der C++ Runtime.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.11.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
