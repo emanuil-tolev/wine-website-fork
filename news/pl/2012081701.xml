@@ -1,0 +1,16 @@
+<news>
+<date>Sierpień 17, 2012</date>
+<title>Wydano Wine 1.5.11</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.5.11 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.5.11">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Obsługa wielokanałowa w sterowniku ALSA.</li>
+  <li>Usunięcie dużego zegara X11.</li>
+  <li>Wsparcie wyrównywań pozycjonowanych par w Uniscribe.</li>
+  <li>Więcej implementacji WE/WY strumieniowych w bibliotece uruchomieniowej C++.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.11.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
