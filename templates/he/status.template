@@ -64,19 +64,14 @@
                מצב רכיבי מנשק המשתמש.
             </dd>
 
-            <dt><a href="{$root}/status/porting"><b>מצב ההסבה</b></a></dt>
+            <dt><a href="http://wiki.winehq.org/WinePortingStatus"><b>מצב ההסבה</b></a></dt>
             <dd>
                מצב הסבת Wine למגוון של מהדרים, מערכות הפעלה, ארכיטקטורות.
             </dd>
 
-            <dt><a href="{$root}/status/todo"><b>נושאים לטיפול</b></a></dt>
+            <dt><a href="http://wiki.winehq.org/TodoList"><b>נושאים לטיפול</b></a></dt>
             <dd>
                רשימה של נושאים לטיפול.
-            </dd>
-
-            <dt><a href="{$root}/status/changelog"><b>יומן שינויים</b></a></dt>
-            <dd>
-               ניתן להביט להלן כדי לקבל תחושה על התקדמות הפיתוח.
             </dd>
         </dl>
    </td></tr>

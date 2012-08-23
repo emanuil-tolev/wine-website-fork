@@ -65,19 +65,14 @@
                Status of user interface elements.
             </dd>
 
-            <dt><a href="{$root}/status/porting"><b>Porting Status</b></a></dt>
+            <dt><a href="http://wiki.winehq.org/WinePortingStatus"><b>Porting Status</b></a></dt>
             <dd>
                Status of porting Wine to various compilers, OSes, architectures.
             </dd>
 
-            <dt><a href="{$root}/status/todo"><b>Known To Do's</b></a></dt>
+            <dt><a href="http://wiki.winehq.org/TodoList"><b>Known TO-DOs</b></a></dt>
             <dd>
                List of known issues.
-            </dd>
-
-            <dt><a href="{$root}/status/changelog"><b>ChangeLog</b></a></dt>
-            <dd>
-               Have a look here to get a feeling about development progress.
             </dd>
         </dl>
    </td></tr>
