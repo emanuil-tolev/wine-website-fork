@@ -80,7 +80,7 @@ erbeten hat, dass sie die Wine-Website hosten.</p>
       <img src="{$root}/images/distro/redhat.png" width="50" height="50" alt="RedHat Linux" border="0"></a>
     </td>
     <td> <b><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">Red Hat / CentOS / Fedora</a></b>
-        bin&auml;r und Quellcode .rpms f&uuml;r Red Hat Enterprise Linux 4, 5; CentOS 4, 5; Fedora Core 5, 6; Fedora Linux 7 und
+        bin&auml;r und Quellcode .rpms f&uuml;r Red Hat Enterprise Linux 5, 6; CentOS 5, 6; Fedora Linux 16, 17 und
         kompatible Distributionen.
         Das wine meta package ist via <tt>yum</tt> im
         EPEL / Fedora Extras / Fedora Repository verf&uuml;gbar, indem man <tt>$ yum install

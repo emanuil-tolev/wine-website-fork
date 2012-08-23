@@ -84,8 +84,8 @@ center;"><b>Voyez la
       <img src="{$root}/images/distro/redhat.png" width="50" height="50" alt="RedHat Linux" border="0"></a>
     </td>
     <td> <b><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">Paquets Red Hat / CentOS / Fedora</a></b>
-        - .rpm binaires et sources pour Red Hat Enterprise Linux 4 et 5, CentOS
-          4 et 5, Fedora Core 5 et 6, Fedora Linux 7 et distributions compatibles.
+        - .rpm binaires et sources pour Red Hat Enterprise Linux 5 et 6, CentOS
+          5 et 6, Fedora Linux 16, 17 et distributions compatibles.
         Le méta-paquet wine est disponible via <tt>yum</tt> au travers du
         dépôt EPEL / Fedora Extras / Fedora en exécutant
         <tt>$ yum install wine </tt>"

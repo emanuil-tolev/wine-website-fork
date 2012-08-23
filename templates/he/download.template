@@ -80,7 +80,7 @@
       <img src="{$root}/images/distro/redhat.png" width="50" height="50" alt="RedHat Linux" border="0"></a>
     </td>
     <td> <b><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">הורדת חבילות ל־Red Hat / CentOS / Fedora</a></b>
-        - קובצי .rpm בינריים ולמקור להפצות תומכות Red Hat Enterprise Linux 4, 5; CentOS 4, 5; Fedora Core 5, 6; Fedora Linux 7
+        - קובצי .rpm בינריים ולמקור להפצות תומכות Red Hat Enterprise Linux 5, 6; CentOS 5, 6; Fedora Linux 16, 17
         חבילת העל של wine זמינה דרך <tt>yum</tt>.
         באמצעות מאגר EPEL / Fedora Extras / Fedora על ידי הפעלת הפקודה <tt>$ yum install
         wine </tt>"

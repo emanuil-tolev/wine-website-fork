@@ -78,7 +78,7 @@
       <img src="{$root}/images/distro/redhat.png" width="50" height="50" alt="RedHat Linux" border="0"></a>
     </td>
     <td> <b><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">Pobierz paczki dla Red Hat / CentOS / Fedora</a></b>
-        - binarne i źródłowe paczki .rpm dla Red Hat Enterprise Linux 4, 5; CentOS 4, 5; Fedora Core 5, 6; Fedora Linux 7 i
+        - binarne i źródłowe paczki .rpm dla Red Hat Enterprise Linux 5, 6; CentOS 5, 6; Fedora Linux 16, 17 i
         kompatybilnych dystrybucji.
         Meta paczka Wine jest dostępna przez <tt>yum</tt> 
         dzięki repozytorium EPEL / Fedora Extras / Fedora poprzez wpisanie w terminalu <tt>$ yum install
