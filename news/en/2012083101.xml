@@ -1,0 +1,15 @@
+<news>
+<date>August 31, 2012</date>
+<title>Wine 1.5.12 Released</title>
+<body>
+<p> The Wine development release 1.5.12 is now available.</p>
+<p> <a href="{$root}/announce/1.5.12">What's new</a> in this release:
+<ul>
+  <li>Support for disabling individual joysticks.</li>
+  <li>Better support for D3DX9 constant tables.</li>
+  <li>Some XRandR improvements.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.12.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
