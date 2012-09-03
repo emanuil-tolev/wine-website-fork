@@ -36,10 +36,10 @@ Julliard coordena o projecto Wine, e pode ser contactado por email em
 <p>Também juntámos uma pequena lista de recursos para o ajudar a perceber o 
 projecto:</p>
 <ul>
-    <li><a href="{$root}/history">História do Wine</a></li>
-    <li><a href="{$root}/why">Porque é que o Wine é importante</a></li>
-    <li><a href="{$root}/myths">Clarificação dos Mitos do Wine</a></li>
-    <li><a href="{$root}/wine_features">Características do Wine</a></li>
+    <li><a href="http://wiki.winehq.org/WineHistory">História do Wine</a></li>
+    <li><a href="http://wiki.winehq.org/ImportanceOfWine">Porque é que o Wine é importante</a></li>
+    <li><a href="http://wiki.winehq.org/Debunking_Wine_Myths">Clarificação dos Mitos do Wine</a></li>
+    <li><a href="http://wiki.winehq.org/WineFeatures">Características do Wine</a></li>
     <li><a href="{$root}/acknowledgement">Agradecimentos</a></li>
     <li><a href="{$root}/wwn">World Wine News</a></li>
     <li><a href="{$root}/interview">Entrevistas</a></li>
@@ -47,5 +47,6 @@ projecto:</p>
 
 <hr>
 <div class="link-container">
-  <p class="right-link">História do Wine: <a href="{$root}/history">Seguinte</a></p>
+  <p class="right-link">História do Wine:
+  <a href="http://wiki.winehq.org/WineHistory">Seguinte</a></p>
 </div>
