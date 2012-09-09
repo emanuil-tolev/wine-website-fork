@@ -1,19 +1,112 @@
-<!--TITLE:[Live Support Chat]-->
-<!--BLURB:[Live Support Chat]-->
+<!--TITLE:[Live Community Chat]-->
+<!--BLURB:[Live Community Chat]-->
 
-<h1 class="title">Live Support Chat</h1>
+<h1 class="title">Live Community Chat</h1>
 
-<p><a href="http://www.freenode.net">Freenode.net</a> hosts an IRC channel for
-Wine. You can access the chat room using an IRC program such as
-<a href="http://www.xchat.org/">X-Chat</a>. Use the settings listed below.</p>
+<p><a href="http://www.freenode.net">Freenode.net</a> hosts multiple IRC
+channels for Wine. You can access the chat rooms using an IRC program such as
+<a href="http://www.xchat.org/">X-Chat</a> with these settings:</p>
 
 <blockquote>
-    <b>Server:</b> irc.freenode.net<br>
-    <b>Port:</b> 6667<br>
-    <b>Channel:</b> #winehq<br>
+    <b>Server:</b> irc.freenode.net<br />
+    <b>Port:</b> 6667<br />
 </blockquote>
 
-<p>If you use Firefox or any other browser that supports IRC URLs, you can
-join the chat by clicking on <a href="irc://irc.freenode.net/winehq">irc://irc.freenode.net/winehq</a>.</p>
+<p>Which channel you should pick depends on the issue you want to discuss:</p>
+   
+<blockquote>
+    <b>#winehq:</b> User support and help with running Wine<br />
+    <b>#crossover:</b> User support and help with running Crossover<br />
+    <b>#winehackers:</b> Development and other ways of contributing to
+        Wine<br />
+    <b>#winehq-social:</b> Casual, off-topic chats with other community
+        members<br />
+</blockquote>
 
-<p>&nbsp;</p>
+<p>Those using Firefox, or any other browser that supports IRC URLs, can join
+a chat by clicking on:</p>
+<ul>
+    <li><a href="irc://irc.freenode.net/winehq">#winehq</a></li>
+    <li><a href="irc://irc.freenode.net/crossover">#crossover</a></li>
+    <li><a href="irc://irc.freenode.net/winehackers">#winehackers</a></li>
+    <li><a href="irc://irc.freenode.net/winehq-social">#winehq-social</a></li>
+</ul>
+
+<p>In order to keep discussions focused and as helpful as possible, also try
+to research your question some before asking about it on the IRC. The
+<a href="http://wiki.winehq.org/FAQ">Wine FAQ</a>,
+<a href="http://appdb.winehq.org">AppDB</a>, and
+<a href="http://www.winehq.org/site/download">download page</a> are all good
+resources to check first.</p>
+
+<h2>IRC Rules and Penalties</h2>
+
+<p>Besides not being offensive or blatantly inconsiderate, there are a few
+simple rules that everyone is expected to follow on the IRC channels. In most
+cases, breaking a rule will be seen as an accident at first and will result in
+warnings. After you have used up your warnings though, you will be kicked from
+the channel.</p>
+
+<p>If you continue to break a rule after using up your kicks, you will be
+banned from the channel for up to 2 hours. Any problems after this will
+result in an indefinite ban, which can only be overturned by appeal. If you
+want to contest a ban, go to <b>#winehq-social</b> (or the
+<a href="mailto:wine-devel@winehq.org">wine-devel mailing list</a> if you've
+been banned from <b>#winehq-social</b>), and explain why you believe you were
+banned in the first place and why the ban should be lifted.</p>
+
+<table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
+    <tr align="center" bgcolor="black">
+        <th><b><font color="white" class="small">Rule</font></b></th>
+        <th><b><font color="white" class="small">Clarification</font></b></th>
+        <th><b><font color="white" class="small">Warnings</font></b></th>
+        <th><b><font color="white" class="small">Kicks</font></b></th>
+    </tr>
+    <tr bgcolor="#ffffff">
+        <td>Do not spam.</td>
+        <td></td>
+        <td>1</td>
+        <td>2</td>
+    </tr>
+    <tr bgcolor="#ffffff">
+        <td>Use a pastebin for pasting more than 1 or 2 lines.</td>
+        <td><a href="http://winehq.pastebin.com">winehq.pastebin.com</a> and
+            <a href="http://pastebin.ca">pastebin.ca</a> both work well.</td>
+        <td>0</td>
+        <td>5</td>
+    </tr>
+    <tr bgcolor="#ffffff">
+        <td>Talk in the appropriate channel.</td>
+        <td>If unsure, ask in <b>#winehq</b> which channel to join.</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr bgcolor="#ffffff">
+        <td>Only Wine and Crossover are supported in their respective
+            channels.</td>
+        <td>Sidenet, WineDoors, Cedega, IEs4Linux, etc. are <b>not</b>
+            supported.</td>
+        <td>2</td>
+        <td>1</td>
+    </tr>
+    <tr bgcolor="#ffffff">
+        <td>Before asking for help in <b>#winehq</b>, be sure you're running
+            the latest version of Wine.</td>
+        <td>If unsure, run <tt>wine --version</tt> in the command line to
+            determine your version</td>
+        <td>3</td>
+        <td>1</td>
+    </tr>
+    <tr bgcolor="#ffffff">
+        <td>Please wait your turn for help.</td>
+        <td></td>
+        <td>3</td>
+        <td>1</td>
+    </tr>
+    <tr bgcolor="#ffffff">
+        <td>Do <b>not</b> discuss pirated software.</td>
+        <td></td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+</table>
