@@ -39,27 +39,32 @@
                מצב פונקציות ה־ APIשהוטמעו.
             </dd>
 
-            <dt><a href="{$root}/status/wine"><b>מצב הליבה</b></a></dt>
+            <dt><a href="http://wiki.winehq.org/CoreStatus"><b>מצב הליבה</b></a></dt>
             <dd>
                מצב רכיבי הליבה, הכלים ועוד של Wine.
             </dd>
 
-            <dt><a href="{$root}/status/dlls"><b>מצב ה־DLLים</b></a></dt>
+            <dt><a href="http://wiki.winehq.org/DLLStatus"><b>מצב ה־DLLים</b></a></dt>
             <dd>
                מצב כפילי ה־DLL של Windows.
             </dd>
 
-            <dt><a href="{$root}/status/directx"><b>מצב DirectX</b></a></dt>
+            <dt><a href="http://wiki.winehq.org/DirectXStatus"><b>מצב DirectX</b></a></dt>
             <dd>
                מצב כפילי ה־DLL של DirectX.
             </dd>
 
-            <dt><a href="{$root}/status/multimedia"><b>מצב המולטימדיה</b></a></dt>
+            <dt><a href="http://wiki.winehq.org/MultimediaStatus"><b>מצב המולטימדיה</b></a></dt>
             <dd>
                מצב רכיבי המולטימדיה.
             </dd>
 
-            <dt><a href="{$root}/status/ui"><b>מצב מנשק המשתמש</b></a></dt>
+            <dt><a href="http://wiki.winehq.org/ToolStatus"><b>מצב כלי עבודה</b></a></dt>
+            <dd>
+               מצב כלי עבודה ותסריטים משלים.
+            </dd>
+
+            <dt><a href="http://wiki.winehq.org/UserInterfaceStatus"><b>מצב מנשק המשתמש</b></a></dt>
             <dd>
                מצב רכיבי מנשק המשתמש.
             </dd>

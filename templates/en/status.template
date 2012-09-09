@@ -40,27 +40,32 @@
                Status of APIs Implemented.
             </dd>
 
-            <dt><a href="{$root}/status/wine"><b>Core Status</b></a></dt>
+            <dt><a href="http://wiki.winehq.org/CoreStatus"><b>Core Status</b></a></dt>
             <dd>
                Status of core Wine components, tools, and misc.
             </dd>
 
-            <dt><a href="{$root}/status/dlls"><b>DLLs Status</b></a></dt>
+            <dt><a href="http://wiki.winehq.org/DLLStatus"><b>DLLs Status</b></a></dt>
             <dd>
                Status of Windows DLL clones.
             </dd>
 
-            <dt><a href="{$root}/status/directx"><b>DirectX Status</b></a></dt>
+            <dt><a href="http://wiki.winehq.org/DirectXStatus"><b>DirectX Status</b></a></dt>
             <dd>
                Status of DirectX DLL clones.
             </dd>
 
-            <dt><a href="{$root}/status/multimedia"><b>Multimedia Status</b></a></dt>
+            <dt><a href="http://wiki.winehq.org/MultimediaStatus"><b>Multimedia Status</b></a></dt>
             <dd>
                Status of multimedia elements.
             </dd>
 
-            <dt><a href="{$root}/status/ui"><b>UI Status</b></a></dt>
+            <dt><a href="http://wiki.winehq.org/ToolStatus"><b>Tool Status</b></a></dt>
+            <dd>
+               Status of ancillary tool programs and scripts.
+            </dd>
+
+            <dt><a href="http://wiki.winehq.org/UserInterfaceStatus"><b>UI Status</b></a></dt>
             <dd>
                Status of user interface elements.
             </dd>
