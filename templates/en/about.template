@@ -3,20 +3,73 @@
 
 <h1 class="title">About Wine</h1>
 
-<p>Wine lets you run Windows software on other operating systems.  With Wine, you can install and run these applications just like you would in Windows.</p>
+<p>Wine (originally an acronym for "Wine Is Not an Emulator") is a
+compatibility layer capable of running Windows applications on several
+POSIX-compliant operating systems, such as Linux, Mac OSX, & BSD.
+Instead of simulating internal Windows logic like a virtual machine or
+emulator, Wine translates Windows API calls into POSIX calls on-the-fly,
+eliminating the performance and memory penalties of other methods and
+allowing you to cleanly integrate Windows applications into your
+desktop.</p>
 
-<p>Wine is still under active development.  Not every program works yet, however there are already <a href="http://wiki.winehq.org/UsageStatistics" title="Wine Usage Statistics">several million people</a> using Wine to run their software.</p>
+<p>Wine began in 1993 under the initial coordination of Bob Amstadt as a
+way to support running Windows 3.1 programs on Linux. Very early on,
+leadership over Wine's development passed to Alexandre Julliard, who has
+managed the project ever since. Over the years, as the Windows API and
+applications have evolved to take advantage of new hardware and
+software, Wine has adapted to support new features, all while being
+ported to other OSes, becoming more stable, and providing a better
+user-experience.</p>
+
+<p>An ambitious project by definition, work on Wine would steadily
+continue for 15 years before the program finally reached v1.0, the first
+stable release, in 2008. Several releases later, Wine is still under
+active development today, and although there is more work to be done,
+<a href="http://wiki.winehq.org/UsageStatistics" title="Wine Usage
+Statistics">millions of people</a> are estimated to use Wine to run
+their Windows software on the OS of their choice.</p>
 
 <h3>Open Source and User Driven</h3>
 
-<p>Wine will always be <a href="http://wiki.winehq.org/Licensing" title="Wine licensing">free software</a>.  Approximately half of Wine's source code is written by volunteers.  The rest is sponsored by commercial interests, especially <a href="http://www.codeweavers.com/products/" title="CodeWeavers CrossOver Office">CodeWeavers</a> who sell a supported version of Wine.</p>
+<p>Wine will always be <a href="http://www.winehq.org/license"
+title="Wine licensing">free software</a>. Approximately half of Wine's
+source code is written by volunteers, with the remaining effort
+sponsored by commercial interests, especially
+<a href="http://www.codeweavers.com/products/" title="CodeWeavers
+CrossOver Office">CodeWeavers</a>, which sells a supported version of
+Wine.</p>
 
-<p>Wine is heavily reliant on its user community.  User tests fill our <a href="http://appdb.winehq.org/" title="Wine Application Database">Application Database</a> to track how well programs work, and all the answers in the <a href="http://forums.winehq.org/" title="WineHQ Forums">forums</a> come from volunteers.</p>
+<p>Wine is heavily reliant on its user community too. Users volunteer
+their time to share tips and test results on how well their programs
+work in our <a href="http://appdb.winehq.org/" title="Wine Application
+Database">Application Database</a>, file bug reports to notify
+developers of problems in our <a href="http://bugs.winehq.org/"
+title="Bugzilla">Bug-Tracker</a>, and answer questions in our
+<a href="http://forums.winehq.org/" title="WineHQ Forums">forums</a>.
+</p>
 
 <h3>Learn more:</h3>
+
+<p><i>(Several of the following pages are currently being reworked and
+may not be up-to-date)</i></p>
+
 <ul>
-    <li><a href="http://wiki.winehq.org/ImportanceOfWine">Why Wine is so Important</a></li>
-    <li><a href="http://wiki.winehq.org/Debunking_Wine_Myths">Common Myths about Wine</a></li>
-    <li><a href="http://wiki.winehq.org/WineHistory">History of the Wine Project</a></li>
-    <li><a href="http://wiki.winehq.org/ProjectOrganization">Organization and Leadership</a></li>
+    <li><a href="http://wiki.winehq.org/ImportanceOfWine">Why Wine is so
+        Important</a>
+    </li>
+    <li><a href="http://wiki.winehq.org/Debunking_Wine_Myths">Common
+        Myths about Wine</a>
+    </li>
+    <li><a href="http://wiki.winehq.org/WineHistory">History of the Wine
+        Project</a>
+    </li>
+    <li><a href="http://wiki.winehq.org/ProjectOrganization">
+        Organization and Leadership</a>
+    </li>
+    <li><a href="http://wiki.winehq.org/WhosWho">Some Contributor Bios
+        </a>
+    </li>
+    <li><a href="http://wiki.winehq.org/Acknowledgements">Other
+        Acknowledgements</a>
+    </li>
 </ul>
