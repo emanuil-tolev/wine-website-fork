@@ -100,6 +100,9 @@ BODY                {
                      padding: 85px 10px 10px 100px;
                     }
 
+/* set background color of content wells */
+#main_content .content, #main_left .content, #main_right .content { background-color: #fff; }
+
 /* main content well front page left column */
 #main_left          {
                      width: 58%;
@@ -224,6 +227,14 @@ hr
     height: 1px;
     width: 100%;
     text-align: left;
+}
+
+/* rounded corners */
+.cornerround
+{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
 
 /* Rounded Corner Box */
