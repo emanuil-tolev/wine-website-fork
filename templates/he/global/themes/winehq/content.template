@@ -52,19 +52,13 @@
 </div>
 
 <div id="main_content">
-  <div class="rbox">
-  <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
-    <div class="content" style="padding: 35px 80px 10px 20px">
+    <div class="content cornerround" style="padding: 35px 20px 10px 80px">
     <!-- Start Content -->
-
 
 {$page_body}
 
-
     <!-- End Content -->
     </div>
-  <b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
-  </div>
 </div>
 
 <div id="footer">
