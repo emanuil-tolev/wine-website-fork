@@ -6,9 +6,7 @@
 
 <div id="main_left">
 
-  <div class="rbox">
-  <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
-    <div class="content" style="padding: 15px 10px 20px 60px; height: 445px; overflow: auto;">
+    <div class="content cornerround" style="padding: 15px 10px 20px 60px; height: 445px; overflow: auto;">
         <div class="winehq_menu">
         
             <div class="info" onClick="document.location='{$root}/about/';">
@@ -53,50 +51,40 @@
 
         </div>
     </div>
-  <b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
-  </div>
-
 
 </div>
 <div id="main_right">
 
-  <div class="rbox">
-  <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
-    <div class="content" style="padding: 5px 10px 5px 10px; height: 85px; overflow: auto;">
-
+    <div class="content cornerround" style="padding: 10px; height: 85px; overflow: auto;">
         <h3 class="title" style="margin: 0;">Últimos lanzamientos</h3>
-            <table style="margin: 7px 0 0 15px; border-spacing: 0; border: 0;">
-            <tr><td>Estable:</td>
-            <td style="padding-left: 15px; padding-bottom: 2px;">
-                <b><a href="{$root}/announce/{$config_stable_release}">Wine&nbsp;{$config_stable_release}</a></b>
-                <span class="small">
-                  (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_stable_release}">cambios</a>)
-                </span>
-            </td></tr>
-            <tr><td>Desarrollo:</td>
-            <td style="padding-left: 15px;">
-                <b><a href="{$root}/announce/{$config_master_release}">Wine&nbsp;{$config_master_release}</a></b>
-                <span class="small">
-                  (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_master_release}">cambios</a>)
-                </span>
-            </td></tr>
-            </table>
+        <table style="margin: 7px 0 0 15px; border-spacing: 0; border: 0;">
+        <tr><td>Estable:</td>
+        <td style="padding-left: 15px; padding-bottom: 2px;">
+            <b><a href="{$root}/announce/{$config_stable_release}">Wine&nbsp;{$config_stable_release}</a></b>
+            <span class="small">
+              (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_stable_release}">cambios</a>)
+            </span>
+        </td></tr>
+        <tr><td>Desarrollo:</td>
+        <td style="padding-left: 15px;">
+            <b><a href="{$root}/announce/{$config_master_release}">Wine&nbsp;{$config_master_release}</a></b>
+            <span class="small">
+              (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_master_release}">cambios</a>)
+            </span>
+        </td></tr>
+        </table>
     </div>
-  <b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
-  </div>
 
-  <div class="rbox" style="margin-top: 15px;">
-  <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
-    <div class="content" style="padding: 10px; height: 340px; overflow: auto;">
+    <div class="content cornerround" style="margin-top: 15px; padding: 10px 0px 10px 10px;">
+      <div style="height: 340px; overflow: auto; padding-right: 10px;">
 
         <h3 class="title"><a href="{$root}/news/">Noticias</a></h3>
 
         <!--EXEC:[news?n=10]-->
 
         <p><a href="{$root}/news/">más noticias...</a></p>
+      </div>
     </div>
-  <b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
-  </div>
 
 </div>
 
