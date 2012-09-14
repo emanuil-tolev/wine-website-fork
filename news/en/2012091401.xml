@@ -1,0 +1,18 @@
+<news>
+<date>September 14, 2012</date>
+<title>Wine 1.5.13 Released</title>
+<body>
+<p> The Wine development release 1.5.13 is now available.</p>
+<p> <a href="{$root}/announce/1.5.13">What's new</a> in this release:
+<ul>
+  <li>Client-side window rendering using the DIB engine.</li>
+  <li>Raw input support for keyboard and mouse.</li>
+  <li>Support for transparent window areas using color keying.</li>
+  <li>Proper C++ RTTI support on 64-bit.</li>
+  <li>Implementation of logical processor information.</li>
+  <li>Support for fonts with localized names.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.13.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
