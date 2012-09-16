@@ -1,0 +1,17 @@
+<news>
+<date>14 septembre 2012</date>
+<title>Sortie de Wine 1.5.13</title>
+<body>
+<p> La version de développement 1.5.13 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.5.13">Nouveautés</a> de cette version :
+<ul>
+  <li>Rendu de fenêtre côté client via le moteur DIB.</li>
+  <li>Prise en charge de l'entrée en mode brut pour les claviers et souris.</li>
+  <li>Prise en charge des zones de fenêtres transparentes en utilisant l'incrustation.</li>
+  <li>Prise en charge correcte du RTTI C++ sous 64 bits.</li>
+  <li>Implémentation des informations sur les processeurs logiques.</li>
+  <li>Prise en charges des fontes de caractères possédant des noms régionalisés.</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.13.tar.bz2">code source</a> est disponible dès à présent. Les paquets binaires sont en cours de construction, et apparaîtront sous peu sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
