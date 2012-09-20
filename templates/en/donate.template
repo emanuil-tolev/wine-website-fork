@@ -1,20 +1,32 @@
-<!--TITLE:[Donate to the Wine project.]-->
-<!--BLURB:[Help getting us together.]-->
+<!--TITLE:[Wine Development Fund.]-->
+<!--BLURB:[Donate to the Wine project.]-->
 
-<h1 class="title">Donate to the Wine project</h1>
+<h1 class="title">Wine Development Fund</h1>
 
-<p>There are some ways to donate to the Wine project.</p>
+<p>You can show your appreciation for Wine and everyone that makes it
+possible by donating to the Wine Development Fund. Your donation will
+go towards paying for things like developer conferences (such as
+<a href="http://wiki.winehq.org/WineConf">WineConf</a>), supplies, and
+documentation.</p>
+
+<p>All of our donations are managed by the
+<a href="http://www.sfconservancy.org/">Software Freedom
+Conservancy</a>, which is a 501(c)(3) organization so donations can
+qualify as deductible under the American tax code. If you have any
+questions or need further assistance, please visit the SFC site.</p>
+
+<h3>Ways to Contribute:</h3>
 
 <table border="0" cellpadding="10" cellspacing="1" bgcolor="#EFEFEF">
 
   <tr>
     <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">Option</b></td>
-    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">About this donation Option</b></td>
+    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">Details</b></td>
   </tr>
 
   <tr bgcolor="#ffffff">
     <td align="center">
-        <script type="text/javascript"> 
+        <script type="text/javascript">
         function validateAmount(amount){
             if(amount.value.match( /^[0-9]+(\.([0-9]+))?$/)){
                 return true;
@@ -34,21 +46,28 @@
             <input name="item_min_price_1" type="hidden" value="10.0"/>
             <input name="item_max_price_1" type="hidden" value="25000.0"/>
             <input name="_charset_" type="hidden" value="utf-8"/>
-            &#x24; <input id="item_price_1" name="item_price_1" onfocus="this.style.color='black'; this.value='';" size="11" style="color:grey;" type="text" value="Enter Amount"/><br />
+            <div style="display:table">
+                <label style="display:table-cell">$</label>
+                <input id="item_price_1" name="item_price_1" onfocus="this.style.color='black'; this.value='';" size="11" style="color:grey; display:table-cell" type="text" value="Enter Amount"/><br />
+            </div>
             <input alt="Donate" src="https://checkout.google.com/buttons/donateNow.gif?merchant_id=622836985124940&amp;w=115&amp;h=50&amp;style=white&amp;variant=text&amp;loc=en_US" type="image"/>
         </form>
     </td>
     <td valign="top">
-        With Google Checkout you can donate per Credit Card.
+        Donate with a credit card through Google Checkout.
     </td>
   </tr>
 
   <tr bgcolor="#ffffff">
     <td align="center" class="small">
-        <a href="javascript:document.PPdonateForm.submit();">PayPal</a>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="PPdonateForm">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="G9BDG2ABR7PYA">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </form>
     </td>
     <td valign="top">
-        With <a href="javascript:document.PPdonateForm.submit();">PayPal</a> you can donate per Credit Card or PayPal account.
+        Donate with a credit card or registered account on Paypal.
     </td>
   </tr>
 
@@ -57,24 +76,29 @@
         <a href="http://www.freewear.org/?org=Wine">FreeWear</a>
     </td>
     <td valign="top">
-        You can buy Wine specific clothes at <a href="http://www.freewear.org/?org=Wine">FreeWear.org</a>.
-        For each article you buy, they donate a part of their benefit to Wine.
+        Purchase Wine-branded clothes at
+        <a href="http://www.freewear.org/?org=Wine">FreeWear.org</a>.
+        For each article you buy, FreeWear forwards some of the proceeds
+        to the Wine Development Fund.
     </td>
   </tr>
 
   <tr bgcolor="#ffffff">
     <td align="center" class="small">
-        <a href="http://www.winehq.org/contributing#wpf">Mail</a>
+        Donations by Mail
     </td>
     <td valign="top">
-        You can also send us cash, cheque or international money order in US funds.
-        See <a href="http://www.winehq.org/contributing#wpf">that Link</a> for more information.
+        <p>Donate to the Wine Development Fund by cash, cheque, or
+        international money order in US dollars. All mailed donations
+        should be sent to the Wine project in care of the Software
+        Freedom Conservancy at:</p>
+        <address>
+            Wine Project<br />
+            Software Freedom Conservancy, Inc.<br />
+            137 Montague St, Suite 380<br />
+            Brooklyn, NY 11201-3548<br />
+            USA
+        </address>
     </td>
   </tr>
-
 </table>
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="PPdonateForm" style="margin: 0; padding: 0;">
-    <input type="hidden" name="cmd" value="_s-xclick">
-    <input type="hidden" name="hosted_button_id" value="G9BDG2ABR7PYA">
-</form>

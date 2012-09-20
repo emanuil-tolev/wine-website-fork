@@ -1,28 +1,29 @@
-<!--TITLE:[Spende dem Wine-Projekt.]-->
-<!--BLURB:[Hilf uns, uns zu treffen.]-->
+<!--TITLE:[Fundo de Desenvolvimento do Wine.]-->
+<!--BLURB:[Fundo de Desenvolvimento do Wine.]-->
 
-<h1 class="title">Spende dem Wine-Projekt</h1>
+<h1 class="title">Fundo de Desenvolvimento do Wine</h1>
 
-<p>Durch die Unterstützung des Wine Party Fonds kannst du Deine
-  Anerkennung der Wine Entwickler demonstrieren. Die Einnahmen werden
-  für Entwickler-Treffen wie z.B. zukünftige Wine Konferenzen
-  verwendet, oder in einigen Fällen, um Dokumentation zu kaufen.</p>
-<p>Die Organisation <a href="http://www.sfconservancy.org/">
-  Software Freedom Conservancy (en)</a> verwaltet momentan unsere
-  Spenden. Falls Du Fragen hast oder sonstige Hilfestellung brauchst,
-  besuch bitte die SFC Website.</p>
-<p>Die Software Freedom Conservancy Organisation erfüllt die
-  Anforderungen nach Artikel 501(c)(3), so dass Spenden an diese, so
-  weit das Gesetz erlaubt, von der Steuer abgesetzt werden können (gilt
-  für die USA).</p>
+<p>O propósito do Fundo de Desenvolvimento do Wine é mostrar apreço aos
+  programadores Wine colectando fundos para reuniões de desenvolvimento,
+  tais como a WineConf, ou em alguns casos para comprar
+  documentação.</p>
 
-<h3>Möglichkeiten zu spenden:</h3>
+<p>A organização que regula actualmente as nossas doações é a
+  <a href="http://www.sfconservancy.org/">Software Freedom
+  Conservancy</a>. Se tiver alguma questão ou precisar de mais
+  esclarecimentos por favor visite o site da SFC.</p>
+
+<p>A Software Freedom Conservancy é uma organização 501(c)(3), e
+  donativos feitos através dela são deduzíveis em impostos dentro do
+  permitido por lei.</p>
+
+<h3>Maneiras de contribuir:</h3>
 
 <table border="0" cellpadding="10" cellspacing="1" bgcolor="#EFEFEF">
 
   <tr>
-    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">Möglichkeit</b></td>
-    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">Über diese Spendemöglichkeit</b></td>
+    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">Alternative</b></td>
+    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">À propos de cette alternative</b></td>
   </tr>
 
   <tr bgcolor="#ffffff">
@@ -55,7 +56,7 @@
         </form>
     </td>
     <td valign="top">
-        Mit Google Checkout kannst du per Kreditkarte spenden.
+        Doe com um cartão de crédito através Google Checkout.
     </td>
   </tr>
 
@@ -64,13 +65,13 @@
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="PPdonateForm" style="margin: 0; padding: 0;">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="G9BDG2ABR7PYA">
-        <input type="hidden" name="lc" value="DE">
+        <input type="hidden" name="lc" value="PT">
         <input type="hidden" name="currency_code" value="EUR">
         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
         </form>
     </td>
     <td valign="top">
-        Mit Paypal kannst du per Kreditkarte oder Paypalkonto spenden.
+        Doe com um cartão de crédito ou um conta Paypal.
     </td>
   </tr>
 
@@ -79,21 +80,17 @@
         <a href="http://www.freewear.org/?org=Wine">FreeWear</a>
     </td>
     <td valign="top">
-        Du kannst Wine spezifische Klamotten bei
         <a href="http://www.freewear.org/?org=Wine">FreeWear.org</a>
-        kaufen. Für jeden Artikel den du kaufst spendet FreeWear einen
-        Teil seines Gewinns an Wine.
     </td>
   </tr>
 
   <tr bgcolor="#ffffff">
     <td align="center" class="small">
-        Spenden per Post
+        Doações pelo Correio
     </td>
     <td valign="top">
-        <p>Darüberhinaus kannst Du Bargeld, Schecks oder internationale
-        Zahlungsanweisungen in US Währung an untenstehende Adresse
-        senden:</p>
+        <p>Pode também enviar dinheiro, cheques ou ordens de câmbio
+        internacionais em fundos dos Estados Unidos para:</p>
         <address>
             Wine Project<br />
             Software Freedom Conservancy, Inc.<br />

@@ -13,11 +13,53 @@
   </tr>
 
   <tr bgcolor="#ffffff">
-    <td align="center" class="small">
-        <a href="javascript:document.PPdonateForm.submit();">Paypal</a>
+    <td align="center">
+        <script type="text/javascript">
+        function validateAmount(amount){
+            if(amount.value.match( /^[0-9]+(\.([0-9]+))?$/)){
+                return true;
+            }else{
+                alert('You must enter a valid donation.');
+                amount.focus();
+                return false;
+            }
+        }
+        </script>
+        <form action="https://checkout.google.com/cws/v2/Donations/622836985124940/checkoutForm" id="BB_BuyButtonForm" method="post" name="BB_BuyButtonForm" onSubmit="return validateAmount(this.item_price_1)" target="_top" style="margin:0;padding:0;">
+            <input name="item_name_1" type="hidden" value="Directed Donation to the Wine Project via Software Freedom Conservancy"/>
+            <input name="item_description_1" type="hidden" value="A directed donation for the Wine project via the Software Freedom Conservancy"/>
+            <input name="item_quantity_1" type="hidden" value="1"/>
+            <input name="item_currency_1" type="hidden" value="USD"/>
+            <input name="item_is_modifiable_1" type="hidden" value="true"/>
+            <input name="item_min_price_1" type="hidden" value="10.0"/>
+            <input name="item_max_price_1" type="hidden" value="25000.0"/>
+            <input name="_charset_" type="hidden" value="utf-8"/>
+            <div style="display:table">
+                <label style="display:table-cell">$</label>
+                <input id="item_price_1" name="item_price_1" onfocus="this.style.color='black'; this.value='';" size="11" style="color:grey; display:table-cell" type="text" value="Enter Amount"/><br />
+            </div>
+            <input alt="Donate" src="https://checkout.google.com/buttons/donateNow.gif?merchant_id=622836985124940&amp;w=115&amp;h=50&amp;style=white&amp;variant=text&amp;loc=en_US" type="image"/>
+        </form>
     </td>
     <td valign="top">
-        Z <a href="javascript:document.PPdonateForm.submit();">Paypalem</a> możesz przekazać datki przez kartę kredytową lub przez konto Paypal.
+        Z Google Checkoutem możesz przekazać datki przez kartę
+        kredytową.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="PPdonateForm" style="margin: 0; padding: 0;">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="G9BDG2ABR7PYA">
+        <input type="hidden" name="lc" value="PL">
+        <input type="hidden" name="currency_code" value="PLN">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </form>
+    </td>
+    <td valign="top">
+        Z Paypalem możesz przekazać datki przez kartę kredytową lub
+        przez konto Paypal.
     </td>
   </tr>
 
@@ -26,24 +68,27 @@
         <a href="http://www.freewear.org/?org=Wine">FreeWear</a>
     </td>
     <td valign="top">
-        Możesz kupić ubrania Wine pod adresem <a href="http://www.freewear.org/?org=Wine">FreeWear.org</a>.
-        Za każde kupione ubranie firma przekazuje część swoich zysków dla Wine.
+        Możesz kupić ubrania Wine pod adresem
+        <a href="http://www.freewear.org/?org=Wine">FreeWear.org</a>. Za
+        każde kupione ubranie firma przekazuje część swoich zysków dla
+        Wine.
     </td>
   </tr>
 
   <tr bgcolor="#ffffff">
     <td align="center" class="small">
-        <a href="http://www.winehq.org/contributing#wpf">Mail</a>
+        Datki Pocztą
     </td>
     <td valign="top">
-        Możesz także przesłać nam pieniądze, czek lub międzynarodowy nakaz przelewu w kapitale Stanów Zjednoczonych.
-        Kliknij na <a href="http://www.winehq.org/contributing#wpf">ten link</a> po więcej informacji.
+        <p>Możesz także przesłać nam pieniądze, czek lub międzynarodowy
+        nakaz przelewu w kapitale Stanów Zjednoczonych:</p>
+        <address>
+            Wine Project<br />
+            Software Freedom Conservancy, Inc.<br />
+            137 Montague St, Suite 380<br />
+            Brooklyn, NY 11201-3548<br />
+            USA
+        </address>
     </td>
   </tr>
-
 </table>
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="PPdonateForm" style="margin: 0; padding: 0;">
-    <input type="hidden" name="cmd" value="_s-xclick">
-    <input type="hidden" name="hosted_button_id" value="G9BDG2ABR7PYA">
-</form>
