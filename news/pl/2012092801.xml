@@ -1,0 +1,16 @@
+<news>
+<date>Wrzesień 28, 2012</date>
+<title>Wydano Wine 1.5.14</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.5.14 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.5.14">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Dużo lepsze zachowanie pamięci podręcznej adresów URL.</li>
+  <li>Ulepszona obsługa obrazów GIF.</li>
+  <li>Więcej funkcji parsera w kompilatorze jednostki cieniującej.</li>
+  <li>Optymalizacje w JavaScript.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.14.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
