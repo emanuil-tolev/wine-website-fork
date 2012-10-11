@@ -1,0 +1,16 @@
+<news>
+<date>28 de Setembro de 2012</date>
+<title>Wine 1.5.14 lançado</title>
+<body>
+<p> A versão de desenvolvimento 1.5.14 já está disponível.</p>
+<p> <a href="{$root}/announce/1.5.14">Novidades</a> nesta versão:
+<ul>
+  <li>Grandes melhorias no comportamento da cache de URL.</li>
+  <li>Melhorias no suporte a imagens GIF.</li>
+  <li>Melhorias no analisador do compilador de shaders.</li>
+  <li>Otimizações do JavaScript.</li>
+  <li>Várias correções de bugs.</li>
+</ul></p>
+<p><p>O código fonte está <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.14.tar.bz2">disponível agora</a>.
+Pacotes binários estão em processo de construção e em breve estarão em suas respectivas <a href="{$root}/download">sessões da área de downloads</a>.
+</p></body></news>
