@@ -1,0 +1,18 @@
+<news>
+<date>14 de Setembro de 2012</date>
+<title>Wine 1.5.13 lançado</title>
+<body>
+<p> A versão de desenvolvimento 1.5.13 já está disponível.</p>
+<p> <a href="{$root}/announce/1.5.13">Novidades</a> nesta versão:
+<ul>
+  <li>Desenho de janelas em Client-side usando a DIB engine.</li>
+  <li>Suporte para Raw input do teclado e mouse.</li>
+  <li>Suporte a janelas com áreas transparentes usando color keying.</li>
+  <li>Suporte a C++ RTTI em processadores 64-bit.</li>
+  <li>Implementação de informações lógicas de processador.</li>
+  <li>Suporte a fontes com nomes localizados.</li>
+  <li>Várias correções de bugs.</li>
+</ul></p>
+<p><p>O código fonte está <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.13.tar.bz2">disponível agora</a>.
+Pacotes binários estão em processo de construção e em breve estarão em suas respectivas <a href="{$root}/download">sessões da área de downloads</a>.
+</p></body></news>
