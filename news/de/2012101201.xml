@@ -1,0 +1,18 @@
+<news>
+<date>12. Oktober 2012</date>
+<title>Wine 1.5.15 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.5.15 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.5.15">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Volle Unterstützung für überlagerte Fenster.</li>
+  <li>Neue Version der Gecko Engine, basierend auf Firefox 16.</li>
+  <li>Unterstützung für Broadcast Sockets für Netzwerk Spiele.</li>
+  <li>Heruntergeladene Add-On Installer sind nun gecached.</li>
+  <li>Unterstützung für persistente Internet Cookies.</li>
+  <li>String Optimierungen in JavaScript.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.15.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
