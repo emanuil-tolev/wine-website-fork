@@ -1,0 +1,18 @@
+<news>
+<date>Październik 12, 2012</date>
+<title>Wydano Wine 1.5.15</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.5.15 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.5.15">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Pełne wsparcie warstwowych okien.</li>
+  <li>Nowa wersja silnika Gecko oparta o Firefox 16.</li>
+  <li>Wsparcie dla gniazd nadających używanych przez gry sieciowe.</li>
+  <li>Pobrane instalatory dodatków są teraz zachowywane w pamięci podręcznej.</li>
+  <li>Wsparcie dla trwałych ciasteczek internetowych.</li>
+  <li>Optymalizacje ciągów znaków w JavaScript.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.15.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
