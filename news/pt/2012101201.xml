@@ -1,0 +1,18 @@
+<news>
+<date>12 de Outubro de 2012</date>
+<title>Wine 1.5.15 lançado</title>
+<body>
+<p> A versão de desenvolvimento 1.5.15 já está disponível.</p>
+<p> <a href="{$root}/announce/1.5.15">Novidades</a> nesta versão:
+<ul>
+  <li>Suporte completo a janelas em camadas.</li>
+  <li>Nova versão da engine Gecko baseada no Firefox 16.</li>
+  <li>Suporte a sockets broadcast usados por jogos em rede.</li>
+  <li>Add-ons baixados agora são armazenados em cache.</li>
+  <li>Suporte a Internet cookies persistentes.</li>
+  <li>Otimizações nas strings do JavaScript.</li>
+  <li>Várias correções de bugs.</li>
+</ul></p>
+<p><p>O código fonte está <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.15.tar.bz2">disponível agora</a>.
+Pacotes binários estão em processo de construção e em breve estarão em suas respectivas <a href="{$root}/download">sessões da área de downloads</a>.
+</p></body></news>
