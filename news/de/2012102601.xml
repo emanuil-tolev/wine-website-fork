@@ -1,0 +1,17 @@
+<news>
+<date>26. Oktober 2012</date>
+<title>Wine 1.5.16 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.5.16 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.5.16">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Neue Version des Mono Pakets.</li>
+  <li>Viele Verbesserungen am CMD Kommandozeilenparser.</li>
+  <li>Mehr Stream Klassen in der C++ Runtime.</li>
+  <li>Unterstützung für die Verwaltung von Diensten in WMI.</li>
+  <li>Verbesserte CPU Erkennung.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.16.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
