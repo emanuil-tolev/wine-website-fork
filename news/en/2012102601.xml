@@ -1,0 +1,17 @@
+<news>
+<date>October 26, 2012</date>
+<title>Wine 1.5.16 Released</title>
+<body>
+<p> The Wine development release 1.5.16 is now available.</p>
+<p> <a href="{$root}/announce/1.5.16">What's new</a> in this release:
+<ul>
+  <li>New version of the Mono package.</li>
+  <li>Many improvements to the CMD command-line parser.</li>
+  <li>More stream classes in the C++ runtime.</li>
+  <li>Support for managing services in WMI.</li>
+  <li>Improved CPU detection.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.16.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
