@@ -1,0 +1,17 @@
+<news>
+<date>9. November 2012</date>
+<title>Wine 1.5.17 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.5.17 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.5.17">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Subpixel Schrift Antialiasing in der DIB Engine.</li>
+  <li>Unterstützung für die automatische Installation von ActiveX-Steuerelementen.</li>
+  <li>Bei sicheren Verbindungen wird automatisch auf TLS 1.0 zurückgeschaltet.</li>
+  <li>Anfänge des DirectWrite Textanalysators.</li>
+  <li>Besseres Handling von Schriftkonturen in OpenGL.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.17.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
