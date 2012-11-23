@@ -1,0 +1,17 @@
+<news>
+<date>23. November 2012</date>
+<title>Wine 1.5.18 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.5.18 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.5.18">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Verschiedene Windows Codecs Verbesserungen.</li>
+  <li>Fehlerbehebungen für die OLE Datenbank Unterstützung.</li>
+  <li>Verbesserungen am System Parameter Management.</li>
+  <li>Einige Fehlerbehebungen am eigenen Webbrowser.</li>
+  <li>Fehlerbehebungen für die XML Unterstützung.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.18.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
