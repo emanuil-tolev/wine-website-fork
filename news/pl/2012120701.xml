@@ -1,0 +1,15 @@
+<news>
+<date>Grudzień  7, 2012</date>
+<title>Wydano Wine 1.5.19</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.5.19 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.5.19">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Ulepszenia poprawiające wydajność w silniku DIB.</li>
+  <li>Bardziej zupełna implementacja XML-lite.</li>
+  <li>Kilka funkcji więcej w bibliotece uruchomieniowej C++.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.19.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
