@@ -1,0 +1,17 @@
+<news>
+<date>Grudzień 21, 2012</date>
+<title>Wydano Wine 1.5.20</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.5.20 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.5.20">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Kilka bibliotek dll o dziwnych nazwach do wsparcia zestawów API.</li>
+  <li>Zaimplementowano więcej funkcji ATL.</li>
+  <li>Nadal więcej funkcji C++ z biblioteki uruchomieniowej.</li>
+  <li>Kilka poprawek przy wyświetlaniu tekstu.</li>
+  <li>Ulepszenia w sterowniku PostScript.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.20.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
