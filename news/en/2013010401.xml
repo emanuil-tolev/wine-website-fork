@@ -1,0 +1,14 @@
+<news>
+<date>January  4, 2013</date>
+<title>Wine 1.5.21 Released</title>
+<body>
+<p> The Wine development release 1.5.21 is now available.</p>
+<p> <a href="{$root}/announce/1.5.21">What's new</a> in this release:
+<ul>
+  <li>Beginnings of a netstat built-in program.</li>
+  <li>Support for selecting resolution in the PostScript driver.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.21.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
