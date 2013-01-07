@@ -1,0 +1,16 @@
+<news>
+<date>21 de Dezembro de 2012</date>
+<title>Wine 1.5.20 lançado</title>
+<body>
+<p> A versão de desenvolvimento 1.5.20 já está disponível agora.</p>
+<p> <a href="{$root}/announce/1.5.20">Novidades</a> desta versão:
+<ul>
+  <li>Vários dlls com nomes feios para suporte a conjuntos de API.</li>
+  <li>Mais funções ATL implementadas.</li>
+  <li>Ainda mais funções do runtime C++.</li>
+  <li>Várias correções na renderização de texto.</li>
+  <li>Melhorias no driver PostScript.</li>
+  <li>Várias correções de bugs.</li>
+<p><p>O código fonte está <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.20.tar.bz2">disponível agora</a>.
+Pacotes binários estão em processo de construção e irão aparecer em breve em suas respectivas <a href="{$root}/download">sessões da área de downloads</a>.
+</p></body></news>
