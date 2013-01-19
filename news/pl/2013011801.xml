@@ -1,0 +1,16 @@
+<news>
+<date>Styczeń 18, 2013</date>
+<title>Wydano Wine 1.5.22</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.5.22 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.5.22">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Nowa wersja silnika Gecko.</li>
+  <li>Początki sterownika grafiki dla Maca.</li>
+  <li>Wsparcie dla platform ARM64.</li>
+  <li>Poprawki w tekście pisanym od prawej do lewej w Uniscribe.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.22.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
