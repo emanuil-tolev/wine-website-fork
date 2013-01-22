@@ -1,0 +1,15 @@
+<news>
+<date>18 de Janeiro de 2013</date>
+<title>Wine 1.5.22 lançado</title>
+<body>
+<p> A versão de desenvolvimento 1.5.22 já está disponível agora.</p>
+<p> <a href="{$root}/announce/1.5.22">Novidades</a> desta versão:
+<ul>
+  <li>Nova versão do motor Gecko.</li>
+  <li>Início do desenvolvimento de um driver gráfico para Mac.</li>
+  <li>Suporte a plataformas ARM64.</li>
+  <li>Correção do texto RTL no Uniscribe.</li>
+  <li>Várias correções de bugs.</li>
+<p><p>O código fonte está <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.22.tar.bz2">disponível agora</a>.
+Pacotes binários estão em processo de construção e irão aparecer em breve em suas respectivas <a href="{$root}/download">sessões da área de downloads</a>.
+</p></body></news>
