@@ -322,35 +322,49 @@ class html
         // default from config
         $lang = $GLOBALS['config']->lang;
         
-        // get lang
+        // load language from URL or cookie
         if (isset($_COOKIE['lang']) and in_array($_COOKIE['lang'], $GLOBALS['config']->languages))
         {
-            // load language from URL or cookie
             debug("global", "lang from cookie: {$_COOKIE['lang']}");
             $lang = $_COOKIE['lang'];
+            return $lang;
         }
-        else if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]))
+
+        // load from web browser environment
+        if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]))
         {
-            // load from web browser environment
             $hal = preg_split("/\;/", $_SERVER["HTTP_ACCEPT_LANGUAGE"]);
             $avail = preg_split('/\,/', array_shift($hal));
-            if (isset($avail[0]))
+            if (!empty($avail))
             {
-                // if first language is a variation, use the parent language
-                if (strlen($avail[0]) > 2)
-                    $avail[0] = substr($avail[0], 0, 2);
-                // check to make sure lang is defined in our config
-                if (in_array($avail[0], $GLOBALS['config']->languages))
+                // loop through languages
+                $avail = array_map("strtolower", $avail);
+                foreach ($avail as $inLang)
                 {
-                    debug("global", "lang from browser: {$avail[0]}");
-                    $lang = $avail[0];
+                    // check to see if langage is available
+                    if (in_array($inLang, $GLOBALS['config']->languages))
+                    {
+                        debug("global", "lang from browser: {$inLang}");
+                        return $inLang;
+                    }
+
+                    // check to see if variation of langage is available
+                    if (strlen($inLang) > 2)
+                    {
+                        $inLangAlt = substr($inLang, 0, 2);
+                        if (in_array($inLangAlt, $GLOBALS['config']->languages))
+                        {
+                            debug("global", "lang from browser: {$inLangAlt}");
+                            return $inLangAlt;
+                        }
+                    }
                 }
             }
             unset($hal, $avail);
         }
-        
-        // return language
-        debug("global", "lang: {$lang}");
+
+        // return default language
+        debug("global", "lang default: {$lang}");
         return $lang;
     }
 
