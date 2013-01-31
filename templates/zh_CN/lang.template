@@ -1,0 +1,12 @@
+<!--TITLE:[ WineHQ - 选择你的语言]-->
+<!--BLURB:[ WineHQ 是一个支持多种语言的网站]-->
+
+<!--EXEC:[language]-->
+
+<h1 class="title">{$langChange}</h1>
+
+<p><b>当前语言：</b> {$langCur}</p>
+
+<ul style="list-style: none; margin-left: 20px; padding: 0;">
+<!--EXEC:[language?cmd=list]-->
+</ul>

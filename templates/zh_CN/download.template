@@ -1,0 +1,199 @@
+<!--TITLE:[ Wine 二进制下载]-->
+<!--BLURB:[在这里下载对应你喜欢的系统的 Wine ]-->
+
+<h1 class="title">下载 Wine </h1>
+
+<h2 style="margin-bottom: 10px;"><a name="crossover"></a>被支持的 Wine </h2>
+
+<table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">产品</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">描述</font></b></td>
+  </tr>
+
+  <tr>
+    <td align="center" bgcolor="#ffffff">
+      <a href="http://www.codeweavers.com/products/download_trial/">
+        <img src="{$root}/images/distro/crossover.png" 
+         width="50" height="50" alt="CrossOver Linux or Mac" border="0">
+      </a>
+    </td>
+    <td align="left" bgcolor="#ffffff">
+      <b><a href="http://www.codeweavers.com/products/">CrossOver</a></b>
+      是由 <b><a href="http://www.codeweavers.com">CodeWeavers</a></b> 提供的一个经过打磨的 Wine 版本。 
+      CrossOver 使得用户可以更容易地使用 Wine 并且 CodeWeavers 为其用户提供极佳的技术支持。
+      所有 CrossOver 的购买都被直接用于支持 Wine 的开发者。所以购买 CrossOver 可谓一举两得，既可以得到使用 Wine 的帮助又可以支持支持 Wine 项目。 
+      CodeWeavers 提供全功能的 
+      <b><a href="http://www.codeweavers.com/products/download_trial/">CrossOver 试用版</a></b>。
+    </td>
+  </tr>
+</table>
+
+<p class="small" align="center">This endorsement is the primary recognition that CodeWeavers has
+requested in exchange for hosting the Wine web site.</p>
+  
+
+<h2 style="margin-bottom: 5px;"><a name="binary"></a> Wine 的二进制下载</h2>
+
+<table style="margin: 0 0 15px 0;" width="100%">
+<tr>
+  <td width="200">最新的稳定版：</td><td>Wine&nbsp;{$config_stable_release}</td>
+  <td rowspan="2" valign="top" style="padding-left: 20px; text-align: center;"><b>查看 
+  <a href="http://wiki.winehq.org/HowTo">installation and configuration how-to</a> 
+  获取快速安装说明。</b></td>
+</tr>
+<tr>
+  <td>最新的开发版：</td><td>Wine&nbsp;{$config_master_release}</td>
+</tr>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">系统</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">注释</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">维护者</font></b></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="{$root}/download/ubuntu">
+      <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu linux"border="0"></a>
+    </td>
+    <td> <b><a href="{$root}/download/ubuntu">下载 Ubuntu 安装包</a></b> 
+     - Ubuntu Oneiric（11.10），和 Precise（12.04）的二进制和源码 .debs 
+    <td><a href="mailto:scott@open-vote.org">Scott Ritchie</a></td>
+  </tr>
+
+   <tr bgcolor="#ffffff">
+    <td align=center><a href="{$root}/download/debian">
+      <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
+    </td>
+    <td> <b><a href="{$root}/download/debian">下载 Debian 安装包</a></b> 
+     - Debian Sid 的二进制 .debs</td>
+    <td><a href="mailto:curan@debian.org">Kai Wasserbäch</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">
+      <img src="{$root}/images/distro/redhat.png" width="50" height="50" alt="Red Hat Linux" border="0"></a>
+    </td>
+    <td> <b><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">下载 Red Hat / CentOS / Fedora 安装包</a></b>
+        - Red Hat Enterprise Linux 5、6；CentOS 5、6；Fedora Linux 16、17 和兼容发行版的二进制及源码 .rpms. 
+        wine 的元包可以通过 <tt>yum</tt> 来安装， 
+        运行“<tt>$ yum install wine</tt>”从 EPEL / Fedora Extras / Fedora 的仓库获取。 
+         </td>
+    <td><a href="mailto:andreas.bierfert_at_lowlatency.de">Andreas Bierfert</a></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://en.opensuse.org/Wine#Repositories">
+      <img src="{$root}/images/distro/suse.png" width="50" height="50" alt="SUSE Linux" border="0"></a>
+    </td>
+    <td> <b><a href="http://en.opensuse.org/Wine#Repositories">下载 SUSE 安装包</a></b>
+         -  openSUSE 11.1、11.2、11.3、11.4 和 SUSE Linux Enterprise 10 和 11 的发行二进制和源码 .rpms 及每日快照 RPMs。<br>
+         旧版本安装包可以从 <a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=79444">SourceForge</a> 获取
+     </td>
+    <td><a href="mailto:meissner@suse.de">Marcus Meissner</a></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://sourceforge.net/projects/wine/files/Mandriva%20Packages/">
+      <img src="{$root}/images/distro/mandriva.png" width="50" height="50" alt="Mandriva Linux" border="0"></a>
+    </td>
+    <td> <b><a href="http://sourceforge.net/projects/wine/files/Mandriva%20Packages/">下载 Mandriva 安装包</a></b>
+         - Mandriva Linux 2008、2009 和 2010 的二进制 .rpms。下载 2010.2 的安装包，如果你的 Mandriva 是 2010.2
+     发行版，例如：2010 Spring。下载 2010.0 安装包当你的 Mandriva 是 2010 的第一个发行。</td>
+    <td><a href="mailto:marco@mandrivaclub.nl">Marco Meijer</a></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">
+      <img src="{$root}/images/distro/slackware.png" width="50" height="50" alt="Slackware linux" border="0"></a>
+    </td>
+    <td> <b><a href="http://sourceforge.net/projects/wine/files/Slackware Packages/">下载 Slackware 安装包</a></b>
+         - 二进制 txz（Slackware 14.0），和 tgz （支持旧版本）</td>
+    <td><a href="mailto:studiosg@giustetti.net">Simone Giustetti</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://www.freshports.org/emulators/wine/">
+      <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
+    </td>
+    <td> <b><a href="http://www.freshports.org/emulators/wine/">下载 FreeBSD 安装包</a></b>
+         - FreeBSD 5.3 或者更新的源</td>
+    <td><a href="mailto:gerald@pfeifer.com">Gerald Pfeifer</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">
+      <img src="{$root}/images/distro/pcbsd.png" width="50" height="50" alt="FreeBSD" border="0"></a>
+    </td>
+    <td> <b><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">下载 PC-BSD 安装包</a></b>
+         - PC-BSD 的二进制安装包 .pbi（基于FreeBSD 的系统）</td>
+    <td><a href="mailto:kris@pcbsd.com">Kris Moore</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://www.sunfreepacks.com/">
+      <img src="{$root}/images/distro/solaris.png" width="50" height="50" alt="Solaris 10" border="0"></a>
+    </td>
+    <td> <b><a href="http://www.sunfreepacks.com/">下载Solaris 10, SXCE 安装包</a></b>
+        - Solaris 10 和 SXCE x86 的 ASwine、ASwine-SXCE 二进制安装包 .pkg</td>
+    <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://hub.opensolaris.org/bin/view/Community+Group+desktop/wine">
+      <img src="{$root}/images/distro/opensolaris.png" width="50" height="50" alt="OpenSolaris" border="0"></a>
+    </td>
+    <td> <b><a href="http://hub.opensolaris.org/bin/view/Community+Group+desktop/wine">下载 OpenSolaris 安装包</a></b>
+        - OpenSolaris x86 的二进制安装包 .pkg </td>
+    <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://maemo.org/packages/view/wine/">
+      <img src="{$root}/images/distro/maemo.png" width="50" height="50" alt="Maemo" border="0"></a>
+    </td>
+    <td> <b><a href="http://maemo.org/packages/view/wine/">下载 Maemo 安装包</a></b>
+        - Maemo x86 和 Maemo ARM 的二进制安装包 .deb </td>
+    <td><a href="http://maemo.org/profile/view/onion/">Kaj-Michael Lang</a></td>
+  </tr>
+
+
+</table>
+
+
+<h2 style="margin-bottom: 10px;"><a name="binary"></a>第三方工具</h2>
+
+<p>有些时候一个经过定制的 Wine 可以使一个应用工作，但是这些修改由于某些原因不能被合并到 Wine 当中。为了帮助克服当前 Wine 的不足之处，终端用户使用第三方应用已经有很久的历史了。这些第三方应用是完全不被 Wine 开发者支持的，但是你会发现它可能很有帮助。得到更多相关信息，可以查看我们关于第三方应用的 <a href="http://wiki.winehq.org/ThirdPartyApplications">wiki 页面</a>。</p>
+
+<h2><a name="source"></a> Wine 的源码下载</h2>
+
+<table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">位置</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">描述</font></b></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td> <a href="http://sourceforge.net/projects/wine/files/Source/" target="_blank">sourceforge.net</a></td>
+    <td> 我们的正式源码发布站点。</td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td> <a href="http://wiki.winehq.org/GitWine">source.winehq.org/git</a> </td>
+    <td> 获取最新的开发版本。</td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td><a href="http://ibiblio.org/pub/linux/system/emulators/wine/">ibiblio.org</a></td>
+    <td> 正式源码和文档包可选下载站点。</td>
+  </tr>
+  
+</table>
+
+<div style="margin: 10px; padding: 5px; border: 1px solid #C0C0C0; background-color: #F0F0F0;"><b>注意：</b>查看<a href="http://wiki.winehq.org/Recommended_Packages">recommended packages</a> 获取配置和构建 Wine 的帮助。</div>
+

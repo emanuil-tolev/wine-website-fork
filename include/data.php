@@ -63,7 +63,11 @@ class data
                                  'tr' => array(
                                                'name'   => 'Türkçe',
                                                'change' => 'Lisan Değiştir'
-                                              )
+                                              ),
+				 'zh_CN' => array(
+					       'name'	=> '简体中文',
+					       'change'	=> '选择语言'
+					      )
                                 );
     }
 }

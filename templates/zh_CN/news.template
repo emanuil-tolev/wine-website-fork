@@ -1,0 +1,16 @@
+<!--TITLE:[新闻]-->
+<!--BLURB:[来自 Wine 社区的最新消息。]-->
+
+<h1 class="title">新闻</h1>
+
+<!--EXEC:[news]-->
+
+<hr />
+
+<div class="link-container">
+    <p><a href="{$root}/wwn/">World Wine News Archive</a></p>
+</div>
+<ul class="rss">
+    <li><a href="{$root}/news/rss/">WineHQ News RSS Feed</a></li>
+</ul>
+

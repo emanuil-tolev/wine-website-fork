@@ -1,0 +1,90 @@
+<!--TITLE:[在 Linux，BSD，Solaris 和 Mac OS X 上运行 Windows 应用]-->
+<!--BLURB:[在 Linux，BSD，Solaris 和 Mac OS X 上运行 Windows 应用]-->
+<!--META_KEYWORDS:[windows, linux, macintosh, solaris, freebsd]-->
+<!--META_DESCRIPTION:[让你在其他操作系统运行 Windows 应用的开源软件. ]-->
+<!--STYLE:[content_nobox]-->
+
+<div id="main_left">
+
+    <div class="content cornerround" style="padding: 15px 10px 20px 60px; height: 445px; overflow: auto;">
+        <div class="winehq_menu">
+
+            <div class="info" onClick="document.location='{$root}/about/';">
+              <div class="icon"></div>
+              <div class="text">
+                <div class="title"><a href="{$root}/about/">关于</a></div>
+                <div class="subtitle">了解 Wine 项目. </div>
+              </div>
+            </div>
+
+            <div class="dl" onClick="document.location='{$root}/download/';">
+              <div class="icon"></div>
+              <div class="text">
+                <div class="title"><a href="{$root}/download/">下载</a></div>
+                <div class="subtitle">安装最新的 Wine. </div>
+              </div>
+            </div>
+
+            <div class="help" onClick="document.location='{$root}/help/';">
+              <div class="icon"></div>
+              <div class="text">
+                <div class="title"><a href="{$root}/help/">支持</a></div>
+                <div class="subtitle">获取帮助. </div>
+              </div>
+            </div>
+
+            <div class="devel" onClick="document.location='{$root}/devel/';">
+              <div class="icon"></div>
+              <div class="text">
+                <div class="title"><a href="{$root}/devel/">开发</a></div>
+                <div class="subtitle">成为 Wine 开发者. </div>
+              </div>
+            </div>
+
+            <div class="donate" onClick="document.location='{$root}/donate/';">
+              <div class="icon"></div>
+              <div class="text">
+                <div class="title"><a href="{$root}/donate/">捐助</a></div>
+                <div class="subtitle">捐助 Wine 项目. </div>
+              </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div id="main_right">
+
+    <div class="content cornerround" style="padding: 10px; height: 85px; overflow: auto;">
+        <h3 class="title" style="margin: 0;">最新发布</h3>
+        <table style="margin: 7px 0 0 15px; border-spacing: 0; border: 0;">
+        <tr><td>稳定版：</td>
+        <td style="padding-left: 15px; padding-bottom: 2px;">
+            <b><a href="{$root}/announce/{$config_stable_release}">Wine&nbsp;{$config_stable_release}</a></b>
+            <span class="small">
+              (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_stable_release}">shortlog</a>)
+            </span>
+        </td></tr>
+        <tr><td>开发版：</td>
+        <td style="padding-left: 15px;">
+            <b><a href="{$root}/announce/{$config_master_release}">Wine&nbsp;{$config_master_release}</a></b>
+            <span class="small">
+              (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_master_release}">shortlog</a>)
+            </span>
+        </td></tr>
+        </table>
+    </div>
+
+    <div class="content cornerround" style="margin-top: 15px; padding: 10px 0px 10px 10px;">
+      <div style="height: 340px; overflow: auto; padding-right: 10px;">
+
+        <h3 class="title"><a href="{$root}/news/">新闻</a></h3>
+
+        <!--EXEC:[news?n=10]-->
+
+        <p><a href="{$root}/news/">更多新闻……</a></p>
+      </div>
+    </div>
+
+</div>
+
