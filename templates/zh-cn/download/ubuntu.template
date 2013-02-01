@@ -1,0 +1,51 @@
+<!--TITLE:[给 Ubuntu 安装最新的 Wine]-->
+<!--BLURB:[给 Ubuntu 安装最新的 Wine]-->
+
+<h1 class="title"><a href="http://www.ubuntu.com/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Logo" border="0"></a>
+Ubuntu 及其衍生版
+<a href="http://www.ubuntu.com/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Logo" border="0"></a></h1>
+
+<p>Ubuntu 和 Ubuntu 的衍生版（比如 Kubuntu）从<i>源</i>获取软件的<i>安装包</i>。
+Ubuntu 的源默认包含了 Wine，当然，如果你想更新到最新版本的 Wine，那么请按照这个说明使用 WineHQ 的源。
+</p>
+
+<h2>添加 WineHQ PPA 源：</h2>
+
+<p>启动 <b>Ubuntu 软件中心</b>，通过<b>编辑->软件源</b>来打开软件源菜单。
+选择<b>其他软件</b>选项并点击<b>添加</b>。</p>
+
+<img src="{$root}/images/distro/ubuntu-ppa.png" width="531" height="509" alt="Software Center->Edit->Software Sources->Other Software" border="0">
+
+<p>接着， <b>复制并粘贴下面这行代码</b>。</p>
+
+<i>ppa:ubuntu-wine/ppa</i></p>
+
+<h2>警告：Beta 版安装包</h2>
+
+<p><i>版本 1.5 的安装包是 beta 版的安装包。 这意味着他们会偶尔被做<a href="http://wiki.winehq.org/Regression">回滚处理（regressions）</a>，这种处理发生在当更新导致 Wine 的（原有）功能被破坏的情况下。
+所以，如果稳定版的 Wine 1.4 已经能够为你工作，你或许不太想用 beta 版的安装包。</i></p>
+
+<h2>安装 Wine：</h2>
+
+<p>一旦你已经添加了 WineHQ PPA 源，你就已经可以开始安装了。</p>
+
+<p><i>获取最新的 Wine 1.5 beta，
+<a href="apt://wine1.5">点击这个链接来安装 wine1.5 的安装包</a>。</i></p>
+<p><i>安装旧版但稳定的 Wine 1.4，
+<a href="apt://wine1.4">点击这个链接来安装 wine1.4 的安装包</a>。</i></p>
+
+<h2>更新 Ubuntu 到一个新的版本</h2>
+
+<p>如果你更新了整个系统，比如从 Ubuntu 11.10 到 12.04，你需要回到这个页面并重新添加软件源。内置的更新管理器是不会自动开启 Wine 源的。</p>
+
+<h2>使用命令行来安装 Wine：</h2>
+
+<p>可以通过终端来添加 Wine PPA 并安装 Wine。这个方法对 Kubuntu、Xubuntu 和其他 Ubuntu 衍生版同样有效。</p>
+
+<p><i>sudo add-apt-repository ppa:ubuntu-wine/ppa</i></p>
+
+<p>接着运行 ‘<b>sudo apt-get 
+update</b>’ 来更新 APT 的包信息。 现在你就可以使用 ‘<b>sudo apt-get 
+install wine1.5</b>’ 来安装 Wine 了。</p>
+
+<p>如果你想亲自浏览 PPA，可以<a href="https://launchpad.net/~ubuntu-wine/+archive/ppa">访问它的 Launchpad 页面</a>。</p>

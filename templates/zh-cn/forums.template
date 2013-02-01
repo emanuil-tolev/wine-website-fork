@@ -1,0 +1,110 @@
+<!--TITLE:[邮件列表/论坛]-->
+<!--BLURB:[我们不想疏于沟通]-->
+
+<h1 class="title">主要的邮件列表/论坛</h1>
+
+<p> Wine 有很多邮件列表和论坛，这里列举了对用户最有用的一些：</p>
+
+<ul>
+    <li><a href="http://forum.winehq.org"> WineHQ 论坛</a></li>
+
+    <li><a href="http://www.winehq.org/mailman/listinfo/wine-users"> Wine-Users 邮件列表</a>（和<a href="http://www.winehq.org/pipermail/wine-users/">在线存档</a>）</li>
+
+    <li> Ubuntu 用户也许还想去 <a href="http://ubuntuforums.org/forumdisplay.php?f=313">Ubuntu 论坛 Wine 板块</a>
+
+    <li>或许您还想去 <a href="http://www.linuxforums.org/forum/wine/">Linux Forums 的 Wine 板块</a>
+
+    <li>如果你想被告知最新的发布，请订阅 <a href="http://www.winehq.org/mailman/listinfo/wine-announce"> Wine-Announce 邮件列表 </a></li>
+</ul>
+
+<p>请不要新建英文的 Wine 论坛了（除非是一个流行发行版主要论坛上的 Wine 板块）。</p>
+
+<p>如果你知道除此之外活跃的 Wine 论坛，特别是非英文论坛，请告诉我们以便我们将它添加到这个列表来。（发送邮件到 dank@kegel.com ）</p>
+
+<h2>所有 WineHQ 邮件列表</h2>
+
+<p> WineHQ 分别有用于提交 patches、追踪 Git 提交、讨论 Wine 的邮件列表。他们拥有可定制的用户订阅配置，可以<a href="http://www.winehq.org/mailman/listinfo">通过
+WWW</a>，或者发送一封标题为“subscribe”的邮件到 <i>指定列表名称</i>-request@winehq.org 来订阅。
+如果想取消订阅，则使用“unsubscribe <i>密码</i>”作为标题，密码是你在你订阅时获得的。
+或者直接使用 <a href="http://www.winehq.org/mailman/listinfo">Mailman web 界面</a>。</p>
+
+<p><b>注意：</b> 你必须订阅后才能发送邮件到列表，否则你的邮件将被邮件列表软件判定为垃圾邮件。</p>
+
+<ul class="roomy">
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-announce">（取消）订阅</a>] 
+    [<a href="http://www.winehq.org/pipermail/wine-announce/">存档 1</a>] 
+    [<a href="http://news.gmane.org/gmane.comp.emulators.wine.announce">存档 2</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.announce">via newsreader</a>]
+    <a href="mailto:wine-announce@winehq.org">wine-announce@winehq.org</a><br>
+    一个低流量（2封/月）的只读列表，用于宣布发布和其他主要的 Wine 或者 WineHQ 消息。
+  </li>
+
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-users">（取消）订阅</a>]
+    [<a href="http://www.winehq.org/pipermail/wine-users/">存档 1</a>]  
+    [<a href="http://news.gmane.org/gmane.comp.emulators.wine.user">存档 2</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.user">via newsreader</a>]
+    <a href="mailto:wine-users@winehq.org">wine-users@winehq.org</a><br>
+    一个中等流量（50封/天）的开放性列表，用于终端用户讨论。
+  </li>
+
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-devel">（取消）订阅</a>]
+    [<a href="http://www.winehq.org/pipermail/wine-devel/">存档 1</a>]
+    [<a href="http://news.gmane.org/gmane.comp.emulators.wine.devel">存档 2</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.devel">via newsreader</a>]
+    <a href="mailto:wine-devel@winehq.org">wine-devel@winehq.org</a> <br>
+    一个中等流量（25封/天）的开放性列表，用于讨论 Wine 开发、WineHQ、patches 或者其他 Wine 开发者感兴趣的事情。
+  </li>
+
+  <li>
+   [<a href="http://www.winehq.org/mailman/listinfo/wine-patches">（取消）订阅</a>]
+   [<a href="http://www.winehq.org/pipermail/wine-patches/">存档 1</a>]
+   [<a href="http://news.gmane.org/gmane.comp.emulators.wine.patches">存档 2</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.patches">via newsreader</a>]
+   <a href="mailto:wine-patches@winehq.org">wine-patches@winehq.org</a><br>
+   一个中等流量（45封/天）的开放性列表，只用于提交 patches。
+ </li>
+
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-cvs">（取消）订阅</a>]
+    [<a href="http://www.winehq.org/pipermail/wine-cvs/">存档 1</a>]
+    [<a href="http://news.gmane.org/gmane.comp.emulators.wine.cvs">存档 2</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.cvs">via newsreader</a>]
+    <a href="mailto:wine-cvs@winehq.org">wine-cvs@winehq.org</a><br>
+    一个中等流量（35封/天）的只读列表，用于追踪 Git tree 上的 commits。
+  </li>
+
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-releases">（取消）订阅</a>]
+    [<a href="http://www.winehq.org/pipermail/wine-releases/">存档 1</a>]
+    <a href="mailto:wine-releases@winehq.org">wine-releases@winehq.org</a> <br>
+    一个低流量（2封/月）的只读列表，用于接收每个 Wine official release 的大体积 diff 文件。
+  </li>
+
+  <li>
+    [<a href="http://news.gmane.org/gmane.comp.emulators.wine.license">存档 1</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.license">via newsreader</a>]
+    <br>
+    已经关闭的列表，用于讨论与 Wine 有关的法律议题，包括许可证议题。（关闭于 2004-12-16）
+  </li>
+
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-bugs">（取消）订阅</a>]
+    [<a href="http://www.winehq.org/pipermail/wine-bugs/">存档 1</a>]
+    [<a href="http://news.gmane.org/gmane.comp.emulators.wine.bugs">存档 2</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.bugs">via newsreader</a>]
+    <a href="mailto:wine-bugs@winehq.org">wine-bugs@winehq.org</a><br>
+    一个大流量（150封/天）的只读列表，用于监听  
+    <a href="http://bugs.winehq.org/">Bug Tracking Database</a> 的活动。
+  </li>
+
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-tests-results">（取消）订阅</a>]
+    [<a href="http://www.winehq.org/pipermail/wine-tests-results/">存档</a>]
+    <a href="mailto:wine-tests-results@winehq.org">wine-tests-results@winehq.org</a><br>
+    一个中等流量（10封/天）的开放性列表，用于提交测试结果。
+  </li>
+
+</ul>

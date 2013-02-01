@@ -1,0 +1,98 @@
+<!--TITLE:[ Wine 开发基金]-->
+<!--BLURB:[捐助 Wine 项目]-->
+
+<h1 class="title">Wine Development Fund</h1>
+
+<p>所有人都可以通过向 Wine 开发基金（Wine Development Fund）捐款来表达你对 Wine 的肯定。
+你的捐款将被用于支付开发者会议（例如：
+<a href="http://wiki.winehq.org/WineConf">WineConf</a>）、日常用品、文件资料。</p>
+
+<p>我们的所得捐款都将由
+<a href="http://www.sfconservancy.org/">Software Freedom
+Conservancy</a> 管理，她是一个 501(c)(3) 组织，捐款在美国可以获取免税资格。
+如果你还有问题需要进一步咨询，请访问 SFC 的网站。</p>
+
+<h3>捐献途径：</h3>
+
+<table border="0" cellpadding="10" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">选项</b></td>
+    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">说明</b></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center">
+        <script type="text/javascript">
+        function validateAmount(amount){
+            if(amount.value.match( /^[0-9]+(\.([0-9]+))?$/)){
+                return true;
+            }else{
+                alert('请输入捐款额度。');
+                amount.focus();
+                return false;
+            }
+        }
+        </script>
+        <form action="https://checkout.google.com/cws/v2/Donations/622836985124940/checkoutForm" id="BB_BuyButtonForm" method="post" name="BB_BuyButtonForm" onSubmit="return validateAmount(this.item_price_1)" target="_top" style="margin:0;padding:0;">
+            <input name="item_name_1" type="hidden" value="Directed Donation to the Wine Project via Software Freedom Conservancy"/>
+            <input name="item_description_1" type="hidden" value="A directed donation for the Wine project via the Software Freedom Conservancy"/>
+            <input name="item_quantity_1" type="hidden" value="1"/>
+            <input name="item_currency_1" type="hidden" value="USD"/>
+            <input name="item_is_modifiable_1" type="hidden" value="true"/>
+            <input name="item_min_price_1" type="hidden" value="10.0"/>
+            <input name="item_max_price_1" type="hidden" value="25000.0"/>
+            <input name="_charset_" type="hidden" value="utf-8"/>
+            <div style="display:table">
+                <label style="display:table-cell">$</label>
+                <input id="item_price_1" name="item_price_1" onfocus="this.style.color='black'; this.value='';" size="11" style="color:grey; display:table-cell" type="text" value="Enter Amount"/><br />
+            </div>
+            <input alt="Donate" src="https://checkout.google.com/buttons/donateNow.gif?merchant_id=622836985124940&amp;w=115&amp;h=50&amp;style=white&amp;variant=text&amp;loc=en_US" type="image"/>
+        </form>
+    </td>
+    <td valign="top">
+        通过 Google Checkout 使用信用卡捐款。
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="PPdonateForm">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="G9BDG2ABR7PYA">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </form>
+    </td>
+    <td valign="top">
+        通过 Paypal 使用信用卡或者注册账号捐款。
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://www.freewear.org/?org=Wine">FreeWear</a>
+    </td>
+    <td valign="top">
+    	在
+        <a href="http://www.freewear.org/?org=Wine">FreeWear.org</a>
+	购买带有 Wine 图案的衣服。
+	FreeWear 将从你购买的每一件物品中提取一定的额度给予 Wine 开发基金。
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        邮寄捐款
+    </td>
+    <td valign="top">
+        <p>使用现金、支票或者美元的国际汇票向 Wine 开发基金捐款，请将捐款邮寄到
+	Software Freedom Conservancy，由他们转交 Wine 项目：</p>
+        <address>
+            Wine Project<br />
+            Software Freedom Conservancy, Inc.<br />
+            137 Montague St, Suite 380<br />
+            Brooklyn, NY 11201-3548<br />
+            USA
+        </address>
+    </td>  </tr>
+</table>
