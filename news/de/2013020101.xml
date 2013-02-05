@@ -1,0 +1,16 @@
+<news>
+<date>1. Februar 2013</date>
+<title>Wine 1.5.23 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.5.23 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.5.23">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>HTTPS Unterstützung hängt nicht mehr von OpenSSL ab.</li>
+  <li>Unterstützung für Event Handling im Mac Treiber.</li>
+  <li>Eine eigene funktionale Netstat Applikation.</li>
+  <li>Ein Haufen C++ Runtime Math Funktionen.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.23.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
