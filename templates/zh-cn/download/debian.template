@@ -1,0 +1,22 @@
+<!--TITLE:[Wine for Debian Sid]-->
+<!--BLURB:[Wine for Debian Sid]-->
+
+<h1 class="title"><a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
+Wine for Debian Sid
+<a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a></h1>
+
+<p>Debian-based 发行版使用为人所熟知的 APT 这一特定的工具来管理软件包。APT 能够自动解决软件安装包的依赖、更新包、检索 APT 仓库。Debian-based 发行版有他们自己包含 Wine 的软件源，然而，我们仍保持我们自己的源到最新 beta 版，以便可以从这里下载。</p>
+
+<p><b>警告：这些是 beta 版安装包</b><br>
+<i>这意味着他们可能偶尔遭受 <a href="http://wiki.winehq.org/Regression">倒退（regressions）</a>，结果是一个更新可能破坏 Wine 的（原有）功能。如果最新的 Wine 稳定版（当前是 Wine {$config_stable_release}）能够为你工作，你或者不太想用这些 beta 版安装包。</i></p>
+
+<p>这个网站有 i386 和 amd64 架构的安装包。</p>
+
+<p>你得下载 .deb 文件并手动安装他们。更多细节请查看页面。</p>
+
+<br><br><p style="font-size:12px;text-align:left;font-style: italic;">
+主页： <a href="http://dev.carbon-project.org/debian/wine-unstable/" target="_blank">http://dev.carbon-project.org/debian/wine-unstable/</a><br>
+打包者： <a href="mailto:curan@debian.org">Kai Wasserbäch</a>
+</p>
+
+

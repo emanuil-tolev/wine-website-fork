@@ -22,7 +22,7 @@ Ubuntu 的源默认包含了 Wine，当然，如果你想更新到最新版本�
 
 <h2>警告：Beta 版安装包</h2>
 
-<p><i>版本 1.5 的安装包是 beta 版的安装包。 这意味着他们会偶尔被做<a href="http://wiki.winehq.org/Regression">回滚处理（regressions）</a>，这种处理发生在当更新导致 Wine 的（原有）功能被破坏的情况下。
+<p><i>版本 1.5 的安装包是 beta 版的安装包。 这意味着他们可能偶尔遭受<a href="http://wiki.winehq.org/Regression">倒退（regressions）</a>，结果是一个更新可能破坏 Wine 的（原有）功能。
 所以，如果稳定版的 Wine 1.4 已经能够为你工作，你或许不太想用 beta 版的安装包。</i></p>
 
 <h2>安装 Wine：</h2>

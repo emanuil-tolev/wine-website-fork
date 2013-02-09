@@ -1,0 +1,98 @@
+<!--TITLE:[在线聊天社区]-->
+<!--BLURB:[在线聊天社区]-->
+
+<h1 class="title">在线聊天社区</h1>
+
+<p><a href="http://www.freenode.net">Freenode.net</a> 上有各种 Wine 的频道。
+你可以使用像
+<a href="http://www.xchat.org/">X-Chat</a> 这样的 IRC 程序来进入聊天室，按照如下配置：</p>
+
+<blockquote>
+    <b>Server:</b> irc.freenode.net<br />
+    <b>Port:</b> 6667<br />
+</blockquote>
+
+<p>你可以根据你想讨论的话题来选择频道：</p>
+   
+<blockquote>
+    <b>#winehq:</b> 用户支持和运行 Wine 的帮助<br />
+    <b>#crossover:</b> 用户支持和运行 Crossover 的支持<br />
+    <b>#winehackers:</b> 开发和其他对 Wine 的贡献<br />
+    <b>#winehq-social:</b> 和其他社区成员闲聊灌水<br />
+</blockquote>
+
+<p>使用 Firefox 或者其他支持 IRC 地址的浏览器，可以通过点击加入聊天：</p>
+<ul>
+    <li><a href="irc://irc.freenode.net/winehq">#winehq</a></li>
+    <li><a href="irc://irc.freenode.net/crossover">#crossover</a></li>
+    <li><a href="irc://irc.freenode.net/winehackers">#winehackers</a></li>
+    <li><a href="irc://irc.freenode.net/winehq-social">#winehq-social</a></li>
+</ul>
+
+<p>为了使讨论更加专注和尽可能有效，在 IRC 提问之前可以先尝试搜索你的问题。
+<a href="http://wiki.winehq.org/FAQ">Wine FAQ</a>、
+<a href="http://appdb.winehq.org">AppDB</a>、
+<a href="http://www.winehq.org/site/download">下载页面</a> 都是值得首先检查的资源。</p>
+
+<h2>IRC 规定和惩罚</h2>
+
+<p>除了不能带有攻击性和不顾他人地吵闹外，这里还有一些简单的规定希望每个人在 IRC 频道里都能遵守。
+大多数情况下，初次违法规定会被视为意外并予以警告。但当你用完了警告次数后，你将会被从频道中踢出。</p>
+
+<p>如果你继续违反规定并用完“踢出”次数，你将会被禁止进入频道两个小时。
+在这之后如果还造成其他任何问题，将会被永久禁止，并且只能通过申诉来解除禁止。 
+如果你想为禁令申辩，请到 <b>#winehq-social</b> （或者
+<a href="mailto:wine-devel@winehq.org">wine-devel 邮件列表</a>，当你被禁止进入
+<b>#winehq-social</b> 时），并且首先解释你为什么会被禁止和为什么你认为禁令应该解除。</p>
+
+<table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
+    <tr align="center" bgcolor="black">
+        <th><b><font color="white" class="small">规定</font></b></th>
+        <th><b><font color="white" class="small">说明</font></b></th>
+        <th><b><font color="white" class="small">警告</font></b></th>
+        <th><b><font color="white" class="small">踢出</font></b></th>
+    </tr>
+    <tr bgcolor="#ffffff">
+        <td>不要发送垃圾邮件。</td>
+        <td></td>
+        <td>1</td>
+        <td>2</td>
+    </tr>
+    <tr bgcolor="#ffffff">
+        <td>当粘贴内容超过一或两行时者使用 pastebin。</td>
+        <td><a href="http://winehq.pastebin.com">winehq.pastebin.com</a> 和
+            <a href="http://pastebin.ca">pastebin.ca</a> 都是可以使用的。</td>
+        <td>0</td>
+        <td>5</td>
+    </tr>
+    <tr bgcolor="#ffffff">
+        <td>在合适的频道中讨论合适的话题。</td>
+        <td>如果不确定，可以在 <b>#winehq</b> 询问应该加入什么频道。</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr bgcolor="#ffffff">
+        <td>只有 Wine 和 Crossover 才会在他们对应的频道获得支持。</td>
+        <td>Sidenet、WineDoors、Cedega、IEs4Linux 等等是<b>不会</b>被支持的。</td>
+        <td>2</td>
+        <td>1</td>
+    </tr>
+    <tr bgcolor="#ffffff">
+        <td>在 <b>#winehq</b> 提问前，确保你正在使用的是最新版本的 Wine。</td>
+        <td>如果不确定，在命令行中使用 <tt>wine --version</tt> 来确定你的版本。</td>
+        <td>3</td>
+        <td>1</td>
+    </tr>
+    <tr bgcolor="#ffffff">
+        <td>请等候直到轮到你获取帮助。</td>
+        <td></td>
+        <td>3</td>
+        <td>1</td>
+    </tr>
+    <tr bgcolor="#ffffff">
+        <td><b>不要</b>讨论有关盗版软件的。</td>
+        <td></td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+</table>
