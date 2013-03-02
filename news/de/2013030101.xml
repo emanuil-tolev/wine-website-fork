@@ -1,0 +1,15 @@
+<news>
+<date>1. März 2013</date>
+<title>Wine 1.5.25 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.5.25 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.5.25">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Richtige Cursor Unterstützung im Mac Treiber.</li>
+  <li>Fehlerbehebungen für die Unterstützung bidirektionaler Schrift in RichEdit.</li>
+  <li>Anfängliche Version einer Wingdings Schrift.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.25.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
