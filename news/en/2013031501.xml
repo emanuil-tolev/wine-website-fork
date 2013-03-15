@@ -1,0 +1,17 @@
+<news>
+<date>March 15, 2013</date>
+<title>Wine 1.5.26 Released</title>
+<body>
+<p> The Wine development release 1.5.26 is now available.</p>
+<p> <a href="{$root}/announce/1.5.26">What's new</a> in this release:
+<ul>
+  <li>OpenGL support in the Mac driver.</li>
+  <li>Clipboard and drag&amp;drop support in the Mac driver.</li>
+  <li>Improvements to the URL cache.</li>
+  <li>Some fixes for ARM binaries.</li>
+  <li>SPARC platform no longer supported.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.26.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
