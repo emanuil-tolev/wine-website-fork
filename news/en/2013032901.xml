@@ -1,0 +1,15 @@
+<news>
+<date>March 29, 2013</date>
+<title>Wine 1.5.27 Released</title>
+<body>
+<p> The Wine development release 1.5.27 is now available.</p>
+<p> <a href="{$root}/announce/1.5.27">What's new</a> in this release:
+<ul>
+  <li>System tray support in the Mac driver.</li>
+  <li>Various C runtime improvements.</li>
+  <li>Large icons for built-in applications.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.27.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
