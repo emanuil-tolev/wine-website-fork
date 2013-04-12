@@ -1,0 +1,17 @@
+<news>
+<date>April 12, 2013</date>
+<title>Wine 1.5.28 Released</title>
+<body>
+<p> The Wine development release 1.5.28 is now available.</p>
+<p> <a href="{$root}/announce/1.5.28">What's new</a> in this release:
+<ul>
+  <li>GnuTLS used for all secure connections, OpenSSL is no longer needed.</li>
+  <li>Mac driver enabled by default.</li>
+  <li>Built-in FixedSys fonts.</li>
+  <li>New icon for the joystick control panel.</li>
+  <li>Postscript driver improvements.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.28.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
