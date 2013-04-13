@@ -1,0 +1,17 @@
+<news>
+<date>Kwiecień 12, 2013</date>
+<title>Wydano Wine 1.5.28</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.5.28 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.5.28">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>GnuTLS jest używany dla wszystkich bezpiecznych połączeń, OpenSSL już nie jest potrzebny.</li>
+  <li>Sterownik Mac jest domyślnie włączony.</li>
+  <li>Wbudowane czcionki FixedSys.</li>
+  <li>Nowa ikona dla joysticku w panelu sterowania.</li>
+  <li>Ulepszenia w sterowniku Postscript.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.28.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
