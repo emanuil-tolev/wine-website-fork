@@ -1,0 +1,61 @@
+<!--TITLE:[Instalando o Wine mais recente no Ubuntu]-->
+<!--BLURB:[Instalando o Wine mais recente no Ubuntu]-->
+
+<h1 class="title"><a href="http://www.ubuntu.com/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Logo" border="0"></a>
+Wine para o Ubuntu e derivativos do Ubuntu
+<a href="http://www.ubuntu.com/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Logo" border="0"></a></h1>
+
+<p>Ubuntu e derivativas do Ubuntu (como o Kubuntu) obtém seus aplicativos de
+<i>pacotes</i> que são guardados em <i>repositórios</i>. O repositório padrão
+do Ubuntu inclui o Wine, entretanto se você quiser se manter a par dos pacotes
+mais recentes do Wine você pode usar o repositório do WineHQ seguindo estas instruções.
+</p>
+
+<h2>Adicionando o repositório PPA do WineHQ:</h2>
+
+<p>Acesse o menu 'Fontes de Aplicativos' abrindo o <b>Centro de Aplicativos do Ubuntu</b>
+e selecionando <b>Editar->Fontes de Aplicativos</b>. Escolha a aba
+<b>Aplicativos de Terceiros</b> e clique <b>Adicionar</b>.</p>
+
+<img src="{$root}/images/distro/ubuntu-ppa.png" width="531" height="509" alt="Software Center->Edit->Software Sources->Other Software" border="0">
+
+<ppa>Depois, <b>copie e cole a linha abaixo</b>.</p>
+
+<i>ppa:ubuntu-wine/ppa</i></p>
+
+<h2>Aviso: Pacotes Beta</h2>
+
+<p><i>Os pacotes da versão 1.5 são pacotes beta. Isto quer dizer que
+eles podem sofrer <a href="http://wiki.winehq.org/Regression">regressões</a>
+periodicamente, e como resultado, prejudicar a funcionalidade do Wine.
+Caso o pacote estável da versão 1.4 do Wine funcione bem no seu sistema, talvez
+você prefira não usar estes pacotes beta.</i></p>
+
+<h2>Instalando o Wine:</h2>
+
+<p>Depois de adicionar o repositório PPA do WineHQ, você está pronto para instalar.</p>
+
+<p><i>Para adquirir a versão mais recente do Wine 1.5 beta,
+<a href="apt://wine1.5">clique neste link para instalar o pacote wine1.5</a>.</i></p>
+<p><i>Para instalar a versão mais antiga e estável do Wine 1.4,
+<a href="apt://wine1.4">clique neste link para instalar o pacote wine1.4</a>.</i></p>
+
+<h2>Atualizando para uma versão mais nova do Ubuntu</h2>
+
+<p>Caso você esteja fazendo a atualização de sistema, como por exemplo ao atualizar do Ubuntu 11.10 para 12.04,
+você precisará voltar nesta página e adicionar o repositório novamente.
+O gerenciador de atualizações padrão não irá fazer a mudança de repositório automaticamente.
+</p>
+
+<h2>Instruções alternativas de linha de comando para instalar o Wine:</h2>
+
+<p>Também é possível adicionar a PPA do Wine e fazer a instalação via terminal. Isto
+pode ser útil no Kubuntu, Xubuntu e outras derivativas de Ubuntu.</p>
+
+<p><i>sudo add-apt-repository ppa:ubuntu-wine/ppa</i></p>
+
+<p>Então atualize a informação de pacotes APT com o comando '<b>sudo apt-get
+update</b>'. Você agora pode instalar o Wine digitando '<b>sudo apt-get
+install wine1.5</b>'.</p>
+
+<p>Caso você queira navegar a PPA manualmente, você pode <a href="https://launchpad.net/~ubuntu-wine/+archive/ppa">visitar a página no Launchpad</a>.</p>
