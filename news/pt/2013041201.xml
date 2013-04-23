@@ -1,0 +1,16 @@
+<news>
+<date>12 de Abril de 2013</date>
+<title>Wine 1.5.28 lançado</title>
+<body>
+<p> A versão de desenvolvimento 1.5.28 já está disponível agora.</p>
+<p> <a href="{$root}/announce/1.5.28">Novidades</a> desta versão:
+<ul>
+  <li>GnuTLS used for all secure connections, OpenSSL is no longer needed.</li>
+  <li>Driver de Mac habilitado por padrão.</li>
+  <li>Fontes FixedSys incluídas.</li>
+  <li>Um novo ícone para o painel de controle de controladores de jogo.</li>
+  <li>Melhoria do driver Postscript.</li>
+  <li>Várias correções de bugs</li>
+<p><p>O código fonte está <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.28.tar.bz2">disponível agora</a>.
+Pacotes binários estão em processo de construção e irão aparecer em breve em suas respectivas <a href="{$root}/download">sessões da área de downloads</a>.
+</p></body></news>
