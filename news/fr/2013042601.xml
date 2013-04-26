@@ -1,0 +1,14 @@
+<news>
+<date>26 avril 2013</date>
+<title>Sortie de Wine 1.5.29</title>
+<body>
+<p> La version de développement 1.5.29 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.5.29">Nouveautés</a> de cette version :
+<ul>
+  <li>Prise en charge des méthodes d'entrée dans le pilote Mac.</li>
+  <li>Prise en charge des connexions TLS 1.1 et 1.2 sous Mac OS X.</li>
+  <li>Améliorations des performances JavaScript.</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.29.tar.bz2">code source</a> est disponible dès à présent. Les paquets binaires sont en cours de construction, et apparaîtront sous peu sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
