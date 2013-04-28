@@ -1,0 +1,23 @@
+<!--TITLE:[Wine for Debian Sid]-->
+<!--BLURB:[Wine for Debian Sid]-->
+
+<h1 class="title"><a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
+Wine for Debian Sid
+<a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a></h1>
+
+<p>Debian tabanlı dağıtımlaar, APT olarak bilinen paket yönetiminde kullanılan özel bir araç ile kurulum yaparlar. APT, bir yazılım için gerekli bağımlılıkları kuran, ve APT depoları olarak bilinen konumlarda tarama yaparak paketi güncel tutan bir yazılımdır. Debian tabanlı dağıtımlar Wine'ı içeren yazılım depolarına sahiptir ancak burada indirmek için en son kullanılabilir beta sürümlerini kendi depolarımızda tutuyoruz.</p>
+
+<p><b>Uyarı: Bu paketler beta paketleridir</b><br>
+Bu da sıkça 
+<a href="http://wiki.winehq.org/Regression">gerileme</a> yaşanılabileceğini ve sonuç olarak bir güncelleme ile Wine içerisinde işlevsel bozukluklara sebep olabileceğini gösterir. Eğer son kararlı Wine sürümü (geçerli sürüm Wine {$config_stable_release}) sizin için çalışıyorsa, bu beta paketleri kullanmak istemeyebilirsiniz.</i></p>
+
+<p>Bu web sitesi i386 ve amd64 mimarileri için paketler içerir.</p>
+
+<p>Wine paketlerini kurabilmek için .deb dosyaları indirip el ile kurmalısınız. Ayrıntılar için sayfaya bakın.</p>
+
+<br><br><p style="font-size:12px;text-align:left;font-style: italic;">
+Ana sayfa: <a href="http://dev.carbon-project.org/debian/wine-unstable/" target="_blank">http://dev.carbon-project.org/debian/wine-unstable/</a><br>
+Paket derleyici:  <a href="mailto:curan@debian.org">Kai Wasserbäch</a>
+</p>
+
+

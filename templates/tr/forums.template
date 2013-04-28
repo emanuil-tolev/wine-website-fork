@@ -1,0 +1,110 @@
+<!--TITLE:[Posta Listeleri / Forumlar]-->
+<!--BLURB:[İstemediğimiz tek şey, haberleşemememizdir.]-->
+
+<h1 class="title">Önemli Posta Listeleri / Forumlar</h1>
+
+<p>Wine için posta listeleri ve forumlar bulunuyor. Kullanıcılar için en kullanışlı olanlar aşağıdakilerdir:</p>
+
+<ul>
+    <li><a href="http://forum.winehq.org">WineHQ Forumları</a></li>
+
+    <li>The <a href="http://www.winehq.org/mailman/listinfo/wine-users">Wine-Kullanıcıları Posta Listesi</a> (ve <a href="http://www.winehq.org/pipermail/wine-users/">web arşivi</a>)</li>
+
+    <li>Ubuntu kullanıcıları ayrıca <a href="http://ubuntuforums.org/forumdisplay.php?f=313">Ubuntu Forumları Wine Alanı</a> sayfasını ziyaret etmek isteyebilirler.</li>
+
+    <li>Kullanıcılar ayrıca <a href="http://www.linuxforums.org/forum/wine/">Linux Forumları Wine Alanı</a> sayfasını ziyaret etmek isteyebilirler.</li>
+
+    <li>Eğer yeni sürümlerden haberdar olmak isterseniz <a href="http://www.winehq.org/mailman/listinfo/wine-announce">Wine Haber posta listesi</a>ne abone olun.</li>
+</ul>
+
+<p>Lütfen başka bir İngilizce Wine forumu oluşturmayın (belki yaygın dağıtımın ana forumu dışında).</p>
+
+<p>Eğer etkin başka bir Wine forumu biliyorsanız - özellikle İngilizce olmayan - bize bildirin ve listeye ekleyelim.  
+(dank@kegel.com adresine göndermeniz yeterlidir.)</p>
+
+<h2>Tüm WineHQ Posta Listeleri</h2>
+
+<p>WineHQ yama göndermek, Git gönderilerini izlemek ve Wine hakkında tartışmak için posta listelerine sahiptir. Özelleştirilebilir bir abonelik yapılandırması sunarlar ve <a href="http://www.winehq.org/mailman/listinfo">via
+WWW</a> veya <i>listeadı</i>-request@winehq.org adresine konu satırı "subscribe" olan bir posta gönderilerek abone olunabilirler. Aboneliği kaldırma işlemini konu satırına
+"unsubscribe <i>parola</i>" (abone olduğunuzda gönderilen parola) yazıp aynı adrese göndererek veya sadece <a href="http://www.winehq.org/mailman/listinfo">Mailman web arayüzü</a>nü kullanarak yapabilirsiniz.</p>
+
+<p><b>Not:</b> Listeye gönderi yapmadan önce abone olmalısınız, aksi takdirde posta listesi yazılımı iletinize muhtemel gereksiz posta olarak inceleyecektir.</p>
+
+<ul class="roomy">
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-announce">Abone ol/iptal et</a>] 
+    [<a href="http://www.winehq.org/pipermail/wine-announce/">Arşiv 1</a>] 
+    [<a href="http://news.gmane.org/gmane.comp.emulators.wine.announce">Arşiv 2</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.announce">haber okuyucu ile</a>]
+    <a href="mailto:wine-announce@winehq.org">wine-announce@winehq.org</a><br>
+    Sadece sürümleri ve Wine ile WineHQ haberlerini yayınlamak için düşük trafikli (2 ileti/ay) salt okunur bir liste
+  </li>
+
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-users">Abone ol/iptal et</a>]
+    [<a href="http://www.winehq.org/pipermail/wine-users/">Arşiv 1</a>]  
+    [<a href="http://news.gmane.org/gmane.comp.emulators.wine.user">Arşiv 2</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.user">haber okuyucu ile</a>]
+    <a href="mailto:wine-users@winehq.org">wine-users@winehq.org</a><br>
+    Son kullanıcı tartışmaları için orta trafikli (50 ileti/gün) açık liste
+  </li>
+
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-devel">Abone ol/iptal et</a>]
+    [<a href="http://www.winehq.org/pipermail/wine-devel/">Arşiv 1</a>]
+    [<a href="http://news.gmane.org/gmane.comp.emulators.wine.devel">Arşiv 2</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.devel">haber okuyucu ile</a>]
+    <a href="mailto:wine-devel@winehq.org">wine-devel@winehq.org</a> <br>
+    Wine geliştirmesi, WineHQ, yamalar ve Wine geliştiricileri ile alakalı diğer şeylerle ilgili orta trafikli (25/gün) bir açık liste
+  </li>
+
+  <li>
+   [<a href="http://www.winehq.org/mailman/listinfo/wine-patches">Abone ol/iptal et</a>]
+   [<a href="http://www.winehq.org/pipermail/wine-patches/">Arşiv 1</a>]
+   [<a href="http://news.gmane.org/gmane.comp.emulators.wine.patches">Arşiv 2</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.patches">haber okuyucu ile</a>]
+   <a href="mailto:wine-patches@winehq.org">wine-patches@winehq.org</a><br>
+   Sadece yamaları göndermek için kullanılan orta trafikli (45/gün) bir liste
+ </li>
+
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-cvs">Abone ol/iptal et</a>]
+    [<a href="http://www.winehq.org/pipermail/wine-cvs/">Arşiv 1</a>]
+    [<a href="http://news.gmane.org/gmane.comp.emulators.wine.cvs">Arşiv 2</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.cvs">haber okuyucu ile</a>]
+    <a href="mailto:wine-cvs@winehq.org">wine-cvs@winehq.org</a><br>
+    A medium traffic (35/day) read only list which tracks commits to the Git
+    tree.
+  </li>
+
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-releases">Abone ol/iptal et</a>]
+    [<a href="http://www.winehq.org/pipermail/wine-releases/">Arşiv 1</a>]
+    <a href="mailto:wine-releases@winehq.org">wine-releases@winehq.org</a> <br>
+    Her resmi Wine sürümünde büyük diff dosyasını almak için salt okunur düşük trafikli (2/ay) bir liste
+  </li>
+
+  <li>
+    [<a href="http://news.gmane.org/gmane.comp.emulators.wine.license">Arşiv 1</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.license">haber okuyucu ile</a>]
+    <br>
+    Wine ile ilgili yasal durumları ve lisans sorunlarını tartışmak için kullanılan kapalı bir listeydi (Kapatılma 2004-12-16).
+  </li>
+
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-bugs">Abone ol/iptal et</a>]
+    [<a href="http://www.winehq.org/pipermail/wine-bugs/">Arşiv 1</a>]
+    [<a href="http://news.gmane.org/gmane.comp.emulators.wine.bugs">Arşiv 2</a>]
+    [<a href="news://news.gmane.org/gmane.comp.emulators.wine.bugs">haber okuyucu ile</a>]
+    <a href="mailto:wine-bugs@winehq.org">wine-bugs@winehq.org</a><br>
+    <a href="http://bugs.winehq.org/">Hata İzleme Veritabanı</a> üzerinde etkinliği takip etmek için kullanılan yüksek trafikli (150/gün) salt okunur bir liste.
+  </li>
+
+  <li>
+    [<a href="http://www.winehq.org/mailman/listinfo/wine-tests-results">Abone ol/iptal et</a>]
+    [<a href="http://www.winehq.org/pipermail/wine-tests-results/">Archive</a>]
+    <a href="mailto:wine-tests-results@winehq.org">wine-tests-results@winehq.org</a><br>
+    Test sonuçlarını göndermek için kullanılan orta trafikli (10/gün) açık bir liste 
+  </li>
+
+</ul>

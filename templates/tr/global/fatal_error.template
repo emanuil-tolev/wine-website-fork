@@ -1,0 +1,25 @@
+
+<style>
+#fatal_error {
+    width: 400px; margin: 10px 0 0 180px; padding: 100px;
+    font-family: courier;
+    background-color: blue; color: white;
+}
+#fatal_error h1  { margin: 0 100px 1em 100px; font-size: 14px; background-color: white; color: blue; text-align: center; }
+#fatal_error pre { font-family: courier; }
+</style>
+
+<div id="fatal_error" class="cornerround dropshadow">
+<h1>Ölümcül Hata</h1>
+<p><b>Üzgünüz</b>, sistemimizde dahili bir hata oluştu ve isteğiniz şu an yerine getirilemedi.</p>
+<pre width="72" style="white-space: pre-wrap;">
+<b>Error:</b>  {$errstr}
+<b>No:</b>     {$errno}
+<b>Line:</b>   {$errline}
+<b>File:</b>   {$errfile}
+
+{$debug}
+</pre>
+<p class="center">Eğer bu hata sürerse <a href="mailto:web-admin@winehq.org">webmaster</a> ile iletişime geçin.</p>
+</div>
+

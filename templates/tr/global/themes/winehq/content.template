@@ -3,7 +3,7 @@
 <head>
     <title>{$page_title}</title>
     <meta name="SearchTitle" content="{$page_title}">
-    <meta name="copyright" content="Copyright {$curtime_year}. WineHQ.org All rights reserved">
+    <meta name="copyright" content="Telif Hakkı {$curtime_year}. WineHQ.org Her hakkı saklıdır">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     
     {$meta_keywords}
@@ -63,7 +63,7 @@
 <div id="footer">
     Hosted By
     <a href="http://www.codeweavers.com/"><img src="{$root}/images/cw_logo_sm.png" alt="CodeWeavers"
-    title="CodeWeavers - Run Windows applications and games on Mac and Linux"></a>
+    title="CodeWeavers - Windows uygulamaları ve oyunlarını Mac ve Linux'ta çalıştırın"></a>
 </div>
 
 <!-- DEBUG -->

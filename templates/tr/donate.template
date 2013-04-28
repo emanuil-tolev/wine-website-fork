@@ -1,0 +1,92 @@
+<!--TITLE:[Wine Geliştirme Fonu]-->
+<!--BLURB:[Wine projesine bağışta bulunun.]-->
+
+<h1 class="title">Wine Geliştirme Fonu</h1>
+
+<p>Wine'ı ve bunu yapan herkesi takdir ettiğinizi göstermek için Wine Geliştirme Fonuna bağışta bulunabilirsiniz. Bağışınız doğrudan geliştirici konferansları (örneğin <a href="http://wiki.winehq.org/WineConf">WineConf</a>), gerekli malzemeler ve belgelendirme gibi durumlarda kullanılacaktır.</p>
+
+<p>Bağışlarımızın tamamı 501(c)(3) organizasyonu olan
+<a href="http://www.sfconservancy.org/">Yazılım Özgürlüğü Koruması</a> tarafından yönetilir ve böylece bağışlar Amerikan vergi kodundan alınabilir nitelikte olurlar. Eğer daha fazla desteğe ihtiyacınız varsa lütfen SFC sitesini ziyaret edin.</p>
+
+<h3>Katkıda Bulunma Yolları:</h3>
+
+<table border="0" cellpadding="10" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">Seçenek</b></td>
+    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">Ayrıntılar</b></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center">
+        <script type="text/javascript">
+        function validateAmount(amount){
+            if(amount.value.match( /^[0-9]+(\.([0-9]+))?$/)){
+                return true;
+            }else{
+                alert('Geçerli bir bağış girmelisiniz.');
+                amount.focus();
+                return false;
+            }
+        }
+        </script>
+        <form action="https://checkout.google.com/cws/v2/Donations/622836985124940/checkoutForm" id="BB_BuyButtonForm" method="post" name="BB_BuyButtonForm" onSubmit="return validateAmount(this.item_price_1)" target="_top" style="margin:0;padding:0;">
+            <input name="item_name_1" type="hidden" value="Directed Donation to the Wine Project via Software Freedom Conservancy"/>
+            <input name="item_description_1" type="hidden" value="A directed donation for the Wine project via the Software Freedom Conservancy"/>
+            <input name="item_quantity_1" type="hidden" value="1"/>
+            <input name="item_currency_1" type="hidden" value="USD"/>
+            <input name="item_is_modifiable_1" type="hidden" value="true"/>
+            <input name="item_min_price_1" type="hidden" value="10.0"/>
+            <input name="item_max_price_1" type="hidden" value="25000.0"/>
+            <input name="_charset_" type="hidden" value="utf-8"/>
+            <div style="display:table">
+                <label style="display:table-cell">$</label>
+                <input id="item_price_1" name="item_price_1" onfocus="this.style.color='black'; this.value='';" size="11" style="color:grey; display:table-cell" type="text" value="Miktarı Girin"/><br />
+            </div>
+            <input alt="Bağışla" src="https://checkout.google.com/buttons/donateNow.gif?merchant_id=622836985124940&amp;w=115&amp;h=50&amp;style=white&amp;variant=text&amp;loc=tr_TR" type="image"/>
+        </form>
+    </td>
+    <td valign="top">
+        Google Checkout kullanarak kredi kartıyla bağış yap.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="PPdonateForm">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="G9BDG2ABR7PYA">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </form>
+    </td>
+    <td valign="top">
+        Paypal hesabı üzerinde kayıtlı bir kredi kartı ile bağış yap.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://www.freewear.org/?org=Wine">FreeWear</a>
+    </td>
+    <td valign="top">
+        <a href="http://www.freewear.org/?org=Wine">FreeWear.org</a> adresinden Wine markalı kıyafetler satın al.
+        Aldığınız her ürün için, FreeWear gelirin bir kısmını Wine Geliştirme Fonuna gönderiyor
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        Posta ile Bağış
+    </td>
+    <td valign="top">
+        <p>Wine Geliştirme Fonuna nakit, çek veya Amerikan Doları cinsinde uluslararası para transferi bağışla. Tüm gönderilen bağışlar, Yazılım Özgürlüğü Koruması tarafından değerlendirilebilmesi için Wine projesine gönderilmelidir. Adres:</p>
+        <address>
+            Wine Project<br />
+            Software Freedom Conservancy, Inc.<br />
+            137 Montague St, Suite 380<br />
+            Brooklyn, NY 11201-3548<br />
+            USA
+        </address>
+    </td>
+  </tr>
+</table>

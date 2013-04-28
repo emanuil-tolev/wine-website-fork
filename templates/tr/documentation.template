@@ -1,0 +1,77 @@
+<!--TITLE:[Belgelendirme]-->
+<!--BLURB:[Belgelendirme]-->
+
+<h1 class="title">Belgelendirme</h1>
+
+ <h2>Guides</h2>
+ <ul>
+   <li>
+     <a href="{$root}/docs/wineusr-guide/index">Wine Kullanıcı Rehberi</a><br>
+     Wine, Windows uygulamaları çalıştırmak üzere nasıl kullanılır ve yapılandırılır.<br>
+     <span class=small>&nbsp;&nbsp;&nbsp;<b>biçimler:</b>
+     <a href="{$root}/docs/wineusr-guide/index">Çevrimiçi</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/wineusr-guide.html">HTML</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/wineusr-guide.pdf">PDF</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/wineusr-guide.ps">PostScript</a>
+     </span>
+   </li><br>
+
+   <li>
+     <a href="{$root}/docs/winelib-guide/index">Winelib Kullanıcı Rehberi</a><br>
+     Windows uygulamaları Linux'a nasıl bağlanır.<br>
+     <span class=small>&nbsp;&nbsp;&nbsp;<b>biçimler:</b>
+     <a href="{$root}/docs/winelib-guide/index">Çevrimiçi</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winelib-guide.html">HTML</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winelib-guide.pdf">PDF</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winelib-guide.ps">PostScript</a>
+     </span>
+   </li><br>
+     
+   <li>
+     <a href="{$root}/docs/winedev-guide/index">Wine Geliştirici Rehberi</a><br>
+     Wine üzerinde işlemler nasıl yapılır.<br>
+     <span class=small>&nbsp;&nbsp;&nbsp;<b>biçimler:</b>
+     <a href="{$root}/docs/winedev-guide/index">Çevrimiçi</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winedev-guide.html">HTML</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winedev-guide.pdf">PDF</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winedev-guide.ps">PostScript</a>
+     </span>
+   </li><br>
+
+   <li>
+     <a href="{$root}/howto">Wine içinde uygulamalar nasıl çalıştırılır</a><br>
+     Bize bir şeylerin nasıl yapıldığı hakkında yardım etmek isteyenler için kısa bir rehbet<br>
+   </li>
+ </ul>
+
+ <h2>Man Sayfaları</h2>
+ <ul>
+     <li><a href="{$root}/docs/wine">wine man sayfası</a>
+     <br>Wine ikilisi için komut satırı seçenekleri.</li><br>
+
+     <li><a href="{$root}/docs/wineserver">wineserver man sayfası</a>
+     <br>Wineserver ikilisi için komut satırı seçenekleri.</li><br>
+
+     <li><a href="{$root}/docs/winebuild">winebuild man sayfası</a>
+     <br>Winebuild ikilisi için komut satırı seçenekleri.</li><br>
+
+     <li><a href="{$root}/docs/winedump">winedump man sayfası</a>
+     <br>Winedump ikilisi için komut satırı seçenekleri.</li><br>
+
+     <li><a href="{$root}/docs/winemaker">winemaker man sayfası</a>
+     <br>Winemaker ikilisi için komut satırı seçenekleri.</li><br>
+
+     <li><a href="{$root}/docs/widl">widl man sayfası</a>
+     <br>IDL derleyicisi için komut satırı seçenekleri.</li><br>
+
+     <li><a href="{$root}/docs/wmc">wmc man sayfası</a>
+     <br>İleti derleyicisi için komut satırı seçenekleri.</li><br>
+
+     <li><a href="{$root}/docs/wrc">wrc man sayfası</a>
+     <br>Kaynak derleyicisi için komut satırı seçenekleri.</li><br>
+
+     <li><a href="{$root}/docs/winegcc">winegcc man sayfası</a>
+     <br>Winegcc derleyicisi için komut satırı seçenekleri.</li><br>
+ </ul>
+
+<p>&nbsp;</p>

@@ -17,8 +17,7 @@
         <a href="http://wiki.winehq.org/Developers">Wine Wiki Geliştirici Belgeleri</a>
     </td>
     <td valign="top">
-        The <a href="http://wiki.winehq.org//Developers">Wine Wiki Developer</a> pages will have more current
-        information than this page. It should be the first place for new developers to look.
+        The <a href="http://wiki.winehq.org//Developers">Wine Wiki Geliştirici</a> sayfaları bu sayfadan daha güncel bilgi içerecektir. Bu sayfa yeni geliştiricilerin bakması gereken ilk yer olmalıdır.
     </td>
   </tr>
 
@@ -27,36 +26,35 @@
         <a href="http://www.codeweavers.com/about/general/jobs/interns/">Internships</a>
     </td>
     <td valign="top">
-        CodeWeavers fills 1-2 Wine Development Internship slots every quarter for students and recent graduates.
-        Applications are accepted on an ongoing basis, and candidates from both the United States and overseas
-        are welcome.
+        CodeWeavers, her 3 ayda bir öğrenciler ve yeni mezunlar için 1-2 Wine Geliştirme Staj pozisyonunu doldurur.
+        Başvurular sürekli kabul edilir ve Amerika ve diğer ülkelerden de kabul edilmektedir.
     </td>
   </tr>
 
   <tr bgcolor="#ffffff">
     <td>
-        <a href="http://wiki.winehq.org/HelpingWine">Contributing to Wine</a>
+        <a href="http://wiki.winehq.org/HelpingWine">Wine'a Katkıda Bulunmak</a>
     </td>
     <td valign="top">
-        Information for 1st time contributors.
+        İlk kez katkıda bulunanlar için bilgi.
     </td>
   </tr>
 
   <tr bgcolor="#ffffff">
     <td>
-        <a href="{$root}/docs/winedev-guide/index">Developers Guide</a>
+        <a href="{$root}/docs/winedev-guide/index">Geliştirici Kılavuzu</a>
     </td>
     <td valign="top">
-        Online resource for development with Wine.
+        Wine ile geliştirme için çevrimiçi kaynak.
     </td>
   </tr>
 
   <tr bgcolor="#ffffff">
     <td>
-        <a href="{$root}/forums">Mailing Lists</a>
+        <a href="{$root}/forums">Posta Listeleri</a>
     </td>
     <td valign="top">
-        Most of our developers communicate over our various mailing lists.
+        Geliştiricilerimizin çoğu çeşitli posta listelerinden haberleşmektedir.
     </td>
   </tr>
 
@@ -65,43 +63,43 @@
         <a href="http://wiki.winehq.org/GitWine">Git</a>
     </td>
     <td valign="top">
-        We use the source management tool Git. More information on how to use it can be found on this page.
+        Yazılım yönetimi aracı olan Git kullanıyoruz. Nasıl kullanılacağı hakkında ayrıntılı bilgi bu sayfadan görülebilir.
     </td>
   </tr>
 
   <tr bgcolor="#ffffff">
     <td>
-        <a href="http://wiki.winehq.org/SubmittingPatches">Sending Patches</a>
+        <a href="http://wiki.winehq.org/SubmittingPatches">Yama Göndermek</a>
     </td>
     <td valign="top">
-        Guidelines on how to format and send your patches.
+        Yamalarınızı nasıl biçimlendireceğiniz ve göndereceğinizi anlatan adımlar.
     </td>
   </tr>
 
   <tr bgcolor="#ffffff">
     <td>
-        <a href="http://wiki.winehq.org/TodoList">To Do Lists</a>
+        <a href="http://wiki.winehq.org/TodoList">Yapılacak Listesi</a>
     </td>
     <td valign="top">
-        What needs to be done. A good first place to look for projects to be completed.
+        Ne yapılması gerekiyorsa. Tamamlanacak projelere bakmak için iyi bir başlangıç.
     </td>
   </tr>
 
   <tr bgcolor="#ffffff">
     <td>
-        <a href="http://wiki.winehq.org/Fun_Projects">Fun Projects</a>
+        <a href="http://wiki.winehq.org/Fun_Projects">Eğlenceli Projeler</a>
     </td>
     <td valign="top">
-        Another area of to dos. There are lower priority and should be done as side projects.
+        Yapılacakların farklı bir alanı. Bunlar yan projeler olarak daha düşük önceliktedirler.
     </td>
   </tr>
 
   <tr bgcolor="#ffffff">
     <td>
-        <a href="http://wiki.winehq.org/JanitorialProjects">Janitorial</a>
+        <a href="http://wiki.winehq.org/JanitorialProjects">Temizlemeler</a>
     </td>
     <td valign="top">
-        Code clean-up and organisation projects.
+        Kod temizleme ve proje düzenlemesi.
     </td>
   </tr>
 
@@ -110,7 +108,7 @@
         <a href="http://wiki.winehq.org/Winelib">Winelib</a>
     </td>
     <td valign="top">
-        Documentation on development with Winelib, our application porting tools.
+        Araç bağlama aracımız olan Winelib ile geliştirme üzerine belgelendirme.
     </td>
   </tr>
 

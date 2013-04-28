@@ -1,0 +1,95 @@
+<!--TITLE:[Yardım Alma]-->
+<!--BLURB:[Tüm Wine sorularınız yanıtlanır.]-->
+
+<h1 class="title">Yardım Alma</h1>
+
+<p>Wine kullanımında yardım almak için çeşitli yollar bulunuyor.</p>
+
+<table border="0" cellpadding="10" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">Seçenek</b></td>
+    <td align="center" bgcolor="black" class="small"><b style="color: #FFFFFF">Bunun hakkında Yardım Seçeneği</b></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://www.codeweavers.com"><img src="{$root}/images/paid.png"><br>Ücretli</a>
+    </td>
+    <td valign="top">
+        <a href="http://www.codeweavers.com">CodeWeavers</a>, Wine için ücretli destek sunmaktadır.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://wiki.winehq.org/FAQ"><img src="{$root}/images/faq.png"><br>SSS</a>
+    </td>
+    <td valign="top">
+        Çoğu sorular 
+        <a href="http://wiki.winehq.org/FAQ">SSS</a> sayfamız ziyaret edilerek yanıtlanabilir.
+        Bu, sorunuzun yanıtlanıp yanıtlanmadığını görmek için uğramanız gereken ilk yerdir.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="{$root}/documentation"><img src="{$root}/images/docs.png"><br>Belgeler</a>
+    </td>
+    <td valign="top">
+        Sorunuza yanıt bulmak için çevrimiçi <a href="{$root}/site/documentation">Belgelendirme</a>mizi okumanızı öneriyoruz. Ayrıca ilk kullanıcı için bazı kullanışlı bilgileri içeren
+        <a href="http://wiki.winehq.org/HowTo">Nasıl Yapılır</a> sayfamıza da bakmanızı öneriririz.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://wiki.winehq.org/"><img src="{$root}/images/moinmoin.png"><br>Viki</a>
+    </td>
+    <td valign="top">
+        Sorunuza yanıt bulup bulamayacağınızı görmeniz için ayrıca <a href="http://wiki.winehq.org/">Viki</a> sayfamıza da bakabilirsiniz.
+    </td>
+  </tr>
+  
+<tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://forums.winehq.org/"><img src="{$root}/images/forum.png"><br>Forum</a>
+    </td>
+    <td valign="top">
+        Wine kullanıcılarının sorularını sormaları ve birbirleri ile iletişime geçebilmeleri için <a href="http://forums.winehq.org/">web</a>/<a href="{$root}/site/forums">e-posta</a> tabanlı bir topluluğumuz bulunuyor.
+        Ayrıca bu topluluğu oluşturan bir diğer şey olan <a href="{$root}/site/forums">posta listeleri</a>ni de gezebilirsiniz.
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="{$root}/irc"><img src="{$root}/images/irc.png"><br>IRC</a>
+    </td>
+    <td valign="top">
+        <a href="{$root}/irc">IRC kanal</a>ımızda Wine topluluğu ile canlı sohbete katılabilirsiniz.
+    </td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://appdb.winehq.org/"><img src="{$root}/images/appdb.png"><br>AppDB</a>
+    </td>
+    <td valign="top">
+        Eğer tek bir uygulama ile yardım almak istiyorsanız <a href="http://appdb.winehq.org/">Uygulama Veritabanı</a> sayfamız bakılmak için iyi bir yer.
+    </td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center" class="small">
+        <a href="http://bugs.winehq.org/"><img src="{$root}/images/bugs.png"><br>Bugzilla</a>
+    </td>
+    <td valign="top">
+        Our <a href="http://bugs.winehq.org/">Bugzilla Hata İzleyici</a> çözdüğümüz ve şu an üzerinde çalıştığımız tüm sorunları içerir.
+    </td>
+  </tr>
+  
+</table>
+
+<p>Websitesinde veya metinlerde bir problem mi var? <a href="mailto:web-admin@winehq.org">Web Takımımız</a> ile iletişime geçin.</p>
+
+<p>&nbsp;</p>

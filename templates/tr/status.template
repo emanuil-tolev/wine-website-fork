@@ -1,0 +1,129 @@
+<!--TITLE:[Wine Durumu]-->
+<!--BLURB:[Wine Projesinin Geçerli Durumu]-->
+
+<!-- Please remember to close your <td> and <tr> tags -->
+
+<h1 class="title">Wine Durumu</h1>
+
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="100%">
+
+    <p>Son güncelleme: 11 Temmuz 2007.</p>
+    
+    <div align="center">
+    <table width="90%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+      <td bgcolor="#efefef"><strong>Yadsıma</strong>
+    <br>
+      Yüzdeler, bir bileşenin tam olarak geçerli durum ölçütü değildir ve sadece Wine Haftalık Haberler tarafından tahmin edilir. "100% tamamlandı" olarak işaretlenen bir bileşen mükemmel ve hatasız demek değil; istenen durumda bileşenin çalışması için gereken daha fazla geliştirme işi olmadığının göstergesidir.
+      </td>
+    </tr>
+    </table>
+    </div>
+
+</td>
+<td>
+
+   <table style="width: 300px; background-color: black; margin-top: 10px;">
+   <tr><td>
+       <p class="small"><b style="color: white;">Wine Durum Menüsü</b></p>
+   </td></tr>
+   <tr><td style="background-color: white;">
+        <dl>
+            <dt><a href="{$root}/winapi_stats"><b>API Durumu</b></a></dt>
+            <dd>
+               Gerçeklenen API'ların Durumu.
+            </dd>
+
+            <dt><a href="http://wiki.winehq.org/CoreStatus"><b>Temel Durumlar</b></a></dt>
+            <dd>
+               Temel Wine bileşen, araç ve çeşitli dosyaların durumları.
+            </dd>
+
+            <dt><a href="http://wiki.winehq.org/DLLStatus"><b>DLL Durumları</b></a></dt>
+            <dd>
+               Windows DLL klon durumları.
+            </dd>
+
+            <dt><a href="http://wiki.winehq.org/DirectXStatus"><b>DirectX Durumu</b></a></dt>
+            <dd>
+               DirectX DLL klon durumları.
+            </dd>
+
+            <dt><a href="http://wiki.winehq.org/MultimediaStatus"><b>Çokluortam Durumu</b></a></dt>
+            <dd>
+               Çokluortam eleman durumları.
+            </dd>
+
+            <dt><a href="http://wiki.winehq.org/ToolStatus"><b>Araç Durumu</b></a></dt>
+            <dd>
+               Yardımcı araç program ve betiklerin durumu.
+            </dd>
+
+            <dt><a href="http://wiki.winehq.org/UserInterfaceStatus"><b>Arayüz Durumu</b></a></dt>
+            <dd>
+               Kullanıcı arayüzü elemanlarının durumu.
+            </dd>
+
+            <dt><a href="http://wiki.winehq.org/WinePortingStatus"><b>Bağlama Durumu</b></a></dt>
+            <dd>
+               Wine'ın çeşitli derleyici, İşletim Sistemi ve mimarilere bağlama durumu.
+            </dd>
+
+            <dt><a href="http://wiki.winehq.org/TodoList"><b>Bilinen Yapılacaklar</b></a></dt>
+            <dd>
+               Bilinen sorunlar listesi.
+            </dd>
+        </dl>
+   </td></tr>
+   </table>
+
+</td>
+</tr>
+</table>
+
+<p>&nbsp;</p>
+
+<div align=center>
+<table border="0" width="95%" cellpadding="5" cellspacing="0">
+  <tr class="hdr">
+<th colspan="21">Geliştirilme durum renk anahtarı</th>
+  </tr>
+  <tr>
+<td class="pct0">%0</td>
+<td class="pct5">%5</td>
+<td class="pct10">%10</td>
+<td class="pct15">%15</td>
+<td class="pct20">%20</td>
+<td class="pct25">%25</td>
+<td class="pct30">%30</td>
+<td class="pct35">%35</td>
+<td class="pct40">%40</td>
+<td class="pct45">%45</td>
+<td class="pct50">%50</td>
+<td class="pct55">%55</td>
+<td class="pct60">%60</td>
+<td class="pct65">%65</td>
+<td class="pct70">%70</td>
+<td class="pct75">%75</td>
+<td class="pct80">%80</td>
+<td class="pct85">%85</td>
+<td class="pct90">%90</td>
+<td class="pct95">%95</td>
+<td class="pct100">%100</td>
+  </tr>
+  <tr class="hdr">
+<th colspan="21">Belgelendirme durum renk anahtarı</th>
+  </tr>
+  <tr>
+<td class="nonexistent" colspan="4">Mevcut değil</td>
+<td class="poor" colspan="4">Zayıf</td>
+<td class="outdated" colspan="5">Eski</td>
+<td class="adequate" colspan="4">Yeterli</td>
+<td class="good" colspan="4">İyi</td>
+  </tr>
+ </table>
+</div>
+
+<p>&nbsp;</p>

@@ -1,0 +1,22 @@
+
+<div style="text-align: right;">
+    <big>{$date}</big><br>
+    <small><a href="{$contact}">{$author}</a> tarafından</small>
+</div>
+
+<div style="width: 250px; float: left; padding: 0 10px 0 10px;">
+  {$summary}
+  <p class="small"><a href="{$root}/wwn/source/{$xml}">XML kaynağı</a><br>
+  <a href="{$root}/wwn/">Daha Fazla Sorun...</a></p>
+</div>
+
+<div class="wwn">
+{$body}
+</div>
+
+<hr>
+
+<p align="center">
+  Tüm Çekirdek Kuzen sorunları ve özetleri, kendi özgün yazarlarının telif haklarındadır ve <br> <a href="http://www.gnu.org/licenses/gpl2.txt">GNU Genel Kamu Lisansı, sürüm 2.0</a> altında yayınlanmaktadır.
+</p>
+

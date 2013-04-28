@@ -1,0 +1,43 @@
+<!--TITLE:[Wine Hakkında]-->
+<!--BLURB:[Wine projesini açıklamak]-->
+
+<h1 class="title">Wine Hakkında</h1>
+
+<p>Wine ("Wine Is Not an Emulator (Wine Bir Öykünücü Değildir)" kelimelerinin kısaltılmışı olup, Linux, Mac OSX, & BSD benzeri POSIX uyumlu işletim çeşitli sistemlerinde Windows uygulamalarını çalıştırma yetisine sahip uyumluluk katmanıdır. Dahili Windows mantığındaki sanal makine veya öykünücü yerine; Wine, Windows API çağrımlarını anında POSIX çağrılarına dönüştürür ve diğer yöntemlerin dezavantajı olan performans ve bellek kayıplarını önler. Bunun sonucu olarak Windows uygulamalarını, masaüstünüze temiz bir şekilde bütünleştirmenizi sağlar.</p>
+
+<p>Wine, 1993 yılında Bob Amstadt'ın Windows 3.1 programlarını Linux üzerinde çalıştırma desteğinin ilk koordinasyonu altında başladı. Çok başlarda, Wine'ın geliştirmesi bugüne kadar hala projeyi yönetmekte olan Alexandre Julliard'a geçti. Yıllar boyunca, Windows API ve uygulamalar gelişerek yeni donanım ve yazılımın avantajlarını aldıkça, Wine da yeni özelliklere destek vermek üzere uyum sağladı ve daha iyi kullanıcı deneyimi yaşatmak için daha kararlı olup diğer işletim sistemlerine de bağlandı.</p>
+
+<p>Tanımındaki azim dolu proje ile, Wine üzerinde, 1.0 sürümüne ulaştığı (ilk kararlı sürüm 2008) 15. yılı boyunca kararlı olarak çalışıldı. Birkaç sürüm sonra, Wine hala günümüzde aktif olarak geliştirilmekte ve yapılması gereken çok iş olmasına rağmen,
+<a href="http://wiki.winehq.org/UsageStatistics" title="Wine Kullanım İstatistikleri">milyonlarca kullanıcının</a> kendi istedikleri işletim sistemlerinde Windows yazılımlarını çalıştırmak için Wine kullandığı tahmin ediliyor.</p>
+
+<h3>Açık Kaynaklı ve Kullanıcı Odaklı</h3>
+
+<p>Wine her zaman <a href="http://www.winehq.org/license"
+title="Wine licensing">ücretsiz yazılım</a> olacaktır. Wine'ın kaynak kodunun neredeyse yarısı, gönüllüler tarafından; geri kalan kısımları da ticari ilgililerden (özellikle Wine'ın destekli sürümünü satan
+<a href="http://www.codeweavers.com/products/" title="CodeWeavers
+CrossOver Office">CodeWeavers</a> tarafından) desteklendi.</p>
+
+<p>Wine, kullanıcı topluluğuna da büyük ölçüde bağlıdır. Kullanıcılar programları hakkında ipuçları ve <a href="http://appdb.winehq.org/" title="Wine Uygulama Veritabanı">Uygulama Veritabanı</a> içerisinde ne kadar iyi çalıştığını test sonuçları ile paylaşmak için zamanlarını vermektedirler. Yine Kullanıcılar hata raporları ile geliştiricileri <a href="http://bugs.winehq.org/"
+title="Bugzilla">Hata İzleyici</a> içerisinden haberdar eder ve <a href="http://forums.winehq.org/" title="WineHQ Forumları">forumlar</a> içinde soruları yanıtlamaktadırlar.
+</p>
+
+<h3>Daha fazlasını öğrenin:</h3>
+
+<p><i>(Aşağıdaki sayfaların çoğu üzerinde hala çalışılmaktadır ve güncel olmayabilirler)</i></p>
+
+<ul>
+    <li><a href="http://wiki.winehq.org/ImportanceOfWine">Niçin Wine Bu Kadar Önemli</a>
+    </li>
+    <li><a href="http://wiki.winehq.org/Debunking_Wine_Myths">Wine Hakkında Ortak Efsaneler</a>
+    </li>
+    <li><a href="http://wiki.winehq.org/WineHistory">Wine Projesinin Tarihi</a>
+    </li>
+    <li><a href="http://wiki.winehq.org/ProjectOrganization">
+        Organizasyon ve Liderlik</a>
+    </li>
+    <li><a href="http://wiki.winehq.org/WhosWho">Bazı Katkıcı Biyografileri
+        </a>
+    </li>
+    <li><a href="http://wiki.winehq.org/Acknowledgements">Diğer Teşekkürler</a>
+    </li>
+</ul>
