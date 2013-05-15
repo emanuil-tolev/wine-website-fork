@@ -1,0 +1,14 @@
+<news>
+<date>10 de Maio de 2013</date>
+<title>Wine 1.5.30 lançado</title>
+<body>
+<p> A versão de desenvolvimento 1.5.30 já está disponível agora.</p>
+<p> <a href="{$root}/announce/1.5.30">Novidades</a> desta versão:
+<ul>
+  <li>Suporte à captura de mouse no driver de Mac.</li>
+  <li>Autenticação NTLM e negociada no WinHTTP.</li>
+  <li>Suporte a contorno (bypass) de proxy no WinInet.</li>
+  <li>Várias correções de bugs</li>
+<p><p>O código fonte está <a href="http://prdownloads.sourceforge.net/wine/wine-1.5.30.tar.bz2">disponível agora</a>.
+Pacotes binários estão em processo de construção e irão aparecer em breve em suas respectivas <a href="{$root}/download">sessões da área de downloads</a>.
+</p></body></news>
