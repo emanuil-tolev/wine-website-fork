@@ -1,0 +1,18 @@
+<news>
+<date>June  7, 2013</date>
+<title>Wine 1.6-rc1 Released</title>
+<body>
+<p> The Wine development release 1.6-rc1 is now available.</p>
+<p> This is the first release candidate for the upcoming Wine 1.6. It marks the beginning of the code freeze period. Please give this release a good testing to help us make 1.6 as good as possible.</p>
+<p> <a href="{$root}/announce/1.6-rc1">What's new</a> in this release:
+<ul>
+  <li>New implementation of the typelib creation support.</li>
+  <li>GLSL-based support for fixed function vertex shaders.</li>
+  <li>Support for desktop launchers in virtual desktop mode.</li>
+  <li>Fixes for Japanese vertical text.</li>
+  <li>New Croatian translation.</li>
+  <li>Various bug fixes.</li>
+</ul></p>
+<p><p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.6-rc1.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
