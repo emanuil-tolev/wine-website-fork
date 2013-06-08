@@ -1,0 +1,18 @@
+<news>
+<date>Czerwiec  7, 2013</date>
+<title>Wydano Wine 1.6-rc1</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.6-rc1 jest już dostępne.</p>
+<p> Jest to pierwsze wydanie kandydujące do nadchodzącego wydania Wine 1.6. Zapoczątkowuje ono okres zamrożenia kodu. Prosimy dobrze przetestować to wydanie, aby pomóc nam uczynić wydanie 1.6 tak dobrym, jak to tylko możliwe.</p>
+<p> <a href="{$root}/announce/1.6-rc1">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Nowa implementacja wsparcia dla tworzenia bibliotek typów.</li>
+  <li>Wsparcie oparte o GLSL dla stałych funkcji cieniowania wierzchołków.</li>
+  <li>Wsparcie dla plików uruchamiających w trybie pulpitu wirtualnego.</li>
+  <li>Poprawki do japońskiego pionowego tekstu.</li>
+  <li>Nowe chorwackie tłumaczenie.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul></p>
+<p><p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.6-rc1.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
