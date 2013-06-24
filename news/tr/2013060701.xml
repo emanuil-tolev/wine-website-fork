@@ -1,0 +1,18 @@
+<news>
+<date>7 Haziran 2013</date>
+<title>Wine 1.6-rc1 Yayınlandı</title>
+<body>
+<p> Wine geliştirme sürümü 1.6-rc1 artık kullanılabilir.</p>
+<p> Bu, yaklaşan Wine 1.6 için ilk sürüm adayı. Bu, kod dondurma sürecinin başlangıcını oluşturur. Lütfen 1.6 sürümünü mümkün olduğu kadar iyi yapabilmemiz için deneyin.</p>
+<p> Bu sürümdeki <a href="{$root}/announce/1.6-rc1">yenilikler</a>:
+<ul>
+  <li>Typelib oluşturma desteğinin yeni biçimi.</li>
+  <li>Sabit fonksiyon köşe gölgeleyicileri için GLSL tabanlı destek.</li>
+  <li>Sanal masaüstü kipinde masaüstü başlatıcıları için destek.</li>
+  <li>Japonca dikey yazı için onarımlar.</li>
+  <li>Yeni Hırvatça çeviri.</li>
+  <li>Çeşitli hata gidermeleri.</li>
+</ul></p>
+<p><p>Kaynağı <a href="http://prdownloads.sourceforge.net/wine/wine-1.6-rc1.tar.bz2">artık kullanımda</a>.
+İnşa sürecindeki ikili paketler kısa zaman içinde <a href="{$root}/download">indirme</a> konumunda yerini alacaktır.
+</p></body></news>
