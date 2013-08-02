@@ -1,0 +1,16 @@
+<news>
+<date>2 août 2013</date>
+<title>Sortie de Wine 1.7.0</title>
+<body>
+<p> La version de développement 1.7.0 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.7.0">Nouveautés</a> de cette version :
+<ul>
+  <li>Prise en charge du texte vertical dans le pilote PostScript.</li>
+  <li>Version 2 de liblcms désormais utilisée au lieu de la version 1.</li>
+  <li>Données Unicode à jour avec Unicode 6.2.0.</li>
+  <li>Contrôles hyperliens pris en charge dans les programmes d'installation.</li>
+  <li>Prise en charge améliorée des attributs XML.</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.0.tar.bz2">code source</a> est disponible dès à présent. Les paquets binaires sont en cours de construction, et apparaîtront sous peu sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
