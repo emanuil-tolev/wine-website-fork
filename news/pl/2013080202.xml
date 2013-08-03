@@ -1,0 +1,17 @@
+<news>
+<date>Sierpień  2, 2013</date>
+<title>Wydano Wine 1.7.0</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.7.0 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.7.0">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Wsparcie dla pionowego tekstu w sterowniku Postscript.</li>
+  <li>Od teraz używana jest wersja 2 liblcms zamiast wersji 1.</li>
+  <li>Dane unikodu uaktualnione do Unikodu 6.2.0.</li>
+  <li>Wsparcie dla elementów sterujących hiperodnośników w instalatorach.</li>
+  <li>Ulepszone wsparcie dla atrybutów XML.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul>
+<p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.0.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
