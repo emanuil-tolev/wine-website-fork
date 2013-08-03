@@ -1,0 +1,77 @@
+<!--TITLE:[Documentation]-->
+<!--BLURB:[Documentation]-->
+
+<h1 class="title">Documentation</h1>
+
+ <h2>Guides</h2>
+ <ul>
+   <li>
+     <a href="{$root}/docs/wineusr-guide/index">Guide de l'utilisateur de Wine</a><br>
+     Comment utiliser et configurer Wine pour exécuter des applications Windows.<br>
+     <span class=small>&nbsp;&nbsp;&nbsp;<b>formats:</b>
+     <a href="{$root}/docs/wineusr-guide/index">en ligne</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/wineusr-guide.html">HTML</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/wineusr-guide.pdf">PDF</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/wineusr-guide.ps">PostScript</a>
+     </span>
+   </li><br>
+
+   <li>
+     <a href="{$root}/docs/winelib-guide/index">Guide de l'utilisateur de Winelib</a><br>
+     Comment utiliser Wine pour porter des applications Windows sous Linux.<br>
+     <span class=small>&nbsp;&nbsp;&nbsp;<b>formats:</b>
+     <a href="{$root}/docs/winelib-guide/index">en ligne</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winelib-guide.html">HTML</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winelib-guide.pdf">PDF</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winelib-guide.ps">PostScript</a>
+     </span>
+   </li><br>
+
+   <li>
+     <a href="{$root}/docs/winedev-guide/index">Guide du développeur Wine</a><br>
+     Comment devenir un développeur Wine.<br>
+     <span class=small>&nbsp;&nbsp;&nbsp;<b>formats:</b>
+     <a href="{$root}/docs/winedev-guide/index">en ligne</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winedev-guide.html">HTML</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winedev-guide.pdf">PDF</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winedev-guide.ps">PostScript</a>
+     </span>
+   </li><br>
+
+   <li>
+     <a href="{$root}/howto">Comment aider à faire fonctionner des applications sous Wine</a><br>
+     Un petit guide pour ceux qui veulent donner un coup de main.<br>
+   </li>
+ </ul>
+
+ <h2>Pages de manuel</h2>
+ <ul>
+     <li><a href="{$root}/docs/wine">Page de manuel de wine</a>
+     <br>Options de ligne de commande de l'exécutable <strong>wine</strong>.</li><br>
+
+     <li><a href="{$root}/docs/wineserver">Page de manuel de wineserver</a>
+     <br>Options de ligne de commande de l'exécutable <strong>wineserver</strong>.</li><br>
+
+     <li><a href="{$root}/docs/winebuild">Page de manuel de winebuild</a>
+     <br>Options de ligne de commande de l'exécutable <strong>winebuild</strong>.</li><br>
+
+     <li><a href="{$root}/docs/winedump">Page de manuel de winedump</a>
+     <br>Options de ligne de commande de l'exécutable <strong>winedump</strong>.</li><br>
+
+     <li><a href="{$root}/docs/winemaker">Page de manuel de winemaker</a>
+     <br>Options de ligne de commande du script <strong>winemaker</strong>.</li><br>
+
+     <li><a href="{$root}/docs/widl">Page de manuel de widl</a>
+     <br>Options de ligne de commande du compilateur d'IDL.</li><br>
+
+     <li><a href="{$root}/docs/wmc">Page de manuel de wmc</a>
+     <br>Options de ligne de commande du compilateur de messages.</li><br>
+
+     <li><a href="{$root}/docs/wrc">Page de manuel de wrc</a>
+     <br>Options de ligne de commande du compilateur de ressources.</li><br>
+
+     <li><a href="{$root}/docs/winegcc">Page de manuel de winegcc</a>
+     <br>Options de ligne de commande du compilateur <strong>winegcc</strong>.</li><br>
+ </ul>
+
+<p>&nbsp;</p>
