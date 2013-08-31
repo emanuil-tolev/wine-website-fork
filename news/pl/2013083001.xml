@@ -1,0 +1,18 @@
+<news>
+<date>Sierpień 30, 2013</date>
+<title>Wydano Wine 1.7.1</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.7.1 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.7.1">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Wsparcie dla obiektów kluczowych zdarzeń.</li>
+  <li>Wsparcie dla mechanizmu synchronizacji "init once".</li>
+  <li>Wsparcie aktywacji kontekstu dla bibliotek DLL, bibliotek typów, i klas COM.</li>
+  <li>Wsparcie dla wczytywania bibliotek typów 32-bitowych na 64-bitach.</li>
+  <li>Rozmaite poprawki w sterowniku Mac.</li>
+  <li>Kilka poprawek dla urządzeń na port szeregowy.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul>
+<p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.1.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
