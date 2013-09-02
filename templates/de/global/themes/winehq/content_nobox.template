@@ -37,7 +37,7 @@
     <input type="hidden" name="ie" value="UTF-8">
     <span style="color: #ffffff;">Suche:</span> <input type="text" name="q" size="20">
   </form>
-  <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang={$langCode}"></script>
+  <script type="text/javascript" src="//www.google.com/coop/cse/brand?form=cse-search-box&amp;lang={$langCode}"></script>
 </div>
 
 
@@ -45,9 +45,9 @@
     <ul>
         <li class="s"><a href="{$base_url}">WineHQ</a></li>
         <li><a href="http://wiki.winehq.org/">Wiki</a></li>
-        <li><a href="http://appdb.winehq.org/">AppDB</a></li>
-        <li><a href="http://bugs.winehq.org/">Bugzilla</a></li>
-        <li><a href="http://forums.winehq.org/">Forum</a></li>
+        <li><a href="//appdb.winehq.org/">AppDB</a></li>
+        <li><a href="//bugs.winehq.org/">Bugzilla</a></li>
+        <li><a href="//forums.winehq.org/">Forum</a></li>
     </ul>
 </div>
 
