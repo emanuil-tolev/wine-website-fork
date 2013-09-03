@@ -26,7 +26,7 @@ lang:               en
 
 # default base URLS (if you run the site, in a subdir, set base_root)
 base_root:          
-base_url:           http://www.winehq.org{$base_root}/
+base_url:           //www.winehq.org{$base_root}/
 
 # Path to WWN XML files
 news_xml_path:      news
@@ -35,10 +35,10 @@ news_xml_path:      news
 wwn_xml_path:       wwn
 
 # URL for bugs
-bug_system:         http://bugs.winehq.org/show_bug.cgi?id=
+bug_system:         //bugs.winehq.org/show_bug.cgi?id=
 
 # URL for git tree
-git_tree:           http://source.winehq.org/git
+git_tree:           //source.winehq.org/git
 
 # Path to the root directory of the site
 base_path:          /path/to/root/directory/of/website/
