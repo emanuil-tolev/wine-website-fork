@@ -1,0 +1,17 @@
+<news>
+<date>September 13, 2013</date>
+<title>Wine 1.7.2 Released</title>
+<body>
+<p> The Wine development release 1.7.2 is now available.</p>
+<p> <a href="{$root}/announce/1.7.2">What's new</a> in this release:
+<ul>
+  <li>Right-to-left text layout improvements.</li>
+  <li>NTLM and Negotiate authentication for RPC over HTTP.</li>
+  <li>More glyphs in the built-in Wingdings font.</li>
+  <li>Better system tray support in the Mac driver.</li>
+  <li>Activation context improvements.</li>
+  <li>Various bug fixes.</li>
+</ul>
+<p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.2.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
