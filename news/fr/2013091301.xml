@@ -1,0 +1,16 @@
+<news>
+<date>13 septembre 2013</date>
+<title>Sortie de Wine 1.7.2</title>
+<body>
+<p> La version de développement 1.7.2 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.7.2">Nouveautés</a> de cette version :
+<ul>
+  <li>Améliorations à l'agencement du texte écrit de droite à gauche.</li>
+  <li>Authentification NTLM et Negotiate dans RPC sur HTTP.</li>
+  <li>Glyphes supplémentaires dans la police Wingdings intégrée.</li>
+  <li>Prise en charge améliorée de la zone de notification système dans le pilote Mac.</li>
+  <li>Améliorations dans la prise en charge des contextes d'activation.</li>
+  <li>Diverses corrections de bogues.</li>
+</ul></p>
+<p><p>Le <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.2.tar.bz2">code source</a> est disponible dès à présent. Les paquets binaires sont en cours de construction, et apparaîtront sous peu sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
