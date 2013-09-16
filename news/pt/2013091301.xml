@@ -1,0 +1,16 @@
+<news>
+<date>13 de  de 2013</date>
+<title>Wine 1.7.2 lançado</title>
+<body>
+<p> A versão de desenvolvimento 1.7.2 já está disponível agora.</p>
+<p> <a href="{$root}/announce/1.7.2">Novidades</a> desta versão:
+<ul>
+  <li>Melhorias na disposição de texto da direita para esquerda.</li>
+  <li>NTLM e autenticação negociada para RPC sobre HTTP.</li>
+  <li>Mais glifos para a fonte Wingdings incluída.</li>
+  <li>Melhor suporte à bandeja do sistema no driver Mac.</li>
+  <li>Melhorias do contexto de ativação.</li>
+  <li>Várias correções de bugs.</li>
+<p><p>O código fonte está <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.2.tar.bz2">disponível agora</a>.
+Pacotes binários estão em processo de construção e irão aparecer em breve em suas respectivas <a href="{$root}/download">sessões da área de downloads</a>.
+</p></body></news>
