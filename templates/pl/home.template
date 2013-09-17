@@ -62,14 +62,14 @@
         <td style="padding-left: 15px; padding-bottom: 2px;">
             <b><a href="{$root}/announce/{$config_stable_release}">Wine&nbsp;{$config_stable_release}</a></b>
             <span class="small">
-              (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_stable_release}">zmiany</a>)
+              (<a href="//source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_stable_release}">zmiany</a>)
             </span>
         </td></tr>
         <tr><td>Rozwojowe:</td>
         <td style="padding-left: 15px;">
             <b><a href="{$root}/announce/{$config_master_release}">Wine&nbsp;{$config_master_release}</a></b>
             <span class="small">
-              (<a href="http://source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_master_release}">zmiany</a>)
+              (<a href="//source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_master_release}">zmiany</a>)
             </span>
         </td></tr>
         </table>
