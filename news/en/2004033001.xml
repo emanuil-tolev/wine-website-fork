@@ -4,22 +4,22 @@
   <body>
 WineHQ has seen quite a few additions over the past week.
 We're now able to display the 
-<a href="http://www.winehq.org{$root}/winapi_stats">completion 
+<a href=//www.winehq.org{$root}/winapi_stats">completion 
 of various API's</a> from release to release.  
 The source to the 
-<a href="http://appdb.winehq.org">Wine Application Database</a>
+<a href=//appdb.winehq.org">Wine Application Database</a>
 was released and is 
-<a href="http://www.winehq.org{$root}/cvs">available via CVS</a>
+<a href=//www.winehq.org{$root}/cvs">available via CVS</a>
 (as well as 
-<a href="http://cvs.winehq.org/cvsweb/appdb/">browsable</a>
+<a href=//cvs.winehq.org/cvsweb/appdb/">browsable</a>
 via LXR.)  One of the first new additions linked apps
 to bugs filed in
-<a href="http://bugs.winehq.org/">BugZilla</a>.
+<a href=//bugs.winehq.org/">BugZilla</a>.
 The 
-<a href="http://www.winehq.org{$root}/todo_lists">To Do List</a> 
+<a href=//www.winehq.org{$root}/todo_lists">To Do List</a> 
 has seen updates from several areas, including more things bumped 
 into the DONE category.  Finally, Mike McCormack suggested three new
-<a href="http://www.winehq.com{$root}/fun_projects">fun projects</a>
+<a href=//www.winehq.org{$root}/fun_projects">fun projects</a>
 someone might be interested in tackling:
 <ul><li>implementation of jscript.dll using Mozilla's SpiderMonkey</li>
     <li>implementation of Image Color Management, mscms.dll, using Little CMS</li>
