@@ -65,14 +65,14 @@ is to distribute widely what's going on around Wine (the Un*x Windows emulator).
   title="News: CrossOver Office, WineX 2.0"
   subject="News"
   topic1="News"
-  archive="http://www.winehq.org/hypermail/wine-devel/2002/03/0442.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2002/03/0442.html"
   posts="3"
   startdate="03/25/2002"
   enddate="03/31/2002"
 >
 
 <p />The biggest news of the week is CodeWeavers 
-<a href="http://www.winehq.org/hypermail/wine-devel/2002/03/0442.html">announcement</a>
+<a href=//www.winehq.org/hypermail/wine-devel/2002/03/0442.html">announcement</a>
 of their newest
 product.  Dubbed "CrossOver Office" it allows:
 <quote who="codeweavers"><p />
@@ -137,7 +137,7 @@ Zack so I can go skiing.
   title="Wineconf 2002 (con't)"
   subject="wineconf 2002 summary"
   topic1="Documentation"
-  archive="http://www.winehq.org/hypermail/wine-devel/2002/04/0009.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2002/04/0009.html"
   posts="2"
   startdate="04/01/2002"
   enddate="04/01/2002"
@@ -166,7 +166,7 @@ mentioned, <quote who="Andreas Mohr">
   title="Making Fonts Suck Less"
   subject="OT: Buggy fonts"
   topic1="Fixes"
-  archive="http://www.winehq.org/hypermail/wine-devel/2002/03/0390.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2002/03/0390.html"
   posts="10"
   startdate="03/25/2002"
   enddate="03/26/2002"
@@ -243,7 +243,7 @@ that without success.  Huw then asked for a trace so he could debug it.
   title="Implementing BiDi Fonts"
   subject="Adding new libraries to the repository"
   topic1="Internationalization"
-  archive="http://www.winehq.org/hypermail/wine-devel/2002/03/0371.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2002/03/0371.html"
   posts="6"
   startdate="03/25/2002"
   enddate="03/26/2002"
@@ -325,7 +325,7 @@ characters.
   title="Implementing a DIB Engine"
   subject="DIB engine"
   topic1="Multimedia"
-  archive="http://www.winehq.org/hypermail/wine-devel/2002/03/0502.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2002/03/0502.html"
   posts="5"
   startdate="03/30/2002"
   enddate="03/31/2002"
@@ -341,7 +341,7 @@ was about implementing a DIB engine:
 to summarize these discussions to update bug 421 - Implement a DIB
 engine.
 <p />
-<a href="http://bugs.winehq.org/show_bug.cgi?id=421">
+<a href=//bugs.winehq.org/show_bug.cgi?id=421">
 http://bugs.winehq.org/show_bug.cgi?id=421</a>
 <p />
 Is the following accurate, complete, etc? Comments? Other ideas?
@@ -358,7 +358,7 @@ around are:
 </ol></quote>
 
 <p />Those last points were summarized.  Please refer to Francois' 
-<a href="http://www.winehq.org/hypermail/wine-devel/2002/03/0502.html">
+<a href=//www.winehq.org/hypermail/wine-devel/2002/03/0502.html">
 original post</a> for more details.
 
 <p />DIB stands for "Display Independent Bitmap".  Windows uses a DIB
@@ -402,7 +402,7 @@ for doing this, but wasn't sure.
   title="Unicode and I18N Support"
   subject="Unicode, i18n support"
   topic1="Internationalization"
-  archive="http://www.winehq.org/hypermail/wine-devel/2002/03/0506.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2002/03/0506.html"
   posts="12"
   startdate="03/30/2002"
   enddate="04/01/2002"
@@ -465,7 +465,7 @@ But Dmitry explained Windows would be able to
   title="Improving Regression Testing"
   subject="Improving the regression testing infrastructure"
   topic1="Testing"
-  archive="http://www.winehq.org/hypermail/wine-devel/2002/03/0371.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2002/03/0371.html"
   posts="15"
   startdate="03/29/2002"
   enddate="03/29/2002"
@@ -497,23 +497,23 @@ framework easier to use:
 for Wine 0.9.0. I added the corresponding tasks yesterday:
 <ul>
  <li /> 526 [NEW] - Document the regression testing framework<br />
-   <a href="http://bugs.winehq.org/show_bug.cgi?id=526">
+   <a href=//bugs.winehq.org/show_bug.cgi?id=526">
    http://bugs.winehq.org/show_bug.cgi?id=526</a>
 
  <li /> 530 [NEW] - Package the regression tests for Windows<br />
-   <a href="http://bugs.winehq.org/show_bug.cgi?id=530">
+   <a href=//bugs.winehq.org/show_bug.cgi?id=530">
    http://bugs.winehq.org/show_bug.cgi?id=530</a>
 
  <li /> 527 [NEW] - Running C regression tests on Windows with MSVC<br />
-   <a href="http://bugs.winehq.org/show_bug.cgi?id=527">
+   <a href=//bugs.winehq.org/show_bug.cgi?id=527">
    http://bugs.winehq.org/show_bug.cgi?id=527</a>
 
  <li /> 528 [NEW] - Running C regression tests on Windows with Cygwin/MinGW<br />
-   <a href="http://bugs.winehq.org/show_bug.cgi?id=528">
+   <a href=//bugs.winehq.org/show_bug.cgi?id=528">
    http://bugs.winehq.org/show_bug.cgi?id=528</a>
 
  <li /> 529 [NEW] - Running Perl regression tests on Windows<br />
-   <a href="http://bugs.winehq.org/show_bug.cgi?id=529">
+   <a href=//bugs.winehq.org/show_bug.cgi?id=529">
    http://bugs.winehq.org/show_bug.cgi?id=529</a>
 </ul></quote>
 

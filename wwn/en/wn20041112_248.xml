@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="248" date="11/12/2004" />
 <intro> <p>This is the 248th issue of the Wine Weekly News publication.
-Its main goal is to telemark. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to telemark. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="137" size="570" contrib="51" multiples="24" lastweek="32">
 
 <person posts="16" size="58" who="Dan Kegel" />
@@ -96,7 +96,7 @@ a <a href="http://blight.eu.org/reactos/ekush.html">nice summary</a> of
 the situation and proof of their claims.
 </p><p> 
 On a more positive note, Chris Morgan and Tony Lambregts hacked on the
-Wine <a href="http://appdb.winehq.org">AppDB</a> this week and added
+Wine <a href=//appdb.winehq.org">AppDB</a> this week and added
 support for maintainers.  One problem with the database is simply
 keeping it up to date.  The hope is that people will sign up to become
 maintainers of an application and then make sure comments and any other
@@ -104,7 +104,7 @@ relevant info are up to date.  This is actually quite similar to how
 CodeWeavers' 
 <a href="http://www.codeweavers.com/compatibility/">Compatibility 
 Center</a> works.  For instance, if you check out Wine's page on 
-<a href="http://appdb.winehq.org/appview.php?appId=10&amp;versionId=67">
+<a href=//appdb.winehq.org/appview.php?appId=10&amp;versionId=67">
 Microsoft Word 2000</a> you'll notice there's a big fat button that says
 "Log in to become an app maintainer".  Guess what?  If you set up an
 account and log in you'll be given an option to be an app maintainer. 
@@ -124,7 +124,7 @@ contact <a href="mailto:chmorgan_at_charter.net">Chris Morgan</a>. </p>
 <section
         title="Cxbx: Xbox Emulator Ported"
         subject="Cxbx"
-        archive="http://www.winehq.com/hypermail/wine-devel/2004/11/0273.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/11/0273.html"
         posts="1"
         startdate="11/11/2004"
 >
@@ -169,7 +169,7 @@ Winelib port.  He reported this week,
 
 <p>I almost included the patch here to show how ridiculously
 small it is - about a total of 
-<a href="http://www.winehq.com/hypermail/wine-devel/2004/11/att-0273/01-wine.diff">ten
+<a href=//www.winehq.org/hypermail/wine-devel/2004/11/att-0273/01-wine.diff">ten
 lines</a> changed in Cxbx.  
 Now, before you run off and get all excited about this, you
 should be aware that XBox emulation with Cxbx still needs a
@@ -184,13 +184,13 @@ maybe someday it will let you play Halo 2.
 <section
         title="Gcov Support"
         subject="Re: Enabling gcov code coverage"
-        archive="http://www.winehq.com/hypermail/wine-patches/2004/11/0136.html"
+        archive=//www.winehq.org/hypermail/wine-patches/2004/11/0136.html"
         posts="1"
         startdate="11/10/2004"
 >
 <topic>Testing</topic>
 <p>A 
-<a href="http://www.winehq.org/hypermail/wine-patches/2004/11/0136.html">patch</a>
+<a href=//www.winehq.org/hypermail/wine-patches/2004/11/0136.html">patch</a>
 came in this week to add 
 <a href="http://gcc.gnu.org/onlinedocs/gcc/Gcov.html">Gcov</a>
 profiling support to Wine.  For the most part, the patch just
@@ -356,7 +356,7 @@ M
 <section 
 	title="Emacs Flymake Support" 
 	subject="Update to flymake patch"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/11/0209.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/11/0209.html" 
 	posts="1"
 	startdate="11/08/2004"
 >
@@ -378,7 +378,7 @@ Not expecting this to get merged so it goes to wine-devel.
 <section
         title="Network Config Not Updating"
         subject="wine notes &amp; /etc/resolv.conf"
-        archive="http://www.winehq.com/hypermail/wine-devel/2004/11/0251.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/11/0251.html"
         posts="4"
         startdate="11/10/2004"
 	enddate="11/11/2004"

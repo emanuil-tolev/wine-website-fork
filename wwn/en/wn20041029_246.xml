@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="246" date="10/29/2004" />
 <intro> <p>This is the 246th issue of the Wine Weekly News publication.
-Its main goal is to vote. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to vote. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="142" size="616" contrib="50" multiples="27" lastweek="31">
 
 <person posts="19" size="55" who="Alexandre Julliard" />
@@ -63,7 +63,7 @@ Its main goal is to vote. It also serves to inform you of what's going on around
 <section 
 	title="MS Enhanced Provider Library" 
 	subject="rsaenh [beware: 27kB attachment]"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/10/0542.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/10/0542.html" 
 	posts="4"
 	startdate="10/25/2004"
 	enddate="10/28/2004"
@@ -172,7 +172,7 @@ submitted a final version of the patch to wine-patches.</p>
 <section
         title="Test Dependencies"
         subject="Writing tests"
-        archive="http://www.winehq.com/hypermail/wine-devel/2004/10/0599.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/10/0599.html"
         posts="2"
         startdate="10/27/2004"
 	enddate="10/28/2004"
@@ -189,9 +189,9 @@ leading to a more accurate reimplementation.  There was
 a bit of a hiccup with some of the reporting, but it
 appears to be straightened out.  If you're curious about
 that data, check out 
-<a href="http://test.winehq.com/data">http://test.winehq.com/data</a>.
+<a href=//test.winehq.org/data">http://test.winehq.com/data</a>.
 Raw reports can be seen within Hypermail archives at
-<a href="http://www.winehq.com/hypermail/wine-tests-results/">
+<a href=//www.winehq.org/hypermail/wine-tests-results/">
 http://www.winehq.com/hypermail/wine-tests-results/</a>.  
 If you happen to have a spare Windows machine laying around
 you might be interested in downloading the 
@@ -257,7 +257,7 @@ returns ERROR_NOT_IMPLEMENTED or some such.</p></quote>
 <section
         title="Download Problems"
         subject="Problems downloading the RedHat packages"
-        archive="http://www.winehq.com/hypermail/wine-devel/2004/10/0544.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/10/0544.html"
         posts="3"
         startdate="10/25/2004"
 >
@@ -324,7 +324,7 @@ try and try again.</p>
 <section
         title="Gradient Fills"
         subject="Re: Gradient Color for Caption Bar"
-        archive="http://www.winehq.com/hypermail/wine-devel/2004/10/0576.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/10/0576.html"
         posts="7"
         startdate="10/26/2004"
 	enddate="10/28/2004"
@@ -386,7 +386,7 @@ resubmitted the patch.</p>
 <section
         title="Remote Application Deployment"
         subject="How difficult would it be to make the equivalent of Windows Terminal Server with Wine?"
-        archive="http://www.winehq.com/hypermail/wine-devel/2004/10/0610.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/10/0610.html"
         posts="2"
         startdate="10/28/2004"
 >
@@ -446,7 +446,7 @@ helped, but still wasn't in ICA or RDP class with Wine).
 <section 
 	title="OpenGL Extension Viewer" 
 	subject="OpenGL Extension Viewer"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/10/0513.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/10/0513.html" 
 	posts="3"
 	startdate="10/23/2004"
 	enddate="10/24/2004"

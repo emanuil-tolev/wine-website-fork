@@ -62,7 +62,7 @@
 <section 
 	title="News: Martin Wilck Interview" 
 	subject="News"
-	archive="http://www.winehq.org/interview/8" 
+	archive=//www.winehq.org/interview/8" 
 	posts="2"
 	startdate="06/21/2003"
 	enddate="06/27/2003"
@@ -80,7 +80,7 @@ supporting this little newsletter, and a huge thank you to anyone who's
 gotten involved because they read something here.  </p>
 
 <p>This week I published the eigth interview in WineHQ's ongoing series. 
-<a href="http://www.winehq.org/interview/8">Martin Wilck</a> answered
+<a href=//www.winehq.org/interview/8">Martin Wilck</a> answered
 questions about Winsock, free software development, and lots of other
 topics.</p>
 
@@ -92,13 +92,13 @@ topics.</p>
 <section 
 	title="Running Embedded Taskbar Apps" 
 	subject="Re: XEMBED System tray support"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/06/0571.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/06/0571.html" 
 	posts="2"
 	startdate="06/24/2003"
 >
 <topic>Integration</topic>
 <p>Mike Hearn posted a patch that enabled apps that 
-<a href="http://www.winehq.org/hypermail/wine-patches/2003/06/0222.html">embed
+<a href=//www.winehq.org/hypermail/wine-patches/2003/06/0222.html">embed
 themselves</a> into the system tray (taskbar) to do the same
 when used in Gnome 2.2+ or KDE 3.1+.  Sylvain Petreolle tried it
 out and commented, 
@@ -136,7 +136,7 @@ do this with native programs too).
 <section 
 	title="Brazilian Portuguese Localization" 
 	subject="Re: Localization to the Portuguese"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/06/0513.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/06/0513.html" 
 	posts="10"
 	startdate="06/21/2003"
 	enddate="06/24/2003"
@@ -201,28 +201,28 @@ contribute that it will be able or to find necessary.
 <section 
 	title="Status Page Updates" 
 	subject="Wine Status DLLs #2"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/06/0579.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/06/0579.html" 
 	posts="7"
 	startdate="06/24/2003"
 	enddate="06/26/2003"
 >
 <topic>Project Management</topic>
 <p>Tom Wickline went through and began updating the 
-<a href="http://www.winehq.org/?page=status">Wine Status</a> pages.  
+<a href=//www.winehq.org/?page=status">Wine Status</a> pages.  
 If you've ever looked at the status pages you may have noticed the
 column for "Documentation status".  Generally that status has been
 "Nonexistent".  That hasn't bothered a lot of developers because the
 necessary documentation, such as function definitions, has been
 available via <a href="http://msdn.microsoft.com">MSDN</a>.  This
 time around Tom 
-<a href="http://www.winehq.org/hypermail/wine-devel/2003/06/0579.html">modified</a>
+<a href=//www.winehq.org/hypermail/wine-devel/2003/06/0579.html">modified</a>
 the DLLs status page to include links to the relevant docs.  </p>
 
 <p>There was a bit of discussion concerning the wintab32 DLL.  Rob
 North and Aric Stewart's recent work hasn't been committed yet, so 
 bumping up the status on it is a bit premature.  
 Tom also posted 
-<a href="http://www.winehq.org/hypermail/wine-devel/2003/06/0599.html">a Changelog</a>
+<a href=//www.winehq.org/hypermail/wine-devel/2003/06/0599.html">a Changelog</a>
 detailing the differences and pointing out specific changes in estimated
 amount of completion.  </p>
 
@@ -237,7 +237,7 @@ amount of completion.  </p>
 <section 
 	title="New Windows API's" 
 	subject="Info on windows server 2003 (new APIs)"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/05/0526.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/05/0526.html" 
 	posts="1"
 	startdate="06/22/2003"
 >
@@ -281,7 +281,7 @@ Some of these features debuted in Windows XP and are only now making their way i
 <section 
 	title="Syntax for #include" 
 	subject="Re: Bidi B patch"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/06/0586.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/06/0586.html" 
 	posts="12"
 	startdate="06/25/2003"
 >

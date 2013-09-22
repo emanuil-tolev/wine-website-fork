@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="332" date="05/26/2007" />
 <intro> <p>This is the 332nd issue of the Wine Weekly News publication.
-Its main goal is to play NTN. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to play NTN. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="248" size="454" contrib="85" multiples="45" lastweek="48">
 
 <person posts="25" size="25" who="julliard at winehq.org (Alexandre Julliard)" />
@@ -93,7 +93,7 @@ Its main goal is to play NTN. It also serves to inform you of what's going on ar
 <section 
 	title="News: Novell's Patent Fun"
 	subject="News"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-February/.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-February/.html"
 	posts="2"
 >
 <topic>News</topic>
@@ -214,7 +214,7 @@ don't see that happening.
 <section 
 	title="ntoskrnl.exe"
 	subject="ntoskrnl"
-	archive="http://www.winehq.org/pipermail/wine-cvs/2007-May/032546.html"
+	archive=//www.winehq.org/pipermail/wine-cvs/2007-May/032546.html"
 	posts="6"
 >
 <topic>Architecture</topic>
@@ -259,7 +259,7 @@ driver with ways for them to talk to hardware.  In reality, that's pretty
 tough because at some point you need to translate the Windows calls down
 through the Linux kernel.  Last week a generic method was discussed for
 USB devices (see WWN 
-<a href="http://www.winehq.org/wwn/331#USB%20Support%20in%20Wine">#331</a>)
+<a href=//www.winehq.org/wwn/331#USB%20Support%20in%20Wine">#331</a>)
 that would add USB infrastructure to ntoskrnl and potentially forward the
 calls to libusb.  All in all, we're a lot closer than we were simply because
 finding a framework acceptable by Alexandre is often the hurdle in a lot of
@@ -288,7 +288,7 @@ is executed directly which cannot work.</p></quote>
 <section 
 	title="Gecko Package Update"
 	subject="New Gecko package"
-	archive="http://www.winehq.org/pipermail/wine-devel/2007-May/056910.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-May/056910.html"
 	posts="4"
 >
 <topic>Web/HTML</topic>
@@ -350,7 +350,7 @@ same URL as announced above.</p>
 <section 
 	title="Making Direct3D Threadsafe"
 	subject="Direct3D thread safety review"
-	archive="http://www.winehq.org/pipermail/wine-devel/2007-May/056930.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-May/056930.html"
 	posts="2"
 >
 <topic></topic>
@@ -392,7 +392,7 @@ for the rest of ddraw and d3d8/9
 <section 
 	title="Free Fonts"
 	subject="New winetricks: add support for Red Hat's liberation fonts"
-	archive="http://www.winehq.org/pipermail/wine-devel/2007-May/057060.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-May/057060.html"
 	posts="7"
 >
 <topic>Fonts</topic>
@@ -433,7 +433,7 @@ in Wine all subsequent text is shown with that font [2].
 These bugs can be worked around by installing corefonts.
 </p><p>
 I have attached 
-<a href="http://www.winehq.org/pipermail/wine-devel/2007-May/057092.html">a 
+<a href=//www.winehq.org/pipermail/wine-devel/2007-May/057092.html">a 
 script</a> that changes the filenames of the Liberation
 fonts as well as the font names inside the files to match native.
 It requires fontforge to be installed and assumes you have already
@@ -479,7 +479,7 @@ compatible.</p></quote>
 <section 
 	title="Keyboard Handling Changes"
 	subject="Wine keyboard driver+XKB. What am I to do?"
-	archive="http://www.winehq.org/pipermail/wine-devel/2007-May/056909.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-May/056909.html"
 	posts="3"
 >
 <topic>IO</topic>
@@ -542,11 +542,11 @@ into Wine any time soon unless Oleh is very patient and persistent.</p>
 <section 
 	title="AppDB Vandalism"
 	subject="Status regarding the recent Appdb vandalism"
-	archive="http://www.winehq.org/pipermail/wine-devel/2007-May/057072.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-May/057072.html"
 	posts="8"
 >
 <topic>WineHQ</topic>
-<p>Wine's <a href="http://appdb.winehq.org">AppDB</a> was vandalized last
+<p>Wine's <a href=//appdb.winehq.org">AppDB</a> was vandalized last
 week.  It seems Molle Bestefich's account was compromised and someone
 began deleting massive amounts of content.  The response to fix everything
 was pretty quick and Jan Zerebecki summarized the events:</p>
@@ -573,7 +573,7 @@ don't know if these are all, because admin-accounts were
 explicitly deleted and thus the notification to them stopped.
 </p><p>
 The following applications where mentioned in these notification emails:
-[<a href="http://www.winehq.org/pipermail/wine-devel/2007-May/057041.html">link</a>]
+[<a href=//www.winehq.org/pipermail/wine-devel/2007-May/057041.html">link</a>]
 </p><p>
 On IRC from the #winehq channel:
 <code>

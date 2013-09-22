@@ -9,7 +9,7 @@
 This is the 321st issue of the Wine Weekly News publication.
 Its main goal is to fool you into thinking there's going to be issues written
 regularly again. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at 
-<a href="http://www.winehq.org">www.winehq.org</a>
+<a href=//www.winehq.org">www.winehq.org</a>
 </p><p>
 Stats would normally go here about how many posts there were since the
 last issue.  The answer to that is <i>a lot</i>.</p>
@@ -58,7 +58,7 @@ enough.  </p>
 </section>
 <section
 	title="System Tray Support"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-August/050086.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-August/050086.html"
 	posts="10"
 >
 <topic>Integration</topic>
@@ -136,7 +136,7 @@ really individual changes. (Thanks to Mike McCormack for this advice.)</li></ol>
 </section>
 <section
 	title="Coverity Scans Not Updated"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-September/050809.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-September/050809.html"
 	posts="3"
 >
 <topic>Debugging</topic>
@@ -166,11 +166,11 @@ than 2 Month"
 We started to fix them, but the fixing-Rate went down near to Zero
 very fast.
 To remember, the Announcement from Ben Chelf was on 07. April 2006:
-<ul><a href="http://www.winehq.org/pipermail/wine-devel/2006-April/046354.html">
+<ul><a href=//www.winehq.org/pipermail/wine-devel/2006-April/046354.html">
 http://www.winehq.org/pipermail/wine-devel/2006-April/046354.html</a></ul></p><p>
 
 The first Day, we fixed 31 Defects
-<ul>(<a href="http://www.winehq.org/pipermail/wine-devel/2006-April/046433.html">
+<ul>(<a href=//www.winehq.org/pipermail/wine-devel/2006-April/046433.html">
 http://www.winehq.org/pipermail/wine-devel/2006-April/046433.html</a>)</ul>,
 but the total Results are not so good:
 </p><p>
@@ -202,7 +202,7 @@ occurring regularly and work has been done to fix the bugs</i>]</p>
 </section>
 <section
 	title="New Documentation Policy"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-September/050746.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-September/050746.html"
 	posts="2"
 >
 <topic>Documentation</topic>
@@ -223,7 +223,7 @@ waste time checking every single doc patch against MSDN.
 </section>
 <section
 	title="Direct3D State Management"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-September/050783.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-September/050783.html"
 	posts="4"
 >
 <topic>DirectX</topic>
@@ -358,14 +358,14 @@ go.  </p>
 </section>
 <section
 	title="ASIO Driver"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-August/050626.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-August/050626.html"
 	posts="4"
 >
 <topic>Multimedia</topic>
 <p>Robert Reif announced a new ASIO driver for Wine:</p>
 <quote who="Robert Reif"><p>
 I just uploaded a simple wine ASIO driver to 
-<a href="http://bugs.winehq.org/show_bug.cgi?id=2161">
+<a href=//bugs.winehq.org/show_bug.cgi?id=2161">
 http://bugs.winehq.org/show_bug.cgi?id=2161</a> for testing and feedback.
 </p><p>
 Please look at it and give me feedback.  Playback works.  Recording is 
@@ -401,7 +401,7 @@ But, this doesn't prevent you from creating a standalone audio driver.
 </section>
 <section
 	title="Wine &amp; Desktop Menus"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-August/050210.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-August/050210.html"
 	posts="11"
 >
 <topic>Integration</topic>
@@ -516,12 +516,12 @@ wineprefixcreate) the files are created as they used to be (without
 
 <p>Interestingly, this issue came up again this week, Feb. 17, 2007, when
 David Saez Padros posted 
-<a href="http://www.winehq.com/pipermail/wine-patches/2007-February/035957.html">this patch</a> changing menu support for GNOME desktops.</p>
+<a href=//www.winehq.org/pipermail/wine-patches/2007-February/035957.html">this patch</a> changing menu support for GNOME desktops.</p>
 
 </section>
 <section
 	title="DEVELOPERS-HINTS Moved"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-August/050414.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-August/050414.html"
 	posts="4"
 >
 <topic>Documentation</topic>
@@ -547,7 +547,7 @@ Here's what I have:
 </section>
 <section
 	title="Printing Changes"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-August/050205.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-August/050205.html"
 	posts="1"
 >
 <topic>Architecture</topic>
@@ -613,7 +613,7 @@ usually garners some comments as well.)</p>
 </section>
 <section
 	title="Finding Regressions With Git"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-September/050818.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-September/050818.html"
 	posts="3"
 >
 <topic>Debugging</topic>
@@ -639,7 +639,7 @@ searches and man pages. Can anyone give me any pointers to this please?
 <p>Matt Finnicum replied first:</p>
 <quote who="Matt Finnicum"><p>
 What I do is to follow along with things on the shortlog:
-<ul><a href="http://source.winehq.org/git/?p=wine.git;a=shortlog">http://source.winehq.org/git/?p=wine.git;a=shortlog</a></ul>
+<ul><a href=//source.winehq.org/git/?p=wine.git;a=shortlog">http://source.winehq.org/git/?p=wine.git;a=shortlog</a></ul>
 </p><p>
 Let's say you want to move your current branch to my recent patch
 "riched20: Rewrite of scrolling and some redrawing code." - you'd
@@ -697,7 +697,7 @@ tree.
 </section>
 <section
 	title="TrueType Font Issue"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-September/050654.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-September/050654.html"
 	posts="2"
 >
 <topic>Fonts</topic>

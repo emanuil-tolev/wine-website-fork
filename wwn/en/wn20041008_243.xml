@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="243" date="10/08/2004" />
 <intro> <p>This is the 243rd issue of the Wine Weekly News publication.
-Its main goal is to revere Scaled Composites as a bunch of geniuses. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to revere Scaled Composites as a bunch of geniuses. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="155" size="529" contrib="47" multiples="26" lastweek="20">
 
 <person posts="14" size="47" who="Dmitry Timoshkov" />
@@ -60,7 +60,7 @@ Its main goal is to revere Scaled Composites as a bunch of geniuses. It also ser
 <section
         title="Audio Driver Auto Detection"
         subject="Re: audio driver autodetection"
-        archive="http://www.winehq.com/hypermail/wine-devel/2004/10/0014.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/10/0014.html"
         posts="15"
         startdate="10/01/2004"
         enddate="10/06/2004"
@@ -69,7 +69,7 @@ Its main goal is to revere Scaled Composites as a bunch of geniuses. It also ser
 <p>Last week in the course of Winecfg discussion the
 topic of automatically detecting which audio drive is
 needed came up (see WWN issue 
-<a href="http://www.winehq.com/wwn/242#WineCfg%20Status%20Update">#242</a>.)
+<a href=//www.winehq.org/wwn/242#WineCfg%20Status%20Update">#242</a>.)
 James Hawkins offered to take a stab at it, but wanted some input
 as to how to go about it.  Some discussion occurred, then James
 outlined an idea:</p>
@@ -108,7 +108,7 @@ desired order (e.g. Alsa before OSS, or ESD...).</quote></p>
 <section
         title="Button Code Audit"
         subject="Re: Audit the buttons code"
-        archive="http://www.winehq.com/hypermail/wine-devel/2004/10/0058.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/10/0058.html"
         posts="21"
         startdate="10/04/2004"
         enddate="10/05/2004"
@@ -253,7 +253,7 @@ in.  In this case, he committed the patch and it reads:</p>
 <section
         title="Changes to Winelib Usage"
         subject="kind of newbie question :)"
-        archive="http://www.winehq.com/hypermail/wine-devel/2004/10/0111.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/10/0111.html"
         posts="3"
         startdate="10/06/2004"
 >
@@ -293,7 +293,7 @@ The winelib-user-guide was out-of-date for that section. Current cvs
 version is closer to how it works now.
 </p><p>
 Try building notepad instead of winemine, following the version at
-<a href="http://cvs.winehq.org/cvsweb/wine/documentation/winelib-intro.sgml">
+<a href=//cvs.winehq.org/cvsweb/wine/documentation/winelib-intro.sgml">
 http://cvs.winehq.org/cvsweb/wine/documentation/winelib-intro.sgml</a> (or
 the doc on winehq.org after the next snapshot is out). Looking at the
 diff from 1.10 to 1.11 along with the current version on winehq should
@@ -304,7 +304,7 @@ point you what changed exactly.
 <section
         title="Using tchar.h in Winelib Programs"
         subject="Re: Winefile: fix move file implementation"
-        archive="http://www.winehq.com/hypermail/wine-devel/2004/10/0115.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/10/0115.html"
         posts="13"
         startdate="10/06/2004"
         enddate="10/07/2004"
@@ -331,7 +331,7 @@ that are not ANSI compatible.</p></quote>
 
 <p>
 In fact, Wine has it's own
-<a href="http://cvs.winehq.com/cvsweb/wine/include/tchar.h?rev=1.23&amp;content-type=text/x-cvsweb-markup">tchar.h</a>
+<a href=//cvs.winehq.org/cvsweb/wine/include/tchar.h?rev=1.23&amp;content-type=text/x-cvsweb-markup">tchar.h</a>
 and you can get an idea of how these special definitions
 work.  Well, using this within Wine is apparently <i>bad</i>
 for reasons I'm not too sure of.  (Perhaps simply because

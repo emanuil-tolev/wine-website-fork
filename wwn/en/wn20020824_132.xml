@@ -156,7 +156,7 @@ and <a href="http://appdb.codeweavers.com/appview.php?appId=17&amp;versionId=88"
 <section 
 	title="Converting SGML Wine Docs" 
 	subject="sgml" 
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/08/0150.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/08/0150.html" 
 	posts="5" 
 	startdate="08/14/2002" 
 	enddate="08/14/2002"
@@ -173,7 +173,7 @@ I fiddled around with sgmltools but couldn't get a useful output </quote>
 <quote who="Vincent Beron">
  Running '<code>make</code>' in the documentation directory. It will create an HTML and a 
  PS copy of it. Else, I think there's a current copy on 
- <a href="http://www.winehq.org">http://www.winehq.org</a>.
+ <a href=//www.winehq.org">http://www.winehq.org</a>.
 </quote></p>
 
 <p>Andriy Palamarchuk clarified that, 
@@ -195,7 +195,7 @@ sed -e 's/&lt;[^&lt;&gt;]*&gt;//g' -e 's/&lt;/&lt;/g' -e 's/&gt;/&gt;/g' $1 |les
 <p>Jeremy Newman suggested a different, low-tech, approach and the rationale for it:</p>
 <quote who="Jeremy Newman"><p>
 The EASIEST would be to download the PDF versions at:
-<a href="http://www.winehq.org/documentation">
+<a href=//www.winehq.org/documentation">
  http://www.winehq.org/documentation</a>
 </p><p>
 This would give you the best output. Printing the HTML would not look
@@ -226,7 +226,7 @@ of the documentation.
 <section 
 	title="BiDi Support" 
 	subject="Re: Add BiDi infrastructure" 
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/08/0201.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/08/0201.html" 
 	posts="12" 
 	startdate="08/16/2002" 
 	enddate="08/20/2002"
@@ -287,7 +287,7 @@ say which is the right way is to get something working.
  deal with that later on.
 </p></quote>
 
-<p>Shachar <a href="http://www.winehq.org/hypermail/wine-devel/2002/08/0228.html">posted</a>
+<p>Shachar <a href=//www.winehq.org/hypermail/wine-devel/2002/08/0228.html">posted</a>
 a preliminary patch and noted:
 </p><quote who="Shachar Shemesh"><p>
 No actual patch, yet, as I still have a few heap corruptions in certain 
@@ -341,7 +341,7 @@ though,
 <section 
 	title="Separating 16-bit Functions" 
 	subject="Re: wine/ dlls/gdi/Makefile.in dlls/gdi/bidi16.c d ..." 
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/08/0190.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/08/0190.html" 
 	posts="2" 
 	startdate="08/15/2002" 
 	enddate="08/16/2002"
@@ -394,7 +394,7 @@ but I'll not pursue this point for now ;).
 <section 
 	title="Quartz.DLL Replacement" 
 	subject="new quartz dll ??" 
-	archive="http://www.winehq.org/hypermail/wine-users/2002/08/0044.html" 
+	archive=//www.winehq.org/hypermail/wine-users/2002/08/0044.html" 
 	posts="13" 
 	startdate="08/09/2002" 
 	enddate="08/17/2002"
@@ -434,7 +434,7 @@ but I'll not pursue this point for now ;).
 <section 
 	title="Wine and GnuPOC" 
 	subject="is this known to you (wine gurus) ?" 
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/08/0287.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/08/0287.html" 
 	posts="1" 
 	startdate="08/22/2002" 
 >

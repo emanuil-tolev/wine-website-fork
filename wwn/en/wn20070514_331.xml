@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="331" date="05/14/2007" />
 <intro> <p>This is the 331th issue of the Wine Weekly News publication.
-Its main goal is to moonlight. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to moonlight. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="340" size="672" contrib="93" multiples="52" lastweek="53">
 
 <person posts="33" size="36" who="julliard at winehq.org (Alexandre Julliard)" />
@@ -98,7 +98,7 @@ Its main goal is to moonlight. It also serves to inform you of what's going on a
 <section 
 	title="News: Wine 0.9.37, No Wine on Dells, Kidney Stones Suck"
 	subject="News"
-	archive="http://cvs.winehq.com/cvsweb/wine/ANNOUNCE?rev=1.141&amp;content-type=text/x-cvsweb-markup"
+	archive=//cvs.winehq.org/cvsweb/wine/ANNOUNCE?rev=1.141&amp;content-type=text/x-cvsweb-markup"
 	posts="2"
 >
 <topic>News</topic>
@@ -134,7 +134,7 @@ Slashdot decided
 <a href="http://linux.slashdot.org/article.pl?sid=07/05/11/1220219">to 
 run with it</a> as well.  If for some reason you have a Debian based
 system and you can't figure out how to install Wine, check out our
-<a href="http://www.winehq.org/download-deb">Debian download</a> page.</p>
+<a href=//www.winehq.org/download-deb">Debian download</a> page.</p>
 
 <p>In a hilarious press release (and for the record, <i>hilarious press 
 release</i> is an oxymoron) Jon Parshall of CodeWeavers postulates that 
@@ -162,7 +162,7 @@ more apps.</p>
 <section 
 	title="Direct3D Milestone"
 	subject="Small Direct3D milestone"
-	archive="http://www.winehq.org/pipermail/wine-devel/2007-May/056777.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-May/056777.html"
 	posts="13"
 >
 <topic>DirectX</topic>
@@ -238,7 +238,7 @@ working with regard to Direct3D.</p>
 <section 
 	title="Activation Context"
 	subject="[PATCH 00/27] Activation context (Part I, take 2)"
-	archive="http://www.winehq.org/pipermail/wine-patches/2007-May/038947.html"
+	archive=//www.winehq.org/pipermail/wine-patches/2007-May/038947.html"
 	posts="28"
 >
 <topic>Architecture</topic>
@@ -325,7 +325,7 @@ spend more time on it, this is kernel stuff, it needs to be correct.
 <section 
 	title="USB Support in Wine"
 	subject="USB device support in wine"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-May/056531.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-May/056531.html"
 	posts="13"
 >
 <topic>Architecture</topic>
@@ -438,7 +438,7 @@ allow device drivers to be written to a standard framework.</p>
 <section 
 	title="Mandriva RPMs"
 	subject="mandriva rpm wine 0.9.37"
-	archive="http://www.winehq.org/pipermail/wine-devel/2007-May/056788.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-May/056788.html"
 	posts="1"
 >
 <topic>Packaging</topic>
@@ -456,7 +456,7 @@ http://www.xs4all.nl/~meijer2/wine/</a>
 <section 
 	title="Improving Debugging Performance"
 	subject="dbghelp performance"
-	archive="http://www.winehq.org/pipermail/wine-patches/2007-May/039342.html"
+	archive=//www.winehq.org/pipermail/wine-patches/2007-May/039342.html"
 	posts="14"
 >
 <topic>Debugging</topic>

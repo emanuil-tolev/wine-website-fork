@@ -87,7 +87,7 @@ there's a German site called
 <a href="http://www.linux-wine.de/">Lx-Wine2</a> by
 Bernhard Suttner.  Sprechen sie deutsche?  Ich nicht.
 Coincidentally, this page was also added to the 
-<a href="http://www.winehq.org/community/">community</a>
+<a href=//www.winehq.org/community/">community</a>
 part of WineHQ.</p>
 
 <p>In the Geek News Dept, Ashish Gehani 
@@ -106,7 +106,7 @@ screenshot</a> of it running.</p>
 </section><section 
 	title="Screenshots Preview" 
 	subject="Screenshots v0.1"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/12/0033.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/12/0033.html" 
 	posts="3" 
 	startdate="12/01/2002"
 	enddate="12/02/2002"
@@ -187,7 +187,7 @@ with you. So I think that we should:
 </section><section 
 	title="Updated To Do List" 
 	subject="Wine 0.9 TODO v0.6"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/12/0057.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/12/0057.html" 
 	posts="4" 
 	startdate="12/02/2002"
 >
@@ -199,7 +199,7 @@ with you. So I think that we should:
   http://63.138.153.104/wine/Wine-0.9-TODO-0.6.html</a></ul></p>
 <p>
  As always, you can find the work-in-progress one here:
-<ul><a href="http://www.winehq.org/?page=todo_lists">
+<ul><a href=//www.winehq.org/?page=todo_lists">
   http://www.winehq.org/?page=todo_lists</a></ul></p>
 <p>
 As a departure from previous release, this time I'm only going
@@ -217,7 +217,7 @@ to include a small summary of changes since the last release:
 </section><section 
 	title="Janitorial Projects" 
 	subject="Janitorial Projects"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/1577.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/11/1577.html" 
 	posts="17" 
 	startdate="11/29/2002"	
 	enddate="12/04/2002"
@@ -227,7 +227,7 @@ to include a small summary of changes since the last release:
 could be done:</p>
 <quote who="Dimitrie Paun"><p>
 I have updated the Janitorial section:
-<ul><a href="http://www.winehq.org/?page=janitorial">
+<ul><a href=//www.winehq.org/?page=janitorial">
   http://www.winehq.org/?page=janitorial</a></ul>
 </p><p>
 with the list of cross calls from 32->16, and W->A.
@@ -279,7 +279,7 @@ and noted the following:</p>
 </section><section 
 	title="IWebBrowser Status" 
 	subject="HTML Help and IWebBrowser status"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/12/0084.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/12/0084.html" 
 	posts="6" 
 	startdate="12/03/2002"
 >
@@ -288,7 +288,7 @@ and noted the following:</p>
 <p>You can find more info on this thread if you go back into past issues,
 <kcref subject="Re: WebBrowser" startdate="19 Oct 2002 00:00:00 -0700" />.
 And there was also a 
-<a href="http://www.winehq.org/hypermail/wine-devel/2002/11/0765.html">recent 
+<a href=//www.winehq.org/hypermail/wine-devel/2002/11/0765.html">recent 
 thread</a> on wine-devel about a month ago.  </p>
 
 
@@ -365,7 +365,7 @@ about your work and he told be the following (translated from German):
 </section><section 
 	title="Conformance Tests Need Help" 
 	subject="The conformance tests need you!"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/1597.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/11/1597.html" 
 	posts="5" 
 	startdate="11/29/2002"
 	enddate="12/04/2002"
@@ -394,14 +394,14 @@ about your work and he told be the following (translated from German):
 tests.  Martin Wilck jumped in with some updates for the Winsock
 tests but mentioned he had a hard time figuring out how to even
 compile the tests under Windows.   Francois then 
-<a href="http://www.winehq.org/hypermail/wine-patches/2002/12/0034.html">updated</a> 
+<a href=//www.winehq.org/hypermail/wine-patches/2002/12/0034.html">updated</a> 
 some of the testing documentation and described how to use the 
 perl script "msvcmaker" in the tools directory to create Microsoft 
 Visual C++ project files for the tests.  </p>
 </section><section 
 	title="Preserving DLL Separation" 
 	subject="Dll separation question"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/12/0141.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/12/0141.html" 
 	posts="4" 
 	startdate="12/04/2002"
 	enddate="12/05/2002"
@@ -430,7 +430,7 @@ functions,
  functions from there.</quote></p>
 
 <p>Martin put together a patch for the
-<a href="http://cvs.winehq.org/cvsweb/wine/DEVELOPERS-HINTS?rev=1.14&amp;content-type=text/x-cvsweb-markup">
+<a href=//cvs.winehq.org/cvsweb/wine/DEVELOPERS-HINTS?rev=1.14&amp;content-type=text/x-cvsweb-markup">
 DEVELOPERS-HINTS</a> file with the following addition:</p>
 <quote who="Martin Wilck"><p>
 The rules to preserve Dll separation are
@@ -453,7 +453,7 @@ clean Dll separation can be reached more easily later.
 </section><section 
 	title="Moving Wine Headers" 
 	subject="[RFC] Wine headers"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/1556.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/11/1556.html" 
 	posts="5" 
 	startdate="11/28/2002"
 	enddate="11/29/2002"
@@ -464,7 +464,7 @@ the header files around:</p>
 <quote who="Dimitrie Paun"><p>
 Patrik brought up the header location sometime ago, in this thread:
 <ul>
-<a href="http://www.winehq.org/hypermail/wine-devel/2002/10/index.html#540">
+<a href=//www.winehq.org/hypermail/wine-devel/2002/10/index.html#540">
   http://www.winehq.org/hypermail/wine-devel/2002/10/index.html#540</a>
 </ul></p><p>
 At the time, I thought it is a bit premature, that we have other
@@ -511,7 +511,7 @@ with that...
 </section><section 
 	title="Wine + Cygwin Update" 
 	subject="Cygwin/wine : partial success"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/12/0133.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/12/0133.html" 
 	posts="1" 
 	startdate="12/04/2002"
 >
@@ -520,7 +520,7 @@ with that...
 Sylvain Petreolle emailed wine-devel with a status
 update on running cygwin under Wine.  For more info
 on exactly what that means, check out Dimi's 
-<a href="http://www.winehq.org/?page=fun_projects">Fun Projects</a> page.</p>
+<a href=//www.winehq.org/?page=fun_projects">Fun Projects</a> page.</p>
 <quote who="Sylvain Petreolle"><p>
  Making only one tweak to <tt>/etc/profile</tt>,
  cygwin manages to launch partially.
@@ -553,7 +553,7 @@ C&gt;</code></ul>
 </section><section 
 	title="Self-Registering DLLs" 
 	subject="Registering DLLs"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/12/0150.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/12/0150.html" 
 	posts="5" 
 	startdate="12/04/2002"
 >
@@ -602,7 +602,7 @@ system DLL.
 </p><p>
 I posted my idea for representing the registration data, accidentally from
 "jhohm@happyhappy.dyndns.org" rather than my usual "jhohm@acm.org" (see
-<a href="http://www.winehq.org/hypermail/wine-devel/2002/11/1409.html">
+<a href=//www.winehq.org/hypermail/wine-devel/2002/11/1409.html">
 http://www.winehq.org/hypermail/wine-devel/2002/11/1409.html</a>), but I haven't
 gotten any responses, not even "looks fine" or "you are a moron".  I guess I'll
 just start submitting patches, then.
@@ -622,7 +622,7 @@ just start submitting patches, then.
 </section><section 
 	title="Configuring Wine" 
 	subject="Registering DLLs"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/12/0150.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/12/0150.html" 
 	posts="2" 
 	startdate="12/04/2002"
 >
@@ -664,7 +664,7 @@ process:</p>
 </section><section 
 	title="Direct3D Test Programs" 
 	subject=""
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/0.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/11/0.html" 
 	posts="" 
 	startdate="11/04/2002"
 	enddate=""
@@ -709,7 +709,7 @@ PS. Great work guys!
 </section><section 
 	title="Case of Guiness Offered for Working App" 
 	subject="Partial success report: Toshiba 220CDS electronic manual"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/1403.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/11/1403.html" 
 	posts="5" 
 	startdate="11/26/2002"
 	enddate="11/29/2002"
@@ -753,7 +753,7 @@ version.)  Anyway, he updated to a newer vintage and reported:</p>
 </p></quote>
 
 <p>Dan did a little more digging and
-<a href="http://www.winehq.org/hypermail/wine-devel/2002/11/1594.html">
+<a href=//www.winehq.org/hypermail/wine-devel/2002/11/1594.html">
 wrote back</a> with what appeared to be a problem with mmioOpen.</p>
 
 

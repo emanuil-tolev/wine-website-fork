@@ -83,7 +83,7 @@
 <section 
 	title="News: WineX 3.0, TransGaming Updates, Interview with Marcus Meissner" 
 	subject="News"
-	archive="http://www.winehq.org/interview/3" 
+	archive=//www.winehq.org/interview/3" 
 	posts="6"
 	startdate="04/12/2003"
 	enddate="04/18/2003"
@@ -137,14 +137,14 @@ World Linux</a> show in Toronto in a few weeks you might want to
 check out The Linux Gaming Zone hosted by TransGaming.</p> 
 <p>
 Don't forget to check out this week's
-<a href="http://www.winehq.org/interview/3">interview with Marcus
+<a href=//www.winehq.org/interview/3">interview with Marcus
 Meissner</a>.</p>
 
 
 </section><section 
 	title="Updated To Do List" 
 	subject="Wine 0.9 TODO v0.8"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/04/0351.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0351.html" 
 	posts="3"
 	startdate="04/12/2003"
 >
@@ -189,7 +189,7 @@ commonly referred to as control panel applets.
 </section><section 
 	title="Updated Starcraft Patch" 
 	subject="Starcraft Patch"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/04/0302.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0302.html" 
 	posts="1"
 	startdate="04/10/2003"
 >
@@ -224,7 +224,7 @@ Any comments as to what needs to happen to get these into wine are
 greatly appreciated.
 </p></quote>
 
-<p>The <a href="http://www.winehq.org/hypermail/wine-devel/2003/04/0302.html">complete
+<p>The <a href=//www.winehq.org/hypermail/wine-devel/2003/04/0302.html">complete
 patch</a> can be found in John's email.</p>
 
 </section>
@@ -232,7 +232,7 @@ patch</a> can be found in John's email.</p>
 <section 
 	title="Making Windres Similar to WRC" 
 	subject="windres: -J -I (take 4)"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/04/0499.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0499.html" 
 	posts="10"
 	startdate="03/18/2003"
 	enddate="04/15/2003"
@@ -299,13 +299,13 @@ assignment notification that will allow his patch to be accepted.</p>
 <section 
 	title="Patch Submission and Acceptance Issues" 
 	subject="Re: OLE storage SetFilePointer fix"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/04/0370.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0370.html" 
 	posts="11"
 	startdate="04/12/2003"
 	enddate="04/14/2003"
 >
 <topic>Project Management</topic>
-<p>A few months ago (<a href="http://www.winehq.org/index.phpwwn/158#Patch%20Manager">issue #158</a>)
+<p>A few months ago (<a href=//www.winehq.org/index.phpwwn/158#Patch%20Manager">issue #158</a>)
 Fabian Cenedese asked whether it was time Wine implemented a patch management system.
 At the time there were only a few responses and they were mostly against such a
 system.  Keep in mind the number of patches appearing on wine-patches has more
@@ -455,14 +455,14 @@ and <a href="http://kt.zork.net/kernel-traffic/kt20020211_153.html#9">#153</a>.
 </section><section 
 	title="What It Would Take To Just Link With -lwine" 
 	subject="Re: Support for pkgconfig"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/04/0357.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0357.html" 
 	posts="44"
 	startdate="04/04/2003"
 	enddate="04/15/2003"
 >
 <topic>Winelib</topic>
 <p>We sort of covered this a few weeks ago
-(<a href="http://www.winehq.org/index.phpwwn/164#How%20to%20Just%20Access%20a%20Windows%20DLL">issue #164</a>).
+(<a href=//www.winehq.org/index.phpwwn/164#How%20to%20Just%20Access%20a%20Windows%20DLL">issue #164</a>).
 This week Alexandre remarked to a patch and said,
 <quote who="Alexandre Julliard">
  You can't use wine by simply adding <tt>-lwine</tt> anyway</quote>.  Dimi wondered

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="250" date="11/26/2004" />
 <intro> <p>This is the 250th issue of the Wine Weekly News publication.
-Its main goal is to eat deviled eggs. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to eat deviled eggs. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="234" size="947" contrib="59" multiples="38" lastweek="29">
 
 <person posts="27" size="96" who="Mike Hearn" />
@@ -100,7 +100,7 @@ Traffic</a>.  It's probably a good time to mention this newsletter
 is also mirrored on two different sites: as 
 <a href="http://www.kerneltraffic.org/wine/archives.html">Wine
 Traffic</a> and as the 
-<a href="http://www.winehq.com/?issue=back">Wine Weekly News</a>
+<a href=//www.winehq.org/?issue=back">Wine Weekly News</a>
 on WineHQ.  I'd encourage you to check out both formats and
 see which one you like the most - the content should be the
 exact same.  Each one offers advantages over the other.  As
@@ -121,14 +121,14 @@ week to read this!  </p>
 <section 
 	title="Kernel Issue (con't)" 
 	subject="Re: ptrace single-stepping change breaks Wine"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/11/0459.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/11/0459.html" 
 	posts="25"
 	startdate="11/19/2004"
 	enddate="11/22/2004"
 >
 <topic>Integration</topic>
 <p>
-Last week (WWN <a href="http://www.winehq.com/wwn/249#Kernel%20Integration%20Problems">#249</a>)
+Last week (WWN <a href=//www.winehq.org/wwn/249#Kernel%20Integration%20Problems">#249</a>)
 we mentioned a problem that seems to have
 popped up with certain kernels and certain Windows apps
 run with Wine.  Some specific instructions can trigger
@@ -149,7 +149,7 @@ to get really fancy, you can begin changing instructions on
 the fly using ptrace and requests such as PTRACE_POKEDATA with
 some payload data attached - and that's exactly the type of 
 stuff wineserver is capable of doing (see
-<a href="http://cvs.winehq.com/cvsweb/wine/server/ptrace.c?rev=1.27&amp;content-type=text/x-cvsweb-markup">server/ptrace.c</a>.)
+<a href=//cvs.winehq.org/cvsweb/wine/server/ptrace.c?rev=1.27&amp;content-type=text/x-cvsweb-markup">server/ptrace.c</a>.)
 Sound obscure?  It is.  Eric Pouech explained one of the
 cases Wine would need to use something like this:</p>
 <quote who="Eric Pouech"><p>
@@ -164,7 +164,7 @@ releases and why it's broken Wine in some instances.  Linus
 posted a patch and noted:</p>
 <quote who="Linus Torvalds"><p>
 Here's 
-<a href="http://www.winehq.com/hypermail/wine-devel/2004/11/0481.html">a 
+<a href=//www.winehq.org/hypermail/wine-devel/2004/11/0481.html">a 
 new patch</a> to try. Totally untested.
 </p><p>
 It is more careful about clearing PT_DTRACED (which by now should probably
@@ -282,7 +282,7 @@ indeed make this a regression.
 </p></quote>
 
 <p>Later in the night, Linus came up with 
-<a href="http://www.winehq.com/hypermail/wine-devel/2004/11/0559.html">another
+<a href=//www.winehq.org/hypermail/wine-devel/2004/11/0559.html">another
 patch</a> and asked if it fixed the Wine problem.  Jesse Allen
 tried it out and reported,
 <quote who="Jesse Allen">
@@ -373,7 +373,7 @@ everything was ok.  </p>
 <section
         title="Debian Packages"
         subject="Packaging Questions, New Debian Package, Packagers Guide"
-        archive="http://www.winehq.org/hypermail/wine-devel/2004/11/0584.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/11/0584.html"
         posts="21"
         startdate="11/23/2004"
         enddate="11/24/2004"
@@ -508,7 +508,7 @@ to discuss the packaging guide,
 
 <p>Before Scott could even reply, Marcus Meissner did it.  You
 can find that revised doc 
-<a href="http://www.winehq.com/hypermail/wine-devel/2004/11/att-0609/01-PACKAGING">here</a>
+<a href=//www.winehq.org/hypermail/wine-devel/2004/11/att-0609/01-PACKAGING">here</a>
 for now.  
 
 
@@ -518,7 +518,7 @@ for now.
 <section 
 	title="Install Script for IE and Media Player" 
 	subject="Internet Explorer 6 Installer script"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/11/0673.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/11/0673.html" 
 	posts="1"
 	startdate="11/25/2004"
 >
@@ -548,7 +548,7 @@ you can run them.  </p>
 <section 
 	title="Customizing File Browsing" 
 	subject="Winecfg -> browse for folder"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/11/0608.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/11/0608.html" 
 	posts="17"
 	startdate="11/24/2004"
 	enddate="11/25/2004"
@@ -660,7 +660,7 @@ WS_EX_TRAYWINDOW).</quote></p>
 <section
         title="No RichEdit20A Window Class"
         subject="No RichEdit20A window class"
-        archive="http://www.winehq.org/hypermail/wine-devel/2004/11/0432.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/11/0432.html"
         posts="11"
         startdate="11/18/2004"
 	enddate="11/19/2004"
@@ -765,7 +765,7 @@ to making cooperative development work.
 <section
         title="CVS Broken?"
         subject="Breakage on Debian Sarge"
-        archive="http://www.winehq.org/hypermail/wine-devel/2004/11/0667.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/11/0667.html"
         posts="3"
         startdate="11/25/2004"
 >
@@ -775,7 +775,7 @@ Perhaps by the time you read this it will be fixed.  Michael Jung
 mentioned it first:</p>
 <quote who="Michael Jung"><p>
 this patch 
-(<a href="http://cvs.winehq.org/patch.py?id=14575">http://cvs.winehq.org/patch.py?id=14575</a>)
+(<a href=//cvs.winehq.org/patch.py?id=14575">http://cvs.winehq.org/patch.py?id=14575</a>)
 broke wine on a current
 Debian Sarge. Tested this on two machines. GUI applications do not respond
 any longer to mouse events. Tested regedit and winemine. Removing the patch

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="281" date="07/01/2005" />
 <intro> <p>This is the 281st issue of the Wine Weekly News publication.
-Its main goal is to lose keys. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to lose keys. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="153" size="550" contrib="63" multiples="34" lastweek="29">
 
 <person posts="10" size="36" who="Dmitry Timoshkov" />
@@ -86,7 +86,7 @@ First off, this week Alexandre dumped wine-20050628 upon the world.
 The release included these notable changes:</p>
 <quote who="Alexandre Julliard"><p>
 WHAT'S NEW with Wine-20050628: (see 
-<a href="http://cvs.winehq.com/cvsweb/wine/ChangeLog?rev=1.95&amp;content-type=text/x-cvsweb-markup">ChangeLog</a>
+<a href=//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.95&amp;content-type=text/x-cvsweb-markup">ChangeLog</a>
  for details)
 <ul>
         <li> Configuration settings moved to the registry.</li>
@@ -122,10 +122,10 @@ mailing list concerning this.  All in all this is pretty exciting and it
 offers a lot of interesting possibilities for Wine and CodeWeavers.</p>
 
 <p>Tom Wickline has gone through and updated Wine's 
-<a href="http://www.winehq.com/status">status pages</a> to reflect 
+<a href=//www.winehq.org/status">status pages</a> to reflect 
 work that's been done over the past six months.  As usual, these are rough
 estimates of how well things are implemented.  If you look at the 
-status page <a href="http://www.winehq.com/status_changelog">changelog</a>
+status page <a href=//www.winehq.org/status_changelog">changelog</a>
 to get a feel for what's been worked on.  Wine development is steamrolling
 ahead with 10MB of patches hitting the mailing list in June alone.  
 Historically Wine, and most open source projects, usually experiences a lull 
@@ -137,7 +137,7 @@ this year.
 <section 
 	title="The config File Has Died!"
 	subject="wine/documentation/samples config"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/06/0665.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/06/0665.html"
 	posts="1"
 	startdate="06/28/2005"
 >
@@ -161,7 +161,7 @@ Log message:
 <ul>
 	Get rid of the sample configuration file.</ul></p><p>
 
-Patch: <a href="http://cvs.winehq.org/patch.py?id=18504">
+Patch: <a href=//cvs.winehq.org/patch.py?id=18504">
 http://cvs.winehq.org/patch.py?id=18504</a></p>
 </quote>
 
@@ -229,7 +229,7 @@ items on the mailing list.</p>
 <section 
 	title="UnixFS for Windows Desktop"
 	subject="unixfs registered by default now in cvs"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/06/0832.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/06/0832.html"
 	posts="3"
 	startdate="06/30/2005"
 >
@@ -276,7 +276,7 @@ need to 'regsvr32 shell32'?</quote></p>
 <section 
 	title="Microsoft HTML Help"
 	subject="Anybody looking for a pet Wine project?"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/06/0824.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/06/0824.html"
 	posts="3"
 	startdate="06/30/2005"
 >
@@ -372,7 +372,7 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR cmdline, int cmds
 <section 
 	title="Summer of Code Results"
 	subject="Follow up to Google's Summer of Code"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/06/0776.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/06/0776.html"
 	posts="1"
 	startdate="06/28/2005"
 >
@@ -428,7 +428,7 @@ thanks to Google for spurring Wine development!
 <section 
 	title="Google's Earth"
 	subject="Google Earth"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/06/0782.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/06/0782.html"
 	posts="1"
 	startdate="06/28/2005"
 >
@@ -448,7 +448,7 @@ Links:
 <ul>
 <li><a href="http://earth.google.com">
 http://earth.google.com</a></li>
-<li><a href="http://appdb.winehq.org/appview.php?appId=2292">
+<li><a href=//appdb.winehq.org/appview.php?appId=2292">
 http://appdb.winehq.org/appview.php?appId=2292</a></li>
 <li><a href="http://slashdot.org/articles/05/06/28/1733229.shtml?tid=217&amp;tid=95&amp;tid=159">
 http://slashdot.org/articles/05/06/28/1733229.shtml?tid=217&amp;tid=95&amp;tid=159
@@ -462,7 +462,7 @@ that also works great under Wine:
 <section 
 	title="World of Warcraft Broken"
 	subject="World of Warcraft"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/06/0451.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/06/0451.html"
 	posts="21"
 	startdate="06/14/2005"
 	enddate="06/29/2005"

@@ -20,7 +20,7 @@ Windows emulator).</p>
 <section 
 	title="News: Wine-20030318" 
 	subject="News"
-	archive="http://cvs.winehq.org/cvsweb/wine/ANNOUNCE?rev=1.73&amp;content-type=text/x-cvsweb-markup" 
+	archive=//cvs.winehq.org/cvsweb/wine/ANNOUNCE?rev=1.73&amp;content-type=text/x-cvsweb-markup" 
 	posts="1"
 	startdate="03/15/2003"
 	enddate="03/21/2003"
@@ -30,7 +30,7 @@ Windows emulator).</p>
 Tuesday Alexandre released Wine-20030318:</p>
 <quote who="Alexandre Julliard"><p>
 WHAT'S NEW with Wine-20030318: (see 
-<a href="http://cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.69&amp;content-type=text/x-cvsweb-markup">ChangeLog</a> 
+<a href=//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.69&amp;content-type=text/x-cvsweb-markup">ChangeLog</a> 
 for details)
 <ul>
         <li> Many Direct Sound improvements.</li>
@@ -59,7 +59,7 @@ the thread below.</p>
 <section 
 	title="File Locking" 
 	subject="LockFile() and UnlockFile() are working"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/03/0481.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0481.html" 
 	posts="8"
 	startdate="03/19/2003"
 	enddate="03/20/2003"
@@ -67,7 +67,7 @@ the thread below.</p>
 <topic>Filesystems</topic>
 <p>As noted above, Alexandre tossed in file locking at the last 
 minute to Wine-20030318.  We recently discussed this back in issue
-<a href="http://www.winehq.org/news/?view=151">#151</a>.  At the time Mike 
+<a href=//www.winehq.org/news/?view=151">#151</a>.  At the time Mike 
 Robinson needed it for
 MS Access and Paradox database access.  After the recent CVS commits,
 Paul McNett reported early success:</p>
@@ -96,7 +96,7 @@ It's still cool... Thanks Alexandre.</quote></p>
 <section 
 	title=".NET Success" 
 	subject="Success with Mono"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/03/0502.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0502.html" 
 	posts="2"
 	startdate="03/20/2003"
 >
@@ -167,7 +167,7 @@ though.</li>
 <section 
 	title="DPRINTF to TRACE Conversion" 
 	subject="Re: Oleaut32 Debug Messages"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/03/0322.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0322.html" 
 	posts="31"
 	startdate="03/13/2003"
 	enddate="03/16/2003"
@@ -201,7 +201,7 @@ and with that he included a small patch.</p>
 different types of messages.  Some of these are familiar to 
 Wine users - FIXME's fall into this category.
 For more details on the mechanics of DPRINTF, check out the 
-<a href="http://cvs.winehq.org/cvsweb/wine/include/wine/debug.h?rev=1.9&amp;content-type=text/x-cvsweb-markup">debug.h</a>
+<a href=//cvs.winehq.org/cvsweb/wine/include/wine/debug.h?rev=1.9&amp;content-type=text/x-cvsweb-markup">debug.h</a>
 header.  Also note, FIXME and ERR messages are enabled by default, 
 whereas TRACE and WARN are not.  So by converting DPRINTF calls into
 TRACE calls it's possible to get them compiled out. </p>
@@ -229,7 +229,7 @@ files.  Then he announced,
 <quote who="Tony Lambregts">
 This completes the first stage of DPRINTF-&gt;TRACE. There are still a lot of 
 files that use DPRINTF. 
-<a href="http://www.winehq.org/hypermail/wine-devel/2003/03/0371.html">The 
+<a href=//www.winehq.org/hypermail/wine-devel/2003/03/0371.html">The 
 following is a list</a> of the files I where I did not 
 replace DPRINTF with TRACE along with a breif explanation. I would appreciate 
 any comments on this or any of the patches that I submitted over the last day.
@@ -245,7 +245,7 @@ more like saws and hammers.&lt;g&gt;.</quote></p>
 <section 
 	title="Finding DLL Imports" 
 	subject="Determining dll imports in dlls"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/03/0347.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0347.html" 
 	posts="10"
 	startdate="03/13/2003"
 	enddate="03/17/2003"
@@ -300,7 +300,7 @@ Walker</a>.</p>
 <section 
 	title="Completely Broken Test App" 
 	subject="shell + listview + imagelist great test program"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/03/0489.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0489.html" 
 	posts="2"
 	startdate="03/19/2003"
 	enddate="03/20/2003"

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="329" date="04/16/2007" />
 <intro> <p>This is the 329th issue of the Wine Weekly News publication.
-Its main goal is to smile. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to smile. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="172" size="316" contrib="67" multiples="35" lastweek="35">
 
 <person posts="10" size="10" who="dmitry at codeweavers.com (Dmitry Timoshkov)" />
@@ -131,7 +131,7 @@ the changes being made there, but it seems interesting.</p>
 <section 
 	title="Cedega 6.0 &amp; Wine Benchmarks"
 	subject="Wine vs. Cedega in Benchmarks"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-April/055858.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-April/055858.html"
 	posts="12"
 >
 <topic>Testing</topic>
@@ -155,10 +155,10 @@ So any time I hear Wine and Cedega in the same sentence I kind of cringe.
 They're really two different codebases at this point.  Why is that?  Well,
 it all goes back to Wine changing its licensing from X11 (BSD-style)  to
 the LGPL about 5 years ago.  See WWN issues
-<a href="http://www.winehq.com/wwn/115#Wine%20License%20Change,%20Round%202">#115</a>,
-<a href="http://www.winehq.com/wwn/116#Wine%20Licensing%20(con't)">#116</a>,
+<a href=//www.winehq.org/wwn/115#Wine%20License%20Change,%20Round%202">#115</a>,
+<a href=//www.winehq.org/wwn/116#Wine%20Licensing%20(con't)">#116</a>,
 and 
-<a href="http://www.winehq.com/wwn/117#Wine%20Licensing%20(con't)">#117</a> 
+<a href=//www.winehq.org/wwn/117#Wine%20Licensing%20(con't)">#117</a> 
 for more info.  So Wine switched its license, TransGaming kept using the old
 codebase, and now the two have diverged.  Except.. TransGaming has realized
 that some of the stuff created by Wine is necessary and they've imported
@@ -235,7 +235,7 @@ benchmark code or because of compiler differences.
 <section 
 	title="OpenGL Child Windows Revisited"
 	subject="OpenGL child windows [RFC]"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-April/055817.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-April/055817.html"
 	posts="2"
 >
 <topic>Graphics</topic>
@@ -244,7 +244,7 @@ years now.  It was broken (some would say 'fixed') when the window management
 rewrite occurred.  There's been some ideas floated about how to fix it, but 
 nothing has really come of it.  For more background on this issue, see the 
 <a href="http://wiki.winehq.org/OpenGL">OpenGL wiki</a> page.  Ulrich Czekalla
-floated a <a href="http://www.winehq.org/pipermail/wine-patches/2006-October/031336.html">a patch</a>
+floated a <a href=//www.winehq.org/pipermail/wine-patches/2006-October/031336.html">a patch</a>
 last October, but it was never included in Wine.  Roderick Colenbrander sent a 
 patch this week with a different approach and 
 gave an excellent description of the challenges behind the problem:</p>
@@ -283,7 +283,7 @@ wglChoosePixelFormatARB which does give you what you want or programs
 enumerate all pixelformats using DescribePixelFormat and choose what they want.
 </p><p>
 Anyway the issue is that the single pixelformat isn't enough anymore. A 
-<a href="http://bugs.winehq.org/show_bug.cgi?id=7866">recent report</a>
+<a href=//bugs.winehq.org/show_bug.cgi?id=7866">recent report</a>
 from WoW on Intel drivers is a proof of this.  The game didn't like the single 
 format exported by Wine. Another example is the IKEA kitchen planner tool which 
 uses DescribePixelFormat to enumerate all formats. It expects to find a match 
@@ -352,7 +352,7 @@ meta-bugs keeping an entire class of applications from working.</p>
 <section 
 	title="DIB Engine Ideas"
 	subject="Patches / a proposal for the mystic DIB engine"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-April/055859.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-April/055859.html"
 	posts="9"
 >
 <topic>Graphics</topic>
@@ -518,7 +518,7 @@ it's exciting to see that 3 different people are interested in this.</p>
 <section 
 	title="Removing Audio Drivers"
 	subject="Removal of unused audio drivers"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-April/055867.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-April/055867.html"
 	posts="10"
 >
 <topic>Multimedia</topic>
@@ -578,7 +578,7 @@ can take a very long time to load them multiple times.</li></ul>
 <section 
 	title="NT Named Pipes"
 	subject="Named pipes to remote machines?"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-April/055611.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-April/055611.html"
 	posts="2"
 >
 <topic>Integration</topic>
@@ -605,7 +605,7 @@ Here are some past discussions on the topic:
 <ul>
 <li><a href="http://www.kerneltraffic.org/wine/wn20060428_312_print.html#3">
 http://www.kerneltraffic.org/wine/wn20060428_312_print.html#3</a></li>
-<li><a href="http://www.winehq.org/pipermail/wine-devel/2005-September/039680.html">
+<li><a href=//www.winehq.org/pipermail/wine-devel/2005-September/039680.html">
 http://www.winehq.org/pipermail/wine-devel/2005-September/039680.html</a></li>
 <li><a href="http://kerneltraffic.org/wine/wn20040109_204.html#3">
 http://kerneltraffic.org/wine/wn20040109_204.html#3</a></li>
@@ -649,7 +649,7 @@ wiki will be ideal to collect this.
 <section 
 	title="DInput Bug"
 	subject="dinput: fix mouse jitter in Halo (bug 7640)"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-April/055931.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-April/055931.html"
 	posts="4"
 >
 <topic>DirectX</topic>
@@ -711,7 +711,7 @@ what dinput is doing and how ;)
 <section 
 	title="Windows/Linux Shared Objects"
 	subject="Windows dll as Linux Shared Object"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-April/055852.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-April/055852.html"
 	posts="6"
 >
 <topic>Winelib</topic>

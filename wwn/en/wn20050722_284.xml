@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="284" date="07/22/2005" />
 <intro> <p>This is the 284th issue of the Wine Weekly News publication.
-Its main goal is to lose trailers. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to lose trailers. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="142" size="764" contrib="53" multiples="32" lastweek="28">
 
 <person posts="11" size="33" who="Saulius Krasuckas" />
@@ -97,7 +97,7 @@ The basic idea is that if you send us a piece of software, we will commit to mak
 <section 
 	title="Installer Challenge &amp; DCOM"
 	subject="Celebrating some hard work"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/07/0542.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/07/0542.html"
 	posts="8"
 	startdate="07/19/2005"
 >
@@ -230,7 +230,7 @@ very impressive job Rob :)</p></quote>
 <section 
 	title="HTML Help Status"
 	subject="Status of HTML Help"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/07/0489.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/07/0489.html"
 	posts="1"
 	startdate="07/16/2005"
 >
@@ -259,7 +259,7 @@ wiki.winehq.org/JamesHawkins</a></ul></p></quote>
 <section 
 	title="stdole2.tlb"
 	subject="stdole2.tlb"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/07/0471.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/07/0471.html"
 	posts="6"
 	startdate="07/16/2005"
 	enddate="07/20/2005"
@@ -268,13 +268,13 @@ wiki.winehq.org/JamesHawkins</a></ul></p></quote>
 <p>
 Related to the DCOM work, Ivan Gyurdiev wanted to know what was going on
 with the stdole2.tlb typelib.  For some background on this, see WWN
-<a href="http://www.winehq.com/wwn/238#Creating%20Type%20Libraries">#238</a>
+<a href=//www.winehq.org/wwn/238#Creating%20Type%20Libraries">#238</a>
 for more information about this topic.  Ivan wrote:</p>
 <quote who="Ivan Gyurdiev"><p>
 I was wondering what the status of stdole2.tlb is in wine.
 GTA: San Andreas will not install without it..
 
-<ul><a href="http://bugs.winehq.org/show_bug.cgi?id=3108">
+<ul><a href=//bugs.winehq.org/show_bug.cgi?id=3108">
 http://bugs.winehq.org/show_bug.cgi?id=3108</a></ul></p></quote>
 
 <p>Rob Shearman explained what was going on:</p>
@@ -318,7 +318,7 @@ and it freezes and nothing happens.</p></quote>
 <section 
 	title="WLDAP32"
 	subject="WLDAP32: new dll"
-	archive="http://www.winehq.com/hypermail/wine-patches/2005/07/0319.html"
+	archive=//www.winehq.org/hypermail/wine-patches/2005/07/0319.html"
 	posts="12"
 	startdate="07/11/2005"
 	enddate="07/22/2005"
@@ -379,7 +379,7 @@ been arriving steadily for the past few weeks.</p>
 <section 
 	title="Kernel or glibc Problem?" 
 	subject="Frequent and annoying Wine bug"
-	archive="http://www.winehq.org/hypermail/wine-devel/2005/07/0491.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2005/07/0491.html" 
 	posts="2"
 	startdate="07/16/2005"
 	enddate="07/19/2005"
@@ -399,9 +399,9 @@ Exception_Handler". As a reference I filed 2 bugs, and
 commented another one where you can read the
 +relay,+seh logs:
 <ul>
-<li><a href="http://bugs.winehq.org/show_bug.cgi?id=3097">Bug 3097</a></li>
-<li><a href="http://bugs.winehq.org/show_bug.cgi?id=3127">Bug 3127</a></li>
-<li><a href="http://bugs.winehq.org/show_bug.cgi?id=3139">Bug 3139</a></li>
+<li><a href=//bugs.winehq.org/show_bug.cgi?id=3097">Bug 3097</a></li>
+<li><a href=//bugs.winehq.org/show_bug.cgi?id=3127">Bug 3127</a></li>
+<li><a href=//bugs.winehq.org/show_bug.cgi?id=3139">Bug 3139</a></li>
 </ul>
 </p><p>
 Some googling around makes me believe that this is a
@@ -438,7 +438,7 @@ kernel versions etc.</p></quote>
 <section 
 	title="64-bit Support"
 	subject="difference with long datatype in 64bit gcc and msvc++"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/07/0552.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/07/0552.html"
 	posts="5"
 	startdate="07/19/2005"
 	enddate="07/20/2005"

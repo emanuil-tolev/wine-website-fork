@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="301" date="12/12/2005" />
 <intro> <p>This is the 301st issue of the Wine Weekly News publication.
-Its main goal is to break drill bits. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to break drill bits. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="163" size="437" contrib="61" multiples="35" lastweek="32">
 
 <person posts="13" size="12" who="julliard at winehq.org (Alexandre Julliard)" />
@@ -74,7 +74,7 @@ Its main goal is to break drill bits. It also serves to inform you of what's goi
 <section 
 	title="News: Wine 0.9.3"
 	subject="News"
-	archive="http://www.winehq.com/announce/0.9.3"
+	archive=//www.winehq.org/announce/0.9.3"
 	posts="1"
 >
 <topic>News</topic>
@@ -115,7 +115,7 @@ Wine also gets the same fixes!)
 <section
 	title="Accelerating DirectDraw"
 	subject="DirectDraw over Direct3D"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-December/043059.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-December/043059.html"
 	posts="18"
 >
 <topic>DirectX</topic>
@@ -143,8 +143,8 @@ textures I emulated this using a simple fragment shader. (a 1D texture
 containing the palette is used as a lookup table)
 </p><p>
 The 
-<a href="http://www.winehq.org/pipermail/wine-devel/attachments/20051204/ca64706a/ddraw_over_d3d-0001.patch">attached</a>
-<a href="http://www.winehq.org/pipermail/wine-devel/attachments/20051204/ca64706a/paletted_texture-0001.patch">patches</a> 
+<a href=//www.winehq.org/pipermail/wine-devel/attachments/20051204/ca64706a/ddraw_over_d3d-0001.patch">attached</a>
+<a href=//www.winehq.org/pipermail/wine-devel/attachments/20051204/ca64706a/paletted_texture-0001.patch">patches</a> 
 are still experimental and likely contain bugs so please test them. When the 
 patches are applied set 'HKCU\Software\Wine\DirectDraw\UseDDrawOverD3D' to Y 
 else it won't do anything :)
@@ -355,7 +355,7 @@ know your opinion before I spend a lot of time for this.
 <section
 	title="Git Scripts"
 	subject="git patch to gmail draft script"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-December/043096.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-December/043096.html"
 	posts="3"
 >
 <topic>Utilities</topic>
@@ -409,15 +409,15 @@ but that's not all.  Since everybody seems to have changed to GIT, I wrote a
 git-version of my wine-update-script. Features, functionality and so on are the
 same as in the cvs-version.
 <ul>
-<li><a href="http://www.winehq.org/pipermail/wine-devel/attachments/20051211/2affc44b/getwinecvs-0001.sh">getwinecvs.sh</a> is now version: 0.36</li>
-<li><a href="http://www.winehq.org/pipermail/wine-devel/attachments/20051211/2affc44b/getwinegit-0001.sh">getwinegit.sh</a> is version: 0.1 (based on getwinecvs.sh v0.36)</li>
+<li><a href=//www.winehq.org/pipermail/wine-devel/attachments/20051211/2affc44b/getwinecvs-0001.sh">getwinecvs.sh</a> is now version: 0.36</li>
+<li><a href=//www.winehq.org/pipermail/wine-devel/attachments/20051211/2affc44b/getwinegit-0001.sh">getwinegit.sh</a> is version: 0.1 (based on getwinecvs.sh v0.36)</li>
 </ul></p></quote>
 </section>
 
 <section 
 	title="Finding Regressions"
 	subject="WINE 0.9.3 and Photoshop 7 &amp; CS"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-December/043225.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-December/043225.html"
 	posts="7"
 >
 <topic>Debugging</topic>
@@ -474,7 +474,7 @@ since the last version.
 
 Yes. And here are some instructions on how to go about finding
 the troublesome patch:<ul>
-   <a href="http://winehq.org/docs/winedev-guide/x1344">
+   <a href=//winehq.org/docs/winedev-guide/x1344">
    http://winehq.org/docs/winedev-guide/x1344</a>
 </ul></p></quote>
 
@@ -484,7 +484,7 @@ the troublesome patch:<ul>
 <section 
 	title="Feedback on aRTs, ESounD, and JACK Drivers"
 	subject="feedback wanted from arts, esound and jack sound driver users."
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-December/043219.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-December/043219.html"
 	posts="1"
 >
 <topic>Multimedia</topic>
@@ -507,7 +507,7 @@ once be a problem?</p></quote>
 <section
 	title="Fedora 64-bit x86"
 	subject="A better workaround for compiling on FC4/x86_64"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-December/043017.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-December/043017.html"
 	posts="3"
 >
 <topic>Build Process</topic>
@@ -520,7 +520,7 @@ When trying to set up printing from Wine on Fedora Core 4 for x86_64, I
 have discovered that Wine fails to find many libraries, including
 libcups.  It turns out that the development packages on Fedora Core 4
 don't always provide *.so symlinks for 32-bit libraries.  So I wrote
-<a href="http://www.winehq.org/pipermail/wine-devel/attachments/20051203/97c7c82a/ldconfig32.bin">this script</a>.
+<a href=//www.winehq.org/pipermail/wine-devel/attachments/20051203/97c7c82a/ldconfig32.bin">this script</a>.
 </p><p>
 The script creates all missing links in one directory (/usr/local/lib is
 the default).  Not only was libcups found next time, but also the old
@@ -551,7 +551,7 @@ issues for some time.</p></quote>
 <section 
 	title="Relay Segfaults"
 	subject="how do I find where wine itself is segfaulting?"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-December/043161.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-December/043161.html"
 	posts="10"
 >
 <topic>Debugging</topic>
@@ -593,7 +593,7 @@ as you try running a program it will crash when calling a kernel32/*
 function.</quote></p>
 
 <p>Mike McCormack knew of it as well and mentioned there was a 
-<a href="http://www.winehq.com/pipermail/wine-devel/2005-December/043173.html">hack</a> 
+<a href=//www.winehq.org/pipermail/wine-devel/2005-December/043173.html">hack</a> 
 in the CrossOver tree to work around it.  Bill tried it but didn't have any
 success.  He started looking at differences between his old machine it
 worked on and the new one.  He narrowed it down to the kernel,

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="244" date="10/15/2004" />
 <intro> <p>This is the 244th issue of the Wine Weekly News publication.
-Its main goal is to pretend summer isn't over. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to pretend summer isn't over. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="157" size="560" contrib="60" multiples="34" lastweek="28">
 
 <person posts="11" size="28" who="Dimitrie O. Paun" />
@@ -73,7 +73,7 @@ Its main goal is to pretend summer isn't over. It also serves to inform you of w
 <section 
 	title="News: To Do List Update" 
 	subject="News"
-	archive="http://www.winehq.org/" 
+	archive=//www.winehq.org/" 
 	posts="1"
 	startdate="10/09/2004"
 	enddate="10/15/2004"
@@ -81,7 +81,7 @@ Its main goal is to pretend summer isn't over. It also serves to inform you of w
 <topic>News</topic>
 <p>
 When we last looked at the Wine 
-<a href="http://www.winehq.org/todo_lists">To Do List</a> it was back in May.  
+<a href=//www.winehq.org/todo_lists">To Do List</a> it was back in May.  
 Things have progressed nicely since then.  At the time we had green
 beating red, 24 to 15 with yellow coming in at 30.  Since then quite
 a few items have been completed and even more are in progress.  
@@ -98,7 +98,7 @@ time.  </p>
 <section 
 	title="Wineconf 2005: Help!" 
 	subject="Wineconf 2005"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/10/0168.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/10/0168.html" 
 	posts="4"
 	startdate="10/08/2004"
 >
@@ -176,7 +176,7 @@ him directly.  (Click on the link above for his address.)
 <section 
 	title="Direct3D 9 Work" 
 	subject="dx9-1"
-	archive="http://www.winehq.com/hypermail/wine-patches/2004/09/0353.html"
+	archive=//www.winehq.org/hypermail/wine-patches/2004/09/0353.html"
 	posts="15"
 	startdate="09/20/2004"
 	enddate="10/12/2004"
@@ -184,7 +184,7 @@ him directly.  (Click on the link above for his address.)
 <topic>DirectX</topic>
 <p>We discussed Jason Edmeades plans to work on 
 Direct3D 9 a few weeks ago (see WWN issue 
-<a href="http://www.winehq.com/wwn/240#DirectX%209%20Roadmap">#240</a>).
+<a href=//www.winehq.org/wwn/240#DirectX%209%20Roadmap">#240</a>).
 The consensus seemed to be to create a shared library between
 Direct3D 8 and Direct3D 9 code given how similar they are.
 The other alternative is to copy all the D3D8 code and then
@@ -311,7 +311,7 @@ the private header</li></ul>
 <section 
 	title="COM Inheritance" 
 	subject="COM inheritence"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/10/0236.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/10/0236.html" 
 	posts="4"
 	startdate="10/11/2004"
 	enddate="10/12/2004"
@@ -407,7 +407,7 @@ but not the end of the world.</p></quote>
 <section
         title="WinMM Timer Events"
         subject="RFC re winmm/time.c"
-        archive="http://www.winehq.com/hypermail/wine-devel/2004/10/0201.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/10/0201.html"
         posts="6"
         startdate="10/09/2004"
         enddate="10/11/2004"
@@ -516,7 +516,7 @@ thereafter. It seems that native using the same resolution for the whole system.
 <section
         title="Wine Libraries on Windows"
         subject="Stupid thing to try ..."
-        archive="http://www.winehq.com/hypermail/wine-devel/2004/10/0307.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/10/0307.html"
         posts="4"
         startdate="10/14/2004"
 >

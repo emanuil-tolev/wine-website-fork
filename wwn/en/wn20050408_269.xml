@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="269" date="04/08/2005" />
 <intro> <p>This is the 269th issue of the Wine Weekly News publication.
-Its main goal is to light candles. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to light candles. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="123" size="486" contrib="53" multiples="25" lastweek="33">
 
 <person posts="9" size="29" who="James Hawkins" />
@@ -73,7 +73,7 @@ Its main goal is to light candles. It also serves to inform you of what's going 
 <topic>News</topic>
 <p>If you go way back in time, you can find Miguel de Icaza listed in
 Wine's 
-<a href="http://cvs.winehq.com/cvsweb/wine/documentation/ChangeLog.OLD?rev=1.1&amp;content-type=text/x-cvsweb-markup">Changelog</a> 
+<a href=//cvs.winehq.org/cvsweb/wine/documentation/ChangeLog.OLD?rev=1.1&amp;content-type=text/x-cvsweb-markup">Changelog</a> 
 (now Changelog.old).  Miguel submitted patches from the earliest days of 
 Wine until early 1995.  This week he sat down with Joe Barr for a
 <a href="http://software.newsforge.com/software/05/03/31/128223.shtml">
@@ -97,7 +97,7 @@ NewsForge interview</a>.  He briefly discusses some of the work:</p>
 <section
         title="CAP_SYS_NICE &amp; Win32 Thread Priorities"
         subject="PGP signing party"
-        archive="http://www.winehq.org/hypermail/wine-devel/2005/04/0080.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2005/04/0080.html"
         posts="5"
         startdate="04/04/2005"
 	enddate="04/08/2005"
@@ -157,7 +157,7 @@ MPlayer.</li></ol></p></quote>
 <section
         title="Speeding Up Builds"
         subject="Development method"
-        archive="http://www.winehq.org/hypermail/wine-devel/2005/04/0158.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2005/04/0158.html"
         posts="6"
         startdate="04/08/2005"
 >
@@ -199,7 +199,7 @@ just check you don't have other files in your path called wine.
 <section
         title="Wine-Probe Initiative"
         subject="Starting up"
-        archive="http://www.winehq.org/hypermail/wine-devel/2005/04/0120.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2005/04/0120.html"
         posts="1"
         startdate="04/06/2005"
 >
@@ -222,7 +222,7 @@ so I'd say things look promising. We're looking forward to the interest and
 feedback we'll get in the weeks to come.
 
 <ul>
-<li>[1] <a href="http://www.winehq.com/sitewwn/254#WINEprobe%20Initiative">http://www.winehq.com/sitewwn/254#WINEprobe%20Initiative</a></li>
+<li>[1] <a href=//www.winehq.org/sitewwn/254#WINEprobe%20Initiative">http://www.winehq.com/sitewwn/254#WINEprobe%20Initiative</a></li>
 <li>[2] <a href="http://www.golem.de/0504/37335.html">http://www.golem.de/0504/37335.html</a>
    (<a href="http://translate.google.com/translate?u=http%3A%2F%2Fwww.golem.de%2F0504%2F37335.html&amp;langpair=de%7Cen&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools">Google translation</a>)<br />
    <a href="http://www.pro-linux.de/news/2005/7996.html">http://www.pro-linux.de/news/2005/7996.html</a>
@@ -237,7 +237,7 @@ feedback we'll get in the weeks to come.
 <section
         title="Key Signing Party at WineConf"
         subject="PGP signing party"
-        archive="http://www.winehq.org/hypermail/wine-devel/2005/04/0057.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2005/04/0057.html"
         posts="2"
         startdate="04/04/2005"
 	enddate="04/05/2005"

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="319" date="08/10/2006" />
 <intro> <p>This is the 319th issue of the Wine Weekly News publication.
-Its main goal is to procrastinate on purchasing tickets to WineConf. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to procrastinate on purchasing tickets to WineConf. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="405" size="720" contrib="64" multiples="63" lastweek="38">
 
 <person posts="54" size="53" who="julliard at winehq.org (Alexandre Julliard)" />
@@ -143,7 +143,7 @@ with Wine</a>.  </p>
 <section 
 	title="WineConf 2006!"
 	subject="WineConf 2006"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-August/049998.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-August/049998.html"
 	posts="1"
 >
 <topic>WineConf 2006</topic>
@@ -169,7 +169,7 @@ Who Should Come?   Anyone interested in Wine development.  Please note:
 this is a developers-only conference.
 </p><p>
 How To Sign Up?    Check out 
-<a href="http://www.winehq.org/wineconf">http://www.winehq.org/wineconf</a> 
+<a href=//www.winehq.org/wineconf">http://www.winehq.org/wineconf</a> 
  for details. Please RSVP if you intend to come.
 </p><p>
 What's the Agenda? We'll be starting a thread on that shortly.
@@ -180,7 +180,7 @@ that count a month in advance, and they will not give us a refund
 for folks that don't show up or want to change things around.
 Hence, if you would like one of the convenient, reasonably priced
 rooms on campus, you need to follow the payment step at:
-  <a href="http://www.winehq.org/wineconf/travel">
+  <a href=//www.winehq.org/wineconf/travel">
   http://www.winehq.org/wineconf/travel</a></p><p>
 as soon as possible to book your room.  Note that since we won't
 get any refunds for cancellations, we won't be able to refund your money
@@ -211,7 +211,7 @@ to stay, but they will be a ways away, and they all cost more :-/).
 </p><p>
 Again, see this page for more details:
 
- <ul><a href="http://www.winehq.org/wineconf/travel">
+ <ul><a href=//www.winehq.org/wineconf/travel">
  http://www.winehq.org/wineconf/travel</a></ul></p><p>
 
 If you can't do Paypal, I can take a check in US currency as well.
@@ -223,7 +223,7 @@ a great site for finding flights.</p>
 <section 
 	title="CreateRemoteThread &amp; VirtualAllocEx"
 	subject="ntdll: CreateRemoteThread and friends for remote processes, take 3, via APCs"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-August/050010.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-August/050010.html"
 	posts="15"
 >
 <topic>Memory Management</topic>
@@ -260,9 +260,9 @@ http://www.codecomments.com/archive371-2005-3-421246.html</a></ul></p><p>
 Lastly, I should mention that I have two pending patches to add conformance
 tests for remote process operations:
 <ul>
-<li><a href="http://www.winehq.org/pipermail/wine-patches/2006-July/029259.html">
+<li><a href=//www.winehq.org/pipermail/wine-patches/2006-July/029259.html">
 http://www.winehq.org/pipermail/wine-patches/2006-July/029259.html</a></li>
-<li><a href="http://www.winehq.org/pipermail/wine-patches/2006-July/029260.html">
+<li><a href=//www.winehq.org/pipermail/wine-patches/2006-July/029260.html">
 http://www.winehq.org/pipermail/wine-patches/2006-July/029260.html</a></li></ul>
 </p></quote>
 
@@ -346,7 +346,7 @@ to getting a really tough class of functions implemented.</p>
 <section 
 	title="Metacity Fullscreen Issues"
 	subject="wine's fullscreen code has no effect on metacity"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-August/049204.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-August/049204.html"
 	posts="57"
 >
 <topic>Window Management</topic>
@@ -365,7 +365,7 @@ fullscreen and send the appropriate message, but nothing happens
 (panels are still on top of firefox in fullscreen mode).
 </p><p>
 I've mentioned this in Wine's bugzilla 
-<a href="http://bugs.winehq.org/show_bug.cgi?id=3312">#3312</a>, but I suspect 
+<a href=//bugs.winehq.org/show_bug.cgi?id=3312">#3312</a>, but I suspect 
 it's probably caused by some quirk in metacity that wine triggers by doing
 some rather odd things itself. That's why I've CC'd the metacity-devel
 list (to which I and probably anyone on any wine mailing lists are not
@@ -391,7 +391,7 @@ user).
 When the size of a window or the screen resolution changes, Wine marks
 windows whose client area covers the whole screen as fullscreen. This
 is done in the update_fullscreen_state function in 
-<a href="http://cvs.winehq.org/cvsweb/wine/dlls/winex11.drv/winpos.c?rev=1.5&amp;content-type=text/x-cvsweb-markup">this</a> file.
+<a href=//cvs.winehq.org/cvsweb/wine/dlls/winex11.drv/winpos.c?rev=1.5&amp;content-type=text/x-cvsweb-markup">this</a> file.
 </p></quote>
 
 <p>Rob Adams replied,
@@ -500,7 +500,7 @@ fullscreening within Wine.</p>
 <section 
 	title="Preloader Problem on x86_64"
 	subject="wine_main_preload_info not found, cannot use first megabyte, *.exe don't work"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-July/049897.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-July/049897.html"
 	posts="5"
 >
 <topic>Fixes</topic>
@@ -630,7 +630,7 @@ DT_GNU_HASH.
 <section 
 	title="Windows Notes Client with Wine"
 	subject="Lotus Notes 7 success!"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-July/049810.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-July/049810.html"
 	posts="5"
 >
 <topic>Fixes</topic>
@@ -653,7 +653,7 @@ I just spent an hour or so playing with Notes as a plain old
 email client.  It had a few mysterious crashes, but in general
 seemed usable.  (Not that I'd ever use it after getting used to gmail,
 but that's another story.)  I filed bug
-<a href="http://bugs.winehq.org/show_bug.cgi?id=5752">#5752</a>
+<a href=//bugs.winehq.org/show_bug.cgi?id=5752">#5752</a>
 about a strangeness in the email client.
 </p></quote>
 
@@ -680,7 +680,7 @@ for more information.
 <section 
 	title="Winelib Port"
 	subject="Winlib - Active Scripting"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-July/049665.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-July/049665.html"
 	posts="9"
 >
 <topic>Winelib</topic>
@@ -705,9 +705,9 @@ Win32, and what it doesn't?  I have had some difficulty finding this
 information.</i></p>
 <p>Dan: Each of Wine's DLLs comes with a file which lists which APIs it
 implements, e.g. 
-<a href="http://source.winehq.org/source/dlls/atl/atl.spec">atl.spec</a>
+<a href=//source.winehq.org/source/dlls/atl/atl.spec">atl.spec</a>
 The lines that say 'stub' are not really implemented.</p><p>
-<a href="http://www.winehq.org/winapi_stats">http://www.winehq.org/winapi_stats</a> 
+<a href=//www.winehq.org/winapi_stats">http://www.winehq.org/winapi_stats</a> 
 has a summary of this data, I think.
 But even some of the ones that don't say 'stub' are only partial or
 sham implementations.

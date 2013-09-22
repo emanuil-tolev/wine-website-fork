@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="216" date="03/26/2004" />
 <intro> <p>This is the 216th issue of the Wine Weekly News publication.
-Its main goal is to remind you to floss. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to remind you to floss. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="168" size="477" contrib="49" multiples="25" lastweek="22">
 
 <person posts="22" size="59" who="Dimitrie O. Paun" />
@@ -84,7 +84,7 @@ delves into actual configuration of the Wine config file.
 on eradicating once and for all.)</p>
 
 <p>In fact, that task is on the 
-<a href="http://www.winehq.com/todo_lists">To Do List</a>.
+<a href=//www.winehq.org/todo_lists">To Do List</a>.
 A few weeks ago we had 19 items marked as complete, 30 in
 progress, and 18 up for grabs.  We've seen more progress and now:
 <ul>
@@ -123,7 +123,7 @@ and provides a cross-platform 3D audio API.</p>
 <section 
 	title="New Task Manager" 
 	subject="reactos' taskmgr"
-	archive="http://www.winehq.org/hypermail/wine-patches/2004/03/0276.html" 
+	archive=//www.winehq.org/hypermail/wine-patches/2004/03/0276.html" 
 	posts="1"
 	startdate="03/21/2004"
 >
@@ -156,7 +156,7 @@ to screenshots I figured I would make some available:
 <section 
 	title="WinAPI Stats on WineHQ" 
 	subject="To Do A.11 - Integrate API status into WineHQ"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/03/0482.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/03/0482.html" 
 	posts="10"
 	startdate="03/24/2004"
 	enddate="03/25/2004"
@@ -170,7 +170,7 @@ to display the output from the winapi_extract tool.  Francois
 Gouget has had a version of this on his personal web site for
 a while and it was decided it was cool enough that we should
 integrate it into WineHQ.  Hatky came up with 
-<a href="http://www.winehq.org/hypermail/wine-devel/2004/03/0482.html">a different approach</a>
+<a href=//www.winehq.org/hypermail/wine-devel/2004/03/0482.html">a different approach</a>
 that involved using MySQL for part of the logic.  Dimi was
 definitely against using a database, but hatky explained:
 </p><quote who="Ofir Petruska"><p>
@@ -188,11 +188,11 @@ Ok, I have committed a version of hatky's work. It is in one php file
 instead of split across multiple files.
 </p><p>
 The file is in the tools cvs
-<a href="http://cvs.winehq.org/cvsweb/tools/winapi_stats.php">
+<a href=//cvs.winehq.org/cvsweb/tools/winapi_stats.php">
  http://cvs.winehq.org/cvsweb/tools/winapi_stats.php</a>
 </p><p>
 I ran it once and the output will be here:
-<a href="http://www.winehq.org/winapi_stats">
+<a href=//www.winehq.org/winapi_stats">
 http://www.winehq.org/winapi_stats</a>
 </p><p>
 It will be updated when Alexander runs the wine_release script.
@@ -214,7 +214,7 @@ that hatky integrated.</p>
 <section 
 	title="A Distributed Test Environment" 
 	subject="Win32 packages released on sourceforge"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/03/0327.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/03/0327.html" 
 	posts="42"
 	startdate="03/17/2004"
 	enddate="03/24/2004"
@@ -285,7 +285,7 @@ some interesting info concerning CVS commits:</p>
 <quote who="Paul Millar"><p>
 Errr, 'fraid I don't see the 4am part (unless you mean at precisely
 04:00:00).  Taking data from the past year from:
-<ul><a href="http://www.winehq.org/hypermail/wine-cvs/">   
+<ul><a href=//www.winehq.org/hypermail/wine-cvs/">   
    http://www.winehq.org/hypermail/wine-cvs/</a></ul></p><p>
 Downloading the "downloadable version", and running a wee 1-oner:
 <ul>
@@ -328,7 +328,7 @@ binaries.  Paul has already implemented that part on the server.
 <section 
 	title="Wine Weekly News Issues #90 and #91" 
 	subject="Missing WWN issues"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/03/460.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/03/460.html" 
 	posts="2"
 	startdate="03/24/2004"
 >
@@ -356,8 +356,8 @@ Would some kind soul volunteer for retrieving what can be retrieved?
 back and ported the missing issues.  If you're interested
 in the latest news from 2001, check out
 issues
-<a href="http://www.winehq.org/wwn/90">#90</a> and
-<a href="http://www.winehq.org/wwn/91">#91</a>.  More 
+<a href=//www.winehq.org/wwn/90">#90</a> and
+<a href=//www.winehq.org/wwn/91">#91</a>.  More 
 interesting than that (at least to me) was Eric Pouech's
 revelation that parts of issue #88 exist, but had never
 been published.  At some point in the future I'll create

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="322" date="02/19/2007" />
 <intro> <p>This is the 322nd issue of the Wine Weekly News publication.
-Its main goal is to use crutches. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> <p>The stats below seem a little messed up and
+Its main goal is to use crutches. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> <p>The stats below seem a little messed up and
 were intended to be the stats since 1/1/2007.</p></intro>
 <stats posts="926" size="1788" contrib="182" multiples="112" lastweek="35">
 
@@ -246,7 +246,7 @@ We're probably about ready to enter that phase.</p>
 <section 
 	title="DIB Engine Discussion"
 	subject="DIB Engine, some summarization"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-February/053977.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-February/053977.html"
 	posts="7"
 >
 <topic>Graphics</topic>
@@ -357,7 +357,7 @@ Wine is any closer to a DIB engine, at least ideas are floating around.</p>
 <section 
 	title="Summer of Code 2007"
 	subject="Google Summer of Code 2007"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-February/054114.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-February/054114.html"
 	posts="2"
 >
 <topic>Summer of Code 2007</topic>
@@ -383,7 +383,7 @@ There's also about a bazillion other things you could take a stab at.</p>
 <section 
 	title="GNOME &amp; Freedesktop Menus"
 	subject="Wine and menu integration"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-February/054096.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-February/054096.html"
 	posts="3"
 >
 <topic>Integration</topic>
@@ -422,7 +422,7 @@ luck!
 </quote>
 
 <p>This work builds on the 
-<a href="http://www.winehq.com/pipermail/wine-cvs/2006-November/028090.html">foundation</a> 
+<a href=//www.winehq.org/pipermail/wine-cvs/2006-November/028090.html">foundation</a> 
 laid by Vitaliy Margolen in November for using the Freedesktop standard to 
 create Wine's menu structure.</p>
 
@@ -430,7 +430,7 @@ create Wine's menu structure.</p>
 <section 
 	title="Direct3D Screenshots"
 	subject="[1/10] - [10/10] WineD3D"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-February/054069.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-February/054069.html"
 	posts="7"
 >
 <topic>DirectX</topic>
@@ -458,13 +458,13 @@ some coaxing to get to run,<quote who="Neil Skrypuch">
 3DMark 05 and 06 are quite picky about caps, there's a few that are slightly 
 off and it refuses to run</quote></p>
 
-<p>Henri Verbeet then <a href="http://www.winehq.com/pipermail/wine-devel/2007-February/054134.html">provided</a> a patch that may help with it.</p>
+<p>Henri Verbeet then <a href=//www.winehq.org/pipermail/wine-devel/2007-February/054134.html">provided</a> a patch that may help with it.</p>
 
 </section>
 <section 
 	title="Toolbar Regression"
 	subject="Regression in comctl32"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-February/054081.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-February/054081.html"
 	posts="3"
 >
 <topic>Controls</topic>
@@ -492,12 +492,12 @@ causes IDA Pro to show black squares instead of its toolbar icons.
 
 <p>Apparently this regression is causing problems in other programs too.
 Dmitry was aware of the problem and referred him to 
-<a href="http://bugs.winehq.org/show_bug.cgi?id=7405">bug #7405</a>.</p>
+<a href=//bugs.winehq.org/show_bug.cgi?id=7405">bug #7405</a>.</p>
 </section>
 <section 
 	title="RHEL 3 RPM's"
 	subject="RedHat rpms"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-February/053898.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-February/053898.html"
 	posts="2"
 >
 <topic>Packaging</topic>
@@ -518,7 +518,7 @@ am I looking in the wrong place?</p></quote>
 
 <p>Lei Zhang then spoke up and mentioned that although the RPMs aren't
 listed on Wine's 
-<a href="http://www.winehq.com/download">Download</a> page, he maintains 
+<a href=//www.winehq.org/download">Download</a> page, he maintains 
 them:</p>
 <quote who="Lei Zhang"><p>
 I build RPMs for RHEL 3, give them a try:
@@ -531,7 +531,7 @@ http://linux.ucla.edu/~leiz/software/wine/rpms.php</a></ul></p></quote>
 <section 
 	title="IE Developers Toolbar"
 	subject="IE Dev Toolbar now compatible!"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-February/053906.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-February/053906.html"
 	posts="1"
 >
 <topic>Web/HTML</topic>

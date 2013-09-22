@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="285" date="07/29/2005" />
 <intro> <p>This is the 285th issue of the Wine Weekly News publication.
-Its main goal is to synthesize. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to synthesize. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="243" size="861" contrib="76" multiples="45" lastweek="28">
 
 <person posts="22" size="75" who="Dmitry Timoshkov" />
@@ -114,7 +114,7 @@ We're very hopeful that with this, if we can get some community participation an
 <section 
 	title="MSHTML Update"
 	subject="Use Gecko to render HTML"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/07/0841.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/07/0841.html"
 	posts="1"
 	startdate="07/28/2005"
 >
@@ -176,7 +176,7 @@ maybe Jacek's other idea will work out.
 <section 
 	title="Force Feedback"
 	subject="Re: DINPUT: Detect force feedback joysticks (FF #1)"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/07/0819.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/07/0819.html"
 	posts="6"
 	startdate="07/28/2005"
 >
@@ -291,7 +291,7 @@ looking at the PID side of things.</quote></p>
 <section 
 	title="Benchmarks"
 	subject="Benchmark's on the Wiki"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/07/0749.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/07/0749.html"
 	posts="34"
 	startdate="07/26/2005"
 	enddate="07/31/2005"
@@ -315,7 +315,7 @@ offset by XP's faster graphics.
 <section 
 	title="Cross-Compiling Wine"
 	subject="cross-compiling for ARM"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/07/0744.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/07/0744.html"
 	posts="2"
 	startdate="07/26/2005"
 >
@@ -356,7 +356,7 @@ PPC and SPARC. You might be able to get by, by stubbing the set_thread_context
 stuff out for simple apps.</p></quote>
 
 <p>We sort of touched on this subject last winter in WWN
-<a href="http://www.winehq.com/wwn/263#Compiling%20for%20Windows%20and%20Cross-Compiling">#263</a>.
+<a href=//www.winehq.org/wwn/263#Compiling%20for%20Windows%20and%20Cross-Compiling">#263</a>.
 The steps Steven covered were roughly the same as what Hans Leidekker 
 described, namely building the tools and using the <tt>--with-wine-tools</tt> 
 option.  Ports to other architectures come up once in while, but it's 
@@ -366,7 +366,7 @@ can get off the ground.</p>
 <section 
 	title="Theming Work"
 	subject="Theming &amp; code duplication"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/07/0778.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/07/0778.html"
 	posts="5"
 	startdate="07/27/2005"
 	enddate="07/29/2005"

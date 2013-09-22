@@ -89,7 +89,7 @@ the 20011226 release we have these changes announced:
   title="Building a Test Suite"
   subject="We *really* need a development model change !"
   topic1="Debugging"
-  archive="http://www.winehq.org/hypermail/wine-devel/2001/12/0430.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2001/12/0430.html"
   posts="73"
   startdate="12/25/2001"
   enddate="01/03/2002"
@@ -164,7 +164,7 @@ Andreas Mohr and Andriy Palamarchuk began exchanging emails and discussing
 the format of the tests and the output.  Both agreed that commandline tests
 were the way to go.  The output would be easily parsed and the tests could
 be easily automated.  Andriy did a search for testing frameworks and came
-up with <a href="http://www.winehq.org/hypermail/wine-devel/2001/12/0442.html">
+up with <a href=//www.winehq.org/hypermail/wine-devel/2001/12/0442.html">
 a list of some</a>.  Before any discussion took place as to which ones would
 work, Alexandre pointed out, <quote who="Alexandre Julliard">
  Look at programs/winetest, that's the tool we should use to write 
@@ -277,7 +277,7 @@ Ideally, we would have a 'winetest.zip' such that all I would
  CVS if you have a CVS client on Windows).</quote></p>
 
 <p>Francois then went and wrote a 
-  <a href="http://www.winehq.org/hypermail/wine-devel/2002/01/0012.html">
+  <a href=//www.winehq.org/hypermail/wine-devel/2002/01/0012.html">
 lengthy description</a> of how to implement the testing.  He
 purposely left it open to any language.  I'll refer you to the
 link for the full description, but he started out with:</p>
@@ -394,7 +394,7 @@ framework. Want to share my experiences.
 <section
   title="Cooperation With Odin Project"
   subject="Cooperation between Odin &amp; Wine"
-  archive="http://www.winehq.org/hypermail/wine-devel/2001/12/0435.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2001/12/0435.html"
   topic1="Integration"
   posts="3"
   startdate="12/26/2001"
@@ -460,7 +460,7 @@ see if there's anything else that could be merged from their project.</p>
   title="Lindows Screenshots"
   subject="Lindows screenshots"
   topic1="Commercial Development"
-  archive="http://www.winehq.org/hypermail/wine-devel/2002/01/0080.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2002/01/0080.html"
   posts="5"
   startdate="01/04/2002"
   enddate="01/04/2002"
@@ -510,7 +510,7 @@ agreement and "share your time, perspective and expertise".</p>
 <section
   title="MS EULA Conflicts"
   subject="msnbc news alert installer: Unable to start browser"
-  archive="http://www.winehq.org/hypermail/wine-devel/2001/12/0068.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2001/12/0068.html"
   topic1="Microsoft Windows"
   posts="7"
   startdate="01/04/2002"
@@ -556,7 +556,7 @@ agreement and "share your time, perspective and expertise".</p>
 <section
   title="Mixed Mode CD Labels"
   subject="Mixed-mode CD Labels"
-  archive="http://www.winehq.org/hypermail/wine-devel/2001/12/0463.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2001/12/0463.html"
   topic1="Multimedia"
   posts="13"
   startdate="12/28/2001"

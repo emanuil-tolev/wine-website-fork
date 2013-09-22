@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="294" date="10/14/2005" />
 <intro> <p>This is the 294th issue of the Wine Weekly News publication.
-Its main goal is to enjoy stable talus. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to enjoy stable talus. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="341" size="602" contrib="81" multiples="52" lastweek="42">
 
 <person posts="19" size="22" who="daniel.r.kegel at gmail.com (Dan Kegel)" />
@@ -117,7 +117,7 @@ on Linux</a>.  </p>
 <section 
 	title="Direct3D 7, version 2"
 	subject="D3D7 -&gt; WineD3D, 2nd attempt"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-October/040923.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-October/040923.html"
 	posts="3"
 >
 <topic>DirectX</topic>
@@ -125,7 +125,7 @@ on Linux</a>.  </p>
 implementation.  You might remember that there's been some discussion to
 gradually share the Direct3D libraries being developed for DirectX 9 
 (see WWN 
-<a href="http://www.winehq.com/wwn/291#WineD3D%20and%20DirectX7">#291</a> 
+<a href=//www.winehq.org/wwn/291#WineD3D%20and%20DirectX7">#291</a> 
 for details.)  Stefan's initial work seems to have progressed:</p>
 <quote who="Stefan Dosinger"><p>
 I am trying again to Implement Direct3D 7 using WineD3D, and I've made some 
@@ -204,7 +204,7 @@ per thread.</p></quote>
 <section 
 	title="Still Image Architecture"
 	subject="STI on wine: progress + help"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-October/041054.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-October/041054.html"
 	posts="3"
 >
 <topic>Graphics</topic>
@@ -269,7 +269,7 @@ patch in the next few weeks.
 <section 
 	title="Winelib &amp; Native Apps"
 	subject="How Do I launch a Native Linux application from Within Wine"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-October/041047.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-October/041047.html"
 	posts="3"
 >
 <topic>Winelib</topic>
@@ -328,7 +328,7 @@ following me around on the screen.</li></ol></p></quote>
 <section 
 	title="Fixing Bugs"
 	subject="Reality check"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-October/041071.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-October/041071.html"
 	posts="29"
 >
 <topic>Project Management</topic>

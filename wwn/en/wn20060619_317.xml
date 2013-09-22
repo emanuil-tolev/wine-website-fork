@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="317" date="06/19/2006" />
 <intro> <p>This is the 317th issue of the Wine Weekly News publication.
-Its main goal is to have a party. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to have a party. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="201" size="398" contrib="77" multiples="37" lastweek="32">
 
 <person posts="20" size="20" who="mike at plan99.net (Mike Hearn)" />
@@ -124,7 +124,7 @@ environments often rely more heavily on Wine to transition their desktops to
 Linux than do individual home users.</p></quote>
 
 <p>We briefly touched on the original idea of Wine Doors a few months ago in WWN
-<a href="http://www.winehq.com/wwn/308#WineTools..%20part%20II">#308</a>,
+<a href=//www.winehq.org/wwn/308#WineTools..%20part%20II">#308</a>,
 but the thread continued on after that.  It looks as though things are
 going well for the project.</p>
 
@@ -143,7 +143,7 @@ Windows binaries on Linux/MacOS.
 <section 
 	title="Safedisc Support Revisited"
 	subject="One more shot at ntoskrnl implementation"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-June/048583.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-June/048583.html"
 	posts="1"
 >
 <topic>Architecture</topic>
@@ -155,9 +155,9 @@ It seems copy protection methods need to do things like load special
 drivers and that in turn requires ntoskrnl.exe to have some basic 
 functionality.  So, last year work was done to create
 a basic version of it (see WWN
-<a href="http://www.winehq.com/wwn/270#Safedisk%20Help%20Needed">#270</a>,
-<a href="http://www.winehq.com/wwn/289#Safedisc%20Update">#289</a>, and
-<a href="http://www.winehq.com/wwn/290#Safedisc%20Begins%20to%20Work">#290</a> 
+<a href=//www.winehq.org/wwn/270#Safedisk%20Help%20Needed">#270</a>,
+<a href=//www.winehq.org/wwn/289#Safedisc%20Update">#289</a>, and
+<a href=//www.winehq.org/wwn/290#Safedisc%20Begins%20to%20Work">#290</a> 
 for more details.)  
 </p><p>In the end, the mechanism that was developed was sufficient for
 copy protection.  There was one little problem though: Alexandre didn't
@@ -195,7 +195,7 @@ get it in.
 <section 
 	title="Vertex Buffer Objects"
 	subject="Vertex Buffer Objects for WineD3D"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-June/048463.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-June/048463.html"
 	posts="5"
 >
 <topic>DirectX</topic>
@@ -253,7 +253,7 @@ IDirect3DVertexbuffer7::ProcessVertices.
 <section 
 	title="Wine on 64-bit AMD / Ubuntu"
 	subject="Build on kubuntu 6.06,amd_64 works"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-June/048637.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-June/048637.html"
 	posts="2"
 >
 <topic>Ports</topic>
@@ -302,7 +302,7 @@ the 32bitlibs package in Ubuntu.</p></quote>
 <section 
 	title="DWARF2 Debugging"
 	subject="[PATCH 00/31] Series short description"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-June/027676.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-June/027676.html"
 	posts="3"
 >
 <topic>Debugging</topic>

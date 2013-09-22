@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="220" date="04/23/2004" />
 <intro> <p>This is the 220th issue of the Wine Weekly News publication.
-Its main goal is to buy mosquito repellent. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to buy mosquito repellent. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="279" size="1033" contrib="80" multiples="44" lastweek="32">
 
 <person posts="30" size="275" who="Dimitrie O. Paun" />
@@ -91,7 +91,7 @@ Its main goal is to buy mosquito repellent. It also serves to inform you of what
 <section 
 	title="Visual FoxPro" 
 	subject="Visual FoxPro"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/04/0352.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/04/0352.html" 
 	posts="4"
 	startdate="04/16/2004"
 	enddate="04/17/2004"
@@ -131,7 +131,7 @@ allow this type of redistrabtution like in the case of MFC and ATL.
 <quote who="Duane Clark"><p>
 There is quite a bit of detailed info on the status of Wine with VFP in 
 the Wine application database:
-<ul> <a href="http://appdb.winehq.org/appview.php?appId=296">
+<ul> <a href=//appdb.winehq.org/appview.php?appId=296">
     http://appdb.winehq.org/appview.php?appId=296</a></ul></p><p>
 That is probably a pretty good starting point.</p></quote>
 
@@ -147,7 +147,7 @@ on the subject.</p>
 <section 
 	title="Distributed Testing" 
 	subject="Winetest results uploaded... where?"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/04/0476.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/04/0476.html" 
 	posts="40"
 	startdate="04/20/2004"
 	enddate="04/22/2004"
@@ -156,17 +156,17 @@ on the subject.</p>
 
 <p>About a month ago we touched on a new distributed testing environment
 being set up (see 
-<a href="http://www.winehq.com/wwn/216#A%20Distributed%20Test%20Environment">issue #216</a>
+<a href=//www.winehq.org/wwn/216#A%20Distributed%20Test%20Environment">issue #216</a>
 for a brief overview.)  Things have been a bit stalled as some of the
 build components have been broken and various patches needed to get
 upstreamed.  Now things are beginning come together and some preliminary
 results are available.  Dimi provided a link for people to see a preview:</p>
 <quote who="Dimitrie Paun"><p>
 Look into:
-<ul><a href="http://test.winehq.org/data/">
+<ul><a href=//test.winehq.org/data/">
     http://test.winehq.org/data/</a></ul></p><p>
 Today's test results can be found here:
-<ul><a href="http://test.winehq.org/data/200404192305/">
+<ul><a href=//test.winehq.org/data/200404192305/">
     http://test.winehq.org/data/200404192305/</a></ul></p>
 </quote>
 
@@ -193,7 +193,7 @@ developers will be able to find time to help out.</p>
 <section 
 	title="Windows Local Security Authority" 
 	subject="Security of WINE and ReactOS: was Documents and settings"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/04/0374.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/04/0374.html" 
 	posts="6"
 	startdate="04/17/2004"
 	enddate="04/18/2004"
@@ -297,7 +297,7 @@ on how to do that at
 http://www.kerneltraffic.org/wine/wn20030328_163.html#5</a></ul></p><p>
 and in 
 particular at 
- <ul><a href="http://www.winehq.com/hypermail/wine-devel/2002/10/0654.html"> 
+ <ul><a href=//www.winehq.org/hypermail/wine-devel/2002/10/0654.html"> 
 http://www.winehq.com/hypermail/wine-devel/2002/10/0654.html</a></ul></p><p>
 (October 2002!).
 </p><p>
@@ -318,7 +318,7 @@ might be interested in working on this.</p>
 <section 
 	title="Listing More Downloads on WineHQ" 
 	subject="List other downloads on winehq"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/04/0387.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/04/0387.html" 
 	posts="16"
 	startdate="04/17/2004"
 	enddate="04/20/2004"
@@ -326,7 +326,7 @@ might be interested in working on this.</p>
 <topic>WineHQ</topic>
 <p>
 Vincent B&#233;ron wondered if we could list more downloads
-on the <a href="http://www.winehq.com/download">Wine download 
+on the <a href=//www.winehq.org/download">Wine download 
 page</a>:</p>
 
 <quote who="Vincent Beron"><p> 
@@ -398,7 +398,7 @@ list appeared on WineHQ.</p>
 <section 
 	title="Project David ?" 
 	subject="project David?"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/04/0578.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/04/0578.html" 
 	posts="10"
 	startdate="04/22/2004"
 >
@@ -458,14 +458,14 @@ clauses of the (L)GPL apply ...</quote></p>
 <section 
 	title="Combining Patches With Arch" 
 	subject="arch tip #2"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/04/0402.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/04/0402.html" 
 	posts="1"
 	startdate="04/18/2004"
 >
 <topic>Patches</topic>
 
 <p>Anyone using the 
-<a href="http://www.winehq.com/wwn/217#CVS%20to%20Arch%20Gateway">arch repository</a>?
+<a href=//www.winehq.org/wwn/217#CVS%20to%20Arch%20Gateway">arch repository</a>?
 Mike Hearn announced changes to a tool help create and manage patches:</p>
 
 <quote who="Mike Hearn"><p>

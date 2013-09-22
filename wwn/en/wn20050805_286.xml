@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="286" date="08/05/2005" />
 <intro> <p>This is the 286th issue of the Wine Weekly News publication.
-Its main goal is to go to rodeos. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to go to rodeos. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="139" size="591" contrib="48" multiples="28" lastweek="28">
 
 <person posts="12" size="32" who="Alexandre Julliard" />
@@ -88,12 +88,12 @@ installation due to the internal adjustments that must be made.</p></quote>
 <section 
 	title="AppDB Improvements"
 	subject="AppDB - allow maintainers to process submitted screenshots and application versions"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/08/0078.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/08/0078.html"
 	posts="1"
 	startdate="08/02/2005"
 >
 <topic>WineHQ</topic>
-<p>Wine's <a href="http://appdb.winehq.org">AppDB</a> has continued to 
+<p>Wine's <a href=//appdb.winehq.org">AppDB</a> has continued to 
 see steady improvements.  Of course the goal is to make it easy to
 find applications, info on running them, and keeping everything up
 to date.  Well, that in turn relies on application maintainers and
@@ -127,7 +127,7 @@ PHP, you might be interested in looking at the to-do list.
 <section 
 	title="PeekMessage and Performance"
 	subject="test case demonstrating PeekMessage give up timeslices"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/08/0038.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/08/0038.html"
 	posts="13"
 	startdate="08/02/2005"
 >
@@ -254,7 +254,7 @@ Felix, the extra 100 yields are coming from code I
 prompted, in ntdll/sync.c; if the return from
 an NtWait... is TIMEOUT, then we force a yield.
 (The thread that points to more info is here:
-<a href="http://www.winehq.org/hypermail/wine-devel/2005/01/0469.html">
+<a href=//www.winehq.org/hypermail/wine-devel/2005/01/0469.html">
 http://www.winehq.org/hypermail/wine-devel/2005/01/0469.html</a>)
 </p><p>
 If I back that down and apply your patch, I can
@@ -295,7 +295,7 @@ shm generally would lower the cost of a server
 <section 
 	title="Turning off Anti-Aliasing"
 	subject="How to turn off Anti-aliasing"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/07/0870.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/07/0870.html"
 	posts="4"
 	startdate="07/29/2005"
 	enddate="08/01/2005"

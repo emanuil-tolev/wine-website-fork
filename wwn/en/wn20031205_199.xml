@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="199" date="12/05/2003" />
 <intro> <p>This is the 199th issue of the Wine Weekly News publication.
-Its main goal is to become more avy savvy. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to become more avy savvy. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="280" size="905" contrib="61" multiples="35" lastweek="29">
 
 <person posts="37" size="92" who="Alexandre Julliard" />
@@ -123,7 +123,7 @@ good to see Linux is alive and well in A^2.
 <section 
 	title="Wine on a 64-Bit Opteron"
 	subject="64bit Wine?"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/12/0029.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/12/0029.html" 
 	posts="4"
 	startdate="12/01/2003"
 	enddate="12/02/2003"
@@ -194,7 +194,7 @@ You will also need the attached winebuild patch that uses "LD" from the environm
 <section 
 	title="DirectShow / Quartz Status"
 	subject="Status : Multimedia section"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/12/0044.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/12/0044.html" 
 	posts="9"
 	startdate="12/01/2003"
 	enddate="12/05/2003"
@@ -202,7 +202,7 @@ You will also need the attached winebuild patch that uses "LD" from the environm
 <topic>Multimedia</topic>
 <p>Tom Wickline revamped the Multimedia status page and 
 asked for comments.  You can view that work in 
-<a href="http://www.winehq.org/hypermail/wine-devel/2003/12/0044.html">his 
+<a href=//www.winehq.org/hypermail/wine-devel/2003/12/0044.html">his 
 original post</a>.  Boaz Harrosh thought something was missing:</p>
 <quote who="Boaz Harrosh"><p>
 What about the DirectShow and DMO side of things. Should they not be 
@@ -225,7 +225,7 @@ DirectShow = Quartz.dll
 And DirectShow is listed under the DirectX section of the status page
 as Quartz.dll is a part of DirectX.<ul>
 
-<a href="http://www.winehq.org/status_dlls">
+<a href=//www.winehq.org/status_dlls">
 http://www.winehq.org/status_dlls</a></ul></p><p>
 
 But have no fear, I plan to expand the DirectX section next
@@ -296,20 +296,20 @@ Alexandre of one.</p>
 <section 
 	title="Winetest Integrated &amp; Future Steps" 
 	subject="winetest WineHQ integration"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/12/0139.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/12/0139.html" 
 	posts="4"
 	startdate="12/04/2003"
 	enddate="12/05/2003"
 >
 <topic>Testing</topic>
 <p>Winetest is a new utility we've discussed in past issues.  In 
-<a href="http://www.winehq.org/wwn/186#Collecting%20Test%20Statistics">issue
+<a href=//www.winehq.org/wwn/186#Collecting%20Test%20Statistics">issue
 #186</a> we covered Jakob Eriksson's initial work of getting Wine's
 test suite to compile and run on Windows.  That was back in August, since
 then more work has been done (see issues 
-<a href="http://www.winehq.org/wwn/189#New%20Tests%20For%20Windows">#189</a>
+<a href=//www.winehq.org/wwn/189#New%20Tests%20For%20Windows">#189</a>
 and
-<a href="http://www.winehq.org/wwn/194#Updated%20Winetests">#194</a>).  
+<a href=//www.winehq.org/wwn/194#Updated%20Winetests">#194</a>).  
 Dimi Paun decided that the few remaining issues preventing it from being
 integrated into CVS needed to be taken care.  After a little discussion and
 some minor patches, Alexandre committed it.  </p>
@@ -374,7 +374,7 @@ something completed that worked.
 <section 
 	title="Proposed Wineconf 2004 Agenda" 
 	subject="Agenda for Wineconf"
-	archive="http://www.winehq.org/hypermail/wineconf/2003/12/0002.html" 
+	archive=//www.winehq.org/hypermail/wineconf/2003/12/0002.html" 
 	posts="1"
 	startdate="12/05/2003"
 >
@@ -426,7 +426,7 @@ the format:</p>
 <section 
 	title="InstallShield Problems" 
 	subject="Status of InstallShield-Setup Engine"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/12/0118.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/12/0118.html" 
 	posts="6"
 	startdate="12/04/2003"
 	enddate="12/05/2003"
@@ -516,7 +516,7 @@ inclusion in Wine.  He described a little of that:</p>
 <section 
 	title="OpenOffice 1.1 Under Wine" 
 	subject="Nice work - OpenOffice 1.1 under WINE"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/11/0724.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/11/0724.html" 
 	posts="3"
 	startdate="11/29/2003"
 	enddate="11/30/2003"
@@ -551,7 +551,7 @@ of any (current) effort to remedy that?
 <section 
 	title="Implementing Imagehlp Functions" 
 	subject="Who maintains the imagehlp dll?"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/12/0138.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/12/0138.html" 
 	posts="5"
 	startdate="12/04/2003"
 	enddate="12/05/2003"
@@ -607,7 +607,7 @@ time on this, I can provide what I have.</quote></p>
 <section 
 	title="List of Debug Channels"
 	subject="Debugging"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/11/0651.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2003/11/0651.html"
 	posts="1"
 	startdate="11/27/2003"
 >
@@ -617,7 +617,7 @@ time on this, I can provide what I have.</quote></p>
 available in Wine.  Debug channels let you see messages
 pertaining to a certain subsystem of Wine and can be turned
 on and off.  For more information, see the
-<a href="http://www.winehq.org/docs/winedev-guide/debugging">debugging</a>
+<a href=//www.winehq.org/docs/winedev-guide/debugging">debugging</a>
 section of the Wine Developer's Guide.  It's quite probable
 some of these channels aren't useful for anything any more:</p>
 <quote who="Mike Hearn"><p>

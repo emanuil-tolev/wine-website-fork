@@ -100,7 +100,7 @@ to be able to run Outlook.</p>
 <section 
 	title="NetAPI32.DLL Work" 
 	subject="An attempt at LogonUser()"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/09/0448.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/09/0448.html" 
 	posts="15" 
 	startdate="09/16/2002"
 	enddate="09/18/2002" 
@@ -199,7 +199,7 @@ Fixmes:</p>
 </p></ul></quote>
 
 <p>The next day Andriy 
- <a href="http://www.winehq.org/hypermail/wine-patches/2002/09/0175.html">submitted</a>
+ <a href=//www.winehq.org/hypermail/wine-patches/2002/09/0175.html">submitted</a>
   some work that implemented <quote who="Andriy Palamarchuk">
  NetQueryDisplayInformation, NetUserGetInfo, created
  conformance tests, other netapi32 bug fixes and
@@ -212,7 +212,7 @@ Fixmes:</p>
 <section 
 	title="WinASPI.DLL Work" 
 	subject="winaspi + libscg"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/09/0421.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/09/0421.html" 
 	posts="3" 
 	startdate="09/17/2002"
 	enddate="09/18/2002" 
@@ -243,7 +243,7 @@ break anything, you'll find an application to test with... :)</quote>
 </p>
 
 <p>A few days later Gy&#246;rgy 
-<a href="http://www.winehq.org/hypermail/wine-patches/2002/09/0182.html">
+<a href=//www.winehq.org/hypermail/wine-patches/2002/09/0182.html">
 submitted</a> a patch. </p>
 
 </section>
@@ -256,7 +256,7 @@ submitted</a> a patch. </p>
 <section
         title="Mixing Unix and Windows Calls"
         subject="more MSVCRT fun"
-        archive="http://www.winehq.org/hypermail/wine-devel/2002/09/0417.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2002/09/0417.html"
         posts="2"
         startdate="09/17/2002"
         enddate="09/18/2002"
@@ -295,14 +295,14 @@ benefits as well, softwaredesignwise :-)
 <section 
 	title="No More Perl Regression Tests" 
 	subject="Re: [Bug 529] - Running Perl regression tests on Windows"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/09/0433.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/09/0433.html" 
 	posts="2" 
 	startdate="09/18/2002"
 	enddate="09/18/2002" 
 >
 <topic>Testing</topic>
 <p>Steven Edwards requested comments about closing out
-<a href="http://bugs.winehq.org/show_bug.cgi?id=529">bug 529.</a>  
+<a href=//bugs.winehq.org/show_bug.cgi?id=529">bug 529.</a>  
 It seems through private 
 correspondence it was decided to just close it out
 and not deal with the perl framework any more.  Steven's

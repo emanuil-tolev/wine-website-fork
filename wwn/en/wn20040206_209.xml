@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="209" date="01/06/2004" />
 <intro> <p>This is the 209th issue of the Wine Weekly News publication.
-Its main goal is to officially begin procrastinating on taxes. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to officially begin procrastinating on taxes. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="164" size="762" contrib="59" multiples="30" lastweek="29">
 
 <person posts="18" size="60" who="Fabian Cenedese" />
@@ -71,22 +71,22 @@ Its main goal is to officially begin procrastinating on taxes. It also serves to
 <section 
 	title="News: WineConf 2004 Resources" 
 	subject="News"
-	archive="http://www.winehq.org/wineconf" 
+	archive=//www.winehq.org/wineconf" 
 	posts="1"
 	startdate="01/31/2004"
 	enddate="02/06/2004"
 >
 <topic>News</topic>
-<p>The <a href="http://www.winehq.org/wineconf/">WineConf</a>
+<p>The <a href=//www.winehq.org/wineconf/">WineConf</a>
 page is serving as a repository for the various resources from
 the conference.  So far you can find:
 <ul>
-	<li><a href="http://www.winehq.org/wineconf/album/2004/p2010033.jpg">A group photo</a></li>
-	<li><a href="http://www.winehq.org/wineconf/archive/2004/wineconf-chat.log"></a>Complete irc log</li>
-	<li><a href="http://www.winehq.org/wineconf/album/2004/">Newman's collection of photos</a></li>
+	<li><a href=//www.winehq.org/wineconf/album/2004/p2010033.jpg">A group photo</a></li>
+	<li><a href=//www.winehq.org/wineconf/archive/2004/wineconf-chat.log"></a>Complete irc log</li>
+	<li><a href=//www.winehq.org/wineconf/album/2004/">Newman's collection of photos</a></li>
 </ul>
 </p><p>In case you missed it, I put out separate issue this week
-to <a href="http://www.winehq.org/wwn/208">summarize the event.</a>
+to <a href=//www.winehq.org/wwn/208">summarize the event.</a>
 We had 29 developers from 8 different countries in attendance
 (I apologize if any of the city information is wrong in the list below):
 <ul>
@@ -245,7 +245,7 @@ We had 29 developers from 8 different countries in attendance
 <section 
 	title="New Filesystem Code Merge Commencing" 
 	subject="ntdll / kernel32: #41"
-	archive="http://www.winehq.org/hypermail/wine-patches/2004/02/0030.html"
+	archive=//www.winehq.org/hypermail/wine-patches/2004/02/0030.html"
 	posts="9"
 	startdate="02/04/2004"
 >
@@ -253,10 +253,10 @@ We had 29 developers from 8 different countries in attendance
 
 <p>The big filesystem merge has begun, well, at least the patch submissions.
  If you're just tuning in, you may want to refer back to issues
-<a href="http://www.winehq.org/wwn/184#Evolution%20of%20Wine's%20File%20Management">#184</a>,
-<a href="http://www.winehq.org/wwn/189#Filesystem%20Roadmap">#189</a>
+<a href=//www.winehq.org/wwn/184#Evolution%20of%20Wine's%20File%20Management">#184</a>,
+<a href=//www.winehq.org/wwn/189#Filesystem%20Roadmap">#189</a>
 and
-<a href="http://www.winehq.org/wwn/204#File%20Handling">#204</a>.
+<a href=//www.winehq.org/wwn/204#File%20Handling">#204</a>.
 I think it's useful to reiterate exactly what the problems are,
 this list comes from Eric's initial post back on August 19th:</p>
 <quote who="Eric Pouech"><p>   
@@ -414,7 +414,7 @@ that's all for now
 <section 
 	title="To Do List Updated" 
 	subject="Wine 0.9 TODO"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/02/0068.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/02/0068.html" 
 	posts="7"
 	startdate="01/03/2004"
 	enddate="01/04/2004"
@@ -558,7 +558,7 @@ tests integrated into the website.</p>
 <section 
 	title="WineConf Wrapup" 
 	subject="Wineconf wrapup"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/02/0044.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/02/0044.html" 
 	posts="3"
 	startdate="02/03/2004"
 >
@@ -696,7 +696,7 @@ and thanks for coming.
 <section 
 	title="Creation of #winehackers" 
 	subject="Announcing #winehackers"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/02/0010.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/02/0010.html" 
 	posts="1"
 	startdate="02/01/2004"
 >
@@ -706,9 +706,9 @@ developing Wine.  The goal of this channel has nothing to do
 getting applications to run or serving as tech support.  It's
 for developers to get together and solve problems.  We have lots
 of forums available for helping with using Wine, including
-<a href="http://www.winehq.org/documentation">documentation</a>,
-<a href="http://www.winehq.org/forums">mailing lists</a>,
-and <a href="http://bugs.winehq.org/">BugZilla</a>.  Mike Hearn
+<a href=//www.winehq.org/documentation">documentation</a>,
+<a href=//www.winehq.org/forums">mailing lists</a>,
+and <a href=//bugs.winehq.org/">BugZilla</a>.  Mike Hearn
 announced the new IRC channel on Sunday:</p>
 <quote who="Mike Hearn"><p>
 
@@ -747,7 +747,7 @@ there to be used, so use it.
 <section 
 	title="Differences in Windows' Long/Short Names" 
 	subject="Wrong short filenames instead of long ones"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/02/0114.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/02/0114.html" 
 	posts="4"
 	startdate="02/06/2004"
 >

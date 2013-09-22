@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="289" date="08/26/2005" />
 <intro> <p>This is the 289th issue of the Wine Weekly News publication.
-Its main goal is to start looking for new skis. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to start looking for new skis. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="157" size="587" contrib="67" multiples="33" lastweek="26">
 
 <person posts="14" size="37" who="Alexandre Julliard" />
@@ -78,7 +78,7 @@ Its main goal is to start looking for new skis. It also serves to inform you of 
 <section 
 	title="Theming Support"
 	subject="winecfg: theming"
-	archive="http://www.winehq.com/hypermail/wine-patches/2005/08/0598.html"
+	archive=//www.winehq.org/hypermail/wine-patches/2005/08/0598.html"
 	posts="1"
 	startdate="08/23/2005"
 >
@@ -104,10 +104,10 @@ if you'd like to try this out:
 
 <p>If you're curious what the theming looks like, 
  here's a shot of winecfg's
-<a href="http://www.winehq.org/images/wwn289-theme-1.jpg">Drives tab</a>
+<a href=//www.winehq.org/images/wwn289-theme-1.jpg">Drives tab</a>
 showing lots of different controls.  Of course it works with non-Winelib
 apps as well.  
-<a href="http://www.winehq.org/images/wwn289-theme-2.jpg">Here's</a> Word 
+<a href=//www.winehq.org/images/wwn289-theme-2.jpg">Here's</a> Word 
 Viewer showing a document and drop down menu.  All in all, theming seems
 to be progressing nicely.  The user interface in winecfg could use a little
 work, such as browsing for .msstyles files and automatically installing
@@ -118,7 +118,7 @@ understandable.
 <section 
 	title="Authentication &amp; ntlm_auth"
 	subject="secur32: Added real funcionality to the NTLM provider, try 5"
-	archive="http://www.winehq.com/hypermail/wine-patches/2005/08/0723.html"
+	archive=//www.winehq.org/hypermail/wine-patches/2005/08/0723.html"
 	posts="1"
 	startdate="08/27/2005"
 >
@@ -161,7 +161,7 @@ on the Samba website.  </p>
 <section 
 	title="Safedisc Update"
 	subject="Safedisc1 CD checks work, it tries to start the game but fails to do so"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/08/0444.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/08/0444.html"
 	posts="4"
 	startdate="08/22/2005"
 >
@@ -192,7 +192,7 @@ detect copy protection.
 <section 
 	title="WineHQ Downtime"
 	subject="WineHQ will be offline tomorrow"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/08/0459.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/08/0459.html"
 	posts="7"
 	startdate="08/23/2005"
 >
@@ -210,7 +210,7 @@ last week:</p>
 
 <p>Last I talked with Newman, WineHQ would be switching to Debian.  
 Updated versions of PHP will fix some of the bugs plaguing the 
-<a href="http://appdb.winehq.org">AppDB</a> developers.  As Jeremy
+<a href=//appdb.winehq.org">AppDB</a> developers.  As Jeremy
 mentioned, a new ISP local to St. Paul, Minnesota will also go in
 place.  Later in day Jeremy replied that the move had been postponed
 until the end of the month since the ISP wasn't ready.  </p>
@@ -231,7 +231,7 @@ And google will kindly mirror the web pages too :-)</p></quote>
 <section 
 	title="Non-continuable Exceptions"
 	subject="Re: [winedbg] Don't ever pass a NONCONTINUABLE exception"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/08/0417.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/08/0417.html"
 	posts="7"
 	startdate="08/22/2005"
 >
@@ -328,7 +328,7 @@ it's still far from trivial...</quote></p>
 <section 
 	title="Sharing IDL Generated Headers"
 	subject="solution for including itss.h in hhctrl.ocx"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/08/0471.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/08/0471.html"
 	posts="2"
 	startdate="08/23/2005"
 	enddate="08/24/2005"
@@ -365,14 +365,14 @@ the include directory (probably in include/wine).</quote></p>
 <section 
 	title="Google Talk"
 	subject="Googletalk and Wine"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/08/0518.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/08/0518.html"
 	posts="3"
 	startdate="08/26/2005"
 	enddate="08/27/2005"
 >
 <p>Google's programs have been popular for Wine users and developers
 to play with.  Picasa2 runs quite well as does the newer Google Earth
-(see WWN <a href="http://www.winehq.com/wwn/281#Google's%20Earth">#281</a>).
+(see WWN <a href=//www.winehq.org/wwn/281#Google's%20Earth">#281</a>).
 This week Andrew Ramage tried out the new 
 <a href="http://www.google.com/talk/">Google Talk</a>, but ran into
 some problems:</p>
@@ -381,7 +381,7 @@ Googletalk is a free chat program from Google with integrated VoIP.  I
 installed the program and received a message saying Googletalk required 
 Windows 2000, XP or 2003.  The program started after installation and 
 almost immediately crashed.  
-<a href="http://www.winehq.com/hypermail/wine-devel/2005/08/0518.html">Here</a>
+<a href=//www.winehq.org/hypermail/wine-devel/2005/08/0518.html">Here</a>
 is the output.</p></quote>
 
 <p>James Hawkins reported the particular error Andrew was seeing had

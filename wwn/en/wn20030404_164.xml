@@ -71,15 +71,15 @@
 <section 
 	title="News: Interviews, Reviews, Other News" 
 	subject="News"
-	archive="http://www.winehq.org/" 
+	archive=//www.winehq.org/" 
 	posts="4"
 	startdate="03/29/2003"
 	enddate="04/04/2003"
 >
 <topic>News</topic>
 
-<p>Have you looked at the new <a href="http://www.winehq.org">WineHQ</a>?
-We've got <a href="http://www.winehq.org/?interviews=1">interviews</a>!
+<p>Have you looked at the new <a href=//www.winehq.org">WineHQ</a>?
+We've got <a href=//www.winehq.org/?interviews=1">interviews</a>!
 The first one went up on Tuesday, Ove K&#229;ven was the victim.  Stay tuned for
 another one this Tuesday.  Thanks goes to Jeremy Newman for posting these on
 WineHQ for me.  I'd also like to thank Thomas Wickline, Juliusz Gonera, and
@@ -130,7 +130,7 @@ that below.)</p>
 <section 
 	title="Wine &amp; RedHat 9.0" 
 	subject=""
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/04/0.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0.html" 
 	posts="4"
 	startdate="04/03/2003"
 >
@@ -163,9 +163,9 @@ flag anyway.</quote></p>
 
 <p>So take it all with a grain of salt - most of the heavy lifting seems 
 done, but it might not work for you.  Refer to 
-<a href="http://www.winehq.org/index.phpwwn/163#Making%20Wine%20Run%20With%20glibc%202.3">issue
+<a href=//www.winehq.org/index.phpwwn/163#Making%20Wine%20Run%20With%20glibc%202.3">issue
 #163</a> for the appropriate workaround.  Or dig through the 
-<a href="http://www.winehq.org/hypermail/wine-devel/">wine-devel archives</a>.
+<a href=//www.winehq.org/hypermail/wine-devel/">wine-devel archives</a>.
 </p>
 </section>
 
@@ -175,7 +175,7 @@ done, but it might not work for you.  Refer to
 <section 
 	title="Compiling With gcc 2.96" 
 	subject="Re: Compiling WINE - Hopeless situation? :)"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/03/0818.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0818.html" 
 	posts="10"
 	startdate="03/29/2003"
 	enddate="03/30/2003"
@@ -193,7 +193,7 @@ version of RedHat</quote></p>
 to mention that it should work just fine.  The C++ ABI incompatibilities
 were a known problem, but it shouldn't have any effect on Wine.  The
 last time gcc 2.96 was mentioned was back 
-<a href="http://www.winehq.org/index.phpwwn/92#RH%207.1%20gcc%20fixes%20compiler%20bug">in issue #92</a>
+<a href=//www.winehq.org/index.phpwwn/92#RH%207.1%20gcc%20fixes%20compiler%20bug">in issue #92</a>
 when James Juran suggested ditching the gcc 2.96-69 packages that shipped with RH 7.0 in favor of
 the gcc-2.96-81 packages that came with RH 7.1.  </p>
 
@@ -207,7 +207,7 @@ the gcc-2.96-81 packages that came with RH 7.1.  </p>
 <section 
 	title="Duplicated Include Parameters?" 
 	subject="Compiling Wine sources with duplicated include parameters"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/04/0009.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0009.html" 
 	posts="9"
 	startdate="04/01/2003"
 	enddate="04/02/2003"
@@ -255,7 +255,7 @@ them there was a method to the madness,
 <section 
 	title="How to Just Access a Windows DLL" 
 	subject="Whither specmaker?"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/04/0000.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0000.html" 
 	posts="2"
 	startdate="04/01/2003"
 >

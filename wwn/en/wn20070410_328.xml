@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="328" date="04/10/2007" />
 <intro> <p>This is the 328th issue of the Wine Weekly News publication.
-Its main goal is to buy a house. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to buy a house. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="211" size="418" contrib="81" multiples="39" lastweek="47">
 
 <person posts="13" size="16" who="dmitry at codeweavers.com (Dmitry Timoshkov)" />
@@ -94,7 +94,7 @@ Its main goal is to buy a house. It also serves to inform you of what's going on
 <section 
 	title="Winebot"
 	subject="Winebot"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-March/055332.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-March/055332.html"
 	posts="11"
 >
 <topic>Utilities</topic>
@@ -210,7 +210,7 @@ little discussion of Winebot after that.</p>
 <section 
 	title="X Error"
 	subject="Random X errors caused by recent cursor patch?"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-April/055635.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-April/055635.html"
 	posts="6"
 >
 <topic>Graphics</topic>
@@ -235,7 +235,7 @@ a regression test easy, and I haven't tried myself yet.
 
 </p></quote>
 
-<p>Huw Davies <a href="http://www.winehq.com/pipermail/wine-devel/2007-April/055637.html">supplied</a> 
+<p>Huw Davies <a href=//www.winehq.org/pipermail/wine-devel/2007-April/055637.html">supplied</a> 
 a patch:</p>
 <quote who="Huw Davies"><p>
 Could you see if this helps?  It looks like XRenderFreePicture
@@ -256,7 +256,7 @@ worked fine.</p></quote>
 <section 
 	title="No Packages Yet For Ubuntu 7.04"
 	subject="wine latest packages for feisty"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-April/055767.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-April/055767.html"
 	posts="5"
 >
 <topic>Packaging</topic>
@@ -284,7 +284,7 @@ like I'm running Gentoo"</code> routine. </p>
 <section 
 	title="Fedora Packages"
 	subject="Fedora packages, where are they?"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-April/055675.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-April/055675.html"
 	posts="3"
 >
 <topic>Packaging</topic>
@@ -318,7 +318,7 @@ Additionally in my buildservice repositories:
 <section 
 	title="On the Fly Debugging"
 	subject="Changing debug channels on the fly"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-April/055698.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-April/055698.html"
 	posts="8"
 >
 <topic>Debugging</topic>
@@ -370,7 +370,7 @@ new debug channels on the fly, even if it would be doable)
 <section 
 	title="Sound Test"
 	subject="RFC - winecfg audio test"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-April/055719.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-April/055719.html"
 	posts="2"
 >
 <topic>Multimedia</topic>
@@ -430,7 +430,7 @@ winmm and dsound failing.</quote>
 <section 
 	title="Nautilus File Management"
 	subject="Wine desktop integration: current directory of app launched with doubleclick?"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-April/055728.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-April/055728.html"
 	posts="2"
 >
 <topic>Integration</topic>

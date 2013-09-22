@@ -78,7 +78,7 @@ emulator). </p>
 <section
   title="News"
   subject="News"
-  archive="http://www.winehq.org/news/announce.php?rel=1.64"
+  archive=//www.winehq.org/news/announce.php?rel=1.64"
   posts="1"
   startdate="07/11/2002"
   enddate="07/17/2002"
@@ -115,7 +115,7 @@ it didn't make it into this release.  </p>
 <section
   title="Using NT Pathnames"
   subject="Re: FindFirstFile/FindNextFile on SMB shares"
-  archive="http://www.winehq.org/hypermail/wine-devel/2002/07/0259.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2002/07/0259.html"
   posts="3"
   startdate="07/16/2002"
   enddate="07/16/2002"
@@ -184,7 +184,7 @@ in more detail to do this.
 <section 
 	title="AppDB Hits 1000 Entries" 
 	subject="AppDB: great news !" 
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/07/0210.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/07/0210.html" 
 	posts="3" 
 	startdate="07/12/2002" 
 >
@@ -204,7 +204,7 @@ that work the best:</p>
 <p>
 Look for applications with a rating of 5. For instance in a fake_windows
 configuration:</p><p>
-[ <a href="http://appdb.winehq.org/stdquery.php?fields%5B%5D=appFamily.appId&amp;fields%5B%5D=appFamily.appName&amp;fields%5B%5D=appFamily.webPage&amp;rating=5&amp;system=fake&amp;linesPerPage=100">
+[ <a href=//appdb.winehq.org/stdquery.php?fields%5B%5D=appFamily.appId&amp;fields%5B%5D=appFamily.appName&amp;fields%5B%5D=appFamily.webPage&amp;rating=5&amp;system=fake&amp;linesPerPage=100">
 <i>link</i></a> ]
 </p><p>
 And remember, preventing rating inflation is the responsibility of
@@ -225,7 +225,7 @@ everyone.
 <section 
 	title="Configuring for Sparc Solaris" 
 	subject="solaris configure strangness" 
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/07/0275.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/07/0275.html" 
 	posts="8" 
 	startdate="07/17/2002" 
 	enddate="07/18/2002"
@@ -303,7 +303,7 @@ platform also went away.</p>
 <section 
 	title="Memory Handling Problem Found" 
 	subject="Virtual Pages difference - Spotted with VirtualQuery()" 
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/07/0292.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/07/0292.html" 
 	posts="4" 
 	startdate="07/18/2002" 
 >
@@ -318,7 +318,7 @@ I spotted the problem that seemed coming from VirtualQuery function, but
 that is (I guess... hmmmm) more a problem of memory handling in wine.
 </p>
 <p>
-<a href="http://www.winehq.org/hypermail/wine-devel/2002/07/att-0292/01-VirtualQueryTest.cpp">
+<a href=//www.winehq.org/hypermail/wine-devel/2002/07/att-0292/01-VirtualQueryTest.cpp">
 Attached</a> is the test source (compiled in Borland CBuilder, but should work 
 with any compiler, apart some unuseful pragma's).
 If needed I can post the compiled too :-)

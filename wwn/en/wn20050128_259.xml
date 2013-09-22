@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="259" date="01/28/2005" />
 <intro> <p>This is the 259th issue of the Wine Weekly News publication.
-Its main goal is to go to Vegas. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to go to Vegas. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="291" size="1083" contrib="88" multiples="46" lastweek="38">
 
 <person posts="19" size="68" who="Mike Hearn" />
@@ -130,7 +130,7 @@ having a hard time making a change?
 <section
         title="Wine &amp; Viruses"
         subject="PRESS: run windows viruses with wine ..."
-        archive="http://www.winehq.org/hypermail/wine-devel/2005/01/0893.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2005/01/0893.html"
         posts="11"
         startdate="01/27/2005"
 >
@@ -201,7 +201,7 @@ executable for the infection.
 <section
         title="Wiki's, AppDB, and Other Forums"
         subject="Wine Knowledge Base"
-        archive="http://www.winehq.org/hypermail/wine-devel/2005/01/0729.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2005/01/0729.html"
         posts="35"
         startdate="01/19/2005"
 	enddate="01/28/2005"
@@ -304,11 +304,11 @@ called the "FAQ-O-Matic" that allowed people to update it in a
 way very similar to a wiki.  The problem is, no one ever updated
 it except for a couple of developers.  A few years ago the FAQ-O-Matic
 was replaced with a static 
-<a href="http://www.winehq.com/docs/wine-faq/index">FAQ</a> page.
+<a href=//www.winehq.org/docs/wine-faq/index">FAQ</a> page.
 It definitely seems to be more useful than the old system.</p>
 
 <p>Similarly, Wine's 
-<a href="http://appdb.winehq.org">AppDB</a> contains a ton of
+<a href=//appdb.winehq.org">AppDB</a> contains a ton of
 information about different applications.  Unfortunately, one
 of the problems the AppDB developers are running into is the
 sheer amount of junk that's collected in there.  (On a side note,
@@ -377,7 +377,7 @@ for the work they've done.</p>
 <section 
 	title="WineConf 2005: More Details" 
 	subject="WineConf 2005: hotel info"
-	archive="http://www.winehq.org/hypermail/wine-devel/2005/01/0723.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2005/01/0723.html" 
 	posts="2"
 	startdate="01/22/2005"
 	enddate="01/23/2005"
@@ -388,7 +388,7 @@ on lodging this week:</p>
 
 <quote who="Brian Vincent"><p>
 Earlier I added hotel info to the WineConf pages:
-<a href="http://www.winehq.com/wineconf/travel">
+<a href=//www.winehq.org/wineconf/travel">
   http://www.winehq.com/wineconf/travel</a>
 </p><p>
 Here's what you need to know:
@@ -400,7 +400,7 @@ early or staying late.</li>
  <li> you have to send mail to the address on the web page to reserve
 a room, note the "keyword"</li>
  <li> first come, first served, reservations must be made by March 29th</li>
- <li> did I mention <a href="http://www.winehq.com/wineconf/rsvp">RSVP'ing
+ <li> did I mention <a href=//www.winehq.org/wineconf/rsvp">RSVP'ing
    on WineHQ</a> as well?</li></ul>
 </p><p>    
  Thanks goes out to Hans-Ulrich Schmid (WRS) and Ulrich Gemkow
@@ -441,7 +441,7 @@ It should be a lot of fun.</p>
 <section 
 	title="More DCOM Notes" 
 	subject="More DCOM notes"
-	archive="http://www.winehq.org/hypermail/wine-devel/2005/01/0716.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2005/01/0716.html" 
 	posts="3"
 	startdate="01/22/2005"
 	enddate="01/23/2005"
@@ -453,7 +453,7 @@ those in italics</p>
 <quote who="Mike Hearn"><p>
 This document assumes you are familiar with the basics of DCOM. If you
 aren't read this first:
-<ul><a href="http://winehq.com/docs/winedev-guide/dcom-1">
+<ul><a href=//winehq.org/docs/winedev-guide/dcom-1">
 http://winehq.com/docs/winedev-guide/dcom-1</a></ul></p><p>
 
 This is not suitable study material for beginners. Don't say I didn't
@@ -707,7 +707,7 @@ Oh well, it was nice in theory.
 <section 
 	title="Web Based Presentations" 
 	subject="Simple web based presentation system useful for WineConf"
-	archive="http://www.winehq.org/hypermail/wine-devel/2005/01/0.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2005/01/0.html" 
 	posts="3"
 	startdate="01/23/2005"
 >

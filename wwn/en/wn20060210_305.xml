@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="305" date="02/10/2006" />
 <intro> <p>This is the 305th issue of the Wine Weekly News publication.
-Its main goal is to charge batteries. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to charge batteries. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="276" size="443" contrib="92" multiples="56" lastweek="42">
 
 <person posts="19" size="23" who="dank at kegel.com (Dan Kegel)" />
@@ -144,7 +144,7 @@ system license to do it."</p></quote>
 <section 
 	title="Eating Dogfood"
 	subject="The Dogfood Challenge: use Wine to run your web browser, etc."
-	archive="http://www.winehq.org/pipermail/wine-devel/2006-January/044498.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-January/044498.html"
 	posts="3"
 >
 <topic>Testing</topic>
@@ -228,7 +228,7 @@ tried with Ubuntu 5.10 and found similar results.</p>
 <section 
 	title="MP3 Decoding"
 	subject="MSACM: winemp3 codec crashes on seek, (no longer) reimplement with libmad?"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-February/044709.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-February/044709.html"
 	posts="8"
 >
 <topic>Multimedia</topic>
@@ -243,7 +243,7 @@ few AVIs with mp3-encoded soundtracks. What I can notice is that the
 sound has very annoying jitters, and in addition, it crashes on a seek. 
 Some people have noticed the jitters too 
 (
-<a href="http://bugs.winehq.org/show_bug.cgi?id=3853">http://bugs.winehq.org/show_bug.cgi?id=3853</a>). However, rather than 
+<a href=//bugs.winehq.org/show_bug.cgi?id=3853">http://bugs.winehq.org/show_bug.cgi?id=3853</a>). However, rather than 
 trying to fix the wine fork of mpeglib, I was toying with the idea of 
 reimplementing the codec as a libmad (GPL) wrapper. Are there any issues 
 I should take into account before trying this?</p></quote>
@@ -319,7 +319,7 @@ discussion, but it seems like Alex is still looking into it.</p>
 <section 
 	title="Demangling Symbols"
 	subject="VC++ demangling tool"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-February/044758.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-February/044758.html"
 	posts="9"
 >
 <topic>Utilities</topic>
@@ -368,7 +368,7 @@ code.</p>
 <section 
 	title="Winelib &amp; Easy Distribution"
 	subject="Somewhat disappointing experiences with Winelib and WTL"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-February/044685.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-February/044685.html"
 	posts="11"
 >
 <topic>Winelib</topic>

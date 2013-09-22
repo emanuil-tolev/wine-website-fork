@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="247" date="11/05/2004" />
 <intro> <p>This is the 247th issue of the Wine Weekly News publication.
-Its main goal is to grab the boards and slide on snow. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to grab the boards and slide on snow. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="185" size="667" contrib="71" multiples="42" lastweek="33">
 
 <person posts="15" size="75" who="Alexandre Julliard" />
@@ -83,7 +83,7 @@ Its main goal is to grab the boards and slide on snow. It also serves to inform 
 <section 
 	title="Windows Update Region Changes" 
 	subject="Update region patch"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/11/0048.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/11/0048.html" 
 	posts="4"
 	startdate="11/02/2004"
 	enddate="11/03/2004"
@@ -97,7 +97,7 @@ for it, not the least of which is wrapping
 up the DLL separation: </p>
 <quote who="Alexandre Julliard"><p>
  
-<a href="http://www.winehq.com/hypermail/wine-devel/2004/11/att-0048/01-wm.diff.gz">Here's</a> 
+<a href=//www.winehq.org/hypermail/wine-devel/2004/11/att-0048/01-wm.diff.gz">Here's</a> 
 the first step of moving the update region management to the
 server. The refresh on window moves is not optimized yet, so it will
 probably flicker quite a bit, but things should still be painted
@@ -135,7 +135,7 @@ later...</quote></p>
 <section 
 	title="InstallShield Status" 
 	subject="COM / InstallShield status?"
-	archive="http://www.winehq.com/hypermail/wine-devel/2004/10/0669.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/10/0669.html" 
 	posts="3"
 	startdate="10/31/2004"
 	enddate="11/02/2004"
@@ -157,9 +157,9 @@ the moment.  (Or would that be overkill?)</quote>
 
 Tony Lambregts pointed out Bugzilla does have reports of
 failures.  If you look in the AppDB under 
-<a href="http://appdb.winehq.org/bugs.php?appId=995">InstallShield
+<a href=//appdb.winehq.org/bugs.php?appId=995">InstallShield
 extractor</a> there are instructions for tracking down the 
-<a href="http://bugs.winehq.org/buglist.cgi?product=Wine&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_file_loc_type=allwords&amp;bug_file_loc=appdb%20995">related
+<a href=//bugs.winehq.org/buglist.cgi?product=Wine&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_file_loc_type=allwords&amp;bug_file_loc=appdb%20995">related
 Bugzilla entries</a>.  Mike Hearn followed up with a detailed explanation
 of where InstallShield stands:</p>
 <quote who="Mike Hearn"><p>
@@ -200,7 +200,7 @@ actually work :(</p></quote>
 <section
         title="Fun With Signals"
         subject="Re: ez-cdda sleep"
-        archive="http://www.winehq.com/hypermail/wine-devel/2004/11/0081.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/11/0081.html"
         posts="8"
         startdate="11/03/2004"
 	enddate="11/05/2004"
@@ -208,7 +208,7 @@ actually work :(</p></quote>
 <topic>Architecture</topic>
 <p>A few weeks ago Mike Hearn analyzed a debugging trace
 (see WWN issue
-<a href="http://www.winehq.com/wwn/242#Analyzing%20Debug%20Traces">#242</a>).
+<a href=//www.winehq.org/wwn/242#Analyzing%20Debug%20Traces">#242</a>).
 He came to the conclusion there was a problem resuming a suspended thread.
 After some work this week, he came up with a patch to fix it, but mentioned,
 <quote who="Mike Hearn">
@@ -327,7 +327,7 @@ will likely be because of portability concerns.
 <section
         title="Incorporating Public Domain Code"
         subject="Public domain source in wine"
-        archive="http://www.winehq.com/hypermail/wine-devel/2004/11/0084.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/11/0084.html"
         posts="5"
         startdate="11/04/2004"
         enddate="11/05/2004"
@@ -357,7 +357,7 @@ Having less code or being easily upgradable?</li></ol></p></quote>
 
 <p>(On a side note, Michael's rsaenh.dll, covered last week in
 WWN issue 
-<a href="http://www.winehq.com/wwn/246#MS%20Enhanced%20Provider%20Library">#246</a>
+<a href=//www.winehq.org/wwn/246#MS%20Enhanced%20Provider%20Library">#246</a>
 was committed to CVS shortly after he sent
 that email.)</p>
 
@@ -389,7 +389,7 @@ as a long as it was a noticeable amount.  </p>
 <section
         title="Advocating Wine"
         subject="Countering arguments against Wine"
-        archive="http://www.winehq.com/hypermail/wine-devel/2004/10/0641.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/10/0641.html"
         posts="10"
         startdate="10/30/2004"
 	enddate="11/01/2004"
@@ -400,9 +400,9 @@ argument usually sounded something like, <i>"Windows
 is evil therefore Wine is evil"</i>.  Hearing
 that gets boring pretty quick and a few years
 ago we put together two articles about
-<a href="http://www.winehq.com/why">why Wine
+<a href=//www.winehq.org/why">why Wine
 is important</a> and 
-<a href="http://www.winehq.com/myths">debunking
+<a href=//www.winehq.org/myths">debunking
 Wine myths</a>.  Dan Kegel decided to put together
 something similar:</p>
 <quote who="Dan Kegel"><p>
@@ -493,7 +493,7 @@ If I come up with a "better" reason #2, I'll let you know ;-) .
 <section
         title="Wine in the Spotlight"
         subject="Success Stories?"
-        archive="http://www.winehq.com/hypermail/wine-devel/2004/10/0619.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/10/0619.html"
         posts="5"
         startdate="10/28/2004"
 	enddate="10/30/2004"
@@ -543,7 +543,7 @@ source for success stories,
 <p>Anyone out there have a success story they'd like to
 share?  If you don't want to share things like the 
 business name that's ok.  See Hiji's 
-<a href="http://www.winehq.com/hypermail/wine-devel/2004/10/0619.html">original
+<a href=//www.winehq.org/hypermail/wine-devel/2004/10/0619.html">original
 email</a> for an address to send it
 to.  You could even mail it to the wine-devel list
 (wine-devel -at- winehq.org); I'm sure some developers
@@ -554,7 +554,7 @@ wouldn't mind hearing such stories.
 <section
         title="Patches Galore"
         subject="We hit 5mb for 3 months running!"
-        archive="http://www.winehq.com/hypermail/wine-devel/2004/10/0632.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2004/10/0632.html"
         posts="1"
         startdate="10/29/2004"
 >

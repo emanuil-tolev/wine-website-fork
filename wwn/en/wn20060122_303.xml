@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="303" date="01/22/2006" />
 <intro> <p>This is the 303rd issue of the Wine Weekly News publication.
-Its main goal is to paint. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to paint. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="570" size="1332" contrib="148" multiples="87" lastweek="60">
 
 <person posts="28" size="50" who="rob at codeweavers.com (Robert Shearman)" />
@@ -161,7 +161,7 @@ Its main goal is to paint. It also serves to inform you of what's going on aroun
 <section 
 	title="News: Wine 0.9.6 and CrossOver Office 5.0.1"
 	subject="News"
-	archive="http://www.winehq.com/announce/0.9.6"
+	archive=//www.winehq.org/announce/0.9.6"
 	posts="4"
 >
 <topic>News</topic>
@@ -175,7 +175,7 @@ fair share of days in this year.
 on some of the development that's occurred. </p><p>
 
 First, let's take a look at the recent Wine snapshots.  As we noted in
-the last issue (WWN <a href="http://www.winehq.com/wwn/302#Short%20Term%20Release%20Schedule">#302</a>),
+the last issue (WWN <a href=//www.winehq.org/wwn/302#Short%20Term%20Release%20Schedule">#302</a>),
 we're now on a shorter release schedule.  Alexandre is putting out new
 snapshots approximately every 2 weeks.  Wine 0.9.5 came out on January 4th
 with the following changes noted:
@@ -195,7 +195,7 @@ This week on January 19th another release came out with these additions:
 <p>As usual, you can download the 
 <a href="http://prdownloads.sourceforge.net/wine/wine-0.9.6.tar.bz2">source 
 code</a> from SourceForge or check out the 
-<a href="http://www.winehq.com/download">WineHQ download page</a> for a list
+<a href=//www.winehq.org/download">WineHQ download page</a> for a list
 of binary packages.</p>
 
 <p>We'll go into more detail below, but we made headlines on Slashdot for the
@@ -249,7 +249,7 @@ long as their subscription is up to date.  </p>
 <section
         title="Metafile Exploit"
         subject="RFC/PATCH: avoid metafilevirus problems"
-        archive="http://www.winehq.org/hypermail/wine-devel/2006/01/0.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2006/01/0.html"
         posts="3"
         startdate="01/02/2006"
 	enddate="01/03/2006"
@@ -292,7 +292,7 @@ and CrossOver Office 5.0.1.  </p>
 <section 
 	title="Updated Benchmarks"
 	subject="Benchmarks for 0.9.5"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-January/044190.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-January/044190.html"
 	posts="10"
 >
 <topic>WineHQ</topic>
@@ -325,7 +325,7 @@ now faster than XP on many.</p>
 <section
         title="Patch Statistics"
         subject="Some patch statistics"
-        archive="http://www.winehq.org/hypermail/wine-devel/2006/05/0.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2006/05/0.html"
         posts="2"
         startdate="01/02/2006"
 	enddate="01/03/2006"
@@ -374,7 +374,7 @@ otherwise and there's plenty of work to be done.</p>
 <section 
 	title="ntoskrnl.exe Status"
 	subject="ntoskrnl status with patch against wine-0.9.6"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-January/044250.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-January/044250.html"
 	posts="1"
 >
 <topic>Status Updates</topic>
@@ -405,7 +405,7 @@ Diff against wine-0.9.6.
 <section
         title="Ports: HP-UX, Solaris, AIX"
         subject="Wine on AIX 5.2 (PowerPC)"
-        archive="http://www.winehq.com/pipermail/wine-devel/2005-December/043772.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2005-December/043772.html"
         posts="6"
 >
 <topic>Ports</topic>
@@ -512,7 +512,7 @@ Wine should be more portable than ever soon.</p>
 <section
         title="Running Winelib Apps"
         subject="Compiling test application (Notepad) with winelib - executable segfaults"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-January/043794.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-January/043794.html"
         posts="3"
 >
 <topic>Winelib</topic>
@@ -553,7 +553,7 @@ to run it in the same way as all the rest exe files: <tt>wine notepad2</tt>
 <section
         title="MS Office on BSD"
         subject="Microsoft Office on FreeBSD"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-January/043934.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-January/043934.html"
         posts="1"
 >
 <topic>Ports</topic>
@@ -577,7 +577,7 @@ http://wiki.winehq.org/Office-BSD?action=show</a>
 <section
         title="Debugging With Eclipse"
         subject="Winelib debugging with eclipse in fc4"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-January/043927.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-January/043927.html"
         posts="2"
 >
 <topic>Debugging</topic>
@@ -641,7 +641,7 @@ You would this way:
 <section
         title="Winecfg &amp; Audio"
         subject="winecfg: Problems with audio configuration"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-January/043817.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-January/043817.html"
         posts="22"
 >
 <topic>Multimedia</topic>
@@ -715,7 +715,7 @@ wine: Unhandled page fault on write access to 0x44fec1ec at address
 The crash occurs in libartsc.so.0 as shown above.
 </p><p>
 Can you try this patch:  
-<ul><a href="http://bugs.winehq.org/attachment.cgi?id=1523&amp;action=view">
+<ul><a href=//bugs.winehq.org/attachment.cgi?id=1523&amp;action=view">
 http://bugs.winehq.org/attachment.cgi?id=1523&amp;action=view</a></ul></p><p>
 
 It tries to catch the exception in the arts library.  This is just a 
@@ -741,7 +741,7 @@ The external library needs to be fixed.
 <section
         title="Still Image Capture (STI)"
         subject="wine's setupapi.dll / newdev.dll ?"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-January/043831.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-January/043831.html"
         posts="14"
 >
 <topic>Multimedia</topic>

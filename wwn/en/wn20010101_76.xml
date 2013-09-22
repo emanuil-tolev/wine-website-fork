@@ -69,7 +69,7 @@ happened.</section>
 <section 
   title="Wine headers and configuration"
   subject="Fixes for unaligned memory accesses"
-  archive="http://www.winehq.org/hypermail/wine-devel/2000/12/0351.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2000/12/0351.html"
   posts="12"
   startdate="25 Dec 2000 00:00:00 -0800"
   enddate="29 Dec 2000 00:00:00 -0800"
@@ -131,7 +131,7 @@ underlying system (like <code>fd_set</code>:s).
 <section 
   title="TransGaming"
   subject="TransGaming DirectX Release"
-  archive="http://www.winehq.org/hypermail/wine-devel/2000/12/0358.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2000/12/0358.html"
   posts="4"
   startdate="27 Dec 2000 00:00:00 -0800"
   enddate="27 Dec 2000 00:00:00 -0800"
@@ -227,7 +227,7 @@ applying the patch.
 <section 
   title="Setting up Winedbg"
   subject="Problem with Winedbg"
-  archive="http://www.winehq.org/hypermail/wine-devel/2000/12/0366.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2000/12/0366.html"
   posts="12"
   startdate="29 Dec 2000 00:00:00 -0800"
   enddate="30 Dec 2000 00:00:00 -0800"
@@ -265,7 +265,7 @@ Unix pathname must be mappable to one of the Drive:s defined in your
 <section 
   title="Keyboard autorepeat"
   subject="keyboard autorepeat patch"
-  archive="http://www.winehq.org/hypermail/wine-devel/2000/12/0373.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2000/12/0373.html"
   posts="2"
   startdate="29 Dec 2000 00:00:00 -0800"
   enddate="30 Dec 2000 00:00:00 -0800"
@@ -293,7 +293,7 @@ isn't detectable). So this patch goes to the root of the problem...
 <p />
 
 Francois Gouget asked whether the patch was related to a given bug (
-<a href="http://bugs.winehq.org/show_bug.cgi?id=39">
+<a href=//bugs.winehq.org/show_bug.cgi?id=39">
 #39</a>):
 <quote who="Francois Gouget">
 The message sequence that Wine generates when a key is in auto-repeat

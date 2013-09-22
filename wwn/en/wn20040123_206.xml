@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="206" date="01/23/2004" />
 <intro> <p>This is the 206th issue of the Wine Weekly News publication.
-Its main goal is to drink the koolaid. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to drink the koolaid. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="261" size="950" contrib="68" multiples="41" lastweek="34">
 
 <person posts="28" size="84" who="Mike Hearn" />
@@ -89,7 +89,7 @@ a beer-soaked newsletter infatuated with Paris Hilton spam.  The
 headlining news this week is a new Wine vintage:</p>
 <quote who="Alexandre Julliard"><p>
 WHAT'S NEW with Wine-20040121: (see 
-<a href="http://cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.79&amp;content-type=text/x-cvsweb-markup">ChangeLog</a>
+<a href=//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.79&amp;content-type=text/x-cvsweb-markup">ChangeLog</a>
 for details)
        <ul> 
 	<li> Many improvements in the shell32 dll.</li>
@@ -218,7 +218,7 @@ interview with CodeWeavers' Jeremy White</a> on SearchEnterpriseLinux.com.</p>
 <section 
 	title="CodeWeavers CrossOver Compatibility Center" 
 	subject="RFC on our new initiative"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/01/0688.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/01/0688.html" 
 	posts="16"
 	startdate="01/20/2004"
 	enddate="01/22/2004"
@@ -458,7 +458,7 @@ to participate?  If so, then there really isn't a problem.
 <p>CodeWeavers has managed to build a nice community around its products.
 With a little luck that community will be sufficiently large enough to
 help maintain C4.  It's something the Wine community has never really been
-able to do with its <a href="http://appdb.winehq.org">AppDB</a>.  
+able to do with its <a href=//appdb.winehq.org">AppDB</a>.  
 That's not to say the AppDB isn't useful - if you dig deep enough you
 may find the solution to your problems.  However, taking it to the next
 step and allowing people to vote where commercial development $$$ will 
@@ -468,7 +468,7 @@ be spent seems like a wise move.</p>
 <section 
 	title="Winecfg Additions" 
 	subject="[winecfg] - audio tab w/autodetection, misc"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/01/0146.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/01/0146.html" 
 	posts="6"
 	startdate="01/04/2004"
 	enddate="01/19/2004"
@@ -523,7 +523,7 @@ for me though so I'd imagine it would work for most linux end-users.
 <section 
 	title="Graph of CVS Commit History" 
 	subject="Re: RFC on our new initiative"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/01/0725.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/01/0725.html" 
 	posts="4"
 	startdate="01/21/2004"
 >
@@ -556,7 +556,7 @@ to see the trend.  </p>
 <section 
 	title="MSHTML Changes" 
 	subject="Re: Try using the Mozilla Active X control in MSHTML"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/01/0525.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/01/0525.html" 
 	posts="5"
 	startdate="01/16/2004"
 	enddate="01/17/2004"
@@ -565,9 +565,9 @@ to see the trend.  </p>
 <p>We've sort of discussed this before.. the elusive IWebBrowser
 control.  It's used by AOL, Quicken, Outlook, and lots of other
 apps.  For more info, see the discussion last year in issues
-<a href="http://www.winehq.org/wwn/141#Web%20Browser%20Integration%20Needed">#141</a>,
-<a href="http://www.winehq.org/wwn/147#IWebBrowser%20Status">#147</a>, and
-<a href="http://www.winehq.org/wwn/153#IWebBrowser%20Status%20/%20More%20Ideas">#153</a>.
+<a href=//www.winehq.org/wwn/141#Web%20Browser%20Integration%20Needed">#141</a>,
+<a href=//www.winehq.org/wwn/147#IWebBrowser%20Status">#147</a>, and
+<a href=//www.winehq.org/wwn/153#IWebBrowser%20Status%20/%20More%20Ideas">#153</a>.
 Along similar lines, Mike McCormack posted a patch to
 begin using the Mozilla ActiveX control in place of Microsoft's
 parsing engine (MSHTML):</p>
@@ -625,7 +625,7 @@ other "real work" that I need to get done at the moment.
 <section 
 	title="Broken Apps: IE Setup and Lotus Notes?" 
 	subject="Lotus Notes broken in recent CVS"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/01/0753.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/01/0753.html" 
 	posts="2"
 	startdate="01/21/2004"
 	enddate="01/22/2004"
@@ -651,7 +651,7 @@ I've copied this one to wine-devel as well so Kevin can see the crash.
 <p>The work Mike refers to are some large patches from Kevin Koltzau
 that implement Windows' theming (i.e. uxtheme.dll).   We covered some
 discussion of uxtheme.dll back in
-<a href="http://www.winehq.org/wwn/191#Theming%20&amp;%20UXTheme.DLL">issue# 191</a>.
+<a href=//www.winehq.org/wwn/191#Theming%20&amp;%20UXTheme.DLL">issue# 191</a>.
 Kevin followed through with that work and now we're beginning to see
 the foundation of it appear.  As Kevin stated in one of the patches,
 <quote who="Kevin Koltzau">
@@ -673,14 +673,14 @@ noticed a problem with whatever recently changed..
 <p>Both of these apps see widespread use under Wine and there will likely
 be fixes to them soon.  If you have a problem with Wine-20040121 you
 may want to consider building Wine from 
-<a href="http://www.winehq.org/cvs">the latest CVS</a>.  It's
+<a href=//www.winehq.org/cvs">the latest CVS</a>.  It's
 not that hard to do and may fix your problems.</p>
 
 </section>
 <section 
 	title="Running MS Office" 
 	subject="[Fwd: Bug#224498: A recipe of potential use to MS Office 97 aspiring users on Debian]"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/01/0546.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/01/0546.html" 
 	posts="1"
 	startdate="01/16/2004"
 >
@@ -782,7 +782,7 @@ Emmanuel's was pretty amusing.)
 <section 
 	title="INSENG.DLL Stubs" 
 	subject="INSENG, IActiveSetup and ICifFile interfaces ..."
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/01/0631.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/01/0631.html" 
 	posts="3"
 	startdate="01/18/2004"
 >

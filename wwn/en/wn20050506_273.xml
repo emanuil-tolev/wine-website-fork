@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="273" date="05/06/2005" />
 <intro> <p>This is the 273rd issue of the Wine Weekly News publication.
-Its main goal is to sleep. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to sleep. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="419" size="1935" contrib="110" multiples="65" lastweek="37">
 
 <person posts="24" size="116" who="Shachar Shemesh" />
@@ -142,7 +142,7 @@ and <a href="http://linuxtoday.com/developer/2005050500626OSDVEV">LinuxToday</a>
 picked up that story and ran with it.  (Thanks to both of them.) 
 We didn't have any threads appear on wine-devel about pictures from
 WineConf.  I'm only aware of our large, annotated
-<a href="http://www.winehq.com/images/wineconf05_grp.jpg">group photo</a>
+<a href=//www.winehq.org/images/wineconf05_grp.jpg">group photo</a>
 and 
 <a href="http://kuschelt.net/gallery/2005wineconf?page=1">Marcus Meissner's
 photos</a>.  I need to put mine up, so maybe next week I'll have more to
@@ -190,7 +190,7 @@ you'd like covered here, let me know.</p>
 <section 
 	title="WineConf Videos" 
 	subject="WineConf 2005"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/05/0087.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2005/05/0087.html" 
 	posts="13"
 	startdate="05/03/2005"
 	enddate="05/05/2005"
@@ -247,7 +247,7 @@ this might help:</p>
 <section 
 	title="Wine Wiki" 
 	subject="Wine Wiki Status"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/05/0205.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2005/05/0205.html" 
 	posts="1"
 	startdate="05/05/2005"
 >
@@ -297,7 +297,7 @@ workings of InstallShield</a> and put it on the wiki.</p>
 <section
         title="DirectX 9 Updated, Not Merged"
         subject="DirectX 9 patches"
-        archive="http://www.winehq.org/hypermail/wine-devel/2005/04/0640.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2005/04/0640.html"
         posts="9"
         startdate="04/29/2005"
 	enddate="04/30/2005"
@@ -336,7 +336,7 @@ already know how to use the patch utility, but I did not.
 <section
         title="Short Circuiting Dialogs"
         subject="short-circuting a dialog box?"
-        archive="http://www.winehq.org/hypermail/wine-devel/2005/05/0050.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2005/05/0050.html"
         posts="8"
         startdate="05/03/2005"
 >
@@ -388,7 +388,7 @@ themselves?)  The ttydrv doesn't like trying to open the dialog:
 <section 
 	title="Crypt(Un)ProtectData" 
 	subject="Re: crypt32: CryptProtectData/CryptUnprotectData"
-	archive="http://www.winehq.org/hypermail/wine-devel/2005/05/0049.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2005/05/0049.html" 
 	posts="8"
 	startdate="05/03/2005"
 	enddate="05/04/2005"
@@ -398,10 +398,10 @@ themselves?)  The ttydrv doesn't like trying to open the dialog:
 and CryptUnprotectData.  These functions take some arbitrary data and
 encrypt/decrypt it.  There were some threads last month I didn't 
 cover as Kees was working on it (patch revision 
-<a href="http://www.winehq.com/hypermail/wine-devel/2005/04/0047.html">#1</a>,
-<a href="http://www.winehq.com/hypermail/wine-devel/2005/04/0083.html">#2</a>,
+<a href=//www.winehq.org/hypermail/wine-devel/2005/04/0047.html">#1</a>,
+<a href=//www.winehq.org/hypermail/wine-devel/2005/04/0083.html">#2</a>,
 and
-<a href="http://www.winehq.com/hypermail/wine-devel/2005/04/0114.html">#3</a>.)
+<a href=//www.winehq.org/hypermail/wine-devel/2005/04/0114.html">#3</a>.)
 There were some issues because Kees used the registry to store some
 data.  Kees also didn't actually implement the encryption - he just set up
 the framework to enable it for later.  Alexandre commented on the patch
@@ -460,7 +460,7 @@ documentation will remain valid.  :)
 </p><p>
 Is there somewhere I can find details on what's been completed in the 
 CryptoAPI?  The 
- <a href="http://winehq.com/winapi_stats">http://winehq.com/winapi_stats</a>
+ <a href=//winehq.org/winapi_stats">http://winehq.com/winapi_stats</a>
  page say it's at "21%".
 </p></quote>
 
@@ -539,7 +539,7 @@ DATA_BLOB's. (Well, he can of course. But only with some hacking involved.)
 <section 
 	title="New Program: getsffile" 
 	subject=""
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/05/0034.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2005/05/0034.html" 
 	posts="5"
 	startdate="05/01/2005"
 	enddate="05/06/2005"
@@ -583,17 +583,17 @@ rest is my own development.
 <section 
 	title="Benchmarks Galore" 
 	subject="Benchmarking Wine againt XP Part 1"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/04/0645.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2005/04/0645.html" 
 	posts="3"
 	startdate="04/29/2005"
 >
 <topic>Testing</topic>
 <p>Tom Wickline ran some benchmarks against Wine and Windows XP.  He
 presented his results in two different emails.  The 
-<a href="http://www.winehq.com/hypermail/wine-devel/2005/04/0645.html">first
+<a href=//www.winehq.org/hypermail/wine-devel/2005/04/0645.html">first
 set</a> of benchmarks cover 3DMark2000, 3DMark2001, Dronezmark, and PC Mark 04.
 The 
-<a href="http://www.winehq.com/hypermail/wine-devel/2005/04/0646.html">second
+<a href=//www.winehq.org/hypermail/wine-devel/2005/04/0646.html">second
 set</a> benchmarked Quake3, UT2004, GL Excess, Passmark PerformanceTest.
 Here's just a sample of the results from PC Mark 04:</p>
 <p><table>
@@ -627,7 +627,7 @@ distro, Linux config, Wine config as well as your system's hardware.
 <section 
 	title="WineConf Thoughts" 
 	subject="Wineconf thoughts for next year"
-	archive="http://www.winehq.com/"
+	archive=//www.winehq.org/"
 	posts="4"
 	startdate="05/01/2005"
 	enddate="05/04/2005"

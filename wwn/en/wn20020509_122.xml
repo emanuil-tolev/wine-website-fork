@@ -156,9 +156,9 @@ releases are somewhat infrequent with the last being five months ago.  However,
 if you haven't tried Wine in a while and aren't comfortable 
 
 <a href="/index.php?page=cvs">with CVS</a>, 
-<a href="http://source.winehq.org/source/ANNOUNCE">tarballs</a>, or even
+<a href=//source.winehq.org/source/ANNOUNCE">tarballs</a>, or even
 getting one of the
-<a href="http://www.winehq.org/download/">daily builds</a> 
+<a href=//www.winehq.org/download/">daily builds</a> 
 you might want to try out their RPM.  It's free, so if you break it you can 
 keep all the pieces.  
 
@@ -195,7 +195,7 @@ only get a t-shirt out of it.
 <section
   title="Quartz.dll Removal"
   subject="Re: wine/ ./winedefault.reg dlls/Makefile.in dlls/ ..."
-  archive="http://www.winehq.org/hypermail/wine-devel/2002/05/0040.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2002/05/0040.html"
   posts="11"
   startdate="05/02/2002"
 >
@@ -255,7 +255,7 @@ his code into the X11 tree.
 <section 
 	title="Bugzilla: A Call to Arms" 
 	subject="Bugzilla: A Call to Arms" 
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/04/0617.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/04/0617.html" 
 	posts="6" 
 	startdate="04/29/2002" 
 	enddate="04/30/2002"
@@ -293,7 +293,7 @@ following steps:
 
 <p />Jeremy Newman went ahead and set up an easy URL
 to remember that goes straight to Wine's Bugzilla:
-<a href="http://bugs.winehq.org">http://bug.winehq.org</a>
+<a href=//bugs.winehq.org">http://bug.winehq.org</a>
 
 </section>
 
@@ -306,7 +306,7 @@ to remember that goes straight to Wine's Bugzilla:
 <section 
 	title="SafeDisc Support" 
 	subject="SafeDisc-1" 
-	archive="http://www.winehq.org/hypermail/wine-patches/2002/04/0194.html" 
+	archive=//www.winehq.org/hypermail/wine-patches/2002/04/0194.html" 
 	posts="11" 
 	startdate="04/28/2002" 
 	enddate="04/30/2002"
@@ -338,7 +338,7 @@ Laurent added, <quote who="Laurent Pinchart">
 For those interrested, here's a FAQs about my SafeDisc support implementation.
 Feel free to comment.
 </quote>  The FAQs were attached to the email and can be found at:
-<a href="http://www.winehq.org/hypermail/wine-devel/2002/04/att-0616/01-safedisc.txt">
+<a href=//www.winehq.org/hypermail/wine-devel/2002/04/att-0616/01-safedisc.txt">
 http://www.winehq.org/hypermail/wine-devel/2002/04/att-0616/01-safedisc.txt</a>
 
 <p />A few people were concerned about DMCA violations, but Laurent
@@ -352,7 +352,7 @@ felt what he had implemented was within the guidelines.
 <section 
 	title="MinGW and ftruncate()" 
 	subject="Ftruncate check" 
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/05/0027.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/05/0027.html" 
 	posts="6" 
 	startdate="05/01/2002" 
 	enddate="05/05/2002"
@@ -409,7 +409,7 @@ or just fix makedep.
 <section 
 	title="Use Xrender From XFree86 4.2.0+" 
 	subject="Re: xrender patch" 
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/05/0036.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/05/0036.html" 
 	posts="8" 
 	startdate="05/01/2002" 
 	enddate="05/03/2002"
@@ -448,7 +448,7 @@ Duane Clark ran into a problem,
 </quote>
 
 <p />Jeremy's patch can be found at:
-<a href="http://www.winehq.org/hypermail/wine-devel/2002/05/0053.html">
+<a href=//www.winehq.org/hypermail/wine-devel/2002/05/0053.html">
  http://www.winehq.org/hypermail/wine-devel/2002/05/0053.html</a>
 Mentioned in the patch is:
 <quote who="Jeremy White"><p /><code>
@@ -481,7 +481,7 @@ Mentioned in the patch is:
 <section 
 	title="Native user32 DLL?" 
 	subject="native user32 dll" 
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/05/0114.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/05/0114.html" 
 	posts="12" 
 	startdate="05/03/2002" 
 	enddate="05/06/2002"
@@ -544,7 +544,7 @@ jumped in to debate it, but Alexandre squashed it with,
 <section 
 	title="Geography Lesson: Rumantsch" 
 	subject="Internationalisation (bug #452)" 
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/05/0190.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/05/0190.html" 
 	posts="9" 
 	startdate="05/07/2002" 
 	>
@@ -603,7 +603,7 @@ differences between the variants &lt;g&gt;
 <section 
 	title="Trading Patches" 
 	subject="Problem with InstallShield (Was Re: [Bug 629] Changed - Problem with InstallShield: ole:CoTreatAsClass(stub), ole:CoGetClassObject)" 
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/05/0157.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/05/0157.html" 
 	posts="48" 
 	startdate="05/06/2002" 
 	enddate="05/09/2002"
@@ -612,8 +612,8 @@ differences between the variants &lt;g&gt;
 <p />It's funny how mentioning InstallShield provokes lively threads.
 One of the last mentions of InstallShield lead to the call
 for an LGPL'ed Wine tree.  This time Andriy Palamarchuk pointed out
-<a href="http://bugs.winehq.org/">BugZilla</a> bug 
-<a href="http://bugs.winehq.org/show_bug.cgi?id=629">#629"</a> 
+<a href=//bugs.winehq.org/">BugZilla</a> bug 
+<a href=//bugs.winehq.org/show_bug.cgi?id=629">#629"</a> 
 concerning InstallShield v6 support.  Ove K&#229;ven replied:
 <quote who="Ove Kaaven"><p />
  Oh, well, it's a known problem. It's not easily fixable in the official
@@ -634,7 +634,7 @@ concerning InstallShield v6 support.  Ove K&#229;ven replied:
 <p />Several people wondered what the "ugly hack" was to make it work.
 Marcus Meissner, author of the out of process COM code in the LGPL'ed 
 Wine tree replied with a patch you can find at:
-<a href="http://www.winehq.org/hypermail/wine-devel/2002/05/0171.html">
+<a href=//www.winehq.org/hypermail/wine-devel/2002/05/0171.html">
 http://www.winehq.org/hypermail/wine-devel/2002/05/0171.html</a>
 
 <p />Alexandre thought the COM code was going to be exchanged with the

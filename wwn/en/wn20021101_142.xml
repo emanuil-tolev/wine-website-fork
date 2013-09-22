@@ -139,7 +139,7 @@ obScreenShot</a>.</p>
 
 
 <p>
-Also, check out the <a href="http://www.winehq.org/about/index.php?contrib">Contribute</a>
+Also, check out the <a href=//www.winehq.org/about/index.php?contrib">Contribute</a>
 page on WineHQ to find things that need to be worked on - Andi Mohr updated some of the 
 jobs on there this week.  And a lot of them don't even involve coding.  </p>
 </section>
@@ -151,7 +151,7 @@ jobs on there this week.  And a lot of them don't even involve coding.  </p>
 <section 
 	title="A Big To-Do List" 
 	subject="Versions &amp; mass-appeal"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/10/0959.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/10/0959.html" 
 	posts="120" 
 	startdate="10/30/2002"
 	enddate="11/01/2002"
@@ -161,11 +161,11 @@ jobs on there this week.  And a lot of them don't even involve coding.  </p>
 technical details of Wine and more oriented towards project management.  It
 seemed pretty much everyone was in agreement that everything surrounding Wine
 needed to be revamped, updated, or completely redone.  Discussion centered 
-around <a href="http://www.winehq.org/">WineHQ</a>, release management, documentation,
+around <a href=//www.winehq.org/">WineHQ</a>, release management, documentation,
 and configuring Wine.  Basically anything that's considered a barrier to 
 people using Wine was discussed.  I'm not going to go into the details of
 some of the discussion, though some of the topics are discussed below.  I
-urge you to check out the <a href="http://www.winehq.org/hypermail/wine-devel/">archives</a>
+urge you to check out the <a href=//www.winehq.org/hypermail/wine-devel/">archives</a>
 for more details.  Also, insofar as public forums go, mailing lists tend
 to only generate discussion when people disagree.  Most of the disagreement
 in the discussion has been over relatively minor points.  Does that
@@ -177,7 +177,7 @@ in general.  And most certainly I'll do a disservice
 to anyone who contributed to this discussion.  First, 
 let me just run down a quick summary of the threads 
 that generated this discussion:
-<ul><li><a href="http://www.winehq.org/hypermail/wine-devel/2002/10/0959.html">
+<ul><li><a href=//www.winehq.org/hypermail/wine-devel/2002/10/0959.html">
 	Versions &amp; mass-appeal</a>: Dimi Paun started 
 	discussion centered around attracting attention to
 	Wine and formulating a release plan starting with a version .8
@@ -188,13 +188,13 @@ that generated this discussion:
 	are by definition few, and so we don't have too many chances.
 	For Wine, these events are the upcoming x.y releases.</quote></li>
 
-    <li><a href="http://www.winehq.org/hypermail/wine-devel/2002/10/1045.html">So 
+    <li><a href=//www.winehq.org/hypermail/wine-devel/2002/10/1045.html">So 
 	lets say we do it</a>: Dimi collected a lot of the thoughts
 	in the previous thread and began discussion about some of the
 	shortcomings of Wine.  Among them he included website navigation,
 	lack of documentation, and overall difficulty running applications.</li>
 
-    <li><a href="http://www.winehq.org/hypermail/wine-devel/2002/10/1132.html">
+    <li><a href=//www.winehq.org/hypermail/wine-devel/2002/10/1132.html">
 	Wine 0.8 TODO v0.1</a>: Once again, Dimi summarized the threads
 	and formed it into a To-Do list.  Yes, to-do lists have been
 	discussed before, but have almost always centered around the 
@@ -229,7 +229,7 @@ That being said, this is my initial list. Comments,
 flames, suggestions, are appreciated.
 </p><p>
 <ul>
-<li> WineHQ work (Beta at: <a href="http://lostwages.winehq.org">http://lostwages.winehq.org</a>)
+<li> WineHQ work (Beta at: <a href=//lostwages.winehq.org">http://lostwages.winehq.org</a>)
  <ol>
   <li> Website redesign
      <ul><li>
@@ -307,7 +307,7 @@ flames, suggestions, are appreciated.
 <section 
 	title="Releasing WineSetupTk" 
 	subject="WineSetupTk"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/0055.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/11/0055.html" 
 	posts="2" 
 	startdate="11/01/2002"
 >
@@ -366,7 +366,7 @@ tool to have available.</p>
 <section 
 	title="FAQ Maintainer Needed" 
 	subject="Wine FAQ - call for a volunteer"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/0026.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/11/0026.html" 
 	posts="13" 
 	startdate="11/01/2002"
 >
@@ -375,7 +375,7 @@ tool to have available.</p>
 that can of worms.  Suffice to say, lots of it needs
 some care and attention.  Jeremy White put out a call
 for someone to maintain 
-<a href="http://www.winehq.org/FAQ">
+<a href=//www.winehq.org/FAQ">
 Wine's FAQ</a>:</p>
 <quote who="Jeremy White"><p>
 Andi and I have talked about the FAQ a lot on
@@ -428,7 +428,7 @@ be done with SGML in order to make converting
 it to other formats easy.  Anyone want to volunteer?
 It's as easy as 
 <a href="mailto:wine-devel@winehq.org?subject=Re: Wine FAQ - call for a volunteer">responding</a>
-to Jeremy's <a href="http://www.winehq.org/hypermail/wine-devel/2002/11/0026.html">
+to Jeremy's <a href=//www.winehq.org/hypermail/wine-devel/2002/11/0026.html">
 original post</a>.</p>
 
 </section>
@@ -441,7 +441,7 @@ original post</a>.</p>
 <section 
 	title="Conversion to -DSTRICT" 
 	subject="Status Report: -DSTRICT"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/10/0755.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/10/0755.html" 
 	posts="1" 
 	startdate="10/25/2002"
 >
@@ -498,7 +498,7 @@ separation of winmm. After that is yours.
 <section 
 	title="Wine/Windows Security Concerns" 
 	subject="Wine securityflaw."
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/10/0798.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/10/0798.html" 
 	posts="35" 
 	startdate="10/26/2002"
 	enddate="11/01/2002"
@@ -639,7 +639,7 @@ architecture changes.  </p>
 <section 
 	title="Detecting Wine vs. Windows" 
 	subject="How can an app detect it's running under WINE?"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/10/0704.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/10/0704.html" 
 	posts="" 
 	startdate="10/25/2002"
 >
@@ -689,7 +689,7 @@ DX12/DCOM/HAL/TANSTAAFL implementation is. :)</p></quote>
 <section 
 	title="IDL Generated obj_* Headers" 
 	subject="IDL/header issues"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/10/1160.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/10/1160.html" 
 	posts="8" 
 	startdate="10/31/2002"
 	enddate="11/01/2002"

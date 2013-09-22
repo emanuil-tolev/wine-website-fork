@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="327" date="03/30/2007" />
 <intro> <p>This is the 327th issue of the Wine Weekly News publication.
-Its main goal is to attend a LUG meeting for the first time in five years and meet folks with a lot more + signs in their geek codes. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to attend a LUG meeting for the first time in five years and meet folks with a lot more + signs in their geek codes. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="360" size="698" contrib="91" multiples="48" lastweek="46">
 
 <person posts="28" size="72" who="speeddymon at gmail.com (Tom Spear)" />
@@ -100,7 +100,7 @@ Its main goal is to attend a LUG meeting for the first time in five years and me
 <section 
 title="News: CrossOver &amp; Linspire"
 subject="News"
-archive="http://cvs.winehq.org/cvsweb/wine/ANNOUNCE?rev=1.138&amp;content-type=text/x-cvsweb-markup"
+archive=//cvs.winehq.org/cvsweb/wine/ANNOUNCE?rev=1.138&amp;content-type=text/x-cvsweb-markup"
 posts="1"
 >
 <topic>News</topic>
@@ -112,8 +112,8 @@ posts="1"
 <li> The usual assortment of Direct3D fixes.</li></ul></p></quote>
 
 <p>More detail can be found in the 
-<a href="http://cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.134&amp;content-type=text/x-cvsweb-markup">ChangeLog</a>.
-Download, run, <a href="http://bugs.winehq.org">report bugs</a>.
+<a href=//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.134&amp;content-type=text/x-cvsweb-markup">ChangeLog</a>.
+Download, run, <a href=//bugs.winehq.org">report bugs</a>.
 </p>
 
 <p>CodeWeavers has sold their CrossOver Office product through Linspire's
@@ -155,12 +155,12 @@ them available if the need arises. </p></quote>
 <section 
 title="Road to 1.0"
 subject="Road to 1.0"
-archive="http://www.winehq.com/pipermail/wine-devel/2007-March/055147.html"
+archive=//www.winehq.org/pipermail/wine-devel/2007-March/055147.html"
 posts="34"
 >
 <topic>Project Management</topic>
 <p>Wine 1.0... oh yes... some day it will happen.  The bold even go so far as to
-<a href="http://www.winehq.com/wwn/296#Beta:%20How%20We%20Got%20Here">make 
+<a href=//www.winehq.org/wwn/296#Beta:%20How%20We%20Got%20Here">make 
 predictions</a> of when it will happen.  Discussion of criteria for 1.0
 came up this week, which is usually the sure sign there's a jinx that will
 put off 1.0 by another year.  Dave Bialac started it innocently enough:</p>
@@ -237,7 +237,7 @@ area of Wine they'd like to see improved before stamping a 1.0 on the tree.
 </section>
 <section 
 title="DirectX To-Do List"
-subject="http://www.winehq.com/pipermail/wine-devel/2007-March/055390.html"
+subject=//www.winehq.org/pipermail/wine-devel/2007-March/055390.html"
 archive="Game road to 1.0" 
 posts="13"
 >
@@ -328,7 +328,7 @@ After OpenGL is stable, WineD3D can be moved over to WGL.</p></quote>
 <section 
 title="0.9.33 Benchmarks"
 subject="Wine Benchmarks and CAPS"
-archive="http://www.winehq.com/pipermail/wine-devel/2007-March/055483.html"
+archive=//www.winehq.org/pipermail/wine-devel/2007-March/055483.html"
 posts="6"
 >
 <topic>Testing</topic>
@@ -399,7 +399,7 @@ these tests prove the potential is there.</p>
 <section 
 title="Testing &amp; Older Windows Versions"
 subject="Excluding a Windows version from the tests"
-archive="http://www.winehq.com/pipermail/wine-devel/2007-March/055511.html"
+archive=//www.winehq.org/pipermail/wine-devel/2007-March/055511.html"
 posts="8"
 >
 <topic>Testing</topic>
@@ -445,7 +445,7 @@ things is fine.
 <section 
 title="Wine's Coverity Contact"
 subject="Wine's official Coverity contact(s)"
-archive="http://www.winehq.com/pipermail/wine-devel/2007-March/055416.html"
+archive=//www.winehq.org/pipermail/wine-devel/2007-March/055416.html"
 posts="3"
 >
 <topic>Project Management</topic>

@@ -120,7 +120,7 @@ next week!</p>
 </section><section 
 	title="Mac OS X Work" 
 	subject="Mac OS X and Wine troubles"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/04/0750.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0750.html" 
 	posts="7"
 	startdate="04/26/2003"
 	enddate="04/28/2003"
@@ -142,7 +142,7 @@ send patches, I hope they would be integrated...
 
 <p>Pierre then went on to list some configuration issues he ran 
 into and what appeared to be a problem with DLLs loading correctly.
-His <a href="http://www.winehq.org/hypermail/wine-patches/2003/04/0267.html">patch</a>
+His <a href=//www.winehq.org/hypermail/wine-patches/2003/04/0267.html">patch</a>
 included the following notes:</p>
 <quote who="Pierre d'Herbemont"><p>
 Here is a patch which mostly enables compilation on Mac OS X. The 
@@ -195,14 +195,14 @@ repository on SourceForge</a>.</p>
 </section><section 
 	title="Running Borland's Free Compiler (bcc)" 
 	subject="Re: Patch to get Borland's bcc 5.5 (free beer compiler) to work"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/04/0772.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0772.html" 
 	posts="5"
 	startdate="04/27/2003"
 	enddate="04/29/2003"
 >
 <topic>Fixes</topic>
 <p>Troy Rollo posted a 
-<a href="http://www.winehq.org/hypermail/wine-patches/2003/04/0268.html">small patch</a> adjusting addressable
+<a href=//www.winehq.org/hypermail/wine-patches/2003/04/0268.html">small patch</a> adjusting addressable
 memory that made Borland's free compiler (bcc 5.5) work.
 Initially it sounded like he had managed to somehow compile
 Wine with it, but really what he was doing was using Wine
@@ -249,7 +249,7 @@ same procedure I used to use under Windows.
 </section><section 
 	title="Updated Valgrind Instructions" 
 	subject="New patch for WINE support in valgrind uploaded to sourceforge"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/04/0779.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0779.html" 
 	posts="1"
 	startdate="04/28/2003"
 >
@@ -287,7 +287,7 @@ then build and install valgrind:
   make install
 </code></ul></p><p>
 Get a CVS checkout of WINE by following the instructions at:
-<ul><a href="http://www.winehq.org/?page=cvs">http://www.winehq.org/?page=cvs</a></ul>
+<ul><a href=//www.winehq.org/?page=cvs">http://www.winehq.org/?page=cvs</a></ul>
 </p><p>
 then configure (for debugging) and build:
 <ul><code>
@@ -313,7 +313,7 @@ enjoy.
 </section><section 
 	title="New Server Specs" 
 	subject="Re: server specs"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/04/0851.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0851.html" 
 	posts="1"
 	startdate="04/30/2003"
 	enddate="05/01/2003"
@@ -346,7 +346,7 @@ ironed out now.</p>
 </section><section 
 	title="Updated CVS Utilities" 
 	subject="[FYI] cvsup on glibc2.3 systems (e.g. RedHat 9)"
-	archive="http://www.winehq.org/hypermail/wine-devel/2003/04/0743.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0743.html" 
 	posts="3"
 	startdate="04/26/2003"
 	enddate="04/26/2003"

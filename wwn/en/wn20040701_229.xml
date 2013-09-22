@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="229" date="07/01/2004" />
 <intro> <p>This is the 229th issue of the Wine Weekly News publication.
-Its main goal is to light fireworks. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to light fireworks. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="90" size="290" contrib="38" multiples="18" lastweek="16">
 
 <person posts="11" size="32" who="Mike Hearn" />
@@ -50,7 +50,7 @@ Its main goal is to light fireworks. It also serves to inform you of what's goin
 <section 
 	title="News: Interview with Shachar, Reviews" 
 	subject="News"
-	archive="http://www.winehq.com/interview/16"
+	archive=//www.winehq.org/interview/16"
 	posts="2"
 	startdate="06/26/2004"
 	enddate="07/01/2004"
@@ -59,7 +59,7 @@ Its main goal is to light fireworks. It also serves to inform you of what's goin
 <p>
 This past week we discussed Wine's internationalization
 efforts with Shachar Shemesh.  
-<a href="http://www.winehq.com/interview/16">Read the interview.</a></p>
+<a href=//www.winehq.org/interview/16">Read the interview.</a></p>
 
 <p>In the as-seen-on-Slashdot category, they posted
 <a href="http://slashdot.org/article.pl?sid=04/07/01/1640217&amp;mode=thread">some
@@ -72,7 +72,7 @@ I'm headed out for a long weekend and am a bit crunched for time to
 fully complete this.  However, one thread I really wanted to cover
 both last week and this week concerned FreeBSD.  You can find the 
 whole thread 
-<a href="http://www.winehq.com/hypermail/wine-devel/2004/06/0164.html">here</a>.
+<a href=//www.winehq.org/hypermail/wine-devel/2004/06/0164.html">here</a>.
 Basically, there seems to be a problem with FreeBSD right now that's
 preventing it from running Wine and the proper fix seems to be changing
 the FreeBSD kernel.  John Birrell is looking into it, 
@@ -82,7 +82,7 @@ but it's unclear how long it will take to sort things out.</p>
 <section 
 	title="Fixed Mandrake RPMs" 
 	subject="Mandrake RPMs"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/06/0556.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0556.html" 
 	posts="3"
 	startdate="06/29/2004"
 >
@@ -111,7 +111,7 @@ However you can perform the simple fix Mike described.</p>
 <section 
 	title="Making Wine Upgradable" 
 	subject="[RFC] Wine upgrade procedure (spec)"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/06/0551.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0551.html" 
 	posts="4"
 	startdate="06/29/2004"
 >
@@ -204,13 +204,13 @@ the Wineserver process intact.)  </p>
 <section 
 	title="About Converting W-&gt;A Calls" 
 	subject="Cleaning up W-&gt;A calls"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/06/0547.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0547.html" 
 	posts="4"
 	startdate="06/29/2004"
 	enddate="06/30/2004"
 >
 <topic>Internationalization</topic>
-<p>Wine's <a href="http://www.winehq.com/janitorial">Janitorial 
+<p>Wine's <a href=//www.winehq.org/janitorial">Janitorial 
 Projects</a> are a great way to get involved.  We actually have a 
 pretty good track record of finishing things, but there's always
 more to do. One big project is to change the way ASCII and Unicode
@@ -291,7 +291,7 @@ VerInstallFileA</code></ul></p><p>
 When I made one of these conversions, I chose "<tt>dlls/shell32/shlexec.c: 
 shell32: ShellExecuteExW: illegal call to ShellExecuteExAand</tt>" very 
 laborious and was complicated. You can give a look at one I made: 
-<a href="http://cvs.winehq.com/patch.py?id=10692">http://cvs.winehq.com/patch.py?id=10692</a>
+<a href=//cvs.winehq.org/patch.py?id=10692">http://cvs.winehq.com/patch.py?id=10692</a>
 </p></quote>
 
 <p>Steven Edwards also had some suggestions,

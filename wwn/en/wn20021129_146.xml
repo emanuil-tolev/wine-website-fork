@@ -90,7 +90,7 @@ Windows emulator).</p>
 <section 
 	title="News: Wine-20021125" 
 	subject="News"
-	archive="http://cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.65&amp;content-type=text/x-cvsweb-markup" 
+	archive=//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.65&amp;content-type=text/x-cvsweb-markup" 
 	posts="2" 
 	startdate="11/23/2002"
 	enddate="11/29/2002"
@@ -99,7 +99,7 @@ Windows emulator).</p>
 <p>Alexandre released Wine-20021125 on Tuesday with this note:</p>
 <quote who="Alexandre Julliard"><p>
 WHAT'S NEW with Wine-20021125: (see
-<a href="http://cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.65&amp;content-type=text/x-cvsweb-markup">ChangeLog</a>
+<a href=//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.65&amp;content-type=text/x-cvsweb-markup">ChangeLog</a>
 for details)
 
 <ul>
@@ -165,7 +165,7 @@ linux kernel module.
 <section 
 	title="Porting Apps With Winelib" 
 	subject="Winelib Apps v0.1"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/1374.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/11/1374.html" 
 	posts="16" 
 	startdate="11/25/2002"
 	enddate="11/27/2002"
@@ -181,7 +181,7 @@ Version 0.1 of the Winelib Applications page is available here:
 	http://63.138.153.104/wine/Winelib-Apps-0.1.html</a>
 </ul></p><p>
 The current version is always available at this address
-<ul><a href="http://www.winehq.org/?page=winelib">
+<ul><a href=//www.winehq.org/?page=winelib">
 	http://www.winehq.org/?page=winelib</a>
 </ul></p><p>
 Your comments, and suggestions are highly appreciated.
@@ -235,7 +235,7 @@ would love to hear about it.
 <section 
 	title="Porting to a Standalone App" 
 	subject="Fwd: Re: [putty]Winelib support + patch"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/1369.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/11/1369.html" 
 	posts="4" 
 	startdate="11/25/2002"
 >
@@ -292,7 +292,7 @@ for normal old apps written in C,
 <section 
 	title="Submitting Multiple Patches" 
 	subject="Re: Some additions to D3D"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/1326.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/11/1326.html" 
 	posts="2" 
 	startdate="11/24/2002"
 >
@@ -328,7 +328,7 @@ process asked,
 <section 
 	title="Debugging wineserver" 
 	subject="How to debug wineserver"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/1514.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/11/1514.html" 
 	posts="3" 
 	startdate="11/28/2002"
 >
@@ -359,7 +359,7 @@ process asked,
 <section 
 	title="Shortening Debug Logs" 
 	subject="Re: Some fixes in capabilities"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/10/0378.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/10/0378.html" 
 	posts="7" 
 	startdate="11/26/2002"
 >
@@ -397,7 +397,7 @@ and then turn it on again when needed.
 <section 
 	title="OpenGL &amp; Double Buffering" 
 	subject="And opengl regression"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/1332.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/11/1332.html" 
 	posts="6" 
 	startdate="11/24/2002"
 	enddate="11/25/2002"
@@ -407,7 +407,7 @@ and then turn it on again when needed.
 loading of OpenGL:</p>
 <quote who="Duane Clark"><p>
  The patch for dynamic loading of opengl,
-<a href="http://www.winehq.org/hypermail/wine-cvs/2002/11/0151.html">
+<a href=//www.winehq.org/hypermail/wine-cvs/2002/11/0151.html">
  http://www.winehq.org/hypermail/wine-cvs/2002/11/0151.html</a>
 </p><p>
  has caused a (apparently minor) regression in the program earthquake
@@ -482,7 +482,7 @@ Possible, yes. Easy, definitely not ;-)</quote></p>
 <section 
 	title="Wine Under Cygwin" 
 	subject="compiling wine under cygwin - status"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/1522.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/11/1522.html" 
 	posts="4" 
 	startdate="11/28/2002"
 >
@@ -515,7 +515,7 @@ first... Any help with this appreciated :-)
 
 <p>For a complete list of what's working and what's not, check
 out David's 
-<a href="http://www.winehq.org/hypermail/wine-devel/2002/11/1522.html">
+<a href=//www.winehq.org/hypermail/wine-devel/2002/11/1522.html">
 original post</a></p>
 
 <p>In response to David's question about ptrace.c functionality,
@@ -552,7 +552,7 @@ Dimi Paun wrote,
 <section 
 	title="Quick Response to SwitchToThread() Problem" 
 	subject="Whither SwitchToThread()?"
-	archive="http://www.winehq.org/hypermail/wine-devel/2002/11/1429.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2002/11/1429.html" 
 	posts="12" 
 	startdate="11/26/2002"
 	enddate="11/27/2002"

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="312" date="04/28/2006" />
 <intro> <p>This is the 312th issue of the Wine Weekly News publication.
-Its main goal is to attend weddings. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to attend weddings. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="614" size="1184" contrib="134" multiples="88" lastweek="51">
 
 <person posts="32" size="32" who="julliard at winehq.org (Alexandre Julliard)" />
@@ -207,7 +207,7 @@ few weeks worth covering, I just didn't get to them all here.  </p>
 <section
         title="WineConf 2006"
         subject="Announcing Wineconf 2006, urgent need for head count"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-April/047170.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-April/047170.html"
         posts="1"
         startdate="04/27/2006"
 >
@@ -240,7 +240,7 @@ We may be able to ask for 50 rooms, and then get another
 3 or 4, although that's not guaranteed.
 </p><p>
 So, *if you want a room at Wineconf*, please fill in this form ASAP:
- <ul><a href="http://www.winehq.org/wineconf/survey06">
+ <ul><a href=//www.winehq.org/wineconf/survey06">
  http://www.winehq.org/wineconf/survey06</a></ul></p><p>
 
 If you're not sure you'll make it, but think you might,
@@ -258,7 +258,7 @@ the project, it's a great event to come to.  </p>
 <section
         title="SambaXP &amp; Wine"
         subject="SambaXP update"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-April/047137.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-April/047137.html"
         posts="4"
         startdate="04/25/2005"
 >
@@ -354,7 +354,7 @@ without linking to it.</p>
 <section
         title="Summer of Code Kickoff"
         subject="Summer of Code 2006 is on!"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-April/046662.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-April/046662.html"
         posts="1"
         startdate="04/14/2006"
 >
@@ -408,14 +408,14 @@ someone else to work on.</p>
 
 <p>Below you'll find some of the ideas that were presented.  The next issue
 of WWN will contain more, but I'd highly recommend
-<a href="http://www.winehq.com/pipermail/wine-devel/2006-April/thread.html">reading 
+<a href=//www.winehq.org/pipermail/wine-devel/2006-April/thread.html">reading 
 wine-devel</a> to see all the project ideas mentioned.</p>
 
 </section>
 <section
         title="SoC: DIB Engine"
         subject="SOC: Integrate DIB Engine"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-April/046781.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-April/046781.html"
         posts="6"
         startdate="04/18/2006"
 >
@@ -477,7 +477,7 @@ Good! We already have the mentor for this task then ;)</quote></p>
 <section
         title="SoC: Early Usage of DLLs"
         subject="SOC Idea: Easy usage of native DLLs in Linux programs"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-April/046779.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-April/046779.html"
         posts="5"
         startdate="04/18/2006"
 >
@@ -550,7 +550,7 @@ be extremely useful.</p>
 <section
         title="SoC: SafeDisc"
         subject="SOC Proposal - SafeDisc Support"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-April/047018.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-April/047018.html"
         posts="1"
         startdate="04/23/2006"
 >
@@ -583,7 +583,7 @@ difficult part).
 <section
         title="SoC: Java Runtime Environment"
         subject="SoC idea: get Sun's JRE working well"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-April/046972.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-April/046972.html"
         posts="3"
         startdate="04/22/2006"
 >
@@ -594,7 +594,7 @@ Wine:</p>
 <quote who="Dan Kegel"><p>
 A lot of applications rely on Sun's JRE, some even use it in their installers!
 <ul>
-(cf. <a href="http://bugs.winehq.org/show_bug.cgi?id=5040">
+(cf. <a href=//bugs.winehq.org/show_bug.cgi?id=5040">
 http://bugs.winehq.org/show_bug.cgi?id=5040</a>
  )</ul></p><p>
 Getting Sun's JRE working properly on Wine would be a great project.</p></quote>
@@ -610,7 +610,7 @@ I suspect things might be close to working.</p>
 <section
         title="SoC: finish wcmd"
         subject="SoC idea: finish wcmd"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-April/046903.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-April/046903.html"
         posts="6"
         startdate="04/21/2006"
 >
@@ -642,7 +642,7 @@ he hadn't looked into the specifics of it yet.</p>
 <section
         title="SoC: Better Valgrind Support"
         subject="[SOC] proposal -&gt; valgrind"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-April/046842.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-April/046842.html"
         posts="2"
         startdate="04/19/2006"
 >
@@ -687,7 +687,7 @@ knowledge about valgrind).
 <section 
 	title="Font and Edit Control Issue"
 	subject="Wine fonts too big for their input fields."
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-April/046538.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-April/046538.html"
 	posts="16"
 >
 <topic>Fonts</topic>
@@ -712,11 +712,11 @@ Should these bugs marked as duplicates?
 
 [1]
 <ul>
-<li><a href="http://bugs.winehq.org/show_bug.cgi?id=2389">
+<li><a href=//bugs.winehq.org/show_bug.cgi?id=2389">
 http://bugs.winehq.org/show_bug.cgi?id=2389</a></li>
-<li><a href="http://bugs.winehq.org/show_bug.cgi?id=4162">
+<li><a href=//bugs.winehq.org/show_bug.cgi?id=4162">
 http://bugs.winehq.org/show_bug.cgi?id=4162</a></li>
-<li><a href="http://bugs.winehq.org/show_bug.cgi?id=5052">
+<li><a href=//bugs.winehq.org/show_bug.cgi?id=5052">
 http://bugs.winehq.org/show_bug.cgi?id=5052</a></li>
 </ul></p></quote>
 
@@ -766,9 +766,9 @@ is) and that you're right on the edge of it kicking in.
 
 <p>There were a lot of back and forth emails.  Duane made some screenshots
 illustrating the issue.  The
-<a href="http://www.winehq.org/pipermail/wine-devel/attachments/20060412/0a711ecc/eights.png">first</a>
+<a href=//www.winehq.org/pipermail/wine-devel/attachments/20060412/0a711ecc/eights.png">first</a>
 clearly shows 8's being rendered incorrectly while the
-<a href="http://www.winehq.org/pipermail/wine-devel/attachments/20060412/0a711ecc/nines.png">second</a>
+<a href=//www.winehq.org/pipermail/wine-devel/attachments/20060412/0a711ecc/nines.png">second</a>
 shows 9's correct.  A reference on MSDN seemed to at least touch on the
 issue, but it was confusingly vague on the topic.
 </p>

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="311" date="04/10/2006" />
 <intro> <p>This is the 311th issue of the Wine Weekly News publication.
-Its main goal is to carve corn. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to carve corn. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="252" size="434" contrib="77" multiples="38" lastweek="36">
 
 <person posts="22" size="21" who="julliard at winehq.org (Alexandre Julliard)" />
@@ -131,20 +131,20 @@ Wine was mentioned.</p>
 <a href="http://newsroom.eworldwire.com/view_release.php?id=14166">run
 PartyPoker</a>.  Running poker clients on Linux with Wine isn't exactly
 news, but it seems more and more people are discovering it.  Check out
-the <a href="http://appdb.winehq.org/search.php?q=Poker">AppDB</a> for 
+the <a href=//appdb.winehq.org/search.php?q=Poker">AppDB</a> for 
 a full list of poker clients and their status on Wine.</p>
 
 </section>
 <section 
 	title="Microsoft WGA &amp; Wine"
 	subject="WINE &amp; Microsoft WGA"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-April/046320.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-April/046320.html"
 	posts="3"
 >
 <p>The Windows Genuine Advantage came up last year when it was discovered
 Wine was being searched for and denied access.  See WWN issues
-<a href="http://www.winehq.com/wwn/263#News:%20WGA%20Articles,%20Misc%20Press">#263</a>
-and <a href="http://www.winehq.com/wwn/264#News:%20WGA%20Update">#264</a>
+<a href=//www.winehq.org/wwn/263#News:%20WGA%20Articles,%20Misc%20Press">#263</a>
+and <a href=//www.winehq.org/wwn/264#News:%20WGA%20Update">#264</a>
 for the background on that.  At the time there was a lot of speculation
 concerning whether Microsoft would allow application updates if they
 were running with Wine.  Marcus Meissner discovered the answer in a Microsoft 
@@ -179,7 +179,7 @@ changed to read "<i>Wine</i>" rather than "<i>WINE</i>"?  </p>
 <section 
 	title="Audio Latency Issues"
 	subject="Re: Implement THREAD_PRIORITY_TIME_CRITICAL"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-April/046139.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-April/046139.html"
 	posts="55"
 >
 <topic>Multimedia</topic>
@@ -360,7 +360,7 @@ pre-release kernels until 2.6.17.
 <section 
 	title="Coverity Scans Wine"
 	subject="Coverity doing scans of Wine codebase!"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-April/046347.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-April/046347.html"
 	posts="23"
 >
 <topic>Debugging</topic>
@@ -461,7 +461,7 @@ false positives triggered by the checker.  </p>
 <section 
 	title="sft2ttf: Getting Rid of FontForge"
 	subject="tasklet - sfd2ttf - eliminate dependency on FontForge (for anybody who's interested)"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-April/046345.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-April/046345.html"
 	posts="1"
 >
 <topic>Fonts</topic>
@@ -495,7 +495,7 @@ to write it.   Any volunteers?
 <section 
 	title="DirectDraw Update"
 	subject="DirectDraw status"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-April/046442.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-April/046442.html"
 	posts="2"
 >
 <topic>DirectX</topic>
@@ -547,7 +547,7 @@ and the door opens to using accelerated OpenGL calls.</p>
 <section 
 	title="SourceForge Community Choice Awards"
 	subject="strange win in 2006 SourceForge.net Community Choice Awards"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-March/046355.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-March/046355.html"
 	posts="1"
 >
 <p>Marcus also mentioned Wine had indirectly won an award for something
@@ -572,7 +572,7 @@ I have now added us to the "Desktop environment" category.
 <section 
 	title="Cross Process Calls"
 	subject="NtProtectVirtualMemory"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-April/046330.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-April/046330.html"
 	posts="9"
 >
 <topic>Architecture</topic>
@@ -661,7 +661,7 @@ experiment to then port it over to WineD3D.</p></quote>
 <section 
 	title="gPhoto &amp; TWAIN"
 	subject="RFC/PATCH: Twain + Gphoto"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-April/046457.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-April/046457.html"
 	posts="1"
 >
 <topic>Integration</topic>

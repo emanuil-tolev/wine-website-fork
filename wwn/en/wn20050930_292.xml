@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="292" date="09/30/2005" />
 <intro> <p>This is the 292nd issue of the Wine Weekly News publication.
-Its main goal is to search for the DBA hat. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to search for the DBA hat. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="182" size="347" contrib="70" multiples="41" lastweek="28">
 
 <person posts="9" size="16" who="wino at piments.com" />
@@ -82,7 +82,7 @@ Its main goal is to search for the DBA hat. It also serves to inform you of what
 <section 
 	title="Summer of Code Update: Single Sign-On"
 	subject="Single sign-on SoC project summary"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-September/040340.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-September/040340.html"
 	posts="1"
 >
 <topic>Status Updates</topic>
@@ -157,7 +157,7 @@ keep doing so for a while.
 <section 
 	title="Summer of Code Update: Theming"
 	subject="Theming SoC outcome"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-September/040289.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-September/040289.html"
 	posts="1"
 >
 <topic>Status Updates</topic>
@@ -198,7 +198,7 @@ so I guess I'll stick around a bit longer and try to get them fixed.
 <section 
 	title="Red Hat/Fedora RPMs"
 	subject="RH8 spec for 20050830"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-September/040377.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-September/040377.html"
 	posts="2"
 >
 <topic>Build Process</topic>
@@ -225,7 +225,7 @@ Anything missing?</p></quote>
 <quote who="Vincent Beron"><p>
 
 
-<a href="http://www.winehq.com/pipermail/wine-devel/2005-September/040387.html">Attached</a>
+<a href=//www.winehq.org/pipermail/wine-devel/2005-September/040387.html">Attached</a>
  is the spec file I'm using for 20050830 on RH8 (not finished
 building on all other distributions yet).</p><p>
 --sysconfdir is not needed anymore by configure (harmless if present).
@@ -241,7 +241,7 @@ with the fonts.
 <section 
 	title="Build Changes"
 	subject="build errors"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-September/040381.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-September/040381.html"
 	posts="8"
 >
 <topic>Build Process</topic>
@@ -292,7 +292,7 @@ tests). </quote></p>
 <section 
 	title="Compile Problems from Wine-20050830"
 	subject="Problem Resolve"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-September/040420.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-September/040420.html"
 	posts="5"
 >
 <topic>Fixes</topic>
@@ -347,7 +347,7 @@ that point.</li></ol></p></quote>
 <section 
 	title="Lotus Notes Breakage and Fix"
 	subject="Wine CVS as of 9/25/2005 Kills Notes"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-September/.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-September/.html"
 	posts="11"
 >
 <topic></topic>
@@ -390,7 +390,7 @@ atrocious even by Microsoft standards. At a guess Notes has called
 ScriptGetFontProperties, which should populate the script variable.
 </p><p>
 Try the 
-<a href="http://www.winehq.com/pipermail/wine-devel/2005-September/040393.html">following</a>
+<a href=//www.winehq.org/pipermail/wine-devel/2005-September/040393.html">following</a>
  (untested, may not even compile) as a starting point (You
 will need to fill out the ScriptFreeCache entry in the spec file).
 </p></quote>
@@ -402,7 +402,7 @@ will need to fill out the ScriptFreeCache entry in the spec file).
 <section 
 	title="Finding Stack Corruption"
 	subject="Help debugging a problem!"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-September/040426.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-September/040426.html"
 	posts="8"
 >
 <topic>Debugging</topic>

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="224" date="05/28/2004" />
 <intro> <p>This is the 224th issue of the Wine Weekly News publication.
-Its main goal is to perform switch cutovers. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to perform switch cutovers. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="141" size="494" contrib="60" multiples="26" lastweek="23">
 
 <person posts="13" size="30" who="Alexandre Julliard" />
@@ -77,7 +77,7 @@ Its main goal is to perform switch cutovers. It also serves to inform you of wha
 	enddate="05/28/2004"
 >
 <topic>News</topic>
-<p>We published <a href="http://www.winehq.com/interview/14">an interview 
+<p>We published <a href=//www.winehq.org/interview/14">an interview 
 with Steven Edwards</a> this week.  Steven has been working on Wine for about 
 three years and has been instrumental in getting Wine in a usable condition 
 for the <a href="http://www.reactos.org">ReactOS</a> project.  We ended up 
@@ -114,7 +114,7 @@ so far and it has a lot of good things to say about the product.) </p>
 <section 
 	title="Testing - Volunteers Needed" 
 	subject="Request for winetesting volunteers"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/05/0486.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/05/0486.html" 
 	posts="3"
 	startdate="05/28/2004"
 	enddate="05/29/2004"
@@ -139,7 +139,7 @@ current state to the service and receives a script to process that may direct
 it to check in later, download a winetest and run it or upgrade itself.  
 Thanks to Ferenc the winetest results are sent back to winehq and can be 
 accessed via 
-<a href="http://test.winehq.org/data/">http://test.winehq.org/data/</a>  
+<a href=//test.winehq.org/data/">http://test.winehq.org/data/</a>  
 Pretty formatting of the results is coming soon ;-)
 </p><p>
 We need volunteers that are willing to participate in the winetesting process 
@@ -183,7 +183,7 @@ it's fixed.  </p>
 <section 
 	title="Mandrake 10 &amp; Corrupted Registries" 
 	subject="Crash and corrupted registry"
-	archive="http://www.winehq.com/hypermail/wine-devel/2004/05/0372.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/05/0372.html" 
 	posts="5"
 	startdate="05/23/2004"
 	enddate="05/26/2004"
@@ -229,7 +229,7 @@ fsync() in the saving code and see if this makes a difference.</quote></p>
 <section 
 	title="Internationalization of Calendars" 
 	subject="Calendars"
-	archive="http://www.winehq.com/hypermail/wine-devel/2004/05/0376.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/05/0376.html" 
 	posts="4"
 	startdate="05/22/2004"
 	enddate="05/24/2004"
@@ -339,7 +339,7 @@ until sunset on Saturday (half hour after).
 <section 
 	title="Serial Issues" 
 	subject="General serial communications issues"
-	archive="http://www.winehq.com/hypermail/wine-devel/2004/05/0389.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/05/0389.html" 
 	posts="4"
 	startdate="05/24/2004"
 	enddate="05/25/2004"
@@ -355,7 +355,7 @@ They all exhibit the same situation, DATA seems to go OUT, but never seems
 to come IN.
 Several other people have experienced the same thing, as seen in this bug 
 report:
-<ul><a href="http://bugs.winehq.org/show_bug.cgi?id=2115">
+<ul><a href=//bugs.winehq.org/show_bug.cgi?id=2115">
 http://bugs.winehq.org/show_bug.cgi?id=2115</a></ul>
 </p><p>
 By the way, TeraTerm does work fine in TCP/IP mode, so it's definitely a 
@@ -386,13 +386,13 @@ console-mode applications operate pretty much as expected.
 I'm using two patches applied to a recent CVS.  The first is a patch
 Eric Pouech recently posted:
 
-    <ul><a href="http://www.winehq.org/hypermail/wine-devel/2004/05/0297.html">
+    <ul><a href=//www.winehq.org/hypermail/wine-devel/2004/05/0297.html">
     http://www.winehq.org/hypermail/wine-devel/2004/05/0297.html</a></ul>
 </p><p>
 The second is a patch of my own to suppress warnings when using a
 pseudo-tty as a serial port:
 
-    <ul><a href="http://www.winehq.org/hypermail/wine-devel/2004/05/0278.html">
+    <ul><a href=//www.winehq.org/hypermail/wine-devel/2004/05/0278.html">
     http://www.winehq.org/hypermail/wine-devel/2004/05/0278.html</a></ul>
 </p><p>
 But our apps worked OK before that; they just generated some warnings.

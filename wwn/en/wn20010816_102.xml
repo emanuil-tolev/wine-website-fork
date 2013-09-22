@@ -73,7 +73,7 @@ Windows emulator).</p>
 <section
   title="16-bit Printer Drivers"
   subject="Re: CS_PARENTDC with WS_CLIPSIBLINGS"
-  archive="http://www.winehq.org/hypermail/wine-devel/2001/08/0014.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2001/08/0014.html"
   posts="9"
   startdate="08/02/2001"
   enddate="08/08/2001"
@@ -159,7 +159,7 @@ Yes of course, stupid typo on my part. Thanks for spotting it.</quote></p>
 <section
   title="Unable to use RegisterClass(&amp;WndClass);"
   subject="Unable to use RegisterClass(&amp;WndClass);"
-  archive="http://www.winehq.org/hypermail/wine-devel/2001/08/0106.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2001/08/0106.html"
   posts="9"
   startdate="08/09/2001"
   enddate="08/14/2001"
@@ -195,7 +195,7 @@ user) so hopefully i'll get some more useful info to you later.</quote></p>
 <section
   title="Navigating Through Wine"
   subject="Wine call graph; wineserver; the big picture"
-  archive="http://www.winehq.org/hypermail/wine-devel/2001/08/0107.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2001/08/0107.html"
   posts="7"
   startdate="08/15/2001"
   enddate="08/16/2001"
@@ -267,7 +267,7 @@ Anyone know anyone who works at the Open Group? :-) </p></quote>
 <section
   title="Winelib Application Debugging"
   subject="winelib application debugging"
-  archive="http://www.winehq.org/hypermail/wine-devel/2001/08/0069.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2001/08/0069.html"
   posts="2"
   startdate="08/09/2001"
   enddate="08/09/2001"
@@ -293,7 +293,7 @@ access to both the executable information and the different loaded DLL
 <section
   title="Using WinHelp"
   subject="Does Wine's winhlp work?"
-  archive="http://www.winehq.org/hypermail/wine-devel/2001/08/0157.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2001/08/0157.html"
   posts="4"
   startdate="08/16/2001"
   enddate="08/17/2001"
@@ -335,7 +335,7 @@ it doesn't work, but it recovers without crashing). </quote></p>
 <section
   title="Ignored Sockets"
   subject="not-yet-connected sockets?"
-  archive="http://www.winehq.org/hypermail/wine-devel/2001/08/0159.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2001/08/0159.html"
   posts="9"
   startdate="08/16/2001"
   enddate="08/17/2001"
@@ -359,7 +359,7 @@ then ioctl() I would think that several applications would be effected..
 
 <p>Ove K&aring;ven didn't understand what the problem was since a patch had
 been submitted a year and half ago fixing the problem.  He gave a link to it
-at:<a href="http://cvs.winehq.org/cvsweb/wine/server/sock.c">
+at:<a href=//cvs.winehq.org/cvsweb/wine/server/sock.c">
 http://cvs.winehq.org/cvsweb/wine/server/sock.c</a>.
 Daniel's problem seemed to be with running Bearshare and he submitted a one-liner
 commenting out the sock_reselect() so that the poll() doesn't happen.</p>
@@ -376,7 +376,7 @@ commenting out the sock_reselect() so that the poll() doesn't happen.</p>
 <section
   title="Adding FIXME's"
   subject="Protocol for adding FIXMEs"
-  archive="http://www.winehq.org/hypermail/wine-devel/2001/08/0140.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2001/08/0140.html"
   posts="2"
   startdate="08/16/2001"
   enddate="08/16/2001"
@@ -422,7 +422,7 @@ is much better in this case. </quote></p>
 <section
   title="Using the Debugger"
   subject="Stupid Winedbg question"
-  archive="http://www.winehq.org/hypermail/wine-devel/2001/08/0137.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2001/08/0137.html"
   posts="3"
   startdate="08/16/2001"
   enddate="08/16/2001"
@@ -454,7 +454,7 @@ is much better in this case. </quote></p>
 <section
   title="Finding Locking Bugs"
   subject="patch.py?id=997918367324549717828631"
-  archive="http://www.winehq.org/hypermail/wine-devel/2001/08/0141.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2001/08/0141.html"
   posts="3"
   startdate="08/16/2001"
   enddate="08/16/2001"
@@ -489,7 +489,7 @@ the patch and found it worked.</p>
 <section
   title="DC lock in CreateDIBitmap"
   subject="DC lock in CreateDIBitmap"
-  archive="http://www.winehq.org/hypermail/wine-devel/2001/08/0149.html"
+  archive=//www.winehq.org/hypermail/wine-devel/2001/08/0149.html"
   posts="3"
   startdate="08/16/2001"
   enddate="08/16/2001"

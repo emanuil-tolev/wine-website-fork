@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="324" date="03/05/2007" />
 <intro> <p>This is the 324th issue of the Wine Weekly News publication.
-Its main goal is to have the same great taste, now with real mailing list stats. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to have the same great taste, now with real mailing list stats. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="173" size="590" contrib="61" multiples="30" lastweek="29">
 
 <person posts="15" size="22" who="julliard at winehq.org (Alexandre Julliard)" />
@@ -70,7 +70,7 @@ Its main goal is to have the same great taste, now with real mailing list stats.
 <section 
 	title="News: Wine 0.9.32"
 	subject="News"
-	archive="http://source.winehq.org/ds0.9.32.txt"
+	archive=//source.winehq.org/ds0.9.32.txt"
 	posts="3"
 >
 <topic>News</topic>
@@ -84,7 +84,7 @@ release Alexandre noted improvements in:</p>
 
 
 <p>To get a feel for the changes, check out the 
-<a href="http://source.winehq.org/ds0.9.32.txt">diff</a>.</p>
+<a href=//source.winehq.org/ds0.9.32.txt">diff</a>.</p>
 <p>In other news, Matthew Newton from PC World (PC World covering Wine?!?!) 
 wrote an article this week about Wine, 
 <a href="http://www.pcworld.com/article/id,129304-page,2-c,linux/article.html">All About Wine: Run Windows Apps Under Linux</a>.
@@ -118,7 +118,7 @@ developed.
 <section 
 	title="OpenGL Thread Context Selection Patches"
 	subject="New opengl thread context selection patches for testing"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-March/054579.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-March/054579.html"
 	posts="3"
 >
 <topic>DirectX</topic>
@@ -191,7 +191,7 @@ work on Wine.
 <section 
 	title="MSI OLE Automation Improvements"
 	subject="msi ole automation update"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-February/.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-February/.html"
 	posts="2"
 >
 <topic>RPC / COM / OLE</topic>
@@ -220,13 +220,13 @@ April. However, if anyone has any comments about these or my patches
 already sitting in wine-patches, please do let me know.
 </p></quote>
 
-<p>The patches were <a href="http://www.winehq.com/pipermail/wine-devel/2007-March/054559.html">attached</a> 
+<p>The patches were <a href=//www.winehq.org/pipermail/wine-devel/2007-March/054559.html">attached</a> 
 to the original message.</p>
 </section>
 <section 
 	title="SoC 2007: HTMLHelp"
 	subject="HtmlHelp status, winecfg and SoC proposal"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-March/054576.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-March/054576.html"
 	posts="1"
 >
 <topic>Web/HTML</topic>
@@ -262,7 +262,7 @@ winecfg hacking. What do you think?
 <section 
 	title="Fedora Core 4 RPMs"
 	subject="fc4 rpms"
-	archive="http://www.winehq.com/pipermail/wine-devel/2007-February/054439.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2007-February/054439.html"
 	posts="4"
 >
 <topic>Packaging</topic>

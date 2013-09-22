@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="212" date="02/27/2004" />
 <intro> <p>This is the 212th issue of the Wine Weekly News publication.
-Its main goal is to act as a gravitational lens. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to act as a gravitational lens. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="177" size="678" contrib="61" multiples="32" lastweek="28">
 
 <person posts="16" size="57" who="Fabian Cenedese" />
@@ -72,7 +72,7 @@ Its main goal is to act as a gravitational lens. It also serves to inform you of
 <section 
 	title="Cross-compiling Wine, Revisited" 
 	subject="Re: crosstest compile fix (another)"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/02/0536.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/02/0536.html" 
 	posts="14"
 	startdate="02/22/2004"
 	enddate="02/26/2004"
@@ -95,7 +95,7 @@ Find them here:
 <quote who="Hans Leidekker"><p>
 I spent some time cross-compiling all of Wine with MinGW according
 to this recipe:
-<ul>  <a href="http://winehq.com/wwn/123#Cross-compiling%20Wine">
+<ul>  <a href=//winehq.org/wwn/123#Cross-compiling%20Wine">
   http://winehq.com/wwn/123#Cross-compiling Wine</a></ul></p><p>
 
 and I thought you might be interested in the results. I can report
@@ -140,7 +140,7 @@ recently.
 <section 
 	title="Theming Widgets" 
 	subject="Theming widgets"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/02/0604.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/02/0604.html" 
 	posts="4"
 	startdate="02/24/2004"
 	enddate="02/25/2004"
@@ -180,7 +180,7 @@ option listed above.</p>
 <section 
 	title="NetBSD Audio Driver" 
 	subject="Re: Native NetBSD audio driver"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/02/0.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/02/0.html" 
 	posts="9"
 	startdate="02/22/2004"
 	enddate="02/26/2004"
@@ -207,7 +207,7 @@ However, if the interface is rather close to OSS, I'd rather suggest we try
 to integrate all the drivers with the same features into a single piece 
 of driver.</quote></p>
 
-<p>Yorick <a href="http://www.winehq.org/hypermail/wine-devel/2004/02/0572.html">reposted 
+<p>Yorick <a href=//www.winehq.org/hypermail/wine-devel/2004/02/0572.html">reposted 
 </a> his patch including bugfix.  At the very least it's a good starting point
 for someone else.  Dimi thought that any integration with the OSS driver
 needed to be done now before the NetBSD patch bitrots and diverges.  Robert
@@ -238,7 +238,7 @@ have to time to do the restructuring Robert suggested.</p>
 <section 
 	title="Implementing NdrClientCall/NdrClientCall2" 
 	subject="NdrClientCall/format string interpreter/stubless proxies"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/02/0638.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/02/0638.html" 
 	posts="6"
 	startdate="02/26/2004"
 >

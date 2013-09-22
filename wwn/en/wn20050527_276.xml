@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="276" date="05/27/2005" />
 <intro> <p>This is the 276th issue of the Wine Weekly News publication.
-Its main goal is to miss deadlines. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to miss deadlines. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="207" size="750" contrib="69" multiples="39" lastweek="27">
 
 <person posts="21" size="61" who="Alexandre Julliard" />
@@ -82,7 +82,7 @@ Its main goal is to miss deadlines. It also serves to inform you of what's going
 <section 
 	title="MSHTML &amp; Mozilla &amp; XEmbed" 
 	subject="XEmbed embeder support in Wine"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/05/0796.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2005/05/0796.html" 
 	posts="3"
 	startdate="05/24/2005"
 	enddate="05/24/2005"
@@ -91,8 +91,8 @@ Its main goal is to miss deadlines. It also serves to inform you of what's going
 
 <p>As we mentioned last month
 (see WWN 
-<a href="http://www.winehq.com/wwn/268#MSHTML%20Work">#268</a> and
-<a href="http://www.winehq.com/wwn/271#MSHTML%20&amp;%20Gecko">#271</a>), 
+<a href=//www.winehq.org/wwn/268#MSHTML%20Work">#268</a> and
+<a href=//www.winehq.org/wwn/271#MSHTML%20&amp;%20Gecko">#271</a>), 
 Jacek Caban has been busy implementing MSHTML on top of Mozilla.  
 MSHTML.DLL is a massive chunk of Internet Explorer; it's responsible
 for parsing and rendering HTML.  His first round worked with the 
@@ -145,7 +145,7 @@ you can't find out the answer to unless you try.
 <section
         title="Video Driver Infrastructure"
         subject="qcap/avicap and driver models"
-        archive="http://www.winehq.org/hypermail/wine-devel/2005/05/0756.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2005/05/0756.html"
         posts="2"
         startdate="05/21/2005"
 	enddate="05/22/2005"
@@ -161,7 +161,7 @@ I implemented a driver model in qcap now, but avicap32 still uses my old
 writing capcreatecapturewindow, I think we should move out the drivers 
 from qcap to our own vfwwine dll/driver, windows uses a similar model 
 for it, as Rolf Kalbermatter pointed out in 
-<a href="http://www.winehq.com/wwn/274#Video%20Capture%20in%20Windows">
+<a href=//www.winehq.org/wwn/274#Video%20Capture%20in%20Windows">
 http://www.winehq.com/wwn/274#Video%20Capture%20in%20Windows</a>
 </p><p>
 For the qcap drivers, I used some kind of COM model
@@ -228,7 +228,7 @@ won't understand</li>
 <section
         title="Unaligned mmap()"
         subject="[RFC] upmfs - page-unaligned mmap() for Linux"
-        archive="http://www.winehq.org/hypermail/wine-devel/2005/05/0763.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2005/05/0763.html"
         posts="1"
         startdate="05/21/2005"
 >
@@ -274,7 +274,7 @@ A wineserver implementation can check the existence of that module in the
 kernel (i.e "/proc/upmfs/interface" exists) and use its functionality.
 </p><p>
 The code for the upmfs source package 
-<a href="http://www.winehq.com/hypermail/wine-devel/2005/05/att-0763/01-upmfs.tar.gz">is
+<a href=//www.winehq.org/hypermail/wine-devel/2005/05/att-0763/01-upmfs.tar.gz">is
 attached</a> to this post.
 </p></quote>
 
@@ -283,7 +283,7 @@ attached</a> to this post.
 <section 
 	title="Cabinet.dll: File Creation Interfaces" 
 	subject="Work being done at the File Creation Interface of Cabinet.DLL"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/05/0749.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2005/05/0749.html" 
 	posts="2"
 	startdate="05/21/2005"
 >
@@ -305,7 +305,7 @@ expected so let's see if I can adhere to my schedule.
 <section
         title="DWARF2 Debug Support"
         subject="Re: dwarf2 support progress step 4"
-        archive="http://www.winehq.org/hypermail/wine-devel/2005/05/0742.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2005/05/0742.html"
         posts="4"
         startdate="05/21/2005"
 >
@@ -340,7 +340,7 @@ prepare for the future when stabs format won't be supported)
 <section 
 	title="Standalone Tests" 
 	subject="question about standalone tests"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/05/0825.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2005/05/0825.html" 
 	posts="4"
 	startdate="05/24/2005"
 >
@@ -352,7 +352,7 @@ submitted:</p>
 Hi!  My crypt32 protectdata tests were just added to CVS (thanks!) but
 they were added without the <tt>#ifndef STANDALONE</tt> stuff that exists in the
 recommended example from the lzexpand test code.  The steps here:
-<ul><a href="http://www.winehq.com/docs/winedev-guide/testing-windows">
+<ul><a href=//www.winehq.org/docs/winedev-guide/testing-windows">
 http://www.winehq.com/docs/winedev-guide/testing-windows</a></ul>
 don't have a method for doing the build with the free-of-charge windows
 CLI compiler (which the "STANDALONE" stuff works fine with).
@@ -378,7 +378,7 @@ some changes to fix it.</p>
 <section 
 	title="MSI Dialogs" 
 	subject="msi dialogs, events and office 2003"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/05/0899.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2005/05/0899.html" 
 	posts="1"
 	startdate="05/26/2005"
 >
@@ -420,7 +420,7 @@ looking pretty good.
 <section 
 	title="New Wine Doc Requirements" 
 	subject="Winedocs and Po4a dependencies"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/05/0895.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2005/05/0895.html" 
 	posts="1"
 	startdate="05/26/2005"
 >

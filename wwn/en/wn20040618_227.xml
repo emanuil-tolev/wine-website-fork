@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="227" date="06/18/2004" />
 <intro> <p>This is the 227th issue of the Wine Weekly News publication.
-Its main goal is to dig holes in the ground. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to dig holes in the ground. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="158" size="928" contrib="53" multiples="23" lastweek="18">
 
 <person posts="21" size="53" who="Alexandre Julliard" />
@@ -65,7 +65,7 @@ Its main goal is to dig holes in the ground. It also serves to inform you of wha
 <section 
 	title="News: Wine-20040615, Interview with Lionel Ulmer, CXO 3.0.1" 
 	subject="News"
-	archive="http://cvs.winehq.com/cvsweb/wine/ANNOUNCE?rev=1.89&amp;content-type=text/x-cvsweb-markup" 
+	archive=//cvs.winehq.org/cvsweb/wine/ANNOUNCE?rev=1.89&amp;content-type=text/x-cvsweb-markup" 
 	posts="2"
 	startdate="06/12/2004"
 	enddate="06/18/2004"
@@ -76,7 +76,7 @@ through a patch backlog he put out Wine-20040615 on
 Tuesday:</p>
 <quote who="Alexandre Julliard"><p>
 WHAT'S NEW with Wine-20040615: (see 
-  <a href="http://cvs.winehq.com/cvsweb/wine/ChangeLog?rev=1.84&amp;content-type=text/x-cvsweb-markup">ChangeLog</a> for details)
+  <a href=//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.84&amp;content-type=text/x-cvsweb-markup">ChangeLog</a> for details)
 <ul>
         <li> Major winedbg rewrite using the dbghelp dll.</li>
         <li> New Wine preloader to reserve memory areas at startup.</li>
@@ -85,11 +85,11 @@ WHAT'S NEW with Wine-20040615: (see
 </p></quote>
 
 <p>As always, head over to 
-  <a href="http://www.winehq.com/download">Wine's download page</a>
+  <a href=//www.winehq.org/download">Wine's download page</a>
   to snag a copy.  </p>
 
 <p>We published an 
-<a href="http://www.winehq.com/interview/15">interview
+<a href=//www.winehq.org/interview/15">interview
 with Lionel Ulmer</a> this week.  Lionel is one of Wine's DirectX gurus
 and has been involved with Wine for almost six years.</p>
 
@@ -129,7 +129,7 @@ been a good choice: it's fast, resource-light, and inexpensive </quote></p>
 <section 
 	title="Mouse Handling" 
 	subject="Re: dlls/dinput/mouse.c warp handling"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/06/0317.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0317.html" 
 	posts="6"
 	startdate="06/16/2004"
 	enddate="06/17/2004"
@@ -227,7 +227,7 @@ And DGAMouse support / X11 extension writing would be the other way :-)
 <section 
 	title="Doc Update &amp; Critical Section Explanation" 
 	subject="Re: dlls/dinput/mouse.c warp handling"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/06/0333.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0333.html" 
 	posts="6"
 	startdate="06/16/2004"
 	enddate="06/17/2004"
@@ -242,7 +242,7 @@ was all about:</p>
 I bugged Newman yesterday and because he's a total rockstar he fixed the
 bug in the doc generation script, so the latest developer guide is now on
 the net:
-  <ul><a href="http://winehq.com/docs/winedev-guide/threading">
+  <ul><a href=//winehq.org/docs/winedev-guide/threading">
   http://winehq.com/docs/winedev-guide/threading</a></ul>
 </p><p>
 explains the Wine multi-threading in more detail than you probably want,
@@ -271,7 +271,7 @@ section was created by an application.
 <section 
 	title="Nuking Wineinstall" 
 	subject="Do we still need wineinstall?"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/06/0242.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0242.html" 
 	posts="3"
 	startdate="06/13/2004"
 	enddate="06/15/2004"
@@ -314,7 +314,7 @@ removed it.</p>
 <section 
 	title="Photoshop With No Config File" 
 	subject="[PHOTOSHOP7] not installable, OS not supported, for NT4 service pack &gt;= 6a"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/06/0291.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0291.html" 
 	posts="3"
 	startdate="06/16/2004"
 >
@@ -362,14 +362,14 @@ their config file to default to Win98. I sent a patch to create a new
 <section 
 	title="Games Testing Update" 
 	subject="Game Testing Update - 20040505"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/06/0212.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0212.html" 
 	posts="1"
 	startdate="06/11/2004"
 >
 <topic>Testing</topic>
 <p>Mike Kost took the time to put together some nice tests
 of various games with Wine.  He provided links to demos and
-opened <a href="http://bugs.winehq.org">Bugzilla tickets</a>
+opened <a href=//bugs.winehq.org">Bugzilla tickets</a>
 on things that didn't work:</p>
 <quote who="Mike Kost"><p>
  Here is a continuation of my game testing efforts. Same rules still apply in my 
@@ -428,14 +428,14 @@ http://www.tashcorp.net/Wine/RemoteAssault/remoteassault-20040505.html</a></ul><
 <section 
 	title="Systray Patch Update" 
 	subject="Game Testing Update - 20040505"
-	archive="http://www.winehq.org/hypermail/wine-devel/2004/06/0270.html" 
+	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0270.html" 
 	posts="1"
 	startdate="06/11/2004"
 >
 <topic>Testing</topic>
 <p>Mike Hearn maintains a patch that allows apps to dock 
 in the system tray.  He went through and updated
-<a href="http://www.winehq.com/hypermail/wine-devel/2004/06/att-0270/01-systray2.patch__charset_UTF-8">his
+<a href=//www.winehq.org/hypermail/wine-devel/2004/06/att-0270/01-systray2.patch__charset_UTF-8">his
 patch</a> and explained what was stopping it from being committed to CVS:</p>
 <quote who="Mike Hearn"><p>
 This version is resynced against CVS HEAD, and now does a ShowWindow in

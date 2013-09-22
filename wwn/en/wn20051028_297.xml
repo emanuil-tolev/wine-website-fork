@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="297" date="10/28/2005" />
 <intro> <p>This is the 297th issue of the Wine Weekly News publication.
-Its main goal is to celebrate a beta release! It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to celebrate a beta release! It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="315" size="572" contrib="110" multiples="61" lastweek="39">
 
 <person posts="19" size="33" who="wino at piments.com" />
@@ -123,7 +123,7 @@ Its main goal is to celebrate a beta release! It also serves to inform you of wh
 <section 
 	title="News: Beta Release, CrossOver Office 5.0"
 	subject="News"
-	archive="http://www.winehq.org/pr-09betarelease"
+	archive=//www.winehq.org/pr-09betarelease"
 	posts="4"
 >
 <topic>News</topic>
@@ -157,12 +157,12 @@ available from the following locations:
 </ul></p><p>
 Binary packages for various distributions will be available from:
 <ul>
-  <a href="http://www.winehq.org/download">http://www.winehq.org/download</a>
+  <a href=//www.winehq.org/download">http://www.winehq.org/download</a>
 </ul></p><p>
-You will find documentation on <a href="http://www.winehq.org/documentation.">http://www.winehq.org/documentation.</a>
+You will find documentation on <a href=//www.winehq.org/documentation.">http://www.winehq.org/documentation.</a>
 </p><p>
 You can also get the current source directly from the CVS tree. Check
-<a href="http://www.winehq.org/cvs">http://www.winehq.org/cvs</a> for details.
+<a href=//www.winehq.org/cvs">http://www.winehq.org/cvs</a> for details.
 </p><p>
 Patches should be submitted to &quot;<a href='mailto:wine-patches@winehq.org'>wine-patches@winehq.org</a>&quot;.  Please
 don't forget to include a ChangeLog entry. If you submitted a patch,
@@ -176,9 +176,9 @@ AUTHORS in the distribution for the complete list.
 contains 797 individuals.</p>
 
 <p>We had an official 
-<a href="http://www.winehq.org/pr-09betarelease">press release</a> about
+<a href=//www.winehq.org/pr-09betarelease">press release</a> about
 it.  It's nice, light reading.  I also put together a special edition of WWN,
-<a href="http://www.winehq.com/wwn/296">#296</a>, to look at more of
+<a href=//www.winehq.org/wwn/296">#296</a>, to look at more of
 the technical background behind Wine 0.9.  We've been on the verge of a 
 beta release for a number of years and it seems like there's been some
 rather amorphous goals that were set to reach it.  Well, we actually have
@@ -227,7 +227,7 @@ certainly cause regressions, but hopefully those can just be worked out.</p>
 <section 
 	title="Beyond 0.9"
 	subject="Talkback versions of wine"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-October/041699.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-October/041699.html"
 	posts="7"
 >
 <topic>Project Management</topic>
@@ -263,7 +263,7 @@ it, or by apps failing to even start.</quote>
 <section 
 	title="Winecfg Drive Config Problem"
 	subject="winecfg dosdevices unusable"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-October/041610.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-October/041610.html"
 	posts="4"
 >
 <topic>Configuration</topic>
@@ -300,11 +300,11 @@ will fill in the appropriate entry.</p>
 <section 
 	title="Bugzilla: Closing Bugs"
 	subject="Thank you for closing my bugzilla account..."
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-October/.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-October/.html"
 	posts="11"
 >
 <topic>Project Management</topic>
-<p>Digging through Wine's <a href="http://bugs.winehq.org">Bugzilla</a>
+<p>Digging through Wine's <a href=//bugs.winehq.org">Bugzilla</a>
 tracker can be good way to learn things about Wine.  Whether that's 
 confirming an unconfirmed bug, finding something small to fix, or
 simply getting a feel for what areas need to be worked on.  
@@ -357,7 +357,7 @@ are only 4-5 states a bug can
 have. (NEW,ASSIGNED,OPEN,RESOLVED,VERIFIED)</quote>
 </p>
 <p>Jonathan gave a link to an explanation of 
-<a href="http://bugs.winehq.org/bug_status.html">bug statuses</a>.  </p>
+<a href=//bugs.winehq.org/bug_status.html">bug statuses</a>.  </p>
 
 <p>The end result of the discussion was Jonathan got his account restored and 
 a bunch of FIXED bugs were officially CLOSED.</p>
@@ -366,7 +366,7 @@ a bunch of FIXED bugs were officially CLOSED.</p>
 <section 
 	title="Solaris Patches"
 	subject="Solaris Updates"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-October/041427.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-October/041427.html"
 	posts="1"
 >
 <topic>Ports</topic>
@@ -440,7 +440,7 @@ http://www.blastwave.org/wine</a></ul></p></quote>
 <section 
 	title="Dragon Naturally Speaking (v7) Recipe"
 	subject="Clean , working installation of Nat. Speaking."
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-October/041677.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-October/041677.html"
 	posts="1"
 >
 <topic>Fixes</topic>
@@ -566,7 +566,7 @@ HTH, Have fun
 <section 
 	title="Wine &amp; Windows Vista Graphics Drivers"
 	subject="Wine project: Support third party LDDM graphic drivers"
-	archive="http://www.winehq.com/pipermail/wine-devel/2005-October/041405.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2005-October/041405.html"
 	posts="4"
 >
 <topic>Graphics</topic>

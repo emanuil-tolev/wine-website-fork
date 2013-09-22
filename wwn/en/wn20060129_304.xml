@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="304" date="01/29/2006" />
 <intro> <p>This is the 304th issue of the Wine Weekly News publication.
-Its main goal is to carpet. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to carpet. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="174" size="332" contrib="68" multiples="39" lastweek="43">
 
 <person posts="12" size="15" who="julliard at winehq.org (Alexandre Julliard)" />
@@ -81,14 +81,14 @@ Its main goal is to carpet. It also serves to inform you of what's going on arou
 <section 
 	title="WineTools &amp; Wine"
 	subject="[Fwd: WineTools is in need of some major house cleaning!]"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-January/044355.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-January/044355.html"
 	posts="4"
 >
 <topic>Utilities</topic>
 <p>Debate has been raging for weeks over whether the 
 <a href="http://www.von-thadden.de/Joachim/WineTools/">WineTools</a> 
 project should be listed on Wine's 
-<a href="http://www.winehq.org/download">download</a> page.  
+<a href=//www.winehq.org/download">download</a> page.  
 </p><p>
 On the one hand, WineTools is used by <i>a lot</i> of people to get common
 programs to install.  It'll automatically install Internet Explorer
@@ -320,7 +320,7 @@ point.
 <section 
 	title="SCSI Tape Drive Support"
 	subject="TAPE 1/5: add some defines related to tape support"
-	archive="http://www.winehq.com/pipermail/wine-patches/2006-January/023725.html"
+	archive=//www.winehq.org/pipermail/wine-patches/2006-January/023725.html"
 	posts="9"
 >
 <topic>Filesystems</topic>
@@ -358,7 +358,7 @@ and after that the patches did get committed.</p>
 <section 
 	title="JACK Audio Driver"
 	subject="wine and jack =&gt; segfault? / wine and OSS not working"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-January/044324.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-January/044324.html"
 	posts="7"
 >
 <topic>Multimedia</topic>
@@ -438,7 +438,7 @@ sounds like sampling freq. (transformation) issue).</p></quote>
 <section 
 	title="Overriding Executables With Winecfg"
 	subject="wine 0.9.6 segfaults (was: Re: wine 0.9.5 - segmentation fault with some apps)"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-January/044273.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-January/044273.html"
 	posts="4"
 >
 <topic>Configuration</topic>
@@ -449,7 +449,7 @@ problem this week:</p>
 <quote who="Ulisses de Sousa Penna"><p>
 
        I have posted a comment at
-<ul><a href="http://bugs.winehq.org/show_bug.cgi?id=4351">
+<ul><a href=//bugs.winehq.org/show_bug.cgi?id=4351">
 http://bugs.winehq.org/show_bug.cgi?id=4351</a></ul></p><p>
        The problem seems to be with the name of the executable:
 "user.exe" (sounds crazy, but it was I could realize after some tests).</p>
@@ -507,7 +507,7 @@ I often use it for dplaysvr.exe, so it works</p></quote>
 <section 
 	title="Hook Problems"
 	subject="Global hooks problems (WH_MOUSE_LL)"
-	archive="http://www.winehq.com/pipermail/wine-devel/2006-January/044395.html"
+	archive=//www.winehq.org/pipermail/wine-devel/2006-January/044395.html"
 	posts="8"
 >
 <p>Windows has a concept of <i>hooks</i> that allow an application to monitor
@@ -529,7 +529,7 @@ Here is what I dug up so far:
    Unless of course we don't want to call post_win_event in step 5 and go
    to step 6 instead.</li>
 <li> All HW mouse messages start here:
-   <ul><a href="http://source.winehq.org/source/dlls/x11drv/mouse.c#L191">
+   <ul><a href=//source.winehq.org/source/dlls/x11drv/mouse.c#L191">
    http://source.winehq.org/source/dlls/x11drv/mouse.c#L191</a></ul>
    From looking at it I assume that all the HW mouse hooks should be
    handled by HOOK_CallHooks function. This is because there is no code
@@ -539,11 +539,11 @@ Here is what I dug up so far:
    that is wrong. Let's comment that check out for now. I think we need
    to move that check farther down, after the call to server.</li>
 <li> We call start_hook_chain 
-   <a href="http://source.winehq.org/source/server/hook.c#L468">
+   <a href=//source.winehq.org/source/server/hook.c#L468">
    http://source.winehq.org/source/server/hook.c#L468</a>
    to start hook callback chain. There we call get_first_valid_hook on local 
    and then global if no local hooks exist. But there again we check for 
-   <a href="http://source.winehq.org/source/server/hook.c#L211">
+   <a href=//source.winehq.org/source/server/hook.c#L211">
    http://source.winehq.org/source/server/hook.c#L211</a>
    the hook callback thread being local (which is again not the case for global
    hooks). This is problem #2.</li>
@@ -581,7 +581,7 @@ especially hooking in Windows for sure can be a tricky business.</p></quote>
 <quote who="Alexandre Julliard"><p>
 That's because the new win event code changed the meaning of the
 thread field, and the low-level hooks haven't been updated for it. Try
-something like <a href="http://www.winehq.com/pipermail/wine-devel/2006-January/044439.html">this</a>.
+something like <a href=//www.winehq.org/pipermail/wine-devel/2006-January/044439.html">this</a>.
 </p></quote>
 
 <p>Vitaliy reported it worked:</p>

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="279" date="06/17/2005" />
 <intro> <p>This is the 279th issue of the Wine Weekly News publication.
-Its main goal is to trench. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to trench. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="209" size="1020" contrib="72" multiples="40" lastweek="37">
 
 <person posts="15" size="37" who="Alexandre Julliard" />
@@ -107,7 +107,7 @@ Its main goal is to trench. It also serves to inform you of what's going on arou
 <section 
 	title="Winecfg Goes Live"
 	subject="wine/programs/winecfg x11drvdlg.c winecfg.h wi ..."
-	archive="http://www.winehq.com/hypermail/wine-cvs/2005/06/0382.html"
+	archive=//www.winehq.org/hypermail/wine-cvs/2005/06/0382.html"
 	posts="1"
 	startdate="06/16/2005"
 >
@@ -149,7 +149,7 @@ version could only be set in the config file.
 <section 
 	title="Documenting Config Options"
 	subject="Re: wine/dlls/x11drv x11drv_main.c x11drv.h palette.c"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/06/0434.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/06/0434.html"
 	posts="9"
 	startdate="06/14/2005"
 	enddate="06/15/2005"
@@ -253,14 +253,14 @@ the user-facing information on configuration options.</p>
 <section 
 	title="AppDB Searching &amp; To-Do"
 	subject="[AppDB] - improve search results"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/06/0369.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/06/0369.html"
 	posts="1"
 	startdate="06/14/2005"
 >
 <topic>WineHQ</topic>
 <p>Last week we posted a to-do list for the 
-<a href="http://appdb.winehq.org">AppDB</a> (see WWN
-<a href="http://www.winehq.com/wwn/278">#278</a>).  The to-do list
+<a href=//appdb.winehq.org">AppDB</a> (see WWN
+<a href=//www.winehq.org/wwn/278">#278</a>).  The to-do list
 was out of date about as soon as we published it.  The AppDB guys
 got together and put together a really nice list with a lot of 
 projects people could tackle.  One of the topics that came up was
@@ -286,13 +286,13 @@ wiki and look at
 <section 
 	title="FFMpeg Video Wrapper (con't)"
 	subject="Re: [QUARTZ] Add FFMpeg video wrapper filter (take 3)"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/06/0383.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/06/0383.html"
 	posts="18"
 	startdate="06/13/2005"
 	enddate="06/15/2005"
 >
 <topic>DirectX</topic>
-<p>Last week (WWN issue <a href="http://www.winehq.com/wwn/278">#278</a>)
+<p>Last week (WWN issue <a href=//www.winehq.org/wwn/278">#278</a>)
 we mentioned a patch submitted by Christian Costa that statically links
 <a href="http://ffmpeg.sourceforge.net/index.php">FFMpeg</a>.  No one really 
 liked the fact it has to be statically linked, but apparently the ffmpeg
@@ -354,16 +354,16 @@ library.</p></quote>
 <section
         title="MSN Messenger 6.2"
         subject="MSN Messenger builtin progress"
-        archive="http://www.winehq.com/hypermail/wine-devel/2005/06/0469.html"
+        archive=//www.winehq.org/hypermail/wine-devel/2005/06/0469.html"
         posts="1"
         startdate="06/15/2005"
 >
 <topic>Multimedia</topic>
 <p>Maarten Lankhorst has been hard at work getting MSN Messenger to run.
 For more details on that effort, see WWN issues
-<a href="http://www.winehq.com/wwn/274#Video%20Capture%20in%20Windows">#274</a>, 
-<a href="http://www.winehq.com/wwn/275#Webcams%20&amp;%20MSN%20Messenger">#275</a>, and 
-<a href="http://www.winehq.com/wwn/276#Video%20Driver%20Infrastructure">#276</a>.
+<a href=//www.winehq.org/wwn/274#Video%20Capture%20in%20Windows">#274</a>, 
+<a href=//www.winehq.org/wwn/275#Webcams%20&amp;%20MSN%20Messenger">#275</a>, and 
+<a href=//www.winehq.org/wwn/276#Video%20Driver%20Infrastructure">#276</a>.
 He posted another patch this week that implemented more functionality.  
 Messenger 6.2 is now closer to working with builtin DLLs.  Maarten
 described how to get it running, but it doesn't sound like it's for the
@@ -438,7 +438,7 @@ lot more effort.</p></quote>
 <section 
 	title="Windows Icons in KDE"
 	subject="Windows Icons under konqueror."
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/06/0.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/06/0.html"
 	posts="1"
 	startdate="06/16/2005"
 >
@@ -466,7 +466,7 @@ preparing for the massive DirectX 9 patches.</p>
 <section 
 	title="VMware Licenses"
 	subject="VMware Licenses"
-	archive="http://www.winehq.com/hypermail/wine-devel/2005/06/0440.html"
+	archive=//www.winehq.org/hypermail/wine-devel/2005/06/0440.html"
 	posts="2"
 	startdate="06/14/2005"
 	enddate="06/15/2005"

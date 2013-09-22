@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="313" date="05/15/2006" />
 <intro> <p>This is the 313th issue of the Wine Weekly News publication.
-Its main goal is to sit on a lake in Montana. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to sit on a lake in Montana. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="381" size="793" contrib="104" multiples="64" lastweek="62">
 
 <person posts="27" size="45" who="mike at plan99.net (Mike Hearn)" />
@@ -117,7 +117,7 @@ Its main goal is to sit on a lake in Montana. It also serves to inform you of wh
 <section
         title="News: Wine 0.9.13"
         subject="News"
-        archive="http://www.winehq.com/announce/0.9.13"
+        archive=//www.winehq.org/announce/0.9.13"
         posts="1"
         startdate="04/28/2006"
 	enddate="05/15/2006"
@@ -160,7 +160,7 @@ below illustrating that.</p>
 <section
         title="GPhoto / TWAIN Integration"
         subject="PATCH: [0/4] Splitting TWAIN_32 and adding gphoto driver"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-May/047325.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-May/047325.html"
         posts="1"
         startdate="05/01/2006"
 >
@@ -224,7 +224,7 @@ The code is ready for WINE inclusion (tm).
 <section
         title="Dynamic Drive Configuration"
         subject="[0.9.13]Dynamic drive configuration using HAL?"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-May/047560.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-May/047560.html"
         posts="3"
         startdate="05/11/2006"
 	enddate="05/12/2006"
@@ -255,14 +255,14 @@ doesn't work for you it's not my fault ;-)</quote></p>
 <section
         title="Mail / News Gateway &amp; Support Revamp"
         subject="Support section revamp`"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-April/047135.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-April/047135.html"
         posts="70"
 >
 <topic>WineHQ</topic>
 
 <p>This little bit of news occurred a few weeks ago but I forgot to
 report on it.  A long, long, long time ago the 
-<a href="http://www.winehq.org/mailman/listinfo/wine-users">wine-users</a>
+<a href=//www.winehq.org/mailman/listinfo/wine-users">wine-users</a>
 mailing list was a gateway to the 
 <a href="http://groups.google.com/group/comp.emulators.ms-windows.wine">comp.emulators.ms-windows.wine</a> 
 newsgroup.  When we switched to using mailman for the mailing list, things
@@ -290,7 +290,7 @@ he trusts is cooking in the kitchen  :-/.
 </p><p>
 Second of all, it seems to me that the biggest problem
 is simply one of presentation.  This is the relevant page:
-  <ul><a href="http://www.winehq.org/forums">
+  <ul><a href=//www.winehq.org/forums">
   http://www.winehq.org/forums</a></ul>
 </p><p>
 The current information is really quite poorly presented.
@@ -322,7 +322,7 @@ and yet is nicely backwards compatible with all current
 systems.
 </p></quote>
  
-<p>If you go to <a href="http://www.winehq.org">WineHQ</a> you'll notice
+<p>If you go to <a href=//www.winehq.org">WineHQ</a> you'll notice
 all of those changes have now been made.  Users of the newsgroup probably
 noticed a large spike in traffic as a result.</p>
 
@@ -330,7 +330,7 @@ noticed a large spike in traffic as a result.</p>
 <section
         title="Testing Wine's Audio"
         subject="A great way for non programmers to help with Wine - Audio"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-May/047461.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-May/047461.html"
         posts="4"
         startdate="05/07/2006"
 	enddate="05/09/2006"
@@ -409,7 +409,7 @@ to Jeremy directly (Google should provide his email at CodeWeavers.)
 <section
         title="Rendering HTML"
         subject="shdocvw 2: Added [get|put]_Visible implementation."
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-May/047332.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-May/047332.html"
         posts="3"
         startdate="05/01/2006"
 >
@@ -474,7 +474,7 @@ all the wonderful navigation features of a browser using the new APIs.
 <section
         title="ITypeInfo_fnInvoke"
         subject="Anyone actively working on ITypeInfo_fnInvoke and VariantChangeType?"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-May/047355.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-May/047355.html"
         posts="5"
         startdate="05/02/2006"
 >
@@ -512,7 +512,7 @@ it.
 
 <p>Tony Lambregts and Alex Villacis Lasso both replied that the bug
 sounded exactly like one in Bugzilla, 
-<a href="http://bugs.winehq.org/show_bug.cgi?id=4370">#4370</a>.  Rob
+<a href=//bugs.winehq.org/show_bug.cgi?id=4370">#4370</a>.  Rob
 Shearman, Wine's resident COM guru, posted a patch and asked for feedback:</p>
 <quote who="Rob Shearman"><p>
 
@@ -533,7 +533,7 @@ Does this patch fix both issues for you?</p></quote>
 <section
         title="WaitCommEvent Deadlock"
         subject="[Wine] Wine + serial port basically hangs system"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-May/047495.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-May/047495.html"
         posts="5"
         startdate="05/09/2006"
 	enddate="05/12/2006"
@@ -589,7 +589,7 @@ Eric recognized the issue and submitted a patch.</p>
 <section
         title="Linuxtag Attendance"
         subject="Linuxtag06/Wiesbaden/Germany"
-        archive="http://www.winehq.com/pipermail/wine-devel/2006-May/047359.html"
+        archive=//www.winehq.org/pipermail/wine-devel/2006-May/047359.html"
         posts="1"
         startdate="05/02/2006"
 >
