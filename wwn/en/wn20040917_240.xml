@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="240" date="09/17/2004" />
 <intro> <p>This is the 240th issue of the Wine Weekly News publication.
-Its main goal is to jog. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to jog. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="301" size="1104" contrib="82" multiples="45" lastweek="43">
 
 <person posts="38" size="144" who="Mike Hearn" />
@@ -92,7 +92,7 @@ Its main goal is to jog. It also serves to inform you of what's going on around 
 <section 
 	title="News: Wine-20040914" 
 	subject="News"
-	archive=//www.winehq.org/announce/20040914" 
+	archive="//www.winehq.org/announce/20040914" 
 	posts="1"
 	startdate="09/11/2004"
 	enddate="09/17/2004"
@@ -117,7 +117,7 @@ The following was in the announcement:</p>
 
 <p>
   Binary and source packages are available from our
-  <a href=//www.winehq.org/download">download page.</a>
+  <a href="//www.winehq.org/download">download page.</a>
 </p>
 
 
@@ -126,7 +126,7 @@ The following was in the announcement:</p>
 <section 
 	title="New Fonts" 
 	subject="Re: fonts: wine_marlett"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/09/0475.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/09/0475.html" 
 	posts="7"
 	startdate="09/16/2004"
 	enddate="09/17/2004"
@@ -151,7 +151,7 @@ a step that will probably be skipped.  For folks downloading
 binary packages, hopefully it will be something included.  
 Thus far we have Courier, Marlett, Sans Serif, and System 
 fonts and you can find them in the newly added 
-<tt><a href=//cvs.winehq.org/cvsweb/wine/fonts/">fonts/</a></tt>
+<tt><a href="//cvs.winehq.org/cvsweb/wine/fonts/">fonts/</a></tt>
 directory.  The Marlett font is the newest addition and comes
 to us via TransGaming.  A thread developed this week about
 using that font and some other general questions.  Rob
@@ -186,13 +186,13 @@ for download.</quote></p>
 this will become more of a packaging issue.
 Anyone out there got a nice collection of fonts you made and
 want to donate to Wine?  If so, 
-<a href=//www.winehq.org/forums">let us know</a>.</p>
+<a href="//www.winehq.org/forums">let us know</a>.</p>
 
 </section>
 <section 
 	title="DirectX 9 Roadmap" 
 	subject="Directx9"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/09/0333.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/09/0333.html" 
 	posts="25"
 	startdate="09/12/2004"
 	enddate="09/14/2004"
@@ -282,14 +282,14 @@ between different versions.  </p>
 <section 
 	title="FreeBSD Breakage Fixed" 
 	subject="Re: dlls/winsock/socket breakage"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/09/0296.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/09/0296.html" 
 	posts="8"
 	startdate="09/09/2004"
 	enddate="09/13/2004"
 >
 <topic>Ports</topic>
 <p>Last week we mentioned building on FreeBSD was broken 
-(WWN <a href=//www.winehq.org/wwn/239#FreeBSD%20Breakage%20-%20IPX%20Packets">#239</a>)
+(WWN <a href="//www.winehq.org/wwn/239#FreeBSD%20Breakage%20-%20IPX%20Packets">#239</a>)
 because of a patch that that changed IPX networking in a way that was specific
 to Linux.  Gerald Pfeifer was working with Roderick Colenbrander on a fix but
 the thread hadn't wrapped up by the end of the week.  Roderick then dug into
@@ -343,7 +343,7 @@ patch was committed that broke FreeBSD in a different way.</p>
 <section 
 	title="Pager Status Update" 
 	subject="Re: Pager Control: Rewritten"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/09/0441.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/09/0441.html" 
 	posts="4"
 	startdate="09/15/2004"
 	enddate="09/16/2004"
@@ -394,7 +394,7 @@ TODO:
 <section 
 	title="Spying on COM" 
 	subject="spying COM"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/09/0303.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/09/0303.html" 
 	posts="2"
 	startdate="09/10/2004"
 	enddate="09/13/2004"

@@ -38,7 +38,7 @@ http://www.codeweavers.com/products/crossover/the_real_dirt.php#j</a>
 </p>
 
 <p>We also saw the release of another vintage of Wine.  The 
-<a href=//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.50&amp;content-type=text/x-cvsweb-markup">
+<a href="//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.50&amp;content-type=text/x-cvsweb-markup">
 full changelog</a> can be found in the CVS repository.  Noted changes
 include:</p><p><ul>
 	<li> Inter-process SendMessage support.</li>
@@ -110,7 +110,7 @@ a page</a> dedicated to Wine.  </p>
 <section
   title="Crypto API"
   subject="CryptoAPI"
-  archive=//www.winehq.org/hypermail/wine-devel/2001/08/0172.html"
+  archive="//www.winehq.org/hypermail/wine-devel/2001/08/0172.html"
   posts="10"
   startdate="08/17/2001"
   enddate="09/06/2001"
@@ -174,7 +174,7 @@ to see how this unfolds.</p>
 <section
   title="Problem with Specmaker"
   subject="Problem with specmaker"
-  archive=//www.winehq.org/hypermail/wine-devel/2001/09/0019.html"
+  archive="//www.winehq.org/hypermail/wine-devel/2001/09/0019.html"
   posts="4"
   startdate="09/06/2001"
   enddate="09/13/2001"
@@ -229,7 +229,7 @@ make things work and generate correct headers.</quote></p>
 <section
   title="Keyboard Problem"
   subject="keyboard problem"
-  archive=//www.winehq.org/hypermail/wine-devel/2001/08/0296.html"
+  archive="//www.winehq.org/hypermail/wine-devel/2001/08/0296.html"
   posts="6"
   startdate="08/28/2001"
   enddate="08/29/2001"
@@ -262,7 +262,7 @@ potential Wine developpers that just are not motivated by the standard
 
 <ul>
  <li> PrgWin95/98: System metrics differ from the Win9x values<br />
-   #48: <a href=//bugs.winehq.org/show_bug.cgi?id=48">
+   #48: <a href="//bugs.winehq.org/show_bug.cgi?id=48">
    http://bugs.winehq.org/show_bug.cgi?id=48</a><br />
    One day I'll fix this one... I swear. Unless you want to work on
    it first. In that case I'll provide you with my test application and
@@ -273,7 +273,7 @@ potential Wine developpers that just are not motivated by the standard
    sure there are plenty of other things that are out of date.</li>
 
  <li> Metabug: Test Wine with the VXCL samples<br />
-   #242: <a href=//bugs.winehq.org/show_bug.cgi?id=242">
+   #242: <a href="//bugs.winehq.org/show_bug.cgi?id=242">
    http://bugs.winehq.org/show_bug.cgi?id=242</a><br />
    Get the VXCL samples, test them with Wine and report the bugs in the
    bugzilla database. I know there's lots of them. Then people (or
@@ -284,14 +284,14 @@ potential Wine developpers that just are not motivated by the standard
    Windows and in Wine.</li>
 
  <li> Metabug: Test Wine with the Common Control Spy Samples<br />
-   #239: <a href=//bugs.winehq.org/show_bug.cgi?id=239">
+   #239: <a href="//bugs.winehq.org/show_bug.cgi?id=239">
    http://bugs.winehq.org/show_bug.cgi??id=239</a><br />
    Get the Common Control Spy samples and test Wine with them. You
    will need the native comctl32 dll but you can do the tests
    without rebooting between each test or using two computers.</li>
 
  <li> PrgWin95: Listbox getting a recessed border instead of a flat one<br />
-   #56: <a href=//bugs.winehq.org/show_bug.cgi??id=56">
+   #56: <a href="//bugs.winehq.org/show_bug.cgi??id=56">
    http://bugs.winehq.org/show_bug.cgi?id=243</a><br />
    (I can provide you with the sample application)
    This one my be fixed, to check...</li>
@@ -303,7 +303,7 @@ potential Wine developpers that just are not motivated by the standard
    programming.</li>
 
  <li> Tabs are missing their inner border<br />
-   #243: <a href=//bugs.winehq.org/show_bug.cgi?id=243">
+   #243: <a href="//bugs.winehq.org/show_bug.cgi?id=243">
    http://bugs.winehq.org/show_bug.cgi??id=243</a><br />
    There's a bug in the drawing of the border of the common control
    tabs. Fixing each of the four instances of the code is easy. It would
@@ -314,7 +314,7 @@ potential Wine developpers that just are not motivated by the standard
 
 <ul>
  <li> QuickBooks Pro Timer does not accept date (GetCalendarInfoA error)<br />
-   #276: <a href=//bugs.winehq.org/show_bug.cgi??id=276">
+   #276: <a href="//bugs.winehq.org/show_bug.cgi??id=276">
    http://bugs.winehq.org/show_bug.cgi?id=276</a><br />
    GetCalendarInfoA/W are not implemented yet. They involve
    quite a lot of internationalisation aspects, but providing a
@@ -322,7 +322,7 @@ potential Wine developpers that just are not motivated by the standard
    should be feasible.</li>
 
  <li> Provide a pedump utility
-   #91: <a href=//bugs.winehq.org/show_bug.cgi?id=91"><br />
+   #91: <a href="//bugs.winehq.org/show_bug.cgi?id=91"><br />
    http://bugs.winehq.org/show_bug.cgi?id=91</a><br />
    I know there's sample code that does that already floating around so
    it should be relatively simple.
@@ -330,25 +330,25 @@ potential Wine developpers that just are not motivated by the standard
    pedump dump the imports/exports but it probably does.</li>
 
  <li> CreateIcon does not resize bitmaps<br />
-   #175: <a href=//bugs.winehq.org/show_bug.cgi?id=175">
+   #175: <a href="//bugs.winehq.org/show_bug.cgi?id=175">
    http://bugs.winehq.org/show_bug.cgi?id=175</a><br />
    I did a similar fix somewhere some time ago. I can provide a
    sample application and I might be able to point you in the right
    direction.</li>
 
  <li> winemaker: 'winemaker --nomfc' does not have the intended effect<br />
-   #227: <a href=//bugs.winehq.org/show_bug.cgi?id=227">
+   #227: <a href="//bugs.winehq.org/show_bug.cgi?id=227">
    http://bugs.winehq.org/show_bug.cgi?id=227</a></li>
 
  <li> winemaker: Ignores the '--with-{mfc,wine}' options once they are
    cached<br />
-   #225: <a href=//bugs.winehq.org/show_bug.cgi?id=225">
+   #225: <a href="//bugs.winehq.org/show_bug.cgi?id=225">
    http://bugs.winehq.org/show_bug.cgi?id=225</a><br />
    If you're familiar with autoconf and know how configure scripts
    should behave...</li>
 
  <li> StrokePath ignores PS_JOIN_xxx<br />
-   #11: <a href=//bugs.winehq.org/show_bug.cgi?id=11">
+   #11: <a href="//bugs.winehq.org/show_bug.cgi?id=11">
    http://bugs.winehq.org/show_bug.cgi?id=11</a><br />
    This should not be too difficult to fix but it would certainly help
    if you are familiar with GDI.</li>
@@ -381,7 +381,7 @@ potential Wine developpers that just are not motivated by the standard
 <section
   title="PowerDVD on an Unsupported Video Chipset"
   subject="Powerdvd running under linux"
-  archive=//www.winehq.org/hypermail/wine-devel/2001/08/0309.html"
+  archive="//www.winehq.org/hypermail/wine-devel/2001/08/0309.html"
   posts="3"
   startdate="08/29/2001"
   enddate="08/29/2001"
@@ -424,7 +424,7 @@ explain, <quote who="Francois Gouget">
 <section
 	title="Keyboard Problem"
 	subject="keyboard problem"
-  archive=//www.winehq.org/hypermail/wine-devel/2001/08/0273.html"
+  archive="//www.winehq.org/hypermail/wine-devel/2001/08/0273.html"
   posts="5"
   startdate="08/26/2001"
   enddate="08/27/2001"
@@ -510,7 +510,7 @@ window</quote></p>
 <section
     title="More Window Handling Additions"
     subject="Crash in latest version"
-    archive=//www.winehq.org/hypermail/wine-devel/2001/08/0293.html"
+    archive="//www.winehq.org/hypermail/wine-devel/2001/08/0293.html"
     posts="6"
     startdate="08/28/2001"
     enddate="08/28/2001"
@@ -555,7 +555,7 @@ window</quote></p>
 <section
   title="Handling Commandline Arguments"
   subject="handling in the commandline"
-  archive=//www.winehq.org/hypermail/wine-devel/2001/09/0004.html"
+  archive="//www.winehq.org/hypermail/wine-devel/2001/09/0004.html"
   posts="1"
   startdate="09/02/2001"
   enddate="09/02/2001"

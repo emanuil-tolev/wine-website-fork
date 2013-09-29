@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="253" date="12/17/2004" />
 <intro> <p>This is the 253rd issue of the Wine Weekly News publication.
-Its main goal is to open Silverton. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to open Silverton. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="211" size="686" contrib="66" multiples="39" lastweek="33">
 
 <person posts="20" size="58" who="Mike Hearn" />
@@ -77,7 +77,7 @@ Its main goal is to open Silverton. It also serves to inform you of what's going
 <section 
 	title="MSI Status Update" 
 	subject=""
-	archive=//www.winehq.org/hypermail/wine-devel/2004/09/0.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/09/0.html" 
 	posts=""
 	startdate="09/  /2004"
 	enddate="09/  /2004"
@@ -109,7 +109,7 @@ want to check in here so that we can make sure it all fits together ok.
 <section 
 	title="Direct3D 9" 
 	subject="[dx9-19] A d3d9 pgm actually works!"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/12/0281.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/12/0281.html" 
 	posts="1"
 	startdate="12/13/2004"
 	enddate="12/13/2004"
@@ -143,7 +143,7 @@ quite a few steady patches.  Jason reported some initial success this week:</p>
 <section
         title="Removing Stubs"
         subject="Re: Stubs in PE build"
-        archive=//www.winehq.org/hypermail/wine-devel/2004/12/0405.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2004/12/0405.html"
         posts="21"
         startdate="12/14/2004"
 	enddate="12/16/2004"
@@ -244,7 +244,7 @@ stubs:</p>
 <quote who="Jon Griffiths"><p>  
 I had a patch which enabled stub generation for building native dlls
 last year
-(<a href=//www.winehq.org/hypermail/wine-patches/2003/07/0176.html">http://www.winehq.org/hypermail/wine-patches/2003/07/0176.html</a>),
+(<a href="//www.winehq.org/hypermail/wine-patches/2003/07/0176.html">http://www.winehq.org/hypermail/wine-patches/2003/07/0176.html</a>),
 that part was not accepted for the same reasons that are being
 mentioned in this thread.
 </p><p>
@@ -269,7 +269,7 @@ by real functions.</quote></p>
 <section
         title="Apartment Breakage"
         subject="out-of-process COM design"
-        archive=//www.winehq.org/hypermail/wine-devel/2004/12/0486.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2004/12/0486.html"
         posts="16"
         startdate="12/17/2004"
 	enddate="12/18/2004"
@@ -355,7 +355,7 @@ think it was right though,
 <section
         title="Wine-license List Removed"
         subject="Should we get rid of the wine-license list?"
-        archive=//www.winehq.org/hypermail/wine-devel/2004/12/0437.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2004/12/0437.html"
         posts="8"
         startdate="12/14/2004"
 	enddate="12/15/2004"

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="180" date="07/25/2003" />
 <intro> <p>This is the 180th release of the weekly Wine Weekly News publication.
-Its main goal is to circumvent the proofreading process so that small grammatical errors will keep the reader attentive. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of Wine as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to circumvent the proofreading process so that small grammatical errors will keep the reader attentive. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of Wine as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="240" size="771" contrib="52" multiples="34" lastweek="37">
 
 <person posts="32" size="90" who="Mike Hearn" />
@@ -64,17 +64,17 @@ Its main goal is to circumvent the proofreading process so that small grammatica
 <section 
 	title="News: Interview with Jon Griffiths, TransGaming Beta Program"
 	subject="News"
-	archive=//www.winehq.org/interview/10" 
+	archive="//www.winehq.org/interview/10" 
 	posts="4"
 	startdate="07/19/2003"
 	enddate="07/25/2003"
 >
 <topic>News</topic>
 <p>
- <a href=//www.winehq.org/interview/10">Jon Griffiths</a>
+ <a href="//www.winehq.org/interview/10">Jon Griffiths</a>
   took a moment to answer some questions.  That was our 10th interview
   with Wine developers.  Previous ones can be found in the 
-  <a href=//www.winehq.org/?news=archive">news archive</a>.
+  <a href="//www.winehq.org/?news=archive">news archive</a>.
 </p>
 <p>TransGaming announced 
 <a href="http://www.transgaming.com/showthread.php?news=76">June's 
@@ -115,7 +115,7 @@ far-reaching benefits for TransGaming's other users. </p></quote>
 <p>Andi Mohr got mentioned on Slashdot for the work he's doing on
 <a href="http://acx100.sourceforge.net/">TI ACX100 wireless</a> drivers
 for Linux.  Andi's name was linked to his 
-<a href=//www.winehq.org/interview/6">WineHQ interview</a>.  That
+<a href="//www.winehq.org/interview/6">WineHQ interview</a>.  That
 interview was from a few months ago and at the time the driver was barely
 working. From the sounds of it there's been a lot of progress.  Maybe
 he'll wrap that project up and get back to Wine ;) </p>
@@ -133,11 +133,11 @@ course in OLE and there was a fair amount of traffic exchanged
 between the COM gurus.  I didn't understand a lot of it so I just
 ignored the threads.  If you enjoy that sort of masochistic
 stuff you'll find it all in the 
-<a href=//www.winehq.org/hypermail/wine-devel/">wine-devel archives</a>.</p>
+<a href="//www.winehq.org/hypermail/wine-devel/">wine-devel archives</a>.</p>
 </section><section 
 	title="Project List" 
 	subject="which of these should I work on?"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0505.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0505.html" 
 	posts="5"
 	startdate="07//2003"
 	enddate="07//2003"
@@ -145,8 +145,8 @@ stuff you'll find it all in the
 <topic>Project Management</topic>
 <p>It's been a while since we've posted a list of projects you
 could get involved with.  For the most part that's due to the
-new <a href=//www.winehq.org/?page=janitorial">janitorial</a>
-and <a href=//www.winehq.org/?page=fun_projects">fun projects</a>
+new <a href="//www.winehq.org/?page=janitorial">janitorial</a>
+and <a href="//www.winehq.org/?page=fun_projects">fun projects</a>
 pages on WineHQ.  This week Jonathon Wilson wanted to start working on
 something and he posted his list asking for feedback:</p>
 <quote who="Jonathon Wilson"><p>
@@ -200,7 +200,7 @@ of the artwork.  </p>
 </section><section 
 	title="A GUID Generator" 
 	subject="new utillity for wine, genguid"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0260.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0260.html" 
 	posts="4"
 	startdate="07/22/2003"
 >
@@ -241,7 +241,7 @@ I will go ahead and merge this in to the ReactOS rosapps tree.
 <section 
 	title="Bitmaps in Resource Files" 
 	subject="what is the 'correct' way to put a bitmap into a resource file?"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0584.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0584.html" 
 	posts="4"
 	startdate="07/23/2003"
 >
@@ -260,7 +260,7 @@ but essentially you need to add some markers (in comments)
 in the .rc file.
 </p><p>
 Look for an example in:
-<ul><a href=//cvs.winehq.org/cvsweb/wine/programs/winecfg/winecfg.rc?rev=1.3&amp;content-type=text/x-cvsweb-markup">
+<ul><a href="//cvs.winehq.org/cvsweb/wine/programs/winecfg/winecfg.rc?rev=1.3&amp;content-type=text/x-cvsweb-markup">
 	./programs/winecfg/winecfg.rc</a></ul>
 </p><p>
 search for BINRES.</p></quote>
@@ -280,7 +280,7 @@ with MSVC, or Borland, etc. I use vim :)</quote></p>
 </section><section 
 	title="Visual Sourcesafe Success" 
 	subject="Visual Sourcesafe works much better than last year..."
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0568.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0568.html" 
 	posts="5"
 	startdate="07/22/2003"
 >
@@ -302,7 +302,7 @@ changes by magic, but progress is progress.  Kudos!
 </section><section 
 	title="Configuring Native OLE DLLs" 
 	subject="Re: [resend] Ensure ole32.dll gets correct version number"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0523.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0523.html" 
 	posts="5"
 	startdate="07/21/2003"
 	enddate="07/23/2003"
@@ -351,7 +351,7 @@ this).
 </p></quote>
 
 <p>The relevant parts of 
-<a href=//www.winehq.org/hypermail/wine-devel/2003/07/att-0579/01-sampleconfig.patch__charset_UTF-8">Mike's
+<a href="//www.winehq.org/hypermail/wine-devel/2003/07/att-0579/01-sampleconfig.patch__charset_UTF-8">Mike's
 patch</a> were:</p>
 <quote who="Mike Hearn"><p><code>
 +; force it to install even though wine has a newer version<br />
@@ -367,7 +367,7 @@ patch</a> were:</p>
 </section><section 
 	title="Terminal Emulation and stdout" 
 	subject="can't redirect stdout?!"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0569.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0569.html" 
 	posts="3"
 	startdate="07/22/2003"
 	enddate="07/23/2003"
@@ -401,7 +401,7 @@ with termcap entries.  Just kidding.  I don't.
 </section><section 
 	title="Wine on Alpha Linux" 
 	subject="Warning on Alpha Linux"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0444.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0444.html" 
 	posts="12"
 	startdate="07/19/2003"
 	enddate="07/20/2003"

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="315" date="06/05/2006" />
 <intro> <p>This is the 315th issue of the Wine Weekly News publication.
-Its main goal is to upgrade. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to upgrade. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="386" size="1123" contrib="108" multiples="60" lastweek="41">
 
 <person posts="34" size="35" who="julliard at winehq.org (Alexandre Julliard)" />
@@ -197,7 +197,7 @@ is. And today you have one more application on Linux than you had yesterday.
 I'm not sure how anyone can be upset by that. </p></quote>
 
 <p>Finally, 
-<a href=//www.winehq.org/wwn/314#Picasa%20Port%20to%20Linux">last 
+<a href="//www.winehq.org/wwn/314#Picasa%20Port%20to%20Linux">last 
 week</a> I alluded that Google Earth would be coming to Linux.  I assumed
 that involved another Wine effort.  Apparently I may have been mistaken
 since a post on LWN.net alluded to the fact that it may not be Wine based.
@@ -207,7 +207,7 @@ since a post on LWN.net alluded to the fact that it may not be Wine based.
 <section 
 	title="Mac OS X Audio &amp; Video Drivers"
 	subject="Mac OS X Audio driver"
-	archive=//www.winehq.org/pipermail/wine-patches/2006-May/026857.html"
+	archive="//www.winehq.org/pipermail/wine-patches/2006-May/026857.html"
 	posts="8"
 >
 <topic>Multimedia</topic>
@@ -216,7 +216,7 @@ Wine on Mac OS.  First, a new audio driver was committed based on
 work by Emmanuel Maillard and Ken Thomases.  The new CoreAudio
 code lives in dlls/winmm/winecoreaudio and seems based on the JACK
 audio driver.  The 
-<a href=//www.winehq.org/pipermail/wine-patches/attachments/20060524/c79f6389/winecoreaudiodrv-0001.obj">patch</a> 
+<a href="//www.winehq.org/pipermail/wine-patches/attachments/20060524/c79f6389/winecoreaudiodrv-0001.obj">patch</a> 
 was quite large and Alexandre asked that it be broken into a couple of
 different chunks.  Shortly after that was done the code was committed.</p>
 
@@ -238,14 +238,14 @@ I will update wiki soon with issues and todo for Quartz driver.
 </p></quote>
 
 <p>Emmanuel also provided a 
-<a href=//www.winehq.org/pipermail/wine-devel/attachments/20060531/59c26232/winemine_ppc.png">screenshot</a>
+<a href="//www.winehq.org/pipermail/wine-devel/attachments/20060531/59c26232/winemine_ppc.png">screenshot</a>
 of winemine running.</p>
 
 </section>
 <section 
 	title="1.0 Tasks"
 	subject="Wine 1.0 Tasks"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-May/047906.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-May/047906.html"
 	posts="30"
 >
 <topic>Project Management</topic>
@@ -256,7 +256,7 @@ time to think about the path toward a release.  Alexandre has said in the
 past he's getting pickier about the patches going in.  The new release
 cycle helps provide a finer grained testing point for regressions.  Overall
 though, what should we be getting done?  Dan provided a link to Bugzilla
-<a href=//bugs.winehq.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;target_milestone=1.0.0&amp;order=bugs.bug_severity">showing bugs</a> 
+<a href="//bugs.winehq.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;product=Wine&amp;target_milestone=1.0.0&amp;order=bugs.bug_severity">showing bugs</a> 
 currently slated to be fixed before 1.0.  Raphael Junqueira had some ideas:</p>
 <quote who="Raphael Junqueira"><p>
 But i think we must fix users most hated bugs as:
@@ -277,7 +277,7 @@ was supposed to fix our woes with unmanaged windows and fullscreening for
 ever but it hasn't happened yet. </quote></p>
 
 <p>Along those lines, Dan felt the OpenGL child window bug,
-<a href=//bugs.winehq.org/show_bug.cgi?id=2398">#2398</a>, was
+<a href="//bugs.winehq.org/show_bug.cgi?id=2398">#2398</a>, was
 critical but wasn't sure it would get fixed.  Over the past week or so
 there's been renewed interest in getting that bug fixed, but apparently
 no one capable of fixing it has time right now.  Discussion of that bug
@@ -302,7 +302,7 @@ of things he wants to get working.  </p>
 <section 
 	title="How Are We Doing?"
 	subject="How are we doing?"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-May/047904.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-May/047904.html"
 	posts="63"
 >
 <topic>Project Management</topic>
@@ -563,12 +563,12 @@ that, but you still need to take time to figure out the code.</p>
 <section 
 	title="WoW - Breakage"
 	subject="World of Warcraft (WoW) patch/more address space layout stuff"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-May/047764.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-May/047764.html"
 	posts="12"
 >
 <topic>Fixes</topic>
 <p>If you read the 
-<a href=//appdb.winehq.org/appview.php?versionId=4031">World of Warcraft 
+<a href="//appdb.winehq.org/appview.php?versionId=4031">World of Warcraft 
 AppDB</a> entry, you'll notice it's a very nicely maintained app.  It
 describes exactly how to get the game working with Wine.  You'll also
 notice the instructions are a complete pain in the ass because they
@@ -636,7 +636,7 @@ regarding contacting developers at Blizzard about the issue.</p>
 <section 
 	title="Updated Fedora Packages"
 	subject="Release Information on Fedora Extras!"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-May/047865.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-May/047865.html"
 	posts="2"
 >
 <topic>Build Process</topic>
@@ -697,7 +697,7 @@ believe that Wine is not being updated by Fedora Extras, when in fact it is...
 <section 
 	title="Shell Integration"
 	subject="Shell integration idea"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-June/048050.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-June/048050.html"
 	posts="9"
 >
 <topic>Integration</topic>
@@ -779,7 +779,7 @@ like in the end the idea was abandoned in favor of simpler mechanism.
 <section 
 	title="RSS Feed"
 	subject="Here is an RSS feed for front page of www.winehq.com"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-March/046041.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-March/046041.html"
 	posts="1"
 >
 <topic>WineHQ</topic>
@@ -798,7 +798,7 @@ http://feed43.com/winehq.xml</a>
 </p></quote>
 
 <p>It would be nice if Wine had it's own RSS feed produced from the
-individual <a href=//cvs.winehq.org/cvsweb/lostwages/news/">news</a> files.
+individual <a href="//cvs.winehq.org/cvsweb/lostwages/news/">news</a> files.
 It probably wouldn't be too difficult and Jeremy Newman probably
 wouldn't mind adding such a script to produce it to the webserver.  In
 the meantime, Dan's seems to be working pretty well.</p>

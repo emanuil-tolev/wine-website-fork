@@ -13,7 +13,7 @@ Think of it as a Windows compatibility layer.  Wine does not require Microsoft
 Windows, as it is a completely alternative implementation consisting of 100%
 Microsoft-free code, but it can optionally use native system DLLs if they are
 available.   You can find more info at
-<a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+<a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="607" size="878" contrib="128" multiples="72" lastweek="0">
 
 <person posts="57" size="63" who="julliard at winehq.org (Alexandre Julliard)" />
@@ -175,7 +175,7 @@ me, I'm boring.  On with the wine!
 <section 
 	title="Using Graphics Card's Limits"
 	subject="wined3d"
-	archive=//source.winehq.org/git/wine.git/?a=commit;h=465962dae66e20e8c026976833b1a38c60638e2a"
+	archive="//source.winehq.org/git/wine.git/?a=commit;h=465962dae66e20e8c026976833b1a38c60638e2a"
 	posts="1"
 >
 <topic>DirectX</topic>
@@ -192,7 +192,7 @@ It's rare for the WWN to highlight individual commits however this one by
 Roderick Colenbrander actually could likely have an impact on the average
 (gaming) wine user.  This patch allows for natural detection of GLSL and in
 combination with the
-<a href=//source.winehq.org/git/wine.git/?a=commit;h=59eba5cb41d165734468dcab0b38b56ff6c40ef0">following
+<a href="//source.winehq.org/git/wine.git/?a=commit;h=59eba5cb41d165734468dcab0b38b56ff6c40ef0">following
 commit</a>, we now have the registry key "useGLSL" set to "enabled" by
 default.  This should mean that for many of us playing games such as
 <a href='http://appdb.winehq.org/objectManager.php?sClass=application&amp;iId=3150'>Elder
@@ -212,7 +212,7 @@ Scrolls IV: Oblivion</a> may no longer have to set that key explicitly!
 <section 
 	title="Number of wine users using Steam"
 	subject="Gaming"
-	archive=//www.winehq.org/pipermail/wine-devel/2007-November/060525.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2007-November/060525.html"
 	posts="7"
 >
 <topic>Applications</topic>
@@ -286,7 +286,7 @@ The numbers are now 0.13% of total reports coming from Wine users.
 <section 
 	title="Wine 0.9.50 Released"
 	subject="Wine Release"
-	archive=//www.winehq.org"
+	archive="//www.winehq.org"
 	posts="1"
 >
 <topic>Wine</topic>
@@ -319,7 +319,7 @@ packages for your distribution.
 <section 
 	title="Google Summer of Code Organization"
 	subject="GSoC"
-	archive=//www.winehq.org/pipermail/wine-devel/2007-November/060728.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2007-November/060728.html"
 	posts="9"
 >
 <topic>Code</topic>
@@ -401,7 +401,7 @@ certainly would have been used and been a great resource.
 <section 
 	title="TransGaming giving back to WINE"
 	subject="TransGaming"
-	archive=//www.winehq.org/pipermail/wine-devel/2007-November/060705.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2007-November/060705.html"
 	posts="4"
 >
 <topic>Code</topic>
@@ -462,7 +462,7 @@ Take care,
 <section 
 	title="Update on progress towards Wine 1.0"
 	subject="Wine 1.0"
-	archive=//www.winehq.org/pipermail/wine-devel/2007-November/060786.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2007-November/060786.html"
 	posts="2"
 >
 <topic>Wine</topic>
@@ -473,12 +473,12 @@ Take care,
 So far, 82 bugs have been nominated to be fixed for 1.0.
 I checked a bunch of them, and so far most look
 reasonable.  Some even look easy or have patches, e.g.
-<a href=//bugs.winehq.org/show_bug.cgi?id=5402">http://bugs.winehq.org/show_bug.cgi?id=5402</a>
-<a href=//bugs.winehq.org/show_bug.cgi?id=5884">http://bugs.winehq.org/show_bug.cgi?id=5884</a>
-<a href=//bugs.winehq.org/show_bug.cgi?id=7544">http://bugs.winehq.org/show_bug.cgi?id=7544</a>
-<a href=//bugs.winehq.org/show_bug.cgi?id=7571">http://bugs.winehq.org/show_bug.cgi?id=7571</a>
-<a href=//bugs.winehq.org/show_bug.cgi?id=9104">http://bugs.winehq.org/show_bug.cgi?id=9104</a>
-<a href=//bugs.winehq.org/show_bug.cgi?id=10147">http://bugs.winehq.org/show_bug.cgi?id=10147</a>
+<a href="//bugs.winehq.org/show_bug.cgi?id=5402">http://bugs.winehq.org/show_bug.cgi?id=5402</a>
+<a href="//bugs.winehq.org/show_bug.cgi?id=5884">http://bugs.winehq.org/show_bug.cgi?id=5884</a>
+<a href="//bugs.winehq.org/show_bug.cgi?id=7544">http://bugs.winehq.org/show_bug.cgi?id=7544</a>
+<a href="//bugs.winehq.org/show_bug.cgi?id=7571">http://bugs.winehq.org/show_bug.cgi?id=7571</a>
+<a href="//bugs.winehq.org/show_bug.cgi?id=9104">http://bugs.winehq.org/show_bug.cgi?id=9104</a>
+<a href="//bugs.winehq.org/show_bug.cgi?id=10147">http://bugs.winehq.org/show_bug.cgi?id=10147</a>
 
 The list looks meaty enough that it's probably worth
 folks going through and seeing what they can pick off.
@@ -512,7 +512,7 @@ we'll have a big release (and a party, of course)!
 <section 
 	title="Compiling Wine: Don't use GCC 4.0"
 	subject="Compiling Wine"
-	archive=//www.winehq.org/pipermail/wine-devel/2007-November/060885.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2007-November/060885.html"
 	posts="1"
 >
 <topic>Wine</topic>
@@ -521,7 +521,7 @@ SecureROM) Wine will no longer build properly using GCC 4.0.X.  Even as
 somebody who studies computer science the actual thread discussing the
 details of these patches and why they break compilation in certain versions
 of GCC is extremely complicated.  However, if you dare,
-<a href=//bugs.winehq.org/show_bug.cgi?id=10273"> this is the link </a>
+<a href="//bugs.winehq.org/show_bug.cgi?id=10273"> this is the link </a>
 with all the juicy details.
 </p>
 <p><quote who="Dan Kegel"><pre>
@@ -539,7 +539,7 @@ near the end without offering to activate the product, you
 have an unsupported compiler, and users of your packages
 might run into trouble with apps protected with safedisc.
 
-See <a href=//bugs.winehq.org/show_bug.cgi?id=10273">http://bugs.winehq.org/show_bug.cgi?id=10273</a> for more info.
+See <a href="//bugs.winehq.org/show_bug.cgi?id=10273">http://bugs.winehq.org/show_bug.cgi?id=10273</a> for more info.
 - Dan
 </pre>
 </quote></p>

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="255" date="12/31/2004" />
 <intro> <p>This is the 255th issue of the Wine Weekly News publication.
-Its main goal is to watch fireworks. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to watch fireworks. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="142" size="512" contrib="47" multiples="26" lastweek="22">
 
 <person posts="18" size="86" who="Linus Torvalds" />
@@ -85,7 +85,7 @@ to get them those apps. </p></quote>
 <section 
 	title="Kernel Problem Solved (con't)" 
 	subject="Re: ptrace single-stepping change breaks Wine"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/12/0713.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/12/0713.html" 
 	posts="53"
 	startdate="12/28/2004"
 	enddate="12/31/2004"
@@ -96,9 +96,9 @@ the latest development versions of the Linux kernel.  For the most
 part everything runs, but some specific stuff used by nasty things
 like copy protection schemes seem to mysteriously fail.  We first 
 covered this in 
-<a href=//www.winehq.org/wwn/249#Kernel%20Integration%20Problems">issue #249</a>,
+<a href="//www.winehq.org/wwn/249#Kernel%20Integration%20Problems">issue #249</a>,
 but you can find a detailed description in 
-<a href=//www.winehq.org/wwn/250#Kernel%20Issue%20(con't)">issue #250</a>.
+<a href="//www.winehq.org/wwn/250#Kernel%20Issue%20(con't)">issue #250</a>.
 At the time, Linus came up with some patches that fixed some problems
 he uncovered but it didn't appear to fix the original problem reported
 by Jesse Allen.  This week Thomas Sailer raised the issue again with
@@ -355,7 +355,7 @@ Jesse was just glad his problem was taken care of,
 <section 
 	title="Safedisc and ntoskrnl (con't)" 
 	subject="safedisc update"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/12/0662.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/12/0662.html" 
 	posts="1"
 	startdate="12/26/2004"
 >
@@ -388,7 +388,7 @@ Comments/suggestions/whatever highly welcome.
 <section 
 	title="Software to Test Crypto API" 
 	subject="Looking for Software which uses the MS Crypto API"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/12/0738.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/12/0738.html" 
 	posts="4"
 	startdate="12/30/2004"
 >
@@ -434,7 +434,7 @@ available.</p></quote>
 <section 
 	title="Removing include/heap.h" 
 	subject="Re: Remove heap.h"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/12/0761.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/12/0761.html" 
 	posts="4"
 	startdate="12/30/2004"
 >

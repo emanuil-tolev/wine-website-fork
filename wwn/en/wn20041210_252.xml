@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="252" date="12/10/2004" />
 <intro> <p>This is the 252nd issue of the Wine Weekly News publication.
-Its main goal is to wear a tux and go to a wedding. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to wear a tux and go to a wedding. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="198" size="840" contrib="69" multiples="33" lastweek="35">
 
 <person posts="20" size="98" who="Mike Hearn" />
@@ -80,7 +80,7 @@ Its main goal is to wear a tux and go to a wedding. It also serves to inform you
 <section
         title="Window Region Handling"
         subject="Re: wine/ windows/win.c windows/painting.c server/ ..."
-        archive=//www.winehq.org/hypermail/wine-devel/2004/12/0217.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2004/12/0217.html"
         posts="4"
         startdate="12/07/2004"
 	enddate="12/08/2004"
@@ -88,7 +88,7 @@ Its main goal is to wear a tux and go to a wedding. It also serves to inform you
 <topic>Architecture</topic>
 
 <p>One big item on the Wine
-<a href=//www.winehq.org/todo_lists">to do list</a>
+<a href="//www.winehq.org/todo_lists">to do list</a>
 involves window management and how visible regions are managed.
 Last year at Wineconf there was some discussion of it, but
 everyone pretty much agreed it was a project only Alexandre
@@ -106,7 +106,7 @@ reported:</p>
 
 OK, here are the first impressions after testing this patch:
 <ol>
- <li>Good news: <a href=//bugs.winehq.org/show_bug.cgi?id=1091">bug 
+ <li>Good news: <a href="//bugs.winehq.org/show_bug.cgi?id=1091">bug 
      1091</a> seems to have been fixed</li>
  <li>Bad news: it is *very* slow now. The repaint on
     <tt>wine List\ View.exe</tt>
@@ -135,7 +135,7 @@ window. This will be fixed in a subsequent patch.</quote>
 <section 
 	title="Systray Support Revisited" 
 	subject="Re: Another systray patch"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/12/0182.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/12/0182.html" 
 	posts="7"
 	startdate="12/06/2004"
 	enddate="12/09/2004"
@@ -178,7 +178,7 @@ even more uses of it.</quote></p>
 <section
         title="Header Cleanup"
         subject="Re: Includes [1] ntdll"
-        archive=//www.winehq.org/hypermail/wine-devel/2004/12/0208.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2004/12/0208.html"
         posts="16"
         startdate="12/07/2004"
  	enddate="12/10/2004"
@@ -310,14 +310,14 @@ shortly.</p></quote>
 <section 
 	title="AppDB Integration with Bugzilla" 
 	subject="[AppDB] First step to integrating the AppDB with Bugzilla"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/12/0308.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/12/0308.html" 
 	posts="1"
 	startdate="12/10/2004"
 	enddate="12/10/2004"
 >
 <topic></topic>
 <p>Lots of work has been done on the 
-<a href=//appdb.winehq.org">AppDB</a> lately by 
+<a href="//appdb.winehq.org">AppDB</a> lately by 
 Tony Lambregts, Chris Morgan, and a newcomer, Jonathan Ernst.  
 It's actually picked up even more steam now that Chris has CVS access to 
 WineHQ.  This week Tony posted another patch and asked for comments:</p>

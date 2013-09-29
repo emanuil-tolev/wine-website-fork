@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="270" date="04/15/2005" />
 <intro> <p>This is the 270th issue of the Wine Weekly News publication.
-Its main goal is to tear down the circus tent. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to tear down the circus tent. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="222" size="1110" contrib="71" multiples="39" lastweek="30">
 
 <person posts="15" size="37" who="Alexandre Julliard" />
@@ -83,7 +83,7 @@ Its main goal is to tear down the circus tent. It also serves to inform you of w
 <section 
 	title="Samba's NTVFS" 
 	subject="Borrowing NTVFS layer from Samba4 for Wine?"
-	archive=//www.winehq.org/hypermail/wine-devel/2005/04/0267.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2005/04/0267.html" 
 	posts="8"
 	startdate="04/13/2005"
 	enddate="04/14/2005"
@@ -189,7 +189,7 @@ share modes. </p></quote>
 <section 
 	title="Safedisk Help Needed" 
 	subject="safedisk 1 update, get your safedisk 1 games out (Not running just yet, but getting there)"
-	archive=//www.winehq.org/hypermail/wine-devel/2005/04/0305.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2005/04/0305.html" 
 	posts="1"
 	startdate="04/14/2005"
 >
@@ -277,7 +277,7 @@ crash in new ways.</p>
 <section
         title="Taking Out the Trash"
         subject="Started on TrashCan implementation"
-        archive=//www.winehq.org/hypermail/wine-devel/2005/04/0261.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2005/04/0261.html"
         posts="5"
         startdate="04/13/2005"
 	enddate="04/15/2005"
@@ -303,19 +303,19 @@ I am using the sample programs here to reverse how its supposed to work
 </p><p>
 If anyone would like to help they can start working on the namespace stuff needed for the
 RecycleBin. 
-[ed note: <a href=//www.winehq.org/hypermail/wine-devel/2005/04/att-0261/01-trashcan-4.13.05.patch">patch</a> attached]</p></quote>
+[ed note: <a href="//www.winehq.org/hypermail/wine-devel/2005/04/att-0261/01-trashcan-4.13.05.patch">patch</a> attached]</p></quote>
 
 <p>The next day he wrote:</p>
 <quote who="Steven Edwards"><p>
 There are still a whole set of RecycleBin APIs that need to be implemented to query and empty the
 trash but this should work for explorer sending files to the trash. Also note someone else will
-need to implement the RecycleBin ShellFolder.  [ed. note: <a href=//www.winehq.org/hypermail/wine-devel/2005/04/att-0288/01-trashcan-20050414-2.diff">patch</a>
+need to implement the RecycleBin ShellFolder.  [ed. note: <a href="//www.winehq.org/hypermail/wine-devel/2005/04/att-0288/01-trashcan-20050414-2.diff">patch</a>
 attached]
 </p></quote>
 
 
 <quote who="Steven Edwards"><p>
-Yes I know this [<a href=//www.winehq.org/hypermail/wine-devel/2005/04/att-0324/01-trash-fd.diff">patch</a>] 
+Yes I know this [<a href="//www.winehq.org/hypermail/wine-devel/2005/04/att-0324/01-trash-fd.diff">patch</a>] 
 does not look that nice atm. It's still a work in progress but you get the idea of
 where I am going with it. With this patch any SHFileOperation with the FOF_ALLOWUNDO flag will
 move files to the user's ~/.Trash. There is a draft spec on 
@@ -329,7 +329,7 @@ I am not sure how I am going to deal with that yet.</p></quote>
 <section 
 	title="USB Support" 
 	subject="USB status ..."
-	archive=//www.winehq.org/hypermail/wine-devel/2005/04/0314.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2005/04/0314.html" 
 	posts="3"
 	startdate="04/15/2005"
 	enddate="04/16/2005"
@@ -380,7 +380,7 @@ ideas.</p></quote>
 <section 
 	title="Multimedia Config Question"
 	subject="Multimedia Control Panel question"
-	archive=//www.winehq.org/hypermail/wine-devel/2005/04/0233.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2005/04/0233.html" 
 	posts="2"
 	startdate="04/12/2005"
 >
@@ -434,7 +434,7 @@ Sounds doable?</p></quote>
 <section 
 	title="Hexdump Function" 
 	subject="Hexdumping function?"
-	archive=//www.winehq.org/hypermail/wine-devel/2005/04/0330.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2005/04/0330.html" 
 	posts="2"
 	startdate="04/15/2005"
 >

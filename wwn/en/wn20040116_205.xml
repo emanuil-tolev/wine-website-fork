@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="205" date="01/16/2004" />
 <intro> <p>This is the 205th issue of the Wine Weekly News publication.
-Its main goal is to huck cliffs. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to huck cliffs. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="174" size="700" contrib="52" multiples="27" lastweek="33">
 
 <person posts="25" size="63" who="Alexandre Julliard" />
@@ -64,7 +64,7 @@ Its main goal is to huck cliffs. It also serves to inform you of what's going on
 <section 
 	title="ODBC Fun - Tips and Tricks" 
 	subject="Wine User's guide : using Windows ODBC driver manager seems to work"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/01/0466.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/01/0466.html" 
 	posts="5"
 	startdate="01/06/2004"
 	enddate="01/14/2004"
@@ -179,7 +179,7 @@ have .exe associate with wine! yes?)
 <section 
 	title="Radius Cinepak Decoder and Directory Structure" 
 	subject="Re: PATCH: Port Tim Ferguson's ICCVID codec to Wine"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/01/0452.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/01/0452.html" 
 	posts="5"
 	startdate="01/13/2004"
 	enddate="01/14/2004"
@@ -224,7 +224,7 @@ the other DLLs.  Eric Pouech disagreed,
 <section 
 	title="Shell32 Update &amp; Patch Submission Process" 
 	subject="Re: shell32 patches to be usable by ReactOS Explorer"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/01/0373.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/01/0373.html" 
 	posts="12"
 	startdate="01/11/2004"
 	enddate="01/13/2004"
@@ -342,9 +342,9 @@ Alexandre to split them up, match the ChangeLog, review them, etc.
 Please stick to one-(uncompressed, inlined)-patch-per-email-messsage
 rule, it's so much better for everybody. Here are some relevant links:
         <ul>
-	<a href=//www.winehq.org/sending_patches">
+	<a href="//www.winehq.org/sending_patches">
     http://www.winehq.org/sending_patches</a><br />
-        <a href=//www.winehq.org/docs/winedev-guide/codingpractice#PATCH-FORMAT">
+        <a href="//www.winehq.org/docs/winedev-guide/codingpractice#PATCH-FORMAT">
     http://www.winehq.org/docs/winedev-guide/codingpractice#PATCH-FORMAT</a>
 </ul></p></quote>
 
@@ -402,7 +402,7 @@ of the original patch.</p>
 <section 
 	title="Regression Testing Revisited" 
 	subject="Compilation broken in CVS"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/01/0341.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/01/0341.html" 
 	posts="5"
 	startdate="01/09/2004"
 >
@@ -423,7 +423,7 @@ Paul has kept at it and you can still find his daily testing at:
 <section 
 	title="Key Signing Party at Wineconf" 
 	subject="Key signing party at wineconf"
-	archive=//www.winehq.org/hypermail/wineconf/2004/01/0012.html" 
+	archive="//www.winehq.org/hypermail/wineconf/2004/01/0012.html" 
 	posts="3"
 	startdate="01/08/2004"
 	enddate="01/09/2004"

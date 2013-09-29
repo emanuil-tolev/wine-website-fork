@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="267" date="03/25/2005" />
 <intro> <p>This is the 267th issue of the Wine Weekly News publication.
-Its main goal is to eat leftovers. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to eat leftovers. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="211" size="1871" contrib="72" multiples="41" lastweek="43">
 
 <person posts="17" size="50" who="Alexandre Julliard" />
@@ -84,7 +84,7 @@ Its main goal is to eat leftovers. It also serves to inform you of what's going 
 <section 
 	title="News: Sparx Systems Interview" 
 	subject="News"
-	archive=//www.winehq.org/" 
+	archive="//www.winehq.org/" 
 	posts="1"
 	startdate="03/19/2005"
 	enddate="03/25/2005"
@@ -93,7 +93,7 @@ Its main goal is to eat leftovers. It also serves to inform you of what's going 
 <p>
 
 In last week's 
-<a href=//www.winehq.org/wwn/266#News:%20Enterprise%20Architect%20&amp;%20DirectX9">news
+<a href="//www.winehq.org/wwn/266#News:%20Enterprise%20Architect%20&amp;%20DirectX9">news
 section</a> we mentioned an Australian company, Sparx Systems, uses
 CrossOver Office as a way to run their app on Linux.  I asked Sam
 Mancarella some questions about it to get a feel for how well the
@@ -222,7 +222,7 @@ consuming.  At some point I'll likely try to pick it up again.)</p>
 <section
         title="Direct3D Update"
         subject="Status and (nearby) future of wined3d"
-        archive=//www.winehq.org/hypermail/wine-devel/2005/03/0899.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2005/03/0899.html"
         posts="2"
         startdate="03/21/2005"
 >
@@ -270,7 +270,7 @@ little trickier.</p></quote>
 <section 
 	title="Theming Revisited"
 	subject="Attempt to make buttons themed"
-	archive=//www.winehq.org/hypermail/wine-devel/2005/03/0906.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2005/03/0906.html" 
 	posts="17"
 	startdate="03/21/2005"
 	enddate="03/23/2005"
@@ -283,7 +283,7 @@ sample.  He started off a thread with:</p>
 <quote who="Frank Richter"><p>
 To see how easy (or not) it would be to make the controls use themes, I 
 tried to get themed buttons; the result is the 
-<a href=//www.winehq.org/hypermail/wine-devel/2005/03/0906.html">attached 
+<a href="//www.winehq.org/hypermail/wine-devel/2005/03/0906.html">attached 
 patch</a> (to try it 
 out, you need an .msstyles file and appropriate registry setup). It's 
 probably not perfect as it is, comments/questions are welcome.
@@ -414,7 +414,7 @@ The interface to UxTheme is fairly straight-forward. The SDK sample
 <section
         title="Finding Regressions"
         subject="visual regression in IE"
-        archive=//www.winehq.org/hypermail/wine-devel/2005/03/1014.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2005/03/1014.html"
         posts="2"
         startdate="03/24/2005"
 >
@@ -434,7 +434,7 @@ track down a problem with Internet Explorer:</p>
  now (cvs build from 23 march) the 'address' and the 'links' fields are 
  displayed incorrectly: they are bigger than they should be, and they are 
  'striked through' which should not happen; See also the 
- <a href=//www.winehq.org/hypermail/wine-devel/2005/03/1014.html">attached 
+ <a href="//www.winehq.org/hypermail/wine-devel/2005/03/1014.html">attached 
  screenshots</a> - I'm sure it's clear what I mean.
 </p><p>
  Could someone point me to the correct pages to find out what caused 
@@ -445,7 +445,7 @@ track down a problem with Internet Explorer:</p>
 <p>James Hawkins supplied the relevant information:</p>
 <quote who="James Hawkins"><p>
 You could run a regression test.
-<a href=//www.winehq.org/docs/winedev-guide/x1344">
+<a href="//www.winehq.org/docs/winedev-guide/x1344">
  http://www.winehq.org/docs/winedev-guide/x1344</a>
 </p></quote>
 
@@ -457,7 +457,7 @@ Extra credit will be awarded for supplying a patch yourself.</p>
 <section
         title="Help Save Winrash"
         subject="saving winrash"
-        archive=//www.winehq.org/hypermail/wine-devel/2005/03/1013.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2005/03/1013.html"
         posts="9"
         startdate="03/24/2005"
 >
@@ -534,7 +534,7 @@ qemu), a recent build of win, and need to get on with ntoskrnl.
 <section
         title="Images from video4linux Devices"
         subject="Preview-window works in Virtualdub,Paltalk etc."
-        archive=//www.winehq.org/hypermail/wine-devel/2005/03/0886.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2005/03/0886.html"
         posts="2"
         startdate="03/20/2005"
 	enddate="03/21/2005"
@@ -550,7 +550,7 @@ a patch to wine-devel this week:</p>
 can now view the images from my webcam in the preview
 window in programs like Virtualdub, Paltalk and
 WebCamnow. Basically the 
-<a href=//www.winehq.org/hypermail/wine-devel/2005/03/0886.html">attached</a>
+<a href="//www.winehq.org/hypermail/wine-devel/2005/03/0886.html">attached</a>
 "patch" reads an
 RGB-image from my 
 video4linux device and  "turns" this into a bitmap,
@@ -570,7 +570,7 @@ took a look at it and fixed some problems:</p>
 That code doesn't with my QuickCam 3000, which defaults to YUV420.
 </p><p>
 The 
-<a href=//www.winehq.org/hypermail/wine-devel/2005/03/att-0901/01-vidcat.patch__charset_ISO-8859-1">attached 
+<a href="//www.winehq.org/hypermail/wine-devel/2005/03/att-0901/01-vidcat.patch__charset_ISO-8859-1">attached 
 patch</a> adds YUV420 support back in to vidcat.c, and should
 still work with RGB cams.
 </p></quote>

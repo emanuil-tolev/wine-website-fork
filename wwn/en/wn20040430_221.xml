@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="221" date="04/30/2004" />
 <intro> <p>This is the 221st issue of the Wine Weekly News publication.
-Its main goal is to travel! It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to travel! It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="204" size="1125" contrib="66" multiples="34" lastweek="43">
 
 <person posts="17" size="48" who="Dimitrie O. Paun" />
@@ -89,12 +89,12 @@ Rica staying as far away from computers as I can.</p>
 <p>But I couldn't leave you folks without something to read.
 So we're kicking off another season of interviews with Wine
 developers.  Last year we did a dozen interviews that are now
-archived on the Wine <a href=//www.winehq.org/who">
+archived on the Wine <a href="//www.winehq.org/who">
 Who's Who</a> page.  So in lieu of news next week we'll be 
 publishing an interview.  Jeremy Newman will probably post
 the interview next Thursday or Friday, look for the news
-on <a href=//www.winehq.org">WineHQ</a>.  Next 
-week <a href=//www.winehq.org/interview/13">this link</a>
+on <a href="//www.winehq.org">WineHQ</a>.  Next 
+week <a href="//www.winehq.org/interview/13">this link</a>
 will be active and should take you there.  
 </p><p>
 I should also note that the process is rather arbitrary. 
@@ -111,7 +111,7 @@ and fire off some questions.</p>
 <section 
 	title="Window Management Ideas" 
 	subject="Window management protocol extensions"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/04/0654.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/04/0654.html" 
 	posts="3"
 	startdate="04/24/2004"
 >
@@ -171,7 +171,7 @@ going grey-haired early :)
 <section 
 	title="More Filesystem Work" 
 	subject="CVS Invalid path for c:\\Windows"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/04/0685.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/04/0685.html" 
 	posts="5"
 	startdate="04/25/2004"
 	enddate="04/28/2004"
@@ -204,7 +204,7 @@ contents of your ~/.wine/dosdevices directory.</quote></p>
 <section 
 	title="When Stubs Are FIXME's" 
 	subject="Re: SetCalendarInfoA and SetCalendarInfoW implementations"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/04/0780.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/04/0780.html" 
 	posts="2"
 	startdate="04/28/2004"
 	enddate="04/28/2004"
@@ -255,7 +255,7 @@ done on a case by case basis.
 <section 
 	title="Compiler Alignment Differences" 
 	subject="Alignment testing"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/04/0698.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/04/0698.html" 
 	posts="5"
 	startdate="04/26/2004"
 >

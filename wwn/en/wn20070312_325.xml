@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="325" date="03/12/2007" />
 <intro> <p>This is the 325th issue of the Wine Weekly News publication.
-Its main goal is to heal. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to heal. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="204" size="517" contrib="91" multiples="39" lastweek="34">
 
 <person posts="11" size="10" who="dmitry at codeweavers.com (Dmitry Timoshkov)" />
@@ -114,7 +114,7 @@ Linux), and a Mac version's on the way.</quote></p>
 <section 
 	title="GDIPlus"
 	subject="Tackling gdiplus?"
-	archive=//www.winehq.org/pipermail/wine-devel/2007-March/054723.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2007-March/054723.html"
 	posts="9"
 >
 <topic></topic>
@@ -190,7 +190,7 @@ could be taken in that regard.</p>
 <section 
 	title="Cairo Winelib Port"
 	subject="Interesting Winelib report"
-	archive=//www.winehq.org/pipermail/wine-devel/2007-March/054714.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2007-March/054714.html"
 	posts="1"
 >
 <topic>Winelib</topic>
@@ -264,7 +264,7 @@ but so far nothing has appeared. </p>
 <section 
 	title="DirectX 10 For SoC?"
 	subject="DirectX 10 start as a SoC project?"
-	archive=//www.winehq.org/pipermail/wine-devel/2007-March/054778.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2007-March/054778.html"
 	posts="10"
 >
 <topic>Summer of Code 2007</topic>
@@ -338,7 +338,7 @@ essentially miniature programs that describe how to throw pixels on a
 screen.  Another method for that is 
 <a href="http://en.wikipedia.org/wiki/GLSL">GLSL</a>, a similar method based
 on OpenGL and included in the 2.0 spec.  Ian Macfarlane 
-<a href=//www.winehq.org/pipermail/wine-devel/2006-November/052375.html">pointed out</a>
+<a href="//www.winehq.org/pipermail/wine-devel/2006-November/052375.html">pointed out</a>
 a few months ago that there's an HLSL to GLSL converter.  </p><p>
 Anyway, back to the topic at hand: DX 10.  Ivan wasn't sure DX10 should
 count as a SoC project:</p>
@@ -427,7 +427,7 @@ DirectX 10.</p>
 <section 
 	title="Developing For Fun While Under a Contract"
 	subject="Work legalities"
-	archive=//www.winehq.org/pipermail/wine-devel/2007-March/054672.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2007-March/054672.html"
 	posts="10"
 >
 <topic>Licensing</topic>
@@ -547,7 +547,7 @@ labor they unwittingly donated to free software development.</p>
 <section 
 	title="Winetricks"
 	subject="Quick, how do you install native dcom? Or the visual C++ runtimes? Or..."
-	archive=//www.winehq.org/pipermail/wine-devel/2007-March/054774.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2007-March/054774.html"
 	posts="3"
 >
 <topic>Utilities</topic>
@@ -593,7 +593,7 @@ run Wine."  </p>
 <section 
 	title="Lotus Notes Printing Regression"
 	subject="Regression in Lotus Notes R5 between wine-0.9.27 and wine-0.9.28"
-	archive=//www.winehq.org/pipermail/wine-devel/2007-March/054638.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2007-March/054638.html"
 	posts="3"
 >
 <topic>Printing</topic>
@@ -609,7 +609,7 @@ picture (in this case, a logo) in the mail stationery prevents all
 text (including header text) from being printed.
 </p><p>
 Odd as it may seem, my regression testing pointed commit 
-<a href=//source.winehq.org/git/wine.git/?a=commit;h=21635133fb271405fefd6bce3078cf971e84c426">21635133fb271405fefd6bce3078cf971e84c426</a> as the cause. I positioned my tree 
+<a href="//source.winehq.org/git/wine.git/?a=commit;h=21635133fb271405fefd6bce3078cf971e84c426">21635133fb271405fefd6bce3078cf971e84c426</a> as the cause. I positioned my tree 
 just before it, and the mail printed okay; I applied it, the mail came out 
 blank again.
 </p><p>

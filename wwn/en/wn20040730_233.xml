@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="233" date="07/30/2004" />
 <intro> <p>This is the 233rd issue of the Wine Weekly News publication.
-Its main goal is to laugh. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to laugh. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="244" size="1068" contrib="65" multiples="35" lastweek="32">
 
 <person posts="27" size="174" who="Shachar Shemesh" />
@@ -93,7 +93,7 @@ about CodeWeavers are leveled unfairly.  </p>
 <section 
 	title="Configuration To-Do List" 
 	subject="winecfg todo list"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/07/0427.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/07/0427.html" 
 	posts="3"
 	startdate="07/25/2004"
 >
@@ -192,7 +192,7 @@ corresponding support is missing.
 <section 
 	title="rsabase.dll Work" 
 	subject="rsabase.dll"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/07/0425.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/07/0425.html" 
 	posts="4"
 	startdate="07/25/2004"
 	enddate="07/26/2004"
@@ -237,7 +237,7 @@ I worked on the following aspects:
   (but elephant skin), no guts.</li></ul>
 </p><p>
 I've 
-<a href=//www.winehq.org/hypermail/wine-devel/2004/07/att-0425/01-rsabase.diff">attached</a> the current version of my patch. 
+<a href="//www.winehq.org/hypermail/wine-devel/2004/07/att-0425/01-rsabase.diff">attached</a> the current version of my patch. 
 </p><p>
 Do you have a certain application, which you want to get running? Would it be 
 ok for you if we proceed as follows: I will wait until you submit your patch 
@@ -263,7 +263,7 @@ lot of familiarity with both CryptoAPI and the OpenSSL/Crypto library.
 <section 
 	title="Wine &amp; Locales" 
 	subject=""
-	archive=//www.winehq.org/hypermail/wine-devel/2004/07/0.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/07/0.html" 
 	posts="35"
 	startdate="07/28/2004"
 	enddate="07/29/2004"
@@ -295,7 +295,7 @@ In an attempt to get away from a possibly confusing subject line, and to
 converge on an agreed behavior, here is an attempt to clear the desired 
 locale behavior Wine should have. Dmitry (and anyone else), please 
 comment on 
-<a href=//www.winehq.org/hypermail/wine-devel/2004/07/0505.html">this 
+<a href="//www.winehq.org/hypermail/wine-devel/2004/07/0505.html">this 
 table</a> where you think there are errors in it, and say 
 what should be there.
 </p><p>
@@ -425,7 +425,7 @@ also take into account LC_CTYPE settings.  </p>
 <section 
 	title="S3 Texture Compression" 
 	subject="Re: [D3D] Added native and emulated S3TC support"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/07/0492.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/07/0492.html" 
 	posts="5"
 	startdate="07/27/2004"
 	enddate="07/28/2004"
@@ -470,13 +470,13 @@ good chance he just hasn't caught up.  </p>
 <section 
 	title="To Bugzilla Or Not To Bugzilla" 
 	subject="Is bugzilla worth keeping?"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/07/0386.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/07/0386.html" 
 	posts="19"
 	startdate="07/24/2004"
 	enddate="07/29/2004"
 >
 <topic>Project Management</topic>
-<p>Wine has had a <a href=//bugs.winehq.org">Bugzilla</a> bug tracking
+<p>Wine has had a <a href="//bugs.winehq.org">Bugzilla</a> bug tracking
 system for a while now (well, we lost the database once, but some kind folks
 fixed it up.)  Like any project, including paid commercial development, it's
 hard to maintain that bug list.  Mike Hearn wondered if we should just get
@@ -528,7 +528,7 @@ leave it "unconfirmed".</p>
 <p>Dan Kegel:</p>
 <quote who="Dan Kegel"><p>
 It would deprive us of long-term memory.  For instance, I filed the bug
-report <a href=//bugs.winehq.org/show_bug.cgi?id=1404">#1404</a>
+report <a href="//bugs.winehq.org/show_bug.cgi?id=1404">#1404</a>
 in January 2003 with a nice test case (but one that's hard to translate into a 
 unit test).  Without Bugzilla, we'd have a harder time remembering problems
 like that. </p></quote>
@@ -548,7 +548,7 @@ users, even if the eventual conclusion is that we're doing OK.</quote>
 <section 
 	title="Listing API's in a DLL" 
 	subject="how can I find what functions a dll file provides?"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/07/0409.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/07/0409.html" 
 	posts="4"
 	startdate="07/24/2004"
 	enddate="07/25/2004"

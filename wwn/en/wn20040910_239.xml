@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="239" date="09/10/2004" />
 <intro> <p>This is the 239th issue of the Wine Weekly News publication.
-Its main goal is to play poker. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to play poker. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="238" size="910" contrib="76" multiples="40" lastweek="35">
 
 <person posts="32" size="112" who="Mike Hearn" />
@@ -88,7 +88,7 @@ Its main goal is to play poker. It also serves to inform you of what's going on 
 <section 
 	title="Intro Developers Guide" 
 	subject="Wine Developer Cheatsheet, v1"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/09/0098.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/09/0098.html" 
 	posts="14"
 	startdate="09/04/2004"
 	enddate="09/07/2004"
@@ -629,20 +629,20 @@ tripped you up. Please do try again!
 <section 
 	title="Transport Layer Security: SSL vs. GnuTLS" 
 	subject="Possible fun project/todo list item?"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/09/0036.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/09/0036.html" 
 	posts="12"
 	startdate="09/02/2004"
 	enddate="09/06/2004"
 >
 <topic>Integration</topic>
 <p>We sort of discussed this topic back in July (WWN issue
-<a href=//www.winehq.org/wwn/230#OpenSSL%20vs.%20NSS">#230</a>),
+<a href="//www.winehq.org/wwn/230#OpenSSL%20vs.%20NSS">#230</a>),
 but Mike Hearn brought it up again.  It seems OpenSSL using OpenSSL in
 Wine's crypto code leaves something to be desired.   If you follow the
 link above, Steven Edwards raises some points about licensing.  This
 week Mike Hearn brought up some technical problems and thought it might
 be something to add to the 
-<a href=//www.winehq.org/fun_projects">Fun Projects</a> list:</p>
+<a href="//www.winehq.org/fun_projects">Fun Projects</a> list:</p>
 
 <quote who="Mike Hearn"><p>
 The OpenSSL library we use in wininet/netconnection.c is a very unstable
@@ -714,7 +714,7 @@ in order to compile with it.</p>
 <section 
 	title="FreeBSD Breakage - IPX Packets" 
 	subject="dlls/winsock/socket breakage"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/09/0296.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/09/0296.html" 
 	posts="3"
 	startdate="09/09/2004"
 >
@@ -803,7 +803,7 @@ linux/freebsd ipx sockaddr structure is different.</p></quote>
 <section 
 	title="Fix for Broken Delphi Menus" 
 	subject="Revised menu patch"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/09/0229.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/09/0229.html" 
 	posts="10"
 	startdate="09/07/2004"
 	enddate="09/08/2004"
@@ -942,7 +942,7 @@ displayed in multiple windows, so it's not a "Delphi-only" fix.
 
 </p><p>
 My patch is here:
-<ul><a href=//www.winehq.org/hypermail/wine-patches/2004/09/0154.html">
+<ul><a href="//www.winehq.org/hypermail/wine-patches/2004/09/0154.html">
 http://www.winehq.org/hypermail/wine-patches/2004/09/0154.html</a></ul></p>
 </quote>
 

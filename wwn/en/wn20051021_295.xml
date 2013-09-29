@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="295" date="10/21/2005" />
 <intro> <p>This is the 295th issue of the Wine Weekly News publication.
-Its main goal is to throw boomerangs. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to throw boomerangs. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="159" size="225" contrib="53" multiples="33" lastweek="32">
 
 <person posts="14" size="26" who="oliver_stieber at yahoo.co.uk (Oliver Stieber)" />
@@ -91,7 +91,7 @@ even worked with Wine at all.</p></quote>
 <section 
 	title="Beta Plans: Tuesday"
 	subject=""
-	archive=//www.winehq.org/pipermail/wine-devel/2005-October/.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-October/.html"
 	posts=""
 >
 <topic></topic>
@@ -140,7 +140,7 @@ earliest.
 <section 
 	title="Systray Support, part #697"
 	subject="XEmbed Systray Support"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-October/041251.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-October/041251.html"
 	posts="10"
 >
 <topic>Integration</topic>
@@ -197,7 +197,7 @@ IceWM.  </quote></p>
 <section 
 	title="OpenGL &amp; Child Window Breakage"
 	subject="bug 2398: OpenGL, child windows, and wine"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-October/041236.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-October/041236.html"
 	posts="14"
 >
 <topic>Graphics</topic>
@@ -208,24 +208,24 @@ The change back in January or so to no longer give
 each window its own x window seems to have caused
 an upheaval in the opengl world.  The first app to
 report a problem was Lightwave 3D:
-<ul><a href=//bugs.winehq.org/show_bug.cgi?id=2398">
+<ul><a href="//bugs.winehq.org/show_bug.cgi?id=2398">
 http://bugs.winehq.org/show_bug.cgi?id=2398</a></ul></p><p>
 followed by
 <ul>
-<li><a href=//bugs.winehq.org/show_bug.cgi?id=2908">
+<li><a href="//bugs.winehq.org/show_bug.cgi?id=2908">
 http://bugs.winehq.org/show_bug.cgi?id=2908</a>  WeatherScope (free)</li>
-<li><a href=//bugs.winehq.org/show_bug.cgi?id=3083">
+<li><a href="//bugs.winehq.org/show_bug.cgi?id=3083">
 http://bugs.winehq.org/show_bug.cgi?id=3083</a>  Google Earth (free)</li>
-<li><a href=//bugs.winehq.org/show_bug.cgi?id=3400">
+<li><a href="//bugs.winehq.org/show_bug.cgi?id=3400">
 http://bugs.winehq.org/show_bug.cgi?id=3400</a>  Quake3 Radiant</li>
-<li><a href=//bugs.winehq.org/show_bug.cgi?id=3583">
+<li><a href="//bugs.winehq.org/show_bug.cgi?id=3583">
 http://bugs.winehq.org/show_bug.cgi?id=3583</a>  Moray 3.5 (free)</li></ul>
 I've taken the liberty of marking the latter four
 bugs as duplicates of 2398, reopening 2398, and
 targeting it to be fixed for Wine 1.0.
 </p><p>
 Willie Sippel's comment,
-<a href=//bugs.winehq.org/show_bug.cgi?id=2398#c41">
+<a href="//bugs.winehq.org/show_bug.cgi?id=2398#c41">
 http://bugs.winehq.org/show_bug.cgi?id=2398#c41</a>,
 seems to point the way to a fix; he suggests using
 the new GL_EXT_framebuffer_object OpenGL extension.
@@ -306,7 +306,7 @@ gurus apply within.
 <section 
 	title="Automatically Downloading ActiveX"
 	subject="Downloading Mozilla ActiveX"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-October/041212.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-October/041212.html"
 	posts="12"
 >
 <topic>Web/HTML</topic>

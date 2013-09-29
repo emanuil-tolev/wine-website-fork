@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="298" date="11/04/2005" />
 <intro> <p>This is the 298th issue of the Wine Weekly News publication.
-Its main goal is to start skiing again. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to start skiing again. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="261" size="478" contrib="88" multiples="50" lastweek="49">
 
 <person posts="13" size="36" who="davmac at davmac.org (Davin McCall)" />
@@ -125,7 +125,7 @@ past. </p></quote>
 <section 
 	title="WineProbe, Part II"
 	subject="WineProbe part II; Propaganda for Wine"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-November/041969.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-November/041969.html"
 	posts="4"
 >
 <p>David G&#252;mbel announced some news coming out of Germany:</p>
@@ -170,7 +170,7 @@ publication. Anyone interested can find the article available online at
 <section 
 	title="Multimonitor Support"
 	subject="Multimonitor support in Wine?"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-October/041828.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-October/041828.html"
 	posts="5"
 >
 <topic>Graphics</topic>
@@ -227,7 +227,7 @@ but nothing seemed to work.  Then the next thread popped up...</p>
 <section 
 	title="Multiple App Support"
 	subject="wine for two, please."
-	archive=//www.winehq.org/pipermail/wine-devel/2005-November/041868.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-November/041868.html"
 	posts="6"
 >
 <p>
@@ -329,7 +329,7 @@ Thanks again to the whole Wine crew that made this possible!!!
 <section 
 	title="Killing Wine Processes"
 	subject="killing wine dregs"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-October/041796.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-October/041796.html"
 	posts="8"
 >
 <topic>Fixes</topic>
@@ -370,7 +370,7 @@ signal.</quote></p>
 <section 
 	title="Wine Eject"
 	subject="New eject command issue"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-November/041870.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-November/041870.html"
 	posts="10"
 >
 <topic>Multimedia</topic>
@@ -500,7 +500,7 @@ that intended behavior?</quote></p>
 <section 
 	title="Linking Windows Libraries"
 	subject="Calling PE DLLs"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-November/041899.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-November/041899.html"
 	posts="5"
 >
 <topic>Winelib</topic>
@@ -516,7 +516,7 @@ Like some others before me, i've got a native w32 dll which i
 would like to hook into on a linux box. no source code available.
 the case is almost identical to
 
-<ul><a href=//www.winehq.org/hypermail/wine-devel/2003/12/index.html#231">
+<ul><a href="//www.winehq.org/hypermail/wine-devel/2003/12/index.html#231">
 http://www.winehq.com/hypermail/wine-devel/2003/12/index.html#231</a></ul>
 </p><p>
 though, there's not much application code yet, except a small test

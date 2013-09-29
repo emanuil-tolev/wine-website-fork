@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="261" date="02/11/2005" />
 <intro> <p>This is the 261st issue of the Wine Weekly News publication.
-Its main goal is to float. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to float. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="114" size="477" contrib="49" multiples="23" lastweek="25">
 
 <person posts="15" size="35" who="Alexandre Julliard" />
@@ -61,7 +61,7 @@ Its main goal is to float. It also serves to inform you of what's going on aroun
 <section 
 	title="Wintab Status" 
 	subject="The status of the wintab dll"
-	archive=//www.winehq.org/hypermail/wine-devel/2005/02/0261.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2005/02/0261.html" 
 	posts="1"
 	startdate="02/10/2005"
 >
@@ -183,7 +183,7 @@ Have 3 possibilities
 <section 
 	title="Configuring TrueType Fonts" 
 	subject="Question about TrueType rendering"
-	archive=//www.winehq.org/hypermail/wine-devel/2005/02/0168.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2005/02/0168.html" 
 	posts="3"
 	startdate="02/07/2005"
 >
@@ -239,7 +239,7 @@ c. Wine can't find, or wasn't compiled with, a working version of
 <section 
 	title="Recycle Bin Needs Implementing" 
 	subject="Re: [Discuss] Recycle Bin problem with Preclick image editing software"
-	archive=//www.winehq.org/hypermail/wine-devel/2005/02/0227.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2005/02/0227.html" 
 	posts="3"
 	startdate="02/09/2005"
 >
@@ -285,7 +285,7 @@ there are still some stub functions in that file,  so I doubt that a
 <section 
 	title="Bi-arch Support on AMD64" 
 	subject="Re: bi-arch on an amd64"
-	archive=//www.winehq.org/hypermail/wine-devel/2005/02/0153.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2005/02/0153.html" 
 	posts="4"
 	startdate="02/07/2005"
 	enddate="02/08/2005"

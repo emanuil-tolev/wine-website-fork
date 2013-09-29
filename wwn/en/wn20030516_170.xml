@@ -137,7 +137,7 @@ two weeks though.</p>
 </section><section 
 	title="Direct3D Status" 
 	subject="[dx8-21] Viewport fix"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/05/0353.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/05/0353.html" 
 	posts="5"
 	startdate="05/13/2003"
 	enddate="05/15/2003"
@@ -150,7 +150,7 @@ Most of it has already been committed to CVS too. Jason Edmeades
 wrote in to let everyone know Warcraft3 is working with regular old Wine:</p>
 <quote who="Jason Edmeades"><p>
  FYI With the 
- <a href=//www.winehq.org/hypermail/wine-patches/2003/05/att-0171/01-dx22.viewport.patch20030315">attached
+ <a href="//www.winehq.org/hypermail/wine-patches/2003/05/att-0171/01-dx22.viewport.patch20030315">attached
  patch</a> on top of the wine cvs tree, a no-cd install
  (requires native msvcrt until I fix the 'thiscall' issue) and running 'wine
  war3' warcraft 3 now appears to be pretty much right!!! (No more screen
@@ -216,7 +216,7 @@ of OpenGL till runtime, noting,
 </section><section 
 	title="Lotus Notes Breakage" 
 	subject="Lotus Notes and wine and RedHat 9"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/05/0290.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/05/0290.html" 
 	posts="6"
 	startdate="05/10/2003"
 	enddate="05/12/2003"
@@ -233,7 +233,7 @@ Anyways, I downloaded the source (2003-05-08), and managed to configure with
 <p>
 But I ran into a problem that has already been reported at (thank you 
 google)
-<ul><a href=//www.winehq.org/hypermail/wine-devel/2003/05/0141.html">
+<ul><a href="//www.winehq.org/hypermail/wine-devel/2003/05/0141.html">
  http://www.winehq.org/hypermail/wine-devel/2003/05/0141.html</a></ul></p><p>
  (the issue was unresolved. Kevin rolled back to a previous wine source from 
  5/1/2003).
@@ -254,18 +254,18 @@ google)
 <p>Mike Hearn wondered if maybe the functions should be commented out
 in the spec file until they're implemented.  Michael Stefaniuc pointed
 out that Alexandre had very recently
-<a href=//www.winehq.org/hypermail/wine-cvs/2003/05/0131.html">supplied</a>
+<a href="//www.winehq.org/hypermail/wine-cvs/2003/05/0131.html">supplied</a>
 that exact fix.</p>
 
 <p>So, if you're using Lotus Notes and you ran into some problems recently
 give the latest CVS a try.  
-<a href=//www.winehq.org/?page=cvs">Instructions </a> for getting 
+<a href="//www.winehq.org/?page=cvs">Instructions </a> for getting 
 Wine from CVS can be found at WineHQ.</p>
 
 </section><section 
 	title="NPTL Auto Detection &amp; RH9 Packages" 
 	subject="NPTL auto detection"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/05/0244.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/05/0244.html" 
 	posts="15"
 	startdate="05/09/2003"
 	enddate="05/10/2003"
@@ -318,7 +318,7 @@ while before he could create the RH 9 ones himself.
 </section><section 
 	title="RPC Documentation Update" 
 	subject="DCE RPC documentation fund is collecting dust..."
-	archive=//www.winehq.org/hypermail/wine-devel/2003/05/0249.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/05/0249.html" 
 	posts="4"
 	startdate="05/09/2003"
 	enddate="05/10/2003"
@@ -326,7 +326,7 @@ while before he could create the RH 9 ones himself.
 <topic></topic>
 <p>A few months ago Jeremy White put together a PayPal fund to purchase
 some RPC docs.  We covered this back in 
-<a href=//www.winehq.org/index.phpwwn/156#RPC%20Data%20Marshalling%20(cont'd)">issue
+<a href="//www.winehq.org/index.phpwwn/156#RPC%20Data%20Marshalling%20(cont'd)">issue
 #156</a>. Greg Turner wrote the list about the status of getting
 that documentation:</p>
 
@@ -382,7 +382,7 @@ another purpose in the future.</p>
 </section><section 
 	title="Valgrinding Wine" 
 	subject="Valgrind for WINE tarball now available"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/05/0317.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/05/0317.html" 
 	posts="1"
 	startdate="05/12/2003"
 >
@@ -405,7 +405,7 @@ there are still plenty of bugs in WINE which need fixing - most are simple 1 lin
 </section><section 
 	title="Separating 16/32 Bit OLE Functions" 
 	subject="PATCH - Start separating 16/32 in Ole and ole32 memlockbytes"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/05/0404.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/05/0404.html" 
 	posts="2"
 	startdate="05/15/2003"
 >
@@ -456,7 +456,7 @@ Changelog: Separate Win16 and Win32 Ole support in memlockbytes.
 </section><section 
 	title="Improving Exception Handling" 
 	subject="-fexceptions? -fasync-unwind-tables?"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/05/0394.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/05/0394.html" 
 	posts="6"
 	startdate="05/12/2003"
 	enddate="05/14/2003"
@@ -527,7 +527,7 @@ some comments on it:</p>
   </p></quote>
 
 <p>For more details, look at the
-<a href=//www.winehq.org/hypermail/wine-devel/2003/05/0394.html">actual patch</a>.</p>
+<a href="//www.winehq.org/hypermail/wine-devel/2003/05/0394.html">actual patch</a>.</p>
 <p>Alexandre thought the problem required approaching it from a different
 angle:</p>
 <quote who="Alexandre Julliard"><p>
@@ -544,7 +544,7 @@ the compiler)</p></quote>
 </section><section 
 	title="SourceForge Download Stats" 
 	subject="[FYI] SourceForge stats"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/05/0.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/05/0.html" 
 	posts="2"
 	startdate="05/15/2003"
 	enddate="05/15/2003"

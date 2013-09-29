@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="225" date="06/04/2004" />
 <intro> <p>This is the 225th issue of the Wine Weekly News publication.
-Its main goal is to keep from getting sunburned. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to keep from getting sunburned. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="160" size="582" contrib="47" multiples="24" lastweek="20">
 
 <person posts="20" size="54" who="Mike Hearn" />
@@ -67,7 +67,7 @@ Its main goal is to keep from getting sunburned. It also serves to inform you of
 <topic>News</topic>
 
 <p>SpecOps <a href="http://www.osviews.com/modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=1454">responded</a>
-to WWN <a href=//www.winehq.org/wwn/222#Project%20David%20Uses%20CodeWeavers%20CrossOver%20Office">issue #222</a>.
+to WWN <a href="//www.winehq.org/wwn/222#Project%20David%20Uses%20CodeWeavers%20CrossOver%20Office">issue #222</a>.
 I'd summarize it here, but it's worth reading in full.  They make some
 valid points, but it still remains to be seen if they have actually developed
 anything.  It's perfectly legal for them to keep everything under wraps 
@@ -86,7 +86,7 @@ Slashdot's</a> link to the article drew mixed responses.
 <section 
 	title="Winedbg Issue and New Changes" 
 	subject="Help with winedbg"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/05/0424.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/05/0424.html" 
 	posts="9"
 	startdate="05/26/2004"
 	enddate="05/30/2004"
@@ -180,7 +180,7 @@ The biggest changes since from the end user point of view:
 <section 
 	title="Winedbg &amp; DDD" 
 	subject="debugger symbols and NPTL on RedHat 9"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0049.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/06/0049.html" 
 	posts="10"
 	startdate="06/02/2004"
 	enddate="06/03/2004"
@@ -259,7 +259,7 @@ first the "small" pending winedbg part for me to go further).
 </p></quote>
 
 <p>Alexandre committed Eric's 
- <a href=//www.winehq.org/hypermail/wine-cvs/2004/06/0051.html">patch</a> 
+ <a href="//www.winehq.org/hypermail/wine-cvs/2004/06/0051.html">patch</a> 
 later in the week.  (Which happens to be one of the largest single
 patches I can recall being committed in a while.)</p>
 
@@ -267,7 +267,7 @@ patches I can recall being committed in a while.)</p>
 <section 
 	title="MSVCRT Headers" 
 	subject="Re: [MSVCRT] Cross build fix"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0009.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/06/0009.html" 
 	posts="8"
 	startdate="06/01/2004"
 	enddate="06/03/2004"
@@ -281,7 +281,7 @@ C library, which on Linux would be glibc.  Hans Leidekker
 ran into a problem trying to compile on MinGW:</p>
 <quote who="Hans Leidekker"><p>
  This patch:
-   <ul><a href=//www.winehq.org/hypermail/wine-cvs/2004/04/0357.html">
+   <ul><a href="//www.winehq.org/hypermail/wine-cvs/2004/04/0357.html">
    http://www.winehq.org/hypermail/wine-cvs/2004/04/0357.html</a></ul>
 </p><p>
  broke the MinGW build of msvcrt. The changelog says it's a compatibility
@@ -380,7 +380,7 @@ all remained in sync.</p>
 <section 
 	title="AMD64 Issues" 
 	subject="(Still) problem on AMD64 with wine CVS"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0097.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/06/0097.html" 
 	posts="2"
 	startdate="06/03/2004"
 	enddate="06/04/2004"
@@ -399,7 +399,7 @@ but i get:
 wine: failed to initialize: /opt/wine/lib/wine/ntdll.dll.so: failed to map 
 segment from shared object: Cannot allocate memory</code></ul></p><p>
 
-<a href=//www.winehq.org/hypermail/wine-devel/2004/06/att-0087/01-strace">attached</a>
+<a href="//www.winehq.org/hypermail/wine-devel/2004/06/att-0087/01-strace">attached</a>
  to this mail the output of "strace32 wine"
 </p><p>
 one of the last lines is (i have 512Mb of ram)

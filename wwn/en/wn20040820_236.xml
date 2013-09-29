@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="236" date="08/20/2004" />
 <intro> <p>This is the 236th issue of the Wine Weekly News publication.
-Its main goal is to have surgery. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to have surgery. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="180" size="578" contrib="49" multiples="34" lastweek="22">
 
 <person posts="17" size="43" who="Alexandre Julliard" />
@@ -58,7 +58,7 @@ Its main goal is to have surgery. It also serves to inform you of what's going o
 <section 
 	title="News: Wine-20040813, Website Updates" 
 	subject="News"
-	archive=//www.winehq.org/announce/20040813"
+	archive="//www.winehq.org/announce/20040813"
 	posts="2"
 	startdate="08/14/2004"
 	enddate="08/20/2004"
@@ -67,7 +67,7 @@ Its main goal is to have surgery. It also serves to inform you of what's going o
 <p>Just after last week's WWN came out, Alexandre released Wine-20040813:</p>
 <quote who="Alexandre Julliard"><p>
 WHAT'S NEW with Wine-20040813: (see 
- <a href=//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.86&amp;content-type=text/x-cvsweb-markup">ChangeLog</a>
+ <a href="//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.86&amp;content-type=text/x-cvsweb-markup">ChangeLog</a>
  for details)<ul>
         <li> New msiexec application.</li>
         <li> Support for alpha blending.</li>
@@ -78,14 +78,14 @@ WHAT'S NEW with Wine-20040813: (see
 <p>As noted on Wednesday, the WineHQ website has seen some recent updates:</p>
 <quote who="WineHQ"><p>
 Tom Wickline updated the 
-<a href=//www.winehq.org/status">status pages</a>, including the
+<a href="//www.winehq.org/status">status pages</a>, including the
 addition of builtin versions of atl.dll, d3dxof.dll, dbghelp.dll, and mlang.dll.
-Our <a href=//www.winehq.org/janitorial">janitorial projects</a>
+Our <a href="//www.winehq.org/janitorial">janitorial projects</a>
 received a bit of their own janitorial clean up courtesy of Dimi Paun. 
 They also saw  the addition of -Wsign-compare as a useful gcc warning to 
 turn on (suggested by Mike McCormack.)
 Finally, over on the 
-<a href=//www.winehq.org/download">downloads</a> page we've 
+<a href="//www.winehq.org/download">downloads</a> page we've 
 added Fedora Core 2 and White Box Enterprise Linux targets as part of the 
 Red Hat packages maintained by Vincent B&#233;ron.  
 </p></quote>
@@ -104,7 +104,7 @@ about CrossOver Office on eWeek from August 9th.</p>
 <section 
 	title="Generating Backtraces"
 	subject="Backtrace Dumps"
-	archive=//www.winehq.org/hypermail/wine-patches/2004/08/0289.html" 
+	archive="//www.winehq.org/hypermail/wine-patches/2004/08/0289.html" 
 	posts="13"
 	startdate="08/17/2004"
 	enddate="08/20/2004"
@@ -242,7 +242,7 @@ less with the running application.</quote></p>
 <section 
 	title="Fun Project: Port Allegiance" 
 	subject="New Fun Project - Winelib port of Allegiance"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/08/0365.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/08/0365.html" 
 	posts="1"
 	startdate="08/18/2004"
 >
@@ -267,7 +267,7 @@ out a way to get credit for it.. independent study, perhaps?</p>
 <section
         title="poll vs. epoll"
         subject="poll vs. epoll"
-        archive=//www.winehq.org/hypermail/wine-devel/2004/08/0385.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2004/08/0385.html"
         posts="5"
         startdate="08/19/2004"
         enddate="08/20/2004"
@@ -369,7 +369,7 @@ inside wineserver and see how tricky it'd be.
 <section
         title="Threading Issues?"
         subject="Threading issues? [ck-request@vds.kolivas.org: ck Digest, Vol 3, Issue 16]"
-        archive=//www.winehq.org/hypermail/wine-devel/2004/08/0306.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2004/08/0306.html"
         posts="2"
         startdate="08/17/2004"
         enddate="08/20/2004"

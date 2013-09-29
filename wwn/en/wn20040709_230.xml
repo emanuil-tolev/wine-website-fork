@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="230" date="07/09/2004" />
 <intro> <p>This is the 230th issue of the Wine Weekly News publication.
-Its main goal is to experience a slow harddrive failure. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to experience a slow harddrive failure. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="125" size="3730" contrib="43" multiples="25" lastweek="16">
 
 <person posts="18" size="66" who="Mike Hearn" />
@@ -56,7 +56,7 @@ Its main goal is to experience a slow harddrive failure. It also serves to infor
 <section 
 	title="Mono Ditching Wine" 
 	subject="Re: [Mono-winforms-list] Fw: [Mono-list] System.Windows.Forms plans."
-	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0010.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/06/0010.html" 
 	posts="12"
 	startdate="07/01/2004"
 	enddate="07/03/2004"
@@ -292,7 +292,7 @@ issue than a technical one.  From there the thread pretty much died.</p>
 <section 
 	title="Microsoft Installer Work" 
 	subject="MSI in Wine"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0061.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/06/0061.html" 
 	posts="4"
 	startdate="07/05/2004"
 >
@@ -340,7 +340,7 @@ weeks ago.  Mike outlined some of the work:</p>
 <section 
 	title="Wine on FreeBSD" 
 	subject="Wine on FreeBSD current"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0164.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/06/0164.html" 
 	posts="15"
 	startdate="06/09/2004"
 	enddate="06/22/2004"
@@ -455,7 +455,7 @@ are broken.</p>
 <section 
 	title="OpenSSL vs. NSS" 
 	subject="RFC: OpenSSL vs NSS"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/07/0110.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/07/0110.html" 
 	posts="4"
 	startdate="07/09/2004"
 >
@@ -511,7 +511,7 @@ precompiled Windows binary activex control produced by somebody else.
 <section 
 	title="Pango vs. ICU" 
 	subject="Pango for BiDi"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/07/0044.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/07/0044.html" 
 	posts="7"
 	startdate="06/30/2004"
 	enddate="07/03/2004"

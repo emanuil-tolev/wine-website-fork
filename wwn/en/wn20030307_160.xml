@@ -105,7 +105,7 @@ NewsForge published an article about that project and the issues he's running in
 <section 
 	title="Compliance Tests on Longhorn" 
 	subject="Windows Longhorn 3683 complaince status"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0193.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/03/0193.html" 
 	posts="1"
 	startdate="03/07/2003"
 >
@@ -173,7 +173,7 @@ soon went back)</p>
 
 <p>I should note that some of the above is slightly edited in order
 to be more readable.  Mathew went on to 
-<a href=//www.winehq.org/hypermail/wine-devel/2003/03/0193.html">
+<a href="//www.winehq.org/hypermail/wine-devel/2003/03/0193.html">
 describe test output</a>.  In order to make this more readable I'll just
 include a short summary:</p>
 
@@ -257,7 +257,7 @@ ws2_32_test.exe<br />
 <section 
 	title="Porting With Winelib" 
 	subject="Winelib article in this month's C/C++ User's Journal"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0162.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/03/0162.html" 
 	posts="4"
 	startdate="03/05/2003"
 	enddate="03/06/2003"
@@ -288,7 +288,7 @@ of porting a game using Winelib.</p>
 <section 
 	title="Wine's Library Dependencies" 
 	subject="Wine dependencies"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0075.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/03/0075.html" 
 	posts="4"
 	startdate="03/03/2003"
 
@@ -363,7 +363,7 @@ portability.
 <section 
 	title="FindFirstChangeNotification Patch" 
 	subject="miranda"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0017.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/03/0017.html" 
 	posts="12"
 	startdate="03/01/2003"
 	enddate="03/04/2003"
@@ -382,7 +382,7 @@ also thought about FAM and wrote in about some initial work:</p>
 <quote who="Hans Leidekker"><p>
 You know, a couple of weeks ago I looked at the possibilities
 of a FAM based implementation, as suggested in bugrequest #588:
-<ul><a href=//bugs.winehq.org/show_bug.cgi?id=588">
+<ul><a href="//bugs.winehq.org/show_bug.cgi?id=588">
   http://bugs.winehq.org/show_bug.cgi?id=588</a></ul></p><p>
   
 There are other solutions (dnotify, fmon on FreeBSD), but FAM is
@@ -429,7 +429,7 @@ I submitted a patch a couple of months ago that implements a kernel
 based solution (using F_NOTIFY) to the problem, which IMO is much nicer.
 </p><p>
 My patch is at:
-<ul><a href=//www.winehq.org/hypermail/wine-patches/2002/11/0246.html">
+<ul><a href="//www.winehq.org/hypermail/wine-patches/2002/11/0246.html">
 http://www.winehq.org/hypermail/wine-patches/2002/11/0246.html</a></ul>
 </p></quote>
 
@@ -440,14 +440,14 @@ that. And now of course it will need to be adapted to the new fd
 management.</quote></p>
 
 <p>Mike wrote back with a patch 
-<a href=//www.winehq.org/hypermail/wine-devel/2003/03/0119.html">
+<a href="//www.winehq.org/hypermail/wine-devel/2003/03/0119.html">
 updated to the fd management</a> stuff but didn't know what the 
 portability problems were.  Alexandre replied,
 <quote who="Alexandre Julliard">
 Mostly the RT signal stuff. You can't just #define RT_SIGNAL_NOTIFY
 if it's missing...</quote></p>
 
-<p>Mike <a href=//www.winehq.org/hypermail/wine-patches/2003/03/0073.html">updated</a> 
+<p>Mike <a href="//www.winehq.org/hypermail/wine-patches/2003/03/0073.html">updated</a> 
 his patch with the following note:</p><quote who="Mike McCormack"><p>
 
 This patch implements file change notification. It contains a fix for 
@@ -469,7 +469,7 @@ ChangeLog:<ul>
 <section 
 	title="Wine &amp; Smatch HOWTO" 
 	subject="Wine and Smatch"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0050.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/03/0050.html" 
 	posts="1"
 	startdate="03/02/2003"
 >
@@ -506,7 +506,7 @@ various scripts.  </p>
 <section 
 	title="Indenting Relay Traces" 
 	subject="Relay trace indenting?"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0056.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/03/0056.html" 
 	posts="7"
 	startdate="03/02/2003"
 	enddate="03/04/2003"
@@ -561,7 +561,7 @@ foo<ul>
  bar</ul></code></ul></p></quote>
 
 <p>Duane adapted the code and submitted 
-<a href=//www.winehq.org/hypermail/wine-patches/2003/03/0024.html">a new tool</a>
+<a href="//www.winehq.org/hypermail/wine-patches/2003/03/0024.html">a new tool</a>
 called "indent-relay".  Alexandre didn't like the idea of another tool.  So
 Duane adapted the current examine-relay tool to take an argument that selects
 full listing mode.  Alexandre committed it the next day.</p>

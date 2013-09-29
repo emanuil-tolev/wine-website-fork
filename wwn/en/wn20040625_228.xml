@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="228" date="06/25/2004" />
 <intro> <p>This is the 228th issue of the Wine Weekly News publication.
-Its main goal is to teleport. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to teleport. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="158" size="1009" contrib="54" multiples="22" lastweek="25">
 
 <person posts="23" size="62" who="Alexandre Julliard" />
@@ -144,13 +144,13 @@ all of 2004 as Alexandre committed to WineHQ this past week.  </p>
 <section 
 	title="Control Panel Replacement" 
 	subject="Control.exe Replacement"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0493.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/06/0493.html" 
 	posts="3"
 	startdate="06/22/2004"
 	enddate="06/23/2004"
 >
 <topic>Utilities</topic>
-<p>Wine has had a <a href=//cvs.winehq.org/cvsweb/wine/programs/control/">control
+<p>Wine has had a <a href="//cvs.winehq.org/cvsweb/wine/programs/control/">control
 panel utility</a> for a while - basically a
 small Winelib application that launches control panel applets that
 have been installed by other applications.  It's not pretty, but it 
@@ -162,7 +162,7 @@ but seems to be a little better than the older implementation. Feedback
 is welcome.</p></quote>
 
 <p>Mike Hearn asked for a screenshot and Steven replied
-<a href=//www.winehq.org/hypermail/wine-devel/2004/06/att-0499/01-control.png">with
+<a href="//www.winehq.org/hypermail/wine-devel/2004/06/att-0499/01-control.png">with
 one</a> a few hours later.</p>
 
 
@@ -170,14 +170,14 @@ one</a> a few hours later.</p>
 <section 
 	title="Using Donations" 
 	subject="Donations - RFC"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0369.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/06/0369.html" 
 	posts="3"
 	startdate="06/18/2004"
 	enddate="06/19/2004"
 >
 <topic>Project Management</topic>
 <p>From time to time Wine is fortunate enough to 
-<a href=//www.winehq.org/contributing#wpf">receive
+<a href="//www.winehq.org/contributing#wpf">receive
 donations</a>.  We actually have a pretty good track record
 of using the money for something good.  Jeremy White wondered 
 if we should look into spending a bit of it right now:</p>
@@ -236,7 +236,7 @@ a warm, fuzzy feeling knowing you've contributed something back.
 <section 
 	title="64-Bit Support?" 
 	subject="Port to native x86_64?"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0475.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/06/0475.html" 
 	posts="4"
 	startdate="06/21/2004"
 	enddate="06/22/2004"
@@ -245,7 +245,7 @@ a warm, fuzzy feeling knowing you've contributed something back.
 <p>
 We reported a few weeks ago that there were problems running Wine on
 an AMD64.  A few days after that Christof Meerwald 
-<a href=//www.winehq.org/hypermail/wine-devel/2004/06/0231.html">reported</a>
+<a href="//www.winehq.org/hypermail/wine-devel/2004/06/0231.html">reported</a>
 that it worked ok for him, however it was important to make sure the system
 was using new software:</p>
 <quote who="Christof Meerwald"><p>
@@ -305,7 +305,7 @@ windows binaries. </quote></p>
 <section 
 	title="Need DVD Info" 
 	subject="Support for IDvdInfo2::GetDiscID"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0405.html"
+	archive="//www.winehq.org/hypermail/wine-devel/2004/06/0405.html"
 	posts="2"
 	startdate="06/19/2004"
 >
@@ -326,18 +326,18 @@ It would be nice to get linux DVD players to be able to use the same method.
 <p>Tim Hentenaar was also interested and mentioned he might try figuring
 it out.  However, if someone out there already knows the answer you might want
 to write to 
-<a href=//www.winehq.org/hypermail/wine-devel/2004/06/index.html">wine-devel -at- winehq.org</a>.</p>
+<a href="//www.winehq.org/hypermail/wine-devel/2004/06/index.html">wine-devel -at- winehq.org</a>.</p>
 
 </section>
 <section 
 	title="Remove the MSVCRT() Macro" 
 	subject="[RFC] [MSVCRT] Removing the MSVCRT() hack"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/06/0377.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/06/0377.html" 
 	posts="1"
 	startdate="06/18/2004"
 >
 <topic>Build Process</topic>
-<p>A few weeks ago (<a href=//www.winehq.org/wwn/225#MSVCRT%20Headers">issue
+<p>A few weeks ago (<a href="//www.winehq.org/wwn/225#MSVCRT%20Headers">issue
 #225</a>) we discussed some problems with the MSVCRT library.
 Dimi has been working on it and this week announced:</p> 
 <quote who="Dimitrie Paun"><p>

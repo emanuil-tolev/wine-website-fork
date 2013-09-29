@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="234" date="08/06/2004" />
 <intro> <p>This is the 234th issue of the Wine Weekly News publication.
-Its main goal is to slurp loudly. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to slurp loudly. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="147" size="6285" contrib="55" multiples="30" lastweek="33">
 
 <person posts="12" size="31" who="Dmitry Timoshkov" />
@@ -89,8 +89,8 @@ jukebox-related tasks.
 <p>In terms of Wine, a lot of this work has already made it back in. 
 One of the biggest additions was work on Microsoft Installer support.
 We covered that a few weeks ago in issues
-<a href=//www.winehq.org/wwn/230#Microsoft%20Installer%20Work">#230</a>
-and <a href=//www.winehq.org/wwn/231#Status%20of%20MSI">#231</a>.</p>
+<a href="//www.winehq.org/wwn/230#Microsoft%20Installer%20Work">#230</a>
+and <a href="//www.winehq.org/wwn/231#Status%20of%20MSI">#231</a>.</p>
 
 <p>Also appearing in the news this week was more vaporous discussion of 
 <i>Project David</i>.  Network World Fusion 
@@ -121,7 +121,7 @@ render things like text and pictures.</p>
 <section 
 	title="USB Support.. or Lack Thereof" 
 	subject="USB?"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/07/0638.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/07/0638.html" 
 	posts="7"
 	startdate="07/30/2004"
 	enddate="07/31/2004"
@@ -184,7 +184,7 @@ implement these Setupapi Functions by looking at /proc/bus/usb.</quote></p>
 <section 
 	title="c:\\windows is not accessible Error" 
 	subject="c:\\windows is not accessible message"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/08/0005.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/08/0005.html" 
 	posts="2"
 	startdate="08/01/2004"
 >
@@ -207,7 +207,7 @@ http://www.linuxquestions.org/questions/showthread.php?s=&amp;threadid=204255&am
 http://forums.devshed.com/archive/t-166324</a></li></ul>
 </p><p>
 This one seems to imply that the symlinks aren't being created properly:
-<ul><a href=//www.winehq.org/hypermail/wine-users/2004/07/0022.html">
+<ul><a href="//www.winehq.org/hypermail/wine-users/2004/07/0022.html">
 http://www.winehq.org/hypermail/wine-users/2004/07/0022.html</a></ul>
 </p><p>
 but that sounds like a migration issue rather than something you'd
@@ -236,7 +236,7 @@ bug that got corrected (Bug 2356) in the latest snapshot.
 <section 
 	title="More Winecfg To Do's" 
 	subject="More winecfg todos"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/08/0007.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/08/0007.html" 
 	posts="3"
 	startdate="08/01/2004"
 >
@@ -307,7 +307,7 @@ winecfg.</p></quote>
 <section 
 	title="Debugging With a Map File" 
 	subject="debugging a dll"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/07/0634.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/07/0634.html" 
 	posts="4"
 	startdate="07/30/2004"
 	enddate="07/02/2004"

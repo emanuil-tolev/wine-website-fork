@@ -8,7 +8,7 @@
 <intro> <p>This is the 182nd release of the weekly Wine Weekly News publication.
 Its main goal is to wistfully stare out the window and wonder how many more
 tee times I'll be able to get until the snow starts flying. 
-It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="118" size="336" contrib="48" multiples="23" lastweek="20">
 
 <person posts="10" size="31" who="Antony Gelberg" />
@@ -62,7 +62,7 @@ It also serves to inform you of what's going on around Wine. Wine is an open sou
 <section 
 	title="News: CrossOver Plugin 2.0, Linux Mag Blurb" 
 	subject="News"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/00.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/00.html" 
 	posts="2"
 	startdate="08/02/2003"
 	enddate="08/09/2003"
@@ -109,7 +109,7 @@ Alexandre Julliard.</p>
 </section><section 
 	title="Disney Uses Wine" 
 	subject="wine in the press :)"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0070.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0070.html" 
 	posts="9"
 	startdate="08/05/2003"
 >
@@ -162,7 +162,7 @@ Office.  Mike McCormack said they weren't,
 </section><section 
 	title="Beginnings of Microsoft Installer Support" 
 	subject="partial implementation of msi.dll"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/08/0039.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/08/0039.html" 
 	posts="4"
 	startdate="08/06/2003"
 	enddate="08/07/2003"
@@ -229,7 +229,7 @@ would be fine to include even if it wasn't portable
 </section><section 
 	title="Windows API DB" 
 	subject="Windows API db / find APIs missing for a given app"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/08/0035.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/08/0035.html" 
 	posts="10"
 	startdate="08/03/2003"
 	enddate="08/05/2003"
@@ -315,7 +315,7 @@ A windows NT 3.51 version has been added to the database.
 </section><section 
 	title="DirectX / Operation Flashpoint" 
 	subject="Re: [dx73b] Try3: Performance of texture states"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/08/0049.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/08/0049.html" 
 	posts="3"
 	startdate="08/03/2003"
 	enddate="08/04/2003"

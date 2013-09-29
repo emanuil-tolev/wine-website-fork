@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="231" date="07/16/2004" />
 <intro> <p>This is the 231st issue of the Wine Weekly News publication.
-Its main goal is to install operating systems. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to install operating systems. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="74" size="260" contrib="38" multiples="15" lastweek="15">
 
 <person posts="10" size="38" who="Mike Hearn" />
@@ -77,7 +77,7 @@ for Windows and then using Wine to test them out.  </p>
 <section 
 	title="Status of MSI" 
 	subject="Status of MSI"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/07/0143.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/07/0143.html" 
 	posts="7"
 	startdate="07/10/2004"
 	enddate="07/12/2004"
@@ -100,14 +100,14 @@ the Microsoft Installer API and Mike sent a message to the list:</p>
 </p></quote>
 
 <p>Michael Stefaniuc wondered 
- <a href=//www.winehq.org/status_dlls">what percentage</a> was
+ <a href="//www.winehq.org/status_dlls">what percentage</a> was
  now completed.  Mike thought it was at about 40% now.  </p>
 
 </section>
 <section 
 	title="ESD Sound Driver" 
 	subject="[PATCH] Implement an Esd sound module"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/07/0173.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/07/0173.html" 
 	posts="1"
 	startdate="07/14/2004"
 >
@@ -118,7 +118,7 @@ I'm now using the GNOME desktop environment which uses esd as sound server,
 sometimes I need wine to run some Windows apps with sound support, but now 
 wine has no esd sound module, so I have to killall esd before I start wine.
 I have searched the mailing list for solutions, found there is a bug about this:
-<ul><li><a href=//www.winehq.org/hypermail/wine-bugs/2002/12/0066.html">
+<ul><li><a href="//www.winehq.org/hypermail/wine-bugs/2002/12/0066.html">
 http://www.winehq.org/hypermail/wine-bugs/2002/12/0066.html</a></li>
 <li><a href="http://http://bugs.winehq.com/show_bug.cgi?id=326">
 http://http://bugs.winehq.com/show_bug.cgi?id=326</a></li></ul></p><p>
@@ -132,7 +132,7 @@ it may close the old bug #326.</p></quote>
 <section 
 	title="Using Multiple Graphics Drivers" 
 	subject="Initial creation of directory and config with ttydrv"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/07/0086.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/07/0086.html" 
 	posts="9"
 	startdate="07/08/2004"
 	enddate="07/10/2004"
@@ -228,7 +228,7 @@ successfully loads is used.</p>
 <section 
 	title="COM and OLE Marshalling Tutorial" 
 	subject="Marshalling tutorial"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/07/0180.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/07/0180.html" 
 	posts="3"
 	startdate="07/14/2004"
 	enddate="07/14/2004"

@@ -93,7 +93,7 @@
 <section 
 	title="News: CrossOver Office 2.0, MS Threatens Developer" 
 	subject="News"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/04/0.html" 
 	posts="3"
 	startdate="04/19/2003"
 	enddate="04/25/2003"
@@ -136,7 +136,7 @@ now.  We can also expect more changes merged back into the tree as the
 CodeWeavers patches get cleaned up and committed by Alexandre.</p>
 
 <p>Other news about CodeWeavers can be found in this week's 
-<a href=//www.winehq.org/interview/4">interview with Jeremy White</a>. 
+<a href="//www.winehq.org/interview/4">interview with Jeremy White</a>. 
 There may not be an interview next week depending on how much load the
 WineHQ server is experiencing.  No use in putting something up if none
 of you can get to it.</p> 
@@ -185,7 +185,7 @@ story unfolds</a>.</p>
 </section><section 
 	title="Winelib CoolPlayer Port" 
 	subject="Winelib CoolPlayer port"
-	archive=//www.winehq.org/hypermail/wine-patches/2003/04/0237.html" 
+	archive="//www.winehq.org/hypermail/wine-patches/2003/04/0237.html" 
 	posts="2"
 	startdate="04/22/2003"
 >
@@ -230,7 +230,7 @@ works as expected.
 </section><section 
 	title="Wintab Status and Development" 
 	subject="Wintab32 dll devlopment"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0695.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/04/0695.html" 
 	posts="6"
 	startdate="04/22/2003"
 	enddate="04/23/2003"
@@ -238,7 +238,7 @@ works as expected.
 <topic></topic>
 <p>Robert North wrote in to give a status update on the wintab32 (tablet support)
 implementation he's working on.  The status update is in the Bugzilla
-database as <a href=//bugs.winehq.org/show_bug.cgi?id=1160">bug #1160</a>,
+database as <a href="//bugs.winehq.org/show_bug.cgi?id=1160">bug #1160</a>,
 but here is what he wrote:</p>
 <quote who="Robert North"><p>
 Ok, I think it's time I give a status update on the progress of the wintab32
@@ -335,7 +335,7 @@ using wintab32.dll but if you have other devices that would be great.
 </p></quote>
 
 <p>About an hour later Aric posted a patch with 
-<a href=//www.winehq.org/hypermail/wine-patches/2003/04/0241.html">CodeWeavers
+<a href="//www.winehq.org/hypermail/wine-patches/2003/04/0241.html">CodeWeavers
 wintab32</a> implementation.  That prompted Mike Hearn to ask:</p>
 <quote who="Mike Hearn"><p>
  This is a very large amount of code, it's slightly concerning to me that
@@ -456,7 +456,7 @@ with Aric's code.
 </section><section 
 	title="Another List of Working Apps" 
 	subject="another wine apps database"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0645.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/04/0645.html" 
 	posts="1"
 	startdate="04/22/2003"
 >
@@ -469,7 +469,7 @@ Anyone seen this one yet?
 <a href="http://thetechnozone.com/pcbuyersguide/software/system/TheWineList.html">http://thetechnozone.com/pcbuyersguide/software/system/TheWineList.html</a>
 It seems good enough that perhaps there should be a link to it
 from 
-<a href=//www.winehq.org/?page=supported_applications">http://www.winehq.org/?page=supported_applications</a>
+<a href="//www.winehq.org/?page=supported_applications">http://www.winehq.org/?page=supported_applications</a>
 </p><p>
 We might want to nudge the author into disclosing the
 version number of the Wine he was using, so non-Knoppix
@@ -514,7 +514,7 @@ any program listed below works "as is."
 </section><section 
 	title="Improving Wine's Debugger" 
 	subject="winedbg"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0570.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/04/0570.html" 
 	posts="6"
 	startdate="04/17/2003"
 	enddate="04/19/2003"
@@ -561,13 +561,13 @@ multithreaded. I once took a look but the code didn't spell out anything
 like "implement this to be able to read the registers of other threads"
 either, do you have a plan for it?</quote></p>
 
-<p>The next day Eric posted a patch <a href=//www.winehq.org/hypermail/wine-patches/2003/04/0211.html">to
+<p>The next day Eric posted a patch <a href="//www.winehq.org/hypermail/wine-patches/2003/04/0211.html">to
 fix it</a>.</p>
 
 </section><section 
 	title="Accessing ODBC Databases" 
 	subject="ODBC"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0707.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/04/0707.html" 
 	posts="2"
 	startdate="04/23/2003"
 	enddate="04/24/2003"
@@ -595,13 +595,13 @@ to time,
  (if that is legal) and depend upon Wine handling the low-level network stuff 
  etc.  I don't personally have any experience of that.</p></quote>
 
-<p>For more info, see the <a href=//www.winehq.org/docs/wine-user/config-odbc">Wine
+<p>For more info, see the <a href="//www.winehq.org/docs/wine-user/config-odbc">Wine
 User Guide</a>.</p>
 
 </section><section 
 	title="WineHQ Outage" 
 	subject="Server Crash"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0701.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/04/0701.html" 
 	posts="5"
 	startdate="04/24/2003"
 	enddate="04/24/2003"

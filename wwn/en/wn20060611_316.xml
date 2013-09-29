@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="316" date="06/11/2006" />
 <intro> <p>This is the 316th issue of the Wine Weekly News publication.
-Its main goal is to rip apart the washer. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to rip apart the washer. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="243" size="362" contrib="63" multiples="40" lastweek="40">
 
 <person posts="21" size="39" who="adger44 at hotmail.com (Nick Burns)" />
@@ -76,7 +76,7 @@ Its main goal is to rip apart the washer. It also serves to inform you of what's
 <section 
 	title="GLSL Support"
 	subject="wined3d: Another GLSL shader status update"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-June/048193.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-June/048193.html"
 	posts="12"
 >
 <topic>DirectX</topic>
@@ -208,7 +208,7 @@ on the wiki. </p>
 <section 
 	title="OpenAL Audio Driver"
 	subject="Feedback requested on an OpenAL audio driver patch"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-June/048273.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-June/048273.html"
 	posts="15"
 >
 <topic>Multimedia</topic>
@@ -317,7 +317,7 @@ hasn't made it in.
 <section 
 	title="Fedora Packages Update"
 	subject="Broken FC5 packages - stay clear."
-	archive=//www.winehq.org/pipermail/wine-devel/2006-June/048496.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-June/048496.html"
 	posts="4"
 >
 <topic>Packaging</topic>
@@ -403,7 +403,7 @@ http://cvs.fedora.redhat.com/viewcvs/rpms/wine-docs/?root=extras</a>
 <section 
 	title="AppDB Update"
 	subject="How are we doing?"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-May/048007.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-May/048007.html"
 	posts="65"
 >
 <topic>WineHQ</topic>
@@ -522,7 +522,7 @@ around ASAP)
 <section 
 	title="Anonymous Patches"
 	subject="notepad patches (search/replace, etc)"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-June/048441.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-June/048441.html"
 	posts="5"
 >
 <topic>Patches</topic>

@@ -103,7 +103,7 @@ emulator). </p>
   title="ALSA Driver"
   subject="ALSA driver"
   topic1="Multimedia"
-  archive=//www.winehq.org/hypermail/wine-devel/2002/04/0349.html"
+  archive="//www.winehq.org/hypermail/wine-devel/2002/04/0349.html"
   posts="18"
   startdate="04/19/2002"
   enddate="04/20/2002"
@@ -199,7 +199,7 @@ Alexandre thought that was a good solution, but required some caution,
   title="Winsock2 Patches"
   subject="New Winsock2 patch series - now tested"
   topic1="IO"
-  archive=//www.winehq.org/hypermail/wine-devel/2002/04/0419.html"
+  archive="//www.winehq.org/hypermail/wine-devel/2002/04/0419.html"
   posts="1"
   startdate="04/23/2002"
   enddate="04/25/2002"
@@ -281,7 +281,7 @@ Rein Klazes and Michael Cardenas found some problems with the first ones.
   title="More Tests"
   subject="PATCH: Unit test for winsock2"
   topic1="Testing"
-  archive=//www.winehq.org/hypermail/wine-patches/2002/04/0172.html"
+  archive="//www.winehq.org/hypermail/wine-patches/2002/04/0172.html"
   posts="5"
   startdate="04/18/2002"
   enddate="04/25/2002"
@@ -289,7 +289,7 @@ Rein Klazes and Michael Cardenas found some problems with the first ones.
 <p />
 Some submissions came in this week from people who have been building
 tests for various Wine functions.  Martin Wilck 
-<a href=//www.winehq.org/hypermail/wine-patches/2002/04/0172.html">posted</a>
+<a href="//www.winehq.org/hypermail/wine-patches/2002/04/0172.html">posted</a>
 some for his IO work:
 <quote who="Martin Wilck">
 <p />
@@ -311,18 +311,18 @@ extensive testing.
 </quote>
 
 <p />Bill Medland 
-<a href=//www.winehq.org/hypermail/wine-patches/2002/04/0132.html">posted</a> 
+<a href="//www.winehq.org/hypermail/wine-patches/2002/04/0132.html">posted</a> 
 tests for wsprintfA and wsprintfW.
 (After he spent a lot of time debugging wsprintfW only to
 have a bunch of people point out he missed a comma in a
 function call).
 
 <p />Mike McCormack 
-<a href=//www.winehq.org/hypermail/wine-patches/2002/04/0111.html">added</a> 
+<a href="//www.winehq.org/hypermail/wine-patches/2002/04/0111.html">added</a> 
 a <quote who="Mike McCormack">simple test set for window classes</quote>
 
 <p />And Eric Pouech's 
-<a href=//www.winehq.org/hypermail/wine-patches/2002/04/0101.html">CreateProcess test</a> 
+<a href="//www.winehq.org/hypermail/wine-patches/2002/04/0101.html">CreateProcess test</a> 
 discussed <kcref subject="create process test (for review)"
        startdate="04/01/2002">last week</kcref> made it into CVS.
        
@@ -340,7 +340,7 @@ discussed <kcref subject="create process test (for review)"
   title="Bumps in Wineinstall"
   subject="tools/wineinstall problems"
   topic1="Fixes"
-  archive=//www.winehq.org/hypermail/wine-devel/2001/12/0427.html"
+  archive="//www.winehq.org/hypermail/wine-devel/2001/12/0427.html"
   posts="5"
   startdate="04/23/2002"
 >
@@ -404,7 +404,7 @@ ldconfig (just in case of modules being renamed)
   title="Euro Support"
   subject="The Euro symbol"
   topic1="Internationalization"
-  archive=//www.winehq.org/hypermail/wine-devel/2002/04/0425.html"
+  archive="//www.winehq.org/hypermail/wine-devel/2002/04/0425.html"
   posts="2"
   startdate="04/23/2002"
 >
@@ -435,7 +435,7 @@ ldconfig (just in case of modules being renamed)
   title="Favorites Menu in IE"
   subject="IE5.x and Toolbars"
   topic1="Documentation"
-  archive=//www.winehq.org/hypermail/wine-devel/2001/04/0439.html"
+  archive="//www.winehq.org/hypermail/wine-devel/2001/04/0439.html"
   posts="1"
   startdate="04/23/2002"
 >
@@ -484,7 +484,7 @@ building double wide trailers.<br />
   title="Wine Not Releasing CDROM"
   subject="Wine not releasing CDROM"
   topic1="Fixes"
-  archive=//www.winehq.org/hypermail/wine-devel/2002/04/0382.html"
+  archive="//www.winehq.org/hypermail/wine-devel/2002/04/0382.html"
   posts="7"
   startdate="04/22/2002"
 >
@@ -532,7 +532,7 @@ immediately finds it.</quote>
   title="XIM Internationlization Patch"
   subject="WINE XIM Patch"
   topic1="Internationalization"
-  archive=//www.winehq.org/hypermail/wine-devel/2002/04/0512.html"
+  archive="//www.winehq.org/hypermail/wine-devel/2002/04/0512.html"
   posts="1"
   startdate="04/25/2002"
 >

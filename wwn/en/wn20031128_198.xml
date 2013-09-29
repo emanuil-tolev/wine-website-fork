@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="198" date="11/28/2003" />
 <intro> <p>This is the 198th issue of the Wine Weekly News publication.
-Its main goal is to eat the giblets. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to eat the giblets. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="224" size="717" contrib="56" multiples="28" lastweek="28">
 
 <person posts="32" size="81" who="Alexandre Julliard" />
@@ -103,7 +103,7 @@ of day</a>.  Longhorn debuts at the top of the list.  </p>
 <section 
 	title="WineHQ Officially WineHQ.org" 
 	subject="Re: winehq name"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/11/0595.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/11/0595.html" 
 	posts="3"
 	startdate="11/25/2003"
 >
@@ -151,7 +151,7 @@ in...</quote></p>
 
 <p>Got that?  If you reference WineHQ on your web site you
 should probably update it to be 
-<a href=//www.winehq.org">winehq.org</a>.  Of course the
+<a href="//www.winehq.org">winehq.org</a>.  Of course the
 old .com is still registered and will continue to work.  </p>
 
 </section>
@@ -159,7 +159,7 @@ old .com is still registered and will continue to work.  </p>
 <section 
 	title="Lecture Slides Available" 
 	subject="More slides - final draft?"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/11/0667.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/11/0667.html" 
 	posts="3"
 	startdate="11/27/2003"
 	enddate="11/28/2003"
@@ -185,7 +185,7 @@ by a demonstration of real programs running under Wine.  </p>
 <section 
 	title="Running Photoshop Plugins in the GIMP With Wine" 
 	subject="Fun projects?"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/11/0611.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/11/0611.html" 
 	posts="12"
 	startdate="11/26/2003"
 	enddate="11/28/2003"
@@ -203,7 +203,7 @@ worth covering because of the level of detail provided and the potential
 for enhancement.  
 </p>
 
-<p>On the <a href=//www.winehq.org/fun_projects">Fun
+<p>On the <a href="//www.winehq.org/fun_projects">Fun
 Projects</a> page is an idea suggested by Marcus Meissner to investigate
 using native Photoshop plugins with the <a href="http://www.gimp.org">GIMP</a>.  
 This week Rob Collins provided some details on interfacing with Photoshop 
@@ -368,7 +368,7 @@ there some tool that can query a DLL, kinda like objdump?
 <section 
 	title="NetBIOS Functionality" 
 	subject="Re: netapi32: implement Netbios()"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/11/0613.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/11/0613.html" 
 	posts="2"
 	startdate="11/26/2003"
 >
@@ -440,7 +440,7 @@ revisited now?</p>
 <section 
 	title="Default Printer Question" 
 	subject="Default printer and patch management"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/11/0661.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/11/0661.html" 
 	posts="3"
 	startdate="11/27/2003"
 >
@@ -491,7 +491,7 @@ just to start up.  </p>
 <section 
 	title="Closed Source Patch Management" 
 	subject="Default printer and patch management"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/11/0661.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/11/0661.html" 
 	posts="4"
 	startdate="11/27/2003"
         enddate="11/28/2003"
@@ -570,7 +570,7 @@ cracks.</p>
 <section 
 	title="Icon Cache Problems" 
 	subject="Mysterious icon-change"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/11/0650.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/11/0650.html" 
 	posts="4"
 	startdate="11/26/2003"
         enddate="11/28/2003"
@@ -608,7 +608,7 @@ applications.</p></quote>
 <section 
 	title="Winearts With KDE 3.2 Beta" 
 	subject="winearts &amp; KDE 3.2-beta1"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/11/0627.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/11/0627.html" 
 	posts="2"
 	startdate="11/26/2003"
         enddate="11/27/2003"

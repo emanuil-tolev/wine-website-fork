@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="188" date="09/19/2003" />
 <intro> <p>This is the 188th issue of the Wine Weekly News publication.
-Its main goal is to wander aimlessly on four wheel drive roads. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to wander aimlessly on four wheel drive roads. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="186" size="815" contrib="55" multiples="27" lastweek="26">
 
 <person posts="30" size="124" who="Dimitrie O. Paun" />
@@ -66,7 +66,7 @@ Its main goal is to wander aimlessly on four wheel drive roads. It also serves t
 <section 
 	title="News: TransGaming Point2Play Update" 
 	subject="News"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/08/00.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/08/00.html" 
 	posts="1"
 	startdate="09/13/2003"
 	enddate="09/19/2003"
@@ -87,7 +87,7 @@ notes</a> for more details.</p>
 <section 
 	title="Winecfg Status &amp; Preferences" 
 	subject="Configuration parameters"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/09/0613.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/09/0613.html" 
 	posts="11"
 	startdate="09/16/2003"
         enddate="09/18/2003"
@@ -290,7 +290,7 @@ options.  Everyone seemed to agree on most of them.</p>
 <section 
 	title="System Tray Support" 
 	subject="Re: resend - system tray support"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/09/0581.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/09/0581.html" 
 	posts="11"
 	startdate="09/15/2003"
 	enddate="09/16/2003"
@@ -339,7 +339,7 @@ applied the patch and reported success with Yahoo Messenger.
 <section 
 	title="Blank Screen of Death" 
 	subject="Starting wine turns off my screen"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/09/0660.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/09/0660.html" 
 	posts="6"
 	startdate="09/18/2003"
 >
@@ -380,7 +380,7 @@ for non-root users.
 <section 
 	title="Finding Memory Management Problems" 
 	subject="Bug in the heap management code?"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/09/0644.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/09/0644.html" 
 	posts="4"
 	startdate="09/17/2003"
 	enddate="09/18/2003"
@@ -460,7 +460,7 @@ operation. valgrind is worth a try.
 <section 
 	title="Library Loading Problem" 
 	subject="load library problem"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/09/0496.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/09/0496.html" 
 	posts="8"
 	startdate="09/12/2003"
 	enddate="09/14/2003"

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="310" date="04/02/2006" />
 <intro> <p>This is the 310th issue of the Wine Weekly News publication.
-Its main goal is to let the golf clubs fight with the skis in the back of the pickup. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to let the golf clubs fight with the skis in the back of the pickup. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="272" size="550" contrib="91" multiples="45" lastweek="39">
 
 <person posts="16" size="20" who="julliard at winehq.org (Alexandre Julliard)" />
@@ -104,7 +104,7 @@ Its main goal is to let the golf clubs fight with the skis in the back of the pi
 <section 
 	title="News: Wine 0.9.11"
 	subject="News"
-	archive=//www.winehq.org/announce/0.9.11"
+	archive="//www.winehq.org/announce/0.9.11"
 	posts="1"
 >
 <topic>News</topic>
@@ -120,7 +120,7 @@ were a bunch of notable updates including:</p>
 </ul></p></quote>
 <p>
   Check out our
-  <a href=//www.winehq.org/download">download page</a> for packages 
+  <a href="//www.winehq.org/download">download page</a> for packages 
   or download the source and compile.  </p>
 
 
@@ -128,14 +128,14 @@ were a bunch of notable updates including:</p>
 <section 
 	title="Software Freedom Law Center Update"
 	subject="Update on Software Freedom Law Center work"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-March/046105.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-March/046105.html"
 	posts="5"
 >
 <topic>Project Management</topic>
 <p>Last year we announced the 
 <a href="http://www.softwarefreedom.org/">Software Freedom Law Center</a>
 was going to take on Wine as a client to provide legal assistance.  (See
-WWN <a href=//www.winehq.org/wwn/260#Software%20Freedom%20Law%20Center">#260</a> for more info.)
+WWN <a href="//www.winehq.org/wwn/260#Software%20Freedom%20Law%20Center">#260</a> for more info.)
 Well, a year has gone by and we haven't announced anything more concerning
 that relationship.  Part of that was due to the SFLC getting off the ground
 and coming up to speed.  Another part of it was due to things happening
@@ -220,7 +220,7 @@ there to be a lot more comments in the next few days.</p>
 <section 
 	title="Non-Profit Status?"
 	subject="Software Freedom Conservancy"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-March/046121.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-March/046121.html"
 	posts="6"
 >
 <topic>Project Management</topic>
@@ -278,7 +278,7 @@ wasn't much discussion other than a bunch of positive comments.</p>
 <section 
 	title="Using Photoshop Plugins with Gimp"
 	subject="Photoshop plugins in Gimp on Linux using Wine!"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-March/046070.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-March/046070.html"
 	posts="11"
 >
 <topic>Winelib</topic>
@@ -314,7 +314,7 @@ widget library, with a look and feel that is widely different from the normal
 Windows common control look and feel, or the GTK+ look and feel. </p></quote>
 
 <p>Ironically, we covered this topic about 2 and a half years ago in
-<a href=//www.winehq.org/wwn/198#Running%20Photoshop%20Plugins%20in%20the%20GIMP%20With%20Wine">WWN #198</a>.
+<a href="//www.winehq.org/wwn/198#Running%20Photoshop%20Plugins%20in%20the%20GIMP%20With%20Wine">WWN #198</a>.
 You can also find news about in on heise online 
 <a href="http://www.heise.de/newsticker/meldung/71270">in German</a> 
 <a href="http://translate.google.com/translate?u=http%3A%2F%2Fwww.heise.de%2Fnewsticker%2Fmeldung%2F71270&amp;langpair=de%7Cen&amp;hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools">or translated to English</a> 
@@ -323,7 +323,7 @@ via Google.</p>
 <section 
 	title="Vista App Compatibility"
 	subject="stir stir stir"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-March/045929.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-March/045929.html"
 	posts="1"
 >
 <topic>Microsoft Windows</topic>
@@ -368,7 +368,7 @@ cases in 6 months sounds like an overwhelming task.  </p>
 <section 
 	title="New Kernel Option &amp; Wine"
 	subject="linux 2.6.16 and 2G/2G-split"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-April/046152.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-April/046152.html"
 	posts="1"
 >
 <topic>Fixes</topic>
@@ -426,7 +426,7 @@ they will.</p>
 <section 
 	title="New apt Repository"
 	subject="Budget Dedicated has provided us with a server and a ton of free bandwidth"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-March/046130.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-March/046130.html"
 	posts="1"
 >
 <topic>Project Management</topic>
@@ -467,7 +467,7 @@ email and I can take care of it.
 <section 
 	title="Major Changes to Desktop Mode"
 	subject="Alexandre Julliard : x11drv: Moved desktop mode handling to the explorer process."
-	archive=//www.winehq.org/pipermail/wine-devel/2006-March/045966.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-March/045966.html"
 	posts="24"
 >
 <topic>Fixes</topic>
@@ -528,7 +528,7 @@ new method.</p>
 <section 
 	title="Finishing advpack.dll"
 	subject="advpack: The Plan"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-March/046068.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-March/046068.html"
 	posts="5"
 >
 <topic>Architecture</topic>

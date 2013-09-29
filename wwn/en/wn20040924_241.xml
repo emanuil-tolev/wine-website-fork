@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="241" date="09/24/2004" />
 <intro> <p>This is the 241st issue of the Wine Weekly News publication.
-Its main goal is to glow in the dark. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to glow in the dark. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="85" size="375" contrib="40" multiples="15" lastweek="26">
 
 <person posts="15" size="38" who="Alexandre Julliard" />
@@ -94,14 +94,14 @@ to remove Microsoft from our Windows development work.</quote></p>
 <section 
 	title="Fonts Status" 
 	subject="Re: fonts: 20 ppem Wine Sans Serif"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/09/0541.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/09/0541.html" 
 	posts="5"
 	startdate="09/20/2004"
 	enddate="09/21/2004"
 >
 <topic>Fonts</topic>
 <p>Last week (WWN issue 
-<a href=//www.winehq.org/wwn/240#New%20Fonts">#240</a>) we
+<a href="//www.winehq.org/wwn/240#New%20Fonts">#240</a>) we
 discussed a bit of the new fonts being added.  Dimi asked this week 
 what the current status is and what remains to be done. Huw Davies
 outlined the work and where everything is at:</p>
@@ -157,22 +157,22 @@ expensive font creation program.
 </quote></p>
 
 <p>He provided a link to a screenshot of the new 
-<a href=//www.winehq.org/hypermail/wine-devel/2004/09/att-0601/01-Comparison_6_8_10_12_13.png">Greenville font</a>.</p>
+<a href="//www.winehq.org/hypermail/wine-devel/2004/09/att-0601/01-Comparison_6_8_10_12_13.png">Greenville font</a>.</p>
 
 </section>
 <section 
 	title="SpecOps Labs Steps Up" 
 	subject="Contributing to WINE"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/09/0631.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/09/0631.html" 
 	posts="3"
 	startdate="09/22/2004"
 >
 <p>Remember Project David that got some attention a few months ago?
 (See WWN issues 
-<a href=//www.winehq.org/wwn/220#Project%20David%20?">#220</a>,
-<a href=//www.winehq.org/wwn/222#Project%20David%20Uses%20CodeWeavers%20CrossOver%20Office">#222</a>,
-<a href=//www.winehq.org/wwn/225#News:%20SpecOpsLabs%20Response">#225</a>, and
-<a href=//www.winehq.org/wwn/234#News:%20CodeWeavers%20iTunes%20Beta">#234</a> for more details.)
+<a href="//www.winehq.org/wwn/220#Project%20David%20?">#220</a>,
+<a href="//www.winehq.org/wwn/222#Project%20David%20Uses%20CodeWeavers%20CrossOver%20Office">#222</a>,
+<a href="//www.winehq.org/wwn/225#News:%20SpecOpsLabs%20Response">#225</a>, and
+<a href="//www.winehq.org/wwn/234#News:%20CodeWeavers%20iTunes%20Beta">#234</a> for more details.)
 We've been a bit critical of them in the past because it's not exactly 
 clear they have a product, what role Wine might play in it, or if they
 intend to keep their work behind closed doors.  Well, this week someone
@@ -276,7 +276,7 @@ now a little footnote on the one page that reads:</p>
 <section 
 	title="Removing 'Optimized' Assembly" 
 	subject="optimized assembly functions in wine"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/09/0594.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/09/0594.html" 
 	posts="5"
 	startdate="09/21/2004"
 	enddate="09/22/2004"
@@ -292,7 +292,7 @@ Just did not feel like chasing bugs the other day. I decided to have
 some fun with something that I was wondering about for a long time: the usefulness
 of inline i86 assembly in string functions.
 </p><p>
-<a href=//www.winehq.org/hypermail/wine-devel/2004/09/0594.html">This</a>
+<a href="//www.winehq.org/hypermail/wine-devel/2004/09/0594.html">This</a>
  is the test program as.c 
 </p><p>
 The function strcpyW is a copy from Wine with the #ifdef modified.
@@ -341,7 +341,7 @@ seemed to do a pretty good job.  Alexandre agreed,
 <section 
 	title="HP-UX Port" 
 	subject="Getting winebuild to work on HP-UX"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/09/0.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/09/0.html" 
 	posts="3"
 	startdate="09/22/2004"
 	enddate="09/23/2004"
@@ -403,7 +403,7 @@ assembly, well, you have my sympathies.  I'm told it builds character :-)
 <section 
 	title="UpdateWindow vs. WM_PAINT" 
 	subject="UpdateWindow vs. WM_PAINT"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/09/0535.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/09/0535.html" 
 	posts="2"
 	startdate="09/20/2004"
 	enddate="09/21/2004"
@@ -453,6 +453,6 @@ other messages</li></ul></p></quote>
 <p>Alexandre hasn't committed the patch yet, so if you have an app
 suffering from buggy drawing in controls you may want to try
 out Michael's 
-<a href=//www.winehq.org/hypermail/wine-devel/2004/09/0535.html">patch</a>.
+<a href="//www.winehq.org/hypermail/wine-devel/2004/09/0535.html">patch</a>.
 </p>
 </section></kc>

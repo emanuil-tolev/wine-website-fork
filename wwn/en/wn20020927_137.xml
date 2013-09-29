@@ -84,14 +84,14 @@ Windows emulator).</p>
 <section 
 	title="News: Wine Status Update" 
 	subject="News"
-	archive=//www.winehq.org/about/index.php?status" 
+	archive="//www.winehq.org/about/index.php?status" 
 	posts="1" 
 	startdate="09/21/2002"
 	enddate="09/27/2002" 
 >
 <topic>News</topic>
 <p>Thomas Wickline spent some time recently updating the 
-<a href=//www.winehq.org/about/index.php?status">Wine
+<a href="//www.winehq.org/about/index.php?status">Wine
 Status</a> page.  Previous to this, it had been about a
 year since it had been updated.  It's nice to see green
 overtaking red.  Look for more updates soon, there's still
@@ -109,7 +109,7 @@ a lot of things on the page that need correcting.</p>
 <section 
 	title="MS Write Support (con't)" 
 	subject="notepad vs write"
-	archive=//www.winehq.org/hypermail/wine-devel/2002/09/0473.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2002/09/0473.html" 
 	posts="3" 
 	startdate="09/20/2002"
 	enddate="09/21/2002" 
@@ -153,7 +153,7 @@ a note in Bugzilla on where to find the code.</p>
 <section 
 	title="Proposal for Developer CVS Tree" 
 	subject="[Controversial] Developper only CVS sandbox"
-	archive=//www.winehq.org/hypermail/wine-devel/2002/09/0592.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2002/09/0592.html" 
 	posts="14" 
 	startdate="09/25/2002"
 	enddate="09/26/2002" 
@@ -224,17 +224,17 @@ system with better support for parallel branches of development. Now
 <section 
 	title="Updating Developer Info" 
 	subject="Call to update the 'Who's Who' page"
-	archive=//www.winehq.org/hypermail/wine-devel/2002/09/0469.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2002/09/0469.html" 
 	posts="1" 
 	startdate="09/20/2002"
 	enddate="09/20/2002" 
 >
 <topic>Documentation</topic>
 <p>Jeremy Newman put out a call to update some of the info
-on <a href=//www.winehq.org">WineHQ</a>:</p>
+on <a href="//www.winehq.org">WineHQ</a>:</p>
 <quote who="Jeremy Newman"><p>
  It's time to update the Wine 
- <a href =//www.winehq.org/about/index.php?who">Who's Who</a> page.
+ <a href ="//www.winehq.org/about/index.php?who">Who's Who</a> page.
 </p><p>
  I need all current developers to send me their info for this page. It is
  optional to be listed here of course. If you are on the list now and do
@@ -262,7 +262,7 @@ on <a href=//www.winehq.org">WineHQ</a>:</p>
 <section 
 	title="CreateProcessA() and Environment Settings" 
 	subject="another MZ_Exec() problem..."
-	archive=//www.winehq.org/hypermail/wine-devel/2002/09/0553.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2002/09/0553.html" 
 	posts="14" 
 	startdate="09/24/2002"
 	enddate="09/25/2002" 
@@ -272,7 +272,7 @@ on <a href=//www.winehq.org">WineHQ</a>:</p>
  Chris Morgan was having some problems with one DOS app spawning
  another.  The first problem was just getting MZ_Exec() to 
  run a PE executable.  So he 
- <a href=//www.winehq.org/hypermail/wine-devel/2002/09/0495.html">posted</a> a small patch to
+ <a href="//www.winehq.org/hypermail/wine-devel/2002/09/0495.html">posted</a> a small patch to
  check if program being called is PE, and if so to call <code>CreateProcess</code>
  to handle it.  But, Chris needed to pass some info around and first thought
  he could do it through the commandline.  He seemed to run into a
@@ -392,7 +392,7 @@ current PSP (which is currently what MZ_DoLoadImage does) with
 <section 
 	title="Programming with Wine and COM" 
 	subject="how to declare COM class?"
-	archive=//www.winehq.org/hypermail/wine-devel/2002/09/0533.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2002/09/0533.html" 
 	posts="5" 
 	startdate="09/23/2002"
 	enddate="09/25/2002" 
@@ -430,7 +430,7 @@ URL Lionel gave does talk about that, he explained,
 
 <p>Francois Gouget said the best Wine-related resource was to simply 
 <quote who="Francois Gouget"> read the comments in '
- <a href=//cvs.winehq.org/cvsweb/wine/include/wine/obj_base.h?rev=1.47&amp;content-type=text/x-cvsweb-markup">include/wine/obj_base.h</a>'.
+ <a href="//cvs.winehq.org/cvsweb/wine/include/wine/obj_base.h?rev=1.47&amp;content-type=text/x-cvsweb-markup">include/wine/obj_base.h</a>'.
 </quote></p>
 
 </section>

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="330" date="04/30/2007" />
 <intro> <p>This is the 330th issue of the Wine Weekly News publication.
-Its main goal is to buy a house. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to buy a house. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="360" size="765" contrib="92" multiples="56" lastweek="43">
 
 <person posts="35" size="88" who="speeddymon at gmail.com (Tom Spear)" />
@@ -99,7 +99,7 @@ Its main goal is to buy a house. It also serves to inform you of what's going on
 <section 
 	title="News: Wine 0.9.36"
 	subject="News"
-	archive=//www.winehq.org/pipermail/wine-devel/2007-February/.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2007-February/.html"
 	posts="2"
 >
 <topic>News</topic>
@@ -124,15 +124,15 @@ desktop, and a Japanese edition.  </p>
 that are almost worth covering.  You could translate that to mean I'm
 too lazy to cover them because they didn't quite interest me.  At the
 top of the list is a discussion of using the 
-<a href=//www.winehq.org/pipermail/wine-devel/2007-April/056173.html">Intel compiler</a> with Wine.
+<a href="//www.winehq.org/pipermail/wine-devel/2007-April/056173.html">Intel compiler</a> with Wine.
 Previously this was known not to work because of some calling conventions
 in icc, but apparently this seems better because Jonathan Schleifer got
 Windows binaries to run.  Next up, a private company used Wine
-<a href=//www.winehq.org/pipermail/wine-devel/2007-April/056340.html">internally</a>
+<a href="//www.winehq.org/pipermail/wine-devel/2007-April/056340.html">internally</a>
 for a custom port and there were some questions related to that.  Finally,
 Stefan D&#246;singer asked a question about 
 whether Direct3D 
-<a href=//www.winehq.org/pipermail/wine-devel/2007-April/056377.html">features supported in software</a>
+<a href="//www.winehq.org/pipermail/wine-devel/2007-April/056377.html">features supported in software</a>
 should be reported as things Wine is capable of rendering.  (The end result
 of that one was it should be configurable via a registry setting since 
 sometimes it will allow a game to run that otherwise couldn't.)  Follow those
@@ -233,7 +233,7 @@ implements initial MIDI support on Mac OS X.</p>
 <section 
 	title="Winscard Support"
 	subject="Winscard support (for smart cards)"
-	archive=//www.winehq.org/pipermail/wine-devel/2007-April/056312.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2007-April/056312.html"
 	posts="14"
 >
 <topic>Integration</topic>
@@ -323,7 +323,7 @@ msvcrt)
 <section 
 	title="Wine Killing X?"
 	subject="wine killing X?"
-	archive=//www.winehq.org/pipermail/wine-devel/2007-April/056399.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2007-April/056399.html"
 	posts="8"
 >
 <topic>Graphics</topic>
@@ -347,7 +347,7 @@ the display driver was at fault.</p>
 <section 
 	title="SambaXP Report"
 	subject="SambaXP 2007 Report, Day 1"
-	archive=//www.winehq.org/pipermail/wine-devel/2007-April/056254.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2007-April/056254.html"
 	posts="3"
 >
 <topic>News</topic>
@@ -466,7 +466,7 @@ from a Wine perspective will certainly follow.</p></quote>
 <section 
 	title="Mandriva RPM's"
 	subject="Mandriva rpms"
-	archive=//www.winehq.org/pipermail/wine-devel/2007-April/055978.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2007-April/055978.html"
 	posts="4"
 >
 <topic>Packaging</topic>
@@ -494,7 +494,7 @@ at Mandriva.</p></quote>
 <section 
 	title="Debugging Reports"
 	subject="Better Debugging Possibilities for Wine on Ubuntu"
-	archive=//www.winehq.org/pipermail/wine-devel/2007-April/056066.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2007-April/056066.html"
 	posts="7"
 >
 <topic>Debugging</topic>
@@ -552,7 +552,7 @@ the exact Wine version $(wine --version), and where did it come from
 <section 
 	title="Wine At LinuxTag 2007"
 	subject="Linuxtag 2007 in Berlin"
-	archive=//www.winehq.org/pipermail/wine-devel/2007-April/056310.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2007-April/056310.html"
 	posts="4"
 >
 <topic>News</topic>
@@ -570,7 +570,7 @@ to help out please contact me :-)
 <section
  title="WineConf 2007"
  subject="Wineconf 2007 survey"
- archive=//www.winehq.org/pipermail/wineconf/2007-April/000451.html"
+ archive="//www.winehq.org/pipermail/wineconf/2007-April/000451.html"
  posts="1"
 >
 <topic>WineConf 2007</topic>
@@ -586,7 +586,7 @@ again - then we'd just pick the most popular spot.
 </p><p>
 To that end, if you could visit this page:
 <ul>
-  <a href=//www.winehq.org/wineconf/survey">
+  <a href="//www.winehq.org/wineconf/survey">
   http://www.winehq.org/wineconf/survey</a></ul>
 </p></quote>
 

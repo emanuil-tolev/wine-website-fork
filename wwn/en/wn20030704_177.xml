@@ -68,7 +68,7 @@
 <section 
 	title="News: Updated DLL Status Page" 
 	subject="News"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0024.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0024.html" 
 	posts="1"
 	startdate="06/28/2003"
 	enddate="07/04/2003"
@@ -82,7 +82,7 @@ years ago.
 </p><p>
 
 Tom Wickline updated the 
-<a href=//www.winehq.org/?page=status_dlls">DLLs status page</a>
+<a href="//www.winehq.org/?page=status_dlls">DLLs status page</a>
 on WineHQ.  If you've ever wondered what a particular DLL in Wine does
 check out the new links to MSDN info.  Tom has moved on to updating the
 "Core" status page.</p>
@@ -91,7 +91,7 @@ check out the new links to MSDN info.  Tom has moved on to updating the
 </section><section 
 	title="DirectShow / Quartz Patches" 
 	subject="[DSHOW-01] Add Headers For DirectShow"
-	archive=//www.winehq.org/hypermail/wine-patches/2003/06/0225.html" 
+	archive="//www.winehq.org/hypermail/wine-patches/2003/06/0225.html" 
 	posts="4"
 	startdate="06/24/2003"
 	enddate="07/02/2003"
@@ -185,7 +185,7 @@ It's a graphical way to work with filter graphs.  </p>
 </section><section 
 	title="Fix For Kazaa Lite" 
 	subject="[Patch] dlls/oleaut32/typelib.c - Via a CVS search, reverse regression to get Kazza working"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/06/0627.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/06/0627.html" 
 	posts="1"
 	startdate="06/26/2003"
 >
@@ -220,11 +220,11 @@ using in wine.config:
  
 I looked though the CVS logs and mail archives and I found the
 following:
-<ul><a href=//www.winehq.org/hypermail/wine-devel/2003/06/0414.html">
+<ul><a href="//www.winehq.org/hypermail/wine-devel/2003/06/0414.html">
 http://www.winehq.org/hypermail/wine-devel/2003/06/0414.html</a></ul></p><p>
 
 and 
-<a href=//www.winehq.org/hypermail/wine-devel/2003/06/0627.html">the 
+<a href="//www.winehq.org/hypermail/wine-devel/2003/06/0627.html">the 
 patch below</a> which was applied to dlls/oleaut32/typelib.c
 </p><p>
 This caused the crash, reversing it fixes the error.
@@ -236,7 +236,7 @@ please fix / apply, or I will cry!!!</p></quote>
 </section><section 
 	title="Clipboard Problems" 
 	subject="Copy &amp; Paste doesn't work again"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/06/0652.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/06/0652.html" 
 	posts="6"
 	startdate="06/29/2003"
 	enddate="06/30/2003"
@@ -280,7 +280,7 @@ This is the commit:
  	didn't own the selection but they did and as a result queried
  	themselves for available selection data</li></ul></code></ul></p><p>
  
- Patch: <a href=//cvs.winehq.org/patch.py?root=/home/winehq/opt/cvs-commit&amp;id=8573">
+ Patch: <a href="//cvs.winehq.org/patch.py?root=/home/winehq/opt/cvs-commit&amp;id=8573">
   http://cvs.winehq.org/patch.py?root=/home/winehq/opt/cvs-commit&amp;id=8573</a>
 </p><p>
 Causing in Agent several problems:
@@ -332,7 +332,7 @@ Ulrich replied that he would look at integrating the ideas into the clipboard.</
 </section><section 
 	title="Wine Keyboard Handling" 
 	subject="Word in Hebrew and Wine"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0042.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0042.html" 
 	posts="3"
 	startdate="07/03/2003"
 >
@@ -417,7 +417,7 @@ locale as they have on Windows.
 </section><section 
 	title="Printing Out the Wine Version" 
 	subject="RE: [RESENT] Always print version on startup"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0012.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0012.html" 
 	posts="4"
 	startdate="07/01/2003"
 >

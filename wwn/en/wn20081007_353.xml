@@ -6,7 +6,7 @@
 <author contact="http://www.bluesata.com">Zachary Goldberg</author>
 <issue num="353" date="10/07/2008" />
 <intro> <p>This is the 353 issue of the World Wine News publication.
-Its main goal is to bring WineConf 2008 information to the masses. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to bring WineConf 2008 information to the masses. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="106" size="145" contrib="38" multiples="20" lastweek="27">
 
 <person posts="14" size="15" who="dmitry at codeweavers.com (Dmitry Timoshkov)" />
@@ -200,7 +200,7 @@ A special thanks to the following folks for helping edit this rather error-prone
 >
 <topic>WineConf</topic>
 <p>
-Alexandre's keynote is available at <a href=//www.winehq.org/wineconf/media">http://www.winehq.org/wineconf/media</a>.  The most important piece was when the entire community at WineConf got to witness pigs fly!  Some of the other highlights below:
+Alexandre's keynote is available at <a href="//www.winehq.org/wineconf/media">http://www.winehq.org/wineconf/media</a>.  The most important piece was when the entire community at WineConf got to witness pigs fly!  Some of the other highlights below:
 </p>
 <ul>
 <li>
@@ -272,7 +272,7 @@ Finally there was a big discussion on fixme's.  There is general consensus that 
 <section
 	title="Wine's Image: WineHQ.org"
 	subject="WineHQ.org"
-	archive=//www.winehq.org"
+	archive="//www.winehq.org"
 	posts="0"
 >
 <topic>WineHQ.org</topic>
@@ -353,7 +353,7 @@ Huw Davies has the unfortunate task of making a DIB Engine,  The status is that 
 <section
 	title="Weekly AppDB/BugZilla Status Changes"
 	subject="AppDB/BugZilla"
-	archive=//appdb.winehq.org"
+	archive="//appdb.winehq.org"
 	posts="0"
 >
 <topic>AppDB / BugZilla</topic>
@@ -524,7 +524,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11806">Max+Plus II 10.2</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11806">Max+Plus II 10.2</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (0.9.60)
@@ -539,7 +539,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3824">Painkiller 1.00</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3824">Painkiller 1.00</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.2)
@@ -554,7 +554,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13963">SpongeBob SquarePants: Employee of the Month 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13963">SpongeBob SquarePants: Employee of the Month 1.0</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (1.1.0)
@@ -569,7 +569,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=6027">Wing Commander: Secret Ops 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=6027">Wing Commander: Secret Ops 1.0</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (0.9.43)
@@ -584,7 +584,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12753">2Sid Meier's Civilization IV 3.17 (Beyond the Swor...</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12753">2Sid Meier's Civilization IV 3.17 (Beyond the Swor...</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.2)
@@ -599,7 +599,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13896">Sid Meier's Civilization IV : Colonization 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13896">Sid Meier's Civilization IV : Colonization 1.0</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.0)
@@ -614,7 +614,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10133">Watchtower Library 2007</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10133">Watchtower Library 2007</a>
              </td>
              <td background="{$root}/images/wwn_platinumbg.gif">
                Platinum (1.1.4)
@@ -629,7 +629,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2588">3D Studio MAX 7.x</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2588">3D Studio MAX 7.x</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (0.9.59)
@@ -644,7 +644,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12945">The Time Warp of Dr. Brain Unknown</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12945">The Time Warp of Dr. Brain Unknown</a>
              </td>
              <td background="{$root}/images/wwn_platinumbg.gif">
                Platinum (1.0.0)
@@ -659,7 +659,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=5159">F.E.A.R.: First Encounter Assault Recon 1.0x</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=5159">F.E.A.R.: First Encounter Assault Recon 1.0x</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.2)
@@ -674,7 +674,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3630">HLSW 1.x</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3630">HLSW 1.x</a>
              </td>
              <td background="{$root}/images/wwn_platinumbg.gif">
                Platinum (0.9.61)
@@ -689,7 +689,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3938">mode19.exe 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3938">mode19.exe 1.0</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (0.9.4)
@@ -704,7 +704,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12153">Seterra 3.00</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12153">Seterra 3.00</a>
              </td>
              <td background="{$root}/images/wwn_platinumbg.gif">
                Platinum (1.1.2)
@@ -719,7 +719,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=8699">Sid Meier's Civilization IV 1.74</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=8699">Sid Meier's Civilization IV 1.74</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.1.2)
@@ -756,7 +756,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=817">Baldur's Gate 1.1.4315</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=817">Baldur's Gate 1.1.4315</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.0-rc2)
@@ -771,7 +771,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13972">Broken Sword 2.5 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13972">Broken Sword 2.5 1.0</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (1.1.0)
@@ -786,7 +786,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2038">Circle of Blood 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2038">Circle of Blood 1.0</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (0.9.44)
@@ -801,7 +801,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11999">King's Bounty: the Legend (new, 2008) 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11999">King's Bounty: the Legend (new, 2008) 1.0</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.3)
@@ -816,7 +816,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4162">Legacy of Kain: Soul Reaver 1.x</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4162">Legacy of Kain: Soul Reaver 1.x</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.0.0)
@@ -831,7 +831,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3755">Live For Speed S2</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3755">Live For Speed S2</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (1.1.3)
@@ -846,7 +846,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4651">Max Payne Demo 1.05</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4651">Max Payne Demo 1.05</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (1.0.0)
@@ -861,7 +861,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3214">Microsoft Office 2003</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3214">Microsoft Office 2003</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (1.1.4)
@@ -876,7 +876,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9923">Perfect World International</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9923">Perfect World International</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (1.1.3)
@@ -891,7 +891,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=351">Pharaoh 1.00</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=351">Pharaoh 1.00</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.0-rc4)
@@ -906,7 +906,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10483">Silver Chaos 1 1.1</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10483">Silver Chaos 1 1.1</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.0)
@@ -921,7 +921,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2315">Star Wars: Jedi Knight - Jedi Academy 1.x</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2315">Star Wars: Jedi Knight - Jedi Academy 1.x</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.1.3)
@@ -936,7 +936,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=5224">Terragen 0.9.43</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=5224">Terragen 0.9.43</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.0)
@@ -951,7 +951,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4205">Thief: The Dark Project 1.33</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4205">Thief: The Dark Project 1.33</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.0.0)
@@ -966,7 +966,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12977">Universal Share Downloader 1.3.5.1</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12977">Universal Share Downloader 1.3.5.1</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (1.0.0)
@@ -981,7 +981,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11323">WS_FTP 2007.1 professional</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11323">WS_FTP 2007.1 professional</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (0.9.58)
@@ -996,7 +996,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11329">World of Warcraft 2.4.X</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11329">World of Warcraft 2.4.X</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.1.3)
@@ -1011,7 +1011,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12203">ePSXe 1.7.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12203">ePSXe 1.7.0</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (1.1.1)
@@ -1026,7 +1026,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2827">Baldur's Gate II Throne of Bhaal</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2827">Baldur's Gate II Throne of Bhaal</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.4)
@@ -1041,7 +1041,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4290">Casino Inc 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4290">Casino Inc 1.0</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (0.9.7)
@@ -1056,7 +1056,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10427">Cossacks - Back to War 1.35</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10427">Cossacks - Back to War 1.35</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (0.9.58)
@@ -1071,7 +1071,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12574">Darwinia Darwinia</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12574">Darwinia Darwinia</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (1.0-rc4)
@@ -1086,7 +1086,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=6206">Evolva 1.2.944</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=6206">Evolva 1.2.944</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (0.9.56)
@@ -1101,7 +1101,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9194">Guild Wars All Versions</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9194">Guild Wars All Versions</a>
              </td>
              <td background="{$root}/images/wwn_platinumbg.gif">
                Platinum (1.1.4)
@@ -1116,7 +1116,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10422">Kyodai Mahjongg 2006</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10422">Kyodai Mahjongg 2006</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (0.9.52)
@@ -1131,7 +1131,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10012">Madden NFL 08 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10012">Madden NFL 08 1.0</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.0)
@@ -1146,7 +1146,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4992">Microsoft Office 2007</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4992">Microsoft Office 2007</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (1.1.4)
@@ -1161,7 +1161,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11675">Poker Academy Pro 2</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11675">Poker Academy Pro 2</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (0.9.59)
@@ -1176,7 +1176,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=400">Roller Coaster Tycoon 1.08.187</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=400">Roller Coaster Tycoon 1.08.187</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (1.1.0)
@@ -1191,7 +1191,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13806">S.T.A.L.K.E.R. - Clear Sky 1.5.04</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13806">S.T.A.L.K.E.R. - Clear Sky 1.5.04</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.2)
@@ -1206,7 +1206,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2008">Seedmaster 3.1a</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2008">Seedmaster 3.1a</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (0.9.9)
@@ -1221,7 +1221,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13652">Spore 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13652">Spore 1.0</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (1.1.3)
@@ -1236,7 +1236,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=946">Star Wars: Jedi Knight II - Jedi Outcast 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=946">Star Wars: Jedi Knight II - Jedi Outcast 1.0</a>
              </td>
              <td background="{$root}/images/wwn_platinumbg.gif">
                Platinum (1.0.0)
@@ -1251,7 +1251,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=1251">Stronghold 1.x</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=1251">Stronghold 1.x</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (1.1.3)
@@ -1266,7 +1266,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9901">Team Fortress 2 - Steam August 21, 2008</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9901">Team Fortress 2 - Steam August 21, 2008</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (1.1.3)
@@ -1281,7 +1281,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9593">The Witcher 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9593">The Witcher 1.0</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (1.1.3)
@@ -1296,7 +1296,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2727">Visio 2003</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2727">Visio 2003</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (1.0.0)
@@ -1311,7 +1311,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13515">Warcraft III Delay Reducer 1.4.0.3</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13515">Warcraft III Delay Reducer 1.4.0.3</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.2)
@@ -1326,7 +1326,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3859">WinISIS 1.5 build 3</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3859">WinISIS 1.5 build 3</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (0.9.8)
@@ -1341,7 +1341,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13023">AIMP 2.11 2.11</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13023">AIMP 2.11 2.11</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.0.0)
@@ -1356,7 +1356,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=5980">Alien Shooter Full version 1.2</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=5980">Alien Shooter Full version 1.2</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (0.9.57)
@@ -1371,7 +1371,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=810">Fallout Tactics All Versions</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=810">Fallout Tactics All Versions</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.0-rc2)
@@ -1386,7 +1386,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=6842">Google SketchUp 6.x</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=6842">Google SketchUp 6.x</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (1.1.4)
@@ -1401,7 +1401,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9194">Guild Wars All Versions</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9194">Guild Wars All Versions</a>
              </td>
              <td background="{$root}/images/wwn_platinumbg.gif">
                Platinum (1.1.4)
@@ -1416,7 +1416,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=8458">Hearts of Iron II Doomsday</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=8458">Hearts of Iron II Doomsday</a>
              </td>
              <td background="{$root}/images/wwn_platinumbg.gif">
                Platinum (1.0.0)
@@ -1431,7 +1431,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=6828">Last Chaos 2.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=6828">Last Chaos 2.0</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.1.3)
@@ -1446,7 +1446,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=7939">Lionheart: Legacy of the Crusader 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=7939">Lionheart: Legacy of the Crusader 1.0</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (0.9.31)
@@ -1461,7 +1461,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4972">Mp3Gain 1.2.5</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4972">Mp3Gain 1.2.5</a>
              </td>
              <td background="{$root}/images/wwn_platinumbg.gif">
                Platinum (1.0.0)
@@ -1476,7 +1476,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13823">Multiwinia Demo 1.0.5</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13823">Multiwinia Demo 1.0.5</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (1.1.0)
@@ -1491,7 +1491,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=351">Pharaoh 1.00</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=351">Pharaoh 1.00</a>
              </td>
              <td background="{$root}/images/wwn_platinumbg.gif">
                Platinum (1.1.1)
@@ -1506,7 +1506,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13056">Photoscape 3.1</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13056">Photoscape 3.1</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.1)
@@ -1521,7 +1521,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11675">Poker Academy Pro 2</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11675">Poker Academy Pro 2</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (0.9.59)
@@ -1536,7 +1536,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9374">Powerpoint Viewer 2007</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9374">Powerpoint Viewer 2007</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.2)
@@ -1551,7 +1551,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13896">Sid Meier's Civilization IV : Colonization 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13896">Sid Meier's Civilization IV : Colonization 1.0</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.0)
@@ -1566,7 +1566,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13419">StrongDC++ 2.21</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13419">StrongDC++ 2.21</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.1.2)
@@ -1581,7 +1581,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3906">Stronghold: Crusader 1.x</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3906">Stronghold: Crusader 1.x</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.1.2)
@@ -1596,7 +1596,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=6461">The Settlers: Heritage of Kings 1.06</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=6461">The Settlers: Heritage of Kings 1.06</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.1.1)
@@ -1611,7 +1611,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=5047">Tropico Paradise Island: 1.53</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=5047">Tropico Paradise Island: 1.53</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (0.9.29)
@@ -1626,7 +1626,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13412">foobar2000 0.9.5.5</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13412">foobar2000 0.9.5.5</a>
              </td>
              <td background="{$root}/images/wwn_platinumbg.gif">
                Platinum (1.1.0)
@@ -1641,7 +1641,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12101">Age of Conan: Hyborian Adventures AoC client</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12101">Age of Conan: Hyborian Adventures AoC client</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.0-rc5)
@@ -1656,7 +1656,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10410">4Age of Empires III Age of Empires III - The Asian...</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10410">4Age of Empires III Age of Empires III - The Asian...</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (0.9.58)
@@ -1671,7 +1671,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4173">American Conquest 1.46</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4173">American Conquest 1.46</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.3)
@@ -1686,7 +1686,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9699">Call of Duty 4: Modern Warfare 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9699">Call of Duty 4: Modern Warfare 1.0</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.3)
@@ -1701,7 +1701,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3731">Counter-Strike: Source Retail / Steam</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3731">Counter-Strike: Source Retail / Steam</a>
              </td>
              <td background="{$root}/images/wwn_platinumbg.gif">
                Platinum (1.1.4)
@@ -1716,7 +1716,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=8217">Europa Universalis III 1.3</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=8217">Europa Universalis III 1.3</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (1.1.0)
@@ -1731,7 +1731,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=43">Fallout 1.x</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=43">Fallout 1.x</a>
              </td>
              <td background="{$root}/images/wwn_platinumbg.gif">
                Platinum (1.1.4)
@@ -1746,7 +1746,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=8881">FastStone Image Viewer 3.2 portable</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=8881">FastStone Image Viewer 3.2 portable</a>
              </td>
              <td background="{$root}/images/wwn_platinumbg.gif">
                Platinum (0.9.42)
@@ -1761,7 +1761,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13635">Google Chrome 0.2.149.29</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13635">Google Chrome 0.2.149.29</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.3)
@@ -1776,7 +1776,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11752">4Grand Theft Auto free from official Rockstar webs...</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11752">4Grand Theft Auto free from official Rockstar webs...</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.0.0)
@@ -1791,7 +1791,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9194">Guild Wars All Versions</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9194">Guild Wars All Versions</a>
              </td>
              <td background="{$root}/images/wwn_platinumbg.gif">
                Platinum (1.1.4)
@@ -1806,7 +1806,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=573">Homeworld 1.05</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=573">Homeworld 1.05</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.1.2)
@@ -1821,7 +1821,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10847">Media Center 12.x</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10847">Media Center 12.x</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (0.9.55)
@@ -1836,7 +1836,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=5124">Microsoft Office 2000</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=5124">Microsoft Office 2000</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.0.0)
@@ -1851,7 +1851,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=434">Oni 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=434">Oni 1.0</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.0-rc3)
@@ -1866,7 +1866,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13806">S.T.A.L.K.E.R. - Clear Sky 1.5.04</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13806">S.T.A.L.K.E.R. - Clear Sky 1.5.04</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.2)
@@ -1881,7 +1881,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13793">S.T.A.L.K.E.R. S.T.A.L.K.E.R.: Clear Sky</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13793">S.T.A.L.K.E.R. S.T.A.L.K.E.R.: Clear Sky</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.1.4)
@@ -1896,7 +1896,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2539">Sacred 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2539">Sacred 1.0</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.1.0)
@@ -1911,7 +1911,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10214">Shaiya latest version</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10214">Shaiya latest version</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.1.4)
@@ -1926,7 +1926,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12495">Sins of a Solar Empire 1.05</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12495">Sins of a Solar Empire 1.05</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (1.0-rc3)
@@ -1941,7 +1941,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11310">Surfer 8.00</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11310">Surfer 8.00</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (1.1.3)
@@ -1956,7 +1956,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11344">Syobon Action website</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11344">Syobon Action website</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.0-rc1)
@@ -1971,7 +1971,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9832">Ventrilo Client 3.0.x</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9832">Ventrilo Client 3.0.x</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (1.1.3)
@@ -1986,7 +1986,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=1177">Warcraft III Reign of Chaos: 1.x</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=1177">Warcraft III Reign of Chaos: 1.x</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.1.4)
@@ -2001,7 +2001,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3126">Warcraft III The Frozen Throne: 1.x</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3126">Warcraft III The Frozen Throne: 1.x</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.1.3)
@@ -2016,7 +2016,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=7313">Wik &amp; The Fable of Souls 040909RA</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=7313">Wik &amp; The Fable of Souls 040909RA</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (0.9.33)
@@ -2031,7 +2031,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=6560">Yoot Tower 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=6560">Yoot Tower 1.0</a>
              </td>
              <td background="{$root}/images/wwn_garbagebg.gif">
                Garbage (1.0-rc3)
@@ -2046,7 +2046,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9231">pkr Latest</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9231">pkr Latest</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (1.1.1)
@@ -2061,7 +2061,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=7884">Bascom AVR(1.11.8.6) 1.11.8.6</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=7884">Bascom AVR(1.11.8.6) 1.11.8.6</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (0.9.29)
@@ -2076,7 +2076,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3498">Diablo 1.0x</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3498">Diablo 1.0x</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (1.1.0)
@@ -2091,7 +2091,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2254">Discworld Noir 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2254">Discworld Noir 1.0</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (0.9.59)
@@ -2106,7 +2106,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2294">Flash MX 2004</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2294">Flash MX 2004</a>
              </td>
              <td background="{$root}/images/wwn_platinumbg.gif">
                Platinum (1.0-rc1)
@@ -2121,7 +2121,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9479">Football Manager 2008 8.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9479">Football Manager 2008 8.0</a>
              </td>
              <td background="{$root}/images/wwn_platinumbg.gif">
                Platinum (1.0-rc5)
@@ -2136,7 +2136,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=1638">Heroes of Might and Magic IV 1.0-3.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=1638">Heroes of Might and Magic IV 1.0-3.0</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.0.0)
@@ -2151,7 +2151,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4350">Imperialism II: The Age of Exploration 1.x</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4350">Imperialism II: The Age of Exploration 1.x</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (1.0-rc4)
@@ -2166,7 +2166,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12489">Legacy 7.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12489">Legacy 7.0</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (1.0-rc4)
@@ -2181,7 +2181,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10902">Need for Speed II SE</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10902">Need for Speed II SE</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.0-rc1)
@@ -2196,7 +2196,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10348">Need for Speed SE</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10348">Need for Speed SE</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (1.1.1)
@@ -2211,7 +2211,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9854">Need for Speed: ProStreet 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9854">Need for Speed: ProStreet 1.0</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (1.0-rc3)
@@ -2226,7 +2226,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13702">Original War 1.10b</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13702">Original War 1.10b</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (1.0.0)
@@ -2241,7 +2241,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=6264">People's General 1.x</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=6264">People's General 1.x</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (0.9.52)
@@ -2256,7 +2256,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9432">Portal 1.0</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9432">Portal 1.0</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (1.0.0)
@@ -2271,7 +2271,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=8774">RegexBuddy 3.0.3</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=8774">RegexBuddy 3.0.3</a>
              </td>
              <td background="{$root}/images/wwn_platinumbg.gif">
                Platinum (0.9.44)
@@ -2286,7 +2286,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9901">Team Fortress 2 - Steam August 21, 2008</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9901">Team Fortress 2 - Steam August 21, 2008</a>
              </td>
              <td background="{$root}/images/wwn_silverbg.gif">
                Silver (1.1.3)
@@ -2301,7 +2301,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=5727">Trainz 2006</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=5727">Trainz 2006</a>
              </td>
              <td background="{$root}/images/wwn_goldbg.gif">
                Gold (0.9.38)
@@ -2316,7 +2316,7 @@ will have the same experience and would provide a similar rating.</i></p>
 
            <tr>
              <td>
-                <a href=//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13139">Warhammer Online Live</a>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13139">Warhammer Online Live</a>
              </td>
              <td background="{$root}/images/wwn_bronzebg.gif">
                Bronze (1.1.4)

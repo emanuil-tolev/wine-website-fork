@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="318" date="07/10/2006" />
 <intro> <p>This is the 318th issue of the Wine Weekly News publication.
-Its main goal is to look for plane tickets for WineConf 06. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to look for plane tickets for WineConf 06. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="555" size="1003" contrib="121" multiples="70" lastweek="43">
 
 <person posts="35" size="40" who="truiken at gmail.com (James Hawkins)" />
@@ -132,7 +132,7 @@ Its main goal is to look for plane tickets for WineConf 06. It also serves to in
 <section 
 	title="News: CrossOver Update, Mac News"
 	subject="News"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-April/.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-April/.html"
 	posts="2"
 >
 <topic>News</topic>
@@ -161,12 +161,12 @@ Half-Life 2, White said. </p></quote>
 <section 
 	title="Changes to Fedora Packages"
 	subject="wine packages for Fedora Extras"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-July/049282.html.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-July/049282.html.html"
 	posts="3"
 >
 <topic>Packaging</topic>
 <p>A few weeks ago 
-(WWN <a href=//www.winehq.org/wwn/316#Fedora%20Packages%20Update">#316</a>)
+(WWN <a href="//www.winehq.org/wwn/316#Fedora%20Packages%20Update">#316</a>)
 we mentioned Andreas Bierfert had taken over building packages for Fedora.
 He wrote in this week to let everyone know he'd made some changes to the
 way the packages are configured:</p>
@@ -200,7 +200,7 @@ mirrors in a couple of hours.
 <section 
 	title="ClamAV Integration"
 	subject="How do I get the unix filename for a wine handle?"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-June/048899.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-June/048899.html"
 	posts="9"
 >
 <topic>Summer of Code 2006</topic>
@@ -283,7 +283,7 @@ already built into ClamAV.
 <section 
 	title="Safedisc RPM"
 	subject="An RPM of wine with safedisc support"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-June/048928.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-June/048928.html"
 	posts="5"
 >
 <topic>Architecture</topic>
@@ -309,7 +309,7 @@ too but that's Macrovision's fault) in the drive, the game will start.
 
 <p>Mike Hearn asked for the necessary patches to be added to the
 wiki for reference.  In related news, Vitaliy Margolen submitted
-<a href=//www.winehq.org/pipermail/wine-patches/2006-July/028478.html">a patch</a> 
+<a href="//www.winehq.org/pipermail/wine-patches/2006-July/028478.html">a patch</a> 
 that adds some of the important infrastructure for later ntoskrnl
 patches.</p>
 
@@ -317,7 +317,7 @@ patches.</p>
 <section 
 	title="Win64 / 64-bit Winelib"
 	subject="Win64 status"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-June/048758.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-June/048758.html"
 	posts="15"
 >
 <topic>Ports</topic>
@@ -423,13 +423,13 @@ there's more work to be done.</p>
 <section 
 	title="DWARF2 Testing Needed"
 	subject="Call for volunteer: dwarf2 testing"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-June/049118.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-June/049118.html"
 	posts="5"
 >
 <topic>Debugging</topic>
 <p>A few weeks ago we mentioned Eric Pouech had added support for
 the DWARF2 debugging format to Wine (see WWN
-<a href=//www.winehq.org/wwn/317#DWARF2%20Debugging">#317</a>).
+<a href="//www.winehq.org/wwn/317#DWARF2%20Debugging">#317</a>).
 He followed that up with a request for testers:</p>
 <quote who="Eric Pouech"><p>
 As you may have seen, there's now some support for the dwarf2 debug 
@@ -470,7 +470,7 @@ promised to fix it later.</p>
 <section 
 	title="Indenting Traces"
 	subject="indented relay traces"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-June/048914.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-June/048914.html"
 	posts="6"
 >
 <topic>Debugging</topic>
@@ -506,7 +506,7 @@ different formatting:
 <section 
 	title="GUID List"
 	subject="A big online GUID-List"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-July/049208.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-July/049208.html"
 	posts="1"
 >
 <topic>Documentation</topic>

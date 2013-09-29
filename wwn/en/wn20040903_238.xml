@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="238" date="09/03/2004" />
 <intro> <p>This is the 238th issue of the Wine Weekly News publication.
-Its main goal is to play blackjack. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to play blackjack. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="226" size="958" contrib="57" multiples="30" lastweek="25">
 
 <person posts="33" size="111" who="Mike Hearn" />
@@ -68,7 +68,7 @@ Its main goal is to play blackjack. It also serves to inform you of what's going
 <section 
 	title="Creating Type Libraries" 
 	subject="working together on stdole.tlb and an end to dcom9x"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/08/0607.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/08/0607.html" 
 	posts="16"
 	startdate="08/28/2004"
 	enddate="08/31/2004"
@@ -125,7 +125,7 @@ typelibs.  It's best explained by a comment in dlls/oleaut32/typelib.h,
 <quote who="Huw Davies"> 
  You're right, an MSFT stdole32 might work fine - I guess we should at
  least try it.  So for fun I've 
- <a href=//www.winehq.org/hypermail/wine-devel/2004/08/att-0639/01-stdole32.c">attached</a>
+ <a href="//www.winehq.org/hypermail/wine-devel/2004/08/att-0639/01-stdole32.c">attached</a>
  the program we used to
  generate CrossOver's stdole32.tlb (Actually you need to take the
  generated file and wrap it up in a resource only dll, but that's a
@@ -159,7 +159,7 @@ http://www.microsoft.com/msj/0399/comtype/comtype.aspx</a></ul></p></quote>
 <section
         title="Scheduling (con't)"
         subject="Re: [ck] Re: Threading issues? [ck-request@vds.kolivas.org: ck Digest, Vol 3, Issue 16] "
-        archive=//www.winehq.org/hypermail/wine-devel/2004/08/0481.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2004/08/0481.html"
         posts="21"
         startdate="08/24/2004"
         enddate="08/31/2004"
@@ -170,7 +170,7 @@ seen the discussions over the past year concerning schedulers.
 There's been a lot of work done in this area, but it's a very
 tricky problem to make every process run exactly the way it 
 was intended without interfering with other ones.  A few weeks
-ago (WWN <a href=//www.winehq.org/wwn/236#Threading%20Issues?">issue #236</a>)
+ago (WWN <a href="//www.winehq.org/wwn/236#Threading%20Issues?">issue #236</a>)
 Andi Mohr forwarded a message from a kernel development list
 that described a problem with Wine's interaction with the Linux
 scheduler.  More discussion occurred this week after Mike Hearn
@@ -341,7 +341,7 @@ but that is very difficult if not impossible to achieve)
 <section 
 	title="epoll (con't)" 
 	subject="Re: wineserver epoll"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/08/0654.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/08/0654.html" 
 	posts="8"
 	startdate="08/29/2004"
 	enddate="08/31/2004"
@@ -350,8 +350,8 @@ but that is very difficult if not impossible to achieve)
 <topic>Architecture</topic>
 <p>Shachar Shemesh submitted a patch to implement epoll() functionality,
 for background on this see the past two issues, 
-<a href=//www.winehq.org/wwn/236#poll%20vs.%20epoll">#236</a> and
-<a href=//www.winehq.org/wwn/237#poll%20vs.%20epoll%20(con't)">#237</a>:</p>
+<a href="//www.winehq.org/wwn/236#poll%20vs.%20epoll">#236</a> and
+<a href="//www.winehq.org/wwn/237#poll%20vs.%20epoll%20(con't)">#237</a>:</p>
 <quote who="Shachar Shemesh"><p>
 After much talk, the patch seems ready for commit. Since there are many
 systems with slightly older glibc that have the header but do not have
@@ -431,7 +431,7 @@ All this confusing handling of dlopening etc etc is way overblown.
 <section 
 	title="Richedit Control" 
 	subject="Richedit control"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/08/0608.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/08/0608.html" 
 	posts="1"
 	startdate="08/28/2004"
 >
@@ -459,13 +459,13 @@ let me know.
 <section 
 	title="Darwine Display Driver" 
 	subject="Wine's X11drv integration in Mac OS X"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/08/0647.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/08/0647.html" 
 	posts="1"
 	startdate="08/29/2004"
 >
 <topic>Status Updates</topic>
 <p>Last week (issue 
-<a href=//www.winehq.org/wwn/237#Quartz%20Display%20Driver">#237</a>)
+<a href="//www.winehq.org/wwn/237#Quartz%20Display%20Driver">#237</a>)
 we discussed a new Quartz display driver, or at least the beginnings of one.
 Well, it seems perhaps that development might be scrapped in favor of a 
 different plan.  Pierre d'Herbemont outlined the direction but went on to
@@ -499,7 +499,7 @@ how to fix that.</p>
 <section 
 	title="OLE For Process Control?" 
 	subject="Wine and industrial communication like OPC"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/09/0003.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/09/0003.html" 
 	posts="11"
 	startdate="09/02/2004"
 >

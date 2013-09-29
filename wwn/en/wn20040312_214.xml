@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="214" date="03/12/2004" />
 <intro> <p>This is the 214th issue of the Wine Weekly News publication.
-Its main goal is to eat leftovers. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to eat leftovers. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="152" size="476" contrib="52" multiples="29" lastweek="24">
 
 <person posts="17" size="50" who="Christian Britz" />
@@ -62,7 +62,7 @@ Its main goal is to eat leftovers. It also serves to inform you of what's going 
 <section 
 	title="News: Wine-20040309" 
 	subject="News"
-	archive=//cvs.winehq.org/cvsweb/wine/ANNOUNCE?rev=1.86&amp;content-type=text/x-cvsweb-markup" 
+	archive="//cvs.winehq.org/cvsweb/wine/ANNOUNCE?rev=1.86&amp;content-type=text/x-cvsweb-markup" 
 	posts="1"
 	startdate="03/06/2004"
 	enddate="03/12/2004"
@@ -72,7 +72,7 @@ Its main goal is to eat leftovers. It also serves to inform you of what's going 
 on Tuesday:</p>
 <quote who="Alexandre Julliard">
 <p>WHAT'S NEW with Wine-20040309: (see
-<a href=//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.81&amp;content-type=text/x-cvsweb-markup">ChangeLog</a>
+<a href="//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.81&amp;content-type=text/x-cvsweb-markup">ChangeLog</a>
 for details)
 <ul>
         <li> Much improved winegcc tool, now used to build Wine itself.</li>
@@ -94,7 +94,7 @@ been implemented yet.
 
 <p>Vincent B&#233;ron pointed out that RedHat RPMs wouldn't
 be available for a few days.  Otherwise, 
-<a href=//www.winehq.org/download">go download it</a>.
+<a href="//www.winehq.org/download">go download it</a>.
 </p>
 
 </section>
@@ -102,7 +102,7 @@ be available for a few days.  Otherwise,
 <section 
 	title="Wine As A Shared Library &amp; Mono (con't)" 
 	subject="Re: Wine as shared library patch"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/03/0074.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/03/0074.html" 
 	posts="23"
 	startdate="03/04/2004"
 	enddate="03/09/2004"
@@ -268,7 +268,7 @@ use Wine as a runtime library.
 <section 
 	title="Changes to Wine to Compile MFC" 
 	subject="1/4 patches for compilation of ATL &amp; MFC"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/03/0180.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/03/0180.html" 
 	posts="5"
 	startdate="03/11/2004"
 >
@@ -276,7 +276,7 @@ use Wine as a runtime library.
 <p>Boaz Harrosh was able to get the Microsoft Foundation Classes
 to compile with gcc and Wine.  Quite a bit of work was involved
 and he posted patches required by Wine for the process.</p><p>
-<a href=//www.winehq.org/hypermail/wine-devel/2004/03/0180.html">Patch 1:</a></p>
+<a href="//www.winehq.org/hypermail/wine-devel/2004/03/0180.html">Patch 1:</a></p>
 <quote who="Boaz Harrosh"><p>
 uuidof.diff - enable use of some ms extensions
 <dl>
@@ -297,7 +297,7 @@ uuidof.diff - enable use of some ms extensions
 
 
 
-<p><a href=//www.winehq.org/hypermail/wine-devel/2004/03/0178.html">Patch 2:</a></p>
+<p><a href="//www.winehq.org/hypermail/wine-devel/2004/03/0178.html">Patch 2:</a></p>
 <quote who="Boaz Harrosh"><p>ForAtlMfc.diff - some fixes and additional files needed by ATL/MFC
 <dl>
  <dt>include/Makefile.in</dt>
@@ -325,7 +325,7 @@ uuidof.diff - enable use of some ms extensions
 
 
 
-<p><a href=//www.winehq.org/hypermail/wine-devel/2004/03/0179.html">Patch 3:</a></p>
+<p><a href="//www.winehq.org/hypermail/wine-devel/2004/03/0179.html">Patch 3:</a></p>
 <quote who="Boaz Harrosh"><p>msvcrt.diff - minor fixes to msvcrt
 
 <dl>
@@ -345,7 +345,7 @@ uuidof.diff - enable use of some ms extensions
 
 
 
-<p><a href=//www.winehq.org/hypermail/wine-devel/2004/03/0181.html">Patch 4:</a></p>
+<p><a href="//www.winehq.org/hypermail/wine-devel/2004/03/0181.html">Patch 4:</a></p>
 <quote who="Boaz Harrosh"><p>
 warning_off.diff -
     some of these might be controversial but would eliminate 17 tons off 
@@ -379,7 +379,7 @@ warning. ( Maybe it is best to keep this patch separate)</dd>
 
 
 
-<p><a href=//www.winehq.org/hypermail/wine-devel/2004/03/0182.html">Patch 5:</a></p>
+<p><a href="//www.winehq.org/hypermail/wine-devel/2004/03/0182.html">Patch 5:</a></p>
 <quote who="Boaz Harrosh"><p>
 winegcc.diff - I know I promised 4 but here is a 5th.
 <dl>
@@ -403,7 +403,7 @@ default is warning off.</dd>
 <section 
 	title="Vino: A Small Script for Setting Options" 
 	subject="In Vino Veritas!"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/02/0236.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/02/0236.html" 
 	posts="3"
 	startdate="03/12/2004"
 >
@@ -459,7 +459,7 @@ wine $@
 <section 
 	title="Patch Roundup" 
 	subject="Patch Roundup"
-	archive=//www.winehq.org/hypermail/wine-patches/2004/03" 
+	archive="//www.winehq.org/hypermail/wine-patches/2004/03" 
 	posts="11"
 	startdate="03/06/2004"
 	enddate="03/12/2004"
@@ -475,7 +475,7 @@ I'd cover some of the patches that appeared.</p>
 controls lately.  He posted these patches (among others)
 this week.</p>
 
-<p><a href=//www.winehq.org/hypermail/wine-patches/2004/03/0074.html">Implement Drag List Control:</a></p>
+<p><a href="//www.winehq.org/hypermail/wine-patches/2004/03/0074.html">Implement Drag List Control:</a></p>
 <quote who="Robert Shearman"><p>
 This patch adds full support for drag list common controls. There are no
 known bugs, so as far as I am concerned this is 100% complete compared
@@ -487,7 +487,7 @@ the user can request the control to display this during dragging.
 I have also fixed the tabs in LBItemFromPt. Don't mix tabs and spaces!
 </p></quote>
 
-<p><a href=//www.winehq.org/hypermail/wine-patches/2004/03/0091.html">Toolbar:
+<p><a href="//www.winehq.org/hypermail/wine-patches/2004/03/0091.html">Toolbar:
  Drawing Code Rewrite:</a></p>
 <quote who="Robert Shearman"><p>
 This patch makes DrawButton a lot simpler. It splits out the drawing
@@ -500,7 +500,7 @@ themes). We also now properly support the state CDIS_MARKED/BTNS_MARKED.
 Next on the agenda is to rewrite the button size calculation code,
 including integrating Dmitry's code.</p></quote>
 
-<p><a href=//www.winehq.org/hypermail/wine-patches/2004/03/0091.html">Toolbar:
+<p><a href="//www.winehq.org/hypermail/wine-patches/2004/03/0091.html">Toolbar:
  Improve Button Calculation</a></p>
 <quote who="Robert Shearman"><p>
  This patch improves the code calculating how big a button should be and
@@ -514,13 +514,13 @@ including integrating Dmitry's code.</p></quote>
 <p>Christian Costa has been working on Direct Show lately and some
 of the underlying infrastructure. </p>
 
-<p><a href=//www.winehq.org/hypermail/wine-patches/2004/03/0036.html">
+<p><a href="//www.winehq.org/hypermail/wine-patches/2004/03/0036.html">
  Add MultiMedia Streams:</a></p>
 <quote who="Christian Costa"><p>
  Add amstream dll (MultiMedia Streams), part of Direct Show. 
 </p></quote>
  
-<p><a href=//www.winehq.org/hypermail/wine-patches/2004/03/0030.html">
+<p><a href="//www.winehq.org/hypermail/wine-patches/2004/03/0030.html">
  IFilterGraphImpl_EnumFilters and IEnumFilters interface:</a></p>
 <quote who="Christian Costa"><p>
 <ul><li>Implemented IFilterGraphImpl_EnumFilters and IEnumFilters interface. </li>
@@ -528,7 +528,7 @@ of the underlying infrastructure. </p>
  <li>Small fix in IFilterMapper_EnumMatchingFilters. </li></ul>
 </p></quote>
 
-<p><a href=//www.winehq.org/hypermail/wine-patches/2004/03/0042.html">
+<p><a href="//www.winehq.org/hypermail/wine-patches/2004/03/0042.html">
  IMediaEventSink and IMediaEventEx interfaces:</a></p>
 <quote who="Christian Costa"><p>
  Implemented IMediaEventSink and IMediaEventEx interfaces.
@@ -536,7 +536,7 @@ of the underlying infrastructure. </p>
 
 <p>And finally, Dimi Paun has been doing a lot of work on winegcc.  </p>
 
-<p><a href=//www.winehq.org/hypermail/wine-patches/2004/03/0062.html">
+<p><a href="//www.winehq.org/hypermail/wine-patches/2004/03/0062.html">
  add support for -B prefix:</a></p>
 <quote who="Dimitrie Paun"><p>
  Never used -B before, so I don't know if this is how it's
@@ -545,7 +545,7 @@ of the underlying infrastructure. </p>
  file that's executable, I run that. If not, I default to
  the original.</p></quote>
 
-<p><a href=//www.winehq.org/hypermail/wine-patches/2004/03/0063.html">
+<p><a href="//www.winehq.org/hypermail/wine-patches/2004/03/0063.html">
  add wine-specific mode:</a></p>
 <quote who="Dimitrie Paun"><p>
     Add a wine specific mode. If is activated if the -B prefix
@@ -557,7 +557,7 @@ of the underlying infrastructure. </p>
 </p></quote>
  
  
-<p><a href=//www.winehq.org/hypermail/wine-patches/2004/03/0061.html">
+<p><a href="//www.winehq.org/hypermail/wine-patches/2004/03/0061.html">
 add support for CC="ccache gcc":</a></p>
 <quote who="Dimitrie Paun"><p> <ul>
     <li> Support processors made up of different commands.</li>
@@ -565,7 +565,7 @@ add support for CC="ccache gcc":</a></p>
 </p></quote>
 
 
-<p><a href=//www.winehq.org/hypermail/wine-patches/2004/03/0031.html">
+<p><a href="//www.winehq.org/hypermail/wine-patches/2004/03/0031.html">
  preserve the relative order of files and libraries:</a></p>
 <quote who="Dimitrie Paun"><p>
    Preserve the relative order of files and libraries.
@@ -574,7 +574,7 @@ add support for CC="ccache gcc":</a></p>
 </p></quote>
 
 
-<p><a href=//www.winehq.org/hypermail/wine-patches/2004/03/0011.html">
+<p><a href="//www.winehq.org/hypermail/wine-patches/2004/03/0011.html">
 support winebuild options:</a></p>
 <quote who="Dimitrie Paun"><p><ul>
     <li>   Add support for passing options to winebuild via -Wb</li>

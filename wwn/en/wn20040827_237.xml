@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="237" date="08/27/2004" />
 <intro> <p>This is the 237th issue of the Wine Weekly News publication.
-Its main goal is to eat Vicodin. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to eat Vicodin. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="173" size="891" contrib="57" multiples="29" lastweek="28">
 
 <person posts="23" size="121" who="Mike Hearn" />
@@ -69,7 +69,7 @@ Its main goal is to eat Vicodin. It also serves to inform you of what's going on
 <section 
 	title="News: Wine in the Press" 
 	subject="News"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/07/0.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/07/0.html" 
 	posts="1"
 	startdate="08/21/2004"
 	enddate="08/27/2004"
@@ -98,7 +98,7 @@ href="http://news.independent.co.uk/world/science_technology/story.jsp?story=554
 <section
         title="Darwine Update"
         subject="New Darwine Binary Released"
-        archive=//www.winehq.org/hypermail/wine-devel/2004/08/0417.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2004/08/0417.html"
         posts="2"
         startdate="08/20/2004"
         enddate="08/21/2004"
@@ -107,14 +107,14 @@ href="http://news.independent.co.uk/world/science_technology/story.jsp?story=554
 <p>The Darwine folks popped up this week to let us know what they're
 working on.  It's been quite a few months since we've given an update
 on the project (see WWN issue
-<a href=//www.winehq.org/wwn/207#Darwine%20Update">#207</a> for
+<a href="//www.winehq.org/wwn/207#Darwine%20Update">#207</a> for
 the last one.)  There's definitely a lot of exciting stuff going on in
 that area and it seems like preliminary support for running i386 Windows
 binaries on Mac OS X is in place.  A slew of emails hit wine-devel this
 week, the first of which was Sanjay Connare's announcement:</p>
 <quote who="Sanjay Connare"><p>
  	I am proud and happy to announce the release of a new binary labeled Darwine 20040820 DP.  This binary is based upon the 20040813 wine release.  The majority of changes for this release can be viewed:
-	<ul><a href=//cvs.winehq.org/cvsweb/wine/ChangeLog">
+	<ul><a href="//cvs.winehq.org/cvsweb/wine/ChangeLog">
 http://cvs.winehq.org/cvsweb/wine/ChangeLog</a></ul></p><p>
 
 	It is being released as a DEVELOPER PREVIEW so USE AT YOUR OWN RISK!  It is not yet suited for mass distribution or general user use.  This release in addition to all of the fixes from the wine team includes many Mac OS X optimizations and fixes.  It also includes WineHelper a native Mac OS X application that helps launch .exe's.  It allows for .exe's to be double clicked in the finder like any other application and essentially bypasses the need to run wine via the command line.
@@ -196,7 +196,7 @@ But with Darwine, down the road... since we know things like, 'what are code blo
 <section 
 	title="Darwine, Wine, &amp; QEMU" 
 	subject="X86/PPC linking (was Re: [Darwine] Re: Wine Emulation: Swapping functions)"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/08/0533.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/08/0533.html" 
 	posts="18"
 	startdate="08/24/2004"
 	enddate="08/26/2004"
@@ -352,7 +352,7 @@ that.</p>
 <section
         title="Quartz Display Driver"
         subject="Beginnings of quartzdrv"
-        archive=//www.winehq.org/hypermail/wine-devel/2004/08/0440.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2004/08/0440.html"
         posts="8"
         startdate="08/22/2004"
         enddate="08/23/2004"
@@ -430,14 +430,14 @@ native-ness is worth all the pain </p></quote>
 <section 
     	title="Unicode to ASCII Crosscalls Suck More" 
 	subject="Other W-&gt;A crosscalls"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/08/0527.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/08/0527.html" 
 	posts="4"
 	startdate="08/25/2004"
 >
 <topic>Internationalization</topic>
 <p>From time to time we point to the
-<a href=//www.winehq.org/janitorial">Wine Janitorial page</a> and 
-<a href=//www.winehq.org/fun_projects">Fun Projects list</a> 
+<a href="//www.winehq.org/janitorial">Wine Janitorial page</a> and 
+<a href="//www.winehq.org/fun_projects">Fun Projects list</a> 
 as a good way for aspiring developers to get involved. <i>hint, hint</i>
 One of those janitorial tasks is to prevent Unicode functions from 
 using ASCII functions to do their dirty work.. and in the process perform a 
@@ -469,7 +469,7 @@ modifying the script or patches).
 </p></quote>
 
 <p>The 
-<a href=//www.winehq.org/hypermail/wine-devel/2004/08/0527.html">list</a>
+<a href="//www.winehq.org/hypermail/wine-devel/2004/08/0527.html">list</a>
 was quite lengthy with 286 possible cases. Compare that to the 54 we list on
 the janitorial page and it looks as if we haven't even started.  Rob Shearman
 pointed out the latest CVS might contain less since a very recent patch
@@ -511,7 +511,7 @@ not the only one in the whole tree.
 <section 
 	title="poll vs. epoll (con't)" 
 	subject="Non-perfect epoll patch"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/08/0492.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/08/0492.html" 
 	posts="4"
 	startdate="08/24/2004"
 	enddate="08/26/2004"
@@ -520,12 +520,12 @@ not the only one in the whole tree.
 <topic>Architecture</topic>
 <p>Last week we covered Shachar Shemesh's inquiry into using epoll() instead
 of poll() (see WWN 
-<a href=//www.winehq.org/wwn/236#poll%20vs.%20epoll">#236</a>.)
+<a href="//www.winehq.org/wwn/236#poll%20vs.%20epoll">#236</a>.)
 Well, Shachar took a stab at the idea presented and returned this week
 with a patch:</p>
 <quote who="Shachar Shemesh"><p>
 Attached is a 
-<a href=//www.winehq.org/hypermail/wine-devel/2004/08/0492.html">non-perfect
+<a href="//www.winehq.org/hypermail/wine-devel/2004/08/0492.html">non-perfect
 patch</a> for review. This is a migration of the 
 wineserver to use epoll instead of poll (if it's available).
 </p><p>

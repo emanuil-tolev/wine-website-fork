@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="314" date="05/26/2006" />
 <intro> <p>This is the 314th issue of the Wine Weekly News publication.
-Its main goal is to <a href="http://www.skithe14ers.com/">be inspired</a>. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to <a href="http://www.skithe14ers.com/">be inspired</a>. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="141" size="300" contrib="76" multiples="26" lastweek="37">
 
 <person posts="9" size="11" who="julliard at winehq.org (Alexandre Julliard)" />
@@ -89,7 +89,7 @@ Its main goal is to <a href="http://www.skithe14ers.com/">be inspired</a>. It al
 <section 
 	title="News: Picasa, Wine 0.9.14, LJ Article"
 	subject="News"
-	archive=//www.winehq.org/announce/0.9.14"
+	archive="//www.winehq.org/announce/0.9.14"
 	posts="3"
 >
 <topic>News</topic>
@@ -152,13 +152,13 @@ poster on the wall behind them.</p>
 <section 
 	title="Picasa Port to Linux"
 	subject="Picasa for Linux available!"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-May/047806.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-May/047806.html"
 	posts="6"
 >
 <topic>Ports</topic>
 <p>Several months ago we reported that CodeWeavers was contracted to port
 some Google apps to Linux (see WWN
-<a href=//www.winehq.org/wwn/306#News:%20Google%20&amp;%20Wine,%20v0.9.8">#306</a> for details.)
+<a href="//www.winehq.org/wwn/306#News:%20Google%20&amp;%20Wine,%20v0.9.8">#306</a> for details.)
 That news came out the last week in February.  Here we are less than 3 months
 later and Picasa is running.  So let's take a look at some of the details.
 You might have missed some of this if you only read things like Slashdot or
@@ -230,8 +230,8 @@ Marcus Meissner, whose libgphoto support patch was a welcome
 surprise."</quote></p>
 
 <p>Speaking of Marcus' patch, we covered that in two recent issues:
-<a href=//www.winehq.org/wwn/311#gPhoto%20&amp;%20TWAIN">#311</a>
-and <a href=//www.winehq.org/wwn/313#GPhoto%20/%20TWAIN%20Integration">#313</a>.
+<a href="//www.winehq.org/wwn/311#gPhoto%20&amp;%20TWAIN">#311</a>
+and <a href="//www.winehq.org/wwn/313#GPhoto%20/%20TWAIN%20Integration">#313</a>.
 Apparently Google and CodeWeavers made an assumption up front that digital
 cameras all could be accessed like a typical USB storage device.  It seems
 that most can, and as a result, we have Alexandre's patches from a few weeks
@@ -330,7 +330,7 @@ other companies would be interested in doing the same.</p>
 <section 
 	title="DirectDraw Patch"
 	subject="Announcing another ddraw/d3d7 patch"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-May/047821.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-May/047821.html"
 	posts="1"
 >
 <topic>DirectX</topic>
@@ -403,7 +403,7 @@ If you're on wine-users, please CC me, I'm not yet subscribed there.</p>
 <section 
 	title="Patch Submission Ideas"
 	subject="Easy patch submission with GIT + imap folders"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-April/046788.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-April/046788.html"
 	posts="4"
 >
 <topic>Patches</topic>
@@ -457,7 +457,7 @@ that contain the ChangeLog entry make things easier for him.</p>
 <section 
 	title="MSI Problem"
 	subject="MSI installer flaw"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-May/047805.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-May/047805.html"
 	posts="2"
 >
 <topic>MSI</topic>
@@ -537,14 +537,14 @@ time to work on it.</p>
 <section 
 	title="Font Issue"
 	subject="Fonts getting corrupted in x11drv"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-May/047786.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-May/047786.html"
 	posts="6"
 >
 <topic>Fonts</topic>
 <p>On a different note, Troy Rollo found a problem in Wine's font handling:</p>
 <quote who="Troy Rollo"><p>
 The 
-<a href=//www.winehq.org/pipermail/wine-devel/attachments/20060525/609ccda9/sysfont.c">attached</a> 
+<a href="//www.winehq.org/pipermail/wine-devel/attachments/20060525/609ccda9/sysfont.c">attached</a> 
 sample program demonstrates a bug in font handling that can lead 
 to corrupted fonts. Compile with "winegcc -g sysfont.c -lgdi32 -lcomdlg32". 
 Run the resulting a.out, and you will see the letter "C" in the top left 

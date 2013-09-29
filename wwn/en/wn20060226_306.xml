@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="306" date="02/26/2006" />
 <intro> <p>This is the 306th issue of the Wine Weekly News publication.
-Its main goal is to sleep on the couch. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to sleep on the couch. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="273" size="550" contrib="94" multiples="51" lastweek="50">
 
 <person posts="21" size="76" who="stefandoesinger at gmx.at (Stefan D&#246;singer)" />
@@ -147,18 +147,18 @@ the following changes:</p>
 
  <li>A few more options in winecfg.</li></ul></p></quote>
 
-<p>Go forth and <a href=//www.winehq.org/download">download</a>.</p>
+<p>Go forth and <a href="//www.winehq.org/download">download</a>.</p>
 <p>Finally, I'd like to point out that Zack Brown's 
 <a href="http://www.kerneltraffic.org">Kernel Traffic</a> site is on
 hiatus.  While Zack will continue to post these as I write them, there's
 always a chance his site will go offline.  If so, keep in mind that you
-can continue to find them on <a href=//www.winehq.org">WineHQ</a>.</p>
+can continue to find them on <a href="//www.winehq.org">WineHQ</a>.</p>
 
 </section>
 <section 
 	title="D3D8 Changes"
 	subject="Resubmit D3D8 Surface -&gt; WineD3D"
-	archive=//www.winehq.org/pipermail/wine-patches/2006-February/024356.html"
+	archive="//www.winehq.org/pipermail/wine-patches/2006-February/024356.html"
 	posts="5"
 >
 <topic>DirectX</topic>
@@ -259,7 +259,7 @@ patches continue to roll in.</p>
 <section 
 	title="Current State of Lotus Notes"
 	subject="wine-0.9.8 and Lotus Notes 6.5.1"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-February/045089.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-February/045089.html"
 	posts="1"
 >
 <topic>Status Updates</topic>
@@ -288,7 +288,7 @@ when specifying "UsePrimary" = "1" in the [Clipboard] config stanza</li>
 <section 
 	title="--rpath"
 	subject="Alexandre Julliard : configure: Use --rpath if supported when building binaries to point to"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-February/045133.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-February/045133.html"
 	posts="6"
 >
 <topic>Build Process</topic>
@@ -338,7 +338,7 @@ cope with this. Anyway, you could always build with make LDEXERPATH="".
 <section 
 	title="Updated getwinegit.sh"
 	subject="getwinegit.sh 0.2"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-February/045004.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-February/045004.html"
 	posts="1"
 >
 <topic>Utilities</topic>
@@ -380,13 +380,13 @@ by editing the variables in the head with your favourite editor.
 Tell me what you need and i will implement it... maybe :D
 </p></quote>
 
-<p>You can find the script <a href=//www.winehq.org/pipermail/wine-devel/2006-February/045004.html">attached</a> to his announcement email.
+<p>You can find the script <a href="//www.winehq.org/pipermail/wine-devel/2006-February/045004.html">attached</a> to his announcement email.
 </p>
 </section>
 <section 
 	title="Fixing Memory Layout Issues"
 	subject="Possibly crazy idea to deal with memory layout problems once and for all"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-February/044979.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-February/044979.html"
 	posts="7"
 >
 <topic>Memory Management</topic>
@@ -399,7 +399,7 @@ above TASK_UNMAPPED_BASE becomes fragmented to the extent that eventually you
 get an out of memory condition, even though you still have well over a 
 gigabyte free (even in a contiguous block!). This has led to some people 
 using the 
-<a href=//www.winehq.org/pipermail/wine-devel/attachments/20060218/1b0f68bc/mmap.patch">attached</a>
+<a href="//www.winehq.org/pipermail/wine-devel/attachments/20060218/1b0f68bc/mmap.patch">attached</a>
  hack (first attachment) to get their D3D games to work.
 </p><p>
 After considering a lot of approaches to this problem that did not seem to get 
@@ -466,7 +466,7 @@ work.
 <section 
 	title="Sponsored Development"
 	subject="Guitar Rig 2 in Linux/Wine"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-February/045095.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-February/045095.html"
 	posts="3"
 >
 <p>Michael Ost with Muse Research asked if anyone was interested in doing

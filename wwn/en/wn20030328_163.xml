@@ -95,13 +95,13 @@ Windows emulator).</p>
 <section 
 	title="News: Interview Series Coming Soon" 
 	subject="News"
-	archive=//www.winehq.org/" 
+	archive="//www.winehq.org/" 
 	posts="1"
 	startdate="03/22/2003"
 	enddate="03/28/2003"
 >
 <topic>News</topic>
-<p>In conjunction with the newly redesigned <a href=//www.winehq.org">WineHQ</a>
+<p>In conjunction with the newly redesigned <a href="//www.winehq.org">WineHQ</a>
 I'll be putting together an interview series with various Wine developers.  This
 should be a fairly regular series and continue for a while.  Look for new interviews
 every Tuesday on WineHQ.  Make a note of that - if you read this update on 
@@ -120,7 +120,7 @@ for future interviews let me know: question, topics, random thoughts, etc.</p>
 <section 
 	title="WineHQ Facelift" 
 	subject="WineHQ.org - redesign"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/03/0.html" 
 	posts="52"
 	startdate="03/20/2003"
 	enddate="03/25/2003"
@@ -143,7 +143,7 @@ Alright, back to my real job.
 provided input, and a ton of suggestions were made.  Here's a brief
 description of the threads discussion design considerations:
 
-<dl><dt><a href=//www.winehq.org/hypermail/wine-devel/2003/03/0532.html">WineHQ.org - redesign</a>
+<dl><dt><a href="//www.winehq.org/hypermail/wine-devel/2003/03/0532.html">WineHQ.org - redesign</a>
   - 03/20/2003</dt>
  <dd>Initial announcement of a test site,
 	<quote who="Jeremy Newman">
@@ -156,16 +156,16 @@ description of the threads discussion design considerations:
  I won't be taking any offers to put "Click the Monkey" ads. I will
  happily put up banners for other Wine related companies.</quote></dd>
 
-<dt><a href=//www.winehq.org/hypermail/wine-devel/2003/03/0535.html">Re: WineHQ Idea</a>
+<dt><a href="//www.winehq.org/hypermail/wine-devel/2003/03/0535.html">Re: WineHQ Idea</a>
  03/20/2003</dt>
  <dd>This was a rather long thread discussing whether or not it was appropriate
  to add a "News" box on the front page.  In the end it was added to the site.</dd>
 
-<dt><a href=//www.winehq.org/hypermail/wine-devel/2003/03/0580.html">WineHQ redesign - TODO</a>
+<dt><a href="//www.winehq.org/hypermail/wine-devel/2003/03/0580.html">WineHQ redesign - TODO</a>
  03/21/2003</dt>
  <dd>A list of items to be completed, most of which involved documentation updates.</dd>
 
-<dt><a href=//www.winehq.org/hypermail/wine-devel/2003/03/0706.html">WineHQ redesign - going live soon</a>
+<dt><a href="//www.winehq.org/hypermail/wine-devel/2003/03/0706.html">WineHQ redesign - going live soon</a>
  03/25/2003</dt>
  <dd>A final call for changes before the site went live later in the day.</dd>
 </dl></p>
@@ -180,7 +180,7 @@ description of the threads discussion design considerations:
 <section 
 	title="Wine Downloads At SourceForge" 
 	subject="[ANN] Wine @ SourceForge"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0644.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/03/0644.html" 
 	posts="5"
 	startdate="03/23/2003"
 	enddate="03/25/2003"
@@ -239,7 +239,7 @@ For now things are pretty clear:
 <section 
 	title="Making Wine Run With glibc 2.3" 
 	subject="Wine and glibc 3.2.x"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0576.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/03/0576.html" 
 	posts="13"
 	startdate="03/21/2003"
 	enddate="03/24/2003"
@@ -248,8 +248,8 @@ For now things are pretty clear:
 <p>There's been some threads on wine-devel and IRC about making
 Wine work with the new kernels and glibc found in the latest
 Linux distributions.  This has been covered in past issues
-(notably <a href=//www.winehq.org/index.phpwwn/155#Threading%20Problems%20with%20glibc%202.3">#155</a> 
-and <a href=//www.winehq.org/index.phpwwn/156#Threading%20Problems%20with%20glibc%202.3%20(cont'd)">#156</a>)
+(notably <a href="//www.winehq.org/index.phpwwn/155#Threading%20Problems%20with%20glibc%202.3">#155</a> 
+and <a href="//www.winehq.org/index.phpwwn/156#Threading%20Problems%20with%20glibc%202.3%20(cont'd)">#156</a>)
 , and
 so has the solution, however it wasn't that obvious.  Hopefully by
 posting this again it'll prevent people from mailbombing the list as
@@ -266,7 +266,7 @@ asked:</p>
 
 <quote who="Dan Kegel"><p>
 We were all quite concerned about it until somebody reported a workaround; see
-<a href=//www.winehq.org/hypermail/wine-devel/2003/02/0260.html">
+<a href="//www.winehq.org/hypermail/wine-devel/2003/02/0260.html">
 http://www.winehq.org/hypermail/wine-devel/2003/02/0260.html</a>
 The workaround is to give the command
 <ul><code>
@@ -282,7 +282,7 @@ given the workaround, it can probably wait a bit.
 </p><p>
 See also
 <ul>
-<li><a href=//www.winehq.org/hypermail/wine-devel/2003/02/0252.html">http://www.winehq.org/hypermail/wine-devel/2003/02/0252.html</a></li>
+<li><a href="//www.winehq.org/hypermail/wine-devel/2003/02/0252.html">http://www.winehq.org/hypermail/wine-devel/2003/02/0252.html</a></li>
 <li><a href="http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=83254">http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=83254</a></li>
 <li><a href="http://ftp.yars.free.net/pub/software/unix/platforms/linux/dist/redhat/updates/rawhide/?C=S&amp;O=A">http://ftp.yars.free.net/pub/software/unix/platforms/linux/dist/redhat/updates/rawhide/?C=S&amp;O=A</a></li>
 </ul></p></quote>
@@ -303,7 +303,7 @@ the new threading library.</p>
 <section 
 	title="Wine &amp; Services" 
 	subject="wine server and services ..."
-	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0557.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/03/0557.html" 
 	posts="8"
 	startdate="03/19/2003"
 	enddate="03/22/2003"
@@ -375,7 +375,7 @@ nor wineboot, but require a more specific solution.
 </p></quote>
 
 <p>Shachar also gave a link to a thread last October
-<a href=//www.winehq.org/hypermail/wine-devel/2002/10/0578.html">
+<a href="//www.winehq.org/hypermail/wine-devel/2002/10/0578.html">
 technical hurdles</a> of implementing services.  I didn't cover that one,
 but going back and re-reading it the issues are still relevant.  Martin
 Wilck asked:</p>
@@ -565,7 +565,7 @@ services?  They go hand-in-glove IMHO.
 <section 
 	title="Valgrind for Wine" 
 	subject="valgrind for WINE!!"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0561.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/03/0561.html" 
 	posts="1"
 	startdate="03/21/2003"
 >
@@ -612,7 +612,7 @@ be available shortly.
 <section 
 	title="Error Requiring 32/16 Bit DLL Combinations" 
 	subject="Thunking?"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0674.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/03/0674.html" 
 	posts="3"
 	startdate="03/24/2003"
 >
@@ -654,7 +654,7 @@ some tips?
 <section 
 	title="QEMU x86 Emulator" 
 	subject="[announce] QEMU x86 emulator version 0.1"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/03/0686.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/03/0686.html" 
 	posts="3"
 	startdate="03/23/2003"
 	enddate="03/24/2003"

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="213" date="03/05/2004" />
 <intro> <p>This is the 213th issue of the Wine Weekly News publication.
-Its main goal is to to save a ton of money on car insurance. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to to save a ton of money on car insurance. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="133" size="442" contrib="61" multiples="24" lastweek="22">
 
 <person posts="21" size="50" who="Alexandre Julliard" />
@@ -71,7 +71,7 @@ Its main goal is to to save a ton of money on car insurance. It also serves to i
 <section 
 	title="News: Macromedia Port?, TransGaming Editorial" 
 	subject="News"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/02/00.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/02/00.html" 
 	posts="2"
 	startdate="02/28/2004"
 	enddate="03/05/2004"
@@ -96,7 +96,7 @@ their own codebase and that such modifications would be easier for them.
 This may also be an opportunity to fix problems with their software.  
 Either way, it would be really nice if they could contribute something
 back.  (Here's a hint, knock-off an item on our
-<a href=//www.winehq.org/todo_lists">ToDo list</a>.  Extra
+<a href="//www.winehq.org/todo_lists">ToDo list</a>.  Extra
 credit will be given for taking over anything currently assigned to 
 Alexandre.)  Thanks to Stefan Leichter for the link and Phil Krylov for
 commenting on it.
@@ -123,7 +123,7 @@ reader.</p>
 <section 
 	title="Wine As A Shared Library &amp; Mono" 
 	subject="RE: Wine as shared library patch"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/03/0074.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/03/0074.html" 
 	posts="5"
 	startdate="03/04/2004"
 >
@@ -137,10 +137,10 @@ classes.  So it makes sense to bolt Wine's Win32 to C#.   Unfortunately,
 Mono required a forked version of Wine in order to load things the way
 they want.  This doesn't help anyone and the maintenance work is a pain.
 (For more info, see some of the earlier threads in issues
-<a href=//www.winehq.org/wwn/162#.NET%20Success">#162</a> and
-<a href=//www.winehq.org/wwn/171#Making%20Mono's%20Winforms%20Work">
+<a href="//www.winehq.org/wwn/162#.NET%20Success">#162</a> and
+<a href="//www.winehq.org/wwn/171#Making%20Mono's%20Winforms%20Work">
 #171</a>.)
-Peter Bartok posted <a href=//www.winehq.org/hypermail/wine-patches/2004/03/0038.html">a
+Peter Bartok posted <a href="//www.winehq.org/hypermail/wine-patches/2004/03/0038.html">a
 small patch</a> this week and explained a new process:</p>
 <quote who="Peter Bartok"><p>
 This patch allows to use Wine as a shared library. It will allow the 
@@ -171,7 +171,7 @@ a separate patch.</p>
 <section 
 	title="WinCE Apps &amp; Wine" 
 	subject="WinCE application support for WINE and ReactOS"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/03/0072.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/03/0072.html" 
 	posts="1"
 	startdate="03/04/2004"
 >
@@ -216,7 +216,7 @@ just forward all parts to the Win32 implementation but I think we can
 do it for most of it. If anyone is interested in helping out the source
 is in the ROS CVS tree and attached to this email......
 </p><p>
-<a href=//www.winehq.org/hypermail/wine-devel/2004/03/att-0073/02-binary.zip">binary.zip</a>
+<a href="//www.winehq.org/hypermail/wine-devel/2004/03/att-0073/02-binary.zip">binary.zip</a>
 <ul>
 <li>messagebox.exe - wince messagebox program</li>
 <li>msgbox.exe - wince messagebox program with subsystem id changed to
@@ -227,7 +227,7 @@ Windows.</li>
 <li>coredll.dll - WinCE Win32 API</li>
 <li>commctl.dll - WInCE common controls API.</li></ul>
 </p><p>
-<a href=//www.winehq.org/hypermail/wine-devel/2004/03/att-0073/01-source.zip">source.zip</a>
+<a href="//www.winehq.org/hypermail/wine-devel/2004/03/att-0073/01-source.zip">source.zip</a>
 <ul>
 <li>coredll - dummy forwarder dll</li>
 <li>commctl - dummy stub dll for common controls</li></ul></p></quote>
@@ -237,7 +237,7 @@ Windows.</li>
 <section 
 	title="Using Borland's C++ Linker" 
 	subject="Followup on Borland C++ 5.5"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/02/0082.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/02/0082.html" 
 	posts="1"
 	startdate="03/05/2004"
 >

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="274" date="05/13/2005" />
 <intro> <p>This is the 274th issue of the Wine Weekly News publication.
-Its main goal is to fly to LA. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to fly to LA. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="333" size="1288" contrib="91" multiples="51" lastweek="55">
 
 <person posts="28" size="91" who="Dustin Navea" />
@@ -162,7 +162,7 @@ compiler.</p>
 <section
         title="Video Capture in Windows"
         subject="Video capturing under Wine, some overview"
-        archive=//www.winehq.org/hypermail/wine-devel/2005/05/0503.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2005/05/0503.html"
         posts="1"
         startdate="05/11/2005"
 	enddate="05/11/2005"
@@ -247,7 +247,7 @@ Wine in quite a short time.
 <section
         title="Documentation Moved to SourceForge"
         subject="Docs at SourceForge"
-        archive=//www.winehq.org/hypermail/wine-devel/2005/05/0463.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2005/05/0463.html"
         posts="1"
         startdate="05/11/2005"
 >
@@ -286,7 +286,7 @@ translation shortly.
 <section 
 	title="Wiki Addition: Debugging" 
 	subject="New debugging tutorials"
-	archive=//www.winehq.org/hypermail/wine-devel/2005/05/0449.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2005/05/0449.html" 
 	posts="1"
 	startdate="05/10/2005"
 >
@@ -317,7 +317,7 @@ fine. Ideally they should all be based on real apps.
 <section
         title="Flattening Source Directories"
         subject="Flattening of ddraw directory and renaming of files"
-        archive=//www.winehq.org/hypermail/wine-devel/2005/05/0338.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2005/05/0338.html"
         posts="4"
         startdate="05/08/2005"
 >
@@ -329,7 +329,7 @@ fine. Ideally they should all be based on real apps.
 I plan to flatten the ddraw directory and perform some files renaming in it.
 </p><p>
 The changes I'm thinking about are in the 
-<a href=//www.winehq.org/hypermail/wine-devel/2005/05/0338.html">attached</a> file.
+<a href="//www.winehq.org/hypermail/wine-devel/2005/05/0338.html">attached</a> file.
 </p><p>
 If you have suggestions (or objections), let me know.
 </p><p>
@@ -357,7 +357,7 @@ really don't need one header for each source file.</quote></p>
 <section 
 	title="Compiling Problems" 
 	subject="CVS compilation problem"
-	archive=//www.winehq.org/hypermail/wine-devel/2005/05/0537.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2005/05/0537.html" 
 	posts="3"
 	startdate="05/12/2005"
 >
@@ -392,7 +392,7 @@ Do <tt>rm dlls/*.def</tt> and it should work again.</p></quote>
 <section
         title="Recruiting Help for Bugzilla"
         subject="Now hiring"
-        archive=//www.winehq.org/hypermail/wine-devel/2005/05/0331.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2005/05/0331.html"
         posts="2"
         startdate="05/08/2005"
 >

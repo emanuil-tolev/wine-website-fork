@@ -126,14 +126,14 @@ cross-compiling Windows apps</a> on Linux,
 <section 
 	title="Threading Problems with glibc 2.3 (cont'd)" 
 	subject="Re: Started playing with Wineserver on mingw/cygwin again"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/01/1153.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/01/1153.html" 
 	posts="54"
 	startdate="01/31/2003"
 	enddate="02/06/2003"
 >
 <topic>Integration</topic>
 <p><i>Preface: we began covering this last week in
-<a href=//www.winehq.org/news/?view=155#Threading%20Problems%20with%20glibc%202.3">issue #155</a></i></p><p>
+<a href="//www.winehq.org/news/?view=155#Threading%20Problems%20with%20glibc%202.3">issue #155</a></i></p><p>
 The questions about the new threading model that can be enabled in
 the latest glibc came up again.  This time Steven Edwards was
 wondering about getting Wineserver to run under Cygwin, but
@@ -197,7 +197,7 @@ latest Rawhide repository.  Testing with the even newer kernel
 worked as expected. </p>
 
 <p>Chris Tooley offered 
-<a href=//www.winehq.org/hypermail/wine-devel/2003/02/0266.html">another
+<a href="//www.winehq.org/hypermail/wine-devel/2003/02/0266.html">another
 workaround</a> involving a small library.  Apparently Wine
 isn't the only program affected,
 <quote who="Chris Tooley">
@@ -269,7 +269,7 @@ add,
 <section 
 	title="RPC Data Marshalling (cont'd)" 
 	subject="RPC marshalling patch"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/02/0000.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/02/0000.html" 
 	posts="21"
 	startdate="01/30/2003"
 	enddate="02/03/2003"
@@ -344,7 +344,7 @@ and this also sounds like a worthy cause.
 <section 
 	title="Paypal Link" 
 	subject="Paypal link"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/02/0108.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/02/0108.html" 
 	posts="1"
 	startdate="02/03/2003"
 >
@@ -353,7 +353,7 @@ and this also sounds like a worthy cause.
 for donations:</p>
 <quote who="Jeremy White"><p>
 There is now a Paypal donations link up at 
-<a href=//www.winehq.org/">www.winehq.org</a>;
+<a href="//www.winehq.org/">www.winehq.org</a>;
 donations there go into a bank account I opened
 under the name "The Wine Project".
 </p><p>
@@ -378,7 +378,7 @@ periodic conference.  But I'll start a new thread for that.
 <section 
 	title="Wineconf 2003?" 
 	subject="Wineconf 2003"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/02/0111.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/02/0111.html" 
 	posts="9"
 	startdate="02/03/2003"
 	enddate="02/06/2003"
@@ -453,7 +453,7 @@ isn't really enough time before then to prepare.
 <section 
 	title="ReactOS v0.1" 
 	subject="Re: CVS Update: reactos"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/02/0019.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/02/0019.html" 
 	posts="3"
 	startdate="02/01/2003"
 	enddate="02/02/2003"
@@ -501,7 +501,7 @@ wine tree.</quote></p>
 <section 
 	title="Windows API Database (cont'd)" 
 	subject="Windows API database / map"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/02/0118.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/02/0118.html" 
 	posts="7"
 	startdate="02/03/2003"
 	enddate="02/04/2003"
@@ -565,7 +565,7 @@ That would give some idea of "distance from the core".</quote></p>
 <section 
 	title="GDI Performance" 
 	subject="GDI question"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/02/0112.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/02/0112.html" 
 	posts="10"
 	startdate="02/03/2003"
 	enddate="02/04/2003"

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="254" date="12/24/2004" />
 <intro> <p>This is the 254th issue of the Wine Weekly News publication.
-Its main goal is to debate the Christmas Paradox: naughty or nice. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to debate the Christmas Paradox: naughty or nice. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="131" size="425" contrib="46" multiples="25" lastweek="25">
 
 <person posts="13" size="43" who="Mike Hearn" />
@@ -137,7 +137,7 @@ a development team our way? </p>
 <section
         title="Safedisc and ntoskrnl"
         subject="Re: Add ntoskrnl.exe.so"
-        archive=//www.winehq.org/hypermail/wine-devel/2004/12/0578.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2004/12/0578.html"
         posts="7"
         startdate="12/22/2004"
 >
@@ -198,13 +198,13 @@ cvs server near you.</p>
 <section 
 	title="WineTools Updated" 
 	subject="[Wine]Announcement of WineTools"
-	archive=//www.winehq.org/hypermail/wine-users/2004/12/0192.html" 
+	archive="//www.winehq.org/hypermail/wine-users/2004/12/0192.html" 
 	posts="1"
 	startdate="12/20/2004"
 >
 <topic>Configuration</topic>
 <p>I'll admit, I don't really read the 
-<a href=//www.winehq.org/hypermail/wine-users">wine-users</a>
+<a href="//www.winehq.org/hypermail/wine-users">wine-users</a>
 mailing list.  This little newsletter is about Wine <i>development</i>
 after all.  However, every once in a while I check for interesting
 posts and this week I found one by Joachim von Thadden:</p>
@@ -251,7 +251,7 @@ backup function of WineTools.
 <section 
 	title="WINEprobe Initiative" 
 	subject="Approving of the WINEprobe initiative"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/12/0254.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/12/0254.html" 
 	posts="13"
 	startdate="12/20/2004"
 	enddate="12/22/2004"
@@ -319,7 +319,7 @@ http://2005.guadec.org/papers.html</a>
 [6] <a href="http://www.mail-archive.com/wine-devel%40winehq.org/msg11630.html">
  http://www.mail-archive.com/wine-devel%40winehq.org/msg11630.html</a>
 </p><p>
-[7] <a href=//www.winehq.org/hypermail/wine-devel/2004/11/0647.html">
+[7] <a href="//www.winehq.org/hypermail/wine-devel/2004/11/0647.html">
  http://www.winehq.org/hypermail/wine-devel/2004/11/0647.html</a>
 </p></quote>
 
@@ -337,7 +337,7 @@ So in the sense that stuff should get done - I think we all want that.
 of the initiative?  Well.. I'm not qualified to answer that question.
 </p><p>
 If you do contribute to Wine, we'll gladly add you to our acknowledgements page
-( <a href=//www.winehq.org/acknowledgement">
+( <a href="//www.winehq.org/acknowledgement">
  http://www.winehq.org/acknowledgement</a> ).  Then you can say
 things in press releases like, "WRS, an acknowledged Wine contributor,
 ....."   Anyone disagree with that idea?
@@ -348,7 +348,7 @@ things in press releases like, "WRS, an acknowledged Wine contributor,
 <section
         title="File Optimization"
         subject="Some performance stats"
-        archive=//www.winehq.org/hypermail/wine-devel/2004/12/0546.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2004/12/0546.html"
         posts="1"
         startdate="12/21/2004"
 >
@@ -395,7 +395,7 @@ Wine/ext3 volume:
 <section 
 	title="Launching Apps"
 	subject="Interface for working directories/launchers"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/12/0610.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/12/0610.html" 
 	posts="4"
 	startdate="12/23/2004"
 	enddate="12/24/2004"

@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="256" date="01/07/2005" />
 <intro> <p>This is the 256th issue of the Wine Weekly News publication.
-Its main goal is to recover from the holidays. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to recover from the holidays. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="196" size="969" contrib="72" multiples="42" lastweek="27">
 
 <person posts="24" size="115" who="Mike Hearn" />
@@ -99,7 +99,7 @@ but I was unable to find the first part.</p>
 <section 
 	title="Wine - A Look Ahead" 
 	subject="December 2004 - more patches than you can shake a stick at"
-	archive=//www.winehq.org/hypermail/wine-devel/2005/01/0014.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2005/01/0014.html" 
 	posts="6"
 	startdate="01/02/2005"
 	enddate="01/03/2005"
@@ -182,7 +182,7 @@ For those that like such statistics:
 <section
         title="DCOM Status Update and Roadmap"
         subject="DCOM roadmap"
-        archive=//www.winehq.org/hypermail/wine-devel/2005/01/0163.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2005/01/0163.html"
         posts="1"
         startdate="01/06/2005"
 >
@@ -292,7 +292,7 @@ this so let me know if you're interested in helping out.</p></quote>
 <section
         title="Removing DCOM From SourceForge"
         subject="dcom95.exe removed from sf.net"
-        archive=//www.winehq.org/hypermail/wine-devel/2005/01/0040.html"
+        archive="//www.winehq.org/hypermail/wine-devel/2005/01/0040.html"
         posts="17"
         startdate="01/03/2005"
 	enddate="01/04/2005"
@@ -385,7 +385,7 @@ http://lisas.de/~andi/wine_files/dcom95.exe</a>
 <section 
 	title="Another Kernel Issue" 
 	subject="Re: ptrace single-stepping change breaks Wine"
-	archive=//www.winehq.org/hypermail/wine-devel/2005/01/0006.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2005/01/0006.html" 
 	posts="6"
 	startdate="01/01/2005"
 	enddate="01/05/2005"
@@ -393,7 +393,7 @@ http://lisas.de/~andi/wine_files/dcom95.exe</a>
 <topic>Integration</topic>
 <p>We've covered some kernel related problems over the past
 few months and last week 
-(<a href=//www.winehq.org/wwn/255#Kernel%20Problem%20Solved%20(con't)">WWN #255</a>) 
+(<a href="//www.winehq.org/wwn/255#Kernel%20Problem%20Solved%20(con't)">WWN #255</a>) 
 it seemed like all the issues were taken care of.  One issue, 
 reported by Thomas Sailer and fixed by Mike Hearn, remains open
 though.  Mike explained the problem with his solution:</p>

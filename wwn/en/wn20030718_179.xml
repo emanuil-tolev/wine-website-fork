@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="179" date="07/18/2003" />
 <intro> <p>This is the 179th release of the weekly Wine Weekly News publication.
-Its main goal is to ponder why I never knew there was a real gold mine down the street from where I live. It also serves to inform you of what's going on around Wine.  You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to ponder why I never knew there was a real gold mine down the street from where I live. It also serves to inform you of what's going on around Wine.  You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="198" size="649" contrib="64" multiples="35" lastweek="31">
 
 <person posts="20" size="60" who="Mike Hearn" />
@@ -76,7 +76,7 @@ Its main goal is to ponder why I never knew there was a real gold mine down the 
 <section 
 	title="News: Interview with Jukka Heinonen"
 	subject="News"
-	archive=//www.winehq.org/interview/9" 
+	archive="//www.winehq.org/interview/9" 
 	posts="2"
 	startdate="07/12/2003"
 	enddate="07/18/2003"
@@ -84,7 +84,7 @@ Its main goal is to ponder why I never knew there was a real gold mine down the 
 <topic>News</topic>
 <p>We don't just report the news.. we create it.  Jukka Heinonen 
 answered some questions about the work he's doing.  Check out
-<a href=//www.winehq.org/interview/9">his interview</a>
+<a href="//www.winehq.org/interview/9">his interview</a>
 on WineHQ.</p>
 
 <p>NewsForge published an article about another
@@ -94,7 +94,7 @@ convert</a>.  It briefly mentions Wine as a way to run Kazaalite.
 </section><section 
 	title="Mac OS X Success" 
 	subject="Good News : WineMine Works on Mac OS X :)"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0326.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0326.html" 
 	posts="2"
 	startdate="07/15/2003"
 	enddate="07//2003"
@@ -133,7 +133,7 @@ could be recompiled with Winelib to run on Mac OS X.</p>
 </section><section 
 	title="Running Commandline Apps" 
 	subject="Once again: Wine without X?"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0332.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0332.html" 
 	posts="5"
 	startdate="07/15/2003"
 	enddate="07/16/2003"
@@ -168,7 +168,7 @@ It blipped the display to a second screen, then when the program exited,
 the screen blipped back so I couldn't read what it said.
 That's pretty useless.  In fact, this is exactly the behavior complained
 about in bug 1358
-( <a href=//bugs.winehq.org/show_bug.cgi?id=1358">http://bugs.winehq.org/show_bug.cgi?id=1358</a> )
+( <a href="//bugs.winehq.org/show_bug.cgi?id=1358">http://bugs.winehq.org/show_bug.cgi?id=1358</a> )
 subtitled "GraphicsDriver" = "none" wanted.
 </p><p>
 On the off chance that a "none" driver had been implemented, I tried it.
@@ -229,7 +229,7 @@ way of running commandline apps, Eric said it should be as easy as,
 </section><section 
 	title="Winegcc and Shared Libraries" 
 	subject="winegcc and dlls"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0329.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0329.html" 
 	posts="3"
 	startdate="07/15/2003"
 	enddate="07/16/2003"
@@ -280,7 +280,7 @@ worry about it later.
 </section><section 
 	title="API Tracking" 
 	subject="API tracking and documentation"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0242.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0242.html" 
 	posts="2"
 	startdate="07/12/2003"
 	enddate="07/13/2003"
@@ -315,7 +315,7 @@ you can simply grep for 'stub' in the spec files.
 </section><section 
 	title="Internet Explorer Trivia" 
 	subject="Internet Explorer related trivia"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0358.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0358.html" 
 	posts="2"
 	startdate="07/16/2003"
 	enddate="07/17/2003"
@@ -357,7 +357,7 @@ necessary.
 </section><section 
 	title="CAB Update" 
 	subject="AAAUUGH!"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0366.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0366.html" 
 	posts="1"
 	startdate="07/16/2003"
 >

@@ -71,19 +71,19 @@ Windows emulator).</p>
 >
 <topic>News</topic>
 <p>Alexandre 
- <a href=//cvs.winehq.org/cvsweb/wine/ANNOUNCE?rev=1.67&amp;content-type=text/x-cvsweb-markup">announced</a> 
+ <a href="//cvs.winehq.org/cvsweb/wine/ANNOUNCE?rev=1.67&amp;content-type=text/x-cvsweb-markup">announced</a> 
  Wine-20021007 on Monday:</p>
 <quote who="Alexandre Julliard"><p>
 WHAT'S NEW with Wine-20021007: (see 
-<a href=//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.63&amp;content-type=text/x-cvsweb-markup">ChangeLog</a> 
+<a href="//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.63&amp;content-type=text/x-cvsweb-markup">ChangeLog</a> 
  for details)
 <ul>
 	<li> Massive listview 
-	<a href=//www.winehq.org/news/?view=138#Listview%20Changes">rewrite</a>.</li>
+	<a href="//www.winehq.org/news/?view=138#Listview%20Changes">rewrite</a>.</li>
 	<li> New MS RLE codec.</li>
 	<li> winemaker should be working again.</li>
 	<li> Beginnings of 
-	<a href=//www.winehq.org/news/?view=135#Direct3D%208%20Support">Direct3D 8</a> support.</li>
+	<a href="//www.winehq.org/news/?view=135#Direct3D%208%20Support">Direct3D 8</a> support.</li>
 	<li> Lots of bug fixes.</li>
 </ul></p></quote>
 
@@ -96,7 +96,7 @@ Martin Wilck was aimed at restoring functionality broken by new
 naming conventions and other changes.  The RLE video codec was a last minute
 addition - the patch appeared Monday courtesy of Michael G&#252;nnewig.</p>
 
-<p>The <a href=//www.winehq.org/about/index.php?status">status</a> page
+<p>The <a href="//www.winehq.org/about/index.php?status">status</a> page
 on WineHQ had more work done.  I took some time and referenced WWN coverage
 for each of the items.  Digging through 130+ issues took some time, so the
 list is by no means complete, but for most things it should be a good 
@@ -166,7 +166,7 @@ Along with it there's all kinds of new stuff.  Check out:
 <section 
 	title="Jack Audio Driver" 
 	subject="Re: jack audio driver"
-	archive=//www.winehq.org/hypermail/wine-devel/2002/10/0137.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2002/10/0137.html" 
 	posts="1" 
 	startdate="10/08/2002"
 >
@@ -216,7 +216,7 @@ it directly.</p>
 <section 
 	title="Creating Test Framework for New DLL" 
 	subject="How to add a new test dir?"
-	archive=//www.winehq.org/hypermail/wine-devel/2002/10/0099.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2002/10/0099.html" 
 	posts="3" 
 	startdate="10/06/2002"
 	enddate="10/07/2002"
@@ -297,7 +297,7 @@ diff -u -r1.81 configure.ac<br />
  dlls/serialui/Makefile</code></ul></p></quote>
 
 <p>He then submitted 
-<a href=//www.winehq.org/hypermail/wine-patches/2002/10/att-0062/01-rpc_A_PL4.diff">a patch</a> 
+<a href="//www.winehq.org/hypermail/wine-patches/2002/10/att-0062/01-rpc_A_PL4.diff">a patch</a> 
 for the new framework with some actual tests.</p>
 
 
@@ -314,7 +314,7 @@ for the new framework with some actual tests.</p>
 <section 
 	title="Languages &amp; Locales" 
 	subject="Languages/Locales"
-	archive=//www.winehq.org/hypermail/wine-devel/2002/10/0107.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2002/10/0107.html" 
 	posts="6" 
 	startdate="10/07/2002"
 	enddate="10/08/2002"
@@ -356,7 +356,7 @@ As a second fallback, the first resource language is picked, which
 happens to be Dutch.
 </p><p>
 I fixed the problem for Notepad a while back 
-(<a href=//www.winehq.org/hypermail/wine-patches/2002/08/0078.html">
+(<a href="//www.winehq.org/hypermail/wine-patches/2002/08/0078.html">
 http://www.winehq.org/hypermail/wine-patches/2002/08/0078.html</a>). 
 I fixed it only for the English locale there (the rest are not that 
 important to my specific problem), but as far as I understand the 
@@ -386,7 +386,7 @@ little misteries.</p></quote>
 <section 
 	title="User Level Security in Apps" 
 	subject="Re : wine/programs/wcmd wcmdmain.c"
-	archive=//www.winehq.org/hypermail/wine-devel/2002/10/0182.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2002/10/0182.html" 
 	posts="7" 
 	startdate="10/10/2002"
 >

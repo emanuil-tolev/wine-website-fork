@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="290" date="09/16/2005" />
 <intro> <p>This is the 290th issue of the Wine Weekly News publication.
-Its main goal is to hate the new pipermail web interface. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to hate the new pipermail web interface. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="477" size="966" contrib="127" multiples="85" lastweek="23">
 
 <person posts="29" size="27" who="ivanleo at gmail.com (Ivan Leo Puoti)" />
@@ -138,7 +138,7 @@ Its main goal is to hate the new pipermail web interface. It also serves to info
 <section 
 	title="News: We're Back, To Do List Update"
 	subject="News"
-	archive=//www.winehq.org/todo_lists"
+	archive="//www.winehq.org/todo_lists"
 	posts="2"
 >
 <topic>News</topic>
@@ -162,7 +162,7 @@ and that deadline is going to slip by a few weeks.  Interestingly,
 there's some large features being worked on (partly covered below),
 so there's a chance we might be able to sneak a few extra features in.</p>
 <p>We also have the Wine 
-<a href=//www.winehq.org/todo_lists">To Do list</a> and we 
+<a href="//www.winehq.org/todo_lists">To Do list</a> and we 
 haven't looked at it in a while.  The last time we looked at it we
 had green (completed projects) beating red (unstarted projects) 36
 to 8.  We also had 27 projects in progress.  Here's the current standings:
@@ -179,7 +179,7 @@ So overall, things are looking good.  </p>
 <section 
 	title="Device Drivers Still Suck"
 	subject="Need ideas about ntoskrnl"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-September/039764.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-September/039764.html"
 	posts="31"
 >
 <topic>Architecture</topic>
@@ -378,7 +378,7 @@ seemed to be the consensus.  </p>
 <section 
 	title="Wine's Development Model"
 	subject="Suggestions for improvement of the emulator"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-September/039745.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-September/039745.html"
 	posts="52"
 >
 <topic>Project Management</topic>
@@ -587,7 +587,7 @@ any volunteers. </p>
 <section 
 	title="HTML Help"
 	subject="HTML Help is functional"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-September/040071.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-September/040071.html"
 	posts="1"
 >
 <topic>Web/HTML</topic>
@@ -628,13 +628,13 @@ or suggestions, let me know and I'll address those.
 </p></quote>
 
 <p>Of course, screenshots are always nice to see and James included
-one of <a href=//www.winehq.org/pipermail/wine-devel/attachments/20050914/d9eea950/hh-0001.jpeg">CHM rendering</a>.</p>
+one of <a href="//www.winehq.org/pipermail/wine-devel/attachments/20050914/d9eea950/hh-0001.jpeg">CHM rendering</a>.</p>
 
 </section>
 <section 
 	title="DirectX Update"
 	subject="DirectX status update...."
-	archive=//www.winehq.org/pipermail/wine-devel/2005-September/039825.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-September/039825.html"
 	posts="3"
 >
 <topic>DirectX</topic>
@@ -664,7 +664,7 @@ improvements that have been made.
 <section 
 	title="Safedisc Begins to Work"
 	subject="Safedisc 1 works on wine"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-September/039950.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-September/039950.html"
 	posts="4"
 >
 <topic>Status Updates</topic>
@@ -709,7 +709,7 @@ secdrv.sys and dplayerx.dll and the encryption applied to the ICD.</quote></p>
 <section 
 	title="WineHQ Server Upgrade"
 	subject="Web Server Back Online"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-August/039616.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-August/039616.html"
 	posts="29"
 >
 <topic>WineHQ</topic>
@@ -765,7 +765,7 @@ for things like screenshots.</p>
 <section 
 	title="SMP Safe?"
 	subject="Is Wine SMP-safe yet?"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-September/040079.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-September/040079.html"
 	posts="2"
 >
 <p>Is Wine SMP safe?  Well... it certainly seems like a topic someone would
@@ -775,12 +775,12 @@ I've seen conflicting reports about whether Wine is safe
 to run on SMP systems.
 </p><p>
 Have the issues described in
-<a href=//www.winehq.org/pipermail/wine-devel/2005/01/0060.html">
+<a href="//www.winehq.org/pipermail/wine-devel/2005/01/0060.html">
 http://www.winehq.org/pipermail/wine-devel/2005/01/0060.html</a>
 been taken care of?
 </p><p>
 I just pinged the reporter of the only bug with SMP in the summary,
-<a href=//bugs.winehq.org/show_bug.cgi?id=2708">
+<a href="//bugs.winehq.org/show_bug.cgi?id=2708">
 http://bugs.winehq.org/show_bug.cgi?id=2708</a>
 to see if he can still reproduce it.</p></quote>
 
@@ -796,7 +796,7 @@ in the problems i tried to debug there wasn't an SMP bug.</quote></p>
 <section 
 	title="Wine's MSI - Help Us Break It"
 	subject="Looking for bugs in Wine's Microsoft Installer (MSI) implementation"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-September/040041.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-September/040041.html"
 	posts="2"
 >
 <topic>MSI</topic>
@@ -822,6 +822,6 @@ to it.
 
 </p></quote>
 
-<p>Ivan Gyurdiev quickly pointed out <a href=//bugs.winehq.org/show_bug.cgi?id=2899">bug #2899</a>
+<p>Ivan Gyurdiev quickly pointed out <a href="//bugs.winehq.org/show_bug.cgi?id=2899">bug #2899</a>
 which showed MSI problems with Half-Life 2.</p>
 </section></kc>

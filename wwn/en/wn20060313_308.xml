@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="308" date="03/13/2006" />
 <intro> <p>This is the 308th issue of the Wine Weekly News publication.
-Its main goal is to make eggrolls. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to make eggrolls. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="201" size="368" contrib="73" multiples="38" lastweek="29">
 
 <person posts="11" size="33" who="stefandoesinger at gmx.at (Stefan D&#246;singer)" />
@@ -202,7 +202,7 @@ focus on office applications.</p>
 <section 
 	title="WineD3D Issues"
 	subject="ddraw design flaw"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-March/045490.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-March/045490.html"
 	posts="8"
 >
 <topic>DirectX</topic>
@@ -217,7 +217,7 @@ First, Tomas Carnecky was concerned because the World of Warcraft
 right not that isn't possible in Wine.  Stefan D&#246;singer elaborated
 on what the problem was and explained the correct solution is to 
 migrate ddraw to a new implementation 
-(see WWN <a href=//www.winehq.org/wwn/307#DirectDraw%20via%20WineD3D">#307</a>) 
+(see WWN <a href="//www.winehq.org/wwn/307#DirectDraw%20via%20WineD3D">#307</a>) 
 rather than patch up the current code:</p>
 <quote who="Stefan Dosinger"><p>
 The ddraw implementation has some unloading bugs at the moment. Not restoring 
@@ -312,13 +312,13 @@ with that is WineD3D can crash in some cases.  </p>
 <section 
 	title="WineTools.. part II"
 	subject="May be a bad idea to have WineTools in the next SUSE release"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-March/045464.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-March/045464.html"
 	posts="12"
 >
 <topic>Utilities</topic>
 <p>WineTools came up again this week.  For some background, you can
 check out WWN 
-<a href=//www.winehq.org/wwn/304#WineTools%20&amp;%20Wine">#304</a>.
+<a href="//www.winehq.org/wwn/304#WineTools%20&amp;%20Wine">#304</a>.
 Basically everyone falls into three camps:
 <ul><li>Those who think WineTools makes life easier to install programs and
 should therefore be an integral part of using Wine.</li>
@@ -459,7 +459,7 @@ developers (two?) and the changes needed seem pretty large.</p>
 <section 
 	title="AMD64, FAT32, and Failing Apps"
 	subject="Can't run DirectX games on x86_64 biarch Linux SOLVED"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-March/045520.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-March/045520.html"
 	posts="1"
 >
 <topic>Fixes</topic>

@@ -91,7 +91,7 @@
 <section
         title="News: Wine-20030508, Lycoris GamePak"
         subject="News"
-        archive=//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.71&amp;content-type=text/x-cvsweb-markup"
+        archive="//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.71&amp;content-type=text/x-cvsweb-markup"
         posts="3"
         startdate="05/03/2003"
         enddate="05/09/2003"
@@ -102,7 +102,7 @@ noted the following changes with Wine-20030508:</p>
 <quote who="Alexandre Julliard"><p>
 
 WHAT'S NEW with Wine-20030508: (see 
-<a href=//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.71&amp;content-type=text/x-cvsweb-markup">ChangeLog</a>
+<a href="//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.71&amp;content-type=text/x-cvsweb-markup">ChangeLog</a>
 for details)
 <ul>
         <li> Some more reorganizations of the source tree.</li>
@@ -134,7 +134,7 @@ of CrossOver Office 2.0.</p>
 <section 
 	title="Compiling Mozilla With Wine Tools" 
 	subject="Win32 Mozilla 1.4b+ GCC (MingW)?"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/05/0238.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/05/0238.html" 
 	posts="3"
 	startdate="05/08/2003"
 >
@@ -163,7 +163,7 @@ The following mingw packages are required for building:
 </ul></ul></p></quote>
 
 <p>Mozilla used to be listed on the 
-<a href=//www.winehq.org/?page=fun_projects">fun
+<a href="//www.winehq.org/?page=fun_projects">fun
 projects</a> page.  It was removed last month because
 Mozilla could only be compiled with MSVC.  Yes, we all
 know Mozilla has native versions for zillions of platforms,
@@ -225,7 +225,7 @@ option goes, he thought maybe it could be ignored.</p>
 <section 
 	title="Solaris x86 Status" 
 	subject="solaris x86 development?"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/05/0138.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/05/0138.html" 
 	posts="3"
 	startdate="05/05/2003"
 	enddate="05/07/2003"
@@ -265,7 +265,7 @@ commit them.</p>
 <section 
 	title="Broken flex" 
 	subject="Can't compile wine.. CVS or release."
-	archive=//www.winehq.org/hypermail/wine-devel/2003/04/0014.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/04/0014.html" 
 	posts="5"
 	startdate="05/01/2003"
 >
@@ -322,13 +322,13 @@ directory and you are back.</quote></p>
 <section 
 	title="Building a Windows API Database" 
 	subject="Volunteers needed - windows API db script ready"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/05/0045.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/05/0045.html" 
 	posts="14"
 	startdate="05/02/2003"
 	enddate="05/05/2003"
 >
 <topic>Utilities</topic>
-<p>Back in <a href=//www.winehq.org/index.phpwwn/156#Windows%20API%20Database%20(cont'd)">issue #156</a>
+<p>Back in <a href="//www.winehq.org/index.phpwwn/156#Windows%20API%20Database%20(cont'd)">issue #156</a>
 we discussed building a 
 table or database of how Windows DLLs are interrelated.
 By running a perl utility you can scan a Windows installation
@@ -375,7 +375,7 @@ wine98-4.00.123-SP6a.ref</p>
 <section 
 	title="WinZip Registry Patch" 
 	subject="WinZip registry patch"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/05/0093.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/05/0093.html" 
 	posts="3"
 	startdate="05/04/2003"
 >
@@ -383,7 +383,7 @@ wine98-4.00.123-SP6a.ref</p>
 <p>Nick Brereton announced a small patch to help
 Winzip work better:</p>
 <quote who="Nick Brereton"><p>
-<a href=//www.winehq.org/hypermail/wine-devel/2003/05/att-0093/01-winzip_plain_comments.reg">Attachment</a>
+<a href="//www.winehq.org/hypermail/wine-devel/2003/05/att-0093/01-winzip_plain_comments.reg">Attachment</a>
 is a windows registry file.
 </p><p>
 Integration of this file directs WinZip to not use the Rich Edit control

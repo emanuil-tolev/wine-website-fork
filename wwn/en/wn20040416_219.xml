@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="219" date="04/16/2004" />
 <intro> <p>This is the 219th issue of the Wine Weekly News publication.
-Its main goal is to get lots of nasty vaccinations. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to get lots of nasty vaccinations. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="162" size="716" contrib="58" multiples="30" lastweek="25">
 
 <person posts="15" size="186" who="Mike McCormack" />
@@ -70,7 +70,7 @@ Its main goal is to get lots of nasty vaccinations. It also serves to inform you
 <section 
 	title="News: WineX 3.3.1, Press Coverage" 
 	subject="News"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/01/0.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/01/0.html" 
 	posts="3"
 	startdate="04/10/2004"
 	enddate="04/16/2004"
@@ -105,14 +105,14 @@ into thinking they are running inside of Windows and not Linux. </quote></p>
 <section 
 	title="Execshield (con't)" 
 	subject="exec-shield workaround take 2"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/04/0193.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/04/0193.html" 
 	posts="18"
 	startdate="04/10/2004"
 	enddate="04/15/2004"
 >
 <topic>Architecture</topic>
 <p>Last week (issue 
-<a href=//www.winehq.org/wwn/218#Execshield/Prelinking%20(con't)">#218</a>)
+<a href="//www.winehq.org/wwn/218#Execshield/Prelinking%20(con't)">#218</a>)
 we mentioned Mike McCormack had begun working on problems caused by execshield
 enabled kernels.  Basically the problem Wine runs into is it requires certain
 memory locations to be available and with execshield there's no way to 
@@ -129,7 +129,7 @@ All comments and flames accepted... /me wears his asbestos suit.
 </p></quote>
 
 <p>Digging into 
-<a href=//www.winehq.org/hypermail/wine-devel/2004/04/0193.html">Mike's
+<a href="//www.winehq.org/hypermail/wine-devel/2004/04/0193.html">Mike's
 patch</a> you'll find a "mini loader" at the heart of it.  Before any
 application can begin execution it's necessary for the environment to
 get set up properly and that process is typically handled by what's
@@ -245,7 +245,7 @@ Changes in version 3:<ul>
 <section 
 	title="AbiWord Ported to Winelib" 
 	subject="Abi Word ported to Winelib!"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/04/0192.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/04/0192.html" 
 	posts="3"
 	startdate="04/09/2004"
 	enddate="04/10/2004"
@@ -262,15 +262,15 @@ used it to generate a Winelib app:</p>
  AbiWord to Winelib. This was possible because now AbiWord
  has a nice MinGW build system. A total of 5 trivial patches 
  were indeed needed for Wine:
-<ul><li><a href=//www.winehq.org/hypermail/wine-patches/2004/04/0122.html">
+<ul><li><a href="//www.winehq.org/hypermail/wine-patches/2004/04/0122.html">
     http://www.winehq.org/hypermail/wine-patches/2004/04/0122.html</a></li>
-    <li><a href=//www.winehq.org/hypermail/wine-patches/2004/04/0123.html">
+    <li><a href="//www.winehq.org/hypermail/wine-patches/2004/04/0123.html">
     http://www.winehq.org/hypermail/wine-patches/2004/04/0123.html</a></li>
-    <li><a href=//www.winehq.org/hypermail/wine-patches/2004/04/0124.html">
+    <li><a href="//www.winehq.org/hypermail/wine-patches/2004/04/0124.html">
     http://www.winehq.org/hypermail/wine-patches/2004/04/0124.html</a></li>
-    <li><a href=//www.winehq.org/hypermail/wine-patches/2004/04/0147.html">
+    <li><a href="//www.winehq.org/hypermail/wine-patches/2004/04/0147.html">
     http://www.winehq.org/hypermail/wine-patches/2004/04/0147.html</a></li>
-    <li><a href=//www.winehq.org/hypermail/wine-patches/2004/04/0155.html">
+    <li><a href="//www.winehq.org/hypermail/wine-patches/2004/04/0155.html">
     http://www.winehq.org/hypermail/wine-patches/2004/04/0155.html</a></li>
 </ul></p><p>
  Notice how little we had to fix! To encourage others to port
@@ -301,7 +301,7 @@ build with Winelib.</p>
 <section 
 	title="Wine As a Shared Library" 
 	subject="current version of wine_adopt_thread"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/04/0228.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/04/0228.html" 
 	posts="1"
 	startdate="04/12/2004"
 >
@@ -309,9 +309,9 @@ build with Winelib.</p>
 <p>Last month there was quite a bit of discussion about
 using Wine as a regular shared library.  We covered that
 topic pretty well in issues
-<a href=//www.winehq.org/wwn/213#Wine%20As%20A%20Shared%20Library%20&amp;%20Mono">#213</a>
+<a href="//www.winehq.org/wwn/213#Wine%20As%20A%20Shared%20Library%20&amp;%20Mono">#213</a>
 and
-<a href=//www.winehq.org/wwn/214#Wine%20As%20A%20Shared%20Library%20&amp;%20Mono%20(con't)">#214</a>.
+<a href="//www.winehq.org/wwn/214#Wine%20As%20A%20Shared%20Library%20&amp;%20Mono%20(con't)">#214</a>.
 The problem is, Windows libraries and executables require a 
 a different environment to run in than Linux ones.  Things
 like threading are done differently enough that the recommended
@@ -337,7 +337,7 @@ the adopted thread calls pthread_exit(). Both are simple to fix.</p>
 <section 
 	title="Converting Wininet to Windows Sockets" 
 	subject="Re: WININET: move to Windows sockets"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/04/0071.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/04/0071.html" 
 	posts="13"
 	startdate="04/04/2004"
 	enddate="04/06/2004"
@@ -448,7 +448,7 @@ magic.</p>
 <section 
 	title="Problems With Automounted Filesystems" 
 	subject="AutoFS-ed drives"
-	archive=//www.winehq.org/hypermail/wine-devel/2004/04/0279.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2004/04/0279.html" 
 	posts="3"
 	startdate="04/14/2004"
 >
@@ -461,7 +461,7 @@ snapshot and test whether the odd app I still have works. And wine on autofs
 doesn't work here. I think Guido already sent a mail about this last month.
 </p><p>
 Guido patched wine way back in Feb 2003, submitted a bug
-<ul><a href=//bugs.winehq.org/show_bug.cgi?id=1283">
+<ul><a href="//bugs.winehq.org/show_bug.cgi?id=1283">
 http://bugs.winehq.com/show_bug.cgi?id=1283</a></ul>
 </p><p>
 and even set up a page to describe the problem

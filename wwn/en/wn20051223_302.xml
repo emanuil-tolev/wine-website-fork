@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="302" date="12/23/2005" />
 <intro> <p>This is the 302nd issue of the Wine Weekly News publication.
-Its main goal is to cut new skins. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to cut new skins. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="359" size="672" contrib="96" multiples="59" lastweek="38">
 
 <person posts="27" size="33" who="julliard at winehq.org (Alexandre Julliard)" />
@@ -107,7 +107,7 @@ Its main goal is to cut new skins. It also serves to inform you of what's going 
 <section 
 	title="News: Wine 0.9.4"
 	subject="News"
-	archive=//www.winehq.org/announce/0.9.4"
+	archive="//www.winehq.org/announce/0.9.4"
 	posts="2"
 >
 <topic>News</topic>
@@ -127,7 +127,7 @@ noted the following new items:</p>
 </ul>
 </p></quote>
 
-<p><a href=//www.winehq.org/download">Download</a>, compile, be 
+<p><a href="//www.winehq.org/download">Download</a>, compile, be 
 happy.</p>
 
 <p>The 
@@ -141,7 +141,7 @@ there is only a ppc version, but that should be enough to test the concepts of t
 <section 
 	title="Short Term Release Schedule"
 	subject="Create new mailing list wine-isv?"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-December/043445.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-December/043445.html"
 	posts="8"
 >
 <topic>Project Management</topic>
@@ -256,8 +256,8 @@ development branch.
 <p>So there ya have it.  That's how releases are being done and that's
 what you can expect until further notice.  If you regularly run a program with
 Wine, it would be great if you could follow the releases and make sure
-your program continues to run.  The <a href=//appdb.winehq.org">AppDB</a>
-and <a href=//bugs.winehq.org">Bugzilla</a> are great ways to track
+your program continues to run.  The <a href="//appdb.winehq.org">AppDB</a>
+and <a href="//bugs.winehq.org">Bugzilla</a> are great ways to track
 and report problems.</p>
 </section>
 <section 
@@ -268,7 +268,7 @@ and report problems.</p>
 >
 <topic>Project Management</topic>
 <p>We mentioned a few weeks ago (WWN
-<a href=//www.winehq.org/wwn/299#Desktop%20Summit">#299</a>) that there
+<a href="//www.winehq.org/wwn/299#Desktop%20Summit">#299</a>) that there
 was a desktop summit being sponsored by OSDL.  Well, Jeremy White and Dan
 Kegel both attended the event and Jeremy wrote the following over on
 OSDL's <a href="http://lists.osdl.org/pipermail/desktop_architects/2005-December/000354.html">desktop_architects</a>
@@ -364,7 +364,7 @@ greater community. </p>
 <section 
 	title="Case Study: SynaptiCAD"
 	subject="New Wine ISV case study: Synapticad"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-December/043423.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-December/043423.html"
 	posts="1"
 >
 <topic></topic>
@@ -394,7 +394,7 @@ team, notably Eric Frias and Juraj Hercek, submitting patches back to Wine.
 <section 
 	title="Possible LGPL Violation: SpecOpS Labs"
 	subject="has the LGPL licence fell through ?"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-December/043558.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-December/043558.html"
 	posts="17"
 >
 <topic>Licensing</topic>
@@ -436,10 +436,10 @@ seems to be getting worse.  Let's run this down from the beginning:
 <li>  They showed off a product without any explanation that Wine was
 involved.  In fact, at first they completely denied Wine was part of
 their product:
-<ul><li><a href=//www.winehq.org/wwn/220#Project%20David%20?">WWN #220</a></li></ul></li>
+<ul><li><a href="//www.winehq.org/wwn/220#Project%20David%20?">WWN #220</a></li></ul></li>
 
 <li>  Then Ge van Geldorp discovered that Wine really was part of it:
-<ul><li><a href=//www.winehq.org/wwn/222#Project%20David%20Uses%20CodeWeavers%20CrossOver%20Office">WWN #222</a></li></ul></li>
+<ul><li><a href="//www.winehq.org/wwn/222#Project%20David%20Uses%20CodeWeavers%20CrossOver%20Office">WWN #222</a></li></ul></li>
 
 <li>  That was followed shortly thereafter by Mike McCormack discovering
 a CrossOver only hack was visible in a screenshot.  So they basically
@@ -459,7 +459,7 @@ Alexandre's email address?  How many "Alexandre Julliard's" do you
 think turn up when you type the name into Google?  Several members of
 the Wine community graciously replied to the email with no response
 from them.
-<ul><li><a href=//www.winehq.org/wwn/241#SpecOps%20Labs%20Steps%20Up">WWN #241</a></li>
+<ul><li><a href="//www.winehq.org/wwn/241#SpecOps%20Labs%20Steps%20Up">WWN #241</a></li>
 </ul>
 Everyone asked for more info so if they planned on contributing that
 there wouldn't a duplication of effort.</li></ol>
@@ -484,7 +484,7 @@ code changes to Wine?</p>
 <section 
 	title="Building Wine on Sparcs"
 	subject="SPARC assembly won't compile, problems with NT headers"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-December/043604.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-December/043604.html"
 	posts="3"
 >
 <topic>Ports</topic>
@@ -536,7 +536,7 @@ is the right one, but it works quite nicely :-)  We use gcc/gas.
 <section 
 	title="Trace Logs on Windows"
 	subject="Comparing a complicated program startup to windows"
-	archive=//www.winehq.org/pipermail/wine-devel/2005-December/043478.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2005-December/043478.html"
 	posts="4"
 >
 <topic>Debugging</topic>

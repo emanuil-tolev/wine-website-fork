@@ -64,7 +64,7 @@ Its main goal is to just be thankful for warm summer days with bright blue skies
 <section 
 	title="News: Wine-20030709, AutoCAD Tips, Linux Refresher Course" 
 	subject="News"
-	archive=//cvs.winehq.org/cvsweb/wine/ANNOUNCE?rev=1.77&amp;content-type=text/x-cvsweb-markup" 
+	archive="//cvs.winehq.org/cvsweb/wine/ANNOUNCE?rev=1.77&amp;content-type=text/x-cvsweb-markup" 
 	posts="2"
 	startdate="07/05/2003"
 	enddate="07/11/2003"
@@ -73,7 +73,7 @@ Its main goal is to just be thankful for warm summer days with bright blue skies
 <p>It's that time of the month again.  Wine-20030709 is out:</p>
 <quote who="Alexandre Julliard"><p>
  WHAT'S NEW with Wine-20030709: (see 
- <a href=//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.73&amp;content-type=text/x-cvsweb-markup">ChangeLog</a> for details)
+ <a href="//cvs.winehq.org/cvsweb/wine/ChangeLog?rev=1.73&amp;content-type=text/x-cvsweb-markup">ChangeLog</a> for details)
   <ul>
         <li> Still more Direct3D and DirectSound improvements.</li>
         <li> Inter-process clipboard support.</li>
@@ -100,7 +100,7 @@ an introduction</a> to Wine.</p>
 </section><section 
 	title="Viva la Kernel Module Idea" 
 	subject="Speeding up wineserver (again)"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0149.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0149.html" 
 	posts="7"
 	startdate="07/07/2003"
 >
@@ -171,7 +171,7 @@ use a non-kernel version of these facilities.
 The following are things I could see immediately would be part of the kernel 
 module:
   <ul>[ <i>see 
-    <a href=//www.winehq.org/hypermail/wine-devel/2003/07/0149.html">original
+    <a href="//www.winehq.org/hypermail/wine-devel/2003/07/0149.html">original
              email</a> for function definitions</i> ]</ul>
 </p><p>
 There would be other things that would be in the "nice to have" category too 
@@ -213,11 +213,11 @@ enough it would probably be incorporated.  For more background on
 a Wine kernel module see the following WWN issues, be sure to click
 on the WWN <i>Archive</i> link for a complete discussion:</p>
 <dl>
- <dt><a href=//www.winehq.org/index.phpwwn/59#A%20way%20to%20speed%20up%20Wine">#59</a>:
+ <dt><a href="//www.winehq.org/index.phpwwn/59#A%20way%20to%20speed%20up%20Wine">#59</a>:
  </dt><dd>Post by David Howells about a Wine kernel module he implemented</dd>
- <dt><a href=//www.winehq.org/index.phpwwn/60#A%20way%20to%20speed%20up%20Wine">#60</a>:
+ <dt><a href="//www.winehq.org/index.phpwwn/60#A%20way%20to%20speed%20up%20Wine">#60</a>:
  </dt><dd>Alexandre's thoughts on how a kernel module should work</dd>
- <dt><a href=//www.winehq.org/index.phpwwn/86#Wine's%20speed%20up%20(cont'd)">#86</a>:
+ <dt><a href="//www.winehq.org/index.phpwwn/86#Wine's%20speed%20up%20(cont'd)">#86</a>:
  </dt><dd>Discussion of David's kernel module and more ideas on communicating
 	with wineserver</dd>
  <dt><a href="http://kt.zork.net/wine/wn20010415_91.html">#91</a>:
@@ -225,11 +225,11 @@ on the WWN <i>Archive</i> link for a complete discussion:</p>
  <dt><a href="http://kt.zork.net/wine/wn20010219_83.html">#83</a>:
  </dt><dd>Initial idea for shared memory and preliminary design 
  considerations.</dd>
- <dt><a href=//www.winehq.org/index.phpwwn/148#Shared%20Memory%20Wineserver">#148</a>:
+ <dt><a href="//www.winehq.org/index.phpwwn/148#Shared%20Memory%20Wineserver">#148</a>:
  </dt><dd>Announcement of a shared memory wineserver.</dd> 
- <dt><a href=//www.winehq.org/index.phpwwn/154#Kernel%20Module%20/%20Shared%20Memory%20Revisited">#154</a>:
+ <dt><a href="//www.winehq.org/index.phpwwn/154#Kernel%20Module%20/%20Shared%20Memory%20Revisited">#154</a>:
  </dt><dd>Discussion of the shared memory approach</dd>
- <dt><a href=//www.winehq.org/index.phpwwn/159#Threading%20Work">#159</a>:
+ <dt><a href="//www.winehq.org/index.phpwwn/159#Threading%20Work">#159</a>:
  </dt><dd>Why Alexandre doesn't like the shared memory idea.</dd>
 </dl>
 
@@ -271,7 +271,7 @@ concern. And it wouldn't be trying to do too much.
 </section><section 
 	title="RPC Via Windows Messages and Other OLE Fun" 
 	subject="MS OLE questions"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0158.html" 
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0158.html" 
 	posts="14"
 	startdate="07/08/2003"
 	enddate="07/09/2003"
@@ -355,7 +355,7 @@ just moved the old cruft in there too...
 </quote></p>
 
 <p>Ove replied he'd already implemented that and posted 
-<a href=//www.winehq.org/hypermail/wine-devel/2003/07/0179.html">a 
+<a href="//www.winehq.org/hypermail/wine-devel/2003/07/0179.html">a 
 rough patch</a>.  Mike worked on his project a more, but this
 is where the thread ended.</p>
 
@@ -368,7 +368,7 @@ is where the thread ended.</p>
 </section><section 
 	title="Structured Exception Handling Support for GCC" 
 	subject="Fwd: [MinGW-dvlpr] Snapshot of SEH enabled GCC released"
-	archive=//www.winehq.org/hypermail/wine-devel/2003/07/0156.html"
+	archive="//www.winehq.org/hypermail/wine-devel/2003/07/0156.html"
 	posts="1"
 	startdate="07/07/2003"
 >

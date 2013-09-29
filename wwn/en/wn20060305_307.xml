@@ -6,7 +6,7 @@
 <author contact="http://www.theshell.com/~vinn">Brian Vincent</author>
 <issue num="307" date="03/05/2006" />
 <intro> <p>This is the 307th issue of the Wine Weekly News publication.
-Its main goal is to not puke when watching network television. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href=//www.winehq.org">www.winehq.org</a></p> </intro>
+Its main goal is to not puke when watching network television. It also serves to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="//www.winehq.org">www.winehq.org</a></p> </intro>
 <stats posts="106" size="206" contrib="61" multiples="22" lastweek="32">
 
 <person posts="7" size="5" who="hverbeet at gmail.com (H. Verbeet)" />
@@ -72,14 +72,14 @@ Its main goal is to not puke when watching network television. It also serves to
 <section 
 	title="News: Wine 0.9.9"
 	subject="News"
-	archive=//www.winehq.org/announce/0.9.9"
+	archive="//www.winehq.org/announce/0.9.9"
 	posts="1"
 >
 <topic>News</topic>
 <p>Wine 0.9.9 came out this past week.  There seems to be a lot more
 user-facing additions in this release compared to some of the other
 recent releases.  Alexandre 
-<a href=//www.winehq.org/announce/0.9.9">noted</a> the following 
+<a href="//www.winehq.org/announce/0.9.9">noted</a> the following 
 changes:</p>
 <quote who="Alexandre Julliard"><p>
 <ul>
@@ -93,7 +93,7 @@ changes:</p>
 </ul></p></quote>
 
 <p>Grab the binary off the 
-<a href=//www.winehq.org/download">download page</a> or
+<a href="//www.winehq.org/download">download page</a> or
 <a href="http://wiki.winehq.org/GitWine">git</a> it.
 </p>
 </section>
@@ -235,14 +235,14 @@ Valgrind.</li></ul></p></quote>
 <section 
 	title="DirectDraw via WineD3D"
 	subject="DirectDraw -&gt; WineD3D patch"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-March/045420.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-March/045420.html"
 	posts="1"
 >
 <topic>DirectX</topic>
 <p>Wine's DirectDraw implementation is getting stale around the edges.  
 It's gotten us a long way, but Stefan D&#246;singer announced plans a
 while ago to begin transitioning it toward more modern interfaces
-(see WWN <a href=//www.winehq.org/wwn/301#Accelerating%20DirectDraw">#301</a> for more details.)
+(see WWN <a href="//www.winehq.org/wwn/301#Accelerating%20DirectDraw">#301</a> for more details.)
 This week he announced the initial version:</p>
 <quote who="Stefan Dosinger"><p>
 I've brought my DirectDraw over WineD3D patch in a form where I want to show 
@@ -302,7 +302,7 @@ moment, those definitions reside in dlls/ddraw/d3d_compat.h.</li></ul></p>
 <section 
 	title="Launching Native Apps"
 	subject="Launch native Linux apps?"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-March/045248.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-March/045248.html"
 	posts="2"
 >
 <topic>Configuration</topic>
@@ -322,7 +322,7 @@ HKCL and HKLM. Basically, you can launch any Linux app from wine by its full
 path and pass command line arguments. There's of course the problem of 
 converting Windows paths to Unix paths.
 </p><p>
-At <a href=//www.winehq.org/fun_projects">
+At <a href="//www.winehq.org/fun_projects">
 http://www.winehq.com/fun_projects</a> my Kmail registry entries are 
 described. For examples how to use Open Office, you have to google.
 </p><p>
@@ -334,7 +334,7 @@ but CrossOver allows you to do the reverse.
 <section 
 	title="Thinking About WineConf 2006"
 	subject="Wineconf 2006"
-	archive=//www.winehq.org/pipermail/wine-devel/2006-March/045273.html"
+	archive="//www.winehq.org/pipermail/wine-devel/2006-March/045273.html"
 	posts="1"
 >
 <topic>WineConf 2006</topic>
@@ -370,13 +370,13 @@ twice the cost in June than in May.
 So what I'd like to ask is that people that are interested
 in coming to Wineconf give us a bit of feedback:
 <ul>
-  <a href=//www.winehq.org/wineconf/survey06">
+  <a href="//www.winehq.org/wineconf/survey06">
   http://www.winehq.org/wineconf/survey06</a></ul>
 </p><p>
 Also, I'd like to request that follow ups to this shift over
 to the Wineconf mailing list:
 <ul>
-  <a href=//www.winehq.org/mailman/listinfo/wineconf">
+  <a href="//www.winehq.org/mailman/listinfo/wineconf">
   http://www.winehq.org/mailman/listinfo/wineconf</a></ul>
 </p><p>
 For those of you that don't know, Wineconf is our
