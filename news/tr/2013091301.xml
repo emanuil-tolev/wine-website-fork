@@ -1,0 +1,17 @@
+<news>
+<date>13 Eylül 2013</date>
+<title>Wine 1.7.2 Yayınlandı</title>
+<body>
+<p> Wine geliştirme sürümü 1.7.2 artık kullanılabilir.</p>
+<p> Bu sürümdeki <a href="{$root}/announce/1.7.2">yenilikler</a>:
+<ul>
+  <li>Sağdan sola metin yerleşim iyileştirmeleri.</li>
+  <li>HTTP üzerinden RPC için NTLM ve Anlaşma kimlik doğrulaması.</li>
+  <li>Dahili Wingdings yazı tipi üzerinde daha iyi kabartmalar.</li>
+  <li>Mac sürücüsünde daha iyi sistem çekmece desteği.</li>
+  <li>Etkinleştirme bağlamı iyileştirmeleri.</li>
+  <li>Çeşitli hata onarımları.</li>
+</ul>
+<p><p>Kaynak dosyaları <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.2.tar.bz2">artık indirilebilir</a>.
+İnşa sürecindeki ikili paketler kısa zaman içinde <a href="{$root}/download">indirme</a> konumunda yerini alacaktır.
+</p></body></news>

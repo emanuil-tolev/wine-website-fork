@@ -1,0 +1,16 @@
+<news>
+<date>27 Eylül 2013</date>
+<title>Wine 1.7.3 Yayınlandı</title>
+<body>
+<p> Wine geliştirme sürümü 1.7.3 artık kullanılabilir.</p>
+<p> Bu sürümdeki <a href="{$root}/announce/1.7.3">yenilikler</a>:
+<ul>
+  <li>Firefox 24 tabanlı Gecko motorunun yeni sürümü.</li>
+  <li>Direct3D komut akışı için hazırlık çalışması.</li>
+  <li>Mac sürücüsünde pencere yönetim onarımları.</li>
+  <li>Android üzerinde IPHLPAPI fonksiyonları desteği.</li>
+  <li>Çeşitli hata onarımları.</li>
+</ul>
+<p><p>Kaynak dosyaları <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.3.tar.bz2">artık indirilebilir</a>.
+İnşa sürecindeki ikili paketler kısa zaman içinde <a href="{$root}/download">indirme</a> konumunda yerini alacaktır.
+</p></body></news>

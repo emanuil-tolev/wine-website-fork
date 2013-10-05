@@ -1,0 +1,18 @@
+<news>
+<date>30 Ağustos 2013</date>
+<title>Wine 1.7.1 Yayınlandı</title>
+<body>
+<p> Wine geliştirme sürümü 1.7.1 artık kullanılabilir.</p>
+<p> Bu sürümdeki <a href="{$root}/announce/1.7.1">yenilikler</a>:
+<ul>
+  <li>Tuşlu olay nesneleri için destek.</li>
+  <li>"bir kez başlat" eşitleme mekanizması için destek.</li>
+  <li>DLL, typelib ve COM sınıfları için etkinleştirme bağlam desteği.</li>
+  <li>64-bit üzerinde 32-bit typelib yükleme desteği.</li>
+  <li>Çeşitli Mac sürücü onarımları.</li>
+  <li>Seri port cihazları için bazı onarımlar.</li>
+  <li>Çeşitli hata onarımları.</li>
+</ul>
+<p><p>Kaynak dosyaları <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.1.tar.bz2">artık indirilebilir</a>.
+İnşa sürecindeki ikili paketler kısa zaman içinde <a href="{$root}/download">indirme</a> konumunda yerini alacaktır.
+</p></body></news>
