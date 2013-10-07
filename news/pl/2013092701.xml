@@ -1,0 +1,16 @@
+<news>
+<date>Wrzesień 27, 2013</date>
+<title>Wydano Wine 1.7.3</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.7.3 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.7.3">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Nowa wersja silnika Gecko oparta o Firefox 24.</li>
+  <li>Prace przygotowawcze dla strumienia poleceń Direct3D.</li>
+  <li>Poprawki w zarządzaniu oknami w sterowniku Mac.</li>
+  <li>Wsparcie dla funkcji IPHLPAPI na Androidzie.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul>
+<p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.3.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
