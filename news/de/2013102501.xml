@@ -1,0 +1,16 @@
+<news>
+<date>25. Oktober 2013</date>
+<title>Wine 1.7.5 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.7.5 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.7.5">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Unterstützung für registrierungsfreies COM mit Activation Contexts.</li>
+  <li>Verbesserte Unterstützung für simulierte fett gedruckte Schriften.</li>
+  <li>Unicode Daten wurden auf Unicode 6.3 geupdatet.</li>
+  <li>Bessere Unterstützung für Typelib Registrierung unter 64-Bit.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.5.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
