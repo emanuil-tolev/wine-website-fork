@@ -1,0 +1,15 @@
+<news>
+<date>25 de Outubro de 2013</date>
+<title>Wine 1.7.5 lançado</title>
+<body>
+<p> A versão de desenvolvimento 1.7.5 já está disponível agora.</p>
+<p> <a href="{$root}/announce/1.7.5">Novidades</a> desta versão:
+<ul>
+  <li>Superte a COM sem registro usando contextos de ativação.</li>
+  <li>Melhoria no suporte a simulação de fontes em negrito.</li>
+  <li>Dados Unicode atualizados para Unicode 6.3.</li>
+  <li>Melhor suporte a registro da typelib para 64-bit.</li>
+  <li>Várias correções de bugs.</li>
+<p><p>O código fonte está <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.5.tar.bz2">disponível agora</a>.
+Pacotes binários estão em processo de construção e irão aparecer em breve em suas respectivas <a href="{$root}/download">sessões da área de downloads</a>.
+</p></body></news>
