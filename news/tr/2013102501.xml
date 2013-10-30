@@ -1,0 +1,16 @@
+<news>
+<date>125 Ekim 2013</date>
+<title>Wine 1.7.5 Yayınlandı</title>
+<body>
+<p> Wine geliştirme sürümü 1.7.5 artık kullanılabilir.</p>
+<p> Bu sürümdeki <a href="{$root}/announce/1.7.5">yenilikler</a>:
+<ul>
+  <li>Etkileşim bağlamları kullanarak kayıtsız COM desteği</li>
+  <li>Benzetimli kalın yazı tipleri için iyileştirilmiş destek</li>
+  <li>Unicode verisi Unicode 6.3'e güncellendi.</li>
+  <li>64-bit'te typelib kaydı için daha iyi destek</li>
+  <li>Çeşitli hata onarımları.</li>
+</ul>
+<p><p>Kaynak dosyaları <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.5.tar.bz2">artık indirilebilir</a>.
+İnşa sürecindeki ikili paketler kısa zaman içinde <a href="{$root}/download">indirme</a> konumunda yerini alacaktır.
+</p></body></news>
