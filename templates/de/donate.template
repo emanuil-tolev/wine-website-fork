@@ -26,40 +26,6 @@
   </tr>
 
   <tr bgcolor="#ffffff">
-    <td align="center">
-        <script type="text/javascript">
-        function validateAmount(amount){
-            if(amount.value.match( /^[0-9]+(\.([0-9]+))?$/)){
-                return true;
-            }else{
-                alert('You must enter a valid donation.');
-                amount.focus();
-                return false;
-            }
-        }
-        </script>
-        <form action="https://checkout.google.com/cws/v2/Donations/622836985124940/checkoutForm" id="BB_BuyButtonForm" method="post" name="BB_BuyButtonForm" onSubmit="return validateAmount(this.item_price_1)" target="_top" style="margin:0;padding:0;">
-            <input name="item_name_1" type="hidden" value="Directed Donation to the Wine Project via Software Freedom Conservancy"/>
-            <input name="item_description_1" type="hidden" value="A directed donation for the Wine project via the Software Freedom Conservancy"/>
-            <input name="item_quantity_1" type="hidden" value="1"/>
-            <input name="item_currency_1" type="hidden" value="USD"/>
-            <input name="item_is_modifiable_1" type="hidden" value="true"/>
-            <input name="item_min_price_1" type="hidden" value="10.0"/>
-            <input name="item_max_price_1" type="hidden" value="25000.0"/>
-            <input name="_charset_" type="hidden" value="utf-8"/>
-            <div style="display:table">
-                <label style="display:table-cell">$</label>
-                <input id="item_price_1" name="item_price_1" onfocus="this.style.color='black'; this.value='';" size="11" style="color:grey; display:table-cell" type="text" value="Enter Amount"/><br />
-            </div>
-            <input alt="Donate" src="https://checkout.google.com/buttons/donateNow.gif?merchant_id=622836985124940&amp;w=115&amp;h=50&amp;style=white&amp;variant=text&amp;loc=en_US" type="image"/>
-        </form>
-    </td>
-    <td valign="top">
-        Mit Google Checkout kannst du per Kreditkarte spenden.
-    </td>
-  </tr>
-
-  <tr bgcolor="#ffffff">
     <td align="center" class="small">
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="PPdonateForm" style="margin: 0; padding: 0;">
         <input type="hidden" name="cmd" value="_s-xclick">
