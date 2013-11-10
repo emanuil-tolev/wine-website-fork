@@ -64,6 +64,10 @@ class data
                                                'name'   => 'Türkçe',
                                                'change' => 'Lisan Değiştir'
                                               ),
+                                 'uk' => array(
+                                               'name'   => 'Українська',
+                                               'change' => 'Змінити мову'
+                                              ),
                                  'zh-cn' => array(
                                                'name'   => '简体中文',
                                                'change' => '选择语言'
