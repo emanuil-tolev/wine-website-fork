@@ -1,0 +1,15 @@
+<news>
+<date>8 Kasım 2013</date>
+<title>Wine 1.7.6 Yayınlandı</title>
+<body>
+<p> Wine geliştirme sürümü 1.7.6 artık kullanılabilir.</p>
+<p> Bu sürümdeki <a href="{$root}/announce/1.7.6">yenilikler</a>:
+<ul>
+  <li>Tam Unicode 6.3 desteği için BiDi algoritmasının yeniden yazımı.</li>
+  <li>Video Karıştırma Hazırlayıcı sürüm 7 için destek.</li>
+  <li>Mac sürücüsünde pencere boyutlandırmalarının daha iyi ele alınması.</li>
+  <li>Çeşitli hata onarımları.</li>
+</ul>
+<p><p>Kaynak dosyaları <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.6.tar.bz2">artık indirilebilir</a>.
+İnşa sürecindeki ikili paketler kısa zaman içinde <a href="{$root}/download">indirme</a> konumunda yerini alacaktır.
+</p></body></news>
