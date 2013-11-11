@@ -1,0 +1,57 @@
+<!--TITLE:[Встановлення версії для Ubuntu]-->
+<!--BLURB:[Встановлення версії для Ubuntu]-->
+
+<h1 class="title"><a href="http://www.ubuntu.com/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Logo" border="0"></a>
+Wine для Ubuntu та сімейства Ubuntu
+<a href="http://www.ubuntu.com/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Logo" border="0"></a></h1>
+
+<p>Ubuntu та сімество Ubuntu (як Kubuntu) отримують програмне забезпечення у вигляді 
+<i>пакунків</i> які розміщуються у <i>репозиторіях</i>. Репозиторії Ubuntu за
+замовчуванням мають Wine, однак якщо ви хочете мати останні версії пакунків Wine, прочтіть наступні іструкції.
+</p>
+
+<h2>Додавання репозиторія WineHQ:</h2>
+
+<p>Open the Software Sources menu by launching the <b>Ubuntu Software 
+Center</b> and selecting <b>Edit->Software Sources</b>. Choose the <b>Other 
+Software</b> tab and click <b>Add</b>.</p>
+
+<img src="{$root}/images/distro/ubuntu-ppa.png" width="531" height="509" alt="Software Center->Edit->Software Sources->Other Software" border="0">
+
+<p>Потім, <b>скопіюйте та вставте рядок який вказано нижче</b>.</p>
+
+<i>ppa:ubuntu-wine/ppa</i></p>
+
+<h2>Попередження: Розробницькі пакунки</h2>
+
+<p><i>Пакунки версії 1.5 це розробницькі пакунки. Це означає, що вони періодично можуть містити 
+<a href="http://wiki.winehq.org/Regression">регресії</a>, і в разі оновлень може постраждати функціональність. 
+Якщо версія 1.4 добре працює, тоді ви можете не використовувати ці розробницькі пакунки.</i></p>
+
+<h2>Встановлення Wine:</h2>
+
+<p>Після додавання репозиторія WineHQ PPA, ви готові до встановлення Wine.</p>
+
+<p><i>Щоб встановити найсвіжішу розробницьку версію Wine 1.5, 
+<a href="apt://wine1.5">клікніть на це посилання</a>.</i></p>
+<p><i>Щоб встановити стабільну версію Wine 1.4, 
+<a href="apt://wine1.4">клікніть на це посилання</a>.</i></p>
+
+<h2>Оновлення до нової версії Ubuntu</h2>
+
+<p>Якщо ви оновили систему з Ubuntu 11.10 до 12.04, вам потрібно знову додати репозиторій. 
+Вбудований менеджер оновлень не перемикає репозиторій Wine автоматично.
+</p>
+
+<h2>Альтернативні команди та інструкції для встановлення Wine:</h2>
+
+<p>Також можна додати репозиторій та встановити Wine використовуючи термінал. Це може бути корисно на 
+Kubuntu, Xubuntu та інших дистрибутивах Ubuntu.</p>
+
+<p><i>sudo add-apt-repository ppa:ubuntu-wine/ppa</i></p>
+
+<p>Потім оновіть APT запустивши команду '<b>sudo apt-get 
+update</b>'. Тепер ви можете встановити Wine набравши команду '<b>sudo apt-get 
+install wine1.5</b>'.</p>
+
+<p>Якщо ви хочете подивитися репозиторій власноруч, перейдіть на <a href="https://launchpad.net/~ubuntu-wine/+archive/ppa">сторінку у Launchpad</a>.</p>

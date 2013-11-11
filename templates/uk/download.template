@@ -1,0 +1,190 @@
+<!--TITLE:[Завантаження готових пакунків Wine]-->
+<!--BLURB:[Завантажте Wine на свою улюблену платформу.]-->
+
+<h1 class="title">Завантаження Wine</h1>
+
+<h2 style="margin-bottom: 10px;"><a name="crossover"></a>Підтримка Wine</h2>
+
+<table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Продукт</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Опис</font></b></td>
+  </tr>
+
+  <tr>
+    <td align="center" bgcolor="#ffffff">
+      <a href="http://www.codeweavers.com/products/download_trial/">
+        <img src="{$root}/images/distro/crossover.png" 
+         width="50" height="50" alt="CrossOver Linux or Mac" border="0">
+      </a>
+    </td>
+    <td align="left" bgcolor="#ffffff">
+      <b><a href="http://www.codeweavers.com/products/">CrossOver</a></b>
+      is a polished version of Wine provided by <b><a href="http://www.codeweavers.com">CodeWeavers</a></b>.
+      CrossOver makes it easier to use Wine and CodeWeavers provides excellent technical support to its users.
+      All purchases of CrossOver are used to directly fund the developers working on Wine. So CrossOver is both a great way to get
+      support in using Wine and to support the Wine Project.  CodeWeavers provides fully functional
+      <b><a href="http://www.codeweavers.com/products/download_trial/">trial versions of CrossOver</a></b>.
+    </td>
+  </tr>
+</table>
+
+<p class="small" align="center">This endorsement is the primary recognition that CodeWeavers has
+requested in exchange for hosting the Wine web site.</p>
+  
+
+<h2 style="margin-bottom: 5px;"><a name="binary"></a>Завантаження готових пакунків Wine</h2>
+
+<table style="margin: 0 0 15px 0;" width="100%">
+<tr>
+  <td width="200">Останній стабільний реліз:</td><td>Wine&nbsp;{$config_stable_release}</td>
+  <td rowspan="2" valign="top" style="padding-left: 20px; text-align: center;"><b>See the 
+  <a href="http://wiki.winehq.org/HowTo">installation and configuration how-to</a> 
+  for post-installation instructions.</b></td>
+</tr>
+<tr>
+  <td>Останній розробницький реліз:</td><td>Wine&nbsp;{$config_master_release}</td>
+</tr>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Система</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Примітки</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Супроводжувач</font></b></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="{$root}/download/ubuntu">
+      <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu linux" border="0"></a>
+    </td>
+    <td> <b><a href="{$root}/download/ubuntu">Завантажити пакунки Ubuntu</a></b> 
+     - binary and source .debs для Ubuntu Precise (12.04), Quantal (12.10), Raring (13.04) та Saucy (13.10)
+    <td><a href="mailto:scottritchie@ubuntu.com">Scott Ritchie</a></td>
+  </tr>
+
+   <tr bgcolor="#ffffff">
+    <td align=center><a href="{$root}/download/debian">
+      <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
+    </td>
+    <td> <b><a href="{$root}/download/debian">Завантажити пакунки Debian</a></b> 
+     - binary .debs for Debian Sid</td>
+    <td><a href="mailto:curan@debian.org">Kai Wasserbäch</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">
+      <img src="{$root}/images/distro/redhat.png" width="50" height="50" alt="Red Hat Linux" border="0"></a>
+    </td>
+    <td> <b><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">Завантажити пакунки Red Hat / CentOS / Fedora</a></b>
+        - binary and source .rpms for Red Hat Enterprise Linux 5, 6; CentOS 5, 6; Fedora Linux 16, 17 and
+        compatible distributions.
+        The wine meta package is available via <tt>yum</tt> 
+        through the EPEL / Fedora Extras / Fedora repository by running <tt>$ yum install
+        wine </tt>"
+         </td>
+    <td><a href="mailto:andreas.bierfert_at_lowlatency.de">Andreas Bierfert</a></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://en.opensuse.org/Wine#Repositories">
+      <img src="{$root}/images/distro/suse.png" width="50" height="50" alt="SUSE Linux" border="0"></a>
+    </td>
+    <td> <b><a href="http://en.opensuse.org/Wine#Repositories">Завантажити пакунки SUSE</a></b>
+         - release binary and source .rpms and daily snapshot RPMs for all openSUSE versions (11.1 up to 12.3) and SUSE Linux Enterprise 11.<br>
+     </td>
+    <td><a href="mailto:meissner@suse.de">Marcus Meissner</a></td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://sourceforge.net/project/showfiles.php?group_id=6241&amp;package_id=6301">
+      <img src="{$root}/images/distro/slackware.png" width="50" height="50" alt="Slackware linux" border="0"></a>
+    </td>
+    <td> <b><a href="http://sourceforge.net/projects/wine/files/Slackware Packages/">Завантажити пакунки Slackware</a></b>
+         - binary txz (Slackware 14.0), and tgz (for older versions)</td>
+    <td><a href="mailto:studiosg@giustetti.net">Simone Giustetti</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://www.freshports.org/emulators/wine/">
+      <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
+    </td>
+    <td> <b><a href="http://www.freshports.org/emulators/wine/">Завантажити пакунки FreeBSD</a></b>
+         - source for FreeBSD 5.3 or later</td>
+    <td><a href="mailto:gerald@pfeifer.com">Gerald Pfeifer</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">
+      <img src="{$root}/images/distro/pcbsd.png" width="50" height="50" alt="FreeBSD" border="0"></a>
+    </td>
+    <td> <b><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">Завантажити пакунки PC-BSD</a></b>
+         - binary packages .pbi for PC-BSD (FreeBSD based OS)</td>
+    <td><a href="mailto:kris@pcbsd.com">Kris Moore</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://www.sunfreepacks.com/">
+      <img src="{$root}/images/distro/solaris.png" width="50" height="50" alt="Solaris 10" border="0"></a>
+    </td>
+    <td> <b><a href="http://www.sunfreepacks.com/">Завантажити пакунки Solaris 10, SXCE</a></b>
+        - ASwine, ASwine-SXCE binary package .pkg for Solaris 10 and SXCE x86</td>
+    <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://hub.opensolaris.org/bin/view/Community+Group+desktop/wine">
+      <img src="{$root}/images/distro/opensolaris.png" width="50" height="50" alt="OpenSolaris" border="0"></a>
+    </td>
+    <td> <b><a href="http://hub.opensolaris.org/bin/view/Community+Group+desktop/wine">Завантажити пакунки OpenSolaris</a></b>
+        - binary package .pkg for OpenSolaris x86</td>
+    <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td align="center"><a href="http://maemo.org/packages/view/wine/">
+      <img src="{$root}/images/distro/maemo.png" width="50" height="50" alt="Maemo" border="0"></a>
+    </td>
+    <td> <b><a href="http://maemo.org/packages/view/wine/">Завантажити пакунки Maemo</a></b>
+        - binary package .deb for Maemo x86 and Maemo ARM</td>
+    <td><a href="http://maemo.org/profile/view/onion/">Kaj-Michael Lang</a></td>
+  </tr>
+
+
+</table>
+
+
+<h2 style="margin-bottom: 10px;"><a name="binary"></a>3rd Party Tools</h2>
+
+<p>Sometimes a customization of Wine can cause an application to work, but this change cannot be incorporated into Wine for some reason.  To help overcome current deficiencies in Wine, various third party applications for end users have been made over the years.  These applications are entirely unsupported by the Wine developers, however you may find them useful.  For more information, see <a href="http://wiki.winehq.org/ThirdPartyApplications">our wiki page</a> on third party applications.</p>
+
+<h2><a name="source"></a>Завантажити вихідний код Wine</h2>
+
+<table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
+
+  <tr>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Розташування</font></b></td>
+    <td align="center" bgcolor="black"><b><font color="white" class="small">Опис</font></b></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td> <a href="http://sourceforge.net/projects/wine/files/Source/" target="_blank">sourceforge.net</a></td>
+    <td> Наш офіційний сайт. </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td> <a href="http://wiki.winehq.org/GitWine">source.winehq.org/git</a> </td>
+    <td> Для останніх розробницьких версій. </td>
+  </tr>
+  
+  <tr bgcolor="#ffffff">
+    <td><a href="http://ibiblio.org/pub/linux/system/emulators/wine/">ibiblio.org</a></td>
+    <td> Alternative download site for the official source and documentation tarballs. </td>
+  </tr>
+  
+</table>
+
+<div style="margin: 10px; padding: 5px; border: 1px solid #C0C0C0; background-color: #F0F0F0;"><b>Примітка:</b> Подивіться <a href="http://wiki.winehq.org/Recommended_Packages">рекомендовані пакунки</a> для допомоги при конфігурації та створенні Wine.</div>
+

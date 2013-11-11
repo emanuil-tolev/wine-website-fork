@@ -1,0 +1,90 @@
+<!--TITLE:[Запуск Windows застосунків у Linux, BSD, Solaris та Mac OS X]-->
+<!--BLURB:[Запуск Windows застосунків у Linux, BSD, Solaris та Mac OS X.]-->
+<!--META_KEYWORDS:[windows, linux, macintosh, solaris, freebsd]-->
+<!--META_DESCRIPTION:[Відкрите програмне забезпечення для запуску Windows застосунків на інших операційних системах.]-->
+<!--STYLE:[content_nobox]-->
+
+<div id="main_left">
+
+    <div class="content cornerround" style="padding: 15px 10px 20px 60px; height: 445px; overflow: auto;">
+        <div class="winehq_menu">
+
+            <div class="info" onClick="document.location='{$root}/about/';">
+              <div class="icon"></div>
+              <div class="text">
+                <div class="title"><a href="{$root}/about/">Про Wine</a></div>
+                <div class="subtitle">Дізнатися більше про проект.</div>
+              </div>
+            </div>
+
+            <div class="dl" onClick="document.location='{$root}/download/';">
+              <div class="icon"></div>
+              <div class="text">
+                <div class="title"><a href="{$root}/download/">Завантажити</a></div>
+                <div class="subtitle">Встановити останню версію Wine.</div>
+              </div>
+            </div>
+
+            <div class="help" onClick="document.location='{$root}/help/';">
+              <div class="icon"></div>
+              <div class="text">
+                <div class="title"><a href="{$root}/help/">Підтримка</a></div>
+                <div class="subtitle">Отримати допомогу при користуванні Wine.</div>
+              </div>
+            </div>
+
+            <div class="devel" onClick="document.location='{$root}/devel/';">
+              <div class="icon"></div>
+              <div class="text">
+                <div class="title"><a href="{$root}/devel/">Розробка</a></div>
+                <div class="subtitle">Стати розробником Wine.</div>
+              </div>
+            </div>
+
+            <div class="donate" onClick="document.location='{$root}/donate/';">
+              <div class="icon"></div>
+              <div class="text">
+                <div class="title"><a href="{$root}/donate/">Пожертвування</a></div>
+                <div class="subtitle">Пожертвування для проекту.</div>
+              </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div id="main_right">
+
+    <div class="content cornerround" style="padding: 10px; height: 85px; overflow: auto;">
+        <h3 class="title" style="margin: 0;">Останні релізи</h3>
+        <table style="margin: 7px 0 0 15px; border-spacing: 0; border: 0;">
+        <tr><td>Стабільний:</td>
+        <td style="padding-left: 15px; padding-bottom: 2px;">
+            <b><a href="{$root}/announce/{$config_stable_release}">Wine&nbsp;{$config_stable_release}</a></b>
+            <span class="small">
+              (<a href="//source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_stable_release}">детально</a>)
+            </span>
+        </td></tr>
+        <tr><td>Розробницький:</td>
+        <td style="padding-left: 15px;">
+            <b><a href="{$root}/announce/{$config_master_release}">Wine&nbsp;{$config_master_release}</a></b>
+            <span class="small">
+              (<a href="//source.winehq.org/git/wine.git?a=shortlog;h=refs/tags/wine-{$config_master_release}">детально</a>)
+            </span>
+        </td></tr>
+        </table>
+    </div>
+
+    <div class="content cornerround" style="margin-top: 15px; padding: 10px 0px 10px 10px;">
+      <div style="height: 340px; overflow: auto; padding-right: 10px;">
+
+        <h3 class="title"><a href="{$root}/news/">Новини</a></h3>
+
+        <!--EXEC:[news?n=10]-->
+
+        <p><a href="{$root}/news/">більше новин...</a></p>
+      </div>
+    </div>
+
+</div>
+

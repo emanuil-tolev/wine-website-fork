@@ -1,0 +1,22 @@
+<!--TITLE:[Wine для Debian]-->
+<!--BLURB:[Wine для Debian]-->
+
+<h1 class="title"><a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
+Wine для Debian
+<a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a></h1>
+
+<p>Дистрибутиви сімейства Debian використовують спеціальний інструмент для управління пакунками, відомий як APT. APT здатний автоматично встановити всі необхідні залежності для пакету, а також слідкувати за оновленнями для надання актуальності. Дистрибутиви сімейства Debian мають власні репозиторії програмного забезпечення в яких є Wine, але попри це, ми все ж таки маємо свій власний репозиторій для розробницьких пакунків.</p>
+
+<p><b>Попередження: Розробницькі пакунки</b><br>
+<i>Це означає, що вони періодично можуть містити <a href="http://wiki.winehq.org/Regression">регресії</a> і в разі оновлень може постраждати функціональність. Якщо останній стабільний реліз Wine (поточний Wine {$config_stable_release}) добре працює, тоді ви можете не використовувати ці розробницькі пакунки.</i></p>
+
+<p>Цей веб-сайт має пакунки для i386 та amd64 архітектур.</p>
+
+<p>Щоб встановити пакунки, ви повинні завантажити файли .deb та встановити іх вручну. Для більш подробних деталей дивіться сторінку.</p>
+
+<br><br><p style="font-size:12px;text-align:left;font-style: italic;">
+Домашня сторінка: <a href="http://dev.carbon-project.org/debian/wine-unstable/" target="_blank">http://dev.carbon-project.org/debian/wine-unstable/</a><br>
+Створювач пакунків: <a href="mailto:curan@debian.org">Kai Wasserbäch</a>
+</p>
+
+

@@ -1,0 +1,16 @@
+<!--TITLE:[Новини]-->
+<!--BLURB:[Всі останні новини співтовариства Wine.]-->
+
+<h1 class="title">Новини</h1>
+
+<!--EXEC:[news]-->
+
+<hr />
+
+<div class="link-container">
+    <p><a href="{$root}/wwn/">Світовий новинний архів Wine</a></p>
+</div>
+<ul class="rss">
+    <li><a href="{$root}/news/rss/">WineHQ Новинна стрічка RSS Feed</a></li>
+</ul>
+
