@@ -1,0 +1,14 @@
+<news>
+<date>8 de Novembro de 2013</date>
+<title>Wine 1.7.6 lançado</title>
+<body>
+<p> A versão de desenvolvimento 1.7.6 já está disponível agora.</p>
+<p> <a href="{$root}/announce/1.7.6">Novidades</a> desta versão:
+<ul>
+  <li>Reescrita do algoritmo BiDi para suporte completo a Unicode 6.3.</li>
+  <li>Suporte ao Video Mixing Renderer versão 7.</li>
+  <li>Melhor manipulação de redimensionamento de janelas no driver de Mac.</li>
+  <li>Várias correções de bugs.</li>
+<p><p>O código fonte está <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.6.tar.bz2">disponível agora</a>.
+Pacotes binários estão em processo de construção e irão aparecer em breve em suas respectivas <a href="{$root}/download">sessões da área de downloads</a>.
+</p></body></news>
