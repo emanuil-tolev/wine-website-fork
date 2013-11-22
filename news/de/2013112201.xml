@@ -1,0 +1,16 @@
+<news>
+<date>2. November 2013</date>
+<title>Wine 1.7.7 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.7.7 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.7.7">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Unterstützung für das konfigurieren von Remotefreigaben mit Samba's NetAPI Bibliothek.</li>
+  <li>Unterstützung für mehrere Tastaturbelegungen im Mac Treiber.</li>
+  <li>Unterstützung für besseres Einbetten mit XEMBED.</li>
+  <li>Unterstützung für Arrays in VBScript.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.7.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
