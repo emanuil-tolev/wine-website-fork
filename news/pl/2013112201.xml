@@ -1,0 +1,16 @@
+<news>
+<date>Listopad 22, 2013</date>
+<title>Wydano Wine 1.7.7</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.7.7 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.7.7">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Wsparcie dla konfigurowanania zdalnych udziałów przy użyciu biblioteki Samby NetAPI.</li>
+  <li>Wsparcie dla wielu układów klawiatury w sterowniku Mac.</li>
+  <li>Ulepszono wsparcie dla osadzania przez XEMBED.</li>
+  <li>Wpsarcie dla macierzy w VBScript.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul>
+<p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.7.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
