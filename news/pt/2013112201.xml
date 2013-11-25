@@ -1,0 +1,15 @@
+<news>
+<date>22 de Novembro de 2013</date>
+<title>Wine 1.7.7 lançado</title>
+<body>
+<p> A versão de desenvolvimento 1.7.7 já está disponível agora.</p>
+<p> <a href="{$root}/announce/1.7.7">Novidades</a> desta versão:
+<ul>
+  <li>Suporte a configuração de compartilhamento remoto usando a biblioteca NetAPI do Samba.</li>
+  <li>Suporte a múltiplos layouts de teclado no driver de Mac.</li>
+  <li>Melhor suporte a uso embutido com XEMBED.</li>
+  <li>Suporte a arrays em VBScript.</li>
+  <li>Várias correções de bugs.</li>
+<p><p>O código fonte está <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.7.tar.bz2">disponível agora</a>.
+Pacotes binários estão em processo de construção e irão aparecer em breve em suas respectivas <a href="{$root}/download">sessões da área de downloads</a>.
+</p></body></news>
