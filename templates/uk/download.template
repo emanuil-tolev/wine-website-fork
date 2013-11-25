@@ -20,18 +20,18 @@
       </a>
     </td>
     <td align="left" bgcolor="#ffffff">
-      <b><a href="http://www.codeweavers.com/products/">CrossOver</a></b>
-      is a polished version of Wine provided by <b><a href="http://www.codeweavers.com">CodeWeavers</a></b>.
-      CrossOver makes it easier to use Wine and CodeWeavers provides excellent technical support to its users.
-      All purchases of CrossOver are used to directly fund the developers working on Wine. So CrossOver is both a great way to get
-      support in using Wine and to support the Wine Project.  CodeWeavers provides fully functional
-      <b><a href="http://www.codeweavers.com/products/download_trial/">trial versions of CrossOver</a></b>.
+      <b><a href="http://www.codeweavers.com/products/">CrossOver</a></b> -
+      це допрацьована версія Wine від <b><a href="http://www.codeweavers.com">CodeWeavers</a></b>.
+      З CrossOver зручніше використовувати Wine, крім того CodeWeavers забезпечують чудову технічну підтримку своїм користувачам.
+      Всі покупки зроблені через CrossOver напряму підтримують розробників, що працюють над Wine. Тож CrossOver це гарна можливість
+      отримати підтримку у використанні Wine та надати підтримку Wine, як проекту. Ви можете
+      <b><a href="http://www.codeweavers.com/products/download_trial/">завантажити повнофункціональну пробну версію Crossover</a></b>
+      від CodeWeavers.
     </td>
   </tr>
 </table>
 
-<p class="small" align="center">This endorsement is the primary recognition that CodeWeavers has
-requested in exchange for hosting the Wine web site.</p>
+<p class="small" align="center">Наявність цієї реклами - головна вимога від CodeWeavers за те, що вони хостять вебсайт Wine.</p>
   
 
 <h2 style="margin-bottom: 5px;"><a name="binary"></a>Завантаження готових пакунків Wine</h2>
@@ -39,9 +39,8 @@ requested in exchange for hosting the Wine web site.</p>
 <table style="margin: 0 0 15px 0;" width="100%">
 <tr>
   <td width="200">Останній стабільний реліз:</td><td>Wine&nbsp;{$config_stable_release}</td>
-  <td rowspan="2" valign="top" style="padding-left: 20px; text-align: center;"><b>See the 
-  <a href="http://wiki.winehq.org/HowTo">installation and configuration how-to</a> 
-  for post-installation instructions.</b></td>
+  <td rowspan="2" valign="top" style="padding-left: 20px; text-align: center;"><b>Щоб отримати післяінсталяційні інструкції,
+  дивіться  <a href="http://wiki.winehq.org/HowTo">інструкцію по інсталяції та конфігурації</a></b></td>
 </tr>
 <tr>
   <td>Останній розробницький реліз:</td><td>Wine&nbsp;{$config_master_release}</td>
@@ -61,7 +60,7 @@ requested in exchange for hosting the Wine web site.</p>
       <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu linux" border="0"></a>
     </td>
     <td> <b><a href="{$root}/download/ubuntu">Завантажити пакунки Ubuntu</a></b> 
-     - binary and source .debs для Ubuntu Precise (12.04), Quantal (12.10), Raring (13.04) та Saucy (13.10)
+     - бінарні та вихідні .deb файли для Ubuntu Precise (12.04), Quantal (12.10), Raring (13.04) та Saucy (13.10)
     <td><a href="mailto:scottritchie@ubuntu.com">Scott Ritchie</a></td>
   </tr>
 
@@ -70,7 +69,7 @@ requested in exchange for hosting the Wine web site.</p>
       <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
     </td>
     <td> <b><a href="{$root}/download/debian">Завантажити пакунки Debian</a></b> 
-     - binary .debs for Debian Sid</td>
+     - бінарні .deb файли для Debian Sid</td>
     <td><a href="mailto:curan@debian.org">Kai Wasserbäch</a></td>
   </tr>
 
@@ -79,10 +78,10 @@ requested in exchange for hosting the Wine web site.</p>
       <img src="{$root}/images/distro/redhat.png" width="50" height="50" alt="Red Hat Linux" border="0"></a>
     </td>
     <td> <b><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">Завантажити пакунки Red Hat / CentOS / Fedora</a></b>
-        - binary and source .rpms for Red Hat Enterprise Linux 5, 6; CentOS 5, 6; Fedora Linux 16, 17 and
-        compatible distributions.
-        The wine meta package is available via <tt>yum</tt> 
-        through the EPEL / Fedora Extras / Fedora repository by running <tt>$ yum install
+        - бінарні та вихідні .rpm файли для Red Hat Enterprise Linux 5, 6; CentOS 5, 6; Fedora Linux 16, 17 та
+        сумісних дистрибутивів.
+        Wine meta-пакунок доступний в <tt>yum</tt>
+        через EPEL / Fedora Extras / Fedora репозиторії. Для встановлення виконайте команду <tt>$ yum install
         wine </tt>"
          </td>
     <td><a href="mailto:andreas.bierfert_at_lowlatency.de">Andreas Bierfert</a></td>
@@ -93,7 +92,7 @@ requested in exchange for hosting the Wine web site.</p>
       <img src="{$root}/images/distro/suse.png" width="50" height="50" alt="SUSE Linux" border="0"></a>
     </td>
     <td> <b><a href="http://en.opensuse.org/Wine#Repositories">Завантажити пакунки SUSE</a></b>
-         - release binary and source .rpms and daily snapshot RPMs for all openSUSE versions (11.1 up to 12.3) and SUSE Linux Enterprise 11.<br>
+         - бінарні та вихідні .rpm файли та щоденні RPM знімки для всіх версій openSUSE (від 11.1 до 12.3) та SUSE Linux Enterprise 11.<br>
      </td>
     <td><a href="mailto:meissner@suse.de">Marcus Meissner</a></td>
   </tr>
@@ -103,7 +102,7 @@ requested in exchange for hosting the Wine web site.</p>
       <img src="{$root}/images/distro/slackware.png" width="50" height="50" alt="Slackware linux" border="0"></a>
     </td>
     <td> <b><a href="http://sourceforge.net/projects/wine/files/Slackware Packages/">Завантажити пакунки Slackware</a></b>
-         - binary txz (Slackware 14.0), and tgz (for older versions)</td>
+         - бінарні txz файли (Slackware 14.0), та tgz (для старіших версій)</td>
     <td><a href="mailto:studiosg@giustetti.net">Simone Giustetti</a></td>
   </tr>
 
@@ -112,7 +111,7 @@ requested in exchange for hosting the Wine web site.</p>
       <img src="{$root}/images/distro/freebsd.png" width="50" height="54" alt="FreeBSD" border="0"></a>
     </td>
     <td> <b><a href="http://www.freshports.org/emulators/wine/">Завантажити пакунки FreeBSD</a></b>
-         - source for FreeBSD 5.3 or later</td>
+         - вихідні файли для FreeBSD 5.3 або пізніших версій</td>
     <td><a href="mailto:gerald@pfeifer.com">Gerald Pfeifer</a></td>
   </tr>
 
@@ -121,7 +120,7 @@ requested in exchange for hosting the Wine web site.</p>
       <img src="{$root}/images/distro/pcbsd.png" width="50" height="50" alt="FreeBSD" border="0"></a>
     </td>
     <td> <b><a href="http://www.pbidir.com/bt/search/?str=wine&amp;search=Search">Завантажити пакунки PC-BSD</a></b>
-         - binary packages .pbi for PC-BSD (FreeBSD based OS)</td>
+         - бінарні пакунки в форматі .pbi для PC-BSD (операційна система, що базується на FreeBSD)</td>
     <td><a href="mailto:kris@pcbsd.com">Kris Moore</a></td>
   </tr>
 
@@ -130,7 +129,7 @@ requested in exchange for hosting the Wine web site.</p>
       <img src="{$root}/images/distro/solaris.png" width="50" height="50" alt="Solaris 10" border="0"></a>
     </td>
     <td> <b><a href="http://www.sunfreepacks.com/">Завантажити пакунки Solaris 10, SXCE</a></b>
-        - ASwine, ASwine-SXCE binary package .pkg for Solaris 10 and SXCE x86</td>
+        - ASwine, ASwine-SXCE бінарні .pkg пакунки для Solaris 10 та SXCE x86</td>
     <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
   </tr>
 
@@ -139,7 +138,7 @@ requested in exchange for hosting the Wine web site.</p>
       <img src="{$root}/images/distro/opensolaris.png" width="50" height="50" alt="OpenSolaris" border="0"></a>
     </td>
     <td> <b><a href="http://hub.opensolaris.org/bin/view/Community+Group+desktop/wine">Завантажити пакунки OpenSolaris</a></b>
-        - binary package .pkg for OpenSolaris x86</td>
+        - бінарні пакунки в форматі .pkg для OpenSolaris x86</td>
     <td><a href="mailto:asyropoulos@yahoo.com">Apostolos Syropoulos</a></td>
   </tr>
 
@@ -148,7 +147,7 @@ requested in exchange for hosting the Wine web site.</p>
       <img src="{$root}/images/distro/maemo.png" width="50" height="50" alt="Maemo" border="0"></a>
     </td>
     <td> <b><a href="http://maemo.org/packages/view/wine/">Завантажити пакунки Maemo</a></b>
-        - binary package .deb for Maemo x86 and Maemo ARM</td>
+        - бінарні пакунки в форматі .deb для Maemo x86 та Maemo ARM</td>
     <td><a href="http://maemo.org/profile/view/onion/">Kaj-Michael Lang</a></td>
   </tr>
 
@@ -156,17 +155,21 @@ requested in exchange for hosting the Wine web site.</p>
 </table>
 
 
-<h2 style="margin-bottom: 10px;"><a name="binary"></a>3rd Party Tools</h2>
+<h2 style="margin-bottom: 10px;"><a name="binary"></a>Сторонні додатки</h2>
 
-<p>Sometimes a customization of Wine can cause an application to work, but this change cannot be incorporated into Wine for some reason.  To help overcome current deficiencies in Wine, various third party applications for end users have been made over the years.  These applications are entirely unsupported by the Wine developers, however you may find them useful.  For more information, see <a href="http://wiki.winehq.org/ThirdPartyApplications">our wiki page</a> on third party applications.</p>
+<p>Інколи модифікація Wine може призвести до того, що якась програма запрацює, та ця модифікація не може бути застосована
+  до основної версії Wine з певних причин. За роки існування для усунення існуючих недоліків Wine було створено багато
+  сторонніх програм. Ці програми ніяк не підтримуються безпосередніми розробниками Wine, але все ж, вони можуть стати вам в нагоді.
+  За детальною інформацією зверніться до <a href="http://wiki.winehq.org/ThirdPartyApplications">нашої вікі сторінки</a>,
+  чи скористайтесь пошуком в Інтернеті.</p>
 
 <h2><a name="source"></a>Завантажити вихідний код Wine</h2>
 
 <table border="0" cellpadding="5" cellspacing="1" bgcolor="#EFEFEF">
 
   <tr>
-    <td align="center" bgcolor="black"><b><font color="white" class="small">Розташування</font></b></td>
-    <td align="center" bgcolor="black"><b><font color="white" class="small">Опис</font></b></td>
+    <td align="center" bgcolor="black"><b><span style="color: #FFFFFF" class="small">Розташування</span></b></td>
+    <td align="center" bgcolor="black"><b><span style="color: #FFFFFF" class="small">Опис</span></b></td>
   </tr>
 
   <tr bgcolor="#ffffff">
@@ -181,7 +184,7 @@ requested in exchange for hosting the Wine web site.</p>
   
   <tr bgcolor="#ffffff">
     <td><a href="http://ibiblio.org/pub/linux/system/emulators/wine/">ibiblio.org</a></td>
-    <td> Alternative download site for the official source and documentation tarballs. </td>
+    <td> Альтернативний лінк для завантаження вихідних файлів та документації. </td>
   </tr>
   
 </table>
