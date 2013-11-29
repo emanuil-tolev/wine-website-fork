@@ -1,0 +1,77 @@
+<!--TITLE:[Документація]-->
+<!--BLURB:[Документація]-->
+
+<h1 class="title">Документація</h1>
+
+ <h2>Путівники</h2>
+ <ul>
+   <li>
+     <a href="{$root}/docs/wineusr-guide/index">Путівник користувача Wine</a><br>
+     Як використовувати та налаштовувати Wine для запуску Windows застосунків.<br>
+     <span class=small>&nbsp;&nbsp;&nbsp;<b>формати:</b>
+     <a href="{$root}/docs/wineusr-guide/index">Онлайн</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/wineusr-guide.html">HTML</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/wineusr-guide.pdf">PDF</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/wineusr-guide.ps">PostScript</a>
+     </span>
+   </li><br>
+
+   <li>
+     <a href="{$root}/docs/winelib-guide/index">Путівник користувача Winelib</a><br>
+     Як використовувати Wine для портування Windows застосунків для Linux.<br>
+     <span class=small>&nbsp;&nbsp;&nbsp;<b>формати:</b>
+     <a href="{$root}/docs/winelib-guide/index">Онлайн</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winelib-guide.html">HTML</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winelib-guide.pdf">PDF</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winelib-guide.ps">PostScript</a>
+     </span>
+   </li><br>
+     
+   <li>
+     <a href="{$root}/docs/winedev-guide/index">Путівник розробників Wine</a><br>
+     Як стати розробником Wine.<br>
+     <span class=small>&nbsp;&nbsp;&nbsp;<b>формати:</b>
+     <a href="{$root}/docs/winedev-guide/index">Онлайн</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winedev-guide.html">HTML</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winedev-guide.pdf">PDF</a> |
+     <a href="http://ftp.winehq.org/pub/wine/docs/en/winedev-guide.ps">PostScript</a>
+     </span>
+   </li><br>
+
+   <li>
+     <a href="{$root}/howto">Як допомогти зробити працюючі застосунки у Wine</a><br>
+     Короткий путівник для тих, хто хоче нам допомогти.<br>
+   </li>
+ </ul>
+
+ <h2>Посібники</h2>
+ <ul>
+     <li><a href="{$root}/docs/wine">посібник wine</a>
+     <br>Параметри командного рядка для бінарного wine.</li><br>
+
+     <li><a href="{$root}/docs/wineserver">посібник wineserver</a>
+     <br>Параметри командного рядка для бінарного wineserver.</li><br>
+
+     <li><a href="{$root}/docs/winebuild">посібник winebuild</a>
+     <br>Параметри командного рядка для бінарного winebuild.</li><br>
+
+     <li><a href="{$root}/docs/winedump">посібник winedump</a>
+     <br>Параметри командного рядка для бінарного winedump.</li><br>
+
+     <li><a href="{$root}/docs/winemaker">посібник winemaker</a>
+     <br>Параметри командного рядка для скрипта winemaker.</li><br>
+
+     <li><a href="{$root}/docs/widl">посібник widl</a>
+     <br>Параметри командного рядка для компілятора IDL.</li><br>
+
+     <li><a href="{$root}/docs/wmc">посібник wmc</a>
+     <br>Параметри командного рядка для повідомлень компілятора.</li><br>
+
+     <li><a href="{$root}/docs/wrc">посібник wrc</a>
+     <br>Параметри командного рядка для компілятора ресурсів.</li><br>
+
+     <li><a href="{$root}/docs/winegcc">посібник winegcc</a>
+     <br>Параметри командного рядка для компілятора winegcc.</li><br>
+ </ul>
+
+<p>&nbsp;</p>
