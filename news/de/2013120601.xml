@@ -1,0 +1,16 @@
+<news>
+<date>6. Dezember 2013</date>
+<title>Wine 1.7.8 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.7.8 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.7.8">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Aktualisierte Version des Mono Pakets.</li>
+  <li>Verbesserungen in der BITS Service Implementierung.</li>
+  <li>Bessere Datentabellen für vertikale Japanische Schriften.</li>
+  <li>Verbesserte Backtraces bei neueren Mac OS X Versionen.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.8.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
