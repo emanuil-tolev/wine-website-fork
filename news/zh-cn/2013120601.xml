@@ -1,0 +1,16 @@
+<news>
+<date>十二月 6, 2013</date>
+<title>Wine 1.7.8 发布</title>
+<body>
+<p> Wine 开发版 1.7.8 现在可以使用了。</p>
+<p> 本次<a href="{$root}/announce/1.7.8">更新</a> :
+<ul>
+  <li>升级了 Mono 包的版本。</li>
+  <li>改进了 BITS 服务的实现。</li>
+  <li>更好的数据表来支持日文垂直字体。</li>
+  <li>改进了最近 Mac OS X 版本中的回溯。</li>
+  <li>各种 bug 的修复。</li>
+</ul>
+<p>源代码可以从<a href="http://prdownloads.sourceforge.net/wine/wine-1.7.8.tar.bz2">这里</a>获取。
+二进制包正在构建中，稍后将出现在各自相应的<a href="{$root}/download">下载位置</a>。
+</p></body></news>
