@@ -8,9 +8,9 @@
   <li>利用 Samba 的 NetAPI 库来支持配置远程共享。</li>
   <li>在 Mac 驱动中支持多种键盘布局。</li>
   <li>通过 XEMBED 改进了对嵌套的支持。</li>
-  <li>在 VBScript 中支持数组。</li>
-  <li>各种 bug 的修复</li>
+  <li>支持 VBScript 数组。</li>
+  <li>各种 bug 的修复。</li>
 </ul>
 <p>源代码可以从<a href="http://prdownloads.sourceforge.net/wine/wine-1.7.7.tar.bz2">这里</a>获取。
-二进制包正在构建中，稍后将出现在各自相应的<a href="{$root}/download">下载位置</a>.
+二进制包正在构建中，稍后将出现在各自相应的<a href="{$root}/download">下载位置</a>。
 </p></body></news>
