@@ -1,0 +1,16 @@
+<news>
+<date>十一月 25, 2013</date>
+<title>Wine 1.7.5 发布</title>
+<body>
+<p> Wine 开发版 1.7.5 现在可以使用了。</p>
+<p> 本次<a href="{$root}/announce/1.7.5">更新</a> :
+<ul>
+  <li>利用激活上下文来支持免注册 COM。</li>
+  <li>改进了对模拟加粗字体的支持。</li>
+  <li>Unicode 数据更新到 Unicode 6.3。</li>
+  <li>更好地支持 64 位类型库的注册。</li>
+  <li>各种 bug 的修复。</li>
+</ul>
+<p>源代码可以从<a href="http://prdownloads.sourceforge.net/wine/wine-1.7.5.tar.bz2">这里</a>获取。
+二进制包正在构建中，稍后将出现在各自相应的<a href="{$root}/download">下载位置</a>。
+</p></body></news>
