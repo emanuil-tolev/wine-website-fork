@@ -1,0 +1,15 @@
+<news>
+<date>6 de Dezembro de 2013</date>
+<title>Wine 1.7.8 lançado</title>
+<body>
+<p> A versão de desenvolvimento 1.7.8 já está disponível agora.</p>
+<p> <a href="{$root}/announce/1.7.8">Novidades</a> desta versão:
+<ul>
+  <li>Versão atualizada do pacote Mono.</li>
+  <li>Melhorias na implementação do serviço BITS.</li>
+  <li>Melhorias nas tabelas para suporte a fontes verticais em Japonês.</li>
+  <li>Melhores backtraces nas versões mais recentes do Mac OS X.</li>
+  <li>Várias correções de bugs.</li>
+<p><p>O código fonte está <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.8.tar.bz2">disponível agora</a>.
+Pacotes binários estão em processo de construção e irão aparecer em breve em suas respectivas <a href="{$root}/download">sessões da área de downloads</a>.
+</p></body></news>
