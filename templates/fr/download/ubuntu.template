@@ -27,7 +27,7 @@ alt="Système->Administration->Sources de logiciels->Autres logiciels" border="0
 
 <h2>Avertissement : paquets bêta</h2>
 
-<p><i>Les paquets 1.5 sont des paquets bêta, c.-à-d. qu'ils
+<p><i>Les paquets 1.7 sont des paquets bêta, c.-à-d. qu'ils
 peuvent à l'occasion souffrir de
 <a href="http://wiki.winehq.org/Regression">régressions</a>. Par conséquent, une
 mise à jour peut casser une fonctionnalité dans Wine. Si la version stable 1.4
@@ -39,15 +39,15 @@ de Wine fonctionne dans votre cas, vous ne devriez pas utiliser de paquets bêta
 <p>Une fois le dépôt PPA de WineHQ ajouté, l'installation peut se
 poursuivre.</p>
 
-<p><i>Pour la version bêta 1.5 la plus récente,
-<a href="apt://wine1.5">utilisez ce lien pour installer le paquet wine1.5</a>.</i></p>
-<p><i>Pour la version stable 1.4 (plus ancienne)
-<a href="apt://wine1.4">utilisez ce lien pour installer le paquet wine1.4</a>.</i></p>
+<p><i>Pour la version bêta 1.7 la plus récente,
+<a href="apt://wine1.7">utilisez ce lien pour installer le paquet wine1.7</a>.</i></p>
+<p><i>Pour la version stable 1.6 (plus ancienne)
+<a href="apt://wine1.6">utilisez ce lien pour installer le paquet wine1.6</a>.</i></p>
 
 <h2>Mise à niveau vers une nouvelle version d'Ubuntu</h2>
 
 <p>Si vous mettez à niveau le système entier, par exemple en passant d'Ubuntu
-10.04 à 10.10, vous devrez revenir sur cette page et ré-ajouter le dépôt. Le
+13.10 à 14.04, vous devrez revenir sur cette page et ré-ajouter le dépôt. Le
 gestionnaire de mises à jour intégré n'utilisera pas automatiquement le
 dépôt Wine.
 </p>
@@ -62,6 +62,6 @@ Kubuntu, Xubuntu ou d'autres distributions dérivées.</p>
 
 <p>Mettez ensuite à jour les informations sur les paquets d'APT en exécutant
  « <b>sudo apt-get update</b> ». Vous pouvez dès lors installer Wine en tapant
- « <b>sudo apt-get install wine1.5</b> ».</p>
+ « <b>sudo apt-get install wine1.7</b> ».</p>
 
 <p>Si vous voulez parcourir manuellement le PPA, vous pouvez <a href="https://launchpad.net/~ubuntu-wine/+archive/ppa">visiter sa page Launchpad</a>.</p>
