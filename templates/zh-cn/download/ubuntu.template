@@ -22,21 +22,21 @@ Ubuntu 的源默认包含了 Wine，当然，如果你想更新到最新版本�
 
 <h2>警告：Beta 版安装包</h2>
 
-<p><i>版本 1.5 的安装包是 beta 版的安装包。 这意味着他们可能偶尔遭受<a href="http://wiki.winehq.org/Regression">倒退（regressions）</a>，结果是一个更新可能破坏 Wine 的（原有）功能。
-所以，如果稳定版的 Wine 1.4 已经能够为你工作，你或许不太想用 beta 版的安装包。</i></p>
+<p><i>版本 1.7 的安装包是 beta 版的安装包。 这意味着他们可能偶尔遭受<a href="http://wiki.winehq.org/Regression">退化（regressions）</a>，结果是一个更新可能破坏 Wine 的（原有）功能。
+所以，如果稳定版的 Wine 1.6 已经能够为你工作，你或许不太想用 beta 版的安装包。</i></p>
 
 <h2>安装 Wine：</h2>
 
 <p>一旦你已经添加了 WineHQ PPA 源，你就已经可以开始安装了。</p>
 
-<p><i>获取最新的 Wine 1.5 beta，
-<a href="apt://wine1.5">点击这个链接来安装 wine1.5 的安装包</a>。</i></p>
-<p><i>安装旧版但稳定的 Wine 1.4，
-<a href="apt://wine1.4">点击这个链接来安装 wine1.4 的安装包</a>。</i></p>
+<p><i>获取最新的 Wine 1.7 beta，
+<a href="apt://wine1.7">点击这个链接来安装 wine1.7 的安装包</a>。</i></p>
+<p><i>安装旧版但稳定的 Wine 1.6，
+<a href="apt://wine1.6">点击这个链接来安装 wine1.6 的安装包</a>。</i></p>
 
 <h2>更新 Ubuntu 到一个新的版本</h2>
 
-<p>如果你更新了整个系统，比如从 Ubuntu 11.10 到 12.04，你需要回到这个页面并重新添加软件源。内置的更新管理器是不会自动开启 Wine 源的。</p>
+<p>如果你更新了整个系统，比如从 Ubuntu 13.10 到 14.04，你需要回到这个页面并重新添加软件源。内置的更新管理器是不会自动开启 Wine 源的。</p>
 
 <h2>使用命令行来安装 Wine：</h2>
 
@@ -46,6 +46,6 @@ Ubuntu 的源默认包含了 Wine，当然，如果你想更新到最新版本�
 
 <p>接着运行 ‘<b>sudo apt-get 
 update</b>’ 来更新 APT 的包信息。 现在你就可以使用 ‘<b>sudo apt-get 
-install wine1.5</b>’ 来安装 Wine 了。</p>
+install wine1.7</b>’ 来安装 Wine 了。</p>
 
 <p>如果你想亲自浏览 PPA，可以<a href="https://launchpad.net/~ubuntu-wine/+archive/ppa">访问它的 Launchpad 页面</a>。</p>
