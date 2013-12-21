@@ -1,0 +1,15 @@
+<news>
+<date>20. Dezember 2013</date>
+<title>Wine 1.7.9 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.7.9 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.7.9">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Verbesserung des Verschieben/der Größenanpassung von Fenstern im Mac Treiber.</li>
+  <li>Einige Fehlerbehebungen an den DirectDraw Farbskalen.</li>
+  <li>Weniger Code Duplication zwischen C++ Laufzeit Versionen.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.9.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
