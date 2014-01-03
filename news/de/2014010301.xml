@@ -1,0 +1,17 @@
+<news>
+<date>3. Januar 2014</date>
+<title>Wine 1.7.10 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.7.10 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.7.10">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Fenster Maximierung im Mac Treiber.</li>
+  <li>AVI Compressor Implementierung.</li>
+  <li>Unterstützung für Thread-local storage in dynamisch geladenen Bibliotheken.</li>
+  <li>Anfänge einer Task Scheduler Implementierung.</li>
+  <li>Erweiterte Unterstützung für IPX Protokoll.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.10.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
