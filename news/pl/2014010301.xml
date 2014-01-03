@@ -1,0 +1,17 @@
+<news>
+<date>Styczeń  3, 2014</date>
+<title>Wydano Wine 1.7.10</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.7.10 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.7.10">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Maksymalizacja okien w sterowniku Mac.</li>
+  <li>Implementacja kompresora AVI.</li>
+  <li>Pamięć lokalna wątku w dynamicznie wczytywanych bibliotekach.</li>
+  <li>Początki implementacji Harmonogramu Zadań.</li>
+  <li>Rozszerzone wsparcie protokołu IPX.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul>
+<p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.10.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
