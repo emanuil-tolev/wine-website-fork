@@ -1,0 +1,17 @@
+<news>
+<date>January  3, 2014</date>
+<title>Wine 1.7.10 Released</title>
+<body>
+<p> The Wine development release 1.7.10 is now available.</p>
+<p> <a href="{$root}/announce/1.7.10">What's new</a> in this release:
+<ul>
+  <li>Window maximization in the Mac driver.</li>
+  <li>AVI compressor implementation.</li>
+  <li>Thread local storage support in dynamically loaded libraries.</li>
+  <li>Beginnings of a Task Scheduler implementation.</li>
+  <li>Extended IPX protocol support.</li>
+  <li>Various bug fixes.</li>
+</ul>
+<p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.10.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
