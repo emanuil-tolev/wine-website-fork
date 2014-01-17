@@ -1,0 +1,16 @@
+<news>
+<date>17 janvier 2014</date>
+<title>Sortie de Wine 1.7.11</title>
+<body>
+<p> La version de développement 1.7.11 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.7.11">Nouveautés</a> de cette version :
+<ul>
+  <li>Prise en charge de Uniscribe dans le contrôle RichEdit.</li>
+  <li>Prise en charge des variables conditionnelles et des verrous SRW (Slim Reader/Writer).</li>
+  <li>Travail préparatoire additionnel pour le flux de commandes D3D.</li>
+  <li>Menu Démarrer optionnel dans le mode bureau.</li>
+  <li>Prise en charge améliorée des métriques de fontes verticales.</li>
+  <li>Diverses corrections de bugs.</li>
+</ul></p>
+<p><p>Le <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.11.tar.bz2">code source</a> est disponible dès à présent. Les paquets binaires sont en cours de construction, et apparaîtront sous peu sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
