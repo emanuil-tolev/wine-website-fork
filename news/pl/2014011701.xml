@@ -1,0 +1,17 @@
+<news>
+<date>Styczeń 17, 2014</date>
+<title>Wydano Wine 1.7.11</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.7.11 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.7.11">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Wsparcie dla Uniscribe w elementach sterowania RichEdit.</li>
+  <li>Wsparcie dla zmiennych warunkowych i blokad Slim Reader/Writer.</li>
+  <li>Włożono więcej pracy w powstawanie strumienia poleceń D3D.</li>
+  <li>Opcjonalne menu start w trybie pulpitu.</li>
+  <li>Ulepszono wsparcie dla metryk pionowych czcionek.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul>
+<p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.11.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
