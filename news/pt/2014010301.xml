@@ -1,0 +1,16 @@
+<news>
+<date>3 de Janeiro de 2014</date>
+<title>Wine 1.7.10 lançado</title>
+<body>
+<p> A versão de desenvolvimento 1.7.10 já está disponível agora.</p>
+<p> <a href="{$root}/announce/1.7.10">Novidades</a> desta versão:
+<ul>
+  <li>Maximização de janelas no driver de Mac.</li>
+  <li>Implementação de um compressor AVI.</li>
+  <li>Armazenamento local a threads em bibliotecas carregadas dinamicamente.</li>
+  <li>Começo da implementação de um Gerenciador de Tarefas.</li>
+  <li>Suporte ao protocolo IPX estendido.</li>
+  <li>Várias correções de bugs.</li>
+<p><p>O código fonte está <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.10.tar.bz2">disponível agora</a>.
+Pacotes binários estão em processo de construção e irão aparecer em breve em suas respectivas <a href="{$root}/download">sessões da área de downloads</a>.
+</p></body></news>
