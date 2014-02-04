@@ -6,7 +6,7 @@
 
 <div style="width: 250px; float: left; padding: 0 10px 0 10px;">
   {$summary}
-  <p class="small"><a href="{$root}/wwn/source/{$xml}">מקור XML</a><br>
+  <p class="small"><a href="{$root}/wwn/en/{$xml}.xml">מקור XML</a><br>
   <a href="{$root}/wwn/">דיווחים נוספים...</a></p>
 </div>
 
