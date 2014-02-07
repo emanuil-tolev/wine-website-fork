@@ -1,0 +1,16 @@
+<news>
+<date>February  7, 2014</date>
+<title>Wine 1.7.12 Released</title>
+<body>
+<p> The Wine development release 1.7.12 is now available.</p>
+<p> <a href="{$root}/announce/1.7.12">What's new</a> in this release:
+<ul>
+  <li>Initial support for Window Media Player interfaces.</li>
+  <li>Some more Task Scheduler support.</li>
+  <li>Various C++ runtime fixes.</li>
+  <li>More dlls with ugly names for Windows 8 API set support.</li>
+  <li>Various bug fixes.</li>
+</ul>
+<p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.12.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
