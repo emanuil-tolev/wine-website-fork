@@ -1,0 +1,16 @@
+<news>
+<date>7. Februar 2014</date>
+<title>Wine 1.7.12 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.7.12 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.7.12">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Anfängliche Unterstützung der Window Media Player Schnittstellen.</li>
+  <li>Verbessere Task Scheduler Unterstützung.</li>
+  <li>Verschiedene C++ Laufzeit Fehlerbehebungen.</li>
+  <li>Mehr Dlls mit hässlichen Namen für Windows 8 API Unterstützung.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.12.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
