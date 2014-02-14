@@ -559,7 +559,7 @@ class wwn
             case "TITLE":
               break;
             case "AUTHOR":
-              $this->author = $data;
+              $this->author .= $data;
               break;
             default:
               $this->body .= $data;
