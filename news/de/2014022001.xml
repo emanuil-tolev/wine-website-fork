@@ -1,0 +1,17 @@
+<news>
+<date>20. Februar 2014</date>
+<title>Wine 1.7.13 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.7.13 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.7.13">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Verbesserte Task Scheduler Unterstützung.</li>
+  <li>Ein paar neue Direct3D 10 Schnittstellen.</li>
+  <li>Mehr Windows Media Player Stubs.</li>
+  <li>Verbesserte ARM Code Generierung.</li>
+  <li>Verbesserte Angabe der Speichergröße unter Mac OS X.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.13.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
