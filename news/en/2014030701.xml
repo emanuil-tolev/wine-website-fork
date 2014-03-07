@@ -1,0 +1,17 @@
+<news>
+<date>March  7, 2014</date>
+<title>Wine 1.7.14 Released</title>
+<body>
+<p> The Wine development release 1.7.14 is now available.</p>
+<p> <a href="{$root}/announce/1.7.14">What's new</a> in this release:
+<ul>
+  <li>More Task Scheduler support.</li>
+  <li>Improvements for AVI encoding support.</li>
+  <li>More VisualBasic interfaces in MSXML.</li>
+  <li>Support for deflate content encoding in Wininet.</li>
+  <li>Some fixes for monochrome printers.</li>
+  <li>Various bug fixes.</li>
+</ul>
+<p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.14.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
