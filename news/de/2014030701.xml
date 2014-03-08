@@ -1,0 +1,17 @@
+<news>
+<date>7. März 2014</date>
+<title>Wine 1.7.14 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.7.14 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.7.14">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Verbesserte Task Scheduler Unterstützung.</li>
+  <li>Verbesserungen an der AVI Kodierer Unterstützung.</li>
+  <li>Verbesserte VisualBasic Schnittstellen in MSXML.</li>
+  <li>Unterstützung für "deflate content encoding" in Wininet.</li>
+  <li>Einige Fehlerbehebungen für Schwarz-Weiß-Drucker .</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.14.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
