@@ -1,0 +1,17 @@
+<news>
+<date>Marzec  7, 2014</date>
+<title>Wydano Wine 1.7.14</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.7.14 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.7.14">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Większe wsparcie dla Harmonogramu Zadań.</li>
+  <li>Usprawnienia w obsłudze kodowania AVI .</li>
+  <li>Więcej interfejsów VisualBasic w MSXML.</li>
+  <li>Wsparcie dla kodowania zawartości deflate w Wininet.</li>
+  <li>Kilka poprawek w obsłudze monochromatycznych drukarek.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul>
+<p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.14.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
