@@ -10,7 +10,7 @@ Its main goal is to inform you of what's going on around Wine. Wine is an open s
 
 <person posts="9" size="11" who="julliard at winehq.org (Alexandre Julliard)" />
 <person posts="7" size="9" who="jwhite at codeweavers.com (Jeremy White)" />
-<person posts="6" size="8" who="nerv at dawncrow.de (=?ISO-8859-1?Q?Andr=E9_Hentschel?=)" />
+<person posts="6" size="8" who="nerv at dawncrow.de (André Hentschel)" />
 <person posts="6" size="7" who="nsivov at codeweavers.com (Nikolay Sivov)" />
 <person posts="6" size="6" who="hverbeet at gmail.com (Henri Verbeet)" />
 <person posts="5" size="18" who="elias.vds at gmail.com (Elias Vanderstuyft)" />
@@ -45,7 +45,7 @@ See <a href="http://wiki.winehq.org/SummerOfCode">our Wiki</a> for more informat
 >
 <p>
 Valve has open sourced their DirectX to OpenGL translator named <a href="//github.com/ValveSoftware/ToGL">ToGL</a>.
-The media and even some developers wondered if this is usefull for Wine. Stefan D&#214;singer had a quick look at the code and gave an answer:
+The media and even some developers wondered if this is usefull for Wine. Stefan Dösinger had a quick look at the code and gave an answer:
 </p>
 <quote>
 <p>No, it's not. It is *very* limited. It doesn't even have stateblock
@@ -69,8 +69,8 @@ though.</p>
 	posts="10"
 >
 <p>
-Jeremy White finally got annoyed enough by the remaining <a href="//test.winehq.org/data/">test failures</a> on Windows and pushes people to fix them.
-This also had the fact that other developers were afraid to get shamed and also fixed test failures :)
+Jeremy White finally got annoyed enough by the remaining <a href="//test.winehq.org/data/">test failures</a> on Windows and pushed people to fix them.
+This also had the fact that other developers were afraid to get shamed and also fix test failures :)
 </p>
 <p>
 We already made good progress, but there are some strange behaviours of Windows, other hard to analyze failures and problems caused by <a href="http://wiki.winehq.org/WineTestBotVMs">the way</a> the WineTestBot works.
@@ -79,7 +79,7 @@ It seems often enough we trigger corner cases in Qemu and upgraded raises even w
 <p>
 But what is Wine testing on Windows you might ask, here is a short answer. Well, the Windows API is a huge set of functions, to replicate them we need to know
 how they work without disassembling them (and MSDN is mostly wrong). So we write tests. A test calls a function and checks e.g. the return value, if that value is not expected then this is a failure.
-We run the tests on different Windows Versions and on Wine, that means the chance of getting a non-expected value is good :)
+We run the tests on different Windows Versions and on Wine, that means the chance of getting a non-expected value is good.:)
 </p>
 <p>
 In the end the benefits of our test suite are:
