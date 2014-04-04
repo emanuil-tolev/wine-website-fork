@@ -1,0 +1,15 @@
+<news>
+<date>4. April 2014</date>
+<title>Wine 1.7.16 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.7.16 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.7.16">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Mehr Fehlerbehebungen an den Regressionstests.</li>
+  <li>Bessere Unterstützung für String-Arrays im IDL Compiler.</li>
+  <li>Anfängliche Basis für DirectX Videobeschleunigung.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.16.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
