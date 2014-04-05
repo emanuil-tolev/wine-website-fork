@@ -1,0 +1,15 @@
+<news>
+<date>Kwiecień  4, 2014</date>
+<title>Wydano Wine 1.7.16</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.7.16 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.7.16">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Więcej poprawek po testach regresji.</li>
+  <li>Lepsza obsługa macierzy ciągów znaków w kompilatorze IDL.</li>
+  <li>Wstępne zalążki dla przyspieszenia wideo przez DirectX.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul>
+<p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.16.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
