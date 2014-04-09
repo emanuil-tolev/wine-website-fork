@@ -8,7 +8,7 @@ Wine for Debian Sid
 <p>Debian-based 发行版使用为人所熟知的 APT 这一特定的工具来管理软件包。APT 能够自动解决软件安装包的依赖、更新包、检索 APT 仓库。Debian-based 发行版有他们自己包含 Wine 的软件源，然而，我们仍保持我们自己的源到最新 beta 版，以便可以从这里下载。</p>
 
 <p><b>警告：这些是 beta 版安装包</b><br>
-<i>这意味着他们可能偶尔遭受 <a href="http://wiki.winehq.org/Regression">倒退（regressions）</a>，结果是一个更新可能破坏 Wine 的（原有）功能。如果最新的 Wine 稳定版（当前是 Wine {$config_stable_release}）能够为你工作，你或者不太想用这些 beta 版安装包。</i></p>
+<i>这意味着他们可能偶尔遭受 <a href="http://wiki.winehq.org/RegressionTesting">倒退（regressions）</a>，结果是一个更新可能破坏 Wine 的（原有）功能。如果最新的 Wine 稳定版（当前是 Wine {$config_stable_release}）能够为你工作，你或者不太想用这些 beta 版安装包。</i></p>
 
 <p>这个网站有 i386 和 amd64 架构的安装包。</p>
 
