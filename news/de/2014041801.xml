@@ -1,0 +1,15 @@
+<news>
+<date>18. April 2014</date>
+<title>Wine 1.7.17 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.7.17 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.7.17">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Verbesserte Task Scheduler Unterstützung.</li>
+  <li>Kompatiblere C Runtime durch gemeinsam genutzten Quellcode.</li>
+  <li>Fehlerbehebungen in der Mac OS X Joystick Unterstützung.</li>
+  <li>Verschiedene Fehlerbehebungen.</li>
+</ul>
+<p>Der Quellcode ist jetzt <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.17.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
