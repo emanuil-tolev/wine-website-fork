@@ -1,0 +1,17 @@
+<news>
+<date>May  2, 2014</date>
+<title>Wine 1.7.18 Released</title>
+<body>
+<p> The Wine development release 1.7.18 is now available.</p>
+<p> <a href="{$root}/announce/1.7.18">What's new</a> in this release:
+<ul>
+  <li>Improved OLE Accessible Object support.</li>
+  <li>Window sizing improvements in the Mac driver.</li>
+  <li>Fixes for various memory issues found by Valgrind.</li>
+  <li>A few more MSHTML functions.</li>
+  <li>Some DirectDraw cleanups.</li>
+  <li>Various bug fixes.</li>
+</ul>
+<p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.18.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
