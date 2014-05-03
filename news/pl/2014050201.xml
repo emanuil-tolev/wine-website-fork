@@ -1,0 +1,17 @@
+<news>
+<date>Maj  2, 2014</date>
+<title>Wydano Wine 1.7.18</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.7.18 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.7.18">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Ulepszona obsługa obiektów dostępności OLE.</li>
+  <li>Ulepszenia w wymiarowaniu okien w sterowniku Mac.</li>
+  <li>Poprawki dla różnych problemów z pamięcią znalezione przez Valgrind.</li>
+  <li>Kilka funkcji MSHTML więcej.</li>
+  <li>Kilka porządków w DirectDraw.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul>
+<p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.18.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
