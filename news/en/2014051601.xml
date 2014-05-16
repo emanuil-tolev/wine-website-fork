@@ -1,0 +1,17 @@
+<news>
+<date>May 16, 2014</date>
+<title>Wine 1.7.19 Released</title>
+<body>
+<p> The Wine development release 1.7.19 is now available.</p>
+<p> <a href="{$root}/announce/1.7.19">What's new</a> in this release:
+<ul>
+  <li>New JSProxy DLL for automatic proxy configuration.</li>
+  <li>More OLE Accessible Object support.</li>
+  <li>Improvements to the XML writer.</li>
+  <li>Fixes for various memory issues found by Valgrind.</li>
+  <li>Initial headers for Direct2D support.</li>
+  <li>Various bug fixes.</li>
+</ul>
+<p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.19.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
