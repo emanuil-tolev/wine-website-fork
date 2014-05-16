@@ -1,0 +1,16 @@
+<news>
+<date>16 mai 2014</date>
+<title>Sortie de Wine 1.7.19</title>
+<body>
+<p> La version de développement 1.7.19 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.7.19">Nouveautés</a> de cette version :
+<ul>
+  <li>Nouvelle DLL JSProxy pour une configuration automatique des serveurs mandataires.</li>
+  <li>Meilleurs prise en charge de l'API OLE Accessible Object.</li>
+  <li>Améliorations dans le rédacteur XML.</li>
+  <li>Correctifs pour divers problèmes mémoire détectés par Valgrind.</li>
+  <li>Fichiers d'en-tête initiaux pour la prise en charge de Direct2D.</li>
+  <li>Diverses corrections de bugs.</li>
+</ul></p>
+<p><p>Le <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.19.tar.bz2">code source</a> est disponible dès à présent. Les paquets binaires sont en cours de construction, et apparaîtront sous peu sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
