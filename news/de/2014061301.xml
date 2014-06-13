@@ -1,0 +1,16 @@
+<news>
+<date>13. Juni 2014</date>
+<title>Wine 1.7.20 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.7.20 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.7.20">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Korrekturen für X11 Drag &amp; Drop.</li>
+  <li>Zusätzliche C/C++ Laufzeitfunktionen.</li>
+  <li>Fehlerkorrekturen für verschiedene Speicherprobleme, die mit Valgrind gefunden wurden.</li>
+  <li>Einige OLE-Speicher Verbesserungen.</li>
+  <li>Diverse Fehlerkorrekturen.</li>
+</ul>
+<p>Der Quelltext ist ab sofort <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.20.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
