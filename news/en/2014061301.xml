@@ -1,0 +1,16 @@
+<news>
+<date>June 13, 2014</date>
+<title>Wine 1.7.20 Released</title>
+<body>
+<p> The Wine development release 1.7.20 is now available.</p>
+<p> <a href="{$root}/announce/1.7.20">What's new</a> in this release:
+<ul>
+  <li>X11 drag &amp; drop fixes.</li>
+  <li>A few more C/C++ runtime functions.</li>
+  <li>Fixes for various memory issues found by Valgrind.</li>
+  <li>Some OLE storage fixes.</li>
+  <li>Various bug fixes.</li>
+</ul>
+<p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.20.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
