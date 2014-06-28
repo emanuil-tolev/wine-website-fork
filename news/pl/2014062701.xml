@@ -1,0 +1,16 @@
+<news>
+<date>Czerwiec 27, 2014</date>
+<title>Wydano Wine 1.7.21</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.7.21 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.7.21">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Obsługa krytycznych sekcji w bibliotece uruchomieniowej C.</li>
+  <li>Dane Unicode uaktualniono do Unicode 7.0.</li>
+  <li>Obsługa kodowania PNG z przeplotem.</li>
+  <li>Zalążek obsługi dla biblioteki Packager.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul>
+<p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.21.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
