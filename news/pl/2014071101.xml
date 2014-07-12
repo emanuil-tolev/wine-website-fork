@@ -1,0 +1,16 @@
+<news>
+<date>Lipiec 11, 2014</date>
+<title>Wydano Wine 1.7.22</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.7.22 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.7.22">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Obsługa par znaków Unicode służących do wtrąceń w zdaniach.</li>
+  <li>Ulepszona obsługa ciasteczek internetowych.</li>
+  <li>Sterownik CoreAudio dla OS X używa AUHAL zamiast AudioQueue.</li>
+  <li>Wstępna obsługa informacji geograficznych.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul>
+<p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.22.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
