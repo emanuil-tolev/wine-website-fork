@@ -1,0 +1,16 @@
+<news>
+<date>11. Juli 2014</date>
+<title>Wine 1.7.22 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.7.22 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.7.22">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Unterstützung von Unicode-Klammerpaaren.</li>
+  <li>Verbesserte Internet-Cookie Unterstützung.</li>
+  <li>OS X CoreAudio-Treiber benutzt AUHAL an Stelle von AudioQueue.</li>
+  <li>Anfängliche Unterstützung von Geografischen Informationen.</li>
+  <li>Diverse Fehlerkorrekturen.</li>
+</ul>
+ <p>Der Quelltext ist ab sofort <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.22.tar.bz2">verfügbar</a>.
+15 Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
