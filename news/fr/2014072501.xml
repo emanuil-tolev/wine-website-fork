@@ -1,0 +1,15 @@
+<news>
+<date>25 juillet 2014</date>
+<title>Sortie de Wine 1.7.23</title>
+<body>
+<p> La version de développement 1.7.23 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.7.23">Nouveautés</a> de cette version :
+<ul>
+  <li>Meilleure prise en charge du glisser-déposer de fichiers.</li>
+  <li>Améliorations dans la gestion des cookies HTTP.</li>
+  <li>Prise en charge initiale des constructions Android 64 bits.</li>
+  <li>Correctifs dans la gestion des certificats cryptographiques.</li>
+  <li>Diverses corrections de bugs.</li>
+</ul></p>
+<p><p>Le <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.23.tar.bz2">code source</a> est disponible dès à présent. Les paquets binaires sont en cours de construction, et apparaîtront sous peu sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
