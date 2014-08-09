@@ -1,0 +1,15 @@
+<news>
+<date>Sierpień  8, 2014</date>
+<title>Wydano Wine 1.7.24</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.7.24 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.7.24">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Początki implementacji klas DirectWrite.</li>
+  <li>Początki biblioteki owijającej dll dla biblioteki przechwytywania pakietów.</li>
+  <li>Kilka poprawek w kryptografii.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul>
+<p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.24.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
