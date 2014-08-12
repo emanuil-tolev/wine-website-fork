@@ -1,0 +1,15 @@
+<news>
+<date>8. August 2014</date>
+<title>Wine 1.7.24 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.7.24 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.7.24">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Anfänge der Implementationen einiger DirectWrite-Klassen.</li>
+  <li>Anfängliche Wrapper-DLL der Paketsammler-Bibliothek.</li>
+  <li>Einige Crypto-Verbesserungen.</li>
+  <li>Diverse Fehlerkorrekturen.</li>
+</ul>
+<p>Der Quelltext ist ab sofort <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.24.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
