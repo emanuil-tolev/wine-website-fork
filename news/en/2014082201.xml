@@ -1,0 +1,16 @@
+<news>
+<date>August 22, 2014</date>
+<title>Wine 1.7.25 Released</title>
+<body>
+<p> The Wine development release 1.7.25 is now available.</p>
+<p> <a href="{$root}/announce/1.7.25">What's new</a> in this release:
+<ul>
+  <li>Implementation of the packet capture library.</li>
+  <li>A few more DirectWrite functions.</li>
+  <li>Improvements in HTML table support.</li>
+  <li>More VBScript math functions.</li>
+  <li>Various bug fixes.</li>
+</ul>
+<p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.25.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
