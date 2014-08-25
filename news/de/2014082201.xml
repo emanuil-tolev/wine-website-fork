@@ -1,0 +1,16 @@
+<news>
+<date>22. August 2014</date>
+<title>Wine 1.7.25 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.7.25 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.7.25">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Implementierung der Paketsammler-Bibliothek (wpcap).</li>
+  <li>Einige zusätzliche DirectWrite-Funktionen.</li>
+  <li>Verbesserungen der HTML-Tabellen Unterstützung.</li>
+  <li>Mehr mathematische VBScript-Funktionen.</li>
+  <li>Diverse Fehlerkorrekturen.</li>
+</ul>
+<p>Der Quelltext ist ab sofort <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.25.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
