@@ -3,24 +3,17 @@
 
 <h1 class="title" style="margin-bottom: 10px;">Arama Sonuçları</h1>
 
-<div id="cse-search-results"></div>
-<script type="text/javascript">
-  $.gglclientCoords = function() {
-     var dimensions = {width: 0, height: 0};
-     if (document.documentElement) {
-         dimensions.width = document.documentElement.offsetWidth;
-         dimensions.height = document.documentElement.offsetHeight;
-     } else if (window.innerWidth && window.innerHeight) {
-         dimensions.width = window.innerWidth;
-         dimensions.height = window.innerHeight;
-     }
-     return dimensions;
-  }
-  var googleSearchIframeName = "cse-search-results";
-  var googleSearchFormName = "cse-search-box";
-  var googleSearchFrameWidth = ($.gglclientCoords().width - 250);
-  var googleSearchDomain = "www.google.com";
-  var googleSearchPath = "/cse";
+<script>
+  (function() {
+    var cx = 'partner-pub-0971840239976722:w9sqbcsxtyf';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript" src="//www.google.com/afsonline/show_afs_search.js"></script>
+<gcse:search lr="lang_{$langCode}"></gcse:search>
 
