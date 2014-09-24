@@ -1,0 +1,15 @@
+<news>
+<date>Wrzesień 19, 2014</date>
+<title>Wydano Wine 1.7.27</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.7.27 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.7.27">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Wykonano pracę na rzecz obsługi Direct2D.</li>
+  <li>Kilka poprawek do interfejsów RichEdit.</li>
+  <li>Wstępna obsługa dla ICMP w wersji 6.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul>
+<p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.27.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
