@@ -28,7 +28,7 @@ Its main goal is to inform you of what's going on around Wine. Wine is an open s
 	posts="0"
 >
 <p>
-As you might have seen in <a href="//www.winehq.org/wwn/375">WWN 375</a>, Kai Tietz and I are working on MinGW-w64 targeting ARMv7.
+As you might have seen in <a href="//www.winehq.org/wwn/369">WWN 369</a>, Kai Tietz and I are working on MinGW-w64 targeting ARMv7.
 </p>
 <p>
 Meanwhile I finished porting the CRT, but after a hackathon last week, we found out that we ran into a chicken-egg situation.
@@ -49,7 +49,7 @@ After that the work on libgcc can begin and then we need to get a lot of things 
 >
 <p>
 Jacek Caban, who maintains the wine-gecko code, wrote to <a href="//www.winehq.org/pipermail/wine-devel/2014-September/105276.html">wine-devel</a> about an upcoming
-wine-gecko version and why it took so long after the last release.
+wine-gecko version and why it took so long after the last release. Happy testing!
 </p>
 </section>
 
