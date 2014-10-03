@@ -1,0 +1,15 @@
+<news>
+<date>October  3, 2014</date>
+<title>Wine 1.7.28 Released</title>
+<body>
+<p> The Wine development release 1.7.28 is now available.</p>
+<p> <a href="{$root}/announce/1.7.28">What's new</a> in this release:
+<ul>
+  <li>Support for conditional compilation in JavaScript.</li>
+  <li>Bidirectional text support in DirectWrite.</li>
+  <li>Stubs for DirectPlay Voice support.</li>
+  <li>Various bug fixes.</li>
+</ul>
+<p>The source is <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.28.tar.bz2">available now</a>.
+Binary packages are in the process of being built, and will appear soon at their respective <a href="{$root}/download">download locations</a>.
+</p></body></news>
