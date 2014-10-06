@@ -1,0 +1,15 @@
+<news>
+<date>3. Oktober 2014</date>
+<title>Wine 1.7.28 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.7.28 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.7.28">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Unterstützung für bedingte Kompilierung von JavaScript.</li>
+  <li>Unterstützung von bidirektionellem Text in DirectWrite.</li>
+  <li>Stubs für DirectPlay-Voice-Unterstützung.</li>
+  <li>Diverse Fehlerkorrekturen.</li>
+</ul>
+<p>Der Quelltext ist ab sofort <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.28.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
