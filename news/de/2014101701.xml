@@ -1,0 +1,15 @@
+<news>
+<date>October 17, 2014</date>
+<title>Wine 1.7.29 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.7.29 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.7.29">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Unterstützung von Shaping und BiDi-Mirroring in DirectWrite.</li>
+  <li>Korrekturen an der Behandlung von Page-faults.</li>
+  <li>Einige zusätzliche C-Laufzeitfunktionen.</li>
+  <li>Diverse Fehlerkorrekturen.</li>
+</ul>
+<p>Der Quelltext ist ab sofort <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.29.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
