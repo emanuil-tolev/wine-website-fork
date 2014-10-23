@@ -14,12 +14,19 @@ $ver = PAGE_PARAMS;
 $tag = ($ver == "latest") ? "master" : "wine-" . urlencode($ver);
 $announce = $config->git_tree . "/wine.git/" . $tag . ":ANNOUNCE";
 
+// announce title
+$title = "";
+
 // load announce
 if ($arr = file($announce))
 {
     $in_header = 1;
+    $x = 0;
     while (list($c,$val) = each($arr))
     {
+        if ($c == 0)
+            $title = $html->encode(trim($arr[$c]));
+
         $arr[$c] = $html->urlify($arr[$c]);
 
         if (preg_match("/^--------------------/", $arr[$c])) $in_header = 0;
@@ -43,10 +50,14 @@ if ($arr = file($announce))
                                     "\\1<a href=\"".$config->bug_system."\\2\">\\2</a>",
                                     $arr[$c]);
         }
+
+        $x++;
     }
     $announce = join("",$arr);
 
     // display page
+    $html->meta_og['title'] = $title;
+    $html->page_title .= " - {$title}";
     echo $html->pre($announce);
 }
 else
