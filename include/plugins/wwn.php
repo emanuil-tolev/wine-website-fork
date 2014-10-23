@@ -69,6 +69,9 @@ switch ($_PLUGIN['mode'])
             case preg_match("/^[0-9]+$/", PAGE_PARAMS):
                 // display single WWN issue
                 echo $wwn->view_issue(PAGE_PARAMS);
+                // page title
+                $html->page_title .= " - WWN Issue ".PAGE_PARAMS;
+                $html->meta_og['title'] = "WWN Issue ".PAGE_PARAMS;
                 break;
              // end single issue
 
