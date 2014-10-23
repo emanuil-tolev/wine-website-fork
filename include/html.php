@@ -17,6 +17,7 @@ class html
     public $page_style;
     public $meta_keywords;
     public $meta_description;
+    public $meta_og = array();
     public $rss_link;
     public $css_links = array('styles');
     public $js_links = array('jquery','utils');
@@ -62,7 +63,7 @@ class html
         // 404 not found header
         if ($this->in404)
             header("HTTP/1.1 404 Not Found");
-        
+
         // set meta tags
         $meta_keywords = "";
         $meta_description = "";
@@ -70,7 +71,42 @@ class html
             $meta_keywords = $this->meta("keywords", $this->meta_keywords);
         if ($this->meta_description)
             $meta_description = $this->meta("description", $this->meta_description);
-        
+
+        // open graph tags
+        $meta_og = "";
+        if (empty($this->in403) and empty($this->in404) and isset($this->meta_og) and is_array($this->meta_og))
+        {
+            // defaults and fallbacks
+            if (empty($this->meta_og['title']) and !empty($this->page_title))
+                $this->meta_og['title'] =& $this->page_title;
+            if (empty($this->mega_og['site_name']))
+                $this->meta_og['site_name'] = $config->site_name;
+            if (empty($this->meta_og['description']) and !empty($this->meta_description))
+                $this->meta_og['description'] = $this->meta_description;
+            if (empty($this->meta_og['type']))
+                $this->meta_og['type'] = 'article';
+
+            // loop and build meta_og string
+            foreach ($this->meta_og as $og => $data)
+            {
+                if (is_array($data))
+                {
+                    foreach ($data as $in_data)
+                    {
+                        if (!empty($meta_og))
+                            $meta_og .= "    ";
+                        $meta_og .= "<meta property=\"og:{$og}\" content=\"{$in_data}\">\n";
+                    }
+                }
+                else
+                {
+                    if (!empty($meta_og))
+                        $meta_og .= "    ";
+                    $meta_og .= "<meta property=\"og:{$og}\" content=\"{$data}\">\n";
+                }
+            }
+        }
+
         // rss link
         if ($this->rss_link)
             $rss_link = '<link rel="alternate" title="'.$title.'RSS" href="'.$this->rss_link.'" type="application/rss+xml">';
@@ -96,7 +132,7 @@ class html
             }
             unset($i);
         }
-        
+
         // javascript links
         $js_links = "";
         if (count($this->js_links))
@@ -126,7 +162,7 @@ class html
                 $this->http_header("text/plain");
                 echo $this->page;
                 break;
-        
+
             // print view
             case "print":
                 $this->http_header("text/html");
@@ -140,7 +176,7 @@ class html
                                      1
                                     );
                 break;
-            
+
             // regular view
             default:
                 $this->http_header("text/html");
@@ -152,6 +188,7 @@ class html
                                            'page_blurb'       => $this->page_blurb,
                                            'meta_keywords'    => &$meta_keywords,
                                            'meta_description' => &$meta_description,
+                                           'meta_og'          => &$meta_og,
                                            'css_links'        => &$css_links,
                                            'js_links'         => &$js_links,
                                            'rss_link'         => &$rss_link,
@@ -162,7 +199,7 @@ class html
                                      1
                                     );
         }
-        
+
         // cleanup
         unset($debug_log);
     }
@@ -1409,6 +1446,25 @@ class html
             unset($arr);
         }
 
+        // set the meta og
+        if (preg_match('/<!--META_OG:\[(.+)\|(.+)\]-->/', $orig))
+        {
+            preg_match_all('/<!--META_OG:\[(.+)\|(.+)\]-->/', $orig, $match);
+            for ($i = 0; $i < count($match[0]); $i++)
+            {
+                if ($match[1][$i] == "image")
+                {
+                    if (empty($this->meta_og['image']))
+                        $this->meta_og['image'] = array();
+                    array_push($this->meta_og['image'], $match[2][$i]);
+                }
+                else
+                {
+                    $this->meta_og[$match[1][$i]] = $match[2][$i];
+                }
+                $in = str_replace('<!--META_OG:['.$match[1][$i].'|'.$match[2][$i].']-->', "", $in);
+            }
+        }
 
         // load nested templates the template
         if (preg_match('/<!--INCLUDE:\[[a-z0-9_\-\/]+\]-->/', $orig))
