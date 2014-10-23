@@ -21,7 +21,6 @@ $title = "";
 if ($arr = file($announce))
 {
     $in_header = 1;
-    $x = 0;
     while (list($c,$val) = each($arr))
     {
         if ($c == 0)
@@ -50,8 +49,6 @@ if ($arr = file($announce))
                                     "\\1<a href=\"".$config->bug_system."\\2\">\\2</a>",
                                     $arr[$c]);
         }
-
-        $x++;
     }
     $announce = join("",$arr);
 
