@@ -15,6 +15,7 @@ switch (true)
 {
     // single issue view
     case (defined('PAGE_PARAMS') and preg_match("/[0-9]{10}/", PAGE_PARAMS)):
+
         // get data from XML file
         $item = PAGE_PARAMS . '.xml';
         $vars = array();
@@ -22,7 +23,13 @@ switch (true)
             $vars = get_xml_tags($config->news_xml_path.'/'.$html->lang.'/'.$item, array('date', 'title', 'link', 'body'));
         else
             $vars = get_xml_tags($config->news_xml_path.'/'.$config->lang.'/'.$item, array('date', 'title', 'link', 'body'));
-        
+
+        // set open graph tags
+        $html->meta_og['title'] = trim($vars['title']);
+
+        // add page title
+        $html->page_title .= " - {$html->meta_og['title']}";
+
         // if link defined, use it in title
         if ($vars['link'])
         {
@@ -33,10 +40,10 @@ switch (true)
         {
             $vars['title'] = '<a href="'.$html->_web_root.'/news/'.basename($item, ".xml").'">'.$vars['title'].'</a>';
         }
-        
+
         // replace {$root}
         $vars['body'] = str_replace("{\$root}", $html->_web_root, $vars['body']);
-        
+
         // add to news body
         echo $html->template('base', 'news_row', $vars);
         echo $html->p($html->ahref("&lt;&lt; Back", "{$html->_web_root}/news"));
@@ -44,6 +51,7 @@ switch (true)
 
     // RSS view
     case (defined('PAGE_PARAMS') and PAGE_PARAMS == "rss"):
+
         // get list of news items
         $news = get_files($config->news_xml_path."/".$config->lang, "xml");
         $news = array_reverse ($news);
