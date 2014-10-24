@@ -6,10 +6,10 @@ by Jeremy Newman <jnewman@codeweavers.com>
 Installation Requirements:
  * Apache 2.0 or higher
     * mod_rewrite enabled in Apache config
- * PHP 5.0 or higher
+ * PHP 5.3 or higher
 
-Setting Up.
---------------
+Setting Up:
+-----------------------------------------------------------------------
 1. cp include/htaccess.sample .htaccess
 2. edit .htaccess
  * change Rewritebase to the subdir path from the root of your website.
@@ -21,8 +21,8 @@ Setting Up.
 5. cp include/globals.conf.sample include/globals.conf
 6. edit include/globals.conf
 
-Templates.
---------------
+Templates:
+-----------------------------------------------------------------------
 For any path in your website, create a .template file in templates/en/
 For example, http://www.example.com/winehq_org/new_page
  is templates/en/new_page.template
@@ -38,4 +38,11 @@ The following varables can be used in templates.
 You can also add global vars to include/globals.conf and they will be availbe as 
 {$config_[key]} where [key] is the name you defined in globals.conf
 
+
+Notes:
+-----------------------------------------------------------------------
+
+ * The font used in the WineHQ logo is: Ocean Sans Pro
+ * A SVG version of the logo is available at:
+    http://ftp.winehq.org/pub/wine/logos/wine_logo.svg
 
