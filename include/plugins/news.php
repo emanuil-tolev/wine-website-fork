@@ -26,6 +26,15 @@ switch (true)
 
         // set open graph tags
         $html->meta_og['title'] = trim($vars['title']);
+        $ogmode = preg_replace('/^(.*)({\$root}\/)(wwn|announce)(\/)(.*)$/ms', '$3', $vars['body']);
+        switch ($ogmode)
+        {
+            case 'wwn':
+                $html->meta_og['image'] = "http://media.codeweavers.com/pub/crossover/marketing/og/wine-hq-world-wine-news.png";
+                break;
+            default:
+                $html->meta_og['image'] = "http://media.codeweavers.com/pub/crossover/marketing/og/wine-hq-announcement.png";
+        }
 
         // add page title
         $html->page_title .= " - {$html->meta_og['title']}";
