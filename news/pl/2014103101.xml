@@ -1,0 +1,16 @@
+<news>
+<date>Październik 31, 2014</date>
+<title>Wydano Wine 1.7.30</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.7.30 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.7.30">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Pełniejsza obsługa czcionek w DirectWrite.</li>
+  <li>Ulepszono obsługę ATL thunk.</li>
+  <li>Dodano więcej funkcji bibliotek uruchomieniowych C.</li>
+  <li>Poprawiono importowanie/eksportowanie w regedit.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul>
+<p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.30.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
