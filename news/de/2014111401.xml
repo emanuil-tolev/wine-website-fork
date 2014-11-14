@@ -1,0 +1,16 @@
+<news>
+<date>14. November 2014</date>
+<title>Wine 1.7.31 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.7.31 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.7.31">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Neue Version der Gecko-Engine basierend auf Firefox 34.</li>
+  <li>Unterstützung für die Visual Studio 2013 Version der C/C++ Laufzeit.</li>
+  <li>Mehr Unterstützung für Schriftarteigenschaften in DirectWrite.</li>
+  <li>Zusätzliche Arbeit an Direct2D.</li>
+  <li>Diverse Fehlerkorrekturen.</li>
+</ul>
+<p>Der Quelltext ist ab sofort <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.31.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
