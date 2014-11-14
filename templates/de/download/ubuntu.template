@@ -1,63 +1,66 @@
-<!--TITLE:[Neuestes Wine auf Ubuntu installieren]-->
-<!--BLURB:[Neuestes Wine auf Ubuntu installieren]-->
+<!--TITLE:[Installation von aktuellen Wine-Versionen unter Ubuntu]-->
+<!--BLURB:[Installation von aktuellen Wine-Versionen unter Ubuntu]-->
 
 <h1 class="title"><a href="http://www.ubuntu.com/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Logo" border="0"></a>
-Wine für Ubuntu und Ubuntu Derivate
+Wine für Ubuntu und Ubuntu-Varianten
 <a href="http://www.debian.org/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Logo" border="0"></a></h1>
 
-<p>Ubuntu und Ubuntu derivate (wie Kubuntu) bekommen ihre Software
-als <i>Pakete</i> die in <i>Repositories</i> untergebracht sind. Ubuntu's
-Standard Repository enthält Wine, wenn du allerdings mit dem
-neuesten Wine auf dem Laufenden bleiben willst nutze das von
-WineHQ mit folgender Anleitung.
+<p>Ubuntu und Ubuntu-Varianten (wie Kubuntu) beziehen ihre Software
+aus <i>Paketen</i> die in <i>Repositories</i> untergebracht sind. Ubuntus Standard-Repository enthält
+bereits ein Wine-Paket des "stable"-Zweigs. Wenn Sie allerdings auf dem neuesten Stand bleiben möchten,
+können Sie nach folgender Anleitung eine aktuelle Entwicklungsversion installieren.
 </p>
 
-<h2>Hinzufügen des WineHQ Repository:</h2>
+<p><b>Ubuntu-Derivate:</b> Diese Pakete und Anweisungen sind auf Ubuntu und dessen <a href="http://wiki.ubuntu.com/UbuntuFlavors">offiziell anerkannten Varianten (en)</a> ausgelegt.
+Benutzer von anderen Ubuntu-Derivaten (z.B. Linux Mint) können diese Pakete ebenfalls verwenden, sie sollten allerdings beachten, dass Probleme, die durch Unterschiede zwischen den Derivaten
+und der offiziellen Ubuntu-Distribution entstehen, keine Fehler in Wine oder diesen Paketen darstellen. Derartige Probleme werden nicht von WineHQ unterstützt und sollten
+ausschließlich an die jeweiligen Distributionen gemeldet werden.</p>
 
-<p>Öffne das Software-Paketquellenmenü durch
-<b>Anwendungen->Software-Center</b>, dann <b>Bearbeiten->Software-Paketquellen...</b>
-Wähle dann den <b>Software von Drittanbietern</b>-Reiter und klicke auf <b>Hinzufügen</b>.</p>
+<h2>Hinzufügen des PPA-Repositories:</h2>
 
-<img src="{$root}/images/distro/de_ubuntu-softwaresources1.png" width="686" height="516" alt="System->Systemverwaltung->Software-Paketquellen" border="0">
+<p>Öffnen Sie den Paketquellen-Einstellungsdialog, indem Sie im 
+<b>Software-Center</b> den Menüeintrag <b>Bearbeiten -> Software-Paketquellen</b> auswählen.
+Klicken Sie im Reiter <b>Andere Software</b> auf <b>Hinzufügen</b>.</p>
 
-<p>Dann, <b>kopiere die untere Zeile</b> dort hinein.</p>
+<img src="{$root}/images/distro/de_ubuntu-ppa.png" width="756" height="472" alt="Software-Paketquellen" border="0">
+
+<p>Kopieren Sie die folgende Zeile in das Eingabefeld:</p>
 
 <p><i>ppa:ubuntu-wine/ppa</i></p>
 
 <h2>Warnung: Betapakete</h2>
 
-<p><i>Die 1.7 Pakete hier sind Betapakete. Das bedeutet, dass sie
+<p><i>Die hier angebotenen Versionen 1.7.x sind Betapakete. Das bedeutet, dass sie
 in regelmäßigen Abständen
 <a href="http://wiki.winehq.org/RegressionTesting">Regressionen</a> erleiden, wodurch
-eine Aktualisierung die Wine-Funktionalität beeinträchtigen kann. Wenn die stabile Version
-Wine 1.6 bei dir funktioniert, willst du diese Betapakete wahrscheinlich nicht benutzen.</i></p>
+eine Aktualisierung die Funktionalität unter Wine beeinträchtigen kann. Wenn die stabile Version
+Wine 1.6 mit ihren Anwendungen funktioniert, möchten Sie diese Betapakete möglicherweise nicht benutzen.</i></p>
 
 <h2>Installieren von Wine:</h2>
 
-<p>Sobald du das WineHQ PPA Repository hinzugefügt hast, kannst du es installieren.</p>
+<p>Sobald Sie das PPA-Repository hinzugefügt haben, können Sie Wine installieren.</p>
 
 <p><i>Für die aktuellste Wine 1.7 Beta,
-<a href="apt://wine1.7">klicke diesen Link um das wine1.7 Paket zu installieren</a>.</i></p>
-<p><i>Für die ältere, stabile Wine 1.6 Version,
-<a href="apt://wine1.6">klicke diesen Link um das wine1.6 Paket zu installieren</a>.</i></p>
+<a href="apt://wine1.7">klicken Sie diesen Link, um das Paket 'wine1.7' zu installieren</a>.</i></p>
+<p><i>Für die ältere, stabile Version Wine 1.6,
+<a href="apt://wine1.6">klicken Sie diesen Link, um das Paket 'wine1.6' zu installieren</a>.</i></p>
 
 <h2>Aktualisierung auf eine neue Ubuntuversion</h2>
 
-<p>Wenn Du dein gesamtes System aktualisierst, zum Beispiel von Ubuntu 13.10 auf
-14.04, musst Du zu dieser Seite zurückkehren und das Repository nochmal hinzufügen.
-Die eingebaute Aktualisierungsverwaltung wird das Wine repository nicht automatisch updaten.</p>
+<p>Wenn Sie ihr gesamtes System aktualisieren, zum Beispiel von Ubuntu 13.10 auf
+14.04, müssen Sie zu dieser Seite zurückkehren und das Repository erneut hinzufügen.
+Die eingebaute Aktualisierungsverwaltung wird das Wine-Repository nicht automatisch übernehmen.</p>
 
 <h2>Alternative Kommandozeileninstruktionen für die Wine-Installation:</h2>
 
-<p>Es ist auch möglich, das Hinzufügen des Wine PPA und die Installation
-wie folgt mit der Kommandozeile durchzuführen.
-Die Instruktionen sind nützlich für Kubuntu, Xubuntu und andere Ubuntu
-Derivate. Zuerst öffne ein Terminalfenster (Anwendungen->Zubehör->Terminal).</p>
+<p>Es ist auch möglich, das Hinzufügen des PPA und die Installation der Pakete wie folgt mit der Kommandozeile durchzuführen.
+Diese Methode könnte sich für Ubuntu-Varianten und Derivate, bei denen die obigen Anweisungen nicht zutreffen,
+als nützlich erweisen.</p>
 
 <p><i>sudo add-apt-repository ppa:ubuntu-wine/ppa</i></p>
 
-<p>Aktualisiere dann die APT-Paketinformationen durch Ausführen von '<b>sudo apt-get
-update</b>'. Du kannst nun Wine durch Ausführen von '<b>sudo apt-get
+<p>Aktualisieren Sie anschließend die APT-Paketinformationen durch Ausführen von '<b>sudo apt-get
+update</b>'. Sie können Wine nun durch Ausführen von '<b>sudo apt-get
 install wine1.7</b>' im Terminal installieren.</p>
 
-<p>Wenn du das PPA durchsuchen willst, kannst du es <a href="https://launchpad.net/~ubuntu-wine/+archive/ppa">bei Launchpad anschauen</a>.</p>
+<p>Wenn Sie das PPA manuell durchsuchen möchten, können Sie dessen <a href="https://launchpad.net/~ubuntu-wine/+archive/ppa">Seite auf Launchpad</a> benutzen.</p>
