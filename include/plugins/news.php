@@ -111,7 +111,7 @@ switch (true)
         unset($c);
         $rss = array(
                         'rss_date'  => date("r", $top_date),
-                        'rss_title' => "{$config->site_name News",
+                        'rss_title' => "{$config->site_name} News",
                         'rss_link'  => "{$config->base_url}news/rss/",
                         'rss_img'   => "https://media.codeweavers.com/pub/crossover/marketing/og/wine-hq-announcement.png",
                         'rss_desc'  => 'News and information about Wine',
