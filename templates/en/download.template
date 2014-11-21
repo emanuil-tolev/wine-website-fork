@@ -63,7 +63,7 @@ requested in exchange for hosting the Wine web site.</p>
       <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu linux" border="0"></a>
     </td>
     <td> <b><a href="{$root}/download/ubuntu">Download Ubuntu packages</a></b> 
-     - binary and source .debs for Ubuntu Trusty (14.04 LTS)
+     - binary and source .debs for Ubuntu Trusty (14.04 LTS)</td>
     <td><a href="mailto:scottritchie@ubuntu.com">Scott Ritchie</a></td>
   </tr>
 
@@ -85,9 +85,9 @@ requested in exchange for hosting the Wine web site.</p>
         compatible distributions.
         The wine meta package is available via <tt>yum</tt> 
         through the EPEL / Fedora Extras / Fedora repository by running <tt>$ yum install
-        wine </tt>"
+        wine </tt>
          </td>
-    <td><a href="mailto:andreas.bierfert_at_lowlatency.de">Andreas Bierfert</a></td>
+    <td><a href="mailto:andreas.bierfert@lowlatency.de">Andreas Bierfert</a></td>
   </tr>
   
   <tr bgcolor="#ffffff">
