@@ -4,11 +4,11 @@
 <rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
     <channel>
         <title>{$rss_title}</title>
-		<image>
-			<url>{$rss_img}</url>
-			<title>{$rss_title}</title>
-			<link>{$rss_link}</link>
-		</image>
+        <image>
+            <url>{$rss_img}</url>
+            <title>{$rss_title}</title>
+            <link>{$rss_link}</link>
+        </image>
         <link>{$rss_link}</link>
         <description>{$rss_desc}</description>
         <language>en</language>

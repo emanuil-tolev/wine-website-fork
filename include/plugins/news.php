@@ -30,10 +30,10 @@ switch (true)
         switch ($ogmode)
         {
             case 'wwn':
-                $html->meta_og['image'] = "http://media.codeweavers.com/pub/crossover/marketing/og/wine-hq-world-wine-news.png";
+                $html->meta_og['image'] = "https://media.codeweavers.com/pub/crossover/marketing/og/wine-hq-world-wine-news.png";
                 break;
             default:
-                $html->meta_og['image'] = "http://media.codeweavers.com/pub/crossover/marketing/og/wine-hq-announcement.png";
+                $html->meta_og['image'] = "https://media.codeweavers.com/pub/crossover/marketing/og/wine-hq-announcement.png";
         }
 
         // add page title
@@ -70,7 +70,7 @@ switch (true)
         header('Expires: 0');
         header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
         header('Content-Type: application/xml');
-        header('Content-Disposition: inline; filename="winehq_news.xml";');   
+        header('Content-Disposition: inline; filename="winehq_news.xml";');
         $rss_rows = "";
         $c = 0;
         foreach ($news as $key => $item)
@@ -101,7 +101,7 @@ switch (true)
             // display row
             $rss_row = array(
                                 'item_title' => strip_tags($vars['title']),
-                                'item_desc'  => htmlentities($vars['body']),
+                                'item_desc'  => $vars['body'],
                                 'item_link'  => $vars['link'],
                                 'item_guid'  => $config->base_url.'?news='.$item,
                                 'item_date'  => date("r", strtotime($vars['date']))
@@ -111,9 +111,9 @@ switch (true)
         unset($c);
         $rss = array(
                         'rss_date'  => date("r", $top_date),
-                        'rss_title' => $config->site_name.' News',
-                        'rss_link'  => "{$config->base_url}news/rss",
-                        'rss_img'   => "{$config->base_url}images/classic_top_logo.png",
+                        'rss_title' => "{$config->site_name News",
+                        'rss_link'  => "{$config->base_url}news/rss/",
+                        'rss_img'   => "https://media.codeweavers.com/pub/crossover/marketing/og/wine-hq-announcement.png",
                         'rss_desc'  => 'News and information about Wine',
                         'rss_crt'   => '(C) '.$config->site_name.' '.date("Y", time()),
                         'rss_rows' => $rss_rows

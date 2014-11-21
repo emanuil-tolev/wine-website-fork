@@ -1,7 +1,12 @@
 
         <item>
             <title>{$item_title}</title>
-	        <description>{$item_desc}</description>
+            <description>
+            <![CDATA[
+                <img src="https://media.codeweavers.com/pub/crossover/marketing/og/wine-hq-announcement.png" alt=""><br>
+                {$item_desc}
+            ]]>
+            </description>
             <link>{$item_link}</link>
             <guid>{$item_guid}</guid>
             <pubDate>{$item_date}</pubDate>
