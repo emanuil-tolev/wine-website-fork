@@ -1,5 +1,5 @@
 <!--TITLE:[Wine Bin&auml;r-Downloads]-->
-<!--BLURB:[Lade hier Wine f&uuml;r Dein Lieblingsbetriebssystem herunter.]-->
+<!--BLURB:[Laden Sie hier Wine f&uuml;r Ihr bevorzugtes Betriebssystem herunter.]-->
 
 <h1 class="title">Wine Downloads</h1>
 
@@ -23,29 +23,31 @@
       <b><a href="http://www.codeweavers.com/products/">CrossOver</a></b>
       ist eine auf Hochglanz polierte Wine-Version, die von <b><a href="http://www.codeweavers.com">CodeWeavers</a></b>
       bereitgestellt wird. CrossOver vereinfacht die Bedienung von Wine und CodeWeavers leistet exzellenten
-      technischen Support f&uuml;r seine Nutzer. Alle K&auml;ufe von CrossOver werden direkt zur Unterst&uuml;tzung
-      der Wine-Entwickler genutzt. Darum ist CrossOver sowohl eine tolle M&ouml;glichkeit, Unterst&uuml;tzung f&uuml;r
-      Wine zu bekommen, als auch das Wine-Projekt zu unterst&uuml;tzen. CodeWeavers stellt vollst&auml;ndig funktionale
+      technischen Support f&uuml;r seine Nutzer. Alle K&auml;ufe von CrossOver werden direkt zur finanziellen Unterst&uuml;tzung
+      der Wine-Entwickler genutzt. Darum ist CrossOver eine gro&szlig;artige M&ouml;glichkeit, sowohl Unterst&uuml;tzung f&uuml;r
+      Wine zu bekommen, als auch das Wine-Projekt zu unterst&uuml;tzen. CodeWeavers stellt vollst&auml;ndig funktionsf&auml;hige
       <b><a href="http://www.codeweavers.com/products/download_trial/">Testversionen von Crossover</a></b> zur Verf&uuml;gung.
     </td>
   </tr>
 </table>
 
-<p class="small" align="center">Diese Bef&uuml;rwortung ist die haupts&auml;chliche Anerkennung, die CodeWeavers daf&uuml;r
-erbeten hat, dass sie die Wine-Website hosten.</p>
+<p class="small" align="center">Diese Empfehlung ist die haupts&auml;chliche Anerkennung, die CodeWeavers als Dank
+f&uuml;r das Hosten der Wine-Webseite erbeten hat.</p>
   
 
-<h2 style="margin-bottom: 5px;"><a name="binary"></a>Wine Bin&auml;r-Downloads</h2>
+<h2 style="margin-bottom: 5px;"><a name="binary"></a>Wine Bin&auml;rdownloads</h2>
+
+<p>Bin&auml;rpakete werden von den Distributionen erstellt und verwaltet und k&ouml;nnen daher Patches enthalten, die hier nicht unterst&uuml;tzt werden. Die folgenden Links werden ausschlie&szlig;lich zum Komfort der Nutzer bereitgestellt und sind nicht als Empfehlung zu verstehen.</p>
 
 <table style="margin: 0 0 15px 0;" width="100%">
 <tr>
-  <td width="200">Aktuellste stabile Version:</td><td>Wine&nbsp;{$config_stable_release}</td>
-  <td rowspan="2" valign="top" style="padding-left: 20px; text-align: center;"><b>Lies das
+  <td width="200">Aktuell stabile Version:</td><td>Wine&nbsp;{$config_stable_release}</td>
+  <td rowspan="2" valign="top" style="padding-left: 20px; text-align: center;"><b>Lesen Sie das
   <a href="http://wiki.winehq.org/HowTo">Installations- und Konfigurations-How-to (en)</a> 
   f&uuml;r Informationen zu den Schritten, die nach der Installation auszuf&uuml;hren sind.</b></td>
 </tr>
 <tr>
-  <td>Aktuellste Entwicklerversion:</td><td>Wine&nbsp;{$config_master_release}</td>
+  <td>Neueste Entwicklungsversion:</td><td>Wine&nbsp;{$config_master_release}</td>
 </tr>
 </table>
 
@@ -62,7 +64,7 @@ erbeten hat, dass sie die Wine-Website hosten.</p>
       <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu linux" border="0"></a>
     </td>
     <td> <b><a href="{$root}/download/ubuntu">Ubuntu</a></b>
-     bin&auml;r und Quellcode .debs f&uuml;r Ubuntu Trusty (14.04 LTS)
+     Bin&auml;r- und Quellpakete (.deb) f&uuml;r Ubuntu Trusty (14.04 LTS)</td>
     <td><a href="mailto:scottritchie@ubuntu.com">Scott Ritchie</a></td>
   </tr>
 
@@ -71,8 +73,8 @@ erbeten hat, dass sie die Wine-Website hosten.</p>
       <img src="{$root}/images/distro/debian.png" width="50" height="50" alt="Debian Linux" border="0"></a>
     </td>
     <td> <b><a href="{$root}/download/debian">Debian</a></b>
-     binär .debs für Debian Sid</td>
-    <td><a href="mailto:curan@debian.org">Kai Wasserbäch</a></td>
+     Bin&auml;rpakete (.deb) f&uuml;r Debian Sid</td>
+    <td><a href="mailto:curan@debian.org">Kai Wasserb&auml;ch</a></td>
   </tr>
 
   <tr bgcolor="#ffffff">
@@ -80,13 +82,13 @@ erbeten hat, dass sie die Wine-Website hosten.</p>
       <img src="{$root}/images/distro/redhat.png" width="50" height="50" alt="RedHat Linux" border="0"></a>
     </td>
     <td> <b><a href="http://fedoraproject.org/wiki/AndreasBierfert/Wine">Red Hat / CentOS / Fedora</a></b>
-        bin&auml;r und Quellcode .rpms f&uuml;r Red Hat Enterprise Linux 5, 6; CentOS 5, 6; Fedora Linux 16, 17 und
+        Bin&auml;r- und Quellpakete (.rpm) f&uuml;r Red Hat Enterprise Linux 5, 6; CentOS 5, 6; Fedora Linux 16, 17 und
         kompatible Distributionen.
-        Das wine meta package ist via <tt>yum</tt> im
-        EPEL / Fedora Extras / Fedora Repository verf&uuml;gbar, indem man <tt>$ yum install
-        wine </tt> ausf&uuml;hrt.
+        Das Wine-Metapaket ist via <tt>yum</tt> im
+        EPEL / Fedora Extras / Fedora Repository verf&uuml;gbar, durch Ausf&uuml;hren von <tt>$ yum install
+        wine</tt>
          </td>
-    <td><a href="mailto:andreas.bierfert_at_lowlatency.de">Andreas Bierfert</a></td>
+    <td><a href="mailto:andreas.bierfert@lowlatency.de">Andreas Bierfert</a></td>
   </tr>
   
   <tr bgcolor="#ffffff">
@@ -94,7 +96,7 @@ erbeten hat, dass sie die Wine-Website hosten.</p>
       <img src="{$root}/images/distro/suse.png" width="50" height="50" alt="SUSE Linux" border="0"></a>
     </td>
     <td> <b><a href="http://en.opensuse.org/Wine#Repositories">SUSE</a></b>
-         stellt bin&auml;r und Quellcode .rpms und t&auml;gliche snapshot RPMs f&uuml;r alle openSUSE Versionen (derzeit 12.3 bis 13.2) sowie SUSE Linux Enterprise 11 bereit.<br>
+         Bin&auml;r- und Quellpakete (.rpm) von Releases und t&auml;gliche Snapshots f&uuml;r alle openSUSE Versionen (12.3 bis 13.2) sowie SUSE Linux Enterprise 11.<br>
      </td>
     <td><a href="mailto:meissner@suse.de">Marcus Meissner</a></td>
   </tr>
@@ -104,7 +106,7 @@ erbeten hat, dass sie die Wine-Website hosten.</p>
       <img src="{$root}/images/distro/slackware.png" width="50" height="50" alt="Slackware linux" border="0"></a>
     </td>
     <td> <b><a href="http://sourceforge.net/projects/wine/files/Slackware Packages/">Slackware</a></b>
-         bin&auml;r txz (Slackware 14.1), und tgz (f&uuml;r &auml;ltere Versionen)</td>
+         Bin&auml;rpakete (.txz) f&uuml;r Slackware 14.1 und (.tgz) f&uuml;r &auml;ltere Versionen</td>
     <td><a href="mailto:studiosg@giustetti.net">Simone Giustetti</a></td>
   </tr>
 
@@ -123,10 +125,10 @@ erbeten hat, dass sie die Wine-Website hosten.</p>
 <h2 style="margin-bottom: 10px;"><a name="binary"></a>Tools von Drittanbietern</h2>
 
 <p>Manchmal kann eine &Auml;nderung an Wine daf&uuml;r sorgen, dass eine bestimmte Anwendung besser l&auml;uft, aber aus irgendeinem
-  Grund kann die &Auml;nderung nicht in Wine &uuml;bernommen werden. Um bestimmte Defizite von Wine auszubessern, sind diverse
-  Anwendungen im Laufe der Jahre von Drittanbietern erstellt worden. Diese Anwendungen werden in keinster Art von den Wine-Entwicklern
-  unterst&uuml;tzt, sie k&ouml;nnen aber n&uuml;tzlich f&uuml;r Dich sein. Weitergehende Informationen &uuml;ber Anwendungen von
-  Drittanbietern findest Du auf <a href="http://wiki.winehq.org/ThirdPartyApplications">unserer Wiki-Seite (en)</a>.</p>
+  Grund kann diese &Auml;nderung nicht in Wine &uuml;bernommen werden. Um bestimmte Defizite von Wine auszubessern, sind im Laufe
+  der Jahre diverse Anwendungen von Drittanbietern erstellt worden. Diese Anwendungen werden in keinster Weise von den Wine-Entwicklern
+  unterst&uuml;tzt, sie k&ouml;nnten jedoch n&uuml;tzlich f&uuml;r Ihre Zwecke sein. Weitergehende Informationen dazu finden Sie auf
+  <a href="http://wiki.winehq.org/ThirdPartyApplications">unserer Wiki-Seite (en)</a> &uuml;ber Anwendungen von Drittanbietern.</p>
 
 <h2><a name="source"></a>Wine Quellcode Downloads</h2>
 
@@ -144,18 +146,18 @@ erbeten hat, dass sie die Wine-Website hosten.</p>
 
   <tr bgcolor="#ffffff">
     <td> <a href="http://wiki.winehq.org/GitWine">source.winehq.org/git</a> </td>
-    <td> Die aktuellste Entwicklerversion. </td>
+    <td> Die aktuellste Entwicklungsversion. </td>
   </tr>
   
   <tr bgcolor="#ffffff">
     <td><a href="http://ibiblio.org/pub/linux/system/emulators/wine/">ibiblio.org</a></td>
-    <td> Alternative Download Website f&uuml;r offizielle Quellcode- und Dokumentations-Tarballs. </td>
+    <td> Alternative Downloadseite f&uuml;r offizielle Quellcode- und Dokumentations-Tarballs. </td>
   </tr>
   
 </table>
 
 <div style="margin: 10px; padding: 5px; border: 1px solid #C0C0C0; background-color: #F0F0F0;"><b>Anmerkung:</b> Die
-  Informationen &uuml;ber <a href="http://wiki.winehq.org/Recommended_Packages">empfohlene Packages (en)</a> enthalten
+  Informationen &uuml;ber <a href="http://wiki.winehq.org/Recommended_Packages">empfohlene Pakete (en)</a> enthalten
   Hinweise zur Konfiguration und zum Kompilieren von Wine.</div>
 
 
