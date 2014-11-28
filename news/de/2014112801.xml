@@ -1,0 +1,16 @@
+<news>
+<date>28. November 2014</date>
+<title>Wine 1.7.32 freigegeben</title>
+<body>
+<p> Die Entwicklungsversion 1.7.32 von Wine ist jetzt verfügbar.</p>
+<p> <a href="{$root}/announce/1.7.32">Neuerungen (en)</a> in dieser Version:</p>
+<ul>
+  <li>Neue Version der Mono-Engine.</li>
+  <li>Einige zusätzlich implementierte Funktionen in MSHTML.</li>
+  <li>Verbesserte Unterstützung für die Wiederherstellung von Anzeigemodi.</li>
+  <li>Weitere Verbesserung der Schriftarteigenschaften in DirectWrite.</li>
+  <li>Diverse Fehlerkorrekturen.</li>
+</ul>
+<p>Der Quelltext ist ab sofort <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.32.tar.bz2">verfügbar</a>.
+Binärpakete werden gerade erstellt und stehen bald auf den jeweiligen <a href="{$root}/download">Downloadseiten</a> zur Verfügung.
+</p></body></news>
