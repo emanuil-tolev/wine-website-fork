@@ -60,7 +60,7 @@
       <img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu linux" border="0"></a>
     </td>
     <td> <b><a href="{$root}/download/deb">Pobierz paczki dla Ubuntu</a></b> 
-     - binarne i źródłowe paczki .deb dla Ubuntu Precise (12.04), Quantal (12.10), i Raring (13.04)
+     - binarne i źródłowe paczki .deb dla Ubuntu Trusty (14.04 LTS)</td>
     <td><a href="mailto:scottritchie@ubuntu.com">Scott Ritchie</a></td>
   </tr>
 
@@ -120,7 +120,7 @@
 
 <h2 style="margin-bottom: 10px;"><a name="binary"></a>Aplikacje osób trzecich</h2>
 
-<p>zasami pewne modyfikacje Wine mogą sprawić,
+<p>Czasami pewne zmiany Wine mogą sprawić,
 że aplikacja będzie działać, ale z pewnych powodów zmiany te nie
 mogą być wcielone do Wine. Stworzono różne aplikacje (tzw.
 aplikacje osób trzecich), aby pomóc przezwyciężyć niedobory w
