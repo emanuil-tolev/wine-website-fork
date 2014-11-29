@@ -1,5 +1,5 @@
-<!--TITLE:[Instalacja najnowszego Wine pod Ubuntu]-->
-<!--BLURB:[Instalacja najnowszego Wine pod Ubuntu]-->
+<!--TITLE:[Wgrywanie najnowszego Wine pod Ubuntu]-->
+<!--BLURB:[Wgrywanie najnowszego Wine pod Ubuntu]-->
 
 <h1 class="title"><a href="http://www.ubuntu.com/" target="_new"><img src="{$root}/images/distro/ubuntu.png" width="50" height="50" alt="Ubuntu Logo" border="0"></a>
 Wine dla Ubuntu i jego pochodnych
@@ -11,52 +11,53 @@ zawiera stabilne wydania. Najnowsze paczki Wine znajdują się na WineHQ.
 Aby z nich skorzystać wykonaj poniższe instrukcje.
 </p>
 
+<p><b>Pochodne Ubuntu:</b> Te paczki i instrukcje są  zostały opracowane dla Ubuntu oraz jego <a href="http://wiki.ubuntu.com/UbuntuFlavors">uznawanych odmian</a>. Użytkownicy systemów pochodnych do Ubuntu mogą używać tych paczek, lecz powinni być świadomi, że problemy wywołane różnicami pomiędzy pochodnym distro, a Ubuntu nie są ani błędami Wine, ani błędami pakowania i powinny być zgłaszane do distro, na którym ten problem występuje.</p>
+
 <h2>Dodawanie repozytorium WineHQ PPA:</h2>
 
 <p>Otwórz źródła oprogramowania z menu <b>Aplikacje->Centrum Oprogramowania
 Ubuntu</b>, następnie zaznacz <b>Edycja->Źródła oprogramowania</b>. Przejdź na zakładkę <b>Oprogramowanie 
 osób trzecich</b> i kliknij <b>Dodaj...</b>.</p>
 
-<img src="{$root}/images/distro/ubuntu-ppa.png" width="531" height="509" alt="System->Administration->Software Sources->Other Software" border="0">
+<img src="{$root}/images/distro/ubuntu-ppa.png" width="531" height="509" alt="Software Center->Edit->Software Sources->Other Software" border="0">
 
-<p>Następnie, <b>wklej poniższą linijkę</b>.</p>
+<p>Następnie, <b>wklej poniższy wiersz</b>.</p>
 
 <p><i>ppa:ubuntu-wine/ppa</i></p>
 
 <h2>Uwaga: paczki beta</h2>
 
-<p><i>Te paczki są paczkami beta.  Oznacza to, że będą
-okresowo cierpieć z powodu  
+<p><i>Paczki 1.7 są paczkami beta.  Oznacza to, że będą
+okresowo cierpieć z powodu 
 <a href="http://wiki.winehq.org/RegressionTesting">regresji</a>, a aktualizacja do nich
-może popsuć funkcjonalność Wine. Jeżeli wersja stabilna {$config_stable_release} działa bez problemu
-to instalowanie tych paczek może nie być konieczne.</i></p>
+może popsuć funkcjonalność Wine. Jeżeli wersja stabilna Wine {$config_stable_release} działa bez problemu
+to wgrywanie tych paczek może nie być konieczne.</i></p>
 
-<h2>Instalowanie Wine:</h2>
+<h2>Wgrywanie Wine:</h2>
 
-<p>Skoro już dodałeś/aś repozytorium WineHQ PPA to jesteś gotowy/a do instalacji.</p>
+<p>Skoro już dodałeś/aś repozytorium WineHQ PPA to jesteś gotowy/a do wgrywania.</p>
 
-<p><i>Aby używać najnowszego Wine 1.5 beta, 
-<a href="apt://wine1.5">kliknij na ten link, aby zainstalować paczkę wine1.5</a>.</i></p>
-<p><i>Aby używać ostatniej stabilnej wersji Wine 1.4, 
-<a href="apt://wine1.4">kliknij na ten link, aby zainstalować paczkę wine1.4</a>.</i></p>
+<p><i>Aby używać najnowszego Wine {$config_master_release}, 
+<a href="apt://wine1.7">naciśnij na to dowiazanie, aby wgrać paczkę wine1.7</a>.</i></p>
+<p><i>Aby używać ostatniej stabilnej wersji Wine {$config_stable_release}, 
+<a href="apt://wine1.6">naciśnij na to dowiazanie, aby wgrać paczkę wine1.6</a>.</i></p>
 
-<h2>Aktualizacja do nowej wersji Ubuntu</h2>
+<h2>Unowocześnienie do nowej wersji Ubuntu</h2>
 
-<p>Jeżeli aktualizujesz cały system np. przechodzisz z
-Ubuntu 10.04 na 10.10, to będziesz musiał/a wrócić do tej strony i
-dodać repozytorium do nowej wersji systemu. Wbudowany menadżer
-aktualizacji nie zmieni automatycznie repozytorium Wine.
+<p>Jeżeli unowocześniasz cały system np. przechodzisz z
+Ubuntu 13.10 na 14.04, to będziesz musiał/a wrócić do tej strony i
+dodać repozytorium do nowej wersji systemu. Wbudowany program do zarządzania uaktualnieniami sam nie zmieni repozytorium Wine.
 </p>
 
-<h2>Alternatywne komendy wiersza poleceń do zainstalowania Wine:</h2>
+<h2>Alternatywne polecenia wiersza poleceń do wgrana Wine:</h2>
 
-<p>Istnieje możliwość dodania repozytoriów Wine i instalowania z wiersza poleceń. 
+<p>Istnieje możliwość dodania repozytoriów Wine i wgrywanie z wiersza poleceń. 
 Jest to użyteczne w przypadku Kubuntu, Xubuntu, i innych pochodnych Ubuntu.</p>
 
 <p><i>sudo add-apt-repository ppa:ubuntu-wine/ppa</i></p>
 
 <p>Następnie zaktualizuj informacje o paczkach APT wpisując '<b>sudo apt-get 
-update</b>'. Teraz możesz zainstalować Wine wpisując w terminalu '<b>sudo apt-get 
-install wine1.5</b>'.</p>
+update</b>'. Teraz możesz wgrać Wine wpisując w terminalu '<b>sudo apt-get 
+install wine1.7</b>'.</p>
 
-<p>Jeżeli chciałbyś ręcznie przeglądać PPA, możesz odwiedzić <a href="https://launchpad.net/~ubuntu-wine/+archive/ppa">jego stronę na Launchpad</a>.</p>
+<p>Aby ręcznie ręcznie przeglądać PPA, odwiedź <a href="https://launchpad.net/~ubuntu-wine/+archive/ppa">jego stronę na Launchpad</a>.</p>
