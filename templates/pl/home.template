@@ -1,8 +1,8 @@
 <!--STYLE:[content_nobox]-->
-<!--TITLE:[Run Windows applications on Linux, BSD and Mac OS X]-->
-<!--BLURB:[Run Windows applications on Linux, BSD and Mac OS X.]-->
+<!--TITLE:[Uruchamiaj aplikacje dla Windowsa na Linuksie, BSD oraz Mac OS X]-->
+<!--BLURB:[Uruchamiaj aplikacje dla Windowsa na Linuksie, BSD oraz Mac OS X]-->
 <!--META_KEYWORDS:[windows, linux, macintosh, solaris, freebsd]-->
-<!--META_DESCRIPTION:[Open Source Software for running Windows applications on other operating systems.]-->
+<!--META_DESCRIPTION:[Oprogramowanie o otwartym źródle do uruchamiania aplikacji dla Windowsa na innych systemach operacyjnych.]-->
 <!--META_OG:[type|website]-->
 
 <div id="main_left">
@@ -14,7 +14,7 @@
               <div class="icon"></div>
               <div class="text">
                 <div class="title"><a href="{$root}/about/">Informacje</a></div>
-                <div class="subtitle">Przegląd funkcji Wine.</div>
+                <div class="subtitle">Dowiedz się więcej o Wine.</div>
               </div>
             </div>
 
@@ -22,15 +22,15 @@
               <div class="icon"></div>
               <div class="text">
                 <div class="title"><a href="{$root}/download/">Pobieralnia</a></div>
-                <div class="subtitle">Ściągnij Wine teraz!</div>
+                <div class="subtitle">Wgraj sobie najnowsze Wine.</div>
               </div>
             </div>
 
             <div class="help" onClick="document.location='{$root}/help/';">
               <div class="icon"></div>
               <div class="text">
-                <div class="title"><a href="{$root}/help/">Pomoc!</a></div>
-                <div class="subtitle">Dokumentacja, Wsparcie, i Wiki.</div>
+                <div class="title"><a href="{$root}/help/">Pomoc</a></div>
+                <div class="subtitle">Uzyskaj pomoc w używaniu Wine.</div>
               </div>
             </div>
 
@@ -38,7 +38,7 @@
               <div class="icon"></div>
               <div class="text">
                 <div class="title"><a href="{$root}/devel/">Rozwój</a></div>
-                <div class="subtitle">Źródła Wine, Szukanie Robaków, itp.</div>
+                <div class="subtitle">Zacznij programować dla Wine.</div>
               </div>
             </div>
 
@@ -46,7 +46,7 @@
               <div class="icon"></div>
               <div class="text">
                 <div class="title"><a href="{$root}/donate/">Darowizny</a></div>
-                <div class="subtitle">Ofiary dla Wine.</div>
+                <div class="subtitle">Wspomagaj rozwój Wine pieniężnie.</div>
               </div>
             </div>
 
@@ -79,11 +79,11 @@
     <div class="content cornerround" style="margin-top: 15px; padding: 10px 0px 10px 10px;">
       <div style="height: 340px; overflow: auto; padding-right: 10px;">
 
-        <h3 class="title"><a href="{$root}/news/">Aktualności</a></h3>
+        <h3 class="title"><a href="{$root}/news/">Wieści</a></h3>
 
         <!--EXEC:[news?n=10]-->
 
-        <p><a href="{$root}/news/">więcej aktualności...</a></p>
+        <p><a href="{$root}/news/">więcej wieści...</a></p>
       </div>
     </div>
 
