@@ -1,11 +1,16 @@
-<!--TITLE:[News]-->
-<!--BLURB:[All the latest news from the Wine community.]-->
+<!--TITLE:[Wieści]-->
+<!--BLURB:[Najświeższe wieści dotyczące społeczności Wine.]-->
 
-<h1 class="title">Aktualności</h1>
+<h1 class="title">Wieści</h1>
 
 <!--EXEC:[news]-->
 
+<hr>
+
+<div class="link-container">
+    <p><a href="{$root}/wwn/">Archiwum Wieści ze Świata Wine</a></p>
+</div>
 <ul class="rss">
-    <li><a href="{$root}/news/rss/">WineHQ News RSS Feed</a></li>
+    <li><a href="{$root}/news/rss/">Kanał RSS Wieści WineHQ</a></li>
 </ul>
 
