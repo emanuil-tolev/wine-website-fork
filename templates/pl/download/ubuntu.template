@@ -16,8 +16,8 @@ Aby z nich skorzystać wykonaj poniższe instrukcje.
 <h2>Dodawanie repozytorium WineHQ PPA:</h2>
 
 <p>Otwórz źródła oprogramowania z menu <b>Aplikacje->Centrum Oprogramowania
-Ubuntu</b>, następnie zaznacz <b>Edycja->Źródła oprogramowania</b>. Przejdź na zakładkę <b>Oprogramowanie 
-osób trzecich</b> i kliknij <b>Dodaj...</b>.</p>
+Ubuntu</b>, następnie wybierz <b>Edycja->Źródła oprogramowania</b>. Przejdź na zakładkę <b>Oprogramowanie 
+osób trzecich</b> i naciśnij <b>Dodaj...</b>.</p>
 
 <img src="{$root}/images/distro/ubuntu-ppa.png" width="531" height="509" alt="Software Center->Edit->Software Sources->Other Software" border="0">
 
@@ -29,7 +29,7 @@ osób trzecich</b> i kliknij <b>Dodaj...</b>.</p>
 
 <p><i>Paczki 1.7 są paczkami beta.  Oznacza to, że będą
 okresowo cierpieć z powodu 
-<a href="http://wiki.winehq.org/RegressionTesting">regresji</a>, a aktualizacja do nich
+<a href="http://wiki.winehq.org/RegressionTesting">regresji</a>, a uaktualnianie do nich
 może popsuć funkcjonalność Wine. Jeżeli wersja stabilna Wine {$config_stable_release} działa bez problemu
 to wgrywanie tych paczek może nie być konieczne.</i></p>
 
@@ -49,7 +49,7 @@ Ubuntu 13.10 na 14.04, to będziesz musiał/a wrócić do tej strony i
 dodać repozytorium do nowej wersji systemu. Wbudowany program do zarządzania uaktualnieniami sam nie zmieni repozytorium Wine.
 </p>
 
-<h2>Alternatywne polecenia wiersza poleceń do wgrana Wine:</h2>
+<h2>Alternatywne polecenia wiersza poleceń do wgrania Wine:</h2>
 
 <p>Istnieje możliwość dodania repozytoriów Wine i wgrywanie z wiersza poleceń. 
 Jest to użyteczne w przypadku Kubuntu, Xubuntu, i innych pochodnych Ubuntu.</p>
