@@ -1,0 +1,15 @@
+<news>
+<date>12 décembre 2014</date>
+<title>Sortie de Wine 1.7.33</title>
+<body>
+<p> La version de développement 1.7.33 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.7.33">Nouveautés</a> de cette version :
+<ul>
+  <li>Prise en charge des commandes de copier-coller dans MSHTML.</li>
+  <li>Prise en charge supplémentaire des polices dans DirectWrite.</li>
+  <li>Meilleure gestion des pertes de focus dans les fenêtres Direct3D.</li>
+  <li>Plusieurs DLL jeux d'API supplémentaires.</li>
+  <li>Diverses corrections de bugs.</li>
+</ul></p>
+<p><p>Le <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.33.tar.bz2">code source</a> est disponible dès à présent. Les paquets binaires sont en cours de construction, et apparaîtront sous peu sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
