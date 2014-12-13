@@ -1,0 +1,16 @@
+<news>
+<date>Grudzień 12, 2014</date>
+<title>Wydano Wine 1.7.33</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.7.33 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.7.33">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Wsparcie dla poleceń kopiuj/wklej w MSHTML.</li>
+  <li>Rozszerzono wsparcie dla czcionek w DirectWrite.</li>
+  <li>Lepsza obsługa utraty uaktywninienia okien w Direct3D.</li>
+  <li>Kilka zestawów AP bibliotek DLL.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul>
+<p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.33.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
