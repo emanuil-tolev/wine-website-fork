@@ -1,0 +1,17 @@
+<news>
+<date>Styczeń  9, 2015</date>
+<title>Wydano Wine 1.7.34</title>
+<body>
+<p> Wydanie rozwojowe Wine 1.7.34 jest już dostępne.</p>
+<p> <a href="{$root}/announce/1.7.34">Co nowego</a> w tym wydaniu:
+<ul>
+  <li>Obsługa dźwięku otaczającego w DirectSound.</li>
+  <li>Lepsza obsługa tekstu w DirectWrite.</li>
+  <li>Wiele poprawek w silniku HTML.</li>
+  <li>Większe wsparcie dla obiektów WBEM.</li>
+  <li>Więcej funkcji w bibliotekach uruchomieniowych C/C++.</li>
+  <li>Rozmaite poprawki błędów.</li>
+</ul>
+<p>Źródło jest <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.34.tar.bz2">już dostępne</a>.
+Paczki binarne są w trakcie budowy i ukażą się wkrótce w przeznaczonych dla nich <a href="{$root}/download">pobieralniach</a>.
+</p></body></news>
