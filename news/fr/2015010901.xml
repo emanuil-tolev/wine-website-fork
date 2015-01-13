@@ -1,0 +1,16 @@
+<news>
+<date>9 janvier 2015</date>
+<title>Sortie de Wine 1.7.34</title>
+<body>
+<p> La version de développement 1.7.34 de Wine est disponible.</p>
+<p> <a href="{$root}/announce/1.7.34">Nouveautés</a> de cette version :
+<ul>
+  <li>Prise en charge du son multicanal dans DirectSound.</li>
+  <li>Meilleure prise en charge des séquences de texte dans DirectWrite.</li>
+  <li>Nombreux correctifs dans le moteur HTML.</li>
+  <li>Prise en charge complémentaire des objets WBEM.</li>
+  <li>Quelques fonctions supplémentaires dans les moteurs d'exécution C/C++.</li>
+  <li>Diverses corrections de bugs.</li>
+</ul></p>
+<p><p>Le <a href="http://prdownloads.sourceforge.net/wine/wine-1.7.34.tar.bz2">code source</a> est disponible dès à présent. Les paquets binaires sont en cours de construction, et apparaîtront sous peu sur leurs <a href="{$root}/download">sites de téléchargement</a> respectifs.
+</p></body></news>
