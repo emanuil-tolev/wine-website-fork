@@ -1,0 +1,1279 @@
+<?xml version="1.0" ?>
+<kc>
+<title>Wine Traffic</title>
+
+<author contact="http://www.dawncrow.de/wine/">Andr&#233; Hentschel</author>
+<issue num="383" date="01/16/2015" />
+<intro> <p>This is the 383rd issue of the World Wine News publication.
+Its main goal is to inform you of what's going on around Wine. Wine is an open source implementation of the Windows API on top of X and Unix.  Think of it as a Windows compatibility layer.  Wine does not require Microsoft Windows, as it is a completely alternative implementation consisting of 100% Microsoft-free code, but it can optionally use native system DLLs if they are available.   You can find more info at <a href="http://www.winehq.org">www.winehq.org</a></p> </intro>
+<stats posts="133" size="75" contrib="25" multiples="13" lastweek="11">
+
+<person posts="7" size="8" who="bunglehead at gmail.com (Nikolay Sivov)" />
+<person posts="7" size="7" who="imwellcushtymelike at googlemail.com (Ken Sharp)" />
+<person posts="5" size="5" who="julliard at winehq.org (Alexandre Julliard)" />
+<person posts="4" size="7" who="stefandoesinger at gmail.com (Stefan D&#246;singer)" />
+<person posts="4" size="4" who="00cpxxx at gmail.com (Bruno Jesus)" />
+<person posts="4" size="1" who="ken at codeweavers.com (Ken Thomases)" />
+<person posts="2" size="7" who="strooka_ace at yahoo.de (Marcel Busse)" />
+<person posts="2" size="3" who="austinenglish at gmail.com (Austin English)" />
+<person posts="2" size="2" who="dimesio at earthlink.net (Rosanne DiMesio)" />
+<person posts="2" size="2" who="nsivov at codeweavers.com (Nikolay Sivov)" />
+
+</stats>
+
+<section
+	title="Examining Crosswin"
+	subject=""
+	archive="http://www.openingupnorthkorea.com/"
+	posts="1"
+>
+<p>
+You might have heard of Red Star OS, the Linux distribution from North Korea.
+I heard that it includes Crosswin, a simple wrapper around Wine.
+But how simple is it?
+</p>
+<p>
+I downloaded the available iso files and had a look.
+There are two versions of Crosswin shipping as RPMs: 2.0 and 3.0.
+</p>
+<p><b>Crosswin 2.0</b></p>
+<p>
+Crosswin 2.0 is based on Wine 1.0-rc5 (2008). The default wineprefix is $HOME/.crosswin/win98, but there
+is an option in the GUI to use $HOME/.crosswin/win2000 instead. After some research i would say this looks
+like an old Crossover (not sure if it still does it like that). WineCfg is reduced to only display
+the Applications, Libraries and Drives tabs. When starting the Crosswin GUI, you can read
+"Initializing Windows 98" while in the background the win2000 prefix is created.
+Crosswin also comes without Wine Gecko, not sure how you would load it without real Internet access.
+There are also 2.2MB additional fonts and 18MB DLLs.
+</p>
+<p>
+The GUI seems to have recipes for various applications for installation. There is:
+</p>
+<ul>
+<li>Adobe Acrobat Reader 5.0</li>
+<li>Adobe Acrobat Reader 6.0</li>
+<li>Adobe Acrobat Pro 6.0</li>
+<li>Adobe Photoshop 7.0</li>
+<li>Macromedia Flash MX</li>
+<li>Macromedia Fireworks MX</li>
+<li>Macromedia Director 8.5</li>
+<li>Macromedia Dreamweaver MX</li>
+<li>SoundForge 4.5h</li>
+<li>UltraEdit 12.0</li>
+<li>UltraISO 7.21</li>
+<li>WinRAR 3.51</li>
+<li>Mirae 1.0</li>
+<li>Samhung 2.0</li>
+<li>Samhung 3.0</li>
+<li>Sogwang 4.0</li>
+</ul>
+<p>
+The wineprefix already include configurations for some applications, in WineCfg you can see
+this game focused list:
+</p>
+<ul>
+<li>Acrobat.exe</li>
+<li>cxwget.exe</li>
+<li>ExeFile.exe</li>
+<li>gta2.exe</li>
+<li>hl.exe</li>
+<li>iTunes.exe</li>
+<li>outlook.exe</li>
+<li>QuickTimePlayer.exe</li>
+<li>s3.exe</li>
+<li>SpellForce.exe</li>
+<li>swep1rcr.exe</li>
+<li>war3.exe</li>
+<li>WoW.exe</li>
+</ul>
+<p>
+On the Libraries tab you can find around 80 DLL overwrites!
+I wondered what else i could find in such an unclean prefix, so i had a look at the registry.
+There are some entries related to Valve games. Those can be found in
+HKCU/Software/Valve/Source/:
+</p>
+<ul>
+<li>cstrike</li>
+<li>dod</li>
+<li>episodic</li>
+<li>hl2</li>
+<li>hl2mp</li>
+</ul>
+<p>
+The AppDefaults section not only lists the WineCfg applications again, but it also gives
+some hints how Wine has been further altered. There is "hl1hack" in "hl.exe/Direct3D" set to "enable".
+Also there is "wowhack" in "WoW.exe/OpenGL" set to "true". Those values seem to origin from
+/usr/share/wine/crosswin.inf which starts with the line ";; (c) Copyright 2006. CodeWeavers, Inc.".
+This file also leaks two names: hanhs and RJB.
+</p>
+
+<p><b>Crosswin 3.0</b></p>
+<p>
+Crosswin 3.0 is based on Wine 1.2.2 (2010). The default wineprefix is $HOME/.crosswin, but now you can
+see in the terminal that they changed the name from "wine" to "crosswin":
+</p>
+<quote>
+<p>
+crosswin: configuration in '/Users/username/.crosswin' has been updated.
+</p>
+</quote>
+<p>
+WineCfg has the same tabs as in 2.0. The wineprefix created looks much cleaner, except of 17 DLL overwrites and
+more font tricks. Wine Gecko is still not shipped, but 109MB additional fonts and 20MB DLLs.
+</p>
+<p>
+The GUI also has less recipes. They are limited to:
+</p>
+<ul>
+<li>Adobe Photoshop 7.0</li>
+<li>Adobe Photoshop CS(8.0)</li>
+<li>Adobe Photoshop CS2(9.0)</li>
+<li>Adobe Photoshop CS5(12.0)</li>
+</ul>
+
+<p><b>License violation?</b></p>
+
+<p>
+It's hard to tell if people in North Korea have access to the sources, but it's doubtful.
+Then there are those extra DLLs and fonts. While i have no idea about their licenses, i guess not all
+of them are easily redistributable.
+</p>
+</section>
+
+<section
+	title="Wine64 on FreeBSD"
+	subject=""
+	archive="//bugs.winehq.org/show_bug.cgi?id=34330"
+	posts="17"
+>
+<p>
+I tried one year to get wine64 supported on 64-bit FreeBSD, now the fix got in and it turned out be just a one-liner.
+As a plus this also works on 64-bit Debian GNU/kFreeBSD.
+The FreeBSD packagers are about to test it and plan to ship a WoW64 setup of Wine.
+See the <a href="//bugs.winehq.org/show_bug.cgi?id=34330">bug report</a> for more information.
+</p>
+</section>
+
+<section
+    title="Weekly AppDB/Bugzilla Status Changes"
+    subject="AppDB/Bugzilla"
+    archive="//appdb.winehq.org"
+    posts="0"
+>
+<topic>AppDB / Bugzilla</topic>
+<center><b>Bugzilla Changes:</b></center>
+<p><center>
+<table border="1" bordercolor="#222222" cellspacing="0" cellpadding="3">
+  <tr><td align="center">
+        <b>Category</b>
+  </td><td>
+         <b>Total Bugs Last Issue</b>
+  </td><td>
+        <b>Total Bugs This Issue</b>
+  </td><td>
+        <b>Net Change</b>
+  </td></tr>  <tr>
+    <td align="center">
+     UNCONFIRMED
+    </td>
+    <td align="center">
+     3226
+    </td>
+    <td align="center">
+     3225
+    </td>
+    <td align="center">
+      -1
+    </td>
+  </tr>  <tr>
+    <td align="center">
+     NEW
+    </td>
+    <td align="center">
+     3561
+    </td>
+    <td align="center">
+     3572
+    </td>
+    <td align="center">
+      +11
+    </td>
+  </tr>  <tr>
+    <td align="center">
+     ASSIGNED
+    </td>
+    <td align="center">
+     17
+    </td>
+    <td align="center">
+     16
+    </td>
+    <td align="center">
+      -1
+    </td>
+  </tr>  <tr>
+    <td align="center">
+     REOPENED
+    </td>
+    <td align="center">
+     117
+    </td>
+    <td align="center">
+     117
+    </td>
+    <td align="center">
+      0
+    </td>
+  </tr>  <tr>
+    <td align="center">
+     RESOLVED
+    </td>
+    <td align="center">
+     197
+    </td>
+    <td align="center">
+     205
+    </td>
+    <td align="center">
+      +8
+    </td>
+  </tr>  <tr>
+    <td align="center">
+     CLOSED
+    </td>
+    <td align="center">
+     30619
+    </td>
+    <td align="center">
+     30760
+    </td>
+    <td align="center">
+      +141
+    </td>
+  </tr>   <tr><td align="center">
+      TOTAL OPEN
+   </td><td align="center">
+      6921
+   </td><td align="center">
+      6930
+   </td><td align="center">
+      +9
+   </td></tr>
+   <tr><td align="center">
+       TOTAL
+   </td><td align="center">
+      37737
+   </td><td align="center">
+      37895
+   </td><td align="center">
+      +158
+   </td></tr>
+</table>
+</center></p>
+<br /><br />
+<center><b>AppDB Application Status Changes</b></center>
+<p><i>*Disclaimer: These lists of changes are automatically  generated by information entered into the AppDB.
+These results are subject to the opinions of the users submitting application reviews.
+The Wine community does not guarantee that even though an application may be upgraded to 'Gold' or 'Platinum' in this list, that you
+will have the same experience and would provide a similar rating.</i></p>
+<div align="center">
+   <b><u>Updates by App Maintainers</u></b><br /><br />
+    <table width="80%" border="1" bordercolor="#222222" cellspacing="0" cellpadding="3">
+      <tr>
+        <td><b>Application</b></td>
+        <td width="140"><b>Old Status/Version</b></td>
+        <td width="140"><b>New Status/Version</b></td>
+        <td width="20" align="center"><b>Change</b></td>
+      </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=31506">Amion OnCall Physician Scheduling 2015</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.4.1)
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.6.1)
+             </td><td align="center">
+                <div style="color: #000000;">+2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=26773">Endless Space Steam</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.6.2)
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=31271">Adobe Flash Player Projector 16.0.0.235 (Stable)</a>
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.7.32)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=20151">Need for Speed: Undercover 1.0.1.18</a>
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.1.44)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=26175">Origin Latest Release</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.32)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+3</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=8070">Phantasy Star Universe Original</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.3.36)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+3</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2450">Autosketch 7.0</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.0.1)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=5836">BOINC 5.x (32-bit)</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (0.9.28)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=17942">BOINC 6.x (32-bit)</a>
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.1.29)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=17389">Drivers Daily Log 3.x</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.1.26)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.6.2)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=23102">Queensrÿche's Promised Land Original</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.3.15)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=16461">QuickTime Player 5.x</a>
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.1.20)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=15961">Roblox Latest</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.28)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=18283">Dragon Age: Origins 1.x</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.32)
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=5116">QuickTime Player 2.x 32-bit</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.6-rc4)
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4774">Atomic Bomberman 1.0</a>
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.3.7)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.6.2)
+             </td><td align="center">
+                <div style="color: #990000;">-4</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=6413">Microsoft Works 6.0</a>
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.1.35)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10984">The Fairly OddParents: Breakin' Da Rules! (none)</a>
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (0.9.55)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-4</div>
+             </td>
+           </tr>           <tr>
+             <td colspan="3">
+                Total Change
+             </td><td align="center">
+               <div style="color: #990000;">-6</div>
+             </td>
+           </tr>
+        </table>  <br />   <b><u> Updates by the Public </u></b> <br /><br />
+   <table width="80%" border="1" bordercolor="#222222" cellspacing="0" cellpadding="3">
+      <tr>
+        <td><b>Application</b></td>
+        <td width="140"><b>Old Status/Version</b></td>
+        <td width="140"><b>New Status/Version</b></td>
+        <td width="20"><b>Change</b></td>
+      </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3821">Concise Oxford English Dictionary 11th Edition</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.4)
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.7.32)
+             </td><td align="center">
+                <div style="color: #000000;">+2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=2839">Full Tilt Poker Latest</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.4)
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.6.2)
+             </td><td align="center">
+                <div style="color: #000000;">+2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10975">Garfield:  A Tail Of Two Kitties (none)</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (0.9.55)
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+4</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=25779">Ghostbusters: The Video Game Steam</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.5.2)
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+4</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30023">MEO Music 3.x</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.15)
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+4</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30986">Project64 2.1</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.27)
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.7.32)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=400">Rollercoaster Tycoon 1.08.187</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.6.1)
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=17803">Star Wars Jedi Knight: Dark Forces II Steam</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.3.18)
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.6.2)
+             </td><td align="center">
+                <div style="color: #000000;">+2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=28239">StarCraft I 1.16.1 (Brood War)</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.30)
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=31291">Valkyria Chronicles steam</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.29)
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=28895">ePSXe 1.9</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.14)
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=27440">Ableton Live 9.x</a>
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.7.30)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30928">Adobe Digital Editions 4.0</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.24)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=22577">Adobe Reader 10.x</a>
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.4.1)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=29925">Anno 2070 Steam Edition</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.13)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+3</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=22243">Big Fish Games Client Latest</a>
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.4.1)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30610">Divinity: Original Sin Steam</a>
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.22)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.29)
+             </td><td align="center">
+                <div style="color: #000000;">+2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=27548">DmC: Devil May Cry 1.0</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.5.23)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.32)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=26773">Endless Space Steam</a>
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.6-rc4)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.6.2)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=1356">FileMaker Pro 5.5</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.0.1)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=28519">Final Fantasy VII Steam</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.18)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=25779">Ghostbusters: The Video Game Steam</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.5.2)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+3</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30038">Hearthstone: Heroes of Warcraft Stable</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.4.1)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.34)
+             </td><td align="center">
+                <div style="color: #000000;">+3</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30090">Heroes of the Storm Alpha</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.31)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=27109">Planetside 2 Release</a>
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.28)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.31)
+             </td><td align="center">
+                <div style="color: #000000;">+2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=29333">Rocksmith 2014 Steam</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.28)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+3</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=29414">S.T.A.L.K.E.R.: Shadow of Chernobyl Steam</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.6)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+3</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=11411">SAM Broadcaster 4.2.2</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.6.1)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.6.2)
+             </td><td align="center">
+                <div style="color: #000000;">+3</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=31190">SketchUp 2015</a>
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.31)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=29979">South Park: The Stick of Truth Steam</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.26)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=28239">StarCraft I 1.16.1 (Brood War)</a>
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.7.33)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.34)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30109">Stronghold 1.3</a>
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.6.2)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.28)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12816">Stronghold Crusader Extreme 1.2-E</a>
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.3.15)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30545">World of Warcraft 6.0.3</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.6.2)
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=7672">Adobe Reader 3.x (32-bit)</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.1.27)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=26781">3Age of Empires II Age of empires - Collectors Edi...</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.4.1)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.6.2)
+             </td><td align="center">
+                <div style="color: #000000;">+2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=14778">Altium Designer 6.8</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.1.10)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=17740">Bioshock Steam Version</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.28)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=28622">Castle Crashers 1.3.1</a>
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.7.28)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.31)
+             </td><td align="center">
+                <div style="color: #990000;">-2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30610">Divinity: Original Sin Steam</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.29)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30135">How to Survive Steam</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.15)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.28)
+             </td><td align="center">
+                <div style="color: #000000;">+2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=12848">Indiana Jones and the Emperor's Tomb 1.0</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.1.0)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=28022">Scarlet Blade (Queen's Blade) Current F2P</a>
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.0)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.34)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13575">Silent Hunter 4 1.4</a>
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.4.1)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.6.2)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=26917">Skype 6.x</a>
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.31)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=28613">Sonic All-Stars Racing Transformed Steam Version</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.26)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=6091">Theme Park World Retail CD</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.6-rc5)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.6.2)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=31215">Uplay (Ubisoft Game Launcher) N/A</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.6.2)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30545">World of Warcraft 6.0.3</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.32)
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=27970">Defiance NA Retail</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.24)
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.31)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30610">Divinity: Original Sin Steam</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.29)
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=10721">EchoLink 2.0.908</a>
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.5.7)
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.6.2)
+             </td><td align="center">
+                <div style="color: #990000;">-3</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=6012">Gothic 3 1.x</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.7.22)
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=14988">Lula: The Sexy Empire 1.69 F</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.3.20)
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.4.1)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=15788">Never7 CD version</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.1.17)
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30942">Path of Exile Steam</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.6.2)
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=5934">Richard Burns Rally 1.x</a>
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.5.27)
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-3</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=31168">Shantae - Risky's Revenge 1.0.1.5</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.29)
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=27821">SimCity 2013 Latest</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.6.2)
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=20339">Space Empires V 1.79</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.5.20)
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=17670">Titan Quest Steam version (w/o datadisk)</a>
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.4-rc5)
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-3</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=9594">Touhou 6 ~ Embodiment of Scarlet Devil 1.02</a>
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.6-rc1)
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.6.1)
+             </td><td align="center">
+                <div style="color: #990000;">-3</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=31224">iTunes 12.0.1 (64-bit)</a>
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.6.2)
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.33)
+             </td><td align="center">
+                <div style="color: #000000;">+1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=31023">.NET Framework 4.5.2</a>
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.6.2)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-4</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=8005">2xExplorer 1.4.1.12</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (0.9.56)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=27440">Ableton Live 9.x</a>
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.7.30)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-4</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=23207">ClearView 5.30</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.4.1)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=25469">Dragonica Dragon Saga</a>
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.7.17)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=31337">FIFA World Beta</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.29)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30038">Hearthstone: Heroes of Warcraft Stable</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.27)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30090">Heroes of the Storm Alpha</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.31)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=23012">Mortal Online 1.x</a>
+             </td><td background="{$root}/images/wwn_bronzebg.gif">
+               Bronze (1.5.24)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.29)
+             </td><td align="center">
+                <div style="color: #990000;">-1</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=20049">Outcast GOG Version</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.3.24)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-3</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13611">Rollercoaster Tycoon 1.0</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.6.1)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-3</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=946">Star Wars - Jedi Knight II: Jedi Outcast 1.xx</a>
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.7.12)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-4</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=13139">Warhammer Online Live</a>
+             </td><td background="{$root}/images/wwn_goldbg.gif">
+               Gold (1.5.16)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-3</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30403">Wolfenstein: The New Order 1.0</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.7.30)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=3522">WordPerfect 12</a>
+             </td><td background="{$root}/images/wwn_silverbg.gif">
+               Silver (1.0.0)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.7.33)
+             </td><td align="center">
+                <div style="color: #990000;">-2</div>
+             </td>
+           </tr>           <tr>
+             <td>
+                <a href="//appdb.winehq.org/objectManager.php?sClass=version&amp;iId=30134">WriteItNow 4.0.7f</a>
+             </td><td background="{$root}/images/wwn_platinumbg.gif">
+               Platinum (1.4.1)
+             </td><td background="{$root}/images/wwn_garbagebg.gif">
+               Garbage (1.6.2)
+             </td><td align="center">
+                <div style="color: #990000;">-4</div>
+             </td>
+           </tr>           <tr>
+             <td colspan="3">
+                Total Change
+             </td><td align="center">
+               <div style="color: #990000;">-4</div>
+             </td>
+           </tr>
+        </table></div>
+</section></kc>
